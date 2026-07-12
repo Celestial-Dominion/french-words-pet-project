@@ -1,0 +1,26 @@
+{
+  "sang": {
+    "sentences": [
+      { "fr": "Il y a du sang par terre.", "vi": "Có máu dưới sàn." },
+      { "fr": "Je n'aime pas voir le sang.", "vi": "Tôi không thích nhìn thấy máu." },
+      { "fr": "Elle a peur du sang.", "vi": "Cô ấy sợ máu." }
+    ],
+    "reason": "\"Le docteur regarde mon sang\" gượng, không tự nhiên (bác sĩ không 'nhìn máu'); thay bằng câu A1 tự nhiên."
+  },
+  "fin": {
+    "sentences": [
+      { "fr": "C'est la fin du film.", "vi": "Đây là đoạn kết của phim." },
+      { "fr": "On part à la fin du mois.", "vi": "Chúng tôi đi vào cuối tháng." },
+      { "fr": "Elle a les cheveux fins.", "vi": "Cô ấy có mái tóc mảnh." }
+    ],
+    "reason": "\"de fins cheveux\" đặt tính từ trước danh từ nghe văn vẻ/gượng; cách nói tự nhiên là \"les cheveux fins\"."
+  },
+  "doute": {
+    "sentences": [
+      { "fr": "Sans doute, il a raison.", "vi": "Có lẽ anh ấy đúng." },
+      { "fr": "J'ai un doute sur la réponse.", "vi": "Tôi nghi ngờ về câu trả lời." },
+      { "fr": "Il n'y a aucun doute.", "vi": "Không có gì phải nghi ngờ." }
+    ],
+    "reason": "\"Sans doute\" nghĩa là 'có lẽ/hẳn là', không phải 'chắc chắn'; dịch tiếng Việt sai nghĩa."
+  }
+}

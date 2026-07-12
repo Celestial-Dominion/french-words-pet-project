@@ -271,7 +271,8 @@ Thứ tự nghiệm thu trên **~390px** (mobile-first) như app HSK.
 - [x] `build-level-assign.mjs`: 11.000 lemma, band chuẩn {A1:800,A2:1200,B1:2000,B2:2500,C1:3000,C2:1500}, seed A1 212 từ
 - [x] Sửa chất lượng lemma: IPA lấy đúng dạng gốc (être /ɛtʁ/); giống chỉ gán khi từ loại CHÍNH là danh từ (bỏ nhiễu donner/long/surtout); pos xếp theo độ phổ biến; số nhiều bất quy tắc 155 từ
 - [x] Sinh `meaning_vi` **toàn bộ 11.000 từ (A1→C2)** — 56 batch subagent (200 từ/batch, dùng `out/vi-in/INSTRUCTIONS.md`), gộp `scripts/out/meanings-vi.json` (kèm meaning_en súc tích). Spot-check rải đều mọi cấp: chính xác cao
-- [x] **QA sâu nghĩa VI A1+A2** (2.000 từ, 10 subagent soát độc lập lần 2): chỉ **7 lỗi** (effet/derrière/baiser/trembler/éclat/poulet/mise) → đã sửa. Đúng ~99,65%. Pipeline `prep-qa-batches.mjs` → `qa-in/INSTRUCTIONS.md` → `merge-qa.mjs`. B1–C2 QA làm dần sau
+- [x] **QA sâu nghĩa VI TOÀN BỘ 11.000 từ (A1→C2)** — 56 subagent soát độc lập lần 2: chỉ **57 lỗi** → đã sửa (faux-amis: major≠thiếu tá, gym≠phòng tập, trèfle=nhép; lặp từ; sắc thái). Đúng ~99,5%. Pipeline `prep-qa-batches.mjs` → `qa-in/INSTRUCTIONS.md` → `merge-qa.mjs`. Đã git commit + deploy live
+- [~] Lưu ý QA phát hiện (chưa sửa, ngoài phạm vi nghĩa VI): vài từ sai trường `gender` do đồng âm (mort/bouffe/oasis/coke/aubain…) + vài pos/IPA lẻ — có thể đối chiếu kaikki sửa sau nếu muốn
 - [x] Ghép `words/a1..c2.json` — ĐỦ 11k từ, mỗi từ có IPA + meaning_vi + meaning_en. `build-words-base.mjs` + `build-words-assemble.mjs`
 - [x] `word-levels.json` (id → level) ✓ ; `words-index.json` ✓ (11k entry)
 - [x] `lemma-map.json` (61.445 entry, gồm elision l'/d'/j' + mạo từ rút gọn au/du/aux/des)

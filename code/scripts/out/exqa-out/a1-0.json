@@ -1,0 +1,26 @@
+{
+  "il": {
+    "sentences": [
+      { "fr": "Il est très gentil.", "vi": "Anh ấy rất tốt bụng." },
+      { "fr": "Il mange du pain.", "vi": "Anh ấy ăn bánh mì." },
+      { "fr": "Il fait beau aujourd'hui.", "vi": "Hôm nay trời đẹp." }
+    ],
+    "reason": "«Il est mon ami» sai: trước danh từ có hạn định phải dùng «c'est» chứ không «il est». Đổi câu 1 sang câu với tính từ."
+  },
+  "elle": {
+    "sentences": [
+      { "fr": "Elle est gentille.", "vi": "Cô ấy dễ thương." },
+      { "fr": "Elle aime la musique.", "vi": "Cô ấy thích âm nhạc." },
+      { "fr": "Elle habite à Lyon.", "vi": "Cô ấy sống ở Lyon." }
+    ],
+    "reason": "«Elle est ma sœur» sai: trước danh từ có hạn định phải dùng «c'est» (C'est ma sœur), không «elle est». Đổi câu 1 sang câu với tính từ."
+  },
+  "jour": {
+    "sentences": [
+      { "fr": "Quel jour sommes-nous ?", "vi": "Hôm nay là thứ mấy?" },
+      { "fr": "Quel beau jour !", "vi": "Ngày đẹp quá!" },
+      { "fr": "Je travaille tous les jours.", "vi": "Tôi làm việc mỗi ngày." }
+    ],
+    "reason": "«Bon jour» viết sai chính tả (lời chào là «Bonjour», một từ); «Il fait beau ce jour» gượng, người Pháp nói «aujourd'hui». Đổi 2 câu đầu."
+  }
+}

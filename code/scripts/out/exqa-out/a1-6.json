@@ -1,0 +1,18 @@
+{
+ "ligne": {
+  "sentences": [
+   { "fr": "Écris ton nom sur cette ligne.", "vi": "Hãy viết tên bạn lên dòng này." },
+   { "fr": "La ligne de téléphone est occupée.", "vi": "Đường dây điện thoại đang bận." },
+   { "fr": "Le bus prend la ligne deux.", "vi": "Xe buýt đi tuyến số hai." }
+  ],
+  "reason": "Câu 2 'une longue ligne au magasin' dùng sai 'ligne' cho hàng người xếp hàng (anglicism); tiếng Pháp dùng 'file/queue'. Đã thay bằng câu 'ligne de téléphone' tự nhiên."
+ },
+ "doux": {
+  "sentences": [
+   { "fr": "Ce tissu est très doux.", "vi": "Vải này rất mềm mại." },
+   { "fr": "Sa voix est douce.", "vi": "Giọng nói của cô ấy dịu dàng." },
+   { "fr": "Le temps est doux aujourd'hui.", "vi": "Thời tiết hôm nay dịu mát." }
+  ],
+  "reason": "Câu 1 'Ce gâteau est très doux' gượng và lệch nghĩa (doux ≠ ngọt; bánh ngọt nên là 'sucré/moelleux'). Đã đổi sang 'tissu doux' = mềm mại."
+ }
+}

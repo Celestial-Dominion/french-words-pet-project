@@ -1,0 +1,26 @@
+{
+ "pardonner": {
+  "sentences": [
+   { "fr": "Pardonne-moi, je suis en retard.", "vi": "Tha lỗi cho tôi, tôi đến muộn." },
+   { "fr": "Elle a pardonné à son frère.", "vi": "Cô ấy đã tha thứ cho em trai." },
+   { "fr": "Je te pardonne.", "vi": "Tôi tha thứ cho bạn." }
+  ],
+  "reason": "pardonner à qqn: thiếu giới từ 'à' (Elle a pardonné son frère → à son frère)"
+ },
+ "con": {
+  "sentences": [
+   { "fr": "Ne sois pas con.", "vi": "Đừng ngốc thế." },
+   { "fr": "C'est con, cette histoire.", "vi": "Chuyện này thật ngớ ngẩn." },
+   { "fr": "Quel con, celui-là !", "vi": "Cái tên đó thật ngu ngốc!" }
+  ],
+  "reason": "accord giống sai: 'une histoire con' phải là 'conne' → thay bằng 'C'est con, cette histoire'"
+ },
+ "quinze": {
+  "sentences": [
+   { "fr": "J'ai quinze ans.", "vi": "Tôi mười lăm tuổi." },
+   { "fr": "Il est trois heures quinze.", "vi": "Bây giờ là ba giờ mười lăm." },
+   { "fr": "Il y a quinze élèves dans la classe.", "vi": "Trong lớp có mười lăm học sinh." }
+  ],
+  "reason": "giờ không tự nhiên: 'trois heures et quinze minutes' → 'trois heures quinze'"
+ }
+}

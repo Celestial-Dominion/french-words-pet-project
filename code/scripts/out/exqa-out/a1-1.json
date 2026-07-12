@@ -1,0 +1,42 @@
+{
+ "an": {
+  "sentences": [
+   { "fr": "J'ai vingt ans.", "vi": "Tôi hai mươi tuổi." },
+   { "fr": "Elle a dix ans.", "vi": "Cô bé mười tuổi." },
+   { "fr": "Mon fils a un an.", "vi": "Con trai tôi một tuổi." }
+  ],
+  "reason": "Câu 3 dùng 'année', không chứa từ 'an'."
+ },
+ "oeil": {
+  "sentences": [
+   { "fr": "Elle a une poussière dans l'œil.", "vi": "Cô ấy bị bụi bay vào mắt." },
+   { "fr": "J'ai mal à l'œil.", "vi": "Tôi bị đau mắt." },
+   { "fr": "Ferme les yeux.", "vi": "Nhắm mắt lại." }
+  ],
+  "reason": "Câu 1 'Il a un œil bleu' không tự nhiên; người Pháp nói 'les yeux bleus'."
+ },
+ "vrai": {
+  "sentences": [
+   { "fr": "C'est une vraie histoire.", "vi": "Đó là một câu chuyện có thật." },
+   { "fr": "C'est vrai ?", "vi": "Thật không?" },
+   { "fr": "C'est un vrai ami.", "vi": "Đó là một người bạn thật sự." }
+  ],
+  "reason": "Câu 3 dùng 'vérité', không chứa từ 'vrai'."
+ },
+ "soir": {
+  "sentences": [
+   { "fr": "À ce soir !", "vi": "Hẹn tối nay!" },
+   { "fr": "Le soir, je lis un livre.", "vi": "Buổi tối, tôi đọc sách." },
+   { "fr": "Je travaille demain soir.", "vi": "Tối mai tôi làm việc." }
+  ],
+  "reason": "Câu 3 dùng 'Bonsoir', không chứa từ 'soir' độc lập."
+ },
+ "chercher": {
+  "sentences": [
+   { "fr": "Je cherche mes clés.", "vi": "Tôi tìm chìa khóa." },
+   { "fr": "Il cherche du travail.", "vi": "Anh ấy tìm việc làm." },
+   { "fr": "Va chercher le pain.", "vi": "Đi lấy bánh mì đi." }
+  ],
+  "reason": "Bản dịch câu 3 dịch 'chercher' thành 'mua' (sai nghĩa; chercher = lấy/tìm)."
+ }
+}

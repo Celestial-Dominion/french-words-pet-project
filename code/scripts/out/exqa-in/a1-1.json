@@ -1,0 +1,2243 @@
+[
+ {
+  "id": "regarder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhìn, xem",
+  "sentences": [
+   {
+    "fr": "Je regarde la télé ce soir.",
+    "vi": "Tối nay tôi xem tivi."
+   },
+   {
+    "fr": "Regarde ce beau chien !",
+    "vi": "Nhìn con chó đẹp kìa!"
+   },
+   {
+    "fr": "Elle regarde par la fenêtre.",
+    "vi": "Cô ấy nhìn ra cửa sổ."
+   }
+  ]
+ },
+ {
+  "id": "attendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đợi, chờ",
+  "sentences": [
+   {
+    "fr": "J'attends le bus ici.",
+    "vi": "Tôi đợi xe buýt ở đây."
+   },
+   {
+    "fr": "Attends-moi une minute !",
+    "vi": "Đợi tôi một phút!"
+   },
+   {
+    "fr": "Nous attendons nos amis.",
+    "vi": "Chúng tôi đang chờ bạn bè."
+   }
+  ]
+ },
+ {
+  "id": "même",
+  "pos": [
+   "phó từ",
+   "tính từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "cùng, giống; ngay cả",
+  "sentences": [
+   {
+    "fr": "Nous avons le même âge.",
+    "vi": "Chúng tôi cùng tuổi."
+   },
+   {
+    "fr": "Même les enfants aiment ça.",
+    "vi": "Ngay cả trẻ con cũng thích cái đó."
+   },
+   {
+    "fr": "C'est la même chose.",
+    "vi": "Đó là cùng một chuyện."
+   }
+  ]
+ },
+ {
+  "id": "quoi",
+  "pos": [
+   "tính từ",
+   "đại từ",
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "cái gì, gì",
+  "sentences": [
+   {
+    "fr": "Tu veux quoi ?",
+    "vi": "Bạn muốn gì?"
+   },
+   {
+    "fr": "C'est quoi, ça ?",
+    "vi": "Cái này là gì vậy?"
+   },
+   {
+    "fr": "Il n'y a pas de quoi.",
+    "vi": "Không có gì đâu."
+   }
+  ]
+ },
+ {
+  "id": "donner",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cho, tặng",
+  "sentences": [
+   {
+    "fr": "Donne-moi ton stylo.",
+    "vi": "Cho tôi cây bút của bạn."
+   },
+   {
+    "fr": "Je donne un cadeau à ma mère.",
+    "vi": "Tôi tặng quà cho mẹ."
+   },
+   {
+    "fr": "Elle donne à manger au chat.",
+    "vi": "Cô ấy cho con mèo ăn."
+   }
+  ]
+ },
+ {
+  "id": "toujours",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "luôn luôn; vẫn còn",
+  "sentences": [
+   {
+    "fr": "Il est toujours en retard.",
+    "vi": "Anh ấy luôn đến muộn."
+   },
+   {
+    "fr": "Je t'aime toujours.",
+    "vi": "Anh vẫn luôn yêu em."
+   },
+   {
+    "fr": "Elle sourit toujours.",
+    "vi": "Cô ấy lúc nào cũng cười."
+   }
+  ]
+ },
+ {
+  "id": "mes",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "của tôi (số nhiều)",
+  "sentences": [
+   {
+    "fr": "Voici mes parents.",
+    "vi": "Đây là bố mẹ tôi."
+   },
+   {
+    "fr": "Où sont mes clés ?",
+    "vi": "Chìa khóa của tôi đâu rồi?"
+   },
+   {
+    "fr": "Mes amis sont gentils.",
+    "vi": "Bạn bè của tôi rất tốt."
+   }
+  ]
+ },
+ {
+  "id": "arriver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đến, tới; xảy ra",
+  "sentences": [
+   {
+    "fr": "Le train arrive à midi.",
+    "vi": "Tàu đến lúc trưa."
+   },
+   {
+    "fr": "J'arrive tout de suite.",
+    "vi": "Tôi đến ngay đây."
+   },
+   {
+    "fr": "Qu'est-ce qui arrive ?",
+    "vi": "Chuyện gì đang xảy ra vậy?"
+   }
+  ]
+ },
+ {
+  "id": "mettre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đặt, để; mặc",
+  "sentences": [
+   {
+    "fr": "Je mets mon manteau.",
+    "vi": "Tôi mặc áo khoác."
+   },
+   {
+    "fr": "Mets le livre sur la table.",
+    "vi": "Đặt quyển sách lên bàn."
+   },
+   {
+    "fr": "Elle met ses chaussures.",
+    "vi": "Cô ấy đi giày."
+   }
+  ]
+ },
+ {
+  "id": "femme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "người phụ nữ; vợ",
+  "sentences": [
+   {
+    "fr": "Cette femme est ma voisine.",
+    "vi": "Người phụ nữ này là hàng xóm của tôi."
+   },
+   {
+    "fr": "Sa femme est médecin.",
+    "vi": "Vợ anh ấy là bác sĩ."
+   },
+   {
+    "fr": "La femme parle au téléphone.",
+    "vi": "Người phụ nữ đang nói điện thoại."
+   }
+  ]
+ },
+ {
+  "id": "fois",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lần",
+  "sentences": [
+   {
+    "fr": "Je viens une fois par semaine.",
+    "vi": "Tôi đến một lần mỗi tuần."
+   },
+   {
+    "fr": "C'est la première fois.",
+    "vi": "Đây là lần đầu tiên."
+   },
+   {
+    "fr": "Répète encore une fois.",
+    "vi": "Lặp lại thêm một lần nữa."
+   }
+  ]
+ },
+ {
+  "id": "vie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc sống, đời sống",
+  "sentences": [
+   {
+    "fr": "La vie est belle.",
+    "vi": "Cuộc sống thật đẹp."
+   },
+   {
+    "fr": "Il aime la vie simple.",
+    "vi": "Anh ấy thích cuộc sống giản dị."
+   },
+   {
+    "fr": "C'est ma vie.",
+    "vi": "Đó là cuộc đời của tôi."
+   }
+  ]
+ },
+ {
+  "id": "peu",
+  "pos": [
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": "m",
+  "vi": "ít, một chút",
+  "sentences": [
+   {
+    "fr": "Je mange un peu.",
+    "vi": "Tôi ăn một chút."
+   },
+   {
+    "fr": "Il parle peu.",
+    "vi": "Anh ấy ít nói."
+   },
+   {
+    "fr": "Attends un peu !",
+    "vi": "Đợi một chút!"
+   }
+  ]
+ },
+ {
+  "id": "demander",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hỏi; yêu cầu",
+  "sentences": [
+   {
+    "fr": "Je demande l'heure.",
+    "vi": "Tôi hỏi giờ."
+   },
+   {
+    "fr": "Il demande de l'aide.",
+    "vi": "Anh ấy yêu cầu giúp đỡ."
+   },
+   {
+    "fr": "Demande à ta mère.",
+    "vi": "Hỏi mẹ của bạn đi."
+   }
+  ]
+ },
+ {
+  "id": "pourquoi",
+  "pos": [
+   "phó từ",
+   "liên từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tại sao",
+  "sentences": [
+   {
+    "fr": "Pourquoi tu pleures ?",
+    "vi": "Sao bạn khóc vậy?"
+   },
+   {
+    "fr": "Je ne sais pas pourquoi.",
+    "vi": "Tôi không biết tại sao."
+   },
+   {
+    "fr": "Pourquoi pas ?",
+    "vi": "Tại sao không?"
+   }
+  ]
+ },
+ {
+  "id": "rester",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ở lại; còn lại",
+  "sentences": [
+   {
+    "fr": "Je reste à la maison.",
+    "vi": "Tôi ở nhà."
+   },
+   {
+    "fr": "Reste ici avec moi.",
+    "vi": "Ở lại đây với tôi."
+   },
+   {
+    "fr": "Il reste un peu de pain.",
+    "vi": "Còn lại một chút bánh mì."
+   }
+  ]
+ },
+ {
+  "id": "seul",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "một mình; duy nhất",
+  "sentences": [
+   {
+    "fr": "Je suis seul ce soir.",
+    "vi": "Tối nay tôi ở một mình."
+   },
+   {
+    "fr": "Elle vit seule.",
+    "vi": "Cô ấy sống một mình."
+   },
+   {
+    "fr": "C'est le seul problème.",
+    "vi": "Đó là vấn đề duy nhất."
+   }
+  ]
+ },
+ {
+  "id": "notre",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "của chúng tôi, của chúng ta",
+  "sentences": [
+   {
+    "fr": "Voici notre maison.",
+    "vi": "Đây là nhà của chúng tôi."
+   },
+   {
+    "fr": "Notre chat est mignon.",
+    "vi": "Con mèo của chúng tôi dễ thương."
+   },
+   {
+    "fr": "C'est notre professeur.",
+    "vi": "Đó là giáo viên của chúng tôi."
+   }
+  ]
+ },
+ {
+  "id": "appeler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gọi",
+  "sentences": [
+   {
+    "fr": "J'appelle mon ami.",
+    "vi": "Tôi gọi cho bạn tôi."
+   },
+   {
+    "fr": "Comment tu t'appelles ?",
+    "vi": "Bạn tên là gì?"
+   },
+   {
+    "fr": "Appelle un taxi, s'il te plaît.",
+    "vi": "Gọi taxi giúp tôi nhé."
+   }
+  ]
+ },
+ {
+  "id": "grand",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "to, lớn; cao",
+  "sentences": [
+   {
+    "fr": "Il est très grand.",
+    "vi": "Anh ấy rất cao."
+   },
+   {
+    "fr": "C'est une grande maison.",
+    "vi": "Đó là một ngôi nhà lớn."
+   },
+   {
+    "fr": "Mon frère est grand.",
+    "vi": "Anh trai tôi cao lớn."
+   }
+  ]
+ },
+ {
+  "id": "partir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi, khởi hành",
+  "sentences": [
+   {
+    "fr": "Je pars demain matin.",
+    "vi": "Tôi đi sáng mai."
+   },
+   {
+    "fr": "Le train part à huit heures.",
+    "vi": "Tàu khởi hành lúc tám giờ."
+   },
+   {
+    "fr": "Ils partent en vacances.",
+    "vi": "Họ đi nghỉ mát."
+   }
+  ]
+ },
+ {
+  "id": "ta",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "của bạn (giống cái)",
+  "sentences": [
+   {
+    "fr": "Où est ta voiture ?",
+    "vi": "Xe của bạn đâu?"
+   },
+   {
+    "fr": "J'aime ta robe.",
+    "vi": "Tôi thích váy của bạn."
+   },
+   {
+    "fr": "C'est ta sœur ?",
+    "vi": "Đó là em gái của bạn à?"
+   }
+  ]
+ },
+ {
+  "id": "trop",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "quá, quá nhiều",
+  "sentences": [
+   {
+    "fr": "C'est trop cher.",
+    "vi": "Cái này quá đắt."
+   },
+   {
+    "fr": "Tu manges trop.",
+    "vi": "Bạn ăn quá nhiều."
+   },
+   {
+    "fr": "Il fait trop chaud.",
+    "vi": "Trời quá nóng."
+   }
+  ]
+ },
+ {
+  "id": "connaître",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "biết, quen biết",
+  "sentences": [
+   {
+    "fr": "Je connais ton frère.",
+    "vi": "Tôi quen anh trai bạn."
+   },
+   {
+    "fr": "Tu connais ce restaurant ?",
+    "vi": "Bạn biết nhà hàng này không?"
+   },
+   {
+    "fr": "Elle connaît bien Paris.",
+    "vi": "Cô ấy biết rõ Paris."
+   }
+  ]
+ },
+ {
+  "id": "père",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cha, bố",
+  "sentences": [
+   {
+    "fr": "Mon père travaille beaucoup.",
+    "vi": "Bố tôi làm việc nhiều."
+   },
+   {
+    "fr": "Son père est gentil.",
+    "vi": "Bố anh ấy rất tốt."
+   },
+   {
+    "fr": "Le père joue avec ses enfants.",
+    "vi": "Người bố chơi với các con."
+   }
+  ]
+ },
+ {
+  "id": "peut-être",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "có lẽ, có thể",
+  "sentences": [
+   {
+    "fr": "Il vient peut-être demain.",
+    "vi": "Có lẽ mai anh ấy đến."
+   },
+   {
+    "fr": "Peut-être qu'il pleut.",
+    "vi": "Có thể trời mưa."
+   },
+   {
+    "fr": "Oui, peut-être.",
+    "vi": "Vâng, có lẽ vậy."
+   }
+  ]
+ },
+ {
+  "id": "autre",
+  "pos": [
+   "tính từ",
+   "đại từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "khác",
+  "sentences": [
+   {
+    "fr": "Je veux un autre café.",
+    "vi": "Tôi muốn một cốc cà phê khác."
+   },
+   {
+    "fr": "Prends l'autre livre.",
+    "vi": "Lấy quyển sách kia đi."
+   },
+   {
+    "fr": "Les autres sont partis.",
+    "vi": "Những người khác đã đi rồi."
+   }
+  ]
+ },
+ {
+  "id": "maintenant",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "bây giờ, hiện nay",
+  "sentences": [
+   {
+    "fr": "On mange maintenant ?",
+    "vi": "Giờ mình ăn nhé?"
+   },
+   {
+    "fr": "Je dois partir maintenant.",
+    "vi": "Bây giờ tôi phải đi."
+   },
+   {
+    "fr": "Maintenant, il fait nuit.",
+    "vi": "Bây giờ trời đã tối."
+   }
+  ]
+ },
+ {
+  "id": "heure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giờ; giờ đồng hồ",
+  "sentences": [
+   {
+    "fr": "Quelle heure est-il ?",
+    "vi": "Mấy giờ rồi?"
+   },
+   {
+    "fr": "Il est trois heures.",
+    "vi": "Bây giờ là ba giờ."
+   },
+   {
+    "fr": "J'arrive dans une heure.",
+    "vi": "Một giờ nữa tôi đến."
+   }
+  ]
+ },
+ {
+  "id": "monde",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thế giới; mọi người",
+  "sentences": [
+   {
+    "fr": "Il y a beaucoup de monde.",
+    "vi": "Có rất nhiều người."
+   },
+   {
+    "fr": "C'est le plus beau pays du monde.",
+    "vi": "Đó là đất nước đẹp nhất thế giới."
+   },
+   {
+    "fr": "Tout le monde est content.",
+    "vi": "Mọi người đều vui."
+   }
+  ]
+ },
+ {
+  "id": "an",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "năm (tuổi)",
+  "sentences": [
+   {
+    "fr": "J'ai vingt ans.",
+    "vi": "Tôi hai mươi tuổi."
+   },
+   {
+    "fr": "Elle a dix ans.",
+    "vi": "Cô bé mười tuổi."
+   },
+   {
+    "fr": "Bonne année, mon ami !",
+    "vi": "Chúc mừng năm mới, bạn của tôi!"
+   }
+  ]
+ },
+ {
+  "id": "main",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bàn tay",
+  "sentences": [
+   {
+    "fr": "Lave-toi les mains.",
+    "vi": "Rửa tay đi."
+   },
+   {
+    "fr": "Donne-moi la main.",
+    "vi": "Đưa tay cho tôi."
+   },
+   {
+    "fr": "Il a un livre à la main.",
+    "vi": "Anh ấy cầm một quyển sách trên tay."
+   }
+  ]
+ },
+ {
+  "id": "comprendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hiểu",
+  "sentences": [
+   {
+    "fr": "Je ne comprends pas.",
+    "vi": "Tôi không hiểu."
+   },
+   {
+    "fr": "Tu comprends le français ?",
+    "vi": "Bạn hiểu tiếng Pháp không?"
+   },
+   {
+    "fr": "Elle comprend vite.",
+    "vi": "Cô ấy hiểu nhanh."
+   }
+  ]
+ },
+ {
+  "id": "sortir",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ra ngoài, đi ra",
+  "sentences": [
+   {
+    "fr": "Je sors ce soir.",
+    "vi": "Tối nay tôi đi ra ngoài."
+   },
+   {
+    "fr": "Le chat sort dans le jardin.",
+    "vi": "Con mèo ra vườn."
+   },
+   {
+    "fr": "On sort dîner ?",
+    "vi": "Mình đi ăn tối nhé?"
+   }
+  ]
+ },
+ {
+  "id": "arrêter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dừng, ngừng; bắt giữ",
+  "sentences": [
+   {
+    "fr": "Arrête de crier !",
+    "vi": "Đừng la hét nữa!"
+   },
+   {
+    "fr": "Le bus s'arrête ici.",
+    "vi": "Xe buýt dừng ở đây."
+   },
+   {
+    "fr": "J'arrête de fumer.",
+    "vi": "Tôi bỏ hút thuốc."
+   }
+  ]
+ },
+ {
+  "id": "chez",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "ở nhà, tại chỗ (ai đó)",
+  "sentences": [
+   {
+    "fr": "Je vais chez le médecin.",
+    "vi": "Tôi đi khám bác sĩ."
+   },
+   {
+    "fr": "On mange chez moi.",
+    "vi": "Mình ăn ở nhà tôi."
+   },
+   {
+    "fr": "Elle est chez ses parents.",
+    "vi": "Cô ấy ở nhà bố mẹ."
+   }
+  ]
+ },
+ {
+  "id": "quelque",
+  "pos": [
+   "hạn định từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "vài, một vài",
+  "sentences": [
+   {
+    "fr": "J'ai quelque chose pour toi.",
+    "vi": "Tôi có cái gì đó cho bạn."
+   },
+   {
+    "fr": "Il habite quelque part ici.",
+    "vi": "Anh ấy sống đâu đó gần đây."
+   },
+   {
+    "fr": "Reste encore quelque temps.",
+    "vi": "Ở lại thêm một thời gian nữa."
+   }
+  ]
+ },
+ {
+  "id": "fille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cô gái; con gái",
+  "sentences": [
+   {
+    "fr": "Cette fille est ma sœur.",
+    "vi": "Cô gái này là em gái tôi."
+   },
+   {
+    "fr": "Ma fille a cinq ans.",
+    "vi": "Con gái tôi năm tuổi."
+   },
+   {
+    "fr": "La petite fille joue dehors.",
+    "vi": "Cô bé chơi ở ngoài."
+   }
+  ]
+ },
+ {
+  "id": "oeil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mắt",
+  "sentences": [
+   {
+    "fr": "Il a un œil bleu.",
+    "vi": "Anh ấy có một mắt màu xanh."
+   },
+   {
+    "fr": "J'ai mal à l'œil.",
+    "vi": "Tôi bị đau mắt."
+   },
+   {
+    "fr": "Ferme les yeux.",
+    "vi": "Nhắm mắt lại."
+   }
+  ]
+ },
+ {
+  "id": "enfant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đứa trẻ, con",
+  "sentences": [
+   {
+    "fr": "L'enfant dort déjà.",
+    "vi": "Đứa trẻ đã ngủ rồi."
+   },
+   {
+    "fr": "Ils ont trois enfants.",
+    "vi": "Họ có ba đứa con."
+   },
+   {
+    "fr": "L'enfant joue dans le parc.",
+    "vi": "Đứa trẻ chơi trong công viên."
+   }
+  ]
+ },
+ {
+  "id": "sûr",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "chắc chắn",
+  "sentences": [
+   {
+    "fr": "Tu es sûr ?",
+    "vi": "Bạn chắc chứ?"
+   },
+   {
+    "fr": "Je suis sûr de moi.",
+    "vi": "Tôi chắc chắn về mình."
+   },
+   {
+    "fr": "Bien sûr !",
+    "vi": "Chắc chắn rồi!"
+   }
+  ]
+ },
+ {
+  "id": "entendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nghe",
+  "sentences": [
+   {
+    "fr": "Tu entends ce bruit ?",
+    "vi": "Bạn nghe thấy tiếng động đó không?"
+   },
+   {
+    "fr": "Je n'entends rien.",
+    "vi": "Tôi không nghe thấy gì cả."
+   },
+   {
+    "fr": "On entend la musique.",
+    "vi": "Mình nghe thấy tiếng nhạc."
+   }
+  ]
+ },
+ {
+  "id": "mère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mẹ",
+  "sentences": [
+   {
+    "fr": "Ma mère fait la cuisine.",
+    "vi": "Mẹ tôi nấu ăn."
+   },
+   {
+    "fr": "Sa mère est très gentille.",
+    "vi": "Mẹ anh ấy rất tốt bụng."
+   },
+   {
+    "fr": "La mère embrasse son enfant.",
+    "vi": "Người mẹ hôn con mình."
+   }
+  ]
+ },
+ {
+  "id": "mourir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chết",
+  "sentences": [
+   {
+    "fr": "Les fleurs meurent en hiver.",
+    "vi": "Hoa chết vào mùa đông."
+   },
+   {
+    "fr": "Je meurs de faim !",
+    "vi": "Tôi đói muốn chết!"
+   },
+   {
+    "fr": "Son chien est mort.",
+    "vi": "Con chó của anh ấy đã chết."
+   }
+  ]
+ },
+ {
+  "id": "dieu",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thần, Chúa, thượng đế",
+  "sentences": [
+   {
+    "fr": "Elle croit en Dieu.",
+    "vi": "Cô ấy tin vào Chúa."
+   },
+   {
+    "fr": "Mon Dieu, quelle surprise !",
+    "vi": "Ôi Chúa ơi, thật bất ngờ!"
+   },
+   {
+    "fr": "Il prie Dieu chaque soir.",
+    "vi": "Anh ấy cầu nguyện Chúa mỗi tối."
+   }
+  ]
+ },
+ {
+  "id": "vraiment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thật sự, thực sự",
+  "sentences": [
+   {
+    "fr": "C'est vraiment bon.",
+    "vi": "Cái này thật sự ngon."
+   },
+   {
+    "fr": "Tu es vraiment gentil.",
+    "vi": "Bạn thật sự tốt bụng."
+   },
+   {
+    "fr": "Je suis vraiment fatigué.",
+    "vi": "Tôi thực sự mệt."
+   }
+  ]
+ },
+ {
+  "id": "déjà",
+  "pos": [
+   "phó từ",
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "đã, rồi",
+  "sentences": [
+   {
+    "fr": "J'ai déjà mangé.",
+    "vi": "Tôi đã ăn rồi."
+   },
+   {
+    "fr": "Il est déjà parti.",
+    "vi": "Anh ấy đã đi rồi."
+   },
+   {
+    "fr": "Tu es déjà là ?",
+    "vi": "Bạn đã đến rồi à?"
+   }
+  ]
+ },
+ {
+  "id": "après",
+  "pos": [
+   "giới từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "sau, sau khi",
+  "sentences": [
+   {
+    "fr": "On sort après le repas.",
+    "vi": "Mình đi ra ngoài sau bữa ăn."
+   },
+   {
+    "fr": "Je t'appelle après.",
+    "vi": "Tôi gọi cho bạn sau."
+   },
+   {
+    "fr": "Après toi !",
+    "vi": "Mời bạn trước!"
+   }
+  ]
+ },
+ {
+  "id": "vrai",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thật, đúng",
+  "sentences": [
+   {
+    "fr": "C'est une vraie histoire.",
+    "vi": "Đó là một câu chuyện có thật."
+   },
+   {
+    "fr": "C'est vrai ?",
+    "vi": "Thật không?"
+   },
+   {
+    "fr": "Il dit toujours la vérité.",
+    "vi": "Anh ấy luôn nói sự thật."
+   }
+  ]
+ },
+ {
+  "id": "tête",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đầu",
+  "sentences": [
+   {
+    "fr": "J'ai mal à la tête.",
+    "vi": "Tôi bị đau đầu."
+   },
+   {
+    "fr": "Il tourne la tête.",
+    "vi": "Anh ấy quay đầu lại."
+   },
+   {
+    "fr": "Mets un chapeau sur ta tête.",
+    "vi": "Đội mũ lên đầu đi."
+   }
+  ]
+ },
+ {
+  "id": "beau",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đẹp",
+  "sentences": [
+   {
+    "fr": "Quel beau jardin !",
+    "vi": "Khu vườn đẹp quá!"
+   },
+   {
+    "fr": "Il fait beau aujourd'hui.",
+    "vi": "Hôm nay trời đẹp."
+   },
+   {
+    "fr": "C'est un beau cadeau.",
+    "vi": "Đó là một món quà đẹp."
+   }
+  ]
+ },
+ {
+  "id": "comment",
+  "pos": [
+   "phó từ",
+   "liên từ",
+   "tượng thanh",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "như thế nào, làm sao",
+  "sentences": [
+   {
+    "fr": "Comment vas-tu ?",
+    "vi": "Bạn khỏe không?"
+   },
+   {
+    "fr": "Comment tu t'appelles ?",
+    "vi": "Bạn tên là gì?"
+   },
+   {
+    "fr": "Comment ça marche ?",
+    "vi": "Cái này hoạt động thế nào?"
+   }
+  ]
+ },
+ {
+  "id": "nuit",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đêm, ban đêm",
+  "sentences": [
+   {
+    "fr": "Bonne nuit !",
+    "vi": "Chúc ngủ ngon!"
+   },
+   {
+    "fr": "Il travaille la nuit.",
+    "vi": "Anh ấy làm việc ban đêm."
+   },
+   {
+    "fr": "La nuit, tout est calme.",
+    "vi": "Ban đêm, mọi thứ đều yên tĩnh."
+   }
+  ]
+ },
+ {
+  "id": "tuer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giết",
+  "sentences": [
+   {
+    "fr": "Le chat tue les souris.",
+    "vi": "Con mèo giết chuột."
+   },
+   {
+    "fr": "Il ne faut pas tuer les insectes.",
+    "vi": "Không nên giết côn trùng."
+   },
+   {
+    "fr": "Ce bruit me tue !",
+    "vi": "Tiếng ồn này làm tôi phát điên!"
+   }
+  ]
+ },
+ {
+  "id": "coup",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cú đánh; lần",
+  "sentences": [
+   {
+    "fr": "Il donne un coup de pied.",
+    "vi": "Anh ấy đá một cú."
+   },
+   {
+    "fr": "D'un coup, il est parti.",
+    "vi": "Bỗng nhiên, anh ấy đi mất."
+   },
+   {
+    "fr": "Bois un coup avec nous.",
+    "vi": "Uống một ly với bọn tôi đi."
+   }
+  ]
+ },
+ {
+  "id": "oh",
+  "pos": [
+   "tượng thanh",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ồ, ôi (thán từ)",
+  "sentences": [
+   {
+    "fr": "Oh, quelle surprise !",
+    "vi": "Ồ, thật bất ngờ!"
+   },
+   {
+    "fr": "Oh non, il pleut.",
+    "vi": "Ôi không, trời mưa rồi."
+   },
+   {
+    "fr": "Oh, c'est toi !",
+    "vi": "Ồ, là bạn à!"
+   }
+  ]
+ },
+ {
+  "id": "sentir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cảm thấy; ngửi",
+  "sentences": [
+   {
+    "fr": "Je me sens bien.",
+    "vi": "Tôi cảm thấy khỏe."
+   },
+   {
+    "fr": "Ça sent bon !",
+    "vi": "Mùi thơm quá!"
+   },
+   {
+    "fr": "Sens cette fleur.",
+    "vi": "Ngửi bông hoa này đi."
+   }
+  ]
+ },
+ {
+  "id": "chercher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tìm, tìm kiếm",
+  "sentences": [
+   {
+    "fr": "Je cherche mes clés.",
+    "vi": "Tôi tìm chìa khóa."
+   },
+   {
+    "fr": "Il cherche du travail.",
+    "vi": "Anh ấy tìm việc làm."
+   },
+   {
+    "fr": "Va chercher le pain.",
+    "vi": "Đi mua bánh mì đi."
+   }
+  ]
+ },
+ {
+  "id": "sous",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "dưới, ở dưới",
+  "sentences": [
+   {
+    "fr": "Le chat est sous la table.",
+    "vi": "Con mèo ở dưới bàn."
+   },
+   {
+    "fr": "On marche sous la pluie.",
+    "vi": "Mình đi bộ dưới mưa."
+   },
+   {
+    "fr": "Mets tes chaussures sous le lit.",
+    "vi": "Để giày dưới gầm giường."
+   }
+  ]
+ },
+ {
+  "id": "tenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giữ, cầm",
+  "sentences": [
+   {
+    "fr": "Tiens ma main.",
+    "vi": "Cầm tay tôi này."
+   },
+   {
+    "fr": "Il tient un verre.",
+    "vi": "Anh ấy cầm một cái ly."
+   },
+   {
+    "fr": "Tiens, c'est pour toi.",
+    "vi": "Đây, cái này cho bạn."
+   }
+  ]
+ },
+ {
+  "id": "maison",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhà, ngôi nhà",
+  "sentences": [
+   {
+    "fr": "Je rentre à la maison.",
+    "vi": "Tôi về nhà."
+   },
+   {
+    "fr": "Leur maison est grande.",
+    "vi": "Nhà của họ rộng."
+   },
+   {
+    "fr": "La maison est près du parc.",
+    "vi": "Ngôi nhà ở gần công viên."
+   }
+  ]
+ },
+ {
+  "id": "cela",
+  "pos": [
+   "đại từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cái đó, điều đó",
+  "sentences": [
+   {
+    "fr": "Cela ne fait rien.",
+    "vi": "Điều đó không sao cả."
+   },
+   {
+    "fr": "Cela me plaît beaucoup.",
+    "vi": "Điều đó làm tôi rất thích."
+   },
+   {
+    "fr": "Comment cela ?",
+    "vi": "Như thế nào cơ?"
+   }
+  ]
+ },
+ {
+  "id": "ami",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "bạn, bạn bè",
+  "sentences": [
+   {
+    "fr": "C'est mon meilleur ami.",
+    "vi": "Đó là người bạn thân nhất của tôi."
+   },
+   {
+    "fr": "J'ai beaucoup d'amis.",
+    "vi": "Tôi có nhiều bạn."
+   },
+   {
+    "fr": "Mon ami habite à Paris.",
+    "vi": "Bạn tôi sống ở Paris."
+   }
+  ]
+ },
+ {
+  "id": "merci",
+  "pos": [
+   "tượng thanh",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cảm ơn",
+  "sentences": [
+   {
+    "fr": "Merci beaucoup !",
+    "vi": "Cảm ơn nhiều!"
+   },
+   {
+    "fr": "Merci pour ton aide.",
+    "vi": "Cảm ơn vì đã giúp đỡ."
+   },
+   {
+    "fr": "Non merci, ça va.",
+    "vi": "Không, cảm ơn, tôi ổn."
+   }
+  ]
+ },
+ {
+  "id": "moins",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ít hơn; kém, trừ",
+  "sentences": [
+   {
+    "fr": "C'est moins cher ici.",
+    "vi": "Ở đây rẻ hơn."
+   },
+   {
+    "fr": "Il est huit heures moins dix.",
+    "vi": "Bây giờ là tám giờ kém mười."
+   },
+   {
+    "fr": "Mange moins de sucre.",
+    "vi": "Ăn ít đường hơn đi."
+   }
+  ]
+ },
+ {
+  "id": "monsieur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ông, ngài",
+  "sentences": [
+   {
+    "fr": "Bonjour, monsieur !",
+    "vi": "Chào ông!"
+   },
+   {
+    "fr": "Monsieur, votre café.",
+    "vi": "Thưa ông, cà phê của ông đây."
+   },
+   {
+    "fr": "Ce monsieur est mon professeur.",
+    "vi": "Ông này là giáo viên của tôi."
+   }
+  ]
+ },
+ {
+  "id": "soir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "buổi tối",
+  "sentences": [
+   {
+    "fr": "À ce soir !",
+    "vi": "Hẹn tối nay!"
+   },
+   {
+    "fr": "Le soir, je lis un livre.",
+    "vi": "Buổi tối, tôi đọc sách."
+   },
+   {
+    "fr": "Bonsoir, comment ça va ?",
+    "vi": "Chào buổi tối, bạn khỏe không?"
+   }
+  ]
+ },
+ {
+  "id": "besoin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhu cầu, sự cần",
+  "sentences": [
+   {
+    "fr": "J'ai besoin d'aide.",
+    "vi": "Tôi cần giúp đỡ."
+   },
+   {
+    "fr": "Tu as besoin de quoi ?",
+    "vi": "Bạn cần gì?"
+   },
+   {
+    "fr": "Elle a besoin de repos.",
+    "vi": "Cô ấy cần nghỉ ngơi."
+   }
+  ]
+ },
+ {
+  "id": "voilà",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "đây rồi, kia rồi",
+  "sentences": [
+   {
+    "fr": "Voilà ton café !",
+    "vi": "Cà phê của bạn đây!"
+   },
+   {
+    "fr": "Voilà ma maison.",
+    "vi": "Nhà tôi kia rồi."
+   },
+   {
+    "fr": "Voilà, c'est fini.",
+    "vi": "Đấy, xong rồi."
+   }
+  ]
+ },
+ {
+  "id": "air",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "không khí; vẻ, dáng vẻ",
+  "sentences": [
+   {
+    "fr": "L'air est frais ce matin.",
+    "vi": "Không khí sáng nay mát mẻ."
+   },
+   {
+    "fr": "Il a l'air fatigué.",
+    "vi": "Trông anh ấy có vẻ mệt."
+   },
+   {
+    "fr": "On prend l'air dehors.",
+    "vi": "Mình ra ngoài hít thở không khí."
+   }
+  ]
+ },
+ {
+  "id": "revenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trở lại, quay lại",
+  "sentences": [
+   {
+    "fr": "Je reviens dans une heure.",
+    "vi": "Một giờ nữa tôi quay lại."
+   },
+   {
+    "fr": "Reviens vite !",
+    "vi": "Quay lại nhanh nhé!"
+   },
+   {
+    "fr": "Elle revient de l'école.",
+    "vi": "Cô ấy đi học về."
+   }
+  ]
+ },
+ {
+  "id": "beaucoup",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "nhiều, rất nhiều",
+  "sentences": [
+   {
+    "fr": "Je t'aime beaucoup.",
+    "vi": "Tôi rất quý bạn."
+   },
+   {
+    "fr": "Il y a beaucoup de gens.",
+    "vi": "Có rất nhiều người."
+   },
+   {
+    "fr": "Merci beaucoup !",
+    "vi": "Cảm ơn rất nhiều!"
+   }
+  ]
+ },
+ {
+  "id": "entre",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "giữa, ở giữa",
+  "sentences": [
+   {
+    "fr": "Le chat est entre les deux chaises.",
+    "vi": "Con mèo ở giữa hai cái ghế."
+   },
+   {
+    "fr": "C'est un secret entre nous.",
+    "vi": "Đây là bí mật giữa chúng ta."
+   },
+   {
+    "fr": "Il arrive entre midi et deux heures.",
+    "vi": "Anh ấy đến khoảng giữa trưa và hai giờ."
+   }
+  ]
+ },
+ {
+  "id": "mieux",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tốt hơn, hơn",
+  "sentences": [
+   {
+    "fr": "Ça va mieux aujourd'hui.",
+    "vi": "Hôm nay tôi khỏe hơn."
+   },
+   {
+    "fr": "Elle chante mieux que moi.",
+    "vi": "Cô ấy hát hay hơn tôi."
+   },
+   {
+    "fr": "C'est mieux comme ça.",
+    "vi": "Như thế này thì tốt hơn."
+   }
+  ]
+ },
+ {
+  "id": "avant",
+  "pos": [
+   "giới từ",
+   "phó từ",
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trước, trước khi",
+  "sentences": [
+   {
+    "fr": "Lave-toi les mains avant de manger.",
+    "vi": "Rửa tay trước khi ăn."
+   },
+   {
+    "fr": "J'arrive avant toi.",
+    "vi": "Tôi đến trước bạn."
+   },
+   {
+    "fr": "On se voit avant midi.",
+    "vi": "Mình gặp nhau trước trưa."
+   }
+  ]
+ },
+ {
+  "id": "nos",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "của chúng tôi (số nhiều)",
+  "sentences": [
+   {
+    "fr": "Nos enfants jouent ensemble.",
+    "vi": "Các con của chúng tôi chơi cùng nhau."
+   },
+   {
+    "fr": "Voici nos amis.",
+    "vi": "Đây là bạn bè của chúng tôi."
+   },
+   {
+    "fr": "Nos parents sont là.",
+    "vi": "Bố mẹ của chúng tôi ở đây."
+   }
+  ]
+ },
+ {
+  "id": "donc",
+  "pos": [
+   "liên từ"
+  ],
+  "gender": null,
+  "vi": "vậy, do đó, cho nên",
+  "sentences": [
+   {
+    "fr": "Il pleut, donc je reste.",
+    "vi": "Trời mưa, cho nên tôi ở lại."
+   },
+   {
+    "fr": "Tu es fatigué, va donc dormir.",
+    "vi": "Bạn mệt, vậy đi ngủ đi."
+   },
+   {
+    "fr": "Je pense, donc je suis.",
+    "vi": "Tôi tư duy, vậy nên tôi tồn tại."
+   }
+  ]
+ },
+ {
+  "id": "moment",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khoảnh khắc, lúc",
+  "sentences": [
+   {
+    "fr": "Attends un moment.",
+    "vi": "Đợi một lát."
+   },
+   {
+    "fr": "C'est un beau moment.",
+    "vi": "Đó là một khoảnh khắc đẹp."
+   },
+   {
+    "fr": "En ce moment, je travaille.",
+    "vi": "Lúc này, tôi đang làm việc."
+   }
+  ]
+ },
+ {
+  "id": "essayer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thử, cố gắng",
+  "sentences": [
+   {
+    "fr": "J'essaie ce gâteau.",
+    "vi": "Tôi thử món bánh này."
+   },
+   {
+    "fr": "Essaie encore !",
+    "vi": "Thử lại đi!"
+   },
+   {
+    "fr": "Elle essaie une robe.",
+    "vi": "Cô ấy thử một chiếc váy."
+   }
+  ]
+ },
+ {
+  "id": "gens",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "người, mọi người",
+  "sentences": [
+   {
+    "fr": "Les gens sont gentils ici.",
+    "vi": "Người ở đây tử tế."
+   },
+   {
+    "fr": "Il y a trop de gens.",
+    "vi": "Có quá nhiều người."
+   },
+   {
+    "fr": "Ces gens sont mes voisins.",
+    "vi": "Những người này là hàng xóm của tôi."
+   }
+  ]
+ },
+ {
+  "id": "vers",
+  "pos": [
+   "giới từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "về phía; khoảng; câu thơ",
+  "sentences": [
+   {
+    "fr": "Je marche vers la maison.",
+    "vi": "Tôi đi bộ về phía nhà."
+   },
+   {
+    "fr": "On arrive vers midi.",
+    "vi": "Mình đến khoảng trưa."
+   },
+   {
+    "fr": "Il regarde vers la mer.",
+    "vi": "Anh ấy nhìn về phía biển."
+   }
+  ]
+ },
+ {
+  "id": "dont",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "mà (của cái đó); trong đó",
+  "sentences": [
+   {
+    "fr": "C'est le livre dont je parle.",
+    "vi": "Đây là quyển sách mà tôi nói đến."
+   },
+   {
+    "fr": "Voici l'ami dont j'ai besoin.",
+    "vi": "Đây là người bạn mà tôi cần."
+   },
+   {
+    "fr": "La maison dont il rêve est grande.",
+    "vi": "Ngôi nhà mà anh ấy mơ ước thì rộng lớn."
+   }
+  ]
+ },
+ {
+  "id": "accord",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự đồng ý, thỏa thuận",
+  "sentences": [
+   {
+    "fr": "D'accord, on y va.",
+    "vi": "Được, mình đi thôi."
+   },
+   {
+    "fr": "Je suis d'accord avec toi.",
+    "vi": "Tôi đồng ý với bạn."
+   },
+   {
+    "fr": "Ils sont d'accord.",
+    "vi": "Họ đồng ý."
+   }
+  ]
+ },
+ {
+  "id": "depuis",
+  "pos": [
+   "giới từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "từ, kể từ",
+  "sentences": [
+   {
+    "fr": "J'habite ici depuis deux ans.",
+    "vi": "Tôi sống ở đây từ hai năm nay."
+   },
+   {
+    "fr": "Il dort depuis midi.",
+    "vi": "Anh ấy ngủ từ trưa."
+   },
+   {
+    "fr": "Elle attend depuis longtemps.",
+    "vi": "Cô ấy đợi từ lâu rồi."
+   }
+  ]
+ },
+ {
+  "id": "finir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kết thúc, hoàn thành",
+  "sentences": [
+   {
+    "fr": "Je finis mon travail.",
+    "vi": "Tôi làm xong công việc."
+   },
+   {
+    "fr": "Le film finit tard.",
+    "vi": "Bộ phim kết thúc muộn."
+   },
+   {
+    "fr": "Finis ton repas.",
+    "vi": "Ăn hết bữa của bạn đi."
+   }
+  ]
+ },
+ {
+  "id": "quel",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "nào, gì",
+  "sentences": [
+   {
+    "fr": "Quel âge as-tu ?",
+    "vi": "Bạn bao nhiêu tuổi?"
+   },
+   {
+    "fr": "Quel jour sommes-nous ?",
+    "vi": "Hôm nay là thứ mấy?"
+   },
+   {
+    "fr": "Quel beau temps !",
+    "vi": "Thời tiết đẹp quá!"
+   }
+  ]
+ },
+ {
+  "id": "leurs",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "của họ (số nhiều)",
+  "sentences": [
+   {
+    "fr": "Leurs enfants sont sages.",
+    "vi": "Các con của họ ngoan."
+   },
+   {
+    "fr": "Voici leurs valises.",
+    "vi": "Đây là những vali của họ."
+   },
+   {
+    "fr": "Ils aiment leurs voisins.",
+    "vi": "Họ quý những người hàng xóm của họ."
+   }
+  ]
+ },
+ {
+  "id": "nom",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tên; danh từ",
+  "sentences": [
+   {
+    "fr": "Quel est ton nom ?",
+    "vi": "Tên của bạn là gì?"
+   },
+   {
+    "fr": "J'oublie souvent les noms.",
+    "vi": "Tôi hay quên tên."
+   },
+   {
+    "fr": "Écris ton nom ici.",
+    "vi": "Viết tên của bạn ở đây."
+   }
+  ]
+ },
+ {
+  "id": "cet",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "này, đó (giống đực, trước nguyên âm)",
+  "sentences": [
+   {
+    "fr": "Cet homme est mon père.",
+    "vi": "Người đàn ông này là bố tôi."
+   },
+   {
+    "fr": "J'aime cet endroit.",
+    "vi": "Tôi thích nơi này."
+   },
+   {
+    "fr": "Cet enfant est très gentil.",
+    "vi": "Đứa trẻ này rất ngoan."
+   }
+  ]
+ },
+ {
+  "id": "quelques",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "vài, một vài",
+  "sentences": [
+   {
+    "fr": "J'achète quelques fruits.",
+    "vi": "Tôi mua vài loại trái cây."
+   },
+   {
+    "fr": "Il reste quelques minutes.",
+    "vi": "Còn lại vài phút."
+   },
+   {
+    "fr": "J'ai quelques amis à Paris.",
+    "vi": "Tôi có vài người bạn ở Paris."
+   }
+  ]
+ },
+ {
+  "id": "premier",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đầu tiên, thứ nhất",
+  "sentences": [
+   {
+    "fr": "C'est mon premier jour.",
+    "vi": "Đây là ngày đầu tiên của tôi."
+   },
+   {
+    "fr": "Il habite au premier étage.",
+    "vi": "Anh ấy sống ở tầng một."
+   },
+   {
+    "fr": "Elle est la première de la classe.",
+    "vi": "Cô ấy đứng đầu lớp."
+   }
+  ]
+ },
+ {
+  "id": "elles",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "họ, chúng (giống cái)",
+  "sentences": [
+   {
+    "fr": "Elles sont mes amies.",
+    "vi": "Họ là bạn của tôi."
+   },
+   {
+    "fr": "Elles jouent dans le jardin.",
+    "vi": "Họ chơi trong vườn."
+   },
+   {
+    "fr": "Elles arrivent demain.",
+    "vi": "Họ đến vào ngày mai."
+   }
+  ]
+ },
+ {
+  "id": "trois",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "ba",
+  "sentences": [
+   {
+    "fr": "J'ai trois frères.",
+    "vi": "Tôi có ba anh em trai."
+   },
+   {
+    "fr": "Il est trois heures.",
+    "vi": "Bây giờ là ba giờ."
+   },
+   {
+    "fr": "Donne-moi trois pommes.",
+    "vi": "Cho tôi ba quả táo."
+   }
+  ]
+ },
+ {
+  "id": "rendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trả lại; làm cho",
+  "sentences": [
+   {
+    "fr": "Je te rends ton livre.",
+    "vi": "Tôi trả lại quyển sách cho bạn."
+   },
+   {
+    "fr": "Ça me rend heureux.",
+    "vi": "Điều đó làm tôi hạnh phúc."
+   },
+   {
+    "fr": "Rends-moi mon stylo.",
+    "vi": "Trả lại cây bút cho tôi."
+   }
+  ]
+ },
+ {
+  "id": "ni",
+  "pos": [
+   "liên từ"
+  ],
+  "gender": null,
+  "vi": "cũng không (chẳng... cũng chẳng)",
+  "sentences": [
+   {
+    "fr": "Je n'aime ni le thé ni le café.",
+    "vi": "Tôi không thích cả trà lẫn cà phê."
+   },
+   {
+    "fr": "Il n'est ni grand ni petit.",
+    "vi": "Anh ấy không cao cũng không thấp."
+   },
+   {
+    "fr": "Ni toi ni moi.",
+    "vi": "Cả bạn lẫn tôi đều không."
+   }
+  ]
+ },
+ {
+  "id": "vivre",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "sống",
+  "sentences": [
+   {
+    "fr": "Je vis à Paris.",
+    "vi": "Tôi sống ở Paris."
+   },
+   {
+    "fr": "Ils vivent ensemble.",
+    "vi": "Họ sống cùng nhau."
+   },
+   {
+    "fr": "Elle veut vivre à la campagne.",
+    "vi": "Cô ấy muốn sống ở nông thôn."
+   }
+  ]
+ },
+ {
+  "id": "puis",
+  "pos": [
+   "liên từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "rồi, sau đó",
+  "sentences": [
+   {
+    "fr": "Je mange, puis je dors.",
+    "vi": "Tôi ăn, rồi tôi ngủ."
+   },
+   {
+    "fr": "On visite le musée, puis on rentre.",
+    "vi": "Mình thăm bảo tàng, rồi về nhà."
+   },
+   {
+    "fr": "D'abord le travail, puis le repos.",
+    "vi": "Trước hết là làm việc, sau đó nghỉ ngơi."
+   }
+  ]
+ },
+ {
+  "id": "perdre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mất; thua",
+  "sentences": [
+   {
+    "fr": "Je perds souvent mes clés.",
+    "vi": "Tôi hay làm mất chìa khóa."
+   },
+   {
+    "fr": "Notre équipe perd le match.",
+    "vi": "Đội của chúng tôi thua trận."
+   },
+   {
+    "fr": "Ne perds pas ton temps.",
+    "vi": "Đừng lãng phí thời gian của bạn."
+   }
+  ]
+ },
+ {
+  "id": "jouer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chơi; diễn",
+  "sentences": [
+   {
+    "fr": "Les enfants jouent dehors.",
+    "vi": "Bọn trẻ chơi ở ngoài."
+   },
+   {
+    "fr": "Je joue au foot.",
+    "vi": "Tôi chơi bóng đá."
+   },
+   {
+    "fr": "Elle joue du piano.",
+    "vi": "Cô ấy chơi đàn piano."
+   }
+  ]
+ },
+ {
+  "id": "aider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giúp, giúp đỡ",
+  "sentences": [
+   {
+    "fr": "Je peux t'aider ?",
+    "vi": "Tôi giúp bạn được không?"
+   },
+   {
+    "fr": "Il aide sa mère.",
+    "vi": "Anh ấy giúp mẹ."
+   },
+   {
+    "fr": "Aide-moi, s'il te plaît.",
+    "vi": "Giúp tôi với, làm ơn."
+   }
+  ]
+ }
+]

@@ -1,0 +1,26 @@
+{
+ "endroit": {
+  "sentences": [
+   { "fr": "C'est un bel endroit.", "vi": "Đây là một nơi đẹp." },
+   { "fr": "Je connais un bon endroit pour manger.", "vi": "Tôi biết một chỗ ăn ngon." },
+   { "fr": "Remets le livre au bon endroit.", "vi": "Để quyển sách lại đúng chỗ." }
+  ],
+  "reason": "Câu 3 dư thừa: 'à sa place, au bon endroit' trùng nghĩa, gượng. Sửa lại gọn, tự nhiên."
+ },
+ "compte": {
+  "sentences": [
+   { "fr": "J'ouvre un compte à la banque.", "vi": "Tôi mở một tài khoản ở ngân hàng." },
+   { "fr": "Mon compte est vide.", "vi": "Tài khoản của tôi trống rỗng." },
+   { "fr": "Je mets de l'argent sur mon compte.", "vi": "Tôi bỏ tiền vào tài khoản." }
+  ],
+  "reason": "Câu 3 tối nghĩa: trộn ngữ cảnh trả tiền nhà hàng với 'garde la monnaie sur mon compte' vô lý. Thay bằng câu đúng nghĩa tài khoản."
+ },
+ "sauver": {
+  "sentences": [
+   { "fr": "Le docteur m'a sauvé la vie.", "vi": "Bác sĩ đã cứu mạng tôi." },
+   { "fr": "Les pompiers sauvent le chat.", "vi": "Lính cứu hỏa cứu con mèo." },
+   { "fr": "Sauve-toi, il est tard !", "vi": "Chạy đi, muộn rồi!" }
+  ],
+  "reason": "Câu 1 dịch cứng ('a sauvé ma vie'); thành ngữ đúng là 'sauver la vie à qqn' → 'm'a sauvé la vie'."
+ }
+}
