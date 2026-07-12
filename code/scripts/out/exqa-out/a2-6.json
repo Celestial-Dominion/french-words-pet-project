@@ -1,0 +1,42 @@
+{
+ "lors": {
+  "sentences": [
+   { "fr": "Lors de la fête, nous avons beaucoup dansé.", "vi": "Trong bữa tiệc, chúng tôi đã nhảy rất nhiều." },
+   { "fr": "J'ai rencontré Marie lors du voyage.", "vi": "Tôi đã gặp Marie trong chuyến đi." },
+   { "fr": "Lors de la réunion, il a posé une question.", "vi": "Trong buổi họp, anh ấy đã đặt một câu hỏi." }
+  ],
+  "reason": "Câu 1 dịch vi gượng ('Vào lúc bữa tiệc' → 'Trong bữa tiệc')."
+ },
+ "pendre": {
+  "sentences": [
+   { "fr": "Je vais pendre le manteau ici.", "vi": "Tôi sẽ treo cái áo khoác ở đây." },
+   { "fr": "La lampe pend au plafond.", "vi": "Cây đèn treo trên trần nhà." },
+   { "fr": "Il faut pendre le linge dehors.", "vi": "Cần phải phơi quần áo ở ngoài." }
+  ],
+  "reason": "Câu 2 'pendre des photos au mur' gượng; ảnh treo tường phải dùng 'accrocher'."
+ },
+ "cents": {
+  "sentences": [
+   { "fr": "Ce livre coûte deux cents euros.", "vi": "Cuốn sách này giá hai trăm euro." },
+   { "fr": "Il y a trois cents personnes dans la salle.", "vi": "Có ba trăm người trong phòng." },
+   { "fr": "Elle a couru cinq cents mètres.", "vi": "Cô ấy đã chạy năm trăm mét." }
+  ],
+  "reason": "Câu 3 'plusieurs cents mètres' sai ngữ pháp (phải dùng số đếm: cinq cents)."
+ },
+ "prétendre": {
+  "sentences": [
+   { "fr": "Il prétend être malade pour rester à la maison.", "vi": "Anh ấy khẳng định mình bị ốm để được ở nhà." },
+   { "fr": "Elle prétend qu'elle ne savait rien.", "vi": "Cô ấy khẳng định rằng cô không biết gì cả." },
+   { "fr": "Tu ne peux pas prétendre avoir raison tout le temps.", "vi": "Bạn không thể cho rằng mình luôn đúng." }
+  ],
+  "reason": "Câu 1 dịch sai: prétendre = khẳng định/cho rằng, không phải 'giả vờ'."
+ },
+ "haïr": {
+  "sentences": [
+   { "fr": "Je déteste la violence, je la hais.", "vi": "Tôi ghét bạo lực, tôi căm ghét nó." },
+   { "fr": "Il ne faut pas haïr les gens.", "vi": "Không nên căm ghét người khác." },
+   { "fr": "Elle hait le froid de l'hiver.", "vi": "Cô ấy ghét cái lạnh của mùa đông." }
+  ],
+  "reason": "Câu 3 chia sai 'haït' → 'hait' (hiện tại số ít không có dấu tréma)."
+ }
+}

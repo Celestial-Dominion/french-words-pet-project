@@ -1,0 +1,18 @@
+{
+ "stupide": {
+  "sentences": [
+   { "fr": "C'est une erreur stupide, mais ce n'est pas grave.", "vi": "Đó là một lỗi ngớ ngẩn, nhưng không sao cả." },
+   { "fr": "Ne dis pas des choses aussi stupides.", "vi": "Đừng nói những điều ngu ngốc như vậy." },
+   { "fr": "Je me sens stupide d'avoir oublié mes clés.", "vi": "Tôi thấy mình thật ngớ ngẩn vì quên chìa khóa." }
+  ],
+  "reason": "Câu 3 lệch chủ ngữ: 'je' quên chìa khóa của chính mình thì phải là 'mes clés', không phải 'ses clés' (của người khác)."
+ },
+ "chasse": {
+  "sentences": [
+   { "fr": "Mon grand-père part à la chasse le week-end.", "vi": "Ông tôi đi săn vào cuối tuần." },
+   { "fr": "La chasse est interdite dans cette forêt.", "vi": "Cấm săn bắn trong khu rừng này." },
+   { "fr": "Ce chat est doué pour la chasse aux souris.", "vi": "Con mèo này rất giỏi săn chuột." }
+  ],
+  "reason": "Câu 3 gượng: 'être bon à la chasse' không tự nhiên; người Pháp nói 'être doué pour la chasse'."
+ }
+}

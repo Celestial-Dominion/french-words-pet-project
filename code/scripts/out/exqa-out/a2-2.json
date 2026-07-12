@@ -1,0 +1,10 @@
+{
+  "idiot": {
+    "sentences": [
+      { "fr": "Ne sois pas idiot, réfléchis un peu !", "vi": "Đừng ngốc thế, suy nghĩ một chút đi!" },
+      { "fr": "C'est une idée idiote.", "vi": "Đó là một ý tưởng ngốc nghếch." },
+      { "fr": "Il se sent idiot d'avoir oublié le nom de cette fille.", "vi": "Anh ấy thấy mình thật ngốc vì đã quên tên cô gái ấy." }
+    ],
+    "reason": "Câu 3: 'son nom' mơ hồ (không có nhân vật nữ trong câu) và lệch với bản dịch 'tên cô ấy'; sửa fr cho rõ và khớp nghĩa vi."
+  }
+}

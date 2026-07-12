@@ -1,0 +1,26 @@
+{
+ "excellent": {
+  "sentences": [
+   { "fr": "Ce gâteau est excellent.", "vi": "Cái bánh này thật tuyệt vời." },
+   { "fr": "Tu as fait un excellent travail.", "vi": "Bạn đã làm một công việc xuất sắc." },
+   { "fr": "Le film était excellent.", "vi": "Bộ phim rất tuyệt vời." }
+  ],
+  "reason": "Trật tự tính từ: 'un excellent travail' tự nhiên hơn 'un travail excellent'."
+ },
+ "volonté": {
+  "sentences": [
+   { "fr": "Il a beaucoup de volonté.", "vi": "Anh ấy có nhiều ý chí." },
+   { "fr": "Elle apprend le français avec volonté.", "vi": "Cô ấy học tiếng Pháp với ý chí quyết tâm." },
+   { "fr": "Réussir demande de la volonté.", "vi": "Thành công đòi hỏi ý chí." }
+  ],
+  "reason": "Câu 3 là bản dịch máy của tục ngữ tiếng Anh, không phải tiếng Pháp tự nhiên; thay bằng câu đơn giản."
+ },
+ "i": {
+  "sentences": [
+   { "fr": "Le mot « ami » se termine par un i.", "vi": "Từ « ami » kết thúc bằng chữ i." },
+   { "fr": "N'oublie pas le point sur le i.", "vi": "Đừng quên dấu chấm trên chữ i." },
+   { "fr": "Il y a deux i dans « ici ».", "vi": "Có hai chữ i trong từ « ici »." }
+  ],
+  "reason": "« minimi » không phải từ tiếng Pháp; thay bằng « ici »."
+ }
+}

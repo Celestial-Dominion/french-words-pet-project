@@ -1,0 +1,10 @@
+{
+  "sou": {
+    "sentences": [
+      { "fr": "Je n'ai plus un sou.", "vi": "Tôi không còn một xu nào." },
+      { "fr": "Ce jouet ne vaut pas un sou.", "vi": "Món đồ chơi này chẳng đáng một xu." },
+      { "fr": "Il compte chaque sou.", "vi": "Anh ấy tính từng đồng xu." }
+    ],
+    "reason": "Lệch nghĩa fr–vi: câu 2 dùng 'ne coûte pas un sou' (không tốn xu nào = miễn phí) nhưng bản dịch 'chẳng đáng một xu' (vô giá trị). Sửa thành 'ne vaut pas un sou' cho khớp nghĩa và đúng thành ngữ."
+  }
+}

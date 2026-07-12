@@ -1,0 +1,53 @@
+{
+  "horizon": {
+    "sentences": [
+      {
+        "fr": "Le soleil se couche à l'horizon.",
+        "vi": "Mặt trời lặn ở đường chân trời."
+      },
+      {
+        "fr": "On voit un bateau au loin, à l'horizon.",
+        "vi": "Người ta thấy một chiếc thuyền phía xa, nơi đường chân trời."
+      },
+      {
+        "fr": "Le ciel devient rouge à l'horizon.",
+        "vi": "Bầu trời đỏ rực nơi chân trời."
+      }
+    ],
+    "reason": "Giới từ chưa tự nhiên: 'sur l'horizon' -> 'à l'horizon' (cách nói chuẩn, đồng nhất với 2 câu kia)."
+  },
+  "commandement": {
+    "sentences": [
+      {
+        "fr": "Le soldat obéit au commandement de son chef.",
+        "vi": "Người lính tuân theo mệnh lệnh của cấp trên."
+      },
+      {
+        "fr": "Le général a pris le commandement de l'armée.",
+        "vi": "Vị tướng đã nắm quyền chỉ huy quân đội."
+      },
+      {
+        "fr": "À son commandement, les soldats se sont mis en marche.",
+        "vi": "Theo mệnh lệnh của ông ấy, những người lính bắt đầu tiến bước."
+      }
+    ],
+    "reason": "Câu 3 gượng: 'donner le commandement de partir' không tự nhiên (thường nói 'donner l'ordre de'); viết lại với 'à son commandement'."
+  },
+  "toi-même": {
+    "sentences": [
+      {
+        "fr": "Tu peux le faire toi-même, c'est facile.",
+        "vi": "Bạn có thể tự làm được, việc đó dễ mà."
+      },
+      {
+        "fr": "Range tes affaires toi-même.",
+        "vi": "Hãy tự dọn đồ đạc của mình đi."
+      },
+      {
+        "fr": "Prends soin de toi-même avant tout.",
+        "vi": "Hãy chăm sóc chính bản thân bạn trước hết."
+      }
+    ],
+    "reason": "Câu 2 gượng/thừa: 'Occupe-toi de tes affaires' là thành ngữ 'lo chuyện của mình đi', thêm 'toi-même' gây tối nghĩa; thay bằng 'Range tes affaires toi-même'."
+  }
+}

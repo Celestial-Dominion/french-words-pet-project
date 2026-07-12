@@ -1,0 +1,18 @@
+{
+ "étage": {
+  "sentences": [
+   { "fr": "Notre appartement est au troisième étage.", "vi": "Căn hộ của chúng tôi ở tầng ba." },
+   { "fr": "L'ascenseur s'arrête à chaque étage.", "vi": "Thang máy dừng ở mỗi tầng." },
+   { "fr": "La cuisine est à l'étage du dessous.", "vi": "Nhà bếp ở tầng dưới." }
+  ],
+  "reason": "fr–vi lệch: 'monte à chaque étage' (đi lên) không khớp vi 'dừng'; sửa thành 's'arrête' cho tự nhiên và đúng nghĩa."
+ },
+ "taper": {
+  "sentences": [
+   { "fr": "Il tape à la porte.", "vi": "Anh ấy gõ cửa." },
+   { "fr": "Elle tape le texte sur l'ordinateur.", "vi": "Cô ấy gõ văn bản trên máy tính." },
+   { "fr": "Ne tape pas ton petit frère !", "vi": "Đừng đánh em trai con!" }
+  ],
+  "reason": "Giới từ sai: 'taper le texte à l'ordinateur' → 'sur l'ordinateur'."
+ }
+}

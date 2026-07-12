@@ -1,0 +1,34 @@
+{
+  "joindre": {
+    "sentences": [
+      { "fr": "Je n'arrive pas à te joindre au téléphone.", "vi": "Tôi không liên lạc được với cậu qua điện thoại." },
+      { "fr": "Joins ce document à ton mail, s'il te plaît.", "vi": "Làm ơn đính kèm tài liệu này vào email của cậu." },
+      { "fr": "Vous pouvez me joindre l'après-midi.", "vi": "Bạn có thể liên lạc với tôi vào buổi chiều." }
+    ],
+    "reason": "'après midi' thiếu gạch nối và gượng; sửa thành 'l'après-midi'"
+  },
+  "social": {
+    "sentences": [
+      { "fr": "Le travail social l'intéresse beaucoup.", "vi": "Anh ấy rất quan tâm đến công tác xã hội." },
+      { "fr": "Les réseaux sociaux sont partout aujourd'hui.", "vi": "Mạng xã hội có mặt khắp nơi ngày nay." },
+      { "fr": "C'est un problème social très important.", "vi": "Đây là một vấn đề xã hội rất quan trọng." }
+    ],
+    "reason": "bản dịch vi câu 1 ngược nghĩa/gượng ('khiến anh ấy quan tâm')"
+  },
+  "lier": {
+    "sentences": [
+      { "fr": "Il faut lier les cartons avec une corde.", "vi": "Phải buộc các thùng các-tông bằng dây thừng." },
+      { "fr": "Cette amitié nous lie depuis l'enfance.", "vi": "Tình bạn này gắn kết chúng tôi từ thuở nhỏ." },
+      { "fr": "Ces deux problèmes sont liés.", "vi": "Hai vấn đề này có liên quan với nhau." }
+    ],
+    "reason": "'lier ses cheveux' không tự nhiên (người Pháp dùng 'attacher'); thay bằng câu 'être lié' thông dụng"
+  },
+  "saison": {
+    "sentences": [
+      { "fr": "Quelle est ta saison préférée ?", "vi": "Mùa yêu thích của cậu là mùa nào?" },
+      { "fr": "Les fraises sont de saison en été.", "vi": "Dâu tây đúng mùa vào mùa hè." },
+      { "fr": "Il y a quatre saisons dans l'année.", "vi": "Một năm có bốn mùa." }
+    ],
+    "reason": "bản dịch vi câu 2 lặp từ 'vào mùa vào mùa hè'"
+  }
+}

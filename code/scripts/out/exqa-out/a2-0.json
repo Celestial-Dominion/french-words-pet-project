@@ -1,0 +1,18 @@
+{
+  "courant": {
+    "sentences": [
+      { "fr": "Le courant de la rivière est fort.", "vi": "Dòng chảy của con sông rất mạnh." },
+      { "fr": "C'est un mot très courant en français.", "vi": "Đó là một từ rất thông dụng trong tiếng Pháp." },
+      { "fr": "Attention, il y a un courant d'air froid ici.", "vi": "Cẩn thận, ở đây có một luồng gió lạnh." }
+    ],
+    "reason": "Luồng gió lùa trong phòng phải là 'courant d'air', 'courant froid' không tự nhiên và lệch với bản dịch 'luồng gió lạnh'."
+  },
+  "épouser": {
+    "sentences": [
+      { "fr": "Il veut épouser sa fiancée cet été.", "vi": "Anh ấy muốn cưới vị hôn thê vào mùa hè này." },
+      { "fr": "Elle a épousé un homme très gentil.", "vi": "Cô ấy đã kết hôn với một người đàn ông rất tốt bụng." },
+      { "fr": "Elle va épouser son ami d'enfance.", "vi": "Cô ấy sẽ cưới người bạn thời thơ ấu." }
+    ],
+    "reason": "'s'épouser' không đúng tiếng Pháp; épouser là ngoại động từ (épouser + tân ngữ), dạng phản thân phải dùng 'se marier'."
+  }
+}

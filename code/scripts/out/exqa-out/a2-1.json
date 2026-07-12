@@ -1,0 +1,18 @@
+{
+ "genou": {
+  "sentences": [
+   { "fr": "Je me suis fait mal au genou.", "vi": "Tôi bị đau đầu gối." },
+   { "fr": "L'enfant est assis sur les genoux de sa mère.", "vi": "Đứa bé ngồi trên đầu gối của mẹ nó." },
+   { "fr": "Le sol est mouillé, ne pose pas tes genoux par terre.", "vi": "Sàn nhà ướt, đừng đặt đầu gối xuống đất." }
+  ],
+  "reason": "Câu 3 gượng: 'ne mets pas les genoux dessus' không tự nhiên; sửa thành 'ne pose pas tes genoux par terre'."
+ },
+ "mémoire": {
+  "sentences": [
+   { "fr": "Ma grand-mère a une bonne mémoire.", "vi": "Bà tôi có trí nhớ tốt." },
+   { "fr": "Ce voyage restera longtemps dans ma mémoire.", "vi": "Chuyến đi này sẽ còn lưu lại trong ký ức tôi rất lâu." },
+   { "fr": "Il faut de la mémoire pour apprendre les langues.", "vi": "Cần trí nhớ tốt để học ngoại ngữ." }
+  ],
+  "reason": "Câu 2 thừa/gượng: 'garder un bon souvenir ... en mémoire' lặp ý (souvenir + en mémoire), người Pháp không nói vậy."
+ }
+}

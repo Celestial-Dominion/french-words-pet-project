@@ -1,0 +1,42 @@
+{
+ "demi": {
+  "sentences": [
+   { "fr": "Je voudrais un demi-litre de lait.", "vi": "Tôi muốn nửa lít sữa." },
+   { "fr": "Il est arrivé une demi-heure en retard.", "vi": "Anh ấy đến trễ nửa tiếng." },
+   { "fr": "Elle a mangé une demi-pomme.", "vi": "Cô ấy đã ăn nửa quả táo." }
+  ],
+  "reason": "Câu 3: 'la demi-pomme' không tự nhiên (mạo từ xác định gượng), sửa thành 'une demi-pomme'."
+ },
+ "flamme": {
+  "sentences": [
+   { "fr": "La flamme de la bougie est belle.", "vi": "Ngọn lửa của cây nến thật đẹp." },
+   { "fr": "Fais attention à la flamme !", "vi": "Cẩn thận ngọn lửa nhé!" },
+   { "fr": "De grandes flammes montent dans le ciel.", "vi": "Những ngọn lửa lớn bốc lên trời." }
+  ],
+  "reason": "Câu 3 'Le feu monte en grandes flammes' gượng, không tự nhiên."
+ },
+ "faible": {
+  "sentences": [
+   { "fr": "Après sa maladie, il est encore faible.", "vi": "Sau khi ốm, anh ấy vẫn còn yếu." },
+   { "fr": "Le signal du téléphone est trop faible.", "vi": "Tín hiệu điện thoại quá yếu." },
+   { "fr": "Elle a un faible pour le chocolat.", "vi": "Cô ấy rất mê sô cô la." }
+  ],
+  "reason": "Câu 3 sai giống: 'une faible' → 'un faible' (avoir un faible pour = có cảm tình/mê)."
+ },
+ "vu": {
+  "sentences": [
+   { "fr": "Je l'ai vu hier au marché.", "vi": "Tôi đã thấy anh ấy hôm qua ở chợ." },
+   { "fr": "Vu qu'il pleut, nous restons à la maison.", "vi": "Xét thấy trời mưa, chúng tôi ở nhà." },
+   { "fr": "Il est mal vu d'arriver en retard.", "vi": "Đến trễ bị xem là không hay." }
+  ],
+  "reason": "Câu 3 'un film très vu' gượng; thay bằng 'mal vu' (cách dùng tự nhiên của 'vu')."
+ },
+ "puissance": {
+  "sentences": [
+   { "fr": "La puissance de ce moteur est impressionnante.", "vi": "Công suất của động cơ này thật ấn tượng." },
+   { "fr": "Ce pays est une grande puissance.", "vi": "Nước này là một cường quốc lớn." },
+   { "fr": "La puissance de la tempête a tout détruit.", "vi": "Sức mạnh của cơn bão đã phá hủy mọi thứ." }
+  ],
+  "reason": "Câu 3 'travailler avec puissance et courage' gượng, không tự nhiên."
+ }
+}
