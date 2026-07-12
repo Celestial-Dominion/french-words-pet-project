@@ -1,0 +1,53 @@
+{
+ "bénéfice": {
+  "sentences": [
+   {
+    "fr": "L'entreprise a réalisé un bénéfice record malgré une conjoncture économique difficile.",
+    "vi": "Công ty đã đạt lợi nhuận kỷ lục dù bối cảnh kinh tế khó khăn."
+   },
+   {
+    "fr": "Nous avons organisé ce concert au bénéfice des victimes de l'inondation.",
+    "vi": "Chúng tôi đã tổ chức buổi hòa nhạc này để gây quỹ cho các nạn nhân lũ lụt."
+   },
+   {
+    "fr": "Chacun a tiré un grand bénéfice de cette formation intensive.",
+    "vi": "Mỗi người đều thu được lợi ích lớn từ khóa đào tạo chuyên sâu này."
+   }
+  ],
+  "reason": "Dịch tiếng Việt câu 2 gượng, kiểu dịch máy ('để làm lợi ích cho'); 'au bénéfice de' ở đây là gây quỹ/vì các nạn nhân."
+ },
+ "souhait": {
+  "sentences": [
+   {
+    "fr": "Fais un souhait avant de souffler les bougies de ton gâteau.",
+    "vi": "Hãy ước một điều trước khi thổi nến trên chiếc bánh của con."
+   },
+   {
+    "fr": "Son plus cher souhait était de revoir son pays natal.",
+    "vi": "Điều mong ước lớn nhất của bà là được nhìn lại quê hương."
+   },
+   {
+    "fr": "Tous nos vœux et nos meilleurs souhaits vous accompagnent pour cette nouvelle année.",
+    "vi": "Mọi lời cầu chúc và những điều mong ước tốt đẹp nhất của chúng tôi đồng hành cùng bạn trong năm mới."
+   }
+  ],
+  "reason": "Câu 1 lẫn lộn ngôi 'vous' và 'tu' ('Faites... ton gâteau'); sửa về 'tu' cho nhất quán."
+ },
+ "lard": {
+  "sentences": [
+   {
+    "fr": "Elle a fait revenir des dés de lard fumé dans la poêle.",
+    "vi": "Cô đã phi những miếng thịt ba chỉ hun khói trong chảo."
+   },
+   {
+    "fr": "Un morceau de lard donnait tout son goût à la soupe paysanne.",
+    "vi": "Một miếng mỡ lợn tạo nên toàn bộ hương vị cho món súp nhà quê."
+   },
+   {
+    "fr": "Autrefois, on conservait le lard salé dans un coin frais de la cave.",
+    "vi": "Ngày xưa, người ta bảo quản thịt ba chỉ ướp muối ở một góc mát trong hầm."
+   }
+  ],
+  "reason": "Câu 1 'des lardons de lard fumé' thừa/lặp không tự nhiên (lardons vốn đã là lard cắt nhỏ)."
+ }
+}

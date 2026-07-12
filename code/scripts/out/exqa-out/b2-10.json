@@ -1,0 +1,70 @@
+{
+ "opposition": {
+  "sentences": [
+   {
+    "fr": "Le projet de loi a suscité une vive opposition au sein du Parlement.",
+    "vi": "Dự luật đã vấp phải sự phản đối mạnh mẽ trong Nghị viện."
+   },
+   {
+    "fr": "Contrairement à son frère, elle a toujours été en opposition avec ses parents.",
+    "vi": "Khác với anh trai, cô ấy luôn đối lập với cha mẹ mình."
+   },
+   {
+    "fr": "Il existe une nette opposition entre ses paroles et ses actes.",
+    "vi": "Có một sự đối lập rõ rệt giữa lời nói và hành động của anh ta."
+   }
+  ],
+  "reason": "Câu 2: 'être dans l'opposition à qqn' gượng; sửa thành 'en opposition avec ses parents' cho tự nhiên."
+ },
+ "craie": {
+  "sentences": [
+   {
+    "fr": "Le professeur écrivit la date au tableau avec un morceau de craie.",
+    "vi": "Thầy giáo viết ngày tháng lên bảng bằng một mẩu phấn."
+   },
+   {
+    "fr": "Ses doigts étaient couverts de poussière de craie à la fin du cours.",
+    "vi": "Ngón tay cô phủ đầy bụi phấn khi kết thúc buổi học."
+   },
+   {
+    "fr": "On dessinait des marelles à la craie sur le trottoir.",
+    "vi": "Bọn tôi vẽ ô nhảy lò cò bằng phấn trên vỉa hè."
+   }
+  ],
+  "reason": "Câu 3: 'marelle' là trò nhảy lò cò, không phải 'ô ăn quan'; sửa bản dịch tiếng Việt."
+ },
+ "prêcher": {
+  "sentences": [
+   {
+    "fr": "Le curé prêchait la tolérance et le pardon chaque dimanche.",
+    "vi": "Cha xứ thuyết giảng về lòng khoan dung và sự tha thứ mỗi Chủ nhật."
+   },
+   {
+    "fr": "Tu prêches un convaincu : je suis déjà d'accord avec toi.",
+    "vi": "Anh đang thuyết giảng cho người đã tin rồi: tôi vốn đã đồng ý với anh."
+   },
+   {
+    "fr": "Il est facile de prêcher la patience quand on n'attend rien.",
+    "vi": "Rao giảng sự kiên nhẫn thật dễ khi bản thân chẳng phải chờ đợi gì."
+   }
+  ],
+  "reason": "Câu 2: thành ngữ đúng là 'prêcher un convaincu' (tân ngữ trực tiếp), bỏ giới từ 'à'."
+ },
+ "triangle": {
+  "sentences": [
+   {
+    "fr": "Le professeur a dessiné un triangle rectangle au tableau.",
+    "vi": "Thầy giáo vẽ một tam giác vuông lên bảng."
+   },
+   {
+    "fr": "Dans l'orchestre, un enfant faisait tinter le triangle.",
+    "vi": "Trong dàn nhạc, một cậu bé gõ leng keng chiếc triangle."
+   },
+   {
+    "fr": "Cette région forme un triangle entre trois grandes villes.",
+    "vi": "Vùng này tạo thành một hình tam giác giữa ba thành phố lớn."
+   }
+  ],
+  "reason": "Câu 2: nhạc cụ 'triangle' là thanh gõ kim loại, không phải 'trống'; sửa bản dịch."
+ }
+}

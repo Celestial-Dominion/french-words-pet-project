@@ -1,0 +1,2210 @@
+[
+ {
+  "id": "patiemment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách kiên nhẫn",
+  "sentences": [
+   {
+    "fr": "Elle a patiemment expliqué la règle jusqu'à ce que tout le monde comprenne.",
+    "vi": "Cô ấy kiên nhẫn giải thích quy tắc cho đến khi mọi người hiểu."
+   },
+   {
+    "fr": "Les pêcheurs attendaient patiemment que le poisson morde à l'hameçon.",
+    "vi": "Những người câu cá kiên nhẫn chờ cá cắn câu."
+   },
+   {
+    "fr": "Il faut construire ce projet patiemment, pierre après pierre.",
+    "vi": "Phải xây dựng dự án này một cách kiên nhẫn, từng viên gạch một."
+   }
+  ]
+ },
+ {
+  "id": "envahisseur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ xâm lược",
+  "sentences": [
+   {
+    "fr": "Pendant des siècles, la région a repoussé de nombreux envahisseurs.",
+    "vi": "Suốt nhiều thế kỷ, vùng này đã đẩy lùi nhiều kẻ xâm lược."
+   },
+   {
+    "fr": "Les habitants se sont soulevés contre l'envahisseur venu du nord.",
+    "vi": "Dân cư đã nổi dậy chống lại kẻ xâm lược đến từ phương bắc."
+   },
+   {
+    "fr": "Dans ce jeu vidéo, on doit défendre la planète contre des envahisseurs extraterrestres.",
+    "vi": "Trong trò chơi điện tử này, ta phải bảo vệ hành tinh chống lại những kẻ xâm lược ngoài hành tinh."
+   }
+  ]
+ },
+ {
+  "id": "par-ci",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "chỗ này, đằng này (par-ci par-là: đây đó)",
+  "sentences": [
+   {
+    "fr": "Il y avait des livres éparpillés par-ci par-là dans toute la maison.",
+    "vi": "Có sách vương vãi đây đó khắp cả ngôi nhà."
+   },
+   {
+    "fr": "On se donne un petit conseil par-ci, une critique par-là, entre collègues.",
+    "vi": "Giữa đồng nghiệp, chúng tôi cho nhau lời khuyên chỗ này, lời chê chỗ kia."
+   },
+   {
+    "fr": "Quelques touristes se promenaient par-ci par-là sur la place déserte.",
+    "vi": "Vài du khách đi dạo đây đó trên quảng trường vắng vẻ."
+   }
+  ]
+ },
+ {
+  "id": "majestueux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "uy nghi, tráng lệ",
+  "sentences": [
+   {
+    "fr": "Le fleuve coulait, majestueux, entre les montagnes enneigées.",
+    "vi": "Con sông chảy uy nghi giữa những ngọn núi phủ tuyết."
+   },
+   {
+    "fr": "Nous avons admiré la démarche majestueuse du vieux cerf dans la clairière.",
+    "vi": "Chúng tôi ngắm dáng đi uy nghi của con hươu già trong khoảng rừng thưa."
+   },
+   {
+    "fr": "Le château dominait la vallée avec une allure vraiment majestueuse.",
+    "vi": "Tòa lâu đài trấn ngự thung lũng với vẻ thật sự tráng lệ."
+   }
+  ]
+ },
+ {
+  "id": "bingo",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trò bingo",
+  "sentences": [
+   {
+    "fr": "Chaque vendredi soir, les résidents de la maison de retraite jouent au bingo.",
+    "vi": "Mỗi tối thứ Sáu, các cư dân viện dưỡng lão chơi bingo."
+   },
+   {
+    "fr": "Elle a crié « bingo ! » avant même que le dernier numéro soit annoncé.",
+    "vi": "Cô ấy hét lên \"bingo!\" trước cả khi con số cuối cùng được xướng lên."
+   },
+   {
+    "fr": "Le club organise un grand bingo pour récolter des fonds cette année.",
+    "vi": "Câu lạc bộ tổ chức một ván bingo lớn để gây quỹ năm nay."
+   }
+  ]
+ },
+ {
+  "id": "quelques-unes",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "một vài, một số (giống cái)",
+  "sentences": [
+   {
+    "fr": "Parmi toutes ces photos, quelques-unes sont vraiment réussies.",
+    "vi": "Trong tất cả những tấm ảnh này, một vài tấm thật sự đẹp."
+   },
+   {
+    "fr": "J'ai lu ses nouvelles ; quelques-unes m'ont profondément touché.",
+    "vi": "Tôi đã đọc các truyện ngắn của ông ấy; một vài truyện làm tôi xúc động sâu sắc."
+   },
+   {
+    "fr": "Il reste encore quelques-unes des cerises que tu avais achetées hier.",
+    "vi": "Vẫn còn một vài quả anh đào mà cậu đã mua hôm qua."
+   }
+  ]
+ },
+ {
+  "id": "rayonner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tỏa sáng, rạng rỡ; tỏa ra",
+  "sentences": [
+   {
+    "fr": "Depuis l'annonce de sa réussite, elle rayonne de bonheur.",
+    "vi": "Từ khi biết tin thành công, cô ấy rạng rỡ hạnh phúc."
+   },
+   {
+    "fr": "Le poêle rayonnait une douce chaleur dans toute la pièce.",
+    "vi": "Chiếc lò tỏa hơi ấm dịu dàng khắp căn phòng."
+   },
+   {
+    "fr": "Cette petite ville a longtemps rayonné sur toute la région par son commerce.",
+    "vi": "Thị trấn nhỏ này từ lâu đã có tầm ảnh hưởng khắp vùng nhờ thương mại."
+   }
+  ]
+ },
+ {
+  "id": "gin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "rượu gin",
+  "sentences": [
+   {
+    "fr": "Il a commandé un gin tonic avec une tranche de citron vert.",
+    "vi": "Anh ấy gọi một ly gin tonic kèm lát chanh xanh."
+   },
+   {
+    "fr": "Ce bar propose une carte impressionnante de gins artisanaux.",
+    "vi": "Quán bar này có một thực đơn ấn tượng gồm các loại gin thủ công."
+   },
+   {
+    "fr": "Le gin se distille souvent avec des baies de genièvre.",
+    "vi": "Rượu gin thường được chưng cất với quả bách xù."
+   }
+  ]
+ },
+ {
+  "id": "victorieux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "chiến thắng, thắng lợi",
+  "sentences": [
+   {
+    "fr": "L'équipe est rentrée victorieuse sous les acclamations de la foule.",
+    "vi": "Đội bóng trở về trong chiến thắng giữa tiếng hò reo của đám đông."
+   },
+   {
+    "fr": "Il leva le poing, victorieux, après avoir franchi la ligne d'arrivée.",
+    "vi": "Anh ấy giơ nắm đấm, đầy chiến thắng, sau khi vượt qua vạch đích."
+   },
+   {
+    "fr": "Les troupes victorieuses défilèrent dans les rues de la capitale.",
+    "vi": "Những đoàn quân thắng trận diễu hành trên các con phố thủ đô."
+   }
+  ]
+ },
+ {
+  "id": "hiérarchie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hệ thống thứ bậc, cấp bậc",
+  "sentences": [
+   {
+    "fr": "Dans cette entreprise, la hiérarchie est très stricte et rigide.",
+    "vi": "Trong công ty này, hệ thống thứ bậc rất nghiêm ngặt và cứng nhắc."
+   },
+   {
+    "fr": "Il a dû en référer à sa hiérarchie avant de prendre une décision.",
+    "vi": "Anh ấy phải trình lên cấp trên trước khi ra quyết định."
+   },
+   {
+    "fr": "Les jeunes générations remettent souvent en cause la hiérarchie traditionnelle.",
+    "vi": "Các thế hệ trẻ thường chất vấn hệ thống thứ bậc truyền thống."
+   }
+  ]
+ },
+ {
+  "id": "dédaigner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khinh thường, coi thường",
+  "sentences": [
+   {
+    "fr": "Ne dédaigne pas les petits gestes : ce sont eux qui comptent.",
+    "vi": "Đừng coi thường những cử chỉ nhỏ: chính chúng mới đáng kể."
+   },
+   {
+    "fr": "Elle a dédaigné son offre d'un simple haussement d'épaules.",
+    "vi": "Cô ấy khinh thường lời đề nghị của anh ta chỉ bằng một cái nhún vai."
+   },
+   {
+    "fr": "Ce chef ne dédaigne aucun ingrédient, même le plus humble.",
+    "vi": "Vị đầu bếp này không coi thường bất kỳ nguyên liệu nào, dù là thứ tầm thường nhất."
+   }
+  ]
+ },
+ {
+  "id": "rectifier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sửa lại, chỉnh sửa",
+  "sentences": [
+   {
+    "fr": "Le professeur a rectifié l'erreur au tableau devant toute la classe.",
+    "vi": "Thầy giáo đã sửa lỗi trên bảng trước cả lớp."
+   },
+   {
+    "fr": "Je voudrais rectifier ce que j'ai dit tout à l'heure, c'était maladroit.",
+    "vi": "Tôi muốn chỉnh lại điều tôi vừa nói lúc nãy, nó vụng về quá."
+   },
+   {
+    "fr": "Il a fallu rectifier le tir après les mauvais résultats du trimestre.",
+    "vi": "Phải điều chỉnh lại cách làm sau kết quả tệ của quý này."
+   }
+  ]
+ },
+ {
+  "id": "estrade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bục, bệ (sân khấu)",
+  "sentences": [
+   {
+    "fr": "L'oratrice monta sur l'estrade et attendit le silence.",
+    "vi": "Diễn giả bước lên bục và chờ mọi người yên lặng."
+   },
+   {
+    "fr": "Les élèves du premier rang étaient assis juste devant l'estrade.",
+    "vi": "Học sinh hàng đầu ngồi ngay trước bục giảng."
+   },
+   {
+    "fr": "On a dressé une petite estrade dans le jardin pour le concert.",
+    "vi": "Người ta đã dựng một cái bục nhỏ trong vườn cho buổi hòa nhạc."
+   }
+  ]
+ },
+ {
+  "id": "amusement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự giải trí, trò vui",
+  "sentences": [
+   {
+    "fr": "Elle regardait les enfants jouer avec un sourire d'amusement.",
+    "vi": "Cô ấy nhìn bọn trẻ chơi đùa với nụ cười thích thú."
+   },
+   {
+    "fr": "Ce n'était qu'un amusement, personne ne voulait te blesser.",
+    "vi": "Đó chỉ là một trò vui thôi, không ai muốn làm bạn tổn thương cả."
+   },
+   {
+    "fr": "Le parc offre mille amusements aux petits comme aux grands.",
+    "vi": "Công viên mang lại vô số trò giải trí cho cả trẻ nhỏ lẫn người lớn."
+   }
+  ]
+ },
+ {
+  "id": "triomphant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đắc thắng, khải hoàn",
+  "sentences": [
+   {
+    "fr": "Il brandit le trophée d'un geste triomphant.",
+    "vi": "Anh ấy giơ cao chiếc cúp bằng một động tác đắc thắng."
+   },
+   {
+    "fr": "Elle m'annonça la nouvelle d'un ton triomphant.",
+    "vi": "Cô ấy báo tin cho tôi bằng giọng đầy khải hoàn."
+   },
+   {
+    "fr": "Après des mois de travail, l'artiste a connu un retour triomphant sur scène.",
+    "vi": "Sau nhiều tháng làm việc, nghệ sĩ đã có màn trở lại sân khấu đầy khải hoàn."
+   }
+  ]
+ },
+ {
+  "id": "habituellement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thường lệ, thông thường",
+  "sentences": [
+   {
+    "fr": "Habituellement, je prends le train de sept heures pour aller travailler.",
+    "vi": "Thông thường, tôi bắt chuyến tàu bảy giờ để đi làm."
+   },
+   {
+    "fr": "Elle est habituellement plus calme, mais aujourd'hui elle semblait nerveuse.",
+    "vi": "Thường ngày cô ấy điềm tĩnh hơn, nhưng hôm nay có vẻ căng thẳng."
+   },
+   {
+    "fr": "Ce restaurant est habituellement bondé le week-end.",
+    "vi": "Nhà hàng này thường lệ đông nghịt vào cuối tuần."
+   }
+  ]
+ },
+ {
+  "id": "psychologue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nhà tâm lý học",
+  "sentences": [
+   {
+    "fr": "Après cet accident, il a décidé de consulter un psychologue.",
+    "vi": "Sau tai nạn đó, anh ấy quyết định đi gặp một nhà tâm lý."
+   },
+   {
+    "fr": "La psychologue de l'école reçoit les élèves en difficulté.",
+    "vi": "Nhà tâm lý học của trường tiếp nhận những học sinh gặp khó khăn."
+   },
+   {
+    "fr": "Il faut être un peu psychologue pour gérer une équipe aussi diverse.",
+    "vi": "Phải có chút hiểu tâm lý mới quản lý được một đội ngũ đa dạng như vậy."
+   }
+  ]
+ },
+ {
+  "id": "barbelé",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "dây thép gai",
+  "sentences": [
+   {
+    "fr": "Le champ était entouré de fils barbelés rouillés.",
+    "vi": "Cánh đồng được bao quanh bởi những sợi dây thép gai hoen gỉ."
+   },
+   {
+    "fr": "Il s'est éraflé le bras contre un barbelé en escaladant la clôture.",
+    "vi": "Anh ấy trầy cả cánh tay vào dây thép gai khi trèo qua hàng rào."
+   },
+   {
+    "fr": "Une clôture barbelée séparait les deux propriétés.",
+    "vi": "Một hàng rào thép gai ngăn cách hai mảnh đất."
+   }
+  ]
+ },
+ {
+  "id": "fausser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm sai lệch, bóp méo",
+  "sentences": [
+   {
+    "fr": "Ces données incomplètes risquent de fausser toute l'analyse.",
+    "vi": "Những dữ liệu thiếu sót này có nguy cơ làm sai lệch toàn bộ phân tích."
+   },
+   {
+    "fr": "La peur finit par fausser notre jugement dans les moments critiques.",
+    "vi": "Nỗi sợ rốt cuộc làm méo mó phán đoán của ta trong những lúc quan trọng."
+   },
+   {
+    "fr": "Un seul témoignage mensonger a suffi à fausser le procès.",
+    "vi": "Chỉ một lời khai dối trá đã đủ làm sai lệch phiên tòa."
+   }
+  ]
+ },
+ {
+  "id": "impassible",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "điềm nhiên, phớt tỉnh",
+  "sentences": [
+   {
+    "fr": "Malgré les insultes, il resta impassible.",
+    "vi": "Bất chấp những lời lăng mạ, anh ấy vẫn điềm nhiên."
+   },
+   {
+    "fr": "Son visage impassible ne trahissait aucune émotion.",
+    "vi": "Gương mặt phớt tỉnh của cô ấy không để lộ cảm xúc nào."
+   },
+   {
+    "fr": "Le juge écouta la sentence, impassible, comme s'il l'attendait.",
+    "vi": "Vị thẩm phán lắng nghe bản án, điềm tĩnh, như thể đã chờ đợi điều đó."
+   }
+  ]
+ },
+ {
+  "id": "dix-neuf",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "mười chín",
+  "sentences": [
+   {
+    "fr": "Ma sœur aura dix-neuf ans au mois de mars.",
+    "vi": "Chị tôi sẽ mười chín tuổi vào tháng Ba."
+   },
+   {
+    "fr": "Il y avait dix-neuf candidats à ce poste très convoité.",
+    "vi": "Có mười chín ứng viên cho vị trí rất được thèm muốn này."
+   },
+   {
+    "fr": "Le train part à dix-neuf heures précises.",
+    "vi": "Chuyến tàu khởi hành lúc mười chín giờ đúng."
+   }
+  ]
+ },
+ {
+  "id": "traite",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hối phiếu; sự buôn bán (người)",
+  "sentences": [
+   {
+    "fr": "L'entreprise a signé une traite payable à quatre-vingt-dix jours.",
+    "vi": "Công ty đã ký một hối phiếu thanh toán trong chín mươi ngày."
+   },
+   {
+    "fr": "L'abolition de la traite des esclaves reste une étape majeure de l'histoire.",
+    "vi": "Việc bãi bỏ buôn bán nô lệ vẫn là một cột mốc lớn của lịch sử."
+   },
+   {
+    "fr": "La banque a refusé d'escompter cette traite arrivée à échéance.",
+    "vi": "Ngân hàng từ chối chiết khấu hối phiếu đã đến hạn này."
+   }
+  ]
+ },
+ {
+  "id": "punk",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nhạc punk, dân punk",
+  "sentences": [
+   {
+    "fr": "Adolescent, il écoutait du punk à longueur de journée.",
+    "vi": "Hồi thiếu niên, anh ấy nghe nhạc punk suốt cả ngày."
+   },
+   {
+    "fr": "Un vieux punk aux cheveux verts vendait des disques sur le marché.",
+    "vi": "Một tay punk già tóc xanh bán đĩa nhạc ở khu chợ."
+   },
+   {
+    "fr": "Le mouvement punk est né dans les années soixante-dix.",
+    "vi": "Phong trào punk ra đời vào những năm bảy mươi."
+   }
+  ]
+ },
+ {
+  "id": "sauveur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vị cứu tinh, người cứu rỗi",
+  "sentences": [
+   {
+    "fr": "Le pompier qui l'a tirée des flammes est devenu son sauveur.",
+    "vi": "Người lính cứu hỏa kéo cô ấy ra khỏi ngọn lửa đã trở thành vị cứu tinh của cô."
+   },
+   {
+    "fr": "Ils attendaient un sauveur qui ne viendrait jamais.",
+    "vi": "Họ chờ đợi một vị cứu tinh sẽ chẳng bao giờ đến."
+   },
+   {
+    "fr": "Ce nouveau traitement a été salué comme le sauveur de milliers de patients.",
+    "vi": "Phương pháp điều trị mới này được ca ngợi như vị cứu tinh của hàng nghìn bệnh nhân."
+   }
+  ]
+ },
+ {
+  "id": "entrain",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự hăng hái, hứng khởi",
+  "sentences": [
+   {
+    "fr": "Toute l'équipe s'est mise au travail avec entrain.",
+    "vi": "Cả đội bắt tay vào việc một cách hăng hái."
+   },
+   {
+    "fr": "Depuis sa maladie, il a perdu tout entrain.",
+    "vi": "Từ khi ngã bệnh, anh ấy đã mất hết hứng khởi."
+   },
+   {
+    "fr": "Elle chantait avec un tel entrain que tout le monde s'est mis à danser.",
+    "vi": "Cô ấy hát với sự hào hứng đến mức mọi người bắt đầu nhảy múa."
+   }
+  ]
+ },
+ {
+  "id": "offrande",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lễ vật, đồ cúng",
+  "sentences": [
+   {
+    "fr": "Les fidèles déposaient des offrandes de fruits au pied de la statue.",
+    "vi": "Các tín đồ đặt lễ vật gồm trái cây dưới chân pho tượng."
+   },
+   {
+    "fr": "Il apporta une modeste offrande au temple du village.",
+    "vi": "Anh ấy mang một lễ vật khiêm nhường đến ngôi đền của làng."
+   },
+   {
+    "fr": "Dans cette tradition, l'offrande de riz symbolise la gratitude.",
+    "vi": "Trong truyền thống này, lễ vật bằng gạo tượng trưng cho lòng biết ơn."
+   }
+  ]
+ },
+ {
+  "id": "rudement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thô bạo; rất, cực kỳ",
+  "sentences": [
+   {
+    "fr": "Il a été rudement critiqué pour ses propos maladroits.",
+    "vi": "Anh ấy bị chỉ trích gay gắt vì những lời lẽ vụng về."
+   },
+   {
+    "fr": "Ce problème est rudement compliqué, on n'y arrivera pas seuls.",
+    "vi": "Vấn đề này cực kỳ phức tạp, chúng ta không tự giải quyết nổi đâu."
+   },
+   {
+    "fr": "Le contremaître traitait rudement ses ouvriers.",
+    "vi": "Viên đốc công đối xử thô bạo với công nhân của mình."
+   }
+  ]
+ },
+ {
+  "id": "caviar",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trứng cá muối",
+  "sentences": [
+   {
+    "fr": "Pour le réveillon, ils ont servi du caviar sur des blinis.",
+    "vi": "Cho bữa tiệc đêm giao thừa, họ đãi trứng cá muối trên bánh blini."
+   },
+   {
+    "fr": "Le caviar reste un produit de luxe hors de prix.",
+    "vi": "Trứng cá muối vẫn là một sản phẩm xa xỉ đắt cắt cổ."
+   },
+   {
+    "fr": "Elle a goûté du caviar pour la première fois de sa vie.",
+    "vi": "Cô ấy lần đầu tiên trong đời được nếm trứng cá muối."
+   }
+  ]
+ },
+ {
+  "id": "débauche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự trác táng, trụy lạc",
+  "sentences": [
+   {
+    "fr": "Le roman dépeint la débauche de l'aristocratie de l'époque.",
+    "vi": "Cuốn tiểu thuyết khắc họa sự trác táng của giới quý tộc thời bấy giờ."
+   },
+   {
+    "fr": "La fête s'est terminée dans une débauche générale.",
+    "vi": "Bữa tiệc kết thúc trong cảnh trụy lạc chung."
+   },
+   {
+    "fr": "Ce spectacle est une véritable débauche de couleurs et de lumières.",
+    "vi": "Buổi trình diễn là một sự thừa mứa thực sự về màu sắc và ánh sáng."
+   }
+  ]
+ },
+ {
+  "id": "remarier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tái hôn",
+  "sentences": [
+   {
+    "fr": "Après son veuvage, elle a décidé de se remarier.",
+    "vi": "Sau khi góa bụa, bà ấy quyết định tái hôn."
+   },
+   {
+    "fr": "Il s'est remarié quelques années après son divorce.",
+    "vi": "Anh ấy tái hôn vài năm sau khi ly dị."
+   },
+   {
+    "fr": "Ses enfants ont eu du mal à accepter qu'il se remarie.",
+    "vi": "Con cái ông khó chấp nhận việc ông tái hôn."
+   }
+  ]
+ },
+ {
+  "id": "hutte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "túp lều",
+  "sentences": [
+   {
+    "fr": "Ils passèrent la nuit dans une hutte de branchages au bord du lac.",
+    "vi": "Họ qua đêm trong một túp lều bằng cành cây bên bờ hồ."
+   },
+   {
+    "fr": "La vieille hutte de pêcheur tenait encore debout malgré la tempête.",
+    "vi": "Túp lều cũ của người đánh cá vẫn đứng vững bất chấp cơn bão."
+   },
+   {
+    "fr": "Chaque famille du village vivait dans une hutte au toit de paille.",
+    "vi": "Mỗi gia đình trong làng sống trong một túp lều mái tranh."
+   }
+  ]
+ },
+ {
+  "id": "crinière",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bờm (ngựa, sư tử)",
+  "sentences": [
+   {
+    "fr": "Le lion secoua sa crinière avant de rugir.",
+    "vi": "Con sư tử lắc bờm trước khi gầm lên."
+   },
+   {
+    "fr": "Le vent faisait onduler la crinière du cheval au galop.",
+    "vi": "Gió làm bờm con ngựa phi nước đại dập dờn."
+   },
+   {
+    "fr": "Avec sa crinière rousse, on la reconnaissait de loin.",
+    "vi": "Với mái tóc bờm màu hung, người ta nhận ra cô ấy từ xa."
+   }
+  ]
+ },
+ {
+  "id": "fable",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "truyện ngụ ngôn",
+  "sentences": [
+   {
+    "fr": "Les enfants adorent la fable du corbeau et du renard.",
+    "vi": "Bọn trẻ rất thích truyện ngụ ngôn về con quạ và con cáo."
+   },
+   {
+    "fr": "Cette histoire n'est qu'une fable inventée pour nous rassurer.",
+    "vi": "Câu chuyện này chỉ là một điều bịa đặt để trấn an chúng ta thôi."
+   },
+   {
+    "fr": "Chaque fable de La Fontaine se termine par une morale.",
+    "vi": "Mỗi truyện ngụ ngôn của La Fontaine kết thúc bằng một bài học đạo lý."
+   }
+  ]
+ },
+ {
+  "id": "crisser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kêu ken két, rít",
+  "sentences": [
+   {
+    "fr": "Les pneus ont crissé sur l'asphalte au moment du freinage.",
+    "vi": "Lốp xe rít lên trên mặt đường nhựa khi phanh gấp."
+   },
+   {
+    "fr": "La craie crissait désagréablement sur le tableau.",
+    "vi": "Viên phấn kêu ken két khó chịu trên bảng."
+   },
+   {
+    "fr": "La neige crissait sous nos pas dans le froid du matin.",
+    "vi": "Tuyết kêu lạo xạo dưới bước chân chúng tôi trong cái lạnh buổi sáng."
+   }
+  ]
+ },
+ {
+  "id": "collectionner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sưu tập",
+  "sentences": [
+   {
+    "fr": "Depuis l'enfance, il collectionne les timbres du monde entier.",
+    "vi": "Từ nhỏ, anh ấy sưu tập tem của khắp thế giới."
+   },
+   {
+    "fr": "Elle collectionne les vieilles cartes postales trouvées aux puces.",
+    "vi": "Cô ấy sưu tập những tấm bưu thiếp cũ tìm được ở chợ đồ cũ."
+   },
+   {
+    "fr": "Cette équipe collectionne les défaites depuis le début de la saison.",
+    "vi": "Đội này gom hết thất bại này đến thất bại khác từ đầu mùa giải."
+   }
+  ]
+ },
+ {
+  "id": "deal",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thỏa thuận, giao kèo",
+  "sentences": [
+   {
+    "fr": "Les deux entreprises ont finalement conclu un deal avantageux.",
+    "vi": "Hai công ty cuối cùng đã đạt được một thỏa thuận có lợi."
+   },
+   {
+    "fr": "C'est un bon deal : tu m'aides à déménager et je t'invite au restaurant.",
+    "vi": "Đây là một giao kèo hời: cậu giúp tớ chuyển nhà thì tớ mời cậu đi ăn."
+   },
+   {
+    "fr": "Le deal a échoué à la dernière minute faute d'accord sur le prix.",
+    "vi": "Thỏa thuận đổ bể vào phút chót vì không thống nhất được giá."
+   }
+  ]
+ },
+ {
+  "id": "expirer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thở ra; hết hạn",
+  "sentences": [
+   {
+    "fr": "Inspirez profondément, puis expirez lentement par la bouche.",
+    "vi": "Hít vào thật sâu, rồi thở ra chầm chậm bằng miệng."
+   },
+   {
+    "fr": "Mon passeport expire à la fin du mois prochain.",
+    "vi": "Hộ chiếu của tôi hết hạn vào cuối tháng sau."
+   },
+   {
+    "fr": "L'offre promotionnelle expire ce dimanche à minuit.",
+    "vi": "Ưu đãi khuyến mãi hết hạn vào nửa đêm Chủ nhật này."
+   }
+  ]
+ },
+ {
+  "id": "gaffer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phạm sai lầm ngớ ngẩn, làm hớ",
+  "sentences": [
+   {
+    "fr": "J'ai gaffé en oubliant complètement son anniversaire.",
+    "vi": "Tôi đã làm hớ khi quên bẵng sinh nhật của cô ấy."
+   },
+   {
+    "fr": "Il a gaffé devant le directeur en confondant son nom.",
+    "vi": "Anh ấy phạm sai lầm ngớ ngẩn trước giám đốc khi gọi nhầm tên ông."
+   },
+   {
+    "fr": "Fais attention à ne pas gaffer pendant l'entretien.",
+    "vi": "Cẩn thận đừng có nói hớ trong lúc phỏng vấn."
+   }
+  ]
+ },
+ {
+  "id": "projection",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chiếu (phim); sự phóng chiếu",
+  "sentences": [
+   {
+    "fr": "La projection du film débutera à vingt heures dans la grande salle.",
+    "vi": "Buổi chiếu phim sẽ bắt đầu lúc hai mươi giờ ở phòng lớn."
+   },
+   {
+    "fr": "Le conférencier a illustré son exposé par la projection de graphiques.",
+    "vi": "Diễn giả minh họa bài trình bày bằng cách chiếu các biểu đồ."
+   },
+   {
+    "fr": "Selon les projections des experts, l'économie devrait repartir l'an prochain.",
+    "vi": "Theo dự phóng của các chuyên gia, kinh tế sẽ phục hồi vào năm tới."
+   }
+  ]
+ },
+ {
+  "id": "distraitement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "lơ đãng, đãng trí",
+  "sentences": [
+   {
+    "fr": "Il feuilletait distraitement le journal en attendant son café.",
+    "vi": "Anh ấy lơ đãng lật tờ báo trong khi chờ cà phê."
+   },
+   {
+    "fr": "Elle répondit distraitement, l'esprit visiblement ailleurs.",
+    "vi": "Cô ấy trả lời một cách đãng trí, tâm trí rõ ràng đang ở nơi khác."
+   },
+   {
+    "fr": "L'enfant traçait distraitement des cercles dans le sable.",
+    "vi": "Đứa trẻ lơ đãng vẽ những vòng tròn trên cát."
+   }
+  ]
+ },
+ {
+  "id": "imitation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự bắt chước; đồ giả, đồ nhái",
+  "sentences": [
+   {
+    "fr": "Son imitation du professeur a fait rire toute la classe.",
+    "vi": "Màn bắt chước thầy giáo của cậu ấy khiến cả lớp cười ồ."
+   },
+   {
+    "fr": "Ce sac n'est pas du vrai cuir, c'est une imitation.",
+    "vi": "Chiếc túi này không phải da thật, nó là đồ giả."
+   },
+   {
+    "fr": "Les enfants apprennent beaucoup par imitation de leurs parents.",
+    "vi": "Trẻ con học được nhiều điều qua việc bắt chước cha mẹ."
+   }
+  ]
+ },
+ {
+  "id": "effraction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự đột nhập (phá khóa)",
+  "sentences": [
+   {
+    "fr": "Les cambrioleurs sont entrés par effraction pendant la nuit.",
+    "vi": "Bọn trộm đã phá khóa đột nhập vào ban đêm."
+   },
+   {
+    "fr": "La police n'a relevé aucune trace d'effraction sur la porte.",
+    "vi": "Cảnh sát không tìm thấy dấu vết đột nhập nào trên cửa."
+   },
+   {
+    "fr": "Le contrat d'assurance couvre les vols avec effraction.",
+    "vi": "Hợp đồng bảo hiểm bao gồm các vụ trộm có phá khóa đột nhập."
+   }
+  ]
+ },
+ {
+  "id": "tournoi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giải đấu",
+  "sentences": [
+   {
+    "fr": "Notre équipe s'est qualifiée pour la finale du tournoi.",
+    "vi": "Đội của chúng tôi đã lọt vào chung kết giải đấu."
+   },
+   {
+    "fr": "Il participe chaque été à un tournoi d'échecs international.",
+    "vi": "Mỗi mùa hè anh ấy tham gia một giải cờ vua quốc tế."
+   },
+   {
+    "fr": "Le tournoi a été interrompu par un violent orage.",
+    "vi": "Giải đấu bị gián đoạn bởi một cơn giông dữ dội."
+   }
+  ]
+ },
+ {
+  "id": "exclamation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "câu cảm thán, tiếng kêu",
+  "sentences": [
+   {
+    "fr": "Une exclamation de surprise parcourut la salle.",
+    "vi": "Một tiếng kêu ngạc nhiên lan khắp căn phòng."
+   },
+   {
+    "fr": "N'oublie pas le point d'exclamation à la fin de la phrase.",
+    "vi": "Đừng quên dấu chấm than ở cuối câu."
+   },
+   {
+    "fr": "Ses exclamations de joie résonnaient dans tout l'immeuble.",
+    "vi": "Những tiếng reo vui của cô ấy vang khắp tòa nhà."
+   }
+  ]
+ },
+ {
+  "id": "apocalypse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ngày tận thế",
+  "sentences": [
+   {
+    "fr": "Le film raconte la survie de quelques humains après l'apocalypse.",
+    "vi": "Bộ phim kể về sự sống sót của vài con người sau ngày tận thế."
+   },
+   {
+    "fr": "On aurait dit une scène d'apocalypse après le passage de l'ouragan.",
+    "vi": "Trông cứ như cảnh tận thế sau khi cơn bão đi qua."
+   },
+   {
+    "fr": "Certains prophètes de malheur annoncent l'apocalypse à chaque crise.",
+    "vi": "Vài kẻ tiên tri tai ương loan báo ngày tận thế mỗi khi có khủng hoảng."
+   }
+  ]
+ },
+ {
+  "id": "fermeté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự rắn chắc; sự kiên quyết",
+  "sentences": [
+   {
+    "fr": "Elle a répondu avec fermeté qu'elle ne changerait pas d'avis.",
+    "vi": "Cô ấy đáp lại một cách kiên quyết rằng sẽ không đổi ý."
+   },
+   {
+    "fr": "Le directeur a rappelé les règles avec fermeté mais sans agressivité.",
+    "vi": "Giám đốc nhắc lại các quy tắc một cách kiên quyết nhưng không gay gắt."
+   },
+   {
+    "fr": "Vérifiez la fermeté du fruit avant de l'acheter.",
+    "vi": "Hãy kiểm tra độ rắn chắc của quả trước khi mua."
+   }
+  ]
+ },
+ {
+  "id": "affamer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bỏ đói, làm cho đói",
+  "sentences": [
+   {
+    "fr": "L'ennemi cherchait à affamer la ville en bloquant tous les convois.",
+    "vi": "Kẻ thù tìm cách bỏ đói thành phố bằng cách chặn mọi đoàn tiếp tế."
+   },
+   {
+    "fr": "On ne peut pas affamer un peuple pour le contraindre à se rendre.",
+    "vi": "Không thể bỏ đói cả một dân tộc để ép họ đầu hàng."
+   },
+   {
+    "fr": "Ce régime trop strict finit par vous affamer inutilement.",
+    "vi": "Chế độ ăn kiêng quá khắt khe này rốt cuộc làm bạn đói một cách vô ích."
+   }
+  ]
+ },
+ {
+  "id": "envoi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự gửi; món hàng gửi",
+  "sentences": [
+   {
+    "fr": "L'envoi de votre colis a été confirmé ce matin.",
+    "vi": "Việc gửi kiện hàng của bạn đã được xác nhận sáng nay."
+   },
+   {
+    "fr": "Un envoi de médicaments est arrivé dans la zone sinistrée.",
+    "vi": "Một lô hàng thuốc men đã đến khu vực bị thiên tai."
+   },
+   {
+    "fr": "Les frais d'envoi seront calculés en fonction du poids.",
+    "vi": "Phí gửi hàng sẽ được tính theo trọng lượng."
+   }
+  ]
+ },
+ {
+  "id": "retenue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự dè dặt, kiềm chế; phạt ở lại trường",
+  "sentences": [
+   {
+    "fr": "Il a parlé de ce sujet délicat avec beaucoup de retenue.",
+    "vi": "Anh ấy nói về chủ đề tế nhị này với sự dè dặt rất lớn."
+   },
+   {
+    "fr": "L'élève a écopé de deux heures de retenue pour son insolence.",
+    "vi": "Học sinh bị phạt ở lại trường hai tiếng vì thái độ hỗn xược."
+   },
+   {
+    "fr": "Une retenue de dix pour cent a été prélevée sur son salaire.",
+    "vi": "Một khoản khấu trừ mười phần trăm đã bị trích từ lương của anh ấy."
+   }
+  ]
+ },
+ {
+  "id": "cartable",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cặp sách",
+  "sentences": [
+   {
+    "fr": "L'enfant a rangé ses cahiers dans son cartable avant de partir.",
+    "vi": "Đứa trẻ xếp vở vào cặp sách trước khi đi."
+   },
+   {
+    "fr": "Son cartable était si lourd qu'elle avait mal au dos.",
+    "vi": "Cặp sách của cô bé nặng đến nỗi lưng cô bé bị đau."
+   },
+   {
+    "fr": "Il a oublié son goûter au fond de son cartable.",
+    "vi": "Cậu bé để quên bữa xế dưới đáy cặp sách."
+   }
+  ]
+ },
+ {
+  "id": "légendaire",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "huyền thoại",
+  "sentences": [
+   {
+    "fr": "Ce joueur est devenu une figure légendaire du football français.",
+    "vi": "Cầu thủ này đã trở thành một nhân vật huyền thoại của bóng đá Pháp."
+   },
+   {
+    "fr": "Sa générosité est légendaire dans tout le quartier.",
+    "vi": "Lòng hào phóng của ông ấy nổi tiếng như huyền thoại khắp khu phố."
+   },
+   {
+    "fr": "On raconte encore les exploits légendaires de ce chevalier.",
+    "vi": "Người ta vẫn còn kể về những chiến công huyền thoại của vị hiệp sĩ này."
+   }
+  ]
+ },
+ {
+  "id": "gramme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "gam",
+  "sentences": [
+   {
+    "fr": "Ajoutez cent grammes de beurre à la pâte.",
+    "vi": "Thêm một trăm gam bơ vào bột."
+   },
+   {
+    "fr": "Le bijoutier a pesé l'or au gramme près.",
+    "vi": "Người thợ kim hoàn cân vàng chính xác đến từng gam."
+   },
+   {
+    "fr": "Il n'a pas pris un seul gramme malgré tous ces desserts.",
+    "vi": "Anh ấy chẳng lên lấy một gam nào dù ăn hết chỗ tráng miệng đó."
+   }
+  ]
+ },
+ {
+  "id": "recoucher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi ngủ lại; cho nằm lại",
+  "sentences": [
+   {
+    "fr": "Après avoir bu son biberon, elle a recouché le bébé.",
+    "vi": "Sau khi cho bé bú bình, cô ấy đặt bé nằm lại."
+   },
+   {
+    "fr": "Réveillé à trois heures, il n'a pas réussi à se recoucher.",
+    "vi": "Tỉnh giấc lúc ba giờ, anh ấy không tài nào ngủ lại được."
+   },
+   {
+    "fr": "Recouche-toi, il est encore trop tôt pour se lever.",
+    "vi": "Đi ngủ lại đi, còn quá sớm để dậy mà."
+   }
+  ]
+ },
+ {
+  "id": "approbation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chấp thuận, tán thành",
+  "sentences": [
+   {
+    "fr": "Le projet a reçu l'approbation unanime du conseil.",
+    "vi": "Dự án đã nhận được sự tán thành nhất trí của hội đồng."
+   },
+   {
+    "fr": "Elle hocha la tête en signe d'approbation.",
+    "vi": "Cô ấy gật đầu tỏ ý tán thành."
+   },
+   {
+    "fr": "Aucune dépense ne peut se faire sans l'approbation du directeur.",
+    "vi": "Không khoản chi nào được thực hiện mà không có sự chấp thuận của giám đốc."
+   }
+  ]
+ },
+ {
+  "id": "occupant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người chiếm giữ; quân chiếm đóng",
+  "sentences": [
+   {
+    "fr": "La résistance s'organisait contre l'occupant.",
+    "vi": "Lực lượng kháng chiến tổ chức chống lại quân chiếm đóng."
+   },
+   {
+    "fr": "Le seul occupant de l'appartement était un vieux chat.",
+    "vi": "Người chiếm giữ duy nhất của căn hộ là một con mèo già."
+   },
+   {
+    "fr": "Les forces occupantes ont imposé un couvre-feu strict.",
+    "vi": "Lực lượng chiếm đóng đã áp đặt lệnh giới nghiêm nghiêm ngặt."
+   }
+  ]
+ },
+ {
+  "id": "huître",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "con hàu",
+  "sentences": [
+   {
+    "fr": "À Noël, on déguste toujours des huîtres bien fraîches.",
+    "vi": "Vào Giáng sinh, người ta luôn thưởng thức hàu thật tươi."
+   },
+   {
+    "fr": "Il a trouvé une petite perle dans une huître.",
+    "vi": "Anh ấy tìm thấy một viên ngọc nhỏ trong con hàu."
+   },
+   {
+    "fr": "L'ostréiculteur récolte ses huîtres à marée basse.",
+    "vi": "Người nuôi hàu thu hoạch hàu lúc thủy triều xuống."
+   }
+  ]
+ },
+ {
+  "id": "flirter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tán tỉnh, ve vãn",
+  "sentences": [
+   {
+    "fr": "Il passait ses soirées à flirter avec toutes les filles du bar.",
+    "vi": "Anh ta dành cả buổi tối để tán tỉnh mọi cô gái trong quán bar."
+   },
+   {
+    "fr": "Ils ont commencé à flirter dès leur première rencontre.",
+    "vi": "Họ bắt đầu ve vãn nhau ngay từ lần gặp đầu tiên."
+   },
+   {
+    "fr": "Le coureur flirtait avec les limites du règlement.",
+    "vi": "Tay đua lượn lờ sát ranh giới của luật lệ."
+   }
+  ]
+ },
+ {
+  "id": "aliment",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thực phẩm, thức ăn",
+  "sentences": [
+   {
+    "fr": "Les fruits et légumes sont des aliments riches en vitamines.",
+    "vi": "Trái cây và rau củ là những thực phẩm giàu vitamin."
+   },
+   {
+    "fr": "Il faut éviter les aliments trop gras et trop sucrés.",
+    "vi": "Cần tránh những thực phẩm quá béo và quá ngọt."
+   },
+   {
+    "fr": "Cet aliment de base nourrit des millions de personnes chaque jour.",
+    "vi": "Loại lương thực cơ bản này nuôi sống hàng triệu người mỗi ngày."
+   }
+  ]
+ },
+ {
+  "id": "noircir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm đen, bôi đen",
+  "sentences": [
+   {
+    "fr": "La fumée avait noirci les murs de la cuisine.",
+    "vi": "Khói đã bôi đen các bức tường nhà bếp."
+   },
+   {
+    "fr": "Elle a noirci des pages entières de son cahier.",
+    "vi": "Cô ấy đã viết kín đen từng trang vở của mình."
+   },
+   {
+    "fr": "Les journaux ont cherché à noircir sa réputation.",
+    "vi": "Báo chí tìm cách bôi nhọ danh tiếng của ông ấy."
+   }
+  ]
+ },
+ {
+  "id": "marionnette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "con rối",
+  "sentences": [
+   {
+    "fr": "Les enfants riaient devant le spectacle de marionnettes.",
+    "vi": "Bọn trẻ cười vui trước buổi diễn múa rối."
+   },
+   {
+    "fr": "Il manipulait sa marionnette avec une adresse étonnante.",
+    "vi": "Anh ấy điều khiển con rối của mình với sự khéo léo đáng kinh ngạc."
+   },
+   {
+    "fr": "Ce ministre n'est qu'une marionnette entre les mains du pouvoir.",
+    "vi": "Vị bộ trưởng này chỉ là con rối trong tay quyền lực."
+   }
+  ]
+ },
+ {
+  "id": "fracasser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đập vỡ, làm tan tành",
+  "sentences": [
+   {
+    "fr": "La tempête a fracassé les volets contre le mur.",
+    "vi": "Cơn bão đập vỡ các cánh cửa chớp vào tường."
+   },
+   {
+    "fr": "Furieux, il a fracassé son verre sur le sol.",
+    "vi": "Điên tiết, anh ta đập vỡ chiếc ly xuống sàn."
+   },
+   {
+    "fr": "Les vagues venaient se fracasser contre les rochers.",
+    "vi": "Những con sóng vỡ tan tành vào các tảng đá."
+   }
+  ]
+ },
+ {
+  "id": "saumon",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "cá hồi; màu hồng cam",
+  "sentences": [
+   {
+    "fr": "Nous avons mangé du saumon fumé pour l'apéritif.",
+    "vi": "Chúng tôi đã ăn cá hồi hun khói làm món khai vị."
+   },
+   {
+    "fr": "Le saumon remonte la rivière pour aller se reproduire.",
+    "vi": "Cá hồi ngược dòng sông để đi sinh sản."
+   },
+   {
+    "fr": "Elle portait une robe d'un joli ton saumon.",
+    "vi": "Cô ấy mặc một chiếc váy màu hồng cam rất đẹp."
+   }
+  ]
+ },
+ {
+  "id": "intercepter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chặn, đón bắt",
+  "sentences": [
+   {
+    "fr": "Le gardien a réussi à intercepter le ballon in extremis.",
+    "vi": "Thủ môn đã kịp chặn bóng vào phút chót."
+   },
+   {
+    "fr": "Les services secrets ont intercepté un message crypté.",
+    "vi": "Cơ quan mật vụ đã chặn được một tin nhắn mã hóa."
+   },
+   {
+    "fr": "Elle a intercepté la lettre avant qu'il ne la lise.",
+    "vi": "Cô ấy đã chặn lấy lá thư trước khi anh ta đọc được."
+   }
+  ]
+ },
+ {
+  "id": "location",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "việc thuê, cho thuê",
+  "sentences": [
+   {
+    "fr": "La location de l'appartement coûte huit cents euros par mois.",
+    "vi": "Tiền thuê căn hộ tốn tám trăm euro mỗi tháng."
+   },
+   {
+    "fr": "Nous avons opté pour la location d'une voiture pendant les vacances.",
+    "vi": "Chúng tôi chọn thuê một chiếc ô tô trong kỳ nghỉ."
+   },
+   {
+    "fr": "Cette agence est spécialisée dans la location de matériel de chantier.",
+    "vi": "Công ty này chuyên cho thuê thiết bị công trường."
+   }
+  ]
+ },
+ {
+  "id": "métamorphose",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự biến hóa, biến thái",
+  "sentences": [
+   {
+    "fr": "La métamorphose de la chenille en papillon fascine les enfants.",
+    "vi": "Sự biến thái từ sâu bướm thành bươm bướm làm bọn trẻ mê mẩn."
+   },
+   {
+    "fr": "Depuis son voyage, il a subi une véritable métamorphose.",
+    "vi": "Từ sau chuyến đi, anh ấy đã trải qua một sự biến đổi thực sự."
+   },
+   {
+    "fr": "Ce quartier a connu une métamorphose spectaculaire en dix ans.",
+    "vi": "Khu phố này đã trải qua một sự biến đổi ngoạn mục trong mười năm."
+   }
+  ]
+ },
+ {
+  "id": "taquiner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trêu chọc, chọc ghẹo",
+  "sentences": [
+   {
+    "fr": "Son grand frère adore la taquiner sur sa coiffure.",
+    "vi": "Anh trai cô bé rất thích trêu chọc cô về kiểu tóc."
+   },
+   {
+    "fr": "Ils se taquinent gentiment depuis qu'ils sont enfants.",
+    "vi": "Họ trêu chọc nhau một cách vui vẻ từ khi còn nhỏ."
+   },
+   {
+    "fr": "Arrête de me taquiner, je suis fatigué ce soir.",
+    "vi": "Đừng chọc ghẹo tớ nữa, tối nay tớ mệt lắm rồi."
+   }
+  ]
+ },
+ {
+  "id": "admirateur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người hâm mộ, người ngưỡng mộ",
+  "sentences": [
+   {
+    "fr": "L'actrice a été assaillie par une foule d'admirateurs.",
+    "vi": "Nữ diễn viên bị một đám người hâm mộ vây quanh."
+   },
+   {
+    "fr": "Il lui a envoyé des fleurs comme un admirateur secret.",
+    "vi": "Anh ấy gửi hoa cho cô như một người ngưỡng mộ thầm lặng."
+   },
+   {
+    "fr": "Cet écrivain compte des admirateurs dans le monde entier.",
+    "vi": "Nhà văn này có những người hâm mộ trên khắp thế giới."
+   }
+  ]
+ },
+ {
+  "id": "actualité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thời sự, tính thời sự",
+  "sentences": [
+   {
+    "fr": "Il suit l'actualité internationale de très près.",
+    "vi": "Anh ấy theo dõi thời sự quốc tế rất sát sao."
+   },
+   {
+    "fr": "Ce sujet reste d'une brûlante actualité.",
+    "vi": "Chủ đề này vẫn mang tính thời sự nóng bỏng."
+   },
+   {
+    "fr": "Les actualités de vingt heures ont ouvert sur la catastrophe.",
+    "vi": "Bản tin thời sự lúc tám giờ tối mở đầu bằng thảm họa."
+   }
+  ]
+ },
+ {
+  "id": "confirmation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự xác nhận",
+  "sentences": [
+   {
+    "fr": "J'attends encore la confirmation de ma réservation.",
+    "vi": "Tôi vẫn đang chờ xác nhận đặt chỗ của mình."
+   },
+   {
+    "fr": "Ces résultats apportent la confirmation de notre hypothèse.",
+    "vi": "Những kết quả này mang lại sự xác nhận cho giả thuyết của chúng tôi."
+   },
+   {
+    "fr": "Vous recevrez un e-mail de confirmation dans quelques minutes.",
+    "vi": "Bạn sẽ nhận được email xác nhận trong vài phút nữa."
+   }
+  ]
+ },
+ {
+  "id": "volcan",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "núi lửa",
+  "sentences": [
+   {
+    "fr": "Le volcan est entré en éruption après des années de sommeil.",
+    "vi": "Núi lửa phun trào sau nhiều năm ngủ yên."
+   },
+   {
+    "fr": "Nous avons gravi le volcan jusqu'au bord du cratère.",
+    "vi": "Chúng tôi leo lên núi lửa cho đến miệng núi."
+   },
+   {
+    "fr": "Cette île est née de l'activité d'un ancien volcan.",
+    "vi": "Hòn đảo này hình thành từ hoạt động của một núi lửa cổ."
+   }
+  ]
+ },
+ {
+  "id": "maltraiter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngược đãi, hành hạ",
+  "sentences": [
+   {
+    "fr": "Il est interdit de maltraiter les animaux.",
+    "vi": "Cấm ngược đãi động vật."
+   },
+   {
+    "fr": "L'enfant maltraité a fini par être placé dans une famille d'accueil.",
+    "vi": "Đứa trẻ bị ngược đãi cuối cùng được đưa vào một gia đình nuôi dưỡng."
+   },
+   {
+    "fr": "Les critiques ont sévèrement maltraité son dernier roman.",
+    "vi": "Giới phê bình đã đánh giá gay gắt cuốn tiểu thuyết mới nhất của ông."
+   }
+  ]
+ },
+ {
+  "id": "alimentaire",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc thực phẩm, ăn uống",
+  "sentences": [
+   {
+    "fr": "L'industrie alimentaire est soumise à des contrôles stricts.",
+    "vi": "Ngành công nghiệp thực phẩm chịu sự kiểm soát nghiêm ngặt."
+   },
+   {
+    "fr": "Elle souffre d'une allergie alimentaire aux fruits de mer.",
+    "vi": "Cô ấy bị dị ứng thực phẩm với hải sản."
+   },
+   {
+    "fr": "L'association distribue des colis alimentaires aux plus démunis.",
+    "vi": "Hội từ thiện phát các gói thực phẩm cho những người khó khăn nhất."
+   }
+  ]
+ },
+ {
+  "id": "caissier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thu ngân",
+  "sentences": [
+   {
+    "fr": "Le caissier m'a rendu la monnaie en souriant.",
+    "vi": "Nhân viên thu ngân trả tiền thừa cho tôi kèm nụ cười."
+   },
+   {
+    "fr": "La caissière du supermarché scannait les articles à toute vitesse.",
+    "vi": "Cô thu ngân siêu thị quét mã các món hàng cực nhanh."
+   },
+   {
+    "fr": "Il a travaillé comme caissier pour financer ses études.",
+    "vi": "Anh ấy làm thu ngân để trang trải việc học."
+   }
+  ]
+ },
+ {
+  "id": "implacable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "không khoan nhượng, tàn nhẫn",
+  "sentences": [
+   {
+    "fr": "Le juge s'est montré implacable envers les récidivistes.",
+    "vi": "Vị thẩm phán tỏ ra không khoan nhượng với những kẻ tái phạm."
+   },
+   {
+    "fr": "Sous le soleil implacable du désert, ils avançaient à peine.",
+    "vi": "Dưới mặt trời tàn nhẫn của sa mạc, họ chật vật tiến bước."
+   },
+   {
+    "fr": "Sa logique implacable ne laissait place à aucune objection.",
+    "vi": "Logic không khoan nhượng của ông không để lại chỗ cho phản bác nào."
+   }
+  ]
+ },
+ {
+  "id": "ranimer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hồi sinh, làm sống lại; nhen nhóm lại",
+  "sentences": [
+   {
+    "fr": "Les secouristes ont réussi à ranimer le noyé.",
+    "vi": "Nhân viên cứu hộ đã hồi sinh được người bị đuối nước."
+   },
+   {
+    "fr": "Elle a ranimé le feu en soufflant sur les braises.",
+    "vi": "Cô ấy nhen lại lửa bằng cách thổi vào than hồng."
+   },
+   {
+    "fr": "Cette rencontre a ranimé en lui l'espoir d'un jour meilleur.",
+    "vi": "Cuộc gặp gỡ này đã nhen nhóm lại trong anh niềm hy vọng về một ngày tươi sáng hơn."
+   }
+  ]
+ },
+ {
+  "id": "parfumé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thơm, ướp hương",
+  "sentences": [
+   {
+    "fr": "Le jardin était tout parfumé par les roses en fleur.",
+    "vi": "Khu vườn thơm ngát mùi hoa hồng đang nở."
+   },
+   {
+    "fr": "Elle a préparé un thé parfumé à la bergamote.",
+    "vi": "Cô ấy pha một ấm trà ướp hương cam bergamot."
+   },
+   {
+    "fr": "Ce savon parfumé laisse une odeur agréable sur la peau.",
+    "vi": "Bánh xà phòng thơm này để lại mùi dễ chịu trên da."
+   }
+  ]
+ },
+ {
+  "id": "raclée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "trận đòn; sự thảm bại",
+  "sentences": [
+   {
+    "fr": "Notre équipe a pris une belle raclée lors du dernier match.",
+    "vi": "Đội chúng tôi đã thua tan tác trong trận đấu vừa rồi."
+   },
+   {
+    "fr": "Si tu recommences, tu vas recevoir une bonne raclée.",
+    "vi": "Nếu con còn tái phạm, con sẽ ăn một trận đòn ra trò."
+   },
+   {
+    "fr": "Les électeurs ont infligé une sévère raclée au parti sortant.",
+    "vi": "Cử tri đã giáng một thất bại nặng nề cho đảng cầm quyền."
+   }
+  ]
+ },
+ {
+  "id": "syllabe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "âm tiết",
+  "sentences": [
+   {
+    "fr": "Le mot « chocolat » compte trois syllabes.",
+    "vi": "Từ \"chocolat\" có ba âm tiết."
+   },
+   {
+    "fr": "Elle prononçait chaque syllabe avec une lenteur exagérée.",
+    "vi": "Cô ấy phát âm từng âm tiết với sự chậm rãi thái quá."
+   },
+   {
+    "fr": "Il n'a pas prononcé une seule syllabe de toute la soirée.",
+    "vi": "Anh ấy không thốt ra một âm tiết nào suốt cả buổi tối."
+   }
+  ]
+ },
+ {
+  "id": "électronique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "điện tử; ngành điện tử",
+  "sentences": [
+   {
+    "fr": "Il conserve tous ses documents sous forme électronique.",
+    "vi": "Anh ấy lưu giữ tất cả tài liệu dưới dạng điện tử."
+   },
+   {
+    "fr": "La musique électronique fait danser toute la salle.",
+    "vi": "Nhạc điện tử khiến cả khán phòng nhảy múa."
+   },
+   {
+    "fr": "Il a étudié l'électronique dans une grande école d'ingénieurs.",
+    "vi": "Anh ấy học ngành điện tử tại một trường kỹ sư lớn."
+   }
+  ]
+ },
+ {
+  "id": "boum",
+  "pos": [
+   "danh từ",
+   "tượng thanh"
+  ],
+  "gender": "f",
+  "vi": "tiếng nổ bùm; tiệc (của trẻ)",
+  "sentences": [
+   {
+    "fr": "On entendit un grand boum, puis un nuage de fumée s'éleva.",
+    "vi": "Người ta nghe một tiếng bùm lớn, rồi một đám khói bốc lên."
+   },
+   {
+    "fr": "Ma fille est invitée à la boum d'anniversaire de sa copine.",
+    "vi": "Con gái tôi được mời đến buổi tiệc sinh nhật của bạn nó."
+   },
+   {
+    "fr": "Les enfants ont organisé une petite boum dans le salon.",
+    "vi": "Bọn trẻ tổ chức một buổi tiệc nhỏ trong phòng khách."
+   }
+  ]
+ },
+ {
+  "id": "vice-président",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "phó chủ tịch, phó tổng thống",
+  "sentences": [
+   {
+    "fr": "Le vice-président a présidé la réunion en l'absence du directeur.",
+    "vi": "Phó chủ tịch chủ trì cuộc họp khi giám đốc vắng mặt."
+   },
+   {
+    "fr": "Elle a été nommée vice-présidente de l'association l'an dernier.",
+    "vi": "Bà ấy được bổ nhiệm làm phó chủ tịch hiệp hội năm ngoái."
+   },
+   {
+    "fr": "Le vice-président des États-Unis a prononcé un discours solennel.",
+    "vi": "Phó tổng thống Hoa Kỳ đã đọc một bài diễn văn trang trọng."
+   }
+  ]
+ },
+ {
+  "id": "efficacité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hiệu quả, hiệu suất",
+  "sentences": [
+   {
+    "fr": "Ce nouveau médicament a prouvé son efficacité lors des essais.",
+    "vi": "Loại thuốc mới này đã chứng minh hiệu quả trong các thử nghiệm."
+   },
+   {
+    "fr": "Elle gère son emploi du temps avec une redoutable efficacité.",
+    "vi": "Cô ấy quản lý thời gian biểu với hiệu suất đáng nể."
+   },
+   {
+    "fr": "L'efficacité de l'équipe a doublé depuis la réorganisation.",
+    "vi": "Hiệu quả của đội đã tăng gấp đôi kể từ khi tái tổ chức."
+   }
+  ]
+ },
+ {
+  "id": "glissant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "trơn trượt",
+  "sentences": [
+   {
+    "fr": "Attention, le sol est glissant après la pluie.",
+    "vi": "Cẩn thận, sàn trơn trượt sau cơn mưa."
+   },
+   {
+    "fr": "Les routes verglacées étaient extrêmement glissantes ce matin.",
+    "vi": "Các con đường đóng băng cực kỳ trơn trượt sáng nay."
+   },
+   {
+    "fr": "Nous abordons là un terrain glissant, mieux vaut être prudent.",
+    "vi": "Chúng ta đang bước vào một địa hạt trơn trượt, tốt nhất nên thận trọng."
+   }
+  ]
+ },
+ {
+  "id": "liasse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "xấp, tập (giấy, tiền)",
+  "sentences": [
+   {
+    "fr": "Il sortit une liasse de billets de sa poche.",
+    "vi": "Anh ta rút một xấp tiền từ trong túi ra."
+   },
+   {
+    "fr": "Sur son bureau traînait une liasse de documents à signer.",
+    "vi": "Trên bàn làm việc của cô để một tập tài liệu cần ký."
+   },
+   {
+    "fr": "Elle rangea la liasse de papiers dans le tiroir.",
+    "vi": "Cô ấy cất tập giấy tờ vào ngăn kéo."
+   }
+  ]
+ },
+ {
+  "id": "réconfort",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự an ủi, khích lệ",
+  "sentences": [
+   {
+    "fr": "Ses paroles m'ont apporté un grand réconfort.",
+    "vi": "Những lời của cô ấy đã mang lại cho tôi niềm an ủi lớn."
+   },
+   {
+    "fr": "Dans le deuil, la présence des amis est un précieux réconfort.",
+    "vi": "Trong tang tóc, sự hiện diện của bạn bè là một niềm an ủi quý giá."
+   },
+   {
+    "fr": "Une tasse de thé chaud est parfois le seul réconfort d'un jour d'hiver.",
+    "vi": "Một tách trà nóng đôi khi là niềm an ủi duy nhất của một ngày đông."
+   }
+  ]
+ },
+ {
+  "id": "trente-cinq",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "ba mươi lăm",
+  "sentences": [
+   {
+    "fr": "En France, la semaine légale de travail est de trente-cinq heures.",
+    "vi": "Ở Pháp, tuần làm việc theo luật là ba mươi lăm giờ."
+   },
+   {
+    "fr": "Elle a fêté ses trente-cinq ans entourée de sa famille.",
+    "vi": "Cô ấy mừng sinh nhật ba mươi lăm tuổi bên gia đình."
+   },
+   {
+    "fr": "Il y avait trente-cinq personnes inscrites à l'atelier.",
+    "vi": "Có ba mươi lăm người đăng ký tham gia buổi hội thảo."
+   }
+  ]
+ },
+ {
+  "id": "belge",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "người Bỉ; thuộc Bỉ",
+  "sentences": [
+   {
+    "fr": "La bière belge est réputée dans le monde entier.",
+    "vi": "Bia Bỉ nổi tiếng khắp thế giới."
+   },
+   {
+    "fr": "Mon voisin est belge, il vient de Liège.",
+    "vi": "Hàng xóm của tôi là người Bỉ, anh ấy đến từ Liège."
+   },
+   {
+    "fr": "Ce réalisateur belge a remporté un prix prestigieux.",
+    "vi": "Vị đạo diễn người Bỉ này đã đoạt một giải thưởng danh giá."
+   }
+  ]
+ },
+ {
+  "id": "poindre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hé rạng, ló dạng",
+  "sentences": [
+   {
+    "fr": "Le jour commençait à poindre à l'horizon.",
+    "vi": "Ngày bắt đầu hé rạng nơi chân trời."
+   },
+   {
+    "fr": "On voyait poindre les premiers bourgeons sur les branches.",
+    "vi": "Người ta thấy những chồi non đầu tiên ló dạng trên cành."
+   },
+   {
+    "fr": "Un léger sourire commençait à poindre sur ses lèvres.",
+    "vi": "Một nụ cười nhẹ bắt đầu hé nở trên môi cô ấy."
+   }
+  ]
+ },
+ {
+  "id": "abondance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự dồi dào, phong phú",
+  "sentences": [
+   {
+    "fr": "Cette année, le verger a produit des fruits en abondance.",
+    "vi": "Năm nay, vườn cây cho trái dồi dào."
+   },
+   {
+    "fr": "L'abondance des richesses de ce pays contraste avec la pauvreté de sa population.",
+    "vi": "Sự dồi dào tài nguyên của đất nước này tương phản với sự nghèo khó của dân chúng."
+   },
+   {
+    "fr": "Il y avait sur la table une abondance de plats variés.",
+    "vi": "Trên bàn bày đầy ắp các món ăn đa dạng."
+   }
+  ]
+ },
+ {
+  "id": "inventaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bản kiểm kê; hàng tồn kho",
+  "sentences": [
+   {
+    "fr": "Le magasin est fermé aujourd'hui pour cause d'inventaire.",
+    "vi": "Cửa hàng đóng cửa hôm nay để kiểm kê."
+   },
+   {
+    "fr": "Nous devons dresser l'inventaire complet du stock avant la fin du mois.",
+    "vi": "Chúng ta phải lập bản kiểm kê đầy đủ hàng tồn kho trước cuối tháng."
+   },
+   {
+    "fr": "Il a fait l'inventaire de ses souvenirs d'enfance dans son journal.",
+    "vi": "Anh ấy điểm lại những kỷ niệm tuổi thơ của mình trong nhật ký."
+   }
+  ]
+ },
+ {
+  "id": "néon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đèn neon; khí neon",
+  "sentences": [
+   {
+    "fr": "Les néons de l'enseigne clignotaient dans la nuit.",
+    "vi": "Những ngọn đèn neon của tấm biển hiệu nhấp nháy trong đêm."
+   },
+   {
+    "fr": "La lumière crue du néon rendait la pièce lugubre.",
+    "vi": "Ánh sáng chói gắt của đèn neon khiến căn phòng trở nên u ám."
+   },
+   {
+    "fr": "Le néon est un gaz utilisé dans certaines enseignes lumineuses.",
+    "vi": "Neon là một loại khí được dùng trong một số biển hiệu phát sáng."
+   }
+  ]
+ },
+ {
+  "id": "exigeant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khắt khe, đòi hỏi cao",
+  "sentences": [
+   {
+    "fr": "C'est un professeur très exigeant mais juste.",
+    "vi": "Đó là một thầy giáo rất khắt khe nhưng công bằng."
+   },
+   {
+    "fr": "Ce métier est passionnant, mais extrêmement exigeant.",
+    "vi": "Nghề này rất hấp dẫn, nhưng cực kỳ đòi hỏi cao."
+   },
+   {
+    "fr": "Les clients de ce restaurant sont particulièrement exigeants.",
+    "vi": "Khách của nhà hàng này đặc biệt khó tính."
+   }
+  ]
+ },
+ {
+  "id": "chauffage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hệ thống sưởi, sự sưởi ấm",
+  "sentences": [
+   {
+    "fr": "En hiver, la facture de chauffage grimpe rapidement.",
+    "vi": "Mùa đông, hóa đơn sưởi ấm tăng vọt nhanh chóng."
+   },
+   {
+    "fr": "Le chauffage central de l'immeuble est en panne depuis hier.",
+    "vi": "Hệ thống sưởi trung tâm của tòa nhà hỏng từ hôm qua."
+   },
+   {
+    "fr": "N'oublie pas d'éteindre le chauffage avant de partir.",
+    "vi": "Đừng quên tắt hệ thống sưởi trước khi đi."
+   }
+  ]
+ },
+ {
+  "id": "pieu",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cọc, cột; (lóng) giường",
+  "sentences": [
+   {
+    "fr": "Ils ont planté un pieu solide pour attacher la barque.",
+    "vi": "Họ đóng một chiếc cọc chắc chắn để buộc chiếc thuyền."
+   },
+   {
+    "fr": "La clôture était faite de pieux de bois alignés.",
+    "vi": "Hàng rào được làm bằng những cọc gỗ xếp thẳng hàng."
+   },
+   {
+    "fr": "Après cette longue journée, je file droit au pieu.",
+    "vi": "Sau ngày dài này, tôi chui thẳng lên giường ngủ."
+   }
+  ]
+ },
+ {
+  "id": "lesbien",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đồng tính nữ",
+  "sentences": [
+   {
+    "fr": "Le film raconte l'histoire d'un couple lesbien dans les années soixante.",
+    "vi": "Bộ phim kể câu chuyện về một cặp đôi đồng tính nữ vào những năm sáu mươi."
+   },
+   {
+    "fr": "Elle milite pour les droits des femmes lesbiennes.",
+    "vi": "Cô ấy đấu tranh cho quyền của phụ nữ đồng tính nữ."
+   },
+   {
+    "fr": "Ce bar est un lieu de rencontre pour la communauté lesbienne du quartier.",
+    "vi": "Quán bar này là nơi gặp gỡ của cộng đồng đồng tính nữ trong khu phố."
+   }
+  ]
+ },
+ {
+  "id": "utilité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự hữu ích, tính hữu dụng",
+  "sentences": [
+   {
+    "fr": "Je ne vois pas l'utilité de garder tous ces vieux papiers.",
+    "vi": "Tôi không thấy sự hữu ích của việc giữ tất cả đống giấy tờ cũ này."
+   },
+   {
+    "fr": "Cet outil est d'une grande utilité pour les jardiniers.",
+    "vi": "Dụng cụ này rất hữu ích cho những người làm vườn."
+   },
+   {
+    "fr": "L'étude démontre l'utilité de ces mesures de prévention.",
+    "vi": "Nghiên cứu chứng minh tính hữu dụng của các biện pháp phòng ngừa này."
+   }
+  ]
+ },
+ {
+  "id": "spaghetti",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mì spaghetti",
+  "sentences": [
+   {
+    "fr": "Ce soir, on mange des spaghettis à la bolognaise.",
+    "vi": "Tối nay, chúng ta ăn mì spaghetti sốt bolognaise."
+   },
+   {
+    "fr": "Il enroula soigneusement ses spaghettis autour de sa fourchette.",
+    "vi": "Anh ấy cẩn thận cuốn mì spaghetti quanh chiếc nĩa."
+   },
+   {
+    "fr": "Elle a mis trop de sel dans la sauce des spaghettis.",
+    "vi": "Cô ấy cho quá nhiều muối vào sốt mì spaghetti."
+   }
+  ]
+ },
+ {
+  "id": "picoler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhậu nhẹt, uống rượu",
+  "sentences": [
+   {
+    "fr": "Il a passé toute la soirée à picoler avec ses copains.",
+    "vi": "Anh ta dành cả buổi tối nhậu nhẹt với đám bạn."
+   },
+   {
+    "fr": "Depuis son divorce, il s'est mis à picoler sérieusement.",
+    "vi": "Từ khi ly hôn, anh ta bắt đầu uống rượu dữ dội."
+   },
+   {
+    "fr": "Arrête de picoler, tu dois conduire tout à l'heure.",
+    "vi": "Đừng nhậu nữa, lát nữa cậu phải lái xe đấy."
+   }
+  ]
+ },
+ {
+  "id": "gicler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bắn tóe, phun ra",
+  "sentences": [
+   {
+    "fr": "L'eau a giclé de toutes parts quand le tuyau a éclaté.",
+    "vi": "Nước bắn tóe tứ phía khi cái ống bị vỡ."
+   },
+   {
+    "fr": "Le sang a giclé sur le carrelage.",
+    "vi": "Máu phun ra trên nền gạch."
+   },
+   {
+    "fr": "Fais attention, l'huile chaude risque de gicler hors de la poêle.",
+    "vi": "Cẩn thận, dầu nóng có thể bắn ra khỏi chảo đấy."
+   }
+  ]
+ },
+ {
+  "id": "ration",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khẩu phần",
+  "sentences": [
+   {
+    "fr": "Chaque soldat recevait une ration quotidienne de pain et de viande.",
+    "vi": "Mỗi người lính nhận một khẩu phần bánh mì và thịt hằng ngày."
+   },
+   {
+    "fr": "Pendant la guerre, la population devait se contenter de rations limitées.",
+    "vi": "Trong chiến tranh, dân chúng phải chấp nhận khẩu phần hạn chế."
+   },
+   {
+    "fr": "Le chien a déjà avalé toute sa ration de croquettes.",
+    "vi": "Con chó đã ngốn hết khẩu phần thức ăn viên của nó."
+   }
+  ]
+ }
+]

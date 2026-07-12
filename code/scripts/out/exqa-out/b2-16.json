@@ -1,0 +1,53 @@
+{
+ "libéré": {
+  "sentences": [
+   {
+    "fr": "Une fois le prisonnier libéré, il a mis des années à retrouver une vie normale.",
+    "vi": "Sau khi được trả tự do, người tù mất nhiều năm mới tìm lại được cuộc sống bình thường."
+   },
+   {
+    "fr": "Elle se sentait enfin libérée du poids de toutes ces obligations familiales.",
+    "vi": "Cuối cùng cô ấy cảm thấy được giải phóng khỏi gánh nặng của mọi nghĩa vụ gia đình."
+   },
+   {
+    "fr": "Les otages libérés ont été accueillis par une foule émue à l'aéroport.",
+    "vi": "Các con tin được trả tự do đã được một đám đông xúc động đón tại sân bay."
+   }
+  ],
+  "reason": "vi câu 3 lặp 'được...được' gượng, khó đọc"
+ },
+ "tiré": {
+  "sentences": [
+   {
+    "fr": "Après cette nuit blanche, il avait les traits tirés et le regard éteint.",
+    "vi": "Sau đêm thức trắng đó, gương mặt anh hốc hác và ánh mắt lờ đờ."
+   },
+   {
+    "fr": "Le rideau tiré laissait à peine filtrer la lumière du matin.",
+    "vi": "Tấm rèm khép kín chỉ để lọt qua chút ánh sáng ban mai."
+   },
+   {
+    "fr": "Elle revint des examens le visage tiré par la fatigue et l'inquiétude.",
+    "vi": "Cô trở về từ các cuộc kiểm tra với gương mặt hốc hác vì mệt mỏi và lo âu."
+   }
+  ],
+  "reason": "vi câu 2 dịch sai: 'rideau tiré' là rèm được kéo/khép lại, không phải 'bị kéo căng'"
+ },
+ "égyptien": {
+  "sentences": [
+   {
+    "fr": "Le musée expose une remarquable collection d'objets égyptiens de l'Antiquité.",
+    "vi": "Bảo tàng trưng bày một bộ sưu tập cổ vật Ai Cập thời cổ đại đáng chú ý."
+   },
+   {
+    "fr": "Un jeune Égyptien nous a servi de guide dans les ruelles du Caire.",
+    "vi": "Một chàng trai Ai Cập trẻ đã làm hướng dẫn viên cho chúng tôi trong các ngõ hẻm ở Cairo."
+   },
+   {
+    "fr": "L'écriture hiéroglyphique égyptienne a longtemps résisté au déchiffrement.",
+    "vi": "Chữ tượng hình Ai Cập đã cưỡng lại việc giải mã trong suốt một thời gian dài."
+   }
+  ],
+  "reason": "vi câu 3 gượng: 'đã lâu chống lại việc giải mã' sai trật tự, không tự nhiên"
+ }
+}

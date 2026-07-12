@@ -1,0 +1,36 @@
+{
+  "égoïste": {
+    "sentences": [
+      {
+        "fr": "Ne sois pas si égoïste : pense un peu aux autres.",
+        "vi": "Đừng ích kỷ như vậy: hãy nghĩ một chút đến người khác."
+      },
+      {
+        "fr": "C'est un égoïste qui ne partage jamais rien.",
+        "vi": "Đó là một kẻ ích kỷ chẳng bao giờ chia sẻ điều gì."
+      },
+      {
+        "fr": "Ses motivations, aussi généreuses qu'elles paraissent, restent profondément égoïstes.",
+        "vi": "Động cơ của ông ta, dù có vẻ hào phóng, vẫn ích kỷ tận sâu bên trong."
+      }
+    ],
+    "reason": "Câu 3: cấu trúc nhượng bộ sai — 'aussi généreuses paraissent-elles' không đúng; đảo ngữ chỉ dùng với thức giả định ('soient-elles'). Sửa thành 'aussi généreuses qu'elles paraissent'."
+  },
+  "montée": {
+    "sentences": [
+      {
+        "fr": "La montée jusqu'au sommet nous a pris trois heures.",
+        "vi": "Đoạn leo lên tới đỉnh khiến chúng tôi mất ba tiếng đồng hồ."
+      },
+      {
+        "fr": "On observe une nette montée des prix ces derniers mois.",
+        "vi": "Người ta nhận thấy giá cả tăng lên rõ rệt trong những tháng gần đây."
+      },
+      {
+        "fr": "La montée est raide, il faudra faire une pause à mi-chemin.",
+        "vi": "Đoạn dốc lên khá cao, sẽ phải nghỉ giữa đường."
+      }
+    ],
+    "reason": "Câu 1: bản dịch 'mất của chúng tôi ba tiếng' là dịch máy từ 'nous a pris', sai trật tự từ tiếng Việt. Sửa cho tự nhiên."
+  }
+}

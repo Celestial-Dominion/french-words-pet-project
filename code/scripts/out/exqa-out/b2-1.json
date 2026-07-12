@@ -1,0 +1,36 @@
+{
+ "décharge": {
+  "sentences": [
+   {
+    "fr": "On a interdit de déverser les ordures dans cette ancienne décharge à ciel ouvert.",
+    "vi": "Người ta đã cấm đổ rác vào bãi rác lộ thiên cũ này."
+   },
+   {
+    "fr": "En touchant le fil dénudé, il a reçu une violente décharge électrique.",
+    "vi": "Khi chạm vào sợi dây bị tróc vỏ, anh ấy bị một cú phóng điện mạnh."
+   },
+   {
+    "fr": "Le témoignage du voisin a joué à sa décharge lors du procès.",
+    "vi": "Lời khai của người hàng xóm đã có lợi cho việc gỡ tội cho anh ấy tại phiên tòa."
+   }
+  ],
+  "reason": "S3 sai giới từ trong thành ngữ: 'en sa décharge' → 'à sa décharge' (à décharge / à la décharge de qqn)."
+ },
+ "épingle": {
+  "sentences": [
+   {
+    "fr": "Elle a fixé l'ourlet avec quelques épingles avant de coudre.",
+    "vi": "Cô ấy ghim gấu áo bằng vài cái ghim trước khi khâu."
+   },
+   {
+    "fr": "Il a su tirer son épingle du jeu malgré une concurrence féroce.",
+    "vi": "Anh ấy đã biết khéo léo xoay xở để thoát ra có lợi dù cạnh tranh khốc liệt."
+   },
+   {
+    "fr": "Une épingle à nourrice a sauvé la situation quand la fermeture a lâché.",
+    "vi": "Một chiếc kim băng đã cứu vãn tình thế khi khóa kéo bị bung."
+   }
+  ],
+  "reason": "S2 dịch lệch thành ngữ 'tirer son épingle du jeu' (khéo léo thoát ra/xoay xở có lợi), bản cũ 'rút lui khôn ngoan' gây hiểu nhầm là rút khỏi cuộc chơi."
+ }
+}

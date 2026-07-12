@@ -1,0 +1,18 @@
+{
+  "naufrage": {
+    "sentences": [
+      { "fr": "Le naufrage du navire a fait des dizaines de disparus.", "vi": "Vụ đắm tàu đã khiến hàng chục người mất tích." },
+      { "fr": "Un seul marin a survécu au naufrage.", "vi": "Chỉ một thủy thủ sống sót sau vụ đắm tàu." },
+      { "fr": "Après la faillite, l'entreprise a connu un véritable naufrage financier.", "vi": "Sau khi phá sản, công ty đã trải qua một sự sụp đổ tài chính thực sự." }
+    ],
+    "reason": "Câu 3: 'a sombré dans un naufrage' bị lặp nghĩa (sombrer + naufrage) và bản dịch 'cơn đắm chìm tài chính' không tự nhiên trong tiếng Việt; đổi thành 'a connu un naufrage financier' cho gọn và chuẩn."
+  },
+  "contradiction": {
+    "sentences": [
+      { "fr": "Il y a une contradiction flagrante entre ses paroles et ses actes.", "vi": "Có một sự mâu thuẫn rõ ràng giữa lời nói và hành động của anh ta." },
+      { "fr": "Elle n'a jamais supporté la contradiction en public.", "vi": "Cô ấy chưa bao giờ chịu được việc bị phản đối trước đám đông." },
+      { "fr": "Ce témoignage est en totale contradiction avec le précédent.", "vi": "Lời khai này hoàn toàn mâu thuẫn với lời khai trước đó." }
+    ],
+    "reason": "Câu 2: 'mettre qqn en contradiction en public' không phải cách nói chuẩn/tự nhiên; 'supporter la contradiction' là thành ngữ đúng nghĩa 'chịu được việc bị phản đối', và vẫn giữ danh từ 'contradiction'."
+  }
+}

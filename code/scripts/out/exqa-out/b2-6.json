@@ -1,0 +1,18 @@
+{
+ "sursaut": {
+  "sentences": [
+   { "fr": "Un bruit sourd dans le couloir la fit se réveiller en sursaut.", "vi": "Một tiếng động trầm trong hành lang khiến cô giật mình tỉnh giấc." },
+   { "fr": "Dans un dernier sursaut d'énergie, il termina la course en tête.", "vi": "Trong một cú bừng dậy sức lực cuối cùng, anh về đích dẫn đầu." },
+   { "fr": "Le chat eut un léger sursaut quand la porte claqua.", "vi": "Con mèo giật mình nhẹ khi cánh cửa đóng sầm." }
+  ],
+  "reason": "Câu 3 lẫn thì: passé simple 'eut' đi với passé composé 'a claqué'; sửa 'a claqué' → 'claqua' cho nhất quán với câu 1 và 2."
+ },
+ "fortement": {
+  "sentences": [
+   { "fr": "Je vous conseille fortement de relire le contrat.", "vi": "Tôi rất khuyên bạn nên đọc lại hợp đồng." },
+   { "fr": "La région a été fortement touchée par la sécheresse.", "vi": "Vùng này bị ảnh hưởng nặng nề bởi hạn hán." },
+   { "fr": "Il tenait fortement la corde pour ne pas tomber.", "vi": "Anh nắm chặt sợi dây để khỏi ngã." }
+  ],
+  "reason": "Câu 1 dịch tiếng Việt gượng ('mạnh mẽ khuyên'); sửa lại tự nhiên. Câu 3 bỏ cụm thừa 'thật mạnh'."
+ }
+}

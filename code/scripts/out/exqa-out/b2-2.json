@@ -1,0 +1,36 @@
+{
+ "activer": {
+  "sentences": [
+   {
+    "fr": "N'oublie pas d'activer l'alarme avant de quitter l'appartement.",
+    "vi": "Đừng quên kích hoạt hệ thống báo động trước khi rời khỏi căn hộ."
+   },
+   {
+    "fr": "Le technicien m'a expliqué comment activer la nouvelle fonction sur mon téléphone.",
+    "vi": "Kỹ thuật viên đã chỉ tôi cách kích hoạt tính năng mới trên điện thoại."
+   },
+   {
+    "fr": "Active-toi un peu, sinon nous allons rater le dernier train !",
+    "vi": "Nhanh chân lên một chút, không thì chúng ta sẽ lỡ chuyến tàu cuối!"
+   }
+  ],
+  "reason": "\"activer le pas\" không phải collocation chuẩn (đúng là presser/hâter le pas); dùng s'activer (Active-toi) mới tự nhiên và vẫn giữ đúng từ"
+ },
+ "tournant": {
+  "sentences": [
+   {
+    "fr": "Il faut ralentir avant le tournant, car la route y devient très glissante.",
+    "vi": "Phải giảm tốc trước khúc quanh, vì đoạn đường đó rất trơn."
+   },
+   {
+    "fr": "Cette rencontre a marqué un véritable tournant dans sa carrière professionnelle.",
+    "vi": "Cuộc gặp ấy đánh dấu một bước ngoặt thực sự trong sự nghiệp của anh ấy."
+   },
+   {
+    "fr": "Une porte tournante permet à de nombreux clients d'entrer sans laisser passer le froid.",
+    "vi": "Một cửa xoay cho phép nhiều lượt khách ra vào mà không để hơi lạnh lọt vào."
+   }
+  ],
+  "reason": "Dịch vi \"vào cùng lúc\" sai với bản chất cửa xoay (khách qua từng người, không cùng lúc); bỏ \"cùng lúc\""
+ }
+}

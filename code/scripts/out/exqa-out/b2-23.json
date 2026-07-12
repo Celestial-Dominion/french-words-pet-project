@@ -1,0 +1,53 @@
+{
+ "corruption": {
+  "sentences": [
+   {
+    "fr": "L'enquête a révélé un vaste réseau de corruption au sein de la mairie.",
+    "vi": "Cuộc điều tra đã phanh phui một mạng lưới tham nhũng lớn trong tòa thị chính."
+   },
+   {
+    "fr": "La corruption des fonctionnaires mine la confiance des citoyens.",
+    "vi": "Sự tham nhũng của các công chức làm xói mòn niềm tin của người dân."
+   },
+   {
+    "fr": "La chaleur accélérait la corruption du cadavre.",
+    "vi": "Cái nóng đẩy nhanh sự thối rữa của thi thể."
+   }
+  ],
+  "reason": "Câu 3: 'la corruption des aliments' không tự nhiên trong tiếng Pháp hiện đại; đổi sang collocation văn học chuẩn 'corruption du cadavre'."
+ },
+ "amasser": {
+  "sentences": [
+   {
+    "fr": "Il a amassé une petite fortune en travaillant sans relâche pendant vingt ans.",
+    "vi": "Ông ấy đã tích lũy được một gia tài nhỏ nhờ làm việc không ngơi nghỉ suốt hai mươi năm."
+   },
+   {
+    "fr": "Les écureuils amassent des noisettes avant l'arrivée de l'hiver.",
+    "vi": "Những con sóc tích trữ hạt dẻ trước khi mùa đông đến."
+   },
+   {
+    "fr": "À force d'amasser des documents, il a rendu son bureau impraticable.",
+    "vi": "Vì cứ tích trữ tài liệu, anh ta đã làm cho bàn làm việc trở nên không dùng được."
+   }
+  ],
+  "reason": "Câu 3: phân từ 'à force d'amasser' treo lơ lửng (chủ ngữ mệnh đề chính 'son bureau' không phải là chủ thể của hành động amasser); sửa để chủ ngữ khớp."
+ },
+ "initiale": {
+  "sentences": [
+   {
+    "fr": "Il a gravé ses initiales sur le tronc du vieux chêne.",
+    "vi": "Anh ấy khắc chữ cái đầu tên mình lên thân cây sồi già."
+   },
+   {
+    "fr": "Signez ici et apposez vos initiales sur chaque page.",
+    "vi": "Ký ở đây và ký tắt bằng chữ cái đầu trên mỗi trang."
+   },
+   {
+    "fr": "Sur le mouchoir brodé, on distinguait deux initiales entrelacées.",
+    "vi": "Trên chiếc khăn tay thêu, người ta thấy hai chữ cái đầu đan vào nhau."
+   }
+  ],
+  "reason": "Câu 2: 'parafez chaque page de vos initiales' thừa và sai (parafer đã có nghĩa là ký tắt bằng chữ cái đầu); thay bằng 'apposez vos initiales'."
+ }
+}

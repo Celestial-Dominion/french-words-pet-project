@@ -1,0 +1,53 @@
+{
+ "navré": {
+  "sentences": [
+   {
+    "fr": "Je suis navré de vous annoncer que le vol a été annulé.",
+    "vi": "Tôi rất tiếc phải báo với ông rằng chuyến bay đã bị hủy."
+   },
+   {
+    "fr": "Elle avait l'air navrée en apprenant la mauvaise nouvelle.",
+    "vi": "Cô ấy trông buồn phiền khi biết tin xấu."
+   },
+   {
+    "fr": "Navré du retard, la circulation était impossible ce matin.",
+    "vi": "Rất tiếc vì đến muộn, sáng nay giao thông không thể đi nổi."
+   }
+  ],
+  "reason": "Accord: avoir l'air + tính từ chỉ trạng thái người, chủ ngữ giống cái -> 'navrée', không phải 'navré'."
+ },
+ "présumer": {
+  "sentences": [
+   {
+    "fr": "On ne peut pas présumer sa culpabilité sans preuve.",
+    "vi": "Không thể cho rằng anh ta có tội khi chưa có bằng chứng."
+   },
+   {
+    "fr": "Je présume que tu es déjà au courant de la nouvelle.",
+    "vi": "Tôi đoán rằng cậu đã biết tin rồi."
+   },
+   {
+    "fr": "Tout accusé est présumé innocent jusqu'à preuve du contraire.",
+    "vi": "Mọi bị cáo đều được coi là vô tội cho đến khi có bằng chứng ngược lại."
+   }
+  ],
+  "reason": "Sai cấu trúc: 'présumer de qqch' = đánh giá quá cao/trông cậy quá mức; nghĩa 'cho là (có tội)' phải dùng présumer ngoại động: présumer qqch."
+ },
+ "rectangle": {
+  "sentences": [
+   {
+    "fr": "Le jardin a la forme d'un rectangle parfait.",
+    "vi": "Khu vườn có hình một chữ nhật hoàn hảo."
+   },
+   {
+    "fr": "Dessinez un rectangle de dix centimètres sur cinq.",
+    "vi": "Hãy vẽ một hình chữ nhật mười xen-ti-mét nhân năm."
+   },
+   {
+    "fr": "L'écran de ce téléphone est un rectangle presque parfait.",
+    "vi": "Màn hình chiếc điện thoại này là một hình chữ nhật gần như hoàn hảo."
+   }
+  ],
+  "reason": "'terrain rectangle' sai/lỗi thời: tính từ 'rectangle' nay chỉ dùng trong 'triangle rectangle' (góc vuông), nghĩa 'hình chữ nhật' phải dùng 'rectangulaire' hoặc danh từ 'rectangle'; đã đổi câu 3 sang dùng danh từ cho tự nhiên."
+ }
+}

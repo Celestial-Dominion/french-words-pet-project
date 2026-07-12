@@ -1,0 +1,36 @@
+{
+  "forcé": {
+    "sentences": [
+      {
+        "fr": "Après la panne, nous avons dû faire un arrêt forcé dans un village isolé.",
+        "vi": "Sau khi xe hỏng, chúng tôi buộc phải dừng chân ở một ngôi làng hẻo lánh."
+      },
+      {
+        "fr": "Son sourire forcé trahissait sa gêne face aux invités.",
+        "vi": "Nụ cười gượng gạo của cô ấy để lộ sự lúng túng trước các vị khách."
+      },
+      {
+        "fr": "Il travaillait tellement que c'était forcé qu'il tombe malade un jour.",
+        "vi": "Anh ấy làm việc nhiều đến mức tất yếu có ngày sẽ đổ bệnh."
+      }
+    ],
+    "reason": "Câu 3 sai ngữ pháp: 'Il travaille tant qu'il était forcé qu'il tombe malade' vừa lệch thì vừa cấu trúc vô nghĩa; sửa thành 'Il travaillait tellement que c'était forcé qu'il tombe malade' (diễn đạt sự tất yếu)."
+  },
+  "coco": {
+    "sentences": [
+      {
+        "fr": "J'adore l'odeur du lait de coco dans ce curry thaïlandais.",
+        "vi": "Tôi rất thích mùi nước cốt dừa trong món cà ri Thái này."
+      },
+      {
+        "fr": "Viens là, mon coco, raconte-moi ce qui s'est passé à l'école.",
+        "vi": "Lại đây nào cưng, kể cho mẹ nghe hôm nay ở trường có chuyện gì."
+      },
+      {
+        "fr": "Elle a saupoudré le gâteau de noix de coco râpée.",
+        "vi": "Cô ấy rắc lên bánh những sợi dừa nạo."
+      }
+    ],
+    "reason": "Câu 3 gượng/thừa: 'copeaux de coco râpée' vừa lặp nghĩa (bào + nạo) vừa mập mờ về hợp giống; cách nói tự nhiên là 'noix de coco râpée'."
+  }
+}

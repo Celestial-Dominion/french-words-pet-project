@@ -1,0 +1,36 @@
+{
+ "pitoyable": {
+  "sentences": [
+   {
+    "fr": "Après l'incendie, les familles vivaient dans un état pitoyable.",
+    "vi": "Sau vụ hỏa hoạn, các gia đình sống trong một tình cảnh đáng thương."
+   },
+   {
+    "fr": "Sa tentative d'excuse était tellement pitoyable que personne ne l'a cru.",
+    "vi": "Lời xin lỗi của anh ta thảm hại đến mức chẳng ai tin cả."
+   },
+   {
+    "fr": "L'équipe a livré une prestation pitoyable et a perdu cinq buts à zéro.",
+    "vi": "Đội bóng đã có một màn trình diễn thảm hại và thua năm bàn trắng."
+   }
+  ],
+  "reason": "Câu 3: 'a perdu par cinq buts' không hoàn chỉnh/gượng (thiếu vế tỉ số); sửa thành 'a perdu cinq buts à zéro'."
+ },
+ "moule": {
+  "sentences": [
+   {
+    "fr": "Verse la pâte dans le moule beurré avant d'enfourner le gâteau.",
+    "vi": "Đổ bột vào khuôn đã phết bơ trước khi cho bánh vào lò."
+   },
+   {
+    "fr": "Nous avons dégusté un grand plat de moules marinières sur le port.",
+    "vi": "Chúng tôi đã thưởng thức một đĩa vẹm hấp rượu vang lớn ngay tại bến cảng."
+   },
+   {
+    "fr": "Avec ce moule en silicone, les gâteaux se démoulent bien plus facilement qu'avec les moules en métal.",
+    "vi": "Với chiếc khuôn silicon này, bánh được lấy ra dễ dàng hơn nhiều so với khuôn kim loại."
+   }
+  ],
+  "reason": "Câu 3: 'ce moule ... se démoule' sai logic (chính bánh mới được démouler, không phải cái khuôn); viết lại cho đúng chủ thể."
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "pointu": {
+  "sentences": [
+   {
+    "fr": "La lame de ce couteau est très pointue, fais attention à ne pas te piquer avec.",
+    "vi": "Lưỡi con dao này rất nhọn, cẩn thận đừng để bị đâm vào tay nhé."
+   },
+   {
+    "fr": "Elle a posé une question très pointue sur les finances de l'entreprise.",
+    "vi": "Cô ấy đặt một câu hỏi rất hóc búa về tài chính của công ty."
+   },
+   {
+    "fr": "Le clocher de l'église se termine par un toit pointu recouvert d'ardoise.",
+    "vi": "Tháp chuông nhà thờ kết thúc bằng một mái nhọn lợp đá phiến."
+   }
+  ],
+  "reason": "S1 dùng 'pointu' (nhọn/đầu nhọn) để giải thích việc cắt giấy dễ dàng là sai nghĩa — cắt tốt phải là 'tranchant/aiguisé'; sửa cho 'pointu' đúng nghĩa nhọn."
+ },
+ "terroriste": {
+  "sentences": [
+   {
+    "fr": "La police a déjoué un attentat terroriste au dernier moment.",
+    "vi": "Cảnh sát đã ngăn chặn một vụ tấn công khủng bố vào phút chót."
+   },
+   {
+    "fr": "Le groupe terroriste a revendiqué l'explosion survenue hier soir.",
+    "vi": "Nhóm khủng bố đã nhận trách nhiệm về vụ nổ xảy ra tối qua."
+   },
+   {
+    "fr": "Les autorités ont renforcé la sécurité face à la menace terroriste dans les lieux publics.",
+    "vi": "Nhà chức trách đã siết chặt an ninh trước mối đe dọa khủng bố ở nơi công cộng."
+   }
+  ],
+  "reason": "S3 'renforcer la menace terroriste' (tăng cường mối đe dọa) sai logic, ngược nghĩa bản dịch; sửa thành 'renforcé la sécurité face à la menace terroriste'."
+ },
+ "tombeau": {
+  "sentences": [
+   {
+    "fr": "Les touristes se recueillent devant le tombeau du roi.",
+    "vi": "Du khách trầm mặc trước lăng mộ của nhà vua."
+   },
+   {
+    "fr": "Un magnifique tombeau de marbre s'élève au centre du cimetière.",
+    "vi": "Một ngôi mộ bằng cẩm thạch tráng lệ sừng sững giữa nghĩa trang."
+   },
+   {
+    "fr": "Il a emporté son secret dans le tombeau, sans jamais le révéler à personne.",
+    "vi": "Ông đã mang bí mật của mình xuống mồ, không bao giờ tiết lộ cho ai."
+   }
+  ],
+  "reason": "S3 'dans la tombe, jusqu'au tombeau' lặp thừa ý 'mộ' hai lần, gượng; viết lại tự nhiên."
+ }
+}

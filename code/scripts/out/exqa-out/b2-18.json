@@ -1,0 +1,36 @@
+{
+  "boucherie": {
+    "sentences": [
+      {
+        "fr": "J'ai acheté une belle entrecôte à la boucherie du quartier.",
+        "vi": "Tôi đã mua một miếng thăn bò ngon ở cửa hàng thịt trong khu phố."
+      },
+      {
+        "fr": "La boucherie ferme exceptionnellement le lundi matin.",
+        "vi": "Cửa hàng thịt đặc biệt đóng cửa vào sáng thứ Hai."
+      },
+      {
+        "fr": "Les historiens décrivent cette bataille comme une véritable boucherie.",
+        "vi": "Các sử gia mô tả trận chiến này như một cuộc tàn sát thực sự."
+      }
+    ],
+    "reason": "'entrecôte' là danh từ giống cái nên phải 'une belle entrecôte', không phải 'un bel entrecôte'."
+  },
+  "pondre": {
+    "sentences": [
+      {
+        "fr": "Nos poules pondent chacune un œuf presque tous les matins.",
+        "vi": "Đàn gà mái của chúng tôi hầu như mỗi con đẻ một quả trứng mỗi sáng."
+      },
+      {
+        "fr": "La tortue vient pondre ses œufs sur la même plage chaque année.",
+        "vi": "Con rùa đến đẻ trứng trên cùng một bãi biển mỗi năm."
+      },
+      {
+        "fr": "Il a fini par pondre un rapport de cinquante pages en une nuit.",
+        "vi": "Cuối cùng anh ta đã cho ra lò một báo cáo năm mươi trang chỉ trong một đêm."
+      }
+    ],
+    "reason": "Câu 1 gượng ('presque un œuf chacune chaque matin' lặp và tối nghĩa); sửa lại tự nhiên hơn."
+  }
+}

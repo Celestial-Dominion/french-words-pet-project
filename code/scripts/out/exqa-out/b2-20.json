@@ -1,0 +1,36 @@
+{
+ "fumé": {
+  "sentences": [
+   {
+    "fr": "Au petit-déjeuner, il adore le saumon fumé sur une tranche de pain complet.",
+    "vi": "Vào bữa sáng, anh ấy rất thích cá hồi hun khói trên lát bánh mì nguyên cám."
+   },
+   {
+    "fr": "Le jambon fumé de cette région se marie très bien avec un peu de melon.",
+    "vi": "Giăm bông hun khói của vùng này rất hợp với một chút dưa lưới."
+   },
+   {
+    "fr": "Ce fromage fumé accompagne parfaitement un verre de vin rouge.",
+    "vi": "Loại phô mai hun khói này kết hợp hoàn hảo với một ly rượu vang đỏ."
+   }
+  ],
+  "reason": "Câu 2 dùng 'vitres fumées' (kính sẫm màu) là nghĩa khác với nghĩa 'hun khói' đang xét, và bản dịch 'kính râm hun khói' vô nghĩa/mâu thuẫn; thay bằng ví dụ đồ ăn hun khói đúng nghĩa."
+ },
+ "réciproque": {
+  "sentences": [
+   {
+    "fr": "Leur confiance était réciproque, ce qui rendait leur collaboration très efficace.",
+    "vi": "Họ tin tưởng lẫn nhau, điều đó khiến sự hợp tác của họ rất hiệu quả."
+   },
+   {
+    "fr": "« Je t'apprécie beaucoup. — Crois-moi, c'est réciproque. »",
+    "vi": "\"Tôi rất quý anh. — Tin tôi đi, tình cảm đó là tương hỗ.\""
+   },
+   {
+    "fr": "En mathématiques, il faut démontrer aussi bien le théorème que sa réciproque.",
+    "vi": "Trong toán học, phải chứng minh cả định lý lẫn mệnh đề đảo của nó."
+   }
+  ],
+  "reason": "Bản dịch câu 1 'Niềm tin của họ là qua lại' gượng/không tự nhiên tiếng Việt; sửa thành 'Họ tin tưởng lẫn nhau'."
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "symbolique": {
+  "sentences": [
+   {
+    "fr": "Ce geste a une valeur purement symbolique, mais il touche beaucoup les gens.",
+    "vi": "Cử chỉ này chỉ mang giá trị biểu tượng thuần túy, nhưng lại khiến người ta rất cảm động."
+   },
+   {
+    "fr": "Ils ont vendu la maison pour un euro symbolique à l'association.",
+    "vi": "Họ đã bán ngôi nhà cho hội với giá tượng trưng một euro."
+   },
+   {
+    "fr": "La colombe reste une image symbolique de la paix dans le monde entier.",
+    "vi": "Chim bồ câu vẫn là hình ảnh tượng trưng cho hòa bình trên toàn thế giới."
+   }
+  ],
+  "reason": "vi câu 1 lặp 'mang ... mang tính', gượng"
+ },
+ "troublant": {
+  "sentences": [
+   {
+    "fr": "La ressemblance entre les deux sœurs est vraiment troublante.",
+    "vi": "Sự giống nhau giữa hai chị em quả thật gây bối rối."
+   },
+   {
+    "fr": "Il y avait quelque chose de troublant dans son regard fixe.",
+    "vi": "Có điều gì đó gây bất an trong ánh mắt đăm đăm của anh ta."
+   },
+   {
+    "fr": "Les nouvelles preuves apportent un détail troublant à toute l'enquête.",
+    "vi": "Những bằng chứng mới bổ sung một chi tiết đáng ngờ cho toàn bộ cuộc điều tra."
+   }
+  ],
+  "reason": "vi câu 2 dịch 'troublant' thành 'khó hiểu' lệch nghĩa (đúng: gây bất an)"
+ }
+}

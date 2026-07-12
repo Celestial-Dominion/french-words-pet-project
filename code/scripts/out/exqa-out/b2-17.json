@@ -1,0 +1,19 @@
+{
+ "exotique": {
+  "sentences": [
+   {
+    "fr": "Ce marché regorge de fruits exotiques venus des tropiques.",
+    "vi": "Khu chợ này đầy ắp trái cây nhiệt đới đến từ vùng chí tuyến."
+   },
+   {
+    "fr": "Ils rêvent de passer leurs vacances dans un pays exotique.",
+    "vi": "Họ mơ được nghỉ hè ở một đất nước xa lạ, kỳ thú."
+   },
+   {
+    "fr": "Le restaurant propose une cuisine exotique aux saveurs surprenantes.",
+    "vi": "Nhà hàng phục vụ ẩm thực ngoại lai với những hương vị bất ngờ."
+   }
+  ],
+  "reason": "vi dịch sai: 'des tropiques' (vùng nhiệt đới/chí tuyến) bị dịch nhầm thành 'vùng xích đạo' (equator)"
+ }
+}
