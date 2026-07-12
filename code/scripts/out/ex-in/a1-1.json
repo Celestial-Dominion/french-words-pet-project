@@ -1,0 +1,843 @@
+[
+ {
+  "id": "regarder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhìn, xem"
+ },
+ {
+  "id": "attendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đợi, chờ"
+ },
+ {
+  "id": "même",
+  "pos": [
+   "phó từ",
+   "tính từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "cùng, giống; ngay cả"
+ },
+ {
+  "id": "quoi",
+  "pos": [
+   "tính từ",
+   "đại từ",
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "cái gì, gì"
+ },
+ {
+  "id": "donner",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cho, tặng"
+ },
+ {
+  "id": "toujours",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "luôn luôn; vẫn còn"
+ },
+ {
+  "id": "mes",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "của tôi (số nhiều)"
+ },
+ {
+  "id": "arriver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đến, tới; xảy ra"
+ },
+ {
+  "id": "mettre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đặt, để; mặc"
+ },
+ {
+  "id": "femme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "người phụ nữ; vợ"
+ },
+ {
+  "id": "fois",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lần"
+ },
+ {
+  "id": "vie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc sống, đời sống"
+ },
+ {
+  "id": "peu",
+  "pos": [
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": "m",
+  "vi": "ít, một chút"
+ },
+ {
+  "id": "demander",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hỏi; yêu cầu"
+ },
+ {
+  "id": "pourquoi",
+  "pos": [
+   "phó từ",
+   "liên từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tại sao"
+ },
+ {
+  "id": "rester",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ở lại; còn lại"
+ },
+ {
+  "id": "seul",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "một mình; duy nhất"
+ },
+ {
+  "id": "notre",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "của chúng tôi, của chúng ta"
+ },
+ {
+  "id": "appeler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gọi"
+ },
+ {
+  "id": "grand",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "to, lớn; cao"
+ },
+ {
+  "id": "partir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi, khởi hành"
+ },
+ {
+  "id": "ta",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "của bạn (giống cái)"
+ },
+ {
+  "id": "trop",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "quá, quá nhiều"
+ },
+ {
+  "id": "connaître",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "biết, quen biết"
+ },
+ {
+  "id": "père",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cha, bố"
+ },
+ {
+  "id": "peut-être",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "có lẽ, có thể"
+ },
+ {
+  "id": "autre",
+  "pos": [
+   "tính từ",
+   "đại từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "khác"
+ },
+ {
+  "id": "maintenant",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "bây giờ, hiện nay"
+ },
+ {
+  "id": "heure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giờ; giờ đồng hồ"
+ },
+ {
+  "id": "monde",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thế giới; mọi người"
+ },
+ {
+  "id": "an",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "năm (tuổi)"
+ },
+ {
+  "id": "main",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bàn tay"
+ },
+ {
+  "id": "comprendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hiểu"
+ },
+ {
+  "id": "sortir",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ra ngoài, đi ra"
+ },
+ {
+  "id": "arrêter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dừng, ngừng; bắt giữ"
+ },
+ {
+  "id": "chez",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "ở nhà, tại chỗ (ai đó)"
+ },
+ {
+  "id": "quelque",
+  "pos": [
+   "hạn định từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "vài, một vài"
+ },
+ {
+  "id": "fille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cô gái; con gái"
+ },
+ {
+  "id": "oeil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mắt"
+ },
+ {
+  "id": "enfant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đứa trẻ, con"
+ },
+ {
+  "id": "sûr",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "chắc chắn"
+ },
+ {
+  "id": "entendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nghe"
+ },
+ {
+  "id": "mère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mẹ"
+ },
+ {
+  "id": "mourir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chết"
+ },
+ {
+  "id": "dieu",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thần, Chúa, thượng đế"
+ },
+ {
+  "id": "vraiment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thật sự, thực sự"
+ },
+ {
+  "id": "déjà",
+  "pos": [
+   "phó từ",
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "đã, rồi"
+ },
+ {
+  "id": "après",
+  "pos": [
+   "giới từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "sau, sau khi"
+ },
+ {
+  "id": "vrai",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thật, đúng"
+ },
+ {
+  "id": "tête",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đầu"
+ },
+ {
+  "id": "beau",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đẹp"
+ },
+ {
+  "id": "comment",
+  "pos": [
+   "phó từ",
+   "liên từ",
+   "tượng thanh",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "như thế nào, làm sao"
+ },
+ {
+  "id": "nuit",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đêm, ban đêm"
+ },
+ {
+  "id": "tuer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giết"
+ },
+ {
+  "id": "coup",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cú đánh; lần"
+ },
+ {
+  "id": "oh",
+  "pos": [
+   "tượng thanh",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ồ, ôi (thán từ)"
+ },
+ {
+  "id": "sentir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cảm thấy; ngửi"
+ },
+ {
+  "id": "chercher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tìm, tìm kiếm"
+ },
+ {
+  "id": "sous",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "dưới, ở dưới"
+ },
+ {
+  "id": "tenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giữ, cầm"
+ },
+ {
+  "id": "maison",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhà, ngôi nhà"
+ },
+ {
+  "id": "cela",
+  "pos": [
+   "đại từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cái đó, điều đó"
+ },
+ {
+  "id": "ami",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "bạn, bạn bè"
+ },
+ {
+  "id": "merci",
+  "pos": [
+   "tượng thanh",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cảm ơn"
+ },
+ {
+  "id": "moins",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ít hơn; kém, trừ"
+ },
+ {
+  "id": "monsieur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ông, ngài"
+ },
+ {
+  "id": "soir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "buổi tối"
+ },
+ {
+  "id": "besoin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhu cầu, sự cần"
+ },
+ {
+  "id": "voilà",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "đây rồi, kia rồi"
+ },
+ {
+  "id": "air",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "không khí; vẻ, dáng vẻ"
+ },
+ {
+  "id": "revenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trở lại, quay lại"
+ },
+ {
+  "id": "beaucoup",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "nhiều, rất nhiều"
+ },
+ {
+  "id": "entre",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "giữa, ở giữa"
+ },
+ {
+  "id": "mieux",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tốt hơn, hơn"
+ },
+ {
+  "id": "avant",
+  "pos": [
+   "giới từ",
+   "phó từ",
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trước, trước khi"
+ },
+ {
+  "id": "nos",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "của chúng tôi (số nhiều)"
+ },
+ {
+  "id": "donc",
+  "pos": [
+   "liên từ"
+  ],
+  "gender": null,
+  "vi": "vậy, do đó, cho nên"
+ },
+ {
+  "id": "moment",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khoảnh khắc, lúc"
+ },
+ {
+  "id": "essayer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thử, cố gắng"
+ },
+ {
+  "id": "gens",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "người, mọi người"
+ },
+ {
+  "id": "vers",
+  "pos": [
+   "giới từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "về phía; khoảng; câu thơ"
+ },
+ {
+  "id": "dont",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "mà (của cái đó); trong đó"
+ },
+ {
+  "id": "accord",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự đồng ý, thỏa thuận"
+ },
+ {
+  "id": "depuis",
+  "pos": [
+   "giới từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "từ, kể từ"
+ },
+ {
+  "id": "finir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kết thúc, hoàn thành"
+ },
+ {
+  "id": "quel",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "nào, gì"
+ },
+ {
+  "id": "leurs",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "của họ (số nhiều)"
+ },
+ {
+  "id": "nom",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tên; danh từ"
+ },
+ {
+  "id": "cet",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "này, đó (giống đực, trước nguyên âm)"
+ },
+ {
+  "id": "quelques",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "vài, một vài"
+ },
+ {
+  "id": "premier",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đầu tiên, thứ nhất"
+ },
+ {
+  "id": "elles",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "họ, chúng (giống cái)"
+ },
+ {
+  "id": "trois",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "ba"
+ },
+ {
+  "id": "rendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trả lại; làm cho"
+ },
+ {
+  "id": "ni",
+  "pos": [
+   "liên từ"
+  ],
+  "gender": null,
+  "vi": "cũng không (chẳng... cũng chẳng)"
+ },
+ {
+  "id": "vivre",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "sống"
+ },
+ {
+  "id": "puis",
+  "pos": [
+   "liên từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "rồi, sau đó"
+ },
+ {
+  "id": "perdre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mất; thua"
+ },
+ {
+  "id": "jouer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chơi; diễn"
+ },
+ {
+  "id": "aider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giúp, giúp đỡ"
+ }
+]

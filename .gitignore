@@ -1,0 +1,29 @@
+# deps / build
+code/node_modules/
+code/.next/
+code/out/
+code/.venv/
+code/tsconfig.tsbuildinfo
+
+# env (config Firebase công khai nhưng theo quy ước không commit; dùng .env.local.example)
+code/.env.local
+
+# firebase CLI
+code/.firebase/
+code/firebase-debug.log
+code/firestore-debug.log
+
+# playwright
+code/test-results/
+code/playwright-report/
+
+# nguồn thô lớn (tải/tái tạo được, không cần trong git)
+code/scripts/kaikki-fr.jsonl
+code/scripts/Lexique383.tsv
+code/scripts/fr_50k.txt
+
+# audio ~1GB — quá lớn cho git; đã có trên Firebase Hosting + tái tạo bằng build-audio.py
+code/public/audio/
+
+# OS
+.DS_Store

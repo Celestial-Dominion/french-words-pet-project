@@ -1,0 +1,821 @@
+[
+ {
+  "id": "agresseur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ gây hấn, kẻ tấn công"
+ },
+ {
+  "id": "déraper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trượt bánh; chệch hướng"
+ },
+ {
+  "id": "émaner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tỏa ra, phát ra"
+ },
+ {
+  "id": "crapule",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "kẻ đê tiện, lưu manh"
+ },
+ {
+  "id": "famine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nạn đói"
+ },
+ {
+  "id": "rapidité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự nhanh chóng, tốc độ"
+ },
+ {
+  "id": "fabrication",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chế tạo, sản xuất"
+ },
+ {
+  "id": "approprier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chiếm lấy; làm cho thích hợp"
+ },
+ {
+  "id": "teinte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sắc màu, tông màu"
+ },
+ {
+  "id": "klaxon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "còi xe"
+ },
+ {
+  "id": "boulangerie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tiệm bánh mì"
+ },
+ {
+  "id": "osciller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dao động, đung đưa"
+ },
+ {
+  "id": "totalité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "toàn bộ, tổng thể"
+ },
+ {
+  "id": "gourmand",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "háu ăn, tham ăn; kẻ mê ăn"
+ },
+ {
+  "id": "élu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "được bầu; người trúng cử"
+ },
+ {
+  "id": "compétence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "năng lực; thẩm quyền"
+ },
+ {
+  "id": "gelée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thạch; sương giá"
+ },
+ {
+  "id": "appât",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mồi câu; sự dụ dỗ"
+ },
+ {
+  "id": "entre-temps",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "trong lúc đó, trong khi chờ"
+ },
+ {
+  "id": "maîtrise",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự làm chủ, thành thạo"
+ },
+ {
+  "id": "suédois",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc Thụy Điển; tiếng Thụy Điển"
+ },
+ {
+  "id": "fumant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bốc khói, nghi ngút"
+ },
+ {
+  "id": "grillé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nướng; cháy (đèn, cầu chì)"
+ },
+ {
+  "id": "diagnostic",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chẩn đoán"
+ },
+ {
+  "id": "sérail",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hậu cung; giới nội bộ"
+ },
+ {
+  "id": "croisière",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chuyến du ngoạn bằng tàu, du thuyền"
+ },
+ {
+  "id": "vernis",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "véc-ni, nước sơn; vẻ bề ngoài"
+ },
+ {
+  "id": "hardi",
+  "pos": [
+   "tính từ",
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "táo bạo, gan dạ"
+ },
+ {
+  "id": "réduit",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thu nhỏ, giảm bớt; buồng con"
+ },
+ {
+  "id": "secourir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cứu giúp, cứu trợ"
+ },
+ {
+  "id": "coordonnée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tọa độ; thông tin liên lạc"
+ },
+ {
+  "id": "azur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "màu xanh da trời"
+ },
+ {
+  "id": "concurrence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự cạnh tranh"
+ },
+ {
+  "id": "prudemment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách thận trọng"
+ },
+ {
+  "id": "suspension",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự đình chỉ; hệ thống treo (xe)"
+ },
+ {
+  "id": "buée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hơi nước đọng, hơi mờ"
+ },
+ {
+  "id": "lacs",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bẫy dây, thòng lọng"
+ },
+ {
+  "id": "fermement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách kiên quyết, chắc chắn"
+ },
+ {
+  "id": "chemisier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "áo sơ mi nữ"
+ },
+ {
+  "id": "immonde",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "dơ bẩn, ghê tởm"
+ },
+ {
+  "id": "avant-bras",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cẳng tay"
+ },
+ {
+  "id": "guérison",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự khỏi bệnh, sự chữa lành"
+ },
+ {
+  "id": "habileté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự khéo léo, tài khéo"
+ },
+ {
+  "id": "soyeux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "mượt như lụa, óng ả"
+ },
+ {
+  "id": "cuiller",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cái thìa, muỗng"
+ },
+ {
+  "id": "devancer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vượt lên trước, đi trước"
+ },
+ {
+  "id": "onduler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gợn sóng, uốn lượn"
+ },
+ {
+  "id": "intermédiaire",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "trung gian; người môi giới"
+ },
+ {
+  "id": "surnommer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đặt biệt danh, gọi là"
+ },
+ {
+  "id": "abolir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bãi bỏ, xóa bỏ"
+ },
+ {
+  "id": "tourné",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "quay; bị chua, hỏng (sữa)"
+ },
+ {
+  "id": "politicien",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "chính trị gia"
+ },
+ {
+  "id": "antiquité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thời cổ đại; đồ cổ"
+ },
+ {
+  "id": "hospitalité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lòng hiếu khách"
+ },
+ {
+  "id": "sobre",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "điều độ, không rượu bia; giản dị"
+ },
+ {
+  "id": "tardif",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "muộn, chậm trễ"
+ },
+ {
+  "id": "fraction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "phân số; phần nhỏ"
+ },
+ {
+  "id": "insolence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự hỗn xược, láo xược"
+ },
+ {
+  "id": "baise",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự làm tình (thô tục)"
+ },
+ {
+  "id": "cabaret",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quán ca nhạc, hộp đêm"
+ },
+ {
+  "id": "remplaçant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người thay thế, cầu thủ dự bị"
+ },
+ {
+  "id": "tablette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "máy tính bảng; thanh (sô cô la); kệ"
+ },
+ {
+  "id": "parlant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "biết nói; đầy ý nghĩa, hùng hồn"
+ },
+ {
+  "id": "galant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ga lăng, lịch thiệp"
+ },
+ {
+  "id": "mûrir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chín; trưởng thành, chín chắn"
+ },
+ {
+  "id": "merdique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tồi tệ, dở tệ (thô tục)"
+ },
+ {
+  "id": "mélodie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giai điệu"
+ },
+ {
+  "id": "ouf",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "phù (thở phào)"
+ },
+ {
+  "id": "préfecture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tòa tỉnh trưởng, sở cảnh sát"
+ },
+ {
+  "id": "hagard",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hốc hác, thất thần"
+ },
+ {
+  "id": "connecter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kết nối"
+ },
+ {
+  "id": "opaque",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "mờ đục, không trong suốt"
+ },
+ {
+  "id": "bannir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trục xuất, cấm"
+ },
+ {
+  "id": "pion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quân tốt (cờ); giám thị (lóng)"
+ },
+ {
+  "id": "ambitieux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tham vọng, đầy hoài bão"
+ },
+ {
+  "id": "ascension",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự leo lên, sự thăng tiến"
+ },
+ {
+  "id": "continu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "liên tục"
+ },
+ {
+  "id": "gentilhomme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhà quý tộc, quý ông"
+ },
+ {
+  "id": "ample",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "rộng rãi, thùng thình; dồi dào"
+ },
+ {
+  "id": "siennes",
+  "pos": [
+   "đại từ",
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "(les siennes) những cái của anh/cô ấy"
+ },
+ {
+  "id": "investissement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự đầu tư"
+ },
+ {
+  "id": "débloquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mở khóa, giải tỏa"
+ },
+ {
+  "id": "lucidité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự sáng suốt, tỉnh táo"
+ },
+ {
+  "id": "tumeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khối u"
+ },
+ {
+  "id": "pianiste",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nghệ sĩ dương cầm"
+ },
+ {
+  "id": "imprévu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bất ngờ, không lường trước; việc bất ngờ"
+ },
+ {
+  "id": "frêle",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "mảnh khảnh, yếu ớt"
+ },
+ {
+  "id": "gel",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "băng giá; gel (mỹ phẩm)"
+ },
+ {
+  "id": "mystique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thần bí, huyền bí"
+ },
+ {
+  "id": "dispositif",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thiết bị; hệ thống, biện pháp"
+ },
+ {
+  "id": "démocratique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "dân chủ"
+ },
+ {
+  "id": "transparence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự trong suốt; sự minh bạch"
+ },
+ {
+  "id": "signé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đã ký, có chữ ký"
+ },
+ {
+  "id": "dû",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "phải trả, đến hạn; khoản nợ"
+ },
+ {
+  "id": "dodo",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giấc ngủ (trẻ con), ngủ"
+ },
+ {
+  "id": "mile",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dặm (Anh)"
+ },
+ {
+  "id": "abstrait",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trừu tượng"
+ },
+ {
+  "id": "né",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "sinh ra, bẩm sinh"
+ },
+ {
+  "id": "crampe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chuột rút"
+ },
+ {
+  "id": "insomnie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chứng mất ngủ"
+ }
+]

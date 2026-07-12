@@ -1,0 +1,834 @@
+[
+ {
+  "id": "devenir",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trở thành, trở nên"
+ },
+ {
+  "id": "tes",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "những... của bạn (sở hữu số nhiều)"
+ },
+ {
+  "id": "personne",
+  "pos": [
+   "đại từ",
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "người, người nào; không ai"
+ },
+ {
+  "id": "ah",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "à, ồ (thán từ)"
+ },
+ {
+  "id": "vos",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "những... của các bạn (sở hữu số nhiều)"
+ },
+ {
+  "id": "peur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự sợ hãi, nỗi sợ"
+ },
+ {
+  "id": "mort",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "cái chết; đã chết"
+ },
+ {
+  "id": "juste",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đúng, công bằng; chỉ, vừa vặn"
+ },
+ {
+  "id": "porte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cửa, cửa ra vào"
+ },
+ {
+  "id": "ouvrir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mở"
+ },
+ {
+  "id": "amour",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tình yêu"
+ },
+ {
+  "id": "vite",
+  "pos": [
+   "phó từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhanh, mau"
+ },
+ {
+  "id": "rentrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trở về, về nhà"
+ },
+ {
+  "id": "commencer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bắt đầu"
+ },
+ {
+  "id": "entrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vào, đi vào"
+ },
+ {
+  "id": "quelqu'un",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "ai đó, một người nào đó"
+ },
+ {
+  "id": "contre",
+  "pos": [
+   "giới từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chống lại, ngược lại; áp vào"
+ },
+ {
+  "id": "tomber",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngã, rơi"
+ },
+ {
+  "id": "plaire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm hài lòng, làm vừa lòng"
+ },
+ {
+  "id": "dernier",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cuối cùng, vừa qua"
+ },
+ {
+  "id": "assez",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đủ, khá"
+ },
+ {
+  "id": "mal",
+  "pos": [
+   "phó từ",
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "điều xấu, cơn đau; kém, tồi"
+ },
+ {
+  "id": "écouter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nghe, lắng nghe"
+ },
+ {
+  "id": "oublier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "quên"
+ },
+ {
+  "id": "jeune",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trẻ; người trẻ tuổi"
+ },
+ {
+  "id": "quelle",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "nào, gì (giống cái)"
+ },
+ {
+  "id": "raison",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lý do; lẽ phải"
+ },
+ {
+  "id": "tant",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "nhiều thế, biết bao"
+ },
+ {
+  "id": "tirer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kéo; bắn"
+ },
+ {
+  "id": "devant",
+  "pos": [
+   "giới từ",
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "phía trước, đằng trước"
+ },
+ {
+  "id": "côté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bên, phía, cạnh"
+ },
+ {
+  "id": "manger",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ăn"
+ },
+ {
+  "id": "fait",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "sự việc, sự kiện"
+ },
+ {
+  "id": "mot",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "từ, chữ; lời nhắn"
+ },
+ {
+  "id": "fils",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con trai"
+ },
+ {
+  "id": "argent",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "tiền; bạc"
+ },
+ {
+  "id": "porter",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "mang, mặc, đội"
+ },
+ {
+  "id": "maman",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mẹ, má"
+ },
+ {
+  "id": "eux",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "họ, chúng nó (giống đực)"
+ },
+ {
+  "id": "question",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "câu hỏi; vấn đề"
+ },
+ {
+  "id": "vieux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "già, cũ"
+ },
+ {
+  "id": "voiture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "xe hơi, ô tô"
+ },
+ {
+  "id": "travailler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm việc"
+ },
+ {
+  "id": "place",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chỗ, nơi; quảng trường"
+ },
+ {
+  "id": "pendant",
+  "pos": [
+   "giới từ",
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trong lúc, trong khi"
+ },
+ {
+  "id": "eau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nước"
+ },
+ {
+  "id": "sembler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "có vẻ, dường như"
+ },
+ {
+  "id": "idée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ý tưởng, ý kiến"
+ },
+ {
+  "id": "bonjour",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xin chào (ban ngày)"
+ },
+ {
+  "id": "histoire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "câu chuyện; lịch sử"
+ },
+ {
+  "id": "terre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đất; Trái Đất"
+ },
+ {
+  "id": "asseoir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đặt ngồi; (s'asseoir) ngồi xuống"
+ },
+ {
+  "id": "problème",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vấn đề, bài toán"
+ },
+ {
+  "id": "marcher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi bộ; hoạt động, chạy tốt"
+ },
+ {
+  "id": "tard",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "muộn, trễ"
+ },
+ {
+  "id": "changer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thay đổi, đổi"
+ },
+ {
+  "id": "retrouver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tìm lại được, gặp lại"
+ },
+ {
+  "id": "chaque",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "mỗi"
+ },
+ {
+  "id": "corps",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thân thể, cơ thể"
+ },
+ {
+  "id": "leur",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "cho họ; của họ"
+ },
+ {
+  "id": "famille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "gia đình"
+ },
+ {
+  "id": "année",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "năm"
+ },
+ {
+  "id": "travail",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "công việc, việc làm"
+ },
+ {
+  "id": "dormir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngủ"
+ },
+ {
+  "id": "chambre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "phòng ngủ, buồng"
+ },
+ {
+  "id": "affaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "việc, chuyện; món hời"
+ },
+ {
+  "id": "répondre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trả lời, đáp lại"
+ },
+ {
+  "id": "enfin",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "cuối cùng, rốt cuộc"
+ },
+ {
+  "id": "ouais",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "ừ, ờ (yeah)"
+ },
+ {
+  "id": "car",
+  "pos": [
+   "liên từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "vì, bởi vì; xe khách"
+ },
+ {
+  "id": "loin",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "xa"
+ },
+ {
+  "id": "monter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lên, đi lên; lắp ráp"
+ },
+ {
+  "id": "seulement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "chỉ, chỉ có"
+ },
+ {
+  "id": "apprendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "học; biết được"
+ },
+ {
+  "id": "matin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "buổi sáng"
+ },
+ {
+  "id": "voix",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giọng nói; phiếu bầu"
+ },
+ {
+  "id": "pied",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bàn chân"
+ },
+ {
+  "id": "tous",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "tất cả, mọi (giống đực số nhiều)"
+ },
+ {
+  "id": "frère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "anh trai, em trai"
+ },
+ {
+  "id": "écrire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "viết"
+ },
+ {
+  "id": "rue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đường phố"
+ },
+ {
+  "id": "ville",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thành phố"
+ },
+ {
+  "id": "boire",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "uống"
+ },
+ {
+  "id": "occuper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chiếm; (s'occuper) lo liệu, chăm sóc"
+ },
+ {
+  "id": "ainsi",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "như vậy, như thế"
+ },
+ {
+  "id": "part",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "phần, phần chia"
+ },
+ {
+  "id": "visage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khuôn mặt, gương mặt"
+ },
+ {
+  "id": "payer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trả tiền, thanh toán"
+ },
+ {
+  "id": "mois",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng"
+ },
+ {
+  "id": "foutre",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "làm; vứt (thông tục)"
+ },
+ {
+  "id": "demain",
+  "pos": [
+   "phó từ",
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "ngày mai"
+ },
+ {
+  "id": "longtemps",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "lâu, trong thời gian dài"
+ },
+ {
+  "id": "montrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chỉ, cho xem"
+ },
+ {
+  "id": "garder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giữ, trông giữ"
+ },
+ {
+  "id": "coeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trái tim, tấm lòng"
+ },
+ {
+  "id": "eh",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "ê, ừ (thán từ)"
+ },
+ {
+  "id": "gros",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "to, béo, lớn"
+ },
+ {
+  "id": "servir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phục vụ; dùng để"
+ },
+ {
+  "id": "autres",
+  "pos": [
+   "đại từ",
+   "số từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "khác, những cái khác"
+ },
+ {
+  "id": "lire",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đọc"
+ }
+]

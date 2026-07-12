@@ -1,0 +1,752 @@
+{
+ "ruiner": [
+  {"fr": "Cette mauvaise décision a fini par ruiner toute l'entreprise familiale.", "vi": "Quyết định sai lầm này rốt cuộc đã làm phá sản cả doanh nghiệp gia đình."},
+  {"fr": "Si tu continues à dépenser autant, tu vas te ruiner.", "vi": "Nếu con cứ tiêu xài như thế, con sẽ khánh kiệt mất."},
+  {"fr": "La crise économique a ruiné des milliers de petits commerçants.", "vi": "Cuộc khủng hoảng kinh tế đã làm phá sản hàng nghìn tiểu thương."}
+ ],
+ "bourse": [
+  {"fr": "Grâce à sa bourse, elle a pu étudier à l'étranger pendant deux ans.", "vi": "Nhờ học bổng, cô ấy đã có thể du học nước ngoài trong hai năm."},
+  {"fr": "Les actions ont beaucoup chuté à la Bourse de Paris hier.", "vi": "Cổ phiếu đã giảm mạnh trên Sở giao dịch chứng khoán Paris hôm qua."},
+  {"fr": "Il a demandé une bourse pour financer son année de master.", "vi": "Anh ấy đã xin học bổng để trang trải năm học thạc sĩ."}
+ ],
+ "facture": [
+  {"fr": "N'oublie pas de payer la facture d'électricité avant vendredi.", "vi": "Đừng quên thanh toán hóa đơn tiền điện trước thứ Sáu nhé."},
+  {"fr": "J'ai reçu une facture beaucoup trop élevée ce mois-ci.", "vi": "Tháng này tôi nhận được một hóa đơn cao quá mức."},
+  {"fr": "Le client a demandé une facture détaillée pour ses achats.", "vi": "Khách hàng đã yêu cầu một hóa đơn chi tiết cho các món hàng của mình."}
+ ],
+ "consister": [
+  {"fr": "Mon travail consiste à répondre aux questions des clients toute la journée.", "vi": "Công việc của tôi là trả lời câu hỏi của khách hàng suốt cả ngày."},
+  {"fr": "En quoi consiste exactement cette formation ?", "vi": "Khóa đào tạo này cụ thể gồm những gì?"},
+  {"fr": "Le repas consistait en une soupe et un peu de pain.", "vi": "Bữa ăn chỉ gồm một bát súp và một chút bánh mì."}
+ ],
+ "flatter": [
+  {"fr": "Il ne cesse de flatter son patron pour obtenir une promotion.", "vi": "Anh ta không ngừng nịnh nọt sếp để được thăng chức."},
+  {"fr": "Ça me flatte que vous ayez pensé à moi pour ce projet.", "vi": "Tôi thấy được đề cao khi các anh nghĩ đến tôi cho dự án này."},
+  {"fr": "Ne te laisse pas flatter par ses beaux discours.", "vi": "Đừng để mình bị mê hoặc bởi những lời hoa mỹ của hắn."}
+ ],
+ "humour": [
+  {"fr": "J'apprécie beaucoup son humour, même dans les moments difficiles.", "vi": "Tôi rất thích khiếu hài hước của anh ấy, ngay cả trong những lúc khó khăn."},
+  {"fr": "Il faut avoir de l'humour pour supporter une telle situation.", "vi": "Phải có óc hài hước mới chịu nổi tình huống như vậy."},
+  {"fr": "Son humour noir ne plaît pas à tout le monde.", "vi": "Kiểu hài hước đen của anh ấy không phải ai cũng thích."}
+ ],
+ "indice": [
+  {"fr": "La police a enfin trouvé un indice qui pourrait résoudre l'affaire.", "vi": "Cảnh sát cuối cùng đã tìm được một manh mối có thể giải quyết vụ án."},
+  {"fr": "L'indice des prix à la consommation a augmenté ce trimestre.", "vi": "Chỉ số giá tiêu dùng đã tăng trong quý này."},
+  {"fr": "Donne-moi au moins un indice, je n'arrive pas à deviner.", "vi": "Cho tôi ít nhất một gợi ý đi, tôi chịu không đoán ra."}
+ ],
+ "longueur": [
+  {"fr": "La longueur de la table ne convient pas à notre salle à manger.", "vi": "Chiều dài của chiếc bàn không hợp với phòng ăn của chúng tôi."},
+  {"fr": "Il a nagé plusieurs longueurs avant de sortir de la piscine.", "vi": "Anh ấy đã bơi nhiều vòng trước khi lên khỏi hồ bơi."},
+  {"fr": "Ce film traîne un peu en longueur vers la fin.", "vi": "Bộ phim này hơi lê thê ở đoạn cuối."}
+ ],
+ "sauce": [
+  {"fr": "Ma grand-mère prépare une sauce tomate incroyablement savoureuse.", "vi": "Bà tôi làm một loại nước sốt cà chua ngon không tưởng."},
+  {"fr": "Tu veux un peu plus de sauce sur tes pâtes ?", "vi": "Con muốn thêm chút nước sốt lên mì không?"},
+  {"fr": "La viande était bonne, mais la sauce manquait de sel.", "vi": "Thịt thì ngon, nhưng nước sốt hơi nhạt muối."}
+ ],
+ "berger": [
+  {"fr": "Le berger conduisait son troupeau vers les pâturages de montagne.", "vi": "Người chăn cừu dẫn đàn gia súc của mình lên đồng cỏ trên núi."},
+  {"fr": "Autrefois, mon arrière-grand-père était berger dans les Pyrénées.", "vi": "Ngày xưa, cụ cố tôi là người chăn cừu ở vùng Pyrénées."},
+  {"fr": "Le chien du berger surveillait attentivement les moutons.", "vi": "Con chó của người chăn cừu chăm chú canh giữ đàn cừu."}
+ ],
+ "personnellement": [
+  {"fr": "Personnellement, je pense que cette idée mérite d'être testée.", "vi": "Về phần cá nhân, tôi nghĩ ý tưởng này đáng để thử."},
+  {"fr": "Le directeur est venu personnellement nous féliciter.", "vi": "Giám đốc đã đích thân đến chúc mừng chúng tôi."},
+  {"fr": "Je ne connais pas personnellement cette actrice, mais j'aime ses films.", "vi": "Tôi không quen biết cá nhân nữ diễn viên này, nhưng tôi thích phim của cô ấy."}
+ ],
+ "serviteur": [
+  {"fr": "Dans ce roman, le vieux serviteur reste fidèle à sa maîtresse jusqu'au bout.", "vi": "Trong cuốn tiểu thuyết này, người hầu già vẫn trung thành với bà chủ cho đến cuối."},
+  {"fr": "Autrefois, les riches familles employaient de nombreux serviteurs.", "vi": "Ngày xưa, những gia đình giàu có thuê rất nhiều người hầu."},
+  {"fr": "Il se considérait comme un humble serviteur de l'État.", "vi": "Ông tự coi mình là một công bộc khiêm nhường của nhà nước."}
+ ],
+ "plancher": [
+  {"fr": "Le plancher en bois craquait à chacun de ses pas.", "vi": "Sàn gỗ kêu cọt kẹt theo từng bước chân của anh ấy."},
+  {"fr": "Nous avons dû plancher toute la nuit pour terminer le rapport.", "vi": "Chúng tôi đã phải làm việc cật lực cả đêm để hoàn thành báo cáo."},
+  {"fr": "Demain, chaque étudiant devra plancher sur un sujet différent.", "vi": "Ngày mai, mỗi sinh viên sẽ phải thuyết trình về một chủ đề khác nhau."}
+ ],
+ "virus": [
+  {"fr": "Un nouveau virus informatique a paralysé le réseau de l'entreprise.", "vi": "Một loại vi rút máy tính mới đã làm tê liệt mạng lưới của công ty."},
+  {"fr": "Le médecin pense qu'elle a attrapé un virus pendant son voyage.", "vi": "Bác sĩ cho rằng cô ấy đã nhiễm một loại vi rút trong chuyến đi."},
+  {"fr": "Ce virus se propage très rapidement en hiver.", "vi": "Loại vi rút này lây lan rất nhanh vào mùa đông."}
+ ],
+ "occupé": [
+  {"fr": "Je suis vraiment trop occupé cette semaine pour te voir.", "vi": "Tuần này tôi thực sự quá bận để gặp bạn."},
+  {"fr": "La ligne est occupée, je rappellerai plus tard.", "vi": "Đường dây đang bận, tôi sẽ gọi lại sau."},
+  {"fr": "Pendant la guerre, le pays est resté occupé pendant quatre ans.", "vi": "Trong chiến tranh, đất nước bị chiếm đóng suốt bốn năm."}
+ ],
+ "passager": [
+  {"fr": "Le passager assis à côté de moi a dormi tout le vol.", "vi": "Hành khách ngồi cạnh tôi đã ngủ suốt chuyến bay."},
+  {"fr": "Ne t'inquiète pas, ce malaise est tout à fait passager.", "vi": "Đừng lo, cảm giác khó chịu này chỉ là thoáng qua thôi."},
+  {"fr": "Chaque passager doit présenter son billet à l'entrée.", "vi": "Mỗi hành khách phải xuất trình vé ở lối vào."}
+ ],
+ "velours": [
+  {"fr": "Elle portait une robe en velours rouge pour la soirée.", "vi": "Cô ấy mặc một chiếc váy nhung đỏ cho buổi tiệc tối."},
+  {"fr": "Les fauteuils du théâtre étaient recouverts de velours usé.", "vi": "Những chiếc ghế bành trong rạp hát được bọc nhung đã sờn."},
+  {"fr": "Sa voix douce comme le velours a charmé tout le public.", "vi": "Giọng nói êm như nhung của cô đã mê hoặc cả khán phòng."}
+ ],
+ "dater": [
+  {"fr": "N'oubliez pas de dater et de signer votre lettre.", "vi": "Đừng quên đề ngày tháng và ký vào lá thư của bạn."},
+  {"fr": "Cette cathédrale date du douzième siècle.", "vi": "Nhà thờ lớn này có từ thế kỷ mười hai."},
+  {"fr": "Notre amitié date de l'époque du lycée.", "vi": "Tình bạn của chúng tôi có từ thời trung học."}
+ ],
+ "salir": [
+  {"fr": "Fais attention à ne pas salir ta chemise avec la peinture.", "vi": "Cẩn thận đừng làm bẩn áo sơ mi bằng sơn nhé."},
+  {"fr": "Les enfants ont sali tout le tapis avec leurs chaussures.", "vi": "Bọn trẻ đã làm bẩn cả tấm thảm bằng giày của chúng."},
+  {"fr": "Ces rumeurs ont sali sa réputation pendant des années.", "vi": "Những tin đồn ấy đã bôi nhọ danh tiếng của ông suốt nhiều năm."}
+ ],
+ "chuchoter": [
+  {"fr": "Elle a chuchoté quelques mots à l'oreille de son ami.", "vi": "Cô ấy đã thì thầm vài lời vào tai người bạn."},
+  {"fr": "Arrêtez de chuchoter au fond de la classe !", "vi": "Ngừng thì thầm ở cuối lớp đi!"},
+  {"fr": "Dans la bibliothèque, tout le monde était obligé de chuchoter.", "vi": "Trong thư viện, mọi người đều buộc phải nói thầm."}
+ ],
+ "améliorer": [
+  {"fr": "Il travaille dur pour améliorer son niveau de français.", "vi": "Anh ấy chăm chỉ luyện tập để cải thiện trình độ tiếng Pháp."},
+  {"fr": "Ces nouvelles mesures devraient améliorer la qualité de vie des habitants.", "vi": "Những biện pháp mới này lẽ ra sẽ cải thiện chất lượng sống của cư dân."},
+  {"fr": "La situation s'est nettement améliorée depuis le mois dernier.", "vi": "Tình hình đã cải thiện rõ rệt kể từ tháng trước."}
+ ],
+ "aviser": [
+  {"fr": "Nous vous aviserons dès que votre commande sera prête.", "vi": "Chúng tôi sẽ báo cho bạn biết ngay khi đơn hàng sẵn sàng."},
+  {"fr": "On verra la situation sur place et on avisera.", "vi": "Chúng ta sẽ xem tình hình tại chỗ rồi tính liệu."},
+  {"fr": "Il faudrait aviser la direction de ce problème au plus vite.", "vi": "Cần phải báo cho ban giám đốc về vấn đề này càng sớm càng tốt."}
+ ],
+ "acquérir": [
+  {"fr": "Avec le temps, elle a acquis une grande expérience dans ce domaine.", "vi": "Theo thời gian, cô ấy đã tích lũy được nhiều kinh nghiệm trong lĩnh vực này."},
+  {"fr": "L'entreprise cherche à acquérir un concurrent plus petit.", "vi": "Công ty đang tìm cách mua lại một đối thủ nhỏ hơn."},
+  {"fr": "Il a fini par acquérir la confiance de toute l'équipe.", "vi": "Anh ấy cuối cùng đã có được lòng tin của cả đội."}
+ ],
+ "duc": [
+  {"fr": "Le duc a invité toute la noblesse à son château pour le bal.", "vi": "Công tước đã mời toàn bộ giới quý tộc đến lâu đài của mình dự vũ hội."},
+  {"fr": "Dans cette pièce, le rôle du duc est joué par un acteur célèbre.", "vi": "Trong vở kịch này, vai công tước do một diễn viên nổi tiếng thủ vai."},
+  {"fr": "Le duc et la duchesse habitaient une immense propriété à la campagne.", "vi": "Công tước và nữ công tước sống trong một dinh cơ rộng lớn ở vùng quê."}
+ ],
+ "représentant": [
+  {"fr": "Le représentant du personnel a présenté nos demandes à la direction.", "vi": "Người đại diện của nhân viên đã trình bày các yêu cầu của chúng tôi với ban giám đốc."},
+  {"fr": "Un représentant de la marque viendra présenter les nouveaux produits.", "vi": "Một đại diện của hãng sẽ đến giới thiệu các sản phẩm mới."},
+  {"fr": "Chaque pays a envoyé un représentant à la conférence internationale.", "vi": "Mỗi nước đã cử một đại biểu đến hội nghị quốc tế."}
+ ],
+ "récent": [
+  {"fr": "D'après une étude récente, les jeunes lisent de moins en moins.", "vi": "Theo một nghiên cứu gần đây, giới trẻ đọc sách ngày càng ít."},
+  {"fr": "Les événements récents ont changé sa façon de voir la vie.", "vi": "Những sự kiện gần đây đã thay đổi cách nhìn cuộc sống của anh ấy."},
+  {"fr": "Ce modèle est plus récent et consomme beaucoup moins d'énergie.", "vi": "Mẫu này mới hơn và tiêu thụ ít năng lượng hơn nhiều."}
+ ],
+ "surmonter": [
+  {"fr": "Elle a réussi à surmonter sa peur de parler en public.", "vi": "Cô ấy đã vượt qua được nỗi sợ nói trước đám đông."},
+  {"fr": "Malgré tous les obstacles, ils ont fini par surmonter leurs difficultés.", "vi": "Bất chấp mọi trở ngại, cuối cùng họ đã khắc phục được khó khăn."},
+  {"fr": "Il faudra du courage pour surmonter une telle épreuve.", "vi": "Sẽ cần lòng dũng cảm để vượt qua một thử thách như vậy."}
+ ],
+ "cahier": [
+  {"fr": "L'élève a oublié son cahier de maths à la maison.", "vi": "Cậu học sinh đã để quên quyển vở toán ở nhà."},
+  {"fr": "Note ce rendez-vous dans ton cahier pour ne pas l'oublier.", "vi": "Ghi cuộc hẹn này vào vở của con để khỏi quên."},
+  {"fr": "Elle garde encore ses vieux cahiers d'école primaire.", "vi": "Cô ấy vẫn giữ những quyển vở cũ hồi tiểu học."}
+ ],
+ "gueuler": [
+  {"fr": "Arrête de gueuler, tout le quartier va t'entendre !", "vi": "Ngừng gào lên đi, cả khu phố sẽ nghe thấy đấy!"},
+  {"fr": "Le patron a gueulé sur ses employés toute la matinée.", "vi": "Ông chủ đã quát tháo nhân viên suốt cả buổi sáng."},
+  {"fr": "Pas la peine de gueuler, j'ai très bien compris.", "vi": "Không cần phải la hét, tôi hiểu rất rõ rồi."}
+ ],
+ "spécialiste": [
+  {"fr": "Mon médecin m'a envoyé chez un spécialiste du cœur.", "vi": "Bác sĩ của tôi đã gửi tôi đến một chuyên gia về tim mạch."},
+  {"fr": "C'est une spécialiste reconnue de la littérature du dix-neuvième siècle.", "vi": "Cô ấy là một chuyên gia được công nhận về văn học thế kỷ mười chín."},
+  {"fr": "Pour ce genre de panne, il vaut mieux appeler un spécialiste.", "vi": "Với kiểu hỏng hóc này, tốt hơn nên gọi một chuyên viên."}
+ ],
+ "obstacle": [
+  {"fr": "La langue reste le principal obstacle pour les nouveaux immigrés.", "vi": "Ngôn ngữ vẫn là trở ngại chính đối với những người mới nhập cư."},
+  {"fr": "Le cheval a sauté l'obstacle sans la moindre hésitation.", "vi": "Con ngựa đã nhảy qua chướng ngại vật mà không hề do dự."},
+  {"fr": "Rien ne pourra dresser d'obstacle entre nous.", "vi": "Không gì có thể dựng lên trở ngại giữa chúng ta."}
+ ],
+ "richesse": [
+  {"fr": "La véritable richesse ne se mesure pas seulement en argent.", "vi": "Sự giàu có thực sự không chỉ đo bằng tiền bạc."},
+  {"fr": "Ce pays possède une grande richesse culturelle et naturelle.", "vi": "Đất nước này sở hữu một sự phong phú lớn về văn hóa và thiên nhiên."},
+  {"fr": "Il a hérité d'une immense richesse à la mort de son oncle.", "vi": "Anh ấy đã thừa kế một khối của cải khổng lồ khi người chú qua đời."}
+ ],
+ "oubli": [
+  {"fr": "Ce document a été perdu à la suite d'un simple oubli.", "vi": "Tài liệu này bị mất chỉ vì một sự sơ suất quên lãng."},
+  {"fr": "Avec le temps, son nom est tombé dans l'oubli.", "vi": "Theo thời gian, tên tuổi của ông đã rơi vào quên lãng."},
+  {"fr": "Sauf oubli de ma part, la réunion est prévue à dix heures.", "vi": "Nếu tôi không nhầm lẫn quên sót, cuộc họp dự kiến vào lúc mười giờ."}
+ ],
+ "chantier": [
+  {"fr": "Les ouvriers travaillent sur le chantier depuis le lever du soleil.", "vi": "Các công nhân đã làm việc trên công trường từ lúc mặt trời mọc."},
+  {"fr": "Le chantier de la nouvelle école devrait être terminé en automne.", "vi": "Công trường xây trường học mới lẽ ra sẽ hoàn thành vào mùa thu."},
+  {"fr": "Attention, le port du casque est obligatoire sur ce chantier.", "vi": "Chú ý, việc đội mũ bảo hộ là bắt buộc trên công trường này."}
+ ],
+ "surpris": [
+  {"fr": "J'ai été très surpris d'apprendre qu'il avait démissionné.", "vi": "Tôi đã rất ngạc nhiên khi biết anh ấy đã từ chức."},
+  {"fr": "Elle a semblé surprise par notre visite inattendue.", "vi": "Cô ấy có vẻ sửng sốt trước chuyến thăm bất ngờ của chúng tôi."},
+  {"fr": "Ne sois pas surpris s'il arrive en retard, c'est habituel.", "vi": "Đừng ngạc nhiên nếu anh ấy đến trễ, chuyện đó là thường thôi."}
+ ],
+ "sagesse": [
+  {"fr": "Avec l'âge, il a acquis une grande sagesse.", "vi": "Với tuổi tác, ông đã có được một sự khôn ngoan sâu sắc."},
+  {"fr": "Elle a écouté les conseils de sa grand-mère avec sagesse.", "vi": "Cô ấy đã lắng nghe lời khuyên của bà mình một cách khôn ngoan."},
+  {"fr": "La sagesse consiste parfois à savoir se taire.", "vi": "Sự khôn ngoan đôi khi nằm ở việc biết im lặng."}
+ ],
+ "trouille": [
+  {"fr": "J'ai eu une trouille bleue quand les lumières se sont éteintes.", "vi": "Tôi đã sợ khiếp vía khi đèn tắt phụt."},
+  {"fr": "Il n'ose pas parler au directeur, il a trop la trouille.", "vi": "Anh ta không dám nói chuyện với giám đốc, sợ quá mà."},
+  {"fr": "Ce film d'horreur m'a foutu une de ces trouilles !", "vi": "Bộ phim kinh dị này làm tôi sợ hết hồn luôn!"}
+ ],
+ "poison": [
+  {"fr": "Le détective a découvert que la victime avait été empoisonnée avec un poison rare.", "vi": "Viên thám tử phát hiện nạn nhân đã bị đầu độc bằng một loại chất độc hiếm."},
+  {"fr": "Certaines plantes du jardin contiennent un poison dangereux.", "vi": "Một số cây trong vườn chứa chất độc nguy hiểm."},
+  {"fr": "Ces paroles pleines de haine sont un vrai poison pour l'esprit.", "vi": "Những lời lẽ đầy thù hận ấy là một thứ thuốc độc thực sự cho tâm trí."}
+ ],
+ "pigeon": [
+  {"fr": "Un pigeon s'est posé sur le rebord de la fenêtre ce matin.", "vi": "Một con chim bồ câu đã đậu lên gờ cửa sổ sáng nay."},
+  {"fr": "Sur la place, des dizaines de pigeons cherchaient des miettes.", "vi": "Trên quảng trường, hàng chục con bồ câu đang tìm vụn bánh."},
+  {"fr": "Il s'est fait avoir comme un vrai pigeon dans cette affaire.", "vi": "Trong vụ này, anh ta bị lừa như một con mồi ngờ nghệch."}
+ ],
+ "foot": [
+  {"fr": "Tous les dimanches, il joue au foot avec ses amis.", "vi": "Chủ nhật nào anh ấy cũng đá bóng với bạn bè."},
+  {"fr": "On regarde le match de foot ce soir chez moi ?", "vi": "Tối nay xem trận bóng đá ở nhà tôi nhé?"},
+  {"fr": "Depuis qu'il est petit, il est passionné de foot.", "vi": "Từ nhỏ, cậu ấy đã đam mê bóng đá."}
+ ],
+ "orchestre": [
+  {"fr": "L'orchestre a joué une symphonie de Beethoven devant une salle comble.", "vi": "Dàn nhạc đã trình diễn một bản giao hưởng của Beethoven trước một khán phòng chật kín."},
+  {"fr": "Elle joue du violon dans un orchestre depuis dix ans.", "vi": "Cô ấy chơi vĩ cầm trong một dàn nhạc đã mười năm nay."},
+  {"fr": "Le chef d'orchestre a levé sa baguette et le concert a commencé.", "vi": "Nhạc trưởng đã giơ chiếc đũa chỉ huy lên và buổi hòa nhạc bắt đầu."}
+ ],
+ "sexy": [
+  {"fr": "Elle a choisi une robe très sexy pour la soirée.", "vi": "Cô ấy đã chọn một chiếc váy rất gợi cảm cho buổi tiệc."},
+  {"fr": "Il trouve que cette voix grave est particulièrement sexy.", "vi": "Anh ấy thấy giọng nói trầm ấy đặc biệt quyến rũ."},
+  {"fr": "Ce nouveau modèle de voiture a un design vraiment sexy.", "vi": "Mẫu xe mới này có kiểu dáng thực sự quyến rũ."}
+ ],
+ "chèvre": [
+  {"fr": "Le fromage de chèvre se marie très bien avec le miel.", "vi": "Phô mai dê rất hợp với mật ong."},
+  {"fr": "Une chèvre broutait tranquillement au bord du chemin.", "vi": "Một con dê đang gặm cỏ yên bình bên vệ đường."},
+  {"fr": "Ses questions incessantes finissent par me rendre chèvre.", "vi": "Những câu hỏi liên tục của cô ấy rốt cuộc làm tôi phát điên."}
+ ],
+ "bataillon": [
+  {"fr": "Un bataillon entier a été envoyé pour défendre la frontière.", "vi": "Cả một tiểu đoàn đã được điều đến bảo vệ biên giới."},
+  {"fr": "Le commandant a donné l'ordre au bataillon d'avancer.", "vi": "Vị chỉ huy đã ra lệnh cho tiểu đoàn tiến lên."},
+  {"fr": "Tout un bataillon de bénévoles est venu aider après l'inondation.", "vi": "Cả một đội quân tình nguyện viên đã đến giúp sau trận lụt."}
+ ],
+ "autorisation": [
+  {"fr": "Il faut une autorisation spéciale pour visiter cette partie du musée.", "vi": "Cần có giấy phép đặc biệt để tham quan khu vực này của bảo tàng."},
+  {"fr": "Sans l'autorisation de tes parents, tu ne peux pas partir.", "vi": "Không có sự cho phép của bố mẹ, con không thể đi được."},
+  {"fr": "L'entreprise attend toujours l'autorisation de construire.", "vi": "Công ty vẫn đang chờ giấy phép xây dựng."}
+ ],
+ "commentaire": [
+  {"fr": "Le professeur a écrit un commentaire encourageant sur ma copie.", "vi": "Thầy giáo đã viết một lời nhận xét động viên trên bài của tôi."},
+  {"fr": "Sa décision se passe de tout commentaire.", "vi": "Quyết định của ông ấy chẳng cần bình luận gì thêm."},
+  {"fr": "Les internautes ont laissé des milliers de commentaires sous la vidéo.", "vi": "Cư dân mạng đã để lại hàng nghìn lời bình luận dưới video."}
+ ],
+ "aérien": [
+  {"fr": "Le trafic aérien a été perturbé par la tempête de neige.", "vi": "Giao thông hàng không đã bị gián đoạn bởi cơn bão tuyết."},
+  {"fr": "Depuis l'avion, la vue aérienne de la ville était magnifique.", "vi": "Từ trên máy bay, quang cảnh thành phố nhìn từ trên không thật tuyệt đẹp."},
+  {"fr": "Sa démarche légère et presque aérienne attirait tous les regards.", "vi": "Dáng đi nhẹ nhàng và gần như bay bổng của cô thu hút mọi ánh nhìn."}
+ ],
+ "applaudir": [
+  {"fr": "Le public s'est levé pour applaudir les acteurs à la fin du spectacle.", "vi": "Khán giả đã đứng dậy vỗ tay tán thưởng các diễn viên khi buổi diễn kết thúc."},
+  {"fr": "Tout le monde a applaudi longuement son discours émouvant.", "vi": "Mọi người đã vỗ tay thật lâu sau bài diễn văn cảm động của ông."},
+  {"fr": "On ne peut qu'applaudir une telle initiative en faveur de l'environnement.", "vi": "Chúng ta chỉ có thể tán thưởng một sáng kiến vì môi trường như vậy."}
+ ],
+ "injuste": [
+  {"fr": "Il trouve injuste d'avoir été puni à la place des autres.", "vi": "Anh ấy thấy thật bất công khi bị phạt thay cho người khác."},
+  {"fr": "C'est une décision profondément injuste envers les employés.", "vi": "Đó là một quyết định hết sức bất công đối với nhân viên."},
+  {"fr": "La vie est parfois injuste, mais il ne faut pas baisser les bras.", "vi": "Cuộc sống đôi khi bất công, nhưng không được buông xuôi."}
+ ],
+ "accélérer": [
+  {"fr": "Le conducteur a accéléré brusquement pour dépasser le camion.", "vi": "Tài xế đã tăng tốc đột ngột để vượt qua chiếc xe tải."},
+  {"fr": "Nous devons accélérer le rythme si nous voulons finir à temps.", "vi": "Chúng ta phải đẩy nhanh nhịp độ nếu muốn hoàn thành đúng hạn."},
+  {"fr": "La nouvelle technologie a considérablement accéléré le processus.", "vi": "Công nghệ mới đã đẩy nhanh đáng kể quá trình này."}
+ ],
+ "hall": [
+  {"fr": "Nous nous retrouverons dans le hall de l'hôtel à midi.", "vi": "Chúng ta sẽ gặp nhau ở sảnh khách sạn vào buổi trưa."},
+  {"fr": "Le hall de la gare était bondé à l'heure de pointe.", "vi": "Sảnh nhà ga đông nghẹt vào giờ cao điểm."},
+  {"fr": "Un grand tableau décorait le hall d'entrée de l'immeuble.", "vi": "Một bức tranh lớn trang trí cho tiền sảnh của tòa nhà."}
+ ],
+ "calculer": [
+  {"fr": "Peux-tu calculer combien ça nous coûtera au total ?", "vi": "Bạn có thể tính tổng cộng chuyện này tốn của chúng ta bao nhiêu không?"},
+  {"fr": "Il a soigneusement calculé le budget avant de lancer le projet.", "vi": "Anh ấy đã tính toán kỹ ngân sách trước khi khởi động dự án."},
+  {"fr": "L'ordinateur peut calculer ces données en quelques secondes.", "vi": "Máy tính có thể tính toán những dữ liệu này chỉ trong vài giây."}
+ ],
+ "adversaire": [
+  {"fr": "Notre équipe a battu son adversaire lors de la finale.", "vi": "Đội của chúng tôi đã đánh bại đối thủ trong trận chung kết."},
+  {"fr": "C'est un adversaire redoutable qu'il ne faut pas sous-estimer.", "vi": "Đó là một đối thủ đáng gờm mà ta không nên coi thường."},
+  {"fr": "Aux échecs, il faut toujours anticiper les coups de son adversaire.", "vi": "Trong cờ vua, luôn phải đoán trước các nước đi của đối phương."}
+ ],
+ "miel": [
+  {"fr": "Le matin, j'aime tartiner du miel sur mon pain grillé.", "vi": "Buổi sáng, tôi thích phết mật ong lên bánh mì nướng."},
+  {"fr": "Ce thé au miel et au citron est parfait contre le rhume.", "vi": "Ly trà mật ong chanh này rất tốt để trị cảm lạnh."},
+  {"fr": "Elle lui a parlé avec une voix douce comme le miel.", "vi": "Cô ấy nói với anh bằng một giọng ngọt ngào như mật."}
+ ],
+ "conclusion": [
+  {"fr": "En conclusion, ce projet demande encore beaucoup de travail.", "vi": "Tóm lại, dự án này vẫn cần rất nhiều công sức."},
+  {"fr": "Les chercheurs sont arrivés à une conclusion surprenante.", "vi": "Các nhà nghiên cứu đã đi đến một kết luận đáng ngạc nhiên."},
+  {"fr": "Ne tire pas de conclusions hâtives avant de connaître tous les faits.", "vi": "Đừng vội kết luận trước khi biết hết mọi sự việc."}
+ ],
+ "grandeur": [
+  {"fr": "La grandeur de cette cathédrale impressionne tous les visiteurs.", "vi": "Sự vĩ đại của nhà thờ lớn này gây ấn tượng với mọi du khách."},
+  {"fr": "On a commandé un cadre grandeur nature pour la photo.", "vi": "Chúng tôi đã đặt một khung ảnh kích thước như thật cho tấm hình."},
+  {"fr": "Malgré sa chute, il a gardé une certaine grandeur d'âme.", "vi": "Dù sa cơ, ông vẫn giữ được một sự cao thượng nhất định trong tâm hồn."}
+ ],
+ "démarche": [
+  {"fr": "J'ai entrepris toutes les démarches nécessaires pour obtenir mon visa.", "vi": "Tôi đã thực hiện mọi thủ tục cần thiết để xin visa."},
+  {"fr": "On le reconnaît de loin à sa démarche décidée.", "vi": "Người ta nhận ra ông từ xa nhờ dáng đi quả quyết."},
+  {"fr": "Cette démarche administrative prend souvent plusieurs semaines.", "vi": "Thủ tục hành chính này thường mất vài tuần."}
+ ],
+ "critique": [
+  {"fr": "Le film a reçu une critique très favorable dans les journaux.", "vi": "Bộ phim đã nhận được một lời phê bình rất tích cực trên các tờ báo."},
+  {"fr": "Le patient se trouve dans un état critique après l'accident.", "vi": "Bệnh nhân đang trong tình trạng nguy kịch sau vụ tai nạn."},
+  {"fr": "Il faut savoir garder un esprit critique face aux informations.", "vi": "Cần biết giữ một tinh thần phê phán trước các thông tin."}
+ ],
+ "photographe": [
+  {"fr": "Le photographe a passé des heures à attendre la lumière parfaite.", "vi": "Nhiếp ảnh gia đã mất hàng giờ để chờ ánh sáng hoàn hảo."},
+  {"fr": "Pour notre mariage, nous avons engagé une photographe très talentueuse.", "vi": "Cho đám cưới của mình, chúng tôi đã thuê một nữ nhiếp ảnh gia rất tài năng."},
+  {"fr": "Ce photographe est célèbre pour ses portraits en noir et blanc.", "vi": "Nhiếp ảnh gia này nổi tiếng với những bức chân dung đen trắng."}
+ ],
+ "hommage": [
+  {"fr": "La ville a rendu hommage aux victimes de la catastrophe.", "vi": "Thành phố đã tưởng niệm các nạn nhân của thảm họa."},
+  {"fr": "Ce concert est un hommage au grand musicien disparu.", "vi": "Buổi hòa nhạc này là sự tôn vinh dành cho nhà âm nhạc lớn đã khuất."},
+  {"fr": "Il a écrit ce livre en hommage à son professeur.", "vi": "Ông đã viết cuốn sách này để tỏ lòng kính trọng người thầy của mình."}
+ ],
+ "ancêtre": [
+  {"fr": "Ses ancêtres ont quitté l'Italie il y a plus d'un siècle.", "vi": "Tổ tiên của cô ấy đã rời Ý cách đây hơn một thế kỷ."},
+  {"fr": "On dit que cette machine est l'ancêtre de l'ordinateur moderne.", "vi": "Người ta nói rằng cỗ máy này là ông tổ của máy tính hiện đại."},
+  {"fr": "Il est fier de descendre d'ancêtres célèbres.", "vi": "Anh ấy tự hào là hậu duệ của những tổ tiên nổi tiếng."}
+ ],
+ "coton": [
+  {"fr": "Je préfère les chemises en coton, elles sont plus agréables en été.", "vi": "Tôi thích áo sơ mi bằng vải bông hơn, chúng dễ chịu hơn vào mùa hè."},
+  {"fr": "L'infirmière a nettoyé la plaie avec un morceau de coton.", "vi": "Cô y tá đã lau vết thương bằng một miếng bông."},
+  {"fr": "Après cette longue marche, j'ai les jambes en coton.", "vi": "Sau chặng đi bộ dài này, chân tôi rã rời như bún."}
+ ],
+ "garce": [
+  {"fr": "Ne fais pas attention à elle, c'est une vraie garce.", "vi": "Đừng để ý đến ả, ả đúng là một con khốn."},
+  {"fr": "Il l'a traitée de garce et elle a claqué la porte.", "vi": "Hắn gọi cô ta là con đĩ và cô ta đã đóng sầm cửa."},
+  {"fr": "Dans le film, la rivale joue le rôle de la garce sans scrupules.", "vi": "Trong phim, cô kình địch đóng vai một mụ đàn bà đê tiện không chút lương tâm."}
+ ],
+ "symbole": [
+  {"fr": "La colombe est un symbole universel de la paix.", "vi": "Chim bồ câu là một biểu tượng phổ quát của hòa bình."},
+  {"fr": "Cette tour est devenue le symbole de toute la ville.", "vi": "Ngọn tháp này đã trở thành biểu tượng của cả thành phố."},
+  {"fr": "En chimie, chaque élément est représenté par un symbole.", "vi": "Trong hóa học, mỗi nguyên tố được biểu thị bằng một ký hiệu."}
+ ],
+ "admirable": [
+  {"fr": "Elle a fait preuve d'un courage admirable pendant toute sa maladie.", "vi": "Cô ấy đã thể hiện một lòng dũng cảm đáng khâm phục suốt thời gian bệnh tật."},
+  {"fr": "Le paysage depuis le sommet était tout simplement admirable.", "vi": "Quang cảnh từ đỉnh núi thật đơn giản là tuyệt vời."},
+  {"fr": "Son dévouement envers ses élèves est vraiment admirable.", "vi": "Sự tận tụy của cô ấy với học trò thật đáng khâm phục."}
+ ],
+ "arrestation": [
+  {"fr": "L'arrestation du suspect a eu lieu tôt ce matin.", "vi": "Việc bắt giữ nghi phạm đã diễn ra vào sáng sớm hôm nay."},
+  {"fr": "Les journalistes ont filmé l'arrestation devant la banque.", "vi": "Các nhà báo đã quay lại cảnh bắt giữ trước ngân hàng."},
+  {"fr": "Son arrestation a fait la une de tous les journaux.", "vi": "Vụ bắt giữ ông ta đã lên trang nhất của mọi tờ báo."}
+ ],
+ "jusque-là": [
+  {"fr": "Jusque-là, tout s'était déroulé sans le moindre problème.", "vi": "Cho đến lúc đó, mọi thứ đã diễn ra không chút trục trặc."},
+  {"fr": "Je ne l'avais jamais vu si en colère jusque-là.", "vi": "Cho đến khi đó, tôi chưa bao giờ thấy anh ấy giận đến vậy."},
+  {"fr": "Attends-moi ici ; jusque-là, ne bouge surtout pas.", "vi": "Chờ tôi ở đây; cho đến lúc đó, tuyệt đối đừng nhúc nhích."}
+ ],
+ "imprimer": [
+  {"fr": "N'oublie pas d'imprimer ton billet avant d'aller à l'aéroport.", "vi": "Đừng quên in vé trước khi ra sân bay nhé."},
+  {"fr": "La machine ne veut plus imprimer, il n'y a plus d'encre.", "vi": "Cái máy không chịu in nữa, hết mực rồi."},
+  {"fr": "Cet éditeur a imprimé plus de dix mille exemplaires du roman.", "vi": "Nhà xuất bản này đã in hơn mười nghìn bản cuốn tiểu thuyết."}
+ ],
+ "effrayant": [
+  {"fr": "Le bruit qui venait de la cave était vraiment effrayant.", "vi": "Tiếng động phát ra từ hầm nhà thật sự đáng sợ."},
+  {"fr": "Il a raconté une histoire effrayante autour du feu de camp.", "vi": "Anh ấy đã kể một câu chuyện rùng rợn bên đống lửa trại."},
+  {"fr": "La vitesse à laquelle roulait la voiture était effrayante.", "vi": "Tốc độ mà chiếc xe chạy thật đáng sợ."}
+ ],
+ "vedette": [
+  {"fr": "Cette jeune actrice est devenue une vedette du jour au lendemain.", "vi": "Nữ diễn viên trẻ này đã trở thành ngôi sao chỉ sau một đêm."},
+  {"fr": "Le chanteur a partagé la vedette avec un célèbre pianiste.", "vi": "Ca sĩ đã chia sẻ vị trí ngôi sao với một nghệ sĩ dương cầm nổi tiếng."},
+  {"fr": "Lors de la soirée, elle a tenu à voler la vedette à tout le monde.", "vi": "Trong buổi tiệc, cô ấy cố tình chiếm hết sự chú ý của mọi người."}
+ ],
+ "morale": [
+  {"fr": "La morale de cette fable est qu'il ne faut pas mentir.", "vi": "Bài học luân lý của truyện ngụ ngôn này là không nên nói dối."},
+  {"fr": "Il a agi selon sa morale, sans se soucier du regard des autres.", "vi": "Anh ấy hành động theo đạo đức của mình, không bận tâm đến ánh nhìn của người khác."},
+  {"fr": "Après cet échec, le moral de l'équipe est au plus bas.", "vi": "Sau thất bại này, tinh thần của cả đội xuống thấp nhất."}
+ ],
+ "blouse": [
+  {"fr": "Le médecin portait une blouse blanche impeccable.", "vi": "Bác sĩ mặc một chiếc áo blu trắng tinh tươm."},
+  {"fr": "Avant d'entrer au laboratoire, mets ta blouse et tes gants.", "vi": "Trước khi vào phòng thí nghiệm, hãy mặc áo choàng và đeo găng tay."},
+  {"fr": "L'artiste a taché sa blouse de peinture de toutes les couleurs.", "vi": "Người họa sĩ đã làm dây bẩn áo choàng bằng đủ màu sơn."}
+ ],
+ "siens": [
+  {"fr": "Il prend toujours soin des siens avant de penser à lui.", "vi": "Anh ấy luôn chăm lo cho người thân trước khi nghĩ đến bản thân."},
+  {"fr": "Ces problèmes ne sont pas les miens, mais bien les siens.", "vi": "Những vấn đề này không phải của tôi, mà đúng là của anh ấy."},
+  {"fr": "Aux fêtes de fin d'année, chacun retourne auprès des siens.", "vi": "Vào dịp lễ cuối năm, ai cũng trở về bên người thân của mình."}
+ ],
+ "boisson": [
+  {"fr": "Qu'est-ce que tu veux comme boisson avec ton repas ?", "vi": "Bạn muốn dùng đồ uống gì với bữa ăn?"},
+  {"fr": "Les boissons sucrées sont mauvaises pour la santé.", "vi": "Đồ uống có đường không tốt cho sức khỏe."},
+  {"fr": "Par cette chaleur, une boisson fraîche serait la bienvenue.", "vi": "Trong cái nóng này, một thức uống mát lạnh thì thật tuyệt."}
+ ],
+ "drôlement": [
+  {"fr": "Il fait drôlement froid ce matin, mets ton écharpe.", "vi": "Sáng nay trời lạnh dữ dội đấy, quàng khăn vào đi."},
+  {"fr": "Elle a drôlement bien réussi son examen.", "vi": "Cô ấy đã thi đỗ cực kỳ tốt."},
+  {"fr": "Ton nouveau bureau est drôlement bien rangé !", "vi": "Bàn làm việc mới của cậu ngăn nắp ghê gớm thật!"}
+ ],
+ "caresse": [
+  {"fr": "Le chat ronronnait sous les caresses de sa maîtresse.", "vi": "Con mèo kêu gừ gừ dưới những cái vuốt ve của bà chủ."},
+  {"fr": "Elle a fait une caresse sur la joue de son enfant endormi.", "vi": "Cô ấy vuốt ve má đứa con đang ngủ."},
+  {"fr": "La brise du soir était douce comme une caresse.", "vi": "Làn gió chiều dịu dàng như một cái vuốt ve."}
+ ],
+ "chérir": [
+  {"fr": "Elle chérit chaque souvenir de son enfance à la campagne.", "vi": "Cô ấy trân quý từng kỷ niệm tuổi thơ ở vùng quê."},
+  {"fr": "Ils ont juré de se chérir pour le reste de leur vie.", "vi": "Họ đã thề yêu thương nhau đến hết cuộc đời."},
+  {"fr": "Ce vieux photo est un objet qu'il chérit par-dessus tout.", "vi": "Tấm ảnh cũ này là vật mà ông trân quý hơn tất thảy."}
+ ],
+ "instituteur": [
+  {"fr": "Mon instituteur de CE2 m'a donné le goût de la lecture.", "vi": "Thầy giáo tiểu học năm lớp ba đã truyền cho tôi niềm yêu thích đọc sách."},
+  {"fr": "L'instituteur a expliqué la leçon avec beaucoup de patience.", "vi": "Thầy giáo tiểu học đã giảng bài với rất nhiều kiên nhẫn."},
+  {"fr": "Dans ce petit village, l'instituteur connaît toutes les familles.", "vi": "Ở ngôi làng nhỏ này, thầy giáo quen biết mọi gia đình."}
+ ],
+ "surveillance": [
+  {"fr": "Le patient est resté sous surveillance médicale toute la nuit.", "vi": "Bệnh nhân đã được theo dõi y tế suốt cả đêm."},
+  {"fr": "Des caméras de surveillance ont été installées dans tout le magasin.", "vi": "Các camera giám sát đã được lắp đặt khắp cửa hàng."},
+  {"fr": "La surveillance des enfants à la piscine est indispensable.", "vi": "Việc trông chừng trẻ em ở hồ bơi là điều không thể thiếu."}
+ ],
+ "noeud": [
+  {"fr": "Il n'arrive pas à défaire le noeud de ses lacets.", "vi": "Cậu bé không tài nào tháo được nút thắt dây giày."},
+  {"fr": "Le marin a fait un noeud solide pour attacher le bateau.", "vi": "Người thủy thủ đã thắt một nút chắc chắn để buộc con thuyền."},
+  {"fr": "Le noeud du problème, c'est le manque d'argent.", "vi": "Nút thắt của vấn đề chính là việc thiếu tiền."}
+ ],
+ "rétablir": [
+  {"fr": "Les techniciens ont réussi à rétablir le courant après l'orage.", "vi": "Các kỹ thuật viên đã khôi phục được điện sau cơn giông."},
+  {"fr": "Il lui a fallu plusieurs mois pour se rétablir complètement.", "vi": "Anh ấy đã mất vài tháng để hồi phục hoàn toàn."},
+  {"fr": "La police a dû intervenir pour rétablir l'ordre dans la rue.", "vi": "Cảnh sát đã phải can thiệp để lập lại trật tự trên đường phố."}
+ ],
+ "fatal": [
+  {"fr": "Cette petite erreur aurait pu être fatale pour tout le projet.", "vi": "Sai lầm nhỏ này lẽ ra đã có thể gây tai hại cho cả dự án."},
+  {"fr": "L'accident a été fatal pour deux des passagers.", "vi": "Vụ tai nạn đã cướp đi sinh mạng của hai hành khách."},
+  {"fr": "Il pensait que leur rencontre était le fruit d'un hasard fatal.", "vi": "Anh ấy cho rằng cuộc gặp gỡ của họ là kết quả của một định mệnh."}
+ ],
+ "déployer": [
+  {"fr": "L'armée a déployé des milliers de soldats à la frontière.", "vi": "Quân đội đã triển khai hàng nghìn binh sĩ ở biên giới."},
+  {"fr": "L'aigle a déployé ses ailes et s'est envolé.", "vi": "Con đại bàng đã dang rộng đôi cánh và bay đi."},
+  {"fr": "Ils ont déployé beaucoup d'efforts pour organiser cet événement.", "vi": "Họ đã dốc rất nhiều nỗ lực để tổ chức sự kiện này."}
+ ],
+ "infini": [
+  {"fr": "Depuis la falaise, on avait l'impression que la mer était infinie.", "vi": "Từ trên vách đá, người ta có cảm giác biển cả là vô tận."},
+  {"fr": "Elle a fait preuve d'une patience infinie avec ses élèves.", "vi": "Cô ấy đã thể hiện một sự kiên nhẫn vô hạn với học trò."},
+  {"fr": "Les mathématiciens s'interrogent depuis toujours sur la notion d'infini.", "vi": "Các nhà toán học từ xưa đến nay vẫn trăn trở về khái niệm vô hạn."}
+ ],
+ "arroser": [
+  {"fr": "N'oublie pas d'arroser les plantes pendant mon absence.", "vi": "Đừng quên tưới cây trong lúc tôi vắng nhà nhé."},
+  {"fr": "Le jardinier arrose le potager tous les soirs en été.", "vi": "Người làm vườn tưới vườn rau mỗi tối vào mùa hè."},
+  {"fr": "Nous avons arrosé sa promotion avec une bonne bouteille.", "vi": "Chúng tôi đã ăn mừng việc anh ấy thăng chức bằng một chai rượu ngon."}
+ ],
+ "détective": [
+  {"fr": "Le détective a suivi le suspect pendant plusieurs jours.", "vi": "Viên thám tử đã theo dõi nghi phạm suốt nhiều ngày."},
+  {"fr": "Elle a engagé un détective privé pour retrouver son frère.", "vi": "Cô ấy đã thuê một thám tử tư để tìm lại anh trai."},
+  {"fr": "Dans ce roman, le détective résout une affaire particulièrement complexe.", "vi": "Trong cuốn tiểu thuyết này, viên thám tử phá một vụ án đặc biệt phức tạp."}
+ ],
+ "mater": [
+  {"fr": "Le gouvernement a envoyé l'armée pour mater la révolte.", "vi": "Chính phủ đã điều quân đội đến trấn áp cuộc nổi dậy."},
+  {"fr": "Il a fini par mater son adversaire au bout de trois manches.", "vi": "Cuối cùng anh ấy đã khuất phục đối thủ sau ba hiệp."},
+  {"fr": "Arrête de mater les filles et concentre-toi sur ton travail.", "vi": "Ngừng ngắm nghía mấy cô gái đi và tập trung vào công việc."}
+ ],
+ "coutume": [
+  {"fr": "Dans ce pays, c'est la coutume d'offrir des fleurs à ses hôtes.", "vi": "Ở nước này, tặng hoa cho chủ nhà là một phong tục."},
+  {"fr": "Selon une vieille coutume locale, on allume un grand feu à la Saint-Jean.", "vi": "Theo một phong tục cổ của địa phương, người ta đốt lửa lớn vào lễ Thánh Jean."},
+  {"fr": "Il a, comme de coutume, oublié son parapluie au bureau.", "vi": "Như thường lệ, anh ấy lại để quên ô ở văn phòng."}
+ ],
+ "objectif": [
+  {"fr": "Notre principal objectif cette année est d'augmenter nos ventes.", "vi": "Mục tiêu chính của chúng tôi năm nay là tăng doanh số."},
+  {"fr": "Un bon journaliste doit rester objectif dans ses reportages.", "vi": "Một nhà báo giỏi phải giữ khách quan trong các bài phóng sự."},
+  {"fr": "Il a changé d'objectif pour prendre une photo de plus près.", "vi": "Anh ấy đã đổi ống kính để chụp một bức ảnh cận cảnh hơn."}
+ ],
+ "compliment": [
+  {"fr": "Elle a rougi en recevant un compliment de son professeur.", "vi": "Cô ấy đỏ mặt khi nhận được lời khen từ thầy giáo."},
+  {"fr": "Fais mes compliments au chef, ce plat était délicieux.", "vi": "Cho tôi gửi lời khen tới đầu bếp, món này thật ngon."},
+  {"fr": "Il n'est pas habitué à recevoir autant de compliments.", "vi": "Anh ấy không quen được khen nhiều đến vậy."}
+ ],
+ "tragique": [
+  {"fr": "La pièce se termine par une fin particulièrement tragique.", "vi": "Vở kịch kết thúc bằng một cái kết đặc biệt bi thảm."},
+  {"fr": "L'accident tragique a bouleversé toute la petite ville.", "vi": "Vụ tai nạn bi thảm đã làm chấn động cả thị trấn nhỏ."},
+  {"fr": "Ce n'est pas si grave, ne prends pas les choses au tragique.", "vi": "Chuyện không nghiêm trọng đến thế, đừng bi kịch hóa mọi thứ."}
+ ],
+ "occupation": [
+  {"fr": "Pendant l'Occupation, beaucoup de familles ont dû se cacher.", "vi": "Trong thời kỳ chiếm đóng, nhiều gia đình đã phải trốn tránh."},
+  {"fr": "La lecture reste son occupation préférée le week-end.", "vi": "Đọc sách vẫn là công việc yêu thích của cô ấy vào cuối tuần."},
+  {"fr": "Depuis sa retraite, il cherche une nouvelle occupation.", "vi": "Từ khi về hưu, ông tìm một công việc mới để khuây khỏa."}
+ ],
+ "milliard": [
+  {"fr": "Ce projet coûtera plusieurs milliards à l'État.", "vi": "Dự án này sẽ tiêu tốn nhiều tỷ của nhà nước."},
+  {"fr": "La population mondiale dépasse aujourd'hui huit milliards d'habitants.", "vi": "Dân số thế giới hiện nay vượt quá tám tỷ người."},
+  {"fr": "Cette entreprise a réalisé un bénéfice d'un milliard d'euros l'an dernier.", "vi": "Công ty này đã đạt lợi nhuận một tỷ euro vào năm ngoái."}
+ ],
+ "descente": [
+  {"fr": "La descente à ski était vertigineuse mais magnifique.", "vi": "Đoạn đổ dốc trượt tuyết chóng mặt nhưng tuyệt đẹp."},
+  {"fr": "Fais attention, la descente est très raide après le virage.", "vi": "Cẩn thận, đoạn dốc xuống rất gắt sau khúc cua."},
+  {"fr": "La police a effectué une descente dans le bar cette nuit.", "vi": "Cảnh sát đã tiến hành một cuộc đột kích vào quán bar đêm nay."}
+ ],
+ "soviétique": [
+  {"fr": "Ce documentaire raconte la vie quotidienne à l'époque soviétique.", "vi": "Bộ phim tài liệu này kể về cuộc sống thường nhật thời Xô Viết."},
+  {"fr": "Le premier homme dans l'espace était un cosmonaute soviétique.", "vi": "Người đầu tiên bay vào vũ trụ là một phi hành gia Xô Viết."},
+  {"fr": "De nombreux soviétiques ont émigré après la chute du régime.", "vi": "Nhiều người Xô Viết đã di cư sau khi chế độ sụp đổ."}
+ ],
+ "bicyclette": [
+  {"fr": "Quand j'étais petit, j'allais à l'école à bicyclette.", "vi": "Hồi nhỏ, tôi đi học bằng xe đạp."},
+  {"fr": "Elle a appris à ses enfants à faire de la bicyclette au parc.", "vi": "Cô ấy đã dạy các con đi xe đạp trong công viên."},
+  {"fr": "Cette vieille bicyclette appartenait à mon grand-père.", "vi": "Chiếc xe đạp cũ này từng thuộc về ông nội tôi."}
+ ],
+ "médaille": [
+  {"fr": "L'athlète a remporté la médaille d'or aux derniers Jeux olympiques.", "vi": "Vận động viên đã giành huy chương vàng ở kỳ Thế vận hội vừa qua."},
+  {"fr": "On lui a remis une médaille pour son acte de courage.", "vi": "Người ta đã trao cho ông một huy chương vì hành động dũng cảm."},
+  {"fr": "Chaque médaille a son revers, comme le dit le proverbe.", "vi": "Mỗi huy chương đều có mặt trái của nó, như câu tục ngữ vẫn nói."}
+ ],
+ "refus": [
+  {"fr": "Son refus catégorique nous a tous surpris.", "vi": "Sự từ chối dứt khoát của anh ấy đã khiến tất cả chúng tôi ngạc nhiên."},
+  {"fr": "Malgré plusieurs refus, elle n'a pas renoncé à son rêve.", "vi": "Dù bị từ chối nhiều lần, cô ấy vẫn không từ bỏ ước mơ."},
+  {"fr": "Un tel refus de coopérer risque de leur coûter cher.", "vi": "Việc từ chối hợp tác như vậy có thể khiến họ phải trả giá đắt."}
+ ],
+ "réseau": [
+  {"fr": "Le réseau téléphonique ne fonctionne pas très bien dans cette région.", "vi": "Mạng điện thoại hoạt động không tốt lắm ở vùng này."},
+  {"fr": "Elle a développé un vaste réseau de contacts professionnels.", "vi": "Cô ấy đã xây dựng một mạng lưới quan hệ nghề nghiệp rộng lớn."},
+  {"fr": "Les réseaux sociaux ont profondément changé notre façon de communiquer.", "vi": "Mạng xã hội đã thay đổi sâu sắc cách chúng ta giao tiếp."}
+ ],
+ "cheville": [
+  {"fr": "Elle s'est tordu la cheville en descendant les escaliers.", "vi": "Cô ấy đã bị trẹo mắt cá chân khi đi xuống cầu thang."},
+  {"fr": "Après sa chute, sa cheville a enflé rapidement.", "vi": "Sau cú ngã, mắt cá chân của anh ấy sưng lên nhanh chóng."},
+  {"fr": "Le médecin lui a conseillé de bander sa cheville.", "vi": "Bác sĩ đã khuyên anh ấy băng mắt cá chân lại."}
+ ],
+ "fabuleux": [
+  {"fr": "Ils ont passé des vacances fabuleuses au bord de la mer.", "vi": "Họ đã có một kỳ nghỉ tuyệt vời bên bờ biển."},
+  {"fr": "Le magicien a réalisé un numéro tout simplement fabuleux.", "vi": "Nhà ảo thuật đã trình diễn một tiết mục đơn giản là phi thường."},
+  {"fr": "Cette maison a été vendue pour une somme fabuleuse.", "vi": "Ngôi nhà này đã được bán với một số tiền khổng lồ."}
+ ],
+ "for": [
+  {"fr": "Dans son for intérieur, il savait qu'il avait tort.", "vi": "Trong thâm tâm, anh ấy biết mình đã sai."},
+  {"fr": "En mon for intérieur, je n'ai jamais vraiment cru à cette histoire.", "vi": "Tự đáy lòng, tôi chưa bao giờ thực sự tin vào câu chuyện đó."},
+  {"fr": "Elle gardait ses doutes pour son for intérieur.", "vi": "Cô ấy giữ những nghi ngờ của mình trong đáy lòng."}
+ ],
+ "reproduire": [
+  {"fr": "L'élève a essayé de reproduire fidèlement le tableau du maître.", "vi": "Cậu học trò đã cố sao chép trung thực bức tranh của bậc thầy."},
+  {"fr": "Il est interdit de reproduire ce document sans autorisation.", "vi": "Cấm sao chép tài liệu này khi chưa được phép."},
+  {"fr": "Ces poissons se reproduisent uniquement en eau douce.", "vi": "Loài cá này chỉ sinh sản trong nước ngọt."}
+ ],
+ "dose": [
+  {"fr": "Il ne faut jamais dépasser la dose indiquée sur la boîte.", "vi": "Không bao giờ được vượt quá liều lượng ghi trên hộp."},
+  {"fr": "Le médecin a réduit la dose de son médicament.", "vi": "Bác sĩ đã giảm liều thuốc của ông ấy."},
+  {"fr": "Pour réussir, il faut une bonne dose de patience.", "vi": "Để thành công, cần một liều kiên nhẫn kha khá."}
+ ],
+ "donne": [
+  {"fr": "À la belote, c'est à toi de faire la donne.", "vi": "Trong ván bài belote, đến lượt cậu chia bài đấy."},
+  {"fr": "L'élection a complètement changé la donne politique du pays.", "vi": "Cuộc bầu cử đã hoàn toàn thay đổi cục diện chính trị của đất nước."},
+  {"fr": "Avec cette nouvelle technologie, la donne est différente pour tout le secteur.", "vi": "Với công nghệ mới này, tình thế đã khác đối với cả ngành."}
+ ],
+ "führer": [
+  {"fr": "Le documentaire analyse la propagande orchestrée par le führer.", "vi": "Bộ phim tài liệu phân tích chiến dịch tuyên truyền do quốc trưởng dàn dựng."},
+  {"fr": "Les foules acclamaient le führer sur la grande place.", "vi": "Đám đông hoan hô lãnh tụ trên quảng trường lớn."},
+  {"fr": "Ce livre d'histoire retrace l'ascension du führer au pouvoir.", "vi": "Cuốn sách lịch sử này thuật lại quá trình quốc trưởng lên nắm quyền."}
+ ],
+ "tendance": [
+  {"fr": "J'ai tendance à me lever tard le week-end.", "vi": "Tôi có xu hướng dậy muộn vào cuối tuần."},
+  {"fr": "Les couleurs vives sont très à la mode cette saison, c'est la tendance.", "vi": "Những gam màu tươi sáng đang rất thịnh hành mùa này, đó là xu hướng."},
+  {"fr": "On observe une nette tendance à la hausse des prix de l'immobilier.", "vi": "Người ta quan sát thấy một xu hướng tăng rõ rệt của giá bất động sản."}
+ ],
+ "fraîcheur": [
+  {"fr": "Après la canicule, la fraîcheur du soir était très agréable.", "vi": "Sau đợt nắng gắt, sự mát mẻ của buổi tối thật dễ chịu."},
+  {"fr": "On apprécie la fraîcheur de ce jus de fruits pressé.", "vi": "Người ta thích sự tươi mát của ly nước ép trái cây tươi này."},
+  {"fr": "Ce poème garde une étonnante fraîcheur malgré son âge.", "vi": "Bài thơ này vẫn giữ được một sự tươi mới đáng kinh ngạc dù đã lâu đời."}
+ ],
+ "capacité": [
+  {"fr": "Il a une grande capacité à s'adapter aux situations nouvelles.", "vi": "Anh ấy có khả năng thích nghi rất lớn với những tình huống mới."},
+  {"fr": "Cette salle a une capacité de trois cents personnes.", "vi": "Phòng này có sức chứa ba trăm người."},
+  {"fr": "Le réservoir a une capacité de cinquante litres.", "vi": "Bình chứa có dung tích năm mươi lít."}
+ ],
+ "intimité": [
+  {"fr": "Le mariage aura lieu dans la plus stricte intimité.", "vi": "Đám cưới sẽ diễn ra trong khuôn khổ hết sức riêng tư."},
+  {"fr": "Chacun a droit au respect de son intimité.", "vi": "Mỗi người đều có quyền được tôn trọng sự riêng tư của mình."},
+  {"fr": "Peu à peu, une véritable intimité s'est installée entre eux.", "vi": "Dần dần, một sự thân mật thực sự đã hình thành giữa họ."}
+ ],
+ "grotte": [
+  {"fr": "Les touristes ont exploré une grotte remplie de stalactites.", "vi": "Du khách đã khám phá một hang động đầy nhũ đá."},
+  {"fr": "Des peintures préhistoriques ont été découvertes dans cette grotte.", "vi": "Người ta đã phát hiện những bức tranh thời tiền sử trong hang động này."},
+  {"fr": "Pour se protéger de l'orage, ils se sont réfugiés dans une grotte.", "vi": "Để tránh cơn giông, họ đã trú ẩn trong một cái hang."}
+ ],
+ "thème": [
+  {"fr": "Le thème de la conférence de cette année est l'intelligence artificielle.", "vi": "Chủ đề của hội thảo năm nay là trí tuệ nhân tạo."},
+  {"fr": "Chaque chapitre du livre aborde un thème différent.", "vi": "Mỗi chương của cuốn sách đề cập đến một chủ đề khác nhau."},
+  {"fr": "Nous devons choisir un thème pour la fête d'anniversaire.", "vi": "Chúng ta phải chọn một chủ đề cho bữa tiệc sinh nhật."}
+ ],
+ "paume": [
+  {"fr": "Elle a serré la petite pièce au creux de sa paume.", "vi": "Cô ấy nắm chặt đồng xu nhỏ trong lòng bàn tay."},
+  {"fr": "La voyante a examiné les lignes de sa paume.", "vi": "Bà thầy bói đã xem xét những đường chỉ trên lòng bàn tay anh ấy."},
+  {"fr": "Il a posé sa paume à plat contre la vitre froide.", "vi": "Anh ấy áp lòng bàn tay phẳng lên tấm kính lạnh."}
+ ],
+ "fendre": [
+  {"fr": "Le bûcheron a fendu le bois avant l'arrivée de l'hiver.", "vi": "Người tiều phu đã bổ củi trước khi mùa đông đến."},
+  {"fr": "Le gel a fini par fendre le vieux mur de pierre.", "vi": "Cái lạnh giá cuối cùng đã làm nứt bức tường đá cũ."},
+  {"fr": "Le bateau fendait les vagues à toute vitesse.", "vi": "Con thuyền rẽ sóng lao đi hết tốc lực."}
+ ],
+ "philosophie": [
+  {"fr": "Elle a étudié la philosophie à l'université pendant trois ans.", "vi": "Cô ấy đã học triết học ở trường đại học trong ba năm."},
+  {"fr": "Sa philosophie de vie est de profiter de chaque instant.", "vi": "Triết lý sống của anh ấy là tận hưởng từng khoảnh khắc."},
+  {"fr": "Il a accepté la nouvelle avec beaucoup de philosophie.", "vi": "Anh ấy đã đón nhận tin đó với thái độ rất bình thản triết lý."}
+ ],
+ "vertige": [
+  {"fr": "En regardant en bas du pont, elle a été prise de vertige.", "vi": "Khi nhìn xuống dưới cầu, cô ấy bị choáng váng chóng mặt."},
+  {"fr": "Il ne peut pas monter en haut de la tour à cause de son vertige.", "vi": "Anh ấy không thể lên đỉnh tháp vì chứng sợ độ cao chóng mặt."},
+  {"fr": "L'immensité de l'univers lui donnait presque le vertige.", "vi": "Sự bao la của vũ trụ khiến ông gần như choáng ngợp."}
+ ],
+ "agacer": [
+  {"fr": "Le bruit incessant du voisin commence sérieusement à m'agacer.", "vi": "Tiếng ồn không ngớt từ hàng xóm bắt đầu làm tôi bực mình thật sự."},
+  {"fr": "Ça m'agace qu'il soit toujours en retard aux réunions.", "vi": "Tôi khó chịu vì anh ta lúc nào cũng đến họp trễ."},
+  {"fr": "Arrête de taper des doigts, tu vas finir par tout le monde agacer.", "vi": "Ngừng gõ ngón tay đi, rồi cậu sẽ làm mọi người bực đấy."}
+ ],
+ "abbé": [
+  {"fr": "L'abbé du village célèbre la messe tous les dimanches matin.", "vi": "Cha xứ của làng làm lễ mỗi sáng Chủ nhật."},
+  {"fr": "Les habitants sont venus demander conseil à l'abbé.", "vi": "Dân làng đã đến xin lời khuyên của vị linh mục."},
+  {"fr": "L'abbé Pierre est célèbre pour son combat contre la pauvreté.", "vi": "Cha Pierre nổi tiếng với cuộc đấu tranh chống đói nghèo."}
+ ],
+ "manoeuvre": [
+  {"fr": "Le pilote a réalisé une manoeuvre délicate pour éviter la collision.", "vi": "Phi công đã thực hiện một thao tác tinh tế để tránh va chạm."},
+  {"fr": "Cette manoeuvre politique visait à tromper les électeurs.", "vi": "Thủ đoạn chính trị này nhằm đánh lừa cử tri."},
+  {"fr": "Sur le chantier, le manoeuvre transporte les matériaux toute la journée.", "vi": "Trên công trường, người lao động phổ thông vận chuyển vật liệu suốt cả ngày."}
+ ],
+ "succéder": [
+  {"fr": "Son fils lui a succédé à la tête de l'entreprise familiale.", "vi": "Con trai ông đã kế tục ông đứng đầu doanh nghiệp gia đình."},
+  {"fr": "Les saisons se succèdent sans que le temps semble s'arrêter.", "vi": "Các mùa nối tiếp nhau mà thời gian dường như không dừng lại."},
+  {"fr": "Plusieurs directeurs se sont succédé en seulement deux ans.", "vi": "Nhiều giám đốc đã kế nhiệm nhau chỉ trong hai năm."}
+ ],
+ "comble": [
+  {"fr": "Pour comble de malheur, il a raté son train ce matin.", "vi": "Đỉnh điểm của xui xẻo, sáng nay anh ấy còn lỡ chuyến tàu."},
+  {"fr": "La salle de concert était comble bien avant le début du spectacle.", "vi": "Phòng hòa nhạc đã chật kín từ rất lâu trước khi buổi diễn bắt đầu."},
+  {"fr": "Sa joie était à son comble le jour de la remise des diplômes.", "vi": "Niềm vui của cô ấy lên đến tột đỉnh vào ngày trao bằng tốt nghiệp."}
+ ],
+ "écouler": [
+  {"fr": "Le commerçant a réussi à écouler tout son stock avant les soldes.", "vi": "Người bán hàng đã bán hết được toàn bộ hàng tồn kho trước đợt giảm giá."},
+  {"fr": "Plusieurs années se sont écoulées depuis notre dernière rencontre.", "vi": "Nhiều năm đã trôi qua kể từ lần cuối chúng tôi gặp nhau."},
+  {"fr": "L'eau s'écoule lentement à travers les fissures du rocher.", "vi": "Nước chảy chậm rãi qua những khe nứt của tảng đá."}
+ ],
+ "border": [
+  {"fr": "De grands arbres bordent les deux côtés de l'avenue.", "vi": "Những hàng cây lớn viền hai bên đại lộ."},
+  {"fr": "Chaque soir, elle borde tendrement ses enfants avant qu'ils dorment.", "vi": "Mỗi tối, cô ấy dịu dàng đắp chăn cho các con trước khi chúng ngủ."},
+  {"fr": "La route qui borde la falaise offre une vue superbe sur la mer.", "vi": "Con đường chạy dọc vách đá cho một tầm nhìn tuyệt đẹp ra biển."}
+ ],
+ "mêmes": [
+  {"fr": "Ce sont toujours les mêmes qui font tout le travail.", "vi": "Lúc nào cũng chính những người đó làm hết mọi việc."},
+  {"fr": "Les enfants ont mis les mêmes que d'habitude comme chaussures.", "vi": "Bọn trẻ lại đi đúng đôi giày như mọi khi."},
+  {"fr": "Ils ont fait eux-mêmes tous les préparatifs de la fête.", "vi": "Chính họ đã tự tay chuẩn bị mọi thứ cho bữa tiệc."}
+ ],
+ "reconnaissant": [
+  {"fr": "Je vous suis très reconnaissant de votre aide précieuse.", "vi": "Tôi rất biết ơn sự giúp đỡ quý báu của các bạn."},
+  {"fr": "Elle s'est montrée reconnaissante envers tous ceux qui l'ont soutenue.", "vi": "Cô ấy đã tỏ ra biết ơn tất cả những người đã ủng hộ mình."},
+  {"fr": "Nous vous serions reconnaissants de bien vouloir nous répondre rapidement.", "vi": "Chúng tôi sẽ rất biết ơn nếu quý vị vui lòng trả lời sớm."}
+ ],
+ "rude": [
+  {"fr": "L'hiver a été particulièrement rude cette année dans les montagnes.", "vi": "Mùa đông năm nay đặc biệt khắc nghiệt ở vùng núi."},
+  {"fr": "Il a la peau des mains rude à force de travailler dehors.", "vi": "Da tay anh ấy thô ráp vì làm việc ngoài trời."},
+  {"fr": "Ce fut une rude épreuve, mais elle en est sortie plus forte.", "vi": "Đó là một thử thách gian nan, nhưng cô ấy đã vượt qua và mạnh mẽ hơn."}
+ ],
+ "discipline": [
+  {"fr": "Dans cette école, la discipline est très stricte.", "vi": "Ở ngôi trường này, kỷ luật rất nghiêm ngặt."},
+  {"fr": "La physique est une discipline qui demande beaucoup de rigueur.", "vi": "Vật lý là một bộ môn đòi hỏi rất nhiều sự chặt chẽ."},
+  {"fr": "Il s'impose une discipline de fer pour atteindre ses objectifs.", "vi": "Anh ấy tự áp đặt một kỷ luật thép để đạt được mục tiêu."}
+ ],
+ "chrétien": [
+  {"fr": "Elle a été élevée dans une famille profondément chrétienne.", "vi": "Cô ấy được nuôi dạy trong một gia đình theo Kitô giáo sâu sắc."},
+  {"fr": "Noël est l'une des fêtes les plus importantes pour les chrétiens.", "vi": "Giáng sinh là một trong những lễ quan trọng nhất đối với các tín đồ Kitô giáo."},
+  {"fr": "Cette église chrétienne date du Moyen Âge.", "vi": "Nhà thờ Kitô giáo này có từ thời Trung cổ."}
+ ],
+ "grossier": [
+  {"fr": "Son langage grossier a choqué toute l'assistance.", "vi": "Ngôn từ thô lỗ của anh ta đã gây sốc cho cả cử tọa."},
+  {"fr": "Il a commis une erreur grossière dans son calcul.", "vi": "Anh ấy đã mắc một lỗi thô thiển trong phép tính."},
+  {"fr": "Le meuble était fait d'un bois grossier à peine poli.", "vi": "Món đồ gỗ được làm từ loại gỗ thô sơ hầu như chưa đánh bóng."}
+ ],
+ "ha": [
+  {"fr": "Ha ! Je savais bien que tu finirais par avouer.", "vi": "Ha! Tôi biết ngay là cuối cùng cậu sẽ thú nhận mà."},
+  {"fr": "Le domaine s'étend sur plus de cinquante ha de vignes.", "vi": "Điền trang trải rộng trên hơn năm mươi héc-ta vườn nho."},
+  {"fr": "Ha, quelle surprise de te voir ici !", "vi": "A, thật bất ngờ khi gặp cậu ở đây!"}
+ ],
+ "clinique": [
+  {"fr": "Elle a été opérée dans une clinique privée du centre-ville.", "vi": "Cô ấy đã được phẫu thuật tại một phòng khám tư ở trung tâm thành phố."},
+  {"fr": "Les essais cliniques du nouveau médicament ont donné de bons résultats.", "vi": "Các thử nghiệm lâm sàng của loại thuốc mới đã cho kết quả tốt."},
+  {"fr": "Le médecin a procédé à un examen clinique complet.", "vi": "Bác sĩ đã tiến hành một cuộc khám lâm sàng toàn diện."}
+ ],
+ "conquérir": [
+  {"fr": "Les Romains ont conquis une grande partie de l'Europe.", "vi": "Người La Mã đã chinh phục một phần lớn châu Âu."},
+  {"fr": "Ce jeune chanteur a su conquérir le cœur du public.", "vi": "Chàng ca sĩ trẻ này đã chinh phục được trái tim của khán giả."},
+  {"fr": "L'entreprise cherche à conquérir de nouveaux marchés à l'étranger.", "vi": "Công ty đang tìm cách chinh phục những thị trường mới ở nước ngoài."}
+ ],
+ "massacrer": [
+  {"fr": "L'histoire raconte comment des villages entiers ont été massacrés.", "vi": "Lịch sử kể lại việc cả những ngôi làng đã bị thảm sát như thế nào."},
+  {"fr": "Il a complètement massacré la chanson au karaoké.", "vi": "Anh ta đã phá nát bài hát ở quán karaoke."},
+  {"fr": "Ne laisse pas les lapins massacrer toutes les salades du jardin.", "vi": "Đừng để lũ thỏ phá tan hết đám xà lách trong vườn."}
+ ],
+ "figer": [
+  {"fr": "La peur l'a figé sur place, incapable de bouger.", "vi": "Nỗi sợ đã khiến anh ấy đứng chết trân tại chỗ, không nhúc nhích nổi."},
+  {"fr": "La sauce va figer si tu la laisses refroidir trop longtemps.", "vi": "Nước sốt sẽ đông cứng lại nếu con để nguội quá lâu."},
+  {"fr": "Son sourire s'est figé quand elle a entendu la nouvelle.", "vi": "Nụ cười của cô ấy đông cứng lại khi nghe được tin đó."}
+ ],
+ "pincer": [
+  {"fr": "Le crabe m'a pincé le doigt sur la plage.", "vi": "Con cua đã kẹp ngón tay tôi trên bãi biển."},
+  {"fr": "Arrête de pincer ton petit frère, ça lui fait mal !", "vi": "Ngừng véo em trai đi, làm nó đau đấy!"},
+  {"fr": "Il s'est fait pincer par la police en train de tricher.", "vi": "Anh ta bị cảnh sát tóm được khi đang gian lận."}
+ ],
+ "sympathique": [
+  {"fr": "Notre nouveau voisin est vraiment sympathique et toujours souriant.", "vi": "Người hàng xóm mới của chúng tôi thật sự dễ mến và luôn tươi cười."},
+  {"fr": "Nous avons passé une soirée très sympathique chez nos amis.", "vi": "Chúng tôi đã có một buổi tối rất dễ chịu ở nhà bạn bè."},
+  {"fr": "Ce petit restaurant a une ambiance particulièrement sympathique.", "vi": "Nhà hàng nhỏ này có một bầu không khí đặc biệt dễ chịu."}
+ ],
+ "élection": [
+  {"fr": "Les résultats de l'élection seront annoncés demain soir.", "vi": "Kết quả bầu cử sẽ được công bố vào tối mai."},
+  {"fr": "Il a été réélu maire dès le premier tour de l'élection.", "vi": "Ông đã tái đắc cử thị trưởng ngay từ vòng đầu của cuộc bầu cử."},
+  {"fr": "La campagne pour l'élection présidentielle a déjà commencé.", "vi": "Chiến dịch tranh cử tổng thống đã bắt đầu rồi."}
+ ],
+ "âne": [
+  {"fr": "L'âne portait patiemment les lourds paniers sur son dos.", "vi": "Con lừa nhẫn nại cõng những chiếc giỏ nặng trên lưng."},
+  {"fr": "Il est têtu comme un âne, impossible de le faire changer d'avis.", "vi": "Anh ta bướng như con lừa, không thể nào làm anh ta đổi ý."},
+  {"fr": "Sur le chemin de montagne, un âne nous a doublés tranquillement.", "vi": "Trên đường núi, một con lừa thong thả vượt qua chúng tôi."}
+ ],
+ "rempli": [
+  {"fr": "Le verre était rempli à ras bord de jus d'orange.", "vi": "Chiếc ly đầy nước cam đến tận miệng."},
+  {"fr": "Son agenda est rempli de rendez-vous jusqu'à la fin du mois.", "vi": "Lịch của cô ấy kín đặc các cuộc hẹn cho đến cuối tháng."},
+  {"fr": "Le grenier est rempli de vieux objets oubliés.", "vi": "Gác mái chứa đầy những đồ vật cũ bị lãng quên."}
+ ],
+ "ruelle": [
+  {"fr": "Ils se sont perdus dans les ruelles étroites de la vieille ville.", "vi": "Họ đã lạc trong những con hẻm chật hẹp của khu phố cổ."},
+  {"fr": "Une petite ruelle mène directement au marché.", "vi": "Một con ngõ nhỏ dẫn thẳng ra chợ."},
+  {"fr": "Le chat s'est faufilé dans la ruelle sombre.", "vi": "Con mèo luồn lách vào con hẻm tối om."}
+ ],
+ "déboucher": [
+  {"fr": "Il a débouché une bonne bouteille pour fêter l'occasion.", "vi": "Anh ấy đã khui một chai rượu ngon để ăn mừng dịp này."},
+  {"fr": "Le plombier est venu déboucher l'évier de la cuisine.", "vi": "Người thợ ống nước đã đến thông bồn rửa trong bếp."},
+  {"fr": "Cette petite rue débouche sur une grande place animée.", "vi": "Con phố nhỏ này dẫn ra một quảng trường lớn nhộn nhịp."}
+ ],
+ "barrage": [
+  {"fr": "Le barrage fournit de l'électricité à toute la région.", "vi": "Con đập cung cấp điện cho cả vùng."},
+  {"fr": "La police a installé un barrage pour contrôler les voitures.", "vi": "Cảnh sát đã lập một hàng rào chặn để kiểm tra xe cộ."},
+  {"fr": "Les habitants ont fait barrage au projet de nouvelle autoroute.", "vi": "Người dân đã ngăn cản dự án xây đường cao tốc mới."}
+ ],
+ "encre": [
+  {"fr": "Le stylo n'a plus d'encre, je vais en chercher un autre.", "vi": "Cái bút hết mực rồi, tôi đi lấy cái khác đây."},
+  {"fr": "Autrefois, on écrivait à la plume trempée dans l'encre.", "vi": "Ngày xưa, người ta viết bằng bút lông nhúng vào mực."},
+  {"fr": "Cette affaire a fait couler beaucoup d'encre dans la presse.", "vi": "Vụ việc này đã tốn không ít giấy mực của báo chí."}
+ ],
+ "piéger": [
+  {"fr": "Les braconniers cherchaient à piéger les animaux de la forêt.", "vi": "Những kẻ săn trộm tìm cách đặt bẫy thú rừng."},
+  {"fr": "Le journaliste a essayé de le piéger avec une question compliquée.", "vi": "Nhà báo đã cố gài bẫy anh ấy bằng một câu hỏi hóc búa."},
+  {"fr": "La voiture piégée a explosé au milieu de la place.", "vi": "Chiếc xe gài bom đã phát nổ giữa quảng trường."}
+ ],
+ "relier": [
+  {"fr": "Ce nouveau pont relie enfin les deux rives du fleuve.", "vi": "Cây cầu mới này cuối cùng đã nối liền hai bờ sông."},
+  {"fr": "Un vol direct relie désormais les deux capitales.", "vi": "Từ nay có một chuyến bay thẳng nối hai thủ đô."},
+  {"fr": "Il a fait relier sa thèse chez un imprimeur du quartier.", "vi": "Anh ấy đã đem đóng luận án tại một hiệu in trong khu phố."}
+ ],
+ "aigu": [
+  {"fr": "Elle a poussé un cri aigu en voyant l'araignée.", "vi": "Cô ấy đã hét lên the thé khi thấy con nhện."},
+  {"fr": "Le couteau avait une lame très aiguë et dangereuse.", "vi": "Con dao có lưỡi rất sắc nhọn và nguy hiểm."},
+  {"fr": "Le malade souffre d'une crise aiguë depuis hier soir.", "vi": "Bệnh nhân bị một cơn cấp tính từ tối qua."}
+ ],
+ "perle": [
+  {"fr": "Elle portait un collier de perles offert par sa mère.", "vi": "Cô ấy đeo một chuỗi ngọc trai do mẹ tặng."},
+  {"fr": "Cette nouvelle secrétaire est une véritable perle.", "vi": "Cô thư ký mới này đúng là một viên ngọc quý."},
+  {"fr": "Des perles de rosée brillaient sur les feuilles au petit matin.", "vi": "Những hạt sương long lanh trên lá vào sáng sớm."}
+ ],
+ "reproche": [
+  {"fr": "Il n'a jamais accepté le moindre reproche de la part de son chef.", "vi": "Anh ta chưa bao giờ chấp nhận dù chỉ một lời trách móc từ sếp."},
+  {"fr": "Elle lui a fait des reproches sur sa manière de conduire.", "vi": "Cô ấy đã trách móc anh về cách lái xe của anh."},
+  {"fr": "On ne peut lui faire aucun reproche, il a tout bien fait.", "vi": "Không thể trách anh ấy điều gì, anh đã làm mọi thứ đâu ra đó."}
+ ],
+ "soigneusement": [
+  {"fr": "Elle a rangé soigneusement tous ses documents dans le tiroir.", "vi": "Cô ấy đã sắp xếp cẩn thận mọi giấy tờ vào ngăn kéo."},
+  {"fr": "Le chirurgien a soigneusement recousu la plaie.", "vi": "Bác sĩ phẫu thuật đã khâu vết thương một cách kỹ lưỡng."},
+  {"fr": "Lisez soigneusement les instructions avant de commencer.", "vi": "Hãy đọc kỹ hướng dẫn trước khi bắt đầu."}
+ ],
+ "r": [
+  {"fr": "En français, le r se prononce au fond de la gorge.", "vi": "Trong tiếng Pháp, chữ r được phát âm ở cuống họng."},
+  {"fr": "Les enfants apprennent à écrire la lettre r à l'école.", "vi": "Trẻ em học viết chữ cái r ở trường."},
+  {"fr": "Il roule les r comme les gens du sud de la France.", "vi": "Anh ấy rung chữ r như người miền nam nước Pháp."}
+ ]
+}

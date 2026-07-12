@@ -1,0 +1,20 @@
+{
+  "name": "Từ vựng tiếng Pháp",
+  "short_name": "Từ vựng Pháp",
+  "description": "Học từ vựng tiếng Pháp từ A1 đến C2 — nghĩa tiếng Việt, phát âm, ôn tập ngắt quãng.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1d4ed8",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

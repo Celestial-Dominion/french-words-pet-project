@@ -1,0 +1,814 @@
+[
+ {
+  "id": "mythologie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thần thoại; thần thoại học"
+ },
+ {
+  "id": "précaire",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bấp bênh, tạm bợ, không ổn định"
+ },
+ {
+  "id": "mutant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ đột biến; (thuộc) đột biến"
+ },
+ {
+  "id": "censure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự kiểm duyệt"
+ },
+ {
+  "id": "dandy",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "công tử bột, người ăn diện chải chuốt"
+ },
+ {
+  "id": "odorant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thơm, tỏa mùi"
+ },
+ {
+  "id": "spécialisé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "chuyên môn hóa, chuyên biệt"
+ },
+ {
+  "id": "sucrerie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đồ ngọt, bánh kẹo; nhà máy đường"
+ },
+ {
+  "id": "implant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vật cấy ghép"
+ },
+ {
+  "id": "sauvegarder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bảo vệ, gìn giữ; lưu (dữ liệu)"
+ },
+ {
+  "id": "connivence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thông đồng, đồng lõa"
+ },
+ {
+  "id": "mécano",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thợ máy"
+ },
+ {
+  "id": "objecter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phản đối, viện lẽ bác bỏ"
+ },
+ {
+  "id": "geindre",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "rên rỉ, than vãn"
+ },
+ {
+  "id": "sexuellement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "về mặt tình dục"
+ },
+ {
+  "id": "blâme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự khiển trách, lời chê trách"
+ },
+ {
+  "id": "attendrissement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự cảm động, sự mủi lòng"
+ },
+ {
+  "id": "fantassin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lính bộ binh"
+ },
+ {
+  "id": "placement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự đầu tư; sự sắp xếp, bố trí"
+ },
+ {
+  "id": "obstiné",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ngoan cố, bướng bỉnh"
+ },
+ {
+  "id": "régularité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tính đều đặn, sự chính quy"
+ },
+ {
+  "id": "répression",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự đàn áp, trấn áp"
+ },
+ {
+  "id": "bleuté",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hơi xanh, ánh xanh lam"
+ },
+ {
+  "id": "sangler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thắt đai, buộc chặt"
+ },
+ {
+  "id": "oranger",
+  "pos": [
+   "danh từ",
+   "động từ"
+  ],
+  "gender": "m",
+  "vi": "cây cam"
+ },
+ {
+  "id": "prélèvement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự trích lấy, lấy mẫu; sự khấu trừ"
+ },
+ {
+  "id": "box",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ngăn chuồng, ô đỗ xe; vành móng ngựa"
+ },
+ {
+  "id": "instance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cơ quan thẩm quyền; lời nài nỉ; cấp xét xử"
+ },
+ {
+  "id": "réquisitionner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trưng dụng, trưng thu"
+ },
+ {
+  "id": "voilier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thuyền buồm"
+ },
+ {
+  "id": "dormeur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người ngủ; hay ngủ, ngủ nhiều"
+ },
+ {
+  "id": "automatiquement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách tự động"
+ },
+ {
+  "id": "avancée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bước tiến, sự tiến bộ"
+ },
+ {
+  "id": "peigner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chải (tóc)"
+ },
+ {
+  "id": "vraisemblablement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "có lẽ, rất có thể"
+ },
+ {
+  "id": "égayer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm vui lên, làm sinh động"
+ },
+ {
+  "id": "compatir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thông cảm, đồng cảm"
+ },
+ {
+  "id": "illimité",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "vô hạn, không giới hạn"
+ },
+ {
+  "id": "déshonneur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự ô nhục, nỗi nhục nhã"
+ },
+ {
+  "id": "soubresaut",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cú giật mình, sự chồm lên đột ngột"
+ },
+ {
+  "id": "archéologue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nhà khảo cổ học"
+ },
+ {
+  "id": "bomber",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm phồng, ưỡn (ngực); vẽ graffiti"
+ },
+ {
+  "id": "bouille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khuôn mặt (thân mật)"
+ },
+ {
+  "id": "désarmé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bị tước vũ khí; bất lực, không biết ứng phó"
+ },
+ {
+  "id": "magot",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "món tiền để dành, của cải cất giấu"
+ },
+ {
+  "id": "vassal",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chư hầu"
+ },
+ {
+  "id": "deuxièmement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thứ hai là"
+ },
+ {
+  "id": "ressentiment",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự oán giận, hờn oán"
+ },
+ {
+  "id": "simultanément",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đồng thời, cùng lúc"
+ },
+ {
+  "id": "campagnard",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc nông thôn; người nhà quê"
+ },
+ {
+  "id": "charlatan",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lang băm, kẻ lừa bịp"
+ },
+ {
+  "id": "épargne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tiết kiệm, tiền tiết kiệm"
+ },
+ {
+  "id": "recréer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tái tạo, tạo lại"
+ },
+ {
+  "id": "superstitieux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "mê tín; người mê tín"
+ },
+ {
+  "id": "végétarien",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ăn chay; người ăn chay"
+ },
+ {
+  "id": "clean",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "sạch sẽ, chỉnh tề; đã cai nghiện"
+ },
+ {
+  "id": "traiteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người nấu tiệc, dịch vụ ẩm thực"
+ },
+ {
+  "id": "fervent",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhiệt thành, sốt sắng"
+ },
+ {
+  "id": "fixé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "cố định, đã ấn định"
+ },
+ {
+  "id": "implanter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cấy ghép; thiết lập, du nhập"
+ },
+ {
+  "id": "unanimité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự nhất trí, sự đồng lòng"
+ },
+ {
+  "id": "vécu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "từng trải; trải nghiệm sống"
+ },
+ {
+  "id": "probabilité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "xác suất, khả năng xảy ra"
+ },
+ {
+  "id": "rejet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự từ chối, sự loại bỏ, sự thải loại"
+ },
+ {
+  "id": "hormone",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hoóc môn, nội tiết tố"
+ },
+ {
+  "id": "métaphysique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "siêu hình; siêu hình học"
+ },
+ {
+  "id": "nef",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "gian giữa (nhà thờ)"
+ },
+ {
+  "id": "pensant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "biết suy nghĩ, có tư duy"
+ },
+ {
+  "id": "persienne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cửa chớp"
+ },
+ {
+  "id": "rousseur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "màu hung đỏ; tàn nhang"
+ },
+ {
+  "id": "raviver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm sống lại, khơi lại"
+ },
+ {
+  "id": "absoudre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tha tội, xá tội"
+ },
+ {
+  "id": "fortuné",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "giàu có, khá giả"
+ },
+ {
+  "id": "échafaudage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giàn giáo"
+ },
+ {
+  "id": "attribut",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thuộc tính, đặc tính; biểu tượng"
+ },
+ {
+  "id": "paillette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "kim tuyến, vảy lấp lánh"
+ },
+ {
+  "id": "rétracter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rút lại (lời); co lại"
+ },
+ {
+  "id": "démener",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vùng vẫy, ra sức xoay xở"
+ },
+ {
+  "id": "fainéant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ lười biếng; lười nhác"
+ },
+ {
+  "id": "bitume",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhựa đường, bitum"
+ },
+ {
+  "id": "bouché",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bị tắc, bị nghẽn; tối dạ"
+ },
+ {
+  "id": "dandiner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi lắc lư, ưỡn ẹo"
+ },
+ {
+  "id": "groupement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự tập hợp; nhóm, tổ chức"
+ },
+ {
+  "id": "sabbat",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ngày Sa-bát; hội phù thủy"
+ },
+ {
+  "id": "destiné",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "được dành cho, định sẵn"
+ },
+ {
+  "id": "bouleversant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "gây xúc động mạnh, đảo lộn tâm can"
+ },
+ {
+  "id": "captivité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự giam cầm, cảnh tù đày"
+ },
+ {
+  "id": "éruption",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự phun trào; phát ban"
+ },
+ {
+  "id": "barré",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bị gạch bỏ; bị chặn đường"
+ },
+ {
+  "id": "décevant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đáng thất vọng"
+ },
+ {
+  "id": "gardé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "được canh giữ; giữ kín"
+ },
+ {
+  "id": "tarir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm cạn, cạn kiệt"
+ },
+ {
+  "id": "broderie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đồ thêu, nghề thêu"
+ },
+ {
+  "id": "plouc",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ nhà quê, quê mùa"
+ },
+ {
+  "id": "adroit",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khéo léo, khéo tay"
+ },
+ {
+  "id": "rejeté",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bị từ chối, bị loại bỏ"
+ },
+ {
+  "id": "différencier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phân biệt, làm khác biệt"
+ },
+ {
+  "id": "mixte",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hỗn hợp; chung cả nam lẫn nữ"
+ },
+ {
+  "id": "alignement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự xếp thẳng hàng; sự liên kết"
+ },
+ {
+  "id": "scintillant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "lấp lánh, lung linh"
+ }
+]

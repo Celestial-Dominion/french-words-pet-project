@@ -1,0 +1,16 @@
+rules_version = '2';
+
+// App CÁ NHÂN: chỉ tài khoản chủ (UID dưới đây) được đọc/ghi dữ liệu của chính mình.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid}/{document=**} {
+      allow read, write: if request.auth != null
+        && request.auth.uid == uid
+        && request.auth.uid == "iHstXW8ew7fIHm5nNXQUPBZppSf1";
+    }
+    // Mọi thứ khác: cấm.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

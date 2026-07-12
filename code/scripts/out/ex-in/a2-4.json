@@ -1,0 +1,820 @@
+[
+ {
+  "id": "excellent",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "xuất sắc, tuyệt vời"
+ },
+ {
+  "id": "couloir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hành lang, lối đi"
+ },
+ {
+  "id": "entourer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bao quanh, vây quanh"
+ },
+ {
+  "id": "rapporter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mang về; thuật lại, báo cáo"
+ },
+ {
+  "id": "nord",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "hướng bắc, phương bắc"
+ },
+ {
+  "id": "pleuvoir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mưa (trời mưa)"
+ },
+ {
+  "id": "l'une",
+  "pos": [
+   "đại từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một (trong số, giống cái)"
+ },
+ {
+  "id": "gare",
+  "pos": [
+   "danh từ",
+   "tượng thanh"
+  ],
+  "gender": "f",
+  "vi": "nhà ga, ga tàu"
+ },
+ {
+  "id": "reculer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lùi lại, thụt lùi"
+ },
+ {
+  "id": "désormais",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "từ nay, kể từ giờ"
+ },
+ {
+  "id": "sortie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lối ra; sự đi ra"
+ },
+ {
+  "id": "valise",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "va li"
+ },
+ {
+  "id": "destin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "số phận, định mệnh"
+ },
+ {
+  "id": "ange",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thiên thần"
+ },
+ {
+  "id": "posséder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sở hữu, có"
+ },
+ {
+  "id": "accorder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ban cho, cấp cho; đồng ý"
+ },
+ {
+  "id": "nécessaire",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cần thiết"
+ },
+ {
+  "id": "secours",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự cứu giúp, cứu trợ"
+ },
+ {
+  "id": "récupérer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lấy lại, thu hồi; hồi phục"
+ },
+ {
+  "id": "volonté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ý chí; ý muốn"
+ },
+ {
+  "id": "endormir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ru ngủ, làm ngủ"
+ },
+ {
+  "id": "intention",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ý định, dự định"
+ },
+ {
+  "id": "trembler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "run, rung, rẩy"
+ },
+ {
+  "id": "rapide",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nhanh, mau lẹ"
+ },
+ {
+  "id": "secouer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lắc, rung, giũ"
+ },
+ {
+  "id": "étendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trải ra, căng ra; mở rộng"
+ },
+ {
+  "id": "époux",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vợ chồng; người phối ngẫu"
+ },
+ {
+  "id": "briser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm vỡ, đập vỡ"
+ },
+ {
+  "id": "là-haut",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "ở trên kia, trên cao"
+ },
+ {
+  "id": "bonne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "người giúp việc, người hầu gái"
+ },
+ {
+  "id": "juge",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thẩm phán, quan tòa"
+ },
+ {
+  "id": "poitrine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ngực, lồng ngực"
+ },
+ {
+  "id": "adresser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gửi đến; hướng lời tới"
+ },
+ {
+  "id": "arrivée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự đến nơi, việc tới"
+ },
+ {
+  "id": "produire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sản xuất, tạo ra"
+ },
+ {
+  "id": "rater",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bỏ lỡ, trượt; thất bại"
+ },
+ {
+  "id": "nourrir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nuôi dưỡng, cho ăn"
+ },
+ {
+  "id": "ministre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bộ trưởng"
+ },
+ {
+  "id": "réaliser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thực hiện; nhận ra"
+ },
+ {
+  "id": "dépasser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vượt qua, vượt quá"
+ },
+ {
+  "id": "grandir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lớn lên, phát triển"
+ },
+ {
+  "id": "certainement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "chắc chắn, hẳn là"
+ },
+ {
+  "id": "acte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hành động; văn bản, chứng thư"
+ },
+ {
+  "id": "taxi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xe taxi"
+ },
+ {
+  "id": "déposer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đặt xuống; gửi, nộp"
+ },
+ {
+  "id": "davantage",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "nhiều hơn, hơn nữa"
+ },
+ {
+  "id": "probablement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "có lẽ, có thể"
+ },
+ {
+  "id": "songer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nghĩ đến, mơ tưởng"
+ },
+ {
+  "id": "débarrasser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dọn dẹp, gỡ bỏ"
+ },
+ {
+  "id": "personnel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cá nhân, riêng tư; nhân sự"
+ },
+ {
+  "id": "jaune",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "màu vàng"
+ },
+ {
+  "id": "taille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "kích cỡ; vóc dáng, eo"
+ },
+ {
+  "id": "celui-ci",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "cái này, người này"
+ },
+ {
+  "id": "poids",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trọng lượng, cân nặng"
+ },
+ {
+  "id": "souffle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hơi thở; luồng gió"
+ },
+ {
+  "id": "attacher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "buộc, cột, gắn"
+ },
+ {
+  "id": "ramasser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhặt lên, thu nhặt"
+ },
+ {
+  "id": "elle-même",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "chính cô ấy, tự cô ấy"
+ },
+ {
+  "id": "piquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chích, đâm; châm chọc"
+ },
+ {
+  "id": "toilette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhà vệ sinh; việc chăm sóc vệ sinh"
+ },
+ {
+  "id": "camion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xe tải"
+ },
+ {
+  "id": "neige",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tuyết"
+ },
+ {
+  "id": "remplacer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thay thế"
+ },
+ {
+  "id": "couteau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con dao"
+ },
+ {
+  "id": "enfoncer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ấn sâu, đóng vào, cắm vào"
+ },
+ {
+  "id": "château",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lâu đài, tòa thành"
+ },
+ {
+  "id": "interroger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hỏi, thẩm vấn"
+ },
+ {
+  "id": "ranger",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "sắp xếp, dọn gọn"
+ },
+ {
+  "id": "folie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự điên rồ, sự cuồng dại"
+ },
+ {
+  "id": "parfaitement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách hoàn hảo; hoàn toàn"
+ },
+ {
+  "id": "immense",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "mênh mông, bao la, rộng lớn"
+ },
+ {
+  "id": "entendu",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "được, đồng ý; đã hiểu"
+ },
+ {
+  "id": "horreur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự kinh hoàng, nỗi ghê rợn"
+ },
+ {
+  "id": "nombre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con số, số lượng"
+ },
+ {
+  "id": "parier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cá cược, đánh cược"
+ },
+ {
+  "id": "couple",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cặp đôi, đôi"
+ },
+ {
+  "id": "hurler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gào thét, hú"
+ },
+ {
+  "id": "auprès",
+  "pos": [
+   "giới từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "bên cạnh, gần"
+ },
+ {
+  "id": "passion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "niềm đam mê, sự say mê"
+ },
+ {
+  "id": "unique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "duy nhất, độc nhất"
+ },
+ {
+  "id": "mine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vẻ mặt, sắc mặt; mỏ (khoáng)"
+ },
+ {
+  "id": "i",
+  "pos": [
+   "danh từ",
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "chữ i (chữ cái)"
+ },
+ {
+  "id": "ridicule",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "lố bịch, kệch cỡm"
+ },
+ {
+  "id": "t",
+  "pos": [
+   "đại từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chữ t (chữ cái)"
+ },
+ {
+  "id": "vaisseau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tàu, con tàu; mạch máu"
+ },
+ {
+  "id": "autrefois",
+  "pos": [
+   "phó từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "ngày xưa, thuở trước"
+ },
+ {
+  "id": "anniversaire",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "sinh nhật; ngày kỷ niệm"
+ },
+ {
+  "id": "rare",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hiếm, hiếm có"
+ },
+ {
+  "id": "patte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chân (động vật), cẳng"
+ },
+ {
+  "id": "demande",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "yêu cầu, lời đề nghị; nhu cầu"
+ },
+ {
+  "id": "ravir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm say mê, làm hài lòng"
+ },
+ {
+  "id": "solution",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giải pháp, cách giải quyết"
+ },
+ {
+  "id": "guère",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "hầu như không, chẳng mấy"
+ },
+ {
+  "id": "public",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "công cộng; công chúng, khán giả"
+ },
+ {
+  "id": "déclarer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tuyên bố, khai báo"
+ },
+ {
+  "id": "directeur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "giám đốc, người quản lý"
+ },
+ {
+  "id": "large",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "rộng, bao quát"
+ },
+ {
+  "id": "souci",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nỗi lo, sự lo lắng"
+ },
+ {
+  "id": "naturel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tự nhiên, thiên nhiên"
+ },
+ {
+  "id": "rencontre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc gặp gỡ, sự gặp mặt"
+ }
+]

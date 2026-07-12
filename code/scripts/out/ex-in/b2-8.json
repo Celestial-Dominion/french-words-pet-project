@@ -1,0 +1,817 @@
+[
+ {
+  "id": "hôtesse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nữ tiếp viên, chiêu đãi viên"
+ },
+ {
+  "id": "structure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cấu trúc, kết cấu"
+ },
+ {
+  "id": "dédier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dâng, dành tặng, cống hiến"
+ },
+ {
+  "id": "vacarme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tiếng ồn ào, huyên náo"
+ },
+ {
+  "id": "déplier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mở ra, trải ra, giở ra"
+ },
+ {
+  "id": "girl",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vũ nữ (trong đoàn tạp kỹ)"
+ },
+ {
+  "id": "poteau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cột, trụ"
+ },
+ {
+  "id": "tôle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tấm tôn, tôn (kim loại)"
+ },
+ {
+  "id": "générosité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự hào phóng, lòng rộng lượng"
+ },
+ {
+  "id": "leader",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lãnh đạo, người dẫn đầu"
+ },
+ {
+  "id": "prestige",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "uy tín, danh tiếng"
+ },
+ {
+  "id": "pâtisserie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bánh ngọt; tiệm bánh ngọt"
+ },
+ {
+  "id": "secondaire",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thứ yếu, phụ; trung học"
+ },
+ {
+  "id": "fourgon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xe tải thùng, xe van; toa hành lý"
+ },
+ {
+  "id": "instruire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dạy, giáo dục; điều tra (vụ án)"
+ },
+ {
+  "id": "gagnant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người thắng cuộc; thắng, chiến thắng"
+ },
+ {
+  "id": "pétard",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "pháo (nổ)"
+ },
+ {
+  "id": "primitif",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nguyên thủy, sơ khai; ban đầu"
+ },
+ {
+  "id": "cérébral",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc não; thiên về trí óc"
+ },
+ {
+  "id": "chiant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "phiền phức, khó chịu (thô tục)"
+ },
+ {
+  "id": "mouette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mòng biển, hải âu"
+ },
+ {
+  "id": "pyramide",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "kim tự tháp; hình chóp"
+ },
+ {
+  "id": "lézard",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thằn lằn"
+ },
+ {
+  "id": "berge",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bờ (sông)"
+ },
+ {
+  "id": "coco",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "dừa; (thân mật) cưng"
+ },
+ {
+  "id": "étrangement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách kỳ lạ, lạ lùng"
+ },
+ {
+  "id": "sûreté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự an toàn, an ninh"
+ },
+ {
+  "id": "savourer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thưởng thức, nếm"
+ },
+ {
+  "id": "dealer",
+  "pos": [
+   "danh từ",
+   "động từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ buôn ma túy; buôn bán (ma túy)"
+ },
+ {
+  "id": "mallette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cặp nhỏ, va li nhỏ"
+ },
+ {
+  "id": "talus",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mái dốc, bờ dốc, ta luy"
+ },
+ {
+  "id": "oriental",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "phương Đông, thuộc phương Đông"
+ },
+ {
+  "id": "éventuel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "có thể xảy ra, có khả năng"
+ },
+ {
+  "id": "communion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự hiệp thông; lễ ban thánh thể"
+ },
+ {
+  "id": "copier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sao chép, chép"
+ },
+ {
+  "id": "option",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lựa chọn, tùy chọn"
+ },
+ {
+  "id": "vingt-quatre",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "hai mươi bốn"
+ },
+ {
+  "id": "condoléance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lời chia buồn, phân ưu"
+ },
+ {
+  "id": "étreinte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cái ôm, sự ôm siết"
+ },
+ {
+  "id": "clairière",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khoảng trống trong rừng, trảng"
+ },
+ {
+  "id": "traversée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự vượt qua, chuyến vượt (biển)"
+ },
+ {
+  "id": "scotch",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "băng dính; rượu whisky Scotch"
+ },
+ {
+  "id": "thérapie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "liệu pháp, sự điều trị"
+ },
+ {
+  "id": "repentir",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ăn năn, hối hận; sự ăn năn"
+ },
+ {
+  "id": "impeccable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hoàn hảo, không chê vào đâu được"
+ },
+ {
+  "id": "sordide",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bẩn thỉu, hèn hạ, đê tiện"
+ },
+ {
+  "id": "louche",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đáng ngờ, mờ ám"
+ },
+ {
+  "id": "réparation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự sửa chữa; sự đền bù"
+ },
+ {
+  "id": "blâmer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khiển trách, chê trách, đổ lỗi"
+ },
+ {
+  "id": "comédien",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "diễn viên; người giả bộ, kẻ đóng kịch"
+ },
+ {
+  "id": "croquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhai giòn, cắn; phác họa"
+ },
+ {
+  "id": "ya",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "(khẩu ngữ) có (rút gọn từ 'il y a')"
+ },
+ {
+  "id": "zinc",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kẽm; (lóng) quầy bar"
+ },
+ {
+  "id": "rez-de-chaussée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tầng trệt, tầng một"
+ },
+ {
+  "id": "automatique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tự động"
+ },
+ {
+  "id": "forcé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bị ép buộc, cưỡng bức; tất yếu"
+ },
+ {
+  "id": "transfert",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự chuyển giao, chuyển nhượng"
+ },
+ {
+  "id": "proximité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự gần gũi, lân cận"
+ },
+ {
+  "id": "raidir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm cứng, căng cứng"
+ },
+ {
+  "id": "projecteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đèn pha, đèn chiếu; máy chiếu"
+ },
+ {
+  "id": "rêverie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự mơ mộng, mộng tưởng"
+ },
+ {
+  "id": "châtiment",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự trừng phạt, hình phạt"
+ },
+ {
+  "id": "encercler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bao vây, vây quanh"
+ },
+ {
+  "id": "socialiste",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc chủ nghĩa xã hội; người xã hội chủ nghĩa"
+ },
+ {
+  "id": "passionnant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hấp dẫn, lôi cuốn, thú vị"
+ },
+ {
+  "id": "caverne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hang động"
+ },
+ {
+  "id": "chantage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự tống tiền, hăm dọa"
+ },
+ {
+  "id": "chanceux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "may mắn"
+ },
+ {
+  "id": "prédire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tiên đoán, dự báo"
+ },
+ {
+  "id": "intrigue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "âm mưu, mưu đồ; cốt truyện"
+ },
+ {
+  "id": "lacet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dây giày; khúc quanh (đường)"
+ },
+ {
+  "id": "pic",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đỉnh núi nhọn; đỉnh điểm"
+ },
+ {
+  "id": "impuissance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự bất lực"
+ },
+ {
+  "id": "cinquième",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thứ năm"
+ },
+ {
+  "id": "souterrain",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "dưới lòng đất, ngầm; đường hầm"
+ },
+ {
+  "id": "chimique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc hóa học, hóa chất"
+ },
+ {
+  "id": "potion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thuốc nước, thuốc uống"
+ },
+ {
+  "id": "résolu",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kiên quyết, quả quyết"
+ },
+ {
+  "id": "jument",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ngựa cái"
+ },
+ {
+  "id": "imprégner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thấm, tẩm; ngấm"
+ },
+ {
+  "id": "ruisseler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chảy ròng ròng, tuôn"
+ },
+ {
+  "id": "râler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "càu nhàu, cằn nhằn; thở khò khè"
+ },
+ {
+  "id": "mafia",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mafia, băng đảng"
+ },
+ {
+  "id": "lover",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cuộn lại, cuộn tròn"
+ },
+ {
+  "id": "chandelle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cây nến, đèn cầy"
+ },
+ {
+  "id": "dortoir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "phòng ngủ tập thể, ký túc"
+ },
+ {
+  "id": "suggestion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "gợi ý, đề nghị"
+ },
+ {
+  "id": "africain",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc châu Phi; người châu Phi"
+ },
+ {
+  "id": "ferraille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sắt vụn, phế liệu"
+ },
+ {
+  "id": "opportunité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cơ hội; tính thích hợp"
+ },
+ {
+  "id": "ciné",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "rạp chiếu phim, xi nê (khẩu ngữ)"
+ },
+ {
+  "id": "licence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bằng cử nhân; giấy phép"
+ },
+ {
+  "id": "blanchir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm trắng, tẩy trắng; rửa tiền"
+ },
+ {
+  "id": "tartine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lát bánh mì phết bơ"
+ },
+ {
+  "id": "solaire",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc mặt trời, năng lượng mặt trời"
+ },
+ {
+  "id": "subsister",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tồn tại, sống sót; còn lại"
+ },
+ {
+  "id": "répliquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đáp lại, cãi lại"
+ },
+ {
+  "id": "présentation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự giới thiệu; bài thuyết trình"
+ },
+ {
+  "id": "collaboration",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự hợp tác, cộng tác"
+ },
+ {
+  "id": "gouverner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cai trị, điều hành"
+ }
+]

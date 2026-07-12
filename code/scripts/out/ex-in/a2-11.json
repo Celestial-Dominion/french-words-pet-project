@@ -1,0 +1,818 @@
+[
+ {
+  "id": "brave",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "dũng cảm; tốt bụng, hiền lành"
+ },
+ {
+  "id": "bravo",
+  "pos": [
+   "tượng thanh",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "hoan hô, giỏi lắm"
+ },
+ {
+  "id": "clef",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chìa khóa"
+ },
+ {
+  "id": "éveiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đánh thức; khơi dậy"
+ },
+ {
+  "id": "promenade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc đi dạo"
+ },
+ {
+  "id": "fameux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nổi tiếng; cừ khôi"
+ },
+ {
+  "id": "envers",
+  "pos": [
+   "giới từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đối với, về phía"
+ },
+ {
+  "id": "célèbre",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nổi tiếng, lừng danh"
+ },
+ {
+  "id": "week-end",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cuối tuần"
+ },
+ {
+  "id": "britannique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc Anh, người Anh"
+ },
+ {
+  "id": "disputer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tranh cãi; thi đấu"
+ },
+ {
+  "id": "venger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trả thù, báo thù"
+ },
+ {
+  "id": "baigner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tắm; ngâm"
+ },
+ {
+  "id": "bloquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chặn, ngăn; kẹt cứng"
+ },
+ {
+  "id": "chant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bài hát; sự ca hát"
+ },
+ {
+  "id": "franchement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thật lòng, thẳng thắn"
+ },
+ {
+  "id": "entreprise",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "doanh nghiệp, công ty"
+ },
+ {
+  "id": "inscrire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ghi tên, đăng ký; ghi vào"
+ },
+ {
+  "id": "sérieusement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "nghiêm túc; nghiêm trọng"
+ },
+ {
+  "id": "race",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chủng tộc; giống loài"
+ },
+ {
+  "id": "manche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tay áo; cán, chuôi"
+ },
+ {
+  "id": "réclamer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đòi hỏi, yêu cầu"
+ },
+ {
+  "id": "toi-même",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "chính bạn, tự bạn"
+ },
+ {
+  "id": "allée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lối đi, đường mòn"
+ },
+ {
+  "id": "science",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khoa học"
+ },
+ {
+  "id": "prise",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự nắm bắt; ổ cắm điện"
+ },
+ {
+  "id": "période",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giai đoạn, thời kỳ"
+ },
+ {
+  "id": "plateau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cái khay; cao nguyên"
+ },
+ {
+  "id": "soupirer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thở dài"
+ },
+ {
+  "id": "fièvre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cơn sốt"
+ },
+ {
+  "id": "créature",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sinh vật, tạo vật"
+ },
+ {
+  "id": "piège",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cái bẫy"
+ },
+ {
+  "id": "gardien",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người canh gác, người bảo vệ"
+ },
+ {
+  "id": "horizon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đường chân trời"
+ },
+ {
+  "id": "patience",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự kiên nhẫn"
+ },
+ {
+  "id": "lac",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hồ"
+ },
+ {
+  "id": "noyer",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "làm chết đuối, dìm nước"
+ },
+ {
+  "id": "silhouette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bóng dáng, hình dáng"
+ },
+ {
+  "id": "égard",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự tôn trọng, quan tâm"
+ },
+ {
+  "id": "cruel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tàn nhẫn, độc ác"
+ },
+ {
+  "id": "essence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "xăng; bản chất"
+ },
+ {
+  "id": "flingue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khẩu súng (tiếng lóng)"
+ },
+ {
+  "id": "fleuve",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con sông lớn"
+ },
+ {
+  "id": "directement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "trực tiếp, thẳng"
+ },
+ {
+  "id": "voile",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tấm màn che; cánh buồm"
+ },
+ {
+  "id": "sensible",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhạy cảm; dễ xúc động"
+ },
+ {
+  "id": "chute",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự rơi, sự ngã"
+ },
+ {
+  "id": "figurer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xuất hiện, có mặt; hình dung"
+ },
+ {
+  "id": "là-dessus",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "về việc đó; ngay sau đó"
+ },
+ {
+  "id": "priver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tước đoạt, làm mất"
+ },
+ {
+  "id": "empreinte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dấu vết, dấu in"
+ },
+ {
+  "id": "champagne",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "rượu sâm banh"
+ },
+ {
+  "id": "domaine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lĩnh vực; điền trang"
+ },
+ {
+  "id": "esclave",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "nô lệ"
+ },
+ {
+  "id": "total",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "toàn bộ, tổng cộng"
+ },
+ {
+  "id": "violer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vi phạm; cưỡng hiếp"
+ },
+ {
+  "id": "concentrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tập trung"
+ },
+ {
+  "id": "quelquefois",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đôi khi, thỉnh thoảng"
+ },
+ {
+  "id": "confirmer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xác nhận, khẳng định"
+ },
+ {
+  "id": "emprunter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mượn, vay"
+ },
+ {
+  "id": "lecture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "việc đọc, sự đọc sách"
+ },
+ {
+  "id": "bâtiment",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tòa nhà, công trình"
+ },
+ {
+  "id": "grand-chose",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "điều gì đáng kể (dùng phủ định)"
+ },
+ {
+  "id": "confondre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhầm lẫn, lẫn lộn"
+ },
+ {
+  "id": "assurance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bảo hiểm; sự tự tin"
+ },
+ {
+  "id": "douche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vòi sen; sự tắm vòi sen"
+ },
+ {
+  "id": "commandement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mệnh lệnh; sự chỉ huy"
+ },
+ {
+  "id": "sueur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mồ hôi"
+ },
+ {
+  "id": "fuite",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chạy trốn; sự rò rỉ"
+ },
+ {
+  "id": "paradis",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thiên đường"
+ },
+ {
+  "id": "informer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thông báo, báo tin"
+ },
+ {
+  "id": "redresser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm thẳng lại; chấn chỉnh"
+ },
+ {
+  "id": "conserver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giữ gìn, bảo quản"
+ },
+ {
+  "id": "pression",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "áp lực, sức ép"
+ },
+ {
+  "id": "concert",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "buổi hòa nhạc"
+ },
+ {
+  "id": "incapable",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "không có khả năng, bất tài"
+ },
+ {
+  "id": "angle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "góc"
+ },
+ {
+  "id": "contempler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngắm nhìn, chiêm ngưỡng"
+ },
+ {
+  "id": "facilement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách dễ dàng"
+ },
+ {
+  "id": "auteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tác giả"
+ },
+ {
+  "id": "ménage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "việc nhà; hộ gia đình"
+ },
+ {
+  "id": "tarder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chậm trễ, trì hoãn"
+ },
+ {
+  "id": "prof",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thầy cô giáo (thân mật)"
+ },
+ {
+  "id": "plaque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tấm biển; mảng"
+ },
+ {
+  "id": "prudent",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thận trọng, cẩn thận"
+ },
+ {
+  "id": "empereur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hoàng đế"
+ },
+ {
+  "id": "mesurer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đo, đo lường"
+ },
+ {
+  "id": "identifier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhận dạng, xác định"
+ },
+ {
+  "id": "pointer",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chỉ vào; chấm công"
+ },
+ {
+  "id": "invisible",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "vô hình, không nhìn thấy"
+ },
+ {
+  "id": "rythme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhịp điệu, nhịp độ"
+ },
+ {
+  "id": "lutte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc đấu tranh; môn vật"
+ },
+ {
+  "id": "privé",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "riêng tư, tư nhân"
+ },
+ {
+  "id": "chagrin",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "nỗi buồn, sự phiền muộn"
+ },
+ {
+  "id": "détourner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chuyển hướng; biển thủ"
+ },
+ {
+  "id": "identité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "danh tính, căn cước"
+ },
+ {
+  "id": "résistance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự kháng cự, sức đề kháng"
+ },
+ {
+  "id": "précieux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "quý giá, quý báu"
+ },
+ {
+  "id": "illusion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ảo tưởng, ảo giác"
+ },
+ {
+  "id": "porc",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con lợn; thịt lợn"
+ }
+]

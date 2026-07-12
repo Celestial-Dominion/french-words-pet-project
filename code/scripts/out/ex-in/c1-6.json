@@ -1,0 +1,812 @@
+[
+ {
+  "id": "anarchie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tình trạng vô chính phủ; sự hỗn loạn"
+ },
+ {
+  "id": "alternative",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự lựa chọn; phương án thay thế"
+ },
+ {
+  "id": "baïonnette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lưỡi lê"
+ },
+ {
+  "id": "peseta",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đồng peseta (tiền Tây Ban Nha cũ)"
+ },
+ {
+  "id": "côtoyer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tiếp xúc, giao du với; đi sát cạnh"
+ },
+ {
+  "id": "dictature",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chế độ độc tài"
+ },
+ {
+  "id": "filon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mạch quặng; món hời, cơ hội béo bở"
+ },
+ {
+  "id": "coach",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "huấn luyện viên"
+ },
+ {
+  "id": "regrouper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tập hợp lại, gom lại"
+ },
+ {
+  "id": "dédain",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự khinh miệt, coi thường"
+ },
+ {
+  "id": "jeté",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tấm phủ (giường, ghế); bước nhảy bật (ballet)"
+ },
+ {
+  "id": "magnétique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "có từ tính; cuốn hút"
+ },
+ {
+  "id": "salutation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lời chào"
+ },
+ {
+  "id": "colorer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tô màu, nhuộm màu"
+ },
+ {
+  "id": "forge",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lò rèn, xưởng rèn"
+ },
+ {
+  "id": "meute",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đàn chó săn; bầy, lũ"
+ },
+ {
+  "id": "par-delà",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "ở bên kia, vượt qua"
+ },
+ {
+  "id": "chips",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "khoai tây chiên lát (snack)"
+ },
+ {
+  "id": "chuter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rơi, ngã; sụt giảm"
+ },
+ {
+  "id": "imposteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ mạo danh, kẻ lừa bịp"
+ },
+ {
+  "id": "atteinte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự xâm phạm, sự tổn hại"
+ },
+ {
+  "id": "finale",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trận chung kết; đoạn kết (âm nhạc)"
+ },
+ {
+  "id": "harper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nắm chặt, quắp lấy"
+ },
+ {
+  "id": "brancard",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cáng (khiêng người bệnh); càng xe"
+ },
+ {
+  "id": "pensif",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "trầm tư, tư lự"
+ },
+ {
+  "id": "divertir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm vui, giải trí"
+ },
+ {
+  "id": "confectionner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm ra, chế biến (đồ ăn, quần áo)"
+ },
+ {
+  "id": "obstinément",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách bướng bỉnh, ngoan cố"
+ },
+ {
+  "id": "bâtisse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tòa nhà lớn (thường thô, xấu)"
+ },
+ {
+  "id": "couillon",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "(thông tục) thằng ngốc, đồ ngu"
+ },
+ {
+  "id": "crève",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "(thông tục) bệnh cảm nặng"
+ },
+ {
+  "id": "inépuisable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "vô tận, không cạn kiệt"
+ },
+ {
+  "id": "thon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cá ngừ"
+ },
+ {
+  "id": "toutou",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "(tiếng trẻ con) chó, cún"
+ },
+ {
+  "id": "outrage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự lăng mạ, sự xúc phạm"
+ },
+ {
+  "id": "der",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "(thông tục) cái cuối cùng, ván cuối"
+ },
+ {
+  "id": "jucher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đậu (chim); đặt lên cao"
+ },
+ {
+  "id": "persécuter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngược đãi, hành hạ"
+ },
+ {
+  "id": "fagot",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bó củi"
+ },
+ {
+  "id": "faiblir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "yếu đi, suy yếu"
+ },
+ {
+  "id": "parterre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "luống hoa, bồn hoa; tầng trệt (nhà hát)"
+ },
+ {
+  "id": "épingler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ghim (bằng kim ghim); (thông tục) tóm, bắt"
+ },
+ {
+  "id": "chuchotement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tiếng thì thầm"
+ },
+ {
+  "id": "format",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khổ, kích cỡ; định dạng"
+ },
+ {
+  "id": "paradoxe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nghịch lý"
+ },
+ {
+  "id": "barbouiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bôi bẩn, trét; viết vẽ nguệch ngoạc"
+ },
+ {
+  "id": "vitamine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vitamin"
+ },
+ {
+  "id": "asperger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vẩy nước, phun, làm bắn nước"
+ },
+ {
+  "id": "stimuler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kích thích, thúc đẩy"
+ },
+ {
+  "id": "hyper",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "(thông tục) cực kỳ, siêu"
+ },
+ {
+  "id": "démentir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phủ nhận, cải chính; trái ngược với"
+ },
+ {
+  "id": "louange",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lời ca ngợi, lời khen"
+ },
+ {
+  "id": "neutraliser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vô hiệu hóa, trung hòa"
+ },
+ {
+  "id": "embarrassé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "lúng túng, bối rối"
+ },
+ {
+  "id": "magistrat",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quan tòa, thẩm phán"
+ },
+ {
+  "id": "musclé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "vạm vỡ, cơ bắp"
+ },
+ {
+  "id": "aisselle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nách"
+ },
+ {
+  "id": "breton",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc vùng Bretagne; người/tiếng Breton"
+ },
+ {
+  "id": "moutarde",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "mù tạt"
+ },
+ {
+  "id": "médium",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đồng cốt, người ngoại cảm; giọng trung"
+ },
+ {
+  "id": "marécage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đầm lầy"
+ },
+ {
+  "id": "brioche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bánh mì ngọt brioche; (thông tục) bụng phệ"
+ },
+ {
+  "id": "millimètre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "milimét"
+ },
+ {
+  "id": "recopier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chép lại, sao chép"
+ },
+ {
+  "id": "batteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tay trống; máy đánh trứng"
+ },
+ {
+  "id": "douillet",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "êm ái, ấm cúng; nhõng nhẽo, sợ đau"
+ },
+ {
+  "id": "irlandais",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc Ireland; người/tiếng Ireland"
+ },
+ {
+  "id": "raciste",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "phân biệt chủng tộc; kẻ phân biệt chủng tộc"
+ },
+ {
+  "id": "colosse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người khổng lồ, gã lực lưỡng"
+ },
+ {
+  "id": "froissé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhàu, nhăn; phật ý, tự ái"
+ },
+ {
+  "id": "inséparable",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "không thể tách rời"
+ },
+ {
+  "id": "district",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quận, khu vực hành chính"
+ },
+ {
+  "id": "intonation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ngữ điệu"
+ },
+ {
+  "id": "tram",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xe điện, tàu điện"
+ },
+ {
+  "id": "accro",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "(thông tục) nghiện, mê; kẻ nghiện"
+ },
+ {
+  "id": "impératrice",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hoàng hậu, nữ hoàng"
+ },
+ {
+  "id": "laiteux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "như sữa, trắng đục"
+ },
+ {
+  "id": "irritation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự bực bội; sự kích ứng (da)"
+ },
+ {
+  "id": "orthographe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chính tả"
+ },
+ {
+  "id": "clochette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chuông nhỏ; hoa hình chuông"
+ },
+ {
+  "id": "froissement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tiếng sột soạt; sự làm nhàu"
+ },
+ {
+  "id": "idiotie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự ngu ngốc; điều ngớ ngẩn"
+ },
+ {
+  "id": "lavage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự rửa, sự giặt"
+ },
+ {
+  "id": "labourer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cày (đất)"
+ },
+ {
+  "id": "provenance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nguồn gốc, xuất xứ"
+ },
+ {
+  "id": "vingt-deux",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "hai mươi hai"
+ },
+ {
+  "id": "barbu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "có râu; người có râu"
+ },
+ {
+  "id": "abattu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chán nản, ủ rũ, suy sụp"
+ },
+ {
+  "id": "banalité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tầm thường; điều sáo rỗng"
+ },
+ {
+  "id": "coffre-fort",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "két sắt"
+ },
+ {
+  "id": "convaincant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuyết phục"
+ },
+ {
+  "id": "papi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ông (nội, ngoại)"
+ },
+ {
+  "id": "cruellement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách tàn nhẫn; đau đớn"
+ },
+ {
+  "id": "retrousser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xắn, vén lên (tay áo, quần)"
+ },
+ {
+  "id": "zèbre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ngựa vằn; (thông tục) gã, tay"
+ },
+ {
+  "id": "pressant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "cấp bách, khẩn thiết"
+ },
+ {
+  "id": "support",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giá đỡ, chân đế; sự hỗ trợ; phương tiện"
+ },
+ {
+  "id": "embraser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đốt cháy, làm bùng cháy"
+ },
+ {
+  "id": "mosquée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhà thờ Hồi giáo"
+ },
+ {
+  "id": "attribution",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự phân bổ, sự cấp; quyền hạn, chức trách"
+ }
+]

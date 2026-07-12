@@ -1,0 +1,212 @@
+{
+  "lessons": [
+    {
+      "id": "alphabet",
+      "title": "Bảng chữ cái",
+      "intro": "Tiếng Pháp dùng 26 chữ cái Latinh như tiếng Anh, nhưng TÊN gọi khác. Nghe và lặp lại tên từng chữ.",
+      "items": [
+        { "say": "A", "ipa": "/a/", "vi": "a" },
+        { "say": "B", "ipa": "/be/", "vi": "bê" },
+        { "say": "C", "ipa": "/se/", "vi": "xê" },
+        { "say": "D", "ipa": "/de/", "vi": "đê" },
+        { "say": "E", "ipa": "/ə/", "vi": "ơ" },
+        { "say": "F", "ipa": "/ɛf/", "vi": "ép-fờ" },
+        { "say": "G", "ipa": "/ʒe/", "vi": "giê" },
+        { "say": "H", "ipa": "/aʃ/", "vi": "át-sờ (thường câm)" },
+        { "say": "I", "ipa": "/i/", "vi": "i" },
+        { "say": "J", "ipa": "/ʒi/", "vi": "gi" },
+        { "say": "K", "ipa": "/ka/", "vi": "ca" },
+        { "say": "L", "ipa": "/ɛl/", "vi": "e-lờ" },
+        { "say": "M", "ipa": "/ɛm/", "vi": "em-mờ" },
+        { "say": "N", "ipa": "/ɛn/", "vi": "en-nờ" },
+        { "say": "O", "ipa": "/o/", "vi": "ô" },
+        { "say": "P", "ipa": "/pe/", "vi": "pê" },
+        { "say": "Q", "ipa": "/ky/", "vi": "quy" },
+        { "say": "R", "ipa": "/ɛʁ/", "vi": "e-rờ (R gằn cổ họng)" },
+        { "say": "S", "ipa": "/ɛs/", "vi": "ét-sờ" },
+        { "say": "T", "ipa": "/te/", "vi": "tê" },
+        { "say": "U", "ipa": "/y/", "vi": "uy (chu môi)" },
+        { "say": "V", "ipa": "/ve/", "vi": "vê" },
+        { "say": "W", "ipa": "/dublə ve/", "vi": "vê kép" },
+        { "say": "X", "ipa": "/iks/", "vi": "ích-xờ" },
+        { "say": "Y", "ipa": "/i ɡʁɛk/", "vi": "i Hy Lạp" },
+        { "say": "Z", "ipa": "/zɛd/", "vi": "dét" }
+      ]
+    },
+    {
+      "id": "voyelles",
+      "title": "Nguyên âm đơn & dấu",
+      "intro": "Nguyên âm tiếng Pháp đọc gọn, không kéo dài. Dấu phụ (é, è, ê) đổi cách đọc chữ e. Chú ý: U đọc /y/ (chu môi như huýt sáo), khác hẳn tiếng Việt.",
+      "items": [
+        { "say": "a", "ipa": "/a/", "vi": "a — như 'a' tiếng Việt" },
+        { "say": "i", "ipa": "/i/", "vi": "i" },
+        { "say": "o", "ipa": "/o/", "vi": "ô" },
+        { "say": "u", "ipa": "/y/", "vi": "uy — chu môi tròn, khó nhất!" },
+        { "say": "é", "ipa": "/e/", "vi": "ê khép (accent aigu)" },
+        { "say": "è", "ipa": "/ɛ/", "vi": "e mở (accent grave)" },
+        { "say": "ê", "ipa": "/ɛ/", "vi": "e mở (accent circonflexe)" },
+        { "say": "café", "ipa": "/kafe/", "vi": "ví dụ é: cà phê" },
+        { "say": "père", "ipa": "/pɛʁ/", "vi": "ví dụ è: bố" }
+      ]
+    },
+    {
+      "id": "voyelles-composees",
+      "title": "Nguyên âm ghép",
+      "intro": "Nhiều chữ cái ghép lại thành MỘT âm. Đây là quy tắc cực quan trọng, xuất hiện khắp nơi.",
+      "items": [
+        { "say": "ou", "ipa": "/u/", "vi": "u — vd: nous (chúng tôi)" },
+        { "say": "oi", "ipa": "/wa/", "vi": "oa — vd: moi (tôi), trois (ba)" },
+        { "say": "au", "ipa": "/o/", "vi": "ô — vd: aussi (cũng)" },
+        { "say": "eau", "ipa": "/o/", "vi": "ô — vd: eau (nước), beau (đẹp)" },
+        { "say": "ai", "ipa": "/ɛ/", "vi": "e mở — vd: mais (nhưng)" },
+        { "say": "ei", "ipa": "/ɛ/", "vi": "e mở — vd: neige (tuyết)" },
+        { "say": "eu", "ipa": "/ø/", "vi": "ơ tròn môi — vd: deux (hai)" },
+        { "say": "œu", "ipa": "/œ/", "vi": "ơ mở — vd: cœur (trái tim)" }
+      ]
+    },
+    {
+      "id": "nasales",
+      "title": "Nguyên âm mũi",
+      "intro": "Âm MŨI là đặc trưng số một của tiếng Pháp: luồng hơi đi qua mũi, KHÔNG đọc rõ chữ n/m cuối. Có 4 âm mũi chính.",
+      "items": [
+        { "say": "an", "ipa": "/ɑ̃/", "vi": "ăng (mũi) — an/am/en/em" },
+        { "say": "dans", "ipa": "/dɑ̃/", "vi": "ví dụ: trong" },
+        { "say": "temps", "ipa": "/tɑ̃/", "vi": "ví dụ (en): thời gian" },
+        { "say": "on", "ipa": "/ɔ̃/", "vi": "ông (mũi) — on/om" },
+        { "say": "bon", "ipa": "/bɔ̃/", "vi": "ví dụ: tốt" },
+        { "say": "in", "ipa": "/ɛ̃/", "vi": "anh (mũi) — in/im/ain/ein" },
+        { "say": "pain", "ipa": "/pɛ̃/", "vi": "ví dụ (ain): bánh mì" },
+        { "say": "un", "ipa": "/œ̃/", "vi": "âng (mũi) — un/um" },
+        { "say": "brun", "ipa": "/bʁœ̃/", "vi": "ví dụ: nâu" }
+      ]
+    },
+    {
+      "id": "consonnes",
+      "title": "Phụ âm đặc biệt",
+      "intro": "Một số phụ âm đọc khác tiếng Anh/Việt, hoặc đổi âm tùy chữ đứng sau.",
+      "items": [
+        { "say": "ch", "ipa": "/ʃ/", "vi": "'s' như trong 'sh' — vd: chat (mèo)" },
+        { "say": "gn", "ipa": "/ɲ/", "vi": "'nh' — vd: montagne (núi)" },
+        { "say": "j", "ipa": "/ʒ/", "vi": "'gi' — vd: jour (ngày)" },
+        { "say": "gu", "ipa": "/ɡ/", "vi": "'g' cứng (u câm) — vd: guitare" },
+        { "say": "qu", "ipa": "/k/", "vi": "'c' (u câm) — vd: qui (ai)" },
+        { "say": "ç", "ipa": "/s/", "vi": "c cédille = 's' — vd: français" },
+        { "say": "r", "ipa": "/ʁ/", "vi": "R gằn ở cổ họng, không rung lưỡi" },
+        { "say": "ill", "ipa": "/ij/", "vi": "'i-i' — vd: fille (con gái)" }
+      ]
+    },
+    {
+      "id": "c-g",
+      "title": "Chữ C và G",
+      "intro": "C và G đổi cách đọc tùy nguyên âm đứng SAU: trước e/i/y đọc 'mềm', trước a/o/u đọc 'cứng'.",
+      "items": [
+        { "say": "ca", "ipa": "/ka/", "vi": "C cứng trước a/o/u: /k/" },
+        { "say": "ce", "ipa": "/sə/", "vi": "C mềm trước e/i/y: /s/" },
+        { "say": "café", "ipa": "/kafe/", "vi": "ví dụ C cứng" },
+        { "say": "cinéma", "ipa": "/sinema/", "vi": "ví dụ C mềm" },
+        { "say": "ga", "ipa": "/ɡa/", "vi": "G cứng trước a/o/u: /ɡ/" },
+        { "say": "ge", "ipa": "/ʒə/", "vi": "G mềm trước e/i/y: /ʒ/" },
+        { "say": "gare", "ipa": "/ɡaʁ/", "vi": "ví dụ G cứng: nhà ga" },
+        { "say": "girafe", "ipa": "/ʒiʁaf/", "vi": "ví dụ G mềm: hươu cao cổ" }
+      ]
+    },
+    {
+      "id": "muettes",
+      "title": "Chữ câm cuối từ",
+      "intro": "Quy tắc VÀNG: phần lớn phụ âm cuối từ KHÔNG đọc (nhất là e, s, t, d, x, p). Nhớ mẹo 'CaReFuL' (c, r, f, l thường ĐỌC).",
+      "items": [
+        { "say": "petit", "ipa": "/pəti/", "vi": "t cuối câm" },
+        { "say": "grand", "ipa": "/ɡʁɑ̃/", "vi": "d cuối câm" },
+        { "say": "temps", "ipa": "/tɑ̃/", "vi": "p và s cuối câm" },
+        { "say": "nez", "ipa": "/ne/", "vi": "z cuối câm: cái mũi" },
+        { "say": "table", "ipa": "/tabl/", "vi": "e cuối câm; nhưng L đọc" },
+        { "say": "parc", "ipa": "/paʁk/", "vi": "c cuối ĐỌC (CaReFuL)" },
+        { "say": "ils mangent", "ipa": "/il mɑ̃ʒ/", "vi": "'-ent' của động từ số nhiều: CÂM" }
+      ]
+    },
+    {
+      "id": "e-caduc",
+      "title": "Âm 'e' và các âm /ø œ ə/",
+      "intro": "Chữ e không dấu thường đọc nhẹ /ə/ (như 'ơ' rất nhẹ), đôi khi rơi hẳn khi nói nhanh.",
+      "items": [
+        { "say": "le", "ipa": "/lə/", "vi": "'lơ' nhẹ" },
+        { "say": "je", "ipa": "/ʒə/", "vi": "'giơ' nhẹ" },
+        { "say": "petit", "ipa": "/pəti/", "vi": "e giữa từ đọc nhẹ" },
+        { "say": "deux", "ipa": "/dø/", "vi": "eu = /ø/ tròn môi" },
+        { "say": "peur", "ipa": "/pœʁ/", "vi": "eu = /œ/ mở: nỗi sợ" },
+        { "say": "samedi", "ipa": "/samdi/", "vi": "e hay rơi khi nói nhanh: thứ Bảy" }
+      ]
+    },
+    {
+      "id": "h",
+      "title": "Chữ H câm & bật hơi",
+      "intro": "H trong tiếng Pháp KHÔNG BAO GIỜ đọc thành tiếng. Có hai loại: H câm (cho nối âm/elision) và H bật hơi (chặn nối âm).",
+      "items": [
+        { "say": "l'homme", "ipa": "/lɔm/", "vi": "h câm → elision l' : người đàn ông" },
+        { "say": "les hommes", "ipa": "/le zɔm/", "vi": "h câm → có liaison (z)" },
+        { "say": "le héros", "ipa": "/lə eʁo/", "vi": "h bật hơi → KHÔNG elision: anh hùng" },
+        { "say": "hôtel", "ipa": "/otɛl/", "vi": "h câm: khách sạn" }
+      ]
+    },
+    {
+      "id": "liaison",
+      "title": "Liaison — nối âm",
+      "intro": "Khi từ kết thúc bằng phụ âm câm gặp từ sau bắt đầu bằng nguyên âm (hoặc h câm), phụ âm đó 'sống dậy' và nối sang. Rất quan trọng để nghe tự nhiên.",
+      "items": [
+        { "say": "les amis", "ipa": "/le zami/", "vi": "s → 'z' nối: những người bạn" },
+        { "say": "un enfant", "ipa": "/œ̃ nɑ̃fɑ̃/", "vi": "n nối: một đứa trẻ" },
+        { "say": "vous avez", "ipa": "/vu zave/", "vi": "s → 'z' nối: các bạn có" },
+        { "say": "c'est un", "ipa": "/sɛ tœ̃/", "vi": "t nối: đó là một" },
+        { "say": "grand arbre", "ipa": "/ɡʁɑ̃ t‿aʁbʁ/", "vi": "d → 't' nối: cây to" }
+      ]
+    },
+    {
+      "id": "elision",
+      "title": "Élision — rút gọn",
+      "intro": "Trước một từ bắt đầu bằng nguyên âm (hoặc h câm), một số từ ngắn bỏ nguyên âm cuối và thay bằng dấu ' . Bắt buộc, không phải tùy chọn.",
+      "items": [
+        { "say": "l'école", "ipa": "/lekɔl/", "vi": "le/la + école → l' : trường học" },
+        { "say": "j'ai", "ipa": "/ʒe/", "vi": "je + ai → j' : tôi có" },
+        { "say": "d'accord", "ipa": "/dakɔʁ/", "vi": "de + accord → d' : đồng ý" },
+        { "say": "qu'est-ce que", "ipa": "/kɛs kə/", "vi": "que + est → qu' : cái gì" },
+        { "say": "n'est pas", "ipa": "/nɛ pa/", "vi": "ne + est → n' : không phải" }
+      ]
+    },
+    {
+      "id": "accent-signes",
+      "title": "Dấu phụ & ký hiệu",
+      "intro": "Nhận mặt các dấu để đọc đúng và gõ đúng.",
+      "items": [
+        { "say": "é", "ipa": "/e/", "vi": "accent aigu (sắc) — chỉ trên e" },
+        { "say": "à", "ipa": "/a/", "vi": "accent grave (huyền) — a/e/u" },
+        { "say": "ô", "ipa": "/o/", "vi": "accent circonflexe (mũ)" },
+        { "say": "ï", "ipa": "/i/", "vi": "tréma (hai chấm) — đọc TÁCH: naïf" },
+        { "say": "ç", "ipa": "/s/", "vi": "cédille — c đọc thành /s/" }
+      ]
+    },
+    {
+      "id": "rythme",
+      "title": "Trọng âm & ngữ điệu",
+      "intro": "Tiếng Pháp nhấn NHẸ và đều, trọng âm rơi vào ÂM TIẾT CUỐI của nhóm từ. Câu hỏi lên giọng ở cuối.",
+      "items": [
+        { "say": "bonjour", "ipa": "/bɔ̃ʒuʁ/", "vi": "nhấn nhẹ ở 'jour' (cuối)" },
+        { "say": "un restaurant", "ipa": "/œ̃ ʁɛstoʁɑ̃/", "vi": "nhấn ở 'rant'" },
+        { "say": "Ça va ?", "ipa": "/sa va/", "vi": "câu hỏi — lên giọng cuối" },
+        { "say": "Ça va bien.", "ipa": "/sa va bjɛ̃/", "vi": "câu kể — giọng xuống" }
+      ]
+    },
+    {
+      "id": "salutations",
+      "title": "Chào hỏi (ghép mọi thứ)",
+      "intro": "Áp dụng tất cả quy tắc trên vào các câu đầu tiên bạn sẽ nói. Nghe kỹ và bắt chước.",
+      "items": [
+        { "say": "Bonjour !", "ipa": "/bɔ̃ʒuʁ/", "vi": "Xin chào (ban ngày)" },
+        { "say": "Bonsoir !", "ipa": "/bɔ̃swaʁ/", "vi": "Chào (buổi tối)" },
+        { "say": "Merci beaucoup.", "ipa": "/mɛʁsi boku/", "vi": "Cảm ơn nhiều" },
+        { "say": "S'il vous plaît.", "ipa": "/sil vu plɛ/", "vi": "Làm ơn / xin mời" },
+        { "say": "Comment ça va ?", "ipa": "/kɔmɑ̃ sa va/", "vi": "Bạn khỏe không?" },
+        { "say": "Au revoir !", "ipa": "/o ʁəvwaʁ/", "vi": "Tạm biệt" }
+      ]
+    }
+  ]
+}

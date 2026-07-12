@@ -1,0 +1,824 @@
+[
+ {
+  "id": "appuyer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhấn, bấm; tựa vào"
+ },
+ {
+  "id": "machine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "máy, máy móc"
+ },
+ {
+  "id": "nature",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "thiên nhiên; bản chất, tính chất"
+ },
+ {
+  "id": "avance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tiến lên; khoản ứng trước; (d'avance) trước"
+ },
+ {
+  "id": "télé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tivi, truyền hình"
+ },
+ {
+  "id": "santé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sức khỏe"
+ },
+ {
+  "id": "prouver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chứng minh"
+ },
+ {
+  "id": "désir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ham muốn, khát khao"
+ },
+ {
+  "id": "vacance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "kỳ nghỉ (vacances); chỗ khuyết"
+ },
+ {
+  "id": "gris",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "màu xám, xám"
+ },
+ {
+  "id": "relever",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nâng lên, dựng lại; ghi nhận"
+ },
+ {
+  "id": "coller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dán, gắn"
+ },
+ {
+  "id": "campagne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vùng nông thôn; chiến dịch"
+ },
+ {
+  "id": "feuille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lá cây; tờ giấy"
+ },
+ {
+  "id": "régler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "điều chỉnh; thanh toán; giải quyết"
+ },
+ {
+  "id": "créer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tạo ra, sáng tạo"
+ },
+ {
+  "id": "vêtement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quần áo, trang phục"
+ },
+ {
+  "id": "élever",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nuôi dạy; nâng lên"
+ },
+ {
+  "id": "tas",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đống, chồng"
+ },
+ {
+  "id": "surveiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trông coi, giám sát"
+ },
+ {
+  "id": "sommeil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giấc ngủ, cơn buồn ngủ"
+ },
+ {
+  "id": "cou",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cổ"
+ },
+ {
+  "id": "frais",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "tươi, mát; (số nhiều) chi phí"
+ },
+ {
+  "id": "pencher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nghiêng, cúi"
+ },
+ {
+  "id": "placer",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đặt, để, xếp chỗ"
+ },
+ {
+  "id": "juger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xét xử; đánh giá, nhận định"
+ },
+ {
+  "id": "mesure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "biện pháp; sự đo lường"
+ },
+ {
+  "id": "laver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rửa, giặt"
+ },
+ {
+  "id": "a",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chữ a"
+ },
+ {
+  "id": "prêter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cho mượn, cho vay"
+ },
+ {
+  "id": "observer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "quan sát, theo dõi"
+ },
+ {
+  "id": "inutile",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "vô ích, không cần thiết"
+ },
+ {
+  "id": "crever",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nổ, thủng; kiệt sức"
+ },
+ {
+  "id": "euh",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "ừm, à (tiếng ngập ngừng)"
+ },
+ {
+  "id": "conversation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc trò chuyện, đối thoại"
+ },
+ {
+  "id": "pute",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "(thô tục) gái điếm"
+ },
+ {
+  "id": "but",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mục đích; bàn thắng"
+ },
+ {
+  "id": "pur",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tinh khiết, thuần túy"
+ },
+ {
+  "id": "malheur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bất hạnh, tai họa"
+ },
+ {
+  "id": "accrocher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "móc, treo lên"
+ },
+ {
+  "id": "gamin",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "đứa trẻ, nhóc con"
+ },
+ {
+  "id": "entraîner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kéo theo, lôi cuốn; huấn luyện"
+ },
+ {
+  "id": "fier",
+  "pos": [
+   "tính từ",
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kiêu hãnh, tự hào"
+ },
+ {
+  "id": "courage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lòng can đảm, dũng khí"
+ },
+ {
+  "id": "lieutenant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trung úy"
+ },
+ {
+  "id": "mission",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhiệm vụ, sứ mệnh"
+ },
+ {
+  "id": "riche",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "giàu có; phong phú"
+ },
+ {
+  "id": "soin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự chăm sóc, chăm nom"
+ },
+ {
+  "id": "danger",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mối nguy hiểm"
+ },
+ {
+  "id": "ficher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "(thông tục) làm; kệ; đuổi"
+ },
+ {
+  "id": "repartir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lại ra đi, khởi hành lại"
+ },
+ {
+  "id": "direction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hướng đi; ban giám đốc"
+ },
+ {
+  "id": "commander",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ra lệnh; đặt hàng; chỉ huy"
+ },
+ {
+  "id": "pont",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cây cầu"
+ },
+ {
+  "id": "société",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "xã hội; công ty"
+ },
+ {
+  "id": "chaleur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sức nóng, hơi ấm"
+ },
+ {
+  "id": "montagne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "núi"
+ },
+ {
+  "id": "détail",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chi tiết"
+ },
+ {
+  "id": "page",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trang (sách, giấy)"
+ },
+ {
+  "id": "enfer",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "địa ngục"
+ },
+ {
+  "id": "projet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dự án, kế hoạch"
+ },
+ {
+  "id": "celui-là",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "cái kia, người kia"
+ },
+ {
+  "id": "marché",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chợ; thị trường"
+ },
+ {
+  "id": "chanson",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bài hát"
+ },
+ {
+  "id": "cinéma",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "rạp chiếu phim; điện ảnh"
+ },
+ {
+  "id": "sombre",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tối tăm, u ám"
+ },
+ {
+  "id": "phrase",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "câu"
+ },
+ {
+  "id": "ferme",
+  "pos": [
+   "danh từ",
+   "tính từ",
+   "phó từ"
+  ],
+  "gender": "f",
+  "vi": "nông trại; chắc chắn, vững vàng"
+ },
+ {
+  "id": "remplir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm đầy; điền vào"
+ },
+ {
+  "id": "arrière",
+  "pos": [
+   "danh từ",
+   "tính từ",
+   "phó từ",
+   "tượng thanh"
+  ],
+  "gender": "m",
+  "vi": "phía sau, đằng sau"
+ },
+ {
+  "id": "connerie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "(thô tục) chuyện ngớ ngẩn, nhảm nhí"
+ },
+ {
+  "id": "coûter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "có giá, tốn (tiền)"
+ },
+ {
+  "id": "pitié",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lòng thương hại, sự thương xót"
+ },
+ {
+  "id": "écraser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đè bẹp, nghiền nát"
+ },
+ {
+  "id": "forcer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ép buộc, cưỡng bức"
+ },
+ {
+  "id": "radio",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đài phát thanh; phim X-quang"
+ },
+ {
+  "id": "est",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "hướng đông, phía đông"
+ },
+ {
+  "id": "meurtre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vụ giết người"
+ },
+ {
+  "id": "vol",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chuyến bay; vụ trộm cắp"
+ },
+ {
+  "id": "note",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ghi chú; điểm số; hóa đơn"
+ },
+ {
+  "id": "ennui",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự buồn chán; rắc rối"
+ },
+ {
+  "id": "justement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đúng vậy, chính xác là"
+ },
+ {
+  "id": "recherche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tìm kiếm; nghiên cứu"
+ },
+ {
+  "id": "herbe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cỏ"
+ },
+ {
+  "id": "court",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ngắn; sân (quần vợt)"
+ },
+ {
+  "id": "américain",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc Mỹ; người Mỹ"
+ },
+ {
+  "id": "trace",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dấu vết, vết tích"
+ },
+ {
+  "id": "chapeau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cái mũ, nón"
+ },
+ {
+  "id": "contact",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự tiếp xúc; mối liên lạc"
+ },
+ {
+  "id": "joue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "má"
+ },
+ {
+  "id": "bordel",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "(thô tục) sự lộn xộn; nhà thổ"
+ },
+ {
+  "id": "centre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trung tâm"
+ },
+ {
+  "id": "cependant",
+  "pos": [
+   "phó từ",
+   "liên từ"
+  ],
+  "gender": null,
+  "vi": "tuy nhiên, thế nhưng"
+ },
+ {
+  "id": "combat",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trận chiến, cuộc chiến đấu"
+ },
+ {
+  "id": "fer",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sắt"
+ },
+ {
+  "id": "former",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hình thành; đào tạo"
+ },
+ {
+  "id": "livrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giao hàng; giao nộp"
+ },
+ {
+  "id": "profond",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "sâu; sâu sắc"
+ },
+ {
+  "id": "règle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "quy tắc, luật lệ; thước kẻ"
+ },
+ {
+  "id": "idiot",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ ngốc; ngu ngốc"
+ }
+]

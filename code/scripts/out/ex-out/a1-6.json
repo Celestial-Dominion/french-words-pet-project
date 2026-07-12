@@ -1,0 +1,502 @@
+{
+  "oncle": [
+    {"fr": "Mon oncle habite à Paris.", "vi": "Chú tôi sống ở Paris."},
+    {"fr": "Mon oncle a un grand chien.", "vi": "Bác tôi có một con chó to."},
+    {"fr": "Nous dînons chez mon oncle ce soir.", "vi": "Tối nay chúng tôi ăn tối ở nhà cậu tôi."}
+  ],
+  "utiliser": [
+    {"fr": "J'utilise mon téléphone tous les jours.", "vi": "Tôi dùng điện thoại mỗi ngày."},
+    {"fr": "Tu peux utiliser mon stylo.", "vi": "Bạn có thể dùng bút của tôi."},
+    {"fr": "Elle utilise un vélo pour aller au travail.", "vi": "Cô ấy dùng xe đạp để đi làm."}
+  ],
+  "espèce": [
+    {"fr": "C'est une espèce rare de fleur.", "vi": "Đây là một loài hoa hiếm."},
+    {"fr": "Il y a plusieurs espèces d'oiseaux ici.", "vi": "Ở đây có nhiều loài chim."},
+    {"fr": "Cette espèce d'animal vit dans la forêt.", "vi": "Loài động vật này sống trong rừng."}
+  ],
+  "bas": [
+    {"fr": "Le prix est très bas.", "vi": "Giá rất thấp."},
+    {"fr": "Le chat dort en bas.", "vi": "Con mèo ngủ ở dưới nhà."},
+    {"fr": "Elle porte des bas noirs.", "vi": "Cô ấy đi tất dài màu đen."}
+  ],
+  "fleur": [
+    {"fr": "J'offre une fleur à ma mère.", "vi": "Tôi tặng một bông hoa cho mẹ."},
+    {"fr": "Les fleurs sont belles au printemps.", "vi": "Hoa rất đẹp vào mùa xuân."},
+    {"fr": "Il y a des fleurs dans le jardin.", "vi": "Có nhiều hoa trong vườn."}
+  ],
+  "terminer": [
+    {"fr": "Je termine mon travail à cinq heures.", "vi": "Tôi kết thúc công việc lúc năm giờ."},
+    {"fr": "Nous avons terminé le repas.", "vi": "Chúng tôi đã ăn xong bữa."},
+    {"fr": "Elle termine ses devoirs ce soir.", "vi": "Cô ấy hoàn thành bài tập tối nay."}
+  ],
+  "bleu": [
+    {"fr": "Le ciel est bleu aujourd'hui.", "vi": "Hôm nay bầu trời màu xanh."},
+    {"fr": "J'aime ta robe bleue.", "vi": "Tôi thích chiếc váy xanh của bạn."},
+    {"fr": "Il porte un pull bleu.", "vi": "Anh ấy mặc áo len màu xanh."}
+  ],
+  "haut": [
+    {"fr": "La montagne est très haute.", "vi": "Ngọn núi rất cao."},
+    {"fr": "Le livre est en haut.", "vi": "Cuốn sách ở phía trên."},
+    {"fr": "Cet arbre est plus haut que la maison.", "vi": "Cây này cao hơn ngôi nhà."}
+  ],
+  "début": [
+    {"fr": "C'est le début du film.", "vi": "Đây là phần đầu của bộ phim."},
+    {"fr": "Au début, je ne parlais pas français.", "vi": "Lúc đầu, tôi không nói tiếng Pháp."},
+    {"fr": "Le début de l'année est froid.", "vi": "Đầu năm trời lạnh."}
+  ],
+  "rêver": [
+    {"fr": "Je rêve de voyager en France.", "vi": "Tôi mơ được đi du lịch nước Pháp."},
+    {"fr": "Elle rêve souvent la nuit.", "vi": "Cô ấy thường mơ vào ban đêm."},
+    {"fr": "Nous rêvons d'une grande maison.", "vi": "Chúng tôi mơ về một ngôi nhà lớn."}
+  ],
+  "image": [
+    {"fr": "Cette image est très belle.", "vi": "Bức tranh này rất đẹp."},
+    {"fr": "Il regarde les images du livre.", "vi": "Cậu ấy xem các hình ảnh trong sách."},
+    {"fr": "J'aime cette image de la mer.", "vi": "Tôi thích bức ảnh về biển này."}
+  ],
+  "drôle": [
+    {"fr": "Ce film est très drôle.", "vi": "Bộ phim này rất buồn cười."},
+    {"fr": "Mon ami est drôle.", "vi": "Bạn tôi rất vui tính."},
+    {"fr": "Elle raconte une histoire drôle.", "vi": "Cô ấy kể một câu chuyện ngộ nghĩnh."}
+  ],
+  "malade": [
+    {"fr": "Je suis malade aujourd'hui.", "vi": "Hôm nay tôi bị ốm."},
+    {"fr": "Mon fils est malade.", "vi": "Con trai tôi bị bệnh."},
+    {"fr": "Elle reste au lit parce qu'elle est malade.", "vi": "Cô ấy nằm trên giường vì bị ốm."}
+  ],
+  "plan": [
+    {"fr": "J'ai un plan pour demain.", "vi": "Tôi có kế hoạch cho ngày mai."},
+    {"fr": "Regarde le plan de la ville.", "vi": "Hãy nhìn bản đồ thành phố."},
+    {"fr": "Nous faisons un plan ensemble.", "vi": "Chúng tôi cùng nhau lập kế hoạch."}
+  ],
+  "exactement": [
+    {"fr": "C'est exactement ce que je veux.", "vi": "Đây chính xác là điều tôi muốn."},
+    {"fr": "Il est exactement midi.", "vi": "Bây giờ đúng mười hai giờ trưa."},
+    {"fr": "Oui, c'est exactement ça.", "vi": "Vâng, đúng vậy đấy."}
+  ],
+  "traverser": [
+    {"fr": "Je traverse la rue.", "vi": "Tôi băng qua đường."},
+    {"fr": "Nous traversons le pont.", "vi": "Chúng tôi đi qua cây cầu."},
+    {"fr": "Fais attention pour traverser la route.", "vi": "Hãy cẩn thận khi băng qua đường."}
+  ],
+  "seconde": [
+    {"fr": "Attends une seconde, s'il te plaît.", "vi": "Đợi một giây, làm ơn."},
+    {"fr": "Il court le cent mètres en dix secondes.", "vi": "Anh ấy chạy một trăm mét trong mười giây."},
+    {"fr": "Une seconde, j'arrive.", "vi": "Một giây thôi, tôi đến ngay."}
+  ],
+  "grave": [
+    {"fr": "Ce n'est pas grave.", "vi": "Không sao đâu."},
+    {"fr": "Il a une maladie grave.", "vi": "Anh ấy mắc một căn bệnh nghiêm trọng."},
+    {"fr": "L'accident était grave.", "vi": "Tai nạn rất nghiêm trọng."}
+  ],
+  "habiter": [
+    {"fr": "J'habite à Lyon.", "vi": "Tôi sống ở Lyon."},
+    {"fr": "Où est-ce que tu habites ?", "vi": "Bạn sống ở đâu?"},
+    {"fr": "Elle habite avec ses parents.", "vi": "Cô ấy sống với bố mẹ."}
+  ],
+  "oreille": [
+    {"fr": "J'ai mal à l'oreille.", "vi": "Tôi bị đau tai."},
+    {"fr": "Le chat a de petites oreilles.", "vi": "Con mèo có đôi tai nhỏ."},
+    {"fr": "Il met la main sur son oreille.", "vi": "Anh ấy đặt tay lên tai."}
+  ],
+  "jurer": [
+    {"fr": "Je te jure que c'est vrai.", "vi": "Tôi thề với bạn là chuyện đó có thật."},
+    {"fr": "Il jure de dire la vérité.", "vi": "Anh ấy thề nói sự thật."},
+    {"fr": "Ne jure pas, s'il te plaît.", "vi": "Đừng chửi thề, làm ơn."}
+  ],
+  "plusieurs": [
+    {"fr": "J'ai plusieurs amis en France.", "vi": "Tôi có nhiều bạn ở Pháp."},
+    {"fr": "Il y a plusieurs livres sur la table.", "vi": "Có vài quyển sách trên bàn."},
+    {"fr": "Plusieurs personnes attendent le bus.", "vi": "Nhiều người đang đợi xe buýt."}
+  ],
+  "flic": [
+    {"fr": "Le flic arrête la voiture.", "vi": "Cảnh sát chặn chiếc xe lại."},
+    {"fr": "Mon frère est flic.", "vi": "Anh trai tôi là cảnh sát."},
+    {"fr": "Les flics sont dans la rue.", "vi": "Mấy ông cảnh sát đang ở ngoài đường."}
+  ],
+  "ombre": [
+    {"fr": "Nous mangeons à l'ombre.", "vi": "Chúng tôi ăn dưới bóng râm."},
+    {"fr": "L'arbre fait de l'ombre.", "vi": "Cái cây tạo bóng mát."},
+    {"fr": "Le chat dort à l'ombre.", "vi": "Con mèo ngủ trong bóng râm."}
+  ],
+  "habitude": [
+    {"fr": "J'ai l'habitude de me lever tôt.", "vi": "Tôi có thói quen dậy sớm."},
+    {"fr": "C'est une bonne habitude.", "vi": "Đó là một thói quen tốt."},
+    {"fr": "Comme d'habitude, il est en retard.", "vi": "Như thường lệ, anh ấy đến muộn."}
+  ],
+  "prochain": [
+    {"fr": "À la semaine prochaine !", "vi": "Hẹn tuần sau nhé!"},
+    {"fr": "Le prochain train part à midi.", "vi": "Chuyến tàu tiếp theo khởi hành lúc trưa."},
+    {"fr": "Nous partons le mois prochain.", "vi": "Chúng tôi đi vào tháng tới."}
+  ],
+  "danser": [
+    {"fr": "J'aime danser avec mes amis.", "vi": "Tôi thích nhảy với bạn bè."},
+    {"fr": "Elle danse très bien.", "vi": "Cô ấy nhảy rất giỏi."},
+    {"fr": "Nous dansons à la fête.", "vi": "Chúng tôi khiêu vũ ở bữa tiệc."}
+  ],
+  "armée": [
+    {"fr": "Mon frère est dans l'armée.", "vi": "Anh trai tôi ở trong quân đội."},
+    {"fr": "L'armée défend le pays.", "vi": "Quân đội bảo vệ đất nước."},
+    {"fr": "Il a servi dans l'armée.", "vi": "Anh ấy đã phục vụ trong quân đội."}
+  ],
+  "calmer": [
+    {"fr": "La mère calme son bébé.", "vi": "Người mẹ dỗ dành em bé."},
+    {"fr": "Calme-toi, tout va bien.", "vi": "Bình tĩnh nào, mọi thứ ổn cả."},
+    {"fr": "Il essaie de calmer son ami.", "vi": "Anh ấy cố trấn an bạn mình."}
+  ],
+  "gueule": [
+    {"fr": "Le chien ouvre la gueule.", "vi": "Con chó mở mõm ra."},
+    {"fr": "Ferme ta gueule !", "vi": "Câm miệng lại!"},
+    {"fr": "Le loup a une grande gueule.", "vi": "Con sói có cái mõm to."}
+  ],
+  "prix": [
+    {"fr": "Quel est le prix de ce livre ?", "vi": "Giá cuốn sách này là bao nhiêu?"},
+    {"fr": "Le prix est trop cher.", "vi": "Giá quá đắt."},
+    {"fr": "Elle a gagné un prix à l'école.", "vi": "Cô ấy đã giành một giải thưởng ở trường."}
+  ],
+  "ligne": [
+    {"fr": "Écris ton nom sur cette ligne.", "vi": "Hãy viết tên bạn lên dòng này."},
+    {"fr": "Il y a une longue ligne au magasin.", "vi": "Có một hàng dài ở cửa hàng."},
+    {"fr": "Le bus prend la ligne deux.", "vi": "Xe buýt đi tuyến số hai."}
+  ],
+  "debout": [
+    {"fr": "Je suis debout depuis six heures.", "vi": "Tôi đã đứng dậy từ sáu giờ."},
+    {"fr": "Reste debout, s'il te plaît.", "vi": "Hãy đứng thẳng lên, làm ơn."},
+    {"fr": "Les élèves sont debout.", "vi": "Các học sinh đang đứng."}
+  ],
+  "différent": [
+    {"fr": "Ces deux livres sont différents.", "vi": "Hai cuốn sách này khác nhau."},
+    {"fr": "Nous avons des goûts différents.", "vi": "Chúng tôi có sở thích khác nhau."},
+    {"fr": "Ce plat est différent.", "vi": "Món ăn này thì khác."}
+  ],
+  "or": [
+    {"fr": "Elle porte une bague en or.", "vi": "Cô ấy đeo một chiếc nhẫn vàng."},
+    {"fr": "Ce collier est en or.", "vi": "Chiếc vòng cổ này bằng vàng."},
+    {"fr": "L'or est un métal précieux.", "vi": "Vàng là một kim loại quý."}
+  ],
+  "abandonner": [
+    {"fr": "N'abandonne pas maintenant !", "vi": "Đừng từ bỏ lúc này!"},
+    {"fr": "Il a abandonné son chien.", "vi": "Anh ấy đã bỏ rơi con chó của mình."},
+    {"fr": "Elle ne veut pas abandonner ses études.", "vi": "Cô ấy không muốn bỏ dở việc học."}
+  ],
+  "président": [
+    {"fr": "Le président parle à la télé.", "vi": "Tổng thống phát biểu trên tivi."},
+    {"fr": "Elle est présidente du club.", "vi": "Cô ấy là chủ tịch câu lạc bộ."},
+    {"fr": "Le président visite la ville.", "vi": "Tổng thống thăm thành phố."}
+  ],
+  "cul": [
+    {"fr": "Il est tombé sur le cul.", "vi": "Anh ta ngã bổ mông xuống."},
+    {"fr": "J'ai mal au cul.", "vi": "Tôi bị đau mông."},
+    {"fr": "Le chien s'assoit sur son cul.", "vi": "Con chó ngồi phịch xuống."}
+  ],
+  "chéri": [
+    {"fr": "Bonne nuit, mon chéri.", "vi": "Chúc ngủ ngon, cưng à."},
+    {"fr": "Chéri, le dîner est prêt.", "vi": "Anh yêu, bữa tối xong rồi."},
+    {"fr": "Elle embrasse son chéri.", "vi": "Cô ấy hôn người yêu dấu của mình."}
+  ],
+  "prison": [
+    {"fr": "Le voleur est en prison.", "vi": "Tên trộm đang ở trong tù."},
+    {"fr": "La prison est près de la ville.", "vi": "Nhà tù ở gần thành phố."},
+    {"fr": "Il a passé deux ans en prison.", "vi": "Anh ta đã ở tù hai năm."}
+  ],
+  "naître": [
+    {"fr": "Je suis né en été.", "vi": "Tôi sinh ra vào mùa hè."},
+    {"fr": "Le bébé va naître bientôt.", "vi": "Em bé sắp chào đời."},
+    {"fr": "Elle est née à Paris.", "vi": "Cô ấy sinh ra ở Paris."}
+  ],
+  "honneur": [
+    {"fr": "C'est un grand honneur pour moi.", "vi": "Đây là một vinh dự lớn với tôi."},
+    {"fr": "Il défend son honneur.", "vi": "Anh ấy bảo vệ danh dự của mình."},
+    {"fr": "À toi l'honneur !", "vi": "Vinh dự dành cho bạn đấy!"}
+  ],
+  "faux": [
+    {"fr": "Cette réponse est fausse.", "vi": "Câu trả lời này sai."},
+    {"fr": "Il porte de faux papiers.", "vi": "Hắn mang giấy tờ giả."},
+    {"fr": "C'est un faux sourire.", "vi": "Đó là một nụ cười giả tạo."}
+  ],
+  "seigneur": [
+    {"fr": "Le seigneur habite dans le château.", "vi": "Lãnh chúa sống trong lâu đài."},
+    {"fr": "Merci, Seigneur.", "vi": "Cảm tạ Chúa."},
+    {"fr": "Le seigneur protège son village.", "vi": "Lãnh chúa bảo vệ ngôi làng của mình."}
+  ],
+  "oser": [
+    {"fr": "Je n'ose pas lui parler.", "vi": "Tôi không dám nói chuyện với anh ấy."},
+    {"fr": "Elle ose poser la question.", "vi": "Cô ấy dám đặt câu hỏi."},
+    {"fr": "Tu oses faire ça ?", "vi": "Bạn dám làm việc đó sao?"}
+  ],
+  "soldat": [
+    {"fr": "Le soldat porte un uniforme.", "vi": "Người lính mặc quân phục."},
+    {"fr": "Les soldats marchent dans la rue.", "vi": "Những người lính diễu hành trên đường."},
+    {"fr": "Mon grand-père était soldat.", "vi": "Ông tôi từng là lính."}
+  ],
+  "pierre": [
+    {"fr": "Il jette une pierre dans l'eau.", "vi": "Anh ấy ném một viên đá xuống nước."},
+    {"fr": "Le mur est en pierre.", "vi": "Bức tường được xây bằng đá."},
+    {"fr": "L'enfant ramasse une pierre.", "vi": "Đứa trẻ nhặt một viên đá."}
+  ],
+  "impression": [
+    {"fr": "J'ai une bonne impression de lui.", "vi": "Tôi có ấn tượng tốt về anh ấy."},
+    {"fr": "J'ai l'impression qu'il pleut.", "vi": "Tôi có cảm giác trời đang mưa."},
+    {"fr": "Cette ville fait bonne impression.", "vi": "Thành phố này gây ấn tượng tốt."}
+  ],
+  "nez": [
+    {"fr": "J'ai mal au nez.", "vi": "Tôi bị đau mũi."},
+    {"fr": "Le clown a un gros nez.", "vi": "Chú hề có cái mũi to."},
+    {"fr": "Elle a un petit nez.", "vi": "Cô ấy có cái mũi nhỏ."}
+  ],
+  "souffrir": [
+    {"fr": "Il souffre beaucoup.", "vi": "Anh ấy đau đớn rất nhiều."},
+    {"fr": "Je souffre du froid.", "vi": "Tôi chịu đựng cái lạnh."},
+    {"fr": "Elle souffre en silence.", "vi": "Cô ấy chịu đựng trong im lặng."}
+  ],
+  "laquelle": [
+    {"fr": "Laquelle de ces robes préfères-tu ?", "vi": "Bạn thích chiếc váy nào trong số này?"},
+    {"fr": "Voici la maison dans laquelle j'habite.", "vi": "Đây là ngôi nhà mà tôi đang sống."},
+    {"fr": "Laquelle est la tienne ?", "vi": "Cái nào là của bạn?"}
+  ],
+  "assurer": [
+    {"fr": "Je t'assure que c'est vrai.", "vi": "Tôi đảm bảo với bạn là chuyện đó thật."},
+    {"fr": "Il assure sa voiture.", "vi": "Anh ấy mua bảo hiểm cho xe."},
+    {"fr": "Elle assure le repas ce soir.", "vi": "Cô ấy lo bữa ăn tối nay."}
+  ],
+  "village": [
+    {"fr": "Mes grands-parents vivent dans un village.", "vi": "Ông bà tôi sống ở một ngôi làng."},
+    {"fr": "Le village est très calme.", "vi": "Ngôi làng rất yên tĩnh."},
+    {"fr": "Il y a une école dans le village.", "vi": "Có một ngôi trường trong làng."}
+  ],
+  "mener": [
+    {"fr": "Ce chemin mène à la mer.", "vi": "Con đường này dẫn ra biển."},
+    {"fr": "Elle mène les enfants à l'école.", "vi": "Cô ấy dẫn bọn trẻ đến trường."},
+    {"fr": "Cette rue mène au marché.", "vi": "Con phố này dẫn tới chợ."}
+  ],
+  "passé": [
+    {"fr": "Il faut oublier le passé.", "vi": "Cần phải quên đi quá khứ."},
+    {"fr": "La semaine passée, j'étais malade.", "vi": "Tuần trước, tôi bị ốm."},
+    {"fr": "Ne pense pas au passé.", "vi": "Đừng nghĩ về quá khứ."}
+  ],
+  "sujet": [
+    {"fr": "Quel est le sujet du livre ?", "vi": "Chủ đề của cuốn sách là gì?"},
+    {"fr": "Nous parlons d'un sujet important.", "vi": "Chúng tôi nói về một chủ đề quan trọng."},
+    {"fr": "C'est un sujet difficile.", "vi": "Đây là một đề tài khó."}
+  ],
+  "médecin": [
+    {"fr": "Je vais chez le médecin.", "vi": "Tôi đi khám bác sĩ."},
+    {"fr": "Le médecin est très gentil.", "vi": "Vị bác sĩ rất tử tế."},
+    {"fr": "Ma sœur veut devenir médecin.", "vi": "Chị tôi muốn trở thành bác sĩ."}
+  ],
+  "signe": [
+    {"fr": "Il me fait un signe de la main.", "vi": "Anh ấy vẫy tay ra hiệu cho tôi."},
+    {"fr": "C'est un bon signe.", "vi": "Đó là một dấu hiệu tốt."},
+    {"fr": "Le sourire est un signe de joie.", "vi": "Nụ cười là dấu hiệu của niềm vui."}
+  ],
+  "apercevoir": [
+    {"fr": "J'aperçois la mer au loin.", "vi": "Tôi thoáng thấy biển ở phía xa."},
+    {"fr": "Elle aperçoit son ami dans la rue.", "vi": "Cô ấy thoáng thấy bạn mình trên phố."},
+    {"fr": "Il s'aperçoit de son erreur.", "vi": "Anh ấy nhận ra lỗi của mình."}
+  ],
+  "craindre": [
+    {"fr": "Je crains le froid.", "vi": "Tôi sợ cái lạnh."},
+    {"fr": "Elle craint les chiens.", "vi": "Cô ấy sợ chó."},
+    {"fr": "N'aie pas peur, il n'y a rien à craindre.", "vi": "Đừng sợ, chẳng có gì đáng e ngại cả."}
+  ],
+  "doucement": [
+    {"fr": "Parle doucement, le bébé dort.", "vi": "Nói nhẹ thôi, em bé đang ngủ."},
+    {"fr": "Il conduit doucement.", "vi": "Anh ấy lái xe từ từ."},
+    {"fr": "Ferme la porte doucement.", "vi": "Hãy đóng cửa nhẹ nhàng."}
+  ],
+  "serrer": [
+    {"fr": "Il me serre dans ses bras.", "vi": "Anh ấy ôm chặt tôi trong vòng tay."},
+    {"fr": "Serre bien ta ceinture.", "vi": "Hãy siết chặt dây an toàn."},
+    {"fr": "Elle serre la main du professeur.", "vi": "Cô ấy bắt tay thầy giáo."}
+  ],
+  "ajouter": [
+    {"fr": "J'ajoute du sucre dans mon café.", "vi": "Tôi thêm đường vào cà phê."},
+    {"fr": "Ajoute un peu de sel.", "vi": "Hãy thêm một chút muối."},
+    {"fr": "Elle ajoute son nom sur la liste.", "vi": "Cô ấy thêm tên mình vào danh sách."}
+  ],
+  "impossible": [
+    {"fr": "C'est impossible de finir aujourd'hui.", "vi": "Không thể hoàn thành trong hôm nay."},
+    {"fr": "Rien n'est impossible.", "vi": "Không có gì là bất khả thi."},
+    {"fr": "Il est impossible de dormir ici.", "vi": "Không thể ngủ được ở đây."}
+  ],
+  "glisser": [
+    {"fr": "Attention, le sol glisse !", "vi": "Cẩn thận, sàn trơn đấy!"},
+    {"fr": "Il glisse sur la glace.", "vi": "Anh ấy trượt trên băng."},
+    {"fr": "Le poisson glisse entre mes mains.", "vi": "Con cá tuột khỏi tay tôi."}
+  ],
+  "lorsque": [
+    {"fr": "Lorsque je rentre, je mange.", "vi": "Khi tôi về nhà, tôi ăn cơm."},
+    {"fr": "Elle sourit lorsqu'elle me voit.", "vi": "Cô ấy mỉm cười khi thấy tôi."},
+    {"fr": "Lorsque le train arrive, nous partons.", "vi": "Khi tàu đến, chúng tôi lên đường."}
+  ],
+  "maintenir": [
+    {"fr": "Il faut maintenir la porte ouverte.", "vi": "Cần phải giữ cửa mở."},
+    {"fr": "Elle maintient un bon rythme.", "vi": "Cô ấy duy trì một nhịp độ tốt."},
+    {"fr": "Nous maintenons de bonnes relations.", "vi": "Chúng tôi giữ mối quan hệ tốt."}
+  ],
+  "bonheur": [
+    {"fr": "Je te souhaite beaucoup de bonheur.", "vi": "Tôi chúc bạn thật nhiều hạnh phúc."},
+    {"fr": "Le bonheur est simple.", "vi": "Hạnh phúc thật giản đơn."},
+    {"fr": "Sa famille est son bonheur.", "vi": "Gia đình là hạnh phúc của anh ấy."}
+  ],
+  "rejoindre": [
+    {"fr": "Je te rejoins au café.", "vi": "Tôi sẽ gặp bạn ở quán cà phê."},
+    {"fr": "Elle rejoint ses amis à la gare.", "vi": "Cô ấy gặp bạn bè ở nhà ga."},
+    {"fr": "Il veut rejoindre l'équipe.", "vi": "Anh ấy muốn gia nhập đội."}
+  ],
+  "cesser": [
+    {"fr": "La pluie a cessé.", "vi": "Mưa đã tạnh."},
+    {"fr": "Cesse de parler !", "vi": "Ngừng nói đi!"},
+    {"fr": "Le bruit ne cesse pas.", "vi": "Tiếng ồn không ngừng lại."}
+  ],
+  "vivant": [
+    {"fr": "Le poisson est encore vivant.", "vi": "Con cá vẫn còn sống."},
+    {"fr": "Cette ville est très vivante.", "vi": "Thành phố này rất sống động."},
+    {"fr": "Il est vivant, quelle chance !", "vi": "Anh ấy còn sống, thật may mắn!"}
+  ],
+  "propos": [
+    {"fr": "Ses propos sont gentils.", "vi": "Lời nói của anh ấy rất tử tế."},
+    {"fr": "À propos, où vas-tu ?", "vi": "Nhân tiện, bạn đi đâu vậy?"},
+    {"fr": "Je ne comprends pas ses propos.", "vi": "Tôi không hiểu lời anh ấy nói."}
+  ],
+  "groupe": [
+    {"fr": "Nous travaillons en groupe.", "vi": "Chúng tôi làm việc theo nhóm."},
+    {"fr": "Un groupe d'amis chante.", "vi": "Một nhóm bạn đang hát."},
+    {"fr": "Le groupe visite le musée.", "vi": "Nhóm đi tham quan bảo tàng."}
+  ],
+  "lèvre": [
+    {"fr": "Elle a de belles lèvres.", "vi": "Cô ấy có đôi môi đẹp."},
+    {"fr": "Il met un doigt sur ses lèvres.", "vi": "Anh ấy đặt ngón tay lên môi."},
+    {"fr": "Mes lèvres sont sèches.", "vi": "Môi tôi bị khô."}
+  ],
+  "doux": [
+    {"fr": "Ce gâteau est très doux.", "vi": "Chiếc bánh này rất ngọt."},
+    {"fr": "Sa voix est douce.", "vi": "Giọng nói của cô ấy dịu dàng."},
+    {"fr": "Le temps est doux aujourd'hui.", "vi": "Thời tiết hôm nay dịu mát."}
+  ],
+  "lancer": [
+    {"fr": "Il lance la balle au chien.", "vi": "Anh ấy ném bóng cho con chó."},
+    {"fr": "Lance-moi les clés !", "vi": "Ném chìa khóa cho tôi đi!"},
+    {"fr": "Les enfants lancent le ballon.", "vi": "Bọn trẻ tung quả bóng."}
+  ],
+  "balle": [
+    {"fr": "Le chien court après la balle.", "vi": "Con chó chạy đuổi theo quả bóng."},
+    {"fr": "Il attrape la balle.", "vi": "Anh ấy bắt lấy quả bóng."},
+    {"fr": "La balle roule sous la table.", "vi": "Quả bóng lăn xuống gầm bàn."}
+  ],
+  "scène": [
+    {"fr": "Les acteurs sont sur la scène.", "vi": "Các diễn viên đang ở trên sân khấu."},
+    {"fr": "Cette scène du film est triste.", "vi": "Cảnh này trong phim thật buồn."},
+    {"fr": "La chanteuse monte sur scène.", "vi": "Nữ ca sĩ bước lên sân khấu."}
+  ],
+  "vue": [
+    {"fr": "La vue est magnifique d'ici.", "vi": "Từ đây tầm nhìn thật tuyệt đẹp."},
+    {"fr": "J'ai une belle vue sur la mer.", "vi": "Tôi có tầm nhìn đẹp ra biển."},
+    {"fr": "Il a une bonne vue.", "vi": "Anh ấy có thị lực tốt."}
+  ],
+  "jardin": [
+    {"fr": "Les enfants jouent dans le jardin.", "vi": "Bọn trẻ chơi trong vườn."},
+    {"fr": "Il y a des roses dans mon jardin.", "vi": "Có hoa hồng trong vườn nhà tôi."},
+    {"fr": "Nous prenons le café au jardin.", "vi": "Chúng tôi uống cà phê ngoài vườn."}
+  ],
+  "parmi": [
+    {"fr": "Il est parmi mes amis.", "vi": "Anh ấy nằm trong số bạn bè của tôi."},
+    {"fr": "Choisis un livre parmi ceux-ci.", "vi": "Hãy chọn một cuốn sách trong số này."},
+    {"fr": "Parmi nous, elle est la plus jeune.", "vi": "Trong số chúng tôi, cô ấy trẻ nhất."}
+  ],
+  "échapper": [
+    {"fr": "Le chat échappe à la pluie.", "vi": "Con mèo trốn khỏi cơn mưa."},
+    {"fr": "Le voleur a échappé à la police.", "vi": "Tên trộm đã thoát khỏi cảnh sát."},
+    {"fr": "Le verre m'échappe des mains.", "vi": "Cái ly tuột khỏi tay tôi."}
+  ],
+  "robe": [
+    {"fr": "Elle porte une jolie robe.", "vi": "Cô ấy mặc một chiếc váy xinh."},
+    {"fr": "Cette robe rouge est chère.", "vi": "Chiếc đầm đỏ này đắt tiền."},
+    {"fr": "J'achète une robe pour la fête.", "vi": "Tôi mua một chiếc váy cho bữa tiệc."}
+  ],
+  "sûrement": [
+    {"fr": "Il va sûrement pleuvoir demain.", "vi": "Ngày mai chắc chắn sẽ mưa."},
+    {"fr": "Elle est sûrement à la maison.", "vi": "Chắc hẳn cô ấy đang ở nhà."},
+    {"fr": "Tu as sûrement raison.", "vi": "Bạn chắc chắn đúng rồi."}
+  ],
+  "peuple": [
+    {"fr": "Le peuple français aime le pain.", "vi": "Dân tộc Pháp yêu thích bánh mì."},
+    {"fr": "Le peuple veut la paix.", "vi": "Nhân dân mong muốn hòa bình."},
+    {"fr": "C'est un peuple courageux.", "vi": "Đó là một dân tộc dũng cảm."}
+  ],
+  "avis": [
+    {"fr": "À mon avis, c'est une bonne idée.", "vi": "Theo tôi, đó là một ý tưởng hay."},
+    {"fr": "Quel est ton avis ?", "vi": "Ý kiến của bạn thế nào?"},
+    {"fr": "Je change d'avis.", "vi": "Tôi đổi ý rồi."}
+  ],
+  "humain": [
+    {"fr": "L'être humain a besoin d'eau.", "vi": "Con người cần nước."},
+    {"fr": "C'est une erreur humaine.", "vi": "Đó là một sai lầm của con người."},
+    {"fr": "Elle est très humaine avec les autres.", "vi": "Cô ấy rất nhân văn với người khác."}
+  ],
+  "lui-même": [
+    {"fr": "Il a fait le gâteau lui-même.", "vi": "Chính anh ấy đã làm chiếc bánh."},
+    {"fr": "Le président est venu lui-même.", "vi": "Chính tổng thống đã đích thân đến."},
+    {"fr": "Il répare la voiture lui-même.", "vi": "Anh ấy tự mình sửa chiếc xe."}
+  ],
+  "tranquille": [
+    {"fr": "Ce quartier est très tranquille.", "vi": "Khu phố này rất yên tĩnh."},
+    {"fr": "Laisse-moi tranquille, s'il te plaît.", "vi": "Hãy để tôi yên, làm ơn."},
+    {"fr": "Nous passons une soirée tranquille.", "vi": "Chúng tôi có một buổi tối bình yên."}
+  ],
+  "intérieur": [
+    {"fr": "Il fait chaud à l'intérieur.", "vi": "Bên trong trời ấm áp."},
+    {"fr": "L'intérieur de la maison est joli.", "vi": "Nội thất ngôi nhà rất đẹp."},
+    {"fr": "Nous restons à l'intérieur quand il pleut.", "vi": "Chúng tôi ở trong nhà khi trời mưa."}
+  ],
+  "sentiment": [
+    {"fr": "J'ai un bon sentiment.", "vi": "Tôi có một cảm giác tốt."},
+    {"fr": "Elle cache ses sentiments.", "vi": "Cô ấy giấu đi cảm xúc của mình."},
+    {"fr": "C'est un beau sentiment.", "vi": "Đó là một tình cảm đẹp."}
+  ],
+  "avion": [
+    {"fr": "L'avion part à midi.", "vi": "Máy bay cất cánh lúc trưa."},
+    {"fr": "J'ai peur en avion.", "vi": "Tôi sợ khi đi máy bay."},
+    {"fr": "Nous prenons l'avion pour Paris.", "vi": "Chúng tôi đi máy bay tới Paris."}
+  ],
+  "chat": [
+    {"fr": "Mon chat dort sur le lit.", "vi": "Con mèo của tôi ngủ trên giường."},
+    {"fr": "Le chat boit du lait.", "vi": "Con mèo uống sữa."},
+    {"fr": "J'ai un petit chat noir.", "vi": "Tôi có một con mèo đen nhỏ."}
+  ],
+  "brûler": [
+    {"fr": "Le feu brûle dans la cheminée.", "vi": "Lửa cháy trong lò sưởi."},
+    {"fr": "Attention, tu vas te brûler !", "vi": "Cẩn thận, bạn sẽ bị bỏng đấy!"},
+    {"fr": "Le soleil brûle ma peau.", "vi": "Nắng làm bỏng da tôi."}
+  ],
+  "odeur": [
+    {"fr": "J'aime l'odeur du café.", "vi": "Tôi thích mùi cà phê."},
+    {"fr": "Cette fleur a une bonne odeur.", "vi": "Bông hoa này có mùi thơm."},
+    {"fr": "Il y a une mauvaise odeur ici.", "vi": "Ở đây có mùi khó chịu."}
+  ],
+  "camp": [
+    {"fr": "Nous montons le camp près du lac.", "vi": "Chúng tôi dựng trại gần hồ."},
+    {"fr": "Les soldats rentrent au camp.", "vi": "Những người lính trở về trại."},
+    {"fr": "Il est dans notre camp.", "vi": "Anh ấy ở phe của chúng ta."}
+  ],
+  "bateau": [
+    {"fr": "Le bateau part ce matin.", "vi": "Con thuyền khởi hành sáng nay."},
+    {"fr": "Nous faisons du bateau sur le lac.", "vi": "Chúng tôi đi thuyền trên hồ."},
+    {"fr": "Le bateau traverse la mer.", "vi": "Con tàu vượt qua biển."}
+  ],
+  "garde": [
+    {"fr": "Le garde surveille la porte.", "vi": "Người bảo vệ canh gác cửa."},
+    {"fr": "Le chien monte la garde.", "vi": "Con chó đứng canh gác."},
+    {"fr": "Un garde travaille devant la banque.", "vi": "Một người bảo vệ làm việc trước ngân hàng."}
+  ],
+  "installer": [
+    {"fr": "Il installe la télé dans le salon.", "vi": "Anh ấy lắp cái tivi trong phòng khách."},
+    {"fr": "Nous installons une nouvelle table.", "vi": "Chúng tôi kê một chiếc bàn mới."},
+    {"fr": "Elle s'installe dans le fauteuil.", "vi": "Cô ấy ngồi vào chiếc ghế bành."}
+  ],
+  "situation": [
+    {"fr": "La situation est difficile.", "vi": "Tình huống rất khó khăn."},
+    {"fr": "Explique-moi la situation.", "vi": "Hãy giải thích cho tôi tình hình."},
+    {"fr": "C'est une situation normale.", "vi": "Đây là một tình huống bình thường."}
+  ]
+}

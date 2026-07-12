@@ -1,0 +1,1920 @@
+[
+ {
+  "id": "de",
+  "pos": [
+   "mạo từ",
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/də/"
+ },
+ {
+  "id": "être",
+  "pos": [
+   "trợ động từ",
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 3,
+  "ipa": "/ɛtʁ/"
+ },
+ {
+  "id": "je",
+  "pos": [
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/ʒə/"
+ },
+ {
+  "id": "ne",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/nə/"
+ },
+ {
+  "id": "la",
+  "pos": [
+   "mạo từ",
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/la/"
+ },
+ {
+  "id": "avoir",
+  "pos": [
+   "trợ động từ",
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 2,
+  "ipa": "/avwaʁ/"
+ },
+ {
+  "id": "et",
+  "pos": [
+   "liên từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/e/"
+ },
+ {
+  "id": "le",
+  "pos": [
+   "mạo từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/lə/"
+ },
+ {
+  "id": "à",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/a/"
+ },
+ {
+  "id": "pas",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/pa/"
+ },
+ {
+  "id": "il",
+  "pos": [
+   "số từ",
+   "phó từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/il/"
+ },
+ {
+  "id": "un",
+  "pos": [
+   "số từ",
+   "mạo từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/œ̃/"
+ },
+ {
+  "id": "les",
+  "pos": [
+   "mạo từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/le/"
+ },
+ {
+  "id": "l'",
+  "pos": [
+   "mạo từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/l/"
+ },
+ {
+  "id": "tu",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ty/"
+ },
+ {
+  "id": "vous",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/vu/"
+ },
+ {
+  "id": "d'",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/d/"
+ },
+ {
+  "id": "une",
+  "pos": [
+   "số từ",
+   "mạo từ",
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/yn/"
+ },
+ {
+  "id": "des",
+  "pos": [
+   "mạo từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/de/"
+ },
+ {
+  "id": "faire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/fɛʁ/"
+ },
+ {
+  "id": "aller",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 3,
+  "ipa": "/ale/"
+ },
+ {
+  "id": "on",
+  "pos": [
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɔ̃/"
+ },
+ {
+  "id": "en",
+  "pos": [
+   "phó từ",
+   "giới từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ɑ̃/"
+ },
+ {
+  "id": "pour",
+  "pos": [
+   "danh từ",
+   "giới từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/puʁ/"
+ },
+ {
+  "id": "qui",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ki/"
+ },
+ {
+  "id": "ça",
+  "pos": [
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/sa/"
+ },
+ {
+  "id": "dans",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/dɑ̃/"
+ },
+ {
+  "id": "elle",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ɛl/"
+ },
+ {
+  "id": "dire",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 3,
+  "ipa": "/diʁ/"
+ },
+ {
+  "id": "du",
+  "pos": [
+   "mạo từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/dy/"
+ },
+ {
+  "id": "mais",
+  "pos": [
+   "phó từ",
+   "liên từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/mɛ/"
+ },
+ {
+  "id": "me",
+  "pos": [
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/mə/"
+ },
+ {
+  "id": "plus",
+  "pos": [
+   "phó từ",
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 3,
+  "ipa": "/plys/"
+ },
+ {
+  "id": "nous",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/nu/"
+ },
+ {
+  "id": "pouvoir",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 2,
+  "ipa": "/puvwaʁ/"
+ },
+ {
+  "id": "au",
+  "pos": [
+   "mạo từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/o/"
+ },
+ {
+  "id": "se",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/sə/"
+ },
+ {
+  "id": "ce",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/sø/"
+ },
+ {
+  "id": "y",
+  "pos": [
+   "danh từ",
+   "đại từ",
+   "động từ"
+  ],
+  "gender": "m",
+  "verb_group": 3,
+  "ipa": "/i/"
+ },
+ {
+  "id": "avec",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/avɛk/"
+ },
+ {
+  "id": "vouloir",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 2,
+  "ipa": "/vulwaʁ/"
+ },
+ {
+  "id": "que",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kə/"
+ },
+ {
+  "id": "sur",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "giới từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/syʁ/"
+ },
+ {
+  "id": "s'",
+  "pos": [
+   "liên từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/s/"
+ },
+ {
+  "id": "bien",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/bjɛ̃/"
+ },
+ {
+  "id": "savoir",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 2,
+  "ipa": "/savwaʁ/"
+ },
+ {
+  "id": "voir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/vwaʁ/"
+ },
+ {
+  "id": "mon",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/mɔ̃/"
+ },
+ {
+  "id": "lui",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/lɥi/"
+ },
+ {
+  "id": "tout",
+  "pos": [
+   "tính từ",
+   "hạn định từ",
+   "phó từ",
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/tu/"
+ },
+ {
+  "id": "ils",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/il/"
+ },
+ {
+  "id": "moi",
+  "pos": [
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/mwa/"
+ },
+ {
+  "id": "son",
+  "pos": [
+   "hạn định từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/sɔ̃/"
+ },
+ {
+  "id": "t'",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/t/"
+ },
+ {
+  "id": "non",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/nɔ̃/"
+ },
+ {
+  "id": "comme",
+  "pos": [
+   "phó từ",
+   "liên từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kɔm/"
+ },
+ {
+  "id": "te",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/tə/"
+ },
+ {
+  "id": "par",
+  "pos": [
+   "danh từ",
+   "giới từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/paʁ/"
+ },
+ {
+  "id": "devoir",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 2,
+  "ipa": "/dəvwaʁ/"
+ },
+ {
+  "id": "venir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/vəniʁ/"
+ },
+ {
+  "id": "sa",
+  "pos": [
+   "hạn định từ",
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/sa/"
+ },
+ {
+  "id": "oui",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/wi/"
+ },
+ {
+  "id": "où",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/u/"
+ },
+ {
+  "id": "ma",
+  "pos": [
+   "hạn định từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ma/"
+ },
+ {
+  "id": "cette",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/sɛt/"
+ },
+ {
+  "id": "rien",
+  "pos": [
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʁjɛ̃/"
+ },
+ {
+  "id": "ou",
+  "pos": [
+   "liên từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/u/"
+ },
+ {
+  "id": "prendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/pʁɑ̃dʁ/"
+ },
+ {
+  "id": "ses",
+  "pos": [
+   "hạn định từ",
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/se/"
+ },
+ {
+  "id": "là",
+  "pos": [
+   "phó từ",
+   "tượng thanh"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/la/"
+ },
+ {
+  "id": "toi",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/twa/"
+ },
+ {
+  "id": "quand",
+  "pos": [
+   "phó từ",
+   "liên từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kɑ̃/"
+ },
+ {
+  "id": "ici",
+  "pos": [
+   "số từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/isi/"
+ },
+ {
+  "id": "si",
+  "pos": [
+   "phó từ",
+   "liên từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/si/"
+ },
+ {
+  "id": "suivre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/sɥivʁ/"
+ },
+ {
+  "id": "parler",
+  "pos": [
+   "động từ",
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 1,
+  "ipa": "/paʁle/"
+ },
+ {
+  "id": "falloir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/falwaʁ/"
+ },
+ {
+  "id": "sans",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/sɑ̃/"
+ },
+ {
+  "id": "chose",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/ʃoz/"
+ },
+ {
+  "id": "alors",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/alɔʁ/"
+ },
+ {
+  "id": "croire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/kʁwaʁ/"
+ },
+ {
+  "id": "très",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/tʁɛ/"
+ },
+ {
+  "id": "aussi",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/osi/"
+ },
+ {
+  "id": "passer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/pase/"
+ },
+ {
+  "id": "ces",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/se/"
+ },
+ {
+  "id": "encore",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ɑ̃kɔʁ/"
+ },
+ {
+  "id": "aimer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/eme/"
+ },
+ {
+  "id": "votre",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/vɔtʁ/"
+ },
+ {
+  "id": "petit",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/pəti/"
+ },
+ {
+  "id": "jamais",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ʒamɛ/"
+ },
+ {
+  "id": "aux",
+  "pos": [
+   "mạo từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/o/"
+ },
+ {
+  "id": "bon",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ",
+   "tượng thanh"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/bɔ̃/"
+ },
+ {
+  "id": "penser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/pɑ̃se/"
+ },
+ {
+  "id": "homme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɔm/"
+ },
+ {
+  "id": "deux",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/dø/"
+ },
+ {
+  "id": "trouver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/tʁuve/"
+ },
+ {
+  "id": "jour",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʒuʁ/"
+ },
+ {
+  "id": "ton",
+  "pos": [
+   "hạn định từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/tɔ̃/"
+ },
+ {
+  "id": "laisser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/lese/"
+ },
+ {
+  "id": "temps",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/tɑ̃/"
+ },
+ {
+  "id": "regarder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ʁəɡaʁde/"
+ },
+ {
+  "id": "attendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/atɑ̃dʁ/"
+ },
+ {
+  "id": "même",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/mɛm/"
+ },
+ {
+  "id": "quoi",
+  "pos": [
+   "tính từ",
+   "tượng thanh",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kwa/"
+ },
+ {
+  "id": "donner",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 1,
+  "ipa": "/done/"
+ },
+ {
+  "id": "toujours",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/tuʒuʁ/"
+ },
+ {
+  "id": "mes",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/me/"
+ },
+ {
+  "id": "arriver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/aʁive/"
+ },
+ {
+  "id": "mettre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/mɛtʁ/"
+ },
+ {
+  "id": "femme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/fam/"
+ },
+ {
+  "id": "fois",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/fwa/"
+ },
+ {
+  "id": "vie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/vi/"
+ },
+ {
+  "id": "peu",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/pø/"
+ },
+ {
+  "id": "demander",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/dəmɑ̃de/"
+ },
+ {
+  "id": "pourquoi",
+  "pos": [
+   "phó từ",
+   "liên từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/puʁkwa/"
+ },
+ {
+  "id": "rester",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ʁɛste/"
+ },
+ {
+  "id": "seul",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/sœl/"
+ },
+ {
+  "id": "notre",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/nɔtʁ/"
+ },
+ {
+  "id": "appeler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/apəle/"
+ },
+ {
+  "id": "grand",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɡʁɑ̃/"
+ },
+ {
+  "id": "partir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/paʁtiʁ/"
+ },
+ {
+  "id": "ta",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ta/"
+ },
+ {
+  "id": "trop",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/tʁo/"
+ },
+ {
+  "id": "connaître",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/konɛtʁ/"
+ },
+ {
+  "id": "père",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/pɛʁ/"
+ },
+ {
+  "id": "peut-être",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/pøtɛtʁ/"
+ },
+ {
+  "id": "autre",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/otʁ/"
+ },
+ {
+  "id": "maintenant",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/mɛ̃tənɑ̃/"
+ },
+ {
+  "id": "heure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/œʁ/"
+ },
+ {
+  "id": "monde",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/mɔ̃d/"
+ },
+ {
+  "id": "an",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɑ̃/"
+ },
+ {
+  "id": "main",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/mɛ̃/"
+ },
+ {
+  "id": "comprendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/kɔ̃pʁɑ̃dʁ/"
+ },
+ {
+  "id": "sortir",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 2,
+  "ipa": "/sɔʁtiʁ/"
+ },
+ {
+  "id": "arrêter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/aʁete/"
+ },
+ {
+  "id": "chez",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ʃe/"
+ },
+ {
+  "id": "quelque",
+  "pos": [
+   "hạn định từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kɛlk/"
+ },
+ {
+  "id": "fille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/fij/"
+ },
+ {
+  "id": "oeil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/œj/"
+ },
+ {
+  "id": "enfant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɑ̃fɑ̃/"
+ },
+ {
+  "id": "sûr",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/syʁ/"
+ },
+ {
+  "id": "entendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/ɑ̃tɑ̃dʁ/"
+ },
+ {
+  "id": "mère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/mɛʁ/"
+ },
+ {
+  "id": "mourir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/muʁiʁ/"
+ },
+ {
+  "id": "dieu",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/djø/"
+ },
+ {
+  "id": "vraiment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/vʁɛmɑ̃/"
+ },
+ {
+  "id": "déjà",
+  "pos": [
+   "phó từ",
+   "tượng thanh"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/deʒa/"
+ },
+ {
+  "id": "après",
+  "pos": [
+   "phó từ",
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/apʁɛ/"
+ },
+ {
+  "id": "vrai",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/vʁɛ/"
+ },
+ {
+  "id": "tête",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/tɛt/"
+ },
+ {
+  "id": "beau",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/bo/"
+ },
+ {
+  "id": "comment",
+  "pos": [
+   "phó từ",
+   "liên từ",
+   "danh từ",
+   "tượng thanh"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/komɑ̃/"
+ },
+ {
+  "id": "nuit",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/nɥi/"
+ },
+ {
+  "id": "tuer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/tɥe/"
+ },
+ {
+  "id": "coup",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ku/"
+ },
+ {
+  "id": "oh",
+  "pos": [
+   "danh từ",
+   "tượng thanh"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/o/"
+ },
+ {
+  "id": "sentir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/sɑ̃tiʁ/"
+ },
+ {
+  "id": "chercher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ʃɛʁʃe/"
+ },
+ {
+  "id": "sous",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/su/"
+ },
+ {
+  "id": "tenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/təniʁ/"
+ },
+ {
+  "id": "maison",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/mɛzɔ̃/"
+ },
+ {
+  "id": "cela",
+  "pos": [
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/səla/"
+ },
+ {
+  "id": "ami",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ami/"
+ },
+ {
+  "id": "merci",
+  "pos": [
+   "danh từ",
+   "tượng thanh"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/mɛʁsi/"
+ },
+ {
+  "id": "moins",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/mwɛ̃/"
+ },
+ {
+  "id": "monsieur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/məsjø/"
+ },
+ {
+  "id": "soir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/swaʁ/"
+ },
+ {
+  "id": "besoin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/bəzwɛ̃/"
+ },
+ {
+  "id": "voilà",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/vwala/"
+ },
+ {
+  "id": "air",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɛʁ/"
+ },
+ {
+  "id": "revenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/ʁəvəniʁ/"
+ },
+ {
+  "id": "beaucoup",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/boku/"
+ },
+ {
+  "id": "entre",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ɑ̃tʁ/"
+ },
+ {
+  "id": "mieux",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/mjø/"
+ },
+ {
+  "id": "avant",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ",
+   "giới từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/avɑ̃/"
+ },
+ {
+  "id": "nos",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/no/"
+ },
+ {
+  "id": "donc",
+  "pos": [
+   "liên từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/dɔ̃k/"
+ },
+ {
+  "id": "moment",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/momɑ̃/"
+ },
+ {
+  "id": "essayer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/eseje/"
+ },
+ {
+  "id": "gens",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ʒɑ̃/"
+ },
+ {
+  "id": "vers",
+  "pos": [
+   "danh từ",
+   "giới từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/vɛʁ/"
+ },
+ {
+  "id": "dont",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/dɔ̃/"
+ },
+ {
+  "id": "accord",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/akɔʁ/"
+ },
+ {
+  "id": "depuis",
+  "pos": [
+   "phó từ",
+   "giới từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/dəpɥi/"
+ },
+ {
+  "id": "finir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/finiʁ/"
+ },
+ {
+  "id": "quel",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kɛl/"
+ },
+ {
+  "id": "leurs",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/lœʁ/"
+ },
+ {
+  "id": "nom",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/nɔ̃/"
+ },
+ {
+  "id": "cet",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/sɛt/"
+ },
+ {
+  "id": "quelques",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kɛlk/"
+ },
+ {
+  "id": "premier",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/pʁømje/"
+ },
+ {
+  "id": "elles",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ɛl/"
+ },
+ {
+  "id": "trois",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/tʁwa/"
+ },
+ {
+  "id": "rendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/ʁɑ̃dʁ/"
+ },
+ {
+  "id": "ni",
+  "pos": [
+   "liên từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ni/"
+ },
+ {
+  "id": "vivre",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": 3,
+  "ipa": "/vivʁ/"
+ },
+ {
+  "id": "puis",
+  "pos": [
+   "phó từ",
+   "liên từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/pɥi/"
+ },
+ {
+  "id": "perdre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/pɛʁdʁ/"
+ },
+ {
+  "id": "jouer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ʒwe/"
+ },
+ {
+  "id": "aider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ede/"
+ }
+]

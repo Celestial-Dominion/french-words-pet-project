@@ -1,0 +1,826 @@
+[
+ {
+  "id": "protéger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bảo vệ"
+ },
+ {
+  "id": "faim",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự đói, cơn đói"
+ },
+ {
+  "id": "prévenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "báo trước, cảnh báo; phòng ngừa"
+ },
+ {
+  "id": "cuisine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhà bếp; việc nấu ăn"
+ },
+ {
+  "id": "boîte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hộp; hộp đêm"
+ },
+ {
+  "id": "remonter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi lên lại, leo lên; lên dây"
+ },
+ {
+  "id": "exemple",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ví dụ"
+ },
+ {
+  "id": "manière",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cách, cách thức"
+ },
+ {
+  "id": "couvrir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "che, phủ, đậy"
+ },
+ {
+  "id": "ancien",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cũ, cổ; cựu, nguyên"
+ },
+ {
+  "id": "réfléchir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "suy nghĩ, cân nhắc"
+ },
+ {
+  "id": "bonsoir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chào buổi tối"
+ },
+ {
+  "id": "remarquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhận thấy, chú ý"
+ },
+ {
+  "id": "joie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "niềm vui"
+ },
+ {
+  "id": "entier",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "toàn bộ, nguyên vẹn"
+ },
+ {
+  "id": "charger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chất, nạp; giao nhiệm vụ"
+ },
+ {
+  "id": "simplement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đơn giản, chỉ"
+ },
+ {
+  "id": "malgré",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "mặc dù, bất chấp"
+ },
+ {
+  "id": "triste",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "buồn"
+ },
+ {
+  "id": "accompagner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi cùng, tháp tùng"
+ },
+ {
+  "id": "tendre",
+  "pos": [
+   "động từ",
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "căng ra, chìa ra; dịu dàng, mềm"
+ },
+ {
+  "id": "cour",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sân; triều đình"
+ },
+ {
+  "id": "inviter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mời"
+ },
+ {
+  "id": "rouler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lăn; chạy (xe)"
+ },
+ {
+  "id": "hôpital",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bệnh viện"
+ },
+ {
+  "id": "pardonner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tha thứ"
+ },
+ {
+  "id": "normal",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bình thường"
+ },
+ {
+  "id": "ceci",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "cái này, điều này"
+ },
+ {
+  "id": "con",
+  "pos": [
+   "danh từ",
+   "tính từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "vi": "ngu ngốc; đồ ngốc (thô tục)"
+ },
+ {
+  "id": "retenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giữ lại; ghi nhớ"
+ },
+ {
+  "id": "secret",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "bí mật"
+ },
+ {
+  "id": "ennemi",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ thù, quân địch"
+ },
+ {
+  "id": "arranger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sắp xếp, dàn xếp"
+ },
+ {
+  "id": "risquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "liều, có nguy cơ"
+ },
+ {
+  "id": "client",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khách hàng"
+ },
+ {
+  "id": "prince",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hoàng tử, ông hoàng"
+ },
+ {
+  "id": "vin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "rượu vang"
+ },
+ {
+  "id": "chaud",
+  "pos": [
+   "tính từ",
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nóng, ấm"
+ },
+ {
+  "id": "tante",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cô, dì, bác gái"
+ },
+ {
+  "id": "mille",
+  "pos": [
+   "số từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nghìn, ngàn"
+ },
+ {
+  "id": "grand-père",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ông"
+ },
+ {
+  "id": "pain",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bánh mì"
+ },
+ {
+  "id": "grand-mère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bà"
+ },
+ {
+  "id": "neuf",
+  "pos": [
+   "số từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "chín (số 9); mới"
+ },
+ {
+  "id": "dîner",
+  "pos": [
+   "danh từ",
+   "động từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "ăn tối; bữa tối"
+ },
+ {
+  "id": "cousin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "anh/em họ (nam)"
+ },
+ {
+  "id": "cent",
+  "pos": [
+   "số từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "một trăm"
+ },
+ {
+  "id": "vingt",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "hai mươi"
+ },
+ {
+  "id": "dimanche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chủ nhật"
+ },
+ {
+  "id": "huit",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "tám"
+ },
+ {
+  "id": "chaise",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ghế, ghế tựa"
+ },
+ {
+  "id": "poisson",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cá"
+ },
+ {
+  "id": "sept",
+  "pos": [
+   "số từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bảy"
+ },
+ {
+  "id": "mademoiselle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cô (cách xưng hô)"
+ },
+ {
+  "id": "lait",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sữa"
+ },
+ {
+  "id": "repas",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bữa ăn"
+ },
+ {
+  "id": "thé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trà"
+ },
+ {
+  "id": "pomme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "quả táo"
+ },
+ {
+  "id": "étudier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "học, nghiên cứu"
+ },
+ {
+  "id": "déjeuner",
+  "pos": [
+   "danh từ",
+   "động từ"
+  ],
+  "gender": "m",
+  "vi": "ăn trưa; bữa trưa"
+ },
+ {
+  "id": "quinze",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "mười lăm"
+ },
+ {
+  "id": "fruit",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trái cây, quả"
+ },
+ {
+  "id": "midi",
+  "pos": [
+   "danh từ",
+   "số từ"
+  ],
+  "gender": "m",
+  "vi": "buổi trưa, mười hai giờ trưa"
+ },
+ {
+  "id": "viande",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thịt"
+ },
+ {
+  "id": "trente",
+  "pos": [
+   "số từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ba mươi"
+ },
+ {
+  "id": "samedi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thứ bảy"
+ },
+ {
+  "id": "enchanté",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hân hạnh, rất vui được gặp"
+ },
+ {
+  "id": "mai",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tháng năm"
+ },
+ {
+  "id": "douze",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "mười hai"
+ },
+ {
+  "id": "sucre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đường"
+ },
+ {
+  "id": "lundi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thứ hai"
+ },
+ {
+  "id": "cinquante",
+  "pos": [
+   "số từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "năm mươi"
+ },
+ {
+  "id": "juin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng sáu"
+ },
+ {
+  "id": "août",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng tám"
+ },
+ {
+  "id": "fromage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "phô mai"
+ },
+ {
+  "id": "vendredi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thứ sáu"
+ },
+ {
+  "id": "septembre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng chín"
+ },
+ {
+  "id": "zéro",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "số không"
+ },
+ {
+  "id": "sel",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "muối"
+ },
+ {
+  "id": "juillet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng bảy"
+ },
+ {
+  "id": "jeudi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thứ năm"
+ },
+ {
+  "id": "quarante",
+  "pos": [
+   "số từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bốn mươi"
+ },
+ {
+  "id": "onze",
+  "pos": [
+   "số từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "mười một"
+ },
+ {
+  "id": "octobre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng mười"
+ },
+ {
+  "id": "mardi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thứ ba"
+ },
+ {
+  "id": "gratuit",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "miễn phí"
+ },
+ {
+  "id": "avril",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng tư"
+ },
+ {
+  "id": "novembre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng mười một"
+ },
+ {
+  "id": "légume",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "rau, rau củ"
+ },
+ {
+  "id": "mars",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng ba"
+ },
+ {
+  "id": "riz",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "gạo, cơm"
+ },
+ {
+  "id": "mercredi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thứ tư"
+ },
+ {
+  "id": "décembre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng mười hai"
+ },
+ {
+  "id": "janvier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng một, tháng giêng"
+ },
+ {
+  "id": "seize",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "mười sáu"
+ },
+ {
+  "id": "stylo",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bút, bút bi"
+ },
+ {
+  "id": "février",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tháng hai"
+ },
+ {
+  "id": "quatorze",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "mười bốn"
+ },
+ {
+  "id": "treize",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "mười ba"
+ },
+ {
+  "id": "petit-déjeuner",
+  "pos": [
+   "danh từ",
+   "động từ"
+  ],
+  "gender": "m",
+  "vi": "bữa sáng; ăn sáng"
+ }
+]

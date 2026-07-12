@@ -1,0 +1,820 @@
+[
+ {
+  "id": "opposition",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự phản đối; sự đối lập"
+ },
+ {
+  "id": "képi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mũ kê-pi (mũ quân đội, cảnh sát Pháp)"
+ },
+ {
+  "id": "pécher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phạm tội, mắc lỗi"
+ },
+ {
+  "id": "vis-à-vis",
+  "pos": [
+   "giới từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đối diện; người/vật đối diện"
+ },
+ {
+  "id": "dépense",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chi tiêu, khoản chi"
+ },
+ {
+  "id": "craie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "phấn viết bảng"
+ },
+ {
+  "id": "exclamer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thốt lên, kêu lên"
+ },
+ {
+  "id": "précédemment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "trước đây, trước đó"
+ },
+ {
+  "id": "vibration",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự rung động, độ rung"
+ },
+ {
+  "id": "maths",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "toán học"
+ },
+ {
+  "id": "assuré",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chắc chắn, tự tin; người được bảo hiểm"
+ },
+ {
+  "id": "celles-ci",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "những cái này (giống cái, số nhiều)"
+ },
+ {
+  "id": "escargot",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ốc sên"
+ },
+ {
+  "id": "sentinelle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lính gác, người canh gác"
+ },
+ {
+  "id": "déposition",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lời khai (trước tòa); sự phế truất"
+ },
+ {
+  "id": "abominable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "ghê tởm, kinh khủng"
+ },
+ {
+  "id": "nan",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "không (cách nói thân mật của \"non\")"
+ },
+ {
+  "id": "éclairage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự chiếu sáng, hệ thống đèn"
+ },
+ {
+  "id": "adjoint",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "phụ tá, cấp phó; phụ trợ"
+ },
+ {
+  "id": "dirigeant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người lãnh đạo, nhà lãnh đạo; cầm quyền"
+ },
+ {
+  "id": "lisière",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bìa rừng, rìa, mép"
+ },
+ {
+  "id": "réfugié",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người tị nạn; tị nạn"
+ },
+ {
+  "id": "constitution",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hiến pháp; sự cấu thành, thể chất"
+ },
+ {
+  "id": "volée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tràng, loạt (đòn); cú vô-lê; đàn chim bay"
+ },
+ {
+  "id": "revenu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thu nhập; đã trở về"
+ },
+ {
+  "id": "solde",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "số dư (tài khoản); hàng giảm giá; lương lính"
+ },
+ {
+  "id": "débarquement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự đổ bộ; sự dỡ hàng"
+ },
+ {
+  "id": "jazz",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhạc jazz"
+ },
+ {
+  "id": "méchanceté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự độc ác, hành động độc ác"
+ },
+ {
+  "id": "prêcher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thuyết giảng, rao giảng"
+ },
+ {
+  "id": "funérailles",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lễ tang, đám tang"
+ },
+ {
+  "id": "terne",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "xỉn màu, tẻ nhạt"
+ },
+ {
+  "id": "dorer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mạ vàng; làm vàng (khi nướng)"
+ },
+ {
+  "id": "relais",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự tiếp sức; trạm tiếp; rơ-le"
+ },
+ {
+  "id": "gouffre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vực thẳm, hố sâu"
+ },
+ {
+  "id": "chantonner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngân nga, hát khe khẽ"
+ },
+ {
+  "id": "biais",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "cách, phương thức; sự thiên lệch; đường chéo"
+ },
+ {
+  "id": "crocodile",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cá sấu"
+ },
+ {
+  "id": "rêveur",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "mơ mộng; người mơ mộng"
+ },
+ {
+  "id": "confidentiel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "mật, bảo mật"
+ },
+ {
+  "id": "veston",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "áo vest (nam)"
+ },
+ {
+  "id": "rebelle",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kẻ nổi loạn; nổi loạn, ngang bướng"
+ },
+ {
+  "id": "mi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nốt Mi (âm nhạc)"
+ },
+ {
+  "id": "fardeau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "gánh nặng"
+ },
+ {
+  "id": "déplacement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự di chuyển; chuyến đi"
+ },
+ {
+  "id": "puzzle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trò xếp hình; câu đố hóc búa"
+ },
+ {
+  "id": "supplice",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cực hình, sự tra tấn"
+ },
+ {
+  "id": "condamnation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự kết án, bản án; sự lên án"
+ },
+ {
+  "id": "locomotive",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đầu máy xe lửa"
+ },
+ {
+  "id": "dévaler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lao xuống, chạy xuống"
+ },
+ {
+  "id": "anormal",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bất thường; người bất thường"
+ },
+ {
+  "id": "traduction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bản dịch, sự dịch thuật"
+ },
+ {
+  "id": "ci",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đây, này (như trong celui-ci)"
+ },
+ {
+  "id": "carotte",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "củ cà rốt; màu cà rốt"
+ },
+ {
+  "id": "pendule",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đồng hồ quả lắc, đồng hồ treo tường"
+ },
+ {
+  "id": "scruter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dò xét, quan sát kỹ"
+ },
+ {
+  "id": "homicide",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "tội giết người, sự ngộ sát; giết người"
+ },
+ {
+  "id": "triangle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hình tam giác; trống tam giác"
+ },
+ {
+  "id": "égout",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cống, cống rãnh"
+ },
+ {
+  "id": "coopérer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hợp tác"
+ },
+ {
+  "id": "puiser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "múc, lấy (nước); rút ra từ"
+ },
+ {
+  "id": "enseignement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự giảng dạy, nền giáo dục; bài học"
+ },
+ {
+  "id": "fourré",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "bụi rậm; có nhân, độn"
+ },
+ {
+  "id": "tué",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bị giết; người bị giết"
+ },
+ {
+  "id": "gravier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sỏi"
+ },
+ {
+  "id": "dauphin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cá heo; thái tử"
+ },
+ {
+  "id": "détente",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thư giãn; cò súng; sự hòa hoãn"
+ },
+ {
+  "id": "brailler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "la hét, gào thét"
+ },
+ {
+  "id": "parade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc diễu hành; sự phô trương; đòn đỡ"
+ },
+ {
+  "id": "édifice",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tòa nhà, công trình"
+ },
+ {
+  "id": "équiper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trang bị"
+ },
+ {
+  "id": "diabolique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "quỷ quyệt, ma quái"
+ },
+ {
+  "id": "intégrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hòa nhập, tích hợp; gia nhập"
+ },
+ {
+  "id": "paternel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc về cha, phụ hệ"
+ },
+ {
+  "id": "littéralement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "theo nghĩa đen; đúng từng chữ"
+ },
+ {
+  "id": "amende",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tiền phạt"
+ },
+ {
+  "id": "surcroît",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự gia tăng, phần thêm vào"
+ },
+ {
+  "id": "brigadier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đội trưởng, cai (cảnh sát/quân đội)"
+ },
+ {
+  "id": "couture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đường may; nghề may; thời trang cao cấp"
+ },
+ {
+  "id": "attraction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thu hút, lực hấp dẫn; trò chơi giải trí"
+ },
+ {
+  "id": "avant-hier",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "hôm kia"
+ },
+ {
+  "id": "poutre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "xà, dầm (nhà)"
+ },
+ {
+  "id": "fauve",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "thú dữ; màu nâu vàng"
+ },
+ {
+  "id": "psychologique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc tâm lý"
+ },
+ {
+  "id": "culturel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc văn hóa"
+ },
+ {
+  "id": "farouche",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhút nhát, e dè; dữ dội, mãnh liệt"
+ },
+ {
+  "id": "dune",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cồn cát, đụn cát"
+ },
+ {
+  "id": "fouille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự lục soát; cuộc khai quật"
+ },
+ {
+  "id": "compréhension",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự hiểu, khả năng hiểu; sự thông cảm"
+ },
+ {
+  "id": "contaminer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm nhiễm, lây nhiễm"
+ },
+ {
+  "id": "pèlerin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người hành hương"
+ },
+ {
+  "id": "ravin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khe núi, hẻm núi"
+ },
+ {
+  "id": "réservoir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bể chứa, thùng chứa"
+ },
+ {
+  "id": "rançon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tiền chuộc; cái giá phải trả"
+ },
+ {
+  "id": "prodigieux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "phi thường, kỳ diệu"
+ },
+ {
+  "id": "relatif",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tương đối; liên quan đến"
+ },
+ {
+  "id": "fourneau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lò, bếp lò"
+ },
+ {
+  "id": "restaurer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phục hồi, trùng tu; cho ăn"
+ },
+ {
+  "id": "charrier",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chở, cuốn theo; trêu chọc (lóng)"
+ },
+ {
+  "id": "tonneau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thùng tô-nô; cú lộn nhào (xe)"
+ }
+]

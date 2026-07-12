@@ -1,0 +1,814 @@
+[
+ {
+  "id": "absenter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vắng mặt, đi vắng"
+ },
+ {
+  "id": "carabine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "súng cạc-bin, súng trường"
+ },
+ {
+  "id": "consommation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tiêu thụ; đồ uống (ở quán)"
+ },
+ {
+  "id": "décret",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sắc lệnh, nghị định"
+ },
+ {
+  "id": "via",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "qua, theo đường"
+ },
+ {
+  "id": "bien-être",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự an lạc, hạnh phúc, sung túc"
+ },
+ {
+  "id": "urine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nước tiểu"
+ },
+ {
+  "id": "us",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tập quán, thói tục"
+ },
+ {
+  "id": "assurément",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "chắc chắn, hẳn nhiên"
+ },
+ {
+  "id": "requête",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lời thỉnh cầu, yêu cầu; truy vấn"
+ },
+ {
+  "id": "puéril",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "trẻ con, ấu trĩ"
+ },
+ {
+  "id": "méditation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thiền định; sự suy ngẫm"
+ },
+ {
+  "id": "respectueux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tôn trọng, lễ phép"
+ },
+ {
+  "id": "conjurer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khẩn cầu, van nài; xua đuổi, ngăn chặn"
+ },
+ {
+  "id": "réprimer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đàn áp; kìm nén"
+ },
+ {
+  "id": "héberger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cho ở trọ, chứa chấp; lưu trữ (máy chủ)"
+ },
+ {
+  "id": "tampon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con dấu; nút chặn, đệm; băng vệ sinh"
+ },
+ {
+  "id": "butin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chiến lợi phẩm, của cướp được"
+ },
+ {
+  "id": "républicain",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc nền cộng hòa; người theo phe cộng hòa"
+ },
+ {
+  "id": "risqué",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "liều lĩnh, mạo hiểm; táo bạo"
+ },
+ {
+  "id": "consultation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tham khảo; buổi khám bệnh"
+ },
+ {
+  "id": "hystérique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cuồng loạn, kích động; người cuồng loạn"
+ },
+ {
+  "id": "superstition",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự mê tín"
+ },
+ {
+  "id": "étincelant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "lấp lánh, lóng lánh"
+ },
+ {
+  "id": "doter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trang bị, cấp cho"
+ },
+ {
+  "id": "inoubliable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "không thể quên, khó quên"
+ },
+ {
+  "id": "procédé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "phương pháp, quy trình; cách cư xử"
+ },
+ {
+  "id": "redoubler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tăng gấp đôi; học lại (lớp)"
+ },
+ {
+  "id": "fatigant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "mệt mỏi, gây mệt; phiền phức"
+ },
+ {
+  "id": "sécheresse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hạn hán; sự khô khan"
+ },
+ {
+  "id": "bavardage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự tán gẫu, chuyện phiếm"
+ },
+ {
+  "id": "boucherie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cửa hàng thịt; cuộc tàn sát"
+ },
+ {
+  "id": "minéral",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "khoáng; khoáng chất, khoáng vật"
+ },
+ {
+  "id": "nouveauté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự mới mẻ; cái mới, hàng mới"
+ },
+ {
+  "id": "courtoisie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự lịch thiệp, nhã nhặn"
+ },
+ {
+  "id": "soucoupe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đĩa lót tách"
+ },
+ {
+  "id": "commune",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "xã (đơn vị hành chính)"
+ },
+ {
+  "id": "hold-up",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vụ cướp có vũ trang"
+ },
+ {
+  "id": "déverser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đổ, trút; thải ra"
+ },
+ {
+  "id": "palace",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khách sạn sang trọng"
+ },
+ {
+  "id": "entente",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự hòa thuận; thỏa thuận"
+ },
+ {
+  "id": "entraver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cản trở, gây trở ngại"
+ },
+ {
+  "id": "fabrique",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "xưởng, nhà máy"
+ },
+ {
+  "id": "météo",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dự báo thời tiết; khí tượng"
+ },
+ {
+  "id": "sphère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hình cầu, quả cầu; lĩnh vực"
+ },
+ {
+  "id": "infime",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "rất nhỏ, vô cùng nhỏ"
+ },
+ {
+  "id": "minus",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ kém cỏi, đồ ngốc"
+ },
+ {
+  "id": "voyant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "thầy bói, nhà tiên tri; đèn báo hiệu"
+ },
+ {
+  "id": "scintiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lấp lánh, lung linh"
+ },
+ {
+  "id": "martyr",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người tử vì đạo, kẻ tuẫn nạn"
+ },
+ {
+  "id": "meuf",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "con bé, cô nàng (tiếng lóng)"
+ },
+ {
+  "id": "là-dessous",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "dưới đó, bên dưới cái đó"
+ },
+ {
+  "id": "inaccessible",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "không thể tiếp cận, không thể với tới"
+ },
+ {
+  "id": "comptable",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kế toán viên; thuộc kế toán"
+ },
+ {
+  "id": "amorcer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khởi đầu, bắt đầu; mồi (câu, bơm)"
+ },
+ {
+  "id": "ardoise",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "đá phiến, bảng đá; sổ nợ"
+ },
+ {
+  "id": "blindé",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bọc thép; xe bọc thép"
+ },
+ {
+  "id": "broyer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nghiền, xay nát"
+ },
+ {
+  "id": "esquiver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "né tránh, lảng tránh"
+ },
+ {
+  "id": "stratégique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc chiến lược, mang tính chiến lược"
+ },
+ {
+  "id": "hérisser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dựng đứng (lông, tóc); làm xù lên"
+ },
+ {
+  "id": "plantation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đồn điền; sự trồng trọt"
+ },
+ {
+  "id": "vocabulaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "từ vựng, vốn từ"
+ },
+ {
+  "id": "poliment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách lịch sự, nhã nhặn"
+ },
+ {
+  "id": "pondre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đẻ trứng"
+ },
+ {
+  "id": "statut",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quy chế; địa vị, trạng thái"
+ },
+ {
+  "id": "celles-là",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "những cái đó, những người ấy (giống cái)"
+ },
+ {
+  "id": "dépourvoir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm cho thiếu, tước đoạt"
+ },
+ {
+  "id": "bouillon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nước dùng, nước hầm"
+ },
+ {
+  "id": "quinzaine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khoảng mười lăm; nửa tháng, hai tuần"
+ },
+ {
+  "id": "incessant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "không ngừng, liên miên"
+ },
+ {
+  "id": "prélever",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lấy mẫu, trích lấy; khấu trừ"
+ },
+ {
+  "id": "bouillant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đang sôi, sôi sục"
+ },
+ {
+  "id": "commando",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "biệt kích, đội commando"
+ },
+ {
+  "id": "frange",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tóc mái; tua, riềm"
+ },
+ {
+  "id": "purée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khoai nghiền, món nghiền nhuyễn"
+ },
+ {
+  "id": "allier",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "kết hợp, liên kết; kết đồng minh"
+ },
+ {
+  "id": "tract",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tờ rơi, truyền đơn"
+ },
+ {
+  "id": "tumulte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự huyên náo, hỗn loạn"
+ },
+ {
+  "id": "tango",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "điệu tango"
+ },
+ {
+  "id": "injection",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tiêm; sự phun (nhiên liệu)"
+ },
+ {
+  "id": "autrichien",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người Áo; thuộc nước Áo"
+ },
+ {
+  "id": "repère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mốc, dấu mốc; điểm chuẩn"
+ },
+ {
+  "id": "short",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quần soóc, quần đùi"
+ },
+ {
+  "id": "variété",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự đa dạng; loại, giống"
+ },
+ {
+  "id": "anxiété",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự lo âu, lo lắng"
+ },
+ {
+  "id": "mi-voix",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nửa giọng, giọng khẽ (à mi-voix)"
+ },
+ {
+  "id": "relancer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khởi động lại, tái khởi động; thúc giục"
+ },
+ {
+  "id": "piquet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cọc, cột nhỏ; toán canh (đình công)"
+ },
+ {
+  "id": "cambriolage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vụ trộm đột nhập nhà"
+ },
+ {
+  "id": "cargo",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tàu chở hàng"
+ },
+ {
+  "id": "souffrant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khó ở, đau ốm"
+ },
+ {
+  "id": "agenda",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sổ tay, lịch công tác"
+ },
+ {
+  "id": "caser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xếp chỗ, nhét vào; thu xếp"
+ },
+ {
+  "id": "pancarte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tấm biển, bảng hiệu"
+ },
+ {
+  "id": "rigide",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "cứng nhắc, cứng đờ"
+ },
+ {
+  "id": "fiction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hư cấu, tác phẩm hư cấu"
+ },
+ {
+  "id": "imperméable",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "áo mưa; không thấm nước"
+ },
+ {
+  "id": "roulement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự luân phiên; tiếng ầm; vòng bi"
+ },
+ {
+  "id": "armement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vũ khí, sự vũ trang"
+ }
+]

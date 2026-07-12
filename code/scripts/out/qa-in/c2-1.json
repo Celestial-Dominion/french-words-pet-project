@@ -1,0 +1,2572 @@
+[
+ {
+  "id": "oppresser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ɔpʁɛse/",
+  "en": [
+   "to oppress",
+   "to weigh down"
+  ],
+  "vi": "áp bức, đè nén"
+ },
+ {
+  "id": "stocker",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/stɔke/",
+  "en": [
+   "to stock",
+   "to store"
+  ],
+  "vi": "lưu trữ, tích trữ"
+ },
+ {
+  "id": "équivoque",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/ekivɔk/",
+  "en": [
+   "ambiguous",
+   "ambiguity"
+  ],
+  "vi": "mập mờ, nước đôi; sự mập mờ"
+ },
+ {
+  "id": "fuyard",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "ipa": "/fɥijaʁ/",
+  "en": [
+   "runaway",
+   "fugitive"
+  ],
+  "vi": "kẻ chạy trốn, kẻ đào tẩu"
+ },
+ {
+  "id": "aligné",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/aliɲe/",
+  "en": [
+   "aligned",
+   "lined up"
+  ],
+  "vi": "thẳng hàng, được xếp thẳng"
+ },
+ {
+  "id": "décommander",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/dekɔmɑ̃de/",
+  "en": [
+   "to cancel",
+   "to call off"
+  ],
+  "vi": "hủy (cuộc hẹn, đơn đặt)"
+ },
+ {
+  "id": "gnome",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ɡnom/",
+  "en": [
+   "gnome"
+  ],
+  "vi": "thần lùn, yêu tinh lùn"
+ },
+ {
+  "id": "perturbé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/pɛʁtyʁbe/",
+  "en": [
+   "disturbed",
+   "disrupted",
+   "upset"
+  ],
+  "vi": "bối rối, rối loạn, xáo trộn"
+ },
+ {
+  "id": "argot",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/aʁɡo/",
+  "en": [
+   "slang"
+  ],
+  "vi": "tiếng lóng"
+ },
+ {
+  "id": "dompter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/dɔ̃te/",
+  "en": [
+   "to tame",
+   "to subdue"
+  ],
+  "vi": "thuần hóa, chế ngự"
+ },
+ {
+  "id": "haillon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ajɔ̃/",
+  "en": [
+   "rag",
+   "tatter"
+  ],
+  "vi": "quần áo rách rưới, giẻ rách"
+ },
+ {
+  "id": "illustré",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "ipa": "/ilystʁe/",
+  "en": [
+   "illustrated magazine",
+   "illustrated"
+  ],
+  "vi": "tạp chí có tranh minh họa; được minh họa"
+ },
+ {
+  "id": "méditerranéen",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/meditɛʁaneɛ̃/",
+  "en": [
+   "Mediterranean"
+  ],
+  "vi": "thuộc Địa Trung Hải"
+ },
+ {
+  "id": "piqué",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/pike/",
+  "en": [
+   "stung",
+   "pricked",
+   "slightly crazy"
+  ],
+  "vi": "bị châm chích; hơi khùng"
+ },
+ {
+  "id": "redevable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁəd(ə)vabl/",
+  "en": [
+   "indebted",
+   "beholden"
+  ],
+  "vi": "mang ơn, còn nợ"
+ },
+ {
+  "id": "vacherie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/vaʃʁi/",
+  "en": [
+   "nasty trick",
+   "dirty remark"
+  ],
+  "vi": "lời hay hành động đê tiện, ác ý"
+ },
+ {
+  "id": "étain",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/etɛ̃/",
+  "en": [
+   "tin",
+   "pewter"
+  ],
+  "vi": "thiếc"
+ },
+ {
+  "id": "indéfinissable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ɛ̃definisabl/",
+  "en": [
+   "indefinable",
+   "indescribable"
+  ],
+  "vi": "khó tả, không thể định nghĩa"
+ },
+ {
+  "id": "tyrannie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/tiʁani/",
+  "en": [
+   "tyranny"
+  ],
+  "vi": "sự chuyên chế, bạo ngược"
+ },
+ {
+  "id": "rubis",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "ipa": "/ʁybi/",
+  "en": [
+   "ruby"
+  ],
+  "vi": "hồng ngọc, ruby"
+ },
+ {
+  "id": "alouette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/alwɛt/",
+  "en": [
+   "lark"
+  ],
+  "vi": "chim sơn ca"
+ },
+ {
+  "id": "accoupler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/akuple/",
+  "en": [
+   "to couple",
+   "to mate"
+  ],
+  "vi": "ghép đôi, cho giao phối"
+ },
+ {
+  "id": "décennie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/deseni/",
+  "en": [
+   "decade"
+  ],
+  "vi": "thập kỷ"
+ },
+ {
+  "id": "instantané",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/ɛ̃stɑ̃tane/",
+  "en": [
+   "instantaneous",
+   "snapshot"
+  ],
+  "vi": "tức thời; ảnh chụp nhanh"
+ },
+ {
+  "id": "richard",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁiʃaʁ/",
+  "en": [
+   "rich person",
+   "moneybags"
+  ],
+  "vi": "người giàu sụ"
+ },
+ {
+  "id": "brochette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/bʁɔʃɛt/",
+  "en": [
+   "skewer",
+   "kebab"
+  ],
+  "vi": "xiên nướng, xiên que"
+ },
+ {
+  "id": "enclume",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ɑ̃klym/",
+  "en": [
+   "anvil"
+  ],
+  "vi": "cái đe"
+ },
+ {
+  "id": "roumain",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁumɛ̃/",
+  "en": [
+   "Romanian"
+  ],
+  "vi": "thuộc Rumani; tiếng Rumani"
+ },
+ {
+  "id": "daller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/dale/",
+  "en": [
+   "to pave",
+   "to tile"
+  ],
+  "vi": "lát nền (bằng đá, gạch phiến)"
+ },
+ {
+  "id": "dénuder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/denyde/",
+  "en": [
+   "to strip",
+   "to lay bare"
+  ],
+  "vi": "lột trần, làm trơ, bóc vỏ"
+ },
+ {
+  "id": "enchaînement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ɑ̃ʃɛnmɑ̃/",
+  "en": [
+   "sequence",
+   "chain",
+   "linking"
+  ],
+  "vi": "chuỗi, sự nối tiếp, liên kết"
+ },
+ {
+  "id": "insoutenable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ɛ̃sutnabl/",
+  "en": [
+   "unbearable",
+   "untenable"
+  ],
+  "vi": "không thể chịu nổi; không thể bênh vực"
+ },
+ {
+  "id": "janissaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ʒanisɛʁ/",
+  "en": [
+   "janissary"
+  ],
+  "vi": "lính cấm vệ (thời Ottoman)"
+ },
+ {
+  "id": "copeau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/kɔpo/",
+  "en": [
+   "shaving",
+   "chip"
+  ],
+  "vi": "phoi bào, dăm gỗ"
+ },
+ {
+  "id": "cantonnement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/kɑ̃tɔnmɑ̃/",
+  "en": [
+   "billet",
+   "quartering of troops"
+  ],
+  "vi": "nơi đóng quân, việc đóng quân"
+ },
+ {
+  "id": "jauger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ʒoʒe/",
+  "en": [
+   "to gauge",
+   "to size up"
+  ],
+  "vi": "đo lường, đánh giá"
+ },
+ {
+  "id": "naïvement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "ipa": "/naivmɑ̃/",
+  "en": [
+   "naively"
+  ],
+  "vi": "một cách ngây thơ"
+ },
+ {
+  "id": "obtus",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ɔpty/",
+  "en": [
+   "obtuse",
+   "dull-witted"
+  ],
+  "vi": "tù (góc); đần độn"
+ },
+ {
+  "id": "resservir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁəsɛʁviʁ/",
+  "en": [
+   "to serve again",
+   "to be useful again"
+  ],
+  "vi": "phục vụ lại, dọn thêm; dùng lại"
+ },
+ {
+  "id": "évasif",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/evazif/",
+  "en": [
+   "evasive"
+  ],
+  "vi": "lảng tránh, né tránh"
+ },
+ {
+  "id": "archange",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/aʁkɑ̃ʒ/",
+  "en": [
+   "archangel"
+  ],
+  "vi": "tổng lãnh thiên thần"
+ },
+ {
+  "id": "gnôle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ɲol/",
+  "en": [
+   "hooch",
+   "strong liquor"
+  ],
+  "vi": "rượu mạnh (tự nấu)"
+ },
+ {
+  "id": "philosophique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/filozɔfik/",
+  "en": [
+   "philosophical"
+  ],
+  "vi": "thuộc triết học"
+ },
+ {
+  "id": "éloquence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/elɔkɑ̃s/",
+  "en": [
+   "eloquence"
+  ],
+  "vi": "tài hùng biện"
+ },
+ {
+  "id": "certaine",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "ipa": "/sɛʁtɛn/",
+  "en": [
+   "a certain",
+   "some"
+  ],
+  "vi": "(một) nào đó; một vài"
+ },
+ {
+  "id": "rebuter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁəbyte/",
+  "en": [
+   "to put off",
+   "to discourage"
+  ],
+  "vi": "làm nản lòng, làm chán ngán"
+ },
+ {
+  "id": "seoir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/swaʁ/",
+  "en": [
+   "to suit",
+   "to become"
+  ],
+  "vi": "hợp, thích hợp (với ai)"
+ },
+ {
+  "id": "ondulation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ɔ̃dylasjɔ̃/",
+  "en": [
+   "undulation",
+   "wave"
+  ],
+  "vi": "sự gợn sóng, lượn sóng"
+ },
+ {
+  "id": "platine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/platin/",
+  "en": [
+   "platinum",
+   "turntable"
+  ],
+  "vi": "bạch kim; mâm quay đĩa"
+ },
+ {
+  "id": "conteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/kɔ̃tœʁ/",
+  "en": [
+   "storyteller"
+  ],
+  "vi": "người kể chuyện"
+ },
+ {
+  "id": "faisable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/fəzabl/",
+  "en": [
+   "feasible",
+   "doable"
+  ],
+  "vi": "khả thi, có thể làm được"
+ },
+ {
+  "id": "négation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/neɡasjɔ̃/",
+  "en": [
+   "negation"
+  ],
+  "vi": "sự phủ định"
+ },
+ {
+  "id": "pointure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/pwɛ̃tyʁ/",
+  "en": [
+   "shoe size"
+  ],
+  "vi": "cỡ (giày)"
+ },
+ {
+  "id": "adoration",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/adɔʁasjɔ̃/",
+  "en": [
+   "adoration",
+   "worship"
+  ],
+  "vi": "sự tôn thờ, sùng bái"
+ },
+ {
+  "id": "cuve",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/kyv/",
+  "en": [
+   "vat",
+   "tank"
+  ],
+  "vi": "thùng lớn, bồn chứa"
+ },
+ {
+  "id": "enjoué",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ɑ̃ʒwe/",
+  "en": [
+   "cheerful",
+   "playful"
+  ],
+  "vi": "vui vẻ, hoạt bát"
+ },
+ {
+  "id": "lubie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/lybi/",
+  "en": [
+   "whim",
+   "fad"
+  ],
+  "vi": "ý thích bất chợt, tính đồng bóng"
+ },
+ {
+  "id": "placide",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/plasid/",
+  "en": [
+   "placid",
+   "calm"
+  ],
+  "vi": "điềm tĩnh, bình thản"
+ },
+ {
+  "id": "éblouissement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ebluismɑ̃/",
+  "en": [
+   "dazzle",
+   "dizziness"
+  ],
+  "vi": "sự lóa mắt, choáng váng"
+ },
+ {
+  "id": "glorifier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ɡlɔʁifje/",
+  "en": [
+   "to glorify",
+   "to praise"
+  ],
+  "vi": "ca tụng, tôn vinh"
+ },
+ {
+  "id": "penseur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/pɑ̃sœʁ/",
+  "en": [
+   "thinker"
+  ],
+  "vi": "nhà tư tưởng"
+ },
+ {
+  "id": "étal",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/etal/",
+  "en": [
+   "market stall",
+   "stand"
+  ],
+  "vi": "quầy hàng, sạp hàng"
+ },
+ {
+  "id": "tirade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/tiʁad/",
+  "en": [
+   "tirade",
+   "monologue"
+  ],
+  "vi": "đoạn độc thoại dài, tràng lời"
+ },
+ {
+  "id": "chambouler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ʃɑ̃bule/",
+  "en": [
+   "to turn upside down",
+   "to disrupt"
+  ],
+  "vi": "đảo lộn, làm xáo trộn"
+ },
+ {
+  "id": "coiffe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/kwaf/",
+  "en": [
+   "headdress",
+   "coif"
+  ],
+  "vi": "mũ trùm đầu (truyền thống)"
+ },
+ {
+  "id": "duo",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/dɥo/",
+  "en": [
+   "duo",
+   "duet"
+  ],
+  "vi": "bộ đôi, song ca"
+ },
+ {
+  "id": "préliminaire",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/pʁeliminɛʁ/",
+  "en": [
+   "preliminary"
+  ],
+  "vi": "sơ bộ, mở đầu; phần mở đầu"
+ },
+ {
+  "id": "vanner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/vane/",
+  "en": [
+   "to winnow",
+   "to tease",
+   "to wear out"
+  ],
+  "vi": "sàng sảy; trêu chọc; làm mệt lử"
+ },
+ {
+  "id": "ping-pong",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/piŋpɔ̃ɡ/",
+  "en": [
+   "ping-pong",
+   "table tennis"
+  ],
+  "vi": "bóng bàn"
+ },
+ {
+  "id": "étriper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/etʁipe/",
+  "en": [
+   "to gut",
+   "to disembowel"
+  ],
+  "vi": "moi ruột; đánh cho nhừ tử"
+ },
+ {
+  "id": "métis",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "ipa": "/metis/",
+  "en": [
+   "mixed-race person",
+   "métis"
+  ],
+  "vi": "người lai, con lai"
+ },
+ {
+  "id": "déloger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/deloʒe/",
+  "en": [
+   "to dislodge",
+   "to evict"
+  ],
+  "vi": "đuổi ra, trục xuất khỏi chỗ"
+ },
+ {
+  "id": "kaki",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/kaki/",
+  "en": [
+   "khaki",
+   "persimmon"
+  ],
+  "vi": "màu kaki; quả hồng"
+ },
+ {
+  "id": "régisseur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ʁeʒisœʁ/",
+  "en": [
+   "steward",
+   "stage manager"
+  ],
+  "vi": "quản lý, người điều hành; trợ lý sản xuất"
+ },
+ {
+  "id": "auxiliaire",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/oksiljɛʁ/",
+  "en": [
+   "auxiliary",
+   "assistant"
+  ],
+  "vi": "phụ trợ, trợ giúp; người phụ tá; trợ động từ"
+ },
+ {
+  "id": "canif",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/kanif/",
+  "en": [
+   "penknife",
+   "pocketknife"
+  ],
+  "vi": "dao nhíp, dao gấp"
+ },
+ {
+  "id": "débordant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/debɔʁdɑ̃/",
+  "en": [
+   "overflowing",
+   "brimming"
+  ],
+  "vi": "tràn đầy, dạt dào"
+ },
+ {
+  "id": "effriter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/efʁite/",
+  "en": [
+   "to crumble",
+   "to erode"
+  ],
+  "vi": "làm vụn, làm rã ra"
+ },
+ {
+  "id": "cheminement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ʃəminmɑ̃/",
+  "en": [
+   "progression",
+   "path"
+  ],
+  "vi": "lộ trình, sự tiến triển, đường đi"
+ },
+ {
+  "id": "prostituer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/pʁɔstitɥe/",
+  "en": [
+   "to prostitute",
+   "to debase"
+  ],
+  "vi": "làm mại dâm; bán rẻ (danh dự)"
+ },
+ {
+  "id": "arrière-grand-père",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/aʁjɛʁɡʁɑ̃pɛʁ/",
+  "en": [
+   "great-grandfather"
+  ],
+  "vi": "ông cố"
+ },
+ {
+  "id": "empêtrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ɑ̃pɛtʁe/",
+  "en": [
+   "to entangle",
+   "to get tangled up"
+  ],
+  "vi": "làm vướng víu, làm rối"
+ },
+ {
+  "id": "engourdissement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ɑ̃ɡuʁdismɑ̃/",
+  "en": [
+   "numbness",
+   "torpor"
+  ],
+  "vi": "sự tê cứng, uể oải"
+ },
+ {
+  "id": "remiser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁəmize/",
+  "en": [
+   "to put away",
+   "to store"
+  ],
+  "vi": "cất vào kho, xếp xó"
+ },
+ {
+  "id": "rougeâtre",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁuʒatʁ/",
+  "en": [
+   "reddish"
+  ],
+  "vi": "đo đỏ, hơi đỏ"
+ },
+ {
+  "id": "résonance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ʁezɔnɑ̃s/",
+  "en": [
+   "resonance"
+  ],
+  "vi": "sự cộng hưởng, vang vọng"
+ },
+ {
+  "id": "dodu",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/dɔdy/",
+  "en": [
+   "plump",
+   "chubby"
+  ],
+  "vi": "mập mạp, bụ bẫm"
+ },
+ {
+  "id": "para",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/paʁa/",
+  "en": [
+   "paratrooper",
+   "para"
+  ],
+  "vi": "lính dù"
+ },
+ {
+  "id": "gruyère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ɡʁyjɛʁ/",
+  "en": [
+   "gruyère cheese"
+  ],
+  "vi": "phô mai gruyère"
+ },
+ {
+  "id": "prédiction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/pʁediksjɔ̃/",
+  "en": [
+   "prediction"
+  ],
+  "vi": "lời tiên đoán, dự đoán"
+ },
+ {
+  "id": "virtuel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/viʁtɥɛl/",
+  "en": [
+   "virtual",
+   "potential"
+  ],
+  "vi": "ảo; tiềm tàng"
+ },
+ {
+  "id": "betterave",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/bɛtʁav/",
+  "en": [
+   "beetroot",
+   "beet"
+  ],
+  "vi": "củ cải đường"
+ },
+ {
+  "id": "grossièrement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "ipa": "/ɡʁosjɛʁəmɑ̃/",
+  "en": [
+   "roughly",
+   "crudely"
+  ],
+  "vi": "một cách thô sơ, đại khái; thô lỗ"
+ },
+ {
+  "id": "miroiter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/miʁwate/",
+  "en": [
+   "to shimmer",
+   "to dangle (a prospect)"
+  ],
+  "vi": "lấp lánh; bày ra để dụ dỗ"
+ },
+ {
+  "id": "taxer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/takse/",
+  "en": [
+   "to tax",
+   "to accuse of"
+  ],
+  "vi": "đánh thuế; buộc tội, quy cho"
+ },
+ {
+  "id": "rectiligne",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁɛktiliɲ/",
+  "en": [
+   "rectilinear",
+   "straight"
+  ],
+  "vi": "thẳng, theo đường thẳng"
+ },
+ {
+  "id": "actionnaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/aksjɔnɛʁ/",
+  "en": [
+   "shareholder",
+   "stockholder"
+  ],
+  "vi": "cổ đông"
+ },
+ {
+  "id": "aristocratie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/aʁistɔkʁasi/",
+  "en": [
+   "aristocracy"
+  ],
+  "vi": "tầng lớp quý tộc"
+ },
+ {
+  "id": "balançoire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/balɑ̃swaʁ/",
+  "en": [
+   "swing",
+   "seesaw"
+  ],
+  "vi": "cái xích đu"
+ },
+ {
+  "id": "convocation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/kɔ̃vɔkasjɔ̃/",
+  "en": [
+   "summons",
+   "convocation"
+  ],
+  "vi": "giấy triệu tập, sự triệu tập"
+ },
+ {
+  "id": "fortuit",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/fɔʁtɥi/",
+  "en": [
+   "fortuitous",
+   "chance"
+  ],
+  "vi": "tình cờ, ngẫu nhiên"
+ },
+ {
+  "id": "môle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/mol/",
+  "en": [
+   "jetty",
+   "breakwater"
+  ],
+  "vi": "đê chắn sóng, kè"
+ },
+ {
+  "id": "galeux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/ɡalø/",
+  "en": [
+   "scabby",
+   "mangy"
+  ],
+  "vi": "ghẻ lở; con vật bị ghẻ"
+ },
+ {
+  "id": "pouf",
+  "pos": [
+   "danh từ",
+   "tượng thanh"
+  ],
+  "gender": "m",
+  "ipa": "/puf/",
+  "en": [
+   "pouf",
+   "ottoman",
+   "plop"
+  ],
+  "vi": "ghế đôn đệm ngồi; bịch! (tiếng)"
+ },
+ {
+  "id": "taro",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/taʁo/",
+  "en": [
+   "taro"
+  ],
+  "vi": "khoai môn"
+ },
+ {
+  "id": "touffu",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/tufy/",
+  "en": [
+   "bushy",
+   "dense"
+  ],
+  "vi": "rậm rạp, um tùm"
+ },
+ {
+  "id": "véhément",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/veemɑ̃/",
+  "en": [
+   "vehement"
+  ],
+  "vi": "mãnh liệt, dữ dội, kịch liệt"
+ },
+ {
+  "id": "animateur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/animatœʁ/",
+  "en": [
+   "host",
+   "presenter",
+   "organizer"
+  ],
+  "vi": "người dẫn chương trình, người phụ trách hoạt động"
+ },
+ {
+  "id": "flan",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/flɑ̃/",
+  "en": [
+   "flan",
+   "custard tart"
+  ],
+  "vi": "bánh flan"
+ },
+ {
+  "id": "horoscope",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ɔʁɔskɔp/",
+  "en": [
+   "horoscope"
+  ],
+  "vi": "lá số tử vi"
+ },
+ {
+  "id": "machinal",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/maʃinal/",
+  "en": [
+   "mechanical",
+   "automatic"
+  ],
+  "vi": "máy móc, theo thói quen"
+ },
+ {
+  "id": "paradoxal",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/paʁadɔksal/",
+  "en": [
+   "paradoxical"
+  ],
+  "vi": "nghịch lý, ngược đời"
+ },
+ {
+  "id": "elfe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ɛlf/",
+  "en": [
+   "elf"
+  ],
+  "vi": "yêu tinh, tiên (elf)"
+ },
+ {
+  "id": "affinité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/afinite/",
+  "en": [
+   "affinity"
+  ],
+  "vi": "sự tương đồng, mối thiện cảm; ái lực"
+ },
+ {
+  "id": "amendement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/amɑ̃dmɑ̃/",
+  "en": [
+   "amendment"
+  ],
+  "vi": "sự sửa đổi, điều bổ sung (luật)"
+ },
+ {
+  "id": "cataclysme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/kataklism/",
+  "en": [
+   "cataclysm"
+  ],
+  "vi": "tai họa lớn, đại họa"
+ },
+ {
+  "id": "ciré",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/siʁe/",
+  "en": [
+   "waxed",
+   "oilskin",
+   "raincoat"
+  ],
+  "vi": "được đánh xi, bóng láng; áo mưa vải dầu"
+ },
+ {
+  "id": "licenciement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/lisɑ̃simɑ̃/",
+  "en": [
+   "layoff",
+   "dismissal"
+  ],
+  "vi": "sự sa thải"
+ },
+ {
+  "id": "médaillon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/medajɔ̃/",
+  "en": [
+   "locket",
+   "medallion"
+  ],
+  "vi": "mặt dây chuyền tròn; huy hiệu nhỏ"
+ },
+ {
+  "id": "hors-la-loi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ɔʁlalwa/",
+  "en": [
+   "outlaw"
+  ],
+  "vi": "kẻ ngoài vòng pháp luật"
+ },
+ {
+  "id": "autonomie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/otɔnɔmi/",
+  "en": [
+   "autonomy",
+   "battery life"
+  ],
+  "vi": "quyền tự trị, sự độc lập; thời lượng (pin)"
+ },
+ {
+  "id": "doublement",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/dubləmɑ̃/",
+  "en": [
+   "doubly",
+   "doubling"
+  ],
+  "vi": "gấp đôi; sự tăng gấp đôi"
+ },
+ {
+  "id": "dédale",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/dedal/",
+  "en": [
+   "maze",
+   "labyrinth"
+  ],
+  "vi": "mê cung"
+ },
+ {
+  "id": "exalté",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/ɛɡzalte/",
+  "en": [
+   "exalted",
+   "hothead"
+  ],
+  "vi": "phấn khích, cuồng nhiệt; người cuồng tín"
+ },
+ {
+  "id": "graisseux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ɡʁɛsø/",
+  "en": [
+   "greasy",
+   "fatty"
+  ],
+  "vi": "nhờn, béo ngậy, dính mỡ"
+ },
+ {
+  "id": "palissade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/palisad/",
+  "en": [
+   "fence",
+   "palisade"
+  ],
+  "vi": "hàng rào ván"
+ },
+ {
+  "id": "sangle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/sɑ̃ɡl/",
+  "en": [
+   "strap",
+   "girth"
+  ],
+  "vi": "dây đai, đai buộc"
+ },
+ {
+  "id": "stupidement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "ipa": "/stypidmɑ̃/",
+  "en": [
+   "stupidly"
+  ],
+  "vi": "một cách ngu ngốc"
+ },
+ {
+  "id": "micheton",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/miʃətɔ̃/",
+  "en": [
+   "john",
+   "punter"
+  ],
+  "vi": "khách làng chơi (tiếng lóng)"
+ },
+ {
+  "id": "stagner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/staɡne/",
+  "en": [
+   "to stagnate"
+  ],
+  "vi": "tù đọng, trì trệ"
+ },
+ {
+  "id": "escarpin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ɛskaʁpɛ̃/",
+  "en": [
+   "pump",
+   "court shoe"
+  ],
+  "vi": "giày da mỏng, giày cao gót nữ"
+ },
+ {
+  "id": "mouflet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/muflɛ/",
+  "en": [
+   "kid",
+   "brat"
+  ],
+  "vi": "nhóc con"
+ },
+ {
+  "id": "allocation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/alɔkasjɔ̃/",
+  "en": [
+   "allowance",
+   "benefit",
+   "allocation"
+  ],
+  "vi": "trợ cấp; sự cấp phát"
+ },
+ {
+  "id": "automate",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/otɔmat/",
+  "en": [
+   "automaton",
+   "robot"
+  ],
+  "vi": "người máy, máy tự động"
+ },
+ {
+  "id": "impersonnel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ɛ̃pɛʁsɔnɛl/",
+  "en": [
+   "impersonal"
+  ],
+  "vi": "phi cá nhân, khách quan; vô nhân xưng"
+ },
+ {
+  "id": "râper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁape/",
+  "en": [
+   "to grate",
+   "to rasp"
+  ],
+  "vi": "nạo, bào (thức ăn)"
+ },
+ {
+  "id": "abonder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/abɔ̃de/",
+  "en": [
+   "to abound",
+   "to be plentiful"
+  ],
+  "vi": "dồi dào, có nhiều"
+ },
+ {
+  "id": "amnistie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/amnisti/",
+  "en": [
+   "amnesty"
+  ],
+  "vi": "sự ân xá, đại xá"
+ },
+ {
+  "id": "duce",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/dutʃe/",
+  "en": [
+   "duce",
+   "leader"
+  ],
+  "vi": "lãnh tụ (Duce)"
+ },
+ {
+  "id": "gencive",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ʒɑ̃siv/",
+  "en": [
+   "gum"
+  ],
+  "vi": "lợi, nướu (răng)"
+ },
+ {
+  "id": "redingote",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ʁədɛ̃ɡɔt/",
+  "en": [
+   "frock coat",
+   "redingote"
+  ],
+  "vi": "áo khoác dài (kiểu redingote)"
+ },
+ {
+  "id": "élucider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/elyside/",
+  "en": [
+   "to elucidate",
+   "to clarify"
+  ],
+  "vi": "làm sáng tỏ"
+ },
+ {
+  "id": "éterniser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/etɛʁnize/",
+  "en": [
+   "to drag out",
+   "to perpetuate"
+  ],
+  "vi": "kéo dài mãi, làm dây dưa"
+ },
+ {
+  "id": "exhumer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ɛɡzyme/",
+  "en": [
+   "to exhume",
+   "to dig up"
+  ],
+  "vi": "khai quật; đào moi lại"
+ },
+ {
+  "id": "nova",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/nɔva/",
+  "en": [
+   "nova"
+  ],
+  "vi": "sao mới (thiên văn)"
+ },
+ {
+  "id": "civique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/sivik/",
+  "en": [
+   "civic"
+  ],
+  "vi": "thuộc công dân, công dân"
+ },
+ {
+  "id": "concilier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/kɔ̃silje/",
+  "en": [
+   "to reconcile",
+   "to conciliate"
+  ],
+  "vi": "dung hòa, hòa giải"
+ },
+ {
+  "id": "écoper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ekɔpe/",
+  "en": [
+   "to bail out",
+   "to cop (a punishment)"
+  ],
+  "vi": "tát nước; lãnh, hứng chịu"
+ },
+ {
+  "id": "attirail",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/atiʁaj/",
+  "en": [
+   "gear",
+   "paraphernalia"
+  ],
+  "vi": "đồ nghề, dụng cụ lỉnh kỉnh"
+ },
+ {
+  "id": "rance",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁɑ̃s/",
+  "en": [
+   "rancid"
+  ],
+  "vi": "ôi, khét (dầu mỡ)"
+ },
+ {
+  "id": "rapproché",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ʁapʁoʃe/",
+  "en": [
+   "close",
+   "close together"
+  ],
+  "vi": "gần nhau, sát nhau"
+ },
+ {
+  "id": "vagabonder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/vaɡabɔ̃de/",
+  "en": [
+   "to wander",
+   "to roam"
+  ],
+  "vi": "lang thang, phiêu bạt"
+ },
+ {
+  "id": "accablé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/akable/",
+  "en": [
+   "overwhelmed",
+   "crushed"
+  ],
+  "vi": "kiệt sức, chán nản, trĩu nặng"
+ },
+ {
+  "id": "bouilloire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/bujwaʁ/",
+  "en": [
+   "kettle"
+  ],
+  "vi": "ấm đun nước"
+ },
+ {
+  "id": "figuier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/fiɡje/",
+  "en": [
+   "fig tree"
+  ],
+  "vi": "cây sung, cây vả"
+ },
+ {
+  "id": "municipalité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/mynisipalite/",
+  "en": [
+   "municipality",
+   "town council"
+  ],
+  "vi": "chính quyền thành phố, đô thị"
+ },
+ {
+  "id": "templier",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "ipa": "/tɑ̃plije/",
+  "en": [
+   "Templar"
+  ],
+  "vi": "hiệp sĩ dòng Đền"
+ },
+ {
+  "id": "dédommager",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/dedɔmaʒe/",
+  "en": [
+   "to compensate",
+   "to indemnify"
+  ],
+  "vi": "bồi thường, đền bù"
+ },
+ {
+  "id": "poulette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/pulɛt/",
+  "en": [
+   "pullet",
+   "young hen",
+   "chick"
+  ],
+  "vi": "gà mái tơ; em, cưng"
+ },
+ {
+  "id": "rhinocéros",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ʁinɔseʁɔs/",
+  "en": [
+   "rhinoceros"
+  ],
+  "vi": "tê giác"
+ },
+ {
+  "id": "étrangeté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/etʁɑ̃ʒte/",
+  "en": [
+   "strangeness",
+   "oddness"
+  ],
+  "vi": "sự kỳ lạ, kỳ quặc"
+ },
+ {
+  "id": "capture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/kaptyʁ/",
+  "en": [
+   "capture",
+   "screenshot"
+  ],
+  "vi": "sự bắt giữ; ảnh chụp màn hình"
+ },
+ {
+  "id": "consolider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/kɔ̃sɔlide/",
+  "en": [
+   "to consolidate",
+   "to strengthen"
+  ],
+  "vi": "củng cố, gia cố"
+ },
+ {
+  "id": "pompon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/pɔ̃pɔ̃/",
+  "en": [
+   "pompom"
+  ],
+  "vi": "quả bông (trang trí)"
+ },
+ {
+  "id": "trouée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/tʁue/",
+  "en": [
+   "gap",
+   "breach"
+  ],
+  "vi": "lỗ hổng, khoảng trống, chỗ thủng"
+ },
+ {
+  "id": "magistral",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/maʒistʁal/",
+  "en": [
+   "masterful",
+   "lecture-style"
+  ],
+  "vi": "bậc thầy, tài tình; (bài giảng) thuyết trình"
+ },
+ {
+  "id": "building",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/bildiŋ/",
+  "en": [
+   "building",
+   "high-rise"
+  ],
+  "vi": "tòa nhà cao tầng"
+ },
+ {
+  "id": "bélier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/belje/",
+  "en": [
+   "ram",
+   "battering ram"
+  ],
+  "vi": "cừu đực; máy phá thành"
+ },
+ {
+  "id": "escapade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ɛskapad/",
+  "en": [
+   "escapade",
+   "getaway"
+  ],
+  "vi": "chuyến đi chơi, cuộc dạo chơi trốn việc"
+ },
+ {
+  "id": "gouttelette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ɡutlɛt/",
+  "en": [
+   "droplet"
+  ],
+  "vi": "giọt nhỏ"
+ },
+ {
+  "id": "ombrelle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ɔ̃bʁɛl/",
+  "en": [
+   "parasol"
+  ],
+  "vi": "ô che nắng, dù (nữ)"
+ },
+ {
+  "id": "quotidiennement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "ipa": "/kɔtidjɛnmɑ̃/",
+  "en": [
+   "daily",
+   "every day"
+  ],
+  "vi": "hàng ngày"
+ },
+ {
+  "id": "régal",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ʁeɡal/",
+  "en": [
+   "treat",
+   "delight"
+  ],
+  "vi": "món khoái khẩu, sự thưởng thức"
+ },
+ {
+  "id": "scribe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/skʁib/",
+  "en": [
+   "scribe"
+  ],
+  "vi": "người ghi chép, thư lại"
+ },
+ {
+  "id": "substitut",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/sypstity/",
+  "en": [
+   "substitute",
+   "deputy prosecutor"
+  ],
+  "vi": "vật thay thế; công tố viên phó"
+ },
+ {
+  "id": "acceptation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/aksɛptasjɔ̃/",
+  "en": [
+   "acceptance"
+  ],
+  "vi": "sự chấp nhận"
+ },
+ {
+  "id": "mirette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/miʁɛt/",
+  "en": [
+   "eye (slang)",
+   "peeper"
+  ],
+  "vi": "con mắt (tiếng lóng)"
+ },
+ {
+  "id": "set",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/sɛt/",
+  "en": [
+   "set",
+   "place mat"
+  ],
+  "vi": "ván (thể thao); bộ; tấm lót bàn ăn"
+ },
+ {
+  "id": "externe",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "ipa": "/ɛkstɛʁn/",
+  "en": [
+   "external",
+   "day pupil"
+  ],
+  "vi": "bên ngoài; học sinh ngoại trú; bác sĩ thực tập"
+ },
+ {
+  "id": "parlé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/paʁle/",
+  "en": [
+   "spoken"
+  ],
+  "vi": "(ngôn ngữ) nói, khẩu ngữ"
+ },
+ {
+  "id": "étrier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/etʁije/",
+  "en": [
+   "stirrup"
+  ],
+  "vi": "bàn đạp (yên ngựa)"
+ },
+ {
+  "id": "au-dedans",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "ipa": "/odədɑ̃/",
+  "en": [
+   "inside",
+   "within"
+  ],
+  "vi": "bên trong, ở phía trong"
+ },
+ {
+  "id": "écrabouiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/ekʁabuje/",
+  "en": [
+   "to crush",
+   "to squash"
+  ],
+  "vi": "nghiền nát, đè bẹp"
+ },
+ {
+  "id": "bas-côté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/bakote/",
+  "en": [
+   "roadside verge",
+   "side aisle"
+  ],
+  "vi": "lề đường; gian bên (nhà thờ)"
+ },
+ {
+  "id": "clavier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/klavje/",
+  "en": [
+   "keyboard"
+  ],
+  "vi": "bàn phím"
+ },
+ {
+  "id": "sédatif",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "ipa": "/sedatif/",
+  "en": [
+   "sedative"
+  ],
+  "vi": "thuốc an thần; có tính an thần"
+ },
+ {
+  "id": "affleurer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/aflœʁe/",
+  "en": [
+   "to surface",
+   "to be flush with"
+  ],
+  "vi": "nhô lên ngang mặt, lộ ra bề mặt"
+ },
+ {
+  "id": "monotonie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/monotoni/",
+  "en": [
+   "monotony"
+  ],
+  "vi": "sự đơn điệu, tẻ nhạt"
+ },
+ {
+  "id": "panse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/pɑ̃s/",
+  "en": [
+   "belly",
+   "rumen"
+  ],
+  "vi": "bụng phệ; dạ cỏ (động vật)"
+ },
+ {
+  "id": "sacristie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/sakʁisti/",
+  "en": [
+   "sacristy",
+   "vestry"
+  ],
+  "vi": "phòng thánh (nơi cất đồ lễ)"
+ },
+ {
+  "id": "bassesse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/basɛs/",
+  "en": [
+   "baseness",
+   "vileness"
+  ],
+  "vi": "sự đê tiện, hèn hạ"
+ },
+ {
+  "id": "hic",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ik/",
+  "en": [
+   "snag",
+   "catch"
+  ],
+  "vi": "điểm mắc mứu, chỗ khó khăn"
+ },
+ {
+  "id": "mortellement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "ipa": "/mɔʁtɛlmɑ̃/",
+  "en": [
+   "mortally",
+   "deadly"
+  ],
+  "vi": "chí mạng; cực kỳ, chết người"
+ },
+ {
+  "id": "intrépide",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ɛ̃tʁepid/",
+  "en": [
+   "intrepid",
+   "fearless"
+  ],
+  "vi": "gan dạ, dũng cảm"
+ },
+ {
+  "id": "mortifier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "ipa": "/mɔʁtifje/",
+  "en": [
+   "to mortify",
+   "to humiliate"
+  ],
+  "vi": "làm bẽ mặt, làm tủi hổ"
+ },
+ {
+  "id": "obscénité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/ɔpsenite/",
+  "en": [
+   "obscenity"
+  ],
+  "vi": "sự tục tĩu, lời tục tĩu"
+ },
+ {
+  "id": "humus",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/ymys/",
+  "en": [
+   "humus"
+  ],
+  "vi": "mùn (đất)"
+ },
+ {
+  "id": "confrérie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "ipa": "/kɔ̃fʁeʁi/",
+  "en": [
+   "brotherhood",
+   "confraternity"
+  ],
+  "vi": "hội đoàn, phường hội"
+ },
+ {
+  "id": "déchirement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "ipa": "/deʃiʁmɑ̃/",
+  "en": [
+   "wrench",
+   "heartbreak"
+  ],
+  "vi": "sự đau xé lòng, giằng xé"
+ },
+ {
+  "id": "insistant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "ipa": "/ɛ̃sistɑ̃/",
+  "en": [
+   "insistent"
+  ],
+  "vi": "nài nỉ, khăng khăng, dai dẳng"
+ }
+]

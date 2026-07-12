@@ -1,0 +1,827 @@
+[
+ {
+  "id": "lent",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "chậm, chậm chạp"
+ },
+ {
+  "id": "boutique",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cửa hàng, cửa hiệu"
+ },
+ {
+  "id": "test",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bài kiểm tra, thử nghiệm"
+ },
+ {
+  "id": "propriétaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chủ sở hữu, chủ nhà"
+ },
+ {
+  "id": "fermé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đóng, đóng cửa"
+ },
+ {
+  "id": "promesse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lời hứa"
+ },
+ {
+  "id": "assiette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cái đĩa"
+ },
+ {
+  "id": "coffre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "rương, két; cốp xe"
+ },
+ {
+  "id": "fonctionner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hoạt động, vận hành"
+ },
+ {
+  "id": "mise",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "sự đặt để; tiền cược"
+ },
+ {
+  "id": "brun",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "màu nâu, nâu sẫm"
+ },
+ {
+  "id": "complet",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đầy đủ, hoàn chỉnh; hết chỗ"
+ },
+ {
+  "id": "charme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự quyến rũ, duyên dáng"
+ },
+ {
+  "id": "majesté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự uy nghi; bệ hạ"
+ },
+ {
+  "id": "cracher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhổ, khạc nhổ"
+ },
+ {
+  "id": "minuit",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nửa đêm, mười hai giờ đêm"
+ },
+ {
+  "id": "bêtise",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự ngu ngốc; việc dại dột"
+ },
+ {
+  "id": "ouvrier",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "công nhân, thợ"
+ },
+ {
+  "id": "vaste",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "rộng lớn, bao la"
+ },
+ {
+  "id": "foncer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lao tới; làm sẫm màu"
+ },
+ {
+  "id": "poulet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thịt gà; con gà con"
+ },
+ {
+  "id": "principe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nguyên tắc, nguyên lý"
+ },
+ {
+  "id": "to",
+  "pos": [
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "vi": "tổng cộng (viết tắt); tô"
+ },
+ {
+  "id": "affirmer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khẳng định, quả quyết"
+ },
+ {
+  "id": "cercle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vòng tròn, đường tròn"
+ },
+ {
+  "id": "lutter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đấu tranh, chống lại"
+ },
+ {
+  "id": "territoire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lãnh thổ, vùng đất"
+ },
+ {
+  "id": "poule",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "con gà mái"
+ },
+ {
+  "id": "vain",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "vô ích, hão huyền"
+ },
+ {
+  "id": "barbe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "râu, bộ râu"
+ },
+ {
+  "id": "faveur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự ưu ái; đặc ân"
+ },
+ {
+  "id": "raser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cạo, cạo râu"
+ },
+ {
+  "id": "uns",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "một số người, những người"
+ },
+ {
+  "id": "bus",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xe buýt"
+ },
+ {
+  "id": "soupe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "món súp, canh"
+ },
+ {
+  "id": "venu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đã đến; người mới đến"
+ },
+ {
+  "id": "écrivain",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhà văn"
+ },
+ {
+  "id": "recouvrir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phủ kín, che phủ"
+ },
+ {
+  "id": "centaine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khoảng một trăm"
+ },
+ {
+  "id": "au-delà",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "phía bên kia, vượt quá"
+ },
+ {
+  "id": "tendresse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự dịu dàng, âu yếm"
+ },
+ {
+  "id": "effrayer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm sợ hãi, dọa"
+ },
+ {
+  "id": "fatigué",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "mệt mỏi"
+ },
+ {
+  "id": "enceinte",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "mang thai; tường bao, loa"
+ },
+ {
+  "id": "supérieur",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cao hơn, bên trên; cấp trên"
+ },
+ {
+  "id": "pisser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi tiểu, đái"
+ },
+ {
+  "id": "parcourir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi khắp; đọc lướt"
+ },
+ {
+  "id": "d",
+  "pos": [
+   "giới từ",
+   "số từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "của (viết tắt của \"de\")"
+ },
+ {
+  "id": "responsabilité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "trách nhiệm"
+ },
+ {
+  "id": "inspirer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "truyền cảm hứng; hít vào"
+ },
+ {
+  "id": "précipiter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm gấp gáp; xô đẩy"
+ },
+ {
+  "id": "viser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhắm vào, hướng tới"
+ },
+ {
+  "id": "nation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "quốc gia, dân tộc"
+ },
+ {
+  "id": "obscur",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tối tăm; mờ mịt, khó hiểu"
+ },
+ {
+  "id": "bel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đẹp, xinh đẹp"
+ },
+ {
+  "id": "matière",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vật chất; môn học"
+ },
+ {
+  "id": "paysage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "phong cảnh, cảnh quan"
+ },
+ {
+  "id": "avertir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "báo trước, cảnh báo"
+ },
+ {
+  "id": "extraordinaire",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "phi thường, kỳ lạ"
+ },
+ {
+  "id": "mouche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "con ruồi"
+ },
+ {
+  "id": "envahir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xâm chiếm, tràn ngập"
+ },
+ {
+  "id": "révolution",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc cách mạng; vòng quay"
+ },
+ {
+  "id": "fatigue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự mệt mỏi"
+ },
+ {
+  "id": "journaliste",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nhà báo, phóng viên"
+ },
+ {
+  "id": "soif",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự khát; cơn khát"
+ },
+ {
+  "id": "réserve",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự dự trữ; kho; sự dè dặt"
+ },
+ {
+  "id": "meuble",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "đồ đạc, đồ nội thất"
+ },
+ {
+  "id": "navire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con tàu, tàu thủy"
+ },
+ {
+  "id": "gaz",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khí, khí ga"
+ },
+ {
+  "id": "conseiller",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "khuyên, tư vấn"
+ },
+ {
+  "id": "mystérieux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bí ẩn, huyền bí"
+ },
+ {
+  "id": "flotter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nổi, trôi nổi; bay phấp phới"
+ },
+ {
+  "id": "plume",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lông vũ; ngòi bút"
+ },
+ {
+  "id": "démarrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khởi động, bắt đầu"
+ },
+ {
+  "id": "grimper",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "leo, trèo"
+ },
+ {
+  "id": "punir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trừng phạt, phạt"
+ },
+ {
+  "id": "décrire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "miêu tả, mô tả"
+ },
+ {
+  "id": "rejeter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "từ chối, bác bỏ"
+ },
+ {
+  "id": "banc",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ghế dài, băng ghế"
+ },
+ {
+  "id": "furieux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "giận dữ, phẫn nộ"
+ },
+ {
+  "id": "signal",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tín hiệu, dấu hiệu"
+ },
+ {
+  "id": "évident",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "rõ ràng, hiển nhiên"
+ },
+ {
+  "id": "malin",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "khôn ranh, láu cá"
+ },
+ {
+  "id": "masque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mặt nạ, khẩu trang"
+ },
+ {
+  "id": "pis",
+  "pos": [
+   "phó từ",
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tệ hơn, tồi hơn"
+ },
+ {
+  "id": "in",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "sành điệu, hợp mốt"
+ },
+ {
+  "id": "canon",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "khẩu đại bác, nòng súng"
+ },
+ {
+  "id": "innocent",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "vô tội; ngây thơ"
+ },
+ {
+  "id": "cauchemar",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cơn ác mộng"
+ },
+ {
+  "id": "sous-titrage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "việc làm phụ đề"
+ },
+ {
+  "id": "vélo",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xe đạp"
+ },
+ {
+  "id": "maigre",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "gầy, ốm; ít ỏi"
+ },
+ {
+  "id": "toutes",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "tất cả (giống cái, số nhiều)"
+ },
+ {
+  "id": "désigner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chỉ định, chỉ ra"
+ },
+ {
+  "id": "allure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dáng vẻ, phong thái; tốc độ"
+ },
+ {
+  "id": "échange",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự trao đổi"
+ },
+ {
+  "id": "régner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trị vì, ngự trị"
+ },
+ {
+  "id": "connard",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "thằng khốn, đồ ngốc (thô tục)"
+ },
+ {
+  "id": "épreuve",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thử thách; bài thi"
+ },
+ {
+  "id": "chocolat",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "sô cô la"
+ }
+]

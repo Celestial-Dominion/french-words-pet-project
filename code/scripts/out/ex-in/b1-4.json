@@ -1,0 +1,409 @@
+[
+ {
+  "id": "chanteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ca sĩ"
+ },
+ {
+  "id": "conférence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hội nghị; bài diễn thuyết"
+ },
+ {
+  "id": "distraire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm sao nhãng; làm giải trí, tiêu khiển"
+ },
+ {
+  "id": "découper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cắt ra, cắt nhỏ"
+ },
+ {
+  "id": "sincère",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "chân thành, thành thật"
+ },
+ {
+  "id": "déclencher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kích hoạt, gây ra, khởi phát"
+ },
+ {
+  "id": "carnet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sổ tay; tập vé"
+ },
+ {
+  "id": "émouvoir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm xúc động, làm cảm động"
+ },
+ {
+  "id": "bol",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cái bát, cái tô"
+ },
+ {
+  "id": "brouillard",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "sương mù"
+ },
+ {
+  "id": "décoller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cất cánh; bóc ra, gỡ ra"
+ },
+ {
+  "id": "connu",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nổi tiếng, được biết đến"
+ },
+ {
+  "id": "déclaration",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lời tuyên bố; tờ khai"
+ },
+ {
+  "id": "précaution",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự đề phòng, thận trọng"
+ },
+ {
+  "id": "couvent",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tu viện, nữ tu viện"
+ },
+ {
+  "id": "renseignement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thông tin, tin tức"
+ },
+ {
+  "id": "dette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "món nợ"
+ },
+ {
+  "id": "chut",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "suỵt! (ra hiệu im lặng)"
+ },
+ {
+  "id": "serveur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bồi bàn, phục vụ; máy chủ"
+ },
+ {
+  "id": "tente",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lều (cắm trại)"
+ },
+ {
+  "id": "bouquet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bó hoa"
+ },
+ {
+  "id": "collection",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bộ sưu tập"
+ },
+ {
+  "id": "raide",
+  "pos": [
+   "tính từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "cứng đờ, cứng nhắc; dốc đứng"
+ },
+ {
+  "id": "gouverneur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thống đốc"
+ },
+ {
+  "id": "puits",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cái giếng"
+ },
+ {
+  "id": "rembourser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hoàn tiền, trả lại nợ"
+ },
+ {
+  "id": "affection",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tình cảm, sự trìu mến; bệnh tật"
+ },
+ {
+  "id": "orgueil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lòng kiêu hãnh; sự kiêu ngạo"
+ },
+ {
+  "id": "profil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hồ sơ, trang cá nhân; hình nghiêng"
+ },
+ {
+  "id": "racine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "rễ cây; nguồn gốc, gốc rễ"
+ },
+ {
+  "id": "ténèbres",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bóng tối, bóng đêm"
+ },
+ {
+  "id": "fantastique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tuyệt vời; kỳ ảo, huyền bí"
+ },
+ {
+  "id": "canne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cây gậy chống; cây mía (canne à sucre)"
+ },
+ {
+  "id": "beurre",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "bơ"
+ },
+ {
+  "id": "défaire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tháo ra, cởi ra, dỡ ra"
+ },
+ {
+  "id": "gémir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rên rỉ, than vãn"
+ },
+ {
+  "id": "cigare",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xì gà"
+ },
+ {
+  "id": "tels",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "như thế, như vậy (số nhiều giống đực)"
+ },
+ {
+  "id": "cavalier",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kỵ sĩ, người cưỡi ngựa; bạn nhảy"
+ },
+ {
+  "id": "tiède",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "âm ấm, hâm hẩm"
+ },
+ {
+  "id": "lumineux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "sáng, rực rỡ, tỏa sáng"
+ },
+ {
+  "id": "poésie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thơ ca, thơ phú"
+ },
+ {
+  "id": "volet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cửa chớp; phần, mảng (kế hoạch)"
+ },
+ {
+  "id": "encourager",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khích lệ, cổ vũ, động viên"
+ },
+ {
+  "id": "pli",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nếp gấp, nếp nhăn"
+ },
+ {
+  "id": "grève",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc đình công; bãi biển"
+ },
+ {
+  "id": "précéder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi trước, có trước"
+ },
+ {
+  "id": "assaut",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cuộc tấn công, sự xung kích"
+ },
+ {
+  "id": "vilain",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "hư, hỗn; xấu xí, khó chịu"
+ },
+ {
+  "id": "procureur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "công tố viên, kiểm sát viên"
+ }
+]

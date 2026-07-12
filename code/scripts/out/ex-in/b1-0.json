@@ -1,0 +1,819 @@
+[
+ {
+  "id": "ongle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "móng (tay, chân)"
+ },
+ {
+  "id": "méfier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cảnh giác, đề phòng"
+ },
+ {
+  "id": "boue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bùn"
+ },
+ {
+  "id": "université",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "trường đại học"
+ },
+ {
+  "id": "etc",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "vân vân"
+ },
+ {
+  "id": "futur",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tương lai; thì tương lai"
+ },
+ {
+  "id": "singe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con khỉ"
+ },
+ {
+  "id": "satisfaire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm hài lòng, thỏa mãn"
+ },
+ {
+  "id": "italien",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "(thuộc) nước Ý; tiếng Ý"
+ },
+ {
+  "id": "nerf",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dây thần kinh"
+ },
+ {
+  "id": "mets",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "món ăn"
+ },
+ {
+  "id": "emploi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "việc làm; cách dùng"
+ },
+ {
+  "id": "renverser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm đổ, lật đổ"
+ },
+ {
+  "id": "employer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sử dụng; thuê mướn"
+ },
+ {
+  "id": "curé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cha xứ, linh mục"
+ },
+ {
+  "id": "s",
+  "pos": [
+   "đại từ",
+   "danh từ",
+   "liên từ"
+  ],
+  "gender": null,
+  "vi": "chữ cái S"
+ },
+ {
+  "id": "curiosité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tò mò"
+ },
+ {
+  "id": "misère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự nghèo khổ, khốn cùng"
+ },
+ {
+  "id": "vêtir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mặc (quần áo)"
+ },
+ {
+  "id": "solide",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chắc chắn, vững chắc; chất rắn"
+ },
+ {
+  "id": "exécuter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thực hiện; hành quyết"
+ },
+ {
+  "id": "médicament",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thuốc, dược phẩm"
+ },
+ {
+  "id": "roue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bánh xe"
+ },
+ {
+  "id": "tantôt",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "lúc thì; lát nữa, ban chiều"
+ },
+ {
+  "id": "retomber",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rơi lại, ngã lại"
+ },
+ {
+  "id": "mlle",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "cô (Mademoiselle)"
+ },
+ {
+  "id": "tribunal",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tòa án"
+ },
+ {
+  "id": "apparence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vẻ bề ngoài"
+ },
+ {
+  "id": "répandre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm lan ra, đổ ra"
+ },
+ {
+  "id": "cogner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đập, va đập"
+ },
+ {
+  "id": "grille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hàng rào sắt; bảng ô, lưới"
+ },
+ {
+  "id": "légèrement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "nhẹ nhàng; một chút"
+ },
+ {
+  "id": "appliquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "áp dụng; bôi, thoa"
+ },
+ {
+  "id": "noble",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cao quý; quý tộc"
+ },
+ {
+  "id": "piger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hiểu (thân mật)"
+ },
+ {
+  "id": "hausser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nâng lên, nhún (vai)"
+ },
+ {
+  "id": "repasser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "là (ủi) quần áo; ghé lại"
+ },
+ {
+  "id": "reprocher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trách móc, chê trách"
+ },
+ {
+  "id": "crainte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nỗi sợ, sự e ngại"
+ },
+ {
+  "id": "épée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thanh kiếm"
+ },
+ {
+  "id": "voiler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "che, phủ; làm mờ"
+ },
+ {
+  "id": "manque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự thiếu hụt"
+ },
+ {
+  "id": "foyer",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "gia đình, tổ ấm; lò sưởi"
+ },
+ {
+  "id": "lueur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ánh sáng yếu ớt, tia sáng"
+ },
+ {
+  "id": "activité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hoạt động"
+ },
+ {
+  "id": "saigner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chảy máu"
+ },
+ {
+  "id": "malheureusement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "không may, tiếc thay"
+ },
+ {
+  "id": "dominer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thống trị, chi phối"
+ },
+ {
+  "id": "chiffre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con số, chữ số"
+ },
+ {
+  "id": "transporter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vận chuyển"
+ },
+ {
+  "id": "texte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "văn bản, đoạn văn"
+ },
+ {
+  "id": "sommet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đỉnh (núi); hội nghị thượng đỉnh"
+ },
+ {
+  "id": "modèle",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "mẫu, mô hình; người mẫu"
+ },
+ {
+  "id": "gant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "găng tay"
+ },
+ {
+  "id": "serviette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khăn; cặp táp"
+ },
+ {
+  "id": "stop",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự dừng lại; biển dừng"
+ },
+ {
+  "id": "hâte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự vội vàng"
+ },
+ {
+  "id": "difficulté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khó khăn"
+ },
+ {
+  "id": "opposer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đối lập, phản đối"
+ },
+ {
+  "id": "constater",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhận thấy, ghi nhận"
+ },
+ {
+  "id": "maudit",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đáng nguyền rủa, khốn kiếp"
+ },
+ {
+  "id": "réagir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phản ứng"
+ },
+ {
+  "id": "digne",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "xứng đáng; đường hoàng"
+ },
+ {
+  "id": "ordure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "rác rưởi"
+ },
+ {
+  "id": "armer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vũ trang, trang bị vũ khí"
+ },
+ {
+  "id": "envoler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bay đi, bay lên"
+ },
+ {
+  "id": "puer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bốc mùi hôi thối"
+ },
+ {
+  "id": "nana",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cô nàng, con gái (thân mật)"
+ },
+ {
+  "id": "minuscule",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nhỏ xíu; chữ thường"
+ },
+ {
+  "id": "débarquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đổ bộ, xuống (tàu, xe)"
+ },
+ {
+  "id": "linge",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đồ vải, quần áo (giặt)"
+ },
+ {
+  "id": "policier",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "cảnh sát; (thuộc) cảnh sát"
+ },
+ {
+  "id": "allié",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "đồng minh"
+ },
+ {
+  "id": "sensation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cảm giác"
+ },
+ {
+  "id": "vieillard",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ông già, người già"
+ },
+ {
+  "id": "essuyer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lau (khô)"
+ },
+ {
+  "id": "étaler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trải ra, phô bày"
+ },
+ {
+  "id": "fidèle",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trung thành"
+ },
+ {
+  "id": "embarquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lên (tàu, máy bay); chất lên"
+ },
+ {
+  "id": "gaffe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự hớ hênh, lỗi vụng về"
+ },
+ {
+  "id": "délicieux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "ngon tuyệt, thơm ngon"
+ },
+ {
+  "id": "barrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gạch bỏ; chặn (đường)"
+ },
+ {
+  "id": "gonfler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bơm phồng, làm căng"
+ },
+ {
+  "id": "employé",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "nhân viên"
+ },
+ {
+  "id": "jouir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tận hưởng; đạt khoái cảm"
+ },
+ {
+  "id": "huile",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dầu"
+ },
+ {
+  "id": "statue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tượng"
+ },
+ {
+  "id": "religion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tôn giáo"
+ },
+ {
+  "id": "col",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cổ áo; đèo (núi)"
+ },
+ {
+  "id": "repérer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phát hiện, định vị"
+ },
+ {
+  "id": "exposer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trưng bày; trình bày"
+ },
+ {
+  "id": "poème",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bài thơ"
+ },
+ {
+  "id": "gai",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "vui vẻ, vui tươi"
+ },
+ {
+  "id": "plier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gấp, gập lại"
+ },
+ {
+  "id": "marié",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "chú rể; người đã kết hôn"
+ },
+ {
+  "id": "décevoir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm thất vọng"
+ },
+ {
+  "id": "fêter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ăn mừng, tổ chức lễ"
+ },
+ {
+  "id": "revolver",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "súng lục ổ quay"
+ },
+ {
+  "id": "shérif",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cảnh sát trưởng"
+ },
+ {
+  "id": "épuiser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm kiệt sức; dùng cạn"
+ }
+]

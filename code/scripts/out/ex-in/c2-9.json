@@ -1,0 +1,813 @@
+[
+ {
+  "id": "cohorte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đoàn, đám đông; đội quân (La Mã)"
+ },
+ {
+  "id": "défectueux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "lỗi, khuyết tật, hỏng"
+ },
+ {
+  "id": "détériorer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm hư hỏng, làm xấu đi"
+ },
+ {
+  "id": "englober",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bao gồm, gộp chung"
+ },
+ {
+  "id": "exorciser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trừ tà, trục quỷ; xua tan (nỗi sợ)"
+ },
+ {
+  "id": "figurine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tượng nhỏ, mô hình nhân vật"
+ },
+ {
+  "id": "jaser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngồi lê đôi mách, bàn tán; (chim) hót ríu rít"
+ },
+ {
+  "id": "judicieux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "sáng suốt, khôn ngoan, hợp lý"
+ },
+ {
+  "id": "uriner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi tiểu"
+ },
+ {
+  "id": "amulette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bùa hộ mệnh"
+ },
+ {
+  "id": "ventouse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giác hút, giác hơi; xúc tu (bạch tuộc)"
+ },
+ {
+  "id": "mensuel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "hàng tháng; nguyệt san"
+ },
+ {
+  "id": "austérité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự khắc khổ; chính sách thắt lưng buộc bụng"
+ },
+ {
+  "id": "coiffé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đã chải/làm tóc"
+ },
+ {
+  "id": "abdomen",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bụng"
+ },
+ {
+  "id": "braqueur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ cướp (có vũ khí)"
+ },
+ {
+  "id": "couronnement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lễ đăng quang; đỉnh cao (thành tựu)"
+ },
+ {
+  "id": "piteux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thảm hại, đáng thương"
+ },
+ {
+  "id": "vendange",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vụ hái nho, mùa nho"
+ },
+ {
+  "id": "déménageur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người chuyển nhà (thuê)"
+ },
+ {
+  "id": "lutteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đô vật; người đấu tranh kiên cường"
+ },
+ {
+  "id": "ondulé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "gợn sóng, lượn sóng"
+ },
+ {
+  "id": "pacotille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hàng rẻ tiền, đồ tạp nham"
+ },
+ {
+  "id": "présentement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "hiện nay, lúc này"
+ },
+ {
+  "id": "yang",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dương (trong âm dương)"
+ },
+ {
+  "id": "éclaté",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nổ tung, rạng rỡ; hình phân rã"
+ },
+ {
+  "id": "bandé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "được băng bó; căng (dây cung, cơ)"
+ },
+ {
+  "id": "divulguer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tiết lộ, công bố"
+ },
+ {
+  "id": "mobilisation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự huy động, động viên"
+ },
+ {
+  "id": "obèse",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "béo phì"
+ },
+ {
+  "id": "égaliser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm cho bằng nhau; (thể thao) gỡ hòa"
+ },
+ {
+  "id": "guitoune",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "(tiếng lóng) lều, chòi"
+ },
+ {
+  "id": "pamphlet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bài đả kích, tờ châm biếm"
+ },
+ {
+  "id": "autoritaire",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "độc đoán, hách dịch"
+ },
+ {
+  "id": "garant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "người bảo lãnh, người bảo đảm"
+ },
+ {
+  "id": "more",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "người Mô-rơ (Hồi giáo Bắc Phi); màu nâu sẫm"
+ },
+ {
+  "id": "ruiné",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "phá sản, khánh kiệt"
+ },
+ {
+  "id": "approvisionnement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự cung ứng, tiếp tế"
+ },
+ {
+  "id": "bouleau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cây bạch dương"
+ },
+ {
+  "id": "cercler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đóng đai, viền quanh"
+ },
+ {
+  "id": "constatation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự nhận thấy, ghi nhận"
+ },
+ {
+  "id": "linceul",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vải liệm, khăn liệm"
+ },
+ {
+  "id": "rosir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ửng hồng, hồng lên"
+ },
+ {
+  "id": "amollir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm mềm; làm nhu nhược"
+ },
+ {
+  "id": "escroquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lừa đảo, lừa gạt lấy tiền"
+ },
+ {
+  "id": "fugace",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thoáng qua, chóng tàn"
+ },
+ {
+  "id": "bouffi",
+  "pos": [
+   "tính từ",
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sưng húp, phù nề"
+ },
+ {
+  "id": "détraquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm hỏng, làm rối loạn"
+ },
+ {
+  "id": "panser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "băng bó (vết thương); chải lông (ngựa)"
+ },
+ {
+  "id": "bénéfique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "có lợi, có ích"
+ },
+ {
+  "id": "talisman",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bùa, lá bùa"
+ },
+ {
+  "id": "christ",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "Chúa Kitô; tượng Chúa chịu nạn"
+ },
+ {
+  "id": "corail",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "san hô; màu san hô"
+ },
+ {
+  "id": "indirect",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "gián tiếp"
+ },
+ {
+  "id": "partouze",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "(thông tục) trò tập thể, thác loạn tình dục"
+ },
+ {
+  "id": "rageusement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách giận dữ, cáu kỉnh"
+ },
+ {
+  "id": "saupoudrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rắc (đường, bột), rải lên"
+ },
+ {
+  "id": "désagrément",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự khó chịu, phiền toái"
+ },
+ {
+  "id": "obliquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rẽ chéo, đi xiên"
+ },
+ {
+  "id": "soupeser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhấc lên ước lượng; cân nhắc"
+ },
+ {
+  "id": "férocité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự hung dữ, tàn bạo"
+ },
+ {
+  "id": "pharmaceutique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc dược phẩm, dược"
+ },
+ {
+  "id": "please",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "(tiếng Anh) làm ơn, xin vui lòng"
+ },
+ {
+  "id": "disjoncter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngắt cầu dao; (thông tục) mất trí, chập mạch"
+ },
+ {
+  "id": "docilement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách ngoan ngoãn, phục tùng"
+ },
+ {
+  "id": "enflure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chỗ sưng, vết sưng; (thô) thằng khốn"
+ },
+ {
+  "id": "minime",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "rất nhỏ, tối thiểu"
+ },
+ {
+  "id": "penny",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "đồng penny"
+ },
+ {
+  "id": "pluvieux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "mưa nhiều, hay mưa"
+ },
+ {
+  "id": "toupet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "túm tóc trước trán; sự trơ tráo, cả gan"
+ },
+ {
+  "id": "écoulement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự chảy ra, thoát ra; sự tiêu thụ (hàng)"
+ },
+ {
+  "id": "fiesta",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tiệc tùng, lễ hội"
+ },
+ {
+  "id": "pâtée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thức ăn nhão (cho vật nuôi); (thông tục) trận đòn nhừ tử"
+ },
+ {
+  "id": "sobriquet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "biệt danh, tên lóng"
+ },
+ {
+  "id": "ânerie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự ngu ngốc, điều ngớ ngẩn"
+ },
+ {
+  "id": "cyclone",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lốc xoáy, bão"
+ },
+ {
+  "id": "sommaire",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "sơ sài, tóm tắt; mục lục, bản tóm tắt"
+ },
+ {
+  "id": "loubard",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "du côn, thanh niên bụi đời"
+ },
+ {
+  "id": "assener",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giáng (một đòn); nói thẳng thừng"
+ },
+ {
+  "id": "captiver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm mê hoặc, thu hút"
+ },
+ {
+  "id": "enfourner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cho vào lò; (thông tục) tống vào, nhét vào"
+ },
+ {
+  "id": "givre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sương giá, băng giá"
+ },
+ {
+  "id": "silex",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đá lửa, đá silic"
+ },
+ {
+  "id": "solidité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự vững chắc, độ bền"
+ },
+ {
+  "id": "éminence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "gò, mô đất; Đức Hồng y; người lỗi lạc"
+ },
+ {
+  "id": "déblayer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dọn dẹp, dọn quang"
+ },
+ {
+  "id": "honoré",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "vinh dự, hân hạnh"
+ },
+ {
+  "id": "incandescent",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nóng sáng, rực lửa; sôi sục"
+ },
+ {
+  "id": "aperçu",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cái nhìn khái quát, tổng quan sơ lược"
+ },
+ {
+  "id": "sangsue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "con đỉa; kẻ bòn rút"
+ },
+ {
+  "id": "sas",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khoang kín (khí/nước); rây, sàng"
+ },
+ {
+  "id": "apparat",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự long trọng, nghi thức phô trương"
+ },
+ {
+  "id": "encyclopédie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bách khoa toàn thư"
+ },
+ {
+  "id": "feutrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm dạ (nỉ); làm cho êm, không tiếng động"
+ },
+ {
+  "id": "fruste",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thô kệch, quê mùa; mòn (khắc)"
+ },
+ {
+  "id": "laveur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người rửa/lau (kính, xe)"
+ },
+ {
+  "id": "caisson",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thùng, hòm lớn; khoang kín; ô trần (kiến trúc)"
+ },
+ {
+  "id": "camisole",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "áo lót; áo trói (camisole de force)"
+ },
+ {
+  "id": "fronton",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trán tường, mặt tam giác trên cửa (kiến trúc)"
+ },
+ {
+  "id": "repriser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mạng, vá (tất, áo)"
+ }
+]

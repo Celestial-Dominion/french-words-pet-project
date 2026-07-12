@@ -1,0 +1,814 @@
+[
+ {
+  "id": "jacter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nói huyên thuyên, tán gẫu"
+ },
+ {
+  "id": "potentiel",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "tiềm năng; tiềm tàng"
+ },
+ {
+  "id": "fraîchement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "mới đây, vừa mới; một cách lạnh nhạt"
+ },
+ {
+  "id": "énervé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bực bội, cáu kỉnh"
+ },
+ {
+  "id": "sécuriser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bảo đảm an toàn; trấn an"
+ },
+ {
+  "id": "tee-shirt",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "áo phông, áo thun"
+ },
+ {
+  "id": "renvoi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự sa thải; sự trả lại; sự tham chiếu"
+ },
+ {
+  "id": "tatouer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xăm, xăm mình"
+ },
+ {
+  "id": "confusément",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách mơ hồ, lộn xộn"
+ },
+ {
+  "id": "fonctionnement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự vận hành, hoạt động"
+ },
+ {
+  "id": "milice",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dân quân, lực lượng dân quân"
+ },
+ {
+  "id": "infant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hoàng tử (Tây Ban Nha, Bồ Đào Nha)"
+ },
+ {
+  "id": "immortalité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự bất tử"
+ },
+ {
+  "id": "sonder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thăm dò, dò xét"
+ },
+ {
+  "id": "netteté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự rõ ràng, độ nét"
+ },
+ {
+  "id": "ambulant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "lưu động, rong"
+ },
+ {
+  "id": "cocher",
+  "pos": [
+   "danh từ",
+   "tính từ",
+   "động từ"
+  ],
+  "gender": "m",
+  "vi": "đánh dấu (ô); người đánh xe ngựa"
+ },
+ {
+  "id": "forgeron",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thợ rèn"
+ },
+ {
+  "id": "premièrement",
+  "pos": [
+   "phó từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thứ nhất, trước hết"
+ },
+ {
+  "id": "charitable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hay làm từ thiện, nhân ái"
+ },
+ {
+  "id": "végétal",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thực vật; thuộc thực vật"
+ },
+ {
+  "id": "palpitant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hồi hộp, gay cấn"
+ },
+ {
+  "id": "étouffant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "ngột ngạt, oi bức"
+ },
+ {
+  "id": "replacer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đặt lại chỗ cũ, sắp xếp lại"
+ },
+ {
+  "id": "publication",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự xuất bản; ấn phẩm"
+ },
+ {
+  "id": "sabotage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự phá hoại, phá hoại ngầm"
+ },
+ {
+  "id": "apitoyer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm động lòng thương; thương xót"
+ },
+ {
+  "id": "braver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bất chấp, thách thức"
+ },
+ {
+  "id": "dégrader",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm suy thoái, làm hư hại; giáng cấp"
+ },
+ {
+  "id": "enchantement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự mê hoặc; niềm vui sướng; phép thuật"
+ },
+ {
+  "id": "garanti",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "được bảo đảm"
+ },
+ {
+  "id": "maladroitement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách vụng về"
+ },
+ {
+  "id": "visqueux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhớt, sền sệt"
+ },
+ {
+  "id": "sensationnel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "giật gân; tuyệt vời"
+ },
+ {
+  "id": "conservatoire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhạc viện"
+ },
+ {
+  "id": "vestige",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dấu tích, di tích"
+ },
+ {
+  "id": "écarquiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mở to (mắt), trợn tròn"
+ },
+ {
+  "id": "blaireau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con lửng; chổi cạo râu"
+ },
+ {
+  "id": "coïncider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trùng hợp, trùng khớp"
+ },
+ {
+  "id": "fréquemment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thường xuyên"
+ },
+ {
+  "id": "vinaigre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giấm"
+ },
+ {
+  "id": "merdier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mớ hỗn độn, tình cảnh rắc rối"
+ },
+ {
+  "id": "virginité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự trinh trắng, trinh tiết"
+ },
+ {
+  "id": "illustration",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hình minh họa; sự minh họa"
+ },
+ {
+  "id": "maternité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thiên chức làm mẹ; khoa sản"
+ },
+ {
+  "id": "connasse",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "con ngốc, đồ khốn (thô tục)"
+ },
+ {
+  "id": "salve",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "loạt đạn; tràng (pháo tay)"
+ },
+ {
+  "id": "séminaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hội thảo chuyên đề; chủng viện"
+ },
+ {
+  "id": "alarmer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm lo sợ, báo động"
+ },
+ {
+  "id": "fréquentation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự lui tới; sự giao du"
+ },
+ {
+  "id": "motte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cục đất; tảng (bơ)"
+ },
+ {
+  "id": "spasme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự co thắt, co giật"
+ },
+ {
+  "id": "substituer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thay thế"
+ },
+ {
+  "id": "chimère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ảo tưởng; quái vật khảm"
+ },
+ {
+  "id": "terminus",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bến cuối, ga cuối"
+ },
+ {
+  "id": "fuyant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "lảng tránh, lẩn tránh; (trán, cằm) tụt"
+ },
+ {
+  "id": "jeep",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "xe jeep"
+ },
+ {
+  "id": "réduction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự giảm bớt; sự giảm giá"
+ },
+ {
+  "id": "imperceptiblement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách khó nhận thấy"
+ },
+ {
+  "id": "extravagant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "kỳ quặc, lố lăng; hoang phí"
+ },
+ {
+  "id": "interruption",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự gián đoạn, sự ngắt quãng"
+ },
+ {
+  "id": "sandwich",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bánh mì kẹp, sandwich"
+ },
+ {
+  "id": "ralliement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự tập hợp; sự gia nhập"
+ },
+ {
+  "id": "rondin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khúc gỗ tròn"
+ },
+ {
+  "id": "antichambre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "phòng chờ, tiền sảnh"
+ },
+ {
+  "id": "sierra",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dãy núi (sierra)"
+ },
+ {
+  "id": "rébellion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự nổi loạn, cuộc nổi dậy"
+ },
+ {
+  "id": "station-service",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "trạm xăng, trạm dịch vụ"
+ },
+ {
+  "id": "piété",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lòng mộ đạo, lòng thành kính"
+ },
+ {
+  "id": "gazer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phun hơi ngạt; (lóng) chạy nhanh, ổn"
+ },
+ {
+  "id": "ferrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đóng móng (ngựa); bọc sắt"
+ },
+ {
+  "id": "verdâtre",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "xanh lục nhạt, hơi xanh"
+ },
+ {
+  "id": "fonte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "gang; sự tan chảy"
+ },
+ {
+  "id": "bof",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "chà (thờ ơ), thường thôi"
+ },
+ {
+  "id": "intensément",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách mãnh liệt"
+ },
+ {
+  "id": "surplomber",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhô ra bên trên, treo lơ lửng trên"
+ },
+ {
+  "id": "teindre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhuộm"
+ },
+ {
+  "id": "morveux",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "nhãi ranh, con nít hỗn; sụt sịt mũi"
+ },
+ {
+  "id": "évènement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự kiện, biến cố"
+ },
+ {
+  "id": "méticuleux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tỉ mỉ, kỹ lưỡng"
+ },
+ {
+  "id": "ortie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cây tầm ma"
+ },
+ {
+  "id": "trimer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm quần quật, cực nhọc"
+ },
+ {
+  "id": "bagarrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đánh nhau, ẩu đả"
+ },
+ {
+  "id": "précipitation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự vội vàng; lượng mưa"
+ },
+ {
+  "id": "plain",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "bằng phẳng, ngang bằng"
+ },
+ {
+  "id": "éjecter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phóng ra, tống ra"
+ },
+ {
+  "id": "rechange",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đồ thay thế, đồ dự phòng"
+ },
+ {
+  "id": "compositeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhà soạn nhạc"
+ },
+ {
+  "id": "cramer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cháy, làm cháy"
+ },
+ {
+  "id": "patois",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thổ ngữ, tiếng địa phương"
+ },
+ {
+  "id": "éventualité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khả năng có thể xảy ra, trường hợp"
+ },
+ {
+  "id": "coursier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người giao hàng, người đưa tin"
+ },
+ {
+  "id": "duper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lừa gạt, đánh lừa"
+ },
+ {
+  "id": "roll",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cuộn; xe đẩy chở hàng"
+ },
+ {
+  "id": "rayé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kẻ sọc; bị xước"
+ },
+ {
+  "id": "abrutir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm đần độn, làm mụ mẫm"
+ },
+ {
+  "id": "poisse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vận rủi, xui xẻo"
+ },
+ {
+  "id": "soprano",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "giọng nữ cao, soprano"
+ },
+ {
+  "id": "géomètre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nhà trắc địa; nhà hình học"
+ },
+ {
+  "id": "fortifier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "củng cố, làm mạnh thêm"
+ }
+]

@@ -1,0 +1,1832 @@
+[
+ {
+  "id": "reflet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʁəflɛ/"
+ },
+ {
+  "id": "veuf",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/vœf/"
+ },
+ {
+  "id": "suspendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/syspɑ̃dʁ/"
+ },
+ {
+  "id": "menteur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/mɑ̃tœʁ/"
+ },
+ {
+  "id": "vente",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/vɑ̃t/"
+ },
+ {
+  "id": "soucier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/susje/"
+ },
+ {
+  "id": "populaire",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/popylɛʁ/"
+ },
+ {
+  "id": "fini",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/fini/"
+ },
+ {
+  "id": "absolu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/apsoly/"
+ },
+ {
+  "id": "danseur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/dɑ̃sœʁ/"
+ },
+ {
+  "id": "armoire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/aʁmwaʁ/"
+ },
+ {
+  "id": "vous-même",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/vumɛm/"
+ },
+ {
+  "id": "secteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/sektœʁ/"
+ },
+ {
+  "id": "jusque",
+  "pos": [
+   "giới từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ʒysk/"
+ },
+ {
+  "id": "chevalier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʃəvalje/"
+ },
+ {
+  "id": "ordinateur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɔʁdinatœʁ/"
+ },
+ {
+  "id": "degré",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/dəɡʁe/"
+ },
+ {
+  "id": "suicide",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/sɥisid/"
+ },
+ {
+  "id": "file",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/fil/"
+ },
+ {
+  "id": "étonnant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/etonɑ̃/"
+ },
+ {
+  "id": "siffler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/sifle/"
+ },
+ {
+  "id": "compliqué",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kɔ̃plike/"
+ },
+ {
+  "id": "las",
+  "pos": [
+   "tính từ",
+   "tượng thanh"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/la/"
+ },
+ {
+  "id": "direct",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/diʁɛkt/"
+ },
+ {
+  "id": "baron",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/baʁɔ̃/"
+ },
+ {
+  "id": "heu",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ø/"
+ },
+ {
+  "id": "vengeance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/vɑ̃ʒɑ̃s/"
+ },
+ {
+  "id": "musée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/myze/"
+ },
+ {
+  "id": "émission",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/emisjɔ̃/"
+ },
+ {
+  "id": "justifier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ʒystifje/"
+ },
+ {
+  "id": "emplir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/ɑ̃pliʁ/"
+ },
+ {
+  "id": "commerce",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/komɛʁs/"
+ },
+ {
+  "id": "humanité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/ymanite/"
+ },
+ {
+  "id": "serré",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/sɛʁe/"
+ },
+ {
+  "id": "fréquenter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/fʁekɑ̃te/"
+ },
+ {
+  "id": "jouet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʒwɛ/"
+ },
+ {
+  "id": "civil",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/sivil/"
+ },
+ {
+  "id": "approuver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/apʁuve/"
+ },
+ {
+  "id": "citoyen",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/sitwajɛ̃/"
+ },
+ {
+  "id": "moral",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/moʁal/"
+ },
+ {
+  "id": "médical",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/medikal/"
+ },
+ {
+  "id": "tiroir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/tiʁwaʁ/"
+ },
+ {
+  "id": "déménager",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/demenaʒe/"
+ },
+ {
+  "id": "pouce",
+  "pos": [
+   "danh từ",
+   "tượng thanh"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/pus/"
+ },
+ {
+  "id": "éternité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/etɛʁnite/"
+ },
+ {
+  "id": "crétin",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/kʁetɛ̃/"
+ },
+ {
+  "id": "vaguement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/vaɡəmɑ̃/"
+ },
+ {
+  "id": "écran",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ekʁɑ̃/"
+ },
+ {
+  "id": "ordinaire",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ɔʁdinɛʁ/"
+ },
+ {
+  "id": "particulièrement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/paʁtikyljɛʁəmɑ̃/"
+ },
+ {
+  "id": "creux",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/kʁø/"
+ },
+ {
+  "id": "garer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ɡaʁe/"
+ },
+ {
+  "id": "union",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/ynjɔ̃/"
+ },
+ {
+  "id": "insulter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ɛ̃sylte/"
+ },
+ {
+  "id": "sacrifier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/sakʁifje/"
+ },
+ {
+  "id": "généreux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ʒeneʁø/"
+ },
+ {
+  "id": "aéroport",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/aeʁopɔʁ/"
+ },
+ {
+  "id": "villa",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/villa/"
+ },
+ {
+  "id": "blé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ble/"
+ },
+ {
+  "id": "fonder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/fɔ̃de/"
+ },
+ {
+  "id": "sain",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/sɛ̃/"
+ },
+ {
+  "id": "traitement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/tʁɛtəmɑ̃/"
+ },
+ {
+  "id": "emparer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ɑ̃paʁe/"
+ },
+ {
+  "id": "lame",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/lam/"
+ },
+ {
+  "id": "intime",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ɛ̃tim/"
+ },
+ {
+  "id": "appétit",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/apeti/"
+ },
+ {
+  "id": "féminin",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/feminɛ̃/"
+ },
+ {
+  "id": "paille",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/paj/"
+ },
+ {
+  "id": "tissu",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/tisy/"
+ },
+ {
+  "id": "décor",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/dekɔʁ/"
+ },
+ {
+  "id": "chapitre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʃapitʁ/"
+ },
+ {
+  "id": "boucle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/bukl/"
+ },
+ {
+  "id": "seuil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/sœj/"
+ },
+ {
+  "id": "tracer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/tʁase/"
+ },
+ {
+  "id": "légende",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/leʒɑ̃d/"
+ },
+ {
+  "id": "essai",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/esɛ/"
+ },
+ {
+  "id": "rive",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/ʁiv/"
+ },
+ {
+  "id": "entreprendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/ɑ̃tʁəpʁɑ̃dʁ/"
+ },
+ {
+  "id": "kilo",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/kilo/"
+ },
+ {
+  "id": "éducation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/edykasjɔ̃/"
+ },
+ {
+  "id": "muscle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/myskl/"
+ },
+ {
+  "id": "chèque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʃɛk/"
+ },
+ {
+  "id": "pédé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/pede/"
+ },
+ {
+  "id": "poignet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/pwaɲɛ/"
+ },
+ {
+  "id": "partenaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/paʁtənɛʁ/"
+ },
+ {
+  "id": "libération",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/libeʁasjɔ̃/"
+ },
+ {
+  "id": "barre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/baʁ/"
+ },
+ {
+  "id": "tailler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/taje/"
+ },
+ {
+  "id": "progrès",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/pʁoɡʁɛ/"
+ },
+ {
+  "id": "atmosphère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/atmosfɛʁ/"
+ },
+ {
+  "id": "uniquement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ynikəmɑ̃/"
+ },
+ {
+  "id": "traduire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/tʁadɥiʁ/"
+ },
+ {
+  "id": "bâton",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/batɔ̃/"
+ },
+ {
+  "id": "grain",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɡʁɛ̃/"
+ },
+ {
+  "id": "pipe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/pip/"
+ },
+ {
+  "id": "glacé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ɡlase/"
+ },
+ {
+  "id": "saloperie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/salɔpəʁi/"
+ },
+ {
+  "id": "portier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/pɔʁtje/"
+ },
+ {
+  "id": "bougie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/buʒi/"
+ },
+ {
+  "id": "envisager",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ɑ̃vizaʒe/"
+ },
+ {
+  "id": "ô",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/o/"
+ },
+ {
+  "id": "conviction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/kɔ̃viksjɔ̃/"
+ },
+ {
+  "id": "bouge",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/buʒ/"
+ },
+ {
+  "id": "population",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/popylasjɔ̃/"
+ },
+ {
+  "id": "certitude",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/sɛʁtityd/"
+ },
+ {
+  "id": "réjouir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/ʁeʒwiʁ/"
+ },
+ {
+  "id": "évidence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/evidɑ̃s/"
+ },
+ {
+  "id": "moto",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/moto/"
+ },
+ {
+  "id": "ralentir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/ʁalɑ̃tiʁ/"
+ },
+ {
+  "id": "écrouler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ekʁule/"
+ },
+ {
+  "id": "grange",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/ɡʁɑ̃ʒ/"
+ },
+ {
+  "id": "salade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/salad/"
+ },
+ {
+  "id": "pente",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/pɑ̃t/"
+ },
+ {
+  "id": "barque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/baʁk/"
+ },
+ {
+  "id": "écriture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/ekʁityʁ/"
+ },
+ {
+  "id": "lâche",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/laʃ/"
+ },
+ {
+  "id": "voyou",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/vwaju/"
+ },
+ {
+  "id": "marrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/maʁe/"
+ },
+ {
+  "id": "panier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/panje/"
+ },
+ {
+  "id": "tordre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/tɔʁdʁ/"
+ },
+ {
+  "id": "gratter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ɡʁate/"
+ },
+ {
+  "id": "dessous",
+  "pos": [
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/dəsu/"
+ },
+ {
+  "id": "écart",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ekaʁ/"
+ },
+ {
+  "id": "jus",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʒy/"
+ },
+ {
+  "id": "dérouler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/deʁule/"
+ },
+ {
+  "id": "suicider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/sɥiside/"
+ },
+ {
+  "id": "discret",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/diskʁɛ/"
+ },
+ {
+  "id": "sourcil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/suʁsi/"
+ },
+ {
+  "id": "espagnol",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ɛspaɲɔl/"
+ },
+ {
+  "id": "familial",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/familjal/"
+ },
+ {
+  "id": "b",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/be/"
+ },
+ {
+  "id": "mortel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/mɔʁtɛl/"
+ },
+ {
+  "id": "nègre",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/nɛɡʁ/"
+ },
+ {
+  "id": "réveil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʁevɛj/"
+ },
+ {
+  "id": "fixe",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/fiks/"
+ },
+ {
+  "id": "balcon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/balkɔ̃/"
+ },
+ {
+  "id": "pourrir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/puʁiʁ/"
+ },
+ {
+  "id": "sien",
+  "pos": [
+   "đại từ",
+   "hạn định từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/sjɛ̃/"
+ },
+ {
+  "id": "entretien",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɑ̃tʁətjɛ̃/"
+ },
+ {
+  "id": "maire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/mɛʁ/"
+ },
+ {
+  "id": "hum",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/œm/"
+ },
+ {
+  "id": "motif",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/motif/"
+ },
+ {
+  "id": "vallée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/vale/"
+ },
+ {
+  "id": "tremper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/tʁɑ̃pe/"
+ },
+ {
+  "id": "concevoir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/kɔ̃səvwaʁ/"
+ },
+ {
+  "id": "cassé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kase/"
+ },
+ {
+  "id": "télégramme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/teleɡʁam/"
+ },
+ {
+  "id": "écho",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/eko/"
+ },
+ {
+  "id": "équilibre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ekilibʁ/"
+ },
+ {
+  "id": "aiguille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/eɡɥij/"
+ },
+ {
+  "id": "galerie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/ɡaləʁi/"
+ },
+ {
+  "id": "balayer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/baleje/"
+ },
+ {
+  "id": "rougir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/ʁuʒiʁ/"
+ },
+ {
+  "id": "conduite",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/kɔ̃dɥit/"
+ },
+ {
+  "id": "voyageur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/vwajaʒœʁ/"
+ },
+ {
+  "id": "souris",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/suʁi/"
+ },
+ {
+  "id": "scandale",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/skɑ̃dal/"
+ },
+ {
+  "id": "crème",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kʁɛm/"
+ },
+ {
+  "id": "cercueil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/sɛʁkœj/"
+ },
+ {
+  "id": "couronne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/kuʁɔn/"
+ },
+ {
+  "id": "nôtres",
+  "pos": [
+   "đại từ",
+   "hạn định từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/notʁ/"
+ },
+ {
+  "id": "acier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/asje/"
+ },
+ {
+  "id": "déborder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/debɔʁde/"
+ },
+ {
+  "id": "flanc",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/flɑ̃/"
+ },
+ {
+  "id": "professionnel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/pʁofɛsjonɛl/"
+ },
+ {
+  "id": "taule",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/tol/"
+ },
+ {
+  "id": "véhicule",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/veikyl/"
+ },
+ {
+  "id": "ivre",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ivʁ/"
+ },
+ {
+  "id": "communiquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/komynike/"
+ },
+ {
+  "id": "semer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/səme/"
+ },
+ {
+  "id": "cassette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/kasɛt/"
+ },
+ {
+  "id": "coiffer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/kwafe/"
+ },
+ {
+  "id": "rein",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ʁɛ̃/"
+ },
+ {
+  "id": "courageux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/kuʁaʒø/"
+ },
+ {
+  "id": "renseigner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ʁɑ̃seɲe/"
+ },
+ {
+  "id": "poubelle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/pubɛl/"
+ },
+ {
+  "id": "correspondre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 3,
+  "ipa": "/koʁɛspɔ̃dʁ/"
+ },
+ {
+  "id": "catastrophe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/katastʁɔf/"
+ },
+ {
+  "id": "protection",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/pʁotɛksjɔ̃/"
+ },
+ {
+  "id": "consoler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/kɔ̃sole/"
+ },
+ {
+  "id": "ours",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/uʁs/"
+ },
+ {
+  "id": "tournée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/tuʁne/"
+ },
+ {
+  "id": "dignité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/diɲite/"
+ },
+ {
+  "id": "propriété",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/pʁopʁijete/"
+ },
+ {
+  "id": "laid",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/lɛ/"
+ },
+ {
+  "id": "cendre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/sɑ̃dʁ/"
+ },
+ {
+  "id": "réputation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/ʁepytasjɔ̃/"
+ },
+ {
+  "id": "sacrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/sakʁe/"
+ },
+ {
+  "id": "comptoir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/kɔ̃twaʁ/"
+ },
+ {
+  "id": "ressortir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 2,
+  "ipa": "/ʁəsɔʁtiʁ/"
+ },
+ {
+  "id": "ambassadeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɑ̃basadœʁ/"
+ },
+ {
+  "id": "individu",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/ɛ̃dividy/"
+ },
+ {
+  "id": "habitant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/abitɑ̃/"
+ },
+ {
+  "id": "visiteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/vizitœʁ/"
+ },
+ {
+  "id": "cirque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/siʁk/"
+ },
+ {
+  "id": "portable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/pɔʁtabl/"
+ },
+ {
+  "id": "marin",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "verb_group": null,
+  "ipa": "/maʁɛ̃/"
+ },
+ {
+  "id": "envelopper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "verb_group": 1,
+  "ipa": "/ɑ̃vəlope/"
+ },
+ {
+  "id": "chacune",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "verb_group": null,
+  "ipa": "/ʃakyn/"
+ },
+ {
+  "id": "pause",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "verb_group": null,
+  "ipa": "/poz/"
+ }
+]

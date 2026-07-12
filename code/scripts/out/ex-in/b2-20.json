@@ -1,0 +1,816 @@
+[
+ {
+  "id": "nage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bơi, sự bơi lội"
+ },
+ {
+  "id": "trouvé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "được tìm thấy"
+ },
+ {
+  "id": "simuler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giả vờ, mô phỏng"
+ },
+ {
+  "id": "tombée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lúc chập tối, lúc buông xuống"
+ },
+ {
+  "id": "slogan",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khẩu hiệu"
+ },
+ {
+  "id": "apéritif",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "rượu khai vị"
+ },
+ {
+  "id": "boulette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "viên (thịt); lỗi ngớ ngẩn"
+ },
+ {
+  "id": "ring",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "võ đài, sàn đấu"
+ },
+ {
+  "id": "cardinal",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "hồng y; chính, cơ bản"
+ },
+ {
+  "id": "fracture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự gãy xương; sự rạn nứt"
+ },
+ {
+  "id": "générateur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "máy phát điện; sinh ra"
+ },
+ {
+  "id": "poussée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự đẩy; cơn bùng phát"
+ },
+ {
+  "id": "revoilà",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "lại đây rồi, lại là"
+ },
+ {
+  "id": "rade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vũng tàu, vịnh cảng"
+ },
+ {
+  "id": "bestiole",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "con vật nhỏ, côn trùng"
+ },
+ {
+  "id": "vautrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lăn lê, nằm ườn"
+ },
+ {
+  "id": "tic",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tật máy giật; thói quen"
+ },
+ {
+  "id": "enfler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sưng lên, phồng lên"
+ },
+ {
+  "id": "habitué",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "khách quen"
+ },
+ {
+  "id": "multicolore",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhiều màu sắc"
+ },
+ {
+  "id": "indéfiniment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "vô thời hạn, mãi mãi"
+ },
+ {
+  "id": "balbutier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nói lắp bắp, ấp úng"
+ },
+ {
+  "id": "toc",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đồ giả, hàng dởm; tiếng cốc cốc"
+ },
+ {
+  "id": "reproduction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự sinh sản; bản sao"
+ },
+ {
+  "id": "rouquin",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người tóc hung đỏ"
+ },
+ {
+  "id": "tristement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách buồn bã"
+ },
+ {
+  "id": "exterminer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tiêu diệt, tận diệt"
+ },
+ {
+  "id": "maniaque",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kẻ quá cầu kỳ; kẻ cuồng"
+ },
+ {
+  "id": "fumé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hun khói"
+ },
+ {
+  "id": "enthousiaste",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "hăng hái, nhiệt tình"
+ },
+ {
+  "id": "astiquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đánh bóng, lau chùi"
+ },
+ {
+  "id": "transition",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chuyển tiếp, chuyển giao"
+ },
+ {
+  "id": "petite-fille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cháu gái (nội, ngoại)"
+ },
+ {
+  "id": "poussin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "gà con"
+ },
+ {
+  "id": "replonger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lại lao vào; lại nhúng xuống"
+ },
+ {
+  "id": "restant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "phần còn lại"
+ },
+ {
+  "id": "survoler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bay lượn trên; lướt qua"
+ },
+ {
+  "id": "taupe",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "chuột chũi; gián điệp nằm vùng"
+ },
+ {
+  "id": "assoupir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm thiu thiu ngủ, làm dịu"
+ },
+ {
+  "id": "frisé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "xoăn, quăn"
+ },
+ {
+  "id": "gain",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lợi nhuận, tiền thắng"
+ },
+ {
+  "id": "diplomate",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhà ngoại giao; khéo léo"
+ },
+ {
+  "id": "démasquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lột mặt nạ, vạch trần"
+ },
+ {
+  "id": "gymnastique",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thể dục"
+ },
+ {
+  "id": "compétent",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "có năng lực, thành thạo"
+ },
+ {
+  "id": "refrain",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "điệp khúc"
+ },
+ {
+  "id": "augmentation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tăng; tăng lương"
+ },
+ {
+  "id": "largeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chiều rộng, bề ngang"
+ },
+ {
+  "id": "trappe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cửa sập; bẫy"
+ },
+ {
+  "id": "trotter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chạy nước kiệu; đi lon ton"
+ },
+ {
+  "id": "kiosque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quầy báo, ki-ốt"
+ },
+ {
+  "id": "grillage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hàng rào lưới sắt"
+ },
+ {
+  "id": "stand",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "gian hàng, quầy"
+ },
+ {
+  "id": "rosée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sương, sương mai"
+ },
+ {
+  "id": "résider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cư trú; nằm ở"
+ },
+ {
+  "id": "arcade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dãy vòm cung; cung mày"
+ },
+ {
+  "id": "répartir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phân chia, phân bố"
+ },
+ {
+  "id": "parapet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lan can, tường chắn"
+ },
+ {
+  "id": "tortue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "con rùa"
+ },
+ {
+  "id": "affranchir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dán tem; giải phóng"
+ },
+ {
+  "id": "hideux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "gớm ghiếc, xấu xí"
+ },
+ {
+  "id": "round",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hiệp đấu"
+ },
+ {
+  "id": "seringue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ống tiêm"
+ },
+ {
+  "id": "perplexe",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bối rối, phân vân"
+ },
+ {
+  "id": "puanteur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mùi hôi thối"
+ },
+ {
+  "id": "psychopathe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "kẻ loạn trí, kẻ tâm thần"
+ },
+ {
+  "id": "vestibule",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tiền sảnh, phòng ngoài"
+ },
+ {
+  "id": "sardine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cá mòi"
+ },
+ {
+  "id": "aubain",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "món hời, vận may bất ngờ"
+ },
+ {
+  "id": "tarif",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "biểu giá, giá cước"
+ },
+ {
+  "id": "protégé",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người được bảo trợ; được bảo vệ"
+ },
+ {
+  "id": "fouler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giẫm, đạp lên; (se) bong gân"
+ },
+ {
+  "id": "spontané",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tự phát, tự nhiên"
+ },
+ {
+  "id": "bide",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bụng phệ; sự thất bại thảm hại"
+ },
+ {
+  "id": "envoyé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "phái viên, đặc phái viên"
+ },
+ {
+  "id": "superficiel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hời hợt, nông cạn"
+ },
+ {
+  "id": "timidité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự rụt rè, nhút nhát"
+ },
+ {
+  "id": "audacieux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "táo bạo, gan dạ"
+ },
+ {
+  "id": "sexualité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tình dục, đời sống tính dục"
+ },
+ {
+  "id": "guichet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quầy giao dịch, cửa bán vé"
+ },
+ {
+  "id": "initier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khởi xướng; truyền dạy"
+ },
+ {
+  "id": "charnel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc xác thịt, nhục dục"
+ },
+ {
+  "id": "acquiescer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đồng ý, tán thành"
+ },
+ {
+  "id": "pensionnaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "học sinh nội trú; khách trọ"
+ },
+ {
+  "id": "déceler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phát hiện, nhận ra"
+ },
+ {
+  "id": "yankee",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "người Mỹ, dân Yankee"
+ },
+ {
+  "id": "apprivoiser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thuần hóa, làm quen"
+ },
+ {
+  "id": "nommé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "được đặt tên; được bổ nhiệm"
+ },
+ {
+  "id": "gagné",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đã thắng, đã giành được"
+ },
+ {
+  "id": "crasseux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "cáu bẩn, dơ dáy"
+ },
+ {
+  "id": "grommeler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làu bàu, cằn nhằn"
+ },
+ {
+  "id": "pénis",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dương vật"
+ },
+ {
+  "id": "obstination",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự ngoan cố, cố chấp"
+ },
+ {
+  "id": "socialisme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chủ nghĩa xã hội"
+ },
+ {
+  "id": "réciproque",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "qua lại, tương hỗ"
+ },
+ {
+  "id": "maléfique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "độc ác, tà ác"
+ },
+ {
+  "id": "individuel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "cá nhân, riêng lẻ"
+ },
+ {
+  "id": "éplucher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gọt vỏ; soi xét kỹ"
+ },
+ {
+  "id": "propice",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuận lợi, thích hợp"
+ },
+ {
+  "id": "mécontent",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "không hài lòng, bất mãn"
+ }
+]

@@ -1,0 +1,809 @@
+[
+ {
+  "id": "persécution",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự ngược đãi, hành hạ"
+ },
+ {
+  "id": "ternir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm xỉn màu, làm mờ; làm hoen ố"
+ },
+ {
+  "id": "normale",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mức bình thường; đường pháp tuyến"
+ },
+ {
+  "id": "préservatif",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "bao cao su; có tính bảo vệ"
+ },
+ {
+  "id": "agile",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhanh nhẹn, lanh lợi"
+ },
+ {
+  "id": "graisser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bôi mỡ, tra dầu"
+ },
+ {
+  "id": "handicap",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khuyết tật; bất lợi, trở ngại"
+ },
+ {
+  "id": "pneumonie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "viêm phổi"
+ },
+ {
+  "id": "carrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm cho vuông; ngồi chễm chệ"
+ },
+ {
+  "id": "concombre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dưa chuột, dưa leo"
+ },
+ {
+  "id": "corniche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đường ven núi; gờ mái, phào"
+ },
+ {
+  "id": "pêle-mêle",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "lộn xộn, lung tung"
+ },
+ {
+  "id": "colon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người khai hoang, thực dân; ruột kết"
+ },
+ {
+  "id": "détestable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đáng ghét, khó chịu"
+ },
+ {
+  "id": "paralysie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tê liệt, bại liệt"
+ },
+ {
+  "id": "traîne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đuôi váy kéo lê; sự tụt hậu"
+ },
+ {
+  "id": "brevet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bằng cấp, chứng chỉ; bằng sáng chế"
+ },
+ {
+  "id": "empester",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bốc mùi hôi thối, sặc mùi"
+ },
+ {
+  "id": "ancrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "neo lại; ăn sâu, cắm chặt"
+ },
+ {
+  "id": "déplacé",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "không đúng chỗ, không thích hợp; người di tản"
+ },
+ {
+  "id": "épi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bông (lúa, ngô); lọn tóc dựng"
+ },
+ {
+  "id": "clément",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khoan dung, độ lượng; (thời tiết) ôn hòa"
+ },
+ {
+  "id": "glissement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự trượt; sự chuyển dịch"
+ },
+ {
+  "id": "daim",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hoẵng, hươu; da lộn"
+ },
+ {
+  "id": "mangeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người ăn"
+ },
+ {
+  "id": "sarcasme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lời mỉa mai, châm biếm"
+ },
+ {
+  "id": "encombrant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "cồng kềnh, vướng víu"
+ },
+ {
+  "id": "débit",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lưu lượng; cách nói; sự tiêu thụ; tiền ghi nợ"
+ },
+ {
+  "id": "poney",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ngựa pony"
+ },
+ {
+  "id": "carrosse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xe ngựa sang trọng (bốn bánh)"
+ },
+ {
+  "id": "lave",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dung nham"
+ },
+ {
+  "id": "amputer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cắt cụt (chi); cắt bớt"
+ },
+ {
+  "id": "convenance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thích hợp, thuận tiện; phép tắc xã giao"
+ },
+ {
+  "id": "justification",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự biện minh, lý giải; sự chứng minh"
+ },
+ {
+  "id": "outrager",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xúc phạm, lăng mạ"
+ },
+ {
+  "id": "prolongé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kéo dài"
+ },
+ {
+  "id": "scooter",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xe tay ga, xe scooter"
+ },
+ {
+  "id": "maton",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cai ngục (tiếng lóng)"
+ },
+ {
+  "id": "augure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "điềm báo; thầy bói (thời cổ)"
+ },
+ {
+  "id": "vizir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tể tướng (Hồi giáo)"
+ },
+ {
+  "id": "avancement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự thăng tiến; sự tiến triển"
+ },
+ {
+  "id": "rebours",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "ngược lại, trái chiều (à rebours)"
+ },
+ {
+  "id": "consulat",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lãnh sự quán"
+ },
+ {
+  "id": "infantile",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "trẻ con, ấu trĩ; thuộc trẻ nhỏ"
+ },
+ {
+  "id": "vétéran",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cựu chiến binh; người kỳ cựu"
+ },
+ {
+  "id": "décombre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đống đổ nát, gạch vụn"
+ },
+ {
+  "id": "vibrant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "rung động, sôi nổi, thiết tha"
+ },
+ {
+  "id": "égrener",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tuốt hạt, tẽ hạt; điểm từng tiếng"
+ },
+ {
+  "id": "mousquetaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lính ngự lâm"
+ },
+ {
+  "id": "immigration",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự nhập cư"
+ },
+ {
+  "id": "accueillant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hiếu khách, niềm nở"
+ },
+ {
+  "id": "mauviette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "kẻ yếu đuối, nhát gan"
+ },
+ {
+  "id": "piètre",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tồi tàn, kém cỏi"
+ },
+ {
+  "id": "corporel",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc thân thể, thể xác"
+ },
+ {
+  "id": "home",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhà, tổ ấm; nhà tập thể"
+ },
+ {
+  "id": "léopard",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "báo đốm, báo hoa"
+ },
+ {
+  "id": "saugrenu",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kỳ quặc, vô lý"
+ },
+ {
+  "id": "démanger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngứa ngáy"
+ },
+ {
+  "id": "entracte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giờ nghỉ giải lao (giữa các màn)"
+ },
+ {
+  "id": "archer",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cung thủ, lính bắn cung"
+ },
+ {
+  "id": "carpe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cá chép"
+ },
+ {
+  "id": "rustique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "mộc mạc, thô sơ, đồng quê"
+ },
+ {
+  "id": "cuistot",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đầu bếp (tiếng lóng)"
+ },
+ {
+  "id": "ingrédient",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thành phần, nguyên liệu"
+ },
+ {
+  "id": "trip",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cơn phê (ma túy); sở thích, cơn hứng"
+ },
+ {
+  "id": "diligence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự siêng năng, mẫn cán; xe ngựa trạm"
+ },
+ {
+  "id": "grisaille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự ảm đạm, xám xịt; tranh đơn sắc xám"
+ },
+ {
+  "id": "adonner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đam mê, chuyên tâm vào (s'adonner)"
+ },
+ {
+  "id": "attabler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngồi vào bàn (ăn)"
+ },
+ {
+  "id": "piaf",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chim sẻ (tiếng lóng)"
+ },
+ {
+  "id": "réfrigérateur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tủ lạnh"
+ },
+ {
+  "id": "foulée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sải chân, bước chạy"
+ },
+ {
+  "id": "avant-guerre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thời kỳ trước chiến tranh"
+ },
+ {
+  "id": "noué",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thắt nút; nghẹn, se thắt (cổ họng)"
+ },
+ {
+  "id": "perpétuer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "duy trì, làm tiếp nối"
+ },
+ {
+  "id": "délinquant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ phạm pháp, tội phạm"
+ },
+ {
+  "id": "pendu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bị treo cổ; người treo cổ"
+ },
+ {
+  "id": "soumis",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "phục tùng, ngoan ngoãn; bị chi phối"
+ },
+ {
+  "id": "éperdu",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "cuống cuồng, mê mải, tột cùng"
+ },
+ {
+  "id": "blasphémer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "báng bổ, phạm thượng"
+ },
+ {
+  "id": "siroter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhấm nháp, nhâm nhi"
+ },
+ {
+  "id": "énergique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đầy nghị lực, mạnh mẽ, cương quyết"
+ },
+ {
+  "id": "ébrouer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rùng mình rũ nước, phì mũi (s'ébrouer)"
+ },
+ {
+  "id": "perceptible",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "có thể nhận thấy, cảm nhận được"
+ },
+ {
+  "id": "terrien",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc Trái Đất; người Trái Đất; địa chủ"
+ },
+ {
+  "id": "trimballer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kéo lê, mang vác lỉnh kỉnh"
+ },
+ {
+  "id": "rancoeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nỗi hận, oán giận"
+ },
+ {
+  "id": "incapacité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự bất lực, không đủ khả năng; sự tàn tật"
+ },
+ {
+  "id": "cycliste",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "người đi xe đạp; thuộc xe đạp"
+ },
+ {
+  "id": "dépanner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sửa chữa (máy hỏng); giúp đỡ lúc khó khăn"
+ },
+ {
+  "id": "matraque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dùi cui"
+ },
+ {
+  "id": "protestant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "theo đạo Tin Lành; tín đồ Tin Lành"
+ },
+ {
+  "id": "tornade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lốc xoáy, cơn lốc"
+ },
+ {
+  "id": "vitalité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sức sống, sinh lực"
+ },
+ {
+  "id": "allergie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dị ứng"
+ },
+ {
+  "id": "opter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lựa chọn"
+ },
+ {
+  "id": "capitalisme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chủ nghĩa tư bản"
+ },
+ {
+  "id": "élevage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự chăn nuôi"
+ },
+ {
+  "id": "anomalie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự bất thường, dị thường"
+ },
+ {
+  "id": "aride",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khô cằn, cằn cỗi; khô khan"
+ }
+]

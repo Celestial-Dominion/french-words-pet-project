@@ -1,0 +1,817 @@
+[
+ {
+  "id": "pointu",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhọn, sắc bén"
+ },
+ {
+  "id": "diminuer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giảm, làm giảm"
+ },
+ {
+  "id": "fusiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xử bắn, bắn chết"
+ },
+ {
+  "id": "basket",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "giày thể thao; bóng rổ"
+ },
+ {
+  "id": "ronfler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngáy"
+ },
+ {
+  "id": "vital",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thiết yếu, sống còn"
+ },
+ {
+  "id": "chiffon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giẻ lau, mảnh vải vụn"
+ },
+ {
+  "id": "buste",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tượng bán thân; ngực (nửa thân trên)"
+ },
+ {
+  "id": "semelle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đế giày"
+ },
+ {
+  "id": "discrétion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự kín đáo, thận trọng"
+ },
+ {
+  "id": "intriguer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm tò mò; mưu mô"
+ },
+ {
+  "id": "permanent",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thường trực, lâu dài; kiểu uốn tóc"
+ },
+ {
+  "id": "rouleau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cuộn; con lăn"
+ },
+ {
+  "id": "multiple",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nhiều, đa dạng; bội số"
+ },
+ {
+  "id": "songe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giấc mơ, mộng"
+ },
+ {
+  "id": "fraise",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dâu tây"
+ },
+ {
+  "id": "piqûre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mũi tiêm; vết chích"
+ },
+ {
+  "id": "réflexe",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "phản xạ"
+ },
+ {
+  "id": "politesse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự lịch sự, phép lịch sự"
+ },
+ {
+  "id": "rancune",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thù hằn, oán giận"
+ },
+ {
+  "id": "encadrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đóng khung; giám sát, kèm cặp"
+ },
+ {
+  "id": "voire",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thậm chí, thậm chí là"
+ },
+ {
+  "id": "foin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cỏ khô"
+ },
+ {
+  "id": "cuit",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đã nấu chín"
+ },
+ {
+  "id": "honorable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đáng kính, danh dự"
+ },
+ {
+  "id": "constamment",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "liên tục, thường xuyên"
+ },
+ {
+  "id": "accroupir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngồi xổm, cúi khom"
+ },
+ {
+  "id": "barbier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thợ cạo, thợ cắt tóc"
+ },
+ {
+  "id": "malentendu",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự hiểu lầm"
+ },
+ {
+  "id": "évêque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giám mục"
+ },
+ {
+  "id": "dévisager",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhìn chằm chằm"
+ },
+ {
+  "id": "hurlement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tiếng hú, tiếng gào thét"
+ },
+ {
+  "id": "délirer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mê sảng; nói nhảm"
+ },
+ {
+  "id": "procédure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thủ tục, quy trình"
+ },
+ {
+  "id": "clandestin",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bí mật, lén lút; người nhập cư lậu"
+ },
+ {
+  "id": "tige",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thân cây, cuống"
+ },
+ {
+  "id": "autel",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bàn thờ"
+ },
+ {
+  "id": "boy",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người hầu (nam)"
+ },
+ {
+  "id": "équipement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trang thiết bị"
+ },
+ {
+  "id": "combattant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "chiến binh, người chiến đấu"
+ },
+ {
+  "id": "substance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chất, vật chất"
+ },
+ {
+  "id": "zut",
+  "pos": [
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "trời ơi!, chết tiệt!"
+ },
+ {
+  "id": "pudeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự e thẹn, sự thẹn thùng"
+ },
+ {
+  "id": "ère",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "kỷ nguyên, thời đại"
+ },
+ {
+  "id": "bourreau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đao phủ; kẻ hành hạ"
+ },
+ {
+  "id": "inévitable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "không thể tránh khỏi"
+ },
+ {
+  "id": "interrogatoire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cuộc thẩm vấn"
+ },
+ {
+  "id": "prudence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thận trọng"
+ },
+ {
+  "id": "intimider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm sợ hãi, đe dọa"
+ },
+ {
+  "id": "exploit",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kỳ tích, chiến công"
+ },
+ {
+  "id": "poêle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chảo; lò sưởi"
+ },
+ {
+  "id": "évoluer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tiến hóa, phát triển"
+ },
+ {
+  "id": "sombrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chìm đắm, đắm chìm"
+ },
+ {
+  "id": "tournage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "việc quay phim"
+ },
+ {
+  "id": "nièce",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cháu gái (con của anh chị em)"
+ },
+ {
+  "id": "joint",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "kèm theo, gắn liền; khớp nối, gioăng"
+ },
+ {
+  "id": "louper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lỡ, bỏ lỡ; làm hỏng"
+ },
+ {
+  "id": "trinquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cụng ly, chạm cốc"
+ },
+ {
+  "id": "république",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nền cộng hòa"
+ },
+ {
+  "id": "tâter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sờ, nắn"
+ },
+ {
+  "id": "ciment",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "xi măng"
+ },
+ {
+  "id": "sabre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kiếm, gươm"
+ },
+ {
+  "id": "auxquelles",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "mà (đối với, dành cho — giống cái số nhiều)"
+ },
+ {
+  "id": "brutalement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách tàn bạo; đột ngột"
+ },
+ {
+  "id": "mécanique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cơ khí, máy móc; cơ học"
+ },
+ {
+  "id": "terroriste",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kẻ khủng bố"
+ },
+ {
+  "id": "jambon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giăm bông"
+ },
+ {
+  "id": "observation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự quan sát; lời nhận xét"
+ },
+ {
+  "id": "fantaisie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tưởng tượng; sự tùy hứng"
+ },
+ {
+  "id": "parapluie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ô, dù"
+ },
+ {
+  "id": "dépouiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lột, tước đoạt; kiểm phiếu"
+ },
+ {
+  "id": "bille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "viên bi"
+ },
+ {
+  "id": "polonais",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc Ba Lan; tiếng Ba Lan"
+ },
+ {
+  "id": "ceux-ci",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "những cái này, những người này"
+ },
+ {
+  "id": "brin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cọng, nhánh nhỏ; một chút"
+ },
+ {
+  "id": "imaginaire",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tưởng tượng, hư cấu"
+ },
+ {
+  "id": "hangar",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhà kho, nhà chứa máy bay"
+ },
+ {
+  "id": "pâté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "pa tê"
+ },
+ {
+  "id": "soi-disant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "cái gọi là, tự xưng"
+ },
+ {
+  "id": "incertain",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "không chắc chắn, bấp bênh"
+ },
+ {
+  "id": "tombeau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ngôi mộ, lăng mộ"
+ },
+ {
+  "id": "identique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "giống hệt, đồng nhất"
+ },
+ {
+  "id": "majeur",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chủ yếu, quan trọng; đủ tuổi thành niên; ngón giữa"
+ },
+ {
+  "id": "odieux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đáng ghét, ghê tởm"
+ },
+ {
+  "id": "citron",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "quả chanh (vàng)"
+ },
+ {
+  "id": "fourmi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "con kiến"
+ },
+ {
+  "id": "battement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhịp đập; khoảng ngừng, thời gian trống"
+ },
+ {
+  "id": "favori",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ưa thích nhất, yêu thích"
+ },
+ {
+  "id": "football",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bóng đá"
+ },
+ {
+  "id": "chaos",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự hỗn loạn"
+ },
+ {
+  "id": "audace",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự táo bạo, sự liều lĩnh"
+ },
+ {
+  "id": "périr",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chết, bỏ mạng"
+ },
+ {
+  "id": "acharner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "quyết liệt theo đuổi, kiên trì; ra sức hành hạ"
+ },
+ {
+  "id": "chaussée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lòng đường, mặt đường"
+ },
+ {
+  "id": "volé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bị đánh cắp"
+ },
+ {
+  "id": "malle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "rương, hòm"
+ },
+ {
+  "id": "robinet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vòi nước"
+ },
+ {
+  "id": "décharger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dỡ hàng; xả, tháo"
+ },
+ {
+  "id": "isolé",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bị cô lập, hẻo lánh"
+ },
+ {
+  "id": "clocher",
+  "pos": [
+   "danh từ",
+   "động từ"
+  ],
+  "gender": "m",
+  "vi": "tháp chuông; có gì đó không ổn"
+ }
+]

@@ -1,0 +1,812 @@
+[
+ {
+  "id": "antiquaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "người buôn đồ cổ"
+ },
+ {
+  "id": "roupiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngủ, chợp mắt"
+ },
+ {
+  "id": "révérence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự cúi chào; lòng tôn kính"
+ },
+ {
+  "id": "omettre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bỏ sót, quên"
+ },
+ {
+  "id": "retrouvaille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự gặp lại, đoàn tụ"
+ },
+ {
+  "id": "sceau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con dấu, ấn triện"
+ },
+ {
+  "id": "haletant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thở hổn hển; hồi hộp"
+ },
+ {
+  "id": "hoquet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nấc cụt"
+ },
+ {
+  "id": "optimiste",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "lạc quan; người lạc quan"
+ },
+ {
+  "id": "sous-officier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hạ sĩ quan"
+ },
+ {
+  "id": "buté",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bướng bỉnh, cố chấp"
+ },
+ {
+  "id": "feuilleton",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "truyện/phim nhiều kỳ, phim dài tập"
+ },
+ {
+  "id": "clerc",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thư ký (văn phòng luật, công chứng); giáo sĩ"
+ },
+ {
+  "id": "hérésie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dị giáo, tà thuyết"
+ },
+ {
+  "id": "attrister",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm buồn, làm đau lòng"
+ },
+ {
+  "id": "doctrine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "học thuyết, chủ thuyết"
+ },
+ {
+  "id": "hibou",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con cú (có mào lông tai)"
+ },
+ {
+  "id": "déplaisant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khó chịu, đáng ghét"
+ },
+ {
+  "id": "emmerdeur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ phiền phức, đồ khó ưa"
+ },
+ {
+  "id": "coudrier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cây phỉ (cây hạt phỉ)"
+ },
+ {
+  "id": "invincible",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bất khả chiến bại, không thể đánh bại"
+ },
+ {
+  "id": "damner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đày xuống địa ngục, nguyền rủa"
+ },
+ {
+  "id": "intégrité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chính trực, liêm khiết; sự toàn vẹn"
+ },
+ {
+  "id": "meule",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thớt cối xay, đá mài; đống rơm"
+ },
+ {
+  "id": "dru",
+  "pos": [
+   "tính từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "rậm rạp, dày đặc; dồn dập"
+ },
+ {
+  "id": "déambuler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dạo bước, đi lang thang"
+ },
+ {
+  "id": "froidement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách lạnh lùng"
+ },
+ {
+  "id": "levier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đòn bẩy, cần gạt"
+ },
+ {
+  "id": "particule",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hạt (nhỏ); tiểu từ"
+ },
+ {
+  "id": "sévir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hoành hành; trừng phạt nghiêm khắc"
+ },
+ {
+  "id": "accoutumer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm cho quen, tập quen"
+ },
+ {
+  "id": "illico",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "ngay lập tức, tức thì"
+ },
+ {
+  "id": "ratisser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cào (lá, đất); rà soát, càn quét"
+ },
+ {
+  "id": "tombant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "rũ xuống, xệ xuống"
+ },
+ {
+  "id": "fragilité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự mong manh, dễ vỡ"
+ },
+ {
+  "id": "enclos",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khu đất có rào, bãi quây"
+ },
+ {
+  "id": "gelé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đông cứng, bị đóng băng"
+ },
+ {
+  "id": "baseball",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bóng chày"
+ },
+ {
+  "id": "vitrail",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kính màu ghép (cửa sổ nhà thờ)"
+ },
+ {
+  "id": "assimiler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đồng hóa; tiếp thu, lĩnh hội"
+ },
+ {
+  "id": "barder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trở nên gay go, căng thẳng; bọc mỡ (thịt)"
+ },
+ {
+  "id": "halo",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "quầng sáng, hào quang"
+ },
+ {
+  "id": "surveillant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giám thị, người canh gác"
+ },
+ {
+  "id": "dérision",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chế nhạo, giễu cợt"
+ },
+ {
+  "id": "sonde",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đầu dò, ống thông; máy thăm dò"
+ },
+ {
+  "id": "patriote",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "người yêu nước; yêu nước"
+ },
+ {
+  "id": "volaille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "gia cầm"
+ },
+ {
+  "id": "écossais",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc Scotland; người Scotland"
+ },
+ {
+  "id": "merdeux",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "(thô) thằng nhãi ranh; bê bết bẩn"
+ },
+ {
+  "id": "progressivement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "dần dần, từ từ"
+ },
+ {
+  "id": "rugueux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "sần sùi, thô ráp"
+ },
+ {
+  "id": "impur",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "không tinh khiết, ô uế"
+ },
+ {
+  "id": "joncher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rải đầy, phủ khắp (mặt đất)"
+ },
+ {
+  "id": "échéance",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "kỳ hạn, hạn (thanh toán)"
+ },
+ {
+  "id": "comprimé",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "viên nén (thuốc); bị nén ép"
+ },
+ {
+  "id": "similaire",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tương tự, giống nhau"
+ },
+ {
+  "id": "bandeau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "băng đô, dải băng (buộc đầu, che mắt)"
+ },
+ {
+  "id": "dégouliner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chảy nhỏ giọt, ròng ròng"
+ },
+ {
+  "id": "los",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "(cổ) lời ca ngợi, sự tôn vinh"
+ },
+ {
+  "id": "pénitence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự sám hối, việc đền tội"
+ },
+ {
+  "id": "feuillet",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tờ giấy, trang"
+ },
+ {
+  "id": "lunaire",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc mặt trăng"
+ },
+ {
+  "id": "frénésie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự cuồng nhiệt, điên cuồng"
+ },
+ {
+  "id": "licencier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sa thải, cho thôi việc"
+ },
+ {
+  "id": "voguer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lướt đi, giương buồm ra khơi"
+ },
+ {
+  "id": "craintif",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "sợ sệt, nhút nhát"
+ },
+ {
+  "id": "truquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm giả, gian lận (kết quả)"
+ },
+ {
+  "id": "virilité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nam tính, sự cường tráng"
+ },
+ {
+  "id": "moucher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hỉ mũi; (bóng) dằn mặt, chỉnh cho một trận"
+ },
+ {
+  "id": "métaphore",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "phép ẩn dụ"
+ },
+ {
+  "id": "éprendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "(s'éprendre de) đem lòng yêu, mê đắm"
+ },
+ {
+  "id": "importuner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "quấy rầy, làm phiền"
+ },
+ {
+  "id": "paiement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự thanh toán, việc trả tiền"
+ },
+ {
+  "id": "enquérir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "(s'enquérir) hỏi thăm, dò hỏi"
+ },
+ {
+  "id": "nécessiter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đòi hỏi, cần đến"
+ },
+ {
+  "id": "intestin",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "ruột (nội tạng); nội bộ"
+ },
+ {
+  "id": "moqueur",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "hay chế giễu, giễu cợt"
+ },
+ {
+  "id": "val",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thung lũng"
+ },
+ {
+  "id": "désinvolture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự xuề xòa, thái độ bất cần, suồng sã"
+ },
+ {
+  "id": "pénal",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc hình sự"
+ },
+ {
+  "id": "saillant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhô ra, lồi ra; nổi bật"
+ },
+ {
+  "id": "torcher",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "(thô) lau chùi qua loa; làm ẩu"
+ },
+ {
+  "id": "émoi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự xao xuyến, xúc động"
+ },
+ {
+  "id": "thanksgiving",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lễ Tạ ơn"
+ },
+ {
+  "id": "acceptable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "chấp nhận được"
+ },
+ {
+  "id": "accordéon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đàn phong cầm (accordion)"
+ },
+ {
+  "id": "défigurer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm biến dạng khuôn mặt, làm méo mó"
+ },
+ {
+  "id": "moralité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đạo đức, luân lý; bài học đạo lý"
+ },
+ {
+  "id": "cultivé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "có học thức, uyên bác; (đất) được canh tác"
+ },
+ {
+  "id": "cavale",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc trốn chạy (en cavale); ngựa cái"
+ },
+ {
+  "id": "contemplation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chiêm ngưỡng, trầm tư"
+ },
+ {
+  "id": "gorger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhồi nhét, làm no căng"
+ },
+ {
+  "id": "ravisseur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ bắt cóc"
+ },
+ {
+  "id": "affreusement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "một cách kinh khủng, khủng khiếp"
+ },
+ {
+  "id": "marronnier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cây dẻ ngựa"
+ },
+ {
+  "id": "juridique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc pháp lý, pháp luật"
+ },
+ {
+  "id": "livret",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sổ nhỏ, sổ tay (tiết kiệm); kịch bản opera"
+ },
+ {
+  "id": "cheminer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi, lần bước; tiến triển"
+ },
+ {
+  "id": "péniche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sà lan (thuyền chở hàng trên sông)"
+ },
+ {
+  "id": "doublure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lớp lót (áo); diễn viên đóng thế"
+ }
+]

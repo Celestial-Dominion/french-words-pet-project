@@ -1,0 +1,824 @@
+[
+ {
+  "id": "lors",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "lúc, khi (lors de: vào lúc, trong dịp)"
+ },
+ {
+  "id": "port",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cảng, bến cảng"
+ },
+ {
+  "id": "chier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "(thô tục) ỉa, đi ị"
+ },
+ {
+  "id": "transformer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "biến đổi, chuyển hóa"
+ },
+ {
+  "id": "juif",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "người Do Thái; (thuộc) Do Thái"
+ },
+ {
+  "id": "prononcer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phát âm; đọc (diễn văn), tuyên bố"
+ },
+ {
+  "id": "zone",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khu vực, vùng"
+ },
+ {
+  "id": "cerveau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "não, bộ não"
+ },
+ {
+  "id": "survivre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sống sót, sống qua"
+ },
+ {
+  "id": "saint",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "vị thánh; thánh thiện, linh thiêng"
+ },
+ {
+  "id": "autrement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "cách khác; nếu không"
+ },
+ {
+  "id": "charmant",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "duyên dáng, quyến rũ, đáng yêu"
+ },
+ {
+  "id": "prêtre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "linh mục, cha xứ"
+ },
+ {
+  "id": "justice",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "công lý; ngành tư pháp"
+ },
+ {
+  "id": "club",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "câu lạc bộ"
+ },
+ {
+  "id": "pendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "treo; treo cổ"
+ },
+ {
+  "id": "reine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nữ hoàng, hoàng hậu"
+ },
+ {
+  "id": "nuage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đám mây"
+ },
+ {
+  "id": "amant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "người tình, tình nhân"
+ },
+ {
+  "id": "cents",
+  "pos": [
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "hàng trăm (dạng số nhiều của cent)"
+ },
+ {
+  "id": "appareil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thiết bị, máy; máy ảnh"
+ },
+ {
+  "id": "intelligent",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thông minh"
+ },
+ {
+  "id": "quels",
+  "pos": [
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "những... nào (giống đực, số nhiều)"
+ },
+ {
+  "id": "l",
+  "pos": [
+   "mạo từ",
+   "đại từ",
+   "danh từ",
+   "số từ"
+  ],
+  "gender": null,
+  "vi": "dạng rút gọn của le/la (trước nguyên âm)"
+ },
+ {
+  "id": "trait",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "nét, đường nét; đặc điểm"
+ },
+ {
+  "id": "nettoyer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lau chùi, làm sạch, dọn dẹp"
+ },
+ {
+  "id": "salope",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "(thô tục) con đĩ, đồ khốn (nữ)"
+ },
+ {
+  "id": "prétendre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cho rằng, khẳng định; đòi hỏi"
+ },
+ {
+  "id": "monstre",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "quái vật; khổng lồ"
+ },
+ {
+  "id": "montre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đồng hồ đeo tay"
+ },
+ {
+  "id": "valeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giá trị"
+ },
+ {
+  "id": "e",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chữ cái E"
+ },
+ {
+  "id": "usine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhà máy, xí nghiệp"
+ },
+ {
+  "id": "queue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đuôi; hàng người xếp hàng"
+ },
+ {
+  "id": "croiser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bắt chéo; đi ngang qua, gặp"
+ },
+ {
+  "id": "m",
+  "pos": [
+   "danh từ",
+   "đại từ",
+   "số từ"
+  ],
+  "gender": "m",
+  "vi": "chữ cái M"
+ },
+ {
+  "id": "réunir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tập hợp, gộp lại, quy tụ"
+ },
+ {
+  "id": "également",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "cũng; như nhau"
+ },
+ {
+  "id": "avaler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nuốt"
+ },
+ {
+  "id": "contrôle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự kiểm tra, kiểm soát"
+ },
+ {
+  "id": "accuser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "buộc tội, tố cáo"
+ },
+ {
+  "id": "organiser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tổ chức, sắp xếp"
+ },
+ {
+  "id": "source",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nguồn; suối"
+ },
+ {
+  "id": "haïr",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "căm ghét, thù ghét"
+ },
+ {
+  "id": "piste",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đường mòn; đường băng; dấu vết"
+ },
+ {
+  "id": "brusquement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đột ngột, thình lình"
+ },
+ {
+  "id": "violence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bạo lực"
+ },
+ {
+  "id": "veste",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "áo khoác, áo vest"
+ },
+ {
+  "id": "mignon",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "dễ thương, xinh xắn"
+ },
+ {
+  "id": "vitesse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tốc độ; số (xe)"
+ },
+ {
+  "id": "curieux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tò mò; kỳ lạ"
+ },
+ {
+  "id": "exprimer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "diễn đạt, bày tỏ"
+ },
+ {
+  "id": "durant",
+  "pos": [
+   "giới từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trong suốt, trong lúc"
+ },
+ {
+  "id": "mien",
+  "pos": [
+   "đại từ",
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "của tôi (le mien)"
+ },
+ {
+  "id": "article",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bài báo; món hàng; điều khoản; mạo từ"
+ },
+ {
+  "id": "mienne",
+  "pos": [
+   "đại từ",
+   "hạn định từ"
+  ],
+  "gender": null,
+  "vi": "của tôi (giống cái, la mienne)"
+ },
+ {
+  "id": "vider",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm rỗng, dốc cạn, đổ hết"
+ },
+ {
+  "id": "admirer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngưỡng mộ, chiêm ngưỡng"
+ },
+ {
+  "id": "ben",
+  "pos": [
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": "m",
+  "vi": "(khẩu ngữ) ừ thì, à"
+ },
+ {
+  "id": "terme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thuật ngữ, từ ngữ; kỳ hạn"
+ },
+ {
+  "id": "coincer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm kẹt; dồn vào thế bí"
+ },
+ {
+  "id": "chaîne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "dây xích; kênh (truyền hình); chuỗi"
+ },
+ {
+  "id": "excuse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lời xin lỗi; lý do biện hộ"
+ },
+ {
+  "id": "achever",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hoàn thành; kết liễu"
+ },
+ {
+  "id": "abattre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đốn (cây); bắn hạ, giết"
+ },
+ {
+  "id": "malheureux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bất hạnh, khốn khổ"
+ },
+ {
+  "id": "pénétrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thâm nhập, đi vào, xuyên qua"
+ },
+ {
+  "id": "mordre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cắn"
+ },
+ {
+  "id": "victoire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chiến thắng"
+ },
+ {
+  "id": "formidable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "tuyệt vời"
+ },
+ {
+  "id": "celle-ci",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "cái này, người này (giống cái)"
+ },
+ {
+  "id": "franc",
+  "pos": [
+   "danh từ",
+   "tính từ",
+   "phó từ"
+  ],
+  "gender": "m",
+  "vi": "đồng franc; thẳng thắn, chân thật"
+ },
+ {
+  "id": "cesse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự ngừng (sans cesse: không ngừng)"
+ },
+ {
+  "id": "croix",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cây thánh giá; dấu chữ thập"
+ },
+ {
+  "id": "poussière",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bụi"
+ },
+ {
+  "id": "supplier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "van xin, khẩn cầu"
+ },
+ {
+  "id": "gâteau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bánh ngọt"
+ },
+ {
+  "id": "soigner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chăm sóc, chữa trị"
+ },
+ {
+  "id": "disposer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sắp xếp, bày biện; có sẵn (disposer de)"
+ },
+ {
+  "id": "rompre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm gãy, phá vỡ; chia tay"
+ },
+ {
+  "id": "discours",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bài diễn văn, bài phát biểu"
+ },
+ {
+  "id": "veille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hôm trước; sự thức canh"
+ },
+ {
+  "id": "planète",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hành tinh"
+ },
+ {
+  "id": "soutenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ủng hộ, hỗ trợ; chống đỡ"
+ },
+ {
+  "id": "méchant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "độc ác, hung dữ, xấu tính"
+ },
+ {
+  "id": "effacer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xóa, tẩy"
+ },
+ {
+  "id": "immeuble",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "tòa nhà, chung cư"
+ },
+ {
+  "id": "imposer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "áp đặt, bắt buộc"
+ },
+ {
+  "id": "couverture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chăn; bìa (sách); sự bao phủ"
+ },
+ {
+  "id": "commun",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "chung; thông thường"
+ },
+ {
+  "id": "obéir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "vâng lời, tuân theo"
+ },
+ {
+  "id": "réunion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc họp, buổi họp"
+ },
+ {
+  "id": "compagnon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bạn đồng hành, người bạn đời"
+ },
+ {
+  "id": "rideau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "rèm, màn cửa"
+ },
+ {
+  "id": "perdu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bị mất; lạc lối"
+ },
+ {
+  "id": "succès",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thành công"
+ },
+ {
+  "id": "élève",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "học sinh"
+ },
+ {
+  "id": "éclairer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chiếu sáng; soi sáng, làm rõ"
+ },
+ {
+  "id": "branche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cành cây; ngành, nhánh"
+ },
+ {
+  "id": "contrôler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kiểm tra, kiểm soát"
+ }
+]

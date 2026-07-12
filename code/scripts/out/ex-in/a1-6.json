@@ -1,0 +1,830 @@
+[
+ {
+  "id": "oncle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chú, bác, cậu"
+ },
+ {
+  "id": "utiliser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sử dụng, dùng"
+ },
+ {
+  "id": "espèce",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "loài; loại, thứ"
+ },
+ {
+  "id": "bas",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thấp; phía dưới; tất dài"
+ },
+ {
+  "id": "fleur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hoa, bông hoa"
+ },
+ {
+  "id": "terminer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kết thúc, hoàn thành"
+ },
+ {
+  "id": "bleu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "màu xanh dương"
+ },
+ {
+  "id": "haut",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "cao; phía trên"
+ },
+ {
+  "id": "début",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự bắt đầu, khởi đầu"
+ },
+ {
+  "id": "rêver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mơ, mơ mộng"
+ },
+ {
+  "id": "image",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hình ảnh, bức tranh"
+ },
+ {
+  "id": "drôle",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "buồn cười, ngộ nghĩnh"
+ },
+ {
+  "id": "malade",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ốm, bệnh; người bệnh"
+ },
+ {
+  "id": "plan",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kế hoạch; bản đồ, sơ đồ"
+ },
+ {
+  "id": "exactement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "chính xác, đúng vậy"
+ },
+ {
+  "id": "traverser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi qua, băng qua"
+ },
+ {
+  "id": "seconde",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giây; giây lát"
+ },
+ {
+  "id": "grave",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nghiêm trọng, trầm trọng"
+ },
+ {
+  "id": "habiter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sống, ở, cư trú"
+ },
+ {
+  "id": "oreille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tai"
+ },
+ {
+  "id": "jurer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thề; chửi thề"
+ },
+ {
+  "id": "plusieurs",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "nhiều, vài"
+ },
+ {
+  "id": "flic",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cảnh sát (tiếng lóng)"
+ },
+ {
+  "id": "ombre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bóng, bóng râm"
+ },
+ {
+  "id": "habitude",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thói quen"
+ },
+ {
+  "id": "prochain",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "kế tiếp, sắp tới"
+ },
+ {
+  "id": "danser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhảy, khiêu vũ"
+ },
+ {
+  "id": "armée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "quân đội"
+ },
+ {
+  "id": "calmer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm dịu, trấn an"
+ },
+ {
+  "id": "gueule",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mõm (thú); mặt, miệng (thô tục)"
+ },
+ {
+  "id": "prix",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "giá; giải thưởng"
+ },
+ {
+  "id": "ligne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đường, dòng, hàng"
+ },
+ {
+  "id": "debout",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "đứng, đứng thẳng"
+ },
+ {
+  "id": "différent",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khác, khác nhau"
+ },
+ {
+  "id": "or",
+  "pos": [
+   "danh từ",
+   "liên từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "vàng (kim loại); thế mà, vậy mà"
+ },
+ {
+  "id": "abandonner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "từ bỏ, bỏ rơi"
+ },
+ {
+  "id": "président",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tổng thống, chủ tịch"
+ },
+ {
+  "id": "cul",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mông, đít (thô tục)"
+ },
+ {
+  "id": "chéri",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "thân yêu, cưng; người yêu dấu"
+ },
+ {
+  "id": "prison",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhà tù"
+ },
+ {
+  "id": "naître",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sinh ra, ra đời"
+ },
+ {
+  "id": "honneur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "danh dự, vinh dự"
+ },
+ {
+  "id": "faux",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "sai; giả"
+ },
+ {
+  "id": "seigneur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lãnh chúa; Chúa"
+ },
+ {
+  "id": "oser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dám"
+ },
+ {
+  "id": "soldat",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lính, binh sĩ"
+ },
+ {
+  "id": "pierre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đá; viên đá"
+ },
+ {
+  "id": "impression",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ấn tượng, cảm giác"
+ },
+ {
+  "id": "nez",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mũi"
+ },
+ {
+  "id": "souffrir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đau khổ, chịu đựng"
+ },
+ {
+  "id": "laquelle",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "cái nào, người nào (giống cái)"
+ },
+ {
+  "id": "assurer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đảm bảo; bảo hiểm"
+ },
+ {
+  "id": "village",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "làng, thôn"
+ },
+ {
+  "id": "mener",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "dẫn dắt, dẫn tới"
+ },
+ {
+  "id": "passé",
+  "pos": [
+   "danh từ",
+   "tính từ",
+   "phó từ"
+  ],
+  "gender": "m",
+  "vi": "quá khứ; đã qua"
+ },
+ {
+  "id": "sujet",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "chủ đề, đề tài"
+ },
+ {
+  "id": "médecin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bác sĩ"
+ },
+ {
+  "id": "signe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dấu hiệu, ký hiệu"
+ },
+ {
+  "id": "apercevoir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhận ra, thoáng thấy"
+ },
+ {
+  "id": "craindre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "sợ, e ngại"
+ },
+ {
+  "id": "doucement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "nhẹ nhàng, từ từ"
+ },
+ {
+  "id": "serrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "siết, ôm chặt"
+ },
+ {
+  "id": "ajouter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thêm vào"
+ },
+ {
+  "id": "impossible",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "không thể, bất khả thi"
+ },
+ {
+  "id": "glisser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trượt, lướt"
+ },
+ {
+  "id": "lorsque",
+  "pos": [
+   "liên từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "khi, lúc"
+ },
+ {
+  "id": "maintenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "duy trì, giữ vững"
+ },
+ {
+  "id": "bonheur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hạnh phúc"
+ },
+ {
+  "id": "rejoindre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gặp lại, gia nhập, đến với"
+ },
+ {
+  "id": "cesser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ngừng, dừng lại"
+ },
+ {
+  "id": "vivant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "sống, còn sống"
+ },
+ {
+  "id": "propos",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lời nói, câu nói; ý định"
+ },
+ {
+  "id": "groupe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhóm"
+ },
+ {
+  "id": "lèvre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "môi"
+ },
+ {
+  "id": "doux",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "ngọt, dịu, mềm mại"
+ },
+ {
+  "id": "lancer",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ném, tung; phóng, ra mắt"
+ },
+ {
+  "id": "balle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "quả bóng; viên đạn"
+ },
+ {
+  "id": "scène",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sân khấu; cảnh"
+ },
+ {
+  "id": "vue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tầm nhìn, cảnh quan; thị giác"
+ },
+ {
+  "id": "jardin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vườn"
+ },
+ {
+  "id": "parmi",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "giữa, trong số"
+ },
+ {
+  "id": "échapper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thoát, trốn thoát"
+ },
+ {
+  "id": "robe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "váy, đầm"
+ },
+ {
+  "id": "sûrement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "chắc chắn, hẳn là"
+ },
+ {
+  "id": "peuple",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "dân tộc, nhân dân"
+ },
+ {
+  "id": "avis",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "ý kiến; thông báo"
+ },
+ {
+  "id": "humain",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "con người; nhân văn"
+ },
+ {
+  "id": "lui-même",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "chính anh ấy, tự anh ấy"
+ },
+ {
+  "id": "tranquille",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "yên tĩnh, bình yên"
+ },
+ {
+  "id": "intérieur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "bên trong; nội thất"
+ },
+ {
+  "id": "sentiment",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cảm xúc, tình cảm"
+ },
+ {
+  "id": "avion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "máy bay"
+ },
+ {
+  "id": "chat",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con mèo"
+ },
+ {
+  "id": "brûler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đốt, cháy"
+ },
+ {
+  "id": "odeur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mùi, mùi hương"
+ },
+ {
+  "id": "camp",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trại; phe"
+ },
+ {
+  "id": "bateau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "thuyền, tàu"
+ },
+ {
+  "id": "garde",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "sự canh gác; người bảo vệ"
+ },
+ {
+  "id": "installer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "lắp đặt, cài đặt; sắp xếp"
+ },
+ {
+  "id": "situation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tình huống, hoàn cảnh"
+ }
+]

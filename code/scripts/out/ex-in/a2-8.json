@@ -1,0 +1,832 @@
+[
+ {
+  "id": "naturellement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "tự nhiên; tất nhiên, dĩ nhiên"
+ },
+ {
+  "id": "assassin",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ sát nhân, kẻ ám sát"
+ },
+ {
+  "id": "môme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đứa nhỏ, đứa trẻ (tiếng lóng)"
+ },
+ {
+  "id": "goûter",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nếm, thưởng thức; bữa xế chiều"
+ },
+ {
+  "id": "vieil",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "già, cũ (dạng của vieux đứng trước nguyên âm)"
+ },
+ {
+  "id": "aube",
+  "pos": [
+   "danh từ",
+   "giới từ"
+  ],
+  "gender": "f",
+  "vi": "bình minh, rạng đông"
+ },
+ {
+  "id": "troisième",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thứ ba"
+ },
+ {
+  "id": "palais",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cung điện; vòm miệng"
+ },
+ {
+  "id": "drap",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khăn trải giường, ga giường"
+ },
+ {
+  "id": "mince",
+  "pos": [
+   "tính từ",
+   "tượng thanh"
+  ],
+  "gender": null,
+  "vi": "mỏng; mảnh mai, gầy"
+ },
+ {
+  "id": "tache",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vết bẩn, vết ố"
+ },
+ {
+  "id": "qualité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chất lượng; phẩm chất"
+ },
+ {
+  "id": "accueillir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đón tiếp, tiếp đón"
+ },
+ {
+  "id": "printemps",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mùa xuân"
+ },
+ {
+  "id": "urgence",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự khẩn cấp; cấp cứu"
+ },
+ {
+  "id": "lycée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trường trung học phổ thông"
+ },
+ {
+  "id": "attitude",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thái độ"
+ },
+ {
+  "id": "rapidement",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "nhanh chóng, một cách nhanh"
+ },
+ {
+  "id": "poing",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nắm đấm, quả đấm"
+ },
+ {
+  "id": "joindre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nối, ghép; liên lạc với"
+ },
+ {
+  "id": "étouffer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm ngạt thở; bóp nghẹt"
+ },
+ {
+  "id": "haine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự căm ghét, lòng hận thù"
+ },
+ {
+  "id": "siège",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chỗ ngồi, ghế; trụ sở"
+ },
+ {
+  "id": "fortune",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tài sản, của cải; vận may"
+ },
+ {
+  "id": "censé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "được cho là, đáng lẽ phải"
+ },
+ {
+  "id": "nul",
+  "pos": [
+   "đại từ",
+   "hạn định từ",
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "kém cỏi, vô dụng; không ai"
+ },
+ {
+  "id": "drogue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ma túy"
+ },
+ {
+  "id": "creuser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đào, khoét"
+ },
+ {
+  "id": "lier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "buộc, trói; gắn kết"
+ },
+ {
+  "id": "commissaire",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ủy viên; cảnh sát trưởng"
+ },
+ {
+  "id": "aise",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "sự thoải mái, dễ chịu"
+ },
+ {
+  "id": "russe",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "(thuộc) Nga; tiếng Nga"
+ },
+ {
+  "id": "louer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thuê, cho thuê; ca ngợi"
+ },
+ {
+  "id": "moteur",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "động cơ, máy"
+ },
+ {
+  "id": "attente",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chờ đợi; sự mong đợi"
+ },
+ {
+  "id": "social",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "(thuộc) xã hội"
+ },
+ {
+  "id": "verser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rót, đổ; trả (tiền)"
+ },
+ {
+  "id": "vitre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tấm kính (cửa sổ)"
+ },
+ {
+  "id": "combattre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chiến đấu, chống lại"
+ },
+ {
+  "id": "dessin",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bức vẽ, hình vẽ"
+ },
+ {
+  "id": "cuir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "da (thuộc)"
+ },
+ {
+  "id": "rang",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hàng, dãy; thứ hạng"
+ },
+ {
+  "id": "fiancé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vị hôn phu, chồng chưa cưới"
+ },
+ {
+  "id": "utile",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "hữu ích, có ích"
+ },
+ {
+  "id": "programme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chương trình"
+ },
+ {
+  "id": "provoquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "gây ra; khiêu khích"
+ },
+ {
+  "id": "véritable",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thật sự, đích thực"
+ },
+ {
+  "id": "coupable",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "có tội; kẻ có tội"
+ },
+ {
+  "id": "crâne",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "hộp sọ, sọ"
+ },
+ {
+  "id": "fesse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mông"
+ },
+ {
+  "id": "remuer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khuấy; cựa quậy, làm động đậy"
+ },
+ {
+  "id": "kilomètre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cây số, ki-lô-mét"
+ },
+ {
+  "id": "dingue",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "điên, khùng (tiếng lóng)"
+ },
+ {
+  "id": "j",
+  "pos": [
+   "danh từ",
+   "đại từ"
+  ],
+  "gender": "m",
+  "vi": "chữ cái j"
+ },
+ {
+  "id": "millier",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khoảng một nghìn, hàng nghìn"
+ },
+ {
+  "id": "retraite",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự nghỉ hưu; sự rút lui"
+ },
+ {
+  "id": "échanger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "trao đổi"
+ },
+ {
+  "id": "veiller",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thức canh; trông nom, chăm sóc"
+ },
+ {
+  "id": "mode",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thời trang; cách thức, kiểu"
+ },
+ {
+  "id": "solitude",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự cô đơn, nỗi cô độc"
+ },
+ {
+  "id": "élément",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "yếu tố, thành phần"
+ },
+ {
+  "id": "émotion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cảm xúc, xúc động"
+ },
+ {
+  "id": "réserver",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đặt trước, giữ chỗ"
+ },
+ {
+  "id": "réel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thực, có thật"
+ },
+ {
+  "id": "inquiet",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "lo lắng, bồn chồn"
+ },
+ {
+  "id": "subir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chịu đựng, gánh chịu"
+ },
+ {
+  "id": "examen",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "kỳ thi; sự kiểm tra, khám"
+ },
+ {
+  "id": "cool",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "ngầu, hay; thoải mái"
+ },
+ {
+  "id": "résoudre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giải quyết; giải (bài toán)"
+ },
+ {
+  "id": "nourriture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thức ăn, thực phẩm"
+ },
+ {
+  "id": "inconnu",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "không quen biết, xa lạ; người lạ"
+ },
+ {
+  "id": "brillant",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "sáng bóng; xuất sắc, tài giỏi"
+ },
+ {
+  "id": "marque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhãn hiệu, thương hiệu; dấu vết"
+ },
+ {
+  "id": "fumée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khói"
+ },
+ {
+  "id": "céder",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nhượng lại; nhượng bộ, chịu thua"
+ },
+ {
+  "id": "saison",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mùa"
+ },
+ {
+  "id": "repousser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đẩy lùi; cự tuyệt; mọc lại"
+ },
+ {
+  "id": "guérir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chữa khỏi; lành bệnh"
+ },
+ {
+  "id": "établir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thiết lập, lập ra"
+ },
+ {
+  "id": "bouffer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ăn, chén (tiếng lóng)"
+ },
+ {
+  "id": "o",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chữ cái o"
+ },
+ {
+  "id": "prisonnier",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "tù nhân, người tù"
+ },
+ {
+  "id": "claquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đóng sầm; kêu tách"
+ },
+ {
+  "id": "rattraper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bắt lại; đuổi kịp, theo kịp"
+ },
+ {
+  "id": "uniforme",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "đồng phục; đồng nhất"
+ },
+ {
+  "id": "égal",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bằng nhau, ngang nhau"
+ },
+ {
+  "id": "limite",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giới hạn, ranh giới"
+ },
+ {
+  "id": "agréable",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "dễ chịu, thú vị"
+ },
+ {
+  "id": "aveugle",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "mù; người mù"
+ },
+ {
+  "id": "rayon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tia (sáng); kệ hàng; bán kính"
+ },
+ {
+  "id": "voyager",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đi du lịch, đi lại"
+ },
+ {
+  "id": "imbécile",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kẻ ngốc, đồ ngu"
+ },
+ {
+  "id": "sorcier",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "phù thủy, thầy phù thủy"
+ },
+ {
+  "id": "angoisse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nỗi lo âu, sự khắc khoải"
+ },
+ {
+  "id": "infirmier",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "y tá, điều dưỡng (nam)"
+ },
+ {
+  "id": "abri",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nơi trú ẩn, chỗ trú"
+ },
+ {
+  "id": "étudiant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "sinh viên"
+ },
+ {
+  "id": "région",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vùng, khu vực"
+ },
+ {
+  "id": "opinion",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ý kiến, quan điểm"
+ },
+ {
+  "id": "douceur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự ngọt ngào; sự dịu dàng"
+ }
+]

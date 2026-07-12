@@ -1,0 +1,816 @@
+[
+ {
+  "id": "nylon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nylon, ni lông"
+ },
+ {
+  "id": "tondre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cắt (lông, cỏ), xén"
+ },
+ {
+  "id": "taillé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "có vóc dáng, rắn chắc; được cắt tỉa"
+ },
+ {
+  "id": "tome",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tập (sách)"
+ },
+ {
+  "id": "strident",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "chói tai, the thé"
+ },
+ {
+  "id": "indécent",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khiếm nhã, tục tĩu"
+ },
+ {
+  "id": "phoque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hải cẩu"
+ },
+ {
+  "id": "crucial",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "then chốt, cốt yếu"
+ },
+ {
+  "id": "dément",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "điên rồ, mất trí; người mất trí"
+ },
+ {
+  "id": "atome",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nguyên tử"
+ },
+ {
+  "id": "escadre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hạm đội, phi đội"
+ },
+ {
+  "id": "friche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đất bỏ hoang"
+ },
+ {
+  "id": "orchidée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "hoa lan"
+ },
+ {
+  "id": "carillon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bộ chuông, tiếng chuông ngân"
+ },
+ {
+  "id": "convenu",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đã thỏa thuận, đã định trước"
+ },
+ {
+  "id": "déporter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đày ải, lưu đày; làm lệch hướng"
+ },
+ {
+  "id": "journalisme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nghề báo, báo chí"
+ },
+ {
+  "id": "mas",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "trang trại (miền nam Pháp)"
+ },
+ {
+  "id": "sanction",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự trừng phạt, chế tài; sự phê chuẩn"
+ },
+ {
+  "id": "vénitien",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "thuộc Venice; người Venice"
+ },
+ {
+  "id": "adaptation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thích nghi; sự chuyển thể"
+ },
+ {
+  "id": "désolation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nỗi buồn thảm, cảnh tang thương"
+ },
+ {
+  "id": "atrocité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tàn bạo, hành động tàn ác"
+ },
+ {
+  "id": "bactérie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vi khuẩn"
+ },
+ {
+  "id": "branché",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "sành điệu, thời thượng; được kết nối"
+ },
+ {
+  "id": "diplomatie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ngoại giao; sự khéo léo"
+ },
+ {
+  "id": "turban",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khăn xếp (đội đầu)"
+ },
+ {
+  "id": "fouillis",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mớ hỗn độn, đống bừa bộn"
+ },
+ {
+  "id": "tapage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự ồn ào, náo động"
+ },
+ {
+  "id": "citerne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bể chứa nước, xi téc"
+ },
+ {
+  "id": "exagéré",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "phóng đại, quá mức"
+ },
+ {
+  "id": "nomination",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự bổ nhiệm; sự đề cử"
+ },
+ {
+  "id": "devanture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mặt tiền cửa hàng, tủ kính"
+ },
+ {
+  "id": "roule",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự lăn bánh, guồng quay"
+ },
+ {
+  "id": "parloir",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "phòng tiếp khách (nhà tù, tu viện)"
+ },
+ {
+  "id": "poigne",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sức nắm tay; sự cứng rắn, uy quyền"
+ },
+ {
+  "id": "biblique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc Kinh Thánh"
+ },
+ {
+  "id": "mutisme",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự câm lặng, im lặng"
+ },
+ {
+  "id": "vendu",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "kẻ bán mình, kẻ phản bội; đã bị bán"
+ },
+ {
+  "id": "alcoolique",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nghiện rượu; người nghiện rượu"
+ },
+ {
+  "id": "ici-bas",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "ở trần gian, ở cõi đời này"
+ },
+ {
+  "id": "noisette",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "quả phỉ, hạt dẻ; màu nâu hạt dẻ"
+ },
+ {
+  "id": "perler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đọng thành giọt, lấm tấm"
+ },
+ {
+  "id": "plant",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cây con, cây giống"
+ },
+ {
+  "id": "superposer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xếp chồng lên nhau"
+ },
+ {
+  "id": "autruche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đà điểu"
+ },
+ {
+  "id": "engrais",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "phân bón"
+ },
+ {
+  "id": "solennité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự trang nghiêm, long trọng"
+ },
+ {
+  "id": "voilé",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "có mạng che; mờ, khàn (giọng)"
+ },
+ {
+  "id": "taxe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thuế, lệ phí"
+ },
+ {
+  "id": "acquis",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "có được, thu được; kiến thức tích lũy"
+ },
+ {
+  "id": "mutiler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cắt xẻo, làm tàn phế"
+ },
+ {
+  "id": "réchaud",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bếp lò nhỏ, bếp ga du lịch"
+ },
+ {
+  "id": "toiture",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "mái nhà"
+ },
+ {
+  "id": "élaborer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "soạn thảo, xây dựng (kế hoạch)"
+ },
+ {
+  "id": "extasier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mê mẩn, ngây ngất"
+ },
+ {
+  "id": "ahuri",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ngơ ngác, sững sờ; người ngớ ngẩn"
+ },
+ {
+  "id": "coteau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sườn đồi, gò"
+ },
+ {
+  "id": "jaffer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ăn (tiếng lóng)"
+ },
+ {
+  "id": "anesthésie",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự gây mê, gây tê"
+ },
+ {
+  "id": "réglementaire",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đúng quy định, theo quy chế"
+ },
+ {
+  "id": "brochure",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "tập sách mỏng, tờ gấp quảng cáo"
+ },
+ {
+  "id": "concitoyen",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đồng bào, người cùng nước"
+ },
+ {
+  "id": "primo",
+  "pos": [
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "thứ nhất, trước hết"
+ },
+ {
+  "id": "référer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "quy chiếu, tham chiếu; báo cáo lên"
+ },
+ {
+  "id": "sous-bois",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tầng cây bụi dưới rừng"
+ },
+ {
+  "id": "rivalité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự cạnh tranh, kình địch"
+ },
+ {
+  "id": "vulgarité",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thô tục, thô lỗ"
+ },
+ {
+  "id": "recouvrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thu hồi, lấy lại (sức khỏe, tiền)"
+ },
+ {
+  "id": "échelon",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "bậc thang; cấp bậc"
+ },
+ {
+  "id": "violoncelle",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đàn cello"
+ },
+ {
+  "id": "réclame",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "quảng cáo"
+ },
+ {
+  "id": "rayonnement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự tỏa sáng; bức xạ; sức ảnh hưởng"
+ },
+ {
+  "id": "équilibrer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm cân bằng"
+ },
+ {
+  "id": "modification",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự thay đổi, sửa đổi"
+ },
+ {
+  "id": "mobilier",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "đồ đạc, nội thất; thuộc động sản"
+ },
+ {
+  "id": "rationnel",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "hợp lý, duy lý"
+ },
+ {
+  "id": "voluptueux",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khoái lạc, gợi cảm"
+ },
+ {
+  "id": "escadrille",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "phi đội, đội tàu nhỏ"
+ },
+ {
+  "id": "gîte",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "nhà nghỉ, chỗ trọ; nơi trú ẩn"
+ },
+ {
+  "id": "resplendir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rực rỡ, chói lọi, tỏa sáng"
+ },
+ {
+  "id": "auréole",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "vầng hào quang, quầng sáng"
+ },
+ {
+  "id": "graffiti",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "hình vẽ graffiti (trên tường)"
+ },
+ {
+  "id": "servitude",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự nô lệ, ràng buộc; địa dịch"
+ },
+ {
+  "id": "croiseur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tàu tuần dương"
+ },
+ {
+  "id": "inspiré",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đầy cảm hứng; người được truyền cảm hứng"
+ },
+ {
+  "id": "servi",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "được phục vụ, được dọn ra"
+ },
+ {
+  "id": "flair",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "khứu giác nhạy; sự nhạy bén, tinh ý"
+ },
+ {
+  "id": "aristocrate",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "nhà quý tộc; thuộc quý tộc"
+ },
+ {
+  "id": "organique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "hữu cơ; thuộc cơ thể"
+ },
+ {
+  "id": "articulation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "khớp (xương); sự phát âm rõ; sự liên kết"
+ },
+ {
+  "id": "documentaire",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "phim tài liệu; thuộc tài liệu"
+ },
+ {
+  "id": "emprise",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự chi phối, ảnh hưởng; phần đất chiếm dụng"
+ },
+ {
+  "id": "malhonnête",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "không trung thực, gian dối"
+ },
+ {
+  "id": "mésange",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chim bạc má, chim sẻ ngô"
+ },
+ {
+  "id": "bottine",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "giày bốt cổ ngắn"
+ },
+ {
+  "id": "capituler",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đầu hàng"
+ },
+ {
+  "id": "habitation",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhà ở, chỗ ở"
+ },
+ {
+  "id": "patriotique",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "yêu nước, ái quốc"
+ },
+ {
+  "id": "mortuaire",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "thuộc tang lễ, ma chay"
+ }
+]

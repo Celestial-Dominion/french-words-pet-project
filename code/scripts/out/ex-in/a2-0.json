@@ -1,0 +1,826 @@
+[
+ {
+  "id": "bizarre",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "kỳ lạ, kỳ quặc"
+ },
+ {
+  "id": "visite",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "cuộc thăm viếng, chuyến thăm"
+ },
+ {
+  "id": "courant",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "dòng chảy, luồng; thông dụng, phổ biến"
+ },
+ {
+  "id": "détester",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "ghét, căm ghét"
+ },
+ {
+  "id": "sauf",
+  "pos": [
+   "giới từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "ngoại trừ, trừ ra"
+ },
+ {
+  "id": "tenter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thử, cố gắng; cám dỗ"
+ },
+ {
+  "id": "réponse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "câu trả lời, sự đáp lại"
+ },
+ {
+  "id": "obliger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bắt buộc, ép buộc"
+ },
+ {
+  "id": "trou",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cái lỗ, hố"
+ },
+ {
+  "id": "mouvement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự chuyển động, cử động; phong trào"
+ },
+ {
+  "id": "supposer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "giả sử, cho rằng"
+ },
+ {
+  "id": "nu",
+  "pos": [
+   "tính từ",
+   "danh từ",
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "khỏa thân, trần trụi"
+ },
+ {
+  "id": "au-dessus",
+  "pos": [
+   "phó từ",
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "ở phía trên, bên trên"
+ },
+ {
+  "id": "gauche",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "bên trái; vụng về"
+ },
+ {
+  "id": "église",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "nhà thờ"
+ },
+ {
+  "id": "éviter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tránh, né tránh"
+ },
+ {
+  "id": "détruire",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "phá hủy, tiêu diệt"
+ },
+ {
+  "id": "époque",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "thời kỳ, thời đại"
+ },
+ {
+  "id": "million",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "triệu"
+ },
+ {
+  "id": "présent",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "hiện tại; có mặt, hiện diện"
+ },
+ {
+  "id": "filer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "chuồn đi nhanh; kéo sợi"
+ },
+ {
+  "id": "cadeau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "món quà"
+ },
+ {
+  "id": "complètement",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "hoàn toàn, triệt để"
+ },
+ {
+  "id": "super",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "tuyệt vời, cực kỳ"
+ },
+ {
+  "id": "soudain",
+  "pos": [
+   "phó từ",
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "đột ngột, bất chợt"
+ },
+ {
+  "id": "honte",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự xấu hổ, nỗi hổ thẹn"
+ },
+ {
+  "id": "pensée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ý nghĩ, suy nghĩ"
+ },
+ {
+  "id": "erreur",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sai lầm, lỗi"
+ },
+ {
+  "id": "vide",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "trống rỗng; khoảng trống"
+ },
+ {
+  "id": "loi",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "luật, đạo luật"
+ },
+ {
+  "id": "épouser",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kết hôn, cưới"
+ },
+ {
+  "id": "dent",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "răng"
+ },
+ {
+  "id": "retard",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự chậm trễ, sự muộn"
+ },
+ {
+  "id": "déranger",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "làm phiền, quấy rầy"
+ },
+ {
+  "id": "lequel",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "cái nào, người nào"
+ },
+ {
+  "id": "selon",
+  "pos": [
+   "giới từ"
+  ],
+  "gender": null,
+  "vi": "theo, tùy theo"
+ },
+ {
+  "id": "marche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự đi bộ; bậc thang; sự vận hành"
+ },
+ {
+  "id": "moyen",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "phương tiện, cách thức; trung bình"
+ },
+ {
+  "id": "moi-même",
+  "pos": [
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "chính tôi, tự tôi"
+ },
+ {
+  "id": "fumer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "hút thuốc; bốc khói"
+ },
+ {
+  "id": "étrange",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "kỳ lạ, lạ lùng"
+ },
+ {
+  "id": "sérieux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nghiêm túc, nghiêm trọng"
+ },
+ {
+  "id": "calme",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "sự yên tĩnh; bình tĩnh, điềm tĩnh"
+ },
+ {
+  "id": "soirée",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "buổi tối; buổi tiệc tối"
+ },
+ {
+  "id": "langue",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "ngôn ngữ; cái lưỡi"
+ },
+ {
+  "id": "oiseau",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "con chim"
+ },
+ {
+  "id": "équipe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "đội, nhóm"
+ },
+ {
+  "id": "goût",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "vị, hương vị; sở thích, thẩm mỹ"
+ },
+ {
+  "id": "classe",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "lớp học; hạng, loại"
+ },
+ {
+  "id": "reposer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "nghỉ ngơi; đặt lại"
+ },
+ {
+  "id": "gosse",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đứa trẻ, nhóc con"
+ },
+ {
+  "id": "preuve",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "bằng chứng, chứng cứ"
+ },
+ {
+  "id": "été",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mùa hè"
+ },
+ {
+  "id": "gouvernement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "chính phủ"
+ },
+ {
+  "id": "traiter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đối xử; xử lý"
+ },
+ {
+  "id": "clé",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "chìa khóa"
+ },
+ {
+  "id": "départ",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự khởi hành, sự ra đi"
+ },
+ {
+  "id": "remercier",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "cảm ơn"
+ },
+ {
+  "id": "apparaître",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "xuất hiện, hiện ra"
+ },
+ {
+  "id": "emporter",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "mang đi, đem theo"
+ },
+ {
+  "id": "proposer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đề nghị, đề xuất"
+ },
+ {
+  "id": "dessus",
+  "pos": [
+   "phó từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "ở trên, phía trên"
+ },
+ {
+  "id": "attraper",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "bắt, chộp lấy"
+ },
+ {
+  "id": "vert",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "màu xanh lá cây"
+ },
+ {
+  "id": "baiser",
+  "pos": [
+   "động từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "nụ hôn; hôn"
+ },
+ {
+  "id": "cri",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tiếng kêu, tiếng hét"
+ },
+ {
+  "id": "appel",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cuộc gọi; lời kêu gọi"
+ },
+ {
+  "id": "avenir",
+  "pos": [
+   "danh từ",
+   "động từ"
+  ],
+  "gender": "m",
+  "vi": "tương lai"
+ },
+ {
+  "id": "passage",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lối đi, đường qua; đoạn văn"
+ },
+ {
+  "id": "deviner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đoán, phỏng đoán"
+ },
+ {
+  "id": "choix",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự lựa chọn"
+ },
+ {
+  "id": "sol",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "mặt đất, nền, đất"
+ },
+ {
+  "id": "traîner",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kéo lê; lê la, la cà"
+ },
+ {
+  "id": "poche",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "cái túi (áo, quần)"
+ },
+ {
+  "id": "front",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cái trán; mặt trận"
+ },
+ {
+  "id": "puisque",
+  "pos": [
+   "liên từ",
+   "phó từ"
+  ],
+  "gender": null,
+  "vi": "bởi vì, vì rằng"
+ },
+ {
+  "id": "amoureux",
+  "pos": [
+   "tính từ",
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "đang yêu, si tình; người yêu"
+ },
+ {
+  "id": "attaquer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "tấn công"
+ },
+ {
+  "id": "terrible",
+  "pos": [
+   "tính từ"
+  ],
+  "gender": null,
+  "vi": "khủng khiếp, kinh khủng"
+ },
+ {
+  "id": "atteindre",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đạt tới, tới được"
+ },
+ {
+  "id": "contraire",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "m",
+  "vi": "điều trái ngược; ngược lại"
+ },
+ {
+  "id": "intérêt",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "sự quan tâm, lợi ích; tiền lãi"
+ },
+ {
+  "id": "bête",
+  "pos": [
+   "danh từ",
+   "tính từ"
+  ],
+  "gender": "f",
+  "vi": "con vật, con thú; ngu ngốc, ngớ ngẩn"
+ },
+ {
+  "id": "retirer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "rút ra, lấy lại; rút tiền"
+ },
+ {
+  "id": "message",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "tin nhắn, thông điệp"
+ },
+ {
+  "id": "dollar",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "đô la"
+ },
+ {
+  "id": "annoncer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thông báo, loan báo"
+ },
+ {
+  "id": "liberté",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "sự tự do"
+ },
+ {
+  "id": "respirer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thở, hít thở"
+ },
+ {
+  "id": "agent",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "nhân viên, đặc vụ; cảnh sát"
+ },
+ {
+  "id": "tel",
+  "pos": [
+   "hạn định từ",
+   "đại từ"
+  ],
+  "gender": null,
+  "vi": "như thế, như vậy"
+ },
+ {
+  "id": "camarade",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "bạn bè, đồng chí"
+ },
+ {
+  "id": "conseil",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "lời khuyên; hội đồng"
+ },
+ {
+  "id": "poste",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": null,
+  "vi": "vị trí, chức vụ; bưu điện; trạm"
+ },
+ {
+  "id": "appartement",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "căn hộ"
+ },
+ {
+  "id": "cigarette",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "f",
+  "vi": "điếu thuốc lá"
+ },
+ {
+  "id": "appartenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "thuộc về, là của"
+ },
+ {
+  "id": "durer",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "kéo dài, tồn tại"
+ },
+ {
+  "id": "obtenir",
+  "pos": [
+   "động từ"
+  ],
+  "gender": null,
+  "vi": "đạt được, có được"
+ },
+ {
+  "id": "ventre",
+  "pos": [
+   "danh từ"
+  ],
+  "gender": "m",
+  "vi": "cái bụng"
+ }
+]
