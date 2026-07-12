@@ -1,0 +1,70 @@
+{
+ "morale": {
+  "sentences": [
+   {
+    "fr": "La morale de cette fable est qu'il ne faut pas mentir.",
+    "vi": "Bài học luân lý của truyện ngụ ngôn này là không nên nói dối."
+   },
+   {
+    "fr": "Il a agi selon sa morale, sans se soucier du regard des autres.",
+    "vi": "Anh ấy hành động theo đạo đức của mình, không bận tâm đến ánh nhìn của người khác."
+   },
+   {
+    "fr": "Cette personne n'a aucune morale, elle ment sans scrupule.",
+    "vi": "Người này chẳng có chút đạo đức nào, nói dối không chút áy náy."
+   }
+  ],
+  "reason": "Câu 3 dùng 'le moral' (m, tinh thần) là từ khác, không chứa từ đang xét 'morale' (f); đã thay câu mới dùng 'morale' đúng nghĩa đạo đức."
+ },
+ "chérir": {
+  "sentences": [
+   {
+    "fr": "Elle chérit chaque souvenir de son enfance à la campagne.",
+    "vi": "Cô ấy trân quý từng kỷ niệm tuổi thơ ở vùng quê."
+   },
+   {
+    "fr": "Ils ont juré de se chérir pour le reste de leur vie.",
+    "vi": "Họ đã thề yêu thương nhau đến hết cuộc đời."
+   },
+   {
+    "fr": "Cette vieille photo est un objet qu'il chérit par-dessus tout.",
+    "vi": "Tấm ảnh cũ này là vật mà ông trân quý hơn tất thảy."
+   }
+  ],
+  "reason": "Câu 3 sai giống: 'photo' là giống cái, phải là 'Cette vieille photo' chứ không phải 'Ce vieux photo'."
+ },
+ "soviétique": {
+  "sentences": [
+   {
+    "fr": "Ce documentaire raconte la vie quotidienne à l'époque soviétique.",
+    "vi": "Bộ phim tài liệu này kể về cuộc sống thường nhật thời Xô Viết."
+   },
+   {
+    "fr": "Le premier homme dans l'espace était un cosmonaute soviétique.",
+    "vi": "Người đầu tiên bay vào vũ trụ là một phi hành gia Xô Viết."
+   },
+   {
+    "fr": "De nombreux Soviétiques ont émigré après la chute du régime.",
+    "vi": "Nhiều người Xô Viết đã di cư sau khi chế độ sụp đổ."
+   }
+  ],
+  "reason": "Câu 3: khi dùng làm danh từ chỉ người phải viết hoa 'Soviétiques' (còn dạng tính từ ở câu 1, 2 viết thường là đúng)."
+ },
+ "agacer": {
+  "sentences": [
+   {
+    "fr": "Le bruit incessant du voisin commence sérieusement à m'agacer.",
+    "vi": "Tiếng ồn không ngớt từ hàng xóm bắt đầu làm tôi bực mình thật sự."
+   },
+   {
+    "fr": "Ça m'agace qu'il soit toujours en retard aux réunions.",
+    "vi": "Tôi khó chịu vì anh ta lúc nào cũng đến họp trễ."
+   },
+   {
+    "fr": "Arrête de taper des doigts sur la table, tu vas finir par agacer tout le monde.",
+    "vi": "Ngừng gõ ngón tay lên bàn đi, rồi cậu sẽ làm mọi người bực đấy."
+   }
+  ],
+  "reason": "Câu 3 sai trật tự từ: 'finir par tout le monde agacer' phải là 'finir par agacer tout le monde'; thêm 'sur la table' cho tự nhiên."
+ }
+}

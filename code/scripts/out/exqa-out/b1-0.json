@@ -1,0 +1,10 @@
+{
+  "armer": {
+    "sentences": [
+      { "fr": "Le pays a décidé d'armer ses soldats avant l'offensive.", "vi": "Đất nước đã quyết định trang bị vũ khí cho binh lính trước cuộc tấn công." },
+      { "fr": "Il faut s'armer de patience pour élever de jeunes enfants.", "vi": "Cần trang bị lòng kiên nhẫn để nuôi dạy trẻ nhỏ." },
+      { "fr": "Les rebelles s'étaient armés de fusils volés à l'armée.", "vi": "Quân nổi dậy đã vũ trang bằng những khẩu súng trộm được từ quân đội." }
+    ],
+    "reason": "Câu 1 gượng và bản dịch lệch: 'armer ses soldats de nouveaux équipements' sai collocation (armer đi với vũ khí, không phải 'équipements'), và vi 'vũ khí mới' không khớp với 'équipements'. Sửa thành 'armer ses soldats avant l'offensive'."
+  }
+}

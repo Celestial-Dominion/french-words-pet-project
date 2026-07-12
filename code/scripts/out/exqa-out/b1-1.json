@@ -1,0 +1,26 @@
+{
+  "menton": {
+    "sentences": [
+      { "fr": "Il se tenait le menton en réfléchissant à la question.", "vi": "Anh ấy chống cằm trong lúc suy nghĩ về câu hỏi." },
+      { "fr": "Elle a une petite cicatrice sur le menton depuis son accident de vélo.", "vi": "Cô ấy có một vết sẹo nhỏ trên cằm từ sau vụ tai nạn xe đạp." },
+      { "fr": "Relève le menton et regarde-moi quand je te parle.", "vi": "Ngẩng cằm lên và nhìn tôi khi tôi nói chuyện với cậu." }
+    ],
+    "reason": "Câu 1 gượng: 's'appuyer sur son menton' phi lý (không thể tựa vào cằm của chính mình); sửa thành 'se tenir le menton' đúng cử chỉ suy nghĩ."
+  },
+  "serpent": {
+    "sentences": [
+      { "fr": "Un serpent est apparu soudain sur le sentier de montagne.", "vi": "Một con rắn bỗng xuất hiện trên lối mòn trên núi." },
+      { "fr": "Ce serpent n'est pas venimeux, il ne présente aucun danger.", "vi": "Con rắn này không có độc, nó chẳng gây nguy hiểm gì cả." },
+      { "fr": "J'ai vu un long serpent traverser lentement le chemin.", "vi": "Tôi thấy một con rắn dài từ từ bò qua con đường." }
+    ],
+    "reason": "Câu 3 lặp thừa/gượng: 'La rivière serpente comme un long serpent' (uốn lượn như con rắn) tautology; thay bằng câu tự nhiên."
+  },
+  "approche": {
+    "sentences": [
+      { "fr": "À l'approche de l'hiver, les jours deviennent de plus en plus courts.", "vi": "Khi mùa đông đến gần, những ngày càng lúc càng ngắn lại." },
+      { "fr": "Cette nouvelle approche du problème pourrait tout changer.", "vi": "Cách tiếp cận mới đối với vấn đề này có thể thay đổi mọi thứ." },
+      { "fr": "Le professeur privilégie une approche plus concrète de l'enseignement.", "vi": "Vị giáo sư ưu tiên một cách tiếp cận cụ thể hơn trong giảng dạy." }
+    ],
+    "reason": "Bản dịch câu 1 lủng củng: 'ngày càng lúc càng ngắn lại' dễ gây hiểu nhầm; thêm 'những' cho rõ chủ ngữ."
+  }
+}

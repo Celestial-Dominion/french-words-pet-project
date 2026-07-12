@@ -1,0 +1,53 @@
+{
+ "étendue": {
+  "sentences": [
+   {
+    "fr": "Devant nous s'ouvrait une vaste étendue de sable doré.",
+    "vi": "Trước mặt chúng tôi trải ra một khoảng rộng cát vàng bao la."
+   },
+   {
+    "fr": "On mesure peu à peu l'étendue des dégâts causés par l'inondation.",
+    "vi": "Người ta dần đo được phạm vi thiệt hại do trận lụt gây ra."
+   },
+   {
+    "fr": "L'étendue de ses connaissances impressionne tous ses collègues.",
+    "vi": "Tầm hiểu biết rộng lớn của ông ấy khiến mọi đồng nghiệp nể phục."
+   }
+  ],
+  "reason": "Câu 1 lặp từ cùng gốc 's'étendait ... étendue' (pléonasme), đổi động từ thành 's'ouvrait'."
+ },
+ "disparu": {
+  "sentences": [
+   {
+    "fr": "La police recherche activement l'enfant disparu depuis hier.",
+    "vi": "Cảnh sát đang tích cực tìm kiếm đứa trẻ mất tích từ hôm qua."
+   },
+   {
+    "fr": "On a rendu hommage aux disparus lors de la cérémonie.",
+    "vi": "Người ta đã tưởng niệm những người đã khuất trong buổi lễ."
+   },
+   {
+    "fr": "Cette espèce d'oiseau a aujourd'hui complètement disparu.",
+    "vi": "Loài chim này ngày nay đã hoàn toàn tuyệt chủng."
+   }
+  ],
+  "reason": "Câu 3: 'est complètement disparue' gượng; disparaître chia với avoir → 'a complètement disparu'."
+ },
+ "ivrogne": {
+  "sentences": [
+   {
+    "fr": "Un ivrogne titubait le long du trottoir en chantant.",
+    "vi": "Một gã say rượu loạng choạng dọc theo vỉa hè vừa đi vừa hát."
+   },
+   {
+    "fr": "Depuis qu'il a arrêté de boire, on ne le traite plus d'ivrogne.",
+    "vi": "Từ khi cai rượu, không ai còn gọi ông ấy là kẻ nghiện rượu nữa."
+   },
+   {
+    "fr": "Sa démarche d'ivrogne faisait rire tous les passants.",
+    "vi": "Dáng đi lảo đảo như say rượu của anh ta khiến khách qua đường bật cười."
+   }
+  ],
+  "reason": "Câu 3: 'démarche ivrogne' sai; phải dùng 'démarche d'ivrogne' (dáng đi của kẻ say)."
+ }
+}

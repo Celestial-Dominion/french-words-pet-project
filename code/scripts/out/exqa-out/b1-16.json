@@ -1,0 +1,53 @@
+{
+ "nous-mêmes": {
+  "sentences": [
+   {
+    "fr": "Nous avons construit cette cabane nous-mêmes.",
+    "vi": "Chúng tôi đã tự tay dựng cái chòi này."
+   },
+   {
+    "fr": "Nous devons parfois savoir rire de nous-mêmes.",
+    "vi": "Đôi khi chúng ta cần biết cười vào chính bản thân mình."
+   },
+   {
+    "fr": "Nous-mêmes, nous avons été surpris par ce résultat.",
+    "vi": "Chính chúng tôi cũng đã bất ngờ trước kết quả này."
+   }
+  ],
+  "reason": "Câu 2 dùng « il faut ... de nous-mêmes » sai/gượng: với chủ ngữ vô nhân xưng « il faut » phải là « de soi-même ». Sửa thành « Nous devons... » để hợp với « nous-mêmes »."
+ },
+ "poursuite": {
+  "sentences": [
+   {
+    "fr": "La poursuite en voiture s'est terminée à l'entrée de l'autoroute.",
+    "vi": "Cuộc truy đuổi bằng ô tô đã kết thúc ở lối vào đường cao tốc."
+   },
+   {
+    "fr": "Malgré les obstacles, il a opté pour la poursuite de ses études à l'étranger.",
+    "vi": "Bất chấp trở ngại, anh đã quyết định tiếp tục việc học ở nước ngoài."
+   },
+   {
+    "fr": "Les chiens se sont lancés à la poursuite du renard dans les champs.",
+    "vi": "Bầy chó lao vào truy đuổi con cáo trên cánh đồng."
+   }
+  ],
+  "reason": "Câu 2 « il a décidé la poursuite de ses études » gượng (décider + danh từ này không tự nhiên). Đổi thành « a opté pour la poursuite »."
+ },
+ "tranche": {
+  "sentences": [
+   {
+    "fr": "Elle a coupé une fine tranche de pain pour accompagner la soupe.",
+    "vi": "Cô ấy cắt một lát bánh mì mỏng để ăn kèm với súp."
+   },
+   {
+    "fr": "Cette réforme concerne surtout la tranche d'âge des vingt à trente ans.",
+    "vi": "Cuộc cải cách này chủ yếu liên quan đến nhóm tuổi từ hai mươi đến ba mươi."
+   },
+   {
+    "fr": "On s'est payé une vraie tranche de rire ensemble hier soir.",
+    "vi": "Tối qua chúng tôi đã có một khoảng thời gian cười thả ga cùng nhau."
+   }
+  ],
+  "reason": "Câu 3 « passer une tranche de rire » không đúng thành ngữ; đúng là « se payer une tranche (de rire/rigolade) »."
+ }
+}

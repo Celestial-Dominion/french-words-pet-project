@@ -1,0 +1,36 @@
+{
+ "major": {
+  "sentences": [
+   {
+    "fr": "Le major a donné l'ordre de lever le camp à l'aube.",
+    "vi": "Viên thượng sĩ nhất đã ra lệnh nhổ trại vào lúc bình minh."
+   },
+   {
+    "fr": "Elle est sortie major de sa promotion cette année.",
+    "vi": "Năm nay cô ấy đã tốt nghiệp thủ khoa của khóa."
+   },
+   {
+    "fr": "Le jeune major dirigeait les opérations avec beaucoup de sang-froid.",
+    "vi": "Viên thượng sĩ trẻ chỉ huy các chiến dịch rất bình tĩnh."
+   }
+  ],
+  "reason": "Bản dịch vi dịch 'major' thành 'thiếu tá' (sĩ quan cấp tá), sai với nghĩa quân sự đã cho là 'thượng sĩ nhất' (hạ sĩ quan)."
+ },
+ "brute": {
+  "sentences": [
+   {
+    "fr": "Cet homme se conduit comme une véritable brute.",
+    "vi": "Người đàn ông này cư xử như một kẻ vũ phu thực thụ."
+   },
+   {
+    "fr": "N'agis pas comme une brute, parle-lui calmement.",
+    "vi": "Đừng hành xử như một kẻ thô bạo, hãy nói chuyện với anh ta bình tĩnh."
+   },
+   {
+    "fr": "Dans le film, la brute finit par être punie pour sa cruauté.",
+    "vi": "Trong phim, kẻ tàn bạo cuối cùng bị trừng phạt vì sự độc ác."
+   }
+  ],
+  "reason": "Lỗi hợp giống (accord): chủ ngữ 'la brute' giống cái nên phải là 'être punie', không phải 'puni'."
+ }
+}

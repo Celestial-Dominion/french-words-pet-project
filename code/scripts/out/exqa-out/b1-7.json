@@ -1,0 +1,70 @@
+{
+ "conférence": {
+  "sentences": [
+   {
+    "fr": "La conférence sur le changement climatique a réuni des experts venus du monde entier.",
+    "vi": "Hội nghị về biến đổi khí hậu đã quy tụ các chuyên gia đến từ khắp nơi trên thế giới."
+   },
+   {
+    "fr": "Pendant la conférence, l'intervenant a expliqué comment les réseaux sociaux transforment nos habitudes.",
+    "vi": "Trong bài diễn thuyết, diễn giả đã giải thích cách mà mạng xã hội thay đổi thói quen của chúng ta."
+   },
+   {
+    "fr": "Si tu arrives en retard à la conférence, tu risques de manquer l'introduction essentielle.",
+    "vi": "Nếu bạn đến muộn buổi hội nghị, bạn có nguy cơ bỏ lỡ phần mở đầu quan trọng."
+   }
+  ],
+  "reason": "Dịch câu 2 gây hiểu nhầm: 'giải thích cách mạng xã hội thay đổi' đọc thành 'cách mạng xã hội' (social revolution); thêm 'mà' để rõ nghĩa 'mạng xã hội'."
+ },
+ "précéder": {
+  "sentences": [
+   {
+    "fr": "Un long silence a précédé sa réponse, comme s'il hésitait encore.",
+    "vi": "Một sự im lặng kéo dài trước câu trả lời của anh ấy, như thể anh vẫn còn do dự."
+   },
+   {
+    "fr": "Dans le défilé, la fanfare précédait toujours les danseurs.",
+    "vi": "Trong đám rước, đội kèn đồng luôn đi trước các vũ công."
+   },
+   {
+    "fr": "Les jours qui ont précédé l'examen ont été particulièrement stressants.",
+    "vi": "Những ngày trước kỳ thi đã đặc biệt căng thẳng."
+   }
+  ],
+  "reason": "Dịch câu 1 gượng: 'kéo dài đến trước câu trả lời' -> 'kéo dài trước câu trả lời'."
+ },
+ "international": {
+  "sentences": [
+   {
+    "fr": "La conférence a réuni des experts reconnus sur la scène internationale.",
+    "vi": "Hội nghị đã quy tụ những chuyên gia được công nhận trên trường quốc tế."
+   },
+   {
+    "fr": "Cet aéroport accueille des vols internationaux depuis les années soixante.",
+    "vi": "Sân bay này đã đón các chuyến bay quốc tế từ những năm sáu mươi."
+   },
+   {
+    "fr": "Le conflit a suscité de vives réactions au niveau international.",
+    "vi": "Cuộc xung đột đã gây ra những phản ứng mạnh mẽ ở tầm quốc tế."
+   }
+  ],
+  "reason": "Câu 1 fr gượng: 'des experts venus de la scène internationale' (trộn ẩn dụ) -> 'des experts reconnus sur la scène internationale'."
+ },
+ "exception": {
+  "sentences": [
+   {
+    "fr": "Tous les magasins sont fermés le dimanche, à quelques exceptions près.",
+    "vi": "Tất cả các cửa hàng đều đóng cửa Chủ nhật, trừ vài ngoại lệ."
+   },
+   {
+    "fr": "On fera une exception pour toi, mais juste cette fois.",
+    "vi": "Chúng tôi sẽ tạo một ngoại lệ cho cậu, nhưng chỉ lần này thôi."
+   },
+   {
+    "fr": "Cette règle ne souffre aucune exception.",
+    "vi": "Quy tắc này không chấp nhận bất kỳ ngoại lệ nào."
+   }
+  ],
+  "reason": "Dịch câu 2 gượng: 'sẽ ngoại lệ cho cậu' (dùng danh từ như động từ) -> 'sẽ tạo một ngoại lệ cho cậu'."
+ }
+}

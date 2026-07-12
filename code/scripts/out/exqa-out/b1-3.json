@@ -1,0 +1,36 @@
+{
+ "douloureux": {
+  "sentences": [
+   {
+    "fr": "La perte de son père a été un moment très douloureux pour elle.",
+    "vi": "Việc mất cha là một khoảnh khắc vô cùng đau buồn đối với cô ấy."
+   },
+   {
+    "fr": "Après la chute, son genou était très douloureux.",
+    "vi": "Sau cú ngã, đầu gối của anh ấy rất đau."
+   },
+   {
+    "fr": "Ce fut une décision douloureuse, mais nécessaire.",
+    "vi": "Đó là một quyết định đau đớn, nhưng cần thiết."
+   }
+  ],
+  "reason": "Câu 2 'une douleur douloureuse' là lỗi lặp thừa (pléonasme); đã viết lại giữ từ douloureux."
+ },
+ "auparavant": {
+  "sentences": [
+   {
+    "fr": "Nous nous étions déjà rencontrés quelques mois auparavant.",
+    "vi": "Chúng tôi đã từng gặp nhau vài tháng trước đó."
+   },
+   {
+    "fr": "Auparavant, ce quartier était calme et peu habité.",
+    "vi": "Trước đây, khu phố này yên tĩnh và ít người ở."
+   },
+   {
+    "fr": "Quelques minutes auparavant, la salle était encore vide.",
+    "vi": "Vài phút trước đó, căn phòng vẫn còn trống."
+   }
+  ],
+  "reason": "Câu 3 dùng 'auparavant' cụt lủn, thiếu mốc thời gian nên gượng; đã viết lại tự nhiên."
+ }
+}

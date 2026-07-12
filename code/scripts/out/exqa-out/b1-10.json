@@ -1,0 +1,36 @@
+{
+ "améliorer": {
+  "sentences": [
+   {
+    "fr": "Il travaille dur pour améliorer son niveau de français.",
+    "vi": "Anh ấy chăm chỉ luyện tập để cải thiện trình độ tiếng Pháp."
+   },
+   {
+    "fr": "Ces nouvelles mesures devraient améliorer la qualité de vie des habitants.",
+    "vi": "Những biện pháp mới này hẳn sẽ cải thiện chất lượng sống của cư dân."
+   },
+   {
+    "fr": "La situation s'est nettement améliorée depuis le mois dernier.",
+    "vi": "Tình hình đã cải thiện rõ rệt kể từ tháng trước."
+   }
+  ],
+  "reason": "Câu 2: 'devraient améliorer' là kỳ vọng hướng tới tương lai (hẳn sẽ), không phải phản thực; dịch 'lẽ ra sẽ' sai nghĩa (hàm ý đã không xảy ra)."
+ },
+ "chantier": {
+  "sentences": [
+   {
+    "fr": "Les ouvriers travaillent sur le chantier depuis le lever du soleil.",
+    "vi": "Các công nhân đã làm việc trên công trường từ lúc mặt trời mọc."
+   },
+   {
+    "fr": "Le chantier de la nouvelle école devrait être terminé en automne.",
+    "vi": "Công trường xây trường học mới dự kiến sẽ hoàn thành vào mùa thu."
+   },
+   {
+    "fr": "Attention, le port du casque est obligatoire sur ce chantier.",
+    "vi": "Chú ý, việc đội mũ bảo hộ là bắt buộc trên công trường này."
+   }
+  ],
+  "reason": "Câu 2: 'devrait être terminé' là dự kiến tương lai; dịch 'lẽ ra sẽ hoàn thành' sai nghĩa (hàm ý phản thực, đã không hoàn thành)."
+ }
+}

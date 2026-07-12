@@ -1,0 +1,53 @@
+{
+ "pourvoir": {
+  "sentences": [
+   {
+    "fr": "L'entreprise cherche à pourvoir trois postes avant la fin du mois.",
+    "vi": "Công ty đang tìm cách tuyển người cho ba vị trí trước cuối tháng."
+   },
+   {
+    "fr": "Les parents doivent pourvoir aux besoins de leurs enfants.",
+    "vi": "Cha mẹ phải cung cấp cho các nhu cầu của con cái."
+   },
+   {
+    "fr": "Cette région est bien pourvue en écoles et en hôpitaux.",
+    "vi": "Vùng này được trang bị đầy đủ trường học và bệnh viện."
+   }
+  ],
+  "reason": "Câu 1: dịch 'pourvoir trois postes' thành 'bổ nhiệm ba vị trí' bị lệch nghĩa (bổ nhiệm là cất nhắc người vào chức); sửa thành 'tuyển người cho ba vị trí'."
+ },
+ "parer": {
+  "sentences": [
+   {
+    "fr": "Le boxeur a réussi à parer tous les coups de son adversaire.",
+    "vi": "Võ sĩ đã đỡ được tất cả các cú đấm của đối thủ."
+   },
+   {
+    "fr": "Nous devons parer à toute éventualité avant le départ.",
+    "vi": "Chúng ta phải phòng bị cho mọi tình huống trước khi lên đường."
+   },
+   {
+    "fr": "La mariée s'était parée de ses plus beaux bijoux.",
+    "vi": "Cô dâu đã diện những món trang sức đẹp nhất của mình."
+   }
+  ],
+  "reason": "Câu 3: 'se parer de bijoux' nghĩa là đeo/diện trang sức, không phải 'trang điểm' (đánh phấn); bản dịch cũ thêm nghĩa sai."
+ },
+ "user": {
+  "sentences": [
+   {
+    "fr": "À force de marcher, il a complètement usé ses chaussures.",
+    "vi": "Đi bộ nhiều đến mức anh ấy làm mòn hẳn đôi giày."
+   },
+   {
+    "fr": "Ces longues années de travail l'ont beaucoup usé.",
+    "vi": "Những năm dài làm việc đã bào mòn anh ấy rất nhiều."
+   },
+   {
+    "fr": "Le frottement constant a fini par user la corde.",
+    "vi": "Sự cọ xát liên tục cuối cùng đã làm sờn sợi dây thừng."
+   }
+  ],
+  "reason": "Câu 1: 'user ses chaussures jusqu'au bout' không phải cách nói tự nhiên và lệch với bản dịch 'đến tận đế'; sửa thành 'complètement usé'."
+ }
+}

@@ -1,0 +1,36 @@
+{
+  "draguer": {
+    "sentences": [
+      {
+        "fr": "Il a essayé de la draguer toute la soirée, sans succès.",
+        "vi": "Anh ta đã cố tán tỉnh cô ấy suốt cả buổi tối, nhưng không thành."
+      },
+      {
+        "fr": "On drague le fond du port pour laisser passer les gros bateaux.",
+        "vi": "Người ta nạo vét đáy cảng để tàu lớn có thể đi qua."
+      },
+      {
+        "fr": "Arrête de me draguer, je suis déjà en couple.",
+        "vi": "Đừng tán tỉnh tôi nữa, tôi đã có người yêu rồi."
+      }
+    ],
+    "reason": "Chia sai động từ: « On dragage » -> « On drague » (dragage là danh từ, không phải dạng chia)."
+  },
+  "cervelle": {
+    "sentences": [
+      {
+        "fr": "Réfléchis un peu, tu as bien une cervelle !",
+        "vi": "Suy nghĩ một chút đi, cậu có cái não đấy chứ!"
+      },
+      {
+        "fr": "Je me creuse la cervelle pour trouver une solution à ce problème.",
+        "vi": "Tôi vắt óc suy nghĩ để tìm ra giải pháp cho vấn đề này."
+      },
+      {
+        "fr": "Dans cette recette régionale, on cuisine de la cervelle d'agneau.",
+        "vi": "Trong công thức địa phương này, người ta chế biến óc cừu."
+      }
+    ],
+    "reason": "Câu 2 gượng/tối nghĩa (« à s'en faire éclater la cervelle »); thay bằng thành ngữ tự nhiên « se creuser la cervelle »."
+  }
+}

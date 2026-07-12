@@ -1,0 +1,53 @@
+{
+ "pan": {
+  "sentences": [
+   {
+    "fr": "Un pan de mur s'est effondré pendant le tremblement de terre.",
+    "vi": "Một mảng tường đã sụp đổ trong trận động đất."
+   },
+   {
+    "fr": "Le vent soulevait les pans de son long manteau.",
+    "vi": "Gió thổi tung những tà áo khoác dài của anh ấy."
+   },
+   {
+    "fr": "Pan ! Le coup de feu a résonné dans toute la ruelle.",
+    "vi": "Đoàng! Tiếng súng vang vọng khắp con hẻm."
+   }
+  ],
+  "reason": "câu 2: bản dịch tiếng Việt gượng ('những tà chiếc áo khoác dài' → 'những tà áo khoác dài')"
+ },
+ "outre": {
+  "sentences": [
+   {
+    "fr": "Outre le français, elle parle couramment l'espagnol et l'italien.",
+    "vi": "Ngoài tiếng Pháp, cô ấy còn nói lưu loát tiếng Tây Ban Nha và tiếng Ý."
+   },
+   {
+    "fr": "Le loyer est un peu cher ; en outre, le quartier est bruyant.",
+    "vi": "Tiền thuê hơi đắt; hơn nữa, khu phố lại ồn ào."
+   },
+   {
+    "fr": "Le berger portait de l'eau dans une outre en peau de chèvre.",
+    "vi": "Người chăn cừu đựng nước trong một túi da dê."
+   }
+  ],
+  "reason": "câu 2: câu gượng/thừa ('par-dessus le marché' + 'outre mesure' chồng chất) và lỗi chính tả tiếng Việt 'chứh'"
+ },
+ "bonnet": {
+  "sentences": [
+   {
+    "fr": "En hiver, il ne sort jamais sans son bonnet en laine.",
+    "vi": "Vào mùa đông, anh ấy chẳng bao giờ ra ngoài mà không đội mũ len."
+   },
+   {
+    "fr": "L'enfant a perdu son bonnet rouge en jouant dans la neige.",
+    "vi": "Đứa bé đã đánh mất chiếc mũ len đỏ khi chơi trong tuyết."
+   },
+   {
+    "fr": "Ce soutien-gorge est trop petit, il me faut un bonnet plus grand.",
+    "vi": "Chiếc áo ngực này quá nhỏ, tôi cần cúp áo lớn hơn."
+   }
+  ],
+  "reason": "câu 3: thành ngữ 'deux têtes sous le même bonnet' sai/không chuẩn trong tiếng Pháp"
+ }
+}

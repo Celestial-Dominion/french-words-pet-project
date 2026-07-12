@@ -1,0 +1,70 @@
+{
+ "tire": {
+  "sentences": [
+   {
+    "fr": "Il s'est fait voler son portefeuille à la tire dans le métro bondé.",
+    "vi": "Anh ấy bị móc túi lấy mất ví trong toa tàu điện ngầm đông nghịt."
+   },
+   {
+    "fr": "Elle est arrivée en boîte avec une tire de luxe.",
+    "vi": "Cô ấy đến hộp đêm bằng một chiếc xe hơi sang trọng."
+   },
+   {
+    "fr": "Les voleurs à la tire sont nombreux dans les zones touristiques.",
+    "vi": "Bọn móc túi rất nhiều ở các khu du lịch."
+   }
+  ],
+  "reason": "S1 'se faire faire une tire' không tự nhiên; sửa lại dùng đúng cách nói 'voler à la tire'."
+ },
+ "adolescent": {
+  "sentences": [
+   {
+    "fr": "Adolescent, il passait des heures enfermé dans sa chambre.",
+    "vi": "Hồi còn là thiếu niên, cậu ấy dành hàng giờ nhốt mình trong phòng."
+   },
+   {
+    "fr": "Cette application est très populaire chez les adolescents.",
+    "vi": "Ứng dụng này rất được giới thiếu niên ưa chuộng."
+   },
+   {
+    "fr": "Elle a encore un côté un peu adolescent dans sa façon de parler.",
+    "vi": "Cô ấy vẫn còn nét gì đó hơi trẻ con trong cách nói chuyện."
+   }
+  ],
+  "reason": "S1 dùng 'adolescence' (danh từ khác), không chứa từ đang xét 'adolescent'."
+ },
+ "oublie": {
+  "sentences": [
+   {
+    "fr": "Le temps a jeté ces événements dans l'oubli.",
+    "vi": "Thời gian đã đẩy những sự kiện này vào quên lãng."
+   },
+   {
+    "fr": "Autrefois, on servait des oublies fines lors des fêtes.",
+    "vi": "Ngày xưa, người ta phục vụ những chiếc bánh quế mỏng trong các dịp lễ."
+   },
+   {
+    "fr": "Son nom est peu à peu tombé dans l'oubli.",
+    "vi": "Tên tuổi của ông ấy dần rơi vào quên lãng."
+   }
+  ],
+  "reason": "Nghĩa 'sự lãng quên' phải viết 'oubli' (giống đực); 'l'oublie' ở S1 và S3 sai chính tả."
+ },
+ "haleine": {
+  "sentences": [
+   {
+    "fr": "Après avoir couru, il reprenait haleine sur un banc.",
+    "vi": "Sau khi chạy, anh ấy lấy lại hơi thở trên một chiếc ghế băng."
+   },
+   {
+    "fr": "Le film nous a tenus en haleine jusqu'à la dernière minute.",
+    "vi": "Bộ phim khiến chúng tôi nín thở hồi hộp cho đến phút cuối."
+   },
+   {
+    "fr": "Sa mauvaise haleine le rendait un peu complexé.",
+    "vi": "Hơi thở có mùi khiến anh ấy hơi mặc cảm."
+   }
+  ],
+  "reason": "S1 'reprenait son haleine' sai; cách nói đúng là 'reprendre haleine'."
+ }
+}

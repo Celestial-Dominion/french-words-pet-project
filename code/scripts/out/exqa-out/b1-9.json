@@ -1,0 +1,26 @@
+{
+  "fureur": {
+    "sentences": [
+      { "fr": "Ivre de fureur, il a claqué la porte et est parti.", "vi": "Điên tiết vì cơn thịnh nộ, anh ta đã đóng sầm cửa và bỏ đi." },
+      { "fr": "La tempête se déchaînait avec une fureur incroyable.", "vi": "Cơn bão hoành hành với một sự cuồng nộ khó tin." },
+      { "fr": "Ce nouveau jeu fait fureur chez les adolescents.", "vi": "Trò chơi mới này đang gây sốt trong giới thanh thiếu niên." }
+    ],
+    "reason": "« Fou de fureur » gượng/thừa nghĩa; thay bằng cụm tự nhiên « Ivre de fureur »."
+  },
+  "job": {
+    "sentences": [
+      { "fr": "Elle a trouvé un petit job dans un café pour payer ses études.", "vi": "Cô ấy đã tìm được một công việc nhỏ trong quán cà phê để trang trải việc học." },
+      { "fr": "Il cherche un job d'été depuis le début du mois.", "vi": "Anh ấy tìm việc làm hè từ đầu tháng." },
+      { "fr": "Franchement, tu as fait un bon job sur ce projet.", "vi": "Thật lòng mà nói, bạn đã làm tốt công việc trong dự án này." }
+    ],
+    "reason": "« job » là danh từ đếm được nên phải « un bon job », không dùng « du bon job »."
+  },
+  "tienne": {
+    "sentences": [
+      { "fr": "Ma voiture est en réparation, tu me prêtes la tienne ?", "vi": "Xe của tôi đang sửa, cho tôi mượn cái của bạn được không?" },
+      { "fr": "Cette décision n'est pas la mienne, c'est la tienne.", "vi": "Quyết định này không phải của tôi, mà là của bạn." },
+      { "fr": "J'ai apporté ma raquette, mais où est la tienne ?", "vi": "Tôi đã mang vợt của mình, nhưng cái của bạn đâu rồi?" }
+    ],
+    "reason": "« prêtons-nous la tienne » sai nghĩa (đại từ phản thân); nghĩa đúng là xin người kia cho mượn → « tu me prêtes la tienne ? »."
+  }
+}

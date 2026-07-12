@@ -1,0 +1,53 @@
+{
+ "jusque": {
+  "sentences": [
+   {
+    "fr": "Nous avons marché jusqu'au sommet malgré la fatigue.",
+    "vi": "Chúng tôi đã đi bộ cho đến tận đỉnh dù mệt mỏi."
+   },
+   {
+    "fr": "Il l'a attendue jusque tard dans la nuit.",
+    "vi": "Anh ấy đã đợi cô ấy đến tận khuya."
+   },
+   {
+    "fr": "Le bus vous emmène jusque devant la gare.",
+    "vi": "Xe buýt đưa bạn đến tận trước nhà ga."
+   }
+  ],
+  "reason": "Câu 2 gượng: mệnh đề 'qu'elle rentre' đặt sau bổ ngữ thời gian nghe lủng củng, không tự nhiên."
+ },
+ "boucle": {
+  "sentences": [
+   {
+    "fr": "Elle a attaché la boucle de sa ceinture avant de partir.",
+    "vi": "Cô ấy cài khóa thắt lưng trước khi đi."
+   },
+   {
+    "fr": "Ses cheveux tombaient en boucles sur ses épaules.",
+    "vi": "Tóc cô ấy xõa thành những lọn xoăn trên vai."
+   },
+   {
+    "fr": "Le coureur a terminé la dernière boucle du circuit en tête.",
+    "vi": "Vận động viên đã hoàn thành vòng cuối cùng của đường đua ở vị trí dẫn đầu."
+   }
+  ],
+  "reason": "Câu 3 lặp từ gượng 'a bouclé la dernière boucle'; thay động từ thành 'a terminé'."
+ },
+ "rive": {
+  "sentences": [
+   {
+    "fr": "Nous avons pique-niqué sur la rive gauche de la rivière.",
+    "vi": "Chúng tôi đã ăn ngoài trời trên bờ trái của con sông."
+   },
+   {
+    "fr": "Les enfants jouaient sur la rive pendant que les parents discutaient.",
+    "vi": "Bọn trẻ chơi bên bờ trong khi bố mẹ trò chuyện."
+   },
+   {
+    "fr": "Le bateau accosta lentement sur la rive opposée.",
+    "vi": "Chiếc thuyền từ từ cập vào bờ đối diện."
+   }
+  ],
+  "reason": "Câu 2 thừa/pleonasm 'au bord de la rive' (bord và rive trùng nghĩa); sửa thành 'sur la rive'."
+ }
+}

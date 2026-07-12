@@ -1,0 +1,53 @@
+{
+ "confession": {
+  "sentences": [
+   {
+    "fr": "Le fidèle a fait sa confession avant la messe.",
+    "vi": "Tín đồ đã xưng tội trước buổi lễ."
+   },
+   {
+    "fr": "Sa confession a surpris tout le monde autour de la table.",
+    "vi": "Lời thú nhận của anh ấy khiến mọi người quanh bàn bất ngờ."
+   },
+   {
+    "fr": "Ce livre se lit comme une longue confession intime.",
+    "vi": "Cuốn sách này đọc như một lời thú nhận riêng tư dài."
+   }
+  ],
+  "reason": "Câu 'aller à confession' không đúng thành ngữ (đúng là 'à confesse'); sửa thành 'faire sa confession'."
+ },
+ "bouffe": {
+  "sentences": [
+   {
+    "fr": "On se fait une bouffe entre amis ce week-end ?",
+    "vi": "Cuối tuần này tụ tập ăn uống với bạn bè nhé?"
+   },
+   {
+    "fr": "Il n'y a plus rien à manger, il faut racheter de la bouffe.",
+    "vi": "Không còn gì để ăn nữa, phải đi mua đồ ăn lại thôi."
+   },
+   {
+    "fr": "Dans ce resto, la bouffe est bonne et pas chère.",
+    "vi": "Ở quán này, đồ ăn ngon mà lại rẻ."
+   }
+  ],
+  "reason": "'les courses de bouffe' thừa và gượng ('faire les courses' đã là đi chợ); sửa thành 'racheter de la bouffe'."
+ },
+ "maquillage": {
+  "sentences": [
+   {
+    "fr": "Elle a mis un peu de maquillage avant de sortir dîner.",
+    "vi": "Cô ấy trang điểm một chút trước khi ra ngoài ăn tối."
+   },
+   {
+    "fr": "Après une longue journée, elle a enlevé tout son maquillage.",
+    "vi": "Sau một ngày dài, cô ấy đã tẩy sạch toàn bộ lớp trang điểm."
+   },
+   {
+    "fr": "Le maquillage de scène doit être plus marqué pour être visible de loin.",
+    "vi": "Đồ trang điểm sân khấu phải đậm hơn để nhìn thấy được từ xa."
+   }
+  ],
+  "reason": "'se démaquiller de tout son maquillage' bị lặp thừa nghĩa; sửa thành 'a enlevé tout son maquillage'."
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "absent": {
+  "sentences": [
+   {
+    "fr": "Trois élèves étaient absents à cause de la grippe.",
+    "vi": "Ba học sinh đã vắng mặt vì bị cúm."
+   },
+   {
+    "fr": "Le directeur est absent aujourd'hui, rappelez demain.",
+    "vi": "Hôm nay giám đốc vắng mặt, hãy gọi lại vào ngày mai."
+   },
+   {
+    "fr": "Elle avait l'air absente, comme perdue dans ses pensées.",
+    "vi": "Cô ấy trông lơ đãng, như thể chìm trong suy nghĩ."
+   }
+  ],
+  "reason": "Câu 3 sai accord: chủ ngữ 'elle' đi với 'perdue' (giống cái) nhưng 'absent' để giống đực; sửa thành 'absente'."
+ }
+}
