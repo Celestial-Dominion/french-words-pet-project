@@ -1,0 +1,104 @@
+{
+ "désinvolte": {
+  "sentences": [
+   {
+    "fr": "Sa réponse désinvolte a profondément vexé son interlocuteur.",
+    "vi": "Câu trả lời suồng sã của anh đã khiến người đối diện tổn thương sâu sắc."
+   },
+   {
+    "fr": "Il a traité cette affaire grave d'une manière bien trop désinvolte.",
+    "vi": "Anh ta xử lý vụ việc nghiêm trọng này một cách quá buông tuồng."
+   },
+   {
+    "fr": "Son attitude désinvolte cachait mal son manque d'assurance.",
+    "vi": "Thái độ bất cần của cô che giấu một cách vụng về sự thiếu tự tin của mình."
+   }
+  ],
+  "reason": "vi câu 3 sai trật tự từ ('che giấu vụng về sự thiếu tự tin')"
+ },
+ "vingt-six": {
+  "sentences": [
+   {
+    "fr": "Elle a fêté ses vingt-six ans entourée de tous ses amis.",
+    "vi": "Cô ấy mừng sinh nhật hai mươi sáu tuổi giữa vòng vây bạn bè."
+   },
+   {
+    "fr": "Il y avait vingt-six candidats en lice pour ce poste unique.",
+    "vi": "Có hai mươi sáu ứng viên tranh nhau vị trí duy nhất này."
+   },
+   {
+    "fr": "Nous étions vingt-six à table pour le repas de famille.",
+    "vi": "Chúng tôi có hai mươi sáu người quanh bàn trong bữa cơm gia đình."
+   }
+  ],
+  "reason": "câu 3 là dịch máy kiểu Anh ngữ ('à vingt-six minutes après l'heure'), không phải tiếng Pháp tự nhiên"
+ },
+ "abondant": {
+  "sentences": [
+   {
+    "fr": "Cette année, la récolte de blé a été particulièrement abondante.",
+    "vi": "Năm nay, vụ mùa lúa mì đặc biệt dồi dào."
+   },
+   {
+    "fr": "Une pluie abondante s'est abattue sur la région tout le week-end.",
+    "vi": "Một trận mưa xối xả trút xuống cả vùng suốt cuối tuần."
+   },
+   {
+    "fr": "Le sujet a fait l'objet d'une abondante littérature scientifique.",
+    "vi": "Chủ đề này đã có một nguồn tài liệu khoa học phong phú."
+   }
+  ],
+  "reason": "vi câu 2 'mưa dồi dào' không tự nhiên"
+ },
+ "élier": {
+  "sentences": [
+   {
+    "fr": "Il faut lier ensemble les gerbes de foin avant de les ranger.",
+    "vi": "Cần buộc các bó cỏ khô lại với nhau trước khi cất."
+   },
+   {
+    "fr": "Elle lie les brins d'osier pour tresser un panier.",
+    "vi": "Cô buộc các sợi liễu gai lại để đan một cái giỏ."
+   },
+   {
+    "fr": "On lie les tiges par petits fagots pour faciliter le transport.",
+    "vi": "Người ta buộc các cành thành từng bó nhỏ để dễ vận chuyển."
+   }
+  ],
+  "reason": "'élier' không phải động từ tiếng Pháp; các câu dùng dạng bịa 'élie/élier' -> đúng là 'lier'"
+ },
+ "rebrousser": {
+  "sentences": [
+   {
+    "fr": "Devant la route inondée, nous avons dû rebrousser chemin.",
+    "vi": "Trước con đường ngập nước, chúng tôi đành phải quay ngược lại."
+   },
+   {
+    "fr": "Le vent glacial lui rebroussait les cheveux en arrière.",
+    "vi": "Cơn gió buốt thổi ngược tóc cô ra sau."
+   },
+   {
+    "fr": "Perdus dans la forêt, ils préférèrent rebrousser chemin vers le village.",
+    "vi": "Bị lạc trong rừng, họ quyết định quay ngược về phía làng."
+   }
+  ],
+  "reason": "câu 3 'rebrousser vers' sai; thành ngữ đúng là 'rebrousser chemin'"
+ },
+ "désapprouver": {
+  "sentences": [
+   {
+    "fr": "Ses parents désapprouvaient ouvertement ce mariage.",
+    "vi": "Cha mẹ cô công khai phản đối cuộc hôn nhân này."
+   },
+   {
+    "fr": "Je désapprouve fermement votre manière de traiter cette affaire.",
+    "vi": "Tôi kiên quyết không tán thành cách anh xử lý vụ việc này."
+   },
+   {
+    "fr": "Elle secoua la tête pour montrer qu'elle désapprouvait, sans dire un mot.",
+    "vi": "Bà lắc đầu tỏ ý không tán thành mà chẳng nói một lời."
+   }
+  ],
+  "reason": "câu 3: 'hocher la tête' là gật đầu (mâu thuẫn 'lắc đầu' của bản dịch) và 'air désapprouvant' không chuẩn"
+ }
+}

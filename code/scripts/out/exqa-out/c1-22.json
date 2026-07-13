@@ -1,0 +1,87 @@
+{
+ "geindre": {
+  "sentences": [
+   {
+    "fr": "Le blessé se mit à geindre doucement dans le noir.",
+    "vi": "Người bị thương bắt đầu rên rỉ khe khẽ trong bóng tối."
+   },
+   {
+    "fr": "Arrête de geindre et fais quelque chose pour changer la situation !",
+    "vi": "Đừng than vãn nữa mà hãy làm gì đó để thay đổi tình hình đi!"
+   },
+   {
+    "fr": "Il passe ses journées à geindre au lieu d'agir.",
+    "vi": "Anh ta dành cả ngày để than vãn thay vì hành động."
+   }
+  ],
+  "reason": "Câu 3: danh từ 'geindre' (nghĩa 'kẻ than vãn') sai — từ đúng là 'geignard'; đổi sang dùng động từ 'geindre'."
+ },
+ "sexuellement": {
+  "sentences": [
+   {
+    "fr": "Ces infections se transmettent principalement sexuellement.",
+    "vi": "Những bệnh nhiễm trùng này lây truyền chủ yếu qua đường tình dục."
+   },
+   {
+    "fr": "La loi protège les mineurs contre ceux qui les exploitent sexuellement.",
+    "vi": "Luật pháp bảo vệ trẻ vị thành niên khỏi những kẻ bóc lột chúng về mặt tình dục."
+   },
+   {
+    "fr": "Il se dit épanoui, tant affectivement que sexuellement.",
+    "vi": "Anh nói mình viên mãn, cả về mặt tình cảm lẫn tình dục."
+   }
+  ],
+  "reason": "Câu 2: 'exploitation sexuellement abusive' gượng, không tự nhiên; viết lại cho đúng tiếng Pháp."
+ },
+ "oranger": {
+  "sentences": [
+   {
+    "fr": "Un oranger en fleurs parfumait toute la cour andalouse.",
+    "vi": "Một cây cam trổ hoa tỏa hương khắp sân trong kiểu Andalusia."
+   },
+   {
+    "fr": "Ils ont planté un oranger le jour de la naissance de leur fille.",
+    "vi": "Họ đã trồng một cây cam vào ngày con gái họ chào đời."
+   },
+   {
+    "fr": "À l'ombre du vieil oranger, les enfants jouaient tout l'après-midi.",
+    "vi": "Dưới bóng cây cam già, bọn trẻ chơi đùa suốt cả buổi chiều."
+   }
+  ],
+  "reason": "Câu 3: động từ 'oranger' (làm chuyển màu cam) không tồn tại trong tiếng Pháp chuẩn; đổi sang dùng danh từ 'cây cam'."
+ },
+ "deuxièmement": {
+  "sentences": [
+   {
+    "fr": "Premièrement, c'est trop cher ; deuxièmement, c'est inutile.",
+    "vi": "Thứ nhất, nó quá đắt; thứ hai, nó vô ích."
+   },
+   {
+    "fr": "Deuxièmement, il faut revoir entièrement le calendrier du projet.",
+    "vi": "Thứ hai là, cần xem xét lại toàn bộ lịch trình của dự án."
+   },
+   {
+    "fr": "J'ai deux reproches à lui faire : premièrement son insolence, deuxièmement son manque de ponctualité.",
+    "vi": "Tôi có hai điều để trách anh ta: thứ nhất là sự xấc xược, thứ hai là sự thiếu đúng giờ của anh ta."
+   }
+  ],
+  "reason": "Câu 3: phi logic — nói có hai điều nhưng chỉ nêu 'thứ hai', thiếu 'thứ nhất'; bổ sung cho hoàn chỉnh."
+ },
+ "vécu": {
+  "sentences": [
+   {
+    "fr": "C'est un homme qui a beaucoup vécu, qui a beaucoup voyagé et beaucoup souffert.",
+    "vi": "Đó là một người từng trải, đã đi nhiều và chịu đựng nhiều."
+   },
+   {
+    "fr": "Le film s'inspire d'une histoire vécue.",
+    "vi": "Bộ phim lấy cảm hứng từ một câu chuyện có thật đã trải qua."
+   },
+   {
+    "fr": "Elle a raconté son vécu de réfugiée avec une pudeur bouleversante.",
+    "vi": "Cô kể lại trải nghiệm sống của một người tị nạn với một sự kín đáo gây xúc động."
+   }
+  ],
+  "reason": "Câu 1: 'un homme vécu' không phải tiếng Pháp chuẩn; sửa thành 'un homme qui a beaucoup vécu'."
+ }
+}

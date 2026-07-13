@@ -1,0 +1,53 @@
+{
+ "desquels": {
+  "sentences": [
+   {
+    "fr": "Ce sont des projets ambitieux, au sujet desquels le conseil doit encore délibérer.",
+    "vi": "Đó là những dự án đầy tham vọng mà hội đồng vẫn còn phải bàn bạc về chúng."
+   },
+   {
+    "fr": "Il évoqua de vieux amis, auprès desquels il avait grandi.",
+    "vi": "Ông nhắc đến những người bạn cũ, những người mà ông đã lớn lên bên cạnh họ."
+   },
+   {
+    "fr": "Voici les documents à partir desquels nous avons établi notre rapport.",
+    "vi": "Đây là những tài liệu mà từ chúng chúng tôi đã lập nên bản báo cáo."
+   }
+  ],
+  "reason": "Câu 2 sai ngữ pháp: chồng hai đại từ quan hệ 'parmi lesquels desquels' vô nghĩa; viết lại câu tự nhiên dùng 'auprès desquels'."
+ },
+ "revient": {
+  "sentences": [
+   {
+    "fr": "Le prix de revient de ce produit est trop élevé pour dégager un bénéfice.",
+    "vi": "Giá thành của sản phẩm này quá cao để có thể sinh lời."
+   },
+   {
+    "fr": "En calculant le prix de revient réel, on s'aperçoit que l'opération est déficitaire.",
+    "vi": "Khi tính giá thành thực tế, người ta nhận ra rằng hoạt động này bị lỗ."
+   },
+   {
+    "fr": "L'artisan a réduit son prix de revient en achetant ses matières en gros.",
+    "vi": "Người thợ đã hạ giá thành bằng cách mua nguyên liệu số lượng lớn."
+   }
+  ],
+  "reason": "Câu 2 dùng 'le revient' đứng một mình không đúng tiếng Pháp; danh từ này chỉ tồn tại trong cụm 'prix de revient'."
+ },
+ "morue": {
+  "sentences": [
+   {
+    "fr": "La morue salée doit tremper toute une nuit avant d'être cuisinée.",
+    "vi": "Cá tuyết muối phải ngâm suốt một đêm trước khi chế biến."
+   },
+   {
+    "fr": "La brandade de morue est une spécialité du sud de la France.",
+    "vi": "Brandade cá tuyết là một món đặc sản của miền Nam nước Pháp."
+   },
+   {
+    "fr": "Les pêcheurs rentraient au port avec une cargaison de morue.",
+    "vi": "Những ngư dân trở về cảng với một khoang đầy cá tuyết."
+   }
+  ],
+  "reason": "Câu 2 sai giống: 'brandade' là danh từ giống cái, phải là 'La brandade de morue' chứ không phải 'Le brandade'."
+ }
+}

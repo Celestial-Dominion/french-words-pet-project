@@ -1,0 +1,18 @@
+{
+ "divisionnaire": {
+  "sentences": [
+   { "fr": "Le commissaire divisionnaire a pris personnellement la direction de l'enquête.", "vi": "Viên cảnh sát trưởng cấp phân khu đã đích thân chỉ đạo cuộc điều tra." },
+   { "fr": "Les officiers de l'état-major divisionnaire se sont réunis avant l'offensive.", "vi": "Các sĩ quan thuộc bộ tham mưu cấp sư đoàn đã họp trước đợt tấn công." },
+   { "fr": "Nommé au commandement divisionnaire, il dirigeait désormais plusieurs régiments.", "vi": "Được bổ nhiệm vào chức chỉ huy cấp sư đoàn, từ nay ông điều hành nhiều trung đoàn." }
+  ],
+  "reason": "Câu 3 'général divisionnaire' không đúng: cấp bậc chuẩn tiếng Pháp là 'général de division'; sửa thành 'commandement divisionnaire' để giữ đúng từ và đúng thuật ngữ."
+ },
+ "théorique": {
+  "sentences": [
+   { "fr": "Ce raisonnement reste purement théorique et difficile à appliquer.", "vi": "Lập luận này thuần túy lý thuyết và khó áp dụng." },
+   { "fr": "Il maîtrise la partie théorique, mais manque de pratique.", "vi": "Anh ấy nắm vững phần lý thuyết, nhưng thiếu thực hành." },
+   { "fr": "La vitesse théorique du réseau correspond rarement à la réalité.", "vi": "Tốc độ lý thuyết của mạng hiếm khi đúng với thực tế." }
+  ],
+  "reason": "Câu 3 'dépasse rarement la réalité' sai logic và lệch bản dịch (vi = 'hiếm khi đúng với thực tế'); sửa 'dépasse' → 'correspond à'."
+ }
+}

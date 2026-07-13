@@ -1,0 +1,53 @@
+{
+  "ravissement": {
+    "sentences": [
+      {
+        "fr": "Elle écoutait la sonate avec un ravissement non dissimulé.",
+        "vi": "Cô lắng nghe bản sonata với niềm say đắm không giấu giếm."
+      },
+      {
+        "fr": "Le spectacle des aurores boréales le plongea dans le ravissement.",
+        "vi": "Cảnh tượng cực quang khiến anh chìm vào sự mê ly."
+      },
+      {
+        "fr": "À son grand ravissement, on lui offrit le poste tant convoité.",
+        "vi": "Anh vui sướng tột độ khi người ta trao cho anh vị trí hằng ao ước."
+      }
+    ],
+    "reason": "vi câu 3 dịch lệch sắc thái: 'say sưa vô bờ' không đúng nghĩa ravissement (vui sướng/mê ly)"
+  },
+  "prometteur": {
+    "sentences": [
+      {
+        "fr": "Ce jeune chercheur a un avenir des plus prometteurs.",
+        "vi": "Nhà nghiên cứu trẻ này có một tương lai vô cùng triển vọng."
+      },
+      {
+        "fr": "Les premiers résultats sont extrêmement prometteurs.",
+        "vi": "Những kết quả đầu tiên cực kỳ hứa hẹn."
+      },
+      {
+        "fr": "On la présentait comme la plus prometteuse de sa génération.",
+        "vi": "Người ta giới thiệu cô là người triển vọng nhất thế hệ của mình."
+      }
+    ],
+    "reason": "câu 3: 'la grande prometteuse' dùng như danh từ không tự nhiên; đổi sang tính từ 'la plus prometteuse'"
+  },
+  "handicapé": {
+    "sentences": [
+      {
+        "fr": "L'immeuble n'est toujours pas accessible aux handicapés.",
+        "vi": "Tòa nhà vẫn chưa có lối tiếp cận cho người khuyết tật."
+      },
+      {
+        "fr": "Il milite pour les droits des personnes handicapées.",
+        "vi": "Anh ấy vận động cho quyền của người khuyết tật."
+      },
+      {
+        "fr": "Une place de parking est réservée aux conducteurs handicapés.",
+        "vi": "Một chỗ đậu xe được dành riêng cho tài xế khuyết tật."
+      }
+    ],
+    "reason": "vi câu 1 gượng ('tòa nhà tiếp cận được cho' đảo hướng nghĩa); dịch lại cho tự nhiên"
+  }
+}

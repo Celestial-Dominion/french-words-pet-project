@@ -1,0 +1,87 @@
+{
+ "intérieurement": {
+  "sentences": [
+   {
+    "fr": "Il souriait poliment, mais intérieurement il bouillait de colère.",
+    "vi": "Anh ấy mỉm cười lịch sự, nhưng trong lòng thì sôi sục cơn giận."
+   },
+   {
+    "fr": "Intérieurement, elle savait déjà qu'elle ne reviendrait jamais.",
+    "vi": "Thầm kín trong lòng, cô ấy đã biết mình sẽ không bao giờ quay lại."
+   },
+   {
+    "fr": "Le chagrin le rongeait intérieurement, sans rien laisser paraître.",
+    "vi": "Nỗi đau gặm nhấm anh ấy từ bên trong mà anh không để lộ ra chút nào."
+   }
+  ],
+  "reason": "Câu 3: bỏ 'ne' thừa sau 'sans que' (Académie khuyến cáo không dùng ne explétif), viết lại tự nhiên hơn"
+ },
+ "déguisé": {
+  "sentences": [
+   {
+    "fr": "Pour le carnaval, les enfants sont arrivés déguisés en pirates.",
+    "vi": "Vào lễ hội hóa trang, bọn trẻ đến trong trang phục cải trang thành cướp biển."
+   },
+   {
+    "fr": "Sa remarque n'était qu'un reproche à peine déguisé.",
+    "vi": "Nhận xét của ông ấy chỉ là một lời trách móc được ngụy trang qua loa."
+   },
+   {
+    "fr": "Un invité déguisé s'est glissé dans la fête sans que personne ne le reconnaisse.",
+    "vi": "Một vị khách hóa trang đã lẻn vào bữa tiệc mà không ai nhận ra."
+   }
+  ],
+  "reason": "Câu 3: 'Un déguisé' (danh từ) không tự nhiên, đổi thành 'un invité déguisé'"
+ },
+ "chaire": {
+  "sentences": [
+   {
+    "fr": "Le prédicateur monta en chaire pour prononcer son sermon.",
+    "vi": "Vị mục sư bước lên bục giảng để đọc bài giảng của mình."
+   },
+   {
+    "fr": "Après vingt ans de recherche, il a obtenu une chaire à la Sorbonne.",
+    "vi": "Sau hai mươi năm nghiên cứu, ông ấy đã có được một ghế giáo sư tại Sorbonne."
+   },
+   {
+    "fr": "Elle occupe la chaire d'histoire médiévale depuis l'an dernier.",
+    "vi": "Bà ấy giữ ghế giáo sư về lịch sử trung cổ từ năm ngoái."
+   }
+  ],
+  "reason": "Câu 2 & 3: bản dịch 'giáo hàm' không đúng từ, sửa thành 'ghế giáo sư'"
+ },
+ "catastrophique": {
+  "sentences": [
+   {
+    "fr": "Les conséquences de la sécheresse ont été catastrophiques pour les récoltes.",
+    "vi": "Hậu quả của hạn hán đối với mùa màng thật là thảm khốc."
+   },
+   {
+    "fr": "Le film a connu un démarrage catastrophique au box-office.",
+    "vi": "Bộ phim đã khởi chiếu với doanh thu thảm hại."
+   },
+   {
+    "fr": "Une gestion catastrophique a conduit l'entreprise à la faillite.",
+    "vi": "Việc quản lý tệ hại đã đẩy công ty đến bờ vực phá sản."
+   }
+  ],
+  "reason": "Câu 3: 'quản lý thảm họa' gây hiểu nhầm (nghĩa 'disaster management'), sửa thành 'quản lý tệ hại'"
+ },
+ "acharné": {
+  "sentences": [
+   {
+    "fr": "Après un combat acharné, l'équipe a fini par l'emporter.",
+    "vi": "Sau một trận đấu quyết liệt, cuối cùng đội cũng đã giành chiến thắng."
+   },
+   {
+    "fr": "C'est un travailleur acharné qui ne compte jamais ses heures.",
+    "vi": "Anh ấy là một người làm việc miệt mài không bao giờ tính toán giờ giấc."
+   },
+   {
+    "fr": "Les deux camps se livrent une lutte acharnée pour le pouvoir.",
+    "vi": "Hai phe đang lao vào một cuộc chiến quyết liệt để giành quyền lực."
+   }
+  ],
+  "reason": "Câu 1: bản dịch sai trật tự từ ('đội đã cuối cùng giành'), sửa lại cho xuôi"
+ }
+}

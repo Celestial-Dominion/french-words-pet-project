@@ -1,0 +1,36 @@
+{
+ "augure": {
+  "sentences": [
+   {
+    "fr": "Ce ciel dégagé au petit matin est de bon augure pour notre randonnée.",
+    "vi": "Bầu trời quang đãng vào sáng sớm là điềm lành cho chuyến đi bộ của chúng ta."
+   },
+   {
+    "fr": "Son silence obstiné était de mauvais augure pour la suite.",
+    "vi": "Sự im lặng cố chấp của anh ta là điềm chẳng lành cho những gì sắp tới."
+   },
+   {
+    "fr": "Dans la Rome antique, l'augure interprétait le vol des oiseaux.",
+    "vi": "Ở La Mã cổ đại, thầy bói đoán điềm dựa vào đường bay của chim."
+   }
+  ],
+  "reason": "Câu 2 dùng động từ 'augurait' (augurer) chứ không phải danh từ 'augure' theo pos; sửa thành 'de mauvais augure' để đúng danh từ."
+ },
+ "piaf": {
+  "sentences": [
+   {
+    "fr": "Dès l'aube, les piafs se mettaient à pépier sous la fenêtre.",
+    "vi": "Ngay từ sáng sớm, lũ chim sẻ đã bắt đầu ríu rít dưới cửa sổ."
+   },
+   {
+    "fr": "Un petit piaf s'était posé sur le rebord pour picorer des miettes.",
+    "vi": "Một chú chim sẻ nhỏ đậu trên bậu cửa để mổ những vụn bánh."
+   },
+   {
+    "fr": "Elle mange comme un piaf : trois bouchées et elle n'a plus faim.",
+    "vi": "Cô ấy ăn ít như chim sẻ: ba miếng là đã hết đói."
+   }
+  ],
+  "reason": "Câu 3 sai logic nhân quả ('Il maigrit tellement qu'il mange comme un piaf' — gầy nên ăn ít là ngược); viết lại câu tự nhiên với thành ngữ 'manger comme un piaf'."
+ }
+}

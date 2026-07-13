@@ -1,0 +1,36 @@
+{
+ "comparaître": {
+  "sentences": [
+   {
+    "fr": "L'accusé devra comparaître devant le tribunal la semaine prochaine.",
+    "vi": "Bị cáo sẽ phải ra hầu tòa vào tuần tới."
+   },
+   {
+    "fr": "Elle a été citée à comparaître comme témoin dans cette affaire.",
+    "vi": "Cô ấy được triệu tập để trình diện trước tòa với tư cách nhân chứng trong vụ này."
+   },
+   {
+    "fr": "Refuser de comparaître peut entraîner un mandat d'arrêt.",
+    "vi": "Từ chối ra hầu tòa có thể dẫn đến lệnh bắt giữ."
+   }
+  ],
+  "reason": "Câu 2: 'convoquée à comparaître' không đúng cách nói; thành ngữ pháp lý chuẩn là 'citée à comparaître'."
+ },
+ "garni": {
+  "sentences": [
+   {
+    "fr": "Le plat était joliment garni de légumes de saison.",
+    "vi": "Món ăn được trang trí đẹp mắt với rau củ theo mùa."
+   },
+   {
+    "fr": "Il a commandé une choucroute garnie bien copieuse.",
+    "vi": "Anh ấy gọi một đĩa dưa cải muối kèm đồ ăn thịnh soạn."
+   },
+   {
+    "fr": "Autrefois, l'étudiant logeait dans un garni du Quartier latin.",
+    "vi": "Ngày xưa, cậu sinh viên trọ trong một phòng cho thuê ở khu Latin."
+   }
+  ],
+  "reason": "Câu 3: lỗi viết hoa danh từ riêng, 'quartier latin' → 'Quartier latin' (khu phố ở Paris)."
+ }
+}

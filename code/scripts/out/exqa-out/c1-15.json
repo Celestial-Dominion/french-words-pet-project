@@ -1,0 +1,87 @@
+{
+  "distinctement": {
+    "sentences": [
+      {
+        "fr": "Malgré le brouhaha, j'ai entendu distinctement mon nom prononcé au fond de la salle.",
+        "vi": "Dù ồn ào, tôi vẫn nghe rõ ràng tên mình được gọi ở cuối phòng."
+      },
+      {
+        "fr": "Articulez plus distinctement, sinon les auditeurs ne vous suivront pas.",
+        "vi": "Hãy phát âm rành mạch hơn, nếu không thính giả sẽ không theo kịp anh."
+      },
+      {
+        "fr": "On apercevait distinctement les sommets enneigés à l'horizon.",
+        "vi": "Người ta nhìn thấy rõ ràng những đỉnh núi phủ tuyết ở phía chân trời."
+      }
+    ],
+    "reason": "Câu 3 lặp gốc từ 'distinguait distinctement' (thừa/gượng), đổi thành 'apercevait'."
+  },
+  "coût": {
+    "sentences": [
+      {
+        "fr": "Le coût des travaux a largement dépassé les estimations initiales.",
+        "vi": "Chi phí thi công đã vượt xa những dự toán ban đầu."
+      },
+      {
+        "fr": "Il faut mettre en balance le coût du projet et les bénéfices attendus.",
+        "vi": "Cần cân nhắc giữa chi phí của dự án và những lợi ích kỳ vọng."
+      },
+      {
+        "fr": "Ce succès a eu un coût élevé : d'énormes sacrifices personnels.",
+        "vi": "Thành công này có một cái giá đắt: những hy sinh cá nhân to lớn."
+      }
+    ],
+    "reason": "Câu 3 'au coût de' là calque sai; tiếng Pháp dùng 'au prix de'. Viết lại câu để giữ danh từ 'coût' đúng cách."
+  },
+  "déchéance": {
+    "sentences": [
+      {
+        "fr": "Le roman décrit la lente déchéance d'un homme rongé par l'alcool.",
+        "vi": "Cuốn tiểu thuyết mô tả sự sa sút chậm rãi của một người bị rượu tàn phá."
+      },
+      {
+        "fr": "Le tribunal a prononcé la déchéance de ses droits parentaux.",
+        "vi": "Tòa án đã tuyên bố truất quyền làm cha mẹ của ông ta."
+      },
+      {
+        "fr": "Elle assistait, impuissante, à la déchéance morale de son ancienne idole.",
+        "vi": "Cô ấy chứng kiến, bất lực, sự suy đồi về đạo đức của thần tượng cũ của mình."
+      }
+    ],
+    "reason": "Câu 3 sai hợp giống: 'idole' giống cái nên phải là 'son ancienne idole'."
+  },
+  "sandal": {
+    "sentences": [
+      {
+        "fr": "Elle a glissé sur le sable en cassant la lanière de sa sandale.",
+        "vi": "Cô ấy trượt trên cát và làm đứt quai chiếc dép sandal của mình."
+      },
+      {
+        "fr": "Par cette chaleur, il ne portait plus qu'une paire de sandales.",
+        "vi": "Với cái nóng này, anh ấy chỉ còn đi mỗi một đôi dép quai."
+      },
+      {
+        "fr": "Cette sandale en cuir est bien trop fine pour marcher en montagne.",
+        "vi": "Chiếc dép sandal da này quá mỏng manh để đi bộ trên núi."
+      }
+    ],
+    "reason": "Chính tả: từ tiếng Pháp là 'sandale' (số nhiều 'sandales'), không phải 'sandal'/'sandals'."
+  },
+  "oasis": {
+    "sentences": [
+      {
+        "fr": "Épuisés, les voyageurs aperçurent enfin une oasis au loin.",
+        "vi": "Kiệt sức, những người lữ hành cuối cùng cũng thấy một ốc đảo phía xa."
+      },
+      {
+        "fr": "Ce petit parc est une véritable oasis de calme en plein centre-ville.",
+        "vi": "Công viên nhỏ này là một ốc đảo yên bình thực sự ngay giữa trung tâm thành phố."
+      },
+      {
+        "fr": "Autour de l'oasis, les palmiers dattiers offraient une ombre bienvenue.",
+        "vi": "Quanh ốc đảo, những cây chà là mang lại bóng mát dễ chịu."
+      }
+    ],
+    "reason": "Hợp giống sai: 'oasis' là danh từ giống cái ('une oasis'), câu 1-2 dùng 'un' phải sửa."
+  }
+}

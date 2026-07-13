@@ -1,0 +1,70 @@
+{
+ "affaisser": {
+  "sentences": [
+   {
+    "fr": "Sous le poids de la neige, la vieille grange finit par s'affaisser dans un fracas sinistre.",
+    "vi": "Dưới sức nặng của tuyết, cái kho cũ kỹ cuối cùng sụp xuống trong một tiếng đổ vỡ ghê rợn."
+   },
+   {
+    "fr": "Épuisée par la longue veille, elle s'affaissa dans le fauteuil sans même retirer son manteau.",
+    "vi": "Kiệt sức sau đêm dài thức trắng, cô buông mình lún xuống chiếc ghế bành mà chẳng buồn cởi áo khoác."
+   },
+   {
+    "fr": "Le terrain s'était affaissé après les pluies, menaçant les fondations de toute la maison.",
+    "vi": "Nền đất đã lún xuống sau những cơn mưa, đe dọa móng của cả ngôi nhà."
+   }
+  ],
+  "reason": "Câu 2: 'se laisser affaisser' không đúng; động từ phản thân là 's'affaisser' → 's'affaissa'."
+ },
+ "prétentieux": {
+  "sentences": [
+   {
+    "fr": "Son discours prétentieux, truffé de mots savants, n'impressionna personne dans l'assistance.",
+    "vi": "Bài diễn văn tự phụ của ông ta, nhồi đầy từ ngữ bác học, chẳng gây ấn tượng với ai trong hội trường."
+   },
+   {
+    "fr": "Je le trouve terriblement prétentieux : il parle de tout comme s'il était seul à savoir.",
+    "vi": "Tôi thấy anh ta kiêu căng kinh khủng: cái gì cũng nói như thể chỉ mình anh ta biết."
+   },
+   {
+    "fr": "Ce restaurant prétentieux facturait le triple pour des portions dignes d'une dînette d'enfant.",
+    "vi": "Cái nhà hàng làm bộ sang trọng ấy tính giá gấp ba cho những phần ăn bé như bữa tiệc búp bê của trẻ con."
+   }
+  ],
+  "reason": "Câu 3: sai giống, 'dînette' là giống cái → 'd'une dînette d'enfant'."
+ },
+ "croc": {
+  "sentences": [
+   {
+    "fr": "Le loup retroussa les babines, découvrant des crocs jaunis mais toujours redoutables.",
+    "vi": "Con sói nhếch mép, để lộ những chiếc răng nanh ố vàng nhưng vẫn đáng gờm."
+   },
+   {
+    "fr": "Suspendue à un croc de boucher, la carcasse attendait d'être débitée.",
+    "vi": "Treo trên chiếc móc của hàng thịt, cái thân súc vật chờ được xẻ ra."
+   },
+   {
+    "fr": "Après des heures de marche sans rien manger, ils avaient tous le croc.",
+    "vi": "Sau nhiều giờ đi bộ mà chẳng ăn gì, tất cả họ đều đói cồn cào."
+   }
+  ],
+  "reason": "Câu 3: 'une faim de loup, un vrai croc' gượng; thành ngữ đúng là 'avoir le croc' (đói)."
+ },
+ "recoudre": {
+  "sentences": [
+   {
+    "fr": "L'infirmière s'appliqua à recoudre la plaie d'une main sûre, point après point.",
+    "vi": "Cô y tá tỉ mỉ khâu lại vết thương bằng bàn tay vững vàng, từng mũi từng mũi một."
+   },
+   {
+    "fr": "Il faudra recoudre ce bouton avant que la chemise ne devienne franchement impossible à porter.",
+    "vi": "Cần phải đính lại cái cúc này trước khi chiếc áo sơ mi trở nên thực sự không thể mặc được."
+   },
+   {
+    "fr": "Après la brouille, chacun s'efforça de recoudre les liens que la colère avait déchirés.",
+    "vi": "Sau cuộc bất hòa, mỗi người đều cố gắng nối lại những mối dây mà cơn giận đã xé toạc."
+   }
+  ],
+  "reason": "Câu 2: lỗi chính tả 'inportable' → sửa lại thành 'impossible à porter' (tránh cả lỗi lẫn nghĩa nhập nhằng)."
+ }
+}

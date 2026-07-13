@@ -1,0 +1,53 @@
+{
+ "nouille": {
+  "sentences": [
+   {
+    "fr": "Elle a fait sauter les nouilles avec des légumes et un peu de sauce soja.",
+    "vi": "Cô ấy xào mì sợi với rau và một ít nước tương."
+   },
+   {
+    "fr": "Ne sois pas si nouille, tu vois bien que c'était une plaisanterie !",
+    "vi": "Đừng đần độn thế chứ, cậu thấy rõ đó chỉ là chuyện đùa mà!"
+   },
+   {
+    "fr": "Cette grande nouille a encore oublié où il avait garé sa voiture.",
+    "vi": "Cái gã đần độn ấy lại quên mất mình đã đỗ xe ở đâu rồi."
+   }
+  ],
+  "reason": "Câu 3 sai accord: 'nouille' là danh từ giống cái, 'Ce grand nouille' phải là 'Cette grande nouille'."
+ },
+ "bouclé": {
+  "sentences": [
+   {
+    "fr": "L'enfant avait de jolis cheveux bouclés qui retombaient sur ses épaules.",
+    "vi": "Đứa bé có mái tóc xoăn xinh xắn buông xuống vai."
+   },
+   {
+    "fr": "Elle enroulait machinalement une mèche bouclée autour de son doigt.",
+    "vi": "Cô ấy vô thức cuộn một lọn tóc xoăn quanh ngón tay."
+   },
+   {
+    "fr": "Depuis qu'il a laissé pousser ses cheveux, ils sont tout bouclés.",
+    "vi": "Từ khi để tóc dài, tóc anh ấy xoăn hẳn lên."
+   }
+  ],
+  "reason": "Câu 3 gượng: 'il les a tout bouclés' hàm ý tự uốn, không tự nhiên → 'ils sont tout bouclés'."
+ },
+ "desquelles": {
+  "sentences": [
+   {
+    "fr": "Ce sont des questions au sujet desquelles nous devrons trancher.",
+    "vi": "Đó là những vấn đề mà chúng ta sẽ phải đưa ra quyết định."
+   },
+   {
+    "fr": "Elle a évoqué plusieurs affaires, au sujet desquelles elle a refusé de donner des détails.",
+    "vi": "Bà đã nhắc đến nhiều vụ việc mà về chúng bà từ chối tiết lộ chi tiết."
+   },
+   {
+    "fr": "Voici les archives à partir desquelles j'ai mené mes recherches.",
+    "vi": "Đây là những tài liệu lưu trữ mà từ đó tôi đã tiến hành nghiên cứu của mình."
+   }
+  ],
+  "reason": "Câu 2 sai ngữ pháp: 'certaines desquelles' không tồn tại → dùng 'au sujet desquelles' (hoặc 'dont certaines')."
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "administrateur": {
+  "sentences": [
+   {
+    "fr": "L'administrateur du site a rétabli l'accès aux utilisateurs en quelques minutes.",
+    "vi": "Người quản trị trang web đã khôi phục quyền truy cập cho người dùng trong vài phút."
+   },
+   {
+    "fr": "En tant qu'administrateur de la fondation, il gère un budget considérable.",
+    "vi": "Với tư cách người quản lý quỹ, ông điều hành một ngân sách đáng kể."
+   },
+   {
+    "fr": "Le conseil a nommé un nouvel administrateur pour redresser l'entreprise en difficulté.",
+    "vi": "Hội đồng đã bổ nhiệm một người quản trị mới để vực dậy doanh nghiệp đang khó khăn."
+   }
+  ],
+  "reason": "Câu 2 sai hợp giống: 'administrateur' (giống đực) dùng với 'elle'; đổi chủ ngữ sang giống đực (il/ông)."
+ },
+ "hautain": {
+  "sentences": [
+   {
+    "fr": "Il nous toisa d'un air hautain, comme si nous ne méritions pas son attention.",
+    "vi": "Hắn nhìn chúng tôi từ trên xuống với vẻ ngạo mạn, như thể chúng tôi không đáng để hắn để mắt."
+   },
+   {
+    "fr": "Sous des dehors hautains se cachait, en réalité, une profonde timidité.",
+    "vi": "Ẩn sau vẻ ngoài kiêu kỳ, thực ra, là một sự rụt rè sâu sắc."
+   },
+   {
+    "fr": "Elle répondit d'un ton hautain qui coupa court à toute discussion.",
+    "vi": "Bà đáp lại bằng giọng kiêu ngạo khiến mọi tranh luận phải dừng ngay."
+   }
+  ],
+  "reason": "Câu 2: bản dịch tiếng Việt tối nghĩa, sai cấu trúc ('ẩn giấu ... một sự rụt rè'); dịch lại cho tự nhiên."
+ },
+ "sous-estimer": {
+  "sentences": [
+   {
+    "fr": "Ce serait une grave erreur de sous-estimer la détermination de nos concurrents.",
+    "vi": "Sẽ là một sai lầm nghiêm trọng nếu đánh giá thấp sự quyết tâm của các đối thủ."
+   },
+   {
+    "fr": "On a longtemps sous-estimé l'impact de la déforestation sur le climat.",
+    "vi": "Từ lâu, người ta đã coi nhẹ tác động của nạn phá rừng đối với khí hậu."
+   },
+   {
+    "fr": "Ne sous-estime jamais la valeur d'un adversaire silencieux.",
+    "vi": "Đừng bao giờ đánh giá thấp giá trị của một đối thủ lặng lẽ."
+   }
+  ],
+  "reason": "Câu 2: dịch tiếng Việt sai trật tự ('đã lâu coi nhẹ'); sửa thành 'Từ lâu, người ta đã coi nhẹ'."
+ },
+ "enchère": {
+  "sentences": [
+   {
+    "fr": "Le tableau fut adjugé au terme d'une enchère particulièrement disputée.",
+    "vi": "Bức tranh được bán đi sau một cuộc trả giá đấu giá đặc biệt gay cấn."
+   },
+   {
+    "fr": "Elle remporta le vase ancien en plaçant une dernière enchère audacieuse.",
+    "vi": "Bà giành được chiếc bình cổ nhờ đưa ra một lần trả giá cuối cùng táo bạo."
+   },
+   {
+    "fr": "La mise à prix, dérisoire, s'envola dès les premières enchères.",
+    "vi": "Giá khởi điểm ít ỏi vọt lên ngay từ những lần trả giá đầu tiên."
+   }
+  ],
+  "reason": "Câu 2: 'surenchérir d'une dernière enchère' thừa/gượng (pléonasme); thay bằng 'en plaçant une dernière enchère'."
+ }
+}

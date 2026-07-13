@@ -1,0 +1,36 @@
+{
+  "magnétique": {
+    "sentences": [
+      {
+        "fr": "L'aiguille de la boussole s'aligne toujours sur le nord magnétique.",
+        "vi": "Kim la bàn luôn hướng theo cực bắc từ tính."
+      },
+      {
+        "fr": "Cet orateur possède un charisme magnétique qui captive aussitôt l'auditoire.",
+        "vi": "Diễn giả này có một sức lôi cuốn khiến khán giả bị mê hoặc ngay lập tức."
+      },
+      {
+        "fr": "Il suffit d'approcher un aimant pour sentir la force magnétique du champ.",
+        "vi": "Chỉ cần đưa một nam châm lại gần là cảm nhận được lực từ của trường."
+      }
+    ],
+    "reason": "Bản dịch vi câu 2 lặp từ gượng ('sức hút cuốn hút'); sửa thành 'sức lôi cuốn'."
+  },
+  "support": {
+    "sentences": [
+      {
+        "fr": "Le téléphone repose sur un petit support en bois.",
+        "vi": "Chiếc điện thoại đặt trên một giá đỡ nhỏ bằng gỗ."
+      },
+      {
+        "fr": "En cas de souci, les clients peuvent joindre le support technique à tout moment.",
+        "vi": "Khi gặp trục trặc, khách hàng có thể liên hệ bộ phận hỗ trợ kỹ thuật bất cứ lúc nào."
+      },
+      {
+        "fr": "La toile reste le support privilégié de nombreux peintres.",
+        "vi": "Vải bố vẫn là chất liệu ưa thích của nhiều họa sĩ."
+      }
+    ],
+    "reason": "Câu 2 dùng 'support' theo nghĩa hỗ trợ tinh thần (anglicisme, không tự nhiên trong tiếng Pháp); thay bằng 'support technique' là cách dùng chuẩn."
+  }
+}

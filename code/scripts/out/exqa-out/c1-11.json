@@ -1,0 +1,36 @@
+{
+  "coûteux": {
+    "sentences": [
+      {
+        "fr": "Ce traitement s'avère aussi coûteux qu'inefficace.",
+        "vi": "Phương pháp điều trị này hóa ra vừa tốn kém vừa không hiệu quả."
+      },
+      {
+        "fr": "Une erreur pareille pourrait s'avérer très coûteuse.",
+        "vi": "Một sai lầm như vậy có thể trở nên rất tốn kém."
+      },
+      {
+        "fr": "Ils ont renoncé à ce projet trop coûteux pour la commune.",
+        "vi": "Họ đã từ bỏ dự án quá tốn kém này đối với xã."
+      }
+    ],
+    "reason": "Câu 2 gượng/sai: 'coûter cher, très coûteux même' trộn trạng từ với tính từ không có danh từ để hợp; sửa thành 's'avérer très coûteuse'."
+  },
+  "tarer": {
+    "sentences": [
+      {
+        "fr": "Le vendeur a taré la balance avant de peser les fruits.",
+        "vi": "Người bán đã trừ bì cân trước khi cân trái cây."
+      },
+      {
+        "fr": "Il faut tarer le récipient avant d'y verser la farine.",
+        "vi": "Cần trừ bì hộp đựng trước khi đổ bột vào."
+      },
+      {
+        "fr": "Cette vieille poutre est tarée par l'humidité et les insectes.",
+        "vi": "Cây xà cũ này đã bị hư hỏng bởi độ ẩm và côn trùng."
+      }
+    ],
+    "reason": "Câu 1 thiếu dấu: quá khứ phân từ 'a tare' phải là 'a taré'."
+  }
+}

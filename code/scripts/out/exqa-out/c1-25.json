@@ -1,0 +1,36 @@
+{
+  "décomposition": {
+    "sentences": [
+      {
+        "fr": "Le corps de l'animal était déjà en décomposition avancée.",
+        "vi": "Xác con vật đã ở trong tình trạng phân hủy nặng."
+      },
+      {
+        "fr": "La décomposition de la lumière blanche donne les couleurs de l'arc-en-ciel.",
+        "vi": "Sự phân tách ánh sáng trắng tạo ra các màu sắc của cầu vồng."
+      },
+      {
+        "fr": "L'historien décrit la lente décomposition de l'empire au fil des décennies.",
+        "vi": "Nhà sử học mô tả sự tan rã chậm rãi của đế chế qua nhiều thập kỷ."
+      }
+    ],
+    "reason": "Sai trật tự từ: 'en avancée décomposition' phải là 'en décomposition avancée' (tính từ đứng sau danh từ)."
+  },
+  "étendu": {
+    "sentences": [
+      {
+        "fr": "De sa terrasse, on découvrait ses vignes étendues à perte de vue.",
+        "vi": "Từ sân hiên nhà, người ta thấy những vườn nho trải rộng ngút tầm mắt."
+      },
+      {
+        "fr": "Il possède des connaissances étendues dans le domaine de l'astronomie.",
+        "vi": "Ông có kiến thức rộng lớn trong lĩnh vực thiên văn học."
+      },
+      {
+        "fr": "Étendu dans l'herbe, il observait les nuages glisser lentement.",
+        "vi": "Nằm dài trên cỏ, anh ngắm những đám mây trôi chầm chậm."
+      }
+    ],
+    "reason": "Câu 1 lặp gốc 'étendre' hai lần ('s'étend... vignes étendues'), nghe gượng; viết lại cho tự nhiên, giữ 'étendues' làm tính từ."
+  }
+}

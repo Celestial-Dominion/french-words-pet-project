@@ -1,0 +1,53 @@
+{
+ "nuptial": {
+  "sentences": [
+   {
+    "fr": "La mariée remonta lentement l'allée au son de la marche nuptiale.",
+    "vi": "Cô dâu chầm chậm tiến bước dọc lối đi theo điệu hành khúc hôn lễ."
+   },
+   {
+    "fr": "Ils ont choisi une plage déserte pour leur cérémonie nuptiale.",
+    "vi": "Họ đã chọn một bãi biển vắng cho lễ cưới của mình."
+   },
+   {
+    "fr": "Chez certains oiseaux, la parade nuptiale est un véritable spectacle.",
+    "vi": "Ở một số loài chim, màn tán tỉnh cưới xin là cả một màn trình diễn thực sự."
+   }
+  ],
+  "reason": "Câu 1: 'descendit l'allée sur une marche nuptiale' sai/gượng ('sur une marche' không dùng như vậy) — sửa thành 'remonta l'allée au son de la marche nuptiale'."
+ },
+ "ex-mari": {
+  "sentences": [
+   {
+    "fr": "Elle croise parfois son ex-mari à la sortie de l'école des enfants.",
+    "vi": "Thỉnh thoảng cô gặp chồng cũ lúc đón con ở cổng trường."
+   },
+   {
+    "fr": "Son ex-mari continue de verser une pension pour les enfants.",
+    "vi": "Chồng cũ của cô vẫn tiếp tục chu cấp tiền nuôi con."
+   },
+   {
+    "fr": "Elle est restée en bons termes avec son ex-mari, même après leur divorce.",
+    "vi": "Cô và chồng cũ vẫn giữ mối quan hệ tốt đẹp, ngay cả sau khi ly hôn."
+   }
+  ],
+  "reason": "Câu 3: 'Ils sont restés en bons termes... avec son ex-mari' lủng củng, chủ ngữ 'Ils' thừa và lệch — viết lại 'Elle est restée en bons termes avec son ex-mari...'."
+ },
+ "pesanteur": {
+  "sentences": [
+   {
+    "fr": "De retour sur Terre, les astronautes doivent se réhabituer à la pesanteur.",
+    "vi": "Khi trở về Trái Đất, các phi hành gia phải làm quen lại với trọng lực."
+   },
+   {
+    "fr": "La pesanteur attire tous les corps vers le centre de la Terre.",
+    "vi": "Trọng lực hút mọi vật thể về phía tâm Trái Đất."
+   },
+   {
+    "fr": "On sentait la pesanteur de l'atmosphère avant l'orage.",
+    "vi": "Người ta cảm nhận được sự nặng nề của bầu không khí trước cơn giông."
+   }
+  ],
+  "reason": "Câu 1 dùng 'apesanteur' (không trọng lực) chứ không phải từ đang xét 'pesanteur' — viết lại câu chứa đúng 'pesanteur'."
+ }
+}

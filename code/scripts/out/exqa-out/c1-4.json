@@ -1,0 +1,19 @@
+{
+  "peuplier": {
+    "sentences": [
+      {
+        "fr": "Une rangée de peupliers borde la route.",
+        "vi": "Một hàng cây dương chạy dọc theo con đường."
+      },
+      {
+        "fr": "Le vent faisait frémir les feuilles argentées du peuplier.",
+        "vi": "Gió làm rung rinh những chiếc lá bạc của cây dương."
+      },
+      {
+        "fr": "Les peupliers se reflétaient dans les eaux calmes du canal.",
+        "vi": "Những cây dương soi bóng trên mặt nước tĩnh lặng của con kênh."
+      }
+    ],
+    "reason": "Lỗi ngữ pháp câu 1: 'borde le long de la route' lẫn lộn hai cấu trúc ('border la route' vs 'longer le long de'); sửa thành 'borde la route'."
+  }
+}

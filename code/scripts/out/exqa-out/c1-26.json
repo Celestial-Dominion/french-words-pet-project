@@ -1,0 +1,70 @@
+{
+ "vogue": {
+  "sentences": [
+   {
+    "fr": "Les manteaux longs sont de nouveau en vogue cet hiver.",
+    "vi": "Áo khoác dài lại đang thịnh hành trở lại vào mùa đông này."
+   },
+   {
+    "fr": "Cette théorie connut une grande vogue dans les années soixante.",
+    "vi": "Học thuyết này từng rất thịnh hành vào thập niên sáu mươi."
+   },
+   {
+    "fr": "Le minimalisme est en vogue chez les jeunes créateurs.",
+    "vi": "Chủ nghĩa tối giản đang là mốt trong giới nhà thiết kế trẻ."
+   }
+  ],
+  "reason": "Câu 3: 'à la vogue' sai; đúng là 'en vogue'."
+ },
+ "jeûne": {
+  "sentences": [
+   {
+    "fr": "Le jeûne du ramadan dure du lever au coucher du soleil.",
+    "vi": "Sự nhịn ăn trong tháng Ramadan kéo dài từ lúc mặt trời mọc đến lúc lặn."
+   },
+   {
+    "fr": "Après trois jours de jeûne, il se sentait étrangement lucide.",
+    "vi": "Sau ba ngày nhịn ăn, anh ấy cảm thấy đầu óc sáng suốt một cách lạ lùng."
+   },
+   {
+    "fr": "La prise de sang doit se faire à jeun, après un long jeûne.",
+    "vi": "Việc lấy máu phải thực hiện lúc đói, sau một thời gian dài nhịn ăn."
+   }
+  ],
+  "reason": "Câu 2 dịch sai: 'jeûne' là nhịn ăn, không phải 'ăn chay'."
+ },
+ "évaluation": {
+  "sentences": [
+   {
+    "fr": "L'évaluation des dégâts prendra plusieurs semaines aux experts.",
+    "vi": "Việc đánh giá thiệt hại sẽ khiến các chuyên gia mất vài tuần."
+   },
+   {
+    "fr": "Les élèves passeront une évaluation de fin de trimestre lundi.",
+    "vi": "Học sinh sẽ làm bài đánh giá cuối học kỳ vào thứ Hai."
+   },
+   {
+    "fr": "Son évaluation de la situation s'est révélée parfaitement juste.",
+    "vi": "Sự đánh giá của ông ấy về tình hình hóa ra hoàn toàn chính xác."
+   }
+  ],
+  "reason": "Câu 1 dịch gượng ('sẽ mất của các chuyên gia vài tuần'); sửa cho tự nhiên."
+ },
+ "entretuer": {
+  "sentences": [
+   {
+    "fr": "Les deux clans finirent par s'entretuer pour un lopin de terre.",
+    "vi": "Hai gia tộc rốt cuộc giết lẫn nhau chỉ vì một mảnh đất nhỏ."
+   },
+   {
+    "fr": "Il est absurde que des voisins s'entretuent pour si peu.",
+    "vi": "Thật vô lý khi những người hàng xóm giết hại lẫn nhau chỉ vì chuyện cỏn con như vậy."
+   },
+   {
+    "fr": "Dans le chaos, les factions rivales commencèrent à s'entretuer.",
+    "vi": "Trong hỗn loạn, các phe phái đối địch bắt đầu giết lẫn nhau."
+   }
+  ],
+  "reason": "Câu 2: 'se laissent entretuer' sai (entretuer chỉ ở dạng đại từ s'entretuer); sửa thành 's'entretuent'."
+ }
+}

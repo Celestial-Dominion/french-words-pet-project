@@ -1,0 +1,42 @@
+{
+ "svp": {
+  "sentences": [
+   { "fr": "Confirmez votre présence avant vendredi, svp.", "vi": "Xác nhận sự có mặt của bạn trước thứ Sáu, làm ơn." },
+   { "fr": "Fermez la porte en sortant, svp, il y a un courant d'air terrible.", "vi": "Làm ơn đóng cửa khi ra ngoài nhé, có luồng gió lùa kinh khủng." },
+   { "fr": "Un café et un verre d'eau, svp.", "vi": "Cho một cà phê và một ly nước, làm ơn." }
+  ],
+  "reason": "Câu 1 lặp phép lịch sự ('Merci de bien vouloir…' + 'svp'), gượng; bỏ phần thừa."
+ },
+ "score": {
+  "sentences": [
+   { "fr": "À la mi-temps, le score restait vierge, malgré les nombreuses occasions manquées.", "vi": "Đến giữa trận, tỉ số vẫn là hòa không bàn thắng, dù có rất nhiều cơ hội bị bỏ lỡ." },
+   { "fr": "Son score au test d'aptitude lui a ouvert les portes des meilleures universités.", "vi": "Điểm số bài kiểm tra năng lực đã mở cho cậu ấy cánh cửa vào những trường đại học hàng đầu." },
+   { "fr": "Il a réalisé un score impressionnant au jeu vidéo et figure désormais en tête du classement.", "vi": "Cậu ấy đạt điểm số ấn tượng trong trò chơi điện tử và giờ đứng đầu bảng xếp hạng." }
+  ],
+  "reason": "Câu 3 cũ dùng 'score' theo nghĩa nhạc phim, lệch nghĩa đã cho (tỉ số/điểm số)."
+ },
+ "pif": {
+  "sentences": [
+   { "fr": "Il s'est pris la porte en pleine figure et s'est cassé le pif.", "vi": "Nó bị cánh cửa đập thẳng vào mặt và gãy cả cái mũi." },
+   { "fr": "Avec ce rhume, j'ai le pif complètement bouché depuis trois jours.", "vi": "Bị cảm này, cái mũi tôi nghẹt cứng suốt ba ngày nay." },
+   { "fr": "Avec son gros pif rouge, le clown faisait rire tous les enfants.", "vi": "Với cái mũi đỏ to đùng, chú hề khiến bọn trẻ cười nghiêng ngả." }
+  ],
+  "reason": "Câu 2 cũ dùng thành ngữ 'au pif' (theo cảm tính), lệch nghĩa 'cái mũi' đã cho."
+ },
+ "éventuellement": {
+  "sentences": [
+   { "fr": "Si le temps le permet, nous prolongerons éventuellement notre séjour de deux jours.", "vi": "Nếu thời tiết cho phép, có thể chúng tôi sẽ kéo dài chuyến đi thêm hai ngày." },
+   { "fr": "Je pourrais éventuellement t'aider ce week-end, mais je ne te promets rien.", "vi": "Tôi có thể giúp cậu vào cuối tuần nếu cần, nhưng không hứa trước gì đâu." },
+   { "fr": "Prévoyez un parapluie, il pourrait éventuellement pleuvoir dans l'après-midi.", "vi": "Hãy mang theo ô, có thể trời sẽ mưa vào buổi chiều." }
+  ],
+  "reason": "Câu 3 cũ 'il pleuvra éventuellement' sai — éventuellement chỉ khả năng, phải dùng điều kiện ('pourrait pleuvoir')."
+ },
+ "ouh": {
+  "sentences": [
+   { "fr": "Ouh, ce que ce café est brûlant, je me suis presque brûlé la langue !", "vi": "Ối, cà phê này nóng quá, tôi suýt bỏng cả lưỡi!" },
+   { "fr": "Ouh la la, tu as vu l'heure ? On va être terriblement en retard !", "vi": "Ôi trời ơi, cậu xem mấy giờ rồi kìa? Chúng ta sẽ trễ khủng khiếp mất!" },
+   { "fr": "Les spectateurs faisaient « ouh ! » à chaque numéro de l'acrobate.", "vi": "Khán giả \"hú\" lên sau mỗi màn của nghệ sĩ nhào lộn." }
+  ],
+  "reason": "Câu 1 thiếu dấu mũ: 'brulant/brulé' → 'brûlant/brûlé'."
+ }
+}

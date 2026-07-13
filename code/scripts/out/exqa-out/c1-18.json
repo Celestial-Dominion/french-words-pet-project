@@ -1,0 +1,53 @@
+{
+ "vénitien": {
+  "sentences": [
+   {
+    "fr": "Le carnaval vénitien attire des visiteurs du monde entier.",
+    "vi": "Lễ hội hóa trang Venice thu hút du khách từ khắp nơi trên thế giới."
+   },
+   {
+    "fr": "Un Vénitien lui servit de guide dans le dédale des ruelles.",
+    "vi": "Một người Venice làm hướng dẫn viên cho anh ấy trong mê cung những con hẻm."
+   },
+   {
+    "fr": "Les stores vénitiens filtraient la lumière de l'après-midi.",
+    "vi": "Những tấm rèm kiểu Venice lọc bớt ánh sáng buổi chiều."
+   }
+  ],
+  "reason": "Nom d'habitant phải viết hoa: 'Un vénitien' → 'Un Vénitien' (tính từ 'vénitien' vẫn viết thường)."
+ },
+ "roule": {
+  "sentences": [
+   {
+    "fr": "La voiture roule trop vite sur cette route de montagne.",
+    "vi": "Chiếc xe chạy quá nhanh trên con đường núi này."
+   },
+   {
+    "fr": "Ça roule, on se retrouve devant le cinéma à huit heures.",
+    "vi": "Ổn cả, tám giờ gặp nhau trước rạp phim nhé."
+   },
+   {
+    "fr": "Le train roule à vive allure à travers la campagne.",
+    "vi": "Đoàn tàu lao đi vun vút qua vùng thôn quê."
+   }
+  ],
+  "reason": "'roule' không tồn tại như danh từ; câu gốc dùng sai (nghĩa 'guồng quay' phải là 'train-train', 'tiếng trống' phải là 'roulement'). Viết lại dùng động từ 'rouler'."
+ },
+ "élaborer": {
+  "sentences": [
+   {
+    "fr": "Le comité a mis des mois à élaborer une stratégie cohérente.",
+    "vi": "Ủy ban đã mất nhiều tháng để xây dựng một chiến lược mạch lạc."
+   },
+   {
+    "fr": "Les chercheurs élaborent un vaccin contre cette nouvelle souche.",
+    "vi": "Các nhà nghiên cứu đang phát triển một loại vắc-xin chống lại chủng mới này."
+   },
+   {
+    "fr": "Il a fallu élaborer un plan précis pour éviter tout imprévu.",
+    "vi": "Đã phải xây dựng một kế hoạch chi tiết để tránh mọi bất trắc."
+   }
+  ],
+  "reason": "Dịch vi sai: 'élaborer un vaccin' là phát triển/bào chế vắc-xin, không phải 'soạn thảo' (chỉ dùng cho văn bản)."
+ }
+}

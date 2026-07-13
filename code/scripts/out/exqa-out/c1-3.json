@@ -1,0 +1,104 @@
+{
+ "pet": {
+  "sentences": [
+   {
+    "fr": "Un pet retentissant a rompu le silence solennel de la cérémonie.",
+    "vi": "Một tiếng rắm vang dội đã phá vỡ sự im lặng trang nghiêm của buổi lễ."
+   },
+   {
+    "fr": "Les enfants ont éclaté de rire au moindre pet lâché en classe.",
+    "vi": "Bọn trẻ cười phá lên vì mỗi tiếng rắm đánh ra trong lớp."
+   },
+   {
+    "fr": "Toutes ses grandes promesses ne valent pas un pet de lapin.",
+    "vi": "Mọi lời hứa hẹn to tát của hắn chẳng đáng giá một cái rắm."
+   }
+  ],
+  "reason": "Câu 3 gốc chắp vá hai thành ngữ, thiếu mạch lạc ('ne pas bouger le petit doigt' + 'ne pas valoir un pet de lapin'); viết lại tự nhiên, giữ thành ngữ có từ 'pet'."
+ },
+ "boudin": {
+  "sentences": [
+   {
+    "fr": "Ma grand-mère servait le boudin noir avec des pommes revenues au beurre.",
+    "vi": "Bà tôi dọn món dồi tiết đen kèm táo xào bơ."
+   },
+   {
+    "fr": "Le tuyau formait un gros boudin de mousse le long du mur.",
+    "vi": "Ống nước tạo thành một cuộn bọt dày như khúc dồi dọc theo bức tường."
+   },
+   {
+    "fr": "Il l'a profondément blessée en la traitant de gros boudin.",
+    "vi": "Anh ta đã làm cô ấy tổn thương sâu sắc khi gọi cô là \"con béo xấu\"."
+   }
+  ],
+  "reason": "Câu 3 gốc dùng 'boudant' (động từ bouder), KHÔNG chứa từ 'boudin'; viết lại dùng nghĩa lóng của boudin."
+ },
+ "égaler": {
+  "sentences": [
+   {
+    "fr": "Personne n'a jamais égalé la maîtrise technique de ce vieux luthier.",
+    "vi": "Chưa ai từng sánh bằng sự điêu luyện kỹ thuật của người thợ đàn già này."
+   },
+   {
+    "fr": "Rien ne saurait égaler la douceur d'un dimanche passé en famille.",
+    "vi": "Chẳng gì có thể sánh bằng sự êm đềm của một ngày Chủ nhật bên gia đình."
+   },
+   {
+    "fr": "Cette année, les bénéfices ont égalé ceux de la meilleure période.",
+    "vi": "Năm nay, lợi nhuận đã ngang bằng với thời kỳ tốt nhất."
+   }
+  ],
+  "reason": "Câu 2 gốc dùng danh từ/tính từ 'égale' (n'a d'égale que), không phải động từ 'égaler'; viết lại đúng động từ đang xét."
+ },
+ "fixement": {
+  "sentences": [
+   {
+    "fr": "Elle le regardait fixement, comme pour lire au fond de ses pensées.",
+    "vi": "Cô ấy nhìn anh chằm chằm, như để đọc thấu tận đáy suy nghĩ của anh."
+   },
+   {
+    "fr": "L'enfant regardait fixement l'écran, hypnotisé par les images.",
+    "vi": "Đứa trẻ nhìn đăm đăm vào màn hình, bị mê hoặc bởi những hình ảnh."
+   },
+   {
+    "fr": "Il contemplait fixement l'horizon sans dire un mot.",
+    "vi": "Ông chăm chú nhìn đăm đăm về phía chân trời mà không nói một lời."
+   }
+  ],
+  "reason": "Câu 2 gốc 'fixait fixement' bị lặp thừa (pléonasme, vì 'fixer' đã có nghĩa nhìn chằm chằm); đổi thành 'regardait fixement'."
+ },
+ "spécialiser": {
+  "sentences": [
+   {
+    "fr": "Après son internat, il a choisi de se spécialiser en chirurgie cardiaque.",
+    "vi": "Sau kỳ nội trú, anh ấy chọn chuyên sâu về phẫu thuật tim."
+   },
+   {
+    "fr": "Cette librairie s'est spécialisée dans les ouvrages anciens et rares.",
+    "vi": "Hiệu sách này chuyên về các đầu sách cổ và hiếm."
+   },
+   {
+    "fr": "Se spécialiser trop tôt peut nuire à une vision d'ensemble.",
+    "vi": "Chuyên môn hóa quá sớm có thể làm hại đến tầm nhìn tổng thể."
+   }
+  ],
+  "reason": "Câu 3 gốc 'Trop se spécialiser trop tôt' lặp thừa từ 'trop'; bỏ 'Trop' đầu câu cho gọn, tự nhiên."
+ },
+ "soûler": {
+  "sentences": [
+   {
+    "fr": "Ils l'ont soûlé exprès pour lui arracher des confidences.",
+    "vi": "Họ cố ý chuốc rượu cho anh ta say để moi những lời tâm sự."
+   },
+   {
+    "fr": "Tu commences à me soûler avec tes reproches incessants.",
+    "vi": "Cậu bắt đầu làm tôi phát chán với những lời trách móc không ngừng của cậu rồi đấy."
+   },
+   {
+    "fr": "Le vacarme incessant de la fête finissait par le soûler.",
+    "vi": "Sự ồn ào không dứt của bữa tiệc rốt cuộc khiến anh ấy phát chán."
+   }
+  ],
+  "reason": "Câu 3 gốc 'soûler la tête' không phải cách nói chuẩn; sửa thành 'le soûler' (nghĩa lóng: làm phát chán)."
+ }
+}

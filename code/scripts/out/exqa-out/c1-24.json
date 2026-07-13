@@ -1,0 +1,36 @@
+{
+  "bourdon": {
+    "sentences": [
+      {
+        "fr": "Un gros bourdon vrombissait paresseusement autour des lavandes.",
+        "vi": "Một con ong nghệ to lười biếng vo ve quanh những khóm oải hương."
+      },
+      {
+        "fr": "Le bourdon de la cathédrale ne sonne qu'aux grandes occasions.",
+        "vi": "Chiếc chuông lớn của nhà thờ chỉ ngân lên vào những dịp trọng đại."
+      },
+      {
+        "fr": "Depuis son départ, il traîne un bourdon dont il n'arrive pas à se défaire.",
+        "vi": "Kể từ khi cô đi, anh mang một nỗi buồn dai dẳng không sao dứt ra được."
+      }
+    ],
+    "reason": "Lỗi chính tả tiếng Việt: 'ong nghễ' -> 'ong nghệ' (bumblebee)."
+  },
+  "gémellaire": {
+    "sentences": [
+      {
+        "fr": "Une grossesse gémellaire nécessite un suivi médical particulièrement attentif.",
+        "vi": "Một thai kỳ sinh đôi đòi hỏi sự theo dõi y tế đặc biệt cẩn trọng."
+      },
+      {
+        "fr": "Les chercheurs étudient le lien gémellaire pour départager l'inné de l'acquis.",
+        "vi": "Các nhà nghiên cứu khảo sát mối liên hệ sinh đôi để phân định bẩm sinh với tập nhiễm."
+      },
+      {
+        "fr": "Le taux de naissances gémellaires a augmenté avec le recours à la procréation assistée.",
+        "vi": "Tỷ lệ sinh đôi đã tăng lên cùng với việc sử dụng hỗ trợ sinh sản."
+      }
+    ],
+    "reason": "'relation gémellaire' dùng sai cho việc kết nghĩa thành phố (đúng phải là 'jumelage'); gémellaire chỉ dùng cho sinh đôi. Thay bằng câu dùng đúng nghĩa."
+  }
+}
