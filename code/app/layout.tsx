@@ -49,7 +49,7 @@ export default function RootLayout({
               <span className="flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/70 text-sm font-bold text-primary-foreground shadow-sm">
                 Fr
               </span>
-              <span className="text-base font-bold tracking-tight">Từ vựng Pháp</span>
+              <span className="text-base font-bold tracking-tight">French</span>
             </Link>
             <div className="ml-2 hidden min-w-0 flex-1 md:block">
               <MainNav />
