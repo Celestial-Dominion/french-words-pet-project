@@ -57,7 +57,7 @@ for (const { level, cefr } of LEVELS) {
     return { ...r, level };
   });
 
-  writeFileSync(join(CODE, `public/data/readings/${cefr}.json`), JSON.stringify(docs));
+  writeFileSync(join(CODE, `public/data/readings/${cefr.toLowerCase()}.json`), JSON.stringify(docs));
   for (const d of docs) index.push({ id: d.id, level, title_fr: d.title_fr, title_vi: d.title_vi, n: d.sentences.length });
 
   const pct = totalTok ? Math.round((ok / totalTok) * 1000) / 10 : 100;
