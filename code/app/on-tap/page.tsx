@@ -15,8 +15,9 @@ import {
   setConfig,
   progressSummary,
 } from "@/lib/db";
-import { loadWords, loadExamples, type ExampleSentence } from "@/lib/data";
+import { loadWords, loadExamplesForWords, type ExampleSentence } from "@/lib/data";
 import { buildQuestions, type Question } from "@/lib/review-session";
+import { orderForBeginners } from "@/lib/starter";
 import { LEVELS } from "@/lib/levels";
 import type { Word, SrsConfig, ReviewRecord } from "@/lib/types";
 import ReviewRunner from "@/components/review-runner";
@@ -61,7 +62,9 @@ export default function OnTapPage() {
     let examples: Record<string, ExampleSentence[]> = {};
     const pool: Word[] = [];
     for (const lv of levels) {
-      const [ws, ex] = await Promise.all([loadWords(lv), loadExamples(lv)]);
+      // chỉ tải shard ví dụ chứa đúng các từ trong phiên (không nạp cả file cấp)
+      const idsOfLevel = rows.filter((r) => r.level === lv).map((r) => r.wordId);
+      const [ws, ex] = await Promise.all([loadWords(lv), loadExamplesForWords(lv, idsOfLevel)]);
       for (const w of ws) {
         wordMap.set(w.id, w);
         pool.push(w);
@@ -94,12 +97,18 @@ export default function OnTapPage() {
     const pool: Word[] = [];
     for (const lv of order) {
       if (words.length >= quota) break;
-      const [ws, ex] = await Promise.all([loadWords(lv), loadExamples(lv)]);
+      const ws = await loadWords(lv);
       pool.push(...ws);
-      examples = { ...examples, ...ex };
-      for (const w of ws) {
-        if (words.length >= quota) break;
-        if (!learnedSet.has(w.id)) words.push(w);
+      // người mới (<40 từ) → ưu tiên bộ từ khởi động cụ thể (chào hỏi, gia đình, đồ ăn…)
+      const picked: Word[] = [];
+      for (const w of orderForBeginners(ws, learnedSet.size)) {
+        if (words.length + picked.length >= quota) break;
+        if (!learnedSet.has(w.id)) picked.push(w);
+      }
+      words.push(...picked);
+      if (picked.length) {
+        const ex = await loadExamplesForWords(lv, picked.map((w) => w.id));
+        examples = { ...examples, ...ex };
       }
     }
     if (!words.length) {
@@ -249,6 +258,39 @@ export default function OnTapPage() {
                 type="checkbox"
                 checked={cfg.genderQuestions}
                 onChange={(e) => patch({ genderQuestions: e.target.checked })}
+                className="size-5 accent-primary"
+              />
+            </label>
+
+            <div className="flex items-center justify-between gap-4">
+              <span className="text-sm font-medium">
+                Hướng hỏi
+                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">chiều câu trắc nghiệm khi ôn</span>
+              </span>
+              <div className="inline-flex rounded-full border p-0.5 text-sm">
+                {([["fr2vi", "Pháp→nghĩa"], ["vi2fr", "Nghĩa→Pháp"]] as const).map(([val, label]) => (
+                  <button
+                    key={val}
+                    onClick={() => patch({ direction: val })}
+                    className={`rounded-full px-3 py-1.5 transition-colors ${
+                      cfg.direction === val ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <label className="flex items-center justify-between gap-4">
+              <span className="text-sm font-medium">
+                Nhớ lại trước
+                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">ẩn đáp án, tự nhớ trong đầu rồi mới bấm hiện (nhớ lâu hơn)</span>
+              </span>
+              <input
+                type="checkbox"
+                checked={cfg.recallFirst !== false}
+                onChange={(e) => patch({ recallFirst: e.target.checked })}
                 className="size-5 accent-primary"
               />
             </label>

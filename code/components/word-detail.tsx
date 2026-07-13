@@ -6,7 +6,7 @@ import { loadConjugation, type ExampleSentence } from "@/lib/data";
 import { posLabel } from "@/lib/pos";
 import { wordAudioUrl, sentenceAudioUrl } from "@/lib/tts";
 import { cn } from "@/lib/utils";
-import { getReview, recordAnswer, addXp } from "@/lib/db";
+import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic } from "@/lib/db";
 import { XP } from "@/lib/gamify";
 import type { Word, Conjugation, ReviewRecord } from "@/lib/types";
 
@@ -60,9 +60,11 @@ export default function WordDetail({
   const [conj, setConj] = useState<Conjugation | null>(null);
   const [rec, setRec] = useState<ReviewRecord | null | undefined>(undefined);
   const [busy, setBusy] = useState(false);
+  const [note, setNote] = useState("");
 
   useEffect(() => {
     getReview(word.id).then((r) => setRec(r ?? null));
+    getMnemonic(word.id).then(setNote).catch(() => {});
   }, [word.id]);
 
   const status = statusOf(rec);
@@ -166,6 +168,21 @@ export default function WordDetail({
               )}
             </div>
           )}
+
+          {/* mẹo nhớ tự ghi (tự nghĩ → nhớ lâu nhất) */}
+          <div className="mt-4">
+            <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              ✍️ Mẹo nhớ của bạn
+            </label>
+            <textarea
+              value={note}
+              onChange={(e) => setNote(e.target.value)}
+              onBlur={() => void setMnemonic(word.id, note)}
+              rows={2}
+              placeholder="Vd: liên tưởng hình ảnh, câu chuyện, hoặc âm gần giống…"
+              className="w-full resize-none rounded-2xl border bg-background p-3 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
+            />
+          </div>
 
           {/* tabs (chỉ verb mới có tab chia động từ) */}
           {isVerb && (

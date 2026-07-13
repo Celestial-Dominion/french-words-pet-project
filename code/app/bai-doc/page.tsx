@@ -15,7 +15,18 @@ export default function BaiDocPage() {
 
   const refresh = () => readIds().then(setRead);
   useEffect(() => {
-    loadReadingsIndex().then(setIndex);
+    loadReadingsIndex().then((idx) => {
+      setIndex(idx);
+      // deep-link ?open=<id> (từ gợi ý "Đọc ngay để nhớ lâu" sau phiên học)
+      const id = new URLSearchParams(window.location.search).get("open");
+      const m = id ? idx.find((r) => r.id === id) : null;
+      if (m) {
+        loadReadings(m.level).then((docs) => {
+          const doc = docs.find((d) => d.id === m.id);
+          if (doc) setActive(doc);
+        });
+      }
+    });
     refresh();
   }, []);
 

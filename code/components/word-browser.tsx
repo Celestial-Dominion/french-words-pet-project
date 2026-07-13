@@ -3,9 +3,10 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft, Search, GraduationCap, Plus } from "lucide-react";
-import { loadWords, loadExamples, type ExampleSentence } from "@/lib/data";
+import { loadWords, loadExamplesForWords, type ExampleSentence } from "@/lib/data";
 import { db, learnedIds, newTodayCount, getConfig } from "@/lib/db";
 import { buildQuestions, type Question } from "@/lib/review-session";
+import { orderForBeginners } from "@/lib/starter";
 import { levelMeta, levelAccent } from "@/lib/levels";
 import { toSearch } from "@/lib/slug";
 import { cn } from "@/lib/utils";
@@ -67,8 +68,8 @@ export default function WordBrowser({ level }: { level: number }) {
   }, [refreshReviews]);
 
   const openWord = async (w: Word) => {
-    const ex = await loadExamples(level);
-    setExamples(ex);
+    const ex = await loadExamplesForWords(level, [w.id]);
+    setExamples((prev) => ({ ...prev, ...ex }));
     setSelected(w);
   };
 
@@ -88,10 +89,13 @@ export default function WordBrowser({ level }: { level: number }) {
     if (!words) return;
     const [cfg, learned, newToday] = await Promise.all([getConfig(), learnedIds(), newTodayCount()]);
     const quota = force ? 10 : Math.max(0, cfg.newPerDay - newToday);
-    const candidates = words.filter((w) => !learned.has(w.id)).slice(0, quota);
+    // người mới (<40 từ) → ưu tiên bộ từ khởi động cụ thể trước danh sách tần suất
+    const candidates = orderForBeginners(words, learned.size)
+      .filter((w) => !learned.has(w.id))
+      .slice(0, quota);
     if (!candidates.length) return;
-    const ex = await loadExamples(level);
-    setExamples(ex);
+    const ex = await loadExamplesForWords(level, candidates.map((w) => w.id));
+    setExamples((prev) => ({ ...prev, ...ex }));
     setConfig(cfg);
     setSession(buildQuestions(candidates, ex, words, cfg, true));
   };

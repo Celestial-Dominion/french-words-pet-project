@@ -24,23 +24,26 @@ test("tra từ: /hoc/1 tìm không dấu 'manger'", async ({ page }) => {
   await expect(page.getByText("/mɑ̃ʒe/")).toBeVisible();
 });
 
-test("học từ mới: mở phiên → hiện MCQ", async ({ page }) => {
+test("học từ mới: learn-card trước rồi mới MCQ", async ({ page }) => {
   await page.goto("/hoc/1");
   await page.getByRole("button", { name: /Học .* từ mới/ }).click();
   await expect(page.getByText("Học từ mới · A1")).toBeVisible();
+  // thẻ HỌC từ mới hiện trước (không hỏi ngay)
+  await expect(page.getByText("Từ mới — học trước nhé")).toBeVisible();
+  await page.getByRole("button", { name: "Đã xem — Kiểm tra" }).click();
   await expect(page.getByText("Chọn nghĩa đúng")).toBeVisible();
 });
 
 test("bài đọc: danh sách + mở đọc bấm-tra", async ({ page }) => {
   await page.goto("/bai-doc");
-  await expect(page.getByRole("heading", { name: "Bài đọc" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Bài đọc", exact: true })).toBeVisible();
   await page.getByText("La famille de Marie").click();
-  await expect(page.getByText("Chạm vào từ bất kỳ để tra nghĩa.")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Nghe cả bài" })).toBeVisible();
 });
 
 test("truyện: danh sách hiển thị", async ({ page }) => {
   await page.goto("/truyen");
-  await expect(page.getByRole("heading", { name: "Truyện" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Truyện", exact: true })).toBeVisible();
   await expect(page.getByText(/\d+ truyện/).first()).toBeVisible();
 });
 

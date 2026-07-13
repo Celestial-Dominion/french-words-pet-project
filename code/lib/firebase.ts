@@ -1,10 +1,9 @@
-// Khởi tạo Firebase (client, lười) — theo cách app HSK.
+// Khởi tạo Firebase (client, LƯỜI HOÀN TOÀN) — không import tĩnh SDK nào ở top-level
+// để first-load không chứa cả firebase/app lẫn firebase/auth (~330KB). Mọi SDK chỉ được
+// dynamic-import khi thật sự cần (kiểm tra đăng nhập nền / bấm đăng nhập / đồng bộ).
 // Config web Firebase là CÔNG KHAI theo thiết kế; bảo mật đến từ Auth + Firestore Rules.
-// Chưa cấu hình (thiếu env) → firebaseEnabled=false → app chạy offline-only, không hiện đăng nhập.
-// LƯU Ý: file này CHỈ import firebase/app + firebase/auth. Firestore nằm riêng ở
-// lib/sync-data.ts (dynamic import) để không kéo ~227KB Firestore SDK vào first-load.
-import { getApps, initializeApp, type FirebaseApp } from "firebase/app";
-import { getAuth, type Auth } from "firebase/auth";
+import type { FirebaseApp } from "firebase/app";
+import type { Auth } from "firebase/auth";
 
 const config = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -21,20 +20,25 @@ export const firebaseEnabled = Boolean(config.apiKey && config.projectId);
 // đã đăng nhập (tiện lúc mới setup để lấy UID); đặt lại sau lần đăng nhập đầu để khoá.
 export const OWNER_UID = process.env.NEXT_PUBLIC_OWNER_UID ?? "";
 
-let app: FirebaseApp | null = null;
-let authInstance: Auth | null = null;
+let appPromise: Promise<FirebaseApp | null> | null = null;
+let authPromise: Promise<Auth | null> | null = null;
 
-/** App Firebase dùng chung (auth ở đây; Firestore tự lấy từ app này trong sync-data). */
-export function getFbApp(): FirebaseApp | null {
-  if (!firebaseEnabled || typeof window === "undefined") return null;
-  if (!app) app = getApps()[0] ?? initializeApp(config);
-  return app;
+/** App Firebase dùng chung (dynamic-import firebase/app lần đầu gọi). */
+export function getFbApp(): Promise<FirebaseApp | null> {
+  if (!firebaseEnabled || typeof window === "undefined") return Promise.resolve(null);
+  if (!appPromise) {
+    appPromise = import("firebase/app").then(({ getApps, initializeApp }) => getApps()[0] ?? initializeApp(config));
+  }
+  return appPromise;
 }
 
-// Khởi tạo lười, chỉ phía client (tránh chạy khi prerender static export).
-export function getFb(): { auth: Auth } | null {
-  const a = getFbApp();
-  if (!a) return null;
-  if (!authInstance) authInstance = getAuth(a);
-  return { auth: authInstance };
+/** Auth dùng chung (dynamic-import firebase/auth lần đầu gọi). */
+export function getFbAuth(): Promise<Auth | null> {
+  if (!firebaseEnabled || typeof window === "undefined") return Promise.resolve(null);
+  if (!authPromise) {
+    authPromise = Promise.all([getFbApp(), import("firebase/auth")]).then(([app, { getAuth }]) =>
+      app ? getAuth(app) : null,
+    );
+  }
+  return authPromise;
 }

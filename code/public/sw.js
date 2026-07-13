@@ -2,7 +2,7 @@
 //  - HTML điều hướng: network-first (luôn lấy trang mới sau deploy; offline → cache).
 //  - /_next/static (JS/CSS có hash bất biến) + data JSON + audio: cache-first (tải tức thì,
 //    không chờ mạng) → mở lại app nhanh như HSK. Deploy mới đổi tên file hash nên không kẹt bản cũ.
-const CACHE = "fr-words-v4";
+const CACHE = "fr-words-v5";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(self.skipWaiting());
@@ -26,16 +26,20 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   if (new URL(request.url).origin !== self.location.origin) return;
 
-  // HTML điều hướng → network-first (trang luôn mới; lỗi mạng mới rơi về cache).
+  // HTML điều hướng → stale-while-revalidate: có cache trả NGAY (mở app không chờ mạng),
+  // đồng thời tải bản mới cập nhật cache nền (lần mở sau thấy bản mới).
   if (isNavigation(request)) {
     event.respondWith(
-      fetch(request)
-        .then((res) => {
-          const clone = res.clone();
-          caches.open(CACHE).then((c) => c.put(request, clone));
-          return res;
-        })
-        .catch(() => caches.match(request).then((c) => c || caches.match("/"))),
+      caches.match(request).then((cached) => {
+        const fresh = fetch(request)
+          .then((res) => {
+            const clone = res.clone();
+            caches.open(CACHE).then((c) => c.put(request, clone));
+            return res;
+          })
+          .catch(() => cached || caches.match("/"));
+        return cached || fresh;
+      }),
     );
     return;
   }

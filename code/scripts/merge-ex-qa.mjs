@@ -26,14 +26,7 @@ for (const fn of readdirSync(OUT).filter((f) => f.endsWith(".json"))) {
 }
 writeFileSync(exPath, JSON.stringify(examples));
 
-// regen per-level
-const levels = JSON.parse(readFileSync(join(CODE, "public/data/word-levels.json"), "utf8"));
-const byLevel = {};
-for (const [id, sents] of Object.entries(examples)) {
-  const lv = levels[id];
-  if (lv) (byLevel[lv] ||= {})[id] = sents;
-}
-for (const [lv, map] of Object.entries(byLevel)) {
-  writeFileSync(join(CODE, `public/data/examples/${levelSlug(Number(lv))}.json`), JSON.stringify(map));
-}
+// regen per-level (dạng 8 shard/cấp — xem shard-examples.mjs)
+const { writeShards } = await import("./shard-examples.mjs");
+writeShards();
 console.log(`Đọc ${files} file QA-ví-dụ · sửa ${fixes} từ: ${log.join(", ")}`);

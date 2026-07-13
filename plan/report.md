@@ -138,28 +138,30 @@ Nội dung đủ tốt để học nghiêm túc từ con số 0 (đặc biệt p
 - [x] **R2. Learn-card trước MCQ** *(xong 13/07)*: câu loại `learn` (không chấm) chèn trước MCQ cho mỗi từ mới — badge "✨ Từ mới", từ + mạo từ + IPA + audio tự phát + nghĩa + 1 ví dụ có audio, nút "Đã xem — Kiểm tra". Verify: học A1 hiện learn-card rồi mới MCQ.
 
 ### P1 — tuần này
-- [ ] **R3. Dynamic-import Firebase**: bỏ import tĩnh `firebase/auth`/`firestore` khỏi first-load (`auth-gate.tsx`, `lib/firebase.ts`); render nội dung lạc quan, chỉ phủ màn chặn khi xác định CHƯA đăng nhập.
-- [ ] **R4. Requeue khi sai**: trả lời sai → chèn lại thẻ sau ~3 lá trong phiên (`review-runner.tsx`).
-- [ ] **R5. Recall-first**: dùng field `recallFirst` sẵn có — ẩn options, bấm/Space để hiện; bày toggle trong Cài đặt `/on-tap`.
-- [ ] **R6. Nghỉ giữa chặng**: màn nghỉ ☕ sau mỗi ~22 thẻ, nút "Ôn tiếp".
-- [ ] **R7. CTA người mới**: `words === 0` → hero trỏ `/phat-am` ("Chưa biết đọc tiếng Pháp? Bắt đầu Khóa phát âm →").
+- [x] **R3. Dynamic-import Firebase** *(xong 13/07)*: `lib/firebase.ts` không import tĩnh SDK nào (getFbApp/getFbAuth async, dynamic-import lúc gọi); `lib/sync.ts` cũng dynamic-import `firebase/auth`; AuthGate render LẠC QUAN — lần trước đăng nhập hợp lệ (localStorage `fr.lastUid`) → hiện app ngay, kiểm tra auth chạy nền.
+- [x] **R4. Requeue khi sai** *(xong)*: MCQ sai → chèn lại thẻ sau ~3 lá (chống trùng nếu đã có bản chờ); header hiện "+N làm lại"; undo gỡ cả thẻ đã chèn.
+- [x] **R5. Recall-first** *(xong)*: MCQ ẩn phương án, nút "🧠 Thử nhớ trong đầu… bấm để hiện"; mốc tính tốc độ từ lúc HIỆN; toggle "Nhớ lại trước" trong Cài đặt.
+- [x] **R6. Nghỉ giữa chặng** *(xong)*: màn ☕ sau mỗi 22 thẻ (khi còn ≥4 thẻ), nút "Ôn tiếp".
+- [x] **R7. CTA người mới** *(xong)*: `words === 0` → banner "Chưa biết đọc tiếng Pháp? Bắt đầu Khóa phát âm →" trong hero trang chủ.
 
 ### P2 — kế tiếp
-- [ ] **R8. Câu hỏi cloze** (điền từ vào câu ví dụ).
-- [ ] **R9. Câu hỏi nghe → chọn nghĩa** (dùng audio từ sẵn có).
-- [ ] **R10. Hướng hỏi ngược** (nghĩa → từ Pháp) + bày setting `direction`.
-- [ ] **R11. Chấm theo tốc độ trả lời** (`ratingFromSpeed`: Lại/Khó/Được/Dễ → FSRS).
-- [ ] **R12. Tổng kết phiên gamify**: XP kiếm được, combo, thưởng phiên hoàn hảo, lên cấp, huy hiệu mới mở.
-- [ ] **R13. Gợi ý bài đọc sau phiên** ("N từ vừa học có trong bài X").
-- [ ] **R14. Rút gọn nghĩa trong MCQ** (chỉ phần trước dấu `;`).
-- [ ] **R15. Lộ trình khởi động theo chủ đề** cho người mới (chào hỏi, số đếm, gia đình… trước danh sách tần suất).
+- [x] **R8. Câu hỏi cloze** *(xong)*: khoét từ khỏi câu ví dụ, chọn từ điền; sau trả lời phát audio CẢ CÂU (~25% khi ôn, có câu chứa từ).
+- [x] **R9. Nghe → chọn nghĩa** *(xong)*: loa lớn tự phát + chạm nghe lại; sau trả lời mới lộ từ + IPA (~20% khi ôn).
+- [x] **R10. Hướng hỏi ngược** *(xong)*: nghĩa VI → chọn từ Pháp; segmented "Hướng hỏi" trong Cài đặt (không tự phát audio để khỏi lộ đáp án).
+- [x] **R11. Chấm theo tốc độ** *(xong)*: `ratingFromSpeed` — sai→Lại, ≤3s→Dễ, ≥12s→Khó, còn lại→Được; `recordAnswer` nhận rating.
+- [x] **R12. Tổng kết phiên gamify** *(xong)*: +XP kiếm được, chuỗi đúng dài nhất, thưởng phiên hoàn hảo +20, báo thăng cấp, huy hiệu mới mở (diff trước/sau phiên).
+- [x] **R13. Gợi ý bài đọc sau phiên** *(xong)*: `lib/suggest.ts` quét bài đọc/truyện CHƯA đọc chứa ≥2 từ của phiên; card "📖 Đọc ngay để nhớ lâu" deep-link `?open=<id>`.
+- [x] **R14. Rút gọn nghĩa MCQ** *(xong)*: `shortVi` — chỉ phần trước dấu `;`.
+- [x] **R15. Lộ trình khởi động theo chủ đề** *(xong)*: `lib/starter.ts` ~60 từ A1 cụ thể (chào hỏi/gia đình/đồ ăn/màu…); người <40 từ được ưu tiên học các từ này trước danh sách tần suất.
 
 ### P3 — hoàn thiện dần
-- [ ] **R16. Undo lần chấm vừa rồi.**
-- [ ] **R17. Mẹo nhớ (mnemonic)** tự ghi cho từ hay quên.
-- [ ] **R18. Chặn back/refresh/click-link giữa phiên** (beforeunload + popstate + click capture).
-- [ ] **R19. Sync mở rộng**: daily-stats, settings, gamify, huy hiệu (version-merge).
-- [ ] **R20. SW: stale-while-revalidate cho HTML** (mở app không chờ mạng).
-- [ ] **R21. Tách examples per-word** (màn ôn không nạp cả file cấp).
-- [ ] **R22. Quiz phân biệt âm trong Khóa phát âm** + tiến độ bài đã học.
-- [ ] **R23. Xoá `components/coming-soon.tsx`** (component chết).
+- [x] **R16. Undo** *(xong)*: nút "Hoàn tác — lỡ bấm nhầm" sau khi trả lời — khôi phục FSRS + thống kê ngày + XP + gỡ thẻ requeue, làm lại câu.
+- [x] **R17. Mẹo nhớ** *(xong)*: bảng `notes` (Dexie v3) + ô "✍️ Mẹo nhớ của bạn" trong chi tiết từ (tự lưu khi rời ô).
+- [x] **R18. Chặn thoát giữa phiên** *(xong)*: beforeunload + popstate (back) → hỏi xác nhận.
+- [x] **R19. Sync cài đặt** *(xong)*: config + `configUpdatedAt` lên user doc; máy đổi sau thắng; stamp `fr.cfgUpdatedAt` vào fingerprint sync.
+- [x] **R20. SW stale-while-revalidate cho HTML** *(xong, v5)*: mở app trả cache ngay, cập nhật nền.
+- [x] **R21. Tách examples 8 shard/cấp** *(xong)*: `shard-examples.mjs` + `loadExamplesForWords` — màn ôn/tra chỉ tải shard chứa từ cần (merge-ex-qa tự ghi shard).
+- [x] **R22. Phát âm: tiến độ + quiz** *(xong)*: đánh dấu bài đã học (localStorage) + thanh tiến độ khóa + "Luyện nghe phân biệt âm" (nghe → chọn chữ, 5 câu, đạt 80% tự đánh dấu).
+- [x] **R23. Xoá `coming-soon.tsx`** *(xong)*.
+
+> Verify: E2E Playwright 7/7 pass (learn-card→MCQ, đọc "Nghe cả bài", truyện, phát âm, tiến độ/binh nghiệp); test tay recall-first + trả lời sai + Hoàn tác trên browser. Đã build production sạch. CHƯA deploy.

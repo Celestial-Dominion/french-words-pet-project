@@ -12,19 +12,40 @@ export async function loadWords(level: number): Promise<Word[]> {
   return (await res.json()) as Word[];
 }
 
-// Câu ví dụ theo cấp: map wordId -> [{ fr, vi }]. Trả {} nếu chưa có.
-// Cache theo cấp — file ví dụ khá lớn (C1 ~1.5MB), tránh tải lại mỗi lần bấm từ.
+// Câu ví dụ theo cấp: map wordId -> [{ fr, vi }]. File mỗi cấp được TÁCH 8 SHARD
+// (examples/{cefr}-{0..7}.json, chia theo hash wordId) → màn ôn/tra từ chỉ tải shard
+// chứa đúng các từ cần, không phải nguyên file cấp (C1 ~1.5MB). Hash PHẢI khớp
+// scripts/shard-examples.mjs.
 export type ExampleSentence = { fr: string; vi: string };
-const examplesCache = new Map<number, Record<string, ExampleSentence[]>>();
-export async function loadExamples(
-  level: number,
-): Promise<Record<string, ExampleSentence[]>> {
-  const cached = examplesCache.get(level);
+export const EXAMPLE_SHARDS = 8;
+export function exampleShardOf(id: string): number {
+  let h = 5381;
+  for (let i = 0; i < id.length; i++) h = ((h * 33) ^ id.charCodeAt(i)) >>> 0;
+  return h % EXAMPLE_SHARDS;
+}
+const exShardCache = new Map<string, Record<string, ExampleSentence[]>>();
+async function loadExampleShard(level: number, n: number): Promise<Record<string, ExampleSentence[]>> {
+  const key = `${levelSlug(level)}-${n}`;
+  const cached = exShardCache.get(key);
   if (cached) return cached;
-  const res = await fetch(`${BASE}/data/examples/${levelSlug(level)}.json`);
+  const res = await fetch(`${BASE}/data/examples/${key}.json`);
   const data = res.ok ? ((await res.json()) as Record<string, ExampleSentence[]>) : {};
-  examplesCache.set(level, data);
+  exShardCache.set(key, data);
   return data;
+}
+/** Toàn bộ ví dụ một cấp (tải đủ 8 shard — dùng khi thật sự cần cả cấp). */
+export async function loadExamples(level: number): Promise<Record<string, ExampleSentence[]>> {
+  const parts = await Promise.all(Array.from({ length: EXAMPLE_SHARDS }, (_, n) => loadExampleShard(level, n)));
+  return Object.assign({}, ...parts);
+}
+/** Ví dụ cho ĐÚNG các từ cần (chỉ tải shard chứa chúng — nhẹ hơn nhiều). */
+export async function loadExamplesForWords(
+  level: number,
+  ids: string[],
+): Promise<Record<string, ExampleSentence[]>> {
+  const shards = [...new Set(ids.map(exampleShardOf))];
+  const parts = await Promise.all(shards.map((n) => loadExampleShard(level, n)));
+  return Object.assign({}, ...parts);
 }
 
 // Bảng chia động từ, lazy-load theo lemma. null nếu không có (không phải verb hoặc chưa build).

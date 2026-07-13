@@ -1,7 +1,7 @@
 // Gamification — theo theme cấp bậc quân đội Pháp. Logic thuần (không phụ thuộc DB).
 
 // XP cộng khi hành động (giữ tinh thần +3/+5/+2 của app HSK).
-export const XP = { newWord: 5, review: 3, practice: 2 } as const;
+export const XP = { newWord: 5, review: 3, practice: 2, perfectSession: 20 } as const;
 
 // 21 cấp bậc Lục quân Pháp, thăng theo SỐ TỪ ĐÃ HỌC (ngưỡng giãn trên thang ~11k).
 export interface Rank {

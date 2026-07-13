@@ -1,34 +1,35 @@
-// Đăng nhập Google (phần AUTH — nằm trong first-load, giữ nhẹ).
-// Đồng bộ dữ liệu Firestore nằm ở lib/sync-data.ts và CHỈ được dynamic-import
-// (auth-sync.tsx) để Firestore SDK không vào bundle đầu.
-import {
-  GoogleAuthProvider,
-  signInWithPopup,
-  signOut,
-  onAuthStateChanged,
-  type User,
-} from "firebase/auth";
-import { getFb, firebaseEnabled } from "./firebase";
+// Đăng nhập Google — KHÔNG import tĩnh firebase/auth (chỉ import type, bị xoá khi build).
+// SDK auth chỉ được dynamic-import khi gọi hàm → first-load không chứa Firebase.
+import type { User } from "firebase/auth";
+import { getFbAuth, firebaseEnabled } from "./firebase";
 
 export function watchAuth(cb: (user: User | null) => void): () => void {
-  const fb = getFb();
-  if (!fb) {
-    cb(null);
-    return () => {};
-  }
-  return onAuthStateChanged(fb.auth, cb);
+  let unsub: (() => void) | null = null;
+  let cancelled = false;
+  void (async () => {
+    const [auth, { onAuthStateChanged }] = await Promise.all([getFbAuth(), import("firebase/auth")]);
+    if (!auth) {
+      cb(null);
+      return;
+    }
+    if (!cancelled) unsub = onAuthStateChanged(auth, cb);
+  })();
+  return () => {
+    cancelled = true;
+    unsub?.();
+  };
 }
 
 export async function googleSignIn(): Promise<User | null> {
-  const fb = getFb();
-  if (!fb) return null;
-  const res = await signInWithPopup(fb.auth, new GoogleAuthProvider());
+  const [auth, { GoogleAuthProvider, signInWithPopup }] = await Promise.all([getFbAuth(), import("firebase/auth")]);
+  if (!auth) return null;
+  const res = await signInWithPopup(auth, new GoogleAuthProvider());
   return res.user;
 }
 
 export async function signOutUser(): Promise<void> {
-  const fb = getFb();
-  if (fb) await signOut(fb.auth);
+  const [auth, { signOut }] = await Promise.all([getFbAuth(), import("firebase/auth")]);
+  if (auth) await signOut(auth);
 }
 
 export { firebaseEnabled };

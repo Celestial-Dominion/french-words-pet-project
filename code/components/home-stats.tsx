@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
-import { Flame, GraduationCap, Library, Plus } from "lucide-react";
+import { Flame, GraduationCap, Library, Plus, Volume2 } from "lucide-react";
 import { countDue, getConfig, newTodayCount, progressSummary } from "@/lib/db";
 
 // Hero trang chủ (bố cục bento giống HSK): hộp "Hôm nay" + 2 nút Ôn tập / Học từ mới,
@@ -58,6 +58,21 @@ export default function HomeStats() {
             {newRemain > 0 && <div className="mt-1 text-sm text-muted-foreground">+ {newRemain} từ mới có thể học</div>}
           </div>
         </div>
+        {/* Người mới hoàn toàn (chưa học từ nào) → dẫn qua Khóa phát âm trước. */}
+        {words === 0 && (
+          <Link
+            href="/phat-am"
+            className="flex items-center gap-3 rounded-2xl border border-primary/40 bg-primary/10 p-4 transition-colors hover:bg-primary/15"
+          >
+            <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+              <Volume2 className="size-5" />
+            </span>
+            <span className="min-w-0 text-sm">
+              <span className="block font-semibold">Chưa biết đọc tiếng Pháp? Bắt đầu Khóa phát âm →</span>
+              <span className="block text-muted-foreground">14 bài: bảng chữ cái, nguyên âm mũi, nối âm… rồi hãy học từ.</span>
+            </span>
+          </Link>
+        )}
         {/* Nút chính đổi theo trạng thái: còn thẻ đến hạn → Ôn tập nổi bật; hết → Học từ mới nổi bật. */}
         <div className="flex flex-col gap-2.5 sm:flex-row">
           <Link

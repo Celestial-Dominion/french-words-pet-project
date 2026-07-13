@@ -35,6 +35,23 @@ export function schedule(card: Card, correct: boolean, now: Date): Card {
   return next;
 }
 
+/** Lên lịch với mức chấm cụ thể (Lại/Khó/Được/Dễ). */
+export function scheduleRated(card: Card, rating: Grade, now: Date): Card {
+  const { card: next } = f.next(card, now, rating);
+  return next;
+}
+
+/**
+ * Suy mức chấm từ kết quả + TỐC ĐỘ trả lời (như HSK): sai → Lại;
+ * đúng nhanh (≤3s) → Dễ, đúng chậm (≥12s, phải nghĩ lâu) → Khó, còn lại → Được.
+ */
+export function ratingFromSpeed(correct: boolean, ms: number): Grade {
+  if (!correct) return Rating.Again as Grade;
+  if (ms <= 3000) return Rating.Easy as Grade;
+  if (ms >= 12000) return Rating.Hard as Grade;
+  return Rating.Good as Grade;
+}
+
 /** ReviewRecord (lưu DB) → Card (ts-fsrs). */
 export function recordToCard(r: ReviewRecord): Card {
   return {

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { lookupWord, loadExamples, type StoryDoc, type ExampleSentence } from "@/lib/data";
+import { lookupWord, loadExamplesForWords, type StoryDoc, type ExampleSentence } from "@/lib/data";
 import { markRead } from "@/lib/db";
 import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
@@ -31,7 +31,7 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
   const onTapWord = async (token: string) => {
     const w = await lookupWord(token);
     if (!w) return;
-    const ex = await loadExamples(w.level);
+    const ex = await loadExamplesForWords(w.level, [w.id]);
     setExamples(ex[w.id] || []);
     setSelected(w);
   };

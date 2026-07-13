@@ -6,26 +6,42 @@ import { LogIn, ShieldAlert, Copy } from "lucide-react";
 import { firebaseEnabled, OWNER_UID } from "@/lib/firebase";
 import { watchAuth, googleSignIn, signOutUser } from "@/lib/sync";
 
+const LAST_UID_KEY = "fr.lastUid";
+
 // Chặn toàn bộ app sau đăng nhập Google. Nếu đặt OWNER_UID → chỉ tài khoản đó vào được.
+// RENDER LẠC QUAN: lần trước đã đăng nhập hợp lệ (localStorage) → hiện app NGAY, kiểm tra
+// auth chạy nền; chỉ phủ màn đăng nhập khi xác định thật sự chưa đăng nhập.
 export default function AuthGate({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [optimistic, setOptimistic] = useState(false);
 
-  useEffect(
-    () =>
-      watchAuth((u) => {
-        setUser(u);
-        setReady(true);
-      }),
-    [],
-  );
+  useEffect(() => {
+    try {
+      const last = localStorage.getItem(LAST_UID_KEY);
+      if (last && (!OWNER_UID || last === OWNER_UID)) setOptimistic(true);
+    } catch {
+      /* bỏ qua */
+    }
+    return watchAuth((u) => {
+      setUser(u);
+      setReady(true);
+      try {
+        if (u && (!OWNER_UID || u.uid === OWNER_UID)) localStorage.setItem(LAST_UID_KEY, u.uid);
+        else localStorage.removeItem(LAST_UID_KEY);
+      } catch {
+        /* bỏ qua */
+      }
+    });
+  }, []);
 
   // Chưa cấu hình Firebase → chạy offline bình thường (không chặn).
   if (!firebaseEnabled) return <>{children}</>;
 
-  // Đang xác định trạng thái đăng nhập.
+  // Đang xác định trạng thái đăng nhập: lần trước OK → hiện app luôn (đỡ màn "Đang tải…").
   if (!ready) {
+    if (optimistic) return <>{children}</>;
     return <div className="grid flex-1 place-items-center py-20 text-muted-foreground">Đang tải…</div>;
   }
 

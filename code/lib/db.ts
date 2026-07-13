@@ -1,8 +1,9 @@
 // Nguồn sự thật tiến độ học: IndexedDB (offline-first) qua Dexie.
 import Dexie, { type Table } from "dexie";
+import type { Grade } from "ts-fsrs";
 import type { ReviewRecord, DailyStat, ReadRow, SrsConfig } from "./types";
 import { DEFAULT_SRS_CONFIG } from "./types";
-import { newCard, schedule, recordToCard, cardToRecordFields } from "./srs";
+import { newCard, schedule, scheduleRated, recordToCard, cardToRecordFields } from "./srs";
 
 class FrDB extends Dexie {
   reviews!: Table<ReviewRecord, string>; // key = wordId
@@ -10,6 +11,7 @@ class FrDB extends Dexie {
   reads!: Table<ReadRow, string>; // key = id
   config!: Table<{ key: string; value: SrsConfig }, string>;
   gamify!: Table<{ key: string; xp: number }, string>; // key "state"
+  notes!: Table<{ wordId: string; text: string }, string>; // mẹo nhớ tự ghi
 
   constructor() {
     super("french-words");
@@ -20,6 +22,7 @@ class FrDB extends Dexie {
       config: "key",
     });
     this.version(2).stores({ gamify: "key" });
+    this.version(3).stores({ notes: "wordId" });
   }
 }
 
@@ -34,6 +37,12 @@ export async function setConfig(patch: Partial<SrsConfig>): Promise<SrsConfig> {
   const cur = await getConfig();
   const value = { ...cur, ...patch };
   await db.config.put({ key: "srs", value });
+  // dấu thời gian đổi cài đặt trên MÁY NÀY (để sync cloud biết bên nào mới hơn)
+  try {
+    localStorage.setItem("fr.cfgUpdatedAt", new Date().toISOString());
+  } catch {
+    /* bỏ qua */
+  }
   return value;
 }
 
@@ -101,12 +110,13 @@ export async function recordAnswer(opts: {
   level: number;
   correct: boolean;
   isNew: boolean;
+  rating?: Grade; // chấm theo tốc độ (Lại/Khó/Được/Dễ); bỏ trống = suy từ correct
   now?: Date;
-}): Promise<void> {
+}): Promise<{ prev: ReviewRecord | undefined }> {
   const now = opts.now ?? new Date();
   const existing = await db.reviews.get(opts.wordId);
   const card = existing ? recordToCard(existing) : newCard(now);
-  const next = schedule(card, opts.correct, now);
+  const next = opts.rating != null ? scheduleRated(card, opts.rating, now) : schedule(card, opts.correct, now);
   const rec: ReviewRecord = {
     wordId: opts.wordId,
     level: opts.level,
@@ -124,6 +134,38 @@ export async function recordAnswer(opts: {
     if (!opts.correct) d.again += 1;
     await db.daily.put(d);
   });
+  return { prev: existing };
+}
+
+/** Hoàn tác lần chấm vừa rồi: khôi phục bản ghi FSRS cũ + trừ lại thống kê ngày. */
+export async function undoAnswer(opts: {
+  wordId: string;
+  prev: ReviewRecord | undefined;
+  correct: boolean;
+  isNew: boolean;
+  now?: Date;
+}): Promise<void> {
+  if (opts.prev) await db.reviews.put(opts.prev);
+  else await db.reviews.delete(opts.wordId);
+  const date = todayStr(opts.now ?? new Date());
+  await db.transaction("rw", db.daily, async () => {
+    const d = await db.daily.get(date);
+    if (!d) return;
+    d.reviews = Math.max(0, d.reviews - 1);
+    if (opts.isNew) d.newCount = Math.max(0, d.newCount - 1);
+    if (!opts.correct) d.again = Math.max(0, d.again - 1);
+    await db.daily.put(d);
+  });
+}
+
+// ---- Mẹo nhớ tự ghi (mnemonic) ----
+export async function getMnemonic(wordId: string): Promise<string> {
+  return (await db.notes.get(wordId))?.text ?? "";
+}
+export async function setMnemonic(wordId: string, text: string): Promise<void> {
+  const t = text.trim();
+  if (t) await db.notes.put({ wordId, text: t });
+  else await db.notes.delete(wordId);
 }
 
 // ---- Gamify (F7): XP tích luỹ + tổng hợp thống kê ----

@@ -8,15 +8,15 @@
 //  - Local đổi → mới ghi chunks lên (không ghi khi không có gì mới).
 import { doc, getDoc, collection, getDocs, writeBatch, getFirestore, type Firestore } from "firebase/firestore";
 import { getFbApp } from "./firebase";
-import { db, getXp, setXp } from "./db";
-import type { ReviewRecord, DailyStat, ReadRow } from "./types";
+import { db, getXp, setXp, getConfig } from "./db";
+import type { ReviewRecord, DailyStat, ReadRow, SrsConfig } from "./types";
 
 const CHUNK = 1500;
 const STATE_KEY = "fr.syncState"; // { remoteUpdatedAt, fp }
 
 let storeInstance: Firestore | null = null;
-function getStore(): Firestore | null {
-  const app = getFbApp();
+async function getStore(): Promise<Firestore | null> {
+  const app = await getFbApp();
   if (!app) return null;
   if (!storeInstance) storeInstance = getFirestore(app);
   return storeInstance;
@@ -76,6 +76,14 @@ interface Fp {
   tr: number; // tổng lượt ôn (daily)
   rd: number; // số bài đã đọc
   xp: number;
+  cu: string; // thời điểm đổi cài đặt trên máy này
+}
+function cfgStamp(): string {
+  try {
+    return localStorage.getItem("fr.cfgUpdatedAt") ?? "";
+  } catch {
+    return "";
+  }
 }
 function fpOf(reviews: ReviewRecord[], daily: DailyStat[], reads: ReadRow[], xp: number): Fp {
   let mlr = 0;
@@ -83,9 +91,10 @@ function fpOf(reviews: ReviewRecord[], daily: DailyStat[], reads: ReadRow[], xp:
     const t = r.last_review ? new Date(r.last_review).getTime() : 0;
     if (t > mlr) mlr = t;
   }
-  return { rc: reviews.length, mlr, tr: daily.reduce((s, d) => s + d.reviews, 0), rd: reads.length, xp };
+  return { rc: reviews.length, mlr, tr: daily.reduce((s, d) => s + d.reviews, 0), rd: reads.length, xp, cu: cfgStamp() };
 }
-const fpEq = (a: Fp, b: Fp) => a.rc === b.rc && a.mlr === b.mlr && a.tr === b.tr && a.rd === b.rd && a.xp === b.xp;
+const fpEq = (a: Fp, b: Fp) =>
+  a.rc === b.rc && a.mlr === b.mlr && a.tr === b.tr && a.rd === b.rd && a.xp === b.xp && a.cu === b.cu;
 
 function loadState(): { remoteUpdatedAt: string; fp: Fp } | null {
   try {
@@ -111,7 +120,7 @@ export interface SyncResult {
 
 /** Đồng bộ 2 chiều có điều kiện: bỏ qua khi cả 2 phía không đổi; chỉ ghi khi local đổi. */
 export async function syncNow(uid: string): Promise<SyncResult> {
-  const store = getStore();
+  const store = await getStore();
   if (!store) throw new Error("Firestore chưa cấu hình");
 
   // local + fingerprint
@@ -165,6 +174,17 @@ export async function syncNow(uid: string): Promise<SyncResult> {
       await db.reads.bulkPut(reads);
       await setXp(xp);
     });
+    // cài đặt: máy nào đổi sau thì thắng
+    const remoteCfg = remote.config as SrsConfig | undefined;
+    const remoteCfgAt = (remote.configUpdatedAt as string) ?? "";
+    if (remoteCfg && remoteCfgAt && remoteCfgAt > cfgStamp()) {
+      await db.config.put({ key: "srs", value: remoteCfg });
+      try {
+        localStorage.setItem("fr.cfgUpdatedAt", remoteCfgAt);
+      } catch {
+        /* bỏ qua */
+      }
+    }
   }
 
   // ghi remote CHỈ khi local có thay đổi thật (hoặc lần đầu chưa có remote)
@@ -173,8 +193,12 @@ export async function syncNow(uid: string): Promise<SyncResult> {
     const chunks: ReviewRecord[][] = [];
     for (let i = 0; i < reviews.length; i += CHUNK) chunks.push(reviews.slice(i, i + CHUNK));
     finalRemoteUpdatedAt = new Date().toISOString();
+    const cfg = await getConfig();
     const batch = writeBatch(store);
-    batch.set(userRef, { daily, reads, xp, reviewChunks: chunks.length, updatedAt: finalRemoteUpdatedAt });
+    batch.set(userRef, {
+      daily, reads, xp, reviewChunks: chunks.length, updatedAt: finalRemoteUpdatedAt,
+      config: cfg, configUpdatedAt: cfgStamp() || finalRemoteUpdatedAt,
+    });
     chunks.forEach((c, i) => batch.set(doc(store, "users", uid, "reviews", String(i)), { items: c.map(revToPlain) }));
     // xoá chunk thừa nếu lần này ít hơn lần trước
     const prevChunks = (remote.reviewChunks as number) ?? 0;

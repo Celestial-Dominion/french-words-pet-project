@@ -15,7 +15,18 @@ export default function TruyenPage() {
 
   const refresh = () => readIds().then(setRead);
   useEffect(() => {
-    loadStoriesIndex().then(setIndex);
+    loadStoriesIndex().then((idx) => {
+      setIndex(idx);
+      // deep-link ?open=<id> (từ gợi ý "Đọc ngay để nhớ lâu" sau phiên học)
+      const id = new URLSearchParams(window.location.search).get("open");
+      const m = id ? idx.find((s) => s.id === id) : null;
+      if (m) {
+        loadStories(m.level).then((docs) => {
+          const doc = docs.find((d) => d.id === m.id);
+          if (doc) setActive(doc);
+        });
+      }
+    });
     refresh();
   }, []);
 
