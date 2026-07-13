@@ -1,0 +1,36 @@
+{
+ "container": {
+  "sentences": [
+   {
+    "fr": "Un container entier de marchandises est resté bloqué au port.",
+    "vi": "Cả một công-ten-nơ hàng hóa đã bị kẹt lại ở cảng."
+   },
+   {
+    "fr": "On a chargé le container sur le cargo à l'aube.",
+    "vi": "Người ta đã bốc công-ten-nơ lên tàu hàng vào lúc rạng đông."
+   },
+   {
+    "fr": "Les déchets sont triés puis jetés dans un container spécial.",
+    "vi": "Rác được phân loại rồi vứt vào một thùng chứa lớn chuyên dụng."
+   }
+  ],
+  "reason": "container est masculin en français ; les accords féminins (Une container entière, la container, une container spéciale) étaient fautifs."
+ },
+ "dénommé": {
+  "sentences": [
+   {
+    "fr": "La police recherche un dénommé Martin, soupçonné de fraude.",
+    "vi": "Cảnh sát đang truy tìm một kẻ tên là Martin, bị tình nghi gian lận."
+   },
+   {
+    "fr": "C'est un certain dénommé Dubois qui l'aurait dénoncé.",
+    "vi": "Chính một gã tên là Dubois được cho là đã tố giác anh ta."
+   },
+   {
+    "fr": "Le contrat fut signé par le dénommé Lefèvre, propriétaire des lieux.",
+    "vi": "Bản hợp đồng được ký bởi kẻ tên là Lefèvre, chủ sở hữu nơi này."
+   }
+  ],
+  "reason": "« le dénommé propriétaire des lieux » était gượng ; dénommé (adj.) précède un nom propre, d'où « le dénommé Lefèvre »."
+ }
+}

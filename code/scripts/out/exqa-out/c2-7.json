@@ -1,0 +1,36 @@
+{
+ "précipice": {
+  "sentences": [
+   {
+    "fr": "Le sentier étroit longeait un précipice vertigineux.",
+    "vi": "Con đường mòn hẹp men theo một vực thẳm chóng mặt."
+   },
+   {
+    "fr": "L'économie du pays est au bord du précipice.",
+    "vi": "Nền kinh tế của đất nước đang bên bờ vực thẳm."
+   },
+   {
+    "fr": "Un faux pas, et il aurait basculé dans le précipice.",
+    "vi": "Một bước sảy chân, và anh đã có thể rơi xuống vực thẳm."
+   }
+  ],
+  "reason": "Câu 1 lặp thừa: 'précipice ... au bord de l'abîme' (précipice và abîme gần đồng nghĩa) — bỏ vế thừa."
+ },
+ "trombone": {
+  "sentences": [
+   {
+    "fr": "Il joue du trombone dans un orchestre de jazz depuis dix ans.",
+    "vi": "Anh ấy chơi kèn trombone trong một dàn nhạc jazz đã mười năm nay."
+   },
+   {
+    "fr": "Elle a attaché les feuilles ensemble avec un simple trombone.",
+    "vi": "Cô ấy kẹp các tờ giấy lại với nhau bằng một chiếc kẹp giấy đơn giản."
+   },
+   {
+    "fr": "Le son grave du trombone dominait toute la fanfare.",
+    "vi": "Âm trầm của kèn trombone át cả ban nhạc kèn đồng."
+   }
+  ],
+  "reason": "Câu 2 sai động từ: 'agrafer' (dập ghim) không dùng với 'trombone' (kẹp giấy) — sửa thành 'attacher'."
+ }
+}

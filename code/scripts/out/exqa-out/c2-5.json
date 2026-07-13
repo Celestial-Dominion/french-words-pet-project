@@ -1,0 +1,53 @@
+{
+ "pinson": {
+  "sentences": [
+   {
+    "fr": "Au petit matin, le chant d'un pinson perçait la brume du sous-bois.",
+    "vi": "Vào sáng sớm, tiếng hót của một chú chim sẻ xuyên qua màn sương của khu rừng thưa."
+   },
+   {
+    "fr": "Elle était gaie comme un pinson, malgré les épreuves que la vie lui avait réservées.",
+    "vi": "Bà vui tươi như chú chim sẻ, bất chấp những thử thách mà cuộc đời dành cho bà."
+   },
+   {
+    "fr": "Le naturaliste distinguait chaque pinson à son plumage et à la nuance de son trille.",
+    "vi": "Nhà tự nhiên học nhận ra từng con chim sẻ qua bộ lông và sắc thái tiếng líu lo của nó."
+   }
+  ],
+  "reason": "Dịch sai loài: 'sẻ ngô' (mésange/great tit) trong khi pinson là chim sẻ pinson (chaffinch); sửa vi câu 1 và 3"
+ },
+ "guetteur": {
+  "sentences": [
+   {
+    "fr": "Perché sur la tour, le guetteur scrutait l'horizon à la recherche du moindre signe de l'ennemi.",
+    "vi": "Đứng canh trên tháp, người canh gác dò xét chân trời để tìm bất kỳ dấu hiệu nào của quân địch."
+   },
+   {
+    "fr": "Les trafiquants avaient posté un guetteur à l'entrée de la cité pour signaler l'arrivée de la police.",
+    "vi": "Bọn buôn lậu bố trí một người rình ở lối vào khu chung cư để báo động khi cảnh sát tới."
+   },
+   {
+    "fr": "Un simple assoupissement du guetteur suffit à livrer la forteresse aux assaillants.",
+    "vi": "Chỉ một khoảnh khắc lơ là của người canh gác đủ để pháo đài rơi vào tay quân tấn công."
+   }
+  ],
+  "reason": "'signaler la police' thiếu/gượng; sửa thành 'signaler l'arrivée de la police'"
+ },
+ "symbiote": {
+  "sentences": [
+   {
+    "fr": "Le poisson-clown est le symbiote de l'anémone, qui l'abrite des prédateurs.",
+    "vi": "Cá hề là sinh vật cộng sinh của hải quỳ, loài vốn che chở nó khỏi kẻ săn mồi."
+   },
+   {
+    "fr": "Le lichen n'est autre qu'un symbiote issu de l'union d'un champignon et d'une algue.",
+    "vi": "Địa y chẳng qua là một sinh vật cộng sinh hình thành từ sự kết hợp giữa nấm và tảo."
+   },
+   {
+    "fr": "Dans le récit de science-fiction, un symbiote extraterrestre s'emparait de son hôte.",
+    "vi": "Trong câu chuyện khoa học viễn tưởng, một sinh vật cộng sinh ngoài hành tinh chiếm lấy vật chủ của nó."
+   }
+  ],
+  "reason": "'vivre en symbiote' sai; đúng phải là 'vivre en symbiose' — symbiote là chính sinh vật; sửa câu 1 dùng danh từ đúng"
+ }
+}

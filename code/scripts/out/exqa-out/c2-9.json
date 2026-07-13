@@ -1,0 +1,36 @@
+{
+ "more": {
+  "sentences": [
+   {
+    "fr": "Dans la pièce de Shakespeare, Othello est un More au service de Venise.",
+    "vi": "Trong vở kịch của Shakespeare, Othello là một người Mô-rơ phục vụ thành Venise."
+   },
+   {
+    "fr": "Les Mores régnèrent plusieurs siècles sur une grande partie de la péninsule ibérique.",
+    "vi": "Người Mô-rơ đã trị vì nhiều thế kỷ trên phần lớn bán đảo Iberia."
+   },
+   {
+    "fr": "Le velours de sa robe avait une teinte more, presque noire.",
+    "vi": "Nhung của chiếc váy có sắc nâu sẫm, gần như đen."
+   }
+  ],
+  "reason": "S1 danh từ chỉ người (tên dân tộc) phải viết hoa: 'un more' → 'un More', nhất quán với 'Les Mores' ở S2."
+ },
+ "repriser": {
+  "sentences": [
+   {
+    "fr": "Sa grand-mère reprisait les chaussettes trouées à la lueur de la lampe.",
+    "vi": "Bà nội vá những chiếc tất thủng dưới ánh đèn."
+   },
+   {
+    "fr": "Elle a reprisé le coude usé de son vieux pull avec de la laine assortie.",
+    "vi": "Cô đã vá lại chỗ khuỷu tay sờn của chiếc áo len cũ bằng len cùng màu."
+   },
+   {
+    "fr": "À l'époque, on reprisait le linge au lieu de le jeter.",
+    "vi": "Thời ấy, người ta mạng vá quần áo thay vì vứt đi."
+   }
+  ],
+  "reason": "S2 dùng nhầm phân từ của 'reprendre' (a repris) thay vì của 'repriser' (a reprisé)."
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "oppresser": {
+  "sentences": [
+   {
+    "fr": "Un climat de terreur oppressait la population, étouffant la moindre velléité de révolte.",
+    "vi": "Một bầu không khí khủng bố đè nặng lên dân chúng, bóp nghẹt mọi ý định phản kháng dù nhỏ nhoi nhất."
+   },
+   {
+    "fr": "Une chaleur lourde oppressait la ville, rendant chaque respiration pénible.",
+    "vi": "Cái nóng nặng nề đè nén cả thành phố, khiến mỗi hơi thở đều trở nên nhọc nhằn."
+   },
+   {
+    "fr": "Il se sentait oppressé par le poids des attentes que sa famille faisait peser sur lui.",
+    "vi": "Anh cảm thấy bị đè nén bởi gánh nặng kỳ vọng mà gia đình đặt lên vai mình."
+   }
+  ],
+  "reason": "S1: oppresser employé à tort au sens politique de « opprimer » (opprimer un peuple/des minorités) ; remplacé par un emploi correct au sens moral/atmosphérique."
+ },
+ "aligné": {
+  "sentences": [
+   {
+    "fr": "Les cyprès parfaitement alignés bordaient l'allée menant au château.",
+    "vi": "Những cây bách được xếp thẳng hàng hoàn hảo viền theo lối đi dẫn đến lâu đài."
+   },
+   {
+    "fr": "Ses positions politiques sont désormais entièrement alignées sur celles du parti.",
+    "vi": "Lập trường chính trị của ông giờ đây hoàn toàn đồng nhất với đường lối của đảng."
+   },
+   {
+    "fr": "Sur le bureau du comptable, les dossiers étaient alignés avec une rigueur maniaque.",
+    "vi": "Trên bàn viên kế toán, các hồ sơ được xếp thẳng hàng với sự ngăn nắp đến mức ám ảnh."
+   }
+  ],
+  "reason": "S2: dịch nghĩa bóng (đồng nhất lập trường) sai thành « thẳng hàng » (nghĩa đen); sửa vi."
+ },
+ "étain": {
+  "sentences": [
+   {
+    "fr": "Sur la table de la vieille auberge trônaient des chopes en étain patinées par les ans.",
+    "vi": "Trên bàn của quán trọ cổ ngự trị những vại bia bằng thiếc đã lên nước theo năm tháng."
+   },
+   {
+    "fr": "Le bronze est un alliage de cuivre et d'étain connu depuis l'Antiquité.",
+    "vi": "Đồng thiếc là hợp kim của đồng và thiếc, được biết đến từ thời cổ đại."
+   },
+   {
+    "fr": "L'artisan coulait l'étain fondu dans des moules pour façonner de délicates figurines.",
+    "vi": "Người thợ thủ công đổ thiếc nóng chảy vào khuôn để tạo hình những bức tượng nhỏ tinh xảo."
+   }
+  ],
+  "reason": "S2: « bronze » dịch sai thành « đồng thau » (brass = đồng + kẽm); bronze là « đồng thiếc »."
+ }
+}

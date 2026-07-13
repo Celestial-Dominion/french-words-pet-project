@@ -1,0 +1,36 @@
+{
+ "tirailleur": {
+  "sentences": [
+   {
+    "fr": "Le monument rend hommage aux tirailleurs tombés loin de leur terre natale.",
+    "vi": "Đài tưởng niệm tri ân những người lính bộ binh thuộc địa đã ngã xuống xa quê hương."
+   },
+   {
+    "fr": "Le vieux tirailleur racontait ses campagnes d'une voix éraillée par les années.",
+    "vi": "Người lính bộ binh già kể lại những chiến dịch của mình bằng giọng khàn khàn vì năm tháng."
+   },
+   {
+    "fr": "Les tirailleurs progressaient en ordre dispersé, se couvrant les uns les autres.",
+    "vi": "Những người lính bộ binh tiến lên theo đội hình phân tán, che chắn cho nhau."
+   }
+  ],
+  "reason": "Dịch sai nghĩa: 'tirailleur' là lính bộ binh/lính tập, không phải 'lính bắn tỉa' (sniper) như câu 2 và 3 đã dịch"
+ },
+ "terreux": {
+  "sentences": [
+   {
+    "fr": "Après une nuit blanche, il avait le teint terreux et les yeux cernés.",
+    "vi": "Sau một đêm trắng, mặt anh xám ngoét và mắt thâm quầng."
+   },
+   {
+    "fr": "Les ouvriers rentraient des champs les mains terreuses et le dos courbé.",
+    "vi": "Các công nhân trở về từ đồng ruộng với đôi bàn tay lấm đất và tấm lưng còng."
+   },
+   {
+    "fr": "Ce vin dégage un arôme terreux, presque champignonné.",
+    "vi": "Loại rượu này tỏa ra một mùi hương đất, gần như mùi nấm."
+   }
+  ],
+  "reason": "Lỗi chính tả bản dịch: 'đôt bàn tay' -> 'đôi bàn tay' (câu 2)"
+ }
+}

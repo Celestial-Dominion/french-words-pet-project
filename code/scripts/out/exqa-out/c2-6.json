@@ -1,0 +1,53 @@
+{
+ "esquisse": {
+  "sentences": [
+   {
+    "fr": "L'architecte présenta une première esquisse du futur musée.",
+    "vi": "Vị kiến trúc sư trình bày bản phác thảo đầu tiên của bảo tàng tương lai."
+   },
+   {
+    "fr": "Une esquisse de sourire passa furtivement sur ses lèvres.",
+    "vi": "Một nụ cười mới chớm thoáng lướt qua đôi môi cô."
+   },
+   {
+    "fr": "Dans ses carnets, on trouve des esquisses au fusain d'une grande finesse.",
+    "vi": "Trong những cuốn sổ của ông, ta tìm thấy các bản phác thảo bằng than chì hết sức tinh tế."
+   }
+  ],
+  "reason": "'un sourire en esquisse' không tự nhiên; đúng cách nói là 'une esquisse de sourire'"
+ },
+ "physionomie": {
+  "sentences": [
+   {
+    "fr": "Sa physionomie ouverte inspirait aussitôt confiance.",
+    "vi": "Nét mặt cởi mở của ông ngay lập tức tạo được lòng tin."
+   },
+   {
+    "fr": "La physionomie du quartier a bien changé depuis les travaux.",
+    "vi": "Diện mạo của khu phố đã thay đổi hẳn kể từ khi có công trình."
+   },
+   {
+    "fr": "Un fin observateur devine bien des choses à la physionomie de quelqu'un.",
+    "vi": "Một người quan sát tinh tường có thể đoán được nhiều điều qua nét mặt của một người."
+   }
+  ],
+  "reason": "'la physionomie d'un visage' bị lặp nghĩa (physionomie đã có nghĩa nét mặt) → 'à la physionomie de quelqu'un'"
+ },
+ "géométrique": {
+  "sentences": [
+   {
+    "fr": "Le carrelage dessinait des motifs géométriques d'une grande précision.",
+    "vi": "Lớp gạch lát tạo nên những họa tiết hình học vô cùng chính xác."
+   },
+   {
+    "fr": "Ce peintre privilégiait les formes géométriques et les couleurs franches.",
+    "vi": "Họa sĩ này ưa chuộng những hình khối hình học và màu sắc rõ ràng."
+   },
+   {
+    "fr": "La population croissait selon une progression presque géométrique.",
+    "vi": "Dân số tăng gần như theo cấp số nhân."
+   }
+  ],
+  "reason": "dịch sai: 'progression géométrique' là 'cấp số nhân', không phải 'cấp số hình học'"
+ }
+}

@@ -1,0 +1,70 @@
+{
+  "souhaitable": {
+    "sentences": [
+      {
+        "fr": "Il serait souhaitable que chacun prenne conscience de l'urgence climatique.",
+        "vi": "Sẽ đáng mong muốn nếu mỗi người ý thức được tính cấp bách của khủng hoảng khí hậu."
+      },
+      {
+        "fr": "Une transition aussi douce que possible reste hautement souhaitable.",
+        "vi": "Một sự chuyển tiếp càng êm dịu càng tốt vẫn rất đáng mong muốn."
+      },
+      {
+        "fr": "À l'unanimité, le comité a jugé souhaitable de reporter la décision.",
+        "vi": "Hội đồng đã nhất trí cho rằng nên hoãn quyết định lại."
+      }
+    ],
+    "reason": "Câu 3: 'à l'unanimité' đặt cuối câu dính vào 'reporter la décision' gây mơ hồ; đưa lên đầu cho rõ nghĩa."
+  },
+  "intello": {
+    "sentences": [
+      {
+        "fr": "Au lycée, on le traitait d'intello parce qu'il lisait pendant les récréations.",
+        "vi": "Hồi cấp ba, người ta gọi cậu là mọt sách vì cậu đọc sách trong giờ ra chơi."
+      },
+      {
+        "fr": "Ce café est le repaire des intellos du quartier.",
+        "vi": "Quán cà phê này là nơi tụ tập của đám trí thức trong khu phố."
+      },
+      {
+        "fr": "Sans être pédante, elle assume pleinement son côté intello.",
+        "vi": "Không hề tỏ ra hợm hĩnh, cô hoàn toàn chấp nhận vẻ trí thức của mình."
+      }
+    ],
+    "reason": "Câu 3: lỗi tiếng Việt lặp chữ 'tỏ ra ra vẻ'."
+  },
+  "crachat": {
+    "sentences": [
+      {
+        "fr": "Un crachat souillait le trottoir devant l'entrée de l'immeuble.",
+        "vi": "Một bãi nước bọt làm bẩn vỉa hè trước lối vào tòa nhà."
+      },
+      {
+        "fr": "Le laboratoire a analysé un échantillon de crachat pour détecter l'infection.",
+        "vi": "Phòng thí nghiệm đã phân tích một mẫu đờm để phát hiện nhiễm trùng."
+      },
+      {
+        "fr": "D'un geste méprisant, il lança un crachat aux pieds de son adversaire.",
+        "vi": "Bằng một cử chỉ khinh miệt, hắn nhổ một bãi nước bọt xuống chân đối thủ."
+      }
+    ],
+    "reason": "Câu 3 cũ 'cracher... passe pour un crachat de mépris' lặp ý, gượng ép, không tự nhiên."
+  },
+  "composant": {
+    "sentences": [
+      {
+        "fr": "Un seul composant défectueux peut paralyser toute la carte électronique.",
+        "vi": "Chỉ một linh kiện hỏng cũng có thể làm tê liệt cả bảng mạch điện tử."
+      },
+      {
+        "fr": "La pénurie de composants a fortement ralenti la production automobile.",
+        "vi": "Sự khan hiếm linh kiện đã làm chậm đáng kể sản xuất ô tô."
+      },
+      {
+        "fr": "Chaque composant électronique doit résister à d'importantes variations de température.",
+        "vi": "Mỗi linh kiện điện tử phải chịu được những biến thiên nhiệt độ lớn."
+      }
+    ],
+    "reason": "Câu 3 cũ 'deux éléments composants' vừa lặp (composée/composants) vừa không tự nhiên."
+  }
+}

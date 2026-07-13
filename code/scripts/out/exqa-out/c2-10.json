@@ -1,0 +1,53 @@
+{
+  "fossette": {
+    "sentences": [
+      {
+        "fr": "Quand elle sourit, une adorable fossette se creuse sur sa joue.",
+        "vi": "Khi cô ấy mỉm cười, một lúm đồng tiền đáng yêu hiện lên trên má."
+      },
+      {
+        "fr": "Le bébé a d'adorables fossettes sur le dos des mains.",
+        "vi": "Em bé có những lúm đồng tiền duyên dáng ở mu bàn tay."
+      },
+      {
+        "fr": "C'est cette légère fossette au menton qui donne tant de caractère à son visage.",
+        "vi": "Chính cái lúm đồng tiền nhỏ nơi cằm khiến gương mặt anh ấy có nét riêng đến vậy."
+      }
+    ],
+    "reason": "Câu 2: 'au creux des mains' (lòng bàn tay) sai/lệch với bản dịch 'mu bàn tay' và không phải nơi có lúm đồng tiền; sửa thành 'sur le dos des mains'."
+  },
+  "complaire": {
+    "sentences": [
+      {
+        "fr": "Il cherche sans cesse à complaire à ses supérieurs.",
+        "vi": "Anh ta không ngừng tìm cách làm vui lòng cấp trên."
+      },
+      {
+        "fr": "Elle se complaît dans une nostalgie un peu stérile.",
+        "vi": "Cô ấy tự đắm mình trong một nỗi hoài niệm có phần vô ích."
+      },
+      {
+        "fr": "Loin de chercher à complaire à tous, cet écrivain suit sa propre voie.",
+        "vi": "Không hề tìm cách làm vừa lòng tất cả, nhà văn này đi con đường riêng của mình."
+      }
+    ],
+    "reason": "Câu 3: 'complaire à la mode' gượng — 'complaire à' dùng với người, không với vật; sửa thành 'complaire à tous'."
+  },
+  "vingt-sept": {
+    "sentences": [
+      {
+        "fr": "Elle a soufflé ses vingt-sept bougies entourée de ses amis.",
+        "vi": "Cô ấy thổi hai mươi bảy ngọn nến trong vòng vây của bạn bè."
+      },
+      {
+        "fr": "L'Union européenne compte aujourd'hui vingt-sept États membres.",
+        "vi": "Liên minh châu Âu ngày nay có hai mươi bảy quốc gia thành viên."
+      },
+      {
+        "fr": "Il ne reste plus que vingt-sept places pour le concert de ce soir.",
+        "vi": "Chỉ còn đúng hai mươi bảy chỗ cho buổi hòa nhạc tối nay."
+      }
+    ],
+    "reason": "Câu 3 cũ ('Le train de vingt-sept minutes après l'heure') gượng, không tự nhiên; thay bằng câu đời thường."
+  }
+}

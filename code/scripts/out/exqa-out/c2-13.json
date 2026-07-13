@@ -1,0 +1,36 @@
+{
+  "futaie": {
+    "sentences": [
+      {
+        "fr": "La lumière filtrait à peine à travers la haute futaie de hêtres.",
+        "vi": "Ánh sáng chật vật lọt qua khu rừng dẻ gai cao vút."
+      },
+      {
+        "fr": "On avance en silence sous la futaie centenaire.",
+        "vi": "Người ta lặng lẽ tiến bước dưới cánh rừng cây cổ thụ trăm năm."
+      },
+      {
+        "fr": "Cette futaie de chênes est exploitée pour son bois de qualité.",
+        "vi": "Khu rừng sồi thân lớn này được khai thác vì loại gỗ chất lượng cao."
+      }
+    ],
+    "reason": "Dịch sai: hêtres là cây dẻ gai (beech), không phải sồi (chêne); sửa vi câu 1."
+  },
+  "grandement": {
+    "sentences": [
+      {
+        "fr": "Votre soutien nous a grandement aidés à surmonter cette épreuve.",
+        "vi": "Sự ủng hộ của quý vị đã giúp chúng tôi rất nhiều để vượt qua thử thách này."
+      },
+      {
+        "fr": "Il y a grandement de quoi être fier d'un tel résultat.",
+        "vi": "Có quá đủ lý do để tự hào về một kết quả như vậy."
+      },
+      {
+        "fr": "Ce nouvel outil facilite grandement notre travail au quotidien.",
+        "vi": "Công cụ mới này giúp ích rất nhiều cho công việc hằng ngày của chúng tôi."
+      }
+    ],
+    "reason": "Câu 3 'grandement conçue pour...' gượng, không tự nhiên; thay bằng câu dùng grandement đúng nghĩa (facilite grandement)."
+  }
+}
