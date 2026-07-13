@@ -1,6 +1,6 @@
-// Service worker: network-first cho HTML (tránh giữ trang cũ), cache-first cho asset tĩnh
-// (data JSON, audio, _next). Bump CACHE khi đổi chiến lược để xoá cache cũ.
-const CACHE = "fr-words-v2";
+// Service worker: network-first cho HTML VÀ mã /_next/ (code luôn khớp HTML mới sau deploy),
+// cache-first cho asset nội dung ổn định (data JSON, audio). Bump CACHE để xoá cache cũ.
+const CACHE = "fr-words-v3";
 
 self.addEventListener("install", (event) => {
   // Kích hoạt ngay bản mới, không chờ tab cũ đóng.
@@ -27,8 +27,9 @@ self.addEventListener("fetch", (event) => {
   const sameOrigin = new URL(request.url).origin === self.location.origin;
   if (!sameOrigin) return;
 
-  if (isNavigation(request)) {
-    // Network-first: mạng lỗi/offline → rơi về cache.
+  const url = new URL(request.url);
+  // HTML điều hướng + mã build /_next/ → network-first (code luôn khớp HTML mới nhất).
+  if (isNavigation(request) || url.pathname.startsWith("/_next/")) {
     event.respondWith(
       fetch(request)
         .then((res) => {
@@ -36,12 +37,14 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE).then((c) => c.put(request, clone));
           return res;
         })
-        .catch(() => caches.match(request).then((c) => c || caches.match("/"))),
+        .catch(() =>
+          caches.match(request).then((c) => c || (isNavigation(request) ? caches.match("/") : undefined)),
+        ),
     );
     return;
   }
 
-  // Asset tĩnh (data/audio/_next…): cache-first, nạp nền khi thiếu.
+  // Asset nội dung ổn định (data JSON, audio): cache-first, nạp nền khi thiếu.
   event.respondWith(
     caches.match(request).then(
       (cached) =>
