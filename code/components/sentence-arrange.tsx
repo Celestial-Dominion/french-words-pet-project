@@ -123,7 +123,7 @@ export default function SentenceArrange({
                 key={item.id}
                 disabled={checked !== null}
                 onClick={() => unplace(item)}
-                className={cn("rounded-xl border px-3 py-2 text-lg font-medium transition-all", placedCls)}
+                className={cn("rounded-xl border px-3.5 py-2.5 text-xl font-medium transition-all", placedCls)}
               >
                 {item.t}
               </button>
@@ -142,7 +142,7 @@ export default function SentenceArrange({
                 {checked ? "✓ Chính xác!" : "✗ Chưa đúng"}
               </div>
               <div className="flex items-center justify-center gap-2">
-                <div className="text-xl font-medium leading-relaxed">{fr}</div>
+                <div className="text-2xl font-medium leading-relaxed">{fr}</div>
                 <button onClick={() => play(sentenceAudioUrl(fr))} aria-label="Nghe câu" className="text-primary">
                   <Volume2 className="h-4 w-4" />
                 </button>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { X, Volume2, Check } from "lucide-react";
 import { recordAnswer, recordPractice, addXp } from "@/lib/db";
 import { XP } from "@/lib/gamify";
@@ -29,9 +29,13 @@ export default function ReviewRunner({
   const [chosen, setChosen] = useState<number | null>(null);
   const [right, setRight] = useState(0);
   const [done, setDone] = useState(false);
+  const [confirmExit, setConfirmExit] = useState(false);
 
   const q = questions[i];
   const total = questions.length;
+
+  // Thoát giữa phiên → hỏi xác nhận (giống HSK); đã xong phiên thì thoát thẳng.
+  const requestExit = useCallback(() => setConfirmExit(true), []);
 
   const next = () => {
     setChosen(null);
@@ -84,7 +88,8 @@ export default function ReviewRunner({
   };
 
   return (
-    <SessionShell title={title} onExit={onExit} progress={i / total}>
+    <>
+    <SessionShell title={title} onExit={requestExit} progress={i / total}>
       {q.kind === "arrange" ? (
         <SentenceArrange
           key={i}
@@ -117,7 +122,7 @@ export default function ReviewRunner({
                       <Volume2 className="h-5 w-5" />
                     </button>
                   </div>
-                  <div className="font-mono text-muted-foreground">{q.word.ipa}</div>
+                  <div className="font-mono text-base text-muted-foreground">{q.word.ipa}</div>
                   <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Chọn nghĩa đúng</div>
                 </>
               ) : (
@@ -140,7 +145,7 @@ export default function ReviewRunner({
                     onClick={() => answerChoice(idx)}
                     disabled={show}
                     className={cn(
-                      "flex min-h-[3.5rem] items-center justify-between rounded-2xl border px-4 py-3 text-left text-base transition-all",
+                      "flex min-h-[3.5rem] items-center justify-between rounded-2xl border px-4 py-3.5 text-left text-base transition-all",
                       !show && "bg-card hover:bg-muted active:scale-[0.99]",
                       show && isAnswer && "border-emerald-500 bg-emerald-500/15 text-emerald-700 dark:text-emerald-300",
                       show && isChosen && !isAnswer && "border-rose-500 bg-rose-500/15 text-rose-700 dark:text-rose-300",
@@ -169,6 +174,35 @@ export default function ReviewRunner({
         </div>
       )}
     </SessionShell>
+
+    {/* Xác nhận rời phiên (chặn thoát nhầm) — giống HSK */}
+    {confirmExit && (
+      <div role="dialog" aria-modal="true" className="fixed inset-0 z-[80] flex items-center justify-center p-4 duration-150 animate-in fade-in">
+        <button type="button" aria-label="Ở lại" onClick={() => setConfirmExit(false)} className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+        <div className="relative w-full max-w-sm rounded-3xl border bg-background p-6 shadow-2xl duration-200 animate-in zoom-in-95">
+          <h2 className="text-xl font-bold">Thoát phiên?</h2>
+          <p className="mt-2 text-base text-muted-foreground">
+            Bạn đang trong phiên học/ôn. Thoát bây giờ sẽ kết thúc phiên này. (Các câu đã trả lời vẫn được lưu.)
+          </p>
+          <div className="mt-5 flex flex-col-reverse gap-2 sm:flex-row">
+            <button
+              onClick={onExit}
+              className="w-full rounded-2xl border py-3 text-base font-semibold text-muted-foreground transition-colors hover:bg-muted active:scale-[0.99] sm:flex-1"
+            >
+              Thoát
+            </button>
+            <button
+              onClick={() => setConfirmExit(false)}
+              autoFocus
+              className="w-full rounded-2xl bg-primary py-3 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99] sm:flex-1"
+            >
+              Tiếp tục học
+            </button>
+          </div>
+        </div>
+      </div>
+    )}
+    </>
   );
 }
 

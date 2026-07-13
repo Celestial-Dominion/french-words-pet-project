@@ -34,7 +34,7 @@ export default function SentenceBlock({
         >
           <Volume2 className="h-4 w-4" />
         </button>
-        <p className="text-lg leading-relaxed">
+        <p className="text-xl leading-loose">
           {splitTokens(fr).map((tok, j) =>
             isWord(tok) ? (
               <button key={j} onClick={() => onTapWord(tok)} className="rounded hover:bg-primary/10 active:bg-primary/20">
@@ -46,7 +46,7 @@ export default function SentenceBlock({
           )}
         </p>
       </div>
-      {showVi && <div className="mt-2 pl-10 text-sm text-muted-foreground">{vi}</div>}
+      {showVi && <div className="mt-2 pl-10 text-base text-muted-foreground">{vi}</div>}
     </div>
   );
 }

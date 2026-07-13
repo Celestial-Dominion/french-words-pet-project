@@ -37,7 +37,7 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
           <ChevronLeft className="h-5 w-5" />
         </button>
         <div className="min-w-0 flex-1">
-          <h1 className="truncate text-lg font-bold">{doc.title_fr}</h1>
+          <h1 className="truncate text-2xl font-bold sm:text-3xl">{doc.title_fr}</h1>
           <div className="truncate text-xs text-muted-foreground">{doc.title_vi}</div>
         </div>
         <button onClick={() => setShowVi((v) => !v)} className="flex items-center gap-1 rounded-lg bg-muted px-2 py-1 text-xs">
