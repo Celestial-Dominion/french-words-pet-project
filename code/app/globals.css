@@ -43,19 +43,19 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  /* Xanh Pháp làm màu chủ đạo (hue ~255). */
-  --primary: oklch(0.55 0.2 255);
+  /* Đỏ rượu vang Bordeaux làm màu chủ đạo (hue ~18) — nhận diện riêng, khác app HSK (xanh). */
+  --primary: oklch(0.5 0.19 18);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0.005 255);
-  --secondary-foreground: oklch(0.3 0.05 255);
-  --muted: oklch(0.968 0.004 255);
-  --muted-foreground: oklch(0.55 0.02 255);
-  --accent: oklch(0.95 0.02 255);
-  --accent-foreground: oklch(0.3 0.08 255);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.918 0.006 255);
-  --input: oklch(0.918 0.006 255);
-  --ring: oklch(0.55 0.2 255);
+  --secondary: oklch(0.97 0.006 18);
+  --secondary-foreground: oklch(0.32 0.06 18);
+  --muted: oklch(0.968 0.005 18);
+  --muted-foreground: oklch(0.55 0.02 18);
+  --accent: oklch(0.95 0.02 18);
+  --accent-foreground: oklch(0.32 0.08 18);
+  --destructive: oklch(0.6 0.22 40);
+  --border: oklch(0.92 0.008 18);
+  --input: oklch(0.92 0.008 18);
+  --ring: oklch(0.5 0.19 18);
   --radius: 0.7rem;
 }
 
@@ -66,18 +66,18 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.65 0.19 255);
+  --primary: oklch(0.62 0.17 18);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.27 0.02 255);
+  --secondary: oklch(0.27 0.02 18);
   --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.27 0.015 255);
-  --muted-foreground: oklch(0.72 0.02 255);
-  --accent: oklch(0.3 0.03 255);
+  --muted: oklch(0.27 0.015 18);
+  --muted-foreground: oklch(0.72 0.02 18);
+  --accent: oklch(0.3 0.03 18);
   --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
+  --destructive: oklch(0.72 0.19 42);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 16%);
-  --ring: oklch(0.65 0.19 255);
+  --ring: oklch(0.62 0.17 18);
 }
 
 @layer base {
