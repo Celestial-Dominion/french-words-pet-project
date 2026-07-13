@@ -1,16 +1,33 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { X, Volume2 } from "lucide-react";
+import { X, Volume2, Plus, Check } from "lucide-react";
 import { loadConjugation, type ExampleSentence } from "@/lib/data";
 import { posLabel } from "@/lib/pos";
 import { wordAudioUrl, sentenceAudioUrl } from "@/lib/tts";
 import { cn } from "@/lib/utils";
-import type { Word, Conjugation } from "@/lib/types";
+import { getReview, recordAnswer, addXp } from "@/lib/db";
+import { XP } from "@/lib/gamify";
+import type { Word, Conjugation, ReviewRecord } from "@/lib/types";
 
 function play(url: string) {
   new Audio(url).play().catch(() => {});
 }
+
+type Status = "new" | "learning" | "due" | "known";
+function statusOf(rec: ReviewRecord | null | undefined): Status | null {
+  if (rec === undefined) return null; // đang tải
+  if (!rec) return "new";
+  if (new Date(rec.due).getTime() <= Date.now()) return "due";
+  if ((rec.stability ?? 0) >= 21) return "known";
+  return "learning";
+}
+const STATUS_META: Record<Status, { label: string; cls: string }> = {
+  new: { label: "Chưa học", cls: "bg-muted text-muted-foreground" },
+  learning: { label: "Đang học", cls: "bg-sky-500/15 text-sky-700 dark:text-sky-300" },
+  due: { label: "Đến hạn ôn", cls: "bg-amber-500/15 text-amber-700 dark:text-amber-300" },
+  known: { label: "Đã thuộc", cls: "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300" },
+};
 
 const PRONOUNS = ["je", "tu", "il/elle", "nous", "vous", "ils/elles"];
 const TENSE_LABEL: Record<string, string> = {
@@ -30,15 +47,35 @@ export default function WordDetail({
   word,
   examples,
   onClose,
+  onChange,
 }: {
   word: Word;
   examples: ExampleSentence[];
   onClose: () => void;
+  onChange?: () => void;
 }) {
   const isVerb = word.pos.includes("v") || word.pos.includes("vaux");
   const isNoun = word.pos.includes("n") && !!word.gender;
   const [tab, setTab] = useState<"info" | "conj">("info");
   const [conj, setConj] = useState<Conjugation | null>(null);
+  const [rec, setRec] = useState<ReviewRecord | null | undefined>(undefined);
+  const [busy, setBusy] = useState(false);
+
+  useEffect(() => {
+    getReview(word.id).then((r) => setRec(r ?? null));
+  }, [word.id]);
+
+  const status = statusOf(rec);
+  const learn = async () => {
+    if (busy || rec) return;
+    setBusy(true);
+    await recordAnswer({ wordId: word.id, level: word.level, correct: true, isNew: true });
+    await addXp(XP.newWord);
+    const r = await getReview(word.id);
+    setRec(r ?? null);
+    setBusy(false);
+    onChange?.();
+  };
 
   // khoá cuộn nền khi mở modal
   useEffect(() => {
@@ -88,11 +125,33 @@ export default function WordDetail({
           </div>
 
           {/* nghĩa */}
-          <div className="mt-3 text-lg">{word.meaning_vi}</div>
+          <div className="mt-3 text-lg font-medium">{word.meaning_vi}</div>
           <div className="mt-1 text-sm text-muted-foreground">
             {word.pos.map(posLabel).join(", ")}
             {word.meaning_en.length ? ` · ${word.meaning_en.join(", ")}` : ""}
           </div>
+
+          {/* trạng thái học + nút thêm vào ôn tập */}
+          {status && (
+            <div className="mt-4 flex flex-wrap items-center gap-2">
+              <span className={cn("rounded-full px-3 py-1 text-sm font-semibold", STATUS_META[status].cls)}>
+                {STATUS_META[status].label}
+              </span>
+              {status === "new" ? (
+                <button
+                  onClick={learn}
+                  disabled={busy}
+                  className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-1.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98] disabled:opacity-50"
+                >
+                  <Plus className="size-4" /> Học từ này
+                </button>
+              ) : (
+                <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+                  <Check className="size-4 text-emerald-600 dark:text-emerald-400" /> Đã trong danh sách ôn
+                </span>
+              )}
+            </div>
+          )}
 
           {/* khối giống / số nhiều cho danh từ */}
           {isNoun && (
@@ -147,23 +206,24 @@ function TabBtn({ active, onClick, children }: { active: boolean; onClick: () =>
 function ExampleList({ examples }: { examples: ExampleSentence[] }) {
   if (!examples.length) return <p className="mt-4 text-sm text-muted-foreground">Chưa có câu ví dụ.</p>;
   return (
-    <ul className="mt-4 space-y-3">
+    <div className="mt-4 space-y-2.5">
+      <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Ví dụ ({examples.length})</div>
       {examples.map((s, i) => (
-        <li key={i} className="flex items-start gap-2.5">
-          <button
-            onClick={() => play(sentenceAudioUrl(s.fr))}
-            aria-label="Nghe câu"
-            className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full bg-primary/10 text-primary active:scale-95"
-          >
-            <Volume2 className="size-4" />
-          </button>
-          <div className="min-w-0">
-            <div className="text-base">{s.fr}</div>
-            <div className="text-sm text-muted-foreground">{s.vi}</div>
+        <div key={i} className="rounded-2xl bg-muted/50 p-3">
+          <div className="flex items-start justify-between gap-2">
+            <div className="text-base font-medium">{s.fr}</div>
+            <button
+              onClick={() => play(sentenceAudioUrl(s.fr))}
+              aria-label="Nghe câu"
+              className="grid size-8 shrink-0 place-items-center rounded-full bg-primary/10 text-primary active:scale-95"
+            >
+              <Volume2 className="size-4" />
+            </button>
           </div>
-        </li>
+          <div className="mt-0.5 text-sm text-muted-foreground">{s.vi}</div>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 }
 
