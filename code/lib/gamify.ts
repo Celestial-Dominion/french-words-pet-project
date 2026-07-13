@@ -59,6 +59,7 @@ export interface Stats {
   streak: number; // chuỗi ngày liên tiếp
   reads: number; // số bài đọc/truyện đã đọc
   reviews: number; // tổng lượt ôn (mọi ngày)
+  correct: number; // tổng lượt trả lời đúng
   activeDays: number; // tổng số ngày có học
   matured: number; // số từ nhớ bền (FSRS stability ≥ 21 ngày)
   maxDayReviews: number; // lượt ôn cao nhất trong 1 ngày
@@ -74,7 +75,7 @@ export interface BadgeGroup {
   desc: string; // mô tả ngắn
   lore: string; // lời dẫn
   icon: string; // emoji đại diện
-  metric: keyof Pick<Stats, "words" | "streak" | "xp" | "reviews" | "reads" | "activeDays" | "matured">;
+  metric: keyof Pick<Stats, "words" | "streak" | "xp" | "reviews" | "correct" | "reads" | "activeDays" | "matured" | "maxDayReviews">;
   unit: string;
   tiers: number[];
 }
@@ -83,27 +84,37 @@ export const BADGE_GROUPS: BadgeGroup[] = [
   {
     group: "words", name: "Chiêu binh", desc: "Số từ đã học", icon: "🎖️",
     lore: "Mỗi từ thuộc lòng là một tân binh gia nhập đội ngũ. Quân số càng đông, sức mạnh Pháp ngữ càng lớn.",
-    metric: "words", unit: "từ", tiers: [10, 50, 100, 250, 500, 1000, 2000, 3500, 5000, 7500, 11000],
+    metric: "words", unit: "từ", tiers: [10, 25, 50, 100, 250, 500, 1000, 2000, 3500, 5000, 7500, 9000, 11000],
   },
   {
     group: "streak", name: "Trực chiến", desc: "Chuỗi ngày liên tiếp", icon: "🔥",
     lore: "Người lính giỏi không rời vị trí. Mỗi ngày học liên tục giữ cho ngọn lửa kỷ luật cháy mãi — nghỉ một ngày là chuỗi đứt.",
-    metric: "streak", unit: "ngày", tiers: [3, 7, 14, 30, 60, 100, 180, 365],
+    metric: "streak", unit: "ngày", tiers: [3, 7, 14, 30, 60, 100, 150, 180, 270, 365, 500, 730],
   },
   {
     group: "xp", name: "Quân công", desc: "Tổng điểm XP", icon: "✨",
     lore: "Chiến công tích lũy từ mỗi câu trả lời đúng. XP càng cao, quân hàm càng gần.",
-    metric: "xp", unit: "XP", tiers: [100, 500, 1000, 5000, 10000, 25000, 50000, 100000],
+    metric: "xp", unit: "XP", tiers: [100, 500, 1000, 2500, 5000, 10000, 25000, 50000, 100000, 200000],
   },
   {
     group: "reviews", name: "Thao luyện", desc: "Tổng lượt ôn", icon: "⚔️",
     lore: "Thao trường đổ mồ hôi, chiến trường bớt đổ máu. Mỗi lượt ôn là một buổi rèn quân.",
-    metric: "reviews", unit: "lượt", tiers: [100, 500, 1000, 5000, 10000, 25000, 50000],
+    metric: "reviews", unit: "lượt", tiers: [100, 500, 1000, 2500, 5000, 10000, 25000, 50000, 100000],
+  },
+  {
+    group: "correct", name: "Thiện xạ", desc: "Số lượt trả lời đúng", icon: "🎯",
+    lore: "Bắn trúng mục tiêu — mỗi câu đúng là một phát ăn điểm. Tay nghề càng cao, tỉ lệ trúng càng dày.",
+    metric: "correct", unit: "câu", tiers: [50, 200, 500, 1000, 2500, 5000, 10000, 25000, 50000],
   },
   {
     group: "matured", name: "Cựu binh", desc: "Từ nhớ bền (dài hạn)", icon: "🏅",
     lore: "Từ đã in sâu vào trí nhớ dài hạn (ổn định ≥ 3 tuần) — không phải nhớ tạm rồi quên. Đây mới là vốn từ THẬT.",
-    metric: "matured", unit: "từ", tiers: [25, 100, 300, 800, 2000, 5000],
+    metric: "matured", unit: "từ", tiers: [25, 100, 300, 800, 2000, 4000, 7000, 11000],
+  },
+  {
+    group: "maxday", name: "Tổng lực", desc: "Lượt ôn nhiều nhất trong 1 ngày", icon: "⚡",
+    lore: "Có những ngày xông trận không ngơi tay. Kỷ lục số lượt ôn trong một ngày cho thấy khí thế tổng lực.",
+    metric: "maxDayReviews", unit: "lượt/ngày", tiers: [25, 50, 100, 150, 200, 300, 500],
   },
   {
     group: "reads", name: "Quân báo", desc: "Bài đọc & truyện hoàn thành", icon: "📖",
@@ -113,7 +124,7 @@ export const BADGE_GROUPS: BadgeGroup[] = [
   {
     group: "days", name: "Nhật ký hành quân", desc: "Tổng số ngày học", icon: "🗓️",
     lore: "Đếm số ngày bạn ra thao trường. Đường dài mới biết ngựa hay — góp ngày thành chiến dịch.",
-    metric: "activeDays", unit: "ngày", tiers: [3, 10, 30, 60, 100, 200, 365],
+    metric: "activeDays", unit: "ngày", tiers: [3, 10, 30, 60, 100, 200, 300, 365, 500, 730],
   },
 ];
 
@@ -137,8 +148,17 @@ export interface SpecialBadge {
 }
 export const SPECIAL_BADGES: SpecialBadge[] = [
   { id: "sp-first", name: "Khai hỏa", icon: "🚩", hint: "Học từ đầu tiên", test: (s) => s.words >= 1 },
+  { id: "sp-week", name: "Tuần lễ vàng", icon: "🗓️", hint: "Chuỗi 7 ngày liên tiếp", test: (s) => s.streak >= 7 },
   { id: "sp-weekend", name: "Cuối tuần chăm", icon: "📅", hint: "Học vào T7/CN", test: (s) => s.weekend },
+  { id: "sp-100words", name: "Đại đội", icon: "💯", hint: "Học được 100 từ", test: (s) => s.words >= 100 },
+  { id: "sp-multi", name: "Đa binh chủng", icon: "🎏", hint: "Có từ đã học ở cả 6 cấp", test: (s) => [1, 2, 3, 4, 5, 6].every((l) => (s.byLevel[l] ?? 0) > 0) },
+  { id: "sp-half", name: "Nửa chặng đường", icon: "⛰️", hint: "Học được 5.500 từ", test: (s) => s.words >= 5500 },
+  { id: "sp-elite", name: "Tinh nhuệ", icon: "🎗️", hint: "1.000 từ nhớ bền", test: (s) => s.matured >= 1000 },
   { id: "sp-century", name: "Bách chiến", icon: "🛡️", hint: "≥100 lượt ôn trong 1 ngày", test: (s) => s.maxDayReviews >= 100 },
+  { id: "sp-blitz", name: "Cuồng phong", icon: "🌪️", hint: "≥250 lượt ôn trong 1 ngày", test: (s) => s.maxDayReviews >= 250 },
+  { id: "sp-persist", name: "Trường kỳ", icon: "🏔️", hint: "Học đủ 100 ngày (tổng)", test: (s) => s.activeDays >= 100 },
+  { id: "sp-sharp", name: "Thần xạ", icon: "🎯", hint: "5.000 câu trả lời đúng", test: (s) => s.correct >= 5000 },
+  { id: "sp-allcamp", name: "Toàn thắng", icon: "🏆", hint: "Hoàn thành cả 6 chiến dịch CEFR", test: (s) => CAMPAIGN_BADGES.every((c) => (s.byLevel[c.level] ?? 0) >= c.need) },
   { id: "sp-marechal", name: "Thống chế", icon: "👑", hint: "Học trọn toàn bộ 11.000 từ", test: (s) => s.words >= 11000 },
 ];
 

@@ -1,4 +1,4 @@
-import { GraduationCap, Repeat, BookOpenText, TrendingUp, Medal, type LucideIcon } from "lucide-react";
+import { GraduationCap, Repeat, BookOpenText, TrendingUp, type LucideIcon } from "lucide-react";
 
 export interface NavTab {
   href: string;
@@ -13,5 +13,4 @@ export const NAV_TABS: NavTab[] = [
   { href: "/on-tap", label: "Ôn tập", icon: Repeat, match: ["/on-tap"] },
   { href: "/bai-doc", label: "Đọc", icon: BookOpenText, match: ["/bai-doc", "/truyen"] },
   { href: "/tien-do", label: "Tiến độ", icon: TrendingUp, match: ["/tien-do"] },
-  { href: "/tu-luyen", label: "Binh nghiệp", icon: Medal, match: ["/tu-luyen"] },
 ];

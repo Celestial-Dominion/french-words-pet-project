@@ -159,6 +159,7 @@ export interface ProgressSummary {
   words: number; // tổng từ đã học
   byLevel: Record<number, number>; // số từ đã học theo cấp
   reviews: number; // tổng lượt ôn mọi ngày
+  correct: number; // tổng lượt trả lời đúng (reviews - again)
   reads: number; // số bài đã đọc
   xp: number;
   streak: number;
@@ -180,6 +181,7 @@ export async function progressSummary(): Promise<ProgressSummary> {
   for (const r of reviews) byLevel[r.level] = (byLevel[r.level] || 0) + 1;
   const daily = dailyRows.sort((a, b) => a.date.localeCompare(b.date));
   const reviewsTotal = daily.reduce((s, d) => s + d.reviews, 0);
+  const correctTotal = daily.reduce((s, d) => s + Math.max(0, d.reviews - d.again), 0);
   const activeDays = daily.filter((d) => d.reviews > 0).length;
   const matured = reviews.filter((r) => (r.stability ?? 0) >= 21).length;
   const maxDayReviews = daily.reduce((m, d) => Math.max(m, d.reviews), 0);
@@ -191,6 +193,7 @@ export async function progressSummary(): Promise<ProgressSummary> {
     words: reviews.length,
     byLevel,
     reviews: reviewsTotal,
+    correct: correctTotal,
     reads: readsCount,
     xp,
     streak: computeStreak(daily.map((d) => d.date)),

@@ -19,7 +19,7 @@ export default function BinhNghiepPage() {
   const rp = rankForWords(sum.words);
   const stats: Stats = {
     words: sum.words, xp: sum.xp, streak: sum.streak, reads: sum.reads, reviews: sum.reviews,
-    activeDays: sum.activeDays, matured: sum.matured, maxDayReviews: sum.maxDayReviews,
+    correct: sum.correct, activeDays: sum.activeDays, matured: sum.matured, maxDayReviews: sum.maxDayReviews,
     weekend: sum.weekend, byLevel: sum.byLevel,
   };
   const groups = badgeGroups(stats);

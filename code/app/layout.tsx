@@ -4,6 +4,7 @@ import "./globals.css";
 import SwRegister from "@/components/sw-register";
 import BottomNav from "@/components/bottom-nav";
 import MainNav from "@/components/main-nav";
+import LevelChip from "@/components/level-chip";
 import { ThemeToggle } from "@/components/theme-toggle";
 import AuthSync from "@/components/auth-sync";
 import AuthGate from "@/components/auth-gate";
@@ -54,6 +55,7 @@ export default function RootLayout({
               <MainNav />
             </div>
             <div className="ml-auto flex shrink-0 items-center gap-2">
+              <LevelChip />
               <AuthSync />
               <ThemeToggle />
             </div>
