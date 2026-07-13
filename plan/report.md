@@ -128,3 +128,38 @@ Nội dung đủ tốt để học nghiêm túc từ con số 0 (đặc biệt p
 | P2 | Tổng kết phiên gamify + gợi ý bài đọc (HSK #11,12) | Giữ chân người dùng |
 | P2 | Rút gọn nghĩa MCQ + lộ trình khởi động theo chủ đề | Thân thiện người mới |
 | P3 | Undo, mnemonic, chặn back/refresh, sync gamify/settings, SWR cho HTML, tách examples per-word | Hoàn thiện dần |
+
+---
+
+## Checklist thực hiện (đánh dấu khi xong)
+
+### P0 — làm ngay
+- [ ] **R1. Sync Firestore tăng dần**: `syncNow` pull theo cutoff (`where("last_review" > …)`) thay vì đọc toàn bộ; chỉ ghi phần thay đổi (debounce); hoãn sync sau first paint (`requestIdleCallback`); dynamic-import `lib/sync` trong `auth-sync.tsx`.
+- [ ] **R2. Learn-card trước MCQ**: thêm loại câu `learn` (không chấm) vào `buildQuestions` khi `isNew` — hiện từ + IPA + nghĩa + 1 ví dụ + audio, nút "Đã xem — Kiểm tra"; render trong `review-runner.tsx`.
+
+### P1 — tuần này
+- [ ] **R3. Dynamic-import Firebase**: bỏ import tĩnh `firebase/auth`/`firestore` khỏi first-load (`auth-gate.tsx`, `lib/firebase.ts`); render nội dung lạc quan, chỉ phủ màn chặn khi xác định CHƯA đăng nhập.
+- [ ] **R4. Requeue khi sai**: trả lời sai → chèn lại thẻ sau ~3 lá trong phiên (`review-runner.tsx`).
+- [ ] **R5. Recall-first**: dùng field `recallFirst` sẵn có — ẩn options, bấm/Space để hiện; bày toggle trong Cài đặt `/on-tap`.
+- [ ] **R6. Nghỉ giữa chặng**: màn nghỉ ☕ sau mỗi ~22 thẻ, nút "Ôn tiếp".
+- [ ] **R7. CTA người mới**: `words === 0` → hero trỏ `/phat-am` ("Chưa biết đọc tiếng Pháp? Bắt đầu Khóa phát âm →").
+
+### P2 — kế tiếp
+- [ ] **R8. Câu hỏi cloze** (điền từ vào câu ví dụ).
+- [ ] **R9. Câu hỏi nghe → chọn nghĩa** (dùng audio từ sẵn có).
+- [ ] **R10. Hướng hỏi ngược** (nghĩa → từ Pháp) + bày setting `direction`.
+- [ ] **R11. Chấm theo tốc độ trả lời** (`ratingFromSpeed`: Lại/Khó/Được/Dễ → FSRS).
+- [ ] **R12. Tổng kết phiên gamify**: XP kiếm được, combo, thưởng phiên hoàn hảo, lên cấp, huy hiệu mới mở.
+- [ ] **R13. Gợi ý bài đọc sau phiên** ("N từ vừa học có trong bài X").
+- [ ] **R14. Rút gọn nghĩa trong MCQ** (chỉ phần trước dấu `;`).
+- [ ] **R15. Lộ trình khởi động theo chủ đề** cho người mới (chào hỏi, số đếm, gia đình… trước danh sách tần suất).
+
+### P3 — hoàn thiện dần
+- [ ] **R16. Undo lần chấm vừa rồi.**
+- [ ] **R17. Mẹo nhớ (mnemonic)** tự ghi cho từ hay quên.
+- [ ] **R18. Chặn back/refresh/click-link giữa phiên** (beforeunload + popstate + click capture).
+- [ ] **R19. Sync mở rộng**: daily-stats, settings, gamify, huy hiệu (version-merge).
+- [ ] **R20. SW: stale-while-revalidate cho HTML** (mở app không chờ mạng).
+- [ ] **R21. Tách examples per-word** (màn ôn không nạp cả file cấp).
+- [ ] **R22. Quiz phân biệt âm trong Khóa phát âm** + tiến độ bài đã học.
+- [ ] **R23. Xoá `components/coming-soon.tsx`** (component chết).
