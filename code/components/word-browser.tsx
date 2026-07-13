@@ -171,7 +171,19 @@ export default function WordBrowser({ level }: { level: number }) {
             className="w-full rounded-full border bg-card py-2.5 pl-10 pr-3 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
           />
         </div>
-        <div className="mt-2 flex gap-2 overflow-x-auto pb-1">
+        {/* Mobile: ô chọn full-width (bằng ô tìm kiếm). Desktop: hàng chip. */}
+        <select
+          value={filter}
+          onChange={(e) => setFilter(e.target.value as "all" | Status)}
+          className="mt-2 w-full rounded-full border bg-card px-4 py-2.5 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/40 sm:hidden"
+        >
+          {FILTERS.map((f) => (
+            <option key={f.key} value={f.key}>
+              {f.label}
+            </option>
+          ))}
+        </select>
+        <div className="mt-2 hidden gap-2 overflow-x-auto pb-1 sm:flex">
           {FILTERS.map((f) => (
             <button
               key={f.key}
