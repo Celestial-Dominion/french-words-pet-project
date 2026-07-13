@@ -27,6 +27,22 @@ function cleanGlosses(glosses) {
   return out;
 }
 
+// Đối chiếu Lexique383 (cột genre) + soát theo nghĩa chính đang dùng. Từ đồng âm/nhập nhằng.
+const GENDER_FIX = {
+  mort: "f", // la mort (cái chết) — nghĩa chính, không phải le mort (người chết)
+  pendule: "f", // la pendule (đồng hồ treo tường) — không phải le pendule (con lắc)
+  chiotte: "f", // les chiottes
+  fringue: "f", // les fringues
+  bouffe: "f", // la bouffe
+  samba: "f", // la samba
+  rechange: "m", // le rechange (de rechange)
+  oasis: "f", // une oasis
+  trempe: "f", // la trempe
+  calamité: "f", // la calamité
+  géranium: "m", // un géranium
+  container: "m", // un container
+};
+
 const base = lemmas.map((r) => {
   const e = enrich[r.id] || {};
   const ipa = e.ipa || phonToIpa(r.phon_lexique) || "";
@@ -42,6 +58,8 @@ const base = lemmas.map((r) => {
   };
   // Giống: chỉ khi Lexique đã xác định là danh từ; dùng giá trị kaikki để SỬA (vd abbé f→m).
   if (r.gender) w.gender = e.gender || r.gender;
+  // Sửa tay các từ đồng âm/nhập nhằng mà nguồn tự động chọn sai giống theo nghĩa chính đang dùng.
+  if (GENDER_FIX[r.id]) w.gender = GENDER_FIX[r.id];
   if (r.plural) w.plural = r.plural;
   const vg = e.group || r.verb_group;
   if (vg) w.verb_group = vg;
