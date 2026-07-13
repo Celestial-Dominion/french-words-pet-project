@@ -17,15 +17,22 @@ export default function SentenceBlock({
   fr,
   vi,
   showVi,
+  active,
   onTapWord,
 }: {
   fr: string;
   vi: string;
   showVi: boolean;
+  active?: boolean;
   onTapWord: (token: string) => void;
 }) {
   return (
-    <div className="rounded-xl border bg-card p-3">
+    <div
+      className={
+        "rounded-2xl border p-4 transition-colors" +
+        (active ? " border-primary/50 bg-primary/10" : " bg-card")
+      }
+    >
       <div className="flex items-start gap-2">
         <button
           onClick={() => play(sentenceAudioUrl(fr))}
