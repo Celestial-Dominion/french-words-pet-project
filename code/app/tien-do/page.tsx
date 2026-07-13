@@ -116,9 +116,9 @@ export default function TienDoPage() {
           : "⏰ Chưa học hôm nay. Ôn vài thẻ để giữ chuỗi nhé!"}
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div className="space-y-4 lg:grid lg:grid-cols-2 lg:gap-4 lg:space-y-0">
         {/* Heatmap 13 tuần */}
-        <section className="rounded-3xl border p-5">
+        <section className="min-w-0 overflow-hidden rounded-3xl border p-5">
           <h2 className="mb-3 text-sm font-semibold text-muted-foreground">13 tuần gần đây</h2>
           <div className="flex gap-1.5 overflow-x-auto">
             {cols.map((col, ci) => {
@@ -145,7 +145,7 @@ export default function TienDoPage() {
         </section>
 
         {/* Dự báo 7 ngày */}
-        <section className="rounded-3xl border p-5">
+        <section className="min-w-0 rounded-3xl border p-5">
           <h2 className="mb-3 text-sm font-semibold text-muted-foreground">Lịch ôn 7 ngày tới</h2>
           {forecast ? (
             <div className="space-y-2">
