@@ -6,7 +6,7 @@ import LevelGrid from "@/components/level-grid";
 
 export default function Home() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 lg:space-y-8">
       <HomeStats />
 
       <section className="space-y-3">
@@ -69,7 +69,7 @@ function ExploreCard({
     >
       <span className={`flex size-12 shrink-0 items-center justify-center rounded-2xl ${tint}`}>{icon}</span>
       <div className="min-w-0 flex-1">
-        <div className="text-base font-semibold">{title}</div>
+        <div className="text-lg font-semibold">{title}</div>
         <div className="text-sm text-muted-foreground">{desc}</div>
       </div>
       <ChevronRight className="size-5 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
