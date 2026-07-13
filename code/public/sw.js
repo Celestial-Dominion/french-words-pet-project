@@ -1,9 +1,10 @@
-// Service worker: network-first cho HTML VÀ mã /_next/ (code luôn khớp HTML mới sau deploy),
-// cache-first cho asset nội dung ổn định (data JSON, audio). Bump CACHE để xoá cache cũ.
-const CACHE = "fr-words-v3";
+// Service worker:
+//  - HTML điều hướng: network-first (luôn lấy trang mới sau deploy; offline → cache).
+//  - /_next/static (JS/CSS có hash bất biến) + data JSON + audio: cache-first (tải tức thì,
+//    không chờ mạng) → mở lại app nhanh như HSK. Deploy mới đổi tên file hash nên không kẹt bản cũ.
+const CACHE = "fr-words-v4";
 
 self.addEventListener("install", (event) => {
-  // Kích hoạt ngay bản mới, không chờ tab cũ đóng.
   event.waitUntil(self.skipWaiting());
 });
 
@@ -16,7 +17,6 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Điều hướng trang (HTML) = network-first: luôn lấy bản mới nhất, offline mới dùng cache.
 function isNavigation(request) {
   return request.mode === "navigate" || (request.headers.get("accept") || "").includes("text/html");
 }
@@ -24,12 +24,10 @@ function isNavigation(request) {
 self.addEventListener("fetch", (event) => {
   const { request } = event;
   if (request.method !== "GET") return;
-  const sameOrigin = new URL(request.url).origin === self.location.origin;
-  if (!sameOrigin) return;
+  if (new URL(request.url).origin !== self.location.origin) return;
 
-  const url = new URL(request.url);
-  // HTML điều hướng + mã build /_next/ → network-first (code luôn khớp HTML mới nhất).
-  if (isNavigation(request) || url.pathname.startsWith("/_next/")) {
+  // HTML điều hướng → network-first (trang luôn mới; lỗi mạng mới rơi về cache).
+  if (isNavigation(request)) {
     event.respondWith(
       fetch(request)
         .then((res) => {
@@ -37,14 +35,13 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE).then((c) => c.put(request, clone));
           return res;
         })
-        .catch(() =>
-          caches.match(request).then((c) => c || (isNavigation(request) ? caches.match("/") : undefined)),
-        ),
+        .catch(() => caches.match(request).then((c) => c || caches.match("/"))),
     );
     return;
   }
 
-  // Asset nội dung ổn định (data JSON, audio): cache-first, nạp nền khi thiếu.
+  // Còn lại (/_next/static, data JSON, audio) → cache-first: có sẵn thì trả ngay,
+  // thiếu thì tải mạng rồi lưu. File hash bất biến nên an toàn & nhanh.
   event.respondWith(
     caches.match(request).then(
       (cached) =>
