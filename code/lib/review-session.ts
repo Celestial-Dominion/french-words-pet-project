@@ -3,6 +3,7 @@ import type { Word, SrsConfig } from "./types";
 import type { ExampleSentence } from "./data";
 
 export type Question =
+  | { kind: "learn"; word: Word; graded: false; example?: ExampleSentence }
   | { kind: "mcq"; word: Word; graded: true; isNew: boolean; prompt: string; options: string[]; answer: number }
   | { kind: "gender"; word: Word; graded: false; options: string[]; answer: number }
   | { kind: "arrange"; word: Word; graded: false; fr: string; vi: string; tokens: string[] };
@@ -46,6 +47,8 @@ function genderFor(word: Word): Question {
 
 /**
  * Dựng câu hỏi cho một tập từ trong phiên.
+ * Từ MỚI: 1 thẻ "learn" (xem từ + nghĩa + ví dụ, không chấm) TRƯỚC khi kiểm tra —
+ * người mới không bị hỏi MCQ trên từ chưa từng thấy.
  * Mỗi từ: 1 MCQ (chấm FSRS) + arrangePerWord câu sắp xếp + (tỉ trọng thấp) 1 câu chọn giống nếu là danh từ.
  */
 export function buildQuestions(
@@ -57,6 +60,7 @@ export function buildQuestions(
 ): Question[] {
   const out: Question[] = [];
   for (const w of words) {
+    if (isNew) out.push({ kind: "learn", word: w, graded: false, example: (examplesByWord[w.id] || [])[0] });
     out.push(mcqFor(w, pool, isNew));
 
     const ex = examplesByWord[w.id] || [];

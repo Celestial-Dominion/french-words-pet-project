@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { User } from "firebase/auth";
 import { LogIn, RefreshCw, LogOut, Check } from "lucide-react";
-import { firebaseEnabled, watchAuth, googleSignIn, signOutUser, syncNow } from "@/lib/sync";
+import { firebaseEnabled, watchAuth, googleSignIn, signOutUser } from "@/lib/sync";
 import { cn } from "@/lib/utils";
 
 export default function AuthSync() {
@@ -15,23 +15,36 @@ export default function AuthSync() {
 
   useEffect(() => watchAuth(setUser), []);
 
-  // tự đồng bộ 1 lần khi phát hiện đã đăng nhập
+  // Tự đồng bộ 1 lần khi phát hiện đã đăng nhập — HOÃN sau first paint (~2,5s hoặc lúc
+  // trình duyệt rảnh) để không tranh mạng/CPU với việc render; sync-data dynamic-import
+  // nên Firestore SDK cũng chỉ tải lúc này.
   useEffect(() => {
-    if (user && !syncedOnce.current) {
-      syncedOnce.current = true;
-      void doSync(user);
+    if (!user) {
+      syncedOnce.current = false;
+      return;
     }
-    if (!user) syncedOnce.current = false;
+    if (syncedOnce.current) return;
+    syncedOnce.current = true;
+    const run = () => void doSync(user, true);
+    const w = window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number; cancelIdleCallback?: (id: number) => void };
+    if (w.requestIdleCallback) {
+      const id = w.requestIdleCallback(run, { timeout: 5000 });
+      return () => w.cancelIdleCallback?.(id);
+    }
+    const id = window.setTimeout(run, 2500);
+    return () => window.clearTimeout(id);
   }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!firebaseEnabled) return null;
 
-  async function doSync(u: User) {
+  async function doSync(u: User, auto = false) {
     setBusy(true);
     setMsg(null);
     try {
+      const { syncNow } = await import("@/lib/sync-data");
       const r = await syncNow(u.uid);
-      setMsg(`Đã đồng bộ ${r.reviews} thẻ`);
+      // Sync tự động bị bỏ qua (không gì đổi) → im lặng; bấm tay thì vẫn báo.
+      if (!(auto && r.skipped)) setMsg(r.skipped ? "Không có gì mới" : `Đã đồng bộ ${r.reviews} thẻ`);
     } catch {
       setMsg("Đồng bộ lỗi");
     } finally {

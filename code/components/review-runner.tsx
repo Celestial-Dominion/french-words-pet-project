@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { X, Volume2, Check } from "lucide-react";
 import { recordAnswer, recordPractice, addXp } from "@/lib/db";
 import { XP } from "@/lib/gamify";
-import { wordAudioUrl } from "@/lib/tts";
+import { wordAudioUrl, sentenceAudioUrl } from "@/lib/tts";
 import { cn } from "@/lib/utils";
 import type { Question } from "@/lib/review-session";
 import type { SrsConfig } from "@/lib/types";
@@ -43,9 +43,9 @@ export default function ReviewRunner({
     else setI(i + 1);
   };
 
-  // phát âm từ khi hiện thẻ MCQ mới (nghe song song với đọc)
+  // phát âm từ khi hiện thẻ learn/MCQ mới (nghe song song với đọc)
   useEffect(() => {
-    if (q?.kind === "mcq") play(wordAudioUrl(q.word));
+    if (q?.kind === "mcq" || q?.kind === "learn") play(wordAudioUrl(q.word));
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (done) {
@@ -73,7 +73,7 @@ export default function ReviewRunner({
 
   // chấm MCQ / gender
   const answerChoice = (idx: number) => {
-    if (q.kind === "arrange" || chosen !== null) return;
+    if (q.kind === "arrange" || q.kind === "learn" || chosen !== null) return;
     setChosen(idx);
     const correct = idx === q.answer;
     if (correct) setRight((r) => r + 1);
@@ -90,7 +90,57 @@ export default function ReviewRunner({
   return (
     <>
     <SessionShell title={title} onExit={requestExit} progress={i / total}>
-      {q.kind === "arrange" ? (
+      {q.kind === "learn" ? (
+        /* Thẻ HỌC từ mới: xem/nghe từ + nghĩa + ví dụ trước, rồi mới bị kiểm tra */
+        <div className="flex min-h-0 flex-1 flex-col sm:flex-none">
+          <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain pb-2 sm:flex-none sm:overflow-visible">
+            <div className="flex flex-col items-center gap-3 rounded-3xl border bg-gradient-to-br from-primary/12 via-primary/5 to-transparent p-6 text-center shadow-sm sm:p-8">
+              <span className="rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold text-primary">✨ Từ mới — học trước nhé</span>
+              <div className="flex items-center gap-2">
+                <span className="text-4xl font-bold tracking-tight sm:text-5xl">
+                  {q.word.pos.includes("n") && q.word.gender ? (
+                    <span className="text-muted-foreground">{q.word.gender === "m" ? "un " : "une "}</span>
+                  ) : null}
+                  {q.word.id}
+                </span>
+                <button
+                  onClick={() => play(wordAudioUrl(q.word))}
+                  aria-label="Nghe"
+                  className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary/10 text-primary transition-transform active:scale-95"
+                >
+                  <Volume2 className="h-5 w-5" />
+                </button>
+              </div>
+              <div className="font-mono text-base text-muted-foreground">{q.word.ipa}</div>
+              <div className="text-xl font-medium">{q.word.meaning_vi}</div>
+            </div>
+            {q.example && (
+              <div className="rounded-2xl bg-muted/50 p-4">
+                <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Ví dụ</div>
+                <div className="flex items-start justify-between gap-2">
+                  <div className="text-base font-medium">{q.example.fr}</div>
+                  <button
+                    onClick={() => q.example && play(sentenceAudioUrl(q.example.fr))}
+                    aria-label="Nghe câu"
+                    className="grid size-8 shrink-0 place-items-center rounded-full bg-primary/10 text-primary active:scale-95"
+                  >
+                    <Volume2 className="size-4" />
+                  </button>
+                </div>
+                <div className="mt-0.5 text-sm text-muted-foreground">{q.example.vi}</div>
+              </div>
+            )}
+          </div>
+          <div className="shrink-0 pt-4">
+            <button
+              onClick={next}
+              className="w-full rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99]"
+            >
+              Đã xem — Kiểm tra
+            </button>
+          </div>
+        </div>
+      ) : q.kind === "arrange" ? (
         <SentenceArrange
           key={i}
           fr={q.fr}

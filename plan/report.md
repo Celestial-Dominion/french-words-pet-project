@@ -134,8 +134,8 @@ Nội dung đủ tốt để học nghiêm túc từ con số 0 (đặc biệt p
 ## Checklist thực hiện (đánh dấu khi xong)
 
 ### P0 — làm ngay
-- [ ] **R1. Sync Firestore tăng dần**: `syncNow` pull theo cutoff (`where("last_review" > …)`) thay vì đọc toàn bộ; chỉ ghi phần thay đổi (debounce); hoãn sync sau first paint (`requestIdleCallback`); dynamic-import `lib/sync` trong `auth-sync.tsx`.
-- [ ] **R2. Learn-card trước MCQ**: thêm loại câu `learn` (không chấm) vào `buildQuestions` khi `isNew` — hiện từ + IPA + nghĩa + 1 ví dụ + audio, nút "Đã xem — Kiểm tra"; render trong `review-runner.tsx`.
+- [x] **R1. Sync Firestore thông minh** *(xong 13/07)*: tách `lib/sync-data.ts` (Firestore) chỉ dynamic-import → Firestore SDK ra khỏi first-load (JS đầu 1.350→900KB, −33%); sync so "dấu vân tay" local + `updatedAt` remote → không gì đổi thì BỎ QUA (chỉ 1 getDoc nhỏ), chỉ kéo chunks khi máy khác ghi, chỉ đẩy khi local đổi; hoãn sync sau first paint (`requestIdleCallback`/2,5s).
+- [x] **R2. Learn-card trước MCQ** *(xong 13/07)*: câu loại `learn` (không chấm) chèn trước MCQ cho mỗi từ mới — badge "✨ Từ mới", từ + mạo từ + IPA + audio tự phát + nghĩa + 1 ví dụ có audio, nút "Đã xem — Kiểm tra". Verify: học A1 hiện learn-card rồi mới MCQ.
 
 ### P1 — tuần này
 - [ ] **R3. Dynamic-import Firebase**: bỏ import tĩnh `firebase/auth`/`firestore` khỏi first-load (`auth-gate.tsx`, `lib/firebase.ts`); render nội dung lạc quan, chỉ phủ màn chặn khi xác định CHƯA đăng nhập.
