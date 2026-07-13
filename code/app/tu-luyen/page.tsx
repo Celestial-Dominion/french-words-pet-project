@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Sparkles, Library, Flame, CalendarDays, Repeat, Brain, type LucideIcon } from "lucide-react";
 import { progressSummary, type ProgressSummary } from "@/lib/db";
 import { RANKS, rankForWords, badgeGroups, badgeTotals, type Stats } from "@/lib/gamify";
 import { cn } from "@/lib/utils";
@@ -26,7 +27,7 @@ export default function BinhNghiepPage() {
 
   return (
     <div className="mx-auto max-w-3xl">
-      <h1 className="mb-4 text-2xl font-bold tracking-tight">Binh nghiệp</h1>
+      <h1 className="mb-4 text-2xl font-bold tracking-tight sm:text-3xl">Binh nghiệp</h1>
 
       {/* thẻ cấp bậc hiện tại */}
       <div className="rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/15 to-transparent p-4">
@@ -49,6 +50,16 @@ export default function BinhNghiepPage() {
         ) : (
           <div className="mt-2 text-sm font-semibold text-amber-600 dark:text-amber-400">Cấp cao nhất — Thống chế Pháp 👑</div>
         )}
+      </div>
+
+      {/* lưới thống kê */}
+      <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+        <StatCard icon={Sparkles} tint="bg-amber-500/15 text-amber-600 dark:text-amber-400" label="Tổng điểm (XP)" value={sum.xp.toLocaleString("vi")} />
+        <StatCard icon={Library} tint="bg-emerald-500/15 text-emerald-600 dark:text-emerald-400" label="Từ đã học" value={sum.words.toLocaleString("vi")} />
+        <StatCard icon={Flame} tint="bg-orange-500/15 text-orange-600 dark:text-orange-400" label="Chuỗi ngày" value={`${sum.streak}`} />
+        <StatCard icon={CalendarDays} tint="bg-sky-500/15 text-sky-600 dark:text-sky-400" label="Số ngày học" value={`${sum.activeDays}`} />
+        <StatCard icon={Repeat} tint="bg-violet-500/15 text-violet-600 dark:text-violet-400" label="Tổng lượt ôn" value={sum.reviews.toLocaleString("vi")} />
+        <StatCard icon={Brain} tint="bg-rose-500/15 text-rose-600 dark:text-rose-400" label="Từ nhớ bền" value={sum.matured.toLocaleString("vi")} />
       </div>
 
       {/* thang cấp bậc */}
@@ -132,6 +143,20 @@ export default function BinhNghiepPage() {
             </div>
           </div>
         ))}
+      </div>
+    </div>
+  );
+}
+
+function StatCard({ icon: Icon, tint, label, value }: { icon: LucideIcon; tint: string; label: string; value: string }) {
+  return (
+    <div className="flex items-center gap-3 rounded-2xl border p-4">
+      <span className={cn("flex size-10 shrink-0 items-center justify-center rounded-xl", tint)}>
+        <Icon className="size-5" />
+      </span>
+      <div className="min-w-0">
+        <div className="text-xs text-muted-foreground">{label}</div>
+        <div className="text-xl font-bold">{value}</div>
       </div>
     </div>
   );
