@@ -1,31 +1,62 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { Repeat } from "lucide-react";
-import { countDue, getDueReviews, getConfig } from "@/lib/db";
+import { GraduationCap, Zap, Brain, Plus, ChevronDown } from "lucide-react";
+import {
+  countDue,
+  countAhead,
+  countHard,
+  getDueReviews,
+  getAheadReviews,
+  getHardReviews,
+  learnedIds,
+  newTodayCount,
+  getConfig,
+  setConfig,
+  progressSummary,
+} from "@/lib/db";
 import { loadWords, loadExamples, type ExampleSentence } from "@/lib/data";
 import { buildQuestions, type Question } from "@/lib/review-session";
-import type { Word, SrsConfig } from "@/lib/types";
+import { LEVELS } from "@/lib/levels";
+import type { Word, SrsConfig, ReviewRecord } from "@/lib/types";
 import ReviewRunner from "@/components/review-runner";
 
 export default function OnTapPage() {
-  const [due, setDue] = useState<number | null>(null);
-  const [questions, setQuestions] = useState<Question[] | null>(null);
-  const [config, setConfig] = useState<SrsConfig | null>(null);
-  const [loading, setLoading] = useState(false);
+  const [due, setDue] = useState(0);
+  const [ahead, setAhead] = useState(0);
+  const [hard, setHard] = useState(0);
+  const [learned, setLearned] = useState(0);
+  const [remainNew, setRemainNew] = useState(0);
+  const [cfg, setCfg] = useState<SrsConfig | null>(null);
+  const [session, setSession] = useState<{ qs: Question[]; title: string } | null>(null);
+  const [busy, setBusy] = useState(false);
 
-  const refresh = useCallback(() => {
-    countDue().then(setDue);
+  const refresh = useCallback(async () => {
+    const [d, a, h, sum, c, nToday] = await Promise.all([
+      countDue(),
+      countAhead(),
+      countHard(),
+      progressSummary(),
+      getConfig(),
+      newTodayCount(),
+    ]);
+    setDue(d);
+    setAhead(Math.min(a, 20));
+    setHard(h);
+    setLearned(sum.words);
+    setCfg(c);
+    setRemainNew(Math.max(0, c.newPerDay - nToday));
   }, []);
   useEffect(() => {
     refresh();
   }, [refresh]);
 
-  const start = async () => {
-    setLoading(true);
-    const cfg = await getConfig();
-    const dueRows = await getDueReviews();
-    const levels = [...new Set(dueRows.map((r) => r.level))];
+  // Ghép câu hỏi từ danh sách bản ghi ôn (đến hạn/ôn sớm/hay quên).
+  const buildFromRecords = async (rows: ReviewRecord[], title: string) => {
+    if (!rows.length) return;
+    setBusy(true);
+    const c = await getConfig();
+    const levels = [...new Set(rows.map((r) => r.level))];
     const wordMap = new Map<string, Word>();
     let examples: Record<string, ExampleSentence[]> = {};
     const pool: Word[] = [];
@@ -37,21 +68,63 @@ export default function OnTapPage() {
       }
       examples = { ...examples, ...ex };
     }
-    const dueWords = dueRows.map((r) => wordMap.get(r.wordId)).filter(Boolean) as Word[];
-    const qs = buildQuestions(dueWords, examples, pool, cfg, false);
-    setConfig(cfg);
-    setQuestions(qs);
-    setLoading(false);
+    const words = rows.map((r) => wordMap.get(r.wordId)).filter(Boolean) as Word[];
+    setSession({ qs: buildQuestions(words, examples, pool, c, false), title });
+    setBusy(false);
   };
 
-  if (questions && config) {
+  const startDue = async () => buildFromRecords(await getDueReviews(), "Ôn tập");
+  const startAhead = async () => buildFromRecords(await getAheadReviews(new Date(), 20), "Ôn sớm");
+  const startHard = async () => buildFromRecords(await getHardReviews(30), "Ôn từ hay quên");
+
+  // Học từ mới: gom từ CHƯA học theo cấp (newLevel cố định, hoặc auto thấp→cao).
+  // force = học thêm dù đã hết hạn mức ngày (mặc định lấy 10 từ).
+  const startNew = async (force = false) => {
+    setBusy(true);
+    const c = await getConfig();
+    const [learnedSet, nToday] = await Promise.all([learnedIds(), newTodayCount()]);
+    const quota = force ? 10 : Math.max(0, c.newPerDay - nToday);
+    if (quota <= 0) {
+      setBusy(false);
+      return;
+    }
+    const order = c.newLevel ? [c.newLevel] : LEVELS.map((l) => l.level);
+    const words: Word[] = [];
+    let examples: Record<string, ExampleSentence[]> = {};
+    const pool: Word[] = [];
+    for (const lv of order) {
+      if (words.length >= quota) break;
+      const [ws, ex] = await Promise.all([loadWords(lv), loadExamples(lv)]);
+      pool.push(...ws);
+      examples = { ...examples, ...ex };
+      for (const w of ws) {
+        if (words.length >= quota) break;
+        if (!learnedSet.has(w.id)) words.push(w);
+      }
+    }
+    if (!words.length) {
+      setBusy(false);
+      return;
+    }
+    setSession({ qs: buildQuestions(words, examples, pool, c, true), title: "Học từ mới" });
+    setBusy(false);
+  };
+
+  const patch = async (p: Partial<SrsConfig>) => {
+    const next = await setConfig(p);
+    setCfg(next);
+    const nToday = await newTodayCount();
+    setRemainNew(Math.max(0, next.newPerDay - nToday));
+  };
+
+  if (session && cfg) {
     return (
       <ReviewRunner
-        questions={questions}
-        title="Ôn tập"
-        config={config}
+        questions={session.qs}
+        title={session.title}
+        config={cfg}
         onExit={() => {
-          setQuestions(null);
+          setSession(null);
           refresh();
         }}
       />
@@ -59,31 +132,151 @@ export default function OnTapPage() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center text-center">
-      <div className="grid h-16 w-16 place-items-center rounded-2xl bg-primary/10 text-primary">
-        <Repeat className="h-8 w-8" />
-      </div>
-      <h1 className="mt-4 text-xl font-bold">Ôn tập</h1>
-      {due === null ? (
-        <p className="mt-2 text-sm text-muted-foreground">Đang kiểm tra…</p>
-      ) : due === 0 ? (
-        <p className="mt-2 text-sm text-muted-foreground">
-          Không có thẻ nào đến hạn. Hãy vào một cấp và bấm <b>Học từ mới</b> để bắt đầu.
+    <div className="mx-auto max-w-2xl space-y-6">
+      <div>
+        <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Ôn tập</h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Ôn thẻ đến hạn — hoặc ôn sớm, ôn từ hay quên, học thêm bất cứ lúc nào. Tất cả vẫn theo lịch FSRS.
         </p>
-      ) : (
-        <>
-          <p className="mt-2 text-muted-foreground">
-            <b className="text-2xl text-primary">{due}</b> thẻ đến hạn
-          </p>
+      </div>
+
+      <div className="overflow-hidden rounded-3xl border bg-gradient-to-br from-primary/15 via-primary/5 to-transparent p-5 sm:p-6">
+        <div className="grid grid-cols-3 gap-2 text-center">
+          <Stat label="Đến hạn" value={due} highlight />
+          <Stat label="Hay quên" value={hard} />
+          <Stat label="Đã học" value={learned} />
+        </div>
+
+        <button
+          disabled={busy || (due === 0 && ahead === 0)}
+          onClick={() => (due > 0 ? startDue() : startAhead())}
+          className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none"
+        >
+          <GraduationCap className="size-5" />
+          {busy ? "Đang tải…" : due > 0 ? `Ôn tập (${due} thẻ)` : ahead > 0 ? `Ôn sớm (${ahead} thẻ)` : "Chưa có thẻ để ôn"}
+        </button>
+
+        {due > 0 && ahead > 0 && (
           <button
-            onClick={start}
-            disabled={loading}
-            className="mt-6 rounded-xl bg-primary px-8 py-3 font-semibold text-primary-foreground disabled:opacity-50"
+            onClick={startAhead}
+            disabled={busy}
+            className="mt-2 flex w-full items-center justify-center gap-2 rounded-2xl border bg-background py-3 text-sm font-semibold transition-all hover:bg-muted active:scale-[0.99] disabled:opacity-50"
           >
-            {loading ? "Đang tải…" : "Bắt đầu ôn"}
+            <Zap className="size-4" /> Ôn sớm — xem trước ({ahead} thẻ)
           </button>
-        </>
+        )}
+
+        {hard > 0 && (
+          <button
+            onClick={startHard}
+            disabled={busy}
+            className="mt-2 flex w-full items-center justify-center gap-2 rounded-2xl border border-amber-500/40 bg-amber-500/10 py-3 text-sm font-semibold text-amber-700 transition-all hover:bg-amber-500/20 active:scale-[0.99] disabled:opacity-50 dark:text-amber-400"
+          >
+            <Brain className="size-4" /> Ôn từ hay quên ({hard})
+          </button>
+        )}
+
+        <button
+          onClick={() => startNew(remainNew <= 0)}
+          disabled={busy}
+          className="mt-2 flex w-full items-center justify-center gap-2 rounded-2xl border bg-background py-3 text-sm font-semibold transition-all hover:bg-muted active:scale-[0.99] disabled:opacity-50"
+        >
+          <Plus className="size-4" />
+          {remainNew > 0 ? `Học từ mới (${remainNew})` : "Học thêm 10 từ"}
+        </button>
+      </div>
+
+      {/* Cài đặt */}
+      {cfg && (
+        <details className="group rounded-3xl border p-5">
+          <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-semibold text-muted-foreground [&::-webkit-details-marker]:hidden">
+            ⚙️ Cài đặt
+            <ChevronDown className="size-4 transition-transform group-open:rotate-180" />
+          </summary>
+          <div className="mt-5 space-y-5">
+            <label className="flex items-center justify-between gap-4">
+              <span className="text-sm font-medium">Từ mới mỗi ngày</span>
+              <input
+                type="number"
+                inputMode="numeric"
+                min={0}
+                max={100}
+                value={cfg.newPerDay}
+                onChange={(e) => patch({ newPerDay: Math.max(0, Math.min(100, Number(e.target.value) || 0)) })}
+                className="w-20 rounded-xl border bg-background px-3 py-2 text-right text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
+              />
+            </label>
+
+            <label className="flex items-center justify-between gap-4">
+              <span className="text-sm font-medium">Nguồn từ mới</span>
+              <select
+                value={cfg.newLevel}
+                onChange={(e) => patch({ newLevel: Number(e.target.value) })}
+                className="rounded-xl border bg-background px-3 py-2 text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
+              >
+                <option value={0}>Tự động (thấp → cao)</option>
+                {LEVELS.map((l) => (
+                  <option key={l.level} value={l.level}>
+                    {l.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="flex items-center justify-between gap-4">
+              <span className="text-sm font-medium">
+                Câu ghép mỗi từ
+                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">luyện sắp xếp câu sau trắc nghiệm</span>
+              </span>
+              <select
+                value={cfg.arrangePerWord}
+                onChange={(e) => patch({ arrangePerWord: Number(e.target.value) })}
+                className="rounded-xl border bg-background px-3 py-2 text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
+              >
+                <option value={0}>Tắt</option>
+                <option value={1}>1 câu</option>
+                <option value={2}>2 câu</option>
+                <option value={3}>3 câu</option>
+              </select>
+            </label>
+
+            <label className="flex items-center justify-between gap-4">
+              <span className="text-sm font-medium">
+                Câu chọn giống (un/une)
+                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">xen câu hỏi chọn mạo từ cho danh từ</span>
+              </span>
+              <input
+                type="checkbox"
+                checked={cfg.genderQuestions}
+                onChange={(e) => patch({ genderQuestions: e.target.checked })}
+                className="size-5 accent-primary"
+              />
+            </label>
+
+            <label className="flex items-center justify-between gap-4">
+              <span className="text-sm font-medium">
+                Tự chuyển khi đúng
+                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">trả lời đúng → tự sang thẻ kế</span>
+              </span>
+              <input
+                type="checkbox"
+                checked={cfg.autoAdvance}
+                onChange={(e) => patch({ autoAdvance: e.target.checked })}
+                className="size-5 accent-primary"
+              />
+            </label>
+          </div>
+        </details>
       )}
+    </div>
+  );
+}
+
+function Stat({ label, value, highlight }: { label: string; value: number; highlight?: boolean }) {
+  return (
+    <div>
+      <div className={`text-3xl font-bold ${highlight ? "text-primary" : ""}`}>{value}</div>
+      <div className="text-xs text-muted-foreground">{label}</div>
     </div>
   );
 }

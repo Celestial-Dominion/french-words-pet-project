@@ -84,10 +84,10 @@ export default function WordBrowser({ level }: { level: number }) {
     refreshNew();
   }, [refreshNew]);
 
-  const startLearn = async () => {
+  const startLearn = async (force = false) => {
     if (!words) return;
     const [cfg, learned, newToday] = await Promise.all([getConfig(), learnedIds(), newTodayCount()]);
-    const quota = Math.max(0, cfg.newPerDay - newToday);
+    const quota = force ? 10 : Math.max(0, cfg.newPerDay - newToday);
     const candidates = words.filter((w) => !learned.has(w.id)).slice(0, quota);
     if (!candidates.length) return;
     const ex = await loadExamples(level);
@@ -138,13 +138,20 @@ export default function WordBrowser({ level }: { level: number }) {
           </div>
           {remainingNew && remainingNew > 0 ? (
             <button
-              onClick={startLearn}
+              onClick={() => startLearn(false)}
               className="inline-flex items-center gap-2 rounded-2xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98]"
             >
               <GraduationCap className="size-4" /> Học {remainingNew} từ mới
             </button>
+          ) : learnedCount < totalWords ? (
+            <button
+              onClick={() => startLearn(true)}
+              className="inline-flex items-center gap-2 rounded-2xl border px-5 py-3 text-sm font-semibold transition-all hover:bg-muted active:scale-[0.98]"
+            >
+              <GraduationCap className="size-4" /> Học thêm 10 từ
+            </button>
           ) : (
-            <span className="text-sm font-medium text-muted-foreground">Hết từ mới hôm nay 🎉</span>
+            <span className="text-sm font-medium text-muted-foreground">Đã học hết cấp này 🎉</span>
           )}
         </div>
         <div className="mt-3 h-2 overflow-hidden rounded-full bg-muted">

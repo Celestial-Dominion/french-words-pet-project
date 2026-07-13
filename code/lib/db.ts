@@ -57,6 +57,29 @@ export async function countDue(now = new Date()): Promise<number> {
   return db.reviews.where("due").belowOrEqual(now).count();
 }
 
+/** Ôn sớm: các thẻ CHƯA tới hạn (due > now), sắp tới hạn sớm nhất trước. */
+export async function getAheadReviews(now = new Date(), limit = 20): Promise<ReviewRecord[]> {
+  const rows = await db.reviews.where("due").above(now).toArray();
+  rows.sort((a, b) => new Date(a.due).getTime() - new Date(b.due).getTime());
+  return rows.slice(0, limit);
+}
+export async function countAhead(now = new Date()): Promise<number> {
+  return db.reviews.where("due").above(now).count();
+}
+
+/** Từ "hay quên" (leech): số lần trả lời sai (lapses) từ 3 trở lên. */
+export async function getHardReviews(limit = 30): Promise<ReviewRecord[]> {
+  const rows = await db.reviews.toArray();
+  return rows
+    .filter((r) => (r.lapses ?? 0) >= 3)
+    .sort((a, b) => (b.lapses ?? 0) - (a.lapses ?? 0))
+    .slice(0, limit);
+}
+export async function countHard(): Promise<number> {
+  const rows = await db.reviews.toArray();
+  return rows.filter((r) => (r.lapses ?? 0) >= 3).length;
+}
+
 /** Tập wordId đã đưa vào học (để loại khỏi "từ mới"). */
 export async function learnedIds(): Promise<Set<string>> {
   const keys = await db.reviews.toCollection().primaryKeys();
