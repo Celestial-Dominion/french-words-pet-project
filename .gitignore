@@ -7,6 +7,7 @@ code/tsconfig.tsbuildinfo
 
 # env (config Firebase công khai nhưng theo quy ước không commit; dùng .env.local.example)
 code/.env.local
+code/.env.development.local
 
 # firebase CLI
 code/.firebase/

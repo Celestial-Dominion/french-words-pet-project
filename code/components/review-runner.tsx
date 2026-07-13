@@ -48,13 +48,16 @@ export default function ReviewRunner({
     const pct = total ? Math.round((right / total) * 100) : 0;
     return (
       <SessionShell title={title} onExit={onExit} progress={1}>
-        <div className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
-          <div className="text-5xl">{pct >= 80 ? "🎉" : "💪"}</div>
-          <div className="text-xl font-bold">Xong phiên!</div>
+        <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 rounded-3xl border bg-gradient-to-br from-primary/10 to-transparent p-8 text-center sm:flex-none sm:p-10">
+          <div className="text-6xl">{pct >= 80 ? "🎉" : "💪"}</div>
+          <div className="text-2xl font-bold">Xong phiên!</div>
           <div className="text-muted-foreground">
             Đúng {right}/{total} ({pct}%)
           </div>
-          <button onClick={onExit} className="mt-4 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground">
+          <button
+            onClick={onExit}
+            className="mt-3 w-full rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99] sm:w-auto sm:px-10"
+          >
             Hoàn tất
           </button>
         </div>
@@ -98,58 +101,67 @@ export default function ReviewRunner({
           }}
         />
       ) : (
-        <div className="flex flex-1 flex-col">
-          {/* đề bài */}
-          <div className="mb-6 mt-2 text-center">
-            {q.kind === "mcq" ? (
-              <>
-                <div className="mb-2 flex items-center justify-center gap-2">
-                  <span className="text-3xl font-bold">{q.prompt}</span>
-                  <button onClick={() => play(wordAudioUrl(q.word))} aria-label="Nghe" className="grid h-9 w-9 place-items-center rounded-full bg-primary/10 text-primary">
-                    <Volume2 className="h-5 w-5" />
-                  </button>
-                </div>
-                <div className="font-mono text-muted-foreground">{q.word.ipa}</div>
-                <div className="mt-3 text-sm text-muted-foreground">Chọn nghĩa đúng</div>
-              </>
-            ) : (
-              <>
-                <div className="text-sm text-muted-foreground">Danh từ này dùng mạo từ nào?</div>
-                <div className="mt-2 text-3xl font-bold">… {q.word.id}</div>
-              </>
-            )}
-          </div>
+        <div className="flex min-h-0 flex-1 flex-col sm:flex-none">
+          <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain pb-2 sm:flex-none sm:overflow-visible">
+            {/* đề bài */}
+            <div className="flex min-h-[8.5rem] flex-col items-center justify-center gap-3 rounded-3xl border bg-card p-6 text-center shadow-sm sm:min-h-[11rem] sm:p-8">
+              {q.kind === "mcq" ? (
+                <>
+                  <div className="flex items-center gap-2">
+                    <span className="text-4xl font-bold tracking-tight sm:text-5xl">{q.prompt}</span>
+                    <button
+                      onClick={() => play(wordAudioUrl(q.word))}
+                      aria-label="Nghe"
+                      className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary/10 text-primary transition-transform active:scale-95"
+                    >
+                      <Volume2 className="h-5 w-5" />
+                    </button>
+                  </div>
+                  <div className="font-mono text-muted-foreground">{q.word.ipa}</div>
+                  <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Chọn nghĩa đúng</div>
+                </>
+              ) : (
+                <>
+                  <div className="text-4xl font-bold tracking-tight sm:text-5xl">… {q.word.id}</div>
+                  <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Danh từ này dùng mạo từ nào?</div>
+                </>
+              )}
+            </div>
 
-          {/* lựa chọn */}
-          <div className={cn("grid gap-2", q.kind === "gender" ? "grid-cols-2" : "grid-cols-1")}>
-            {q.options.map((opt, idx) => {
-              const isAnswer = idx === q.answer;
-              const isChosen = idx === chosen;
-              const show = chosen !== null;
-              return (
-                <button
-                  key={idx}
-                  onClick={() => answerChoice(idx)}
-                  disabled={show}
-                  className={cn(
-                    "flex items-center justify-between rounded-xl border px-4 py-3 text-left text-base",
-                    !show && "border bg-background active:scale-[0.99]",
-                    show && isAnswer && "border-emerald-500 bg-emerald-500/15 text-emerald-800 dark:text-emerald-200",
-                    show && isChosen && !isAnswer && "border-rose-500 bg-rose-500/15 text-rose-800 dark:text-rose-200",
-                    show && !isAnswer && !isChosen && "border opacity-50",
-                  )}
-                >
-                  <span>{opt}</span>
-                  {show && isAnswer && <Check className="h-5 w-5" />}
-                </button>
-              );
-            })}
+            {/* lựa chọn */}
+            <div className={cn("grid gap-2.5", q.kind === "gender" ? "grid-cols-2" : "grid-cols-1")}>
+              {q.options.map((opt, idx) => {
+                const isAnswer = idx === q.answer;
+                const isChosen = idx === chosen;
+                const show = chosen !== null;
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => answerChoice(idx)}
+                    disabled={show}
+                    className={cn(
+                      "flex min-h-[3.5rem] items-center justify-between rounded-2xl border px-4 py-3 text-left text-base transition-all",
+                      !show && "bg-card hover:bg-muted active:scale-[0.99]",
+                      show && isAnswer && "border-emerald-500 bg-emerald-500/15 text-emerald-700 dark:text-emerald-300",
+                      show && isChosen && !isAnswer && "border-rose-500 bg-rose-500/15 text-rose-700 dark:text-rose-300",
+                      show && !isAnswer && !isChosen && "opacity-50",
+                    )}
+                  >
+                    <span>{opt}</span>
+                    {show && isAnswer && <Check className="h-5 w-5 shrink-0" />}
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* nút tiếp khi đã trả lời (sai, hoặc không auto-advance) */}
           {chosen !== null && (
-            <div className="mt-auto pt-4">
-              <button onClick={next} className="w-full rounded-xl bg-primary py-3 font-semibold text-primary-foreground">
+            <div className="shrink-0 pt-4">
+              <button
+                onClick={next}
+                className="w-full rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99]"
+              >
                 {i + 1 >= total ? "Kết thúc" : "Tiếp tục"}
               </button>
             </div>
@@ -172,19 +184,24 @@ function SessionShell({
   children: React.ReactNode;
 }) {
   return (
-    <div className="fixed inset-0 z-50 flex flex-col bg-background">
-      <div className="flex items-center gap-3 px-4 pb-2 pt-3">
-        <button onClick={onExit} aria-label="Thoát" className="grid h-9 w-9 place-items-center rounded-full bg-muted">
+    <div className="fixed inset-0 z-[60] flex flex-col bg-background">
+      {/* header: nút thoát + thanh tiến trình (luôn ở trên) */}
+      <div className="flex shrink-0 items-center gap-3 px-4 pb-2 pt-3 sm:mx-auto sm:w-full sm:max-w-2xl">
+        <button onClick={onExit} aria-label="Thoát" className="grid h-9 w-9 place-items-center rounded-full bg-muted transition-colors hover:bg-muted/70">
           <X className="h-5 w-5" />
         </button>
         <div className="flex-1">
           <div className="text-sm font-medium">{title}</div>
           <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-muted">
-            <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${Math.round(progress * 100)}%` }} />
+            <div className="h-full rounded-full bg-primary transition-all duration-300" style={{ width: `${Math.round(progress * 100)}%` }} />
           </div>
         </div>
       </div>
-      <div className="mx-auto flex w-full max-w-md flex-1 flex-col overflow-y-auto px-4 pb-6 pt-2">{children}</div>
+      {/* thân: mobile lấp đầy màn hình (cuộn nội bộ, CTA ghim đáy);
+          desktop căn giữa một thẻ rộng max-w-2xl, cao tự nhiên */}
+      <div className="mx-auto flex min-h-0 w-full max-w-2xl flex-1 flex-col px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-2 sm:justify-center sm:pb-6">
+        {children}
+      </div>
     </div>
   );
 }
