@@ -108,6 +108,7 @@ export type ReviewDirection = "fr2vi" | "vi2fr"; // Pháp→nghĩa / nghĩa→Ph
 
 export interface SrsConfig {
   newPerDay: number;
+  reviewPerSession: number; // giới hạn thẻ đến hạn mỗi phiên ôn (0 = không giới hạn)
   direction: ReviewDirection;
   newLevel: number; // 0 = tự động (cấp thấp nhất còn từ chưa học); 1..6 = cố định
   arrangePerWord: number; // số câu "sắp xếp câu" mỗi từ (0 = tắt). Mặc định 1.
@@ -118,6 +119,7 @@ export interface SrsConfig {
 
 export const DEFAULT_SRS_CONFIG: SrsConfig = {
   newPerDay: 5,
+  reviewPerSession: 0,
   direction: "fr2vi",
   newLevel: 0,
   arrangePerWord: 1,

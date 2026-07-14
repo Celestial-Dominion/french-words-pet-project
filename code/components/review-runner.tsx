@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { X, Volume2, Check, Sparkles, Undo2 } from "lucide-react";
-import { recordAnswer, undoAnswer, recordPractice, addXp, progressSummary } from "@/lib/db";
+import { recordAnswer, undoAnswer, recordPractice, addXp, progressSummary, getMnemonic, setMnemonic } from "@/lib/db";
 import { XP, badgeGroups, rankForWords, type Stats, type Badge } from "@/lib/gamify";
 import { ratingFromSpeed } from "@/lib/srs";
 import { wordAudioUrl, sentenceAudioUrl } from "@/lib/tts";
@@ -14,6 +14,19 @@ import SentenceArrange from "@/components/sentence-arrange";
 
 const REQUEUE_GAP = 3; // sai → gặp lại sau ~3 thẻ
 const BREAK_EVERY = 22; // mời nghỉ sau mỗi chặng 22 thẻ
+const REPEAT_WINDOW_MS = 15 * 60 * 1000; // thẻ đang học FSRS hẹn lại trong ≤15' → lặp ngay trong phiên (như HSK)
+const AUTO_ADVANCE_MS = 1300; // đúng → tự sang thẻ kế sau 1,3s (có nút dừng lại xem kỹ)
+
+// Nhãn loại câu hỏi hiện trên header (như HSK).
+function typeLabel(q: Question): string {
+  if (q.kind === "learn") return q.leech ? "🔁 Hay quên" : "✨ Từ mới";
+  if (q.kind === "arrange") return "Ghép câu";
+  if (q.kind === "gender") return "Chọn giống";
+  if (q.mode === "reverse") return "Nghĩa → Pháp";
+  if (q.mode === "listen") return "Nghe → nghĩa";
+  if (q.mode === "cloze") return "Điền vào câu";
+  return "Pháp → nghĩa";
+}
 
 function play(url: string) {
   new Audio(url).play().catch(() => {});
@@ -68,6 +81,8 @@ export default function ReviewRunner({
   const [undoInfo, setUndoInfo] = useState<UndoInfo | null>(null);
   const [summary, setSummary] = useState<Summary | null>(null);
   const [suggestion, setSuggestion] = useState<ReadingSuggestion | null>(null);
+  const [autoAdv, setAutoAdv] = useState(false); // đang đếm 1,3s tự chuyển (có thể bấm dừng)
+  const [mnemo, setMnemo] = useState(""); // mẹo nhớ trên learn-card từ hay quên
 
   const q = qs[i];
   const baseTotal = questions.length;
@@ -141,6 +156,19 @@ export default function ReviewRunner({
     }
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Learn-card từ hay quên: nạp mẹo nhớ đã ghi (lưu lại khi rời ô).
+  useEffect(() => {
+    if (q?.kind === "learn" && q.leech) getMnemonic(q.word.id).then(setMnemo);
+    else setMnemo("");
+  }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Đếm 1,3s tự sang thẻ kế khi trả lời đúng (bấm "Dừng lại xem kỹ" để huỷ).
+  useEffect(() => {
+    if (!autoAdv) return;
+    const t = setTimeout(() => nextRef.current(), AUTO_ADVANCE_MS);
+    return () => clearTimeout(t);
+  }, [autoAdv, i]);
+
   const finalize = useCallback(async () => {
     if (finalizedRef.current) return;
     finalizedRef.current = true;
@@ -169,6 +197,7 @@ export default function ReviewRunner({
   }, [qs]);
 
   const next = () => {
+    setAutoAdv(false);
     setChosen(null);
     setUndoInfo(null);
     if (i + 1 >= qs.length) {
@@ -182,6 +211,104 @@ export default function ReviewRunner({
     }
     setI(i + 1);
   };
+  const nextRef = useRef(next);
+  useEffect(() => {
+    nextRef.current = next;
+  });
+
+  // chấm MCQ / gender
+  const answerChoice = async (idx: number) => {
+    if (!q || q.kind === "arrange" || q.kind === "learn" || chosen !== null) return;
+    setChosen(idx);
+    const correct = idx === q.answer;
+    const comboBefore = comboRef.current;
+    if (correct) {
+      setRight((r) => r + 1);
+      comboRef.current += 1;
+      if (comboRef.current > maxComboRef.current) maxComboRef.current = comboRef.current;
+    } else {
+      comboRef.current = 0;
+      wrongRef.current = true;
+    }
+
+    if (q.kind === "mcq") {
+      gradedRef.current += 1;
+      // trả lời xong → nghe lại (cloze đọc CẢ CÂU, còn lại đọc từ)
+      if (q.mode === "cloze" && q.clozeFr) play(sentenceAudioUrl(q.clozeFr));
+      else play(wordAudioUrl(q.word));
+      const rating = ratingFromSpeed(correct, shownAtRef.current ? Date.now() - shownAtRef.current : 99_999, q.mode);
+      const xp = correct ? (q.isNew ? XP.newWord : XP.review) : 0;
+      const { prev, next: nextRec } = await recordAnswer({ wordId: q.word.id, level: q.word.level, correct, isNew: q.isNew, rating });
+      // Lặp lại trong phiên (như HSK): SAI, hoặc ĐÚNG nhưng FSRS hẹn lại trong ≤15 phút
+      // (thẻ đang ở learning steps) → chèn lại sau vài lá, nếu chưa có bản chờ.
+      const dueSoon = new Date(nextRec.due).getTime() - Date.now() <= REPEAT_WINDOW_MS;
+      let requeued: Question | null = null;
+      if ((!correct || dueSoon) && !qs.slice(i + 1).some((x) => x.kind === "mcq" && x.word.id === q.word.id)) {
+        requeued = { ...q, isNew: false };
+        setQs((prev2) => {
+          const copy = [...prev2];
+          copy.splice(Math.min(i + 1 + REQUEUE_GAP, copy.length), 0, requeued!);
+          return copy;
+        });
+      }
+      if (xp) void addXp(xp);
+      xpRef.current += xp;
+      setUndoInfo({ wordId: q.word.id, prev, correct, isNew: q.isNew, xp, comboBefore, requeued });
+    } else {
+      void recordPractice(correct);
+      const xp = correct ? XP.practice : 0;
+      if (xp) void addXp(xp);
+      xpRef.current += xp;
+    }
+    if (correct && config.autoAdvance) setAutoAdv(true);
+  };
+
+  // Hoàn tác lần chấm vừa rồi (lỡ bấm nhầm) → khôi phục FSRS + làm lại câu này.
+  const doUndo = async () => {
+    const u = undoInfo;
+    if (!u) return;
+    setAutoAdv(false);
+    setUndoInfo(null);
+    await undoAnswer({ wordId: u.wordId, prev: u.prev, correct: u.correct, isNew: u.isNew });
+    if (u.xp) {
+      await addXp(-u.xp);
+      xpRef.current -= u.xp;
+    }
+    if (u.correct) setRight((r) => Math.max(0, r - 1));
+    comboRef.current = u.comboBefore;
+    gradedRef.current = Math.max(0, gradedRef.current - 1);
+    if (u.requeued) setQs((prev) => prev.filter((x) => x !== u.requeued));
+    setChosen(null);
+    setRevealed(true);
+    shownAtRef.current = Date.now();
+  };
+
+  // Phím tắt (như HSK): Enter/Space = tiếp tục / hiện đáp án / nghỉ xong; 1-4 = chọn phương án.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (done || confirmExit) return;
+      const tag = (e.target as HTMLElement | null)?.tagName;
+      if (tag === "TEXTAREA" || tag === "INPUT") return;
+      const cur = qs[i];
+      if (!cur) return;
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        if (onBreak) return setOnBreak(false);
+        if (cur.kind === "learn") {
+          if (cur.leech) void setMnemonic(cur.word.id, mnemo);
+          return next();
+        }
+        if (cur.kind === "mcq" && !revealed && chosen === null) return reveal();
+        if (chosen !== null) return next();
+        return;
+      }
+      if (onBreak || cur.kind === "arrange" || cur.kind === "learn") return;
+      const n = Number(e.key);
+      if (n >= 1 && n <= cur.options.length && chosen === null && revealed) void answerChoice(n - 1);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
 
   if (done) {
     return (
@@ -262,84 +389,32 @@ export default function ReviewRunner({
           >
             Ôn tiếp
           </button>
+          <button onClick={requestExit} className="block w-full text-sm font-medium text-muted-foreground transition-colors hover:text-foreground sm:w-auto sm:px-8">
+            Để sau
+          </button>
         </div>
       </SessionShell>
     );
   }
 
-  // chấm MCQ / gender
-  const answerChoice = async (idx: number) => {
-    if (q.kind === "arrange" || q.kind === "learn" || chosen !== null) return;
-    setChosen(idx);
-    const correct = idx === q.answer;
-    const comboBefore = comboRef.current;
-    if (correct) {
-      setRight((r) => r + 1);
-      comboRef.current += 1;
-      if (comboRef.current > maxComboRef.current) maxComboRef.current = comboRef.current;
-    } else {
-      comboRef.current = 0;
-      wrongRef.current = true;
-    }
-
-    if (q.kind === "mcq") {
-      gradedRef.current += 1;
-      // trả lời xong → nghe lại (cloze đọc CẢ CÂU, còn lại đọc từ)
-      if (q.mode === "cloze" && q.clozeFr) play(sentenceAudioUrl(q.clozeFr));
-      else play(wordAudioUrl(q.word));
-      const rating = ratingFromSpeed(correct, shownAtRef.current ? Date.now() - shownAtRef.current : 99_999);
-      const xp = correct ? (q.isNew ? XP.newWord : XP.review) : 0;
-      // SAI → chèn lại thẻ sau vài lá để học lại ngay trong phiên (nếu chưa có bản chờ)
-      let requeued: Question | null = null;
-      if (!correct && !qs.slice(i + 1).some((x) => x.kind === "mcq" && x.word.id === q.word.id)) {
-        requeued = { ...q, isNew: false };
-        setQs((prev) => {
-          const copy = [...prev];
-          copy.splice(Math.min(i + 1 + REQUEUE_GAP, copy.length), 0, requeued!);
-          return copy;
-        });
-      }
-      const { prev } = await recordAnswer({ wordId: q.word.id, level: q.word.level, correct, isNew: q.isNew, rating });
-      if (xp) void addXp(xp);
-      xpRef.current += xp;
-      setUndoInfo({ wordId: q.word.id, prev, correct, isNew: q.isNew, xp, comboBefore, requeued });
-    } else {
-      void recordPractice(correct);
-      const xp = correct ? XP.practice : 0;
-      if (xp) void addXp(xp);
-      xpRef.current += xp;
-    }
-    if (correct && config.autoAdvance) setTimeout(next, 850);
-  };
-
-  // Hoàn tác lần chấm vừa rồi (lỡ bấm nhầm) → khôi phục FSRS + làm lại câu này.
-  const doUndo = async () => {
-    const u = undoInfo;
-    if (!u) return;
-    setUndoInfo(null);
-    await undoAnswer({ wordId: u.wordId, prev: u.prev, correct: u.correct, isNew: u.isNew });
-    if (u.xp) {
-      await addXp(-u.xp);
-      xpRef.current -= u.xp;
-    }
-    if (u.correct) setRight((r) => Math.max(0, r - 1));
-    comboRef.current = u.comboBefore;
-    gradedRef.current = Math.max(0, gradedRef.current - 1);
-    if (u.requeued) setQs((prev) => prev.filter((x) => x !== u.requeued));
-    setChosen(null);
-    setRevealed(true);
-    shownAtRef.current = Date.now();
-  };
-
   return (
     <>
-    <SessionShell title={title} onExit={requestExit} progress={i / qs.length} extra={qs.length > baseTotal ? `+${qs.length - baseTotal} làm lại` : undefined}>
+    <SessionShell
+      title={title}
+      onExit={requestExit}
+      progress={Math.min(i / baseTotal, 1)}
+      count={`${Math.min(i + 1, baseTotal)}/${baseTotal}`}
+      pill={typeLabel(q)}
+      extra={qs.length > baseTotal ? `+${qs.length - baseTotal} làm lại` : undefined}
+    >
       {q.kind === "learn" ? (
-        /* Thẻ HỌC từ mới: xem/nghe từ + nghĩa + ví dụ trước, rồi mới bị kiểm tra */
+        /* Thẻ HỌC: từ mới xem trước khi bị hỏi; từ HAY QUÊN (leech) ôn lại kỹ + ghi mẹo nhớ */
         <div className="flex min-h-0 flex-1 flex-col sm:flex-none">
           <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain pb-2 sm:flex-none sm:overflow-visible">
             <div className="flex flex-col items-center gap-3 rounded-3xl border bg-gradient-to-br from-primary/12 via-primary/5 to-transparent p-6 text-center shadow-sm sm:p-8">
-              <span className="rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold text-primary">✨ Từ mới — học trước nhé</span>
+              <span className={cn("rounded-full px-3 py-1 text-xs font-semibold", q.leech ? "bg-amber-500/15 text-amber-600 dark:text-amber-400" : "bg-primary/15 text-primary")}>
+                {q.leech ? "🔁 Hay quên — ôn lại kỹ" : "✨ Từ mới — học trước nhé"}
+              </span>
               <div className="flex items-center gap-2">
                 <span className="text-4xl font-bold tracking-tight sm:text-5xl">
                   {q.word.pos.includes("n") && q.word.gender ? (
@@ -374,10 +449,26 @@ export default function ReviewRunner({
                 <div className="mt-0.5 text-sm text-muted-foreground">{q.example.vi}</div>
               </div>
             )}
+            {q.leech && (
+              <div className="rounded-2xl bg-muted/50 p-4">
+                <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">✍️ Mẹo nhớ của bạn</div>
+                <textarea
+                  value={mnemo}
+                  onChange={(e) => setMnemo(e.target.value)}
+                  onBlur={() => void setMnemonic(q.word.id, mnemo)}
+                  rows={2}
+                  placeholder="Ghi cách bạn nhớ từ này (hình ảnh, liên tưởng, câu vè…)"
+                  className="w-full resize-none rounded-xl border bg-background p-3 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
+                />
+              </div>
+            )}
           </div>
           <div className="shrink-0 pt-4">
             <button
-              onClick={next}
+              onClick={() => {
+                if (q.leech) void setMnemonic(q.word.id, mnemo);
+                next();
+              }}
               className="w-full rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99]"
             >
               Đã xem — Kiểm tra
@@ -409,7 +500,19 @@ export default function ReviewRunner({
         <div className="flex min-h-0 flex-1 flex-col sm:flex-none">
           <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain pb-2 sm:flex-none sm:overflow-visible">
             {/* đề bài */}
-            <div className="flex min-h-[8.5rem] flex-col items-center justify-center gap-3 rounded-3xl border bg-card p-6 text-center shadow-sm sm:min-h-[11rem] sm:p-8">
+            <div className="relative flex min-h-[8.5rem] flex-col items-center justify-center gap-3 rounded-3xl border bg-card p-6 text-center shadow-sm sm:min-h-[11rem] sm:p-8">
+              {chosen !== null && (
+                <span
+                  className={cn(
+                    "absolute left-3 top-3 rounded-full px-2.5 py-1 text-xs font-bold",
+                    chosen === q.answer
+                      ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
+                      : "bg-rose-500/15 text-rose-600 dark:text-rose-400",
+                  )}
+                >
+                  {chosen === q.answer ? "✓ Đúng" : "✗ Sai"}
+                </span>
+              )}
               {q.kind === "gender" ? (
                 <>
                   <div className="text-4xl font-bold tracking-tight sm:text-5xl">… {q.word.id}</div>
@@ -497,24 +600,77 @@ export default function ReviewRunner({
                 })}
               </div>
             )}
+
+            {/* thẻ chi tiết SAU khi trả lời (như HSK): từ + IPA + nghĩa đầy đủ + tối đa 2 ví dụ */}
+            {chosen !== null && q.kind === "mcq" && (
+              <div className="space-y-2 rounded-2xl border bg-muted/40 p-4">
+                <div className="flex items-center gap-2">
+                  <span className="text-xl font-bold">
+                    {q.word.pos.includes("n") && q.word.gender ? (
+                      <span className="font-normal text-muted-foreground">{q.word.gender === "m" ? "un " : "une "}</span>
+                    ) : null}
+                    {q.word.id}
+                  </span>
+                  <span className="font-mono text-sm text-muted-foreground">{q.word.ipa}</span>
+                  <button
+                    onClick={() => play(wordAudioUrl(q.word))}
+                    aria-label="Nghe"
+                    className="grid size-8 shrink-0 place-items-center rounded-full bg-primary/10 text-primary active:scale-95"
+                  >
+                    <Volume2 className="size-4" />
+                  </button>
+                </div>
+                <div className="text-sm leading-relaxed">{q.word.meaning_vi}</div>
+                {q.exs?.map((s) => (
+                  <div key={s.fr} className="flex items-start justify-between gap-2 border-t pt-2 text-sm">
+                    <div>
+                      <div className="font-medium">{s.fr}</div>
+                      <div className="text-muted-foreground">{s.vi}</div>
+                    </div>
+                    <button
+                      onClick={() => play(sentenceAudioUrl(s.fr))}
+                      aria-label="Nghe câu"
+                      className="grid size-7 shrink-0 place-items-center rounded-full bg-primary/10 text-primary active:scale-95"
+                    >
+                      <Volume2 className="size-3.5" />
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
-          {/* nút tiếp + hoàn tác khi đã trả lời */}
+          {/* nút tiếp (kèm thanh đếm 1,3s khi tự chuyển) + dừng lại xem kỹ / hoàn tác */}
           {chosen !== null && (
             <div className="shrink-0 space-y-2 pt-4">
               <button
                 onClick={next}
-                className="w-full rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99]"
+                className="relative w-full overflow-hidden rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99]"
               >
-                {i + 1 >= qs.length ? "Kết thúc" : "Tiếp tục"}
+                {autoAdv && (
+                  <span
+                    className="absolute inset-y-0 left-0 bg-white/25"
+                    style={{ animation: `aaFill ${AUTO_ADVANCE_MS}ms linear forwards` }}
+                  />
+                )}
+                <span className="relative">{i + 1 >= qs.length ? "Kết thúc" : "Tiếp tục"}</span>
               </button>
-              {undoInfo && (
+              {autoAdv ? (
                 <button
-                  onClick={() => void doUndo()}
+                  onClick={() => setAutoAdv(false)}
                   className="flex w-full items-center justify-center gap-1.5 rounded-xl py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 >
-                  <Undo2 className="size-4" /> Hoàn tác — lỡ bấm nhầm
+                  ⏸ Dừng lại xem kỹ
                 </button>
+              ) : (
+                undoInfo && (
+                  <button
+                    onClick={() => void doUndo()}
+                    className="flex w-full items-center justify-center gap-1.5 rounded-xl py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  >
+                    <Undo2 className="size-4" /> Hoàn tác — lỡ bấm nhầm
+                  </button>
+                )
               )}
             </div>
           )}
@@ -557,18 +713,22 @@ function SessionShell({
   title,
   onExit,
   progress,
+  count,
+  pill,
   extra,
   children,
 }: {
   title: string;
   onExit: () => void;
   progress: number;
+  count?: string; // "3/20" — vị trí thẻ hiện tại / tổng ban đầu
+  pill?: string; // nhãn loại câu hỏi ("Pháp → nghĩa", "Điền vào câu"…)
   extra?: string;
   children: React.ReactNode;
 }) {
   return (
     <div className="fixed inset-0 z-[60] flex flex-col bg-background">
-      {/* header: nút thoát + thanh tiến trình (luôn ở trên) */}
+      {/* header: nút thoát + đếm thẻ + nhãn loại câu + thanh tiến trình (luôn ở trên) */}
       <div className="flex shrink-0 items-center gap-3 px-4 pb-2 pt-3 sm:mx-auto sm:w-full sm:max-w-2xl">
         <button onClick={onExit} aria-label="Thoát" className="grid h-9 w-9 place-items-center rounded-full bg-muted transition-colors hover:bg-muted/70">
           <X className="h-5 w-5" />
@@ -576,7 +736,11 @@ function SessionShell({
         <div className="flex-1">
           <div className="flex items-baseline gap-2 text-sm font-medium">
             {title}
+            {count && <span className="font-mono text-xs text-muted-foreground">{count}</span>}
             {extra && <span className="text-xs text-muted-foreground">{extra}</span>}
+            {pill && (
+              <span className="ml-auto rounded-full bg-muted px-2 py-0.5 text-[11px] font-medium text-muted-foreground">{pill}</span>
+            )}
           </div>
           <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-muted">
             <div className="h-full rounded-full bg-primary transition-all duration-300" style={{ width: `${Math.round(progress * 100)}%` }} />

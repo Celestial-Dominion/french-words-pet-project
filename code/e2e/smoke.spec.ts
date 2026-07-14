@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 
-// Smoke test các luồng chính (chạy local, không cần backend).
+// Smoke test các luồng chính (chạy local trên dev, không cần backend —
+// AuthGate tự bỏ qua chặn đăng nhập khi chạy máy tự động ngoài production).
 
 test("trang chủ: hero + grid cấp độ + khám phá", async ({ page }) => {
   await page.goto("/");
@@ -28,10 +29,25 @@ test("học từ mới: learn-card trước rồi mới MCQ", async ({ page }) =
   await page.goto("/hoc/1");
   await page.getByRole("button", { name: /Học .* từ mới/ }).click();
   await expect(page.getByText("Học từ mới · A1")).toBeVisible();
+  // header phiên: đếm thẻ + nhãn loại câu (như HSK)
+  await expect(page.getByText(/^1\/\d+$/)).toBeVisible();
+  await expect(page.getByText("✨ Từ mới", { exact: true })).toBeVisible();
   // thẻ HỌC từ mới hiện trước (không hỏi ngay)
   await expect(page.getByText("Từ mới — học trước nhé")).toBeVisible();
   await page.getByRole("button", { name: "Đã xem — Kiểm tra" }).click();
   await expect(page.getByText("Chọn nghĩa đúng")).toBeVisible();
+  // nhớ-lại-trước: bấm hiện đáp án → chọn 1 phương án → badge Đúng/Sai + thẻ chi tiết + nút tiếp
+  await page.getByRole("button", { name: /Thử nhớ trong đầu/ }).click();
+  await page.locator("div.grid > button").first().click();
+  await expect(page.getByText(/✓ Đúng|✗ Sai/)).toBeVisible();
+  await expect(page.getByRole("button", { name: /Tiếp tục|Kết thúc/ })).toBeVisible();
+});
+
+test("ôn tập: cài đặt có số thẻ mỗi phiên", async ({ page }) => {
+  await page.goto("/on-tap");
+  await page.getByText("⚙️ Cài đặt").click();
+  await expect(page.getByText("Số thẻ ôn mỗi phiên")).toBeVisible();
+  await expect(page.getByText("Nhớ lại trước")).toBeVisible();
 });
 
 test("bài đọc: danh sách + mở đọc bấm-tra", async ({ page }) => {

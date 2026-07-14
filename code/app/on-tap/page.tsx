@@ -52,10 +52,21 @@ export default function OnTapPage() {
     refresh();
   }, [refresh]);
 
+  // Xáo trộn (Fisher–Yates) — thẻ trong phiên ra ngẫu nhiên như HSK.
+  const shuffled = <T,>(arr: T[]): T[] => {
+    const a = [...arr];
+    for (let k = a.length - 1; k > 0; k--) {
+      const j = Math.floor(Math.random() * (k + 1));
+      [a[k], a[j]] = [a[j], a[k]];
+    }
+    return a;
+  };
+
   // Ghép câu hỏi từ danh sách bản ghi ôn (đến hạn/ôn sớm/hay quên).
-  const buildFromRecords = async (rows: ReviewRecord[], title: string) => {
-    if (!rows.length) return;
+  const buildFromRecords = async (records: ReviewRecord[], title: string) => {
+    if (!records.length) return;
     setBusy(true);
+    const rows = shuffled(records);
     const c = await getConfig();
     const levels = [...new Set(rows.map((r) => r.level))];
     const wordMap = new Map<string, Word>();
@@ -72,13 +83,22 @@ export default function OnTapPage() {
       examples = { ...examples, ...ex };
     }
     const words = rows.map((r) => wordMap.get(r.wordId)).filter(Boolean) as Word[];
-    setSession({ qs: buildQuestions(words, examples, pool, c, false), title });
+    const recMap = new Map(rows.map((r) => [r.wordId, r]));
+    setSession({ qs: buildQuestions(words, examples, pool, c, false, recMap), title });
     setBusy(false);
   };
 
-  const startDue = async () => buildFromRecords(await getDueReviews(), "Ôn tập");
+  // Đến hạn: cắt theo "số thẻ mỗi phiên" (0 = tất cả) — thẻ còn lại ôn ở phiên sau.
+  const startDue = async () => {
+    const c = await getConfig();
+    let rows = await getDueReviews();
+    if (c.reviewPerSession > 0 && rows.length > c.reviewPerSession) {
+      rows = rows.sort((a, b) => new Date(a.due).getTime() - new Date(b.due).getTime()).slice(0, c.reviewPerSession);
+    }
+    return buildFromRecords(rows, "Ôn tập");
+  };
   const startAhead = async () => buildFromRecords(await getAheadReviews(new Date(), 20), "Ôn sớm");
-  const startHard = async () => buildFromRecords(await getHardReviews(30), "Ôn từ hay quên");
+  const startHard = async () => buildFromRecords(await getHardReviews(20), "Ôn từ hay quên");
 
   // Học từ mới: gom từ CHƯA học theo cấp (newLevel cố định, hoặc auto thấp→cao).
   // force = học thêm dù đã hết hạn mức ngày (mặc định lấy 10 từ).
@@ -162,7 +182,13 @@ export default function OnTapPage() {
           className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none"
         >
           <GraduationCap className="size-5" />
-          {busy ? "Đang tải…" : due > 0 ? `Ôn tập (${due} thẻ)` : ahead > 0 ? `Ôn sớm (${ahead} thẻ)` : "Chưa có thẻ để ôn"}
+          {busy
+            ? "Đang tải…"
+            : due > 0
+              ? `Ôn tập (${cfg && cfg.reviewPerSession > 0 ? Math.min(due, cfg.reviewPerSession) : due} thẻ)`
+              : ahead > 0
+                ? `Ôn sớm (${ahead} thẻ)`
+                : "Chưa có thẻ để ôn"}
         </button>
 
         {due > 0 && ahead > 0 && (
@@ -181,7 +207,7 @@ export default function OnTapPage() {
             disabled={busy}
             className="mt-2 flex w-full items-center justify-center gap-2 rounded-2xl border border-amber-500/40 bg-amber-500/10 py-3 text-sm font-semibold text-amber-700 transition-all hover:bg-amber-500/20 active:scale-[0.99] disabled:opacity-50 dark:text-amber-400"
           >
-            <Brain className="size-4" /> Ôn từ hay quên ({hard})
+            <Brain className="size-4" /> Ôn từ hay quên ({Math.min(hard, 20)})
           </button>
         )}
 
@@ -217,6 +243,25 @@ export default function OnTapPage() {
             </label>
 
             <label className="flex items-center justify-between gap-4">
+              <span className="text-sm font-medium">
+                Số thẻ ôn mỗi phiên
+                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">giới hạn thẻ đến hạn mỗi phiên cho đỡ nản; thẻ còn lại ôn ở phiên sau</span>
+              </span>
+              <select
+                value={cfg.reviewPerSession}
+                onChange={(e) => patch({ reviewPerSession: Number(e.target.value) })}
+                className="rounded-xl border bg-background px-3 py-2 text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
+              >
+                <option value={0}>Tất cả</option>
+                {[10, 20, 30, 50, 100].map((n) => (
+                  <option key={n} value={n}>
+                    {n} thẻ
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="flex items-center justify-between gap-4">
               <span className="text-sm font-medium">Nguồn từ mới</span>
               <select
                 value={cfg.newLevel}
@@ -246,6 +291,7 @@ export default function OnTapPage() {
                 <option value={1}>1 câu</option>
                 <option value={2}>2 câu</option>
                 <option value={3}>3 câu</option>
+                <option value={5}>5 câu</option>
               </select>
             </label>
 

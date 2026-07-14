@@ -1,13 +1,14 @@
 // Dựng danh sách câu hỏi cho một phiên ôn/học từ dữ liệu từ + ví dụ.
-import type { Word, SrsConfig } from "./types";
+import type { Word, SrsConfig, ReviewRecord } from "./types";
 import type { ExampleSentence } from "./data";
+import { isLeech, isMature } from "./srs";
 
 // 4 chế độ câu trắc nghiệm (chấm FSRS): xem từ→chọn nghĩa, nghĩa→chọn từ (ngược),
 // điền từ vào câu (cloze), nghe→chọn nghĩa (listen).
 export type McqMode = "meaning" | "reverse" | "cloze" | "listen";
 
 export type Question =
-  | { kind: "learn"; word: Word; graded: false; example?: ExampleSentence }
+  | { kind: "learn"; word: Word; graded: false; example?: ExampleSentence; leech?: boolean }
   | {
       kind: "mcq";
       mode: McqMode;
@@ -17,6 +18,7 @@ export type Question =
       prompt: string; // meaning/listen: từ Pháp · reverse: nghĩa VI · cloze: không dùng
       options: string[];
       answer: number;
+      exs?: ExampleSentence[]; // 1-2 câu ví dụ cho thẻ chi tiết SAU khi trả lời
       clozeBefore?: string;
       clozeAfter?: string;
       clozeVi?: string;
@@ -45,8 +47,21 @@ export function shortVi(w: Word): string {
   return s || w.meaning_vi;
 }
 
+// Phương án nhiễu: ưu tiên CÙNG loại từ (gây nhiễu tốt hơn), không trùng nghĩa nhau — như HSK.
 function pickDistractors(word: Word, pool: Word[], n = 3): Word[] {
-  return shuffle(pool.filter((w) => w.id !== word.id && w.meaning_vi)).slice(0, n);
+  const seen = new Set([shortVi(word)]);
+  const out: Word[] = [];
+  const samePos = shuffle(pool.filter((w) => w.pos === word.pos));
+  const rest = shuffle(pool);
+  for (const w of [...samePos, ...rest]) {
+    if (out.length >= n) break;
+    if (w.id === word.id || !w.meaning_vi || out.includes(w)) continue;
+    const key = shortVi(w);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(w);
+  }
+  return out;
 }
 
 /** MCQ nghĩa: hiện từ Pháp → chọn nghĩa Việt đúng. */
@@ -98,26 +113,34 @@ function genderFor(word: Word): Question {
   return { kind: "gender", word, graded: false, options, answer: word.gender === "m" ? 0 : 1 };
 }
 
-// Chọn chế độ MCQ: từ mới luôn hỏi nghĩa (vừa xem learn-card xong);
-// từ ôn lại: trộn cloze (25% khi có câu chứa từ) + nghe (20%) + theo hướng hỏi đã cài.
-function gradedFor(w: Word, ex: ExampleSentence[], pool: Word[], config: SrsConfig, isNew: boolean): Question {
-  if (!isNew) {
-    const r = Math.random();
-    if (r < 0.25) {
-      const c = clozeFor(w, ex, pool, isNew);
-      if (c) return c;
-    }
-    if (r < 0.45) return listenFor(w, pool, isNew);
-    if (config.direction === "vi2fr") return reverseFor(w, pool, isNew);
+// Chọn chế độ MCQ theo ĐỘ CHÍN của thẻ (như HSK):
+//  - từ mới / lần ôn đầu: nhận diện (theo hướng hỏi đã cài) — vừa xem learn-card xong;
+//  - chưa chín (stability <7 ngày) hoặc hay quên: 50% nhận diện + 30% nhớ lại + 20% nghe (KHÔNG cloze);
+//  - đã chín: 50% cloze (khi có câu chứa từ) + 30% nhớ lại + 20% nghe.
+function gradedFor(w: Word, ex: ExampleSentence[], pool: Word[], config: SrsConfig, isNew: boolean, rec?: ReviewRecord): Question {
+  const recog = () => (config.direction === "vi2fr" ? reverseFor(w, pool, isNew) : meaningFor(w, pool, isNew));
+  const recall = () => (config.direction === "vi2fr" ? meaningFor(w, pool, isNew) : reverseFor(w, pool, isNew));
+  if (isNew || !rec || rec.reps <= 0) return recog();
+  const r = Math.random();
+  if (!isMature(rec)) {
+    if (r < 0.5) return recog();
+    if (r < 0.8) return recall();
+    return listenFor(w, pool, isNew);
   }
-  return meaningFor(w, pool, isNew);
+  if (r < 0.5) {
+    const c = clozeFor(w, ex, pool, isNew);
+    if (c) return c;
+  }
+  if (r < 0.8) return recall();
+  return listenFor(w, pool, isNew);
 }
 
 /**
  * Dựng câu hỏi cho một tập từ trong phiên.
  * Từ MỚI: 1 thẻ "learn" (xem từ + nghĩa + ví dụ, không chấm) TRƯỚC khi kiểm tra —
  * người mới không bị hỏi MCQ trên từ chưa từng thấy.
- * Mỗi từ: 1 MCQ (chấm FSRS, 1 trong 4 chế độ) + arrangePerWord câu sắp xếp
+ * Từ HAY QUÊN (leech, quên ≥4 lần): cũng được 1 thẻ "learn" ôn lại kỹ (kèm ô mẹo nhớ) trước khi hỏi.
+ * Mỗi từ: 1 MCQ (chấm FSRS, chế độ theo độ chín thẻ) + arrangePerWord câu sắp xếp
  * + (tỉ trọng thấp) 1 câu chọn giống nếu là danh từ.
  */
 export function buildQuestions(
@@ -126,12 +149,17 @@ export function buildQuestions(
   pool: Word[],
   config: SrsConfig,
   isNew: boolean,
+  records?: Map<string, ReviewRecord>,
 ): Question[] {
   const out: Question[] = [];
   for (const w of words) {
     const ex = examplesByWord[w.id] || [];
+    const rec = records?.get(w.id);
     if (isNew) out.push({ kind: "learn", word: w, graded: false, example: ex[0] });
-    out.push(gradedFor(w, ex, pool, config, isNew));
+    else if (isLeech(rec)) out.push({ kind: "learn", word: w, graded: false, example: ex[0], leech: true });
+    const q = gradedFor(w, ex, pool, config, isNew, rec);
+    if (q.kind === "mcq") q.exs = ex.slice(0, 2);
+    out.push(q);
 
     for (let i = 0; i < Math.min(config.arrangePerWord, ex.length); i++) {
       const s = ex[i];

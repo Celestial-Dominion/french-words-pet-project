@@ -16,8 +16,10 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
   const [optimistic, setOptimistic] = useState(false);
+  const [e2e, setE2e] = useState(false);
 
   useEffect(() => {
+    if (process.env.NODE_ENV !== "production" && navigator.webdriver) setE2e(true);
     try {
       const last = localStorage.getItem(LAST_UID_KEY);
       if (last && (!OWNER_UID || last === OWNER_UID)) setOptimistic(true);
@@ -38,6 +40,10 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
 
   // Chưa cấu hình Firebase → chạy offline bình thường (không chặn).
   if (!firebaseEnabled) return <>{children}</>;
+
+  // E2E (Playwright chạy dev): bỏ qua chặn đăng nhập — CHỈ ngoài production.
+  // (đặt trong state để server/client render lần đầu giống nhau, tránh hydration mismatch)
+  if (e2e) return <>{children}</>;
 
   // Đang xác định trạng thái đăng nhập: lần trước OK → hiện app luôn (đỡ màn "Đang tải…").
   if (!ready) {

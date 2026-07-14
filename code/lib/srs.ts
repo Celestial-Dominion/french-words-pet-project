@@ -41,14 +41,24 @@ export function scheduleRated(card: Card, rating: Grade, now: Date): Card {
   return next;
 }
 
+// Từ "hay quên" (leech) và từ "đã chín" — dùng để chọn loại câu hỏi + thẻ ôn lại kỹ.
+export const LEECH_LAPSES = 4; // quên ≥4 lần → leech
+export const MATURE_STABILITY = 7; // stability ≥7 ngày → đã chín (mới hỏi cloze)
+export const isLeech = (r?: ReviewRecord | null) => !!r && (r.lapses ?? 0) >= LEECH_LAPSES;
+export const isMature = (r?: ReviewRecord | null) => !!r && r.stability >= MATURE_STABILITY && !isLeech(r);
+
 /**
- * Suy mức chấm từ kết quả + TỐC ĐỘ trả lời (như HSK): sai → Lại;
- * đúng nhanh (≤3s) → Dễ, đúng chậm (≥12s, phải nghĩ lâu) → Khó, còn lại → Được.
+ * Suy mức chấm từ kết quả + TỐC ĐỘ trả lời (ngưỡng theo LOẠI câu như HSK): sai → Lại;
+ * quá 45s coi như bị xao nhãng → Được; đúng nhanh → Dễ, đúng chậm → Khó, còn lại → Được.
+ * Cloze phải đọc cả câu, listen phải nghe hết audio → ngưỡng nới hơn câu thường.
  */
-export function ratingFromSpeed(correct: boolean, ms: number): Grade {
+export function ratingFromSpeed(correct: boolean, ms: number, mode?: "meaning" | "reverse" | "cloze" | "listen"): Grade {
   if (!correct) return Rating.Again as Grade;
-  if (ms <= 3000) return Rating.Easy as Grade;
-  if (ms >= 12000) return Rating.Hard as Grade;
+  if (ms > 45_000) return Rating.Good as Grade; // rời máy/xao nhãng, không phạt Khó
+  const fast = mode === "cloze" ? 6000 : mode === "listen" ? 5000 : 3500;
+  const slow = mode === "cloze" ? 14_000 : mode === "listen" ? 12_000 : 9000;
+  if (ms <= fast) return Rating.Easy as Grade;
+  if (ms >= slow) return Rating.Hard as Grade;
   return Rating.Good as Grade;
 }
 

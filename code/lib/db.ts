@@ -112,7 +112,7 @@ export async function recordAnswer(opts: {
   isNew: boolean;
   rating?: Grade; // chấm theo tốc độ (Lại/Khó/Được/Dễ); bỏ trống = suy từ correct
   now?: Date;
-}): Promise<{ prev: ReviewRecord | undefined }> {
+}): Promise<{ prev: ReviewRecord | undefined; next: ReviewRecord }> {
   const now = opts.now ?? new Date();
   const existing = await db.reviews.get(opts.wordId);
   const card = existing ? recordToCard(existing) : newCard(now);
@@ -134,7 +134,7 @@ export async function recordAnswer(opts: {
     if (!opts.correct) d.again += 1;
     await db.daily.put(d);
   });
-  return { prev: existing };
+  return { prev: existing, next: rec };
 }
 
 /** Hoàn tác lần chấm vừa rồi: khôi phục bản ghi FSRS cũ + trừ lại thống kê ngày. */

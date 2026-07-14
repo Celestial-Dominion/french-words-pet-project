@@ -115,3 +115,13 @@
 body.studying-lock {
   overflow: hidden;
 }
+
+/* Thanh đếm giờ "tự chuyển khi đúng" trên nút Tiếp tục (phiên ôn). */
+@keyframes aaFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
