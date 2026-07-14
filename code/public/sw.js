@@ -1,5 +1,5 @@
 // Service worker:
-//  - HTML điều hướng: network-first (luôn lấy trang mới sau deploy; offline → cache).
+//  - HTML điều hướng: stale-while-revalidate (trả cache ngay, tải bản mới cập nhật nền).
 //  - /_next/static (JS/CSS có hash bất biến) + data JSON + audio: cache-first (tải tức thì,
 //    không chờ mạng) → mở lại app nhanh như HSK. Deploy mới đổi tên file hash nên không kẹt bản cũ.
 const CACHE = "fr-words-v5";
