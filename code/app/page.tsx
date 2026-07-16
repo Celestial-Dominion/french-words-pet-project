@@ -10,13 +10,13 @@ export default function Home() {
       <HomeStats />
 
       <section className="space-y-3">
-        <h2 className="text-lg font-semibold">Chọn cấp độ</h2>
+        <h2 className="text-lg font-semibold">Chọn cấp độ học</h2>
         <LevelGrid />
       </section>
 
       <section className="space-y-3">
         <h2 className="text-lg font-semibold">Khám phá</h2>
-        <div className="grid gap-3 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-3">
           <ExploreCard
             href="/phat-am"
             icon={<Volume2 className="size-6" />}

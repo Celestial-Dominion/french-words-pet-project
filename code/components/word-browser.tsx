@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { ChevronLeft, Search, GraduationCap, Plus } from "lucide-react";
+import { GraduationCap, Plus } from "lucide-react";
 import { loadWords, loadExamplesForWords, type ExampleSentence } from "@/lib/data";
 import { db, learnedIds, newTodayCount, getConfig } from "@/lib/db";
 import { buildQuestions, type Question } from "@/lib/review-session";
@@ -14,28 +14,34 @@ import type { Word, SrsConfig, ReviewRecord } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import ReviewRunner from "@/components/review-runner";
 
-const CAP = 300; // giới hạn số dòng hiển thị để mượt trên điện thoại
+const PAGE = 90; // cuộn vô hạn: mỗi lần hiện thêm 90 dòng (như HSK)
 
-type Status = "new" | "learning" | "due" | "known";
+type Status = "new" | "due" | "learned";
 const STATUS_DOT: Record<Status, string> = {
   new: "bg-muted-foreground/25",
-  learning: "bg-sky-500",
   due: "bg-amber-500",
-  known: "bg-emerald-500",
+  learned: "bg-emerald-500",
 };
-const FILTERS: { key: "all" | Status; label: string }[] = [
+type FilterKey = "all" | "new" | "due" | "known" | "leech";
+const FILTERS: { key: FilterKey; label: string }[] = [
   { key: "all", label: "Tất cả" },
   { key: "new", label: "Chưa học" },
   { key: "due", label: "Đến hạn" },
-  { key: "learning", label: "Đang học" },
   { key: "known", label: "Đã thuộc" },
+  { key: "leech", label: "Hay quên" },
 ];
 
 function statusOf(rec: ReviewRecord | undefined, now: number): Status {
   if (!rec) return "new";
   if (new Date(rec.due).getTime() <= now) return "due";
-  if ((rec.stability ?? 0) >= 21) return "known";
-  return "learning";
+  return "learned";
+}
+function matchFilter(rec: ReviewRecord | undefined, now: number, f: FilterKey): boolean {
+  if (f === "all") return true;
+  if (f === "new") return !rec;
+  if (f === "due") return !!rec && new Date(rec.due).getTime() <= now;
+  if (f === "known") return !!rec && (rec.stability ?? 0) >= 21;
+  return !!rec && (rec.lapses ?? 0) >= 4; // hay quên (leech)
 }
 
 function article(w: Word): string | null {
@@ -48,7 +54,8 @@ export default function WordBrowser({ level }: { level: number }) {
   const [examples, setExamples] = useState<Record<string, ExampleSentence[]>>({});
   const [reviews, setReviews] = useState<Map<string, ReviewRecord>>(new Map());
   const [q, setQ] = useState("");
-  const [filter, setFilter] = useState<"all" | Status>("all");
+  const [filter, setFilter] = useState<FilterKey>("all");
+  const [visible, setVisible] = useState(PAGE);
   const [selected, setSelected] = useState<Word | null>(null);
   const [remainingNew, setRemainingNew] = useState<number | null>(null);
   const [session, setSession] = useState<Question[] | null>(null);
@@ -111,23 +118,38 @@ export default function WordBrowser({ level }: { level: number }) {
     const nq = toSearch(q);
     let list = words;
     if (nq) list = list.filter((w) => w.search.includes(nq) || w.meaning_vi.toLowerCase().includes(q.trim().toLowerCase()));
-    if (filter !== "all") list = list.filter((w) => statusOf(reviews.get(w.id), now) === filter);
+    if (filter !== "all") list = list.filter((w) => matchFilter(reviews.get(w.id), now, filter));
     return list;
   }, [words, q, filter, reviews, now]);
 
-  const shown = filtered.slice(0, CAP);
+  const shown = filtered.slice(0, visible);
+
+  // Đang trong phiên học → chỉ hiện phiên (khung nằm dưới topbar như HSK)
+  if (session && config) {
+    return (
+      <ReviewRunner
+        questions={session}
+        title={`Học từ mới · ${meta?.cefr}`}
+        config={config}
+        onExit={() => {
+          setSession(null);
+          refreshNew();
+          refreshReviews();
+        }}
+      />
+    );
+  }
 
   return (
     <div className="flex flex-col">
-      <div className="mb-4 flex items-center gap-3">
-        <Link href="/" aria-label="Quay lại" className="grid size-9 shrink-0 place-items-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-muted/70">
-          <ChevronLeft className="size-5" />
+      <div className="mb-1">
+        <Link href="/hoc" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+          ← Cấp khác
         </Link>
+      </div>
+      <div className="mb-4 flex items-center gap-3">
         <span className={cn("flex size-10 shrink-0 items-center justify-center rounded-xl text-lg font-bold", accent.badge)}>{meta?.cefr}</span>
-        <h1 className="text-2xl font-bold sm:text-3xl">
-          {meta?.label.split("·")[1]?.trim()}{" "}
-          <span className="text-base font-medium text-muted-foreground">· {totalWords.toLocaleString("vi")} từ</span>
-        </h1>
+        <h1 className="text-2xl font-bold sm:text-3xl">{meta?.label.split("·")[1]?.trim()}</h1>
       </div>
 
       {/* Thẻ tiến độ cấp + nút học */}
@@ -140,46 +162,61 @@ export default function WordBrowser({ level }: { level: number }) {
               <span className="text-base font-medium text-muted-foreground">/{totalWords.toLocaleString("vi")}</span>
             </div>
           </div>
-          {remainingNew && remainingNew > 0 ? (
-            <button
-              onClick={() => startLearn(false)}
-              className="inline-flex items-center gap-2 rounded-2xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98]"
-            >
-              <GraduationCap className="size-4" /> Học {remainingNew} từ mới
-            </button>
-          ) : learnedCount < totalWords ? (
-            <button
-              onClick={() => startLearn(true)}
-              className="inline-flex items-center gap-2 rounded-2xl border px-5 py-3 text-sm font-semibold transition-all hover:bg-muted active:scale-[0.98]"
-            >
-              <GraduationCap className="size-4" /> Học thêm 10 từ
-            </button>
-          ) : (
-            <span className="text-sm font-medium text-muted-foreground">Đã học hết cấp này 🎉</span>
-          )}
+          <div className="flex flex-col items-end gap-2">
+            {remainingNew && remainingNew > 0 ? (
+              <button
+                onClick={() => startLearn(false)}
+                className="inline-flex items-center gap-2 rounded-2xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98]"
+              >
+                <GraduationCap className="size-4" /> Học ({remainingNew} từ mới)
+              </button>
+            ) : learnedCount < totalWords ? (
+              <button
+                onClick={() => startLearn(true)}
+                className="inline-flex items-center gap-2 rounded-2xl border px-5 py-3 text-sm font-semibold transition-all hover:bg-muted active:scale-[0.98]"
+              >
+                <Plus className="size-4" /> {Math.min(10, totalWords - learnedCount)} từ mới
+              </button>
+            ) : (
+              <span className="text-sm font-medium text-muted-foreground">Đã học hết cấp này 🎉</span>
+            )}
+            {remainingNew !== null && remainingNew > 0 && learnedCount < totalWords && (
+              <button
+                onClick={() => startLearn(true)}
+                className="inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold text-muted-foreground transition-all hover:bg-muted active:scale-[0.98]"
+              >
+                <Plus className="size-3.5" /> Học thêm 10 từ
+              </button>
+            )}
+          </div>
         </div>
-        <div className="mt-3 h-2 overflow-hidden rounded-full bg-muted">
+        <div className="mt-2 text-xs text-muted-foreground">
+          {Math.max(0, totalWords - learnedCount).toLocaleString("vi")} từ mới chờ học
+        </div>
+        <div className="mt-2 h-2 overflow-hidden rounded-full bg-muted">
           <div className={cn("h-full rounded-full transition-all", accent.bar)} style={{ width: `${pct}%` }} />
         </div>
       </div>
 
-      {/* Tìm kiếm (dính) */}
+      {/* Tìm kiếm + bộ lọc (dính) — select rộng bằng ô tìm (như HSK) */}
       <div className="sticky top-16 z-20 -mx-4 mb-3 bg-background/85 px-4 py-1 backdrop-blur">
-        <div className="relative">
-          <Search className="absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-          <input
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-            inputMode="search"
-            placeholder="Tìm (gõ không dấu được): ecole, an…"
-            className="w-full rounded-full border bg-card py-2.5 pl-10 pr-3 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
-          />
-        </div>
-        {/* Mobile: ô chọn full-width (bằng ô tìm kiếm). Desktop: hàng chip. */}
+        <input
+          value={q}
+          onChange={(e) => {
+            setQ(e.target.value);
+            setVisible(PAGE);
+          }}
+          inputMode="search"
+          placeholder="Tìm (gõ không dấu được): ecole, an…"
+          className="w-full rounded-full border bg-card px-4 py-2.5 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
+        />
         <select
           value={filter}
-          onChange={(e) => setFilter(e.target.value as "all" | Status)}
-          className="mt-2 w-full rounded-full border bg-card px-4 py-2.5 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/40 sm:hidden"
+          onChange={(e) => {
+            setFilter(e.target.value as FilterKey);
+            setVisible(PAGE);
+          }}
+          className="mt-2 w-full rounded-full border bg-card px-4 py-2.5 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
         >
           {FILTERS.map((f) => (
             <option key={f.key} value={f.key}>
@@ -187,30 +224,14 @@ export default function WordBrowser({ level }: { level: number }) {
             </option>
           ))}
         </select>
-        <div className="mt-2 hidden gap-2 overflow-x-auto pb-1 sm:flex">
-          {FILTERS.map((f) => (
-            <button
-              key={f.key}
-              onClick={() => setFilter(f.key)}
-              className={cn(
-                "shrink-0 rounded-full px-3 py-1 text-sm font-medium transition-colors",
-                filter === f.key ? "bg-primary text-primary-foreground" : "border text-muted-foreground hover:bg-muted",
-              )}
-            >
-              {f.label}
-            </button>
-          ))}
-        </div>
       </div>
 
       {words === null ? (
         <p className="text-muted-foreground">Đang tải…</p>
       ) : (
         <>
-          <p className="mb-2 text-xs text-muted-foreground">
-            {filtered.length.toLocaleString("vi")} kết quả
-            {filtered.length > CAP ? ` · hiển thị ${CAP} đầu, gõ để lọc` : ""}
-          </p>
+          <p className="mb-2 text-xs text-muted-foreground">{filtered.length.toLocaleString("vi")} từ</p>
+          {filtered.length === 0 && <p className="py-8 text-center text-sm text-muted-foreground">Không tìm thấy từ nào.</p>}
           <ul className="grid grid-cols-1 gap-2.5 pb-4 sm:grid-cols-2 lg:grid-cols-3">
             {shown.map((w) => {
               const art = article(w);
@@ -219,11 +240,10 @@ export default function WordBrowser({ level }: { level: number }) {
                 <li key={w.id}>
                   <button
                     onClick={() => openWord(w)}
-                    className="flex w-full items-start gap-2.5 rounded-2xl border bg-card p-3.5 text-left transition-all hover:border-ring/40 hover:shadow-sm active:scale-[0.99]"
+                    className="flex w-full items-start gap-3 rounded-2xl border bg-card p-3.5 text-left transition-all hover:border-ring/40 hover:shadow-sm active:scale-[0.99]"
                   >
-                    <span className={cn("mt-1.5 size-2.5 shrink-0 rounded-full", STATUS_DOT[st])} aria-hidden />
                     <span className="min-w-0 flex-1">
-                      <span className="flex items-baseline justify-between gap-3">
+                      <span className="flex items-baseline gap-3">
                         <span className="text-lg font-semibold">
                           {art ? <span className="text-muted-foreground">{art} </span> : null}
                           {w.id}
@@ -232,11 +252,29 @@ export default function WordBrowser({ level }: { level: number }) {
                       </span>
                       <span className="mt-0.5 line-clamp-2 text-sm text-muted-foreground">{w.meaning_vi}</span>
                     </span>
+                    {/* chấm trạng thái bên PHẢI (như HSK) */}
+                    <span className={cn("mt-1.5 size-2.5 shrink-0 rounded-full", STATUS_DOT[st])} aria-hidden />
                   </button>
                 </li>
               );
             })}
           </ul>
+          {/* cuộn vô hạn: mốc quan sát hiện thêm PAGE dòng */}
+          {shown.length < filtered.length && (
+            <div
+              ref={(el) => {
+                if (!el) return;
+                const io = new IntersectionObserver((es) => {
+                  if (es[0].isIntersecting) setVisible((v) => v + PAGE);
+                });
+                io.observe(el);
+                return () => io.disconnect();
+              }}
+              className="py-4 text-center text-xs text-muted-foreground"
+            >
+              Đang tải thêm…
+            </div>
+          )}
         </>
       )}
 
@@ -249,18 +287,6 @@ export default function WordBrowser({ level }: { level: number }) {
         />
       )}
 
-      {session && config && (
-        <ReviewRunner
-          questions={session}
-          title={`Học từ mới · ${meta?.cefr}`}
-          config={config}
-          onExit={() => {
-            setSession(null);
-            refreshNew();
-            refreshReviews();
-          }}
-        />
-      )}
     </div>
   );
 }

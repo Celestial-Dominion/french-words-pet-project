@@ -21,26 +21,34 @@ test("khóa phát âm: danh sách bài", async ({ page }) => {
 test("tra từ: /hoc/1 tìm không dấu 'manger'", async ({ page }) => {
   await page.goto("/hoc/1");
   await page.getByPlaceholder(/Tìm/).fill("manger");
-  await expect(page.getByText("1 kết quả")).toBeVisible();
+  await expect(page.getByText("1 từ", { exact: true })).toBeVisible();
   await expect(page.getByText("/mɑ̃ʒe/")).toBeVisible();
 });
 
 test("học từ mới: learn-card trước rồi mới MCQ", async ({ page }) => {
   await page.goto("/hoc/1");
   await page.getByRole("button", { name: /Học .* từ mới/ }).click();
-  await expect(page.getByText("Học từ mới · A1")).toBeVisible();
-  // header phiên: đếm thẻ + nhãn loại câu (như HSK)
+  // hàng tiến trình phiên (như HSK): đếm thẻ + pill "từ mới" + nút Thoát chữ
   await expect(page.getByText(/^1\/\d+$/)).toBeVisible();
-  await expect(page.getByText("✨ Từ mới", { exact: true })).toBeVisible();
+  await expect(page.getByText("từ mới", { exact: true })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Thoát" })).toBeVisible();
   // thẻ HỌC từ mới hiện trước (không hỏi ngay)
   await expect(page.getByText("Từ mới — học trước nhé")).toBeVisible();
-  await page.getByRole("button", { name: "Đã xem — Kiểm tra" }).click();
-  await expect(page.getByText("Chọn nghĩa đúng")).toBeVisible();
-  // nhớ-lại-trước: bấm hiện đáp án → chọn 1 phương án → badge Đúng/Sai + thẻ chi tiết + nút tiếp
+  await page.getByRole("button", { name: /Đã xem — Kiểm tra/ }).click();
+  // nhớ-lại-trước: hiện đáp án → hướng dẫn + phương án đánh số → trả lời → badge Đúng/Sai
   await page.getByRole("button", { name: /Thử nhớ trong đầu/ }).click();
+  await expect(page.getByText("Chọn nghĩa đúng")).toBeVisible();
   await page.locator("div.grid > button").first().click();
   await expect(page.getByText(/✓ Đúng|✗ Sai/)).toBeVisible();
-  await expect(page.getByRole("button", { name: /Tiếp tục|Kết thúc/ })).toBeVisible();
+  await expect(page.getByRole("button", { name: /Tiếp tục|Kết thúc|Ghép câu/ })).toBeVisible();
+});
+
+test("đọc hub /doc + học /hoc: trang mới như HSK", async ({ page }) => {
+  await page.goto("/doc");
+  await expect(page.getByRole("heading", { name: "Đọc" })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Bài đọc/ })).toBeVisible();
+  await page.goto("/hoc");
+  await expect(page.getByRole("heading", { name: "Học từ theo cấp" })).toBeVisible();
 });
 
 test("ôn tập: cài đặt có số thẻ mỗi phiên", async ({ page }) => {
@@ -53,7 +61,7 @@ test("ôn tập: cài đặt có số thẻ mỗi phiên", async ({ page }) => {
 test("bài đọc: danh sách + mở đọc bấm-tra", async ({ page }) => {
   await page.goto("/bai-doc");
   await expect(page.getByRole("heading", { name: "Bài đọc", exact: true })).toBeVisible();
-  await page.getByText("La famille de Marie").click();
+  await page.getByRole("button", { name: /La famille de Marie/ }).last().click();
   await expect(page.getByRole("button", { name: "Nghe cả bài" })).toBeVisible();
 });
 
@@ -65,8 +73,8 @@ test("truyện: danh sách hiển thị", async ({ page }) => {
 
 test("tiến độ & binh nghiệp render", async ({ page }) => {
   await page.goto("/tien-do");
-  await expect(page.getByRole("heading", { name: "Tiến độ" })).toBeVisible();
-  await expect(page.getByText("Từ đã học theo cấp")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Tiến độ", exact: true })).toBeVisible();
+  await expect(page.getByText(/Tiến độ theo cấp/)).toBeVisible();
   await page.goto("/tu-luyen");
   await expect(page.getByRole("heading", { name: "Binh nghiệp" })).toBeVisible();
   await expect(page.getByText("Thang cấp bậc")).toBeVisible();

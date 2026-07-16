@@ -48,7 +48,7 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
   // Đang xác định trạng thái đăng nhập: lần trước OK → hiện app luôn (đỡ màn "Đang tải…").
   if (!ready) {
     if (optimistic) return <>{children}</>;
-    return <div className="grid flex-1 place-items-center py-20 text-muted-foreground">Đang tải…</div>;
+    return <div className="grid min-h-dvh place-items-center text-muted-foreground">Đang tải…</div>;
   }
 
   // Chưa đăng nhập → màn hình đăng nhập.
@@ -112,7 +112,7 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
 
 function Center({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mx-auto flex min-h-[70vh] w-full max-w-sm flex-1 flex-col items-center justify-center px-4 text-center">
+    <div className="mx-auto flex min-h-dvh w-full max-w-sm flex-col items-center justify-center px-4 text-center">
       {children}
     </div>
   );

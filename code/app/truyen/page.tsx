@@ -6,7 +6,7 @@ import { BookOpen, Check } from "lucide-react";
 import { loadStoriesIndex, loadStories, type StoryMetaDoc, type StoryDoc } from "@/lib/data";
 import { readIds } from "@/lib/db";
 import { LEVELS, levelAccent } from "@/lib/levels";
-import StoryReader from "@/components/story-reader";
+import StoryReader, { savedChapter } from "@/components/story-reader";
 
 export default function TruyenPage() {
   const [index, setIndex] = useState<StoryMetaDoc[] | null>(null);
@@ -50,6 +50,11 @@ export default function TruyenPage() {
 
   return (
     <div>
+      <div className="mb-1">
+        <Link href="/doc" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+          ← Đọc
+        </Link>
+      </div>
       <header className="mb-4">
         <h1 className="text-2xl font-bold tracking-tight">Truyện</h1>
         <p className="mt-1 text-sm text-muted-foreground">Truyện nhiều chương theo cấp — chạm từ để tra.</p>
@@ -87,6 +92,15 @@ export default function TruyenPage() {
                           <span className="block font-semibold">{m.title_fr}</span>
                           <span className="block truncate text-xs text-muted-foreground">{m.title_vi} · {m.chapters} chương</span>
                         </span>
+                        {/* badge "Đang đọc · ch. x/y" khi đã đọc dở (như HSK) */}
+                        {!read.has(m.id) && (() => {
+                          const ch = savedChapter(m.id, m.chapters);
+                          return ch > 0 ? (
+                            <span className="shrink-0 rounded-full bg-primary/15 px-2 py-0.5 text-[10px] font-semibold text-primary">
+                              Đang đọc · ch. {ch + 1}/{m.chapters}
+                            </span>
+                          ) : null;
+                        })()}
                       </button>
                     </li>
                   ))}

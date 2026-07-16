@@ -8,7 +8,7 @@ import { isLeech, isMature } from "./srs";
 export type McqMode = "meaning" | "reverse" | "cloze" | "listen";
 
 export type Question =
-  | { kind: "learn"; word: Word; graded: false; example?: ExampleSentence; leech?: boolean }
+  | { kind: "learn"; word: Word; graded: false; examples?: ExampleSentence[]; leech?: boolean }
   | {
       kind: "mcq";
       mode: McqMode;
@@ -155,8 +155,8 @@ export function buildQuestions(
   for (const w of words) {
     const ex = examplesByWord[w.id] || [];
     const rec = records?.get(w.id);
-    if (isNew) out.push({ kind: "learn", word: w, graded: false, example: ex[0] });
-    else if (isLeech(rec)) out.push({ kind: "learn", word: w, graded: false, example: ex[0], leech: true });
+    if (isNew) out.push({ kind: "learn", word: w, graded: false, examples: ex.slice(0, 5) });
+    else if (isLeech(rec)) out.push({ kind: "learn", word: w, graded: false, examples: ex.slice(0, 5), leech: true });
     const q = gradedFor(w, ex, pool, config, isNew, rec);
     if (q.kind === "mcq") q.exs = ex.slice(0, 2);
     out.push(q);

@@ -14,7 +14,8 @@ export const metadata: Metadata = {
   description:
     "Học từ vựng tiếng Pháp từ vỡ lòng (A1) đến nâng cao (C2) — nghĩa tiếng Việt, phát âm, ôn tập ngắt quãng.",
   manifest: "/manifest.webmanifest",
-  appleWebApp: { capable: true, title: "Từ vựng Pháp", statusBarStyle: "default" },
+  icons: { icon: "/icon-192.png", apple: "/apple-touch-icon.png" },
+  appleWebApp: { capable: true, title: "French", statusBarStyle: "default" },
 };
 
 export const viewport: Viewport = {
@@ -40,6 +41,8 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('fr.theme');var d=t?t==='dark':matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark')}catch(e){}})();`,
           }}
         />
+        <SwRegister />
+        <AuthGate>
         <header
           className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur-md"
           style={{ paddingTop: "env(safe-area-inset-top)" }}
@@ -62,10 +65,10 @@ export default function RootLayout({
           </div>
         </header>
         <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-6 pb-[calc(5rem+env(safe-area-inset-bottom))] md:pb-10">
-          <AuthGate>{children}</AuthGate>
+          {children}
         </main>
         <BottomNav />
-        <SwRegister />
+        </AuthGate>
       </body>
     </html>
   );

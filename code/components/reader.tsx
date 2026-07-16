@@ -18,6 +18,10 @@ export default function Reader({ doc, onBack }: { doc: ReadingDoc; onBack: () =>
   useEffect(() => {
     markRead(doc.id).then(() => setRead(true));
   }, [doc.id]);
+  const toggleRead = async () => {
+    await markRead(doc.id, !read);
+    setRead((v) => !v);
+  };
 
   const onTapWord = async (token: string) => {
     const w = await lookupWord(token);
@@ -50,9 +54,19 @@ export default function Reader({ doc, onBack }: { doc: ReadingDoc; onBack: () =>
 
       <Passage sentences={doc.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} />
 
-      <div className="mt-8 flex items-center justify-center gap-2 text-sm text-emerald-600 dark:text-emerald-400">
-        <Check className="size-4" />
-        {read ? "Đã đánh dấu đã đọc" : "…"}
+      {/* Đánh dấu đã đọc — bật/tắt được (như HSK) */}
+      <div className="mt-8 flex justify-center">
+        <button
+          onClick={() => void toggleRead()}
+          className={
+            read
+              ? "inline-flex items-center gap-2 rounded-full bg-emerald-500/15 px-4 py-2 text-sm font-medium text-emerald-700 transition-colors hover:bg-emerald-500/25 dark:text-emerald-300"
+              : "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted"
+          }
+        >
+          <Check className="size-4" />
+          {read ? "Đã đọc — chạm để bỏ đánh dấu" : "Đánh dấu đã đọc"}
+        </button>
       </div>
 
       {selected && <WordDetail word={selected} examples={examples} onClose={() => setSelected(null)} />}

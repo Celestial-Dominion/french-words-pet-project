@@ -137,6 +137,30 @@ export async function recordAnswer(opts: {
   return { prev: existing, next: rec };
 }
 
+/** "Đã biết rồi": tạo sẵn thẻ NHỚ BỀN (stability cao, due ~60 ngày) cho từ đã biết —
+ *  không phải học lại từ đầu qua phiên từ mới (như HSK). */
+export async function markKnown(wordId: string, level: number, now = new Date()): Promise<boolean> {
+  if (await db.reviews.get(wordId)) return false;
+  const due = new Date(now);
+  due.setDate(due.getDate() + 60);
+  await db.reviews.put({
+    wordId,
+    level,
+    due,
+    stability: 60,
+    difficulty: 5,
+    elapsed_days: 0,
+    scheduled_days: 60,
+    reps: 1,
+    lapses: 0,
+    learning_steps: 0,
+    state: 2, // Review
+    last_review: now,
+    introducedOn: todayStr(now),
+  });
+  return true;
+}
+
 /** Hoàn tác lần chấm vừa rồi: khôi phục bản ghi FSRS cũ + trừ lại thống kê ngày. */
 export async function undoAnswer(opts: {
   wordId: string;
@@ -247,9 +271,61 @@ export async function progressSummary(): Promise<ProgressSummary> {
   };
 }
 
+// ---- Sao lưu / khôi phục (như HSK) ----
+
+export interface BackupData {
+  app: "fr-words";
+  version: number;
+  exportedAt: string;
+  reviews: ReviewRecord[];
+  daily: DailyStat[];
+  reads?: ReadRow[];
+  config?: { key: string; value: SrsConfig }[];
+  gamify?: { key: string; xp: number }[];
+  notes?: { wordId: string; text: string }[];
+}
+
+export async function exportData(): Promise<BackupData> {
+  const [reviews, daily, reads, config, gamify, notes] = await Promise.all([
+    db.reviews.toArray(),
+    db.daily.toArray(),
+    db.reads.toArray(),
+    db.config.toArray(),
+    db.gamify.toArray(),
+    db.notes.toArray(),
+  ]);
+  return { app: "fr-words", version: 3, exportedAt: new Date().toISOString(), reviews, daily, reads, config, gamify, notes };
+}
+
+// JSON biến Date → chuỗi ISO; phải hồi sinh để Dexie index `due` so sánh đúng kiểu.
+function reviveReview(r: ReviewRecord): ReviewRecord {
+  return { ...r, due: new Date(r.due), last_review: r.last_review ? new Date(r.last_review) : undefined };
+}
+
+export async function importData(
+  data: BackupData,
+  mode: "replace" | "merge" = "replace",
+): Promise<{ reviews: number; daily: number }> {
+  if (data?.app !== "fr-words" || !Array.isArray(data.reviews))
+    throw new Error("Tệp sao lưu không hợp lệ (thiếu trường bắt buộc).");
+  await db.transaction("rw", [db.reviews, db.daily, db.reads, db.config, db.gamify, db.notes], async () => {
+    if (mode === "replace") {
+      await Promise.all([db.reviews.clear(), db.daily.clear(), db.reads.clear(), db.config.clear(), db.gamify.clear(), db.notes.clear()]);
+    }
+    await db.reviews.bulkPut(data.reviews.map(reviveReview));
+    if (Array.isArray(data.daily)) await db.daily.bulkPut(data.daily);
+    if (Array.isArray(data.reads)) await db.reads.bulkPut(data.reads);
+    if (Array.isArray(data.config)) await db.config.bulkPut(data.config);
+    if (Array.isArray(data.gamify)) await db.gamify.bulkPut(data.gamify);
+    if (Array.isArray(data.notes)) await db.notes.bulkPut(data.notes);
+  });
+  return { reviews: data.reviews.length, daily: data.daily?.length ?? 0 };
+}
+
 // ---- Tiến độ đọc (F6): bảng reads, có = đã đọc ----
-export async function markRead(id: string): Promise<void> {
-  await db.reads.put({ id, readAt: new Date().toISOString() });
+export async function markRead(id: string, read = true): Promise<void> {
+  if (read) await db.reads.put({ id, readAt: new Date().toISOString() });
+  else await db.reads.delete(id); // bỏ đánh dấu (toggle như HSK)
 }
 export async function isRead(id: string): Promise<boolean> {
   return (await db.reads.get(id)) != null;

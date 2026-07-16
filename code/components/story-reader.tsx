@@ -8,8 +8,19 @@ import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import { Passage, ReaderToolbar, useListenAll } from "@/components/passage";
 
+/** Vị trí chương đang đọc lưu localStorage (như HSK) — mở lại truyện là về đúng chương. */
+const chapterKey = (id: string) => `fr.story.${id}.ch`;
+export function savedChapter(id: string, max: number): number {
+  try {
+    const n = Number(localStorage.getItem(chapterKey(id)) ?? 0);
+    return Number.isFinite(n) ? Math.max(0, Math.min(n, max - 1)) : 0;
+  } catch {
+    return 0;
+  }
+}
+
 export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: () => void }) {
-  const [ci, setCi] = useState(0);
+  const [ci, setCi] = useState(() => savedChapter(doc.id, doc.chapters.length));
   const [showVi, setShowVi] = useState(true);
   const [selected, setSelected] = useState<Word | null>(null);
   const [examples, setExamples] = useState<ExampleSentence[]>([]);
@@ -20,7 +31,12 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
 
   useEffect(() => {
     if (last) markRead(doc.id);
-  }, [last, doc.id]);
+    try {
+      localStorage.setItem(chapterKey(doc.id), String(ci));
+    } catch {
+      /* bỏ qua */
+    }
+  }, [last, doc.id, ci]);
 
   const goChapter = (n: number) => {
     stop();
@@ -74,7 +90,7 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
 
       <Passage sentences={chapter.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} />
 
-      {/* điều hướng chương */}
+      {/* điều hướng chương — đếm n/tổng ở giữa (như HSK) */}
       <div className="mt-8 flex items-center justify-between gap-3">
         <button
           onClick={() => goChapter(Math.max(0, ci - 1))}
@@ -83,6 +99,9 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
         >
           <ChevronLeft className="size-4" /> Trước
         </button>
+        <span className="text-sm tabular-nums text-muted-foreground">
+          {ci + 1} / {doc.chapters.length}
+        </span>
         <button
           onClick={() => (last ? onBack() : goChapter(ci + 1))}
           className="flex items-center gap-1 rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"

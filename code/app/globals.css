@@ -87,7 +87,7 @@
   /* Cỡ chữ nền lớn hơn mặc định trình duyệt (giống app HSK) — mọi cỡ text-* theo rem
      nên toàn app to & dễ đọc hơn. 20px mobile, 21px từ md trở lên. */
   html {
-    font-size: 23px;
+    font-size: 20px;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
     overscroll-behavior-y: none;
@@ -97,6 +97,7 @@
     color: var(--foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    overscroll-behavior-y: none;
   }
   h1,
   h2,
@@ -107,13 +108,28 @@
 
 @media (min-width: 768px) {
   html {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 
 /* Khoá cuộn nền khi đang trong phiên học/ôn hoặc mở sheet (mobile). */
 body.studying-lock {
   overflow: hidden;
+}
+
+/* Chế độ tập trung khi đang trong phiên học/ôn (như HSK):
+   ẩn bottom-nav, thu padding main để khung phiên chiếm trọn phần dưới topbar. */
+body.studying #bottom-nav {
+  display: none;
+}
+@media (max-width: 767px) {
+  body.studying main {
+    padding-bottom: 0;
+  }
+  /* ẩn scrollbar trong phiên trên mobile cho gọn */
+  body.studying *::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Thanh đếm giờ "tự chuyển khi đúng" trên nút Tiếp tục (phiên ôn). */

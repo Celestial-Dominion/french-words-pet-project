@@ -165,3 +165,31 @@ Nội dung đủ tốt để học nghiêm túc từ con số 0 (đặc biệt p
 - [x] **R23. Xoá `coming-soon.tsx`** *(xong)*.
 
 > Verify: E2E Playwright 7/7 pass (learn-card→MCQ, đọc "Nghe cả bài", truyện, phát âm, tiến độ/binh nghiệp); test tay recall-first + trả lời sai + Hoàn tác trên browser. Đã build production sạch. CHƯA deploy.
+
+---
+
+## Đợt 2 (16/07) — San bằng UI/UX/kỹ thuật theo audit 3 mảng
+
+Người dùng phản hồi "dùng vài ngày vẫn chưa giống 100%" → audit lại toàn bộ bằng 3 agent (khung app / phiên học / đọc+kỹ thuật), tìm ~80 khác biệt, đã sửa:
+
+**Phiên học/ôn**: khung nằm DƯỚI topbar (topbar luôn hiện, bottom-nav ẩn qua `body.studying`) thay vì overlay toàn màn hình; hàng tiến trình kiểu HSK (đếm đậm + pill "từ mới"/loại câu + nút "Thoát" chữ); phương án có Ô SỐ 1-4 + 2 cột desktop; chạm thẻ đề để hiện đáp án + dòng "Chạm để hiện đáp án"; thẻ hỏi nghĩa ẩn IPA/loa (lộ ở thẻ chi tiết sau trả lời, căn giữa, ẩn từ khi đề đã là từ); cloze giữ "?" sau trả lời; learn-card 2 ví dụ + "Xem thêm N ví dụ"; leech CTA "Đã ôn — Kiểm tra"; nút tiếp "Ghép câu"/(Enter); màn tổng kết đứng riêng "Đã ôn N thẻ · M 'Lại'" + huy hiệu 12 + "Quay lại"; modal thoát "Thoát phiên ôn?".
+
+**Khung app**: AuthGate bao cả shell; nav thứ tự HSK (Học từ /hoc · Ôn tập · Tiến độ · Đọc /doc) + icon Layers/Flame; cỡ chữ nền 20/21px (về đúng HSK); trang /hoc (grid cấp) + /doc (hub đọc) mới; level-card thêm "N bài đọc" + pill "N đến hạn" + refresh 60s.
+
+**Ôn tập**: h1 "Ôn tập hôm nay"; cài đặt xếp như HSK (Hướng hỏi lên trên, "Không giới hạn", max 200, "5 câu (tất cả)"); "Học từ mới" → link /hoc.
+
+**Tra từ**: bộ lọc [Tất cả/Chưa học/Đến hạn/Đã thuộc/Hay quên] + chấm 3 trạng thái bên phải; select bộ lọc full-width; "← Cấp khác"; "+Học thêm 10 từ" phụ; "N từ mới chờ học"; cuộn vô hạn 90 dòng; empty state.
+
+**Chi tiết từ**: desktop = ngăn kéo phải; nút "Đã biết rồi" (markKnown, thẻ nhớ bền 60 ngày); "Đã học · ôn lại sau N ngày"; Esc đóng; mục "Gặp lại trong ngữ cảnh".
+
+**Tiến độ**: heatmap CHẠM được từng ô (chi tiết ngày) + chú giải Ít→Nhiều + ô co giãn; bento 3 cột (heatmap span 2); metric có đơn vị + ô đầu gradient; dự báo nhãn "Nay/T4…" thanh mảnh; "Tiến độ theo cấp · N thẻ" 2 cột nhãn đầy đủ.
+
+**Binh nghiệp**: thang cấp bậc + huy hiệu BẤM được → dialog chi tiết (bottom-sheet/modal, Esc) + pill "Hiện tại".
+
+**Đọc**: /doc hub + "← Đọc"; tiến độ đọc/cấp (bar + đọc/tổng + "✓ Xong") + nút "Đọc tiếp →"; toggle đã đọc trong reader; truyện NHỚ vị trí chương (localStorage) + badge "Đang đọc · ch. x/y" + đếm chương giữa.
+
+**Kỹ thuật**: SW viết lại như HSK (v6: HTML mạng-trước — hết cảnh phải mở 2 lần mới thấy bản mới; static/data SWR; KHÔNG cache /audio — đã có HTTP cache immutable; precache shell); đăng ký SW sau `load` ở mọi env; icon PWA PNG 192/512/maskable + apple-touch-icon (màu Bordeaux, trước đây còn màu xanh cũ) + `metadata.icons`; `exportData`/`importData` (sao lưu/khôi phục) trong lib/db.ts như HSK.
+
+Khác biệt GIỮ LẠI có chủ đích: màu Bordeaux; audio MP3 thật từng câu (không karaoke timing); khóa phát âm + câu chọn giống + bảng chia động từ + tab ví dụ/chia động từ + mẹo nhớ trong chi tiết từ (French có thêm); menu tài khoản/đồng bộ trên topbar; render lạc quan AuthGate; examples shard hoá; sync 1-doc+chunks (mô hình khác HSK nhưng nhanh hơn, đã cân nhắc giữ).
+
+Verify: E2E 9/9 (thêm test /doc + /hoc), build sạch, screenshot phiên học mobile đúng bố cục HSK (topbar hiện, ô số 1-4, aaFill).

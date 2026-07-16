@@ -10,6 +10,7 @@ export default function BottomNav() {
   const path = usePathname();
   return (
     <nav
+      id="bottom-nav"
       className="fixed inset-x-0 bottom-0 z-50 border-t bg-background/90 backdrop-blur-lg md:hidden"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >

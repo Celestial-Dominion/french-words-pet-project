@@ -6,7 +6,8 @@ import { loadConjugation, type ExampleSentence } from "@/lib/data";
 import { posLabel } from "@/lib/pos";
 import { wordAudioUrl, sentenceAudioUrl } from "@/lib/tts";
 import { cn } from "@/lib/utils";
-import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic } from "@/lib/db";
+import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic, markKnown } from "@/lib/db";
+import { occurrencesOf, type Occurrence } from "@/lib/suggest";
 import { XP } from "@/lib/gamify";
 import type { Word, Conjugation, ReviewRecord } from "@/lib/types";
 
@@ -14,20 +15,21 @@ function play(url: string) {
   new Audio(url).play().catch(() => {});
 }
 
-type Status = "new" | "learning" | "due" | "known";
+type Status = "new" | "due" | "learned";
 function statusOf(rec: ReviewRecord | null | undefined): Status | null {
   if (rec === undefined) return null; // đang tải
   if (!rec) return "new";
   if (new Date(rec.due).getTime() <= Date.now()) return "due";
-  if ((rec.stability ?? 0) >= 21) return "known";
-  return "learning";
+  return "learned";
 }
-const STATUS_META: Record<Status, { label: string; cls: string }> = {
-  new: { label: "Chưa học", cls: "bg-muted text-muted-foreground" },
-  learning: { label: "Đang học", cls: "bg-sky-500/15 text-sky-700 dark:text-sky-300" },
-  due: { label: "Đến hạn ôn", cls: "bg-amber-500/15 text-amber-700 dark:text-amber-300" },
-  known: { label: "Đã thuộc", cls: "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300" },
-};
+/** "ôn lại sau 3 ngày" — khoảng cách tới hạn ôn kế tiếp (như HSK). */
+function intervalLabel(due: Date | string): string {
+  const ms = new Date(due).getTime() - Date.now();
+  if (ms <= 0) return "bây giờ";
+  const h = Math.round(ms / 3_600_000);
+  if (h < 48) return `${Math.max(1, h)} giờ`;
+  return `${Math.round(h / 24)} ngày`;
+}
 
 const PRONOUNS = ["je", "tu", "il/elle", "nous", "vous", "ils/elles"];
 const TENSE_LABEL: Record<string, string> = {
@@ -61,11 +63,22 @@ export default function WordDetail({
   const [rec, setRec] = useState<ReviewRecord | null | undefined>(undefined);
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState("");
+  const [occ, setOcc] = useState<Occurrence[]>([]);
 
   useEffect(() => {
     getReview(word.id).then((r) => setRec(r ?? null));
     getMnemonic(word.id).then(setNote).catch(() => {});
+    occurrencesOf(word.id).then(setOcc).catch(() => {});
   }, [word.id]);
+
+  // Esc để đóng (như HSK)
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
 
   const status = statusOf(rec);
   const learn = async () => {
@@ -94,9 +107,10 @@ export default function WordDetail({
   const art = article(word);
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col justify-end bg-black/50 backdrop-blur-sm" onClick={onClose}>
+    /* Mobile: bottom-sheet · Desktop (sm+): ngăn kéo phải cao hết màn hình (như HSK) */
+    <div className="fixed inset-0 z-50 flex flex-col justify-end bg-black/50 backdrop-blur-sm sm:flex-row" onClick={onClose}>
       <div
-        className="max-h-[88vh] overflow-y-auto rounded-t-3xl border-t bg-background pb-8 shadow-2xl"
+        className="max-h-[88vh] overflow-y-auto rounded-t-3xl border-t bg-background pb-8 shadow-2xl duration-200 animate-in slide-in-from-bottom-4 sm:h-full sm:max-h-none sm:w-full sm:max-w-md sm:rounded-none sm:border-l sm:border-t-0 sm:slide-in-from-right-4"
         onClick={(e) => e.stopPropagation()}
       >
         {/* thanh kéo + đóng */}
@@ -136,20 +150,40 @@ export default function WordDetail({
           {/* trạng thái học + nút thêm vào ôn tập */}
           {status && (
             <div className="mt-4 flex flex-wrap items-center gap-2">
-              <span className={cn("rounded-full px-3 py-1 text-sm font-semibold", STATUS_META[status].cls)}>
-                {STATUS_META[status].label}
-              </span>
               {status === "new" ? (
-                <button
-                  onClick={learn}
-                  disabled={busy}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-1.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98] disabled:opacity-50"
-                >
-                  <Plus className="size-4" /> Học từ này
-                </button>
+                <>
+                  <span className="rounded-full bg-muted px-3 py-1 text-sm font-semibold text-muted-foreground">Chưa học</span>
+                  <button
+                    onClick={learn}
+                    disabled={busy}
+                    className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-1.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.98] disabled:opacity-50"
+                  >
+                    <Plus className="size-4" /> Học từ này
+                  </button>
+                  {/* Đã biết sẵn → tạo thẻ nhớ bền, khỏi học lại từ đầu (như HSK) */}
+                  <button
+                    onClick={async () => {
+                      if (busy) return;
+                      setBusy(true);
+                      await markKnown(word.id, word.level);
+                      const r = await getReview(word.id);
+                      setRec(r ?? null);
+                      setBusy(false);
+                      onChange?.();
+                    }}
+                    disabled={busy}
+                    className="inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-semibold text-muted-foreground transition-all hover:bg-muted active:scale-[0.98] disabled:opacity-50"
+                  >
+                    <Check className="size-4" /> Đã biết rồi
+                  </button>
+                </>
+              ) : status === "due" ? (
+                <span className="rounded-full bg-amber-500/15 px-3 py-1 text-sm font-semibold text-amber-700 dark:text-amber-300">
+                  Đến hạn ôn
+                </span>
               ) : (
-                <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
-                  <Check className="size-4 text-emerald-600 dark:text-emerald-400" /> Đã trong danh sách ôn
+                <span className="rounded-full bg-emerald-500/15 px-3 py-1 text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+                  Đã học · ôn lại sau {rec ? intervalLabel(rec.due) : ""}
                 </span>
               )}
             </div>
@@ -199,6 +233,29 @@ export default function WordDetail({
 
           {isVerb && tab === "conj" && (
             <ConjugationView conj={conj} lemma={word.id} group={word.verb_group} />
+          )}
+
+          {/* Gặp lại trong ngữ cảnh: bài đọc/truyện chứa từ này (như HSK) */}
+          {occ.length > 0 && (!isVerb || tab === "info") && (
+            <div className="mt-5">
+              <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                📖 Gặp lại trong ngữ cảnh
+              </div>
+              <div className="space-y-1.5">
+                {occ.map((o) => (
+                  <a
+                    key={`${o.type}-${o.id}`}
+                    href={`${o.type === "reading" ? "/bai-doc" : "/truyen"}?open=${encodeURIComponent(o.id)}`}
+                    className="flex items-center justify-between gap-2 rounded-xl border px-3 py-2 text-sm transition-colors hover:bg-muted"
+                  >
+                    <span className="min-w-0 truncate">
+                      <b>{o.title_fr}</b> <span className="text-muted-foreground">· {o.title_vi}</span>
+                    </span>
+                    <span className="shrink-0 text-xs text-muted-foreground">{o.type === "reading" ? "bài đọc" : "truyện"}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
           )}
         </div>
       </div>

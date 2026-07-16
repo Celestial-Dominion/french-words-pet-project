@@ -3,13 +3,23 @@
 import { useEffect, useState } from "react";
 import { Sparkles, Library, Flame, CalendarDays, Repeat, Brain, type LucideIcon } from "lucide-react";
 import { progressSummary, type ProgressSummary } from "@/lib/db";
-import { RANKS, rankForWords, badgeGroups, badgeTotals, type Stats } from "@/lib/gamify";
+import { RANKS, rankForWords, badgeGroups, badgeTotals, type Stats, type Badge, type Rank } from "@/lib/gamify";
 import { cn } from "@/lib/utils";
+
+type Detail = { kind: "rank"; rank: Rank; index: number } | { kind: "badge"; badge: Badge };
 
 export default function BinhNghiepPage() {
   const [sum, setSum] = useState<ProgressSummary | null>(null);
+  const [detail, setDetail] = useState<Detail | null>(null); // dialog chi tiết cấp bậc/huy hiệu
   useEffect(() => {
     progressSummary().then(setSum);
+  }, []);
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setDetail(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
   }, []);
 
   if (!sum) {
@@ -27,7 +37,10 @@ export default function BinhNghiepPage() {
 
   return (
     <div className="mx-auto max-w-3xl">
-      <h1 className="mb-4 text-2xl font-bold tracking-tight sm:text-3xl">Binh nghiệp</h1>
+      <div className="mb-4">
+        <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Binh nghiệp</h1>
+        <p className="mt-1 text-sm text-muted-foreground">Cấp bậc, thống kê học tập và huy hiệu — thăng tiến theo số từ đã học.</p>
+      </div>
 
       {/* thẻ cấp bậc hiện tại */}
       <div className="rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/15 to-transparent p-4">
@@ -63,31 +76,32 @@ export default function BinhNghiepPage() {
       </div>
 
       {/* thang cấp bậc */}
-      <h2 className="mb-2 mt-6 text-lg font-semibold">Thang cấp bậc</h2>
+      <h2 className="mb-2 mt-6 text-lg font-semibold">
+        Thang cấp bậc <span className="text-xs font-normal text-muted-foreground">· chạm để xem mô tả</span>
+      </h2>
       <ol className="space-y-1.5">
         {RANKS.map((r, i) => {
           const reached = sum.words >= r.minWords;
           const current = i === rp.index;
           return (
-            <li
-              key={r.fr}
-              className={cn(
-                "flex items-center gap-3 rounded-xl border px-3 py-2",
-                current
-                  ? "border-primary bg-primary/10"
-                  : reached
-                    ? "border"
-                    : "border opacity-50",
-              )}
-            >
-              <span className={cn("grid h-7 w-7 shrink-0 place-items-center rounded-full text-xs font-bold", reached ? "bg-primary/20 text-primary" : "bg-muted")}>
-                {i + 1}
-              </span>
-              <span className="min-w-0 flex-1">
-                <span className="block truncate text-sm font-medium">{r.fr}</span>
-                <span className="block truncate text-xs text-muted-foreground">{r.vi}</span>
-              </span>
-              <span className="shrink-0 text-xs text-muted-foreground">{r.minWords.toLocaleString()}</span>
+            <li key={r.fr}>
+              <button
+                onClick={() => setDetail({ kind: "rank", rank: r, index: i })}
+                className={cn(
+                  "flex w-full items-center gap-3 rounded-xl border px-3 py-2 text-left transition-colors hover:bg-muted/60",
+                  current ? "border-primary bg-primary/10" : reached ? "border" : "border opacity-50",
+                )}
+              >
+                <span className={cn("grid h-7 w-7 shrink-0 place-items-center rounded-full text-xs font-bold", reached ? "bg-primary/20 text-primary" : "bg-muted")}>
+                  {i + 1}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate text-sm font-medium">{r.fr}</span>
+                  <span className="block truncate text-xs text-muted-foreground">{r.vi}</span>
+                </span>
+                {current && <span className="shrink-0 rounded-full bg-primary/15 px-2 py-0.5 text-[10px] font-semibold text-primary">Hiện tại</span>}
+                <span className="shrink-0 text-xs text-muted-foreground">{r.minWords.toLocaleString()}</span>
+              </button>
             </li>
           );
         })}
@@ -95,7 +109,7 @@ export default function BinhNghiepPage() {
 
       {/* huy hiệu — theo nhóm nhiều bậc */}
       <h2 className="mb-1 mt-6 text-lg font-semibold">
-        Huy hiệu <span className="text-sm font-normal text-muted-foreground">({totals.earned}/{totals.total})</span>
+        Huy hiệu <span className="text-sm font-normal text-muted-foreground">({totals.earned}/{totals.total}) · chạm để xem mô tả</span>
       </h2>
       <div className="space-y-4">
         {groups.map((g) => (
@@ -128,22 +142,106 @@ export default function BinhNghiepPage() {
 
             <div className="mt-3 grid grid-cols-4 gap-2 sm:grid-cols-6">
               {g.badges.map((b) => (
-                <div
+                <button
                   key={b.id}
-                  title={`${b.name} · ${b.hint}`}
+                  onClick={() => setDetail({ kind: "badge", badge: b })}
                   className={cn(
-                    "flex flex-col items-center rounded-xl border p-2 text-center",
+                    "flex flex-col items-center rounded-xl border p-2 text-center transition-transform active:scale-95",
                     b.earned ? "border-amber-500/30 bg-amber-500/10" : "border opacity-40",
                   )}
                 >
                   <span className={cn("text-xl", !b.earned && "grayscale")}>{b.icon}</span>
                   <span className="mt-0.5 text-[10px] leading-tight text-muted-foreground">{b.hint}</span>
-                </div>
+                </button>
               ))}
             </div>
           </div>
         ))}
       </div>
+
+      {detail && <DetailDialog detail={detail} words={sum.words} onClose={() => setDetail(null)} />}
+    </div>
+  );
+}
+
+/** Dialog chi tiết cấp bậc/huy hiệu — bottom sheet mobile, modal giữa desktop (như HSK). */
+function DetailDialog({ detail, words, onClose }: { detail: Detail; words: number; onClose: () => void }) {
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      className="fixed inset-0 z-[70] flex items-end justify-center sm:items-center"
+      onClick={onClose}
+    >
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full rounded-t-3xl border bg-background p-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] shadow-2xl duration-200 animate-in slide-in-from-bottom-4 sm:max-w-sm sm:rounded-3xl sm:pb-6 sm:zoom-in-95"
+      >
+        {detail.kind === "rank" ? (
+          <RankDetail rank={detail.rank} index={detail.index} words={words} />
+        ) : (
+          <BadgeDetail b={detail.badge} />
+        )}
+        <button
+          onClick={onClose}
+          className="mt-5 w-full rounded-2xl bg-primary py-3 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99]"
+        >
+          Đóng
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function RankDetail({ rank, index, words }: { rank: Rank; index: number; words: number }) {
+  const reached = words >= rank.minWords;
+  const pct = rank.minWords > 0 ? Math.min(100, Math.round((words / rank.minWords) * 100)) : 100;
+  return (
+    <div className="text-center">
+      <div className="mx-auto grid size-14 place-items-center rounded-2xl bg-primary/15 text-xl font-bold text-primary">{index + 1}</div>
+      <div className="mt-3 text-xl font-bold">{rank.fr}</div>
+      <div className="text-sm text-muted-foreground">{rank.vi}</div>
+      <div className="mt-3 text-sm">
+        Ngưỡng: <b>{rank.minWords.toLocaleString("vi")}</b> từ đã học
+      </div>
+      {!reached && (
+        <>
+          <div className="mt-2 h-2 overflow-hidden rounded-full bg-muted">
+            <div className="h-full rounded-full bg-primary" style={{ width: `${pct}%` }} />
+          </div>
+          <div className="mt-1 text-xs text-muted-foreground">
+            {words.toLocaleString("vi")} / {rank.minWords.toLocaleString("vi")} từ — còn {(rank.minWords - words).toLocaleString("vi")} từ nữa
+          </div>
+        </>
+      )}
+      {reached && <div className="mt-2 text-sm font-semibold text-emerald-600 dark:text-emerald-400">✓ Đã đạt</div>}
+    </div>
+  );
+}
+
+function BadgeDetail({ b }: { b: Badge }) {
+  const pct = b.threshold > 0 ? Math.min(100, Math.round((b.value / b.threshold) * 100)) : 100;
+  return (
+    <div className="text-center">
+      <div className={cn("mx-auto grid size-14 place-items-center rounded-full text-3xl", b.earned ? "bg-amber-500/15" : "bg-muted grayscale")}>
+        {b.icon}
+      </div>
+      <div className="mt-3 text-xl font-bold">{b.name}</div>
+      <div className="text-sm text-muted-foreground">{b.groupName}</div>
+      <div className="mt-3 text-sm">{b.hint}</div>
+      {!b.earned ? (
+        <>
+          <div className="mt-2 h-2 overflow-hidden rounded-full bg-muted">
+            <div className="h-full rounded-full bg-primary" style={{ width: `${pct}%` }} />
+          </div>
+          <div className="mt-1 text-xs text-muted-foreground">
+            {b.value.toLocaleString("vi")} / {b.threshold.toLocaleString("vi")}
+          </div>
+        </>
+      ) : (
+        <div className="mt-2 text-sm font-semibold text-emerald-600 dark:text-emerald-400">✓ Đã mở khóa</div>
+      )}
     </div>
   );
 }

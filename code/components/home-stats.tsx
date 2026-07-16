@@ -84,7 +84,7 @@ export default function HomeStats() {
             <GraduationCap className="size-4" /> Ôn tập{d > 0 ? ` (${d})` : ""}
           </Link>
           <Link
-            href="/hoc/1"
+            href="/hoc"
             className={`inline-flex flex-1 items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-semibold transition-all active:scale-[0.98] ${
               d > 0 ? "border bg-background hover:bg-muted" : "bg-primary text-primary-foreground shadow-sm hover:bg-primary/90"
             }`}

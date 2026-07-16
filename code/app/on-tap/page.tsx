@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Link from "next/link";
 import { GraduationCap, Zap, Brain, Plus, ChevronDown } from "lucide-react";
 import {
   countDue,
@@ -9,7 +10,6 @@ import {
   getDueReviews,
   getAheadReviews,
   getHardReviews,
-  learnedIds,
   newTodayCount,
   getConfig,
   setConfig,
@@ -17,7 +17,6 @@ import {
 } from "@/lib/db";
 import { loadWords, loadExamplesForWords, type ExampleSentence } from "@/lib/data";
 import { buildQuestions, type Question } from "@/lib/review-session";
-import { orderForBeginners } from "@/lib/starter";
 import { LEVELS } from "@/lib/levels";
 import type { Word, SrsConfig, ReviewRecord } from "@/lib/types";
 import ReviewRunner from "@/components/review-runner";
@@ -100,45 +99,6 @@ export default function OnTapPage() {
   const startAhead = async () => buildFromRecords(await getAheadReviews(new Date(), 20), "Ôn sớm");
   const startHard = async () => buildFromRecords(await getHardReviews(20), "Ôn từ hay quên");
 
-  // Học từ mới: gom từ CHƯA học theo cấp (newLevel cố định, hoặc auto thấp→cao).
-  // force = học thêm dù đã hết hạn mức ngày (mặc định lấy 10 từ).
-  const startNew = async (force = false) => {
-    setBusy(true);
-    const c = await getConfig();
-    const [learnedSet, nToday] = await Promise.all([learnedIds(), newTodayCount()]);
-    const quota = force ? 10 : Math.max(0, c.newPerDay - nToday);
-    if (quota <= 0) {
-      setBusy(false);
-      return;
-    }
-    const order = c.newLevel ? [c.newLevel] : LEVELS.map((l) => l.level);
-    const words: Word[] = [];
-    let examples: Record<string, ExampleSentence[]> = {};
-    const pool: Word[] = [];
-    for (const lv of order) {
-      if (words.length >= quota) break;
-      const ws = await loadWords(lv);
-      pool.push(...ws);
-      // người mới (<40 từ) → ưu tiên bộ từ khởi động cụ thể (chào hỏi, gia đình, đồ ăn…)
-      const picked: Word[] = [];
-      for (const w of orderForBeginners(ws, learnedSet.size)) {
-        if (words.length + picked.length >= quota) break;
-        if (!learnedSet.has(w.id)) picked.push(w);
-      }
-      words.push(...picked);
-      if (picked.length) {
-        const ex = await loadExamplesForWords(lv, picked.map((w) => w.id));
-        examples = { ...examples, ...ex };
-      }
-    }
-    if (!words.length) {
-      setBusy(false);
-      return;
-    }
-    setSession({ qs: buildQuestions(words, examples, pool, c, true), title: "Học từ mới" });
-    setBusy(false);
-  };
-
   const patch = async (p: Partial<SrsConfig>) => {
     const next = await setConfig(p);
     setCfg(next);
@@ -163,7 +123,7 @@ export default function OnTapPage() {
   return (
     <div className="mx-auto max-w-2xl space-y-6">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Ôn tập</h1>
+        <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Ôn tập hôm nay</h1>
         <p className="mt-1 text-sm text-muted-foreground">
           Ôn thẻ đến hạn — hoặc ôn sớm, ôn từ hay quên, học thêm bất cứ lúc nào. Tất cả vẫn theo lịch FSRS.
         </p>
@@ -211,14 +171,13 @@ export default function OnTapPage() {
           </button>
         )}
 
-        <button
-          onClick={() => startNew(remainNew <= 0)}
-          disabled={busy}
-          className="mt-2 flex w-full items-center justify-center gap-2 rounded-2xl border bg-background py-3 text-sm font-semibold transition-all hover:bg-muted active:scale-[0.99] disabled:opacity-50"
+        <Link
+          href="/hoc"
+          className="mt-2 flex w-full items-center justify-center gap-2 rounded-2xl border bg-background py-3 text-sm font-semibold transition-all hover:bg-muted active:scale-[0.99]"
         >
           <Plus className="size-4" />
-          {remainNew > 0 ? `Học từ mới (${remainNew})` : "Học thêm 10 từ"}
-        </button>
+          {remainNew > 0 ? `Học từ mới (${remainNew})` : "Học từ mới"}
+        </Link>
       </div>
 
       {/* Cài đặt */}
@@ -235,9 +194,9 @@ export default function OnTapPage() {
                 type="number"
                 inputMode="numeric"
                 min={0}
-                max={100}
+                max={200}
                 value={cfg.newPerDay}
-                onChange={(e) => patch({ newPerDay: Math.max(0, Math.min(100, Number(e.target.value) || 0)) })}
+                onChange={(e) => patch({ newPerDay: Math.max(0, Math.min(200, Number(e.target.value) || 0)) })}
                 className="w-20 rounded-xl border bg-background px-3 py-2 text-right text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
               />
             </label>
@@ -252,7 +211,7 @@ export default function OnTapPage() {
                 onChange={(e) => patch({ reviewPerSession: Number(e.target.value) })}
                 className="rounded-xl border bg-background px-3 py-2 text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
               >
-                <option value={0}>Tất cả</option>
+                <option value={0}>Không giới hạn</option>
                 {[10, 20, 30, 50, 100].map((n) => (
                   <option key={n} value={n}>
                     {n} thẻ
@@ -260,6 +219,23 @@ export default function OnTapPage() {
                 ))}
               </select>
             </label>
+
+            <div className="flex items-center justify-between gap-4">
+              <span className="text-sm font-medium">Hướng hỏi</span>
+              <div className="inline-flex rounded-full border p-0.5 text-sm">
+                {([["fr2vi", "Pháp→nghĩa"], ["vi2fr", "Nghĩa→Pháp"]] as const).map(([val, label]) => (
+                  <button
+                    key={val}
+                    onClick={() => patch({ direction: val })}
+                    className={`rounded-full px-3 py-1.5 transition-colors ${
+                      cfg.direction === val ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
 
             <label className="flex items-center justify-between gap-4">
               <span className="text-sm font-medium">Nguồn từ mới</span>
@@ -291,7 +267,7 @@ export default function OnTapPage() {
                 <option value={1}>1 câu</option>
                 <option value={2}>2 câu</option>
                 <option value={3}>3 câu</option>
-                <option value={5}>5 câu</option>
+                <option value={5}>5 câu (tất cả)</option>
               </select>
             </label>
 
@@ -307,26 +283,6 @@ export default function OnTapPage() {
                 className="size-5 accent-primary"
               />
             </label>
-
-            <div className="flex items-center justify-between gap-4">
-              <span className="text-sm font-medium">
-                Hướng hỏi
-                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">chiều câu trắc nghiệm khi ôn</span>
-              </span>
-              <div className="inline-flex rounded-full border p-0.5 text-sm">
-                {([["fr2vi", "Pháp→nghĩa"], ["vi2fr", "Nghĩa→Pháp"]] as const).map(([val, label]) => (
-                  <button
-                    key={val}
-                    onClick={() => patch({ direction: val })}
-                    className={`rounded-full px-3 py-1.5 transition-colors ${
-                      cfg.direction === val ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
-            </div>
 
             <label className="flex items-center justify-between gap-4">
               <span className="text-sm font-medium">

@@ -2,13 +2,31 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { progressSummary } from "@/lib/db";
+import { progressSummary, getDueReviews } from "@/lib/db";
+import { loadReadingsIndex } from "@/lib/data";
 import { LEVELS, levelAccent } from "@/lib/levels";
 
 export default function LevelGrid() {
   const [byLevel, setByLevel] = useState<Record<number, number>>({});
+  const [dueByLevel, setDueByLevel] = useState<Record<number, number>>({});
+  const [readsByLevel, setReadsByLevel] = useState<Record<number, number>>({});
   useEffect(() => {
-    progressSummary().then((s) => setByLevel(s.byLevel));
+    const refresh = () => {
+      progressSummary().then((s) => setByLevel(s.byLevel));
+      getDueReviews().then((rows) => {
+        const m: Record<number, number> = {};
+        for (const r of rows) m[r.level] = (m[r.level] ?? 0) + 1;
+        setDueByLevel(m);
+      });
+    };
+    refresh();
+    loadReadingsIndex().then((idx) => {
+      const m: Record<number, number> = {};
+      for (const r of idx) m[r.level] = (m[r.level] ?? 0) + 1;
+      setReadsByLevel(m);
+    });
+    const t = setInterval(refresh, 60_000); // cập nhật số đến hạn định kỳ (như HSK)
+    return () => clearInterval(t);
   }, []);
 
   return (
@@ -16,6 +34,8 @@ export default function LevelGrid() {
       {LEVELS.map((l) => {
         const a = levelAccent(l.level);
         const learned = byLevel[l.level] ?? 0;
+        const due = dueByLevel[l.level] ?? 0;
+        const nReads = readsByLevel[l.level] ?? 0;
         const pct = l.words ? Math.min(100, (learned / l.words) * 100) : 0;
         return (
           <Link
@@ -29,8 +49,15 @@ export default function LevelGrid() {
               </span>
               <div className="min-w-0 flex-1">
                 <div className="text-lg font-semibold">{l.label.split("·")[1]?.trim()}</div>
-                <div className="text-sm text-muted-foreground">{l.words.toLocaleString("vi")} từ</div>
+                <div className="text-sm text-muted-foreground">
+                  {l.words.toLocaleString("vi")} từ{nReads > 0 ? ` · ${nReads} bài đọc` : ""}
+                </div>
               </div>
+              {due > 0 && (
+                <span className="shrink-0 rounded-full bg-primary/15 px-2 py-0.5 text-xs font-semibold text-primary">
+                  {due} đến hạn
+                </span>
+              )}
             </div>
             <div className="mt-4 flex items-center gap-3">
               <div className="h-2 flex-1 overflow-hidden rounded-full bg-muted">
