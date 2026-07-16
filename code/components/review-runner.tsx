@@ -500,23 +500,13 @@ export default function ReviewRunner({
         <div className="flex min-h-0 flex-1 flex-col sm:flex-none">
           <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain pb-2 sm:flex-none sm:overflow-visible">
             {/* đề bài */}
-            <div className="relative flex min-h-[8.5rem] flex-col items-center justify-center gap-3 rounded-3xl border bg-card p-6 text-center shadow-sm sm:min-h-[11rem] sm:p-8">
-              {chosen !== null && (
-                <span
-                  className={cn(
-                    "absolute left-3 top-3 rounded-full px-2.5 py-1 text-xs font-bold",
-                    chosen === q.answer
-                      ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
-                      : "bg-rose-500/15 text-rose-600 dark:text-rose-400",
-                  )}
-                >
-                  {chosen === q.answer ? "✓ Đúng" : "✗ Sai"}
-                </span>
-              )}
+            <div className="flex min-h-[8.5rem] flex-col items-center justify-center gap-3 rounded-3xl border bg-card p-6 text-center shadow-sm sm:min-h-[11rem] sm:p-8">
               {q.kind === "gender" ? (
                 <>
                   <div className="text-4xl font-bold tracking-tight sm:text-5xl">… {q.word.id}</div>
-                  <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Danh từ này dùng mạo từ nào?</div>
+                  {chosen === null && (
+                    <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Danh từ này dùng mạo từ nào?</div>
+                  )}
                 </>
               ) : q.mode === "listen" ? (
                 <>
@@ -541,12 +531,16 @@ export default function ReviewRunner({
                     {q.clozeAfter}
                   </div>
                   {q.clozeVi && <div className="text-sm text-muted-foreground">{q.clozeVi}</div>}
-                  <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Điền từ còn thiếu</div>
+                  {chosen === null && (
+                    <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Điền từ còn thiếu</div>
+                  )}
                 </>
               ) : q.mode === "reverse" ? (
                 <>
                   <div className="text-2xl font-semibold sm:text-3xl">{q.prompt}</div>
-                  <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Chọn từ tiếng Pháp đúng</div>
+                  {chosen === null && (
+                    <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Chọn từ tiếng Pháp đúng</div>
+                  )}
                 </>
               ) : (
                 <>
@@ -561,8 +555,23 @@ export default function ReviewRunner({
                     </button>
                   </div>
                   <div className="font-mono text-base text-muted-foreground">{q.word.ipa}</div>
-                  <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Chọn nghĩa đúng</div>
+                  {chosen === null && (
+                    <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Chọn nghĩa đúng</div>
+                  )}
                 </>
+              )}
+              {/* đã trả lời → badge Đúng/Sai nằm CUỐI thẻ, thay dòng hướng dẫn (như HSK) */}
+              {chosen !== null && (
+                <div
+                  className={cn(
+                    "inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-semibold",
+                    chosen === q.answer
+                      ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
+                      : "bg-rose-500/15 text-rose-600 dark:text-rose-400",
+                  )}
+                >
+                  {chosen === q.answer ? "✓ Đúng" : "✗ Sai"}
+                </div>
               )}
             </div>
 
