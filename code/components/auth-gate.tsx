@@ -56,7 +56,14 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
     return (
       <Center>
         <div className="grid size-16 place-items-center rounded-2xl bg-primary text-primary-foreground shadow-sm">
-          <span className="text-2xl font-bold">Fr</span>
+          <svg viewBox="0 0 36 36" className="size-16" aria-hidden="true">
+            <g stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none">
+              <path d="M18 6 C18 14 15 20 10.5 28" />
+              <path d="M18 6 C18 14 21 20 25.5 28" />
+              <path d="M13.8 19 L22.2 19" />
+              <path d="M10.5 28 C14 25 22 25 25.5 28" />
+            </g>
+          </svg>
         </div>
         <h1 className="mt-4 text-xl font-bold">Từ vựng tiếng Pháp</h1>
         <p className="mt-1 max-w-xs text-sm text-muted-foreground">

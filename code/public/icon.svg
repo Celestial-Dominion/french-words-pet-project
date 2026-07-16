@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Từ vựng tiếng Pháp">
-  <rect width="512" height="512" rx="96" fill="#b61537"/>
-  <rect x="112" y="140" width="96" height="232" rx="8" fill="#ffffff"/>
-  <rect x="208" y="140" width="192" height="232" rx="8" fill="#7f0e26"/>
-  <text x="256" y="300" font-family="system-ui, sans-serif" font-size="180" font-weight="700" text-anchor="middle" fill="#b61537">Fr</text>
+  <rect width="512" height="512" rx="116" fill="#b61537"/>
+  <g stroke="#ffffff" stroke-width="30" stroke-linecap="round" fill="none">
+    <path d="M256 88 C256 200 214 290 148 408"/>
+    <path d="M256 88 C256 200 298 290 364 408"/>
+    <path d="M198 272 L314 272"/>
+    <path d="M148 408 C200 364 312 364 364 408"/>
+  </g>
 </svg>

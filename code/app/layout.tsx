@@ -49,8 +49,16 @@ export default function RootLayout({
         >
           <div className="mx-auto flex h-16 w-full max-w-5xl items-center gap-3 px-4">
             <Link href="/" className="flex shrink-0 items-center gap-2">
-              <span className="flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/70 text-sm font-bold text-primary-foreground shadow-sm">
-                Fr
+              {/* Tháp Eiffel trên nền Bordeaux — đồng bộ với icon PWA (public/icon.svg) */}
+              <span className="flex size-9 items-center justify-center rounded-xl bg-primary shadow-sm">
+                <svg viewBox="0 0 36 36" className="size-9" aria-hidden="true">
+                  <g stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" className="text-primary-foreground">
+                    <path d="M18 6 C18 14 15 20 10.5 28" />
+                    <path d="M18 6 C18 14 21 20 25.5 28" />
+                    <path d="M13.8 19 L22.2 19" />
+                    <path d="M10.5 28 C14 25 22 25 25.5 28" />
+                  </g>
+                </svg>
               </span>
               <span className="text-base font-bold tracking-tight">French</span>
             </Link>
