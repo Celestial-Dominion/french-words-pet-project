@@ -10,11 +10,13 @@ import {
   getDueReviews,
   getAheadReviews,
   getHardReviews,
+  learnedIds,
   newTodayCount,
   getConfig,
   setConfig,
   progressSummary,
 } from "@/lib/db";
+import { genderTaught } from "@/lib/progress-local";
 import { loadWords, loadExamplesForWords, type ExampleSentence } from "@/lib/data";
 import { buildQuestions, type Question } from "@/lib/review-session";
 import { LEVELS } from "@/lib/levels";
@@ -83,7 +85,10 @@ export default function OnTapPage() {
     }
     const words = rows.map((r) => wordMap.get(r.wordId)).filter(Boolean) as Word[];
     const recMap = new Map(rows.map((r) => [r.wordId, r]));
-    setSession({ qs: buildQuestions(words, examples, pool, c, false, recMap), title });
+    // ghép câu chỉ dùng câu toàn từ đã biết; câu chọn giống chỉ mở sau bài ngữ pháp về giống
+    const known = await learnedIds();
+    const cEff = { ...c, genderQuestions: c.genderQuestions && genderTaught() };
+    setSession({ qs: buildQuestions(words, examples, pool, cEff, false, recMap, known), title });
     setBusy(false);
   };
 

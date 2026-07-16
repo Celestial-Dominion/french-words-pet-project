@@ -41,6 +41,26 @@ export function tokenize(fr: string): string[] {
   return fr.trim().split(/\s+/);
 }
 
+// Giai đoạn khởi động: chưa đủ vốn từ thì TẮT hẳn bài ghép câu (tránh "đoán mù").
+const ARRANGE_MIN_KNOWN = 40;
+
+// Token trong câu ghép có "đã biết" không? Bỏ dấu câu, xử lý viết dính l'/d'/j'/qu'…
+// (phần trước dấu ' là từ chức năng bị nuốt âm — coi như biết nếu phần sau đã học).
+function tokenKnown(token: string, known: Set<string>, target: string): boolean {
+  const clean = token.toLowerCase().replace(/[^a-zà-öø-ÿœæ'’-]/g, "");
+  if (!clean) return true; // toàn dấu câu/số
+  const parts = clean.split(/['’]/).filter(Boolean);
+  const core = parts.length > 1 ? parts[parts.length - 1] : clean;
+  return core === target || known.has(core) || known.has(clean);
+}
+
+/** Câu ví dụ đủ "vừa sức" để ra bài ghép: mọi từ (trừ chính từ đang học) đều đã học. */
+function arrangeReady(tokens: string[], known: Set<string> | undefined, target: string): boolean {
+  if (!known || known.size < ARRANGE_MIN_KNOWN) return false;
+  const unknown = tokens.filter((t) => !tokenKnown(t, known, target.toLowerCase())).length;
+  return unknown === 0 || (tokens.length >= 8 && unknown <= 1); // câu dài cho phép lọt 1 từ lạ
+}
+
 /** Nghĩa RÚT GỌN cho phương án trắc nghiệm (phần trước dấu ';') — đỡ ngợp cho người mới. */
 export function shortVi(w: Word): string {
   const s = w.meaning_vi.split(";")[0].trim();
@@ -60,6 +80,14 @@ function pickDistractors(word: Word, pool: Word[], n = 3): Word[] {
     if (seen.has(key)) continue;
     seen.add(key);
     out.push(w);
+  }
+  // pool nhỏ / trùng nghĩa nhiều → lượt 2 nới điều kiện (chỉ cần khác đáp án) cho đủ 4 phương án
+  if (out.length < n) {
+    for (const w of rest) {
+      if (out.length >= n) break;
+      if (w.id === word.id || !w.meaning_vi || out.includes(w) || shortVi(w) === shortVi(word)) continue;
+      out.push(w);
+    }
   }
   return out;
 }
@@ -150,6 +178,7 @@ export function buildQuestions(
   config: SrsConfig,
   isNew: boolean,
   records?: Map<string, ReviewRecord>,
+  knownIds?: Set<string>, // từ đã học — bài ghép câu CHỈ dùng câu toàn từ đã biết
 ): Question[] {
   const out: Question[] = [];
   for (const w of words) {
@@ -161,12 +190,14 @@ export function buildQuestions(
     if (q.kind === "mcq") q.exs = ex.slice(0, 2);
     out.push(q);
 
-    for (let i = 0; i < Math.min(config.arrangePerWord, ex.length); i++) {
+    let arranged = 0;
+    for (let i = 0; i < ex.length && arranged < config.arrangePerWord; i++) {
       const s = ex[i];
       const tokens = tokenize(s.fr);
-      if (tokens.length >= 3 && tokens.length <= 12) {
-        out.push({ kind: "arrange", word: w, graded: false, fr: s.fr, vi: s.vi, tokens });
-      }
+      if (tokens.length < 3 || tokens.length > 12) continue;
+      if (!arrangeReady(tokens, knownIds, w.id)) continue; // câu còn từ lạ → bỏ, khỏi đoán mù
+      out.push({ kind: "arrange", word: w, graded: false, fr: s.fr, vi: s.vi, tokens });
+      arranged++;
     }
 
     // chọn giống: chỉ danh từ có giống, tỉ trọng thấp (~30%)

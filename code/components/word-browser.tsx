@@ -7,6 +7,7 @@ import { loadWords, loadExamplesForWords, type ExampleSentence } from "@/lib/dat
 import { db, learnedIds, newTodayCount, getConfig } from "@/lib/db";
 import { buildQuestions, type Question } from "@/lib/review-session";
 import { orderForBeginners } from "@/lib/starter";
+import { genderTaught } from "@/lib/progress-local";
 import { levelMeta, levelAccent } from "@/lib/levels";
 import { toSearch } from "@/lib/slug";
 import { cn } from "@/lib/utils";
@@ -103,8 +104,9 @@ export default function WordBrowser({ level }: { level: number }) {
     if (!candidates.length) return;
     const ex = await loadExamplesForWords(level, candidates.map((w) => w.id));
     setExamples((prev) => ({ ...prev, ...ex }));
-    setConfig(cfg);
-    setSession(buildQuestions(candidates, ex, words, cfg, true));
+    const cfgEff = { ...cfg, genderQuestions: cfg.genderQuestions && genderTaught() };
+    setConfig(cfgEff);
+    setSession(buildQuestions(candidates, ex, words, cfgEff, true, undefined, learned));
   };
 
   const meta = levelMeta(level);

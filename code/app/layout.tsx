@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
+import { Settings } from "lucide-react";
 import "./globals.css";
 import SwRegister from "@/components/sw-register";
 import BottomNav from "@/components/bottom-nav";
@@ -69,6 +70,13 @@ export default function RootLayout({
               <LevelChip />
               <AuthSync />
               <ThemeToggle />
+              <Link
+                href="/cai-dat"
+                aria-label="Cài đặt"
+                className="grid size-9 place-items-center rounded-full border bg-background text-muted-foreground transition-colors hover:text-foreground"
+              >
+                <Settings className="size-4" />
+              </Link>
             </div>
           </div>
         </header>

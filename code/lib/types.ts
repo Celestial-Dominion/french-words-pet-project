@@ -140,4 +140,19 @@ export interface DailyStat {
 export interface ReadRow {
   id: string;
   readAt: string; // ISO
+  removedAt?: string; // ISO — bỏ đánh dấu sau khi đã đọc (tombstone để sync không "hồi sinh")
+}
+
+export interface NoteRow {
+  wordId: string;
+  text: string; // "" = đã xoá (tombstone cho sync)
+  at?: number; // ms — lần sửa cuối (máy sửa sau thắng khi sync)
+}
+
+export interface GamifyRow {
+  key: string; // "state"
+  xp: number;
+  freezes?: number; // 🧊 lượt đóng băng chuỗi còn lại
+  frozenDates?: string[]; // các ngày đã được đóng băng (tính như có học)
+  grantStreak?: number; // mốc chuỗi đã tặng freeze lần cuối (tặng mỗi mốc 7 ngày)
 }

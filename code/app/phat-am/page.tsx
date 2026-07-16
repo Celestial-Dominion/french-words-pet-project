@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, Volume2, Play, Check, Headphones } from "lucide-react";
 import { loadPhonics, type PhonicsLesson, type PhonicsItem } from "@/lib/data";
 import { phonicsAudioUrl } from "@/lib/tts";
+import { requestSync } from "@/lib/sync";
 import { cn } from "@/lib/utils";
 
 const DONE_KEY = "fr.phonicsDone";
@@ -72,6 +73,7 @@ export default function PhatAmPage() {
     else next.delete(id);
     setDone(next);
     saveDone(next);
+    requestSync(); // tiến độ phát âm giờ được đồng bộ cloud
   };
 
   const startQuiz = () => {

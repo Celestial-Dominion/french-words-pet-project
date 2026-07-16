@@ -33,3 +33,12 @@ export async function signOutUser(): Promise<void> {
 }
 
 export { firebaseEnabled };
+
+/** Yêu cầu đồng bộ nền (gộp debounce ở AuthSync) — gọi sau khi kết thúc phiên học/ôn. */
+export function requestSync(): void {
+  try {
+    window.dispatchEvent(new Event("fr:sync"));
+  } catch {
+    /* bỏ qua (SSR) */
+  }
+}

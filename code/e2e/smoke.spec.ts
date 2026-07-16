@@ -51,6 +51,30 @@ test("đọc hub /doc + học /hoc: trang mới như HSK", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Học từ theo cấp" })).toBeVisible();
 });
 
+test("khóa ngữ pháp: danh sách bài + mở bài + đánh dấu xong", async ({ page }) => {
+  await page.goto("/ngu-phap");
+  await expect(page.getByRole("heading", { name: "Khóa ngữ pháp vỡ lòng" })).toBeVisible();
+  await page.getByRole("button", { name: /Giống của danh từ/ }).click();
+  await expect(page.getByText("un = một (đực) · une = một (cái)")).toBeVisible();
+  await page.getByRole("button", { name: "Đã học xong bài này" }).click();
+  await expect(page.getByText("1/11 bài")).toBeVisible();
+});
+
+test("cài đặt: trang sao lưu & khôi phục", async ({ page }) => {
+  await page.goto("/cai-dat");
+  await expect(page.getByRole("heading", { name: "Cài đặt" })).toBeVisible();
+  await expect(page.getByRole("button", { name: /Xuất dữ liệu/ })).toBeVisible();
+  await expect(page.getByRole("button", { name: /Nhập từ tệp/ })).toBeVisible();
+});
+
+test("học từ: tìm kiếm toàn app + card khóa học", async ({ page }) => {
+  await page.goto("/hoc");
+  await expect(page.getByText("Khóa ngữ pháp vỡ lòng")).toBeVisible();
+  await page.getByPlaceholder(/Tra nhanh một từ/).fill("bonjour");
+  await page.getByRole("button", { name: /bonjour/ }).first().click();
+  await expect(page.getByText(/xin chào/).first()).toBeVisible();
+});
+
 test("ôn tập: cài đặt có số thẻ mỗi phiên", async ({ page }) => {
   await page.goto("/on-tap");
   await page.getByText("⚙️ Cài đặt").click();

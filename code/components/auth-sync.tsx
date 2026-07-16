@@ -35,6 +35,29 @@ export default function AuthSync() {
     return () => window.clearTimeout(id);
   }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Đẩy sync khi: kết thúc phiên học (event "fr:sync") + khi rời/ẩn app (pagehide) —
+  // trước đây chỉ sync lúc mở app nên kết quả học nằm kẹt trên máy tới lần mở sau.
+  useEffect(() => {
+    if (!user) return;
+    let t: number | undefined;
+    const onRequest = () => {
+      window.clearTimeout(t);
+      t = window.setTimeout(() => void doSync(user, true), 2000); // gộp nhiều yêu cầu gần nhau
+    };
+    const onHide = () => {
+      if (document.visibilityState === "hidden") void doSync(user, true);
+    };
+    window.addEventListener("fr:sync", onRequest);
+    document.addEventListener("visibilitychange", onHide);
+    window.addEventListener("pagehide", onHide);
+    return () => {
+      window.clearTimeout(t);
+      window.removeEventListener("fr:sync", onRequest);
+      document.removeEventListener("visibilitychange", onHide);
+      window.removeEventListener("pagehide", onHide);
+    };
+  }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
+
   if (!firebaseEnabled) return null;
 
   async function doSync(u: User, auto = false) {

@@ -7,6 +7,8 @@ import { XP, badgeGroups, rankForWords, type Stats, type Badge } from "@/lib/gam
 import { ratingFromSpeed } from "@/lib/srs";
 import { wordAudioUrl, sentenceAudioUrl } from "@/lib/tts";
 import { suggestReading, type ReadingSuggestion } from "@/lib/suggest";
+import { requestSync } from "@/lib/sync";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import type { Question } from "@/lib/review-session";
 import type { SrsConfig, ReviewRecord } from "@/lib/types";
@@ -28,8 +30,16 @@ function typeLabel(q: Question): string {
   return "Pháp → nghĩa";
 }
 
+let currentAudio: HTMLAudioElement | null = null;
 function play(url: string) {
-  new Audio(url).play().catch(() => {});
+  currentAudio?.pause();
+  const a = new Audio(url);
+  currentAudio = a;
+  a.play().catch(() => {});
+}
+function stopAudio() {
+  currentAudio?.pause();
+  currentAudio = null;
 }
 
 function statsOf(s: Awaited<ReturnType<typeof progressSummary>>): Stats {
@@ -43,6 +53,7 @@ const earnedIds = (s: Stats) => new Set(badgeGroups(s).flatMap((g) => g.badges).
 
 interface UndoInfo {
   wordId: string;
+  date: string; // ngày của lần chấm (undo trừ đúng ngày kể cả qua nửa đêm)
   prev: ReviewRecord | undefined;
   correct: boolean;
   isNew: boolean;
@@ -112,6 +123,7 @@ export default function ReviewRunner({
   // Thoát giữa phiên → hỏi xác nhận; chặn cả back/refresh khi đang trong phiên.
   const requestExit = useCallback(() => setConfirmExit(true), []);
   const activeRef = useRef(true);
+  const suppressPopRef = useRef(false);
   useEffect(() => {
     activeRef.current = !done;
   }, [done]);
@@ -121,8 +133,16 @@ export default function ReviewRunner({
       e.preventDefault();
       e.returnValue = "";
     };
+    const ownDummy = { current: true }; // còn sở hữu entry chặn back?
     const onPop = () => {
-      if (!activeRef.current) return;
+      if (suppressPopRef.current) {
+        suppressPopRef.current = false; // popstate do chính mình back() lúc dọn dẹp → bỏ qua
+        return;
+      }
+      if (!activeRef.current) {
+        ownDummy.current = false; // entry vừa bị tiêu bởi lần Back này
+        return;
+      }
       window.history.pushState(null, ""); // giữ trang, hỏi xác nhận
       setConfirmExit(true);
     };
@@ -132,6 +152,11 @@ export default function ReviewRunner({
     return () => {
       window.removeEventListener("beforeunload", beforeUnload);
       window.removeEventListener("popstate", onPop);
+      stopAudio(); // tắt audio còn dang dở khi rời phiên
+      if (ownDummy.current) {
+        suppressPopRef.current = true;
+        window.history.back(); // dọn entry chặn back còn sót (hết cảnh bấm Back 2 lần)
+      }
     };
   }, []);
 
@@ -167,13 +192,6 @@ export default function ReviewRunner({
     setShowAllEx(false);
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Đếm 1,3s tự sang thẻ kế khi trả lời đúng (bấm "Dừng lại xem kỹ" để huỷ).
-  useEffect(() => {
-    if (!autoAdv) return;
-    const t = setTimeout(() => next(), AUTO_ADVANCE_MS);
-    return () => clearTimeout(t);
-  }, [autoAdv, i]); // eslint-disable-line react-hooks/exhaustive-deps
-
   const finalize = useCallback(async () => {
     if (finalizedRef.current) return;
     finalizedRef.current = true;
@@ -198,6 +216,7 @@ export default function ReviewRunner({
       rankUp: before && afterRank.index > before.rankIndex ? { from: before.rankVi, to: afterRank.rank.vi } : null,
     });
     setDone(true);
+    requestSync(); // đẩy kết quả phiên lên cloud ngay (không đợi lần mở app sau)
     // gợi ý bài đọc chứa nhiều từ vừa học/ôn nhất (chạy nền, có thì hiện)
     const ids = [...new Set(qs.filter((x) => x.kind === "mcq").map((x) => x.word.id))];
     suggestReading(ids).then(setSuggestion).catch(() => {});
@@ -218,6 +237,14 @@ export default function ReviewRunner({
     }
     setI(i + 1);
   };
+
+  // Đếm 1,3s tự sang thẻ kế khi trả lời đúng (bấm "Dừng lại xem kỹ" để huỷ).
+  useEffect(() => {
+    if (!autoAdv) return;
+    const t = setTimeout(() => next(), AUTO_ADVANCE_MS);
+    return () => clearTimeout(t);
+  }, [autoAdv, i]); // eslint-disable-line react-hooks/exhaustive-deps
+
 
   // chấm MCQ / gender
   const answerChoice = async (idx: number) => {
@@ -242,7 +269,7 @@ export default function ReviewRunner({
       else play(wordAudioUrl(q.word));
       const rating = ratingFromSpeed(correct, shownAtRef.current ? Date.now() - shownAtRef.current : 99_999, q.mode);
       const xp = correct ? (q.isNew ? XP.newWord : XP.review) : 0;
-      const { prev, next: nextRec } = await recordAnswer({ wordId: q.word.id, level: q.word.level, correct, isNew: q.isNew, rating });
+      const { prev, next: nextRec, date } = await recordAnswer({ wordId: q.word.id, level: q.word.level, correct, isNew: q.isNew, rating });
       // Lặp lại trong phiên (như HSK): SAI, hoặc ĐÚNG nhưng FSRS hẹn lại trong ≤15 phút
       // (thẻ đang ở learning steps) → chèn lại sau vài lá, nếu chưa có bản chờ.
       const dueSoon = new Date(nextRec.due).getTime() - Date.now() <= REPEAT_WINDOW_MS;
@@ -257,7 +284,7 @@ export default function ReviewRunner({
       }
       if (xp) void addXp(xp);
       xpRef.current += xp;
-      setUndoInfo({ wordId: q.word.id, prev, correct, isNew: q.isNew, xp, comboBefore, requeued });
+      setUndoInfo({ wordId: q.word.id, date, prev, correct, isNew: q.isNew, xp, comboBefore, requeued });
     } else {
       void recordPractice(correct);
       const xp = correct ? XP.practice : 0;
@@ -273,7 +300,7 @@ export default function ReviewRunner({
     if (!u) return;
     setAutoAdv(false);
     setUndoInfo(null);
-    await undoAnswer({ wordId: u.wordId, prev: u.prev, correct: u.correct, isNew: u.isNew });
+    await undoAnswer({ wordId: u.wordId, prev: u.prev, correct: u.correct, isNew: u.isNew, date: u.date });
     if (u.xp) {
       await addXp(-u.xp);
       xpRef.current -= u.xp;
@@ -357,6 +384,22 @@ export default function ReviewRunner({
             >
               Quay lại
             </button>
+            <div className="flex w-full flex-col gap-2 sm:flex-row sm:justify-center">
+              <Link
+                href="/hoc"
+                className="w-full rounded-2xl border py-3 text-center text-sm font-semibold transition-colors hover:bg-muted sm:w-auto sm:px-6"
+              >
+                Học từ mới →
+              </Link>
+              {!suggestion && (
+                <Link
+                  href="/doc"
+                  className="w-full rounded-2xl border py-3 text-center text-sm font-semibold transition-colors hover:bg-muted sm:w-auto sm:px-6"
+                >
+                  📖 Đọc một bài
+                </Link>
+              )}
+            </div>
           </div>
           {suggestion && (
             <a

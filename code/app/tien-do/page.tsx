@@ -112,9 +112,19 @@ export default function TienDoPage() {
             : "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-300",
         )}
       >
-        {todayReviews > 0
-          ? `🔥 Đã học hôm nay — giữ chuỗi ${sum.streak} ngày!`
-          : "⏰ Chưa học hôm nay. Ôn vài thẻ để giữ chuỗi nhé!"}
+        <div className="flex items-center justify-between gap-3">
+          <span>
+            {todayReviews > 0
+              ? `🔥 Đã học hôm nay — giữ chuỗi ${sum.streak} ngày!`
+              : "⏰ Chưa học hôm nay. Ôn vài thẻ để giữ chuỗi nhé!"}
+          </span>
+          <span
+            className="shrink-0 rounded-full bg-sky-500/15 px-2.5 py-1 text-xs font-semibold text-sky-700 dark:text-sky-300"
+            title="Đóng băng chuỗi: lỡ 1 ngày sẽ tự dùng 1 🧊 để giữ chuỗi. Tặng 1 🧊 mỗi mốc chuỗi 7 ngày (giữ tối đa 3)."
+          >
+            🧊 ×{sum.freezes}
+          </span>
+        </div>
       </div>
 
       <div className="space-y-4 lg:grid lg:grid-cols-3 lg:gap-4 lg:space-y-0">

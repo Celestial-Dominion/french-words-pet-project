@@ -1,4 +1,5 @@
 import LevelGrid from "@/components/level-grid";
+import { GlobalWordSearch, CourseCards } from "@/components/hoc-extras";
 
 export const metadata = { title: "Học từ · Từ vựng tiếng Pháp" };
 
@@ -11,6 +12,8 @@ export default function HocIndex() {
           Chọn cấp để học theo phương pháp lặp lại ngắt quãng, duyệt và tra cứu.
         </p>
       </div>
+      <GlobalWordSearch />
+      <CourseCards />
       <LevelGrid />
     </div>
   );

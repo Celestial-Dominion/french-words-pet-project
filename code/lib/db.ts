@@ -1,7 +1,7 @@
 // Nguồn sự thật tiến độ học: IndexedDB (offline-first) qua Dexie.
 import Dexie, { type Table } from "dexie";
 import type { Grade } from "ts-fsrs";
-import type { ReviewRecord, DailyStat, ReadRow, SrsConfig } from "./types";
+import type { ReviewRecord, DailyStat, ReadRow, NoteRow, GamifyRow, SrsConfig } from "./types";
 import { DEFAULT_SRS_CONFIG } from "./types";
 import { newCard, schedule, scheduleRated, recordToCard, cardToRecordFields } from "./srs";
 
@@ -10,8 +10,8 @@ class FrDB extends Dexie {
   daily!: Table<DailyStat, string>; // key = date
   reads!: Table<ReadRow, string>; // key = id
   config!: Table<{ key: string; value: SrsConfig }, string>;
-  gamify!: Table<{ key: string; xp: number }, string>; // key "state"
-  notes!: Table<{ wordId: string; text: string }, string>; // mẹo nhớ tự ghi
+  gamify!: Table<GamifyRow, string>; // key "state" (xp + đóng băng chuỗi)
+  notes!: Table<NoteRow, string>; // mẹo nhớ tự ghi (text "" = tombstone đã xoá)
 
   constructor() {
     super("french-words");
@@ -112,7 +112,7 @@ export async function recordAnswer(opts: {
   isNew: boolean;
   rating?: Grade; // chấm theo tốc độ (Lại/Khó/Được/Dễ); bỏ trống = suy từ correct
   now?: Date;
-}): Promise<{ prev: ReviewRecord | undefined; next: ReviewRecord }> {
+}): Promise<{ prev: ReviewRecord | undefined; next: ReviewRecord; date: string }> {
   const now = opts.now ?? new Date();
   const existing = await db.reviews.get(opts.wordId);
   const card = existing ? recordToCard(existing) : newCard(now);
@@ -134,7 +134,7 @@ export async function recordAnswer(opts: {
     if (!opts.correct) d.again += 1;
     await db.daily.put(d);
   });
-  return { prev: existing, next: rec };
+  return { prev: existing, next: rec, date };
 }
 
 /** "Đã biết rồi": tạo sẵn thẻ NHỚ BỀN (stability cao, due ~60 ngày) cho từ đã biết —
@@ -167,11 +167,11 @@ export async function undoAnswer(opts: {
   prev: ReviewRecord | undefined;
   correct: boolean;
   isNew: boolean;
-  now?: Date;
+  date?: string; // ngày của lần chấm (trừ đúng ngày kể cả undo qua nửa đêm)
 }): Promise<void> {
   if (opts.prev) await db.reviews.put(opts.prev);
   else await db.reviews.delete(opts.wordId);
-  const date = todayStr(opts.now ?? new Date());
+  const date = opts.date ?? todayStr();
   await db.transaction("rw", db.daily, async () => {
     const d = await db.daily.get(date);
     if (!d) return;
@@ -188,8 +188,9 @@ export async function getMnemonic(wordId: string): Promise<string> {
 }
 export async function setMnemonic(wordId: string, text: string): Promise<void> {
   const t = text.trim();
-  if (t) await db.notes.put({ wordId, text: t });
-  else await db.notes.delete(wordId);
+  const cur = await db.notes.get(wordId);
+  if ((cur?.text ?? "") === t) return; // không đổi → không bơm timestamp mới
+  await db.notes.put({ wordId, text: t, at: Date.now() }); // "" = tombstone
 }
 
 // ---- Gamify (F7): XP tích luỹ + tổng hợp thống kê ----
@@ -204,7 +205,46 @@ export async function getXp(): Promise<number> {
   return (await db.gamify.get("state"))?.xp ?? 0;
 }
 export async function setXp(xp: number): Promise<void> {
-  await db.gamify.put({ key: "state", xp });
+  const row = (await db.gamify.get("state")) ?? { key: "state", xp: 0 };
+  await db.gamify.put({ ...row, xp });
+}
+
+// ---- 🧊 Đóng băng chuỗi: lỡ 1 ngày không mất chuỗi ----
+// Tặng 1 freeze mỗi khi chuỗi đạt mốc 7 ngày mới (tối đa giữ 3).
+// Lỡ đúng 1 ngày (hôm qua) mà còn freeze → tự "đóng băng" ngày đó, tính như có học.
+const FREEZE_CAP = 3;
+export async function getGamifyState(): Promise<GamifyRow> {
+  return (await db.gamify.get("state")) ?? { key: "state", xp: 0 };
+}
+export async function applyStreakFreeze(daily: DailyStat[], today = todayStr()): Promise<GamifyRow> {
+  const row = await getGamifyState();
+  const frozen = new Set(row.frozenDates ?? []);
+  const active = new Set(daily.filter((d) => d.reviews > 0).map((d) => d.date));
+  for (const f of frozen) active.add(f);
+
+  // 1) Tiêu freeze: hôm qua trống + hôm kia có chuỗi → đóng băng hôm qua.
+  const y = new Date(today + "T00:00:00");
+  y.setDate(y.getDate() - 1);
+  const yesterday = todayStr(y);
+  y.setDate(y.getDate() - 1);
+  const dayBefore = todayStr(y);
+  if (!active.has(yesterday) && active.has(dayBefore) && (row.freezes ?? 0) > 0) {
+    frozen.add(yesterday);
+    active.add(yesterday);
+    row.freezes = (row.freezes ?? 0) - 1;
+    row.frozenDates = [...frozen];
+    await db.gamify.put(row);
+  }
+
+  // 2) Tặng freeze theo mốc 7 ngày chuỗi (mỗi mốc tặng 1 lần).
+  const streak = computeStreak([...active], today);
+  const granted = row.grantStreak ?? 0;
+  if (Math.floor(streak / 7) > Math.floor(granted / 7) && (row.freezes ?? 0) < FREEZE_CAP) {
+    row.freezes = Math.min(FREEZE_CAP, (row.freezes ?? 0) + 1);
+    row.grantStreak = streak;
+    await db.gamify.put(row);
+  }
+  return row;
 }
 
 // Chuỗi ngày liên tiếp có hoạt động (kết thúc hôm nay hoặc hôm qua).
@@ -229,6 +269,7 @@ export interface ProgressSummary {
   reads: number; // số bài đã đọc
   xp: number;
   streak: number;
+  freezes: number; // 🧊 lượt đóng băng chuỗi còn lại
   activeDays: number; // tổng số ngày có học
   matured: number; // số từ nhớ bền (FSRS stability ≥ 21 ngày)
   maxDayReviews: number; // số lượt ôn cao nhất trong 1 ngày
@@ -237,12 +278,15 @@ export interface ProgressSummary {
 }
 
 export async function progressSummary(): Promise<ProgressSummary> {
-  const [reviews, dailyRows, xp, readsCount] = await Promise.all([
+  const [reviews, dailyRows, xp, readRows] = await Promise.all([
     db.reviews.toArray(),
     db.daily.toArray(),
     getXp(),
-    db.reads.count(),
+    db.reads.toArray(),
   ]);
+  const readsCount = readRows.filter(readActive).length;
+  const gamifyRow = await applyStreakFreeze(dailyRows);
+  const frozenDates = gamifyRow.frozenDates ?? [];
   const byLevel: Record<number, number> = {};
   for (const r of reviews) byLevel[r.level] = (byLevel[r.level] || 0) + 1;
   const daily = dailyRows.sort((a, b) => a.date.localeCompare(b.date));
@@ -262,7 +306,8 @@ export async function progressSummary(): Promise<ProgressSummary> {
     correct: correctTotal,
     reads: readsCount,
     xp,
-    streak: computeStreak(daily.map((d) => d.date)),
+    streak: computeStreak([...daily.filter((d) => d.reviews > 0).map((d) => d.date), ...frozenDates]),
+    freezes: gamifyRow.freezes ?? 0,
     activeDays,
     matured,
     maxDayReviews,
@@ -281,8 +326,10 @@ export interface BackupData {
   daily: DailyStat[];
   reads?: ReadRow[];
   config?: { key: string; value: SrsConfig }[];
-  gamify?: { key: string; xp: number }[];
-  notes?: { wordId: string; text: string }[];
+  gamify?: GamifyRow[];
+  notes?: NoteRow[];
+  phonics?: string[]; // bài phát âm đã học (localStorage)
+  grammar?: string[]; // bài ngữ pháp đã học (localStorage)
 }
 
 export async function exportData(): Promise<BackupData> {
@@ -294,7 +341,21 @@ export async function exportData(): Promise<BackupData> {
     db.gamify.toArray(),
     db.notes.toArray(),
   ]);
-  return { app: "fr-words", version: 3, exportedAt: new Date().toISOString(), reviews, daily, reads, config, gamify, notes };
+  const local = (k: string): string[] => {
+    try {
+      return JSON.parse(localStorage.getItem(k) ?? "[]") as string[];
+    } catch {
+      return [];
+    }
+  };
+  return {
+    app: "fr-words",
+    version: 4,
+    exportedAt: new Date().toISOString(),
+    reviews, daily, reads, config, gamify, notes,
+    phonics: local("fr.phonicsDone"),
+    grammar: local("fr.grammarDone"),
+  };
 }
 
 // JSON biến Date → chuỗi ISO; phải hồi sinh để Dexie index `due` so sánh đúng kiểu.
@@ -319,20 +380,29 @@ export async function importData(
     if (Array.isArray(data.gamify)) await db.gamify.bulkPut(data.gamify);
     if (Array.isArray(data.notes)) await db.notes.bulkPut(data.notes);
   });
+  try {
+    if (Array.isArray(data.phonics)) localStorage.setItem("fr.phonicsDone", JSON.stringify(data.phonics));
+    if (Array.isArray(data.grammar)) localStorage.setItem("fr.grammarDone", JSON.stringify(data.grammar));
+  } catch {
+    /* bỏ qua */
+  }
   return { reviews: data.reviews.length, daily: data.daily?.length ?? 0 };
 }
 
 // ---- Tiến độ đọc (F6): bảng reads, có = đã đọc ----
+const readActive = (r: ReadRow | undefined): boolean => !!r && (!r.removedAt || r.readAt > r.removedAt);
 export async function markRead(id: string, read = true): Promise<void> {
-  if (read) await db.reads.put({ id, readAt: new Date().toISOString() });
-  else await db.reads.delete(id); // bỏ đánh dấu (toggle như HSK)
+  const now = new Date().toISOString();
+  const cur = await db.reads.get(id);
+  if (read) await db.reads.put({ id, readAt: now, removedAt: cur?.removedAt });
+  else if (cur) await db.reads.put({ ...cur, removedAt: now }); // tombstone — sync không "hồi sinh"
 }
 export async function isRead(id: string): Promise<boolean> {
-  return (await db.reads.get(id)) != null;
+  return readActive(await db.reads.get(id));
 }
 export async function readIds(): Promise<Set<string>> {
-  const keys = await db.reads.toCollection().primaryKeys();
-  return new Set(keys as string[]);
+  const rows = await db.reads.toArray();
+  return new Set(rows.filter(readActive).map((r) => r.id));
 }
 
 /** Câu luyện thêm (sắp xếp câu / chọn giống): chỉ tính vào thống kê ngày, KHÔNG đổi lịch FSRS. */
