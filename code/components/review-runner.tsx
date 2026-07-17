@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Volume2, Sparkles } from "lucide-react";
 import { recordAnswer, undoAnswer, recordPractice, addXp, progressSummary, getMnemonic, setMnemonic } from "@/lib/db";
 import { XP, badgeGroups, rankForWords, type Stats, type Badge } from "@/lib/gamify";
@@ -100,7 +100,27 @@ export default function ReviewRunner({
   const [showAllEx, setShowAllEx] = useState(false); // learn-card: xem thêm ví dụ
 
   const q = qs[i];
-  const baseTotal = questions.length;
+
+  // Đơn vị "thẻ" = TỪ VỰNG: mỗi từ 1 thẻ (1 MCQ chấm FSRS). Câu "chọn giống" và
+  // "sắp xếp câu" là BƯỚC PHỤ gắn vào thẻ của từ đó — không cộng vào tổng "X/Y"
+  // (nếu không, đặt "10 thẻ" mà phiên lại chạy 13–20 câu, trông như cài đặt không ăn).
+  const cardOrder = useMemo(() => {
+    const seen = new Set<string>();
+    const order: string[] = [];
+    for (const x of questions)
+      if (x.kind === "mcq" && !seen.has(x.word.id)) {
+        seen.add(x.word.id);
+        order.push(x.word.id);
+      }
+    return order;
+  }, [questions]);
+  const cardTotal = cardOrder.length;
+  const cardIdx = q ? cardOrder.indexOf(q.word.id) : -1; // 0-based thẻ hiện tại
+  const cardNo = cardIdx < 0 ? Math.min(i + 1, cardTotal) : cardIdx + 1; // đang ở thẻ thứ mấy
+  const cardsDone = Math.max(0, cardNo - 1);
+  const cardProgress = cardTotal ? Math.min(cardsDone / cardTotal, 1) : 0;
+  // "làm lại" = số thẻ đã bị chèn lại trong phiên (MCQ vượt quá 1/từ), trừ đi khi hoàn tác.
+  const redo = Math.max(0, qs.filter((x) => x.kind === "mcq").length - cardTotal);
 
   // gamify trong phiên
   const xpRef = useRef(0);
@@ -487,12 +507,13 @@ export default function ReviewRunner({
   if (onBreak) {
     return (
       <>
-        <SessionShell onExit={requestExit} progress={Math.min(i / baseTotal, 1)} count={`${Math.min(i + 1, baseTotal)}/${baseTotal}`}>
+        <SessionShell onExit={requestExit} progress={cardProgress} count={`${cardNo}/${cardTotal}`}>
           <div className="my-auto w-full space-y-5 rounded-3xl border bg-gradient-to-br from-primary/10 to-transparent p-8 text-center sm:p-10">
             <div className="text-5xl">☕</div>
             <p className="text-xl font-bold">Nghỉ một chút nhé</p>
             <p className="text-sm text-muted-foreground">
-              Đã làm <b className="text-foreground">{i}</b> thẻ · còn <b className="text-foreground">{qs.length - i}</b> thẻ.
+              Đã làm <b className="text-foreground">{cardsDone}</b> thẻ · còn{" "}
+              <b className="text-foreground">{Math.max(0, cardTotal - cardsDone)}</b> thẻ.
               Nghỉ mắt vài giây rồi tiếp tục.
             </p>
             <button
@@ -515,12 +536,12 @@ export default function ReviewRunner({
     <>
     <SessionShell
       onExit={requestExit}
-      progress={Math.min(i / baseTotal, 1)}
-      count={`${Math.min(i + 1, baseTotal)}/${baseTotal}`}
+      progress={cardProgress}
+      count={`${cardNo}/${cardTotal}`}
       pill={q.kind === "learn" ? undefined : typeLabel(q)}
       pillPrimary={q.kind === "arrange"}
       isNew={(q.kind === "learn" && !q.leech) || (q.kind === "mcq" && q.isNew)}
-      extra={qs.length > baseTotal ? `+${qs.length - baseTotal} làm lại` : undefined}
+      extra={redo > 0 ? `+${redo} làm lại` : undefined}
     >
       {q.kind === "learn" ? (
         /* Thẻ HỌC: từ mới xem trước khi bị hỏi; từ HAY QUÊN (leech) ôn lại kỹ + ghi mẹo nhớ */
