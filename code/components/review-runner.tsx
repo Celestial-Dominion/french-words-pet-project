@@ -9,6 +9,7 @@ import { wordAudioUrl, sentenceAudioUrl } from "@/lib/tts";
 import { suggestReading, type ReadingSuggestion } from "@/lib/suggest";
 import { requestSync } from "@/lib/sync";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import type { Question } from "@/lib/review-session";
 import type { SrsConfig, ReviewRecord } from "@/lib/types";
@@ -120,10 +121,14 @@ export default function ReviewRunner({
     });
   }, []);
 
-  // Thoát giữa phiên → hỏi xác nhận; chặn cả back/refresh khi đang trong phiên.
+  // Thoát giữa phiên → hỏi xác nhận; chặn back/refresh + CLICK link điều hướng (topbar/nav)
+  // khi đang trong phiên. (Topbar hiện trong phiên nên phải chặn cả link, không chỉ back.)
+  const router = useRouter();
   const requestExit = useCallback(() => setConfirmExit(true), []);
   const activeRef = useRef(true);
   const suppressPopRef = useRef(false);
+  const ownDummyRef = useRef(true); // còn sở hữu entry chặn back?
+  const pendingHrefRef = useRef<string | null>(null); // link người dùng bấm giữa phiên
   useEffect(() => {
     activeRef.current = !done;
   }, [done]);
@@ -133,31 +138,61 @@ export default function ReviewRunner({
       e.preventDefault();
       e.returnValue = "";
     };
-    const ownDummy = { current: true }; // còn sở hữu entry chặn back?
     const onPop = () => {
       if (suppressPopRef.current) {
         suppressPopRef.current = false; // popstate do chính mình back() lúc dọn dẹp → bỏ qua
         return;
       }
       if (!activeRef.current) {
-        ownDummy.current = false; // entry vừa bị tiêu bởi lần Back này
+        ownDummyRef.current = false; // entry vừa bị tiêu bởi lần Back này
         return;
       }
       window.history.pushState(null, ""); // giữ trang, hỏi xác nhận
       setConfirmExit(true);
     };
+    // Chặn click vào link điều hướng nội bộ (logo, tab, nút Cài đặt trên topbar) → hỏi xác nhận.
+    const onClickCapture = (e: MouseEvent) => {
+      if (!activeRef.current || e.defaultPrevented) return;
+      const a = (e.target as HTMLElement | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
+      if (!a) return;
+      const href = a.getAttribute("href") ?? "";
+      if (!href.startsWith("/") || a.target === "_blank" || a.hasAttribute("download")) return; // chỉ chặn điều hướng nội bộ
+      e.preventDefault();
+      e.stopPropagation();
+      pendingHrefRef.current = href;
+      setConfirmExit(true);
+    };
     window.history.pushState(null, "");
     window.addEventListener("beforeunload", beforeUnload);
     window.addEventListener("popstate", onPop);
+    document.addEventListener("click", onClickCapture, true);
     return () => {
       window.removeEventListener("beforeunload", beforeUnload);
       window.removeEventListener("popstate", onPop);
+      document.removeEventListener("click", onClickCapture, true);
       stopAudio(); // tắt audio còn dang dở khi rời phiên
-      if (ownDummy.current) {
+      if (ownDummyRef.current) {
         suppressPopRef.current = true;
         window.history.back(); // dọn entry chặn back còn sót (hết cảnh bấm Back 2 lần)
       }
     };
+  }, []);
+
+  // Xác nhận thoát: nếu do bấm link giữa phiên → điều hướng tới đúng nơi đó; nếu không → onExit.
+  const doExit = useCallback(() => {
+    const href = pendingHrefRef.current;
+    pendingHrefRef.current = null;
+    activeRef.current = false;
+    if (href) {
+      ownDummyRef.current = false; // router.push tự thêm history — khỏi back() dọn dẹp
+      router.push(href);
+    } else {
+      onExit();
+    }
+  }, [onExit, router]);
+  const cancelExit = useCallback(() => {
+    pendingHrefRef.current = null;
+    setConfirmExit(false);
   }, []);
 
   // Nhớ-lại-trước (recall-first): ẩn phương án MCQ đến khi bấm hiện. Mốc tính tốc độ
@@ -420,28 +455,59 @@ export default function ReviewRunner({
 
   if (!q) return null;
 
+  // Modal xác nhận rời phiên (dùng chung cho màn nghỉ + màn chính) — giống HSK.
+  const exitModal = confirmExit && (
+    <div role="dialog" aria-modal="true" className="fixed inset-0 z-[80] flex items-center justify-center p-4 duration-150 animate-in fade-in">
+      <button type="button" aria-label="Ở lại" onClick={cancelExit} className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+      <div className="relative w-full max-w-sm rounded-3xl border bg-background p-6 shadow-2xl duration-200 animate-in zoom-in-95">
+        <h2 className="text-xl font-bold">Thoát phiên ôn?</h2>
+        <p className="mt-2 text-base text-muted-foreground">
+          Bạn đang trong phiên học/ôn. Thoát bây giờ sẽ kết thúc phiên này. (Các câu đã trả lời vẫn được lưu.)
+        </p>
+        <div className="mt-5 flex flex-col-reverse gap-2 sm:flex-row">
+          <button
+            onClick={doExit}
+            className="w-full rounded-2xl border py-3 text-base font-semibold text-muted-foreground transition-colors hover:bg-muted active:scale-[0.99] sm:flex-1"
+          >
+            Thoát
+          </button>
+          <button
+            onClick={cancelExit}
+            autoFocus
+            className="w-full rounded-2xl bg-primary py-3 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99] sm:flex-1"
+          >
+            Tiếp tục ôn
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+
   // ---- Màn nghỉ giữa chặng ----
   if (onBreak) {
     return (
-      <SessionShell onExit={requestExit} progress={Math.min(i / baseTotal, 1)} count={`${Math.min(i + 1, baseTotal)}/${baseTotal}`}>
-        <div className="my-auto w-full space-y-5 rounded-3xl border bg-gradient-to-br from-primary/10 to-transparent p-8 text-center sm:p-10">
-          <div className="text-5xl">☕</div>
-          <p className="text-xl font-bold">Nghỉ một chút nhé</p>
-          <p className="text-sm text-muted-foreground">
-            Đã làm <b className="text-foreground">{i}</b> thẻ · còn <b className="text-foreground">{qs.length - i}</b> thẻ.
-            Nghỉ mắt vài giây rồi tiếp tục.
-          </p>
-          <button
-            onClick={() => setOnBreak(false)}
-            className="w-full rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99] sm:w-auto sm:px-8"
-          >
-            Ôn tiếp <span className="hidden opacity-60 sm:inline">(Enter)</span>
-          </button>
-          <button onClick={requestExit} className="block w-full text-sm font-medium text-muted-foreground transition-colors hover:text-foreground sm:w-auto sm:px-8">
-            Để sau
-          </button>
-        </div>
-      </SessionShell>
+      <>
+        <SessionShell onExit={requestExit} progress={Math.min(i / baseTotal, 1)} count={`${Math.min(i + 1, baseTotal)}/${baseTotal}`}>
+          <div className="my-auto w-full space-y-5 rounded-3xl border bg-gradient-to-br from-primary/10 to-transparent p-8 text-center sm:p-10">
+            <div className="text-5xl">☕</div>
+            <p className="text-xl font-bold">Nghỉ một chút nhé</p>
+            <p className="text-sm text-muted-foreground">
+              Đã làm <b className="text-foreground">{i}</b> thẻ · còn <b className="text-foreground">{qs.length - i}</b> thẻ.
+              Nghỉ mắt vài giây rồi tiếp tục.
+            </p>
+            <button
+              onClick={() => setOnBreak(false)}
+              className="w-full rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99] sm:w-auto sm:px-8"
+            >
+              Ôn tiếp <span className="hidden opacity-60 sm:inline">(Enter)</span>
+            </button>
+            <button onClick={requestExit} className="block w-full text-sm font-medium text-muted-foreground transition-colors hover:text-foreground sm:w-auto sm:px-8">
+              Để sau
+            </button>
+          </div>
+        </SessionShell>
+        {exitModal}
+      </>
     );
   }
 
@@ -767,34 +833,7 @@ export default function ReviewRunner({
         </div>
       )}
     </SessionShell>
-
-    {/* Xác nhận rời phiên (chặn thoát nhầm) — giống HSK */}
-    {confirmExit && (
-      <div role="dialog" aria-modal="true" className="fixed inset-0 z-[80] flex items-center justify-center p-4 duration-150 animate-in fade-in">
-        <button type="button" aria-label="Ở lại" onClick={() => setConfirmExit(false)} className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
-        <div className="relative w-full max-w-sm rounded-3xl border bg-background p-6 shadow-2xl duration-200 animate-in zoom-in-95">
-          <h2 className="text-xl font-bold">Thoát phiên ôn?</h2>
-          <p className="mt-2 text-base text-muted-foreground">
-            Bạn đang trong phiên học/ôn. Thoát bây giờ sẽ kết thúc phiên này. (Các câu đã trả lời vẫn được lưu.)
-          </p>
-          <div className="mt-5 flex flex-col-reverse gap-2 sm:flex-row">
-            <button
-              onClick={onExit}
-              className="w-full rounded-2xl border py-3 text-base font-semibold text-muted-foreground transition-colors hover:bg-muted active:scale-[0.99] sm:flex-1"
-            >
-              Thoát
-            </button>
-            <button
-              onClick={() => setConfirmExit(false)}
-              autoFocus
-              className="w-full rounded-2xl bg-primary py-3 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99] sm:flex-1"
-            >
-              Tiếp tục ôn
-            </button>
-          </div>
-        </div>
-      </div>
-    )}
+    {exitModal}
     </>
   );
 }

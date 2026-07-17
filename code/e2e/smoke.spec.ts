@@ -43,6 +43,17 @@ test("học từ mới: learn-card trước rồi mới MCQ", async ({ page }) =
   await expect(page.getByRole("button", { name: /Tiếp tục|Kết thúc|Ghép câu/ })).toBeVisible();
 });
 
+test("phiên học: bấm link topbar giữa phiên → hỏi xác nhận thoát", async ({ page }) => {
+  await page.goto("/hoc/1");
+  await page.getByRole("button", { name: /Học .* từ mới/ }).click();
+  await expect(page.getByText("Từ mới — học trước nhé")).toBeVisible();
+  // bấm logo (link "/") giữa phiên → modal xác nhận, KHÔNG rời phiên
+  await page.getByRole("link", { name: /French/ }).click();
+  await expect(page.getByRole("heading", { name: "Thoát phiên ôn?" })).toBeVisible();
+  await page.getByRole("button", { name: "Tiếp tục ôn" }).click();
+  await expect(page.getByText("Từ mới — học trước nhé")).toBeVisible(); // vẫn trong phiên
+});
+
 test("đọc hub /doc + học /hoc: trang mới như HSK", async ({ page }) => {
   await page.goto("/doc");
   await expect(page.getByRole("heading", { name: "Đọc" })).toBeVisible();
