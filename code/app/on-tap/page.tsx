@@ -261,7 +261,9 @@ export default function OnTapPage() {
             <label className="flex items-center justify-between gap-4">
               <span className="text-sm font-medium">
                 Câu ghép mỗi từ
-                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">luyện sắp xếp câu sau trắc nghiệm</span>
+                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">
+                  luyện sắp xếp câu sau trắc nghiệm — chỉ hiện khi đã học ≥40 từ và câu ví dụ gồm toàn từ bạn đã biết (tránh đoán mù)
+                </span>
               </span>
               <select
                 value={cfg.arrangePerWord}
