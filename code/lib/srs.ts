@@ -48,18 +48,27 @@ export const isLeech = (r?: ReviewRecord | null) => !!r && (r.lapses ?? 0) >= LE
 export const isMature = (r?: ReviewRecord | null) => !!r && r.stability >= MATURE_STABILITY && !isLeech(r);
 
 /**
- * Suy mức chấm từ kết quả + TỐC ĐỘ trả lời (ngưỡng theo LOẠI câu như HSK): sai → Lại;
- * quá 45s coi như bị xao nhãng → Được; đúng nhanh → Dễ, đúng chậm → Khó, còn lại → Được.
- * Cloze phải đọc cả câu, listen phải nghe hết audio → ngưỡng nới hơn câu thường.
+ * Suy mức chấm tự động từ kết quả + TỐC ĐỘ trả lời (ngưỡng "chậm" theo LOẠI câu):
+ *   - sai                     → Lại  (Again)
+ *   - đúng nhưng > 45s         → Được (Good) — coi như rời máy/xao nhãng, KHÔNG phạt Khó
+ *   - đúng nhưng chậm (≥ slow) → Khó  (Hard)
+ *   - còn lại                  → Được (Good)
+ * Cloze phải đọc cả câu, listen phải nghe hết audio → ngưỡng "chậm" nới hơn câu thường.
+ *
+ * ⚠️ KHÔNG BAO GIỜ chấm Dễ (Easy) cho câu ôn tập — và đừng thêm lại nhánh đó:
+ * mọi câu ở đây đều là TRẮC NGHIỆM 4 phương án, tức chỉ NHẬN RA đáp án chứ không
+ * TỰ NHỚ RA, nên "đúng nhanh" KHÔNG chứng minh trí nhớ bền. Tệ hơn: khi bật "nhớ
+ * lại trước" (recallFirst, mặc định bật) đồng hồ chỉ chạy TỪ LÚC HIỆN đáp án nên
+ * gần như câu đúng nào cũng 1–2s. Nếu cho ra Easy, FSRS áp hệ số easy_bonus làm
+ * stability/khoảng cách phình rất nhanh → lịch ôn "lỏng ngầm": từ vừa học hôm qua
+ * bị đẩy vài ngày–vài tuần sau mới gặp lại. Vì vậy thang tự động chỉ có Again/Hard/Good.
  */
 export function ratingFromSpeed(correct: boolean, ms: number, mode?: "meaning" | "reverse" | "cloze" | "listen"): Grade {
   if (!correct) return Rating.Again as Grade;
   if (ms > 45_000) return Rating.Good as Grade; // rời máy/xao nhãng, không phạt Khó
-  const fast = mode === "cloze" ? 6000 : mode === "listen" ? 5000 : 3500;
   const slow = mode === "cloze" ? 14_000 : mode === "listen" ? 12_000 : 9000;
-  if (ms <= fast) return Rating.Easy as Grade;
   if (ms >= slow) return Rating.Hard as Grade;
-  return Rating.Good as Grade;
+  return Rating.Good as Grade; // đúng, trong ngưỡng → Được (không thưởng Easy cho nhận-diện)
 }
 
 /** ReviewRecord (lưu DB) → Card (ts-fsrs). */
