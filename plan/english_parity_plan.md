@@ -49,7 +49,7 @@
 
 ## 2. Việc nhỏ — chỉ code, dữ liệu có sẵn trên máy (làm trước)
 
-- [x] **A1. `scripts/deploy-watch.sh`** — in tiến độ deploy mỗi pha + mỗi 5%, tự thoát khi xong/lỗi (từ app Anh `4bcbbc1`; thêm: bỏ báo lỗi giả ở dòng kiểm rules khi `RULES=1`). Dùng: `scripts/deploy.sh` chạy nền + `scripts/deploy-watch.sh` trong Monitor.
+- [x] **A1. `scripts/deploy-watch.sh`** — in tiến độ deploy mỗi pha + mỗi 5%, tự thoát khi xong/lỗi (từ app Anh `4bcbbc1`; thêm: bỏ báo lỗi giả ở dòng kiểm rules khi `RULES=1`). Dùng: `scripts/deploy.sh` chạy nền + `scripts/deploy-watch.sh` trong Monitor. (`46d6164`)
 - [ ] **A2. Nhãn văn phong** trong thẻ từ. Nguồn: `code/scripts/kaikki-fr.jsonl` (đã có) — ~1.300 từ có nhãn: colloquial 282, informal 265, slang 247, dated 140, archaic 117, literary 106, vulgar 66, Québec/Belgique/Suisse 107. Việc: thêm trường `register` lúc dựng dữ liệu (`build-words-assemble.mjs`), hiện badge như `REGISTER_VI` của app Anh (thân mật, khẩu ngữ, tiếng lóng, cũ, văn chương, thô tục, vùng miền).
 - [ ] **A3. Họ từ** (décider → décision → décisif). Nguồn: kaikki "derived" (2.992 từ, có sẵn) + **Démonette** (bảng họ từ, Creative Commons — soát biến thể giấy phép). Việc: trường `family` + điều hướng chồng thẻ trong `word-detail` (port từ app Anh).
 - [ ] **A4. Cụm hay đi kèm**. Nguồn: **RL-fr** (Réseau Lexical du Français, ATILF, CC BY 4.0, tải qua ORTOLANG) + BEL-RL-fr (ví dụ). Thiếu thì agent sinh + soát. Việc: trường `collocations`, khối "🔗 Cụm hay đi kèm" trong thẻ từ. Ghi công ở mục Nguồn dữ liệu của Cài đặt.
