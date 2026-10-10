@@ -48,7 +48,15 @@ ONLY=hosting
 START=$(date +%s)
 touch .firebase/deploy-start
 echo "▸ deploy $ONLY (log: $LOG)…"
-FIREBASE_HOSTING_UPLOAD_CONCURRENCY=$CONC npx firebase deploy --only $ONLY --non-interactive > $LOG 2>&1 || { tail -20 $LOG; echo "✗ deploy lỗi"; exit 1; }
+# firebase-tools đôi khi ném "Timed out" SAU khi đã "Deploy complete!" (tác vụ phụ sau release, 2026-10-10)
+# → bản đã lên rồi; chỉ coi là lỗi khi log KHÔNG có dòng hoàn tất.
+if ! FIREBASE_HOSTING_UPLOAD_CONCURRENCY=$CONC npx firebase deploy --only $ONLY --non-interactive > $LOG 2>&1; then
+  if grep -q "Deploy complete!" $LOG; then
+    echo "⚠ firebase-tools báo lỗi sau khi đã release xong — bỏ qua ($(grep -m1 -o 'Error: .*' $LOG))"
+  else
+    tail -20 $LOG; echo "✗ deploy lỗi"; exit 1
+  fi
+fi
 mv .firebase/deploy-start $STAMP
 grep -E "found [0-9]+ files|uploading new files" $LOG | sed -n '1p;$p'
 END=$(date +%s)
