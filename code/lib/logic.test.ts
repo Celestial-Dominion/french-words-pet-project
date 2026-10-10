@@ -709,3 +709,23 @@ t("ôn sớm: rút ngẫu nhiên không ra ngoài nhóm GẤP ĐÔI có R thấp
   assert.equal(pickAhead(recs.slice(0, 4), NOW, 20, curve).length, 4); // ít hơn limit → trả hết
 });
 
+
+// ---- Nhãn văn phong (scripts/build-register.mjs) ----
+t("register: chỉ nhãn hợp lệ, từ chuẩn không bị gắn nhãn cũ/văn chương sai, từ lóng có nhãn", () => {
+  const allowed = new Set(["informal", "slang", "vulgar", "offensive", "literary", "formal", "dated"]);
+  const all = new Map<string, { register?: string[] }>();
+  for (const l of LEVELS) {
+    const file = join(process.cwd(), "public", "data", "words", `${levelSlug(l.level)}.json`);
+    for (const w of JSON.parse(readFileSync(file, "utf8"))) all.set(w.id, w);
+  }
+  const tagged = [...all.values()].filter((w) => w.register?.length);
+  assert.ok(tagged.length > 200 && tagged.length < 600, `${tagged.length} từ có nhãn`);
+  for (const w of tagged) for (const r of w.register!) assert.ok(allowed.has(r), `nhãn lạ ${r}`);
+  // Wiktionary xếp nghĩa CŨ lên đầu → quy tắc "nghĩa đầu" từng gắn sai những từ này
+  for (const id of ["partir", "quitter", "gentil", "embrasser", "auprès", "société", "vélo", "près"])
+    assert.equal(all.get(id)?.register, undefined, `${id} không được có nhãn`);
+  assert.deepEqual(all.get("mec")?.register, ["informal"]);
+  assert.deepEqual(all.get("putain")?.register, ["vulgar"]);
+  assert.ok(all.get("bouffer")?.register?.includes("informal"));
+  assert.ok(all.get("choir")?.register?.includes("literary"));
+});

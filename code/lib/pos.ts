@@ -25,3 +25,25 @@ const POS_VI: Record<string, string> = {
 export function posLabel(code: string): string {
   return POS_VI[code] ?? code;
 }
+
+// Nhãn văn phong (register) — dùng sai văn cảnh còn tệ hơn không biết từ (mec, bouffer, choir…).
+const REGISTER_VI: Record<string, string> = {
+  informal: "thân mật",
+  slang: "tiếng lóng",
+  vulgar: "thô tục",
+  offensive: "miệt thị",
+  literary: "văn chương",
+  formal: "trang trọng",
+  dated: "cũ/ít dùng",
+};
+
+export function registerLabel(code: string): string {
+  return REGISTER_VI[code] ?? code;
+}
+
+/** Thô tục/miệt thị tô đỏ để người học khỏi dùng nhầm; còn lại tô vàng. */
+export function registerTone(code: string): string {
+  return code === "vulgar" || code === "offensive"
+    ? "bg-rose-500/15 text-rose-700 dark:text-rose-300"
+    : "bg-amber-500/15 text-amber-700 dark:text-amber-300";
+}

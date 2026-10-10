@@ -218,7 +218,7 @@ export default function SettingsPanel() {
             (New, Pallier et al., CC BY-SA 4.0)
           </li>
           <li>
-            Phiên âm IPA, nghĩa tiếng Anh, bảng chia động từ —{" "}
+            Phiên âm IPA, nghĩa tiếng Anh, bảng chia động từ, nhãn văn phong —{" "}
             <a href="https://kaikki.org/dictionary/French/" className="underline" target="_blank" rel="noreferrer">
               Wiktextract / Wiktionary
             </a>{" "}

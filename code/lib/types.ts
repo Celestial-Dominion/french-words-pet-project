@@ -14,6 +14,7 @@ export interface Word {
   level: number; // 1..6 = A1..C2
   frequency: number; // hạng tần suất trộn
   forms?: string[]; // các dạng chia/biến hình để tra ngược (sinh từ Lexique)
+  register?: string[]; // văn phong: informal | slang | vulgar | offensive | literary | formal | dated (scripts/build-register.mjs)
   search: string; // chuỗi bỏ dấu ("école" → "ecole") để gõ không dấu vẫn tìm được
 }
 

@@ -16,7 +16,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { reshuffleOptions, type Question } from "@/lib/review-session";
-import { posLabel } from "@/lib/pos";
+import { posLabel, registerLabel, registerTone } from "@/lib/pos";
 import type { SrsConfig, ReviewRecord, Word } from "@/lib/types";
 import SentenceArrange from "@/components/sentence-arrange";
 import Celebration, { primeCelebrationAudio } from "@/components/celebration";
@@ -716,6 +716,11 @@ export default function ReviewRunner({
                   {q.word.pos.map((p) => (
                     <span key={p} className="rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
                       {posLabel(p)}
+                    </span>
+                  ))}
+                  {q.word.register?.map((r) => (
+                    <span key={r} className={cn("rounded-full px-2 py-0.5 text-xs font-medium", registerTone(r))}>
+                      {registerLabel(r)}
                     </span>
                   ))}
                 </div>

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { X, Volume2, Plus, Check, RotateCcw } from "lucide-react";
 import { loadConjugation, type ExampleSentence } from "@/lib/data";
-import { posLabel } from "@/lib/pos";
+import { posLabel, registerLabel, registerTone } from "@/lib/pos";
 import { wordAudioUrl, sentenceAudioUrl, playAudio as play } from "@/lib/tts";
 import { cn } from "@/lib/utils";
 import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic, markKnown, undoMarkKnown, relearnWord } from "@/lib/db";
@@ -157,6 +157,16 @@ export default function WordDetail({
           <div className="mt-3 text-lg font-medium">{word.meaning_vi}</div>
           <div className="mt-1 text-sm text-muted-foreground">
             {word.pos.map(posLabel).join(", ")}
+            {word.register?.length ? (
+              <>
+                {" · "}
+                {word.register.map((r) => (
+                  <span key={r} className={cn("mr-1 rounded px-1.5 py-0.5 text-xs font-medium", registerTone(r))}>
+                    {registerLabel(r)}
+                  </span>
+                ))}
+              </>
+            ) : null}
             {/* Nghĩa EN: chỉ 2 nghĩa đầu. Wiktionary trả cả nghĩa cực hiếm — đổ hết ra là nhiễu,
                 người học tưởng đó là nghĩa chính. */}
             {word.meaning_en.length

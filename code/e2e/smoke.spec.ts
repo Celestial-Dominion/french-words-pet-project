@@ -344,3 +344,15 @@ test("chọn giống un/une: sau bài ngữ pháp về giống, danh từ có c�
   await page.locator("button", { hasText: /^1un$/ }).click(); // bonjour là danh từ giống đực
   await expect(page.getByText("✓ Đúng")).toBeVisible();
 });
+
+test("thẻ từ: nhãn văn phong (thân mật / thô tục) hiện cạnh từ loại", async ({ page }) => {
+  await page.goto("/hoc/2");
+  await page.getByPlaceholder(/Tìm/).fill("bouffer");
+  await page.getByRole("button", { name: /bouffer/ }).first().click();
+  await expect(page.getByText("thân mật", { exact: true })).toBeVisible();
+  await page.keyboard.press("Escape");
+  await page.goto("/hoc/1");
+  await page.getByPlaceholder(/Tìm/).fill("mec");
+  await page.getByRole("button", { name: /\bmec \/mɛk\// }).first().click();
+  await expect(page.getByText("thân mật", { exact: true })).toBeVisible();
+});

@@ -15,6 +15,10 @@ const base = JSON.parse(readFileSync(join(HERE, "out/words-base.json"), "utf8"))
 const viPath = join(HERE, "out/meanings-vi.json");
 const vi = existsSync(viPath) ? JSON.parse(readFileSync(viPath, "utf8")) : {};
 
+// nhãn văn phong đã soát (build-register.mjs) — dựng lại bộ từ không làm mất
+const regPath = join(HERE, "out/register.json");
+const register = existsSync(regPath) ? JSON.parse(readFileSync(regPath, "utf8")) : {};
+
 const byLevel = {};
 const index = {};
 let withVi = 0;
@@ -34,6 +38,7 @@ for (const w of base) {
       word.meaning_en = Array.isArray(m.en) ? m.en : [m.en];
     }
   }
+  if (register[w.id]) word.register = register[w.id];
   (byLevel[w.level] ||= []).push(word);
   index[w.id] = [word.ipa, word.meaning_vi];
 }
