@@ -729,3 +729,29 @@ t("register: chỉ nhãn hợp lệ, từ chuẩn không bị gắn nhãn cũ/v�
   assert.ok(all.get("bouffer")?.register?.includes("informal"));
   assert.ok(all.get("choir")?.register?.includes("literary"));
 });
+
+// ---- Họ từ (scripts/build-family.mjs) ----
+t("family: mọi từ trong họ đều có trong bộ từ (mở được thẻ), ≤8, không chứa chính nó, không cụm ghép", () => {
+  const all = new Map<string, { family?: string[] }>();
+  for (const l of LEVELS) {
+    const file = join(process.cwd(), "public", "data", "words", `${levelSlug(l.level)}.json`);
+    for (const w of JSON.parse(readFileSync(file, "utf8"))) all.set(w.id, w);
+  }
+  let n = 0;
+  for (const [id, w] of all) {
+    if (!w.family) continue;
+    n++;
+    assert.ok(w.family.length >= 1 && w.family.length <= 8, `${id}: ${w.family.length}`);
+    for (const f of w.family) {
+      assert.ok(all.has(f), `${id} → ${f} không có trong bộ từ`);
+      assert.notEqual(f, id);
+      assert.doesNotMatch(f, /[\s'’-]/, `${id} → ${f} là cụm ghép`);
+    }
+  }
+  assert.ok(n > 3000, `chỉ ${n} từ có họ từ`);
+  assert.ok(all.get("décider")?.family?.includes("décision"));
+  assert.ok(all.get("chanter")?.family?.includes("chanteur"));
+  // cặp đúng từ nguyên nhưng gây hiểu nhầm đã chặn
+  assert.ok(!all.get("main")?.family?.includes("maintenant"));
+  assert.ok(!all.get("beau")?.family?.includes("beaucoup"));
+});

@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { X, Volume2, Plus, Check, RotateCcw } from "lucide-react";
-import { loadConjugation, type ExampleSentence } from "@/lib/data";
+import { useEffect, useMemo, useState } from "react";
+import { X, Volume2, Plus, Check, RotateCcw, ArrowLeft } from "lucide-react";
+import { loadConjugation, lookupWord, loadExamplesForWords, type ExampleSentence } from "@/lib/data";
 import { posLabel, registerLabel, registerTone } from "@/lib/pos";
 import { wordAudioUrl, sentenceAudioUrl, playAudio as play } from "@/lib/tts";
 import { cn } from "@/lib/utils";
@@ -45,8 +45,8 @@ function article(w: Word): string | null {
 }
 
 export default function WordDetail({
-  word,
-  examples,
+  word: root,
+  examples: rootExamples,
   onClose,
   onChange,
 }: {
@@ -55,6 +55,16 @@ export default function WordDetail({
   onClose: () => void;
   onChange?: () => void;
 }) {
+  // Điều hướng HỌ TỪ ngay trong ngăn (như app Anh): bấm "décision" khi đang xem "décider" → chồng thẻ mới,
+  // giữ đường quay lại. `root` để tự huỷ chồng khi component được tái dùng cho từ khác.
+  const [nav, setNav] = useState<{ root: string; stack: { word: Word; examples: ExampleSentence[] }[] }>({
+    root: root.id,
+    stack: [],
+  });
+  const stack = useMemo(() => (nav.root === root.id ? nav.stack : []), [nav, root.id]);
+  const top = stack[stack.length - 1];
+  const word = top?.word ?? root; // từ ĐANG xem (gốc hoặc từ cùng họ vừa mở)
+  const examples = top?.examples ?? rootExamples;
   const isVerb = word.pos.includes("v") || word.pos.includes("vaux");
   const isNoun = word.pos.includes("n") && !!word.gender;
   const [tab, setTab] = useState<"info" | "conj">("info");
@@ -73,14 +83,31 @@ export default function WordDetail({
     occurrencesOf(word.id).then(setOcc).catch(() => {});
   }, [word.id]);
 
-  // Esc để đóng (như HSK)
+  /** Mở một từ cùng họ (tra qua lemma-map). */
+  const openFamily = async (id: string) => {
+    const w = await lookupWord(id);
+    if (!w) return;
+    const ex = await loadExamplesForWords(w.level, [w.id]);
+    setTab("info");
+    setNav({ root: root.id, stack: [...stack, { word: w, examples: ex[w.id] ?? [] }] });
+  };
+  const goBack = () => {
+    setTab("info");
+    setNav({ root: root.id, stack: stack.slice(0, -1) });
+  };
+
+  // Esc: đang xem từ cùng họ thì lùi một bước, ở thẻ gốc thì đóng (như HSK)
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key !== "Escape") return;
+      if (stack.length) {
+        setTab("info");
+        setNav({ root: root.id, stack: stack.slice(0, -1) });
+      } else onClose();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [onClose]);
+  }, [stack, root.id, onClose]);
 
   const status = statusOf(rec);
   // Ghi rồi đọc lại thẻ — dùng chung cho Học từ này / Đã biết rồi / Hoàn tác / Học lại.
@@ -126,9 +153,18 @@ export default function WordDetail({
         className="max-h-[88vh] overflow-y-auto rounded-t-3xl border-t bg-background pb-8 shadow-2xl duration-200 animate-in slide-in-from-bottom-4 sm:h-full sm:max-h-none sm:w-full sm:max-w-md sm:rounded-none sm:border-l sm:border-t-0 sm:slide-in-from-right-4"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* thanh kéo + đóng */}
+        {/* thanh kéo + quay lại (khi đang lần theo họ từ) + đóng */}
         <div className="sticky top-0 z-10 flex items-center justify-between bg-background/95 px-4 pt-3 pb-2 backdrop-blur">
           <div className="mx-auto h-1 w-10 rounded-full bg-muted-foreground/30" />
+          {stack.length > 0 && (
+            <button
+              onClick={goBack}
+              className="absolute left-3 top-2 inline-flex h-9 items-center gap-1 rounded-full bg-muted px-3 text-sm font-medium text-muted-foreground"
+            >
+              <ArrowLeft className="size-4" />
+              {stack.length > 1 ? stack[stack.length - 2].word.id : root.id}
+            </button>
+          )}
           <button onClick={onClose} aria-label="Đóng" className="absolute right-3 top-2 grid size-9 place-items-center rounded-full bg-muted text-muted-foreground">
             <X className="size-5" />
           </button>
@@ -258,6 +294,24 @@ export default function WordDetail({
               )}
             </div>
           )}
+
+          {/* họ từ: décider → décision — bấm để mở thẻ từ đó (chỉ gồm từ có trong bộ từ) */}
+          {word.family?.length ? (
+            <div className="mt-4">
+              <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">🌱 Họ từ</div>
+              <div className="flex flex-wrap gap-1.5">
+                {word.family.map((id) => (
+                  <button
+                    key={id}
+                    onClick={() => void openFamily(id)}
+                    className="rounded-full border px-2.5 py-1 text-sm font-medium transition-colors hover:bg-muted active:scale-[0.98]"
+                  >
+                    {id}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : null}
 
           {/* mẹo nhớ tự ghi (tự nghĩ → nhớ lâu nhất) */}
           <div className="mt-4">

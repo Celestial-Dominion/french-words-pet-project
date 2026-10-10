@@ -356,3 +356,19 @@ test("thẻ từ: nhãn văn phong (thân mật / thô tục) hiện cạnh từ
   await page.getByRole("button", { name: /\bmec \/mɛk\// }).first().click();
   await expect(page.getByText("thân mật", { exact: true })).toBeVisible();
 });
+
+test("thẻ từ: họ từ — bấm từ cùng họ mở thẻ mới, quay lại được (nút + Esc)", async ({ page }) => {
+  await page.goto("/hoc/1");
+  await page.getByPlaceholder(/Tìm/).fill("chanter");
+  await page.getByRole("button", { name: /\bchanter \// }).first().click();
+  await expect(page.getByText("🌱 Họ từ")).toBeVisible();
+  await page.getByRole("button", { name: "chanteur", exact: true }).click();
+  const back = page.getByRole("button", { name: /^chanter$/ }).first(); // nút quay lại nằm trên đầu ngăn
+  await expect(back).toBeVisible(); // đang xem "chanteur", nút quay lại mang tên từ gốc
+  await expect(page.getByRole("button", { name: "chanter", exact: true }).last()).toBeVisible(); // chanter nằm trong họ của chanteur
+  await back.click();
+  await expect(page.getByRole("button", { name: "chanteur", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "chanteur", exact: true }).click();
+  await page.keyboard.press("Escape"); // Esc lùi một bước, chưa đóng ngăn
+  await expect(page.getByRole("button", { name: "chanteur", exact: true })).toBeVisible();
+});

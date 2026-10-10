@@ -18,6 +18,9 @@ const vi = existsSync(viPath) ? JSON.parse(readFileSync(viPath, "utf8")) : {};
 // nhãn văn phong đã soát (build-register.mjs) — dựng lại bộ từ không làm mất
 const regPath = join(HERE, "out/register.json");
 const register = existsSync(regPath) ? JSON.parse(readFileSync(regPath, "utf8")) : {};
+// họ từ (build-family.mjs)
+const famPath = join(HERE, "out/family.json");
+const family = existsSync(famPath) ? JSON.parse(readFileSync(famPath, "utf8")) : {};
 
 const byLevel = {};
 const index = {};
@@ -39,6 +42,7 @@ for (const w of base) {
     }
   }
   if (register[w.id]) word.register = register[w.id];
+  if (family[w.id]) word.family = family[w.id];
   (byLevel[w.level] ||= []).push(word);
   index[w.id] = [word.ipa, word.meaning_vi];
 }
