@@ -8,9 +8,17 @@
 //  - Local đổi → mới ghi chunks lên (không ghi khi không có gì mới).
 import { doc, getDoc, collection, getDocs, writeBatch, getFirestore, type Firestore } from "firebase/firestore";
 import { getFbApp } from "./firebase";
-import { db, getXp, getConfig, getGamifyState } from "./db";
+import { db, getXp, getConfig, getGamifyState, invalidateProgressSummary } from "./db";
 import { getCourseDone, mergeCourseDone } from "./progress-local";
-import type { ReviewRecord, DailyStat, ReadRow, NoteRow, GamifyRow, SrsConfig } from "./types";
+import {
+  fingerprint, fpEq, mergeSnapshots, pruneUndefined,
+  mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify,
+  sanitizeRemote, sanitizeReviews, sanitizeConfig,
+  type Fp, type SyncSnapshot,
+} from "./sync-merge";
+import { setSyncOk } from "./sync-status";
+import { SYNC_MERGED_EVENT } from "./sync";
+import type { ReviewRecord } from "./types";
 
 const CHUNK = 1500;
 const STATE_KEY = "fr.syncState"; // { remoteUpdatedAt, fp }
@@ -31,67 +39,10 @@ function revToPlain(r: ReviewRecord) {
     last_review: r.last_review ? (r.last_review instanceof Date ? r.last_review.toISOString() : r.last_review) : null,
   };
 }
-function revFromPlain(p: Record<string, unknown>): ReviewRecord {
-  return {
-    ...(p as unknown as ReviewRecord),
-    due: new Date(p.due as string),
-    last_review: p.last_review ? new Date(p.last_review as string) : undefined,
-  };
-}
+// Chiều ngược lại (hồi sinh Date + lọc schema) nằm ở sanitizeReviews/sanitizeRemote: doc cloud
+// có thể do bản app cũ ghi hoặc bị sửa tay, một bản ghi hỏng đủ làm abort cả transaction Dexie.
 
-const revScore = (r: ReviewRecord) =>
-  (r.reps ?? 0) * 1e13 + new Date(r.last_review ?? r.introducedOn ?? 0).getTime();
-
-function mergeReviews(a: ReviewRecord[], b: ReviewRecord[]): ReviewRecord[] {
-  const m = new Map<string, ReviewRecord>();
-  for (const r of [...a, ...b]) {
-    const cur = m.get(r.wordId);
-    if (!cur || revScore(r) > revScore(cur)) m.set(r.wordId, r);
-  }
-  return [...m.values()];
-}
-function mergeDaily(a: DailyStat[], b: DailyStat[]): DailyStat[] {
-  const m = new Map<string, DailyStat>();
-  for (const d of [...a, ...b]) {
-    const cur = m.get(d.date);
-    // cùng ngày trên 2 máy → lấy max từng chỉ số (xấp xỉ, tránh mất dữ liệu)
-    m.set(d.date, cur
-      ? { date: d.date, reviews: Math.max(cur.reviews, d.reviews), newCount: Math.max(cur.newCount, d.newCount), again: Math.max(cur.again, d.again) }
-      : d);
-  }
-  return [...m.values()];
-}
-const readStamp = (r: ReadRow) => (r.removedAt && r.removedAt > r.readAt ? r.removedAt : r.readAt);
-function mergeReads(a: ReadRow[], b: ReadRow[]): ReadRow[] {
-  const m = new Map<string, ReadRow>();
-  for (const r of [...a, ...b]) {
-    const cur = m.get(r.id);
-    if (!cur || readStamp(r) > readStamp(cur)) m.set(r.id, r); // hành động sau cùng thắng (kể cả bỏ đánh dấu)
-  }
-  return [...m.values()];
-}
-function mergeNotes(a: NoteRow[], b: NoteRow[]): NoteRow[] {
-  const m = new Map<string, NoteRow>();
-  for (const n of [...a, ...b]) {
-    const cur = m.get(n.wordId);
-    if (!cur || (n.at ?? 0) > (cur.at ?? 0)) m.set(n.wordId, n); // máy sửa sau thắng ("" = đã xoá)
-  }
-  return [...m.values()];
-}
-
-// ---- dấu vân tay local: đổi bất kỳ đâu (ôn, học, đọc, XP) → fp đổi ----
-interface Fp {
-  rc: number; // số review
-  mlr: number; // max last_review (ms)
-  tr: number; // tổng lượt ôn (daily)
-  rd: number; // số bản ghi đọc (kể cả tombstone)
-  ra: string; // dấu thời gian đọc/bỏ-đọc mới nhất
-  xp: number;
-  nt: number; // max thời điểm sửa mẹo nhớ
-  co: number; // số bài phát âm + ngữ pháp đã học
-  fz: string; // trạng thái đóng băng chuỗi
-  cu: string; // thời điểm đổi cài đặt trên máy này
-}
+// Dấu vân tay + hợp nhất nằm ở lib/sync-merge.ts (hàm thuần, có unit test 2 máy).
 function cfgStamp(): string {
   try {
     return localStorage.getItem("fr.cfgUpdatedAt") ?? "";
@@ -99,33 +50,7 @@ function cfgStamp(): string {
     return "";
   }
 }
-function fpOf(
-  reviews: ReviewRecord[],
-  daily: DailyStat[],
-  reads: ReadRow[],
-  xp: number,
-  notes: NoteRow[],
-  courses: number,
-  gamify: GamifyRow,
-): Fp {
-  let mlr = 0;
-  for (const r of reviews) {
-    const t = r.last_review ? new Date(r.last_review).getTime() : 0;
-    if (t > mlr) mlr = t;
-  }
-  let ra = "";
-  for (const r of reads) {
-    const t = readStamp(r);
-    if (t > ra) ra = t;
-  }
-  let nt = 0;
-  for (const n of notes) if ((n.at ?? 0) > nt) nt = n.at ?? 0;
-  const fz = `${gamify.freezes ?? 0}|${(gamify.frozenDates ?? []).length}|${gamify.grantStreak ?? 0}`;
-  return { rc: reviews.length, mlr, tr: daily.reduce((s, d) => s + d.reviews, 0), rd: reads.length, ra, xp, nt, co: courses, fz, cu: cfgStamp() };
-}
-const fpEq = (a: Fp, b: Fp) =>
-  a.rc === b.rc && a.mlr === b.mlr && a.tr === b.tr && a.rd === b.rd && a.ra === b.ra &&
-  a.xp === b.xp && a.nt === b.nt && a.co === b.co && a.fz === b.fz && a.cu === b.cu;
+const fpLocal = (s: SyncSnapshot): Fp => fingerprint(s, cfgStamp());
 
 function loadState(): { remoteUpdatedAt: string; fp: Fp } | null {
   try {
@@ -149,8 +74,36 @@ export interface SyncResult {
   skipped: boolean; // true = không có gì thay đổi, không đụng chunks
 }
 
+// Chống chạy chồng: `visibilitychange`, `focus`, `pagehide`, event "fr:sync" đều gọi thẳng
+// syncNow — hai lượt chạy song song sẽ đọc cùng một `remote.updatedAt`, ghi đè saveState của
+// nhau và nhân đôi cửa sổ race với thao tác học. Lượt gọi trong lúc đang chạy được gộp vào
+// lượt hiện tại; nếu có yêu cầu mới thì chạy thêm ĐÚNG một lượt nữa sau khi lượt này xong
+// (để thay đổi phát sinh giữa chừng vẫn kịp lên cloud).
+let inFlight: Promise<SyncResult> | null = null;
+let rerun = false;
+
 /** Đồng bộ 2 chiều có điều kiện: bỏ qua khi cả 2 phía không đổi; chỉ ghi khi local đổi. */
-export async function syncNow(uid: string): Promise<SyncResult> {
+export function syncNow(uid: string): Promise<SyncResult> {
+  if (inFlight) {
+    rerun = true;
+    return inFlight;
+  }
+  const chain = (async () => {
+    let r = await runSync(uid);
+    if (rerun) {
+      rerun = false;
+      r = await runSync(uid);
+    }
+    return r;
+  })();
+  inFlight = chain.finally(() => {
+    inFlight = null;
+    rerun = false;
+  });
+  return inFlight;
+}
+
+async function runSync(uid: string): Promise<SyncResult> {
   const store = await getStore();
   if (!store) throw new Error("Firestore chưa cấu hình");
 
@@ -163,9 +116,17 @@ export async function syncNow(uid: string): Promise<SyncResult> {
     db.notes.toArray(),
     getGamifyState(),
   ]);
-  const localPhonics = [...getCourseDone("phonics")];
-  const localGrammar = [...getCourseDone("grammar")];
-  const localFp = fpOf(localReviews, localDaily, localReads, localXp, localNotes, localPhonics.length + localGrammar.length, localGamify);
+  const local: SyncSnapshot = {
+    reviews: localReviews,
+    daily: localDaily,
+    reads: localReads,
+    notes: localNotes,
+    xp: localXp,
+    phonics: [...getCourseDone("phonics")],
+    grammar: [...getCourseDone("grammar")],
+    gamify: localGamify,
+  };
+  const localFp = fpLocal(local);
   const state = loadState();
 
   // remote: 1 doc nhỏ trước
@@ -179,62 +140,63 @@ export async function syncNow(uid: string): Promise<SyncResult> {
 
   // Không gì đổi → thoát sớm, không đọc/ghi chunk nào.
   if (!remoteChanged && !localChanged) {
+    setSyncOk(`${localFp.rc.toLocaleString("vi")} thẻ · ${localFp.rd} bài đã đọc · không có gì mới`);
     return { reviews: localFp.rc, reads: localFp.rd, skipped: true };
   }
 
   // Kéo remote đầy đủ khi remote đổi (máy khác ghi) hoặc lần đầu.
-  const remoteDaily = (remote.daily as DailyStat[]) ?? [];
-  const remoteReads = (remote.reads as ReadRow[]) ?? [];
-  const remoteXp = (remote.xp as number) ?? 0;
-  const remoteNotes = (remote.notes as NoteRow[]) ?? [];
-  const remotePhonics = (remote.phonics as string[]) ?? [];
-  const remoteGrammar = (remote.grammar as string[]) ?? [];
-  const remoteFreeze = (remote.freeze as { freezes?: number; frozenDates?: string[]; grantStreak?: number }) ?? {};
-  let remoteReviews: ReviewRecord[] = [];
+  const remoteReviews: ReviewRecord[] = [];
   if (remoteChanged) {
     const chunkSnap = await getDocs(collection(store, "users", uid, "reviews"));
-    chunkSnap.forEach((d) => {
-      const items = (d.data().items as Record<string, unknown>[]) ?? [];
-      remoteReviews.push(...items.map(revFromPlain));
-    });
+    chunkSnap.forEach((d) => remoteReviews.push(...sanitizeReviews(d.data().items)));
   }
 
   // merge (remote không đổi → merged = local; local đã chứa remote từ lần sync trước)
-  const reviews = remoteChanged ? mergeReviews(localReviews, remoteReviews) : localReviews;
-  const daily = remoteChanged ? mergeDaily(localDaily, remoteDaily) : localDaily;
-  const reads = remoteChanged ? mergeReads(localReads, remoteReads) : localReads;
-  const xp = remoteChanged ? Math.max(localXp, remoteXp) : localXp;
-  const notes = remoteChanged ? mergeNotes(localNotes, remoteNotes) : localNotes;
-  const phonics = remoteChanged ? mergeCourseDone("phonics", remotePhonics) : localPhonics;
-  const grammar = remoteChanged ? mergeCourseDone("grammar", remoteGrammar) : localGrammar;
-  const gamify: GamifyRow = remoteChanged
-    ? {
-        ...localGamify,
-        freezes: Math.max(localGamify.freezes ?? 0, remoteFreeze.freezes ?? 0),
-        frozenDates: [...new Set([...(localGamify.frozenDates ?? []), ...(remoteFreeze.frozenDates ?? [])])],
-        grantStreak: Math.max(localGamify.grantStreak ?? 0, remoteFreeze.grantStreak ?? 0),
-      }
-    : localGamify;
+  const merged = remoteChanged
+    ? mergeSnapshots(local, { ...sanitizeRemote(remote), reviews: remoteReviews })
+    : local;
+  const { reviews, daily, reads, notes, xp, gamify } = merged;
 
   // ghi local (chỉ khi có kéo remote về)
   if (remoteChanged) {
+    // phần lưu ở localStorage phải ghi qua helper của progress-local (merge + persist)
+    mergeCourseDone("phonics", merged.phonics);
+    mergeCourseDone("grammar", merged.grammar);
     await db.transaction("rw", [db.reviews, db.daily, db.reads, db.gamify, db.notes], async () => {
-      await db.reviews.bulkPut(reviews);
-      await db.daily.bulkPut(daily);
-      await db.reads.bulkPut(reads);
-      await db.notes.bulkPut(notes);
-      await db.gamify.put({ ...gamify, xp: Math.max(xp, gamify.xp) });
+      // ĐỌC LẠI ngay trong transaction rồi merge tiếp: giữa lúc đọc snapshot ở đầu hàm và lúc
+      // này đã có vài giây đi mạng, người dùng có thể vừa trả lời thêm thẻ. bulkPut thẳng
+      // `merged` sẽ ghi đè mất các lượt đó VĨNH VIỄN (fingerprint sau đó khớp nên không tự lành).
+      const [curReviews, curDaily, curReads, curNotes, curGamify] = await Promise.all([
+        db.reviews.toArray(),
+        db.daily.toArray(),
+        db.reads.toArray(),
+        db.notes.toArray(),
+        db.gamify.get("state"),
+      ]);
+      await db.reviews.bulkPut(mergeReviews(curReviews, reviews));
+      await db.daily.bulkPut(mergeDaily(curDaily, daily));
+      await db.reads.bulkPut(mergeReads(curReads, reads));
+      await db.notes.bulkPut(mergeNotes(curNotes, notes));
+      await db.gamify.put(mergeGamify({ ...gamify, xp: Math.max(xp, gamify.xp) }, curGamify ?? { key: "state", xp: 0 }));
     });
+    invalidateProgressSummary(); // vừa kéo tiến độ máy khác về → header/trang chủ phải tính lại
     // cài đặt: máy nào đổi sau thì thắng
-    const remoteCfg = remote.config as SrsConfig | undefined;
-    const remoteCfgAt = (remote.configUpdatedAt as string) ?? "";
-    if (remoteCfg && remoteCfgAt && remoteCfgAt > cfgStamp()) {
-      await db.config.put({ key: "srs", value: remoteCfg });
+    const remoteCfgAt = typeof remote.configUpdatedAt === "string" ? remote.configUpdatedAt : "";
+    if (remote.config && remoteCfgAt && remoteCfgAt > cfgStamp()) {
+      await db.config.put({ key: "srs", value: sanitizeConfig(remote.config, await getConfig()) });
       try {
         localStorage.setItem("fr.cfgUpdatedAt", remoteCfgAt);
       } catch {
         /* bỏ qua */
       }
+    }
+    // Báo UI: dữ liệu local vừa ĐỔI vì kéo từ máy khác — trang đang mở phải đọc lại DB.
+    // Không phát thì số "đến hạn" trên màn đứng im ở giá trị lúc mount, bấm Đồng bộ xong
+    // vẫn thấy hai máy lệch nhau dù DB đã khớp.
+    try {
+      window.dispatchEvent(new Event(SYNC_MERGED_EVENT));
+    } catch {
+      /* SSR/test — bỏ qua */
     }
   }
 
@@ -246,19 +208,32 @@ export async function syncNow(uid: string): Promise<SyncResult> {
     finalRemoteUpdatedAt = new Date().toISOString();
     const cfg = await getConfig();
     const batch = writeBatch(store);
-    batch.set(userRef, {
-      daily, reads, xp, notes, phonics, grammar,
-      freeze: { freezes: gamify.freezes ?? 0, frozenDates: gamify.frozenDates ?? [], grantStreak: gamify.grantStreak ?? 0 },
-      reviewChunks: chunks.length, updatedAt: finalRemoteUpdatedAt,
-      config: cfg, configUpdatedAt: cfgStamp() || finalRemoteUpdatedAt,
-    });
-    chunks.forEach((c, i) => batch.set(doc(store, "users", uid, "reviews", String(i)), { items: c.map(revToPlain) }));
+    // pruneUndefined: Firestore từ chối field `undefined` và làm hỏng cả batch → lọc trước khi ghi.
+    batch.set(
+      userRef,
+      pruneUndefined({
+        daily, reads, xp, notes, phonics: merged.phonics, grammar: merged.grammar,
+        freeze: {
+          freezes: gamify.freezes ?? 0,
+          frozenDates: gamify.frozenDates ?? [],
+          grantStreak: gamify.grantStreak ?? 0,
+          maxCombo: gamify.maxCombo ?? 0,
+          questsDone: gamify.questsDone ?? [],
+        },
+        reviewChunks: chunks.length, updatedAt: finalRemoteUpdatedAt,
+        config: cfg, configUpdatedAt: cfgStamp() || finalRemoteUpdatedAt,
+      }),
+    );
+    chunks.forEach((c, i) =>
+      batch.set(doc(store, "users", uid, "reviews", String(i)), pruneUndefined({ items: c.map(revToPlain) })),
+    );
     // xoá chunk thừa nếu lần này ít hơn lần trước
     const prevChunks = (remote.reviewChunks as number) ?? 0;
     for (let i = chunks.length; i < prevChunks; i++) batch.delete(doc(store, "users", uid, "reviews", String(i)));
     await batch.commit();
   }
 
-  saveState(finalRemoteUpdatedAt, fpOf(reviews, daily, reads, xp, notes, phonics.length + grammar.length, gamify));
+  saveState(finalRemoteUpdatedAt, fpLocal(merged));
+  setSyncOk(`${reviews.length.toLocaleString("vi")} thẻ · ${reads.length} bài đã đọc${remoteChanged ? " · đã kéo từ máy khác" : ""}`);
   return { reviews: reviews.length, reads: reads.length, skipped: false };
 }

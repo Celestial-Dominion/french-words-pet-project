@@ -1,28 +1,74 @@
 // Dựng danh sách câu hỏi cho một phiên ôn/học từ dữ liệu từ + ví dụ.
 import type { Word, SrsConfig, ReviewRecord } from "./types";
 import type { ExampleSentence } from "./data";
-import { isLeech, isMature } from "./srs";
+import { isLeech, isKnownPending, cardStage } from "./srs";
+import {
+  knownRatio,
+  rankByKnown,
+  seededShuffle,
+  meaningTooSimilar,
+  optionMeaningMap,
+  selectDistinctExercises,
+  shortMeaningVi,
+  spreadSameWord,
+} from "./srs-pure";
+import { lookalikeScore } from "./spell";
+import { pickQuestionKind } from "./question-mix";
 
-// 4 chế độ câu trắc nghiệm (chấm FSRS): xem từ→chọn nghĩa, nghĩa→chọn từ (ngược),
-// điền từ vào câu (cloze), nghe→chọn nghĩa (listen).
-export type McqMode = "meaning" | "reverse" | "cloze" | "listen";
+// Các dạng BÀI CHÍNH chấm FSRS. Điền câu là một kind riêng,
+// không chấm lịch ôn để mỗi từ chỉ bị chấm đúng một lần trong một lượt.
+export type McqMode = "meaning" | "reverse" | "listen";
+
+export interface SentenceLexicon {
+  lemmaMap: Readonly<Record<string, string>>;
+  wordLevels: Readonly<Record<string, number>>;
+}
 
 export type Question =
-  | { kind: "learn"; word: Word; graded: false; examples?: ExampleSentence[]; leech?: boolean }
+  | {
+      kind: "learn";
+      word: Word;
+      graded: false;
+      examples?: ExampleSentence[];
+      leech?: boolean;
+      relearn?: boolean; // "Học lại" từ đã đánh dấu biết (ReviewRecord.relearn)
+    }
   | {
       kind: "mcq";
       mode: McqMode;
       word: Word;
       graded: true;
       isNew: boolean;
-      prompt: string; // meaning/listen: từ Pháp · reverse: nghĩa VI · cloze: không dùng
+      prompt: string; // meaning/listen: từ Pháp · reverse: nghĩa VI
       options: string[];
+      // Câu có phương án là từ tiếng Pháp (reverse): sau khi chấm, lộ nghĩa của
+      // cả 4 lựa chọn như app HSK. Dùng map theo id để xáo lại vẫn không lệch nghĩa.
+      optionMeanings?: Record<string, string>;
       answer: number;
       exs?: ExampleSentence[]; // 1-2 câu ví dụ cho thẻ chi tiết SAU khi trả lời
-      clozeBefore?: string;
-      clozeAfter?: string;
-      clozeVi?: string;
-      clozeFr?: string; // câu gốc đầy đủ (phát audio sau khi trả lời)
+    }
+  | {
+      kind: "cloze";
+      word: Word;
+      graded: false;
+      options: string[];
+      optionMeanings: Record<string, string>;
+      answer: number;
+      clozeBefore: string;
+      clozeAfter: string;
+      clozeVi: string;
+      clozeFr: string; // câu gốc đầy đủ (phát audio sau khi trả lời)
+    }
+  | {
+      // gõ chính tả: nghe audio + đọc nghĩa VI → GÕ lại từ tiếng Pháp (chấm FSRS như MCQ).
+      // Ra từ thẻ ĐANG BỀN (growing: ≥3 lần gặp / bền ≥7 ngày) trở đi, tỉ trọng tăng khi chín:
+      // nhận diện 4 phương án làm người học tưởng mình thuộc, gõ mới lộ.
+      kind: "spell";
+      word: Word;
+      graded: true;
+      isNew: boolean;
+      vi: string;
+      exs?: ExampleSentence[];
     }
   | { kind: "gender"; word: Word; graded: false; options: string[]; answer: number }
   | { kind: "arrange"; word: Word; graded: false; fr: string; vi: string; tokens: string[] };
@@ -42,42 +88,118 @@ export function tokenize(fr: string): string[] {
 }
 
 // Giai đoạn khởi động: chưa đủ vốn từ thì TẮT hẳn bài ghép câu (tránh "đoán mù").
-const ARRANGE_MIN_KNOWN = 40;
+export const ARRANGE_MIN_KNOWN = 40;
+
+// Cận số token của câu ghép — dùng chung với /luyen-tap (đổi một nơi là cả hai theo).
+export const ARRANGE_TOKENS = { min: 3, max: 12 } as const;
+
+const LETTERS = "a-zàâäçéèêëîïôöùûüÿœæ";
 
 // Token trong câu ghép có "đã biết" không? Bỏ dấu câu, xử lý viết dính l'/d'/j'/qu'…
 // (phần trước dấu ' là từ chức năng bị nuốt âm — coi như biết nếu phần sau đã học).
 function tokenKnown(token: string, known: Set<string>, target: string): boolean {
-  const clean = token.toLowerCase().replace(/[^a-zà-öø-ÿœæ'’-]/g, "");
+  const clean = token.toLowerCase().replace(new RegExp(`[^${LETTERS}'’-]`, "g"), "");
   if (!clean) return true; // toàn dấu câu/số
   const parts = clean.split(/['’]/).filter(Boolean);
   const core = parts.length > 1 ? parts[parts.length - 1] : clean;
   return core === target || known.has(core) || known.has(clean);
 }
 
-/** Câu ví dụ đủ "vừa sức" để ra bài ghép: mọi từ (trừ chính từ đang học) đều đã học. */
-function arrangeReady(tokens: string[], known: Set<string> | undefined, target: string): boolean {
+/** Câu ví dụ đủ "vừa sức" để ra bài ghép theo luật CŨ (mọi từ trừ từ đang học đều đã học).
+ *  Dùng ở /luyen-tap khi không có lemma-map. */
+export function arrangeReady(tokens: string[], known: Set<string> | undefined, target: string): boolean {
   if (!known || known.size < ARRANGE_MIN_KNOWN) return false;
   const unknown = tokens.filter((t) => !tokenKnown(t, known, target.toLowerCase())).length;
   return unknown === 0 || (tokens.length >= 8 && unknown <= 1); // câu dài cho phép lọt 1 từ lạ
 }
 
+/** Bản sao câu có PHƯƠNG ÁN với phương án xáo lại (đáp án tính lại theo vị trí mới) — dùng khi
+ *  chèn lại thẻ sai trong phiên: giữ nguyên thứ tự thì đáp án đúng (vừa được tô xanh lúc chữa bài)
+ *  nằm y chỗ cũ, người học bấm theo TRÍ NHỚ VỊ TRÍ chứ không phải nhớ từ. */
+export function reshuffleOptions(q: Question): Question {
+  if (q.kind !== "mcq" && q.kind !== "cloze") return q; // spell/learn/arrange/gender không cần xáo
+  const options = shuffle(q.options);
+  return { ...q, options, answer: options.indexOf(q.options[q.answer]) };
+}
+
+// Chuẩn hoá token câu về lemma để "est" được tính là "être", "mangeons" là "manger".
+// Viết dính (l'école, qu'il) → phần sau dấu nháy; từ ghép gạch nối (allez-vous) → từng phần.
+function surfaceLemmas(raw: string, lexicon: SentenceLexicon): string[] {
+  const surface = raw
+    .toLowerCase()
+    .replace(/’/g, "'")
+    .replace(new RegExp(`^[^${LETTERS}'-]+`, "u"), "")
+    .replace(new RegExp(`[^${LETTERS}'-]+$`, "u"), "");
+  if (!surface || !new RegExp(`[${LETTERS}]`).test(surface)) return [];
+  const direct = lexicon.lemmaMap[surface] ?? (lexicon.wordLevels[surface] !== undefined ? surface : undefined);
+  if (direct) return [direct];
+  const tail = surface.split("'").filter(Boolean).pop() ?? surface;
+  if (tail !== surface) return surfaceLemmas(tail, lexicon);
+  if (surface.includes("-")) return surface.split("-").filter(Boolean).flatMap((p) => surfaceLemmas(p, lexicon));
+  return [surface];
+}
+
+function sentenceLemmas(fr: string, lexicon: SentenceLexicon): string[] {
+  return tokenize(fr).flatMap((raw) => surfaceLemmas(raw, lexicon));
+}
+
+/** Tỉ lệ từ đã biết trong một câu, sau khi quy dạng chia/biến hình về lemma. */
+export function sentenceKnownRatio(
+  fr: string,
+  learned: ReadonlySet<string>,
+  target: string,
+  lexicon: SentenceLexicon,
+): number {
+  const tokens = sentenceLemmas(fr, lexicon);
+  const targetTokens = new Set([...sentenceLemmas(target, lexicon), target.toLowerCase()]);
+  return knownRatio(tokens, learned, targetTokens);
+}
+
 /** Nghĩa RÚT GỌN cho phương án trắc nghiệm (phần trước dấu ';') — đỡ ngợp cho người mới. */
 export function shortVi(w: Word): string {
-  const s = w.meaning_vi.split(";")[0].trim();
-  return s || w.meaning_vi;
+  return shortMeaningVi(w.meaning_vi);
+}
+
+/** Bộ 4 phương án là TỪ tiếng Pháp, kèm nghĩa đầy đủ để chữa cả đáp án nhiễu.
+ *  Giữ nghĩa theo word id thay vì theo chỉ số: reshuffleOptions chỉ cần xáo options,
+ *  không thể làm từ và nghĩa trượt khỏi nhau. */
+function wordOptions(word: Word, pool: Word[]) {
+  const words = shuffle([word, ...pickDistractors(word, pool, 3, true)]);
+  const options = words.map((w) => w.id);
+  return {
+    options,
+    optionMeanings: optionMeaningMap(words),
+    answer: options.indexOf(word.id),
+  };
 }
 
 // Phương án nhiễu: ưu tiên CÙNG loại từ (gây nhiễu tốt hơn), không trùng nghĩa nhau — như HSK.
-function pickDistractors(word: Word, pool: Word[], n = 3): Word[] {
+// Nghĩa NA NÁ đáp án (meaningTooSimilar: "yêu; thích" vs "sở thích; yêu thích") cũng bị loại
+// ở lượt chặt — câu hỏi mập mờ thì chọn đúng/sai do đoán chứ không do nhớ.
+// Khi phương án hiển thị là TỪ tiếng Pháp (nghĩa→từ, điền câu): ưu tiên tối đa 2 từ GẦN GIỐNG
+// CHÍNH TẢ đáp án (poisson/poison, dessert/désert) — ép đọc kỹ mặt chữ thay vì nhận mẫu chữ đầu
+// (bản tiếng Pháp của distractor "giống hình" bên HSK; nghĩa vẫn phải khác hẳn mới được nhận).
+function pickDistractors(word: Word, pool: Word[], n = 3, wordOptions = false): Word[] {
   const seen = new Set([shortVi(word)]);
   const out: Word[] = [];
-  const samePos = shuffle(pool.filter((w) => w.pos === word.pos));
+  const lookalikes = wordOptions
+    ? shuffle(
+        pool
+          .map((w) => ({ w, s: w.id === word.id || !w.meaning_vi ? 0 : lookalikeScore(word.id, w.id) }))
+          .filter((x) => x.s > 0)
+          .sort((a, b) => b.s - a.s)
+          .slice(0, 4) // nhóm giống nhất, xáo trong nhóm cho biến thiên giữa các phiên
+          .map((x) => x.w),
+      ).slice(0, 2)
+    : [];
+  const samePos = shuffle(pool.filter((w) => w.pos.join() === word.pos.join()));
   const rest = shuffle(pool);
-  for (const w of [...samePos, ...rest]) {
+  for (const w of [...lookalikes, ...samePos, ...rest]) {
     if (out.length >= n) break;
     if (w.id === word.id || !w.meaning_vi || out.includes(w)) continue;
     const key = shortVi(w);
     if (seen.has(key)) continue;
+    if (meaningTooSimilar(w.meaning_vi, word.meaning_vi)) continue;
     seen.add(key);
     out.push(w);
   }
@@ -100,8 +222,10 @@ function meaningFor(word: Word, pool: Word[], isNew: boolean): Question {
 
 /** MCQ ngược: hiện nghĩa Việt → chọn từ Pháp đúng. */
 function reverseFor(word: Word, pool: Word[], isNew: boolean): Question {
-  const options = shuffle([word.id, ...pickDistractors(word, pool).map((w) => w.id)]);
-  return { kind: "mcq", mode: "reverse", word, graded: true, isNew, prompt: shortVi(word), options, answer: options.indexOf(word.id) };
+  return {
+    kind: "mcq", mode: "reverse", word, graded: true, isNew, prompt: shortVi(word),
+    ...wordOptions(word, pool),
+  };
 }
 
 /** MCQ nghe: phát audio từ → chọn nghĩa Việt đúng. */
@@ -111,56 +235,87 @@ function listenFor(word: Word, pool: Word[], isNew: boolean): Question {
 }
 
 // Tìm vị trí từ (nguyên từ, không phân biệt hoa thường) trong câu ví dụ để khoét chỗ trống.
-function findWordInSentence(fr: string, id: string): { before: string; after: string } | null {
+// Quét TẤT CẢ vị trí xuất hiện, không chỉ vị trí đầu: "art" trong "L'artiste aime l'art."
+// có match đầu dính trong "artiste" — bỏ qua và quét tiếp mới thấy "art" đứng độc lập ở sau.
+export function findWordInSentence(fr: string, id: string): { before: string; after: string } | null {
   const low = fr.toLowerCase();
-  const idx = low.indexOf(id.toLowerCase());
-  if (idx < 0) return null;
-  const isLetter = (c: string | undefined) => !!c && /[a-zà-öø-ÿœæ]/i.test(c);
-  if (isLetter(fr[idx - 1]) || isLetter(fr[idx + id.length])) return null; // dính trong từ khác
-  return { before: fr.slice(0, idx), after: fr.slice(idx + id.length) };
-}
-
-/** MCQ cloze: khoét từ khỏi câu ví dụ → chọn từ điền đúng. */
-function clozeFor(word: Word, ex: ExampleSentence[], pool: Word[], isNew: boolean): Question | null {
-  for (const s of ex) {
-    const cut = findWordInSentence(s.fr, word.id);
-    if (!cut) continue;
-    const options = shuffle([word.id, ...pickDistractors(word, pool).map((w) => w.id)]);
-    return {
-      kind: "mcq", mode: "cloze", word, graded: true, isNew,
-      prompt: word.id, options, answer: options.indexOf(word.id),
-      clozeBefore: cut.before, clozeAfter: cut.after, clozeVi: s.vi, clozeFr: s.fr,
-    };
+  const needle = id.toLowerCase();
+  const isLetter = (c: string | undefined) => !!c && new RegExp(`[${LETTERS}]`, "i").test(c);
+  for (let idx = low.indexOf(needle); idx >= 0; idx = low.indexOf(needle, idx + 1)) {
+    if (isLetter(fr[idx - 1]) || isLetter(fr[idx + id.length])) continue; // dính trong từ khác
+    return { before: fr.slice(0, idx), after: fr.slice(idx + id.length) };
   }
   return null;
 }
 
-/** Câu hỏi chọn giống un/une cho danh từ. */
-function genderFor(word: Word): Question {
-  const options = ["un", "une"];
-  return { kind: "gender", word, graded: false, options, answer: word.gender === "m" ? 0 : 1 };
+/** Bài phụ cloze: khoét từ khỏi một câu cụ thể, không chấm FSRS. */
+function clozeForSentence(word: Word, sentence: ExampleSentence, pool: Word[]): Question | null {
+  const cut = findWordInSentence(sentence.fr, word.id);
+  if (!cut) return null;
+  return {
+    kind: "cloze", word, graded: false,
+    ...wordOptions(word, pool),
+    clozeBefore: cut.before, clozeAfter: cut.after, clozeVi: sentence.vi, clozeFr: sentence.fr,
+  };
 }
 
-// Chọn chế độ MCQ theo ĐỘ CHÍN của thẻ (như HSK):
-//  - từ mới / lần ôn đầu: nhận diện (theo hướng hỏi đã cài) — vừa xem learn-card xong;
-//  - chưa chín (stability <7 ngày) hoặc hay quên: 50% nhận diện + 30% nhớ lại + 20% nghe (KHÔNG cloze);
-//  - đã chín: 50% cloze (khi có câu chứa từ) + 30% nhớ lại + 20% nghe.
-function gradedFor(w: Word, ex: ExampleSentence[], pool: Word[], config: SrsConfig, isNew: boolean, rec?: ReviewRecord): Question {
+/** Gõ chính tả: nghe + nghĩa VI → gõ từ. */
+function spellFor(word: Word, isNew: boolean): Question {
+  return { kind: "spell", word, graded: true, isNew, vi: shortVi(word) };
+}
+
+/** Câu hỏi chọn giống un/une cho danh từ (bài phụ, không chấm FSRS). */
+function genderFor(word: Word): Question {
+  return { kind: "gender", word, graded: false, options: ["un", "une"], answer: word.gender === "m" ? 0 : 1 };
+}
+
+/**
+ * Chọn dạng câu hỏi cho một thẻ. Tỉ trọng + việc bật/tắt từng dạng nằm ở lib/question-mix.ts
+ * (hàm thuần, có unit test). Ở đây chỉ dựng câu hỏi tương ứng. Điền câu không đi qua hàm này
+ * vì là đợt luyện riêng.
+ */
+function gradedFor(w: Word, pool: Word[], config: SrsConfig, isNew: boolean, rec?: ReviewRecord): Question {
   const recog = () => (config.direction === "vi2fr" ? reverseFor(w, pool, isNew) : meaningFor(w, pool, isNew));
   const recall = () => (config.direction === "vi2fr" ? meaningFor(w, pool, isNew) : reverseFor(w, pool, isNew));
   if (isNew || !rec || rec.reps <= 0) return recog();
-  const r = Math.random();
-  if (!isMature(rec)) {
-    if (r < 0.5) return recog();
-    if (r < 0.8) return recall();
-    return listenFor(w, pool, isNew);
+  // Lần kiểm tra đầu của từ "đã biết sẵn" kiểm đúng điều người học đã khai — NHẬN RA nghĩa —
+  // chứ không bốc theo tỉ trọng thẻ chín (S = 60 → toàn gõ chính tả / hỏi ngược). Thẻ "học lại"
+  // cũng vậy: vừa xem lại như từ mới thì hỏi như từ mới.
+  if (isKnownPending(rec) || rec.relearn) return recog();
+
+  switch (pickQuestionKind(config, cardStage(rec))) {
+    case "recog":
+      return recog();
+    case "listen":
+      return listenFor(w, pool, isNew);
+    case "spell":
+      return spellFor(w, isNew);
+    default:
+      return recall();
   }
-  if (r < 0.5) {
-    const c = clozeFor(w, ex, pool, isNew);
-    if (c) return c;
+}
+
+// XÁO TRỘN XEN KẼ (interleaving — như HSK 08/2026): không đi theo khối từng từ
+// (học → hỏi → ghép câu liền nhau) mà trộn các đợt giữa MỌI từ trong phiên. Ràng
+// buộc duy nhất: đợt "learn" (giới thiệu từ mới/leech) phải đứng TRƯỚC mọi đợt khác
+// của chính từ đó — không thể hỏi từ chưa gặp mặt; ngoài ra trộn tự do. Interleaving
+// nhớ tốt hơn blocking, và phiên bớt cảm giác lặp (hết cụm 3 câu liền một từ).
+// Cách làm: mỗi đợt một khoá ngẫu nhiên, đợt learn nhận khoá NHỎ NHẤT của từ nó.
+const SAME_WORD_GAP = 3;
+
+function interleave(groups: Question[][], enabled: boolean): Question[] {
+  if (!enabled) return groups.flat();
+  const entries: { q: Question; key: number }[] = [];
+  for (const g of groups) {
+    const keys = g.map(() => Math.random());
+    const learnIdx = g.findIndex((q) => q.kind === "learn");
+    if (learnIdx >= 0) {
+      const minIdx = keys.indexOf(Math.min(...keys));
+      [keys[learnIdx], keys[minIdx]] = [keys[minIdx], keys[learnIdx]];
+    }
+    g.forEach((q, idx) => entries.push({ q, key: keys[idx] }));
   }
-  if (r < 0.8) return recall();
-  return listenFor(w, pool, isNew);
+  return spreadSameWord(entries.sort((a, b) => a.key - b.key).map((e) => e.q), SAME_WORD_GAP);
 }
 
 /**
@@ -168,8 +323,10 @@ function gradedFor(w: Word, ex: ExampleSentence[], pool: Word[], config: SrsConf
  * Từ MỚI: 1 thẻ "learn" (xem từ + nghĩa + ví dụ, không chấm) TRƯỚC khi kiểm tra —
  * người mới không bị hỏi MCQ trên từ chưa từng thấy.
  * Từ HAY QUÊN (leech, quên ≥4 lần): cũng được 1 thẻ "learn" ôn lại kỹ (kèm ô mẹo nhớ) trước khi hỏi.
- * Mỗi từ: 1 MCQ (chấm FSRS, chế độ theo độ chín thẻ) + arrangePerWord câu sắp xếp
- * + (tỉ trọng thấp) 1 câu chọn giống nếu là danh từ.
+ * Từ bấm "Học lại" (từng đánh dấu đã biết): 1 thẻ "learn" như từ mới trước câu hỏi.
+ * Mỗi từ: 1 bài chính (chấm FSRS) + clozePerWord câu điền + arrangePerWord câu sắp xếp
+ * + (tỉ trọng thấp) 1 câu chọn giống nếu là danh từ. Các bài phụ chỉ luyện, không chấm lịch.
+ * Các đợt được XEN KẼ giữa các từ (interleave) thay vì đi hết khối một từ mới sang từ kế.
  */
 export function buildQuestions(
   words: Word[],
@@ -178,32 +335,59 @@ export function buildQuestions(
   config: SrsConfig,
   isNew: boolean,
   records?: Map<string, ReviewRecord>,
-  knownIds?: Set<string>, // từ đã học — bài ghép câu CHỈ dùng câu toàn từ đã biết
+  knownIds?: Set<string>, // từ đã học — bài ghép câu chỉ mở khi vốn từ đủ + câu vừa sức
+  lexicon?: SentenceLexicon,
 ): Question[] {
-  const out: Question[] = [];
+  const groups: Question[][] = [];
+  const clozeCap = config.clozePerWord ?? (config.clozeEnabled !== false ? 1 : 0);
+  const knownMin = config.sentenceKnownMin ?? 0.7;
+  // Người mới (<40 từ) chưa đủ vốn để ghép câu — đoán mù thứ tự là luyện sai.
+  const arrangeCap = knownIds && knownIds.size >= ARRANGE_MIN_KNOWN ? (config.arrangePerWord ?? 1) : 0;
   for (const w of words) {
-    const ex = examplesByWord[w.id] || [];
+    const g: Question[] = [];
     const rec = records?.get(w.id);
-    if (isNew) out.push({ kind: "learn", word: w, graded: false, examples: ex.slice(0, 5) });
-    else if (isLeech(rec)) out.push({ kind: "learn", word: w, graded: false, examples: ex.slice(0, 5), leech: true });
-    const q = gradedFor(w, ex, pool, config, isNew, rec);
-    if (q.kind === "mcq") q.exs = ex.slice(0, 2);
-    out.push(q);
+    // XOAY VÒNG NGỮ CẢNH (như HSK): xáo câu ví dụ TẤT ĐỊNH theo (từ + số lần ôn) —
+    // trong một phiên thứ tự ổn định khi rebuild, mỗi LẦN ÔN sau gặp bộ câu khác
+    // (thẻ học, ví dụ sau trả lời, câu khoét cloze, câu ghép đều xoay theo).
+    const ex = seededShuffle(examplesByWord[w.id] || [], `${w.id}:${rec?.reps ?? 0}`);
+    const ratio = (s: ExampleSentence) =>
+      knownIds && lexicon ? sentenceKnownRatio(s.fr, knownIds, w.id, lexicon) : 1;
+    const ranked = knownIds && lexicon && knownMin > 0 ? rankByKnown(ex, ratio, knownMin) : ex;
+    const selected = selectDistinctExercises(
+      ranked,
+      (s) => s.fr,
+      (s) => findWordInSentence(s.fr, w.id) !== null,
+      (s) => {
+        const tokens = tokenize(s.fr);
+        if (tokens.length < ARRANGE_TOKENS.min || tokens.length > ARRANGE_TOKENS.max) return false;
+        // Ghép câu (khác điền từ) cần hiểu GẦN HẾT câu — câu dưới mức "vừa sức" thì bỏ,
+        // không dùng làm dự phòng như bài điền.
+        if (knownIds && lexicon) return knownMin <= 0 || ratio(s) + 1e-9 >= knownMin;
+        return arrangeReady(tokens, knownIds, w.id);
+      },
+      clozeCap,
+      arrangeCap,
+    );
+    const clozes = selected.clozeItems
+      .map((sentence) => clozeForSentence(w, sentence, pool))
+      .filter((question): question is Question => question !== null);
+    const clozeSentences = new Set(selected.clozeItems.map((s) => s.fr));
+    if (isNew) g.push({ kind: "learn", word: w, graded: false, examples: ex.slice(0, 5) });
+    else if (isLeech(rec)) g.push({ kind: "learn", word: w, graded: false, examples: ex.slice(0, 5), leech: true });
+    else if (rec?.relearn) g.push({ kind: "learn", word: w, graded: false, examples: ex.slice(0, 5), relearn: true });
+    const q = gradedFor(w, pool, config, isNew, rec);
+    // Câu đã dành cho đợt điền không được lộ trong thẻ đáp án của bài
+    // chính. Thà ít ví dụ còn hơn biến đợt điền sau thành chép lại.
+    if (q.kind === "mcq" || q.kind === "spell") q.exs = ex.filter((s) => !clozeSentences.has(s.fr)).slice(0, 2);
+    g.push(q);
+    g.push(...clozes);
 
-    let arranged = 0;
-    for (let i = 0; i < ex.length && arranged < config.arrangePerWord; i++) {
-      const s = ex[i];
-      const tokens = tokenize(s.fr);
-      if (tokens.length < 3 || tokens.length > 12) continue;
-      if (!arrangeReady(tokens, knownIds, w.id)) continue; // câu còn từ lạ → bỏ, khỏi đoán mù
-      out.push({ kind: "arrange", word: w, graded: false, fr: s.fr, vi: s.vi, tokens });
-      arranged++;
-    }
+    for (const s of selected.arrangeItems)
+      g.push({ kind: "arrange", word: w, graded: false, fr: s.fr, vi: s.vi, tokens: tokenize(s.fr) });
 
     // chọn giống: chỉ danh từ có giống, tỉ trọng thấp (~30%)
-    if (config.genderQuestions && w.pos.includes("n") && w.gender && Math.random() < 0.3) {
-      out.push(genderFor(w));
-    }
+    if (config.genderQuestions && w.pos.includes("n") && w.gender && Math.random() < 0.3) g.push(genderFor(w));
+    groups.push(g);
   }
-  return out;
+  return interleave(groups, config.interleave !== false);
 }

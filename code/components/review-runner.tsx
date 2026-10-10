@@ -1,19 +1,26 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Volume2, Sparkles } from "lucide-react";
-import { recordAnswer, undoAnswer, recordPractice, addXp, progressSummary, getMnemonic, setMnemonic } from "@/lib/db";
+import { Volume2, VolumeX, Sparkles, Check } from "lucide-react";
+import {
+  recordAnswer, undoAnswer, recordPractice, addXp, progressSummary, getMnemonic, setMnemonic, updateMaxCombo,
+  markKnown, undoMarkKnown,
+} from "@/lib/db";
 import { XP, badgeGroups, rankForWords, type Stats, type Badge } from "@/lib/gamify";
 import { ratingFromSpeed } from "@/lib/srs";
-import { wordAudioUrl, sentenceAudioUrl } from "@/lib/tts";
+import { gradeSpelling, isSpellCorrect, type SpellVerdict } from "@/lib/spell";
+import { wordAudioUrl, sentenceAudioUrl, playAudio as play, stopAudio } from "@/lib/tts";
 import { suggestReading, type ReadingSuggestion } from "@/lib/suggest";
 import { requestSync } from "@/lib/sync";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
-import type { Question } from "@/lib/review-session";
-import type { SrsConfig, ReviewRecord } from "@/lib/types";
+import { reshuffleOptions, type Question } from "@/lib/review-session";
+import { posLabel } from "@/lib/pos";
+import type { SrsConfig, ReviewRecord, Word } from "@/lib/types";
 import SentenceArrange from "@/components/sentence-arrange";
+import Celebration, { primeCelebrationAudio } from "@/components/celebration";
+import SpellCard from "@/components/spell-card";
 
 const REQUEUE_GAP = 3; // sai → gặp lại sau ~3 thẻ
 const BREAK_EVERY = 22; // mời nghỉ sau mỗi chặng 22 thẻ
@@ -22,25 +29,20 @@ const AUTO_ADVANCE_MS = 1300; // đúng → tự sang thẻ kế sau 1,3s (có n
 
 // Nhãn loại câu hỏi hiện trên header (như HSK).
 function typeLabel(q: Question): string {
-  if (q.kind === "learn") return q.leech ? "🔁 Hay quên" : "✨ Từ mới";
+  if (q.kind === "learn") return q.leech ? "🔁 Hay quên" : q.relearn ? "↺ Học lại" : "✨ Từ mới";
   if (q.kind === "arrange") return "Ghép câu";
+  if (q.kind === "cloze") return "Điền vào câu";
+  if (q.kind === "spell") return "Gõ chính tả";
   if (q.kind === "gender") return "Chọn giống";
   if (q.mode === "reverse") return "Nghĩa → Pháp";
   if (q.mode === "listen") return "Nghe → nghĩa";
-  if (q.mode === "cloze") return "Điền vào câu";
   return "Pháp → nghĩa";
 }
 
-let currentAudio: HTMLAudioElement | null = null;
-function play(url: string) {
-  currentAudio?.pause();
-  const a = new Audio(url);
-  currentAudio = a;
-  a.play().catch(() => {});
-}
-function stopAudio() {
-  currentAudio?.pause();
-  currentAudio = null;
+/** Mạo từ không xác định cho danh từ có giống ("un"/"une") — hiện mờ trước từ như từ điển. */
+function article(w: Word): string | null {
+  if (!w.pos.includes("n") || !w.gender) return null;
+  return w.gender === "m" ? "un" : "une";
 }
 
 function statsOf(s: Awaited<ReturnType<typeof progressSummary>>): Stats {
@@ -48,6 +50,8 @@ function statsOf(s: Awaited<ReturnType<typeof progressSummary>>): Stats {
     words: s.words, xp: s.xp, streak: s.streak, reads: s.reads, reviews: s.reviews,
     correct: s.correct, activeDays: s.activeDays, matured: s.matured,
     maxDayReviews: s.maxDayReviews, weekend: s.weekend, byLevel: s.byLevel,
+    redeemedLeeches: s.redeemedLeeches, maxCombo: s.maxCombo, longestStreak: s.longestStreak,
+    comebackDays: s.comebackDays, perfectDay: s.perfectDay,
   };
 }
 const earnedIds = (s: Stats) => new Set(badgeGroups(s).flatMap((g) => g.badges).filter((b) => b.earned).map((b) => b.id));
@@ -69,6 +73,7 @@ interface Summary {
   maxCombo: number;
   reviewed: number; // số thẻ đã chấm
   again: number; // số thẻ "Lại"
+  known: number; // số từ mới bấm "Biết rồi" (bỏ khỏi phiên)
   newBadges: Badge[];
   rankUp: { from: string; to: string } | null;
 }
@@ -98,29 +103,48 @@ export default function ReviewRunner({
   const [autoAdv, setAutoAdv] = useState(false); // đang đếm 1,3s tự chuyển (có thể bấm dừng)
   const [mnemo, setMnemo] = useState(""); // mẹo nhớ trên learn-card từ hay quên
   const [showAllEx, setShowAllEx] = useState(false); // learn-card: xem thêm ví dụ
+  const [spell, setSpell] = useState<{ typed: string; verdict: SpellVerdict } | null>(null); // kết quả bài gõ
+  // "Biết rồi" trên thẻ học từ mới: các từ đã gỡ khỏi phiên + bản sao hàng đợi TRƯỚC khi gỡ
+  // (Hoàn tác ngay tại thẻ đó — không kéo nút hoàn tác sang thẻ kế vốn có thể là bất kỳ dạng nào).
+  const [skipped, setSkipped] = useState<string[]>([]);
+  const [knownHere, setKnownHere] = useState<{ id: string; before: Question[] } | null>(null);
 
   const q = qs[i];
 
-  // Đơn vị "thẻ" = TỪ VỰNG: mỗi từ 1 thẻ (1 MCQ chấm FSRS). Câu "chọn giống" và
-  // "sắp xếp câu" là BƯỚC PHỤ gắn vào thẻ của từ đó — không cộng vào tổng "X/Y"
+  // Đơn vị "thẻ" = TỪ VỰNG: mỗi từ 1 bài chính chấm FSRS. Điền câu và
+  // sắp xếp câu là BƯỚC PHỤ — không cộng vào tổng "X/Y"
   // (nếu không, đặt "10 thẻ" mà phiên lại chạy 13–20 câu, trông như cài đặt không ăn).
   const cardOrder = useMemo(() => {
     const seen = new Set<string>();
     const order: string[] = [];
     for (const x of questions)
-      if (x.kind === "mcq" && !seen.has(x.word.id)) {
+      if (x.graded && !seen.has(x.word.id)) {
         seen.add(x.word.id);
         order.push(x.word.id);
       }
     return order;
   }, [questions]);
-  const cardTotal = cardOrder.length;
-  const cardIdx = q ? cardOrder.indexOf(q.word.id) : -1; // 0-based thẻ hiện tại
-  const cardNo = cardIdx < 0 ? Math.min(i + 1, cardTotal) : cardIdx + 1; // đang ở thẻ thứ mấy
+  // Từ bấm "Biết rồi" không còn câu chấm nào trong phiên → không tính vào tổng.
+  const cardTotal = cardOrder.filter((id) => !skipped.includes(id)).length;
+  // Đang ở thẻ thứ mấy = SỐ TỪ có câu CHẤM ĐIỂM đã gặp tính tới câu hiện tại. Tính theo vị trí
+  // trong cardOrder như trước thì thẻ bị chèn lại (requeue) mang số thứ tự BAN ĐẦU của nó →
+  // header tụt lùi ("8/10" rồi nhảy về "2/10"). Đếm theo tập từ đã gặp thì số chỉ đi tới.
+  // CHỈ đếm đợt graded: từ khi xen kẽ (interleave), thẻ học/ghép câu của một từ có thể xuất
+  // hiện rất sớm — đếm cả chúng thì phiên học từ mới đạt "N/N" từ giữa chừng (thẻ học dồn
+  // về đầu vì mang khoá nhỏ nhất nhóm) trong khi các câu MCQ vẫn còn phía trước.
+  const cardNo = useMemo(() => {
+    const inSession = new Set(cardOrder);
+    const seen = new Set<string>();
+    for (let k = 0; k <= i && k < qs.length; k++) {
+      const x = qs[k];
+      if (x?.graded && inSession.has(x.word.id)) seen.add(x.word.id);
+    }
+    return Math.min(Math.max(seen.size, 1), Math.max(cardTotal, 1));
+  }, [qs, i, cardOrder, cardTotal]);
   const cardsDone = Math.max(0, cardNo - 1);
   const cardProgress = cardTotal ? Math.min(cardsDone / cardTotal, 1) : 0;
   // "làm lại" = số thẻ đã bị chèn lại trong phiên (MCQ vượt quá 1/từ), trừ đi khi hoàn tác.
-  const redo = Math.max(0, qs.filter((x) => x.kind === "mcq").length - cardTotal);
+  const redo = Math.max(0, qs.filter((x) => x.graded).length - cardTotal);
 
   // gamify trong phiên
   const xpRef = useRef(0);
@@ -172,11 +196,12 @@ export default function ReviewRunner({
     };
     // Chặn click vào link điều hướng nội bộ (logo, tab, nút Cài đặt trên topbar) → hỏi xác nhận.
     const onClickCapture = (e: MouseEvent) => {
-      if (!activeRef.current || e.defaultPrevented) return;
+      if (e.defaultPrevented) return;
       const a = (e.target as HTMLElement | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
       if (!a) return;
       const href = a.getAttribute("href") ?? "";
       if (!href.startsWith("/") || a.target === "_blank" || a.hasAttribute("download")) return; // chỉ chặn điều hướng nội bộ
+      if (!activeRef.current) return; // phiên đã xong → link đi bình thường
       e.preventDefault();
       e.stopPropagation();
       pendingHrefRef.current = href;
@@ -191,9 +216,12 @@ export default function ReviewRunner({
       window.removeEventListener("popstate", onPop);
       document.removeEventListener("click", onClickCapture, true);
       stopAudio(); // tắt audio còn dang dở khi rời phiên
-      if (ownDummyRef.current) {
+      // Dọn entry chặn-Back CHỈ khi rời đi giữa phiên. Nếu phiên đã xong thì tuyệt đối không
+      // back(): lúc này người dùng có thể vừa bấm link ở màn tổng kết ("Đọc một bài"), Next đã
+      // push trang mới, back() sẽ đá ngược về trang cũ — nút trông như hỏng.
+      if (ownDummyRef.current && activeRef.current) {
         suppressPopRef.current = true;
-        window.history.back(); // dọn entry chặn back còn sót (hết cảnh bấm Back 2 lần)
+        window.history.back();
       }
     };
   }, []);
@@ -219,32 +247,45 @@ export default function ReviewRunner({
   // trả lời bắt đầu từ lúc HIỆN đáp án (không phạt thời gian đang cố nhớ).
   const gate = config.recallFirst !== false;
   useEffect(() => {
-    if (q?.kind === "mcq") {
+    // Đồng bộ trạng thái hiển thị với MỐC THỜI GIAN trả lời (shownAtRef) — hai thứ phải đặt
+    // cùng lúc, không thể derive vì mốc thời gian là side effect.
+    /* eslint-disable react-hooks/set-state-in-effect */
+    if (q?.kind === "mcq" || q?.kind === "cloze") {
       setRevealed(!gate);
       if (!gate) shownAtRef.current = Date.now();
     } else {
       setRevealed(true);
       shownAtRef.current = Date.now();
     }
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, [i, q?.kind, gate]);
   const reveal = () => {
     setRevealed(true);
     shownAtRef.current = Date.now();
   };
 
-  // Tự phát âm khi hiện thẻ: learn + MCQ nghĩa/nghe (KHÔNG phát ở chế độ ngược/cloze — lộ đáp án).
+  // Cài đặt Âm thanh tắt (học ở nơi không mở tiếng được) → KHÔNG tự phát gì trong phiên; nút loa
+  // bấm tay vẫn kêu vì đó là chủ ý người dùng. Câu hỏi nghe đã bị bỏ từ lúc dựng phiên (question-mix).
+  const sound = config.soundEnabled !== false;
+
+  // Tự phát âm khi hiện thẻ: learn + bài chính nghĩa/nghe. Không phát
+  // ở chế độ ngược hay điền câu vì sẽ lộ đáp án.
   useEffect(() => {
-    if (!q) return;
-    if (q.kind === "learn" || (q.kind === "mcq" && (q.mode === "meaning" || q.mode === "listen"))) {
+    if (!q || !sound) return;
+    if (q.kind === "learn" || q.kind === "spell" || (q.kind === "mcq" && (q.mode === "meaning" || q.mode === "listen"))) {
       play(wordAudioUrl(q.word));
     }
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Learn-card từ hay quên: nạp mẹo nhớ đã ghi (lưu lại khi rời ô).
   useEffect(() => {
+    // Nạp mẹo nhớ từ IndexedDB khi đổi thẻ (I/O ngoài React).
+    /* eslint-disable react-hooks/set-state-in-effect */
     if (q?.kind === "learn" && q.leech) getMnemonic(q.word.id).then(setMnemo);
     else setMnemo("");
     setShowAllEx(false);
+    setKnownHere(null);
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const finalize = useCallback(async () => {
@@ -255,6 +296,8 @@ export default function ReviewRunner({
       xpRef.current += XP.perfectSession;
       await addXp(XP.perfectSession);
     }
+    // ghi kỷ lục combo TRƯỚC khi chụp summary — huy hiệu "Loạt pháo" mới tính được ngay
+    await updateMaxCombo(maxComboRef.current);
     const after = statsOf(await progressSummary());
     const before = beforeRef.current;
     const afterRank = rankForWords(after.words);
@@ -267,31 +310,34 @@ export default function ReviewRunner({
       maxCombo: maxComboRef.current,
       reviewed: gradedRef.current,
       again: wrongCountRef.current,
+      known: skipped.length,
       newBadges,
       rankUp: before && afterRank.index > before.rankIndex ? { from: before.rankVi, to: afterRank.rank.vi } : null,
     });
     setDone(true);
     requestSync(); // đẩy kết quả phiên lên cloud ngay (không đợi lần mở app sau)
     // gợi ý bài đọc chứa nhiều từ vừa học/ôn nhất (chạy nền, có thì hiện)
-    const ids = [...new Set(qs.filter((x) => x.kind === "mcq").map((x) => x.word.id))];
+    const ids = [...new Set(qs.filter((x) => x.graded).map((x) => x.word.id))];
     suggestReading(ids).then(setSuggestion).catch(() => {});
-  }, [qs]);
+  }, [qs, skipped]);
 
-  const next = () => {
+  const advance = (queue: Question[]) => {
     setAutoAdv(false);
     setChosen(null);
+    setSpell(null);
     setUndoInfo(null);
-    if (i + 1 >= qs.length) {
+    if (i + 1 >= queue.length) {
       void finalize();
       return;
     }
     sinceBreakRef.current += 1;
-    if (sinceBreakRef.current >= BREAK_EVERY && qs.length - (i + 1) >= 4) {
+    if (sinceBreakRef.current >= BREAK_EVERY && queue.length - (i + 1) >= 4) {
       sinceBreakRef.current = 0;
       setOnBreak(true);
     }
     setI(i + 1);
   };
+  const next = () => advance(qs);
 
   // Đếm 1,3s tự sang thẻ kế khi trả lời đúng (bấm "Dừng lại xem kỹ" để huỷ).
   useEffect(() => {
@@ -301,11 +347,25 @@ export default function ReviewRunner({
   }, [autoAdv, i]); // eslint-disable-line react-hooks/exhaustive-deps
 
 
-  // chấm MCQ / gender
+  // Chấm câu có phương án: bài chính (FSRS) hoặc điền câu / chọn giống (luyện).
   const answerChoice = async (idx: number) => {
-    if (!q || q.kind === "arrange" || q.kind === "learn" || chosen !== null) return;
+    if (!q || (q.kind !== "mcq" && q.kind !== "cloze" && q.kind !== "gender") || chosen !== null) return;
+    await submitAnswer(idx === q.answer, idx);
+  };
+
+  // chấm bài GÕ CHÍNH TẢ (dùng chung đường chấm với MCQ: FSRS, requeue, XP, hoàn tác).
+  // `chosen` đóng vai cờ "đã trả lời" cho toàn bộ máy trạng thái nên vẫn phải đặt.
+  const answerSpell = async (typed: string) => {
+    if (!q || q.kind !== "spell" || chosen !== null) return;
+    const v = gradeSpelling(typed, q.word.id);
+    setSpell({ typed, verdict: v });
+    await submitAnswer(isSpellCorrect(v), 0);
+  };
+
+  const submitAnswer = async (correct: boolean, idx: number) => {
+    if (!q) return;
+    primeCelebrationAudio(); // đang trong cử chỉ chạm → mồi quyền phát fanfare cho iOS
     setChosen(idx);
-    const correct = idx === q.answer;
     const comboBefore = comboRef.current;
     if (correct) {
       setRight((r) => r + 1);
@@ -314,29 +374,44 @@ export default function ReviewRunner({
     } else {
       comboRef.current = 0;
       wrongRef.current = true;
-      if (q.kind === "mcq") wrongCountRef.current += 1;
+      if (q.graded) wrongCountRef.current += 1;
     }
 
-    if (q.kind === "mcq") {
+    // Phát sau khi trả lời: điền câu đọc cả câu, bài chính đọc từ.
+    // Đặt ngoài nhánh graded để bài điền phụ vẫn có phản hồi âm thanh.
+    if (sound) {
+      if (q.kind === "cloze") play(sentenceAudioUrl(q.clozeFr));
+      else if (q.graded || q.kind === "gender") play(wordAudioUrl(q.word)); // audio đọc kèm un/une
+    }
+
+    if (q.graded) {
       gradedRef.current += 1;
-      // trả lời xong → nghe lại (cloze đọc CẢ CÂU, còn lại đọc từ)
-      if (q.mode === "cloze" && q.clozeFr) play(sentenceAudioUrl(q.clozeFr));
-      else play(wordAudioUrl(q.word));
-      const rating = ratingFromSpeed(correct, shownAtRef.current ? Date.now() - shownAtRef.current : 99_999, q.mode);
-      const xp = correct ? (q.isNew ? XP.newWord : XP.review) : 0;
-      const { prev, next: nextRec, date } = await recordAnswer({ wordId: q.word.id, level: q.word.level, correct, isNew: q.isNew, rating });
-      // Lặp lại trong phiên (như HSK): SAI, hoặc ĐÚNG nhưng FSRS hẹn lại trong ≤15 phút
-      // (thẻ đang ở learning steps) → chèn lại sau vài lá, nếu chưa có bản chờ.
-      const dueSoon = new Date(nextRec.due).getTime() - Date.now() <= REPEAT_WINDOW_MS;
+      // Chèn lại thẻ để làm lại trong phiên (dùng chung cho cả hai nhánh sai/đúng-hẹn-lại).
+      const alreadyQueued = qs.slice(i + 1).some((x) => x.graded && x.word.id === q.word.id);
       let requeued: Question | null = null;
-      if ((!correct || dueSoon) && !qs.slice(i + 1).some((x) => x.kind === "mcq" && x.word.id === q.word.id)) {
-        requeued = { ...q, isNew: false };
+      const insertRequeue = () => {
+        requeued = reshuffleOptions({ ...q, isNew: false }); // xáo phương án — khỏi bấm theo trí nhớ vị trí
         setQs((prev2) => {
           const copy = [...prev2];
           copy.splice(Math.min(i + 1 + REQUEUE_GAP, copy.length), 0, requeued!);
           return copy;
         });
-      }
+      };
+      // SAI → chèn lại NGAY (đồng bộ, TRƯỚC khi ghi DB): ở thẻ CUỐI phiên, nếu đợi await xong
+      // mới chèn thì nút thoáng hiện "Kết thúc", người dùng bấm nhanh là finalize cả phiên và
+      // MẤT lượt làm lại. Chèn đồng bộ + gộp cùng setChosen → nút hiện "Tiếp tục" tức thì.
+      if (!correct && !alreadyQueued) insertRequeue();
+
+      const rating = ratingFromSpeed(
+        correct,
+        shownAtRef.current ? Date.now() - shownAtRef.current : 99_999,
+        q.kind === "mcq" ? q.mode : q.kind === "spell" ? "spell" : undefined,
+      );
+      const xp = correct ? (q.isNew ? XP.newWord : XP.review) : 0;
+      const { prev, next: nextRec, date } = await recordAnswer({ wordId: q.word.id, level: q.word.level, correct, isNew: q.isNew, rating });
+      // ĐÚNG nhưng FSRS hẹn lại trong ≤15 phút (thẻ đang ở learning steps) → cũng chèn lại.
+      // Cần `due` từ DB nên nằm SAU await; nhánh đúng tự chuyển sau 1,3s nên không dính race.
+      if (correct && !alreadyQueued && new Date(nextRec.due).getTime() - Date.now() <= REPEAT_WINDOW_MS) insertRequeue();
       if (xp) void addXp(xp);
       xpRef.current += xp;
       setUndoInfo({ wordId: q.word.id, date, prev, correct, isNew: q.isNew, xp, comboBefore, requeued });
@@ -345,8 +420,46 @@ export default function ReviewRunner({
       const xp = correct ? XP.practice : 0;
       if (xp) void addXp(xp);
       xpRef.current += xp;
+      // Sai đợt điền / chọn giống → chèn lại chính đợt đó sau vài câu, không chấm
+      // lại FSRS và không kéo theo toàn bộ các đợt khác của từ.
+      if (!correct && (q.kind === "cloze" || q.kind === "gender") && !qs.slice(i + 1).some((x) => x === q)) {
+        const repeat = reshuffleOptions(q);
+        setQs((prev) => {
+          const copy = [...prev];
+          copy.splice(Math.min(i + 1 + REQUEUE_GAP, copy.length), 0, repeat);
+          return copy;
+        });
+      }
     }
     if (correct && config.autoAdvance) setAutoAdv(true);
+  };
+
+  // Thẻ học TỪ MỚI → "Biết rồi": tạo thẻ đã-biết (hẹn kiểm tra 30–90 ngày, không tốn suất từ mới)
+  // và gỡ mọi đợt còn lại của từ khỏi phiên. Interleave luôn đặt thẻ học trước mọi đợt khác của
+  // chính từ đó nên gỡ phần SAU vị trí hiện tại là gỡ hết. Ở lại thẻ này để còn Hoàn tác.
+  const markKnownHere = async () => {
+    if (!q || q.kind !== "learn" || q.leech || q.relearn || knownHere) return;
+    const id = q.word.id;
+    try {
+      await markKnown(id, q.word.level);
+    } catch {
+      return; // ghi hỏng đã nổi banner (db) — giữ nguyên phiên
+    }
+    setKnownHere({ id, before: qs });
+    setQs([...qs.slice(0, i + 1), ...qs.slice(i + 1).filter((x) => x.word.id !== id)]);
+    setSkipped((s) => [...s, id]);
+  };
+  const undoKnownHere = async () => {
+    const k = knownHere;
+    if (!k) return;
+    try {
+      await undoMarkKnown(k.id);
+    } catch {
+      return;
+    }
+    setQs(k.before);
+    setSkipped((s) => s.filter((x) => x !== k.id));
+    setKnownHere(null);
   };
 
   // Hoàn tác lần chấm vừa rồi (lỡ bấm nhầm) → khôi phục FSRS + làm lại câu này.
@@ -354,8 +467,15 @@ export default function ReviewRunner({
     const u = undoInfo;
     if (!u) return;
     setAutoAdv(false);
+    // Ghi DB TRƯỚC, dọn UI SAU: xoá undoInfo trước rồi mới await thì lúc ghi hỏng
+    // (riêng tư/quota/tab cũ) nút Hoàn tác đã biến mất — thất bại im lặng, không thử
+    // lại được. Lỗi đã nổi banner qua db (noteDbError); ở đây chỉ cần giữ nguyên nút.
+    try {
+      await undoAnswer({ wordId: u.wordId, prev: u.prev, correct: u.correct, isNew: u.isNew, date: u.date });
+    } catch {
+      return; // undoInfo còn nguyên → bấm lại được
+    }
     setUndoInfo(null);
-    await undoAnswer({ wordId: u.wordId, prev: u.prev, correct: u.correct, isNew: u.isNew, date: u.date });
     if (u.xp) {
       await addXp(-u.xp);
       xpRef.current -= u.xp;
@@ -366,6 +486,7 @@ export default function ReviewRunner({
     gradedRef.current = Math.max(0, gradedRef.current - 1);
     if (u.requeued) setQs((prev) => prev.filter((x) => x !== u.requeued));
     setChosen(null);
+    setSpell(null);
     setRevealed(true);
     shownAtRef.current = Date.now();
   };
@@ -385,11 +506,13 @@ export default function ReviewRunner({
           if (cur.leech) void setMnemonic(cur.word.id, mnemo);
           return next();
         }
-        if (cur.kind === "mcq" && !revealed && chosen === null) return reveal();
+        if ((cur.kind === "mcq" || cur.kind === "cloze") && !revealed && chosen === null) return reveal();
+        if (cur.kind === "spell" && chosen === null) return;
         if (chosen !== null) return next();
         return;
       }
-      if (onBreak || cur.kind === "arrange" || cur.kind === "learn") return;
+      if (onBreak || cur.kind === "arrange" || cur.kind === "learn" || cur.kind === "spell") return;
+      // chọn giống: phím 1 = un, 2 = une (khớp ô số trên nút)
       const n = Number(e.key);
       if (n >= 1 && n <= cur.options.length && chosen === null && revealed) void answerChoice(n - 1);
     };
@@ -401,10 +524,13 @@ export default function ReviewRunner({
     // Màn tổng kết đứng RIÊNG trong luồng trang (không còn khung phiên) — như HSK.
     return (
       <div className="mx-auto w-full max-w-2xl space-y-4 py-4">
+          {/* pháo hoa + fanfare — chỉ khi phiên có chấm điểm thật (không nổ cho phiên trống) */}
+          {summary && summary.reviewed > 0 && <Celebration perfect={summary.perfect} sound={sound} />}
           <div className="flex flex-col items-center gap-3 rounded-3xl border bg-gradient-to-br from-primary/10 to-transparent p-8 text-center sm:p-10">
             <div className="text-2xl font-bold">✅ Xong phiên ôn!</div>
             <div className="text-muted-foreground">
               Đã ôn {summary?.reviewed ?? 0} thẻ · {summary?.again ?? 0} thẻ “Lại”.
+              {summary && summary.known > 0 && <> · {summary.known} từ đánh dấu đã biết</>}
             </div>
             {summary && summary.xpGained > 0 && (
               <div className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/15 px-4 py-2 text-lg font-bold text-amber-600 dark:text-amber-400">
@@ -473,7 +599,21 @@ export default function ReviewRunner({
     );
   }
 
-  if (!q) return null;
+  // Không còn câu nào (dữ liệu hụt / phiên rỗng): trước đây return null = MÀN HÌNH TRẮNG, mà
+  // effect chặn Back đã pushState nên bấm Back cũng không ra được, phải tải lại trang.
+  if (!q) {
+    return (
+      <div className="mx-auto max-w-md py-16 text-center">
+        <p className="text-muted-foreground">Không có câu hỏi nào cho phiên này.</p>
+        <button
+          onClick={onExit}
+          className="mt-4 rounded-2xl border px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-muted"
+        >
+          Quay lại
+        </button>
+      </div>
+    );
+  }
 
   // Modal xác nhận rời phiên (dùng chung cho màn nghỉ + màn chính) — giống HSK.
   const exitModal = confirmExit && (
@@ -539,23 +679,27 @@ export default function ReviewRunner({
       progress={cardProgress}
       count={`${cardNo}/${cardTotal}`}
       pill={q.kind === "learn" ? undefined : typeLabel(q)}
-      pillPrimary={q.kind === "arrange"}
-      isNew={(q.kind === "learn" && !q.leech) || (q.kind === "mcq" && q.isNew)}
+      pillPrimary={q.kind === "arrange" || q.kind === "cloze"}
+      isNew={(q.kind === "learn" && !q.leech && !q.relearn) || (q.graded && q.isNew)}
       extra={redo > 0 ? `+${redo} làm lại` : undefined}
+      muted={!sound}
     >
       {q.kind === "learn" ? (
         /* Thẻ HỌC: từ mới xem trước khi bị hỏi; từ HAY QUÊN (leech) ôn lại kỹ + ghi mẹo nhớ */
         <div className="flex min-h-0 flex-1 flex-col sm:flex-none">
           <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain pb-2 sm:flex-none sm:overflow-visible">
             <div className="flex flex-col items-center gap-3 rounded-3xl border bg-gradient-to-br from-primary/12 via-primary/5 to-transparent p-6 text-center shadow-sm sm:p-8">
-              <span className={cn("rounded-full px-3 py-1 text-xs font-semibold", q.leech ? "bg-amber-500/15 text-amber-600 dark:text-amber-400" : "bg-primary/15 text-primary")}>
-                {q.leech ? "🔁 Hay quên — ôn lại kỹ" : "✨ Từ mới — học trước nhé"}
+              <span
+                className={cn(
+                  "rounded-full px-3 py-1 text-xs font-semibold",
+                  q.leech ? "bg-amber-500/15 text-amber-600 dark:text-amber-400" : q.relearn ? "bg-sky-500/15 text-sky-700 dark:text-sky-300" : "bg-primary/15 text-primary",
+                )}
+              >
+                {q.leech ? "🔁 Hay quên — ôn lại kỹ" : q.relearn ? "↺ Học lại — xem kỹ trước nhé" : "✨ Từ mới — học trước nhé"}
               </span>
               <div className="flex items-center gap-2">
                 <span className="text-4xl font-bold tracking-tight sm:text-5xl">
-                  {q.word.pos.includes("n") && q.word.gender ? (
-                    <span className="text-muted-foreground">{q.word.gender === "m" ? "un " : "une "}</span>
-                  ) : null}
+                  {article(q.word) ? <span className="text-muted-foreground">{article(q.word)} </span> : null}
                   {q.word.id}
                 </span>
                 <button
@@ -567,6 +711,15 @@ export default function ReviewRunner({
                 </button>
               </div>
               <div className="font-mono text-base text-muted-foreground">{q.word.ipa}</div>
+              {q.word.pos.length > 0 && (
+                <div className="flex flex-wrap justify-center gap-1">
+                  {q.word.pos.map((p) => (
+                    <span key={p} className="rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
+                      {posLabel(p)}
+                    </span>
+                  ))}
+                </div>
+              )}
               <div className="text-xl font-medium">{q.word.meaning_vi}</div>
             </div>
             {q.examples && q.examples.length > 0 && (
@@ -614,6 +767,14 @@ export default function ReviewRunner({
             )}
           </div>
           <div className="shrink-0 border-t bg-background/95 pb-[calc(0.5rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur sm:border-0 sm:bg-transparent sm:pb-0 sm:pt-4 sm:backdrop-blur-none">
+            {knownHere?.id === q.word.id && (
+              <p className="mb-2 flex items-start gap-2 rounded-xl bg-sky-500/10 px-3 py-2 text-sm text-sky-800 dark:text-sky-200">
+                <Check className="mt-0.5 size-4 shrink-0" />
+                <span>
+                  <b>{q.word.id}</b>: đã biết — kiểm tra lại sau 1–3 tháng, không tốn suất từ mới.
+                </span>
+              </p>
+            )}
             <button
               onClick={() => {
                 if (q.leech) void setMnemonic(q.word.id, mnemo);
@@ -621,8 +782,27 @@ export default function ReviewRunner({
               }}
               className="w-full rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99]"
             >
-              {q.leech ? "Đã ôn — Kiểm tra" : "Đã xem — Kiểm tra"} <span className="hidden opacity-60 sm:inline">(Enter)</span>
+              {knownHere?.id === q.word.id ? "Tiếp tục" : q.leech ? "Đã ôn — Kiểm tra" : "Đã xem — Kiểm tra"}{" "}
+              <span className="hidden opacity-60 sm:inline">(Enter)</span>
             </button>
+            {/* Từ mới mà đã biết sẵn → khỏi học qua phiên. Không có ở thẻ hay quên / học lại (đã lộ là chưa chắc). */}
+            {!q.leech && !q.relearn && (
+              knownHere?.id === q.word.id ? (
+                <button
+                  onClick={() => void undoKnownHere()}
+                  className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-xl py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                >
+                  ↩︎ Hoàn tác — vẫn học từ này
+                </button>
+              ) : (
+                <button
+                  onClick={() => void markKnownHere()}
+                  className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-xl border py-2.5 text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:scale-[0.99]"
+                >
+                  <Check className="size-4" /> Biết rồi — bỏ qua từ này
+                </button>
+              )
+            )}
           </div>
         </div>
       ) : q.kind === "arrange" ? (
@@ -631,6 +811,8 @@ export default function ReviewRunner({
           fr={q.fr}
           vi={q.vi}
           tokens={q.tokens}
+          showVi={config.sentenceVi}
+          autoPlay={sound}
           onNext={(correct) => {
             if (correct) {
               setRight((r) => r + 1);
@@ -643,25 +825,89 @@ export default function ReviewRunner({
               wrongRef.current = true;
             }
             void recordPractice(correct);
-            next();
+            if (!correct && !qs.slice(i + 1).some((x) => x === q)) {
+              const repeat = q;
+              const nextQueue = [...qs];
+              nextQueue.splice(Math.min(i + 1 + REQUEUE_GAP, nextQueue.length), 0, repeat);
+              setQs(nextQueue);
+              advance(nextQueue);
+            } else {
+              next();
+            }
           }}
         />
+      ) : q.kind === "spell" ? (
+        <div className="flex min-h-0 flex-1 flex-col sm:flex-none">
+          <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain pb-2 sm:flex-none sm:overflow-visible">
+            <SpellCard
+              key={i}
+              word={q.word}
+              vi={q.vi}
+              examples={q.exs}
+              verdict={spell?.verdict ?? null}
+              typed={spell?.typed ?? ""}
+              onSubmit={(v) => void answerSpell(v)}
+              onReplay={() => play(wordAudioUrl(q.word))}
+            />
+          </div>
+          {chosen !== null && (
+            <div className="shrink-0 space-y-2 border-t bg-background/95 pb-[calc(0.5rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur sm:border-0 sm:bg-transparent sm:pb-0 sm:pt-4 sm:backdrop-blur-none">
+              <button
+                onClick={next}
+                className="relative w-full overflow-hidden rounded-2xl bg-primary py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 active:scale-[0.99]"
+              >
+                {autoAdv && (
+                  <span className="absolute inset-y-0 left-0 bg-white/25" style={{ animation: `aaFill ${AUTO_ADVANCE_MS}ms linear forwards` }} />
+                )}
+                <span className="relative">
+                  {i + 1 >= qs.length ? "Kết thúc" : "Tiếp tục"} <span className="hidden opacity-60 sm:inline">(Enter)</span>
+                </span>
+              </button>
+              {undoInfo && !autoAdv && (
+                <button
+                  onClick={() => void doUndo()}
+                  className="flex w-full items-center justify-center gap-1.5 rounded-xl py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                >
+                  ↩︎ Hoàn tác — lỡ bấm nhầm
+                </button>
+              )}
+            </div>
+          )}
+        </div>
       ) : (
         <div className="flex min-h-0 flex-1 flex-col sm:flex-none">
           <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain pb-2 sm:flex-none sm:overflow-visible">
             {/* đề bài — chạm vào thẻ cũng hiện đáp án khi đang "nhớ lại trước" (như HSK) */}
             <div
               onClick={() => {
-                if (q.kind === "mcq" && !revealed && chosen === null) reveal();
+                if ((q.kind === "mcq" || q.kind === "cloze") && !revealed && chosen === null) reveal();
               }}
               className="flex min-h-[8.5rem] flex-col items-center justify-center gap-3 rounded-3xl border bg-card p-6 text-center shadow-sm sm:min-h-[11rem] sm:p-8"
             >
-              {q.kind === "gender" ? (
+              {q.kind === "cloze" ? (
+                <>
+                  <div className="text-xl leading-relaxed sm:text-2xl">
+                    {q.clozeBefore}
+                    <span className="mx-1 inline-flex min-w-[3ch] justify-center rounded-lg border-2 border-dashed border-primary/60 px-2 align-middle font-bold text-primary">
+                      ?
+                    </span>
+                    {q.clozeAfter}
+                  </div>
+                  {/* nghĩa câu: mặc định giấu lúc đang làm; trả lời xong mới hiện */}
+                  {(config.sentenceVi || chosen !== null) && (
+                    <div className="text-sm text-muted-foreground">{q.clozeVi}</div>
+                  )}
+                  {chosen === null && (
+                    <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Điền từ còn thiếu</div>
+                  )}
+                </>
+              ) : q.kind === "gender" ? (
                 <>
                   <div className="text-4xl font-bold tracking-tight sm:text-5xl">… {q.word.id}</div>
                   {chosen === null && (
                     <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Danh từ này dùng mạo từ nào?</div>
                   )}
+                  {chosen !== null && <div className="text-sm text-muted-foreground">{q.word.meaning_vi}</div>}
                 </>
               ) : q.mode === "listen" ? (
                 <>
@@ -673,20 +919,6 @@ export default function ReviewRunner({
                     <Volume2 className="size-10" />
                   </button>
                   <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Chạm để nghe lại</div>
-                </>
-              ) : q.mode === "cloze" ? (
-                <>
-                  <div className="text-xl leading-relaxed sm:text-2xl">
-                    {q.clozeBefore}
-                    <span className="mx-1 inline-flex min-w-[3ch] justify-center rounded-lg border-2 border-dashed border-primary/60 px-2 align-middle font-bold text-primary">
-                      ?
-                    </span>
-                    {q.clozeAfter}
-                  </div>
-                  {q.clozeVi && <div className="text-sm text-muted-foreground">{q.clozeVi}</div>}
-                  {chosen === null && (
-                    <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Điền từ còn thiếu</div>
-                  )}
                 </>
               ) : q.mode === "reverse" ? (
                 <>
@@ -722,7 +954,7 @@ export default function ReviewRunner({
             </div>
 
             {/* nhớ-lại-trước: ẩn phương án đến khi bấm hiện */}
-            {q.kind === "mcq" && !revealed && chosen === null ? (
+            {(q.kind === "mcq" || q.kind === "cloze") && !revealed && chosen === null ? (
               <button
                 onClick={reveal}
                 className="w-full rounded-2xl border-2 border-dashed border-primary/40 bg-primary/5 py-4 text-base font-medium text-primary transition-colors hover:bg-primary/10 active:scale-[0.99]"
@@ -736,6 +968,7 @@ export default function ReviewRunner({
                   const isAnswer = idx === q.answer;
                   const isChosen = idx === chosen;
                   const show = chosen !== null;
+                  const optionMeaning = q.kind === "gender" ? undefined : q.optionMeanings?.[opt];
                   return (
                     <button
                       key={idx}
@@ -762,7 +995,16 @@ export default function ReviewRunner({
                       >
                         {idx + 1}
                       </span>
-                      <span className="min-w-0">{opt}</span>
+                      <span className="min-w-0">
+                        <span className={cn("block", show && optionMeaning && "font-semibold leading-tight")}>{opt}</span>
+                        {/* Như HSK: sau khi chấm, biến cả 4 phương án tiếng Pháp thành
+                            một mini-bài học bằng cách lộ nghĩa của cả đáp án đúng lẫn nhiễu. */}
+                        {show && optionMeaning && (
+                          <span className="mt-0.5 block text-xs font-normal leading-snug opacity-70">
+                            {optionMeaning}
+                          </span>
+                        )}
+                      </span>
                     </button>
                   );
                 })}
@@ -770,14 +1012,12 @@ export default function ReviewRunner({
             )}
 
             {/* thẻ chi tiết SAU khi trả lời (như HSK): căn giữa, nổi; ẩn từ khi đề bài đã là từ */}
-            {chosen !== null && q.kind === "mcq" && (
+            {chosen !== null && (q.kind === "mcq" || q.kind === "cloze") && (
               <div className="space-y-2 rounded-3xl border bg-card p-4 text-center shadow-sm">
                 <div className="flex items-center justify-center gap-2">
-                  {q.mode !== "meaning" && (
+                  {(q.kind === "cloze" || q.mode !== "meaning") && (
                     <span className="text-xl font-bold">
-                      {q.word.pos.includes("n") && q.word.gender ? (
-                        <span className="font-normal text-muted-foreground">{q.word.gender === "m" ? "un " : "une "}</span>
-                      ) : null}
+                      {article(q.word) ? <span className="font-normal text-muted-foreground">{article(q.word)} </span> : null}
                       {q.word.id}
                     </span>
                   )}
@@ -790,8 +1030,11 @@ export default function ReviewRunner({
                     <Volume2 className="size-4" />
                   </button>
                 </div>
+                {q.word.pos.length > 0 && (
+                  <div className="text-xs italic text-muted-foreground">{q.word.pos.map(posLabel).join(" · ")}</div>
+                )}
                 <div className="text-sm leading-relaxed">{q.word.meaning_vi}</div>
-                {q.exs?.map((s) => (
+                {q.kind === "mcq" && q.exs?.map((s) => (
                   <div key={s.fr} className="flex items-start justify-between gap-2 border-t pt-2 text-left text-sm">
                     <div>
                       <div className="font-medium">{s.fr}</div>
@@ -824,8 +1067,10 @@ export default function ReviewRunner({
                   />
                 )}
                 <span className="relative">
-                  {qs[i + 1]?.kind === "arrange" && qs[i + 1]?.word.id === q.word.id
-                    ? "Ghép câu"
+                  {qs[i + 1]?.word.id === q.word.id && qs[i + 1]?.kind === "cloze"
+                    ? "Điền vào câu"
+                    : qs[i + 1]?.kind === "arrange" && qs[i + 1]?.word.id === q.word.id
+                      ? "Ghép câu"
                     : i + 1 >= qs.length
                       ? "Kết thúc"
                       : "Tiếp tục"}{" "}
@@ -874,6 +1119,7 @@ function SessionShell({
   pillPrimary,
   isNew,
   extra,
+  muted,
   children,
 }: {
   onExit: () => void;
@@ -883,6 +1129,7 @@ function SessionShell({
   pillPrimary?: boolean; // pill tô màu primary (Ghép câu, Hay quên)
   isNew?: boolean; // thẻ từ mới → pill "từ mới"
   extra?: string;
+  muted?: boolean; // cài đặt Âm thanh tắt → loa gạch chéo ở header, biết vì sao phiên im lặng
   children: React.ReactNode;
 }) {
   // Chế độ tập trung: ẩn bottom-nav + khoá cuộn nền (mobile) khi đang trong phiên.
@@ -901,6 +1148,7 @@ function SessionShell({
           <div className="flex items-center justify-between text-xs">
             <span className="flex items-center gap-2">
               {count && <span className="font-semibold">{count}</span>}
+              {muted && <VolumeX className="size-3.5 text-muted-foreground" aria-label="Âm thanh đang tắt" />}
               {extra && <span className="text-muted-foreground">{extra}</span>}
               {isNew && <span className="rounded-full bg-primary/15 px-2 py-0.5 font-medium text-primary">từ mới</span>}
               {pill && (

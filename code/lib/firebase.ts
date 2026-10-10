@@ -16,9 +16,17 @@ const config = {
 
 export const firebaseEnabled = Boolean(config.apiKey && config.projectId);
 
-// UID chủ sở hữu — CHỈ tài khoản này được vào app. Để trống = cho phép mọi tài khoản
-// đã đăng nhập (tiện lúc mới setup để lấy UID); đặt lại sau lần đăng nhập đầu để khoá.
-export const OWNER_UID = process.env.NEXT_PUBLIC_OWNER_UID ?? "";
+// UID được phép vào app — hỗ trợ NHIỀU tài khoản, ngăn cách bằng dấu phẩy.
+// Để trống = cho phép mọi tài khoản đã đăng nhập (tiện lúc mới setup để lấy UID);
+// điền vào sau khi những người cần dùng đã đăng nhập xong để khoá lại.
+export const ALLOWED_UIDS: string[] = (process.env.NEXT_PUBLIC_OWNER_UID ?? "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
+
+/** Chưa khoá (danh sách rỗng) → ai cũng vào được; đã khoá → phải nằm trong danh sách. */
+export const isAllowed = (uid: string | null | undefined): boolean =>
+  !ALLOWED_UIDS.length || (!!uid && ALLOWED_UIDS.includes(uid));
 
 let appPromise: Promise<FirebaseApp | null> | null = null;
 let authPromise: Promise<Auth | null> | null = null;

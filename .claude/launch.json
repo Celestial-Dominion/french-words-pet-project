@@ -4,9 +4,30 @@
     {
       "name": "fr-dev",
       "runtimeExecutable": "sh",
-      "runtimeArgs": ["-c", "cd code && npm run dev"],
+      "runtimeArgs": [
+        "-c",
+        "cd code && npm run dev"
+      ],
       "port": 3000,
       "autoPort": true
+    },
+    {
+      "name": "fr-qa",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd code && NEXT_PUBLIC_FIREBASE_API_KEY= npx next dev -p 3002"
+      ],
+      "port": 3002
+    },
+    {
+      "name": "fr-prod-qa",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd code && npx firebase serve --only hosting --port 5055"
+      ],
+      "port": 5055
     }
   ]
 }

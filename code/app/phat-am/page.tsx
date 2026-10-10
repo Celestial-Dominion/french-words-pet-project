@@ -3,14 +3,14 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, Volume2, Play, Check, Headphones } from "lucide-react";
 import { loadPhonics, type PhonicsLesson, type PhonicsItem } from "@/lib/data";
-import { phonicsAudioUrl } from "@/lib/tts";
-import { requestSync } from "@/lib/sync";
+import { phonicsAudioUrl, playAudio } from "@/lib/tts";
+import { requestSync, onSyncMerged } from "@/lib/sync";
 import { cn } from "@/lib/utils";
 
 const DONE_KEY = "fr.phonicsDone";
 
 function play(say: string) {
-  new Audio(phonicsAudioUrl(say)).play().catch(() => {});
+  playAudio(phonicsAudioUrl(say)); // một tiếng tại một thời điểm — bấm liên tiếp không chồng tiếng
 }
 
 function loadDone(): Set<string> {
@@ -64,7 +64,11 @@ export default function PhatAmPage() {
 
   useEffect(() => {
     loadPhonics().then(setLessons);
-    setDone(loadDone());
+    // tiến độ khoá nằm ở localStorage (hệ thống ngoài React) → đọc sau mount; kéo máy khác về thì đọc lại
+    const load = () => setDone(loadDone());
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    load();
+    return onSyncMerged(load);
   }, []);
 
   const markDone = (id: string, v: boolean) => {

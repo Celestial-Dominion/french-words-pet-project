@@ -1,11 +1,12 @@
 "use client";
 
 // Phần bổ trợ trang /hoc: tìm kiếm từ TOÀN APP + 2 card khóa học (phát âm, ngữ pháp) kèm tiến độ.
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { Volume2, BookOpenCheck, ChevronRight, Search } from "lucide-react";
 import { loadWordLevels, loadWords, loadExamplesForWords, loadPhonics, type ExampleSentence } from "@/lib/data";
 import { getCourseDone } from "@/lib/progress-local";
+import { onSyncMerged } from "@/lib/sync";
 import { GRAMMAR_LESSONS } from "@/app/ngu-phap/lessons";
 import { toSearch } from "@/lib/slug";
 import { levelMeta } from "@/lib/levels";
@@ -20,7 +21,6 @@ interface Hit {
 export function GlobalWordSearch() {
   const [q, setQ] = useState("");
   const [index, setIndex] = useState<Record<string, number> | null>(null);
-  const [hits, setHits] = useState<Hit[]>([]);
   const [selected, setSelected] = useState<Word | null>(null);
   const [examples, setExamples] = useState<ExampleSentence[]>([]);
 
@@ -29,21 +29,18 @@ export function GlobalWordSearch() {
     if (q && !index) loadWordLevels().then(setIndex);
   }, [q, index]);
 
-  useEffect(() => {
-    if (!q.trim() || !index) {
-      setHits([]);
-      return;
-    }
+  // Kết quả tìm là GIÁ TRỊ DẪN XUẤT từ (q, index) → tính bằng useMemo, không dùng effect+setState.
+  const hits: Hit[] = useMemo(() => {
+    if (!q.trim() || !index) return [];
     const nq = toSearch(q);
     const out: Hit[] = [];
     for (const [id, level] of Object.entries(index)) {
-      const nid = toSearch(id);
-      if (nid.startsWith(nq)) out.push({ id, level });
+      if (toSearch(id).startsWith(nq)) out.push({ id, level });
       if (out.length >= 60) break;
     }
     // khớp đầu từ trước, ưu tiên từ ngắn + cấp thấp
     out.sort((a, b) => a.id.length - b.id.length || a.level - b.level);
-    setHits(out.slice(0, 12));
+    return out.slice(0, 12);
   }, [q, index]);
 
   const open = async (h: Hit) => {
@@ -104,12 +101,18 @@ export function CourseCards() {
   const [grammar, setGrammar] = useState<{ done: number; total: number } | null>(null);
 
   useEffect(() => {
-    const g = getCourseDone("grammar");
-    setGrammar({ done: GRAMMAR_LESSONS.filter((l) => g.has(l.id)).length, total: GRAMMAR_LESSONS.length });
-    loadPhonics().then((lessons) => {
-      const p = getCourseDone("phonics");
-      setPhonics({ done: lessons.filter((l) => p.has(l.id)).length, total: lessons.length });
-    });
+    const load = () => {
+      const g = getCourseDone("grammar");
+      setGrammar({ done: GRAMMAR_LESSONS.filter((l) => g.has(l.id)).length, total: GRAMMAR_LESSONS.length });
+      loadPhonics().then((lessons) => {
+        const p = getCourseDone("phonics");
+        setPhonics({ done: lessons.filter((l) => p.has(l.id)).length, total: lessons.length });
+      });
+    };
+    // localStorage là hệ thống ngoài React → đọc sau mount; kéo máy khác về thì đọc lại
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    load();
+    return onSyncMerged(load);
   }, []);
 
   return (

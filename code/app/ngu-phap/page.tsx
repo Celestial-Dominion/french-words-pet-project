@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ChevronLeft, Check, BookOpenCheck } from "lucide-react";
 import { GRAMMAR_LESSONS, type GrammarLesson } from "./lessons";
 import { getCourseDone, markCourseDone } from "@/lib/progress-local";
-import { requestSync } from "@/lib/sync";
+import { requestSync, onSyncMerged } from "@/lib/sync";
 import { cn } from "@/lib/utils";
 
 export default function NguPhapPage() {
@@ -13,7 +13,11 @@ export default function NguPhapPage() {
   const [active, setActive] = useState<GrammarLesson | null>(null);
 
   useEffect(() => {
-    setDone(getCourseDone("grammar"));
+    // tiến độ khoá nằm ở localStorage (hệ thống ngoài React) → đọc sau mount; kéo máy khác về thì đọc lại
+    const load = () => setDone(getCourseDone("grammar"));
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    load();
+    return onSyncMerged(load);
   }, []);
 
   const toggleDone = (id: string, v: boolean) => {

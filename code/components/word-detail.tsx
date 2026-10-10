@@ -1,24 +1,23 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { X, Volume2, Plus, Check } from "lucide-react";
+import { X, Volume2, Plus, Check, RotateCcw } from "lucide-react";
 import { loadConjugation, type ExampleSentence } from "@/lib/data";
 import { posLabel } from "@/lib/pos";
-import { wordAudioUrl, sentenceAudioUrl } from "@/lib/tts";
+import { wordAudioUrl, sentenceAudioUrl, playAudio as play } from "@/lib/tts";
 import { cn } from "@/lib/utils";
-import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic, markKnown } from "@/lib/db";
+import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic, markKnown, undoMarkKnown, relearnWord } from "@/lib/db";
+import { isKnownPending } from "@/lib/srs-pure";
+import { requestSync } from "@/lib/sync";
 import { occurrencesOf, type Occurrence } from "@/lib/suggest";
 import { XP } from "@/lib/gamify";
 import type { Word, Conjugation, ReviewRecord } from "@/lib/types";
 
-function play(url: string) {
-  new Audio(url).play().catch(() => {});
-}
-
-type Status = "new" | "due" | "learned";
+type Status = "new" | "due" | "known" | "learned";
 function statusOf(rec: ReviewRecord | null | undefined): Status | null {
   if (rec === undefined) return null; // đang tải
   if (!rec) return "new";
+  if (isKnownPending(rec)) return "known"; // đã biết sẵn, chờ lần kiểm tra đầu
   if (new Date(rec.due).getTime() <= Date.now()) return "due";
   return "learned";
 }
@@ -64,6 +63,9 @@ export default function WordDetail({
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState("");
   const [occ, setOcc] = useState<Occurrence[]>([]);
+  const [justMarked, setJustMarked] = useState<string | null>(null); // id vừa bấm "Đã biết rồi" (còn Hoàn tác)
+  // Mở rộng danh sách nghĩa EN — lưu theo id để chuyển sang từ khác là tự thu lại.
+  const [showAllEnFor, setShowAllEnFor] = useState<string | null>(null);
 
   useEffect(() => {
     getReview(word.id).then((r) => setRec(r ?? null));
@@ -81,15 +83,26 @@ export default function WordDetail({
   }, [onClose]);
 
   const status = statusOf(rec);
-  const learn = async () => {
-    if (busy || rec) return;
+  // Ghi rồi đọc lại thẻ — dùng chung cho Học từ này / Đã biết rồi / Hoàn tác / Học lại.
+  const act = async (fn: () => Promise<unknown>) => {
+    if (busy) return;
     setBusy(true);
-    await recordAnswer({ wordId: word.id, level: word.level, correct: true, isNew: true });
-    await addXp(XP.newWord);
-    const r = await getReview(word.id);
-    setRec(r ?? null);
-    setBusy(false);
-    onChange?.();
+    try {
+      await fn();
+    } finally {
+      const r = await getReview(word.id);
+      setRec(r ?? null);
+      setBusy(false);
+      onChange?.();
+      requestSync();
+    }
+  };
+  const learn = () => {
+    if (rec) return;
+    void act(async () => {
+      await recordAnswer({ wordId: word.id, level: word.level, correct: true, isNew: true });
+      await addXp(XP.newWord);
+    });
   };
 
   // khoá cuộn nền khi mở modal
@@ -144,7 +157,16 @@ export default function WordDetail({
           <div className="mt-3 text-lg font-medium">{word.meaning_vi}</div>
           <div className="mt-1 text-sm text-muted-foreground">
             {word.pos.map(posLabel).join(", ")}
-            {word.meaning_en.length ? ` · ${word.meaning_en.join(", ")}` : ""}
+            {/* Nghĩa EN: chỉ 2 nghĩa đầu. Wiktionary trả cả nghĩa cực hiếm — đổ hết ra là nhiễu,
+                người học tưởng đó là nghĩa chính. */}
+            {word.meaning_en.length
+              ? ` · ${(showAllEnFor === word.id ? word.meaning_en : word.meaning_en.slice(0, 2)).join(", ")}`
+              : ""}
+            {word.meaning_en.length > 2 && showAllEnFor !== word.id && (
+              <button onClick={() => setShowAllEnFor(word.id)} className="ml-1 whitespace-nowrap text-primary hover:underline">
+                +{word.meaning_en.length - 2} nghĩa nữa
+              </button>
+            )}
           </div>
 
           {/* trạng thái học + nút thêm vào ôn tập */}
@@ -160,23 +182,23 @@ export default function WordDetail({
                   >
                     <Plus className="size-4" /> Học từ này
                   </button>
-                  {/* Đã biết sẵn → tạo thẻ nhớ bền, khỏi học lại từ đầu (như HSK) */}
+                  {/* Đã biết sẵn → thẻ hẹn kiểm tra sau 1–3 tháng, khỏi học qua phiên từ mới */}
                   <button
-                    onClick={async () => {
-                      if (busy) return;
-                      setBusy(true);
-                      await markKnown(word.id, word.level);
-                      const r = await getReview(word.id);
-                      setRec(r ?? null);
-                      setBusy(false);
-                      onChange?.();
-                    }}
+                    onClick={() =>
+                      void act(async () => {
+                        if (await markKnown(word.id, word.level)) setJustMarked(word.id);
+                      })
+                    }
                     disabled={busy}
                     className="inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-semibold text-muted-foreground transition-all hover:bg-muted active:scale-[0.98] disabled:opacity-50"
                   >
                     <Check className="size-4" /> Đã biết rồi
                   </button>
                 </>
+              ) : status === "known" ? (
+                <span className="rounded-full bg-sky-500/15 px-3 py-1 text-sm font-semibold text-sky-700 dark:text-sky-300">
+                  Đã biết sẵn · kiểm tra lại sau {rec ? intervalLabel(rec.due) : ""}
+                </span>
               ) : status === "due" ? (
                 <span className="rounded-full bg-amber-500/15 px-3 py-1 text-sm font-semibold text-amber-700 dark:text-amber-300">
                   Đến hạn ôn
@@ -186,6 +208,30 @@ export default function WordDetail({
                   Đã học · ôn lại sau {rec ? intervalLabel(rec.due) : ""}
                 </span>
               )}
+              {/* Vừa bấm nhầm → Hoàn tác (về Chưa học). Đánh dấu từ trước mà giờ thấy chưa chắc → Học lại:
+                  thẻ đến hạn ngay, lượt ôn kế hiện thẻ học trước câu hỏi. */}
+              {rec?.known && justMarked === word.id ? (
+                <button
+                  onClick={() =>
+                    void act(async () => {
+                      await undoMarkKnown(word.id);
+                      setJustMarked(null);
+                    })
+                  }
+                  disabled={busy}
+                  className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium text-muted-foreground transition-all hover:bg-muted disabled:opacity-50"
+                >
+                  ↩︎ Hoàn tác
+                </button>
+              ) : rec?.known ? (
+                <button
+                  onClick={() => void act(() => relearnWord(word.id))}
+                  disabled={busy}
+                  className="inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-semibold text-muted-foreground transition-all hover:bg-muted active:scale-[0.98] disabled:opacity-50"
+                >
+                  <RotateCcw className="size-3.5" /> Chưa chắc? Học lại
+                </button>
+              ) : null}
             </div>
           )}
 

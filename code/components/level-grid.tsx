@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { progressSummary, getDueReviews } from "@/lib/db";
 import { loadReadingsIndex } from "@/lib/data";
 import { LEVELS, levelAccent } from "@/lib/levels";
+import { onSyncMerged } from "@/lib/sync";
 
 export default function LevelGrid() {
   const [byLevel, setByLevel] = useState<Record<number, number>>({});
@@ -12,7 +13,8 @@ export default function LevelGrid() {
   const [readsByLevel, setReadsByLevel] = useState<Record<number, number>>({});
   useEffect(() => {
     const refresh = () => {
-      progressSummary().then((s) => setByLevel(s.byLevel));
+      // độ phủ vốn từ: đã học + đã biết sẵn (byLevel chỉ là số liệu huy hiệu, không tính từ chưa kiểm tra)
+      progressSummary().then((s) => setByLevel(s.coverageByLevel));
       getDueReviews().then((rows) => {
         const m: Record<number, number> = {};
         for (const r of rows) m[r.level] = (m[r.level] ?? 0) + 1;
@@ -20,13 +22,23 @@ export default function LevelGrid() {
       });
     };
     refresh();
-    loadReadingsIndex().then((idx) => {
-      const m: Record<number, number> = {};
-      for (const r of idx) m[r.level] = (m[r.level] ?? 0) + 1;
-      setReadsByLevel(m);
-    });
-    const t = setInterval(refresh, 60_000); // cập nhật số đến hạn định kỳ (như HSK)
-    return () => clearInterval(t);
+    loadReadingsIndex()
+      .then((idx) => {
+        const m: Record<number, number> = {};
+        for (const r of idx) m[r.level] = (m[r.level] ?? 0) + 1;
+        setReadsByLevel(m);
+      })
+      .catch(() => {});
+    // Cập nhật số đến hạn định kỳ (như HSK) — BỎ QUA khi tab đang ẩn: mỗi lượt là một lần quét
+    // cả bảng reviews, chạy nền cả ngày trên tab mở sẵn thì phí.
+    const t = setInterval(() => {
+      if (document.visibilityState === "visible") refresh();
+    }, 60_000);
+    const off = onSyncMerged(refresh); // kéo tiến độ máy khác về → thanh tiến độ cấp nhảy theo
+    return () => {
+      clearInterval(t);
+      off();
+    };
   }, []);
 
   return (

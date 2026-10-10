@@ -1,4 +1,5 @@
 // SRS bằng ts-fsrs — cấu hình CHẶT cho người hay quên (giữ đúng tinh thần app HSK).
+import { ratingValueFromSpeed, type SpeedMode } from "./srs-pure";
 import {
   fsrs,
   generatorParameters,
@@ -21,6 +22,17 @@ export const FSRS_PARAMS = generatorParameters({
 
 const f = fsrs(FSRS_PARAMS);
 
+// Lịch NỚI cho thẻ "đã biết sẵn" chưa từng sai (ReviewRecord.known): giữ 90%, trần 365 ngày.
+// Lịch chặt ở trên với từ đã biết là quá đắt — kiểm ở ngày 60→95→144→212→305 rồi 120 ngày/lần
+// (1.000 từ ≈ 14 lượt/ngày năm đầu); lịch này ≈ 2 lần năm đầu rồi ~1 lần/năm. Sai một lần là
+// thẻ về lịch chặt (db.recordAnswer bỏ cờ) — chỉ từ đã chứng minh được mới hưởng lịch nới.
+export const FSRS_KNOWN_PARAMS = generatorParameters({
+  ...FSRS_PARAMS,
+  request_retention: 0.9,
+  maximum_interval: 365,
+});
+const fKnown = fsrs(FSRS_KNOWN_PARAMS);
+
 // Ôn tập trắc nghiệm tự chấm: đúng = Good, sai = Again (không có nút Khó/Dễ thủ công).
 export const RATING = { wrong: Rating.Again as Grade, right: Rating.Good as Grade };
 
@@ -41,35 +53,21 @@ export function scheduleRated(card: Card, rating: Grade, now: Date): Card {
   return next;
 }
 
-// Từ "hay quên" (leech) và từ "đã chín" — dùng để chọn loại câu hỏi + thẻ ôn lại kỹ.
-export const LEECH_LAPSES = 4; // quên ≥4 lần → leech
-export const MATURE_STABILITY = 7; // stability ≥7 ngày → đã chín (mới hỏi cloze)
-export const isLeech = (r?: ReviewRecord | null) => !!r && (r.lapses ?? 0) >= LEECH_LAPSES;
-export const isMature = (r?: ReviewRecord | null) => !!r && r.stability >= MATURE_STABILITY && !isLeech(r);
-
-/**
- * Suy mức chấm tự động từ kết quả + TỐC ĐỘ trả lời (ngưỡng "chậm" theo LOẠI câu):
- *   - sai                     → Lại  (Again)
- *   - đúng nhưng > 45s         → Được (Good) — coi như rời máy/xao nhãng, KHÔNG phạt Khó
- *   - đúng nhưng chậm (≥ slow) → Khó  (Hard)
- *   - còn lại                  → Được (Good)
- * Cloze phải đọc cả câu, listen phải nghe hết audio → ngưỡng "chậm" nới hơn câu thường.
- *
- * ⚠️ KHÔNG BAO GIỜ chấm Dễ (Easy) cho câu ôn tập — và đừng thêm lại nhánh đó:
- * mọi câu ở đây đều là TRẮC NGHIỆM 4 phương án, tức chỉ NHẬN RA đáp án chứ không
- * TỰ NHỚ RA, nên "đúng nhanh" KHÔNG chứng minh trí nhớ bền. Tệ hơn: khi bật "nhớ
- * lại trước" (recallFirst, mặc định bật) đồng hồ chỉ chạy TỪ LÚC HIỆN đáp án nên
- * gần như câu đúng nào cũng 1–2s. Nếu cho ra Easy, FSRS áp hệ số easy_bonus làm
- * stability/khoảng cách phình rất nhanh → lịch ôn "lỏng ngầm": từ vừa học hôm qua
- * bị đẩy vài ngày–vài tuần sau mới gặp lại. Vì vậy thang tự động chỉ có Again/Hard/Good.
- */
-export function ratingFromSpeed(correct: boolean, ms: number, mode?: "meaning" | "reverse" | "cloze" | "listen"): Grade {
-  if (!correct) return Rating.Again as Grade;
-  if (ms > 45_000) return Rating.Good as Grade; // rời máy/xao nhãng, không phạt Khó
-  const slow = mode === "cloze" ? 14_000 : mode === "listen" ? 12_000 : 9000;
-  if (ms >= slow) return Rating.Hard as Grade;
-  return Rating.Good as Grade; // đúng, trong ngưỡng → Được (không thưởng Easy cho nhận-diện)
+/** Lên lịch thẻ "đã biết sẵn" trả lời ĐÚNG theo lịch nới (FSRS_KNOWN_PARAMS). */
+export function scheduleKnown(card: Card, rating: Grade, now: Date): Card {
+  const { card: next } = fKnown.next(card, now, rating);
+  return next;
 }
+
+/** Đường cong quên R(t, S) của CHÍNH scheduler đang dùng (cùng w/decay với lúc chấm) — dùng để
+ *  xếp thứ tự ôn sớm (lib/srs-ahead.ts). Không dùng f.get_retrievability: tính elapsed theo
+ *  floor 24h (lệch với next()) và ném lỗi khi thẻ thiếu last_review. */
+export function forgettingCurve(elapsedDays: number, stability: number): number {
+  return f.forgetting_curve(elapsedDays, stability);
+}
+
+// Từ "hay quên" (leech) và từ "đã chín" — dùng để chọn loại câu hỏi + thẻ ôn lại kỹ.
+
 
 /** ReviewRecord (lưu DB) → Card (ts-fsrs). */
 export function recordToCard(r: ReviewRecord): Card {
@@ -101,4 +99,12 @@ export function cardToRecordFields(c: Card) {
     state: c.state,
     last_review: c.last_review,
   };
+}
+
+// ---- phần THUẦN (test được không cần ts-fsrs/Dexie) — xem lib/srs-pure.ts ----
+export { isLeech, isMature, isKnownPending, cardStage, LEECH_LAPSES, MATURE_STABILITY, type CardStage } from "./srs-pure";
+
+/** Chấm theo tốc độ, trả về Grade của ts-fsrs (logic thuần nằm ở srs-pure). */
+export function ratingFromSpeed(correct: boolean, ms: number, mode?: SpeedMode): Grade {
+  return ratingValueFromSpeed(correct, ms, mode) as Grade;
 }

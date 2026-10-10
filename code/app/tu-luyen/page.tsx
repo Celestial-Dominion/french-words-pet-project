@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Sparkles, Library, Flame, CalendarDays, Repeat, Brain, type LucideIcon } from "lucide-react";
 import { progressSummary, type ProgressSummary } from "@/lib/db";
+import { onSyncMerged } from "@/lib/sync";
 import { RANKS, rankForWords, badgeGroups, badgeTotals, type Stats, type Badge, type Rank } from "@/lib/gamify";
 import { cn } from "@/lib/utils";
 
@@ -12,7 +13,9 @@ export default function BinhNghiepPage() {
   const [sum, setSum] = useState<ProgressSummary | null>(null);
   const [detail, setDetail] = useState<Detail | null>(null); // dialog chi tiết cấp bậc/huy hiệu
   useEffect(() => {
-    progressSummary().then(setSum);
+    const load = () => void progressSummary().then(setSum);
+    load();
+    return onSyncMerged(load); // kéo tiến độ máy khác về → quân hàm/huy hiệu tính lại ngay
   }, []);
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -31,6 +34,8 @@ export default function BinhNghiepPage() {
     words: sum.words, xp: sum.xp, streak: sum.streak, reads: sum.reads, reviews: sum.reviews,
     correct: sum.correct, activeDays: sum.activeDays, matured: sum.matured, maxDayReviews: sum.maxDayReviews,
     weekend: sum.weekend, byLevel: sum.byLevel,
+    redeemedLeeches: sum.redeemedLeeches, maxCombo: sum.maxCombo, longestStreak: sum.longestStreak,
+    comebackDays: sum.comebackDays, perfectDay: sum.perfectDay,
   };
   const groups = badgeGroups(stats);
   const totals = badgeTotals(stats);

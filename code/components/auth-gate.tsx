@@ -3,12 +3,13 @@
 import { useEffect, useState } from "react";
 import type { User } from "firebase/auth";
 import { LogIn, ShieldAlert, Copy } from "lucide-react";
-import { firebaseEnabled, OWNER_UID } from "@/lib/firebase";
+import { firebaseEnabled, ALLOWED_UIDS, isAllowed } from "@/lib/firebase";
 import { watchAuth, googleSignIn, signOutUser } from "@/lib/sync";
 
 const LAST_UID_KEY = "fr.lastUid";
 
-// Chặn toàn bộ app sau đăng nhập Google. Nếu đặt OWNER_UID → chỉ tài khoản đó vào được.
+// Chặn toàn bộ app sau đăng nhập Google. Nếu đặt NEXT_PUBLIC_OWNER_UID (1 hoặc nhiều UID,
+// ngăn cách bằng dấu phẩy) → chỉ những tài khoản đó vào được.
 // RENDER LẠC QUAN: lần trước đã đăng nhập hợp lệ (localStorage) → hiện app NGAY, kiểm tra
 // auth chạy nền; chỉ phủ màn đăng nhập khi xác định thật sự chưa đăng nhập.
 export default function AuthGate({ children }: { children: React.ReactNode }) {
@@ -19,10 +20,13 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
   const [e2e, setE2e] = useState(false);
 
   useEffect(() => {
+    // Đồng bộ với API TRÌNH DUYỆT (navigator, localStorage) — không có lúc SSR nên bắt buộc
+    // đọc trong effect; đây đúng là ngoại lệ "subscribe to external system" của rule.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (process.env.NODE_ENV !== "production" && navigator.webdriver) setE2e(true);
     try {
       const last = localStorage.getItem(LAST_UID_KEY);
-      if (last && (!OWNER_UID || last === OWNER_UID)) setOptimistic(true);
+      if (last && isAllowed(last)) setOptimistic(true);
     } catch {
       /* bỏ qua */
     }
@@ -30,7 +34,7 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
       setUser(u);
       setReady(true);
       try {
-        if (u && (!OWNER_UID || u.uid === OWNER_UID)) localStorage.setItem(LAST_UID_KEY, u.uid);
+        if (u && isAllowed(u.uid)) localStorage.setItem(LAST_UID_KEY, u.uid);
         else localStorage.removeItem(LAST_UID_KEY);
       } catch {
         /* bỏ qua */
@@ -88,7 +92,7 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
   }
 
   // Đã đăng nhập nhưng KHÔNG phải chủ sở hữu → từ chối.
-  if (OWNER_UID && user.uid !== OWNER_UID) {
+  if (!isAllowed(user.uid)) {
     return (
       <Center>
         <div className="grid size-16 place-items-center rounded-2xl bg-destructive/15 text-destructive">
@@ -108,10 +112,10 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
     );
   }
 
-  // Chưa đặt OWNER_UID → cho vào nhưng nhắc lấy UID để khoá.
+  // Chưa khoá → cho vào nhưng nhắc lấy UID để khoá.
   return (
     <>
-      {!OWNER_UID && <OwnerHint uid={user.uid} />}
+      {!ALLOWED_UIDS.length && <OwnerHint uid={user.uid} />}
       {children}
     </>
   );
@@ -125,13 +129,13 @@ function Center({ children }: { children: React.ReactNode }) {
   );
 }
 
-// Banner hiện UID (chỉ khi chưa khoá) để chủ copy rồi đặt vào OWNER_UID.
+// Banner hiện UID (chỉ khi chưa khoá) để chủ copy rồi đặt vào NEXT_PUBLIC_OWNER_UID.
 function OwnerHint({ uid }: { uid: string }) {
   const [copied, setCopied] = useState(false);
   return (
     <div className="mb-4 rounded-2xl border border-amber-500/30 bg-amber-500/10 p-3 text-sm">
       <div className="font-medium text-amber-700 dark:text-amber-300">⚠ App chưa khoá theo tài khoản</div>
-      <div className="mt-1 text-muted-foreground">UID của bạn (đặt vào OWNER_UID để chỉ mình bạn vào được):</div>
+      <div className="mt-1 text-muted-foreground">UID của bạn (đặt vào NEXT_PUBLIC_OWNER_UID để khoá app):</div>
       <button
         onClick={() => {
           navigator.clipboard?.writeText(uid).then(() => setCopied(true));

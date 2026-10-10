@@ -102,6 +102,11 @@ export interface ReviewRecord {
   state: number; // 0 New, 1 Learning, 2 Review, 3 Relearning
   last_review?: Date;
   introducedOn: string; // "YYYY-MM-DD" (giờ địa phương)
+  // "Đã biết sẵn" (markKnown): ms lúc đánh dấu. Còn cờ = chưa từng trả lời sai kể từ khi đánh dấu
+  // → lịch NỚI (srs.ts scheduleKnown); sai một lần là bỏ cờ, về lịch chặt như thẻ thường.
+  known?: number;
+  // "Học lại": phiên ôn kế hiện thẻ HỌC (xem từ + ví dụ) trước câu chấm; bỏ cờ sau lần chấm đó.
+  relearn?: boolean;
 }
 
 export type ReviewDirection = "fr2vi" | "vi2fr"; // Pháp→nghĩa / nghĩa→Pháp
@@ -114,7 +119,22 @@ export interface SrsConfig {
   arrangePerWord: number; // số câu "sắp xếp câu" mỗi từ (0 = tắt). Mặc định 1.
   genderQuestions: boolean; // xen câu hỏi "chọn giống đúng" (un/une) cho danh từ, tỉ trọng thấp.
   recallFirst: boolean; // ẩn đáp án, bắt "nhớ lại" trước khi hiện.
+  spelling: boolean; // xen câu GÕ CHÍNH TẢ từ thẻ đang bền (≥3 lần gặp / bền ≥7 ngày) trở đi.
+  listenEnabled: boolean; // cho phép dạng NGHE → chọn nghĩa trong bài chính.
+  clozeEnabled: boolean; // CŨ: bật/tắt điền câu. Giữ để config đã sync tương thích ngược.
+  // Số câu điền mỗi từ (0 = tắt), như arrangePerWord. Không đặt trong DEFAULT:
+  // config cũ không có trường này, nơi dùng suy ra từ clozeEnabled (true→1 / false→0).
+  clozePerWord?: number;
   autoAdvance: boolean; // trả lời ĐÚNG → tự sang thẻ kế.
+  sentenceVi: boolean; // hiện NGHĨA câu ngay từ đầu ở điền từ & ghép câu; TẮT (mặc định) = làm xong mới hiện.
+  // Trộn các đợt của mọi từ; cùng một từ được giãn cách ≥3 đợt.
+  interleave?: boolean;
+  // Tỉ lệ token đã biết tối thiểu khi ưu tiên câu điền/ghép. 0 = tắt.
+  // Nếu không có câu đạt ngưỡng, vẫn lấy câu có tỉ lệ cao nhất thay vì bỏ bài.
+  sentenceKnownMin: number;
+  // 🔊 Công tắc ÂM THANH tổng: tự đọc từ/câu khi hiện thẻ & sau khi trả lời, câu hỏi NGHE, nhạc chúc mừng,
+  // bài Nghe & gõ câu. TẮT khi học ở nơi không mở tiếng được — nút loa bấm tay vẫn phát (chủ ý người dùng).
+  soundEnabled: boolean;
 }
 
 export const DEFAULT_SRS_CONFIG: SrsConfig = {
@@ -125,8 +145,31 @@ export const DEFAULT_SRS_CONFIG: SrsConfig = {
   arrangePerWord: 1,
   genderQuestions: true,
   recallFirst: true,
+  spelling: true,
+  listenEnabled: true,
+  clozeEnabled: true,
   autoAdvance: true,
+  sentenceVi: false, // ẩn nghĩa lúc đang làm — không bị bản dịch mớm đáp án
+  interleave: true,
+  sentenceKnownMin: 0.7,
+  soundEnabled: true,
 };
+
+// ---- Nhật ký từng lượt chấm (revlog — như HSK) ----
+// Bảng reviews chỉ giữ trạng thái MỚI NHẤT của thẻ; revlog giữ lịch sử TỪNG lượt —
+// nguyên liệu để sau này tối ưu tham số FSRS cá nhân hoá. Chỉ nằm local (không sync),
+// có trong tệp sao lưu để đổi máy không mất; giữ 2 năm, phần cũ hơn tự dọn.
+export interface RevlogRow {
+  id?: number; // ++id tự tăng (Dexie)
+  wordId: string;
+  at: number; // ms epoch — thời điểm chấm
+  rating: number; // 1=Lại 2=Khó 3=Được 4=Dễ
+  state: number; // trạng thái thẻ TRƯỚC lượt chấm (New/Learning/Review/Relearning)
+  elapsed_days: number;
+  scheduled_days: number;
+  stability: number; // SAU khi chấm
+  difficulty: number;
+}
 
 // ---- Tiến độ & chuỗi ngày (F7) ----
 
@@ -155,4 +198,6 @@ export interface GamifyRow {
   freezes?: number; // 🧊 lượt đóng băng chuỗi còn lại
   frozenDates?: string[]; // các ngày đã được đóng băng (tính như có học)
   grantStreak?: number; // mốc chuỗi đã tặng freeze lần cuối (tặng mỗi mốc 7 ngày)
+  maxCombo?: number; // 💥 chuỗi trả lời đúng liên tiếp dài nhất trong một phiên (max-merge)
+  questsDone?: string[]; // nhiệm vụ ngày ĐÃ NHẬN thưởng, khoá "YYYY-MM-DD:qid" (union-merge, dọn >14 ngày)
 }

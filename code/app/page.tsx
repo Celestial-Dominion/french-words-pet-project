@@ -3,11 +3,14 @@ import type { ReactNode } from "react";
 import { Volume2, BookOpenText, Library, ChevronRight } from "lucide-react";
 import HomeStats from "@/components/home-stats";
 import LevelGrid from "@/components/level-grid";
+import DailyQuests from "@/components/daily-quests";
 
 export default function Home() {
   return (
     <div className="space-y-6 lg:space-y-8">
       <HomeStats />
+
+      <DailyQuests />
 
       <section className="space-y-3">
         <h2 className="text-lg font-semibold">Chọn cấp độ học</h2>

@@ -4,7 +4,7 @@ import { defineConfig } from "vitest/config";
 // (những file đó cần trình duyệt + dev server, không chạy bằng vitest).
 export default defineConfig({
   test: {
-    include: ["lib/**/*.test.ts"],
+    include: ["lib/**/*.test.{ts,mjs}"],
     environment: "node",
   },
 });

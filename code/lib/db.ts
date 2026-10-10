@@ -1,9 +1,19 @@
 // Nguồn sự thật tiến độ học: IndexedDB (offline-first) qua Dexie.
 import Dexie, { type Table } from "dexie";
 import type { Grade } from "ts-fsrs";
-import type { ReviewRecord, DailyStat, ReadRow, NoteRow, GamifyRow, SrsConfig } from "./types";
+import type { ReviewRecord, DailyStat, ReadRow, NoteRow, GamifyRow, RevlogRow, SrsConfig } from "./types";
 import { DEFAULT_SRS_CONFIG } from "./types";
-import { newCard, schedule, scheduleRated, recordToCard, cardToRecordFields } from "./srs";
+import { newCard, schedule, scheduleRated, scheduleKnown, recordToCard, cardToRecordFields, forgettingCurve, RATING } from "./srs";
+import { pickAhead, isAheadEligible } from "./srs-ahead";
+import {
+  todayStr, computeStreak, longestStreak, maxComebackGap, LEECH_LAPSES, MATURE_STABILITY, isKnownPending, knownRecord,
+  upgradeLegacyKnown,
+} from "./srs-pure";
+import { dailyQuests, questProgress, questKey, pruneQuestKeys, type QuestProgress } from "./gamify";
+import { mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify, mergeIdSet } from "./sync-merge";
+
+// Re-export để phần còn lại của app vẫn import từ lib/db như trước.
+export { todayStr, computeStreak };
 
 class FrDB extends Dexie {
   reviews!: Table<ReviewRecord, string>; // key = wordId
@@ -12,6 +22,7 @@ class FrDB extends Dexie {
   config!: Table<{ key: string; value: SrsConfig }, string>;
   gamify!: Table<GamifyRow, string>; // key "state" (xp + đóng băng chuỗi)
   notes!: Table<NoteRow, string>; // mẹo nhớ tự ghi (text "" = tombstone đã xoá)
+  revlog!: Table<RevlogRow, number>; // nhật ký từng lượt chấm (local, nền cho tối ưu FSRS)
 
   constructor() {
     super("french-words");
@@ -23,10 +34,57 @@ class FrDB extends Dexie {
     });
     this.version(2).stores({ gamify: "key" });
     this.version(3).stores({ notes: "wordId" });
+    // v4: nhật ký từng lượt ôn (revlog) — nền cho tối ưu FSRS. Dữ liệu cũ giữ nguyên.
+    this.version(4).stores({ revlog: "++id, wordId, at" });
+    // v5: gắn cờ known cho thẻ "Đã biết rồi" tạo bởi bản cũ (srs-pure upgradeLegacyKnown). Không đổi schema.
+    this.version(5)
+      .stores({})
+      .upgrade((tx) =>
+        tx
+          .table("reviews")
+          .toCollection()
+          .modify((r: ReviewRecord) => {
+            const up = upgradeLegacyKnown(r);
+            if (up !== r) r.known = up.known;
+          }),
+      );
   }
 }
 
 export const db = new FrDB();
+
+// IndexedDB hỏng phải HIỆN RA (banner StorageAlert) — nuốt im lặng nghĩa là người
+// dùng học cả phiên mà không lưu được gì (Safari riêng tư, hết quota). versionchange:
+// tab cũ còn mở khi tab khác nâng schema → Dexie đóng kết nối, mọi thao tác sau đó
+// fail — chỉ có tải lại trang mới cứu được. (Import động để module thuần khỏi kéo UI.)
+function noteDbError(e: unknown): void {
+  void import("./storage-status").then((m) => m.noteStorageError(e));
+}
+if (typeof window !== "undefined") {
+  db.on("versionchange", () => noteDbError(new Error("dữ liệu được nâng cấp ở tab khác, cần tải lại")));
+  db.open().catch(noteDbError);
+  // Middleware dbcore: MỌI thao tác GHI thất bại (addXp, mẹo nhớ, luyện tập, undo, import…)
+  // đều nổi banner — không chỉ recordAnswer. Nếu chỉ nối tay từng hàm thì phiên /luyen-tap
+  // (chỉ gọi recordPractice/addXp) hết quota là mất sạch XP không một lời cảnh báo.
+  db.use({
+    stack: "dbcore",
+    name: "bao-loi-luu",
+    create: (down) => ({
+      ...down,
+      table(name: string) {
+        const t = down.table(name);
+        return {
+          ...t,
+          mutate: (req) =>
+            t.mutate(req).catch((e: unknown) => {
+              noteDbError(e);
+              throw e;
+            }),
+        };
+      },
+    }),
+  });
+}
 
 // ---- Cấu hình SRS ----
 export async function getConfig(): Promise<SrsConfig> {
@@ -43,13 +101,25 @@ export async function setConfig(patch: Partial<SrsConfig>): Promise<SrsConfig> {
   } catch {
     /* bỏ qua */
   }
+  try {
+    window.dispatchEvent(new CustomEvent<SrsConfig>(CONFIG_EVENT, { detail: value }));
+  } catch {
+    /* bỏ qua (chạy ngoài trình duyệt) */
+  }
   return value;
 }
 
-// ---- Ngày địa phương "YYYY-MM-DD" ----
-export function todayStr(d = new Date()): string {
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+/** Cài đặt mở được ở MỌI trang (ngăn Cài đặt trên topbar) → nơi nào đang giữ bản cấu hình
+ *  (màn Ôn tập, phiên học đang chạy, số từ mới còn lại…) nghe sự kiện này để cập nhật ngay,
+ *  không phải rời trang vào lại mới thấy thay đổi. */
+export const CONFIG_EVENT = "fr:config";
+export function onConfigChanged(cb: (cfg: SrsConfig) => void): () => void {
+  const h = (e: Event) => cb((e as CustomEvent<SrsConfig>).detail);
+  window.addEventListener(CONFIG_EVENT, h);
+  return () => window.removeEventListener(CONFIG_EVENT, h);
 }
+
+// ---- Ngày địa phương "YYYY-MM-DD" ----
 
 // ---- Truy vấn thẻ ----
 export async function getReview(wordId: string): Promise<ReviewRecord | undefined> {
@@ -66,14 +136,18 @@ export async function countDue(now = new Date()): Promise<number> {
   return db.reviews.where("due").belowOrEqual(now).count();
 }
 
-/** Ôn sớm: các thẻ CHƯA tới hạn (due > now), sắp tới hạn sớm nhất trước. */
+/** Ôn sớm: thẻ CHƯA tới hạn, KHÔNG đang ở bước học trong ngày (Learning/Relearning) và CHƯA ôn
+ *  hôm nay (ngày UTC — đúng cách ts-fsrs tính elapsed_days), xếp "sắp quên nhất trước" rồi rút
+ *  ngẫu nhiên trong nhóm gấp đôi. Vì sao không xếp theo due gần nhất: xem đầu lib/srs-ahead.ts.
+ *  Kết quả ĐÃ xáo, nơi gọi không cần xáo lại. */
 export async function getAheadReviews(now = new Date(), limit = 20): Promise<ReviewRecord[]> {
   const rows = await db.reviews.where("due").above(now).toArray();
-  rows.sort((a, b) => new Date(a.due).getTime() - new Date(b.due).getTime());
-  return rows.slice(0, limit);
+  return pickAhead(rows, now, limit, forgettingCurve);
 }
+/** Số thẻ ôn sớm hiện trên nút — CÙNG bộ lọc với phiên thật (không phải mọi thẻ due > now). */
 export async function countAhead(now = new Date()): Promise<number> {
-  return db.reviews.where("due").above(now).count();
+  const rows = await db.reviews.where("due").above(now).toArray();
+  return rows.filter((r) => isAheadEligible(r, now)).length;
 }
 
 /** Từ "hay quên" (leech): số lần trả lời sai (lapses) từ 3 trở lên. */
@@ -114,51 +188,125 @@ export async function recordAnswer(opts: {
   now?: Date;
 }): Promise<{ prev: ReviewRecord | undefined; next: ReviewRecord; date: string }> {
   const now = opts.now ?? new Date();
-  const existing = await db.reviews.get(opts.wordId);
-  const card = existing ? recordToCard(existing) : newCard(now);
-  const next = opts.rating != null ? scheduleRated(card, opts.rating, now) : schedule(card, opts.correct, now);
-  const rec: ReviewRecord = {
-    wordId: opts.wordId,
-    level: opts.level,
-    introducedOn: existing?.introducedOn ?? todayStr(now),
-    ...cardToRecordFields(next),
-  };
-  await db.reviews.put(rec);
-
-  // cập nhật thống kê ngày
   const date = todayStr(now);
-  await db.transaction("rw", db.daily, async () => {
+  let existing: ReviewRecord | undefined;
+  let rec!: ReviewRecord;
+  // Thẻ, revlog và thống kê ngày ghi trong CÙNG transaction: tách ra thì tắt máy đúng giữa
+  // hai bước làm lệch số liệu ngày so với lịch FSRS; revlog được await → Hoàn tác gỡ được
+  // dòng log chắc chắn. Ghi hỏng (riêng tư/quota/tab cũ) → báo banner StorageAlert rồi ném tiếp.
+  await db.transaction("rw", [db.reviews, db.revlog, db.daily], async () => {
+    existing = await db.reviews.get(opts.wordId);
+    const card = existing ? recordToCard(existing) : newCard(now);
+    // Thẻ "đã biết sẵn" trả lời ĐÚNG → lịch nới, giữ cờ; SAI → lịch chặt, bỏ cờ (từ đã lộ là
+    // chưa thật biết). Cờ relearn luôn bỏ: thẻ học lại đã hiện xong, lần chấm này là mốc mới.
+    const keepKnown = !!existing?.known && opts.correct;
+    const next = keepKnown
+      ? scheduleKnown(card, opts.rating ?? RATING.right, now)
+      : opts.rating != null
+        ? scheduleRated(card, opts.rating, now)
+        : schedule(card, opts.correct, now);
+    rec = {
+      wordId: opts.wordId,
+      level: opts.level,
+      introducedOn: existing?.introducedOn ?? todayStr(now),
+      ...cardToRecordFields(next),
+      ...(keepKnown ? { known: existing!.known } : {}),
+    };
+    await db.reviews.put(rec);
+
+    // revlog là phụ trợ — lỗi (hết quota đĩa…) không được làm hỏng lần chấm.
+    await db.revlog
+      .add({
+        wordId: opts.wordId,
+        at: now.getTime(),
+        rating: (opts.rating as number | undefined) ?? (opts.correct ? 3 : 1),
+        state: card.state, // TRƯỚC khi chấm
+        elapsed_days: rec.elapsed_days,
+        scheduled_days: rec.scheduled_days,
+        stability: rec.stability,
+        difficulty: rec.difficulty,
+      })
+      .catch(() => {});
+
     const d = (await db.daily.get(date)) ?? { date, reviews: 0, newCount: 0, again: 0 };
     d.reviews += 1;
     if (opts.isNew) d.newCount += 1;
     if (!opts.correct) d.again += 1;
     await db.daily.put(d);
+  }).catch((e) => {
+    noteDbError(e);
+    throw e;
   });
+  invalidateProgressSummary();
+  pruneRevlogThrottled(now); // dọn nhật ký cũ (nhiều nhất 1 lần/ngày, fire-and-forget)
   return { prev: existing, next: rec, date };
 }
 
-/** "Đã biết rồi": tạo sẵn thẻ NHỚ BỀN (stability cao, due ~60 ngày) cho từ đã biết —
- *  không phải học lại từ đầu qua phiên từ mới (như HSK). */
+// revlog ghi 1 dòng/lượt chấm MÃI MÃI (~36k dòng/năm với 100 lượt/ngày) mà mục đích
+// (tối ưu FSRS cá nhân hoá) chỉ cần lịch sử gần đây → giữ 2 năm, dọn phần cũ hơn.
+// Không dọn thì đây là bảng phình vô hạn dễ chạm quota IndexedDB nhất.
+const REVLOG_RETENTION_MS = 2 * 365 * 86400000;
+function pruneRevlogThrottled(now: Date): void {
+  try {
+    const key = "fr.revlog.prunedOn";
+    const today = todayStr(now);
+    if (typeof localStorage === "undefined" || localStorage.getItem(key) === today) return;
+    localStorage.setItem(key, today);
+  } catch {
+    return; // không đọc/ghi được mốc → thôi, mai thử lại
+  }
+  // Phụ trợ — lỗi không được ảnh hưởng lần chấm (giống revlog.add trong recordAnswer).
+  void db.revlog
+    .where("at")
+    .below(now.getTime() - REVLOG_RETENTION_MS)
+    .delete()
+    .catch(() => {});
+}
+
+/** "Đã biết rồi": tạo thẻ hẹn KIỂM TRA sau 30–90 ngày (srs-pure knownRecord) cho từ chưa học —
+ *  khỏi học lại từ đầu qua phiên từ mới, không chiếm suất từ mới trong ngày, không cộng XP.
+ *  Trả false nếu không ghi (từ đã có thẻ). */
 export async function markKnown(wordId: string, level: number, now = new Date()): Promise<boolean> {
-  if (await db.reviews.get(wordId)) return false;
-  const due = new Date(now);
-  due.setDate(due.getDate() + 60);
-  await db.reviews.put({
-    wordId,
-    level,
-    due,
-    stability: 60,
-    difficulty: 5,
-    elapsed_days: 0,
-    scheduled_days: 60,
-    reps: 1,
-    lapses: 0,
-    learning_steps: 0,
-    state: 2, // Review
-    last_review: now,
-    introducedOn: todayStr(now),
+  if (level <= 0) return false;
+  const wrote = await db.transaction("rw", db.reviews, async () => {
+    if (await db.reviews.get(wordId)) return false;
+    await db.reviews.put(knownRecord(wordId, level, now));
+    return true;
   });
-  return true;
+  if (wrote) invalidateProgressSummary();
+  return wrote;
+}
+
+/** Hoàn tác "Đã biết rồi" vừa bấm: xoá thẻ nếu nó VẪN là thẻ đã-biết chưa ôn lần nào. */
+export async function undoMarkKnown(wordId: string): Promise<void> {
+  await db.transaction("rw", db.reviews, async () => {
+    const r = await db.reviews.get(wordId);
+    if (r?.known && (r.reps ?? 0) <= 1) await db.reviews.delete(wordId);
+  });
+  invalidateProgressSummary();
+}
+
+/** "Thật ra chưa chắc → học lại": đưa thẻ về như từ mới, đến hạn NGAY, phiên ôn kế hiện thẻ học
+ *  trước câu hỏi (cờ relearn). KHÔNG xoá bản ghi: đồng bộ không có tombstone cho thẻ ôn, xoá thì
+ *  máy khác đẩy thẻ cũ về lại. Giữ reps + last_review = now để bản này thắng khi gộp. */
+export async function relearnWord(wordId: string, now = new Date()): Promise<boolean> {
+  const wrote = await db.transaction("rw", db.reviews, async () => {
+    const r = await db.reviews.get(wordId);
+    if (!r) return false;
+    await db.reviews.put({
+      wordId,
+      level: r.level,
+      introducedOn: r.introducedOn,
+      ...cardToRecordFields(newCard(now)),
+      reps: r.reps,
+      lapses: r.lapses,
+      last_review: now,
+      relearn: true,
+    });
+    return true;
+  });
+  if (wrote) invalidateProgressSummary();
+  return wrote;
 }
 
 /** Hoàn tác lần chấm vừa rồi: khôi phục bản ghi FSRS cũ + trừ lại thống kê ngày. */
@@ -169,17 +317,26 @@ export async function undoAnswer(opts: {
   isNew: boolean;
   date?: string; // ngày của lần chấm (trừ đúng ngày kể cả undo qua nửa đêm)
 }): Promise<void> {
-  if (opts.prev) await db.reviews.put(opts.prev);
-  else await db.reviews.delete(opts.wordId);
   const date = opts.date ?? todayStr();
-  await db.transaction("rw", db.daily, async () => {
+  await db.transaction("rw", [db.reviews, db.revlog, db.daily], async () => {
+    if (opts.prev) await db.reviews.put(opts.prev);
+    else await db.reviews.delete(opts.wordId);
+    // gỡ dòng revlog CUỐI của từ (lượt chấm vừa bị hoàn tác) — trong cùng wordId, index
+    // IndexedDB sắp theo khoá chính (= thứ tự ghi) nên .last() chính là dòng mới nhất, O(1).
+    const last = await db.revlog.where("wordId").equals(opts.wordId).last();
+    if (last?.id != null) await db.revlog.delete(last.id);
     const d = await db.daily.get(date);
     if (!d) return;
     d.reviews = Math.max(0, d.reviews - 1);
     if (opts.isNew) d.newCount = Math.max(0, d.newCount - 1);
     if (!opts.correct) d.again = Math.max(0, d.again - 1);
     await db.daily.put(d);
+  }).catch((e) => {
+    // hoàn tác hỏng phải NỔI banner + ném tiếp — nơi gọi giữ nút Hoàn tác để thử lại
+    noteDbError(e);
+    throw e;
   });
+  invalidateProgressSummary();
 }
 
 // ---- Mẹo nhớ tự ghi (mnemonic) ----
@@ -200,6 +357,7 @@ export async function addXp(n: number): Promise<void> {
     row.xp += n;
     await db.gamify.put(row);
   });
+  invalidateProgressSummary();
 }
 export async function getXp(): Promise<number> {
   return (await db.gamify.get("state"))?.xp ?? 0;
@@ -207,6 +365,7 @@ export async function getXp(): Promise<number> {
 export async function setXp(xp: number): Promise<void> {
   const row = (await db.gamify.get("state")) ?? { key: "state", xp: 0 };
   await db.gamify.put({ ...row, xp });
+  invalidateProgressSummary();
 }
 
 // ---- 🧊 Đóng băng chuỗi: lỡ 1 ngày không mất chuỗi ----
@@ -238,32 +397,32 @@ export async function applyStreakFreeze(daily: DailyStat[], today = todayStr()):
 
   // 2) Tặng freeze theo mốc 7 ngày chuỗi (mỗi mốc tặng 1 lần).
   const streak = computeStreak([...active], today);
-  const granted = row.grantStreak ?? 0;
+  // Chuỗi ĐỨT rồi xây lại thì mốc đã tặng của chuỗi cũ phải bỏ đi: trước đây đứt ở 14 ngày
+  // thì phải leo tới 21 mới lại được tặng, trái với dòng mô tả "mỗi mốc chuỗi 7 ngày tặng 1".
+  // (Khi sync 2 máy, grantStreak lấy MAX nên máy kia có thể kéo mốc cũ về — chấp nhận: phần
+  // thưởng là số freeze thì đã merge đúng, chỉ mốc đếm là xấp xỉ.)
+  const granted = streak < (row.grantStreak ?? 0) ? 0 : (row.grantStreak ?? 0);
   if (Math.floor(streak / 7) > Math.floor(granted / 7) && (row.freezes ?? 0) < FREEZE_CAP) {
     row.freezes = Math.min(FREEZE_CAP, (row.freezes ?? 0) + 1);
     row.grantStreak = streak;
+    await db.gamify.put(row);
+  } else if (granted !== (row.grantStreak ?? 0)) {
+    row.grantStreak = granted;
     await db.gamify.put(row);
   }
   return row;
 }
 
-// Chuỗi ngày liên tiếp có hoạt động (kết thúc hôm nay hoặc hôm qua).
-export function computeStreak(dates: string[], today = todayStr()): number {
-  const set = new Set(dates);
-  // ngày bắt đầu đếm: hôm nay nếu có hoạt động, ngược lại hôm qua (cho phép "chưa học hôm nay")
-  const d = new Date(today + "T00:00:00");
-  if (!set.has(todayStr(d))) d.setDate(d.getDate() - 1);
-  let streak = 0;
-  while (set.has(todayStr(d))) {
-    streak++;
-    d.setDate(d.getDate() - 1);
-  }
-  return streak;
-}
 
 export interface ProgressSummary {
+  // words / byLevel / matured là số liệu THÀNH TÍCH (quân hàm, huy hiệu): KHÔNG tính từ đã-biết-sẵn
+  // chưa qua lần kiểm tra đầu — bấm "Đã biết" 1.000 lần không được thành 1.000 "từ đã học".
   words: number; // tổng từ đã học
   byLevel: Record<number, number>; // số từ đã học theo cấp
+  // Độ PHỦ vốn từ (thanh tiến độ cấp): mọi thẻ, kể cả từ đã biết sẵn chưa kiểm tra.
+  coverageByLevel: Record<number, number>;
+  knownByLevel: Record<number, number>; // số từ đánh dấu "đã biết sẵn" theo cấp (đã/chưa kiểm tra)
+  knownPending: number; // từ đã biết sẵn đang chờ lần kiểm tra đầu
   reviews: number; // tổng lượt ôn mọi ngày
   correct: number; // tổng lượt trả lời đúng (reviews - again)
   reads: number; // số bài đã đọc
@@ -275,9 +434,36 @@ export interface ProgressSummary {
   maxDayReviews: number; // số lượt ôn cao nhất trong 1 ngày
   weekend: boolean; // từng học vào T7/CN
   daily: DailyStat[]; // sắp theo ngày tăng dần
+  redeemedLeeches: number; // từ hay quên (lapses ≥4) đã đạt nhớ bền — huy hiệu Săn Kraken
+  maxCombo: number; // chuỗi đúng liên tiếp dài nhất một phiên (gamify, max-merge)
+  longestStreak: number; // chuỗi ngày dài nhất từng đạt (kể cả ngày đóng băng, như streak)
+  comebackDays: number; // quãng nghỉ dài nhất đã quay lại học — huy hiệu Tái xuất
+  perfectDay: boolean; // từng có ngày ≥20 lượt ôn, 0 sai
 }
 
-export async function progressSummary(): Promise<ProgressSummary> {
+// progressSummary quét TOÀN BỘ bảng reviews (12k dòng) + daily + reads. Header (LevelChip),
+// trang chủ (HomeStats) và lưới cấp cùng gọi mỗi lần điều hướng → 3 lần quét y hệt nhau cách
+// nhau vài mili giây. Gộp các lời gọi sát nhau vào một lần quét; mọi hàm GHI đều xoá cache
+// nên số liệu không bao giờ cũ hơn thao tác của người dùng.
+const SUMMARY_TTL_MS = 1500;
+let summaryCache: { at: number; p: Promise<ProgressSummary> } | null = null;
+
+export function invalidateProgressSummary(): void {
+  summaryCache = null;
+}
+
+export function progressSummary(): Promise<ProgressSummary> {
+  const now = Date.now();
+  if (summaryCache && now - summaryCache.at < SUMMARY_TTL_MS) return summaryCache.p;
+  const p = computeProgressSummary().catch((e) => {
+    summaryCache = null;
+    throw e;
+  });
+  summaryCache = { at: now, p };
+  return p;
+}
+
+async function computeProgressSummary(): Promise<ProgressSummary> {
   const [reviews, dailyRows, xp, readRows] = await Promise.all([
     db.reviews.toArray(),
     db.daily.toArray(),
@@ -288,38 +474,121 @@ export async function progressSummary(): Promise<ProgressSummary> {
   const gamifyRow = await applyStreakFreeze(dailyRows);
   const frozenDates = gamifyRow.frozenDates ?? [];
   const byLevel: Record<number, number> = {};
-  for (const r of reviews) byLevel[r.level] = (byLevel[r.level] || 0) + 1;
+  const coverageByLevel: Record<number, number> = {};
+  const knownByLevel: Record<number, number> = {};
+  let knownPending = 0;
+  for (const r of reviews) {
+    coverageByLevel[r.level] = (coverageByLevel[r.level] || 0) + 1;
+    if (r.known) knownByLevel[r.level] = (knownByLevel[r.level] || 0) + 1;
+    if (isKnownPending(r)) knownPending++;
+    else byLevel[r.level] = (byLevel[r.level] || 0) + 1;
+  }
   const daily = dailyRows.sort((a, b) => a.date.localeCompare(b.date));
   const reviewsTotal = daily.reduce((s, d) => s + d.reviews, 0);
   const correctTotal = daily.reduce((s, d) => s + Math.max(0, d.reviews - d.again), 0);
   const activeDays = daily.filter((d) => d.reviews > 0).length;
-  const matured = reviews.filter((r) => (r.stability ?? 0) >= 21).length;
+  const matured = reviews.filter((r) => (r.stability ?? 0) >= MATURE_STABILITY && !isKnownPending(r)).length;
   const maxDayReviews = daily.reduce((m, d) => Math.max(m, d.reviews), 0);
   const weekend = daily.some((d) => {
     const wd = new Date(d.date + "T00:00:00").getDay();
     return d.reviews > 0 && (wd === 0 || wd === 6);
   });
+  const activeDates = daily.filter((d) => d.reviews > 0).map((d) => d.date);
+  // Kraken thuần phục: từng là leech (quên ≥4 lần) mà VẪN leo được tới nhớ bền.
+  const redeemedLeeches = reviews.filter(
+    (r) => (r.lapses ?? 0) >= LEECH_LAPSES && (r.stability ?? 0) >= MATURE_STABILITY,
+  ).length;
   return {
-    words: reviews.length,
+    words: reviews.length - knownPending,
     byLevel,
+    coverageByLevel,
+    knownByLevel,
+    knownPending,
     reviews: reviewsTotal,
     correct: correctTotal,
     reads: readsCount,
     xp,
-    streak: computeStreak([...daily.filter((d) => d.reviews > 0).map((d) => d.date), ...frozenDates]),
+    streak: computeStreak([...activeDates, ...frozenDates]),
     freezes: gamifyRow.freezes ?? 0,
     activeDays,
     matured,
     maxDayReviews,
     weekend,
     daily,
+    redeemedLeeches,
+    maxCombo: gamifyRow.maxCombo ?? 0,
+    longestStreak: longestStreak([...activeDates, ...frozenDates]), // cùng luật với streak (ngày đóng băng tính như có học)
+    comebackDays: maxComebackGap(activeDates),
+    perfectDay: daily.some((d) => d.reviews >= 20 && d.again === 0),
   };
+}
+
+/** Ghi kỷ lục combo của phiên (chỉ khi vượt kỷ lục cũ) — nguồn cho huy hiệu "Loạt pháo". */
+export async function updateMaxCombo(combo: number): Promise<void> {
+  if (combo <= 0) return;
+  await db.transaction("rw", db.gamify, async () => {
+    const row = (await db.gamify.get("state")) ?? { key: "state", xp: 0 };
+    if (combo <= (row.maxCombo ?? 0)) return;
+    row.maxCombo = combo;
+    await db.gamify.put(row);
+  });
+  invalidateProgressSummary();
+}
+
+// ---- Nhiệm vụ ngày (lib/quests.ts là phần thuần; đây là phần đọc DB + nhận thưởng) ----
+export interface TodayQuests {
+  quests: QuestProgress[];
+  claimed: Set<string>; // id nhiệm vụ HÔM NAY đã nhận thưởng
+  justGranted: number; // XP vừa cộng trong lời gọi này (0 = không có gì mới)
+}
+
+/** Tiến độ 3 nhiệm vụ hôm nay + TỰ NHẬN thưởng cho nhiệm vụ vừa hoàn thành (idempotent:
+ *  khoá "ngày:id" trong gamify.questsDone, union khi sync nên hai máy không cộng kép). */
+export async function todayQuests(now = new Date()): Promise<TodayQuests> {
+  const date = todayStr(now);
+  const [day, readRows] = await Promise.all([db.daily.get(date), db.reads.toArray()]);
+  const reads = readRows.filter((r) => readActive(r) && todayStr(new Date(r.readAt)) === date).length;
+  const m = {
+    reviews: day?.reviews ?? 0,
+    newCount: day?.newCount ?? 0,
+    again: day?.again ?? 0,
+    correct: Math.max(0, (day?.reviews ?? 0) - (day?.again ?? 0)),
+    reads,
+  };
+  const quests = dailyQuests(date).map((q) => questProgress(q, m));
+
+  let justGranted = 0;
+  const claimed = new Set<string>();
+  await db.transaction("rw", db.gamify, async () => {
+    const row = (await db.gamify.get("state")) ?? { key: "state", xp: 0 };
+    const doneKeys = new Set(row.questsDone ?? []);
+    for (const p of quests) {
+      const k = questKey(date, p.def.id);
+      if (doneKeys.has(k)) {
+        claimed.add(p.def.id);
+        continue;
+      }
+      if (!p.done) continue;
+      doneKeys.add(k);
+      claimed.add(p.def.id);
+      justGranted += p.def.xp;
+    }
+    if (justGranted > 0) {
+      row.xp += justGranted;
+      row.questsDone = pruneQuestKeys([...doneKeys], date);
+      await db.gamify.put(row);
+    }
+  });
+  if (justGranted > 0) invalidateProgressSummary();
+  return { quests, claimed, justGranted };
 }
 
 // ---- Sao lưu / khôi phục (như HSK) ----
 
+export const BACKUP_APP = "fr-words";
+
 export interface BackupData {
-  app: "fr-words";
+  app: string;
   version: number;
   exportedAt: string;
   reviews: ReviewRecord[];
@@ -328,18 +597,23 @@ export interface BackupData {
   config?: { key: string; value: SrsConfig }[];
   gamify?: GamifyRow[];
   notes?: NoteRow[];
+  revlog?: RevlogRow[]; // nhật ký lượt chấm (nền tối ưu FSRS) — đổi máy không mất
   phonics?: string[]; // bài phát âm đã học (localStorage)
   grammar?: string[]; // bài ngữ pháp đã học (localStorage)
 }
 
+const PHONICS_KEY = "fr.phonicsDone";
+const GRAMMAR_KEY = "fr.grammarDone";
+
 export async function exportData(): Promise<BackupData> {
-  const [reviews, daily, reads, config, gamify, notes] = await Promise.all([
+  const [reviews, daily, reads, config, gamify, notes, revlog] = await Promise.all([
     db.reviews.toArray(),
     db.daily.toArray(),
     db.reads.toArray(),
     db.config.toArray(),
     db.gamify.toArray(),
     db.notes.toArray(),
+    db.revlog.toArray(),
   ]);
   const local = (k: string): string[] => {
     try {
@@ -349,43 +623,81 @@ export async function exportData(): Promise<BackupData> {
     }
   };
   return {
-    app: "fr-words",
-    version: 4,
+    app: BACKUP_APP,
+    version: 5, // v5: thêm revlog (nhật ký từng lượt chấm)
     exportedAt: new Date().toISOString(),
-    reviews, daily, reads, config, gamify, notes,
-    phonics: local("fr.phonicsDone"),
-    grammar: local("fr.grammarDone"),
+    reviews, daily, reads, config, gamify, notes, revlog,
+    phonics: local(PHONICS_KEY),
+    grammar: local(GRAMMAR_KEY),
   };
 }
 
 // JSON biến Date → chuỗi ISO; phải hồi sinh để Dexie index `due` so sánh đúng kiểu.
 function reviveReview(r: ReviewRecord): ReviewRecord {
-  return { ...r, due: new Date(r.due), last_review: r.last_review ? new Date(r.last_review) : undefined };
+  return upgradeLegacyKnown({ ...r, due: new Date(r.due), last_review: r.last_review ? new Date(r.last_review) : undefined });
 }
 
 export async function importData(
   data: BackupData,
   mode: "replace" | "merge" = "replace",
 ): Promise<{ reviews: number; daily: number }> {
-  if (data?.app !== "fr-words" || !Array.isArray(data.reviews))
+  if (data?.app !== BACKUP_APP || !Array.isArray(data.reviews))
     throw new Error("Tệp sao lưu không hợp lệ (thiếu trường bắt buộc).");
-  await db.transaction("rw", [db.reviews, db.daily, db.reads, db.config, db.gamify, db.notes], async () => {
+  const fileReviews = data.reviews.map(reviveReview);
+  await db.transaction("rw", [db.reviews, db.daily, db.reads, db.config, db.gamify, db.notes, db.revlog], async () => {
     if (mode === "replace") {
       await Promise.all([db.reviews.clear(), db.daily.clear(), db.reads.clear(), db.config.clear(), db.gamify.clear(), db.notes.clear()]);
+      await db.reviews.bulkPut(fileReviews);
+      if (Array.isArray(data.daily)) await db.daily.bulkPut(data.daily);
+      if (Array.isArray(data.reads)) await db.reads.bulkPut(data.reads);
+      if (Array.isArray(data.gamify)) await db.gamify.bulkPut(data.gamify);
+      if (Array.isArray(data.notes)) await db.notes.bulkPut(data.notes);
+      // revlog: CHỈ đụng khi tệp thật sự mang revlog — backup cũ (trước v5, không có trường
+      // này) mà cũng clear thì xoá oan nhật ký local, dữ liệu tệp chưa bao giờ đại diện.
+      // Bỏ id cũ để ++id cấp lại — tránh đè dòng nếu DB đích đã có revlog.
+      if (Array.isArray(data.revlog)) {
+        await db.revlog.clear();
+        await db.revlog.bulkAdd(data.revlog.map(({ id: _id, ...r }) => r));
+      }
+    } else {
+      // GỘP THẬT: dùng đúng luật hội tụ của đồng bộ (bản ôn mới hơn thắng, daily lấy MAX,
+      // đọc/mẹo nhớ lấy hành động sau cùng). Trước đây merge chỉ là bulkPut không clear →
+      // bản trong TỆP luôn thắng, nhập lại backup cũ là tiến độ thụt lùi rồi bị sync đẩy lên cloud.
+      const [curReviews, curDaily, curReads, curNotes, curGamify] = await Promise.all([
+        db.reviews.toArray(),
+        db.daily.toArray(),
+        db.reads.toArray(),
+        db.notes.toArray(),
+        db.gamify.get("state"),
+      ]);
+      await db.reviews.bulkPut(mergeReviews(curReviews, fileReviews));
+      if (Array.isArray(data.daily)) await db.daily.bulkPut(mergeDaily(curDaily, data.daily));
+      if (Array.isArray(data.reads)) await db.reads.bulkPut(mergeReads(curReads, data.reads));
+      if (Array.isArray(data.notes)) await db.notes.bulkPut(mergeNotes(curNotes, data.notes));
+      const fileGamify = data.gamify?.find((g) => g.key === "state");
+      if (fileGamify) await db.gamify.put(mergeGamify(curGamify ?? { key: "state", xp: 0 }, fileGamify));
+      // revlog: gộp theo (wordId, at) — nhập lại cùng backup không nhân đôi dòng.
+      if (Array.isArray(data.revlog)) {
+        const seen = new Set((await db.revlog.toArray()).map((r) => `${r.wordId}|${r.at}`));
+        const fresh = data.revlog.filter((r) => !seen.has(`${r.wordId}|${r.at}`));
+        if (fresh.length) await db.revlog.bulkAdd(fresh.map(({ id: _id, ...r }) => r));
+      }
     }
-    await db.reviews.bulkPut(data.reviews.map(reviveReview));
-    if (Array.isArray(data.daily)) await db.daily.bulkPut(data.daily);
-    if (Array.isArray(data.reads)) await db.reads.bulkPut(data.reads);
+    // Cài đặt không có mốc thời gian để so → tệp thắng ở cả hai chế độ (như trước).
     if (Array.isArray(data.config)) await db.config.bulkPut(data.config);
-    if (Array.isArray(data.gamify)) await db.gamify.bulkPut(data.gamify);
-    if (Array.isArray(data.notes)) await db.notes.bulkPut(data.notes);
   });
   try {
-    if (Array.isArray(data.phonics)) localStorage.setItem("fr.phonicsDone", JSON.stringify(data.phonics));
-    if (Array.isArray(data.grammar)) localStorage.setItem("fr.grammarDone", JSON.stringify(data.grammar));
+    const mergeLocal = (k: string, ids: string[]) => {
+      if (mode === "replace") return localStorage.setItem(k, JSON.stringify(ids));
+      const cur = JSON.parse(localStorage.getItem(k) ?? "[]") as string[];
+      localStorage.setItem(k, JSON.stringify(mergeIdSet(cur, ids)));
+    };
+    if (Array.isArray(data.phonics)) mergeLocal(PHONICS_KEY, data.phonics);
+    if (Array.isArray(data.grammar)) mergeLocal(GRAMMAR_KEY, data.grammar);
   } catch {
     /* bỏ qua */
   }
+  invalidateProgressSummary();
   return { reviews: data.reviews.length, daily: data.daily?.length ?? 0 };
 }
 
@@ -394,8 +706,11 @@ const readActive = (r: ReadRow | undefined): boolean => !!r && (!r.removedAt || 
 export async function markRead(id: string, read = true): Promise<void> {
   const now = new Date().toISOString();
   const cur = await db.reads.get(id);
-  if (read) await db.reads.put({ id, readAt: now, removedAt: cur?.removedAt });
+  // KHÔNG được để key `removedAt: undefined` — IndexedDB nhận nhưng Firestore từ chối
+  // ("Unsupported field value: undefined") và làm hỏng CẢ batch, chặn toàn bộ đồng bộ.
+  if (read) await db.reads.put({ id, readAt: now, ...(cur?.removedAt ? { removedAt: cur.removedAt } : {}) });
   else if (cur) await db.reads.put({ ...cur, removedAt: now }); // tombstone — sync không "hồi sinh"
+  invalidateProgressSummary();
 }
 export async function isRead(id: string): Promise<boolean> {
   return readActive(await db.reads.get(id));
@@ -414,4 +729,5 @@ export async function recordPractice(correct: boolean, now = new Date()): Promis
     if (!correct) d.again += 1;
     await db.daily.put(d);
   });
+  invalidateProgressSummary();
 }

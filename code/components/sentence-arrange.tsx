@@ -2,28 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Volume2 } from "lucide-react";
-import { sentenceAudioUrl } from "@/lib/tts";
+import { sentenceAudioUrl, playAudio as play, stopAudio as stop } from "@/lib/tts";
 import { cn } from "@/lib/utils";
-
-let current: HTMLAudioElement | null = null;
-function play(url: string) {
-  try {
-    current?.pause();
-  } catch {
-    /* noop */
-  }
-  const a = new Audio(url);
-  current = a;
-  a.play().catch(() => {});
-}
-function stop() {
-  try {
-    current?.pause();
-  } catch {
-    /* noop */
-  }
-  current = null;
-}
 
 function shuffle<T>(a: T[]): T[] {
   const r = [...a];
@@ -39,11 +19,15 @@ export default function SentenceArrange({
   vi,
   tokens,
   onNext,
+  showVi = false,
+  autoPlay = true,
 }: {
   fr: string;
   vi: string;
   tokens: string[];
   onNext: (correct: boolean) => void;
+  showVi?: boolean; // hiện nghĩa VI ngay từ đầu; mặc định ẨN tới khi bấm Kiểm tra (cài đặt sentenceVi)
+  autoPlay?: boolean; // tự đọc câu khi Kiểm tra; false = cài đặt Âm thanh tắt (nút loa vẫn bấm được)
 }) {
   // bank giữ {token, id} để token trùng nhau vẫn phân biệt; xáo tránh ra đúng thứ tự luôn
   const initial = useMemo(() => {
@@ -71,16 +55,18 @@ export default function SentenceArrange({
   const check = useCallback(() => {
     const correct = answer.map((x) => x.t).join(" ") === tokens.join(" ");
     setChecked(correct);
-    play(sentenceAudioUrl(fr)); // tự đọc lại câu ngay khi kiểm tra (đúng/sai đều đọc)
-  }, [answer, tokens, fr]);
+    if (autoPlay) play(sentenceAudioUrl(fr)); // tự đọc lại câu ngay khi kiểm tra (đúng/sai đều đọc)
+  }, [answer, tokens, fr, autoPlay]);
 
   // Dừng audio khi rời câu (sang câu kế / thoát).
   useEffect(() => () => stop(), []);
 
   // Bàn phím: Enter/Space = Kiểm tra (khi xếp đủ) / Tiếp (khi đã chấm).
   useEffect(() => {
+    // e.repeat: giữ phím hơi lâu sinh chuỗi keydown lặp — cú "Kiểm tra" lặp thành "Tiếp"
+    // ngay lập tức, nhảy qua màn kết quả trước khi kịp nhìn.
     const onKey = (e: KeyboardEvent) => {
-      if (e.key !== "Enter" && e.key !== " ") return;
+      if ((e.key !== "Enter" && e.key !== " ") || e.repeat) return;
       e.preventDefault();
       if (checked !== null) onNext(checked);
       else if (tokens.length > 0 && answer.length === tokens.length) check();
@@ -107,7 +93,13 @@ export default function SentenceArrange({
                 <Volume2 className="h-4 w-4" />
               </button>
             </div>
-            <div className="mt-1.5 text-lg font-medium">{vi}</div>
+            {/* nghĩa VI: mặc định giấu tới khi kiểm tra — bản dịch mớm sẵn trật tự từ,
+                giấu đi thì phải dựng câu bằng ngữ pháp thật (audio vẫn nghe được để gợi ý) */}
+            {showVi || checked !== null ? (
+              <div className="mt-1.5 text-lg font-medium">{vi}</div>
+            ) : (
+              <div className="mt-1.5 text-sm italic text-muted-foreground">Nghĩa sẽ hiện sau khi kiểm tra</div>
+            )}
           </div>
 
           {/* câu đang dựng — chiều cao dự trữ cố định, không xô đẩy bố cục */}

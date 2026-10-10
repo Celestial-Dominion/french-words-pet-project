@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { GraduationCap, Zap, Brain, Plus, ChevronDown } from "lucide-react";
+import { GraduationCap, Zap, Brain, Plus, ChevronRight } from "lucide-react";
 import {
   countDue,
   countAhead,
@@ -13,15 +13,25 @@ import {
   learnedIds,
   newTodayCount,
   getConfig,
-  setConfig,
+  onConfigChanged,
   progressSummary,
 } from "@/lib/db";
+import {
+  loadWords,
+  loadExamplesForWords,
+  loadLemmaMap,
+  loadWordLevels,
+  type ExampleSentence,
+} from "@/lib/data";
+import { warmSession } from "@/lib/warm";
 import { genderTaught } from "@/lib/progress-local";
-import { loadWords, loadExamplesForWords, type ExampleSentence } from "@/lib/data";
+import { onSyncMerged } from "@/lib/sync";
 import { buildQuestions, type Question } from "@/lib/review-session";
-import { LEVELS } from "@/lib/levels";
 import type { Word, SrsConfig, ReviewRecord } from "@/lib/types";
 import ReviewRunner from "@/components/review-runner";
+import SyncRow from "@/components/sync-row";
+import DailyQuests from "@/components/daily-quests";
+import { openSettings } from "@/components/settings-sheet";
 
 export default function OnTapPage() {
   const [due, setDue] = useState(0);
@@ -32,6 +42,7 @@ export default function OnTapPage() {
   const [cfg, setCfg] = useState<SrsConfig | null>(null);
   const [session, setSession] = useState<{ qs: Question[]; title: string } | null>(null);
   const [busy, setBusy] = useState(false);
+  const [buildError, setBuildError] = useState<string | null>(null);
 
   const refresh = useCallback(async () => {
     const [d, a, h, sum, c, nToday] = await Promise.all([
@@ -50,46 +61,61 @@ export default function OnTapPage() {
     setRemainNew(Math.max(0, c.newPerDay - nToday));
   }, []);
   useEffect(() => {
+    // refresh() là async: mọi setState nằm SAU await nên không đồng bộ trong effect body.
+    // Rule không phân tích được qua useCallback async → tắt tại chỗ.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     refresh();
+    warmSession(); // đọc trước words + shard ví dụ trong lúc người dùng còn nhìn bảng điều khiển
   }, [refresh]);
-
-  // Xáo trộn (Fisher–Yates) — thẻ trong phiên ra ngẫu nhiên như HSK.
-  const shuffled = <T,>(arr: T[]): T[] => {
-    const a = [...arr];
-    for (let k = a.length - 1; k > 0; k--) {
-      const j = Math.floor(Math.random() * (k + 1));
-      [a[k], a[j]] = [a[j], a[k]];
-    }
-    return a;
-  };
+  // Vừa KÉO tiến độ máy khác về (bấm Đồng bộ / mở lại app) → đọc lại số đến hạn ngay,
+  // không bắt người dùng thoát ra vào lại mới thấy hai máy khớp nhau.
+  useEffect(() => onSyncMerged(() => void refresh()), [refresh]);
+  // Đổi cài đặt trong ngăn Cài đặt (mở được cả giữa phiên) → nhãn nút, số từ mới còn lại và
+  // phiên đang chạy (âm thanh, tự chuyển…) theo ngay.
+  useEffect(() => onConfigChanged(() => void refresh()), [refresh]);
 
   // Ghép câu hỏi từ danh sách bản ghi ôn (đến hạn/ôn sớm/hay quên).
+  // KHÔNG cần xáo trước: interleave() trong buildQuestions đã trộn toàn phiên
+  // bằng khoá ngẫu nhiên riêng — xáo ở đây là tầng chết.
   const buildFromRecords = async (records: ReviewRecord[], title: string) => {
     if (!records.length) return;
     setBusy(true);
-    const rows = shuffled(records);
-    const c = await getConfig();
-    const levels = [...new Set(rows.map((r) => r.level))];
-    const wordMap = new Map<string, Word>();
-    let examples: Record<string, ExampleSentence[]> = {};
-    const pool: Word[] = [];
-    for (const lv of levels) {
-      // chỉ tải shard ví dụ chứa đúng các từ trong phiên (không nạp cả file cấp)
-      const idsOfLevel = rows.filter((r) => r.level === lv).map((r) => r.wordId);
-      const [ws, ex] = await Promise.all([loadWords(lv), loadExamplesForWords(lv, idsOfLevel)]);
-      for (const w of ws) {
-        wordMap.set(w.id, w);
-        pool.push(w);
+    setBuildError(null);
+    try {
+      const rows = records;
+      const [c, known, lemmaMap, wordLevels] = await Promise.all([
+        getConfig(),
+        learnedIds(),
+        loadLemmaMap(),
+        loadWordLevels(),
+      ]);
+      const levels = [...new Set(rows.map((r) => r.level))];
+      const wordMap = new Map<string, Word>();
+      let examples: Record<string, ExampleSentence[]> = {};
+      const pool: Word[] = [];
+      for (const lv of levels) {
+        // chỉ tải shard ví dụ chứa đúng các từ trong phiên (không nạp cả file cấp)
+        const idsOfLevel = rows.filter((r) => r.level === lv).map((r) => r.wordId);
+        const [ws, ex] = await Promise.all([loadWords(lv), loadExamplesForWords(lv, idsOfLevel)]);
+        for (const w of ws) {
+          wordMap.set(w.id, w);
+          pool.push(w);
+        }
+        examples = { ...examples, ...ex };
       }
-      examples = { ...examples, ...ex };
+      const words = rows.map((r) => wordMap.get(r.wordId)).filter(Boolean) as Word[];
+      const recMap = new Map(rows.map((r) => [r.wordId, r]));
+      // câu chọn giống chỉ mở sau bài ngữ pháp về giống danh từ
+      const cEff = { ...c, genderQuestions: c.genderQuestions && genderTaught() };
+      const qs = buildQuestions(words, examples, pool, cEff, false, recMap, known, { lemmaMap, wordLevels });
+      // 0 câu (dữ liệu từ vựng tải hụt) → ReviewRunner render null = màn hình trắng kẹt.
+      if (!qs.length) throw new Error("Không dựng được câu hỏi");
+      setSession({ qs, title });
+    } catch {
+      setBuildError("Không tải được dữ liệu để bắt đầu phiên. Kiểm tra mạng rồi thử lại.");
+    } finally {
+      setBusy(false);
     }
-    const words = rows.map((r) => wordMap.get(r.wordId)).filter(Boolean) as Word[];
-    const recMap = new Map(rows.map((r) => [r.wordId, r]));
-    // ghép câu chỉ dùng câu toàn từ đã biết; câu chọn giống chỉ mở sau bài ngữ pháp về giống
-    const known = await learnedIds();
-    const cEff = { ...c, genderQuestions: c.genderQuestions && genderTaught() };
-    setSession({ qs: buildQuestions(words, examples, pool, cEff, false, recMap, known), title });
-    setBusy(false);
   };
 
   // Đến hạn: cắt theo "số thẻ mỗi phiên" (0 = tất cả) — thẻ còn lại ôn ở phiên sau.
@@ -103,13 +129,6 @@ export default function OnTapPage() {
   };
   const startAhead = async () => buildFromRecords(await getAheadReviews(new Date(), 20), "Ôn sớm");
   const startHard = async () => buildFromRecords(await getHardReviews(20), "Ôn từ hay quên");
-
-  const patch = async (p: Partial<SrsConfig>) => {
-    const next = await setConfig(p);
-    setCfg(next);
-    const nToday = await newTodayCount();
-    setRemainNew(Math.max(0, next.newPerDay - nToday));
-  };
 
   if (session && cfg) {
     return (
@@ -156,6 +175,10 @@ export default function OnTapPage() {
                 : "Chưa có thẻ để ôn"}
         </button>
 
+        {buildError && (
+          <p className="mt-2 rounded-xl bg-destructive/10 px-3 py-2 text-sm text-destructive">{buildError}</p>
+        )}
+
         {due > 0 && ahead > 0 && (
           <button
             onClick={startAhead}
@@ -185,140 +208,29 @@ export default function OnTapPage() {
         </Link>
       </div>
 
-      {/* Cài đặt */}
-      {cfg && (
-        <details className="group rounded-3xl border p-5">
-          <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-semibold text-muted-foreground [&::-webkit-details-marker]:hidden">
-            ⚙️ Cài đặt
-            <ChevronDown className="size-4 transition-transform group-open:rotate-180" />
-          </summary>
-          <div className="mt-5 space-y-5">
-            <label className="flex items-center justify-between gap-4">
-              <span className="text-sm font-medium">Từ mới mỗi ngày</span>
-              <input
-                type="number"
-                inputMode="numeric"
-                min={0}
-                max={200}
-                value={cfg.newPerDay}
-                onChange={(e) => patch({ newPerDay: Math.max(0, Math.min(200, Number(e.target.value) || 0)) })}
-                className="w-20 rounded-xl border bg-background px-3 py-2 text-right text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
-              />
-            </label>
+      {/* Nhiệm vụ ngày ngay dưới các nút ôn — vừa ôn xong quay ra là thấy thanh tiến độ nhích */}
+      <DailyQuests />
 
-            <label className="flex items-center justify-between gap-4">
-              <span className="text-sm font-medium">
-                Số thẻ ôn mỗi phiên
-                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">giới hạn thẻ đến hạn mỗi phiên cho đỡ nản; thẻ còn lại ôn ở phiên sau</span>
-              </span>
-              <select
-                value={cfg.reviewPerSession}
-                onChange={(e) => patch({ reviewPerSession: Number(e.target.value) })}
-                className="rounded-xl border bg-background px-3 py-2 text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
-              >
-                <option value={0}>Không giới hạn</option>
-                {[10, 20, 30, 50, 100].map((n) => (
-                  <option key={n} value={n}>
-                    {n} thẻ
-                  </option>
-                ))}
-              </select>
-            </label>
+      {/* Trạng thái đồng bộ ngay trong màn ôn tập (như HSK) — đang ôn vẫn thấy tiến độ đã lên
+          cloud chưa, không phải mở menu tài khoản. */}
+      <SyncRow />
 
-            <div className="flex items-center justify-between gap-4">
-              <span className="text-sm font-medium">Hướng hỏi</span>
-              <div className="inline-flex rounded-full border p-0.5 text-sm">
-                {([["fr2vi", "Pháp→nghĩa"], ["vi2fr", "Nghĩa→Pháp"]] as const).map(([val, label]) => (
-                  <button
-                    key={val}
-                    onClick={() => patch({ direction: val })}
-                    className={`rounded-full px-3 py-1.5 transition-colors ${
-                      cfg.direction === val ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <label className="flex items-center justify-between gap-4">
-              <span className="text-sm font-medium">Nguồn từ mới</span>
-              <select
-                value={cfg.newLevel}
-                onChange={(e) => patch({ newLevel: Number(e.target.value) })}
-                className="rounded-xl border bg-background px-3 py-2 text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
-              >
-                <option value={0}>Tự động (thấp → cao)</option>
-                {LEVELS.map((l) => (
-                  <option key={l.level} value={l.level}>
-                    {l.label}
-                  </option>
-                ))}
-              </select>
-            </label>
-
-            <label className="flex items-center justify-between gap-4">
-              <span className="text-sm font-medium">
-                Câu ghép mỗi từ
-                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">
-                  luyện sắp xếp câu sau trắc nghiệm — chỉ hiện khi đã học ≥40 từ và câu ví dụ gồm toàn từ bạn đã biết (tránh đoán mù)
-                </span>
-              </span>
-              <select
-                value={cfg.arrangePerWord}
-                onChange={(e) => patch({ arrangePerWord: Number(e.target.value) })}
-                className="rounded-xl border bg-background px-3 py-2 text-base outline-none focus:border-ring focus:ring-2 focus:ring-ring/40"
-              >
-                <option value={0}>Tắt</option>
-                <option value={1}>1 câu</option>
-                <option value={2}>2 câu</option>
-                <option value={3}>3 câu</option>
-                <option value={5}>5 câu (tất cả)</option>
-              </select>
-            </label>
-
-            <label className="flex items-center justify-between gap-4">
-              <span className="text-sm font-medium">
-                Câu chọn giống (un/une)
-                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">xen câu hỏi chọn mạo từ cho danh từ</span>
-              </span>
-              <input
-                type="checkbox"
-                checked={cfg.genderQuestions}
-                onChange={(e) => patch({ genderQuestions: e.target.checked })}
-                className="size-5 accent-primary"
-              />
-            </label>
-
-            <label className="flex items-center justify-between gap-4">
-              <span className="text-sm font-medium">
-                Nhớ lại trước
-                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">ẩn đáp án, tự nhớ trong đầu rồi mới bấm hiện (nhớ lâu hơn)</span>
-              </span>
-              <input
-                type="checkbox"
-                checked={cfg.recallFirst !== false}
-                onChange={(e) => patch({ recallFirst: e.target.checked })}
-                className="size-5 accent-primary"
-              />
-            </label>
-
-            <label className="flex items-center justify-between gap-4">
-              <span className="text-sm font-medium">
-                Tự chuyển khi đúng
-                <span className="mt-0.5 block text-xs font-normal text-muted-foreground">trả lời đúng → tự sang thẻ kế</span>
-              </span>
-              <input
-                type="checkbox"
-                checked={cfg.autoAdvance}
-                onChange={(e) => patch({ autoAdvance: e.target.checked })}
-                className="size-5 accent-primary"
-              />
-            </label>
-          </div>
-        </details>
-      )}
+      {/* Cài đặt — mở ngăn Cài đặt dùng chung (cùng ngăn với nút ⚙️ trên topbar): một chạm là thấy
+          đủ mọi mục, kể cả sao lưu, không phải trỏ qua lại giữa hai trang như trước. */}
+      <button
+        type="button"
+        onClick={openSettings}
+        aria-haspopup="dialog"
+        className="flex w-full items-center justify-between gap-3 rounded-3xl border p-5 text-left transition-colors hover:bg-muted/50"
+      >
+        <span className="min-w-0">
+          <span className="block text-sm font-semibold text-muted-foreground">⚙️ Cài đặt</span>
+          <span className="mt-0.5 block truncate text-xs text-muted-foreground">
+            Từ mới mỗi ngày, dạng bài, âm thanh, sao lưu…
+          </span>
+        </span>
+        <ChevronRight className="size-4 shrink-0 text-muted-foreground" />
+      </button>
     </div>
   );
 }

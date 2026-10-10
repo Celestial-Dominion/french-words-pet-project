@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import type { User } from "firebase/auth";
-import { LogIn, RefreshCw, LogOut, Check } from "lucide-react";
+import { LogIn, RefreshCw, LogOut, Check, AlertTriangle } from "lucide-react";
 import { firebaseEnabled, watchAuth, googleSignIn, signOutUser } from "@/lib/sync";
+import { getSyncStatus, getServerSyncStatus, onSyncStatus, isStale } from "@/lib/sync-status";
 import { cn } from "@/lib/utils";
 
 export default function AuthSync() {
@@ -12,6 +13,9 @@ export default function AuthSync() {
   const [open, setOpen] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
   const syncedOnce = useRef(false);
+  // S6: chỉ báo lỗi đồng bộ — sync hỏng nhiều lần liên tiếp thì hiện chấm đỏ trên avatar,
+  // để không âm thầm mất backup nhiều ngày mà không hay.
+  const status = useSyncExternalStore(onSyncStatus, getSyncStatus, getServerSyncStatus);
 
   useEffect(() => watchAuth(setUser), []);
 
@@ -47,13 +51,28 @@ export default function AuthSync() {
     const onHide = () => {
       if (document.visibilityState === "hidden") void doSync(user, true);
     };
+    // S3: QUAY LẠI app → kéo thay đổi từ máy khác. Rẻ nhờ fingerprint (không đổi = 1 getDoc).
+    // Chặn dội 15s: đủ gộp chuỗi visible+focus bắn liền nhau, nhưng KHÔNG chặn kiểu dùng
+    // thật trên iOS "tắt app xem máy kia rồi bật lại" — 60s như trước làm mấy lần bật lại
+    // đầu tiên không kéo gì, hai máy nhìn lệch nhau mãi.
+    let lastVisibleSync = 0;
+    const onShow = () => {
+      if (document.visibilityState !== "visible") return;
+      if (Date.now() - lastVisibleSync < 15_000) return;
+      lastVisibleSync = Date.now();
+      void doSync(user, true);
+    };
     window.addEventListener("fr:sync", onRequest);
     document.addEventListener("visibilitychange", onHide);
+    document.addEventListener("visibilitychange", onShow);
+    window.addEventListener("focus", onShow);
     window.addEventListener("pagehide", onHide);
     return () => {
       window.clearTimeout(t);
       window.removeEventListener("fr:sync", onRequest);
       document.removeEventListener("visibilitychange", onHide);
+      document.removeEventListener("visibilitychange", onShow);
+      window.removeEventListener("focus", onShow);
       window.removeEventListener("pagehide", onHide);
     };
   }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -68,7 +87,9 @@ export default function AuthSync() {
       const r = await syncNow(u.uid);
       // Sync tự động bị bỏ qua (không gì đổi) → im lặng; bấm tay thì vẫn báo.
       if (!(auto && r.skipped)) setMsg(r.skipped ? "Không có gì mới" : `Đã đồng bộ ${r.reviews} thẻ`);
-    } catch {
+    } catch (e) {
+      const { setSyncError } = await import("@/lib/sync-status");
+      setSyncError(e instanceof Error ? e.message : "Đồng bộ lỗi");
       setMsg("Đồng bộ lỗi");
     } finally {
       setBusy(false);
@@ -95,12 +116,13 @@ export default function AuthSync() {
   }
 
   const initial = (user.displayName || user.email || "?").charAt(0).toUpperCase();
+  const warn = isStale(status);
   return (
     <div className="relative">
       <button
         onClick={() => setOpen((o) => !o)}
-        className="grid size-9 place-items-center overflow-hidden rounded-full border bg-primary/10 text-sm font-bold text-primary"
-        aria-label="Tài khoản"
+        className="relative grid size-9 place-items-center overflow-hidden rounded-full border bg-primary/10 text-sm font-bold text-primary"
+        aria-label={warn ? "Tài khoản — đồng bộ đang lỗi" : "Tài khoản"}
       >
         {user.photoURL ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -109,6 +131,12 @@ export default function AuthSync() {
           initial
         )}
       </button>
+      {warn && (
+        <span
+          className="pointer-events-none absolute -right-0.5 -top-0.5 size-2.5 rounded-full bg-destructive ring-2 ring-background"
+          aria-hidden
+        />
+      )}
       {open && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
@@ -116,6 +144,17 @@ export default function AuthSync() {
             <div className="px-2 py-1.5 text-xs text-muted-foreground">
               {user.displayName || user.email}
             </div>
+            {warn && (
+              <div className="mb-1 flex items-start gap-1.5 rounded-lg bg-destructive/10 px-2 py-1.5 text-xs text-destructive">
+                <AlertTriangle className="mt-0.5 size-3.5 shrink-0" />
+                <span>
+                  Đồng bộ lỗi {status.failCount} lần.
+                  {status.lastOk
+                    ? ` Lần cuối thành công: ${new Date(status.lastOk).toLocaleDateString("vi")}.`
+                    : " Chưa từng đồng bộ được."}
+                </span>
+              </div>
+            )}
             <button
               onClick={() => doSync(user)}
               disabled={busy}

@@ -40,3 +40,26 @@ export function sentenceAudioUrl(fr: string): string {
 export function phonicsAudioUrl(say: string): string {
   return `${BASE}/audio/phonics/${hashLong(say)}.mp3`;
 }
+
+// ---- Phát audio: MỘT tiếng tại một thời điểm ----
+// Dùng chung cho cả app: trước đây mỗi component tự `new Audio().play()`, nên bấm loa liên tiếp
+// ở thẻ từ là chồng tiếng lên nhau.
+let currentAudio: HTMLAudioElement | null = null;
+
+/** Phát một file audio, dừng file đang phát (nếu có). Lỗi tải file được nuốt (audio là phụ trợ). */
+export function playAudio(url: string): HTMLAudioElement {
+  stopAudio();
+  const a = new Audio(url);
+  currentAudio = a;
+  a.play().catch(() => {});
+  return a;
+}
+
+export function stopAudio(): void {
+  try {
+    currentAudio?.pause();
+  } catch {
+    /* trình duyệt có thể ném khi audio chưa sẵn sàng */
+  }
+  currentAudio = null;
+}

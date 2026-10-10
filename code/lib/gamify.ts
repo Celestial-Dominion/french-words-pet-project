@@ -1,4 +1,9 @@
 // Gamification — theo theme cấp bậc quân đội Pháp. Logic thuần (không phụ thuộc DB).
+import { LEVELS } from "./levels";
+
+// Tổng từ của lộ trình A1–C2 — đọc từ dữ liệu thật trong levels.ts. Huy hiệu "học trọn / mọi cấp"
+// phải suy từ đây chứ không gõ tay con số: đổi bộ từ mà quên sửa là huy hiệu không bao giờ mở được.
+export const ROUTE_WORDS = LEVELS.reduce((n, l) => n + l.words, 0);
 
 // XP cộng khi hành động (giữ tinh thần +3/+5/+2 của app HSK).
 export const XP = { newWord: 5, review: 3, practice: 2, perfectSession: 20 } as const;
@@ -65,6 +70,12 @@ export interface Stats {
   maxDayReviews: number; // lượt ôn cao nhất trong 1 ngày
   weekend: boolean; // từng học cuối tuần
   byLevel: Record<number, number>; // số từ đã học theo cấp
+  // ---- nhóm "năng lực" (thưởng việc KHÓ, không phải việc NHIỀU) + kỷ lục/tái xuất ----
+  redeemedLeeches: number; // từ HAY QUÊN đã thuần phục: quên ≥4 lần mà VẪN đạt nhớ bền
+  maxCombo: number; // chuỗi trả lời đúng liên tiếp dài nhất trong một phiên
+  longestStreak: number; // chuỗi ngày dài nhất TỪNG đạt (kỷ lục, không mất khi đứt)
+  comebackDays: number; // quãng nghỉ dài nhất (ngày) mà sau đó ĐÃ quay lại học
+  perfectDay: boolean; // từng có ngày ≥20 lượt ôn không sai câu nào
 }
 
 // ---- Huy hiệu theo NHÓM nhiều bậc (như HSK) ----
@@ -75,7 +86,10 @@ export interface BadgeGroup {
   desc: string; // mô tả ngắn
   lore: string; // lời dẫn
   icon: string; // emoji đại diện
-  metric: keyof Pick<Stats, "words" | "streak" | "xp" | "reviews" | "correct" | "reads" | "activeDays" | "matured" | "maxDayReviews">;
+  metric: keyof Pick<
+    Stats,
+    "words" | "streak" | "xp" | "reviews" | "correct" | "reads" | "activeDays" | "matured" | "maxDayReviews" | "redeemedLeeches" | "maxCombo" | "longestStreak"
+  >;
   unit: string;
   tiers: number[];
 }
@@ -84,7 +98,7 @@ export const BADGE_GROUPS: BadgeGroup[] = [
   {
     group: "words", name: "Chiêu binh", desc: "Số từ đã học", icon: "🎖️",
     lore: "Mỗi từ thuộc lòng là một tân binh gia nhập đội ngũ. Quân số càng đông, sức mạnh Pháp ngữ càng lớn.",
-    metric: "words", unit: "từ", tiers: [10, 25, 50, 100, 250, 500, 1000, 2000, 3500, 5000, 7500, 9000, 11000],
+    metric: "words", unit: "từ", tiers: [10, 25, 50, 100, 250, 500, 1000, 2000, 3500, 5000, 7500, 9000, ROUTE_WORDS],
   },
   {
     group: "streak", name: "Trực chiến", desc: "Chuỗi ngày liên tiếp", icon: "🔥",
@@ -109,7 +123,7 @@ export const BADGE_GROUPS: BadgeGroup[] = [
   {
     group: "matured", name: "Cựu binh", desc: "Từ nhớ bền (dài hạn)", icon: "🏅",
     lore: "Từ đã in sâu vào trí nhớ dài hạn (ổn định ≥ 3 tuần) — không phải nhớ tạm rồi quên. Đây mới là vốn từ THẬT.",
-    metric: "matured", unit: "từ", tiers: [25, 100, 300, 800, 2000, 4000, 7000, 11000],
+    metric: "matured", unit: "từ", tiers: [25, 100, 300, 800, 2000, 4000, 7000, ROUTE_WORDS],
   },
   {
     group: "maxday", name: "Tổng lực", desc: "Lượt ôn nhiều nhất trong 1 ngày", icon: "⚡",
@@ -126,17 +140,27 @@ export const BADGE_GROUPS: BadgeGroup[] = [
     lore: "Đếm số ngày bạn ra thao trường. Đường dài mới biết ngựa hay — góp ngày thành chiến dịch.",
     metric: "activeDays", unit: "ngày", tiers: [3, 10, 30, 60, 100, 200, 300, 365, 500, 730],
   },
+  // ---- nhóm NĂNG LỰC: thưởng việc khó (SDT — competence bền hơn khối lượng) ----
+  {
+    group: "fortress", name: "Hạ thành", desc: "Từ hay quên đã thuần phục", icon: "🏰",
+    lore: "Pháo đài cứng đầu — từ quên đi quên lại 4 lần trở lên. Vây hãm đến khi nó NHỚ BỀN mới là chiến công thật của người lính.",
+    metric: "redeemedLeeches", unit: "từ", tiers: [1, 5, 15, 30, 60, 100, 200],
+  },
+  {
+    group: "combo", name: "Loạt đạn", desc: "Chuỗi trả lời đúng liên tiếp dài nhất", icon: "💥",
+    lore: "Loạt đạn bắn liền không ngắt nhịp. Chuỗi câu đúng liên tiếp trong một phiên — trượt một phát là nạp đạn lại từ đầu.",
+    metric: "maxCombo", unit: "câu", tiers: [10, 20, 35, 50, 75, 100],
+  },
+  {
+    group: "march", name: "Trường chinh", desc: "Chuỗi ngày dài nhất từng đạt", icon: "🧭",
+    lore: "Cuộc hành quân dài nhất từng đi trọn — kỷ lục đã lập thì KHÔNG mất, kể cả khi đợt sau phải dừng sớm. Đứt chuỗi hôm nay không xoá được chặng đường hôm qua.",
+    metric: "longestStreak", unit: "ngày", tiers: [7, 14, 30, 60, 100, 180, 365, 730],
+  },
 ];
 
 // Huy hiệu "Chiến dịch": hoàn thành (học hết) từng cấp CEFR.
-export const CAMPAIGN_BADGES = [
-  { id: "camp-1", level: 1, cefr: "A1", need: 800 },
-  { id: "camp-2", level: 2, cefr: "A2", need: 1200 },
-  { id: "camp-3", level: 3, cefr: "B1", need: 2000 },
-  { id: "camp-4", level: 4, cefr: "B2", need: 2500 },
-  { id: "camp-5", level: 5, cefr: "C1", need: 3000 },
-  { id: "camp-6", level: 6, cefr: "C2", need: 1500 },
-];
+// Ngưỡng = SỐ TỪ THẬT của cấp (levels.ts) — không gõ tay, đổi dữ liệu là tự khớp.
+export const CAMPAIGN_BADGES = LEVELS.map((l) => ({ id: `camp-${l.level}`, level: l.level, cefr: l.cefr, need: l.words }));
 
 // Huy hiệu đặc biệt (điều kiện đơn, tính từ dữ liệu sẵn có).
 export interface SpecialBadge {
@@ -151,15 +175,20 @@ export const SPECIAL_BADGES: SpecialBadge[] = [
   { id: "sp-week", name: "Tuần lễ vàng", icon: "🗓️", hint: "Chuỗi 7 ngày liên tiếp", test: (s) => s.streak >= 7 },
   { id: "sp-weekend", name: "Cuối tuần chăm", icon: "📅", hint: "Học vào T7/CN", test: (s) => s.weekend },
   { id: "sp-100words", name: "Đại đội", icon: "💯", hint: "Học được 100 từ", test: (s) => s.words >= 100 },
-  { id: "sp-multi", name: "Đa binh chủng", icon: "🎏", hint: "Có từ đã học ở cả 6 cấp", test: (s) => [1, 2, 3, 4, 5, 6].every((l) => (s.byLevel[l] ?? 0) > 0) },
-  { id: "sp-half", name: "Nửa chặng đường", icon: "⛰️", hint: "Học được 5.500 từ", test: (s) => s.words >= 5500 },
+  { id: "sp-multi", name: "Đa binh chủng", icon: "🎏", hint: `Có từ đã học ở cả ${LEVELS.length} cấp A1–C2`, test: (s) => LEVELS.every((l) => (s.byLevel[l.level] ?? 0) > 0) },
+  { id: "sp-half", name: "Nửa chặng đường", icon: "⛰️", hint: `Học được ${Math.round(ROUTE_WORDS / 2).toLocaleString("vi")} từ`, test: (s) => s.words >= Math.round(ROUTE_WORDS / 2) },
   { id: "sp-elite", name: "Tinh nhuệ", icon: "🎗️", hint: "1.000 từ nhớ bền", test: (s) => s.matured >= 1000 },
   { id: "sp-century", name: "Bách chiến", icon: "🛡️", hint: "≥100 lượt ôn trong 1 ngày", test: (s) => s.maxDayReviews >= 100 },
   { id: "sp-blitz", name: "Cuồng phong", icon: "🌪️", hint: "≥250 lượt ôn trong 1 ngày", test: (s) => s.maxDayReviews >= 250 },
   { id: "sp-persist", name: "Trường kỳ", icon: "🏔️", hint: "Học đủ 100 ngày (tổng)", test: (s) => s.activeDays >= 100 },
   { id: "sp-sharp", name: "Thần xạ", icon: "🎯", hint: "5.000 câu trả lời đúng", test: (s) => s.correct >= 5000 },
-  { id: "sp-allcamp", name: "Toàn thắng", icon: "🏆", hint: "Hoàn thành cả 6 chiến dịch CEFR", test: (s) => CAMPAIGN_BADGES.every((c) => (s.byLevel[c.level] ?? 0) >= c.need) },
-  { id: "sp-marechal", name: "Thống chế", icon: "👑", hint: "Học trọn toàn bộ 11.000 từ", test: (s) => s.words >= 11000 },
+  { id: "sp-allcamp", name: "Toàn thắng", icon: "🏆", hint: `Hoàn thành cả ${CAMPAIGN_BADGES.length} chiến dịch CEFR`, test: (s) => CAMPAIGN_BADGES.every((c) => (s.byLevel[c.level] ?? 0) >= c.need) },
+  // "Học trọn" = đủ từng cấp, không phải tổng số thẻ.
+  { id: "sp-marechal", name: "Thống chế", icon: "👑", hint: `Học trọn toàn bộ ${ROUTE_WORDS.toLocaleString("vi")} từ A1–C2`, test: (s) => LEVELS.every((l) => (s.byLevel[l.level] ?? 0) >= l.words) },
+  // ---- chào người quay lại: thưởng việc TRỞ LẠI thay vì chỉ phạt việc đứt chuỗi ----
+  { id: "sp-comeback", name: "Tái ngũ", icon: "🌅", hint: "Quay lại học sau ≥3 ngày nghỉ", test: (s) => s.comebackDays >= 3 },
+  { id: "sp-return", name: "Trở về từ mặt trận", icon: "🪖", hint: "Quay lại học sau ≥14 ngày nghỉ", test: (s) => s.comebackDays >= 14 },
+  { id: "sp-flawless", name: "Ngày toàn thắng", icon: "🎯", hint: "Một ngày ≥20 lượt ôn không sai câu nào", test: (s) => s.perfectDay },
 ];
 
 // ---- Flatten thành từng huy hiệu để hiển thị ----
@@ -274,4 +303,106 @@ export function badgeTotals(s: Stats): { earned: number; total: number } {
     earned: gs.reduce((a, g) => a + g.earned, 0),
     total: gs.reduce((a, g) => a + g.total, 0),
   };
+}
+
+// ---- NHIỆM VỤ NGÀY ----
+// Cơ chế giữ chân chính (goal-gradient: mục tiêu nhỏ + thanh tiến độ gần đích kéo người
+// học làm nốt; kinh nghiệm Duolingo: daily quests giữ chân mạnh hơn mọi loại huy hiệu).
+// Mỗi ngày 3 nhiệm vụ, chọn TẤT ĐỊNH theo chuỗi ngày — mọi thiết bị thấy cùng một bộ.
+// Tiến độ tính từ dữ liệu ĐÃ đồng bộ (daily + reads); trạng thái "đã nhận thưởng" nằm ở
+// gamify.questsDone (khoá "YYYY-MM-DD:qid", union-merge — hai máy không cộng XP kép).
+
+/** Số liệu TRONG NGÀY dùng chấm nhiệm vụ — đều lấy từ bảng đã sync. */
+export interface DayMetrics {
+  reviews: number; // lượt ôn hôm nay (daily.reviews)
+  newCount: number; // từ mới hôm nay (daily.newCount)
+  correct: number; // câu đúng hôm nay (reviews - again)
+  again: number; // câu sai hôm nay
+  reads: number; // bài đọc đánh dấu xong hôm nay
+}
+
+export interface QuestDef {
+  id: string;
+  name: string; // tên ngắn (hiện trên thẻ nhiệm vụ)
+  icon: string;
+  metric: "reviews" | "newCount" | "correct" | "reads" | "accuracy";
+  target: number; // ngưỡng cần đạt (accuracy: % đúng tối thiểu, cần ≥10 lượt)
+  xp: number; // thưởng khi hoàn thành
+}
+
+// Kho nhiệm vụ — mỗi metric vài mức để ngày nặng ngày nhẹ (đỡ đơn điệu).
+// XP thưởng cỡ 3–8 lượt ôn (XP.review=3) — đáng bõ nhưng không lấn át XP học thật.
+export const QUEST_POOL: QuestDef[] = [
+  { id: "on15", name: "Ôn 15 thẻ", icon: "⚔️", metric: "reviews", target: 15, xp: 10 },
+  { id: "on30", name: "Ôn 30 thẻ", icon: "⚔️", metric: "reviews", target: 30, xp: 20 },
+  { id: "on50", name: "Ôn 50 thẻ", icon: "🛡️", metric: "reviews", target: 50, xp: 30 },
+  { id: "moi3", name: "Học 3 từ mới", icon: "✨", metric: "newCount", target: 3, xp: 12 },
+  { id: "moi5", name: "Học 5 từ mới", icon: "✨", metric: "newCount", target: 5, xp: 18 },
+  { id: "dung12", name: "Trả lời đúng 12 câu", icon: "🎯", metric: "correct", target: 12, xp: 10 },
+  { id: "dung25", name: "Trả lời đúng 25 câu", icon: "🎯", metric: "correct", target: 25, xp: 18 },
+  { id: "doc1", name: "Đọc xong 1 bài", icon: "📖", metric: "reads", target: 1, xp: 15 },
+  { id: "sac90", name: "Chuẩn xác ≥90% (≥10 thẻ)", icon: "🧭", metric: "accuracy", target: 90, xp: 25 },
+];
+
+// Xáo tất định theo seed (fnv-1a + xorshift) — BẢN RIÊNG tự chứa: file này được unit-test
+// bằng node strip-types, không import tương đối giá trị runtime được (luật như srs-pure).
+function questShuffle<T>(arr: T[], seedStr: string): T[] {
+  let h = 2166136261;
+  for (let k = 0; k < seedStr.length; k++) {
+    h ^= seedStr.charCodeAt(k);
+    h = Math.imul(h, 16777619);
+  }
+  const rnd = () => {
+    h = Math.imul(h ^ (h >>> 15), h | 1);
+    h ^= h + Math.imul(h ^ (h >>> 7), h | 61);
+    return ((h ^ (h >>> 14)) >>> 0) / 4294967296;
+  };
+  const s = [...arr];
+  for (let k = s.length - 1; k > 0; k--) {
+    const j = Math.floor(rnd() * (k + 1));
+    [s[k], s[j]] = [s[j], s[k]];
+  }
+  return s;
+}
+
+/** 3 nhiệm vụ của một ngày — tất định theo chuỗi ngày, mỗi metric tối đa 1 nhiệm vụ
+ *  (không ra cả "ôn 15" lẫn "ôn 30" cùng ngày). */
+export function dailyQuests(dateStr: string, pool: QuestDef[] = QUEST_POOL): QuestDef[] {
+  const out: QuestDef[] = [];
+  const usedMetric = new Set<string>();
+  for (const q of questShuffle(pool, `quest:${dateStr}`)) {
+    if (usedMetric.has(q.metric)) continue;
+    usedMetric.add(q.metric);
+    out.push(q);
+    if (out.length >= 3) break;
+  }
+  return out;
+}
+
+export interface QuestProgress {
+  def: QuestDef;
+  value: number; // giá trị hiện tại (accuracy: % đúng, 0 khi chưa đủ 10 lượt)
+  done: boolean;
+}
+
+export function questProgress(def: QuestDef, m: DayMetrics): QuestProgress {
+  if (def.metric === "accuracy") {
+    const pct = m.reviews >= 10 ? Math.floor((m.correct / m.reviews) * 100) : 0;
+    return { def, value: pct, done: m.reviews >= 10 && pct >= def.target };
+  }
+  const value = m[def.metric];
+  return { def, value, done: value >= def.target };
+}
+
+/** Khoá "đã nhận thưởng" của một nhiệm vụ trong ngày. */
+export const questKey = (dateStr: string, id: string): string => `${dateStr}:${id}`;
+
+/** Dọn khoá cũ hơn `keepDays` — bảng questsDone không phình vô hạn. */
+export function pruneQuestKeys(keys: string[], today: string, keepDays = 14): string[] {
+  const cutoff = new Date(today + "T00:00:00");
+  cutoff.setDate(cutoff.getDate() - keepDays);
+  return keys.filter((k) => {
+    const d = new Date(k.slice(0, 10) + "T00:00:00");
+    return !Number.isNaN(d.getTime()) && d >= cutoff;
+  });
 }

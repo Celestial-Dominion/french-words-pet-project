@@ -6,10 +6,22 @@ import { levelSlug } from "./levels";
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 // Tải danh sách từ của một cấp (1..6). Trả [] nếu file chưa có (các cấp làm dần).
-export async function loadWords(level: number): Promise<Word[]> {
-  const res = await fetch(`${BASE}/data/words/${levelSlug(level)}.json`);
-  if (!res.ok) return [];
-  return (await res.json()) as Word[];
+// Cache theo PROMISE: file cấp nặng (C1 ~1,5MB) mà mở phiên học, mở phiên ôn, warm và bấm kết
+// quả tìm kiếm đều gọi — không cache thì mỗi lần lại tải + parse lại từ đầu; cache theo promise
+// thì lời gọi thứ hai trong lúc lời gọi đầu đang tải cũng dùng chung, không tải trùng.
+const wordsCache = new Map<number, Promise<Word[]>>();
+export function loadWords(level: number): Promise<Word[]> {
+  let p = wordsCache.get(level);
+  if (!p) {
+    p = fetch(`${BASE}/data/words/${levelSlug(level)}.json`)
+      .then((res) => (res.ok ? (res.json() as Promise<Word[]>) : []))
+      .catch((e) => {
+        wordsCache.delete(level); // lỗi mạng → cho phép thử lại lần sau
+        throw e;
+      });
+    wordsCache.set(level, p);
+  }
+  return p;
 }
 
 // Câu ví dụ theo cấp: map wordId -> [{ fr, vi }]. File mỗi cấp được TÁCH 8 SHARD
@@ -23,15 +35,20 @@ export function exampleShardOf(id: string): number {
   for (let i = 0; i < id.length; i++) h = ((h * 33) ^ id.charCodeAt(i)) >>> 0;
   return h % EXAMPLE_SHARDS;
 }
-const exShardCache = new Map<string, Record<string, ExampleSentence[]>>();
-async function loadExampleShard(level: number, n: number): Promise<Record<string, ExampleSentence[]>> {
+const exShardCache = new Map<string, Promise<Record<string, ExampleSentence[]>>>();
+function loadExampleShard(level: number, n: number): Promise<Record<string, ExampleSentence[]>> {
   const key = `${levelSlug(level)}-${n}`;
-  const cached = exShardCache.get(key);
-  if (cached) return cached;
-  const res = await fetch(`${BASE}/data/examples/${key}.json`);
-  const data = res.ok ? ((await res.json()) as Record<string, ExampleSentence[]>) : {};
-  exShardCache.set(key, data);
-  return data;
+  let p = exShardCache.get(key);
+  if (!p) {
+    p = fetch(`${BASE}/data/examples/${key}.json`)
+      .then((res) => (res.ok ? (res.json() as Promise<Record<string, ExampleSentence[]>>) : {}))
+      .catch((e) => {
+        exShardCache.delete(key);
+        throw e;
+      });
+    exShardCache.set(key, p);
+  }
+  return p;
 }
 /** Toàn bộ ví dụ một cấp (tải đủ 8 shard — dùng khi thật sự cần cả cấp). */
 export async function loadExamples(level: number): Promise<Record<string, ExampleSentence[]>> {
@@ -93,27 +110,39 @@ export async function loadWordIndex(): Promise<WordIndex> {
 }
 
 // ---- Bài đọc & tra ngược lemma (F6) ----
-let lemmaMapCache: Record<string, string> | null = null;
-export async function loadLemmaMap(): Promise<Record<string, string>> {
-  if (lemmaMapCache) return lemmaMapCache;
-  const res = await fetch(`${BASE}/data/lemma-map.json`);
-  lemmaMapCache = res.ok ? ((await res.json()) as Record<string, string>) : {};
+// lemma-map (~1MB) và word-levels: cache theo PROMISE như loadWords (warm + phiên + tra từ dùng chung).
+let lemmaMapCache: Promise<Record<string, string>> | null = null;
+export function loadLemmaMap(): Promise<Record<string, string>> {
+  if (!lemmaMapCache) {
+    lemmaMapCache = fetch(`${BASE}/data/lemma-map.json`)
+      .then((res) => (res.ok ? (res.json() as Promise<Record<string, string>>) : {}))
+      .catch((e) => {
+        lemmaMapCache = null;
+        throw e;
+      });
+  }
   return lemmaMapCache;
 }
 
-let levelsCache: Record<string, number> | null = null;
-export async function loadWordLevels(): Promise<Record<string, number>> {
-  if (levelsCache) return levelsCache;
-  const res = await fetch(`${BASE}/data/word-levels.json`);
-  levelsCache = res.ok ? ((await res.json()) as Record<string, number>) : {};
+let levelsCache: Promise<Record<string, number>> | null = null;
+export function loadWordLevels(): Promise<Record<string, number>> {
+  if (!levelsCache) {
+    levelsCache = fetch(`${BASE}/data/word-levels.json`)
+      .then((res) => (res.ok ? (res.json() as Promise<Record<string, number>>) : {}))
+      .catch((e) => {
+        levelsCache = null;
+        throw e;
+      });
+  }
   return levelsCache;
 }
 
-const wordsByLevelCache = new Map<number, Map<string, Word>>();
-async function wordsMap(level: number): Promise<Map<string, Word>> {
+const wordsByLevelCache = new Map<number, Promise<Map<string, Word>>>();
+function wordsMap(level: number): Promise<Map<string, Word>> {
   let m = wordsByLevelCache.get(level);
   if (!m) {
-    m = new Map((await loadWords(level)).map((w) => [w.id, w]));
+    m = loadWords(level).then((ws) => new Map(ws.map((w) => [w.id, w])));
+    m.catch(() => wordsByLevelCache.delete(level));
     wordsByLevelCache.set(level, m);
   }
   return m;

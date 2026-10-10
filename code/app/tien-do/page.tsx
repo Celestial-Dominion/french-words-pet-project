@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Flame, Trophy, CalendarCheck, Activity, type LucideIcon } from "lucide-react";
 import { db, progressSummary, todayStr, type ProgressSummary } from "@/lib/db";
+import { onSyncMerged } from "@/lib/sync";
 import { LEVELS, levelAccent } from "@/lib/levels";
 import { cn } from "@/lib/utils";
 
@@ -13,22 +14,6 @@ function addDays(base: Date, n: number): Date {
   const d = new Date(base);
   d.setDate(d.getDate() + n);
   return d;
-}
-
-// Chuỗi ngày liên tiếp dài nhất từng đạt.
-function longestStreak(dates: string[]): number {
-  const set = [...new Set(dates)].sort();
-  let best = 0;
-  let cur = 0;
-  let prev: Date | null = null;
-  for (const s of set) {
-    const d = new Date(s + "T00:00:00");
-    if (prev && (d.getTime() - prev.getTime()) / 86400000 === 1) cur += 1;
-    else cur = 1;
-    best = Math.max(best, cur);
-    prev = d;
-  }
-  return best;
 }
 
 function heatColor(n: number): string {
@@ -45,8 +30,8 @@ export default function TienDoPage() {
   const [forecast, setForecast] = useState<number[] | null>(null); // 7 ngày tới (hôm nay gộp cả quá hạn)
 
   useEffect(() => {
-    progressSummary().then(setSum);
-    (async () => {
+    const load = async () => {
+      progressSummary().then(setSum);
       const rows = await db.reviews.toArray();
       const today = todayStr();
       const buckets = new Array(7).fill(0);
@@ -62,7 +47,10 @@ export default function TienDoPage() {
         }
       }
       setForecast(buckets);
-    })();
+    };
+    void load();
+    // kéo tiến độ máy khác về → heatmap/dự báo đọc lại ngay
+    return onSyncMerged(() => void load());
   }, []);
 
   if (!sum) return <div className="py-20 text-center text-muted-foreground">Đang tải…</div>;
@@ -70,7 +58,8 @@ export default function TienDoPage() {
   const dailyMap = new Map(sum.daily.map((d) => [d.date, d.reviews]));
   const today = todayStr();
   const todayReviews = dailyMap.get(today) ?? 0;
-  const record = longestStreak(sum.daily.filter((d) => d.reviews > 0).map((d) => d.date));
+  // kỷ lục lấy từ summary — cùng luật với chuỗi hiện tại (ngày đóng băng tính như có học)
+  const record = sum.longestStreak;
 
   // Lưới heatmap 13 tuần, căn theo thứ (Th2 hàng đầu).
   const todayDate = new Date(today + "T00:00:00");
@@ -209,10 +198,12 @@ export default function TienDoPage() {
       <section className="rounded-3xl border p-5">
         <h2 className="mb-3 text-sm font-semibold text-muted-foreground">
           Tiến độ theo cấp · {sum.words.toLocaleString("vi")} thẻ đã học
+          {sum.knownPending > 0 && ` · ${sum.knownPending.toLocaleString("vi")} từ đã biết sẵn chờ kiểm tra`}
         </h2>
         <div className="grid gap-x-6 gap-y-3 sm:grid-cols-2">
           {LEVELS.map((lv) => {
-            const done = sum.byLevel[lv.level] || 0;
+            const done = sum.coverageByLevel[lv.level] || 0; // gồm cả từ đã biết sẵn
+            const known = sum.knownByLevel[lv.level] || 0;
             const a = levelAccent(lv.level);
             const pct = Math.min(100, Math.round((done / lv.words) * 100));
             return (
@@ -220,6 +211,7 @@ export default function TienDoPage() {
                 <div className="mb-1 flex justify-between text-sm">
                   <span className={cn("font-semibold", a.text)}>{lv.label}</span>
                   <span className="text-muted-foreground">
+                    {known > 0 && <span className="text-sky-700 dark:text-sky-300">{known.toLocaleString("vi")} đã biết · </span>}
                     {done.toLocaleString("vi")} / {lv.words.toLocaleString("vi")}
                   </span>
                 </div>
