@@ -21,7 +21,11 @@ SKIP_BUILD=1 scripts/deploy.sh    # dùng out/ vừa build
 RULES=1 scripts/deploy.sh         # deploy cả firestore.rules
 CONC=8 scripts/deploy.sh          # ép số luồng tải
 tail -f scripts/.deploy.log       # xem tiến độ "uploading new files [x/y]"
+scripts/deploy-watch.sh           # theo dõi gọn: in mỗi pha + mỗi 5% tải, tự thoát khi xong (0) / lỗi (1)
 ```
+
+`deploy-watch.sh` dùng cho Monitor của Claude Code (chạy `deploy.sh` nền + `deploy-watch.sh` song song): chỉ đọc log của
+lần deploy hiện tại, bỏ qua dòng kiểm rules "compilation errors", thoát 1 nếu `deploy.sh` dừng mà chưa thấy "Deploy complete".
 
 Vì sao nhanh:
 

@@ -31,7 +31,7 @@
 ## 0. Quy trình mỗi lần cập nhật
 
 - [ ] `cd ~/code/english_words && git log --oneline 4bcbbc1..` → liệt kê commit mới, port phần tính năng (bỏ nội dung riêng của tiếng Anh).
-- [ ] Sau mỗi đợt: đổi mốc ở đầu file này + mục 6.
+- [ ] Sau mỗi đợt: đổi mốc đồng bộ ở đầu file này (và trong bộ nhớ `sibling-apps`).
 - [ ] Giữ đặc thù tiếng Pháp khi port: mạo từ un/une, câu chọn giống (mở sau bài `giong-danh-tu`), chia động từ, lộ trình khởi động `lib/starter.ts`, 6 cấp A1–C2, tiền tố `fr.`/`fr:`, DB `french-words`, backup `fr-words`, test vitest.
 - [ ] Kiểm: `npm run check` + `npx playwright test` (tắt dev server khác trước) → `npm run deploy` (xem `code/DEPLOY.md`).
 
@@ -49,7 +49,7 @@
 
 ## 2. Việc nhỏ — chỉ code, dữ liệu có sẵn trên máy (làm trước)
 
-- [ ] **A1. `scripts/deploy-watch.sh`** — in tiến độ deploy mỗi 5% (copy từ app Anh `4bcbbc1`, đổi tên project). Rất nhỏ.
+- [x] **A1. `scripts/deploy-watch.sh`** — in tiến độ deploy mỗi pha + mỗi 5%, tự thoát khi xong/lỗi (từ app Anh `4bcbbc1`; thêm: bỏ báo lỗi giả ở dòng kiểm rules khi `RULES=1`). Dùng: `scripts/deploy.sh` chạy nền + `scripts/deploy-watch.sh` trong Monitor.
 - [ ] **A2. Nhãn văn phong** trong thẻ từ. Nguồn: `code/scripts/kaikki-fr.jsonl` (đã có) — ~1.300 từ có nhãn: colloquial 282, informal 265, slang 247, dated 140, archaic 117, literary 106, vulgar 66, Québec/Belgique/Suisse 107. Việc: thêm trường `register` lúc dựng dữ liệu (`build-words-assemble.mjs`), hiện badge như `REGISTER_VI` của app Anh (thân mật, khẩu ngữ, tiếng lóng, cũ, văn chương, thô tục, vùng miền).
 - [ ] **A3. Họ từ** (décider → décision → décisif). Nguồn: kaikki "derived" (2.992 từ, có sẵn) + **Démonette** (bảng họ từ, Creative Commons — soát biến thể giấy phép). Việc: trường `family` + điều hướng chồng thẻ trong `word-detail` (port từ app Anh).
 - [ ] **A4. Cụm hay đi kèm**. Nguồn: **RL-fr** (Réseau Lexical du Français, ATILF, CC BY 4.0, tải qua ORTOLANG) + BEL-RL-fr (ví dụ). Thiếu thì agent sinh + soát. Việc: trường `collocations`, khối "🔗 Cụm hay đi kèm" trong thẻ từ. Ghi công ở mục Nguồn dữ liệu của Cài đặt.
