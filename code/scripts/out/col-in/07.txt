@@ -1,0 +1,100 @@
+boucher|v/n|bịt, nút lại; người bán thịt|[I.1] Fact_23:vendre [I.2] S_0Fact_0:boucherie; Fact_2:couper,découper,débiter,dépecer [II] Magn:sanguinaire; S_resFact_0:boucherie [III] Magn:vrai; S_resFact_0:boucherie
+otage|n.m|con tin|[] Caus_2Pred:prendre,kidnapper
+impatience|n.f|sự nôn nóng, thiếu kiên nhẫn|[] CausPredMinus:calmer; Real_1:trépigner,frémir,trembler
+demi-tour|n.m|sự quay ngược lại, nửa vòng|[] Oper_1:faire
+mélanger|v|trộn, pha lẫn|[I] Caus:mélanger
+cancer|n.m|bệnh ung thư|[] Oper_1:avoir,souffrir
+flèche|n.f|mũi tên|[I] Magn^quant + S_0Fact_2:pluie
+vaisselle|n.f|bát đĩa; việc rửa bát|[II] Oper_1:faire
+serment|n.m|lời thề, lời tuyên thệ|[] Magn:sur l’honneur
+ennuyeux|adj|nhàm chán, buồn tẻ|[] Magn:comme la pluie
+temple|n.m|đền, đền thờ|[II] Redun:protestant [I] Redun:religieux
+insecte|n.m|côn trùng, sâu bọ|[I.a] Magn_taille:gros; LiquFunc_0:chasser,écraser,tuer,désinsectiser; AntiMagn_taille:microscopique,minuscule,petit; Germ:larve; AntiBonInvolv:piquer [II] Magn:sale,sacré,satané
+coiffeur|n.m|thợ làm tóc, thợ cắt tóc|[I] Fact_2:coiffer,couper les cheveux; S_0Fact_0:coiffure
+savon|n.m|xà phòng|[a] S_0Real_1:savonnage; S_1^usualCausFunc_0:savonnier,savonnière; Labreal_12:laver,nettoyer; Bon + Ver:mousseux; Real_1:savonner,laver; BonFact_0:mousser; Fact_2:laver,nettoyer; S_instrPreparReal_1:distributeur [b] AntiMagn:savonnette; S_0Real_1:savonnage; Labreal_12:laver,nettoyer,savonner; Fact_2:laver,nettoyer; $2=‘corps’:de toilette; $2=‘mains’:à main; $2=‘linge’:à lessive [2] Magn:mémorable,sacré; Oper_1:donner
+signature|n.f|chữ ký|[II.1] Real_1:honorer
+trancher|v|cắt, chặt; quyết định dứt khoát|[] Magn:épais; AntiMagn:fin
+facture|n.f|hóa đơn|[I] Instr:sur
+sauce|n.f|nước sốt, xốt|[I] CausPredMinus:allonger
+longueur|n.f|chiều dài, độ dài|[I.2] Magn:grande; AntiMagn_longueur:courte; Real_3:mesurer [III.1] AntiMagn_longueur:courte; Magn:grande [IV.1] Magn^temp:grande; AntiMagn^temp:courte; AntiBon + Magn:longueur [II.2] Oper_1:faire
+occupé|adj|bận rộn; bị chiếm đóng|[IV.2] Magn + Pred:ne pas avoir le temps de s’ennuyer,ne pas avoir une minute à soi
+passager|n/adj.m|hành khách; thoáng qua, tạm thời|[] AntiBon:clandestin
+spécialiste|n|chuyên gia, chuyên viên|[I.1] Magn:grand,expert
+obstacle|n.m|trở ngại, chướng ngại vật|[I.a] Real_1:franchir,escalader
+foot|n.m|bóng đá|[1] Oper_1:foot
+orchestre|n.m|dàn nhạc|[I] Magn_taille:grand; Fact_2:jouer,interpréter,répéter [II.1] Loc_in:à,dans
+accélérer|v|tăng tốc, đẩy nhanh|[] Caus:accélérer
+miel|n/adj.m|mật ong|[I] S_1^usualCausFunc_0:apiculteur,apicultrice; CausFunc_0:récolter; Caus_2Func_0:produire
+photographe|n|nhiếp ảnh gia, thợ chụp ảnh|[] Fact_Ω:photographier,prendre en photo
+coton|n.m|bông, vải bông|[II] Redun_⊃:hydrophile
+blouse|n.f|áo blu, áo choàng|[1] Caus_1Real_1:mettre [2] Caus_1Real_1:mettre
+boisson|n.f|đồ uống, thức uống|[I] AntiBon_∩:pipi de chat
+surveillance|n.f|sự giám sát, sự canh gác|[] Magn:étroite
+compliment|n.m|lời khen, lời khen ngợi|[a] Oper_1:présenter
+occupation|n.f|sự chiếm đóng; công việc, nghề nghiệp|[III] Oper_2:occuper
+descente|n.f|sự đi xuống; dốc xuống|[II] Magn:drôle,bonne,sacré; Oper_1:avoir
+bicyclette|n.f|xe đạp|[I] Instr:à,en; Fact_0:rouler,circuler; Real_1^III:descendre; Real_1^I:monter,enfourcher,grimper; AntiBon:clou; Real_1^II:faire,pédaler,rouler,circuler,déplacer; AntiReal_1:avoir l’air d’un crapaud sur une boîte d’allumettes; A_1Real_1:en,au guidon [II] Oper_1:faire; Oper_1^usual:pratiquer
+border|v/n|viền, giáp ranh; đắp chăn|[I.a] CausConv_21:border
+âne|n.m|con lừa|[I] Son:braire
+carré|n/adj.m|hình vuông; vuông vắn|[I.1b] CausFunc_0:tracer [I.1a] CausFunc_0:dessiner,tracer [II.2a] Real_2:cultiver [III.1] Real_1^I:nouer; Real_1^II:porter [III.3] Redun:d’infanterie; CausOper_1:former [II.1b] CausFunc_0:couper,découper,détailler
+admiration|n.f|sự ngưỡng mộ, sự khâm phục|[] Adv_2:à; Adv_1:avec; Magn:grande; Oper_1:avoir,éprouver,ressentir; IncepOper_1:tomber
+dégoût|n.m|sự ghê tởm, sự chán ghét|[II] Magn:profond; Oper_1:avoir,éprouver,ressentir [I] Redun:physique
+saut|n.m|cú nhảy, bước nhảy|[II] Oper_1:faire
+négocier|v|đàm phán, thương lượng|[I.2] AntiBon:chipoter
+vapeur|n|hơi nước|[I.b] Redun:d’eau
+bandit|n.m|kẻ cướp, tên cướp|[I] Magn_comportement:dangereux; Fact_3:attaquer,dépouiller,détrousser,piller,voler; S_0Fact_0:banditisme; Real_Ω^I:poursuivre,pourchasser,rechercher,traquer; Real_Ω^II:appréhender,arrêter,écrouer,emprisonner,enfermer; Magn:de grand chemin; Fact_2:commettre,livrer; Real_Ω^III:châtier,condamner,punir,exécuter
+jumeau|n/adj.m|sinh đôi, người song sinh|[I.a] Redun:deux
+éléphant|n.m|con voi|[I] Germ:éléphanteau; Son:barrir; Instr:à dos
+remarque|n.f|lời nhận xét, lời bình|[] AntiVer:convenue
+abriter|v|che chở, cho trú ẩn|[1] CausConv_231:abriter
+bec|n.m|mỏ (chim)|[I.1] AntiMagn_largeur:fin,effilé,mince; AntiMagn_longueur:court [III.2] Redun_⊃:verseur
+douzaine|n.f|tá (mười hai cái)|[] Magn:bonne,grosse; AntiMagn:petite
+tragédie|n.f|bi kịch|[II] Oper_2:vivre,faire face; IncepFunc_1:abattre; AntiReal_2:faire face,surmonter
+tablier|n.m|tạp dề|[] Caus_1Real_1:mettre
+remède|n.m|phương thuốc, cách chữa|[II] AntiBon + AntiVer:cautère sur une jambe de bois
+autoroute|n.f|đường cao tốc|[I] Loc_in:sur; IncepReal_1:engager,entrer,prendre,rejoindre; Real_1:rouler,emprunter,prendre; FinReal_1:quitter,sortir; CausFunc_0:construire; Ver:en service,ouverte; AntiPermFact_0:fermer; AntiVer:fermée [II] Oper_1:faire; Magn_longueur:beaucoup
+couvert|n/adj.m|bộ dao nĩa; bị che phủ, u ám|[I.3] PreparFact_1:mettre
+expédier|v|gửi đi, chuyển đi; làm cho xong|[II] Adv_1:expéditivement
+vocation|n.f|thiên hướng, ơn gọi|[] Redun:religieuse
+sapin|n.m|cây thông|[I.b] Redun:de Noël; Caus_1Fact_0:faire,décorer; Loc_in:devant,sous
+engagement|n.m|cam kết; sự dấn thân|[I] Magn:sur l’honneur
+barrière|n.f|hàng rào; rào cản|[I] CausFact_1:mettre [II] CausFact_1:mettre
+tonnerre|n.m|sấm, tiếng sấm|[I] Magn:assourdissant,épouvantable; Magn^temp:continu,ininterrompu; AntiMagn:sourd; Func_0:gronder,rouler,mugir; IncepFunc_0:retentir,éclater; FinFunc_0:taire; Real_Ω:entendre [II.1] Magn:assourdissant,épouvantable; IncepFunc_0:éclater,retentir; FinFunc_0:cesser
+expert|n/adj.m|chuyên gia|[1] Real_3:consulter,voir,faire appel,interroger; S_resFact_0:rapport [2] S_resFact_0:rapport
+organe|n.m|cơ quan (cơ thể); bộ phận|[II] Redun:vocal
+musicien|n/adj.m|nhạc sĩ, nhạc công|[] Bon:bon,talentueux,excellent,hors pair,accompli; Fact_0:jouer
+ruisseau|n.m|suối nhỏ, dòng suối|[] AntiMagn:ruisselet
+banlieue|n.f|vùng ngoại ô|[] AntiBon:zone
+guitare|n.f|đàn ghi-ta|[] Real_1:jouer; S_1^usualCausFunc_0:luthier
+délai|n.m|thời hạn, kỳ hạn|[] AntiMagn:bref
+assistance|n.f|sự trợ giúp; khán giả|[II] AntiMagn_1^quant:clairsemée
+détour|n.m|đường vòng, khúc quanh|[II] Magn^quant:mille
+vexer|v|làm phật lòng, làm tự ái|[] Caus:vexer
+révolte|n.f|cuộc nổi dậy, sự nổi loạn|[] PredCap:conduire,mener
+conte|n.m|truyện kể, truyện cổ tích|[I] Real_1:dire,raconter,conter; Real_3:écouter; Magn:à dormir debout [II] Magn:à dormir debout; Real_1:dire,raconter; Real_2^I:écouter; Real_2^II:croire
+malaise|n/adj|sự khó chịu; cảm giác bất an|[3] Oper_1:éprouver,ressentir; Magn:profond; IncepFunc_1:envahir [2] Oper_1:faire,avoir
+conflit|n.m|xung đột, mâu thuẫn|[1] Real_1:avoir maille à partir
+frisson|n.m|sự rùng mình, ớn lạnh|[I] Magn:grand; AntiMagn:petit [II.1] Magn:grand; AntiMagn:petit
+tambour|n.m|cái trống|[I] Instr:à; Func_0:résonner,vibrer; Real_1:jouer,frapper,battre,taper; Son:rouler
+office|n.m|cơ quan, văn phòng; nhiệm vụ|[III] Redun:religieux; Oper_1:célébrer [I] Real_1:remplir
+affiche|n.f|áp phích, tờ quảng cáo|[] AntiMagn:affichette; Real_1:afficher
+défaite|n.f|sự thất bại, sự thua trận|[] Caus_1Real_2:marcher sur la tête
+camionnette|n.f|xe tải nhỏ|[] Real_1:conduire,rouler; Fact_0:circuler,rouler; Instr:en; Fact_2:transporter; Labreal_12:transporter; IncepFact_0:démarrer; FinFact_0:freiner,arrêter; Caus_1Fact_0:démarrer
+balai|n.m|cây chổi|[I.1] S_0SingReal_1:coup; S_0Labreal_12:balayage; Real_1:passer,manier,jouer; IncepReal_1:prendre,saisir; Labreal_12:nettoyer,balayer; AntiMagn_taille:petit,balayette [II.2] Labreal_12:frapper,taper,frotter,jouer [I.2] Real_1:passer; Fact_0:balayer
+étonnement|n.m|sự ngạc nhiên|[] Oper_1:avoir,éprouver,ressentir; Oper_2:étonner
+maillot|n.m|áo đấu; áo bó, áo tắm|[I.1] Caus_1Real_1:mettre [I.2] Caus_1Real_1:mettre
+violon|n.m|đàn vi-ô-lông|[I.a] S_1^usualCausFunc_0:luthier,luthière; AntiBon:crin-crin
+domestique|n/adj|người giúp việc; trong nhà, nội trợ|[II.1a] CausPred:domestiquer
+diplôme|n.m|bằng cấp, văn bằng|[II] Real_3:diplômer
+habillé|adj|ăn mặc chỉnh tề, trang trọng|[2] CausPred:habiller
+fourrure|n.f|bộ lông thú; áo lông|[II] Caus_1Real_1:mettre
+facteur|n.m|người đưa thư; yếu tố|[] Fact_23:apporter,distribuer,livrer,remettre; Fact_3:passer; Fact_2:fabriquer; S_0Fact_2:fabrication,facture
+dessert|n.m|món tráng miệng|[] Real_1:manger,avaler
+timbre|n.m|tem thư; âm sắc|[II] Fact_1:figurer [I] Redun_⊃:de voix
+brosse|n.f|bàn chải|[I.1] Labreal_12:nettoyer,frotter,brosser; Real_1:passer; S_0SingReal_1:coup; S_0Labreal_12:brossage [I.2] Instr:à,avec; Labreal_123:étaler,répandre; Real_1^I:tremper; Real_1^II:passer [II.1] Oper_1:avoir
+nappe|n.f|khăn trải bàn; tầng, lớp|[I] Bon:propre; AntiBon:sale,tachée; Real_1:mettre; Liqu_1Real_1:enlever,ôter; Labreal_12:recouvrir; Fact_2:recouvrir [II.2] AntiBon:contaminée,polluée
+colonie|n.f|thuộc địa; trại hè thiếu nhi|[II] Caus_2Oper_1:coloniser
+scientifique|adj/n|thuộc khoa học; nhà khoa học|[] S_0Fact_0:science,recherche
+représentation|n.f|sự biểu diễn; sự đại diện|[] Fact_2:représenter
+débat|n.m|cuộc tranh luận|[2] CausFact_0:animer
+buffet|n.m|tiệc đứng; tủ búp phê|[II.1] PreparReal_1^I:dresser

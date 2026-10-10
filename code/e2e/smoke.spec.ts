@@ -372,3 +372,12 @@ test("thẻ từ: họ từ — bấm từ cùng họ mở thẻ mới, quay l�
   await page.keyboard.press("Escape"); // Esc lùi một bước, chưa đóng ngăn
   await expect(page.getByRole("button", { name: "chanteur", exact: true })).toBeVisible();
 });
+
+test("thẻ từ: cụm hay đi kèm — hiện cụm tiếng Pháp kèm nghĩa", async ({ page }) => {
+  await page.goto("/hoc/1");
+  await page.getByPlaceholder(/Tìm/).fill("faim");
+  await page.getByRole("button", { name: /\bfaim \// }).first().click();
+  await expect(page.getByText("🔗 Cụm hay đi kèm")).toBeVisible();
+  await expect(page.getByText("avoir faim", { exact: true })).toBeVisible();
+  await expect(page.getByText("— đói", { exact: true })).toBeVisible();
+});

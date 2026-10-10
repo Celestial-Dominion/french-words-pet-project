@@ -1,0 +1,100 @@
+tyran|n.m|bạo chúa, kẻ chuyên quyền|[II] Fact_2:tyranniser
+arbitre|n|trọng tài; người phân xử|[] Fact_2:arbitrer
+collaborer|v|hợp tác, cộng tác|[I] Magn:étroitement
+coureur|n.m|vận động viên chạy; kẻ trăng hoa|[I] Fact_0:courir; Redun:à pied [II] Redun:automobile [III.2] Redun:de femmes,de jupons
+franchise|n.f|sự thẳng thắn; quyền nhượng quyền thương|[I.2a] Adv_1: avec ~,franchement [II] Adv_1:franchement
+glaçon|n.m|viên đá, cục nước đá|[I.1] IncepFunc_0:former
+bilan|n.m|bảng tổng kết, sự đánh giá; bảng cân đối|[I.1] Redun:comptable [I.4] Redun_⊃:orthophonique; AntiMagn:partiel; Magn:approfondi,complexe,précis,complet,détaillé; Oper_1:effectuer,pratiquer,réaliser,établir,compléter; Oper_3:passer; PermFunc_3:prescrire; Labor_13:recevoir [III] Magn:lourd [I.3] Redun_⊃:médical
+moustique|n.m|con muỗi|[I] Fact_0:voler; AntiBonInvolv:piquer,dévorer,attaquer; Son:bourdonner,vrombir; LiquFunc_0:chasser,écraser,tuer,démoustiquer [II] Epit:petit
+vis|n.f|đinh vít, ốc vít|[] Labreal_12:visser
+érotique|adj|khiêu dâm, gợi dục|[] CausPred:érotiser
+paresse|n.f|sự lười biếng|[] Adv_1:avec,paresseusement; Real_1:faire preuve,paresser
+modestie|n.f|sự khiêm tốn|[] Adv_1:avec,modestement
+mécanicien|n.m|thợ máy, thợ cơ khí|[II.2] Fact_2:créer,inventer [III] S_0Fact_0:mécanique
+grappe|n.f|chùm (nho)|[b] Redun:de raisin
+tiré|adj|bị kéo căng; hốc hác (mặt)|[I] CausPred:tirer
+immortel|adj/n|bất tử|[I] CausPred:immortaliser [II] CausPred:immortaliser
+neiger|v|có tuyết rơi|[] AntiMagn^quant:neigeoter; Magn^quant:dru,à gros flocons
+gomme|n.f|cục tẩy; gôm, nhựa cây|[II] Labreal_12:gommer
+biberon|n.m|bình sữa (trẻ em)|[] Labreal_12:nourrir; Real_1:donner
+citation|n.f|câu trích dẫn; giấy triệu tập|[II.1] Real_1:reprendre,emprunter [I] Oper_1:faire
+couturier|n.m|nhà tạo mẫu thời trang, thợ may|[b] Epit:grand
+chandail|n.m|áo len|[] Caus_1Real_1:mettre
+allégresse|n.f|niềm hân hoan, vui sướng|[] Fact_1:remplir,transporter; Oper_1:éprouver,ressentir
+torchon|n.m|giẻ lau, khăn lau|[I] Ver:propre,sec; AntiVer:sale,humide,mouillé; Labreal_12:essuyer,frotter,nettoyer,sécher; S_0SingReal_1:coup; Real_1:passer; $2=‘vaisselle’:à vaisselle; $2=‘mains’:à mains,essuie-main; $2=‘verres’:à verres,essuie-verre [II] Magn:vrai; Caus_1Func_0:écrire,pondre
+acheteur|n.m|người mua|[] Fact_2:acheter
+urine|n.f|nước tiểu|[] Real_1:uriner,pisser
+consommation|n.f|sự tiêu thụ; đồ uống (ở quán)|[I.2] Ver:entier,total; AntiVer:partiel
+tampon|n.m|con dấu; nút chặn, đệm; băng vệ sinh|[III] Redun:hygiénique; Real_1:avoir,porter; Caus_1Real_1:mettre
+hold-up|n.m|vụ cướp có vũ trang|[I] Oper_1:accomplir,commettre,exécuter,faire,perpétrer; AntiBonFact_0:tourner mal [II] Epit:véritable; Oper_1:accomplir,commettre,faire,réaliser
+vocabulaire|n.m|từ vựng, vốn từ|[] Magn_2^quant:riche
+anxiété|n.f|sự lo âu, lo lắng|[] Adv_1:anxieusement; Manif:peindre
+articuler|v|phát âm rõ ràng; khớp nối|[I.1] Caus:articuler [II] Caus:articuler [a] Ver:bien,articuler
+vaccin|n.m|vắc-xin|[] Labreal_12:vacciner; S_0Labreal_12:vaccination
+trempé|adj|ướt sũng|[] Magn:comme une soupe
+averse|n.f|trận mưa rào|[I] Magn^temp:continuelles,incessantes; Magn:bonne,belle,abondante,grosse,copieuse; IncepPredPlus:accroître,redoubler; AntiMagn:petite,légère,faible; AntiMagn^temp:brève,courte,passagère,petite,résiduelle; IncepPredMinus:apaiser,calmer,diminuer,faiblir; Func_0:tomber; IncepFunc_0:commencer,éclater [II.2] Adv_1:en; CausFunc_0:déclencher [II.1] IncepPredPlus:accroître,augmenter,redoubler; IncepPredMinus:apaiser,calmer,
+distributeur|n/adj.m|máy bán tự động; nhà phân phối|[II.1] AntiVer:vide
+sucré|adj/n|ngọt, có đường|[1] Real_1:manger
+bise|n/adj.f|nụ hôn lên má; gió bấc|[] Func_0:souffler
+distinction|n.f|sự phân biệt; sự tao nhã; phần thưởng|[II] Oper_1:avoir
+fracture|n.f|sự gãy xương; sự rạn nứt|[] Caus_1Oper_1:fracturer; CausOper_1:fracturer
+gymnastique|n.f|thể dục|[I.1a] Oper_1:faire; Oper_1^usual:pratiquer [II] Real_1:faire,livrer [III.2] Redun:intellectuelle; Real_1:faire,livrer [I.1b] Oper_1:faire; Oper_1^usual:pratiquer [III.1] Real_1:faire,livrer [I.2] Oper_1:faire
+tortue|n.f|con rùa|[II] Fact_0:traîner
+klaxon|n.m|còi xe|[I] Real_1:actionner,klaxonner; S_0Real_1:klaxon; Real_2:klaxonner [II] Magn:fort; AntiBon + Magn:strident; Func_0:retentir,faire entendre
+agresseur|n/adj.m|kẻ gây hấn, kẻ tấn công|[] Fact_2:agresser
+crapule|n/adj.f|kẻ đê tiện, lưu manh|[2] Epit:petite
+diagnostic|n.m|chẩn đoán|[I] Real_1:diagnostiquer [II] Real_1:établir
+chemisier|n.m|áo sơ mi nữ|[] Caus_1Real_1:mettre
+habileté|n.f|sự khéo léo, tài khéo|[] Adv_1:avec,habilement
+tardif|adj|muộn, chậm trễ|[2] Adv_1:tard,tardivement
+politicien|n/adj.m|chính trị gia|[] AntiBon:politicard
+mélodie|n.f|giai điệu|[I.2] Real_2:chanter
+ouf|onom|phù (thở phào)|[2] Oper_1:pousser
+exclamation|n.f|câu cảm thán, tiếng kêu|[] Oper_1:pousser
+fable|n.f|truyện ngụ ngôn|[II.1] Magn:à dormir debout; Real_1:dire,raconter,fabuler; Real_2:croire
+retenue|n.f|sự dè dặt, kiềm chế; phạt ở lại trường|[3] Redun:d’eau
+volcan|n.m|núi lửa|[I] A_1NonFact_0:éteint,en repos,inactif; Fact_0:exploser; IncepFact_0:réveiller; FinFact_0:éteindre; S_0SingFact_0:éruption; AntiFact_0:dormir; S_0IncepFact_0:réveil; S_resFact_0:lave [II] Fact_0:exploser; Fact_Ω:menacer
+location|n.f|việc thuê, cho thuê|[1b] IncepReal_1:prendre
+efficacité|n.f|hiệu quả, hiệu suất|[] Adv_1:efficacement
+lièvre|n.m|thỏ rừng|[] Liqu_1Func_0:lever,soulever
+gazon|n.m|bãi cỏ, thảm cỏ|[b] AntiMagn^quant:clairsemé
+grue|n.f|con sếu; cần cẩu|[I] Son:glapir
+bocal|n.m|lọ, hũ (thủy tinh)|[I.1] Labor_12:conserver; Fact_2:contenir; Caus_1Real_2:mettre [I.2] Oper_2:être; Real_2:nager,tourner
+chimie|n.f|hóa học|[I.1] Bon_∩:verte [III] Fact_0:opérer; IncepFact_0:installer [II.2] Fact_0:opérer
+pioche|n.f|cái cuốc chim|[1] Real_1:piocher
+ancre|n.f|mỏ neo|[] Real_1:jeter
+radiateur|n.m|lò sưởi; bộ tản nhiệt|[1] S_resFact_0:chaleur
+flocon|n.m|bông (tuyết), vảy|[I.2] Redun:de neige; Epit:blanc; Magn_taille:gros,énorme; AntiMagn_taille:petit,minuscule; Fact_0:tomber,voler,neiger; Adv_1:en; S_0Fact_0:chute,pluie [II] Redun:de céréales
+éloge|n.m|lời ca ngợi, lời khen|[2] Oper_1:prononcer,faire
+égoïsme|n.m|tính ích kỷ|[] Adv_1:égoïstement
+goudron|n.m|hắc ín, nhựa đường|[] Labreal_12:goudronner
+épouvante|n.f|nỗi kinh hoàng, khiếp sợ|[] Caus_2Oper_1:épouvanter
+frayeur|n.f|nỗi sợ hãi, khiếp sợ|[] Manif:peindre; Oper_1:avoir,éprouver,ressentir
+braguette|n.f|khóa quần, cửa quần|[I] Real_1:fermer
+coté|adj|được đánh giá cao; được niêm yết|[II] Redun:en Bourse
+pagaille|n.f|sự lộn xộn, bừa bãi|[II] Magn:grosse,joyeuse,sacrée [I] CausFunc_1:mettre
+ronflement|n.m|tiếng ngáy; tiếng ù ù|[I] Magn:bruyants,sonores; Oper_1:émettre [II] Magn:bruyant,sonore
+chercheur|n/adj.m|nhà nghiên cứu|[II] S_0Fact_0:recherche,science; S_resPerfFact_0:découverte [I] Fact_2:chercher
+autocar|n.m|xe khách, xe buýt đường dài|[] Real_1:conduire; Fact_0:rouler; Instr:en; Loc_in:à bord,dans; Real_2^II:aller,déplacer,voyager,prendre; Real_2^I:monter,prendre place; Fact_2:transporter; Real_2^III:descendre
+hypocrisie|n.f|sự đạo đức giả|[] Adv_1:avec,hypocritement
+administrateur|n.m|người quản trị, người quản lý|[] Real_1:administrer; Fact_2:administrer
+appréhension|n.f|sự lo âu, sự e sợ|[] Manif:peindre
+canaille|n/adj.f|đồ đểu cáng, quân lưu manh|[2] Epit:petite
+prévision|n.f|dự báo, dự đoán|[1] Oper_1:faire; Fact_0:réaliser [2] Redun:météorologique
+lié|adj|gắn bó, ràng buộc, liên quan|[I] Magn:solidement [III.a] Magn:étroitement
+tapette|n.f|vỉ đập (ruồi); (miệt thị) gã đồng tính ẻ|[II] Redun:à mouches
+crouler|v|sụp đổ, đổ sập; oằn xuống|[I] Magn_vitesse:comme un château de cartes [III] Magn_vitesse:comme un château de cartes
+rouille|n/adj.f|gỉ sét; màu gỉ (nâu đỏ)|[I] Fact_1:manger,bouffer,détruire
+virgule|n.f|dấu phẩy|[2] CausFact_1:mettre [1] CausFact_1:mettre
+végétation|n.f|thảm thực vật, cây cỏ|[] AntiMagn_1^quant:clairsemée
+hublot|n.m|cửa sổ tròn (tàu, máy bay)|[] AntiMagn_largeur:étroit
+tirage|n.m|lượng phát hành (in); sự rút thăm|[II.2b] Redun:photographique [IV] CausPredPlus:augmenter
+proverbe|n.m|tục ngữ, ngạn ngữ|[] Func_2:dire; Real_1:citer
+guirlande|n.f|vòng hoa, dây trang trí|[] Fact_2:agrémenter,embellir
+punaise|n.f|con rệp; đinh ghim|[I] Magn^quant + Involv:infester; LiquFunc_0:écraser [III] Real_1:enfoncer,punaiser; Labreal_12:épingler [II] Redun:sale
+guêpe|n.f|ong bắp cày|[] Son:bourdonner,vrombir; AntiBonInvolv:piquer; S_instrAntiBonInvolv:aiguillon,dard; Fact_0:voler
+justesse|n.f|sự chính xác, sự đúng đắn|[I.2] Adv_1:juste
+relâche|n|sự nghỉ ngơi; buổi nghỉ diễn|[] Real_1:faire
+jupon|n.m|váy lót|[I] Caus_1Real_1:mettre
+chausson|n.m|dép đi trong nhà; bánh gối|[I.1] Magn_taille:gros; AntiBon:usés; A_1Real_1:en; Caus_1Real_1:mettre,enfiler,chausser; Liqu_1Real_1:enlever,ôter,retirer; S_1^usualCausFunc_0:chaussonnier,chaussonnière; Real_1:avoir,porter [I.2] AntiBon:usés; A_1Real_1:en; Caus_1Real_1:mettre,enfiler,chausser; Liqu_1Real_1:enlever,ôter,retirer; S_1^usualCausFunc_0:chaussonnier,chaussonnière; Real_1:avoir,porter
+anarchie|n.f|tình trạng vô chính phủ; sự hỗn loạn|[I] CausFunc_0:instaurer

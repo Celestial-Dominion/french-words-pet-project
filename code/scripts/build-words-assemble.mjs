@@ -21,6 +21,9 @@ const register = existsSync(regPath) ? JSON.parse(readFileSync(regPath, "utf8"))
 // họ từ (build-family.mjs)
 const famPath = join(HERE, "out/family.json");
 const family = existsSync(famPath) ? JSON.parse(readFileSync(famPath, "utf8")) : {};
+// cụm hay đi kèm (build-collocations.mjs)
+const colPath = join(HERE, "out/collocations.json");
+const collocations = existsSync(colPath) ? JSON.parse(readFileSync(colPath, "utf8")) : {};
 
 const byLevel = {};
 const index = {};
@@ -43,6 +46,7 @@ for (const w of base) {
   }
   if (register[w.id]) word.register = register[w.id];
   if (family[w.id]) word.family = family[w.id];
+  if (collocations[w.id]) word.collocations = collocations[w.id];
   (byLevel[w.level] ||= []).push(word);
   index[w.id] = [word.ipa, word.meaning_vi];
 }

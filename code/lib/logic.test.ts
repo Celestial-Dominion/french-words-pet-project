@@ -755,3 +755,31 @@ t("family: mọi từ trong họ đều có trong bộ từ (mở được thẻ
   assert.ok(!all.get("main")?.family?.includes("maintenant"));
   assert.ok(!all.get("beau")?.family?.includes("beaucoup"));
 });
+
+// ---- Cụm hay đi kèm (scripts/build-collocations.mjs) ----
+t("collocations: 1–4 cặp [cụm fr, nghĩa vi] không rỗng, không trùng; phủ đa số từ A1–B1", () => {
+  const all = new Map<string, { level: number; collocations?: [string, string][] }>();
+  for (const l of LEVELS) {
+    const file = join(process.cwd(), "public", "data", "words", `${levelSlug(l.level)}.json`);
+    for (const w of JSON.parse(readFileSync(file, "utf8"))) all.set(w.id, w);
+  }
+  const byLevel: Record<number, [number, number]> = {};
+  for (const [id, w] of all) {
+    const c = (byLevel[w.level] ??= [0, 0]);
+    c[1]++;
+    if (!w.collocations) continue;
+    c[0]++;
+    assert.ok(w.collocations.length >= 1 && w.collocations.length <= 4, `${id}: ${w.collocations.length}`);
+    const seen = new Set<string>();
+    for (const pair of w.collocations) {
+      assert.equal(pair.length, 2, `${id}: ${JSON.stringify(pair)}`);
+      const [fr, vi] = pair;
+      assert.ok(fr.trim() && vi.trim(), `${id}: cụm/nghĩa rỗng`);
+      assert.ok(!seen.has(fr), `${id}: trùng "${fr}"`);
+      seen.add(fr);
+    }
+  }
+  for (const lv of [1, 2, 3]) assert.ok(byLevel[lv][0] / byLevel[lv][1] > 0.75, `cấp ${lv}: ${byLevel[lv]}`);
+  assert.ok(all.get("faim")?.collocations?.some(([fr]) => fr === "avoir faim"));
+  assert.ok(all.get("prendre")?.collocations?.some(([fr]) => fr === "prendre une décision"));
+});

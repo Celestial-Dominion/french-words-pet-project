@@ -1,0 +1,100 @@
+irritation|n.f|sự bực bội; sự kích ứng (da)|[I] CausPredMinus:calmer,apaiser
+banalité|n.f|sự tầm thường; điều sáo rỗng|[II] Real_1:dire,énoncer,asséner,proférer
+abattu|adj/n|chán nản, ủ rũ, suy sụp|[I.2] CausPred:rabattre [II.2] CausPred:abattre [II.1] CausPred:abattre [I.1] CausPred:abattre
+froideur|n.f|sự lạnh lùng|[] Fact_1:glacer,intimider
+observateur|n/adj.m|người quan sát; tinh ý, hay quan sát|[] Bon:fin
+attester|v|chứng thực, xác nhận|[] Magn:sur l’honneur
+similaire|adj|tương tự, giống nhau|[] AntiMagn:peu,plus ou moins,superficiellement; Magn:relativement,très,sensiblement,exactement,identiques
+émoi|n.m|sự xao xuyến, xúc động|[] Manif:peindre; Oper_1:avoir,éprouver,ressentir; IncepOper_1:tomber
+caractéristique|n/adj.f|đặc điểm, đặc trưng; mang tính đặc trưng|[] Fact_2:caractériser
+carapace|n.f|mai, vỏ cứng (rùa, cua)|[] Oper_1:avoir,posséder
+pédale|n.f|bàn đạp|[1] Real_1:appuyer,actionner [2] Real_1:appuyer; AntiBonReal_1:perdre [3a] Real_1:appuyer; IncepReal_1:mettre
+penchant|n/adj.m|khuynh hướng, thiên hướng, sở thích|[] Magn:boulimie
+aspirateur|n/adj.m|máy hút bụi|[I.1] Magn_puissance:gros,puissant; Real_1:passer; Fact_2:aspirer,avaler,absorber; Caus_1Fact_0:brancher,allumer; Liqu_1Fact_0:éteindre,arrêter,débrancher; Labreal_12:aspirer; Son:vrombir; S_0SingReal_1:coup [III] Caus_1Fact_0:lancer; PreparReal_1:télécharger; Fact_0:aspirer; Labreal_12:aspirer [I.2] Labreal_12:aspirer [I.3] Fact_2:aspirer,absorber,avaler
+astuce|n.f|mẹo, thủ thuật|[II] Adv_1:astucieusement
+yaourt|n.m|sữa chua|[a] Bon:crémeux,onctueux; Real_1:manger; PreparReal_1^I:sucrer; PreparReal_1^II:mélanger,touiller,tourner [b] Real_1:manger
+énervé|adj|bực bội, cáu kỉnh|[] Magn:enragé
+dégrader|v|làm suy thoái, làm hư hại; giáng cấp|[I] Caus:dégrader [II] Caus:dégrader
+vinaigre|n.m|giấm|[] S_1^usualCausFunc_0:vinaigrier
+sandwich|n.m|bánh mì kẹp, sandwich|[I] CausFunc_0:confectionner,faire,préparer,garnir,composer; Real_1:manger,grignoter
+précipitation|n.f|sự vội vàng; lượng mưa|[III] Redun:atmosphérique
+éventualité|n.f|khả năng có thể xảy ra, trường hợp|[] Real_Ω:envisager
+avalanche|n.f|trận tuyết lở|[III] Adv_1:en [I.1] Func_0:avoir lieu,produire [II] Adv_1:en
+vétérinaire|n/adj|bác sĩ thú y; thuộc thú y|[] Fact_2:examiner,occuper,soigner,traiter; Fact_3:diagnostiquer,occuper,soigner,traiter
+divinité|n.f|thần thánh, vị thần|[] S_0Real_2:culte
+terrorisme|n.m|chủ nghĩa khủng bố|[II] Redun:intellectuel
+dépouille|n.f|thi hài, xác; chiến lợi phẩm|[] Redun_⊃:mortelle
+anticiper|v|dự đoán trước, lường trước|[II.1] AntiBon + Magn:mettre la charrue avant les bœufs
+filtre|n.m|bộ lọc, cái lọc|[] PreparFact_1:mettre
+déchirure|n.f|vết rách|[2] $2=‘muscle’:musculaire
+éloignement|n.m|sự xa cách; khoảng cách|[II] Caus:éloigner
+sondage|n.m|cuộc thăm dò, khảo sát|[II] Real_1:sonder
+indiscrétion|n.f|sự tọc mạch, thiếu tế nhị; sự hớ lộ bí m|[] Adv_1:avec,indiscrètement
+dépendance|n.f|sự phụ thuộc; sự nghiện|[1] Magn:étroite
+cor|n.m|kèn cor; vết chai ở chân|[] Oper_1:jouer
+répertoire|n.m|danh mục; tiết mục biểu diễn|[2.a] Labreal_12:piocher; Real_1:piocher
+guidon|n.m|ghi đông, tay lái (xe đạp)|[I] Real_1:tenir,tourner
+infarctus|n.m|nhồi máu cơ tim|[] Redun:du myocarde
+mayonnaise|n.f|sốt mayonnaise|[] CausFunc_0:faire,réaliser,préparer,monter; Labreal_12:mettre,tremper,assaisonner,servir; Real_1:consommer,manger; VerCausFunc_0:réussir; AntiVerCausFunc_0:rater
+clairon|n.m|kèn hiệu (quân đội)|[I] Ver:militaire; Real_1^II:jouer,souffler; Real_1^I:emboucher
+remédier|v|khắc phục, chữa (điều gì)|[I.b] Caus:remédier
+fumeur|n/adj.m|người hút thuốc|[] Magn^temp:endurci
+répugnance|n.f|sự ghê tởm, sự chán ghét|[1] Oper_1:avoir,éprouver,ressentir
+faune|n|hệ động vật, khu hệ động vật|[] Magn_1^quant:riche; S_0Fact_0:sexe,musique
+nageur|n.m|người bơi, vận động viên bơi|[a] Fact_0:nager
+réacteur|n.m|lò phản ứng; động cơ phản lực|[I.2] Redun:chimique [I.1] Redun:nucléaire
+sacrement|n.m|bí tích (Công giáo)|[] Oper_1:administrer
+ravissement|n.m|sự mê ly, niềm say đắm|[] Oper_1:éprouver,ressentir,goûter; IncepOper_1:tomber
+couvre-feu|n.m|lệnh giới nghiêm|[I.2] Ver:nocturne; Caus_2Func_1:imposer; Real_1:observer,respecter,suivre [I.1] Redun_⊃:militaire; Real_1:obéir
+frustration|n.f|sự bực bội, nỗi thất vọng|[] Manif:peindre; Oper_1:avoir,éprouver,ressentir
+atome|n.m|nguyên tử|[II] Real_1:maîtriser,dominer
+alcoolique|adj/n|nghiện rượu; người nghiện rượu|[] Fact_0:boire; Magn^temp:invétéré,chronique,invétérée
+habitation|n.f|nhà ở, chỗ ở|[II] AntiBon + AntiMagn_taille:taudis
+mésange|n.f|chim bạc má, chim sẻ ngô|[] Son:titiner,zinzinuler
+emprise|n.f|sự chi phối, ảnh hưởng; phần đất chiếm d|[] Oper_1:avoir,exercer
+articulation|n.f|khớp (xương); sự phát âm rõ; sự liên kết|[I] Ver:normale,correcte,précise,distincte,nette; AntiVer:imprécise,floue,non audible
+préservatif|n/adj.m|bao cao su; có tính bảo vệ|[] Caus_1Real_1:mettre
+pneumonie|n.f|viêm phổi|[] Magn^temp:chronique; Oper_1:avoir,souffrir
+brevet|n.m|bằng cấp, chứng chỉ; bằng sáng chế|[2] Redun:d’invention
+allergie|n.f|dị ứng|[I] Oper_1:souffrir
+tornade|n.f|lốc xoáy, cơn lốc|[I] Magn_effet:catastrophique,destructrice,dévastatrice,meurtrière; Magn_puissance:importante,intense,puissante,terrible,violente; Oper_1:connaître,essuyer,subir; NonOper_1:échapper; IncepPredMinus:affaiblir; Func_0:frapper,déchaîner; IncepFunc_0:prendre naissance; FinFunc_0:passer,éloigner [II] CausOper_1:soulever; CausFunc_0:former,provoquer; Adv_1:en; AntiMagn:petite,mini [III.1] Epit:véritable; Magn:violente,terr
+cycliste|n/adj|người đi xe đạp; thuộc xe đạp|[I] Fact_0:pédaler [II] Caus_1Real_1:mettre
+équation|n.f|phương trình|[I.2b] Redun:chimique [I.2a] Redun:chimique
+composé|adj/n|phức hợp, ghép; hợp chất|[2] Redun:chimique
+affrontement|n.m|sự đối đầu, đụng độ|[] Magn:bras de fer,épreuve de force
+baffe|n.f|cái tát|[] Real_1:donner,mettre
+tramway|n.m|xe điện, tàu điện|[I] Real_1^II:prendre; Instr:en; Real_1^III:descendre; Fact_1:transporter; Fact_2:desservir; Real_1^I:monter,prendre place; CausFact_0:conduire; Fact_0:circuler,déplacer,rouler [II] Fact_0:fonctionner,marcher; Real_1:emprunter,prendre,utiliser
+suspense|n|sự hồi hộp, gay cấn|[I.1] Magn:haletant; Fact_3:tenir en haleine [II] Magn:gros; Bon + Magn:haletant
+mie|n.f|ruột bánh mì|[] Bon:moelleux,tendre
+dormeur|n/adj.m|người ngủ; hay ngủ, ngủ nhiều|[a] Fact_0:dormir [b] Fact_0:dormir
+archéologue|n|nhà khảo cổ học|[] Fact_0:fouiller
+analogue|adj/n|tương tự, tương đồng|[a] Magn:exactement,parfaitement,équivalent,identique,exact [b] Redun_⊃:structural
+merle|n.m|chim sáo đen, chim hét|[] Germ:merleau; Son:chanter
+microscope|n.m|kính hiển vi|[] Labreal_12:examiner,regarder
+caramel|n/adj.m|kẹo caramen; màu caramen|[I.2] S_1^usualCausFunc_0:confiseur,confiseuse
+thorax|n.m|lồng ngực|[a] Loc_in:dans,endothoracique,sur
+ego|n.m|cái tôi, bản ngã|[I.1] Magn:surdimensionné
+urne|n.f|hòm phiếu; bình đựng tro|[I] Redun:funéraire
+rêvasser|v|mơ mộng, mơ màng|[] Adv_1:la tête ailleurs
+toison|n.f|bộ lông cừu; lông rậm|[II.2] Redun:pubienne
+bifteck|n.m|bít tết|[I] Real_1:manger; PreparReal_1:cuire,frire,griller [II] Real_1:gagner
+rhumatisme|n.m|bệnh thấp khớp|[] Oper_1:avoir,souffrir
+aimant|adj/n|nam châm; trìu mến (tính từ)|[I.2] CausPred:aimanter [I.1] Redun:naturel
+jeûne|n.m|sự nhịn ăn, sự kiêng ăn (thường vì tôn g|[] Oper_1:observer,faire,pratiquer; FinOper_1:rompre; IncepOper_1:entamer
+serpillière|n.f|giẻ lau nhà|[I] Real_1:passer
+ventilateur|n.m|quạt máy|[] Fact_1:rafraîchir
+amarre|n.f|dây neo, dây buộc tàu|[] LiquFunc_0:larguer,lâcher,rompre
+bave|n.f|nước dãi, nhớt|[1] Real_1:baver
+devinette|n.f|câu đố|[] Oper_1:poser; Real_3:répondre,deviner
+navigateur|n.m|trình duyệt; nhà hàng hải|[II] Redun:Internet,Web
+dentifrice|n/adj.m|kem đánh răng|[1a] Fact_2:laver,nettoyer; Labreal_12:laver,nettoyer
+collectionneur|n.m|nhà sưu tập|[] Fact_2:collectionner
+décalage|n.m|sự chênh lệch, độ lệch|[I.2] Caus:décaler
+frousse|n.f|sự sợ hãi, nỗi khiếp (tiếng lóng)|[] Manif:peindre
+garni|adj/n|có đồ ăn kèm, được trang trí|[] Conv_21Pred:garnir; Caus:garnir
+caca|n/adj.m|cứt, phân (tiếng trẻ con)|[I] Caus_1Func_0:faire [II] Oper_1:faire [III] Loc_in:dans
+palette|n.f|bảng màu; pa-lét kê hàng|[] Magn_2^quant:riche
+tranché|adj|rõ rệt, dứt khoát|[I] CausPred:trancher
+panoplie|n.f|bộ đồ (nghề, đồ chơi); một loạt|[I.1] Redun:d’armes
+tuberculose|n.f|bệnh lao|[] Oper_1:avoir,souffrir
+certifier|v|chứng nhận, xác nhận|[] Magn:sur l’honneur

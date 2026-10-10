@@ -1,0 +1,100 @@
+chef|n|sếp, người đứng đầu; đầu bếp|[I.2] Redun:de cuisine
+recevoir|v|nhận, tiếp đón|[IV.1b] AntiBon:comme un chien dans un jeu de quilles
+plaisir|n.m|niềm vui, sự vui thích|[I.1] Magn + Oper_1:fondre; Oper_1:avoir,éprouver,ressentir,goûter; CausDegrad:gâcher [II] Magn + Oper_1:fondre; Real_1:tressaillir
+doute|n.m|sự nghi ngờ|[] Ver:raisonnable; Fact_1:tarauder
+pièce|n.f|căn phòng; đồng xu; mảnh, cái|[II.2] Redun:de monnaie; AntiMagn:piécette
+partie|n.f|phần; ván (chơi)|[V] Redun:génitales
+verre|n.m|cốc, ly; thủy tinh|[II.1a] AntiMagn_taille:dé à coudre [II.1b] AntiMagn^quant:dé à coudre
+lettre|n.f|lá thư; chữ cái|[II] Magn:longue
+genre|n.m|loại, kiểu; giống (ngữ pháp)|[III] Redun:grammatical
+près|prep/adv|gần|[I.1] Magn:bien,très,tout [III] Magn:tout [II.2] Magn:bien,tout,très
+silence|n.m|sự im lặng, yên lặng|[I.2] Magn:de plomb
+courir|v|chạy|[I.1a] Magn_vitesse:vite,à fond de train,à toutes jambes,à perdre haleine,à toute vitesse [VII.1] Fin:arrêter,immobiliser
+lumière|n.f|ánh sáng, đèn|[I] AntiBon + Magn:violente; IncepFact_2 v Fact_2:tomber [II] Oper_1:jeter,faire
+droit|n/adj/adv.m|thẳng; bên phải; quyền lợi|[I] Magn:comme un i
+bouger|v|cử động, di chuyển|[I.2a] Caus:bouger
+coucher|v/n|đặt nằm; đi ngủ; lúc lặn|[I.1a] Caus:coucher [II] Caus:coucher
+joli|adj/n|đẹp, xinh|[] Magn:à croquer,beau
+nouvelle|adj|mới (giống cái)|[I.1] Oper_2:accueillir; IncepFunc_0:tomber; IncepFact_2:tomber
+jeu|n.m|trò chơi|[VI] Real_1:tirer
+pauvre|adj/n|nghèo; đáng thương|[I] IncepOper_1:appauvrir; CausOper_1:appauvrir
+film|n.m|phim|[II] Real_Ω:regarder; Caus_1Func_0:tourner; Real_1:filmer; Real_3:jouer; AntiBon:navet
+cheveu|n.m|sợi tóc|[I.2a] A_2AntiReal_1:en désordre,en bataille; AntiMagn:clairsemés,rares; AntiMagn_épaisseur:fins; AntiMagn_longueur:courts,ras,à la Titus; Bon:beaux,magnifiques; FinFunc_0:tomber; S_1Real_Ω:coiffeur,coiffeuse,coupe-tif,merlan; FinOper_1:perdre,laisser pousser le front,dégarnir,déplumer [I.2b] AntiMagn:rare; Oper_1:avoir,porter; Real_Ω:travailler,soigner [I.1] CausPredMinus:rafraîchir,raccourcir,couper les cheveux,ton
+propre|adj/n|sạch sẽ; riêng, của chính mình|[I.1] Magn:très,comme un sou neuf,impeccable,plus blanc que blanc; CausPred:nettoyer,laver [IV.2] Magn:plus blanc que blanc
+compte|n.m|tài khoản; sự tính toán|[III.2] Redun:bancaire [I] Oper_1:faire
+voler|v|bay; ăn trộm|[I.1] Incep:envoler; Fin:poser [IV.b] Incep:soulever; CausConv_21:faire,soulever; Liqu:rabattre [I.2] Incep:décoller; Fin:atterrir; Caus:faire [IV.a] Caus:faire ~ ,projeter,jeter,lancer; AntiMagn:voleter; Fin:retomber [V] AntiMagn:voleter; Incep:fuser [III] Incep:précipiter [II.2] Incep:envoler
+dur|adj/n/adv|cứng; khó khăn|[I] IncepOper_1:durcir
+hier|adv|hôm qua|[1] Magn:avant-hier
+rouge|adj/n|màu đỏ|[I.1a] AntiMagn:un peu,rougeâtre,clair,pâle; IncepPred:rougir; CausPred:rougir; Magn:ardent,brillant,vif,foncé,sombre [I.1b] Magn:ardent,brillant,vif,foncé,sombre; AntiMagn:clair,pâle; Oper_1:passer,virer [II.1] IncepPred:rougir; Magn:tout,cramoisi,écarlate,pourpre [III.2] Real_1:arrêter; AntiReal_1:passer,brûler,griller [II.2] Caus_1Func_2:mettre,colorer,empourprer,enflammer; IncepFunc_2:monter [IV] AntiBon:gros,qui
+service|n.m|dịch vụ; sự phục vụ|[I.1] Oper_1:rendre [IV.2] Loc_in^temp:pendant
+bruit|n.m|tiếng ồn, tiếng động|[I] Adv_1:bruyamment; AntiMagn:étouffé,sourd; AntiBonFact_0:casser les oreilles [II] Func_2:courir,circuler,propager,répandre
+café|n/adj.m|cà phê; quán cà phê|[II] AntiBon + AntiMagn:jus de chaussette
+chemin|n.m|con đường, lối đi|[I] Ver:praticable,carrossable; AntiVer:impraticable; AntiMagn_largeur:étroit
+bouche|n.f|miệng|[I.2] AntiBon:pâteuse
+fenêtre|n.f|cửa sổ|[I] Instr:à travers,par; AntiMagn_largeur:étroite
+crier|v|hét, la lớn|[I.1a] AntiBon:braire [I.2] AntiBon:braire
+vendre|v|bán|[I.1] Magn_2^quant:bien,comme des petits pains
+bureau|n.m|bàn làm việc; văn phòng|[I] Real_1:travailler; IncepReal_1:asseoir; Magn:de ministre; Prepar:débarrasser,nettoyer,ranger; A_1Real_1:à,derrière [II.1] Real_1:travailler; Real_Ω:passer; Caus_1Real_Ω:convoquer; Labreal_1Ω:recevoir [II.3a] Caus_1Func_0:ouvrir; Liqu_1Func_0:fermer [III] IncepReal_2:charger,ouvrir; IncepFact_0:charger; Labreal_13:mettre,placer,afficher; Prepar:vider; A_1Real_3:sur; LiquReal_3:supprimer [II.3b] Liqu_1Real_1:démiss
+merde|n/onom.f|cứt; (chửi thề) chết tiệt|[III] Loc_in:dans
+sens|n.m|ý nghĩa; giác quan; hướng|[1a] AntiBon:contresens [I.2] Bon:bon; AntiBon:mauvais
+jambe|n.f|chân, cẳng chân|[I.1] Ver:ingambe; Bon:bonnes,vigoureuses,solides,de vingt ans,agiles; AntiBon:faibles,mauvaises; Magn_longueur:longues,grandes,élancées,interminables; AntiMagn_épaisseur:minces,fines,nerveuses,maigres,décharnées; AntiMagn_longueur:courtes,petites; Instr:avec; Loc_in:à,sur,dans [I.2a] Bon:bonnes,vigoureuses,solides; AntiBon:faibles,mauvaises [III] Fact_1:soutenir
+cours|n|khóa học; dòng chảy|[1a] Oper_1:assurer,dispenser,donner,faire; Real_3:assister,participer,suivre [2] Real_1^I:comprendre; Real_1^II:apprendre,réviser,travailler
+choisir|v|chọn, lựa chọn|[1] Bon:judicieusement,soigneusement
+réveiller|v|đánh thức; thức dậy|[I] Caus:réveiller
+ressembler|v|giống, trông giống|[I.1] AntiMagn:de loin,vaguement,peu,en rien,aucunement; Magn:pas mal,quelque peu,beaucoup,vraiment,fort [I.2b] Magn:drôlement,vraiment,à s’y méprendre,furieusement [II] Magn:vraiment [I.2a] Magn:pas mal,quelque peu,beaucoup,vraiment,fort; AntiMagn:peu,vaguement,de loin,en rien,aucunement
+promettre|v|hứa|[1] Magn:sur l’honneur
+chanter|v|hát|[I.1a] Magn:fort,à tue-tête,à pleins poumons,à pleine voix; AntiMagn:à mi-voix,bas,fredonner,chantonner; Ver:juste; AntiVer:faux; Bon:comme un rossignol; AntiBon:comme une casserole [I.1b] Incep:entonner; Prepar_1:répéter
+cheval|n.m|con ngựa|[I.1a] Germ:poulain,pouliche; Magn_comportement:fougueux; Fact_0:marcher,trotter,galoper; Son:hennir [I.2] Real_1:manger [I.1b] Oper_1:faire; Real_1^I:monter; Real_1^II:chevaucher; Real_1^III:descendre; PreparReal_Ω:harnacher,seller [II.1] Redun:fiscal [II.2] Oper_1:faire
+taire|v|im lặng, không nói|[I.b] Caus:clouer le bec
+libre|adj|tự do; rảnh, trống|[I] Magn:comme l’air,comme le vent
+musique|n.f|âm nhạc|[I.3] Oper_1:faire; Oper_1^usual:pratiquer [I.1a] IncepFact_0:élever; MagnFact_0:retentir; Oper_1:jouer; Real_3:écouter,entendre; Real_2:composer,écrire; CausFact_0:mettre; LiquFact_0:éteindre,couper; Bon + AntiMagn:douce [I.2a] Real_1:écouter [I.2b] Real_2:écouter
+effet|n.m|tác động, hiệu ứng|[] AntiBon:méfait
+rêve|n.m|giấc mơ, giấc mộng|[I] Bon:beau,merveilleux; AntiBon:mauvais,horrible,cauchemar; Oper_1:faire; Loc_in:dans,en; Labor_12:voir [II] Oper_1:avoir,faire; Real_1:réaliser,vivre
+attention|n/onom.f|sự chú ý; cẩn thận!|[I.1] Adv_1:attentivement
+froid|adj/n|lạnh; cái lạnh|[II] Adv_1:froidement [] Propt_1:de
+faute|n.f|lỗi, sai lầm|[I.1a] Adv_2:fautivement
+bord|n.m|mép, bờ, rìa|[I.1] Loc_in:au
+sourire|v/n|mỉm cười; nụ cười|[] Magn:à belles dents; AntiVer:convenu,de politesse; Bon_2:enjôleur
+rapport|n.m|báo cáo; mối quan hệ|[I.2] AntiBon:toxique [] Oper_1:établir,faire
+avancer|v|tiến lên, tiến tới|[I.1] AntiBon + AntiMagn_vitesse:difficilement,péniblement; Magn_vitesse:rapidement,vite,à toute vitesse,à la vitesse de [Y]; AntiMagn_vitesse:lentement
+téléphone|n.m|điện thoại|[I] Son:sonner; Oper_1:avoir; Real_1:parler,servir,utiliser,téléphoner; Real_2:décrocher,raccrocher; Prepar:brancher; Caus_1Fact_0:allumer; Liqu_1Fact_0:débrancher,éteindre,couper [II.1] Instr:à,par,téléphoniquement; Oper_1:avoir; IncepReal_2:répondre; Real_1:parler,servir,utiliser,téléphoner; Liqu_3Fact_1:couper; A_1Magn^tempReal_1:pendu,scotché [II.2] Prepar_1Fact_2:donner
+confiance|n.f|sự tin tưởng, lòng tin|[] Magn:absolue
+vent|n.m|gió|[I.1] Adv_1AntiAble_2Involv:à l’abri; AntiBon + A_1Involv:aigre,coupant; AntiMagn:léger,faible,modéré,petit,calme; Bon + AntiMagn:doux,brise,zéphyr; AntiBon:âpre,mauvais; Conv_21Involv:être,trouver,être debout,être assis; Func_0:souffler,passer; FinFunc_0:apaiser,calmer,tomber,cesser,taire [I.2] CausFunc_1:faire,éventer; Real_2:éventer [II] LiquFunc_0:chasser; AntiVer:pestilentiel; Oper_1:avoir,faire,lâcher; Func_1:é
+arbre|n.m|cây, cây cối|[] AntiMagn:arbuste,arbrisseau
+numéro|n.m|số, con số|[I.1] Oper_2:porter; Real_4:lire,retenir,relever,noter [II.3a] Oper_1:exécuter,faire; Real_2:assister [I.3] Redun:de téléphone; AntiVer:mauvais,faux; Real_4:composer,faire; Real_3:attribuer [I.4a] Ver:bon,gagnant; AntiVer:mauvais,perdant; Fact_0:sortir [II.1] Real_3:publier,sortir; Loc_in:dans,à l’intérieur; Fact_0:sortir,paraître; Redun:de périodique [II.2] IncepOper_1:devenir [I.4b] Magn:fameux,sacré,drôle [I.2] Re
+mentir|v|nói dối|[] Magn:comme on respire,comme un arracheur de dents
+carte|n.f|thẻ; bản đồ; thực đơn|[I.3] Redun:à jouer
+intéresser|v|làm quan tâm; quan tâm đến|[] Magn:passionner
+fête|n.f|lễ hội, bữa tiệc|[II.1] Redun:religieuse
+voyage|n.m|chuyến đi, cuộc du lịch|[a] Oper_1:faire,effectuer
+sale|adj|bẩn, dơ|[I.1] Magn:bien,très,cracra,crade,cradingue; CausPred:salir [V.2] Magn:crade,crado,cradoque,crasseux,dégueulasse [II.1] Magn:crasseux,crado,cracra,cradingue,craspec [I.2] Magn:cracra,crade,cradingue,crado,cradoque [V.1] Magn:crade,cradingue,crado,cradoque,craspec [IV] Magn:cracra,crade,cradingue,crado,cradoque [II.3] Magn:dégueulasse,dégueu
+couleur|n.f|màu, màu sắc|[I.1a] AntiBon + Magn:criarde; AntiBon + AntiMagn:fade,terne,terreuse,passée; Bon:belle,jolie,éclatante,magnifique; CausFunc_1:donner,colorer; Magn:ardente,brillante,vive,foncée,sombre; AntiMagn:claire,pâle; IncepOper_1:prendre,colorer; LiquFunc_1:enlever,ôter,décolorer [III.1b] Fact_0:flotter; Liqu_1Fact_0:amener; Caus_1Fact_0:hisser,lancer,lever [I.3] Epit:belles,bonnes; Oper_1:avoir; FinOper_1:perdre,décolorer; In
+tromper|v|lừa dối; nhầm lẫn|[I] Adv_1:trompeusement
+aide|n|sự giúp đỡ|[II] Fact_2:aider [] Fact_2:aider
+forme|n.f|hình dạng; thể trạng, phong độ|[I.2] AntiBon + AntiVer:difforme; Oper_1’:avoir,être,former; Bon:harmonieuse,épurée,pure; CausFunc_1:donner; IncepOper_1:prendre [III.1] Bon + Magn:grande,super,pleine,excellente,éblouissante; Degrad:baisse; AntiBon:petite,mauvaise; ContOper_1:conserver,garder,tenir,rester; Magn + Oper_1:péter [I.1] CausFunc_0:dessiner,tracer; Ver:régulière,géométrique; AntiVer:irrégulière,indistincte [IV.1a] Caus_2Func_2:revêtir; Op
+fleur|n.f|hoa, bông hoa|[I.1] IncepReal_1:fleurir; IncepFunc_0:éclore [I.2] IncepFunc_0:apparaître,pousser,éclore; Real_2^I:cueillir; Real_2^II:offrir,déposer; IncepReal_1:fleurir
+rêver|v|mơ, mơ mộng|[I] AntiBon_2:cauchemarder
+drôle|adj/n|buồn cười, ngộ nghĩnh|[1] Magn:à se rouler par terre
+malade|adj/n|ốm, bệnh; người bệnh|[I.1a] Magn:gravement,comme un chien,à crever; IncepPred:tomber [III] Magn:complètement
+grave|adj/n|nghiêm trọng, trầm trọng|[I] Magn:gravissime,très; IncepPredPlus:aggraver; CausPredPlus:aggraver
+oreille|n.f|tai|[I.1a] Magn_taille:grandes,en feuille de chou; Loc_in:sur,à,dans; AntiMagn_taille:petites [I.3] A_1NonFact_0:bouchée; Real_1:entendre,distinguer,saisir; Prepar_1Real_1:ouvrir; Caus_1Real_1:écouter,tout oreilles; Real_2:remplir; Fact_0:entendre; BonReal_2:caresser [I.5] Bon:attentive; AntiVer:indiscrète [I.1b] Magn_taille:grande,longue; Loc_in:sur,à,dans; AntiMagn_taille:petite [I.4] Bon:bonne,oreille absolue,exercée 
+jurer|v|thề; chửi thề|[] Magn:sur l’honneur
+ombre|n|bóng, bóng râm|[I.2] IncepFunc_2 v Func_2:tomber
+danser|v|nhảy, khiêu vũ|[] AntiBon + AntiVer:dansoter
+gueule|n.f|mõm (thú); mặt, miệng (thô tục)|[I.2c] AntiBon:de _N de long
+prix|n.m|giá; giải thưởng|[I] Bon + AntiMagn:d’ami; Func_2:élever
+ligne|n.f|đường, dòng, hàng|[I] Caus_1Func_0:tracer,dessiner
+debout|adv|đứng, đứng thẳng|[I.a] Caus_1Pred:mettre; CausPred:mettre; ContPred:rester; Caus_1De_nouveauPred:remettre; CausDe_nouveauPred:remettre [III.1] Caus_1Pred:lever; CausPred:lever; Liqu_1Pred:coucher [IV.1] CausPred:mettre [I.b] Caus_1De_nouveauPred:remettre; CausDe_nouveauPred:remettre; CausPred:mettre; Caus_1Pred:mettre [III.3] CausPred:mettre; CausDe_nouveauPred:remettre
+honneur|n.m|danh dự, vinh dự|[I] Instr:sur [II.1b] Oper_1:rendre
+impression|n.f|ấn tượng, cảm giác|[I.2] Caus:imprimer
+nez|n.m|mũi|[I.a] AntiMagn:petit,fin; AntiMagn_largeur:mince; AntiMagn_longueur:court; Instr:par; Loc_ad:dans; Loc_ab:de; FinFact_0:boucher; Magn:gros [I.b] Magn_longueur:long,grand; Magn_taille:gros,énorme; AntiMagn_longueur:court,petit; Instr:de; Loc_in:sur,à,dans; AntiMagn:fin [III.1] Ver:bon; IncepReal_2:monter [IV] Loc_in:sur,dans [III.3] Bon:délicat [V] Loc_in:à
+passé|n/adj/adv.m|quá khứ; đã qua|[I] Magn_1^quant:riche
+sujet|n/adj.m|chủ đề, đề tài|[I.1] AntiBon:chiffon rouge [I.3] Redun:syntaxique,grammatical; Labor_12:avoir,prendre
+médecin|n.m|bác sĩ|[] Real_2:consulter,voir; Fact_2:examiner,occuper,soigner,traiter; Fact_2^usual:suivre; AntiVer:marron; AntiBon:mauvais,médicastre,mauvaise; Fact_3:diagnostiquer,occuper,soigner,traiter; Fact_0:exercer,consulter; S_0SingFact_0:consultation
+doucement|adv|nhẹ nhàng, từ từ|[I.2] Magn:tout doux
+serrer|v|siết, ôm chặt|[] $3=‘peur’:peureusement
+bonheur|n.m|hạnh phúc|[1] Oper_1:avoir,éprouver,ressentir,goûter; CausDegrad:gâcher
+doux|adj/n/adv|ngọt, dịu, mềm mại|[V] Magn:tout doux
+robe|n.f|váy, đầm|[I.1] AntiMagn_épaisseur:fine,légère,d’été,printanière; Magn_largeur:ample,bouffante,large; Magn_longueur:mi-longue,grande,longue,à traîne; AntiMagn_largeur:ajustée,collante,cigarette,fourreau,fuseau; AntiMagn_longueur:courte,petite; A_1Real_1:en,habillée,vêtue; Liqu_1Real_1:enlever,ôter,retirer,dégrafer,faire glisser; AntiBonReal_1:nager,flotter [I.2] A_1Real_1:en,habillé,vêtu; Real_1:porter [II] Bon:belle [III] Bon
+peuple|n.m|dân tộc, nhân dân|[II.2] Func_2:peupler
+avis|n.m|ý kiến; thông báo|[I] Bon_1:favorable; AntiBon_1:défavorable

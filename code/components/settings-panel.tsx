@@ -218,11 +218,18 @@ export default function SettingsPanel() {
             (New, Pallier et al., CC BY-SA 4.0)
           </li>
           <li>
-            Phiên âm IPA, nghĩa tiếng Anh, bảng chia động từ, nhãn văn phong —{" "}
+            Phiên âm IPA, nghĩa tiếng Anh, bảng chia động từ, nhãn văn phong, họ từ —{" "}
             <a href="https://kaikki.org/dictionary/French/" className="underline" target="_blank" rel="noreferrer">
               Wiktextract / Wiktionary
             </a>{" "}
             (CC BY-SA 4.0)
+          </li>
+          <li>
+            Từ hay đi kèm (gốc cho mục “Cụm hay đi kèm”) —{" "}
+            <a href="https://www.ortolang.fr/market/lexicons/lexical-system-fr" className="underline" target="_blank" rel="noreferrer">
+              Réseau Lexical du Français (RL-fr) 3.2
+            </a>{" "}
+            (ATILF – CNRS &amp; Université de Lorraine, CC BY 4.0)
           </li>
           <li>Nghĩa tiếng Việt, câu ví dụ, bài đọc, truyện, khóa phát âm &amp; ngữ pháp — do dự án này biên soạn</li>
           <li>Giọng đọc — Microsoft Edge neural TTS (fr-FR), sinh sẵn lúc build</li>

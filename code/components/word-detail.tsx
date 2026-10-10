@@ -295,6 +295,23 @@ export default function WordDetail({
             </div>
           )}
 
+          {/* cụm hay đi kèm (RL-fr): prendre une décision — kèm nghĩa vì cụm tiếng Pháp khó đoán nghĩa */}
+          {word.collocations?.length ? (
+            <div className="mt-4">
+              <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                🔗 Cụm hay đi kèm
+              </div>
+              <ul className="space-y-1">
+                {word.collocations.map(([fr, vi]) => (
+                  <li key={fr} className="rounded-lg bg-primary/10 px-2.5 py-1.5 text-sm">
+                    <span className="font-medium text-primary">{fr}</span>
+                    <span className="text-muted-foreground"> — {vi}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
           {/* họ từ: décider → décision — bấm để mở thẻ từ đó (chỉ gồm từ có trong bộ từ) */}
           {word.family?.length ? (
             <div className="mt-4">
