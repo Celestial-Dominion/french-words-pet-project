@@ -5,6 +5,29 @@
 > huy hiệu năng lực, Luyện tập tự do, đồng bộ an toàn, deploy nhanh. Phần còn lại dưới đây làm dần;
 > đánh `[x]` khi xong, ghi commit vào cuối dòng.
 
+## Cách làm (áp dụng cho MỌI đợt)
+
+**Quy tắc làm việc** (yêu cầu của chủ app):
+
+- Tự làm, **không gọi agent/subagent**; được chạy song song lệnh và tiến trình (lệnh độc lập gửi cùng lúc, việc lâu chạy nền).
+- **Không cài phần mềm mới** lên máy. Dùng sẵn: `code/node_modules` (next, tsc, eslint, vitest, Playwright + Chromium đã cài, firebase-tools), `python3` hệ thống, edge-tts trong venv của app Anh.
+- **Dùng tối đa nguồn online miễn phí** (WebSearch/WebFetch, tải dữ liệu mở). Chỉ nhận phạm vi công cộng, CC0, CC BY, CC BY-SA, CC BY-NC(-SA); không nhận ND; ghi nguồn + giấy phép vào dữ liệu và mục "Nguồn dữ liệu" trong Cài đặt.
+- **Làm phần chung trước, phần riêng sau**: lib thuần / types / db / sync / script pipeline / test → rồi UI từng màn, nội dung.
+- **Không giải thích, không hỏi lại** — tự chọn phương án hợp lý, ghi lựa chọn vào báo cáo.
+- **Báo cáo ngắn sau mỗi task con** (theo mã việc A1, B2…) và **một báo cáo tổng** cuối đợt; viết tiếng Việt.
+- Kết thúc đợt: `npm run check` + `npx playwright test` → commit (tiếng Việt, dòng cuối `Co-Authored-By`) → push → `npm run deploy` → đánh `[x]` + mã commit trong file này, đổi mốc đồng bộ.
+- Tiết kiệm token/thời gian: đọc `diff` thay vì cả file; port bằng cách copy file app Anh rồi thay thế có kiểm tra (`python3` + `assert` chuỗi gốc tồn tại); gộp nhiều lệnh vào một lần chạy.
+
+**Kỹ thuật** (giữ lại từ plan cũ đã xoá — thư mục `code/scripts/`):
+
+- **Port code từ app Anh**: giữ đặc thù Pháp (xem mục 0). Kiểu `Example` là `{ fr, vi }` (Anh: `{ en, vi }`); hướng hỏi `fr2vi`/`vi2fr`; cấp 1..6 không có bộ nền level 0.
+- **Từ vựng** (khi thêm trường `register`/`family`/`collocations`): `node build-level-assign.mjs` → `node build-enrich-kaikki.mjs` → `node build-words-base.mjs` → `node merge-vi.mjs` → `node build-words-assemble.mjs` → `public/data/words/*.json`. Nguồn thô: `kaikki-fr.jsonl` (544 MB), `Lexique383.tsv` (cả hai không vào git). lemma-map dựng theo ưu tiên TẦN SUẤT (est→être, a→avoir) — đừng phá. Số từ mỗi cấp phải khớp `lib/levels.ts` (unit test khoá).
+- **Câu ví dụ**: `node prep-examples-batches.mjs <cefr>` (chỉ tạo lô cho từ còn thiếu, hướng dẫn ở `out/ex-in/INSTRUCTIONS.md`) → tự sinh vào `out/ex-out/` theo lô **100 từ** → `node merge-examples.mjs` (cộng dồn, chạy lại an toàn) → QA: `prep-ex-qa-batches.mjs` / `merge-ex-qa.mjs` → `node shard-examples.mjs` (8 shard/cấp, hash khớp `exampleShardOf` trong `lib/data.ts`). Nghĩa VI cho từ mới: `prep-vi-batches.mjs` / `merge-vi.mjs`, QA: `prep-qa-batches.mjs` / `merge-qa.mjs`.
+- **Audio**: `node build-audio-manifest.mjs <cefr...>` → `~/code/english_words/code/scripts/.venv-tts/bin/python build-audio.py out/audio-words.json ../public/audio/words` (câu: `out/audio-sentences.json` → `../public/audio/sentences`); tự resume, bỏ qua file đã có. Tên file dùng chung `lib/slug.ts`: từ = `audioName(chuỗi đọc)` (danh từ đọc kèm un/une), câu = `hashLong(fr).mp3`. Giọng chính `fr-FR-DeniseNeural`; vai nói thứ hai (hội thoại/video) dùng `fr-FR-HenriNeural`. Venv cũ `scripts/.venv` không còn.
+- **Bài đọc/truyện hiện có**: `prep-reading-vocab.mjs` (vốn từ lũy kế, `out/read-vocab/`) → nội dung vào `out/read-out/`, `out/story-out/` → `build-readings.mjs` / `build-stories.mjs` (idempotent). Khi làm mục 4 chuyển sang pipeline của app Anh (`content/*.txt` + `build-content.mjs` + `ENGLISH_CONTENT_PLAYBOOK.md`).
+- **Kiểm thử thủ công**: preview `fr-qa` (dev :3002, tắt đăng nhập), `fr-prod-qa` (bản build qua `firebase serve` :5055, đủ header/CSP). Playwright chạy dev :3000 — tắt preview server trước (Next khoá `.next/dev`). Bản dev không dùng service worker.
+- **Deploy**: xem `code/DEPLOY.md` (`RULES=1` khi đổi `firestore.rules` — thêm field mới vào danh sách `hasOnly`).
+
 ## 0. Quy trình mỗi lần cập nhật
 
 - [ ] `cd ~/code/english_words && git log --oneline 4bcbbc1..` → liệt kê commit mới, port phần tính năng (bỏ nội dung riêng của tiếng Anh).
