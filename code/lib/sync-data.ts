@@ -9,7 +9,7 @@
 import { doc, getDoc, collection, getDocs, writeBatch, getFirestore, type Firestore } from "firebase/firestore";
 import { getFbApp } from "./firebase";
 import { db, getXp, getConfig, getGamifyState, invalidateProgressSummary } from "./db";
-import { getCourseDone, mergeCourseDone } from "./progress-local";
+import { courseEntries, mergeCourseDone } from "./progress-local";
 import {
   fingerprint, fpEq, mergeSnapshots, pruneUndefined,
   mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify,
@@ -122,8 +122,8 @@ async function runSync(uid: string): Promise<SyncResult> {
     reads: localReads,
     notes: localNotes,
     xp: localXp,
-    phonics: [...getCourseDone("phonics")],
-    grammar: [...getCourseDone("grammar")],
+    phonics: courseEntries("phonics"),
+    grammar: courseEntries("grammar"),
     gamify: localGamify,
   };
   const localFp = fpLocal(local);

@@ -2,18 +2,22 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { BookText, Check } from "lucide-react";
+import { BookText } from "lucide-react";
 import { loadReadingsIndex, loadReadings, type ReadingMeta, type ReadingDoc } from "@/lib/data";
-import { readIds } from "@/lib/db";
+import { markRead } from "@/lib/db";
 import { LEVELS, levelAccent } from "@/lib/levels";
 import Reader from "@/components/reader";
+import { DoneFilterBar, EmptyFilter, TickRow, byDone, useReadSet, type DoneFilter } from "@/components/done-toggle";
+
+const toggleRead = (id: string, done: boolean) => void markRead(id, !done).catch(() => {});
 
 export default function BaiDocPage() {
   const [index, setIndex] = useState<ReadingMeta[] | null>(null);
-  const [read, setRead] = useState<Set<string>>(new Set());
+  const readSet = useReadSet(); // undefined = đang đọc IndexedDB
+  const read = readSet ?? new Set<string>();
+  const [status, setStatus] = useState<DoneFilter>("all");
   const [active, setActive] = useState<ReadingDoc | null>(null);
 
-  const refresh = () => readIds().then(setRead);
   useEffect(() => {
     loadReadingsIndex().then((idx) => {
       setIndex(idx);
@@ -27,7 +31,6 @@ export default function BaiDocPage() {
         });
       }
     });
-    refresh();
   }, []);
 
   const open = async (m: ReadingMeta) => {
@@ -40,15 +43,15 @@ export default function BaiDocPage() {
     return (
       <Reader
         doc={active}
-        onBack={() => {
-          setActive(null);
-          refresh();
-        }}
+        onBack={() => setActive(null)}
       />
     );
   }
 
   const byLevel = (lv: number) => (index ?? []).filter((r) => r.level === lv);
+  const isDone = (m: ReadingMeta) => read.has(m.id);
+  const doneAll = (index ?? []).filter(isDone).length;
+  const shownAll = byDone(index ?? [], status, isDone);
 
   return (
     <div>
@@ -75,10 +78,11 @@ export default function BaiDocPage() {
         <p className="text-muted-foreground">Chưa có bài đọc.</p>
       ) : (
         <div className="space-y-6">
+          <DoneFilterBar kind="read" value={status} onChange={setStatus} total={index.length} done={doneAll} />
           {/* Đọc tiếp: bài chưa đọc đầu tiên (cấp thấp trước) — như HSK */}
           {(() => {
-            const next = index.find((m) => !read.has(m.id));
-            if (!next) return null;
+            const next = index.find((m) => !isDone(m));
+            if (!next || status === "done" || readSet === undefined) return null;
             return (
               <button
                 onClick={() => open(next)}
@@ -90,16 +94,18 @@ export default function BaiDocPage() {
                   <span className="block truncate text-xs text-muted-foreground">{next.title_vi}</span>
                 </span>
                 <span className="shrink-0 text-xs text-muted-foreground">
-                  {read.size}/{index.length} bài
+                  {doneAll}/{index.length} bài
                 </span>
               </button>
             );
           })()}
+          {shownAll.length === 0 && <EmptyFilter kind="read" filter={status} />}
           {LEVELS.map((lv) => {
             const list = byLevel(lv.level);
-            if (!list.length) return null;
+            const shown = byDone(list, status, isDone);
+            if (!shown.length) return null;
             const a = levelAccent(lv.level);
-            const done = list.filter((m) => read.has(m.id)).length;
+            const done = list.filter(isDone).length;
             return (
               <section key={lv.level}>
                 <h2 className={`mb-1 flex items-baseline justify-between text-sm font-bold ${a.text}`}>
@@ -115,22 +121,29 @@ export default function BaiDocPage() {
                   <div className={`h-full rounded-full ${a.bar}`} style={{ width: `${Math.round((done / list.length) * 100)}%` }} />
                 </div>
                 <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                  {list.map((m) => (
-                    <li key={m.id}>
-                      <button
-                        onClick={() => open(m)}
-                        className="flex w-full items-center gap-3 rounded-xl border bg-card p-3 text-left active:scale-[0.99]"
-                      >
-                        <span className={`grid h-9 w-9 shrink-0 place-items-center rounded-full ${a.badge}`}>
-                          {read.has(m.id) ? <Check className="h-5 w-5" /> : <BookText className="h-5 w-5" />}
-                        </span>
-                        <span className="min-w-0 flex-1">
-                          <span className="block font-semibold">{m.title_fr}</span>
-                          <span className="block truncate text-xs text-muted-foreground">{m.title_vi} · {m.n} câu</span>
-                        </span>
-                      </button>
-                    </li>
-                  ))}
+                  {shown.map((m) => {
+                    const d = isDone(m);
+                    return (
+                      <li key={m.id}>
+                        <TickRow
+                          onOpen={() => open(m)}
+                          cardClass="flex w-full items-center gap-3 rounded-xl border bg-card p-3 text-left active:scale-[0.99]"
+                          kind="read"
+                          done={d}
+                          onToggle={() => toggleRead(m.id, d)}
+                          name={m.title_fr}
+                        >
+                          <span className={`grid h-9 w-9 shrink-0 place-items-center rounded-full ${a.badge}`}>
+                            <BookText className="h-5 w-5" />
+                          </span>
+                          <span className="min-w-0 flex-1">
+                            <span className="block font-semibold">{m.title_fr}</span>
+                            <span className="block truncate text-xs text-muted-foreground">{m.title_vi} · {m.n} câu</span>
+                          </span>
+                        </TickRow>
+                      </li>
+                    );
+                  })}
                 </ul>
               </section>
             );

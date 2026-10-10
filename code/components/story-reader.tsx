@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { lookupWord, loadExamplesForWords, type StoryDoc, type ExampleSentence } from "@/lib/data";
 import { markRead } from "@/lib/db";
 import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import { Passage, ReaderToolbar, useListenAll } from "@/components/passage";
+import { DoneButton, useIsRead } from "@/components/done-toggle";
 
 /** Vị trí chương đang đọc lưu localStorage (như HSK) — mở lại truyện là về đúng chương. */
 const chapterKey = (id: string) => `fr.story.${id}.ch`;
@@ -29,14 +30,36 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
   const last = ci === doc.chapters.length - 1;
   const { activeIdx, playing, toggle, rate, cycleRate, stop } = useListenAll(chapter.sentences);
 
+  const read = useIsRead(doc.id); // undefined = đang đọc IndexedDB
+  const manual = useRef(false); // đã bấm tay ở lần mở này → không tự đánh dấu nữa
+  const endRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    if (last) markRead(doc.id);
     try {
       localStorage.setItem(chapterKey(doc.id), String(ci));
     } catch {
       /* bỏ qua */
     }
-  }, [last, doc.id, ci]);
+  }, [doc.id, ci]);
+  // Tự đánh dấu "đã đọc" khi cuộn tới cuối CHƯƠNG CUỐI (trước đây: hễ mở tới chương cuối là đánh dấu, kể cả khi vừa bỏ tích).
+  useEffect(() => {
+    const el = endRef.current;
+    if (!el || read !== false || !last || manual.current) return;
+    const io = new IntersectionObserver(
+      ([e]) => {
+        if (!e.isIntersecting || manual.current) return;
+        io.disconnect();
+        void markRead(doc.id, true).catch(() => {});
+      },
+      { rootMargin: "0px 0px -10% 0px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [doc.id, read, last, ci]);
+  const toggleRead = () => {
+    manual.current = true;
+    void markRead(doc.id, !read).catch(() => {});
+  };
 
   const goChapter = (n: number) => {
     stop();
@@ -62,6 +85,7 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
           <h1 className="truncate text-2xl font-bold sm:text-3xl">{doc.title_fr}</h1>
           <div className="truncate text-sm text-muted-foreground">{doc.title_vi}</div>
         </div>
+        <DoneButton kind="read" done={read === true} onToggle={toggleRead} className="h-9" />
       </div>
 
       {/* chọn chương */}
@@ -89,6 +113,7 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
       />
 
       <Passage sentences={chapter.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} />
+      <div ref={endRef} data-testid="story-end" aria-hidden className="h-px" />
 
       {/* điều hướng chương — đếm n/tổng ở giữa (như HSK) */}
       <div className="mt-8 flex items-center justify-between gap-3">

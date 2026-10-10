@@ -10,7 +10,7 @@ import {
   upgradeLegacyKnown,
 } from "./srs-pure";
 import { dailyQuests, questProgress, questKey, pruneQuestKeys, type QuestProgress } from "./gamify";
-import { mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify, mergeIdSet } from "./sync-merge";
+import { mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify, mergeCourseEntries } from "./sync-merge";
 
 // Re-export để phần còn lại của app vẫn import từ lib/db như trước.
 export { todayStr, computeStreak };
@@ -690,7 +690,7 @@ export async function importData(
     const mergeLocal = (k: string, ids: string[]) => {
       if (mode === "replace") return localStorage.setItem(k, JSON.stringify(ids));
       const cur = JSON.parse(localStorage.getItem(k) ?? "[]") as string[];
-      localStorage.setItem(k, JSON.stringify(mergeIdSet(cur, ids)));
+      localStorage.setItem(k, JSON.stringify(mergeCourseEntries(cur, ids))); // tích / bỏ tích: hành động sau cùng thắng
     };
     if (Array.isArray(data.phonics)) mergeLocal(PHONICS_KEY, data.phonics);
     if (Array.isArray(data.grammar)) mergeLocal(GRAMMAR_KEY, data.grammar);

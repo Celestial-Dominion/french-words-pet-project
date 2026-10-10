@@ -1,26 +1,41 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { ChevronLeft, Check } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronLeft } from "lucide-react";
 import { lookupWord, loadExamplesForWords, type ReadingDoc, type ExampleSentence } from "@/lib/data";
 import { markRead } from "@/lib/db";
 import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import { Passage, ReaderToolbar, useListenAll } from "@/components/passage";
+import { DoneButton, useIsRead } from "@/components/done-toggle";
 
 export default function Reader({ doc, onBack }: { doc: ReadingDoc; onBack: () => void }) {
   const [selected, setSelected] = useState<Word | null>(null);
   const [examples, setExamples] = useState<ExampleSentence[]>([]);
   const [showVi, setShowVi] = useState(true);
-  const [read, setRead] = useState(false);
+  const read = useIsRead(doc.id); // undefined = đang đọc IndexedDB
+  const manual = useRef(false); // đã bấm tay ở lần mở này → không tự đánh dấu nữa
+  const endRef = useRef<HTMLDivElement>(null);
   const { activeIdx, playing, toggle, rate, cycleRate } = useListenAll(doc.sentences);
 
+  // Tự đánh dấu "đã đọc" khi cuộn tới cuối bài (không đánh dấu lúc vừa mở — như app Anh); đã bấm tay thì thôi.
   useEffect(() => {
-    markRead(doc.id).then(() => setRead(true));
-  }, [doc.id]);
-  const toggleRead = async () => {
-    await markRead(doc.id, !read);
-    setRead((v) => !v);
+    const el = endRef.current;
+    if (!el || read !== false || manual.current) return;
+    const io = new IntersectionObserver(
+      ([e]) => {
+        if (!e.isIntersecting || manual.current) return;
+        io.disconnect();
+        void markRead(doc.id, true).catch(() => {});
+      },
+      { rootMargin: "0px 0px -10% 0px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [doc.id, read]);
+  const toggleRead = () => {
+    manual.current = true;
+    void markRead(doc.id, !read).catch(() => {});
   };
 
   const onTapWord = async (token: string) => {
@@ -41,6 +56,7 @@ export default function Reader({ doc, onBack }: { doc: ReadingDoc; onBack: () =>
           <h1 className="truncate text-2xl font-bold sm:text-3xl">{doc.title_fr}</h1>
           <div className="truncate text-sm text-muted-foreground">{doc.title_vi}</div>
         </div>
+        <DoneButton kind="read" done={read === true} onToggle={toggleRead} className="h-9" />
       </div>
 
       <ReaderToolbar
@@ -54,19 +70,10 @@ export default function Reader({ doc, onBack }: { doc: ReadingDoc; onBack: () =>
 
       <Passage sentences={doc.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} />
 
+      <div ref={endRef} data-testid="reading-end" aria-hidden className="h-px" />
       {/* Đánh dấu đã đọc — bật/tắt được (như HSK) */}
       <div className="mt-8 flex justify-center">
-        <button
-          onClick={() => void toggleRead()}
-          className={
-            read
-              ? "inline-flex items-center gap-2 rounded-full bg-emerald-500/15 px-4 py-2 text-sm font-medium text-emerald-700 transition-colors hover:bg-emerald-500/25 dark:text-emerald-300"
-              : "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted"
-          }
-        >
-          <Check className="size-4" />
-          {read ? "Đã đọc — chạm để bỏ đánh dấu" : "Đánh dấu đã đọc"}
-        </button>
+        <DoneButton kind="read" done={read === true} onToggle={toggleRead} />
       </div>
 
       {selected && <WordDetail word={selected} examples={examples} onClose={() => setSelected(null)} />}

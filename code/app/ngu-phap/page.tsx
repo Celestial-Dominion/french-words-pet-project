@@ -7,10 +7,12 @@ import { GRAMMAR_LESSONS, type GrammarLesson } from "./lessons";
 import { getCourseDone, markCourseDone } from "@/lib/progress-local";
 import { requestSync, onSyncMerged } from "@/lib/sync";
 import { cn } from "@/lib/utils";
+import { DoneButton, DoneFilterBar, EmptyFilter, TickRow, byDone, type DoneFilter } from "@/components/done-toggle";
 
 export default function NguPhapPage() {
   const [done, setDone] = useState<Set<string>>(new Set());
   const [active, setActive] = useState<GrammarLesson | null>(null);
+  const [status, setStatus] = useState<DoneFilter>("all");
 
   useEffect(() => {
     // tiến độ khoá nằm ở localStorage (hệ thống ngoài React) → đọc sau mount; kéo máy khác về thì đọc lại
@@ -40,6 +42,7 @@ export default function NguPhapPage() {
           <h1 className="min-w-0 flex-1 truncate text-xl font-bold sm:text-2xl">
             {active.icon} {active.title}
           </h1>
+          <DoneButton kind="learn" done={isDone} onToggle={() => toggleDone(active.id, !isDone)} className="h-9" />
         </div>
 
         <p className="rounded-2xl bg-primary/5 p-4 text-sm leading-relaxed">{active.intro}</p>
@@ -118,34 +121,35 @@ export default function NguPhapPage() {
         </div>
       </div>
 
-      <ul className="mt-4 space-y-2 pb-8">
-        {GRAMMAR_LESSONS.map((l, i) => {
+      <DoneFilterBar kind="learn" value={status} onChange={setStatus} total={GRAMMAR_LESSONS.length} done={doneCount} className="mt-4" />
+
+      <ul className="mt-3 space-y-2 pb-8">
+        {byDone(GRAMMAR_LESSONS, status, (l) => done.has(l.id)).map((l) => {
+          const i = GRAMMAR_LESSONS.indexOf(l);
           const isDone = done.has(l.id);
           return (
             <li key={l.id}>
-              <button
-                onClick={() => setActive(l)}
-                className="flex w-full items-center gap-3 rounded-2xl border bg-card p-3.5 text-left transition-all hover:border-ring/40 hover:shadow-sm active:scale-[0.99]"
+              <TickRow
+                onOpen={() => setActive(l)}
+                cardClass="flex w-full items-center gap-3 rounded-2xl border bg-card p-3.5 text-left transition-all hover:border-ring/40 hover:shadow-sm active:scale-[0.99]"
+                kind="learn"
+                done={isDone}
+                onToggle={() => toggleDone(l.id, !isDone)}
+                name={`Bài ${i + 1} · ${l.title}`}
               >
-                <span
-                  className={cn(
-                    "grid size-10 shrink-0 place-items-center rounded-xl text-lg",
-                    isDone ? "bg-emerald-500/15" : "bg-muted",
-                  )}
-                >
-                  {isDone ? <Check className="size-5 text-emerald-600 dark:text-emerald-400" /> : l.icon}
-                </span>
+                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-muted text-lg">{l.icon}</span>
                 <span className="min-w-0 flex-1">
                   <span className="block font-semibold">
                     Bài {i + 1} · {l.title}
                   </span>
-                  <span className="mt-0.5 line-clamp-1 block text-xs text-muted-foreground">{l.intro}</span>
+                  <span className="mt-0.5 line-clamp-1 text-xs text-muted-foreground">{l.intro}</span>
                 </span>
-              </button>
+              </TickRow>
             </li>
           );
         })}
       </ul>
+      {byDone(GRAMMAR_LESSONS, status, (l) => done.has(l.id)).length === 0 && <EmptyFilter kind="learn" filter={status} />}
     </div>
   );
 }

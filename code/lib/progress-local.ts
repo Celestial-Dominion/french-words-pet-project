@@ -1,5 +1,8 @@
 // Tiến độ các khóa học nhỏ (phát âm, ngữ pháp) lưu localStorage —
 // được đưa vào sync cloud + sao lưu (trước đây chỉ nằm trên máy, mất là mất hẳn).
+// Mỗi bài một mục "id~mốc[~0]" (lib/sync-merge.ts): tích / bỏ tích đều mang mốc thời gian để đồng bộ
+// lấy hành động sau cùng — bỏ tích không bị máy khác hồi sinh. Mục cũ chỉ có "id" vẫn đọc được (= đã học).
+import { courseDoneIds, courseEntry, mergeCourseEntries } from "./sync-merge";
 
 const KEYS = {
   phonics: "fr.phonicsDone",
@@ -7,36 +10,39 @@ const KEYS = {
 } as const;
 export type CourseKey = keyof typeof KEYS;
 
-export function getCourseDone(course: CourseKey): Set<string> {
+/** Mục tiến độ thô (để đồng bộ / sao lưu). */
+export function courseEntries(course: CourseKey): string[] {
   try {
-    return new Set(JSON.parse(localStorage.getItem(KEYS[course]) ?? "[]") as string[]);
+    const v = JSON.parse(localStorage.getItem(KEYS[course]) ?? "[]");
+    return Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : [];
   } catch {
-    return new Set();
+    return [];
   }
 }
 
-export function setCourseDone(course: CourseKey, done: Set<string>): void {
+function saveEntries(course: CourseKey, entries: string[]): void {
   try {
-    localStorage.setItem(KEYS[course], JSON.stringify([...done]));
+    localStorage.setItem(KEYS[course], JSON.stringify(entries));
   } catch {
     /* bỏ qua */
   }
 }
 
-export function markCourseDone(course: CourseKey, id: string, v: boolean): Set<string> {
-  const s = getCourseDone(course);
-  if (v) s.add(id);
-  else s.delete(id);
-  setCourseDone(course, s);
-  return s;
+export function getCourseDone(course: CourseKey): Set<string> {
+  return new Set(courseDoneIds(courseEntries(course)));
 }
 
-/** Hợp nhất tiến độ từ cloud (union — đã học ở máy nào cũng tính). */
+/** Tích / bỏ tích một bài (ghi mốc thời gian hiện tại). */
+export function markCourseDone(course: CourseKey, id: string, v: boolean, now = Date.now()): Set<string> {
+  saveEntries(course, mergeCourseEntries(courseEntries(course), [courseEntry({ id, t: now, off: !v })]));
+  return getCourseDone(course);
+}
+
+/** Hợp nhất tiến độ từ cloud / tệp sao lưu (hành động sau cùng thắng). */
 export function mergeCourseDone(course: CourseKey, remote: string[]): string[] {
-  const s = getCourseDone(course);
-  for (const id of remote) s.add(id);
-  setCourseDone(course, s);
-  return [...s];
+  const merged = mergeCourseEntries(courseEntries(course), remote);
+  saveEntries(course, merged);
+  return merged;
 }
 
 /** Đã học bài ngữ pháp về GIỐNG của danh từ chưa? — câu hỏi chọn un/une chỉ mở sau bài này. */

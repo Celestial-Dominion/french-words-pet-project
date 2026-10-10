@@ -6,6 +6,8 @@ import {
   reviewScore, mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeIdSet, readStamp,
   mergeGamify, sanitizeReviews, sanitizeDaily, sanitizeReads, sanitizeNotes, sanitizeRemote,
   sanitizeConfig,
+  mergeCourseEntries,
+  courseDoneIds,
 } from "./sync-merge";
 import { DEFAULT_SRS_CONFIG } from "./types";
 
@@ -275,3 +277,22 @@ t("config cloud cũ: clozeEnabled=false được chuyển thành 0 câu điền"
   assert.equal(out.clozePerWord, 0);
 });
 
+// ---- tiến độ khoá nhỏ: tích / bỏ tích mang mốc thời gian ----
+t("khoá nhỏ: bỏ tích sau thắng tích trước, tích lại sau thắng bỏ tích; mục cũ chỉ có id = mốc 0", () => {
+  const on = (id, t) => `${id}~${t.toString(36)}`;
+  const off = (id, t) => `${id}~${t.toString(36)}~0`;
+  // mục cũ "g1" + bỏ tích lúc 100 → chưa học
+  assert.deepEqual(courseDoneIds(mergeCourseEntries(["g1"], [off("g1", 100)])), []);
+  // bỏ tích lúc 100, tích lại lúc 200 → đã học
+  assert.deepEqual(courseDoneIds(mergeCourseEntries([off("g1", 100)], [on("g1", 200)])), ["g1"]);
+  // cùng mốc: bỏ tích thắng (xác định, không phụ thuộc thứ tự)
+  assert.deepEqual(mergeCourseEntries([on("g1", 5)], [off("g1", 5)]), mergeCourseEntries([off("g1", 5)], [on("g1", 5)]));
+  // giao hoán + idempotent, bài khác giữ nguyên
+  const a = [on("g1", 10), "g2"], b = [off("g1", 20), on("g3", 1)];
+  const ab = mergeCourseEntries(a, b);
+  assert.deepEqual(ab, mergeCourseEntries(b, a));
+  assert.deepEqual(mergeCourseEntries(ab, ab), ab);
+  assert.deepEqual(courseDoneIds(ab), ["g2", "g3"]);
+  // mục hỏng bị bỏ qua
+  assert.deepEqual(courseDoneIds(["", "~1", "g4"]), ["g4"]);
+});

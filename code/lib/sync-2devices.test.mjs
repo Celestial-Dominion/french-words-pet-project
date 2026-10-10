@@ -7,7 +7,7 @@
 // Chạy: npx vitest run (port từ app Anh scripts/test-sync-2devices.mjs)
 import { it } from "vitest";
 import assert from "node:assert/strict";
-import { fingerprint, fpEq, mergeSnapshots, pruneUndefined } from "./sync-merge";
+import { fingerprint, fpEq, mergeSnapshots, pruneUndefined, courseDoneIds } from "./sync-merge";
 
 // lib/sync-status đọc/ghi localStorage → dựng bản giả TRƯỚC khi import (module đọc lúc chạy hàm).
 const store = new Map();
@@ -173,6 +173,20 @@ t("2 máy: bài phát âm/ngữ pháp học ở máy nào cũng tính", () => {
   a.sync();
   assert.deepEqual([...a.local.phonics].sort(), ["alphabet", "nasales"]);
   assert.deepEqual(b.local.grammar, ["giong-danh-tu"]);
+});
+
+t("2 máy: bỏ tích bài ngữ pháp ở máy A không bị máy B hồi sinh", () => {
+  const { a, b } = makeWorld();
+  a.local.grammar = ["giong-danh-tu~" + (1000).toString(36)];
+  a.sync();
+  b.sync();
+  assert.deepEqual(courseDoneIds(b.local.grammar), ["giong-danh-tu"]);
+  a.local.grammar = ["giong-danh-tu~" + (2000).toString(36) + "~0"]; // A bỏ tích sau
+  a.sync();
+  b.sync();
+  a.sync();
+  assert.deepEqual(courseDoneIds(b.local.grammar), []);
+  assert.deepEqual(courseDoneIds(a.local.grammar), []);
 });
 
 // ---- kịch bản 3 (S3): quay lại app thì kéo về, không đổi thì không tốn gì ----

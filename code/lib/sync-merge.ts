@@ -5,7 +5,7 @@
 //   daily    — counter chỉ tăng → MAX từng cột
 //   reads    — hành động sau cùng thắng (kể cả bỏ đánh dấu — tombstone)
 //   notes    — máy sửa sau thắng ("" = đã xoá)
-//   phonics/grammar — tập id bài đã học (union — học ở máy nào cũng tính)
+//   phonics/grammar — mỗi bài một mục "id~mốc[~0]": hành động sau cùng thắng (tích / bỏ tích); mục cũ chỉ có "id" = đã học từ thuở đầu
 import type { ReviewRecord, DailyStat, ReadRow, NoteRow, GamifyRow, SrsConfig } from "./types";
 import { upgradeLegacyKnown } from "./srs-pure";
 
@@ -72,6 +72,42 @@ export function mergeIdSet(a: string[], b: string[]): string[] {
   return [...new Set([...(a ?? []), ...(b ?? [])])];
 }
 
+// ---- Tiến độ khoá nhỏ (phát âm, ngữ pháp) ----
+// Mỗi bài một chuỗi: "id" (bản cũ — đã học, mốc 0) | "id~mốc" (tích đã học) | "id~mốc~0" (bỏ tích). Mốc = ms epoch hệ 36.
+// Trước đây chỉ là tập id gộp kiểu union → bỏ tích ở máy này bị máy khác "hồi sinh" ở lần đồng bộ sau.
+export interface CourseMark {
+  id: string;
+  t: number;
+  off: boolean;
+}
+export function parseCourseEntry(s: string): CourseMark | null {
+  if (typeof s !== "string" || !s) return null;
+  const [id, t36, off] = s.split("~");
+  if (!id) return null;
+  const t = t36 ? parseInt(t36, 36) : 0;
+  return { id, t: Number.isFinite(t) ? t : 0, off: off === "0" };
+}
+export const courseEntry = (m: CourseMark): string =>
+  m.t ? `${m.id}~${m.t.toString(36)}${m.off ? "~0" : ""}` : m.off ? `${m.id}~0~0` : m.id;
+/** Gộp hai danh sách mục: mỗi bài lấy hành động mới hơn; cùng mốc thì bỏ tích thắng (giao hoán, idempotent). */
+export function mergeCourseEntries(a: string[], b: string[]): string[] {
+  const m = new Map<string, CourseMark>();
+  for (const s of [...(a ?? []), ...(b ?? [])]) {
+    const x = parseCourseEntry(s);
+    if (!x) continue;
+    const cur = m.get(x.id);
+    if (!cur || x.t > cur.t || (x.t === cur.t && x.off && !cur.off)) m.set(x.id, x);
+  }
+  return [...m.values()].sort((x, y) => (x.id < y.id ? -1 : x.id > y.id ? 1 : 0)).map(courseEntry);
+}
+/** Id các bài đang ở trạng thái "đã học". */
+export function courseDoneIds(entries: string[]): string[] {
+  return mergeCourseEntries(entries, [])
+    .map(parseCourseEntry)
+    .filter((x): x is CourseMark => !!x && !x.off)
+    .map((x) => x.id);
+}
+
 /** Gộp trạng thái gamify (đóng băng chuỗi + XP) — dùng cả khi merge remote lẫn khi ghi local. */
 export function mergeGamify(a: GamifyRow, b: GamifyRow): GamifyRow {
   return {
@@ -116,8 +152,8 @@ export interface SyncSnapshot {
   reads: ReadRow[];
   notes: NoteRow[];
   xp: number;
-  phonics: string[]; // bài phát âm đã học
-  grammar: string[]; // bài ngữ pháp đã học
+  phonics: string[]; // mục tiến độ bài phát âm (xem mergeCourseEntries)
+  grammar: string[]; // mục tiến độ bài ngữ pháp
   gamify: GamifyRow;
 }
 
@@ -134,7 +170,7 @@ export interface Fp {
   ra: string; // dấu thời gian đọc/bỏ-đọc mới nhất
   xp: number;
   nt: number; // max thời điểm sửa mẹo nhớ
-  co: number; // số bài phát âm + ngữ pháp đã học
+  co: string; // tiến độ phát âm + ngữ pháp (mục đã gộp, gồm cả bỏ tích)
   fz: string; // trạng thái đóng băng chuỗi
   cu: string; // thời điểm đổi cài đặt trên máy này
 }
@@ -161,7 +197,7 @@ export function fingerprint(s: SyncSnapshot, cfgStamp: string): Fp {
     ra,
     xp: s.xp,
     nt,
-    co: s.phonics.length + s.grammar.length,
+    co: `${mergeCourseEntries(s.phonics, []).join(",")}|${mergeCourseEntries(s.grammar, []).join(",")}`,
     fz: `${g.freezes ?? 0}|${(g.frozenDates ?? []).length}|${g.grantStreak ?? 0}|${g.maxCombo ?? 0}|${(g.questsDone ?? []).length}`,
     cu: cfgStamp,
   };
@@ -182,8 +218,8 @@ export function mergeSnapshots(local: SyncSnapshot, remote: SyncSnapshot): SyncS
     reads: mergeReads(local.reads, remote.reads),
     notes: mergeNotes(local.notes, remote.notes),
     xp: Math.max(local.xp, remote.xp),
-    phonics: mergeIdSet(local.phonics, remote.phonics),
-    grammar: mergeIdSet(local.grammar, remote.grammar),
+    phonics: mergeCourseEntries(local.phonics, remote.phonics),
+    grammar: mergeCourseEntries(local.grammar, remote.grammar),
     gamify: mergeGamify(local.gamify, remote.gamify),
   };
 }

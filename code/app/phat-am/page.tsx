@@ -6,26 +6,11 @@ import { loadPhonics, type PhonicsLesson, type PhonicsItem } from "@/lib/data";
 import { phonicsAudioUrl, playAudio } from "@/lib/tts";
 import { requestSync, onSyncMerged } from "@/lib/sync";
 import { cn } from "@/lib/utils";
-
-const DONE_KEY = "fr.phonicsDone";
+import { getCourseDone, markCourseDone } from "@/lib/progress-local";
+import { DoneButton, DoneFilterBar, EmptyFilter, TickRow, byDone, type DoneFilter } from "@/components/done-toggle";
 
 function play(say: string) {
   playAudio(phonicsAudioUrl(say)); // một tiếng tại một thời điểm — bấm liên tiếp không chồng tiếng
-}
-
-function loadDone(): Set<string> {
-  try {
-    return new Set(JSON.parse(localStorage.getItem(DONE_KEY) ?? "[]") as string[]);
-  } catch {
-    return new Set();
-  }
-}
-function saveDone(s: Set<string>) {
-  try {
-    localStorage.setItem(DONE_KEY, JSON.stringify([...s]));
-  } catch {
-    /* bỏ qua */
-  }
 }
 
 function shuffle<T>(a: T[]): T[] {
@@ -57,6 +42,7 @@ export default function PhatAmPage() {
   const [lessons, setLessons] = useState<PhonicsLesson[] | null>(null);
   const [active, setActive] = useState<PhonicsLesson | null>(null);
   const [done, setDone] = useState<Set<string>>(new Set());
+  const [status, setStatus] = useState<DoneFilter>("all");
   const [quiz, setQuiz] = useState<QuizRound[] | null>(null);
   const [round, setRound] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
@@ -65,18 +51,14 @@ export default function PhatAmPage() {
   useEffect(() => {
     loadPhonics().then(setLessons);
     // tiến độ khoá nằm ở localStorage (hệ thống ngoài React) → đọc sau mount; kéo máy khác về thì đọc lại
-    const load = () => setDone(loadDone());
+    const load = () => setDone(getCourseDone("phonics"));
     // eslint-disable-next-line react-hooks/set-state-in-effect
     load();
     return onSyncMerged(load);
   }, []);
 
   const markDone = (id: string, v: boolean) => {
-    const next = new Set(done);
-    if (v) next.add(id);
-    else next.delete(id);
-    setDone(next);
-    saveDone(next);
+    setDone(markCourseDone("phonics", id, v)); // tích / bỏ tích mang mốc thời gian (đồng bộ: hành động sau cùng thắng)
     requestSync(); // tiến độ phát âm giờ được đồng bộ cloud
   };
 
@@ -198,12 +180,8 @@ export default function PhatAmPage() {
           <button onClick={() => setActive(null)} aria-label="Quay lại" className="grid h-9 w-9 place-items-center rounded-full bg-muted">
             <ChevronLeft className="h-5 w-5" />
           </button>
-          <h1 className="flex-1 text-2xl font-bold sm:text-3xl">{active.title}</h1>
-          {isDone && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-semibold text-emerald-700 dark:text-emerald-300">
-              <Check className="size-3.5" /> Đã học
-            </span>
-          )}
+          <h1 className="min-w-0 flex-1 text-2xl font-bold sm:text-3xl">{active.title}</h1>
+          <DoneButton kind="learn" done={isDone} onToggle={() => markDone(active.id, !isDone)} className="h-9" />
         </div>
         <p className="mb-4 rounded-xl bg-primary/10 p-3 text-sm text-foreground">{active.intro}</p>
 
@@ -277,23 +255,22 @@ export default function PhatAmPage() {
               <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${(doneCount / lessons.length) * 100}%` }} />
             </div>
           </div>
+          <DoneFilterBar kind="learn" value={status} onChange={setStatus} total={lessons.length} done={doneCount} className="mb-3" />
           <ol className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            {lessons.map((l, i) => {
+            {byDone(lessons, status, (l) => done.has(l.id)).map((l) => {
+              const i = lessons.indexOf(l);
               const isDone = done.has(l.id);
               return (
                 <li key={l.id}>
-                  <button
-                    onClick={() => setActive(l)}
-                    className="flex w-full items-center gap-3 rounded-xl border bg-card p-3 text-left active:scale-[0.99]"
+                  <TickRow
+                    onOpen={() => setActive(l)}
+                    cardClass="flex w-full items-center gap-3 rounded-xl border bg-card p-3 text-left active:scale-[0.99]"
+                    kind="learn"
+                    done={isDone}
+                    onToggle={() => markDone(l.id, !isDone)}
+                    name={l.title}
                   >
-                    <span
-                      className={cn(
-                        "grid h-9 w-9 shrink-0 place-items-center rounded-full text-sm font-bold",
-                        isDone ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400" : "bg-primary/15 text-primary",
-                      )}
-                    >
-                      {isDone ? <Check className="size-5" /> : i + 1}
-                    </span>
+                    <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-primary/15 text-sm font-bold text-primary">{i + 1}</span>
                     <span className="min-w-0 flex-1">
                       <span className="block font-semibold">{l.title}</span>
                       <span className="block truncate text-xs text-muted-foreground">
@@ -301,11 +278,12 @@ export default function PhatAmPage() {
                       </span>
                     </span>
                     <Play className="h-4 w-4 shrink-0 text-muted-foreground" />
-                  </button>
+                  </TickRow>
                 </li>
               );
             })}
           </ol>
+          {byDone(lessons, status, (l) => done.has(l.id)).length === 0 && <EmptyFilter kind="learn" filter={status} />}
         </>
       )}
     </div>
