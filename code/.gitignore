@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scripts/deploy.sh: kế hoạch + danh sách file đổi, log debug firebase-tools
+/scripts/.deploy-*.txt
+/firebase-debug*.log

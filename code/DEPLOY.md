@@ -16,12 +16,13 @@ tắt dev server khác trước khi chạy e2e.
 ## Deploy
 
 ```bash
-npm run deploy                    # = scripts/deploy.sh: build → kiểm bundle → giữ mtime → deploy hosting
+npm run deploy                    # = scripts/deploy.sh: build → kiểm → kế hoạch → tải → kiểm live → lịch sử
 SKIP_BUILD=1 scripts/deploy.sh    # dùng out/ vừa build
+PLAN=1 scripts/deploy.sh          # build + kế hoạch + số luồng đề xuất rồi DỪNG
 RULES=1 scripts/deploy.sh         # deploy cả firestore.rules
-CONC=8 scripts/deploy.sh          # ép số luồng tải
-tail -f scripts/.deploy.log       # xem tiến độ "uploading new files [x/y]"
-scripts/deploy-watch.sh           # theo dõi gọn: in mỗi pha + mỗi 5% tải, tự thoát khi xong (0) / lỗi (1)
+CONC=150 scripts/deploy.sh        # ép số luồng tải (4–200)
+ACCOUNT=<email> scripts/deploy.sh # chỉ rõ tài khoản Firebase (chạy từ bản sao ở thư mục khác)
+scripts/deploy-watch.sh           # theo dõi gọn: mỗi pha + mỗi 5% tải + kết quả kiểm live, tự thoát (0 xong / 1 lỗi)
 ```
 
 `deploy-watch.sh` dùng cho Monitor của Claude Code (chạy `deploy.sh` nền + `deploy-watch.sh` song song): chỉ đọc log của
@@ -33,11 +34,71 @@ Vì sao nhanh:
   Firebase chỉ tải phần thật sự đổi thay vì toàn bộ HTML.
 - **`scripts/out-mtime.py`** đặt lại mtime file trong `out/` chép từ `public/` → cache băm của firebase-tools
   (`.firebase/hosting.*.cache`, khoá theo mtime) không phải băm lại ~1 GB audio mỗi lần.
-- **Số luồng tải tự chọn**: >100 MP3 mới từ lần deploy trước → 8 luồng (file to dễ quá giờ chờ), còn lại 32.
+- **Số luồng tải tự chọn theo kế hoạch** (8 / 32 / 100), AI được ép `CONC=…` — xem mục dưới.
 - Build tĩnh chỉ ~12 giây; phần lâu duy nhất là lần đầu tải audio.
 
 Script DỪNG nếu bundle thiếu `authDomain`/API key Firebase (build thiếu `.env.local` vẫn chạy được nhưng mất đồng bộ
 mà không báo lỗi).
+
+### Deploy nhanh và an toàn — các bước giữ chất lượng (không được bỏ)
+
+Luôn deploy bằng `scripts/deploy.sh` (lệnh ở trên), không gọi thẳng `firebase deploy`.
+
+1. **Config Firebase trong bundle** — phải có cả authDomain lẫn API key; thiếu là DỪNG.
+2. **Giữ mtime** (`scripts/out-mtime.py`) — firebase-tools không phải băm lại audio.
+3. **Kế hoạch** (`scripts/deploy-plan.mjs`) — so `out/` với bộ nhớ đệm băm của firebase-tools
+   (`.firebase/hosting.b3V0.cache`) đúng cách firebase-tools làm (gzip 9 + sha256) → biết trước số file sẽ tải,
+   bao nhiêu MB, bao nhiêu file lớn (≥256 KB), số luồng đề xuất. Danh sách file đổi: `scripts/.deploy-changed.txt`.
+4. **Tải** — Firebase chỉ phát hành khi đã tải ĐỦ file; lỗi giữa chừng thì bản live không đổi. Gặp lỗi tải
+   (timeout, HTTP 5xx/429…), script tự hạ còn ¼ số luồng (tối thiểu 4) và thử lại MỘT lần; file đã lên server
+   được giữ. firebase-tools đôi khi báo "Timed out" SAU khi đã "Deploy complete!" → coi là xong.
+5. **Kiểm bản live** (`scripts/deploy-verify.mjs`) — tải về trang chủ, trang Ôn tập và 40 file ngẫu nhiên trong
+   số file vừa đổi, so sha256 với `out/`. Lệch là báo ✗.
+6. **Ghi lịch sử** vào `.firebase/deploy-history.tsv` (chỉ ở máy deploy, không commit): số luồng, file dự
+   kiến/đã tải, MB, file lớn, **thử lại**, **lỗi tải**, **HTTP lỗi**, phút tải, **file/giây**, kết quả, kiểm
+   live. Số thử lại/lỗi lấy từ thống kê hàng đợi của firebase-tools (chạy với `DEBUG=true`, nên log có dòng
+   debug mở đầu `[2026-…Z]`; `deploy-watch.sh` đã bỏ qua chúng).
+
+### Chọn số luồng — AI được tự cân nhắc
+
+Mục tiêu: tải **nhanh nhất mà không làm tăng thử lại/lỗi**. AI (Claude) được tự chọn `CONC` trong khoảng
+4–200 mà không cần hỏi, với điều kiện chạy qua `scripts/deploy.sh` (đủ 6 bước trên) và khi báo user thì nói
+rõ số luồng đã chọn + lý do + số liệu cuối (file/giây, thử lại, kiểm live).
+
+**Bước 1 — xem kế hoạch:** `PLAN=1 scripts/deploy.sh` (hoặc đọc phần kế hoạch đầu output khi deploy luôn).
+Dòng máy đọc: `PLAN files=… mb=… large=… mp3=… conc=…`, kèm 5 dòng lịch sử gần nhất.
+
+**Bước 2 — mặc định của script** (đủ tốt cho phần lớn lần deploy):
+
+| Khối lượng sắp tải | Luồng | Vì sao |
+|---|---|---|
+| > 100 file ≥256 KB (đợt MP3/video mới) | 8 | Nghẽn **băng thông**: nhiều luồng chia nhau đường lên, file lớn quá hạn chờ (~30 s/file) → thử lại hàng trăm lần rồi hỏng (app HSK 28/09: 200 luồng hỏng, 8 luồng ổn ~400 file/phút). |
+| 21–100 file lớn | 32 | Trộn file lớn với trang. |
+| ≤ 20 file lớn (chủ yếu trang HTML/RSC, JSON nhỏ) | 100 | Nghẽn ở **độ trễ từng file**, không phải băng thông (app HSK 11/10: 16.575 trang ~200 MB ở 32 luồng mất 13 phút, ~21 file/giây; ở 100 luồng 4 phút, 68 file/giây, thử lại 0,05%, 0 lỗi). |
+
+**Bước 3 — điều chỉnh theo lịch sử** (so với lần trước CÙNG loại khối lượng):
+
+- Thử lại < 1% số file đã tải, lỗi tải 0, HTTP lỗi 0 → được tăng ×1,5 (trần 200) để thăm dò.
+- Tăng luồng mà file/giây gần như không tăng → đã chạm trần mạng/server: quay về mức trước.
+- Thử lại 1–5% → giữ nguyên.
+- Thử lại > 5%, có HTTP 429/503, hoặc dòng "lỗi tải" → lần sau giảm còn ½.
+- Dưới ~500 file cần tải → không đáng tối ưu, để mặc định.
+
+firebase-tools mặc định 200 luồng; Firebase không công bố giới hạn — lịch sử đo được là căn cứ duy nhất.
+
+### Khi có sự cố
+
+- **✗ deploy lỗi (bản live chưa đổi)** — chạy lại `SKIP_BUILD=1 CONC=<thấp hơn> scripts/deploy.sh`; chỉ phần
+  còn thiếu phải tải.
+- **✗ bản live khác out/** — chạy lại `node scripts/deploy-verify.mjs 80`. Vẫn lệch → `SKIP_BUILD=1
+  scripts/deploy.sh`. Vẫn lệch nữa → xoá `.firebase/hosting.*.cache` (băm lại toàn bộ) rồi deploy.
+- **✗ bundle thiếu config Firebase** — kiểm `.env.local`, build lại. Đừng bao giờ deploy bản này.
+- **Đang có việc dở chưa commit** trong thư mục (của mình hoặc phiên khác) — đừng build/deploy từ đó: bản
+  build sẽ mang theo phần dở. Muốn thử deploy thì dùng `SKIP_BUILD=1` với `out/` đã kiểm bằng `PLAN=1` là 0 file
+  đổi, hoặc chạy từ bản sao ngoài thư mục đang làm (`cp -c -p -R out …`, kèm `firebase.json`, `.firebaserc`,
+  `.env.local`, `.firebase/`, `.next/BUILD_ID`, `scripts/`, symlink `node_modules`) với `ACCOUNT=<email>` —
+  firebase-tools gắn tài khoản Google theo thư mục, bản sao không biết tài khoản của thư mục gốc
+  (`npx firebase login:list`).
 
 ## Bản QA tắt đăng nhập
 
