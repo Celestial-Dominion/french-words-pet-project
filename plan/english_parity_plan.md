@@ -70,7 +70,7 @@ Lý do: phiên mới cho tới 5 câu điền/từ + xoay câu theo lần ôn, n
 
 - [x] **C1.** Trang theo cấp: `/bai-doc` · `/truyen` = lưới 6 cấp + "Đọc tiếp"; `/bai-doc/[a1…c2]` · `/truyen/[cấp]` = danh sách (ô tích + lọc trạng thái từ A5, bài đọc lọc thêm theo chủ đề); `/bai-doc/[cấp]/[id]` · `/truyen/[cấp]/[id]` = trang riêng từng bài, sinh tĩnh (`generateStaticParams` + `dynamicParams = false`, chỉ mục đọc lúc build ở `lib/library-server.ts`), nội dung tải phía client, cuối bài có "Bài/Truyện tiếp theo". Liên kết cũ `?open=<id>` tự chuyển sang trang mới; gợi ý sau phiên học + "Gặp lại trong ngữ cảnh" dẫn thẳng trang bài (`libraryHref`). Chỉ mục có thêm `topic`, `genre` (bài đọc), `summary` (truyện, đối chiếu nội dung), `words`, `min` (wpm theo cấp như app Anh) — soạn tay ở `scripts/out/library-meta.json`, `build-readings/stories.mjs` ghép vào. Truyện chưa lọc chủ đề (4 truyện/cấp — chưa cần). (`8ba8ca2`)
 - [x] **C2.** Trình đọc (`components/passage.tsx`, port `passage-audio.ts` app Anh nhưng giữ audio TỪNG CÂU sẵn có — đủ 786/786 câu): nghe cả bài kiểu karaoke (tô sáng + tự cuộn câu đang đọc, nhường 4 s khi người dùng tự cuộn), tạm dừng / nghe tiếp đúng câu đang dở (trước đây bấm lại là phát từ đầu), câu trước / câu sau, tốc độ 1 → 1,25 → 1,5 → 0,75× nhớ qua lần mở (`fr.readRate`), tự đánh dấu khi đọc tới cuối (làm ở A5), nút ▶ trên từng câu khi bật Dịch. (`db876ff`)
-- [ ] **C3.** Chỉ phần CODE: khung câu hỏi đọc hiểu (giao diện trắc nghiệm cuối bài / cuối chương như `quiz.tsx` app Anh, trường `quiz` trong dữ liệu, kiểm tra định dạng trong pipeline C6), ghi nguồn (`source-note`), chuỗi truyện dài (`series`). Nội dung câu hỏi KHÔNG soạn riêng ở bước này — làm cùng lúc viết bài/truyện mới (xem "Câu hỏi đọc hiểu" dưới mục Nội dung).
+- [~] **C3.** Gộp vào C7 (quyết định 11/10/2026): khung câu hỏi đọc hiểu, ghi nguồn (`source-note`), chuỗi truyện dài (`series`) làm cùng lô nội dung đầu tiên để kiểm tra bằng bài thật — xem C7.
 - [ ] **C4.** Chỉ mục từ → học liệu (`word-refs`): "Gặp lại trong ngữ cảnh" + gợi ý sau phiên đọc theo chỉ mục.
 - [ ] **C5.** Đồng bộ vị trí đọc truyện (`storyPos`) — nhớ thêm field vào `firestore.rules`.
 - [ ] **C6.** Pipeline nội dung: `content:check`, `content:coverage --targets`, `content:kit`, `content:build` (+ audio).
@@ -79,7 +79,7 @@ Lý do: phiên mới cho tới 5 câu điền/từ + xoay câu theo lần ôn, n
 
 **Câu hỏi đọc hiểu** (quyết định 11/10/2026): soạn NGAY khi viết từng bài đọc / truyện mới ở C7–C9, không làm thành đợt riêng. Độ phủ như app Anh — 100% bài và chương có câu hỏi (app Anh: 1.377/1.377 bài đọc ~4 câu/bài, 1.740/1.740 chương truyện 3 câu/chương). Mỗi câu: câu hỏi Pháp + dịch Việt, 4 phương án (1 đúng) + dịch, giải thích trích «nguyên văn» câu trong bài; độ dài câu hỏi/phương án theo cấp (`quiz` trong `scripts/lib/content-spec.mjs` app Anh). 60 bài đọc + 16 truyện hiện có: bổ sung câu hỏi khi đợt nội dung đi qua cấp tương ứng, để cả thư viện đạt 100%.
 
-- [ ] **C7.** A1–A2: Storybooks Canada / African Storybook bản Pháp (CC BY 4.0, 40 truyện có audio) + tự soạn.
+- [ ] **C7.** A1–A2: Storybooks Canada / African Storybook bản Pháp (CC BY 4.0, 40 truyện có audio) + tự soạn. **Làm kèm phần code của C3 ngay ở lô đầu:** giao diện trắc nghiệm cuối bài / cuối chương (port `quiz.tsx` app Anh: chọn là chấm, lộ nghĩa + giải thích trích «nguyên văn», xáo phương án, Làm lại, không lưu điểm), trường `quiz` + kiểm tra định dạng khi dựng dữ liệu, ghi nguồn `source-note` (Storybooks là CC BY 4.0 — bắt buộc ghi tác giả, nguồn, giấy phép, đã chỉnh sửa), chuỗi truyện dài `series` (Phần n/m, nút sang phần sau; chuỗi bài đọc cùng chủ đề qua các cấp).
 - [ ] **C8.** Truyện kể lại từ phạm vi công cộng: Wikisource FR, Project Gutenberg, Bibliothèque numérique romande, Gallica — Perrault, La Fontaine, Daudet (*Lettres de mon moulin*), Maupassant, Verne, Hugo, Comtesse de Ségur. Kể lại theo cấp, làm nhẹ bạo lực (playbook §14).
 - [ ] **C9.** Bài dữ kiện A2–B1: Vikidia (CC BY-SA 3.0); tin tức: Wikinews FR (CC BY 2.5); B2–C1: Wikipedia FR chỉ làm nguồn dữ kiện, kể lại hoàn toàn.
 - [ ] **C10.** Audio thư viện ~1,5 GB (Denise; Henri cho vai thứ hai).
@@ -102,7 +102,7 @@ Lý do: phiên mới cho tới 5 câu điền/từ + xoay câu theo lần ôn, n
 
 ## Thứ tự đề xuất
 
-1. Mục 2 (A1–A5) → 2. C1–C6 (C3 chỉ code) + mục 3 → 3. E1, rồi E2 theo cấp → 4. C7–C10 theo lô — mỗi bài/chương mới kèm câu hỏi đọc hiểu, đo độ phủ mỗi lô → 5. Mục 5.
+1. Mục 2 (A1–A5) → 2. C1–C6 (C3 gộp vào C7) + mục 3 → 3. E1, rồi E2 theo cấp → 4. C7–C10 theo lô — mỗi bài/chương mới kèm câu hỏi đọc hiểu, đo độ phủ mỗi lô → 5. Mục 5.
 
 ## Nguồn
 
