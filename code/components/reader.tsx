@@ -17,7 +17,7 @@ export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack:
   const read = useIsRead(doc.id); // undefined = đang đọc IndexedDB
   const manual = useRef(false); // đã bấm tay ở lần mở này → không tự đánh dấu nữa
   const endRef = useRef<HTMLDivElement>(null);
-  const { activeIdx, playing, toggle, rate, cycleRate } = useListenAll(doc.sentences);
+  const { activeIdx, playing, toggle, playFrom, step, rate, cycleRate } = useListenAll(doc.sentences);
 
   // Tự đánh dấu "đã đọc" khi cuộn tới cuối bài (không đánh dấu lúc vừa mở — như app Anh); đã bấm tay thì thôi.
   useEffect(() => {
@@ -62,14 +62,16 @@ export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack:
 
       <ReaderToolbar
         playing={playing}
+        started={activeIdx >= 0}
         onToggle={toggle}
+        onStep={step}
         rate={rate}
         onCycleRate={cycleRate}
         showVi={showVi}
         onToggleVi={() => setShowVi((v) => !v)}
       />
 
-      <Passage sentences={doc.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} />
+      <Passage sentences={doc.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} onPlayFrom={(i) => playFrom(i, true)} />
 
       <div ref={endRef} data-testid="reading-end" aria-hidden className="h-px" />
       {/* Đánh dấu đã đọc — bật/tắt được (như HSK) */}

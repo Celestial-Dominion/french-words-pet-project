@@ -25,7 +25,7 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
 
   const chapter = doc.chapters[ci];
   const last = ci === doc.chapters.length - 1;
-  const { activeIdx, playing, toggle, rate, cycleRate, stop } = useListenAll(chapter.sentences);
+  const { activeIdx, playing, toggle, playFrom, step, rate, cycleRate, stop } = useListenAll(chapter.sentences);
 
   const read = useIsRead(doc.id); // undefined = đang đọc IndexedDB
   const manual = useRef(false); // đã bấm tay ở lần mở này → không tự đánh dấu nữa
@@ -98,14 +98,16 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
 
       <ReaderToolbar
         playing={playing}
+        started={activeIdx >= 0}
         onToggle={toggle}
+        onStep={step}
         rate={rate}
         onCycleRate={cycleRate}
         showVi={showVi}
         onToggleVi={() => setShowVi((v) => !v)}
       />
 
-      <Passage sentences={chapter.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} />
+      <Passage sentences={chapter.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} onPlayFrom={(i) => playFrom(i, true)} />
       <div ref={endRef} data-testid="story-end" aria-hidden className="h-px" />
 
       {/* điều hướng chương — đếm n/tổng ở giữa (như HSK) */}

@@ -41,3 +41,21 @@ test("liên kết cũ /bai-doc?open=<id> chuyển sang trang bài mới", async 
   await expect(page).toHaveURL(/\/bai-doc\/a2\/a2-03$/);
   await expect(page.getByRole("heading", { name: "Au marché" })).toBeVisible();
 });
+
+// C2: trình đọc — tốc độ nhớ qua lần mở, nghe riêng một câu, câu trước / sau, tạm dừng giữ đúng câu.
+test("trình đọc: tốc độ 1→1,25× nhớ qua lần mở; nghe từng câu + câu sau + tạm dừng", async ({ page }) => {
+  await freshStart(page, "/bai-doc/a1/a1-01");
+  await page.getByRole("button", { name: "Tốc độ nghe: 1×" }).click();
+  await expect(page.getByRole("button", { name: "Tốc độ nghe: 1.25×" })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole("button", { name: "Tốc độ nghe: 1.25×" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Nghe câu 2" }).click();
+  await expect(page.locator("#psent-1")).toHaveClass(/bg-primary\/10/);
+  await page.getByRole("button", { name: "Câu sau" }).click();
+  await expect(page.locator("#psent-2")).toHaveClass(/bg-primary\/10/);
+  await expect(page.locator("#psent-1")).not.toHaveClass(/bg-primary\/10/);
+  await page.getByRole("button", { name: "Tạm dừng" }).click();
+  await expect(page.getByRole("button", { name: "Nghe tiếp" })).toBeVisible();
+  await expect(page.locator("#psent-2")).toHaveClass(/bg-primary\/10/); // tạm dừng vẫn giữ câu đang dở
+});

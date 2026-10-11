@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Play, Pause } from "lucide-react";
-import { sentenceAudioUrl } from "@/lib/tts";
+import { Play, Pause, SkipBack, SkipForward } from "lucide-react";
+import { sentenceAudioUrl, stopAudio } from "@/lib/tts";
 import { cn } from "@/lib/utils";
 
 type Sentence = { fr: string; vi: string };
@@ -12,54 +12,130 @@ function splitTokens(fr: string): string[] {
 }
 const isWord = (t: string) => /[a-zàâäçéèêëîïôöùûüÿœæ'']/i.test(t);
 
-// Nghe cả bài: phát tuần tự từng câu, tô sáng câu đang đọc + tự cuộn vào giữa; đổi tốc độ.
-const SPEEDS = [1, 0.75, 1.25];
+// Nghe cả bài (karaoke): phát tuần tự audio từng câu, tô sáng câu đang đọc + tự cuộn vào giữa — nhường 4 s khi người
+// dùng tự cuộn. Tạm dừng / nghe tiếp đúng câu đang dở, câu trước / câu sau, nghe riêng một câu, đổi tốc độ (nhớ qua
+// lần mở). Port từ app Anh (components/library/passage-audio.ts) — bên đó một file audio + mốc câu, bên này mỗi câu một file.
+const SPEEDS = [1, 1.25, 1.5, 0.75];
+const RATE_KEY = "fr.readRate";
+
 export function useListenAll(sentences: Sentence[]) {
   const [activeIdx, setActiveIdx] = useState(-1);
+  const [playing, setPlaying] = useState(false);
   const [rate, setRate] = useState(1);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const activeRef = useRef(-1);
   const rateRef = useRef(1);
+  const lastUser = useRef(0);
+  const listRef = useRef(sentences);
 
-  const stop = () => {
-    audioRef.current?.pause();
-    audioRef.current = null;
-    setActiveIdx(-1);
-  };
-  useEffect(() => () => stop(), []);
-  // Đổi bài/chương (mảng câu đổi) → dừng.
-  useEffect(() => () => stop(), [sentences]);
+  useEffect(() => {
+    try {
+      const r = Number(localStorage.getItem(RATE_KEY));
+      if (SPEEDS.includes(r)) {
+        rateRef.current = r;
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- đọc lựa chọn đã lưu một lần sau mount
+        setRate(r);
+      }
+    } catch {
+      /* không có localStorage */
+    }
+    const mark = () => (lastUser.current = Date.now());
+    window.addEventListener("wheel", mark, { passive: true });
+    window.addEventListener("touchmove", mark, { passive: true });
+    return () => {
+      window.removeEventListener("wheel", mark);
+      window.removeEventListener("touchmove", mark);
+    };
+  }, []);
 
-  const playFrom = (i: number) => {
-    if (i >= sentences.length) return stop();
+  const setActive = (i: number) => {
+    activeRef.current = i;
     setActiveIdx(i);
-    const a = new Audio(sentenceAudioUrl(sentences[i].fr));
+  };
+  const stop = () => {
+    const a = audioRef.current;
+    audioRef.current = null;
+    if (a) {
+      a.onended = null;
+      a.pause();
+    }
+    setPlaying(false);
+    setActive(-1);
+  };
+  useEffect(() => () => stop(), []); // eslint-disable-line react-hooks/exhaustive-deps
+  // Đổi bài/chương (mảng câu đổi) → dừng; câu mới cho các lần phát sau.
+  useEffect(() => {
+    listRef.current = sentences;
+    return () => stop();
+  }, [sentences]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  /** Phát từ câu i; `once` = chỉ câu đó rồi dừng (giữ tô sáng để bấm ▶ nghe tiếp từ đây). */
+  const playFrom = (i: number, once = false) => {
+    const list = listRef.current;
+    if (i < 0 || i >= list.length) return stop();
+    stopAudio(); // tiếng từ / câu ví dụ đang phát ở chỗ khác
+    const old = audioRef.current;
+    if (old) {
+      old.onended = null;
+      old.pause();
+    }
+    setActive(i);
+    const a = new Audio(sentenceAudioUrl(list[i].fr));
     a.playbackRate = rateRef.current;
     audioRef.current = a;
-    a.onended = () => playFrom(i + 1);
+    a.onended = () => {
+      if (once) {
+        audioRef.current = null;
+        setPlaying(false);
+      } else playFrom(i + 1);
+    };
+    setPlaying(true);
     a.play().catch(() => stop());
-    document.getElementById(`psent-${i}`)?.scrollIntoView({ block: "center", behavior: "smooth" });
   };
-  const toggle = () => (activeIdx >= 0 ? stop() : playFrom(0));
+  // Câu đang đọc đổi → cuộn vào giữa màn hình, trừ khi người dùng vừa tự cuộn (4 s).
+  useEffect(() => {
+    if (activeIdx >= 0 && Date.now() - lastUser.current > 4000)
+      document.getElementById(`psent-${activeIdx}`)?.scrollIntoView({ block: "center", behavior: "smooth" });
+  }, [activeIdx]);
+  const toggle = () => {
+    const a = audioRef.current;
+    if (playing && a) {
+      a.pause();
+      setPlaying(false);
+    } else if (a && activeRef.current >= 0) {
+      a.play().then(() => setPlaying(true)).catch(() => playFrom(activeRef.current));
+    } else playFrom(activeRef.current >= 0 ? activeRef.current : 0);
+  };
+  const step = (d: number) => playFrom(Math.min(listRef.current.length - 1, Math.max(0, activeRef.current + d)));
   const cycleRate = () => {
-    const next = SPEEDS[(SPEEDS.indexOf(rate) + 1) % SPEEDS.length] ?? 1;
+    const next = SPEEDS[(SPEEDS.indexOf(rateRef.current) + 1) % SPEEDS.length] ?? 1;
     rateRef.current = next;
     setRate(next);
     if (audioRef.current) audioRef.current.playbackRate = next;
+    try {
+      localStorage.setItem(RATE_KEY, String(next));
+    } catch {
+      /* bỏ qua */
+    }
   };
 
-  return { activeIdx, playing: activeIdx >= 0, toggle, rate, cycleRate, stop };
+  return { activeIdx, playing, toggle, playFrom, step, rate, cycleRate, stop };
 }
 
 export function ReaderToolbar({
   playing,
+  started,
   onToggle,
+  onStep,
   rate,
   onCycleRate,
   showVi,
   onToggleVi,
 }: {
   playing: boolean;
+  started: boolean; // đã có câu đang dở (đang phát hoặc tạm dừng)
   onToggle: () => void;
+  onStep: (d: number) => void;
   rate: number;
   onCycleRate: () => void;
   showVi: boolean;
@@ -67,13 +143,13 @@ export function ReaderToolbar({
 }) {
   return (
     <div
-      className="sticky z-30 mb-4 flex items-center gap-2 rounded-2xl border bg-background/85 px-2 py-1.5 backdrop-blur"
+      className="sticky z-30 mb-4 flex items-center gap-1 rounded-2xl border bg-background/90 p-1.5 shadow-sm backdrop-blur-md"
       style={{ top: "calc(4rem + env(safe-area-inset-top))" }}
     >
       <button
         type="button"
         onClick={onToggle}
-        aria-label={playing ? "Dừng nghe" : "Nghe cả bài"}
+        aria-label={playing ? "Tạm dừng" : started ? "Nghe tiếp" : "Nghe cả bài"}
         className={cn(
           "inline-flex size-9 shrink-0 items-center justify-center rounded-full transition-colors",
           playing ? "bg-primary text-primary-foreground shadow-sm" : "bg-primary/10 text-primary hover:bg-primary/15",
@@ -81,13 +157,22 @@ export function ReaderToolbar({
       >
         {playing ? <Pause className="size-5" /> : <Play className="size-5" />}
       </button>
-      <span className="text-sm font-medium text-muted-foreground">{playing ? "Đang đọc…" : "Nghe cả bài"}</span>
+      <span className="hidden px-1 text-sm font-medium text-muted-foreground min-[420px]:inline">
+        {playing ? "Đang đọc…" : started ? "Tạm dừng" : "Nghe cả bài"}
+      </span>
+      <button type="button" onClick={() => onStep(-1)} aria-label="Câu trước" className="inline-flex size-9 shrink-0 items-center justify-center rounded-full text-muted-foreground hover:bg-muted">
+        <SkipBack className="size-4" />
+      </button>
+      <button type="button" onClick={() => onStep(1)} aria-label="Câu sau" className="inline-flex size-9 shrink-0 items-center justify-center rounded-full text-muted-foreground hover:bg-muted">
+        <SkipForward className="size-4" />
+      </button>
       <button
         type="button"
         onClick={onCycleRate}
         title="Tốc độ nghe"
+        aria-label={`Tốc độ nghe: ${rate}×`}
         className={cn(
-          "inline-flex shrink-0 items-center rounded-full px-2.5 py-1.5 text-sm font-medium tabular-nums transition-colors",
+          "inline-flex w-12 shrink-0 items-center justify-center rounded-full py-1.5 text-sm font-medium tabular-nums transition-colors",
           rate !== 1 ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted",
         )}
       >
@@ -115,11 +200,13 @@ export function Passage({
   showVi,
   activeIdx,
   onTapWord,
+  onPlayFrom,
 }: {
   sentences: Sentence[];
   showVi: boolean;
   activeIdx: number;
   onTapWord: (token: string) => void;
+  onPlayFrom?: (i: number) => void; // ▶ nghe riêng câu i (chế độ Dịch)
 }) {
   const renderWords = (fr: string) =>
     splitTokens(fr).map((tok, j) =>
@@ -161,10 +248,22 @@ export function Passage({
         <div
           key={i}
           id={`psent-${i}`}
-          className={cn("rounded-xl px-2 py-1 transition-colors", i === activeIdx && "bg-primary/10 dark:bg-primary/20")}
+          className={cn("flex gap-1.5 rounded-xl px-1.5 py-1 transition-colors", i === activeIdx && "bg-primary/10 dark:bg-primary/20")}
         >
-          <p className="text-2xl leading-relaxed">{renderWords(s.fr)}</p>
-          <p className="mt-1.5 border-l-[3px] border-primary/30 pl-3 text-base text-muted-foreground">{s.vi}</p>
+          {onPlayFrom && (
+            <button
+              type="button"
+              onClick={() => onPlayFrom(i)}
+              aria-label={`Nghe câu ${i + 1}`}
+              className="mt-1.5 inline-flex size-7 shrink-0 items-center justify-center rounded-full text-muted-foreground/60 transition-colors hover:bg-primary/10 hover:text-primary"
+            >
+              <Play className="size-3.5" />
+            </button>
+          )}
+          <div className="min-w-0">
+            <p className="text-2xl leading-relaxed">{renderWords(s.fr)}</p>
+            <p className="mt-1.5 border-l-[3px] border-primary/30 pl-3 text-base text-muted-foreground">{s.vi}</p>
+          </div>
         </div>
       ))}
     </div>
