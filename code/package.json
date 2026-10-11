@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint --cache --cache-location node_modules/.cache/eslint/",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "check": "tsc --noEmit && eslint --quiet && vitest run",
+    "check": "tsc --noEmit && eslint --quiet --cache --cache-location node_modules/.cache/eslint/ && vitest run",
     "deploy": "scripts/deploy.sh"
   },
   "dependencies": {
