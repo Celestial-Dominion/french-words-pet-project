@@ -1,0 +1,1292 @@
+[
+ {
+  "id": "agréer",
+  "fr": "Veuillez agréer, Madame, l'expression de mes salutations distinguées.",
+  "vi": "Kính mong bà nhận nơi tôi lời chào trân trọng nhất.",
+  "f": [
+   "trùng:salutation,agréer"
+  ]
+ },
+ {
+  "id": "diplômer",
+  "fr": "Cette grande école diplôme chaque année les meilleurs ingénieurs du pays.",
+  "vi": "Ngôi trường lớn này mỗi năm cấp bằng cho những kỹ sư giỏi nhất cả nước.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "trempe",
+  "fr": "C'est un homme de la trempe des grands bâtisseurs, obstiné et visionnaire.",
+  "vi": "Đó là con người cỡ những nhà kiến tạo vĩ đại, kiên định và có tầm nhìn.",
+  "f": [
+   "vượt cấp:bâtisseurs?,visionnaire?"
+  ]
+ },
+ {
+  "id": "luxure",
+  "fr": "Le prédicateur fustigeait la luxure comme la ruine de l'âme.",
+  "vi": "Nhà thuyết giáo lên án sự dâm dục như sự hủy hoại của linh hồn.",
+  "f": [
+   "vượt cấp:prédicateur?,fustigeait?"
+  ]
+ },
+ {
+  "id": "terreux",
+  "fr": "Ce vin dégage un arôme terreux, presque champignonné.",
+  "vi": "Loại rượu này tỏa ra một mùi hương đất, gần như mùi nấm.",
+  "f": [
+   "vượt cấp:arôme?,champignonné?"
+  ]
+ },
+ {
+  "id": "subtilité",
+  "fr": "La subtilité de son argumentation échappa à la plupart des auditeurs.",
+  "vi": "Sự tinh tế trong lập luận của ông vượt quá tầm hiểu của đa số thính giả.",
+  "f": [
+   "vượt cấp:argumentation?,plupart?"
+  ]
+ },
+ {
+  "id": "gracier",
+  "fr": "Le souverain graciait traditionnellement quelques prisonniers le jour de la fête nationale.",
+  "vi": "Theo truyền thống, nhà vua ân xá cho vài tù nhân vào ngày quốc khánh.",
+  "f": [
+   "thiếu từ",
+   "vượt cấp:graciait?,traditionnellement?"
+  ]
+ },
+ {
+  "id": "druide",
+  "fr": "Les druides celtes présidaient aux rites et transmettaient le savoir oralement.",
+  "vi": "Các thầy tế Druid của người Celt chủ trì các nghi lễ và truyền đạt tri thức bằng lời.",
+  "f": [
+   "vượt cấp:celtes?,oralement?"
+  ]
+ },
+ {
+  "id": "natation",
+  "fr": "La natation synchronisée exige une coordination et une endurance remarquables.",
+  "vi": "Môn bơi nghệ thuật đòi hỏi sự phối hợp và sức bền đáng kinh ngạc.",
+  "f": [
+   "vượt cấp:synchronisée?,coordination?,endurance?"
+  ]
+ },
+ {
+  "id": "internat",
+  "fr": "L'internat de médecine est une période aussi formatrice qu'éprouvante.",
+  "vi": "Kỳ nội trú y khoa là một giai đoạn vừa rèn luyện vừa đầy thử thách.",
+  "f": [
+   "vượt cấp:formatrice?,éprouvante?"
+  ]
+ },
+ {
+  "id": "musculaire",
+  "fr": "Un bon échauffement réduit considérablement le risque de contracture musculaire.",
+  "vi": "Khởi động kỹ giúp giảm đáng kể nguy cơ co cứng cơ.",
+  "f": [
+   "vượt cấp:échauffement?,contracture?"
+  ]
+ },
+ {
+  "id": "raquette",
+  "fr": "Chaussés de raquettes, les randonneurs progressaient sur la neige poudreuse sans jamais s'y enfoncer.",
+  "vi": "Mang giày đi tuyết, những người đi bộ đường dài tiến bước trên lớp tuyết bột mà chẳng bao giờ bị lún.",
+  "f": [
+   "vượt cấp:randonneurs?,poudreuse?"
+  ]
+ },
+ {
+  "id": "transistor",
+  "fr": "Sur la plage, le transistor crachotait un vieux tube que tout le monde reprenait pourtant en chœur.",
+  "vi": "Trên bãi biển, chiếc radio bán dẫn phát rè rè một bản nhạc cũ mà ai nấy vẫn cùng nhau hát theo.",
+  "f": [
+   "vượt cấp:crachotait?,chœur?"
+  ]
+ },
+ {
+  "id": "saillie",
+  "fr": "L'éleveur consigna soigneusement la date de la saillie afin de prévoir la mise bas au printemps suivant.",
+  "vi": "Người chăn nuôi ghi chép cẩn thận ngày phủ giống để dự tính thời điểm sinh sản vào mùa xuân năm sau.",
+  "f": [
+   "vượt cấp:éleveur?,afin?"
+  ]
+ },
+ {
+  "id": "primordial",
+  "fr": "Il est primordial de préserver ces zones humides, véritables poumons d'un écosystème déjà bien fragilisé.",
+  "vi": "Điều tối quan trọng là phải bảo tồn những vùng đất ngập nước này, lá phổi thực sự của một hệ sinh thái vốn đã suy yếu.",
+  "f": [
+   "vượt cấp:écosystème?,fragilisé?"
+  ]
+ },
+ {
+  "id": "regorger",
+  "fr": "La bibliothèque du vieil érudit regorgeait d'éditions rares que nul catalogue n'avait jamais recensées.",
+  "vi": "Thư viện của nhà thông thái già đầy ắp những ấn bản quý hiếm mà chẳng danh mục nào từng liệt kê.",
+  "f": [
+   "vượt cấp:érudit?,recensées?"
+  ]
+ },
+ {
+  "id": "stupéfier",
+  "fr": "Sa réponse, d'une lucidité déconcertante, stupéfia jusqu'aux plus aguerris des examinateurs.",
+  "vi": "Câu trả lời của cô, sáng suốt đến bối rối, khiến cả những giám khảo dày dạn nhất cũng phải sững sờ.",
+  "f": [
+   "vượt cấp:aguerris?,examinateurs?"
+  ]
+ },
+ {
+  "id": "ananas",
+  "fr": "Sous les tropiques, l'ananas pousse à même le sol, ceint d'une couronne de feuilles acérées.",
+  "vi": "Ở vùng nhiệt đới, quả dứa mọc ngay trên mặt đất, quây quanh bởi một vòng lá sắc nhọn.",
+  "f": [
+   "vượt cấp:tropiques?,acérées?"
+  ]
+ },
+ {
+  "id": "tibia",
+  "fr": "Il se fractura le tibia en tombant sur le verglas, à quelques mètres seulement de sa porte.",
+  "vi": "Anh gãy xương ống chân khi ngã trên mặt băng, chỉ cách cửa nhà vài mét.",
+  "f": [
+   "vượt cấp:fractura?,verglas?"
+  ]
+ },
+ {
+  "id": "canadien",
+  "fr": "Sa politesse toute canadienne désarmait même les interlocuteurs les plus acerbes.",
+  "vi": "Sự lịch thiệp rất Canada của anh khiến ngay cả những người đối thoại gay gắt nhất cũng phải mềm lòng.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "congeler",
+  "fr": "Pour préserver les arômes, il est préférable de congeler les herbes fraîches dès la cueillette.",
+  "vi": "Để giữ hương vị, tốt nhất nên cấp đông các loại rau thơm tươi ngay sau khi thu hái.",
+  "f": [
+   "vượt cấp:arômes?,cueillette?"
+  ]
+ },
+ {
+  "id": "monarchie",
+  "fr": "La monarchie constitutionnelle sut, dans ce pays, concilier la tradition et les exigences de la modernité.",
+  "vi": "Chế độ quân chủ lập hiến ở đất nước này đã biết dung hòa truyền thống với những đòi hỏi của thời hiện đại.",
+  "f": [
+   "vượt cấp:constitutionnelle?,modernité?"
+  ]
+ },
+ {
+  "id": "monarchie",
+  "fr": "Sous cette monarchie décadente, la cour brillait de mille feux tandis que le peuple sombrait dans la misère.",
+  "vi": "Dưới chế độ quân chủ suy đồi ấy, triều đình rực rỡ muôn ánh hào quang trong khi dân chúng chìm trong cảnh khốn cùng.",
+  "f": [
+   "vượt cấp:décadente?,tandis?"
+  ]
+ },
+ {
+  "id": "incurable",
+  "fr": "Son optimisme incurable résistait à tout, y compris aux démentis les plus cinglants de la réalité.",
+  "vi": "Sự lạc quan không thể chữa được của bà kháng cự lại mọi thứ, kể cả những phản bác cay nghiệt nhất của hiện thực.",
+  "f": [
+   "vượt cấp:démentis?,cinglants?"
+  ]
+ },
+ {
+  "id": "sous-entendu",
+  "fr": "Le contrat comportait une clause sous-entendue que seuls les juristes chevronnés surent débusquer.",
+  "vi": "Hợp đồng có một điều khoản hàm ẩn mà chỉ những luật sư dày dạn mới phát hiện ra.",
+  "f": [
+   "vượt cấp:juristes?,chevronnés?,débusquer?"
+  ]
+ },
+ {
+  "id": "coyote",
+  "fr": "Dans bien des mythes amérindiens, le coyote incarne la ruse, tantôt sage, tantôt farceur.",
+  "vi": "Trong nhiều thần thoại của người bản địa châu Mỹ, chó sói đồng cỏ hiện thân cho sự tinh ranh, khi thì khôn ngoan, khi lại tinh nghịch.",
+  "f": [
+   "vượt cấp:amérindiens?,farceur?"
+  ]
+ },
+ {
+  "id": "chiper",
+  "fr": "Quelqu'un lui avait chipé son stylo fétiche, et il en conçut une contrariété disproportionnée.",
+  "vi": "Ai đó đã xoáy mất cây bút yêu thích của anh, và anh sinh ra một nỗi bực bội quá mức.",
+  "f": [
+   "vượt cấp:contrariété?,disproportionnée?"
+  ]
+ },
+ {
+  "id": "patrimoine",
+  "fr": "Le dialecte de la vallée constitue un patrimoine immatériel que la modernité menace d'effacer.",
+  "vi": "Thổ ngữ của thung lũng là một di sản phi vật thể mà thời hiện đại đang đe dọa xóa bỏ.",
+  "f": [
+   "vượt cấp:immatériel?,modernité?"
+  ]
+ },
+ {
+  "id": "acculer",
+  "fr": "Acculé par ses créanciers, il dut se résoudre à vendre la maison familiale à contrecœur.",
+  "vi": "Bị các chủ nợ dồn vào chân tường, ông đành phải bấm bụng bán đi ngôi nhà của gia đình.",
+  "f": [
+   "vượt cấp:créanciers?,contrecœur?"
+  ]
+ },
+ {
+  "id": "enflé",
+  "fr": "Son style enflé, tout en périodes ronflantes, dissimulait mal l'indigence du propos.",
+  "vi": "Văn phong khoa trương của ông, đầy những câu dài kêu vang, che giấu không nổi sự nghèo nàn của nội dung.",
+  "f": [
+   "vượt cấp:ronflantes?,indigence?"
+  ]
+ },
+ {
+  "id": "argot",
+  "fr": "Les linguistes étudient l'argot comme un révélateur des mutations de la société.",
+  "vi": "Các nhà ngôn ngữ học nghiên cứu tiếng lóng như một tấm gương phản chiếu những biến đổi của xã hội.",
+  "f": [
+   "vượt cấp:linguistes?,révélateur?"
+  ]
+ },
+ {
+  "id": "dompter",
+  "fr": "Le vieux dresseur savait dompter les fauves les plus rétifs d'un simple regard.",
+  "vi": "Người huấn luyện thú già biết cách thuần hóa những con thú dữ ngang bướng nhất chỉ bằng một ánh mắt.",
+  "f": [
+   "vượt cấp:dresseur?,rétifs?"
+  ]
+ },
+ {
+  "id": "redevable",
+  "fr": "Après vérification, le contribuable était redevable d'une somme considérable au fisc.",
+  "vi": "Sau khi kiểm tra, người nộp thuế còn nợ cơ quan thuế một khoản tiền đáng kể.",
+  "f": [
+   "vượt cấp:contribuable?,fisc?"
+  ]
+ },
+ {
+  "id": "tyrannie",
+  "fr": "Sous la tyrannie du précédent monarque, nul n'osait exprimer la moindre dissidence.",
+  "vi": "Dưới sự chuyên chế của vị quân vương trước, không ai dám bày tỏ dù chỉ một chút bất đồng.",
+  "f": [
+   "vượt cấp:monarque?,dissidence?"
+  ]
+ },
+ {
+  "id": "décennie",
+  "fr": "En une décennie, cette bourgade endormie s'était muée en métropole tentaculaire.",
+  "vi": "Chỉ trong một thập kỷ, thị trấn buồn ngủ ấy đã biến thành một đô thị khổng lồ trải rộng.",
+  "f": [
+   "vượt cấp:bourgade?,tentaculaire?"
+  ]
+ },
+ {
+  "id": "richard",
+  "fr": "Elle méprisait cette engeance de richards oisifs qui affichaient leur fortune sans vergogne.",
+  "vi": "Bà khinh bỉ cái lũ giàu sụ ăn không ngồi rồi phô trương tài sản không chút ngượng ngùng.",
+  "f": [
+   "vượt cấp:engeance?,oisifs?,vergogne?"
+  ]
+ },
+ {
+  "id": "brochette",
+  "fr": "Sur le grill fumaient des brochettes d'agneau relevées de cumin et de coriandre.",
+  "vi": "Trên vỉ nướng nghi ngút khói những xiên thịt cừu đậm mùi thìa là và rau mùi.",
+  "f": [
+   "vượt cấp:grill?,cumin?,coriandre?"
+  ]
+ },
+ {
+  "id": "jauger",
+  "fr": "Le recruteur jaugeait chaque candidat avec une attention presque intimidante.",
+  "vi": "Nhà tuyển dụng đánh giá từng ứng viên với sự chú tâm gần như khiến người ta e dè.",
+  "f": [
+   "vượt cấp:recruteur?,intimidante?"
+  ]
+ },
+ {
+  "id": "resservir",
+  "fr": "Ce vieil argument, il nous le resservira encore à la prochaine réunion.",
+  "vi": "Cái luận điệu cũ rích ấy, ông ta sẽ lại lôi ra dùng lại ở cuộc họp tới cho xem.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "certaine",
+  "fr": "Certaines d'entre elles doutaient encore, mais nul n'osa contredire la doyenne.",
+  "vi": "Một vài người trong số họ vẫn còn hoài nghi, nhưng không ai dám cãi lại bà cả.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "platine",
+  "fr": "Le disquaire posa délicatement le vinyle sur la platine et laissa filer l'aiguille.",
+  "vi": "Người bán đĩa nhẹ nhàng đặt đĩa than lên mâm quay và thả kim chạy.",
+  "f": [
+   "vượt cấp:disquaire?,vinyle?"
+  ]
+ },
+ {
+  "id": "chambouler",
+  "fr": "Cette rencontre inattendue chamboula toutes ses certitudes.",
+  "vi": "Cuộc gặp gỡ bất ngờ ấy làm xáo trộn mọi niềm tin chắc chắn của ông.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "vanner",
+  "fr": "Autrefois, les paysannes vannaient le grain pour le séparer de la balle.",
+  "vi": "Ngày xưa, những người nông dân sàng sảy hạt để tách khỏi vỏ trấu.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "étriper",
+  "fr": "Le boucher étripait le lapin d'un geste sûr et rapide.",
+  "vi": "Người bán thịt moi ruột con thỏ bằng một động tác chắc chắn và nhanh gọn.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "métis",
+  "fr": "La culture créole est le fruit métis de siècles de rencontres et de brassages.",
+  "vi": "Văn hóa Creole là thành quả lai tạo của nhiều thế kỷ gặp gỡ và hòa trộn.",
+  "f": [
+   "vượt cấp:créole?,brassages?"
+  ]
+ },
+ {
+  "id": "effriter",
+  "fr": "Sa majorité s'effritait scrutin après scrutin, jusqu'à devenir dérisoire.",
+  "vi": "Đa số phiếu của ông rã dần sau mỗi cuộc bỏ phiếu, cho đến khi chẳng còn đáng kể.",
+  "f": [
+   "vượt cấp:scrutin?,scrutin?"
+  ]
+ },
+ {
+  "id": "résonance",
+  "fr": "L'imagerie par résonance magnétique révéla une lésion jusque-là insoupçonnée.",
+  "vi": "Chụp cộng hưởng từ đã phát hiện một tổn thương mà trước đó không ai ngờ tới.",
+  "f": [
+   "vượt cấp:imagerie?,insoupçonnée?"
+  ]
+ },
+ {
+  "id": "prédiction",
+  "fr": "Les prédictions des économistes se révélèrent, une fois de plus, bien hasardeuses.",
+  "vi": "Những dự đoán của các nhà kinh tế học, một lần nữa, hóa ra rất liều lĩnh.",
+  "f": [
+   "vượt cấp:économistes?,hasardeuses?"
+  ]
+ },
+ {
+  "id": "miroiter",
+  "fr": "Les escrocs faisaient miroiter des gains mirobolants pour appâter les naïfs.",
+  "vi": "Bọn lừa đảo bày ra những khoản lợi nhuận kếch xù để nhử những kẻ cả tin.",
+  "f": [
+   "vượt cấp:mirobolants?,appâter?"
+  ]
+ },
+ {
+  "id": "touffu",
+  "fr": "Son exposé, trop touffu, perdait l'auditoire dans un fouillis de digressions savantes.",
+  "vi": "Bài thuyết trình của ông, quá rườm rà um tùm, khiến người nghe lạc lối trong mớ lan man uyên bác.",
+  "f": [
+   "vượt cấp:auditoire?,digressions?"
+  ]
+ },
+ {
+  "id": "flan",
+  "fr": "Le flan nappé de caramel tremblotait délicatement au moindre effleurement de la cuillère.",
+  "vi": "Chiếc bánh flan phủ caramel rung rinh khe khẽ chỉ với một cái chạm nhẹ của thìa.",
+  "f": [
+   "vượt cấp:nappé?,effleurement?"
+  ]
+ },
+ {
+  "id": "flan",
+  "fr": "Grand-mère préparait un flan aux œufs dont l'arôme envahissait toute la maisonnée.",
+  "vi": "Bà nội làm món bánh flan trứng mà hương thơm của nó lan tỏa khắp cả nhà.",
+  "f": [
+   "vượt cấp:œufs?,arôme?,maisonnée?"
+  ]
+ },
+ {
+  "id": "hors-la-loi",
+  "fr": "En bravant l'édit royal, il s'était volontairement mis au ban, en véritable hors-la-loi.",
+  "vi": "Bằng việc thách thức sắc lệnh của nhà vua, ông đã tự nguyện đặt mình ra ngoài lề, như một kẻ ngoài vòng pháp luật thực thụ.",
+  "f": [
+   "vượt cấp:édit?,ban?"
+  ]
+ },
+ {
+  "id": "doublement",
+  "fr": "Le doublement des effectifs ne suffit pas à endiguer l'afflux des demandes.",
+  "vi": "Việc tăng gấp đôi nhân sự vẫn không đủ để ngăn dòng yêu cầu ồ ạt đổ về.",
+  "f": [
+   "vượt cấp:endiguer?,afflux?"
+  ]
+ },
+ {
+  "id": "mouflet",
+  "fr": "Toute la marmaille, une demi-douzaine de mouflets braillards, envahissait la cour.",
+  "vi": "Cả đám con nít, dễ đến nửa tá nhóc con ầm ĩ, tràn ngập khắp sân.",
+  "f": [
+   "vượt cấp:marmaille?,braillards?"
+  ]
+ },
+ {
+  "id": "allocation",
+  "fr": "L'allocation versée aux familles nombreuses fut revalorisée après d'âpres tractations.",
+  "vi": "Khoản trợ cấp dành cho các gia đình đông con được nâng lên sau những cuộc mặc cả gay gắt.",
+  "f": [
+   "vượt cấp:revalorisée?,tractations?"
+  ]
+ },
+ {
+  "id": "râper",
+  "fr": "Il faut râper une pointe de muscade pour relever ce gratin.",
+  "vi": "Cần nạo một chút hạt nhục đậu khấu để làm dậy vị món gratin này.",
+  "f": [
+   "vượt cấp:muscade?,gratin?"
+  ]
+ },
+ {
+  "id": "nova",
+  "fr": "La différence entre une nova et une supernova tient à l'ampleur cataclysmique de l'explosion.",
+  "vi": "Sự khác biệt giữa sao mới và siêu tân tinh nằm ở quy mô hủy diệt của vụ nổ.",
+  "f": [
+   "vượt cấp:supernova?,cataclysmique?"
+  ]
+ },
+ {
+  "id": "écoper",
+  "fr": "Les marins écopaient sans relâche pour empêcher la barque de sombrer.",
+  "vi": "Các thủy thủ tát nước không ngừng để giữ cho con thuyền khỏi chìm.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "attirail",
+  "fr": "Tout cet attirail d'alpiniste ne servait qu'à masquer son inexpérience.",
+  "vi": "Cả đống đồ nghề leo núi ấy chỉ cốt để che giấu sự thiếu kinh nghiệm của anh.",
+  "f": [
+   "vượt cấp:alpiniste?,inexpérience?"
+  ]
+ },
+ {
+  "id": "rance",
+  "fr": "Sous ses airs affables couvait une rancœur rance, aigrie par les années.",
+  "vi": "Dưới vẻ niềm nở âm ỉ một nỗi oán hận ôi thiu, chua chát theo năm tháng.",
+  "f": [
+   "vượt cấp:affables?,rancœur?,aigrie?"
+  ]
+ },
+ {
+  "id": "municipalité",
+  "fr": "La municipalité inaugura une médiathèque dont elle s'enorgueillissait à juste titre.",
+  "vi": "Chính quyền thành phố khánh thành một thư viện đa phương tiện mà họ tự hào một cách chính đáng.",
+  "f": [
+   "vượt cấp:médiathèque?,enorgueillissait?"
+  ]
+ },
+ {
+  "id": "poulette",
+  "fr": "Il servit un blanc de volaille en sauce poulette, onctueuse et citronnée.",
+  "vi": "Ông dọn món ức gà rưới sốt poulette, béo ngậy và thoảng vị chanh.",
+  "f": [
+   "vượt cấp:onctueuse?,citronnée?"
+  ]
+ },
+ {
+  "id": "substitut",
+  "fr": "Le substitut du procureur requit une peine exemplaire à l'encontre de l'accusé.",
+  "vi": "Vị công tố viên phó đề nghị một mức án làm gương đối với bị cáo.",
+  "f": [
+   "vượt cấp:requit?,encontre?"
+  ]
+ },
+ {
+  "id": "monotonie",
+  "fr": "La monotonie de sa voix berçait l'auditoire jusqu'à l'assoupissement.",
+  "vi": "Sự đơn điệu trong giọng nói của ông ru người nghe đến thiu thiu ngủ.",
+  "f": [
+   "vượt cấp:auditoire?,assoupissement?"
+  ]
+ },
+ {
+  "id": "mortellement",
+  "fr": "Le duelliste fut mortellement blessé d'un coup porté en plein cœur.",
+  "vi": "Người đấu kiếm bị thương chí mạng bởi một nhát đâm trúng ngay tim.",
+  "f": [
+   "vượt cấp:duelliste?,cœur?"
+  ]
+ },
+ {
+  "id": "intrépide",
+  "fr": "L'explorateur intrépide s'enfonça seul dans la jungle inexplorée.",
+  "vi": "Nhà thám hiểm gan dạ một mình dấn thân vào khu rừng rậm chưa ai đặt chân.",
+  "f": [
+   "vượt cấp:explorateur?,inexplorée?"
+  ]
+ },
+ {
+  "id": "pacificateur",
+  "fr": "Le vieux sage prononça quelques paroles pacificatrices qui apaisèrent l'assemblée.",
+  "vi": "Vị hiền nhân già thốt ra vài lời hòa giải khiến hội trường lắng dịu.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "chapiteau",
+  "fr": "Le chapiteau corinthien de la colonne est orné de feuilles d'acanthe finement sculptées.",
+  "vi": "Đầu cột Corinth được trang trí bằng lá ô rô chạm khắc tinh xảo.",
+  "f": [
+   "vượt cấp:corinthien?,acanthe?"
+  ]
+ },
+ {
+  "id": "choléra",
+  "fr": "Les médecins redoutaient la propagation du choléra dans les camps surpeuplés.",
+  "vi": "Các bác sĩ lo sợ bệnh tả lây lan trong những trại tị nạn chật chội.",
+  "f": [
+   "vượt cấp:propagation?,surpeuplés?"
+  ]
+ },
+ {
+  "id": "laitue",
+  "fr": "Elle a assaisonné la laitue d'une vinaigrette légère au citron.",
+  "vi": "Cô trộn rau diếp với chút giấm dầu chanh nhẹ.",
+  "f": [
+   "vượt cấp:assaisonné?,vinaigrette?"
+  ]
+ },
+ {
+  "id": "assoiffer",
+  "fr": "Cette chaleur torride assoiffe les bêtes autant que les hommes.",
+  "vi": "Cái nóng như thiêu này làm cả người lẫn vật đều khát.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "artichaut",
+  "fr": "Le fond d'artichaut se marie à merveille avec une vinaigrette à l'échalote.",
+  "vi": "Đế a-ti-sô hợp tuyệt vời với nước sốt giấm dầu hành tím.",
+  "f": [
+   "vượt cấp:vinaigrette?,échalote?"
+  ]
+ },
+ {
+  "id": "simulation",
+  "fr": "Les pilotes s'entraînent d'abord sur un simulateur avant tout vol réel : la simulation reproduit chaque paramètre du cockpit.",
+  "vi": "Các phi công tập luyện trước trên thiết bị mô phỏng trước mọi chuyến bay thật: sự mô phỏng tái hiện từng thông số trong buồng lái.",
+  "f": [
+   "vượt cấp:simulateur?,paramètre?,cockpit?"
+  ]
+ },
+ {
+  "id": "aubergiste",
+  "fr": "Nous réglâmes la note et remerciâmes chaleureusement l'aubergiste.",
+  "vi": "Chúng tôi thanh toán hóa đơn và cảm ơn chủ quán trọ một cách nồng nhiệt.",
+  "f": [
+   "vượt cấp:réglâmes?,chaleureusement?"
+  ]
+ },
+ {
+  "id": "sacrilège",
+  "fr": "Pour un mélomane, retoucher cette partition serait un geste sacrilège.",
+  "vi": "Với một người yêu nhạc, sửa đổi bản nhạc này là một hành động báng bổ.",
+  "f": [
+   "vượt cấp:mélomane?,retoucher?"
+  ]
+ },
+ {
+  "id": "drague",
+  "fr": "Une drague raclait le fond du port pour dégager le chenal ensablé.",
+  "vi": "Một chiếc máy nạo vét cào đáy cảng để khơi thông luồng lạch bị cát bồi.",
+  "f": [
+   "vượt cấp:chenal?,ensablé?"
+  ]
+ },
+ {
+  "id": "leu",
+  "fr": "À la frontière, j'ai changé quelques euros contre des leus roumains.",
+  "vi": "Ở biên giới, tôi đổi vài euro lấy ít đồng leu Romania.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "leu",
+  "fr": "Le prix du billet s'élevait à une trentaine de leus.",
+  "vi": "Giá vé lên đến khoảng ba mươi đồng leu.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "bonus",
+  "fr": "En fin d'année, chaque salarié a touché un bonus appréciable.",
+  "vi": "Cuối năm, mỗi nhân viên nhận được một khoản tiền thưởng đáng kể.",
+  "f": [
+   "vượt cấp:salarié?,appréciable?"
+  ]
+ },
+ {
+  "id": "halluciner",
+  "fr": "Les rescapés du désert, épuisés, hallucinaient des oasis là où ne s'étendait que le sable.",
+  "vi": "Những người sống sót giữa sa mạc, kiệt sức, thấy ảo giác về các ốc đảo ở nơi chỉ trải dài toàn cát.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "pinson",
+  "fr": "Le naturaliste distinguait chaque pinson à son plumage et à la nuance de son trille.",
+  "vi": "Nhà tự nhiên học nhận ra từng con chim sẻ qua bộ lông và sắc thái tiếng líu lo của nó.",
+  "f": [
+   "vượt cấp:naturaliste?,plumage?,trille?"
+  ]
+ },
+ {
+  "id": "manipulation",
+  "fr": "La manipulation de l'opinion publique par les médias est un thème récurrent de la sociologie moderne.",
+  "vi": "Sự thao túng dư luận qua truyền thông là một chủ đề lặp đi lặp lại trong xã hội học hiện đại.",
+  "f": [
+   "vượt cấp:récurrent?,sociologie?"
+  ]
+ },
+ {
+  "id": "racisme",
+  "fr": "Le racisme ordinaire, insidieux et banalisé, est parfois plus difficile à combattre que la haine déclarée.",
+  "vi": "Nạn phân biệt chủng tộc thường nhật, âm ỉ và bị coi là bình thường, đôi khi khó chống lại hơn cả sự thù ghét công khai.",
+  "f": [
+   "vượt cấp:insidieux?,banalisé?"
+  ]
+ },
+ {
+  "id": "sourdre",
+  "fr": "De ce silence obstiné sourdait une colère que nul ne parvenait à nommer.",
+  "vi": "Từ sự im lặng bướng bỉnh ấy dâng lên một cơn giận mà không ai gọi được tên.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "guetteur",
+  "fr": "Un simple assoupissement du guetteur suffit à livrer la forteresse aux assaillants.",
+  "vi": "Chỉ một khoảnh khắc lơ là của người canh gác đủ để pháo đài rơi vào tay quân tấn công.",
+  "f": [
+   "vượt cấp:assoupissement?,assaillants?"
+  ]
+ },
+ {
+  "id": "mascarade",
+  "fr": "Les courtisans se prêtaient à cette mascarade avec une servilité qui écœurait le vieux roi.",
+  "vi": "Bọn nịnh thần tham gia màn giả trang ấy với sự khúm núm khiến vị vua già phát tởm.",
+  "f": [
+   "vượt cấp:servilité?,écœurait?"
+  ]
+ },
+ {
+  "id": "ravitailler",
+  "fr": "Les alpinistes se ravitaillèrent au dernier refuge avant l'assaut final du sommet.",
+  "vi": "Những nhà leo núi tiếp tế lương thực ở trạm dừng cuối cùng trước khi chinh phục đỉnh.",
+  "f": [
+   "thiếu từ",
+   "vượt cấp:alpinistes?,ravitaillèrent?"
+  ]
+ },
+ {
+  "id": "paternité",
+  "fr": "L'écrivain défendit âprement la paternité de l'œuvre qu'on lui contestait.",
+  "vi": "Nhà văn quyết liệt bảo vệ quyền tác giả của tác phẩm mà người ta tranh chấp với ông.",
+  "f": [
+   "vượt cấp:âprement?,œuvre?"
+  ]
+ },
+ {
+  "id": "habilement",
+  "fr": "La négociatrice mena habilement les débats jusqu'à un compromis inespéré.",
+  "vi": "Nhà đàm phán điều khiển cuộc tranh luận một cách tài tình đến một thỏa hiệp ngoài mong đợi.",
+  "f": [
+   "vượt cấp:négociatrice?,inespéré?"
+  ]
+ },
+ {
+  "id": "symbiote",
+  "fr": "Le poisson-clown est le symbiote de l'anémone, qui l'abrite des prédateurs.",
+  "vi": "Cá hề là sinh vật cộng sinh của hải quỳ, loài vốn che chở nó khỏi kẻ săn mồi.",
+  "f": [
+   "vượt cấp:anémone?,prédateurs?"
+  ]
+ },
+ {
+  "id": "tendon",
+  "fr": "Le chirurgien recousit patiemment le tendon sectionné par la lame.",
+  "vi": "Bác sĩ phẫu thuật kiên nhẫn khâu lại sợi gân bị lưỡi dao cắt đứt.",
+  "f": [
+   "vượt cấp:recousit?,sectionné?"
+  ]
+ },
+ {
+  "id": "valeureux",
+  "fr": "Il fallut un cœur valeureux pour affronter seul une telle adversité.",
+  "vi": "Phải có một trái tim dũng cảm mới có thể một mình đương đầu với nghịch cảnh đến thế.",
+  "f": [
+   "vượt cấp:cœur?,adversité?"
+  ]
+ },
+ {
+  "id": "bey",
+  "fr": "Les historiens étudient encore le rôle des beys dans l'administration de l'Empire.",
+  "vi": "Các sử gia vẫn còn nghiên cứu vai trò của các bey trong bộ máy cai trị của Đế chế.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "brassard",
+  "fr": "L'infirmière repéra les secouristes à leur brassard fluorescent.",
+  "vi": "Cô y tá nhận ra các nhân viên cứu hộ nhờ chiếc băng đeo tay phản quang.",
+  "f": [
+   "vượt cấp:secouristes?,fluorescent?"
+  ]
+ },
+ {
+  "id": "milliardaire",
+  "fr": "Ce milliardaire discret finance en secret de nombreuses œuvres caritatives.",
+  "vi": "Vị tỉ phú kín tiếng này âm thầm tài trợ cho rất nhiều hoạt động từ thiện.",
+  "f": [
+   "vượt cấp:œuvres?,caritatives?"
+  ]
+ },
+ {
+  "id": "entrecroiser",
+  "fr": "Elle entrecroisa les doigts, nerveuse, en attendant le verdict.",
+  "vi": "Cô đan chéo các ngón tay, lo lắng, trong lúc chờ phán quyết.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "zigzaguer",
+  "fr": "Le skieur a zigzagué avec aisance entre les portes du slalom.",
+  "vi": "Vận động viên trượt tuyết luồn zíc-zắc một cách nhẹ nhàng qua các cổng slalom.",
+  "f": [
+   "vượt cấp:skieur?,slalom?"
+  ]
+ },
+ {
+  "id": "prescription",
+  "fr": "Il a scrupuleusement suivi les prescriptions de son cardiologue.",
+  "vi": "Anh đã tuân thủ nghiêm ngặt các chỉ định của bác sĩ tim mạch.",
+  "f": [
+   "vượt cấp:scrupuleusement?,cardiologue?"
+  ]
+ },
+ {
+  "id": "optique",
+  "fr": "La fibre optique a révolutionné les télécommunications.",
+  "vi": "Cáp quang đã cách mạng hóa ngành viễn thông.",
+  "f": [
+   "vượt cấp:révolutionné?,télécommunications?"
+  ]
+ },
+ {
+  "id": "faisan",
+  "fr": "Le chef a fait rôtir le faisan avec des châtaignes et du thym.",
+  "vi": "Đầu bếp đã quay con chim trĩ với hạt dẻ và cỏ xạ hương.",
+  "f": [
+   "vượt cấp:châtaignes?,thym?"
+  ]
+ },
+ {
+  "id": "camouflage",
+  "fr": "Le caméléon est un maître incontesté de l'art du camouflage.",
+  "vi": "Tắc kè hoa là bậc thầy không thể tranh cãi của nghệ thuật ngụy trang.",
+  "f": [
+   "vượt cấp:caméléon?,incontesté?"
+  ]
+ },
+ {
+  "id": "rassasier",
+  "fr": "Ce copieux plat de montagne suffit à rassasier les randonneurs affamés.",
+  "vi": "Món ăn miền núi thịnh soạn này đủ làm no những người leo núi đói lả.",
+  "f": [
+   "vượt cấp:copieux?,randonneurs?"
+  ]
+ },
+ {
+  "id": "frappé",
+  "fr": "Le sommelier a servi le champagne bien frappé dans des flûtes givrées.",
+  "vi": "Người phục vụ rượu đã rót sâm panh ướp lạnh vào những ly thủy tinh phủ sương.",
+  "f": [
+   "vượt cấp:sommelier?,givrées?"
+  ]
+ },
+ {
+  "id": "lourdeur",
+  "fr": "Une lourdeur d'estomac le tenaillait après ce repas trop copieux.",
+  "vi": "Cảm giác nặng bụng hành hạ ông sau bữa ăn quá thịnh soạn.",
+  "f": [
+   "vượt cấp:tenaillait?,copieux?"
+  ]
+ },
+ {
+  "id": "angélique",
+  "fr": "Le pâtissier confit des tiges d'angélique pour décorer ses entremets.",
+  "vi": "Người thợ bánh ngâm đường những cọng bạch chỉ để trang trí các món tráng miệng.",
+  "f": [
+   "vượt cấp:confit?,entremets?"
+  ]
+ },
+ {
+  "id": "saisie",
+  "fr": "L'huissier a procédé à la saisie des biens du débiteur insolvable.",
+  "vi": "Thừa phát lại đã tiến hành kê biên tài sản của con nợ mất khả năng chi trả.",
+  "f": [
+   "vượt cấp:débiteur?,insolvable?"
+  ]
+ },
+ {
+  "id": "moucheron",
+  "fr": "Un moucheron s'est glissé dans mon œil et m'a fait larmoyer.",
+  "vi": "Một con muỗi mắt lọt vào mắt tôi làm tôi chảy nước mắt.",
+  "f": [
+   "vượt cấp:œil?,larmoyer?"
+  ]
+ },
+ {
+  "id": "défectueux",
+  "fr": "Le constructeur a rappelé des milliers de véhicules dont le système de freinage était défectueux.",
+  "vi": "Nhà sản xuất đã thu hồi hàng nghìn xe có hệ thống phanh bị lỗi.",
+  "f": [
+   "vượt cấp:constructeur?,freinage?"
+  ]
+ },
+ {
+  "id": "yang",
+  "fr": "Elle voyait dans leur couple la parfaite complémentarité du yin et du yang.",
+  "vi": "Cô xem cặp đôi của họ là sự bổ sung hoàn hảo giữa âm và dương.",
+  "f": [
+   "vượt cấp:complémentarité?,yin?"
+  ]
+ },
+ {
+  "id": "more",
+  "fr": "Les Mores régnèrent plusieurs siècles sur une grande partie de la péninsule ibérique.",
+  "vi": "Người Mô-rơ đã trị vì nhiều thế kỷ trên phần lớn bán đảo Iberia.",
+  "f": [
+   "vượt cấp:péninsule?,ibérique?"
+  ]
+ },
+ {
+  "id": "ruiné",
+  "fr": "Ruiné par le krach boursier, il dut vendre jusqu'à sa maison de famille.",
+  "vi": "Phá sản vì sụp đổ chứng khoán, ông phải bán cả căn nhà gia đình.",
+  "f": [
+   "vượt cấp:krach?,boursier?"
+  ]
+ },
+ {
+  "id": "rosir",
+  "fr": "Ses joues rosirent de plaisir lorsqu'elle reçut le compliment.",
+  "vi": "Đôi má cô ửng hồng vì thích thú khi nhận được lời khen.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "corail",
+  "fr": "Le réchauffement des océans provoque le blanchissement des coraux.",
+  "vi": "Sự ấm lên của đại dương gây ra hiện tượng tẩy trắng san hô.",
+  "f": [
+   "vượt cấp:réchauffement?,blanchissement?"
+  ]
+ },
+ {
+  "id": "please",
+  "fr": "« One coffee, please », lança-t-il au serveur avec un fort accent français.",
+  "vi": "« One coffee, please », anh nói với người phục vụ bằng giọng Pháp rất nặng.",
+  "f": [
+   "vượt cấp:one?,coffee?"
+  ]
+ },
+ {
+  "id": "penny",
+  "fr": "Autrefois, on pouvait acheter un journal pour quelques pennies.",
+  "vi": "Xưa kia, người ta có thể mua một tờ báo với vài đồng penny.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "enfourner",
+  "fr": "Elle enfourna le gratin et régla la minuterie sur quarante minutes.",
+  "vi": "Cô cho món gratin vào lò và hẹn giờ bốn mươi phút.",
+  "f": [
+   "vượt cấp:gratin?,minuterie?"
+  ]
+ },
+ {
+  "id": "déblayer",
+  "fr": "Les secouristes ont travaillé toute la nuit pour déblayer les gravats.",
+  "vi": "Đội cứu hộ đã làm việc suốt đêm để dọn đống đổ nát.",
+  "f": [
+   "vượt cấp:secouristes?,gravats?"
+  ]
+ },
+ {
+  "id": "sas",
+  "fr": "Le meunier passait la farine au sas pour en retirer les impuretés.",
+  "vi": "Người thợ xay rây bột qua sàng để loại bỏ tạp chất.",
+  "f": [
+   "vượt cấp:meunier?,impuretés?"
+  ]
+ },
+ {
+  "id": "déchiqueté",
+  "fr": "Au loin se dressait un littoral déchiqueté par des siècles d'érosion.",
+  "vi": "Đằng xa hiện lên bờ biển lởm chởm do hàng thế kỷ xói mòn.",
+  "f": [
+   "vượt cấp:littoral?,érosion?"
+  ]
+ },
+ {
+  "id": "baquet",
+  "fr": "Le vendangeur vida sa hotte dans le baquet placé au bout du rang.",
+  "vi": "Người hái nho đổ gùi của mình vào chậu gỗ đặt ở cuối luống.",
+  "f": [
+   "vượt cấp:vendangeur?,hotte?"
+  ]
+ },
+ {
+  "id": "fondu",
+  "fr": "Sous le soleil, la neige à moitié fondue laissait apparaître la boue.",
+  "vi": "Dưới nắng, lớp tuyết tan một nửa để lộ ra bùn đất.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "émetteur",
+  "fr": "En communication, l'émetteur code le message que le récepteur devra décoder.",
+  "vi": "Trong truyền thông, bên phát mã hóa thông điệp mà bên nhận sẽ phải giải mã.",
+  "f": [
+   "vượt cấp:récepteur?,décoder?"
+  ]
+ },
+ {
+  "id": "gouine",
+  "fr": "Dans la cour, les gamins lançaient ce mot vulgaire sans en mesurer la violence.",
+  "vi": "Ngoài sân, lũ nhóc buông ra cái từ thô tục ấy mà không lường được sự bạo lực của nó.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "branlette",
+  "fr": "On évite ce genre de mot cru dans une conversation soignée.",
+  "vi": "Người ta tránh loại từ thô tục kiểu này trong một cuộc trò chuyện lịch sự.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "refusé",
+  "fr": "Le manuscrit refusé par tous les éditeurs devint plus tard un best-seller.",
+  "vi": "Bản thảo bị mọi nhà xuất bản từ chối về sau lại trở thành sách bán chạy.",
+  "f": [
+   "vượt cấp:best?,seller?"
+  ]
+ },
+ {
+  "id": "constat",
+  "fr": "Après l'accrochage, les deux conducteurs ont rempli un constat amiable.",
+  "vi": "Sau vụ va quệt, hai tài xế đã điền vào biên bản xác nhận thỏa thuận.",
+  "f": [
+   "vượt cấp:accrochage?,amiable?"
+  ]
+ },
+ {
+  "id": "cicatriser",
+  "fr": "La plaie a mis plusieurs semaines à cicatriser.",
+  "vi": "Vết thương phải mất nhiều tuần mới lành sẹo.",
+  "f": [
+   "trùng:plaie,cicatriser"
+  ]
+ },
+ {
+  "id": "appréciation",
+  "fr": "L'appréciation de la monnaie a pénalisé les exportateurs.",
+  "vi": "Sự tăng giá trị của đồng tiền đã gây bất lợi cho các nhà xuất khẩu.",
+  "f": [
+   "vượt cấp:pénalisé?,exportateurs?"
+  ]
+ },
+ {
+  "id": "loutre",
+  "fr": "La réintroduction de la loutre dans nos rivières témoigne de la reconquête d'un écosystème fragile.",
+  "vi": "Việc tái thả rái cá vào các dòng sông của chúng ta cho thấy sự phục hồi của một hệ sinh thái mong manh.",
+  "f": [
+   "vượt cấp:réintroduction?,reconquête?,écosystème?"
+  ]
+ },
+ {
+  "id": "boiserie",
+  "fr": "L'ébéniste restaura patiemment les boiseries vermoulues du château.",
+  "vi": "Người thợ mộc kiên nhẫn phục chế những tấm ván ốp gỗ mối mọt của lâu đài.",
+  "f": [
+   "vượt cấp:ébéniste?,vermoulues?"
+  ]
+ },
+ {
+  "id": "diversité",
+  "fr": "On admire dans cette œuvre la diversité des registres, du burlesque au tragique.",
+  "vi": "Người ta thán phục trong tác phẩm này sự đa dạng của các sắc thái, từ hài hước đến bi thương.",
+  "f": [
+   "vượt cấp:œuvre?,burlesque?"
+  ]
+ },
+ {
+  "id": "subvention",
+  "fr": "Le versement de la subvention fut subordonné à la présentation de comptes rigoureux.",
+  "vi": "Việc chi khoản trợ cấp được đặt điều kiện phải trình bày sổ sách chặt chẽ.",
+  "f": [
+   "vượt cấp:versement?,subordonné?"
+  ]
+ },
+ {
+  "id": "calotte",
+  "fr": "La calotte glaciaire fond à un rythme qui inquiète les climatologues.",
+  "vi": "Lớp băng chỏm cực tan chảy với tốc độ khiến các nhà khí hậu học lo ngại.",
+  "f": [
+   "vượt cấp:glaciaire?,climatologues?"
+  ]
+ },
+ {
+  "id": "hernie",
+  "fr": "Le médecin diagnostiqua une hernie discale à l'origine de ses douleurs lancinantes.",
+  "vi": "Bác sĩ chẩn đoán một chỗ thoát vị đĩa đệm là nguyên nhân của những cơn đau nhức nhối.",
+  "f": [
+   "vượt cấp:diagnostiqua?,discale?"
+  ]
+ },
+ {
+  "id": "coran",
+  "fr": "Il possédait un Coran enluminé, hérité de ses aïeux et jalousement conservé.",
+  "vi": "Ông có một cuốn kinh Coran trang trí công phu, thừa hưởng từ tổ tiên và gìn giữ cẩn thận.",
+  "f": [
+   "vượt cấp:enluminé?,jalousement?"
+  ]
+ },
+ {
+  "id": "coran",
+  "fr": "L'exégèse du Coran a nourri des siècles de réflexion théologique.",
+  "vi": "Việc chú giải kinh Coran đã nuôi dưỡng nhiều thế kỷ suy tư thần học.",
+  "f": [
+   "vượt cấp:exégèse?,théologique?"
+  ]
+ },
+ {
+  "id": "noyade",
+  "fr": "La noyade de deux baigneurs endeuilla la station balnéaire tout l'été.",
+  "vi": "Vụ chết đuối của hai người tắm biển phủ tang cả khu nghỉ mát suốt mùa hè.",
+  "f": [
+   "vượt cấp:endeuilla?,balnéaire?"
+  ]
+ },
+ {
+  "id": "accélération",
+  "fr": "On observe une nette accélération du réchauffement climatique depuis quelques décennies.",
+  "vi": "Người ta ghi nhận một sự tăng tốc rõ rệt của hiện tượng ấm lên toàn cầu trong vài thập kỷ gần đây.",
+  "f": [
+   "vượt cấp:réchauffement?,climatique?"
+  ]
+ },
+ {
+  "id": "gammée",
+  "fr": "On avait tagué une croix gammée sur le mur du cimetière, provoquant un tollé général.",
+  "vi": "Người ta đã vẽ bậy một chữ thập ngoặc lên tường nghĩa trang, gây nên sự phẫn nộ chung.",
+  "f": [
+   "vượt cấp:tagué?,tollé?"
+  ]
+ },
+ {
+  "id": "plomber",
+  "fr": "Le dentiste dut plomber deux molaires rongées par la carie.",
+  "vi": "Nha sĩ phải trám hai chiếc răng hàm bị sâu ăn mòn.",
+  "f": [
+   "vượt cấp:molaires?,carie?"
+  ]
+ },
+ {
+  "id": "plomber",
+  "fr": "Cette nouvelle accablante plomba l'ambiance de toute la soirée.",
+  "vi": "Tin tức nặng nề ấy làm hỏng bầu không khí của cả buổi tối.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "décarrer",
+  "fr": "Dès qu'il aperçut les flics, le voyou décarra sans demander son reste.",
+  "vi": "Vừa thấy bóng cảnh sát, tên du côn chuồn mất không cần nói thêm.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "rafraîchissement",
+  "fr": "L'orage apporta un rafraîchissement salutaire après des jours de canicule.",
+  "vi": "Cơn giông mang lại sự dịu mát đáng quý sau nhiều ngày nắng gắt.",
+  "f": [
+   "vượt cấp:salutaire?,canicule?"
+  ]
+ },
+ {
+  "id": "spider",
+  "fr": "Il fit vrombir le moteur de son spider rutilant avant de s'élancer sur la corniche.",
+  "vi": "Ông rồ máy chiếc xe mui trần thể thao bóng loáng trước khi lao đi trên con đường ven biển.",
+  "f": [
+   "vượt cấp:vrombir?,rutilant?"
+  ]
+ },
+ {
+  "id": "iode",
+  "fr": "Une carence en iode peut perturber le fonctionnement de la thyroïde.",
+  "vi": "Thiếu i-ốt có thể làm rối loạn hoạt động của tuyến giáp.",
+  "f": [
+   "vượt cấp:carence?,thyroïde?"
+  ]
+ },
+ {
+  "id": "ado",
+  "fr": "Les ados passent des heures rivés à leur téléphone.",
+  "vi": "Bọn tuổi teen dán mắt vào điện thoại hàng giờ liền.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "ado",
+  "fr": "Ce roman parle avec justesse des angoisses des ados d'aujourd'hui.",
+  "vi": "Cuốn tiểu thuyết này nói rất đúng về những nỗi lo âu của giới trẻ ngày nay.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "dissertation",
+  "fr": "Sa dissertation était brillamment argumentée et parfaitement structurée.",
+  "vi": "Bài tiểu luận của cô ấy lập luận xuất sắc và bố cục hoàn hảo.",
+  "f": [
+   "vượt cấp:brillamment?,argumentée?,structurée?"
+  ]
+ },
+ {
+  "id": "vertèbre",
+  "fr": "La chute lui a fracturé une vertèbre cervicale.",
+  "vi": "Cú ngã đã làm anh ấy gãy một đốt sống cổ.",
+  "f": [
+   "vượt cấp:fracturé?,cervicale?"
+  ]
+ },
+ {
+  "id": "moyennant",
+  "fr": "Moyennant quelques ajustements, le projet pourra être validé.",
+  "vi": "Với vài điều chỉnh, dự án sẽ có thể được phê duyệt.",
+  "f": [
+   "vượt cấp:ajustements?,validé?"
+  ]
+ },
+ {
+  "id": "arc-bouter",
+  "fr": "Il s'arc-bouta de toutes ses forces pour repousser la porte.",
+  "vi": "Anh ấy gồng hết sức mình để đẩy cánh cửa lại.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "arc-bouter",
+  "fr": "La direction s'arc-boute sur ses positions et refuse tout compromis.",
+  "vi": "Ban lãnh đạo cố thủ trên lập trường của mình và từ chối mọi thỏa hiệp.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "féconder",
+  "fr": "Un seul spermatozoïde suffit à féconder l'ovule.",
+  "vi": "Chỉ một tinh trùng là đủ để thụ tinh cho trứng.",
+  "f": [
+   "vượt cấp:spermatozoïde?,ovule?"
+  ]
+ },
+ {
+  "id": "voltigeur",
+  "fr": "Au trapèze, la voltigeuse se lança dans le vide sans filet.",
+  "vi": "Trên xà đu, nữ diễn viên nhào lộn lao vào khoảng không mà không có lưới.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "glissade",
+  "fr": "Le skieur perdit l'équilibre dans une longue glissade incontrôlée.",
+  "vi": "Người trượt tuyết mất thăng bằng trong một cú trượt dài mất kiểm soát.",
+  "f": [
+   "vượt cấp:skieur?,incontrôlée?"
+  ]
+ },
+ {
+  "id": "mander",
+  "fr": "On me manda d'urgence auprès du directeur.",
+  "vi": "Người ta triệu tập tôi gấp đến gặp giám đốc.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "réchapper",
+  "fr": "Bien peu de passagers réchappèrent du naufrage.",
+  "vi": "Rất ít hành khách thoát nạn khỏi vụ đắm tàu.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "ceindre",
+  "fr": "De hautes murailles ceignaient la vieille cité.",
+  "vi": "Những bức tường thành cao bao quanh thành cổ.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "escamoter",
+  "fr": "Le prestidigitateur escamota la carte sous nos yeux ébahis.",
+  "vi": "Nhà ảo thuật làm biến mất lá bài ngay trước đôi mắt sửng sốt của chúng tôi.",
+  "f": [
+   "vượt cấp:prestidigitateur?,ébahis?"
+  ]
+ },
+ {
+  "id": "repris",
+  "fr": "Le thème repris au dernier mouvement clôt magnifiquement l'œuvre.",
+  "vi": "Chủ đề được lấy lại ở chương cuối khép lại tác phẩm một cách tuyệt đẹp.",
+  "f": [
+   "vượt cấp:magnifiquement?,œuvre?"
+  ]
+ }
+]

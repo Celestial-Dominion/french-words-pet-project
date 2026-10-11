@@ -33,3 +33,4 @@ code/public/audio/
 # log build/deploy (scripts/deploy.sh)
 code/scripts/.deploy.log
 code/scripts/.build.log
+code/scripts/tatoeba/

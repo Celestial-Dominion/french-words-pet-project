@@ -1,0 +1,170 @@
+[
+ {
+  "id": "église",
+  "fr": "Les cloches de l'église sonnent à midi.",
+  "vi": "Chuông nhà thờ vang lên lúc trưa.",
+  "f": [
+   "trùng:église,sonner"
+  ]
+ },
+ {
+  "id": "calme",
+  "fr": "J'aime le calme de la campagne.",
+  "vi": "Tôi thích sự yên tĩnh của miền quê.",
+  "f": [
+   "trùng:calme,campagne"
+  ]
+ },
+ {
+  "id": "équipe",
+  "fr": "Notre équipe a gagné le match.",
+  "vi": "Đội của chúng tôi đã thắng trận.",
+  "f": [
+   "trùng:équipe,match"
+  ]
+ },
+ {
+  "id": "clé",
+  "fr": "J'ai perdu mes clés ce matin.",
+  "vi": "Sáng nay tôi làm mất chìa khóa.",
+  "f": [
+   "trùng:clé,perdu"
+  ]
+ },
+ {
+  "id": "sonner",
+  "fr": "Les cloches de l'église sonnent à midi.",
+  "vi": "Chuông nhà thờ reo lúc giữa trưa.",
+  "f": [
+   "trùng:église,sonner"
+  ]
+ },
+ {
+  "id": "champ",
+  "fr": "Les vaches mangent de l'herbe dans le champ.",
+  "vi": "Những con bò gặm cỏ trên cánh đồng.",
+  "f": [
+   "trùng:champ,vache"
+  ]
+ },
+ {
+  "id": "campagne",
+  "fr": "J'aime le calme de la campagne.",
+  "vi": "Tôi thích sự yên tĩnh của vùng nông thôn.",
+  "f": [
+   "trùng:calme,campagne"
+  ]
+ },
+ {
+  "id": "but",
+  "fr": "Il a marqué un but à la fin du match.",
+  "vi": "Anh ấy đã ghi một bàn thắng vào cuối trận.",
+  "f": [
+   "trùng:but,marquer"
+  ]
+ },
+ {
+  "id": "marquer",
+  "fr": "Il a marqué un but à la fin du match.",
+  "vi": "Anh ấy đã ghi một bàn vào cuối trận.",
+  "f": [
+   "trùng:but,marquer"
+  ]
+ },
+ {
+  "id": "celles",
+  "fr": "Je préfère les pommes rouges à celles-là.",
+  "vi": "Tôi thích táo đỏ hơn những quả kia.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "magasin",
+  "fr": "Ce magasin vend des vêtements.",
+  "vi": "Cửa hàng này bán quần áo.",
+  "f": [
+   "trùng:vendre,magasin"
+  ]
+ },
+ {
+  "id": "vache",
+  "fr": "Les vaches mangent de l'herbe dans le champ.",
+  "vi": "Những con bò ăn cỏ trên cánh đồng.",
+  "f": [
+   "trùng:champ,vache"
+  ]
+ },
+ {
+  "id": "usine",
+  "fr": "Cette usine fabrique des voitures.",
+  "vi": "Nhà máy này sản xuất ô tô.",
+  "f": [
+   "trùng:usine,fabriquer"
+  ]
+ },
+ {
+  "id": "perdu",
+  "fr": "J'ai perdu mes clés ce matin.",
+  "vi": "Tôi đã làm mất chìa khóa sáng nay.",
+  "f": [
+   "trùng:clé,perdu"
+  ]
+ },
+ {
+  "id": "demi",
+  "fr": "Il est arrivé une demi-heure en retard.",
+  "vi": "Anh ấy đến trễ nửa tiếng.",
+  "f": [
+   "thiếu từ"
+  ]
+ },
+ {
+  "id": "fabriquer",
+  "fr": "Cette usine fabrique des voitures.",
+  "vi": "Nhà máy này sản xuất ô tô.",
+  "f": [
+   "trùng:usine,fabriquer"
+  ]
+ },
+ {
+  "id": "joyeux",
+  "fr": "Joyeux anniversaire !",
+  "vi": "Chúc mừng sinh nhật!",
+  "f": [
+   "độ dài:2"
+  ]
+ },
+ {
+  "id": "match",
+  "fr": "Notre équipe a gagné le match.",
+  "vi": "Đội của chúng tôi đã thắng trận đấu.",
+  "f": [
+   "trùng:équipe,match"
+  ]
+ },
+ {
+  "id": "guérir",
+  "fr": "Ce sirop va te guérir de ta toux.",
+  "vi": "Loại xi-rô này sẽ chữa khỏi cơn ho cho cậu.",
+  "f": [
+   "vượt cấp:sirop,toux"
+  ]
+ },
+ {
+  "id": "mise",
+  "fr": "La mise minimale est de dix euros.",
+  "vi": "Tiền cược tối thiểu là mười euro.",
+  "f": [
+   "vượt cấp:minimale?,euros"
+  ]
+ },
+ {
+  "id": "fuite",
+  "fr": "Le plombier répare la fuite du robinet.",
+  "vi": "Người thợ ống nước sửa chỗ rò rỉ ở vòi.",
+  "f": [
+   "vượt cấp:plombier,robinet"
+  ]
+ }
+]

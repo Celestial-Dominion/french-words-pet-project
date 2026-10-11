@@ -1,0 +1,882 @@
+[
+ {
+  "id": "être",
+  "fr": "Je suis très content.",
+  "vi": "Tôi rất vui.",
+  "f": [
+   "trùng:être,très"
+  ]
+ },
+ {
+  "id": "je",
+  "fr": "Je parle un peu français.",
+  "vi": "Tôi nói một chút tiếng Pháp.",
+  "f": [
+   "trùng:je,français"
+  ]
+ },
+ {
+  "id": "je",
+  "fr": "Je vais au marché.",
+  "vi": "Tôi đi chợ.",
+  "f": [
+   "trùng:je,au"
+  ]
+ },
+ {
+  "id": "ne",
+  "fr": "Je ne comprends pas.",
+  "vi": "Tôi không hiểu.",
+  "f": [
+   "trùng:ne,comprendre"
+  ]
+ },
+ {
+  "id": "à",
+  "fr": "On mange à midi.",
+  "vi": "Chúng ta ăn lúc trưa.",
+  "f": [
+   "trùng:à,manger,midi"
+  ]
+ },
+ {
+  "id": "il",
+  "fr": "Il mange du pain.",
+  "vi": "Anh ấy ăn bánh mì.",
+  "f": [
+   "trùng:il,du"
+  ]
+ },
+ {
+  "id": "il",
+  "fr": "Il fait beau aujourd'hui.",
+  "vi": "Hôm nay trời đẹp.",
+  "f": [
+   "trùng:il,beau"
+  ]
+ },
+ {
+  "id": "un",
+  "fr": "Il y a un problème.",
+  "vi": "Có một vấn đề.",
+  "f": [
+   "trùng:un,problème"
+  ]
+ },
+ {
+  "id": "les",
+  "fr": "Les enfants jouent dehors.",
+  "vi": "Bọn trẻ chơi ngoài kia.",
+  "f": [
+   "trùng:les,jouer,dehors"
+  ]
+ },
+ {
+  "id": "l'",
+  "fr": "L'eau est froide.",
+  "vi": "Nước lạnh.",
+  "f": [
+   "trùng:l',eau,froid"
+  ]
+ },
+ {
+  "id": "tu",
+  "fr": "Tu as raison.",
+  "vi": "Bạn nói đúng.",
+  "f": [
+   "trùng:tu,raison"
+  ]
+ },
+ {
+  "id": "d'",
+  "fr": "J'ai besoin d'aide.",
+  "vi": "Tôi cần giúp đỡ.",
+  "f": [
+   "trùng:d',besoin"
+  ]
+ },
+ {
+  "id": "pour",
+  "fr": "Merci pour ton aide.",
+  "vi": "Cảm ơn vì sự giúp đỡ của bạn.",
+  "f": [
+   "trùng:pour,merci,aide"
+  ]
+ },
+ {
+  "id": "du",
+  "fr": "Il mange du pain.",
+  "vi": "Anh ấy ăn bánh mì.",
+  "f": [
+   "trùng:il,du"
+  ]
+ },
+ {
+  "id": "au",
+  "fr": "Je vais au marché.",
+  "vi": "Tôi đi chợ.",
+  "f": [
+   "trùng:je,au"
+  ]
+ },
+ {
+  "id": "ce",
+  "fr": "Ce n'est pas grave.",
+  "vi": "Không sao đâu.",
+  "f": [
+   "trùng:ce,grave"
+  ]
+ },
+ {
+  "id": "sur",
+  "fr": "Le chat dort sur le lit.",
+  "vi": "Con mèo ngủ trên giường.",
+  "f": [
+   "trùng:sur,lit"
+  ]
+ },
+ {
+  "id": "son",
+  "fr": "Il aime son travail.",
+  "vi": "Anh ấy thích công việc của mình.",
+  "f": [
+   "trùng:son,travail"
+  ]
+ },
+ {
+  "id": "devoir",
+  "fr": "Je dois partir maintenant.",
+  "vi": "Tôi phải đi bây giờ.",
+  "f": [
+   "trùng:devoir,maintenant"
+  ]
+ },
+ {
+  "id": "toi",
+  "fr": "Je pense à toi.",
+  "vi": "Tôi nghĩ về bạn.",
+  "f": [
+   "trùng:toi,penser"
+  ]
+ },
+ {
+  "id": "chose",
+  "fr": "C'est la même chose.",
+  "vi": "Cũng là một thứ thôi.",
+  "f": [
+   "trùng:chose,même"
+  ]
+ },
+ {
+  "id": "très",
+  "fr": "Je suis très content.",
+  "vi": "Tôi rất vui.",
+  "f": [
+   "trùng:être,très"
+  ]
+ },
+ {
+  "id": "passer",
+  "fr": "Le temps passe vite.",
+  "vi": "Thời gian trôi nhanh.",
+  "f": [
+   "trùng:passer,vite"
+  ]
+ },
+ {
+  "id": "passer",
+  "fr": "Passe-moi le sel, s'il te plaît.",
+  "vi": "Đưa tôi lọ muối nhé.",
+  "f": [
+   "trùng:passer,sel"
+  ]
+ },
+ {
+  "id": "penser",
+  "fr": "Je pense à toi.",
+  "vi": "Tôi nghĩ về bạn.",
+  "f": [
+   "trùng:toi,penser"
+  ]
+ },
+ {
+  "id": "jour",
+  "fr": "Quel jour sommes-nous ?",
+  "vi": "Hôm nay là thứ mấy?",
+  "f": [
+   "trùng:jour,quel"
+  ]
+ },
+ {
+  "id": "même",
+  "fr": "Nous avons le même âge.",
+  "vi": "Chúng tôi cùng tuổi.",
+  "f": [
+   "trùng:même,âge"
+  ]
+ },
+ {
+  "id": "même",
+  "fr": "C'est la même chose.",
+  "vi": "Đó là cùng một chuyện.",
+  "f": [
+   "trùng:chose,même"
+  ]
+ },
+ {
+  "id": "demander",
+  "fr": "Il demande de l'aide.",
+  "vi": "Anh ấy yêu cầu giúp đỡ.",
+  "f": [
+   "trùng:demander,aide"
+  ]
+ },
+ {
+  "id": "appeler",
+  "fr": "Comment tu t'appelles ?",
+  "vi": "Bạn tên là gì?",
+  "f": [
+   "trùng:appeler,comment"
+  ]
+ },
+ {
+  "id": "maintenant",
+  "fr": "Je dois partir maintenant.",
+  "vi": "Bây giờ tôi phải đi.",
+  "f": [
+   "trùng:devoir,maintenant"
+  ]
+ },
+ {
+  "id": "heure",
+  "fr": "Quelle heure est-il ?",
+  "vi": "Mấy giờ rồi?",
+  "f": [
+   "trùng:heure,quelle"
+  ]
+ },
+ {
+  "id": "heure",
+  "fr": "Il est trois heures.",
+  "vi": "Bây giờ là ba giờ.",
+  "f": [
+   "trùng:heure,trois"
+  ]
+ },
+ {
+  "id": "comprendre",
+  "fr": "Je ne comprends pas.",
+  "vi": "Tôi không hiểu.",
+  "f": [
+   "trùng:ne,comprendre"
+  ]
+ },
+ {
+  "id": "chez",
+  "fr": "Je vais chez le médecin.",
+  "vi": "Tôi đi khám bác sĩ.",
+  "f": [
+   "trùng:chez,médecin"
+  ]
+ },
+ {
+  "id": "tête",
+  "fr": "J'ai mal à la tête.",
+  "vi": "Tôi bị đau đầu.",
+  "f": [
+   "trùng:tête,mal"
+  ]
+ },
+ {
+  "id": "beau",
+  "fr": "Il fait beau aujourd'hui.",
+  "vi": "Hôm nay trời đẹp.",
+  "f": [
+   "trùng:il,beau"
+  ]
+ },
+ {
+  "id": "comment",
+  "fr": "Comment tu t'appelles ?",
+  "vi": "Bạn tên là gì?",
+  "f": [
+   "trùng:appeler,comment"
+  ]
+ },
+ {
+  "id": "tenir",
+  "fr": "Tiens, c'est pour toi.",
+  "vi": "Đây, cái này cho bạn.",
+  "f": [
+   "trùng:tenir,tiens"
+  ]
+ },
+ {
+  "id": "maison",
+  "fr": "Je rentre à la maison.",
+  "vi": "Tôi về nhà.",
+  "f": [
+   "trùng:maison,rentrer"
+  ]
+ },
+ {
+  "id": "ami",
+  "fr": "C'est mon meilleur ami.",
+  "vi": "Đó là người bạn thân nhất của tôi.",
+  "f": [
+   "trùng:ami,meilleur"
+  ]
+ },
+ {
+  "id": "merci",
+  "fr": "Merci beaucoup !",
+  "vi": "Cảm ơn nhiều!",
+  "f": [
+   "trùng:merci,beaucoup"
+  ]
+ },
+ {
+  "id": "merci",
+  "fr": "Merci pour ton aide.",
+  "vi": "Cảm ơn vì đã giúp đỡ.",
+  "f": [
+   "trùng:pour,merci,aide"
+  ]
+ },
+ {
+  "id": "besoin",
+  "fr": "J'ai besoin d'aide.",
+  "vi": "Tôi cần giúp đỡ.",
+  "f": [
+   "trùng:d',besoin"
+  ]
+ },
+ {
+  "id": "beaucoup",
+  "fr": "Merci beaucoup !",
+  "vi": "Cảm ơn rất nhiều!",
+  "f": [
+   "trùng:merci,beaucoup"
+  ]
+ },
+ {
+  "id": "entre",
+  "fr": "C'est un secret entre nous.",
+  "vi": "Đây là bí mật giữa chúng ta.",
+  "f": [
+   "trùng:entre,secret"
+  ]
+ },
+ {
+  "id": "quel",
+  "fr": "Quel âge as-tu ?",
+  "vi": "Bạn bao nhiêu tuổi?",
+  "f": [
+   "trùng:quel,âge"
+  ]
+ },
+ {
+  "id": "quel",
+  "fr": "Quel jour sommes-nous ?",
+  "vi": "Hôm nay là thứ mấy?",
+  "f": [
+   "trùng:jour,quel"
+  ]
+ },
+ {
+  "id": "nom",
+  "fr": "Écris ton nom ici.",
+  "vi": "Viết tên của bạn ở đây.",
+  "f": [
+   "trùng:nom,écrire"
+  ]
+ },
+ {
+  "id": "trois",
+  "fr": "Il est trois heures.",
+  "vi": "Bây giờ là ba giờ.",
+  "f": [
+   "trùng:heure,trois"
+  ]
+ },
+ {
+  "id": "jouer",
+  "fr": "Les enfants jouent dehors.",
+  "vi": "Bọn trẻ chơi ở ngoài.",
+  "f": [
+   "trùng:les,jouer,dehors"
+  ]
+ },
+ {
+  "id": "porte",
+  "fr": "Quelqu'un frappe à la porte.",
+  "vi": "Có ai đó gõ cửa.",
+  "f": [
+   "trùng:porte,frapper"
+  ]
+ },
+ {
+  "id": "vite",
+  "fr": "Le temps passe vite.",
+  "vi": "Thời gian trôi nhanh.",
+  "f": [
+   "trùng:passer,vite"
+  ]
+ },
+ {
+  "id": "rentrer",
+  "fr": "Je rentre à la maison.",
+  "vi": "Tôi về nhà đây.",
+  "f": [
+   "trùng:maison,rentrer"
+  ]
+ },
+ {
+  "id": "mal",
+  "fr": "J'ai mal à la tête.",
+  "vi": "Tôi bị đau đầu.",
+  "f": [
+   "trùng:tête,mal"
+  ]
+ },
+ {
+  "id": "écouter",
+  "fr": "J'écoute de la musique.",
+  "vi": "Tôi đang nghe nhạc.",
+  "f": [
+   "trùng:écouter,musique"
+  ]
+ },
+ {
+  "id": "quelle",
+  "fr": "Quelle heure est-il ?",
+  "vi": "Mấy giờ rồi?",
+  "f": [
+   "trùng:heure,quelle"
+  ]
+ },
+ {
+  "id": "quelle",
+  "fr": "Quelle est ta couleur préférée ?",
+  "vi": "Màu bạn thích là màu gì?",
+  "f": [
+   "trùng:quelle,couleur"
+  ]
+ },
+ {
+  "id": "raison",
+  "fr": "Tu as raison.",
+  "vi": "Bạn nói đúng.",
+  "f": [
+   "trùng:tu,raison"
+  ]
+ },
+ {
+  "id": "manger",
+  "fr": "On mange à midi.",
+  "vi": "Mình ăn lúc trưa.",
+  "f": [
+   "trùng:à,manger,midi"
+  ]
+ },
+ {
+  "id": "porter",
+  "fr": "Elle porte une jolie robe.",
+  "vi": "Cô ấy mặc một chiếc váy đẹp.",
+  "f": [
+   "trùng:porter,robe"
+  ]
+ },
+ {
+  "id": "eau",
+  "fr": "L'eau est froide.",
+  "vi": "Nước lạnh.",
+  "f": [
+   "trùng:l',eau,froid"
+  ]
+ },
+ {
+  "id": "idée",
+  "fr": "Je n'ai aucune idée.",
+  "vi": "Tôi chẳng có ý gì cả.",
+  "f": [
+   "trùng:idée,aucune"
+  ]
+ },
+ {
+  "id": "terre",
+  "fr": "La Terre tourne autour du soleil.",
+  "vi": "Trái Đất quay quanh mặt trời.",
+  "f": [
+   "trùng:terre,tourner"
+  ]
+ },
+ {
+  "id": "problème",
+  "fr": "Il y a un problème.",
+  "vi": "Có một vấn đề.",
+  "f": [
+   "trùng:un,problème"
+  ]
+ },
+ {
+  "id": "travail",
+  "fr": "Il aime son travail.",
+  "vi": "Anh ấy yêu công việc của mình.",
+  "f": [
+   "trùng:son,travail"
+  ]
+ },
+ {
+  "id": "chambre",
+  "fr": "La chambre est propre.",
+  "vi": "Căn phòng sạch sẽ.",
+  "f": [
+   "trùng:chambre,propre"
+  ]
+ },
+ {
+  "id": "matin",
+  "fr": "Je me lève tôt le matin.",
+  "vi": "Tôi dậy sớm vào buổi sáng.",
+  "f": [
+   "trùng:matin,tôt"
+  ]
+ },
+ {
+  "id": "écrire",
+  "fr": "Écris ton nom ici.",
+  "vi": "Viết tên bạn ở đây.",
+  "f": [
+   "trùng:nom,écrire"
+  ]
+ },
+ {
+  "id": "part",
+  "fr": "Chacun paie sa part.",
+  "vi": "Mỗi người trả phần của mình.",
+  "f": [
+   "trùng:part,chacun"
+  ]
+ },
+ {
+  "id": "mois",
+  "fr": "Le loyer est cher ce mois-ci.",
+  "vi": "Tháng này tiền nhà đắt.",
+  "f": [
+   "vượt cấp:loyer,ci"
+  ]
+ },
+ {
+  "id": "long",
+  "fr": "Elle a les cheveux longs.",
+  "vi": "Cô ấy có mái tóc dài.",
+  "f": [
+   "trùng:long,cheveu"
+  ]
+ },
+ {
+  "id": "tourner",
+  "fr": "La Terre tourne autour du soleil.",
+  "vi": "Trái Đất quay quanh mặt trời.",
+  "f": [
+   "trùng:terre,tourner"
+  ]
+ },
+ {
+  "id": "lit",
+  "fr": "Le chat dort sur le lit.",
+  "vi": "Con mèo ngủ trên giường.",
+  "f": [
+   "trùng:sur,lit"
+  ]
+ },
+ {
+  "id": "feu",
+  "fr": "Le feu est rouge, arrête-toi.",
+  "vi": "Đèn đỏ rồi, dừng lại đi.",
+  "f": [
+   "trùng:feu,rouge"
+  ]
+ },
+ {
+  "id": "route",
+  "fr": "La route est longue jusqu'à Paris.",
+  "vi": "Đường đến Paris thì xa.",
+  "f": [
+   "vượt cấp:jusqu',paris"
+  ]
+ },
+ {
+  "id": "ciel",
+  "fr": "Le ciel est bleu aujourd'hui.",
+  "vi": "Hôm nay bầu trời xanh.",
+  "f": [
+   "trùng:ciel,bleu"
+  ]
+ },
+ {
+  "id": "aucune",
+  "fr": "Je n'ai aucune idée.",
+  "vi": "Tôi không có ý tưởng nào cả.",
+  "f": [
+   "trùng:idée,aucune"
+  ]
+ },
+ {
+  "id": "film",
+  "fr": "Ce film est très drôle.",
+  "vi": "Bộ phim này rất vui.",
+  "f": [
+   "trùng:film,drôle"
+  ]
+ },
+ {
+  "id": "cheveu",
+  "fr": "Elle a les cheveux longs.",
+  "vi": "Cô ấy có mái tóc dài.",
+  "f": [
+   "trùng:long,cheveu"
+  ]
+ },
+ {
+  "id": "propre",
+  "fr": "La chambre est propre.",
+  "vi": "Căn phòng sạch sẽ.",
+  "f": [
+   "trùng:chambre,propre"
+  ]
+ },
+ {
+  "id": "âge",
+  "fr": "Quel âge as-tu ?",
+  "vi": "Bạn bao nhiêu tuổi?",
+  "f": [
+   "trùng:quel,âge"
+  ]
+ },
+ {
+  "id": "âge",
+  "fr": "Nous avons le même âge.",
+  "vi": "Chúng tôi bằng tuổi nhau.",
+  "f": [
+   "trùng:même,âge"
+  ]
+ },
+ {
+  "id": "rouge",
+  "fr": "Le feu est rouge, arrête-toi.",
+  "vi": "Đèn đỏ rồi, dừng lại.",
+  "f": [
+   "trùng:feu,rouge"
+  ]
+ },
+ {
+  "id": "meilleur",
+  "fr": "C'est mon meilleur ami.",
+  "vi": "Đó là bạn thân nhất của tôi.",
+  "f": [
+   "trùng:ami,meilleur"
+  ]
+ },
+ {
+  "id": "frapper",
+  "fr": "Quelqu'un frappe à la porte.",
+  "vi": "Có người gõ cửa.",
+  "f": [
+   "trùng:porte,frapper"
+  ]
+ },
+ {
+  "id": "vendre",
+  "fr": "Ce magasin vend des vêtements.",
+  "vi": "Cửa hàng này bán quần áo.",
+  "f": [
+   "trùng:vendre,magasin"
+  ]
+ },
+ {
+  "id": "tiens",
+  "fr": "Tiens, c'est pour toi.",
+  "vi": "Này, cái này cho bạn.",
+  "f": [
+   "trùng:tenir,tiens"
+  ]
+ },
+ {
+  "id": "dehors",
+  "fr": "Les enfants jouent dehors.",
+  "vi": "Bọn trẻ chơi ở ngoài.",
+  "f": [
+   "trùng:les,jouer,dehors"
+  ]
+ },
+ {
+  "id": "musique",
+  "fr": "J'écoute de la musique.",
+  "vi": "Tôi nghe nhạc.",
+  "f": [
+   "trùng:écouter,musique"
+  ]
+ },
+ {
+  "id": "français",
+  "fr": "Je parle un peu français.",
+  "vi": "Tôi nói được một chút tiếng Pháp.",
+  "f": [
+   "trùng:je,français"
+  ]
+ },
+ {
+  "id": "français",
+  "fr": "J'aime la cuisine française.",
+  "vi": "Tôi thích ẩm thực Pháp.",
+  "f": [
+   "trùng:français,cuisine"
+  ]
+ },
+ {
+  "id": "froid",
+  "fr": "L'eau est froide.",
+  "vi": "Nước lạnh.",
+  "f": [
+   "trùng:l',eau,froid"
+  ]
+ },
+ {
+  "id": "chacun",
+  "fr": "Chacun paie sa part.",
+  "vi": "Mỗi người trả phần của mình.",
+  "f": [
+   "trùng:part,chacun"
+  ]
+ },
+ {
+  "id": "couleur",
+  "fr": "Quelle est ta couleur préférée ?",
+  "vi": "Màu bạn thích nhất là gì?",
+  "f": [
+   "trùng:quelle,couleur"
+  ]
+ },
+ {
+  "id": "tôt",
+  "fr": "Je me lève tôt le matin.",
+  "vi": "Tôi dậy sớm vào buổi sáng.",
+  "f": [
+   "trùng:matin,tôt"
+  ]
+ },
+ {
+  "id": "aide",
+  "fr": "Merci pour ton aide.",
+  "vi": "Cảm ơn vì sự giúp đỡ của bạn.",
+  "f": [
+   "trùng:pour,merci,aide"
+  ]
+ },
+ {
+  "id": "aide",
+  "fr": "Il demande de l'aide.",
+  "vi": "Anh ấy nhờ giúp đỡ.",
+  "f": [
+   "trùng:demander,aide"
+  ]
+ },
+ {
+  "id": "bleu",
+  "fr": "Le ciel est bleu aujourd'hui.",
+  "vi": "Hôm nay bầu trời màu xanh.",
+  "f": [
+   "trùng:ciel,bleu"
+  ]
+ },
+ {
+  "id": "drôle",
+  "fr": "Ce film est très drôle.",
+  "vi": "Bộ phim này rất buồn cười.",
+  "f": [
+   "trùng:film,drôle"
+  ]
+ },
+ {
+  "id": "grave",
+  "fr": "Ce n'est pas grave.",
+  "vi": "Không sao đâu.",
+  "f": [
+   "trùng:ce,grave"
+  ]
+ },
+ {
+  "id": "médecin",
+  "fr": "Je vais chez le médecin.",
+  "vi": "Tôi đi khám bác sĩ.",
+  "f": [
+   "trùng:chez,médecin"
+  ]
+ },
+ {
+  "id": "parmi",
+  "fr": "Choisis un livre parmi ceux-ci.",
+  "vi": "Hãy chọn một cuốn sách trong số này.",
+  "f": [
+   "vượt cấp:ceux-ci,ci"
+  ]
+ },
+ {
+  "id": "robe",
+  "fr": "Elle porte une jolie robe.",
+  "vi": "Cô ấy mặc một chiếc váy xinh.",
+  "f": [
+   "trùng:porter,robe"
+  ]
+ },
+ {
+  "id": "cuisine",
+  "fr": "J'aime la cuisine française.",
+  "vi": "Tôi thích ẩm thực Pháp.",
+  "f": [
+   "trùng:français,cuisine"
+  ]
+ },
+ {
+  "id": "secret",
+  "fr": "C'est un secret entre nous.",
+  "vi": "Đây là bí mật giữa chúng ta.",
+  "f": [
+   "trùng:entre,secret"
+  ]
+ },
+ {
+  "id": "grand-père",
+  "fr": "Mon grand-père a quatre-vingts ans.",
+  "vi": "Ông tôi tám mươi tuổi.",
+  "f": [
+   "vượt cấp:quatre-vingts,vingts?"
+  ]
+ },
+ {
+  "id": "midi",
+  "fr": "On mange à midi.",
+  "vi": "Chúng tôi ăn lúc trưa.",
+  "f": [
+   "trùng:à,manger,midi"
+  ]
+ },
+ {
+  "id": "vendredi",
+  "fr": "Vendredi, c'est bientôt le week-end.",
+  "vi": "Thứ sáu, cuối tuần sắp đến rồi.",
+  "f": [
+   "vượt cấp:week?,end?"
+  ]
+ },
+ {
+  "id": "sel",
+  "fr": "Passe-moi le sel, s'il te plaît.",
+  "vi": "Đưa muối cho tôi nhé.",
+  "f": [
+   "trùng:passer,sel"
+  ]
+ }
+]
