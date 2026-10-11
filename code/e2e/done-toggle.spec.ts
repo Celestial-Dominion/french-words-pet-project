@@ -4,7 +4,7 @@ import { freshStart } from "./helpers";
 // A5: tích / bỏ tích "đã đọc · đã học" ngay trên danh sách + thanh lọc trạng thái + nút trạng thái trong trang bài.
 
 test("bài đọc: tích ngay trên danh sách, lọc Đã đọc / Chưa đọc, bỏ tích", async ({ page }) => {
-  await freshStart(page, "/bai-doc");
+  await freshStart(page, "/bai-doc/a1");
   const tick = page.getByRole("checkbox", { name: "Đã đọc: La famille de Marie" });
   await expect(tick).toHaveAttribute("aria-checked", "false");
   await tick.click();
@@ -22,8 +22,7 @@ test("bài đọc: tích ngay trên danh sách, lọc Đã đọc / Chưa đọc
 });
 
 test("bài đọc: nút trạng thái trong trang bài bật/tắt được, danh sách đổi theo", async ({ page }) => {
-  await freshStart(page, "/bai-doc");
-  await page.getByRole("button", { name: /La famille de Marie/ }).last().click();
+  await freshStart(page, "/bai-doc/a1/a1-01");
   const btn = page.getByRole("button", { name: /^(Đã đọc|Chưa đọc)$/ }).first();
   await page.waitForTimeout(500); // bài ngắn: mốc cuối bài lọt màn hình → tự đánh dấu; chờ trạng thái ổn định
   const before = await btn.getAttribute("aria-pressed");

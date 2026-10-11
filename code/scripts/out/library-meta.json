@@ -1,0 +1,311 @@
+{
+  "_note": "Siêu dữ liệu thư viện soạn tay (C1): bài đọc id → [chủ đề, thể loại]; truyện id → {topic, summary}. Khoá chủ đề/thể loại theo lib/library.ts (TOPICS, GENRES — cùng bộ với app Anh). build-readings.mjs / build-stories.mjs ghép vào chỉ mục.",
+  "readings": {
+    "a1-01": [
+      "family",
+      "description"
+    ],
+    "a1-02": [
+      "food",
+      "description"
+    ],
+    "a1-03": [
+      "education",
+      "narrative"
+    ],
+    "a1-04": [
+      "daily-life",
+      "narrative"
+    ],
+    "a1-05": [
+      "food",
+      "narrative"
+    ],
+    "a1-06": [
+      "daily-life",
+      "description"
+    ],
+    "a1-07": [
+      "daily-life",
+      "narrative"
+    ],
+    "a1-08": [
+      "daily-life",
+      "description"
+    ],
+    "a1-09": [
+      "cities",
+      "description"
+    ],
+    "a1-10": [
+      "food",
+      "narrative"
+    ],
+    "a1-11": [
+      "daily-life",
+      "description"
+    ],
+    "a1-12": [
+      "daily-life",
+      "narrative"
+    ],
+    "a2-01": [
+      "daily-life",
+      "narrative"
+    ],
+    "a2-02": [
+      "family",
+      "description"
+    ],
+    "a2-03": [
+      "food",
+      "narrative"
+    ],
+    "a2-04": [
+      "travel",
+      "narrative"
+    ],
+    "a2-05": [
+      "food",
+      "narrative"
+    ],
+    "a2-06": [
+      "education",
+      "description"
+    ],
+    "a2-07": [
+      "daily-life",
+      "narrative"
+    ],
+    "a2-08": [
+      "daily-life",
+      "narrative"
+    ],
+    "a2-09": [
+      "daily-life",
+      "description"
+    ],
+    "a2-10": [
+      "nature",
+      "informational"
+    ],
+    "a2-11": [
+      "family",
+      "narrative"
+    ],
+    "a2-12": [
+      "daily-life",
+      "description"
+    ],
+    "b1-01": [
+      "travel",
+      "narrative"
+    ],
+    "b1-02": [
+      "family",
+      "description"
+    ],
+    "b1-03": [
+      "daily-life",
+      "narrative"
+    ],
+    "b1-04": [
+      "travel",
+      "narrative"
+    ],
+    "b1-05": [
+      "education",
+      "narrative"
+    ],
+    "b1-06": [
+      "food",
+      "narrative"
+    ],
+    "b1-07": [
+      "communication",
+      "letter"
+    ],
+    "b1-08": [
+      "nature",
+      "description"
+    ],
+    "b1-09": [
+      "travel",
+      "narrative"
+    ],
+    "b1-10": [
+      "work",
+      "narrative"
+    ],
+    "b2-01": [
+      "work",
+      "narrative"
+    ],
+    "b2-02": [
+      "travel",
+      "narrative"
+    ],
+    "b2-03": [
+      "communication",
+      "narrative"
+    ],
+    "b2-04": [
+      "environment",
+      "argument"
+    ],
+    "b2-05": [
+      "family",
+      "narrative"
+    ],
+    "b2-06": [
+      "daily-life",
+      "narrative"
+    ],
+    "b2-07": [
+      "health",
+      "narrative"
+    ],
+    "b2-08": [
+      "culture",
+      "narrative"
+    ],
+    "b2-09": [
+      "ethics",
+      "narrative"
+    ],
+    "b2-10": [
+      "work",
+      "narrative"
+    ],
+    "c1-01": [
+      "philosophy",
+      "opinion"
+    ],
+    "c1-02": [
+      "cities",
+      "description"
+    ],
+    "c1-03": [
+      "art",
+      "opinion"
+    ],
+    "c1-04": [
+      "literature",
+      "opinion"
+    ],
+    "c1-05": [
+      "nature",
+      "description"
+    ],
+    "c1-06": [
+      "technology",
+      "argument"
+    ],
+    "c1-07": [
+      "psychology",
+      "opinion"
+    ],
+    "c1-08": [
+      "psychology",
+      "opinion"
+    ],
+    "c2-01": [
+      "nature",
+      "description"
+    ],
+    "c2-02": [
+      "psychology",
+      "analysis"
+    ],
+    "c2-03": [
+      "travel",
+      "narrative"
+    ],
+    "c2-04": [
+      "philosophy",
+      "opinion"
+    ],
+    "c2-05": [
+      "cities",
+      "description"
+    ],
+    "c2-06": [
+      "philosophy",
+      "analysis"
+    ],
+    "c2-07": [
+      "nature",
+      "description"
+    ],
+    "c2-08": [
+      "philosophy",
+      "opinion"
+    ]
+  },
+  "stories": {
+    "b1-story-01": {
+      "topic": "travel",
+      "summary": "Một sáng mùa hè, bố đưa Marie và Paul đi biển: bơi, xây lâu đài cát và mang về một viên đá trắng làm kỷ niệm."
+    },
+    "b1-story-02": {
+      "topic": "daily-life",
+      "summary": "Léa nhặt được một chú chó đen bị lạc, chăm sóc nó và dán ảnh khắp khu phố để tìm người chủ thật."
+    },
+    "b1-story-03": {
+      "topic": "family",
+      "summary": "Bạn bè bí mật chuẩn bị một bữa tiệc sinh nhật bất ngờ cho Sophie — giữ bí mật đến phút chót không hề dễ."
+    },
+    "b1-story-04": {
+      "topic": "literature",
+      "summary": "Antoine tìm thấy một lá thư cũ kẹp trong sách, và cuộc truy tìm lời giải đưa cậu đến một kho báu không ngờ."
+    },
+    "b2-story-01": {
+      "topic": "art",
+      "summary": "Trên gác mái nhà ông ngoại, Léa tìm thấy một cây vĩ cầm cũ — và khởi đầu một hành trình âm nhạc gắn với ký ức gia đình."
+    },
+    "b2-story-02": {
+      "topic": "society",
+      "summary": "Người hàng xóm mới ở tầng trên ồn ào làm Antoine bực mình — cho đến đêm mất điện, khi một tai nạn nhỏ khiến hai người xích lại gần nhau."
+    },
+    "b2-story-03": {
+      "topic": "daily-life",
+      "summary": "Camille chỉ định đến trại cứu hộ giúp một tay, nhưng ánh mắt buồn của một chú chó khiến cô phải đưa ra quyết định lớn."
+    },
+    "b2-story-04": {
+      "topic": "travel",
+      "summary": "Trên chuyến tàu đêm về nhà đón Giáng sinh, Thomas trải lòng với một bà cụ ngồi cùng khoang — cuộc trò chuyện thay đổi cách anh nhìn gia đình."
+    },
+    "c1-story-01": {
+      "topic": "nature",
+      "summary": "Người gác hải đăng cô đơn trên đảo Bréhat đón một nữ họa sĩ trẻ đến vẽ biển — một đêm bão và một tình bạn chân thành."
+    },
+    "c1-story-02": {
+      "topic": "family",
+      "summary": "Thừa kế ngôi nhà cũ của bà ngoại, Julie phát hiện một bức thư giấu trên gác mái hé lộ bí mật của gia đình."
+    },
+    "c1-story-03": {
+      "topic": "cities",
+      "summary": "Con mèo già lông hung ở quảng trường chợ là bạn của cả khu phố — cho đến ngày nó biến mất."
+    },
+    "c1-story-04": {
+      "topic": "art",
+      "summary": "Trên tàu đến thành phố học nhạc, Léa gặp Georges, một nhạc sĩ già đã bỏ đàn từ lâu — và một giai điệu làm cả toa tàu lặng đi."
+    },
+    "c2-story-01": {
+      "topic": "literature",
+      "summary": "Một bức thư kỳ lạ dẫn người gác ngọn hải đăng bị lãng quên tới một hang động bí ẩn — nơi cất giữ một kho báu không phải vàng bạc."
+    },
+    "c2-story-02": {
+      "topic": "literature",
+      "summary": "Camille cố giữ hiệu sách bụi bặm ở phố cổ dù khách thưa dần; một chàng trai đi tìm cuốn sách của người ông quá cố sẽ thổi lại sức sống cho nó."
+    },
+    "c2-story-03": {
+      "topic": "travel",
+      "summary": "Chú mèo Minou ở trang trại Normandie luôn mơ đi xa — đến khi một chuyến đi bất ngờ đưa nó vào thành phố ồn ào."
+    },
+    "c2-story-04": {
+      "topic": "philosophy",
+      "summary": "Gaspard, người thợ đồng hồ tài hoa, mải mê một phát minh bất khả thi đến quên cả sức khỏe — cho đến khi cô cháu Léa giúp ông hiểu giá trị của thời gian."
+    }
+  }
+}

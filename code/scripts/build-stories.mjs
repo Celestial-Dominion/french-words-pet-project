@@ -19,6 +19,11 @@ const isCap = (t) => /^[A-ZÀ-Ÿ]/.test(t.trim());
 const isNum = (t) => /^\d+$/.test(t.trim());
 const resolve = (s) => lemmaMap[s] ?? lemmaMap[s.split("'").pop() || s] ?? (wordLevel[s] ? s : undefined);
 
+// Siêu dữ liệu soạn tay (chủ đề, thể loại, tóm tắt truyện) + thời lượng đọc ước lượng (wpm theo cấp, như app Anh).
+const META = existsSync(join(HERE, "out/library-meta.json")) ? JSON.parse(readFileSync(join(HERE, "out/library-meta.json"), "utf8")) : {};
+const WPM = { 1: 70, 2: 90, 3: 110, 4: 130, 5: 150, 6: 170 };
+const countWords = (sents) => sents.reduce((n, s) => n + s.fr.split(/\s+/).filter((t) => /[a-zà-ÿœæ]/i.test(t)).length, 0);
+const minutes = (words, level) => Math.round((words / (WPM[level] ?? 120)) * 10) / 10;
 const index = [];
 for (const { level, cefr } of LEVELS) {
   const path = join(HERE, `out/story-out/${cefr}.json`);
@@ -40,7 +45,12 @@ for (const { level, cefr } of LEVELS) {
   });
   writeFileSync(join(CODE, `public/data/stories/${cefr.toLowerCase()}.json`), JSON.stringify(docs));
   for (const d of docs)
-    index.push({ id: d.id, level, title_fr: d.title_fr, title_vi: d.title_vi, chapters: d.chapters.length });
+  {
+    const meta = META.stories?.[d.id];
+    if (!meta) console.warn(`  ! thiếu chủ đề/tóm tắt cho ${d.id} (scripts/out/library-meta.json)`);
+    const words = countWords(d.chapters.flatMap((c) => c.sentences));
+    index.push({ id: d.id, level, title_fr: d.title_fr, title_vi: d.title_vi, chapters: d.chapters.length, topic: meta?.topic ?? "daily-life", summary: meta?.summary ?? "", words, min: minutes(words, level) });
+  }
   console.log(`${cefr.toUpperCase()}: ${docs.length} truyện | coverage lemma ${tot ? Math.round((ok / tot) * 1000) / 10 : 100}%`);
 }
 index.sort((a, b) => a.level - b.level || a.id.localeCompare(b.id));

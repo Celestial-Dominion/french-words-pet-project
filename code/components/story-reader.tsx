@@ -8,19 +8,16 @@ import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import { Passage, ReaderToolbar, useListenAll } from "@/components/passage";
 import { DoneButton, useIsRead } from "@/components/done-toggle";
+import { savedChapter, saveChapter } from "@/lib/story-progress";
+import Link from "next/link";
 
-/** Vị trí chương đang đọc lưu localStorage (như HSK) — mở lại truyện là về đúng chương. */
-const chapterKey = (id: string) => `fr.story.${id}.ch`;
-export function savedChapter(id: string, max: number): number {
-  try {
-    const n = Number(localStorage.getItem(chapterKey(id)) ?? 0);
-    return Number.isFinite(n) ? Math.max(0, Math.min(n, max - 1)) : 0;
-  } catch {
-    return 0;
-  }
+export interface NextItem {
+  href: string;
+  title_fr: string;
+  title_vi: string;
 }
 
-export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: () => void }) {
+export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBack: () => void; next?: NextItem | null }) {
   const [ci, setCi] = useState(() => savedChapter(doc.id, doc.chapters.length));
   const [showVi, setShowVi] = useState(true);
   const [selected, setSelected] = useState<Word | null>(null);
@@ -35,11 +32,7 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
   const endRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    try {
-      localStorage.setItem(chapterKey(doc.id), String(ci));
-    } catch {
-      /* bỏ qua */
-    }
+    saveChapter(doc.id, ci);
   }, [doc.id, ci]);
   // Tự đánh dấu "đã đọc" khi cuộn tới cuối CHƯƠNG CUỐI (trước đây: hễ mở tới chương cuối là đánh dấu, kể cả khi vừa bỏ tích).
   useEffect(() => {
@@ -82,8 +75,8 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
           <ChevronLeft className="size-5" />
         </button>
         <div className="min-w-0 flex-1">
-          <h1 className="truncate text-2xl font-bold sm:text-3xl">{doc.title_fr}</h1>
-          <div className="truncate text-sm text-muted-foreground">{doc.title_vi}</div>
+          <h1 className="text-xl leading-tight font-bold break-words sm:text-3xl">{doc.title_fr}</h1>
+          <div className="mt-0.5 text-sm text-muted-foreground">{doc.title_vi}</div>
         </div>
         <DoneButton kind="read" done={read === true} onToggle={toggleRead} className="h-9" />
       </div>
@@ -135,7 +128,25 @@ export default function StoryReader({ doc, onBack }: { doc: StoryDoc; onBack: ()
         </button>
       </div>
 
+      {last && next && <NextLink next={next} noun="Truyện tiếp theo" />}
+
       {selected && <WordDetail word={selected} examples={examples} onClose={() => setSelected(null)} />}
     </div>
+  );
+}
+
+export function NextLink({ next, noun }: { next: NextItem; noun: string }) {
+  return (
+    <Link
+      href={next.href}
+      className="mt-6 flex items-center justify-between gap-3 rounded-2xl border border-primary/35 bg-primary/5 px-4 py-3 transition-colors hover:bg-primary/10"
+    >
+      <span className="min-w-0">
+        <span className="block text-xs font-bold tracking-[0.12em] text-primary uppercase">{noun} →</span>
+        <span className="block truncate font-semibold">{next.title_fr}</span>
+        <span className="block truncate text-xs text-muted-foreground">{next.title_vi}</span>
+      </span>
+      <ChevronRight className="size-5 shrink-0 text-primary" />
+    </Link>
   );
 }

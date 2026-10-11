@@ -15,6 +15,7 @@ import { requestSync } from "@/lib/sync";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { libraryHref } from "@/lib/library";
 import { reshuffleOptions, type Question } from "@/lib/review-session";
 import { posLabel, registerLabel, registerTone } from "@/lib/pos";
 import type { SrsConfig, ReviewRecord, Word } from "@/lib/types";
@@ -584,7 +585,7 @@ export default function ReviewRunner({
           </div>
           {suggestion && (
             <a
-              href={`${suggestion.type === "reading" ? "/bai-doc" : "/truyen"}?open=${encodeURIComponent(suggestion.id)}`}
+              href={libraryHref(suggestion.type, suggestion.level, suggestion.id)}
               className="block rounded-2xl border border-primary/40 bg-primary/5 p-4 text-left transition-colors hover:bg-primary/10"
             >
               <div className="text-sm font-semibold text-primary">📖 Đọc ngay để nhớ lâu</div>

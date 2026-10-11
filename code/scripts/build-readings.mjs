@@ -31,6 +31,12 @@ function resolveLemma(surface) {
   return lemmaMap[surface] ?? lemmaMap[surface.split("'").pop() || surface] ?? (wordLevel[surface] ? surface : undefined);
 }
 
+// Siêu dữ liệu soạn tay (chủ đề, thể loại, tóm tắt truyện) + thời lượng đọc ước lượng (wpm theo cấp, như app Anh).
+const META = existsSync(join(HERE, "out/library-meta.json")) ? JSON.parse(readFileSync(join(HERE, "out/library-meta.json"), "utf8")) : {};
+const WPM = { 1: 70, 2: 90, 3: 110, 4: 130, 5: 150, 6: 170 };
+const countWords = (sents) => sents.reduce((n, s) => n + s.fr.split(/\s+/).filter((t) => /[a-zà-ÿœæ]/i.test(t)).length, 0);
+const minutes = (words, level) => Math.round((words / (WPM[level] ?? 120)) * 10) / 10;
+
 const index = [];
 const stats = [];
 
@@ -58,7 +64,12 @@ for (const { level, cefr } of LEVELS) {
   });
 
   writeFileSync(join(CODE, `public/data/readings/${cefr.toLowerCase()}.json`), JSON.stringify(docs));
-  for (const d of docs) index.push({ id: d.id, level, title_fr: d.title_fr, title_vi: d.title_vi, n: d.sentences.length });
+  for (const d of docs) {
+    const [topic = "daily-life", genre = "narrative"] = META.readings?.[d.id] ?? [];
+    if (!META.readings?.[d.id]) console.warn(`  ! thiếu chủ đề/thể loại cho ${d.id} (scripts/out/library-meta.json)`);
+    const words = countWords(d.sentences);
+    index.push({ id: d.id, level, title_fr: d.title_fr, title_vi: d.title_vi, n: d.sentences.length, topic, genre, words, min: minutes(words, level) });
+  }
 
   const pct = totalTok ? Math.round((ok / totalTok) * 1000) / 10 : 100;
   const topViol = [...violations.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12);

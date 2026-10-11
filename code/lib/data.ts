@@ -190,7 +190,11 @@ export interface ReadingMeta {
   level: number;
   title_fr: string;
   title_vi: string;
-  n: number;
+  n: number; // số câu
+  topic: string; // khoá TOPICS (lib/library.ts)
+  genre: string; // khoá GENRES
+  words: number;
+  min: number; // phút đọc ước lượng
 }
 
 let readingsIndexCache: ReadingMeta[] | null = null;
@@ -230,6 +234,10 @@ export interface StoryMetaDoc {
   title_fr: string;
   title_vi: string;
   chapters: number;
+  topic: string; // khoá TOPICS (lib/library.ts)
+  summary: string; // tóm tắt tiếng Việt, không lộ kết
+  words: number;
+  min: number; // phút đọc ước lượng
 }
 
 let storiesIndexCache: StoryMetaDoc[] | null = null;

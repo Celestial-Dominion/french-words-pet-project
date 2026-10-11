@@ -8,8 +8,9 @@ import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import { Passage, ReaderToolbar, useListenAll } from "@/components/passage";
 import { DoneButton, useIsRead } from "@/components/done-toggle";
+import { NextLink, type NextItem } from "@/components/story-reader";
 
-export default function Reader({ doc, onBack }: { doc: ReadingDoc; onBack: () => void }) {
+export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack: () => void; next?: NextItem | null }) {
   const [selected, setSelected] = useState<Word | null>(null);
   const [examples, setExamples] = useState<ExampleSentence[]>([]);
   const [showVi, setShowVi] = useState(true);
@@ -53,8 +54,8 @@ export default function Reader({ doc, onBack }: { doc: ReadingDoc; onBack: () =>
           <ChevronLeft className="size-5" />
         </button>
         <div className="min-w-0 flex-1">
-          <h1 className="truncate text-2xl font-bold sm:text-3xl">{doc.title_fr}</h1>
-          <div className="truncate text-sm text-muted-foreground">{doc.title_vi}</div>
+          <h1 className="text-xl leading-tight font-bold break-words sm:text-3xl">{doc.title_fr}</h1>
+          <div className="mt-0.5 text-sm text-muted-foreground">{doc.title_vi}</div>
         </div>
         <DoneButton kind="read" done={read === true} onToggle={toggleRead} className="h-9" />
       </div>
@@ -75,6 +76,8 @@ export default function Reader({ doc, onBack }: { doc: ReadingDoc; onBack: () =>
       <div className="mt-8 flex justify-center">
         <DoneButton kind="read" done={read === true} onToggle={toggleRead} />
       </div>
+
+      {next && <NextLink next={next} noun="Bài tiếp theo" />}
 
       {selected && <WordDetail word={selected} examples={examples} onClose={() => setSelected(null)} />}
     </div>

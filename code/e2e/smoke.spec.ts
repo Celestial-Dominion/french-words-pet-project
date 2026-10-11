@@ -295,10 +295,13 @@ test("ôn tập: cài đặt có số thẻ mỗi phiên", async ({ page }) => {
   await expect(page.getByText("Nhớ lại trước")).toBeVisible();
 });
 
-test("bài đọc: danh sách + mở đọc bấm-tra", async ({ page }) => {
+test("bài đọc: lưới cấp → danh sách cấp → mở bài (trang riêng) có nghe cả bài", async ({ page }) => {
   await page.goto("/bai-doc");
   await expect(page.getByRole("heading", { name: "Bài đọc", exact: true })).toBeVisible();
-  await page.getByRole("button", { name: /La famille de Marie/ }).last().click();
+  await page.getByRole("link", { name: /^A1 Vỡ lòng/ }).click();
+  await expect(page).toHaveURL(/\/bai-doc\/a1$/);
+  await page.getByRole("link", { name: /La famille de Marie/ }).last().click();
+  await expect(page).toHaveURL(/\/bai-doc\/a1\/a1-01$/);
   await expect(page.getByRole("button", { name: "Nghe cả bài" })).toBeVisible();
 });
 

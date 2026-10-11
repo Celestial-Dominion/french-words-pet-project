@@ -4,6 +4,7 @@
 // sách (tích / bỏ tích tại chỗ, không phải mở bài), nút trạng thái trong trang bài, thanh lọc "Tất cả · Chưa … · Đã …".
 // Bài đọc / truyện đọc bảng reads bằng useLiveQuery → tích ở đâu (kể cả đồng bộ kéo từ máy khác về) thì danh sách và
 // trang bài cùng đổi theo. Phát âm / ngữ pháp lưu localStorage (lib/progress-local.ts) — trang tự đọc lại khi đồng bộ.
+import Link from "next/link";
 import type { KeyboardEvent, ReactNode } from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import { Check, CheckCircle2, Circle } from "lucide-react";
@@ -86,7 +87,39 @@ export function DoneCheck({ kind, done, onToggle, name, className }: { kind: Don
   );
 }
 
-/** Dòng danh sách có ô tích: nút mở bài là cả thẻ, ô tích đè mép phải (nút không lồng được trong nút) — thẻ chừa lề phải. */
+/** Dòng danh sách có ô tích mở trang bài qua Link (bài đọc / truyện): ô tích đè mép phải (nút không được lồng trong <a>).
+ *  Thẻ một khối → ô tích giữa mép phải, thẻ chừa lề phải. `top` = thẻ cao nhiều dòng → ô tích ngang dòng tiêu đề, KHÔNG
+ *  chừa lề cả thẻ (tóm tắt bên dưới dùng hết bề ngang) — nơi gọi tự chừa lề cho các dòng tiêu đề nằm cạnh ô tích. */
+export function TickCard({
+  href,
+  cardClass,
+  kind,
+  done,
+  onToggle,
+  name,
+  top = false,
+  children,
+}: {
+  href: string;
+  cardClass: string;
+  kind: DoneKind;
+  done: boolean;
+  onToggle: () => void;
+  name: string;
+  top?: boolean;
+  children: ReactNode;
+}) {
+  return (
+    <div className="group relative transition-transform duration-200 hover:-translate-y-0.5">
+      <Link href={href} className={cn(cardClass, !top && "pr-14")}>
+        {children}
+      </Link>
+      <DoneCheck kind={kind} done={done} onToggle={onToggle} name={name} className={cn("absolute right-2", top ? "top-2.5" : "top-1/2 -translate-y-1/2")} />
+    </div>
+  );
+}
+
+/** Dòng danh sách có ô tích mở bài tại chỗ (ngữ pháp, phát âm): nút mở bài là cả thẻ, ô tích đè mép phải (nút không lồng được trong nút) — thẻ chừa lề phải. */
 export function TickRow({
   onOpen,
   cardClass,

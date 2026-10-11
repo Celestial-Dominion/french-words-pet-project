@@ -6,6 +6,7 @@ import { loadConjugation, lookupWord, loadExamplesForWords, type ExampleSentence
 import { posLabel, registerLabel, registerTone } from "@/lib/pos";
 import { wordAudioUrl, sentenceAudioUrl, playAudio as play } from "@/lib/tts";
 import { cn } from "@/lib/utils";
+import { libraryHref } from "@/lib/library";
 import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic, markKnown, undoMarkKnown, relearnWord } from "@/lib/db";
 import { isKnownPending } from "@/lib/srs-pure";
 import { requestSync } from "@/lib/sync";
@@ -372,7 +373,7 @@ export default function WordDetail({
                 {occ.map((o) => (
                   <a
                     key={`${o.type}-${o.id}`}
-                    href={`${o.type === "reading" ? "/bai-doc" : "/truyen"}?open=${encodeURIComponent(o.id)}`}
+                    href={libraryHref(o.type, o.level, o.id)}
                     className="flex items-center justify-between gap-2 rounded-xl border px-3 py-2 text-sm transition-colors hover:bg-muted"
                   >
                     <span className="min-w-0 truncate">
