@@ -603,6 +603,27 @@ t("số từ mỗi cấp trong lib/levels.ts khớp public/data/words/*.json", (
   }
 });
 
+// ---- Câu ví dụ: mọi từ đủ 5 câu (như app Anh), không rỗng, không trùng trong một từ ----
+t("mọi từ có đúng 5 câu ví dụ đầy đủ fr/vi (public/data/examples)", () => {
+  const dir = join(process.cwd(), "public", "data");
+  for (const l of LEVELS) {
+    const file = join(dir, "words", `${levelSlug(l.level)}.json`);
+    if (!existsSync(file)) continue;
+    const ex: Record<string, { fr: string; vi: string; t?: number }[]> = {};
+    for (let n = 0; n < 8; n++)
+      Object.assign(ex, JSON.parse(readFileSync(join(dir, "examples", `${levelSlug(l.level)}-${n}.json`), "utf8")));
+    for (const w of JSON.parse(readFileSync(file, "utf8")) as { id: string }[]) {
+      const list = ex[w.id];
+      assert.equal(list?.length, 5, `${l.cefr} ${w.id}: ${list?.length ?? 0} câu`);
+      assert.equal(new Set(list.map((s) => s.fr)).size, 5, `${w.id}: trùng câu`);
+      for (const s of list) {
+        assert.ok(s.fr?.trim() && s.vi?.trim(), `${w.id}: câu/nghĩa rỗng`);
+        if (s.t !== undefined) assert.ok(Number.isInteger(s.t) && s.t > 0, `${w.id}: mã Tatoeba sai ${s.t}`);
+      }
+    }
+  }
+});
+
 // ---- ÔN SỚM (ahead): lọc + xếp thuần (lib/srs-ahead.ts) ----
 // Scheduler thật của ts-fsrs với learning steps như app — để "đi hết các bước" là thật, không giả lập.
 const FA = fsrs(generatorParameters({

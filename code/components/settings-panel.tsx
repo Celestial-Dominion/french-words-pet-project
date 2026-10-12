@@ -231,7 +231,14 @@ export default function SettingsPanel() {
             </a>{" "}
             (ATILF – CNRS &amp; Université de Lorraine, CC BY 4.0)
           </li>
-          <li>Nghĩa tiếng Việt, câu ví dụ, bài đọc, truyện, khóa phát âm &amp; ngữ pháp — do dự án này biên soạn</li>
+          <li>
+            Phần lớn câu ví dụ tiếng Pháp —{" "}
+            <a href="https://tatoeba.org/" className="underline" target="_blank" rel="noreferrer">
+              Tatoeba
+            </a>{" "}
+            (CC BY 2.0 FR; bản dịch tiếng Việt do dự án biên soạn)
+          </li>
+          <li>Nghĩa tiếng Việt, câu ví dụ còn lại, bài đọc, truyện, khóa phát âm &amp; ngữ pháp — do dự án này biên soạn</li>
           <li>Giọng đọc — Microsoft Edge neural TTS (fr-FR), sinh sẵn lúc build</li>
         </ul>
         <p className="mt-2 text-xs text-muted-foreground">

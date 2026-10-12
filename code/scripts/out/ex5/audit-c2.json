@@ -97,14 +97,6 @@
   ]
  },
  {
-  "id": "transistor",
-  "fr": "Sur la plage, le transistor crachotait un vieux tube que tout le monde reprenait pourtant en chœur.",
-  "vi": "Trên bãi biển, chiếc radio bán dẫn phát rè rè một bản nhạc cũ mà ai nấy vẫn cùng nhau hát theo.",
-  "f": [
-   "vượt cấp:crachotait?,chœur?"
-  ]
- },
- {
   "id": "saillie",
   "fr": "L'éleveur consigna soigneusement la date de la saillie afin de prévoir la mise bas au printemps suivant.",
   "vi": "Người chăn nuôi ghi chép cẩn thận ngày phủ giống để dự tính thời điểm sinh sản vào mùa xuân năm sau.",
@@ -229,7 +221,7 @@
   "fr": "Acculé par ses créanciers, il dut se résoudre à vendre la maison familiale à contrecœur.",
   "vi": "Bị các chủ nợ dồn vào chân tường, ông đành phải bấm bụng bán đi ngôi nhà của gia đình.",
   "f": [
-   "vượt cấp:créanciers?,contrecœur?"
+   "vượt cấp:créanciers?,contrecoeur?"
   ]
  },
  {
@@ -413,7 +405,7 @@
   "fr": "Grand-mère préparait un flan aux œufs dont l'arôme envahissait toute la maisonnée.",
   "vi": "Bà nội làm món bánh flan trứng mà hương thơm của nó lan tỏa khắp cả nhà.",
   "f": [
-   "vượt cấp:œufs?,arôme?,maisonnée?"
+   "vượt cấp:arôme?,maisonnée?"
   ]
  },
  {
@@ -485,7 +477,7 @@
   "fr": "Sous ses airs affables couvait une rancœur rance, aigrie par les années.",
   "vi": "Dưới vẻ niềm nở âm ỉ một nỗi oán hận ôi thiu, chua chát theo năm tháng.",
   "f": [
-   "vượt cấp:affables?,rancœur?,aigrie?"
+   "vượt cấp:affables?,aigrie?"
   ]
  },
  {
@@ -518,14 +510,6 @@
   "vi": "Sự đơn điệu trong giọng nói của ông ru người nghe đến thiu thiu ngủ.",
   "f": [
    "vượt cấp:auditoire?,assoupissement?"
-  ]
- },
- {
-  "id": "mortellement",
-  "fr": "Le duelliste fut mortellement blessé d'un coup porté en plein cœur.",
-  "vi": "Người đấu kiếm bị thương chí mạng bởi một nhát đâm trúng ngay tim.",
-  "f": [
-   "vượt cấp:duelliste?,cœur?"
   ]
  },
  {
@@ -689,28 +673,12 @@
   ]
  },
  {
-  "id": "mascarade",
-  "fr": "Les courtisans se prêtaient à cette mascarade avec une servilité qui écœurait le vieux roi.",
-  "vi": "Bọn nịnh thần tham gia màn giả trang ấy với sự khúm núm khiến vị vua già phát tởm.",
-  "f": [
-   "vượt cấp:servilité?,écœurait?"
-  ]
- },
- {
   "id": "ravitailler",
   "fr": "Les alpinistes se ravitaillèrent au dernier refuge avant l'assaut final du sommet.",
   "vi": "Những nhà leo núi tiếp tế lương thực ở trạm dừng cuối cùng trước khi chinh phục đỉnh.",
   "f": [
    "thiếu từ",
    "vượt cấp:alpinistes?,ravitaillèrent?"
-  ]
- },
- {
-  "id": "paternité",
-  "fr": "L'écrivain défendit âprement la paternité de l'œuvre qu'on lui contestait.",
-  "vi": "Nhà văn quyết liệt bảo vệ quyền tác giả của tác phẩm mà người ta tranh chấp với ông.",
-  "f": [
-   "vượt cấp:âprement?,œuvre?"
   ]
  },
  {
@@ -738,14 +706,6 @@
   ]
  },
  {
-  "id": "valeureux",
-  "fr": "Il fallut un cœur valeureux pour affronter seul une telle adversité.",
-  "vi": "Phải có một trái tim dũng cảm mới có thể một mình đương đầu với nghịch cảnh đến thế.",
-  "f": [
-   "vượt cấp:cœur?,adversité?"
-  ]
- },
- {
   "id": "bey",
   "fr": "Les historiens étudient encore le rôle des beys dans l'administration de l'Empire.",
   "vi": "Các sử gia vẫn còn nghiên cứu vai trò của các bey trong bộ máy cai trị của Đế chế.",
@@ -759,14 +719,6 @@
   "vi": "Cô y tá nhận ra các nhân viên cứu hộ nhờ chiếc băng đeo tay phản quang.",
   "f": [
    "vượt cấp:secouristes?,fluorescent?"
-  ]
- },
- {
-  "id": "milliardaire",
-  "fr": "Ce milliardaire discret finance en secret de nombreuses œuvres caritatives.",
-  "vi": "Vị tỉ phú kín tiếng này âm thầm tài trợ cho rất nhiều hoạt động từ thiện.",
-  "f": [
-   "vượt cấp:œuvres?,caritatives?"
   ]
  },
  {
@@ -855,14 +807,6 @@
   "vi": "Thừa phát lại đã tiến hành kê biên tài sản của con nợ mất khả năng chi trả.",
   "f": [
    "vượt cấp:débiteur?,insolvable?"
-  ]
- },
- {
-  "id": "moucheron",
-  "fr": "Un moucheron s'est glissé dans mon œil et m'a fait larmoyer.",
-  "vi": "Một con muỗi mắt lọt vào mắt tôi làm tôi chảy nước mắt.",
-  "f": [
-   "vượt cấp:œil?,larmoyer?"
   ]
  },
  {
@@ -1047,14 +991,6 @@
   "vi": "Người thợ mộc kiên nhẫn phục chế những tấm ván ốp gỗ mối mọt của lâu đài.",
   "f": [
    "vượt cấp:ébéniste?,vermoulues?"
-  ]
- },
- {
-  "id": "diversité",
-  "fr": "On admire dans cette œuvre la diversité des registres, du burlesque au tragique.",
-  "vi": "Người ta thán phục trong tác phẩm này sự đa dạng của các sắc thái, từ hài hước đến bi thương.",
-  "f": [
-   "vượt cấp:œuvre?,burlesque?"
   ]
  },
  {
@@ -1279,14 +1215,6 @@
   "vi": "Nhà ảo thuật làm biến mất lá bài ngay trước đôi mắt sửng sốt của chúng tôi.",
   "f": [
    "vượt cấp:prestidigitateur?,ébahis?"
-  ]
- },
- {
-  "id": "repris",
-  "fr": "Le thème repris au dernier mouvement clôt magnifiquement l'œuvre.",
-  "vi": "Chủ đề được lấy lại ở chương cuối khép lại tác phẩm một cách tuyệt đẹp.",
-  "f": [
-   "vượt cấp:magnifiquement?,œuvre?"
   ]
  }
 ]

@@ -144,14 +144,6 @@
   ]
  },
  {
-  "id": "incendier",
-  "fr": "Les émeutiers ont incendié plusieurs voitures au cœur de la nuit.",
-  "vi": "Những kẻ bạo loạn đã đốt cháy nhiều chiếc xe giữa đêm khuya.",
-  "f": [
-   "vượt cấp:émeutiers?,cœur?"
-  ]
- },
- {
   "id": "if",
   "fr": "Un if séculaire ombrageait l'entrée du vieux cimetière.",
   "vi": "Một cây thủy tùng cổ thụ tỏa bóng che lối vào nghĩa trang cũ.",
@@ -264,14 +256,6 @@
   ]
  },
  {
-  "id": "mesdemoiselles",
-  "fr": "Il salua les trois sœurs d'un « mesdemoiselles » cérémonieux.",
-  "vi": "Ông chào ba chị em bằng một câu \"thưa các cô\" đầy nghi thức.",
-  "f": [
-   "vượt cấp:sœurs?,cérémonieux?"
-  ]
- },
- {
   "id": "tirage",
   "fr": "L'artiste a limité le tirage de ses estampes à cinquante exemplaires numérotés.",
   "vi": "Người nghệ sĩ đã giới hạn số lượng in tranh khắc của mình ở năm mươi bản đánh số.",
@@ -325,31 +309,6 @@
   "vi": "Bài trình bày của anh ấy rõ ràng, mạch lạc và có dẫn chứng đầy đủ.",
   "f": [
    "vượt cấp:structuré?,documenté?"
-  ]
- },
- {
-  "id": "oeillet",
-  "fr": "Il portait un œillet rouge à la boutonnière.",
-  "vi": "Ông cài một bông cẩm chướng đỏ trên khuy áo.",
-  "f": [
-   "thiếu từ",
-   "vượt cấp:œillet?,boutonnière?"
-  ]
- },
- {
-  "id": "oeillet",
-  "fr": "La révolution portugaise fut surnommée la révolution des œillets.",
-  "vi": "Cuộc cách mạng Bồ Đào Nha được gọi là cuộc cách mạng hoa cẩm chướng.",
-  "f": [
-   "thiếu từ"
-  ]
- },
- {
-  "id": "oeillet",
-  "fr": "Elle a passé le lacet à travers les œillets de ses chaussures.",
-  "vi": "Cô ấy luồn dây qua các lỗ xỏ dây của đôi giày.",
-  "f": [
-   "thiếu từ"
   ]
  },
  {
@@ -422,14 +381,6 @@
   "vi": "Kính mong bà nhận lời chào trân trọng của tôi.",
   "f": [
    "trùng:salutation,agréer"
-  ]
- },
- {
-  "id": "colorer",
-  "fr": "Les enfants s'amusaient à colorer les œufs de Pâques avec des pelures d'oignon.",
-  "vi": "Bọn trẻ thích thú tô màu những quả trứng Phục sinh bằng vỏ hành.",
-  "f": [
-   "vượt cấp:œufs?,pelures?"
   ]
  },
  {
@@ -666,6 +617,14 @@
   ]
  },
  {
+  "id": "tee-shirt",
+  "fr": "Le concert proposait des tee-shirts à l'effigie du groupe.",
+  "vi": "Buổi hòa nhạc bán những chiếc áo thun in hình ban nhạc.",
+  "f": [
+   "vượt cấp:tee?,shirts?"
+  ]
+ },
+ {
   "id": "ambulant",
   "fr": "Autrefois, un rémouleur ambulant passait affûter les couteaux du village.",
   "vi": "Xưa kia, một người mài dao lưu động thường ghé qua mài dao cho cả làng.",
@@ -704,31 +663,6 @@
   "vi": "Các vận động viên trượt tuyết đã vô tình gây ra một trận tuyết lở chết người.",
   "f": [
    "vượt cấp:skieurs?,involontairement?"
-  ]
- },
- {
-  "id": "demi-soeur",
-  "fr": "Ma demi-sœur et moi partageons le même père.",
-  "vi": "Em gái cùng cha khác mẹ và tôi có chung một người cha.",
-  "f": [
-   "thiếu từ"
-  ]
- },
- {
-  "id": "demi-soeur",
-  "fr": "Elle s'entend mieux avec sa demi-sœur qu'avec ses cousins.",
-  "vi": "Cô ấy hợp với chị cùng cha khác mẹ hơn là với các anh chị em họ.",
-  "f": [
-   "thiếu từ"
-  ]
- },
- {
-  "id": "demi-soeur",
-  "fr": "Il a découvert tardivement l'existence d'une demi-sœur en Espagne.",
-  "vi": "Anh ấy phát hiện muộn màng rằng mình có một người chị cùng cha khác mẹ ở Tây Ban Nha.",
-  "f": [
-   "thiếu từ",
-   "vượt cấp:tardivement?,sœur?"
   ]
  },
  {
@@ -848,15 +782,7 @@
   "fr": "Ce food-truck propose des hot-dogs artisanaux qui n'ont rien à envier aux plats gastronomiques.",
   "vi": "Chiếc xe bán đồ ăn này bán những chiếc hot-dog thủ công chẳng thua kém gì các món ẩm thực cao cấp.",
   "f": [
-   "vượt cấp:food?,truck?,artisanaux?,gastronomiques?"
-  ]
- },
- {
-  "id": "réconciliation",
-  "fr": "La médiatrice a œuvré patiemment en faveur de la réconciliation des deux parties.",
-  "vi": "Người hòa giải đã kiên nhẫn nỗ lực vì sự làm lành của cả hai bên.",
-  "f": [
-   "vượt cấp:médiatrice?,œuvré?"
+   "vượt cấp:food?,truck?,hot?,dogs?,artisanaux?,gastronomiques?"
   ]
  },
  {
@@ -938,14 +864,6 @@
   "vi": "Vụ việc đã bị bưng bít trước cả khi báo chí kịp hay biết.",
   "f": [
    "thiếu từ"
-  ]
- },
- {
-  "id": "galette",
-  "fr": "En Bretagne, on déguste des galettes de sarrasin garnies d'œuf et de jambon.",
-  "vi": "Ở Bretagne, người ta thưởng thức bánh dẹt kiều mạch với trứng và giăm bông.",
-  "f": [
-   "vượt cấp:sarrasin?,œuf?"
   ]
  },
  {
@@ -1127,39 +1045,6 @@
   ]
  },
  {
-  "id": "archer",
-  "fr": "Chaque flèche décochée par l'archer atteignait le cœur de la cible.",
-  "vi": "Mỗi mũi tên cung thủ bắn ra đều trúng ngay tâm bia.",
-  "f": [
-   "vượt cấp:décochée?,cœur?"
-  ]
- },
- {
-  "id": "rancoeur",
-  "fr": "Il gardait au fond du cœur une sourde rancœur contre son ancien associé.",
-  "vi": "Trong lòng anh vẫn nuôi một nỗi oán giận âm ỉ đối với người cộng sự cũ.",
-  "f": [
-   "thiếu từ",
-   "vượt cấp:cœur?,rancœur?"
-  ]
- },
- {
-  "id": "rancoeur",
-  "fr": "Elle a fini par pardonner, sans la moindre rancœur.",
-  "vi": "Cuối cùng cô đã tha thứ, không chút hận thù.",
-  "f": [
-   "thiếu từ"
-  ]
- },
- {
-  "id": "rancoeur",
-  "fr": "De vieilles rancœurs familiales resurgirent lors de l'héritage.",
-  "vi": "Những mối hận cũ trong gia đình trỗi dậy khi chia thừa kế.",
-  "f": [
-   "thiếu từ"
-  ]
- },
- {
   "id": "capitalisme",
   "fr": "Ce roman dépeint l'essor du capitalisme industriel au dix-neuvième siècle.",
   "vi": "Cuốn tiểu thuyết này khắc họa sự trỗi dậy của chủ nghĩa tư bản công nghiệp thế kỷ mười chín.",
@@ -1288,33 +1173,6 @@
   ]
  },
  {
-  "id": "oeuvrer",
-  "fr": "Toute sa vie, elle a œuvré pour que les enfants défavorisés accèdent à l'éducation.",
-  "vi": "Suốt cả đời mình, bà đã nỗ lực để trẻ em thiệt thòi được đến trường.",
-  "f": [
-   "thiếu từ",
-   "vượt cấp:œuvré?,défavorisés?"
-  ]
- },
- {
-  "id": "oeuvrer",
-  "fr": "Plusieurs associations œuvrent discrètement à la réinsertion des anciens détenus.",
-  "vi": "Nhiều hội đoàn âm thầm ra sức giúp cựu tù nhân tái hòa nhập xã hội.",
-  "f": [
-   "thiếu từ",
-   "vượt cấp:œuvrent?,réinsertion?"
-  ]
- },
- {
-  "id": "oeuvrer",
-  "fr": "Nous continuerons d'œuvrer ensemble à la préservation de ce patrimoine unique.",
-  "vi": "Chúng tôi sẽ tiếp tục cùng nhau nỗ lực gìn giữ di sản độc nhất vô nhị này.",
-  "f": [
-   "thiếu từ",
-   "vượt cấp:œuvrer?,préservation?"
-  ]
- },
- {
   "id": "éclatement",
   "fr": "L'éclatement de la bulle spéculative a ruiné des milliers de petits épargnants.",
   "vi": "Sự vỡ bong bóng đầu cơ đã khiến hàng nghìn người tiết kiệm nhỏ lẻ khuynh gia bại sản.",
@@ -1405,14 +1263,6 @@
   ]
  },
  {
-  "id": "dilater",
-  "fr": "L'ophtalmologiste a dû dilater ses pupilles pour examiner le fond de l'œil.",
-  "vi": "Bác sĩ nhãn khoa đã phải làm giãn đồng tử của cô để khám đáy mắt.",
-  "f": [
-   "vượt cấp:ophtalmologiste?,œil?"
-  ]
- },
- {
   "id": "bourdon",
   "fr": "Un gros bourdon vrombissait paresseusement autour des lavandes.",
   "vi": "Một con ong nghệ to lười biếng vo ve quanh những khóm oải hương.",
@@ -1445,14 +1295,6 @@
   ]
  },
  {
-  "id": "urne",
-  "fr": "Chaque électeur glisse son bulletin dans l'urne sous l'œil des assesseurs.",
-  "vi": "Mỗi cử tri bỏ lá phiếu của mình vào hòm phiếu dưới sự giám sát của các giám sát viên.",
-  "f": [
-   "vượt cấp:œil?,assesseurs?"
-  ]
- },
- {
   "id": "biologie",
   "fr": "Les progrès de la biologie moléculaire ont révolutionné la médecine.",
   "vi": "Những tiến bộ của sinh học phân tử đã cách mạng hóa y học.",
@@ -1474,14 +1316,6 @@
   "vi": "Vui lòng cung cấp thông tin tài khoản ngân hàng của bạn để hoàn tất việc chuyển khoản.",
   "f": [
    "vượt cấp:finaliser?,virement?"
-  ]
- },
- {
-  "id": "assemblage",
-  "fr": "Son œuvre est un curieux assemblage de matériaux de récupération.",
-  "vi": "Tác phẩm của anh là một sự kết hợp kỳ lạ từ các vật liệu tái chế.",
-  "f": [
-   "vượt cấp:œuvre?,récupération?"
   ]
  },
  {
@@ -1562,14 +1396,6 @@
   "vi": "Đôi chân anh hụt hơi sau ba mươi cây số chạy.",
   "f": [
    "thiếu từ"
-  ]
- },
- {
-  "id": "spacieux",
-  "fr": "Ils ont emménagé dans un loft spacieux au cœur de la ville.",
-  "vi": "Họ đã dọn vào một căn loft rộng rãi ngay giữa lòng thành phố.",
-  "f": [
-   "vượt cấp:loft?,cœur?"
   ]
  },
  {

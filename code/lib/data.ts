@@ -28,7 +28,8 @@ export function loadWords(level: number): Promise<Word[]> {
 // (examples/{cefr}-{0..7}.json, chia theo hash wordId) → màn ôn/tra từ chỉ tải shard
 // chứa đúng các từ cần, không phải nguyên file cấp (C1 ~1.5MB). Hash PHẢI khớp
 // scripts/shard-examples.mjs.
-export type ExampleSentence = { fr: string; vi: string };
+/** t = mã câu Tatoeba (CC BY 2.0 FR) khi câu lấy từ Tatoeba; không có = câu dự án tự viết. */
+export type ExampleSentence = { fr: string; vi: string; t?: number };
 export const EXAMPLE_SHARDS = 8;
 export function exampleShardOf(id: string): number {
   let h = 5381;

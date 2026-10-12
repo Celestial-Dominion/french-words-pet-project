@@ -59,10 +59,9 @@
 
 Lý do: phiên mới cho tới 5 câu điền/từ + xoay câu theo lần ôn, nhưng 3 câu không đủ dùng.
 
-- [ ] **B1.** Lấy câu thật từ **Tatoeba** (văn bản CC BY 2.0 FR — ghi tác giả), thiếu thì agent sinh theo cấp; ~22.000 câu.
-- [ ] **B2.** Nghĩa VI: agent dịch + QA 2 lớp (như đợt 07/2026).
-- [ ] **B3.** Audio giọng Denise (~+0,8 GB). edge-tts **đã cài** ở `~/code/english_words/code/scripts/.venv-tts` (có Denise, Henri, Eloise, Remy, Vivienne + giọng CA/BE/CH) — dùng lại, không cài mới.
-- [ ] **B4.** Tách lại shard ví dụ, deploy (nhiều MP3 → script tự hạ 8 luồng).
+- [x] **B1.** Câu ví dụ đủ **5 câu/từ** cho cả 11.000 từ (55.000 câu, thêm 22.000): rà 3 câu gốc (`ex5/audit.mjs`, sửa 16 câu sai qua `out/ex5/fix.txt`), rồi `ex5/pick.mjs` lấy ứng viên Tatoeba theo cấp (độ dài/độ khó, ~ = dạng biến hình) → lô `out/ex5/in/{cefr}-NN.txt` (80 từ) → chọn/viết vào `out/ex5/out/` (`id|chữ|nghĩa` hoặc `id|+|câu|nghĩa`) → `ex5/merge.mjs` (kiểm trùng câu toàn bộ, idempotent; bản 3 câu giữ ở `out/examples-3.json`). Tatoeba 18.313 câu (mang `t` = mã câu, CC BY 2.0 FR) · tự viết 3.687 (từ không có câu hợp nghĩa/từ loại, tên riêng, từ lóng). Theo cấp: A1 +1.600 (18 tự viết) · A2 +2.400 (100) · B1 +4.000 (287) · B2 +5.000 (671) · C1 +6.000 (1.616) · C2 +3.000 (995). Quy ước: bỏ câu tình dục/chính trị/bạo lực; từ xúc phạm/thô tục viết câu meta, nghĩa có "(thô)".
+- [x] **B2.** Nghĩa VI tự dịch từng câu khi chọn (không qua agent); sửa kèm 2 nghĩa từ sai (`oublie` = bánh quế, `aubain` = ngoại kiều).
+- [x] **B3.** Audio giọng Denise cho mọi câu mới (edge-tts có sẵn ở `~/code/english_words/code/scripts/.venv-tts`), `public/audio/sentences` ~1,2 GB.
 
 ## 4. Thư viện mới (lớn nhất)
 
