@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Play, Pause, SkipBack, SkipForward } from "lucide-react";
 import { sentenceAudioUrl, stopAudio } from "@/lib/tts";
 import { cn } from "@/lib/utils";
+import { paragraphs } from "@/lib/quiz-pure";
 
 type Sentence = { fr: string; vi: string };
 
@@ -195,75 +196,101 @@ export function ReaderToolbar({
   );
 }
 
+/** Chữ Pháp bấm-tra từng từ (dùng chung cho bài đọc và câu hỏi đọc hiểu). */
+export function Words({ text, onTap }: { text: string; onTap: (token: string) => void }) {
+  return (
+    <>
+      {splitTokens(text).map((tok, j) =>
+        isWord(tok) ? (
+          <button
+            key={j}
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onTap(tok);
+            }}
+            className="rounded text-left align-bottom transition-colors hover:bg-primary/15 hover:text-primary"
+          >
+            {tok}
+          </button>
+        ) : (
+          <span key={j}>{tok}</span>
+        ),
+      )}
+    </>
+  );
+}
+
 export function Passage({
   sentences,
+  paras,
   showVi,
   activeIdx,
   onTapWord,
   onPlayFrom,
 }: {
   sentences: Sentence[];
+  paras?: number[]; // chỉ số câu mở mỗi đoạn
   showVi: boolean;
   activeIdx: number;
   onTapWord: (token: string) => void;
   onPlayFrom?: (i: number) => void; // ▶ nghe riêng câu i (chế độ Dịch)
 }) {
-  const renderWords = (fr: string) =>
-    splitTokens(fr).map((tok, j) =>
-      isWord(tok) ? (
-        <button
-          key={j}
-          type="button"
-          onClick={() => onTapWord(tok)}
-          className="rounded align-bottom transition-colors hover:bg-primary/15 hover:text-primary"
-        >
-          {tok}
-        </button>
-      ) : (
-        <span key={j}>{tok}</span>
-      ),
-    );
+  const groups = paragraphs(sentences.length, paras);
 
-  // Tắt Dịch → đọc liền mạch (immersive).
+  // Tắt Dịch → đọc liền mạch (immersive), giữ ngắt đoạn.
   if (!showVi) {
     return (
-      <div className="text-2xl leading-[2.4rem] tracking-wide">
-        {sentences.map((s, i) => (
-          <span
-            key={i}
-            id={`psent-${i}`}
-            className={cn("rounded-md transition-colors", i === activeIdx && "bg-primary/10 dark:bg-primary/20")}
-          >
-            {renderWords(s.fr)}{" "}
-          </span>
+      <div className="space-y-5 text-2xl leading-[2.4rem] tracking-wide">
+        {groups.map((g, gi) => (
+          <p key={gi}>
+            {g.map((i) => (
+              <span
+                key={i}
+                id={`psent-${i}`}
+                className={cn("rounded-md transition-colors", i === activeIdx && "bg-primary/10 dark:bg-primary/20")}
+              >
+                <Words text={sentences[i].fr} onTap={onTapWord} />{" "}
+              </span>
+            ))}
+          </p>
         ))}
       </div>
     );
   }
 
-  // Bật Dịch → mỗi câu một khối: dòng Pháp + dòng dịch phụ (viền trái).
+  // Bật Dịch → mỗi câu một khối: dòng Pháp + dòng dịch phụ (viền trái); giữa hai đoạn cách rộng hơn.
   return (
-    <div className="space-y-5">
-      {sentences.map((s, i) => (
-        <div
-          key={i}
-          id={`psent-${i}`}
-          className={cn("flex gap-1.5 rounded-xl px-1.5 py-1 transition-colors", i === activeIdx && "bg-primary/10 dark:bg-primary/20")}
-        >
-          {onPlayFrom && (
-            <button
-              type="button"
-              onClick={() => onPlayFrom(i)}
-              aria-label={`Nghe câu ${i + 1}`}
-              className="mt-1.5 inline-flex size-7 shrink-0 items-center justify-center rounded-full text-muted-foreground/60 transition-colors hover:bg-primary/10 hover:text-primary"
-            >
-              <Play className="size-3.5" />
-            </button>
-          )}
-          <div className="min-w-0">
-            <p className="text-2xl leading-relaxed">{renderWords(s.fr)}</p>
-            <p className="mt-1.5 border-l-[3px] border-primary/30 pl-3 text-base text-muted-foreground">{s.vi}</p>
-          </div>
+    <div className="space-y-8">
+      {groups.map((g, gi) => (
+        <div key={gi} className="space-y-5">
+          {g.map((i) => {
+            const s = sentences[i];
+            return (
+              <div
+                key={i}
+                id={`psent-${i}`}
+                className={cn("flex gap-1.5 rounded-xl px-1.5 py-1 transition-colors", i === activeIdx && "bg-primary/10 dark:bg-primary/20")}
+              >
+                {onPlayFrom && (
+                  <button
+                    type="button"
+                    onClick={() => onPlayFrom(i)}
+                    aria-label={`Nghe câu ${i + 1}`}
+                    className="mt-1.5 inline-flex size-7 shrink-0 items-center justify-center rounded-full text-muted-foreground/60 transition-colors hover:bg-primary/10 hover:text-primary"
+                  >
+                    <Play className="size-3.5" />
+                  </button>
+                )}
+                <div className="min-w-0">
+                  <p className="text-2xl leading-relaxed">
+                    <Words text={s.fr} onTap={onTapWord} />
+                  </p>
+                  <p className="mt-1.5 border-l-[3px] border-primary/30 pl-3 text-base text-muted-foreground">{s.vi}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       ))}
     </div>

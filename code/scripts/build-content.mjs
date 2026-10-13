@@ -1,0 +1,105 @@
+// Dựng bài đọc từ nguồn content/ → dữ liệu tĩnh cho app (port app Anh, docs/CONTENT_PLAYBOOK.md).
+//   node scripts/build-content.mjs [--draft]
+// Ra:
+//   public/data/readings/{cấp}.json     chữ bài (FR + VI, đoạn, nguồn) — suggest.ts / "gặp lại trong ngữ cảnh" đọc cả cấp
+//   public/data/readings-index.json     chỉ mục nhẹ (tiêu đề, chủ đề, thể loại, số chữ, phút đọc)
+//   public/data/quiz/{id}.json          câu hỏi đọc hiểu — tải lười khi mở bài (xoá file của bài không còn câu hỏi)
+//   scripts/out/audio-readings.json     câu CHƯA có MP3 (public/audio/sentences/hashLong(fr).mp3) cho build-audio.py
+// Chạy check-content trước; còn lỗi thì dừng (--draft: chưa bắt buộc câu hỏi).
+import { writeFileSync, mkdirSync, readdirSync, existsSync, rmSync } from "node:fs";
+import { join } from "node:path";
+import { runChecks } from "./check-content.mjs";
+import { ROOT, profileOf } from "./lib/content-model.mjs";
+import { minutesOf } from "./lib/content-spec.mjs";
+import { LEVEL_KEYS } from "./lib/fr-vocab.mjs";
+import { hashLong } from "../lib/slug.ts";
+
+const DRAFT = process.argv.includes("--draft");
+const DATA = join(ROOT, "public", "data");
+const { items, report, libErr, quiz } = runChecks({ draft: DRAFT });
+
+const errs = [...libErr];
+for (const [id, r] of report) for (const e of r.e) errs.push(`${id}: ${e}`);
+if (errs.length) {
+  console.log(errs.slice(0, 40).join("\n"));
+  console.log(`\n✗ ${errs.length} lỗi — sửa rồi chạy lại (xem: node scripts/check-content.mjs --errors)`);
+  process.exit(1);
+}
+
+const levelNum = (k) => LEVEL_KEYS.indexOf(k) + 1;
+const index = [];
+const byLevel = new Map(LEVEL_KEYS.map((k) => [k, []]));
+const quizIds = new Set();
+mkdirSync(join(DATA, "readings"), { recursive: true });
+mkdirSync(join(DATA, "quiz"), { recursive: true });
+
+for (const m of items) {
+  const level = levelNum(m.level);
+  const qb = quiz.blocks.get(m.id);
+  const doc = {
+    id: m.id,
+    level,
+    title_fr: m.title.fr,
+    title_vi: m.title.vi,
+    sentences: m.sentences.map((s) => ({ fr: s.fr, vi: s.vi })),
+    ...(m.paras.length > 1 ? { paras: m.paras } : {}),
+    ...(m.source ? { source: { title: m.source.title, credit: m.source.credit, license: m.source.license, url: m.source.url } } : {}),
+    ...(qb ? { quiz: qb.questions.length } : {}),
+  };
+  byLevel.get(m.level).push(doc);
+  if (qb) {
+    quizIds.add(m.id);
+    const qs = qb.questions.map((q) => ({
+      q: { fr: q.q.fr, vi: q.q.vi },
+      opts: q.opts.map((o) => ({ fr: o.fr, vi: o.vi })),
+      a: q.opts.findIndex((o) => o.ok),
+      why: q.why,
+    }));
+    writeFileSync(join(DATA, "quiz", `${m.id}.json`), JSON.stringify(qs));
+  }
+  const words = profileOf(m).nWords;
+  index.push({
+    id: m.id,
+    level,
+    title_fr: m.title.fr,
+    title_vi: m.title.vi,
+    n: m.sentences.length,
+    topic: m.topic,
+    genre: m.genre,
+    words,
+    min: minutesOf(words, m.level),
+    ...(m.series ? { series: m.series } : {}),
+  });
+}
+
+for (const [lv, docs] of byLevel) {
+  const p = join(DATA, "readings", `${lv}.json`);
+  if (docs.length) writeFileSync(p, JSON.stringify(docs));
+  else if (existsSync(p)) rmSync(p);
+}
+index.sort((a, b) => a.level - b.level); // giữ thứ tự viết trong cấp (sort ổn định)
+writeFileSync(join(DATA, "readings-index.json"), JSON.stringify(index));
+let pruned = 0;
+for (const f of readdirSync(join(DATA, "quiz")))
+  if (!quizIds.has(f.replace(/\.json$/, ""))) {
+    rmSync(join(DATA, "quiz", f));
+    pruned++;
+  }
+
+// audio từng câu còn thiếu
+const AUDIO = join(ROOT, "public", "audio", "sentences");
+const seen = new Set();
+const todo = [];
+for (const m of items)
+  for (const s of m.sentences) {
+    const file = `${hashLong(s.fr)}.mp3`;
+    if (seen.has(file)) continue;
+    seen.add(file);
+    if (!existsSync(join(AUDIO, file))) todo.push({ text: s.fr, file });
+  }
+mkdirSync(join(ROOT, "scripts", "out"), { recursive: true });
+writeFileSync(join(ROOT, "scripts", "out", "audio-readings.json"), JSON.stringify(todo));
+
+const per = LEVEL_KEYS.map((k) => `${k.toUpperCase()} ${byLevel.get(k).length}`).join(" · ");
+console.log(`bài đọc: ${index.length} (${per}) · câu hỏi: ${quizIds.size} bài${pruned ? ` · xoá ${pruned} file câu hỏi cũ` : ""}`);
+console.log(`audio thiếu: ${todo.length} câu → scripts/out/audio-readings.json${todo.length ? "\n  chạy: cd scripts && ~/code/english_words/code/scripts/.venv-tts/bin/python build-audio.py out/audio-readings.json ../public/audio/sentences" : ""}`);

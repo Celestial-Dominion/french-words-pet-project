@@ -155,7 +155,9 @@ export function normSurface(raw: string): string {
     .toLowerCase()
     .replace(/^[^a-zàâäçéèêëîïôöùûüÿœæ'’-]+/u, "")
     .replace(/[^a-zàâäçéèêëîïôöùûüÿœæ'’-]+$/u, "")
-    .replace(/’/g, "'");
+    .replace(/’/g, "'")
+    .replace(/œ/g, "oe") // bộ từ ghi "soeur", "oeuf"
+    .replace(/æ/g, "ae");
 }
 
 /** Tra một dạng mặt chữ → Word (qua lemma-map + word-levels). null nếu không tìm được. */
@@ -179,12 +181,35 @@ export interface ReadingSentence {
   fr: string;
   vi: string;
 }
+// Bài phỏng theo nguồn mở: tên gốc, tác giả/tuyển tập, giấy phép (khoá LICENSES trong lib/library-labels.ts), đường dẫn nguồn.
+export interface ContentSource {
+  title: string;
+  credit: string;
+  license: string;
+  url: string;
+}
 export interface ReadingDoc {
   id: string;
   level: number;
   title_fr: string;
   title_vi: string;
   sentences: ReadingSentence[];
+  paras?: number[]; // chỉ số câu mở mỗi đoạn (không có = một đoạn)
+  source?: ContentSource;
+  quiz?: number; // số câu hỏi đọc hiểu (public/data/quiz/{id}.json)
+}
+
+// Câu hỏi đọc hiểu cuối bài (content/quiz → scripts/build-content.mjs). a = chỉ số phương án ĐÚNG trong opts
+// (giao diện xáo thứ tự hiển thị); why = giải thích tiếng Việt, trích «nguyên văn» câu trong bài.
+export interface QuizQuestion {
+  q: ReadingSentence;
+  opts: ReadingSentence[];
+  a: number;
+  why: string;
+}
+export async function loadQuiz(id: string): Promise<QuizQuestion[]> {
+  const res = await fetch(`${BASE}/data/quiz/${encodeURIComponent(id)}.json`);
+  return res.ok ? ((await res.json()) as QuizQuestion[]) : [];
 }
 export interface ReadingMeta {
   id: string;
@@ -196,6 +221,7 @@ export interface ReadingMeta {
   genre: string; // khoá GENRES
   words: number;
   min: number; // phút đọc ước lượng
+  series?: { id: string; order: number }; // chuỗi bài cùng chủ đề
 }
 
 let readingsIndexCache: ReadingMeta[] | null = null;

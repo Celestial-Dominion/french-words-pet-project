@@ -2,13 +2,15 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft } from "lucide-react";
-import { lookupWord, loadExamplesForWords, type ReadingDoc, type ExampleSentence } from "@/lib/data";
+import { lookupWord, loadExamplesForWords, loadQuiz, type ReadingDoc, type ExampleSentence, type QuizQuestion } from "@/lib/data";
 import { markRead } from "@/lib/db";
 import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import { Passage, ReaderToolbar, useListenAll } from "@/components/passage";
 import { DoneButton, useIsRead } from "@/components/done-toggle";
 import { NextLink, type NextItem } from "@/components/story-reader";
+import { Quiz } from "@/components/quiz";
+import { SourceNote } from "@/components/source-note";
 
 export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack: () => void; next?: NextItem | null }) {
   const [selected, setSelected] = useState<Word | null>(null);
@@ -18,6 +20,19 @@ export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack:
   const manual = useRef(false); // đã bấm tay ở lần mở này → không tự đánh dấu nữa
   const endRef = useRef<HTMLDivElement>(null);
   const { activeIdx, playing, toggle, playFrom, step, rate, cycleRate } = useListenAll(doc.sentences);
+  const [quiz, setQuiz] = useState<QuizQuestion[] | null>(null);
+
+  // Câu hỏi đọc hiểu: file riêng, tải sau khi mở bài (bài cũ chưa có thì không hiện).
+  useEffect(() => {
+    if (!doc.quiz) return;
+    let live = true;
+    loadQuiz(doc.id)
+      .then((q) => live && setQuiz(q))
+      .catch(() => {});
+    return () => {
+      live = false;
+    };
+  }, [doc.id, doc.quiz]);
 
   // Tự đánh dấu "đã đọc" khi cuộn tới cuối bài (không đánh dấu lúc vừa mở — như app Anh); đã bấm tay thì thôi.
   useEffect(() => {
@@ -71,9 +86,13 @@ export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack:
         onToggleVi={() => setShowVi((v) => !v)}
       />
 
-      <Passage sentences={doc.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} onPlayFrom={(i) => playFrom(i, true)} />
+      <Passage sentences={doc.sentences} paras={doc.paras} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} onPlayFrom={(i) => playFrom(i, true)} />
+
+      {doc.source && <SourceNote source={doc.source} className="mt-6 text-xs leading-relaxed text-muted-foreground" />}
 
       <div ref={endRef} data-testid="reading-end" aria-hidden className="h-px" />
+
+      {quiz && quiz.length > 0 && <Quiz key={doc.id} questions={quiz} showVi={showVi} onTapWord={onTapWord} />}
       {/* Đánh dấu đã đọc — bật/tắt được (như HSK) */}
       <div className="mt-8 flex justify-center">
         <DoneButton kind="read" done={read === true} onToggle={toggleRead} />
