@@ -4,7 +4,8 @@
 //   public/data/readings/{cấp}.json     chữ bài (FR + VI, đoạn, nguồn) — suggest.ts / "gặp lại trong ngữ cảnh" đọc cả cấp
 //   public/data/readings-index.json     chỉ mục nhẹ (tiêu đề, chủ đề, thể loại, số chữ, phút đọc)
 //   public/data/quiz/{id}.json          câu hỏi đọc hiểu — tải lười khi mở bài (xoá file của bài không còn câu hỏi)
-//   scripts/out/audio-readings.json     câu CHƯA có MP3 (public/audio/sentences/hashLong(fr).mp3) cho build-audio.py
+//   scripts/out/audio-readings.json     câu bài đọc + câu hỏi/phương án CHƯA có MP3 (public/audio/sentences/hashLong(fr).mp3)
+//                                       cho build-audio.py
 // Chạy check-content trước; còn lỗi thì dừng (--draft: chưa bắt buộc câu hỏi).
 import { writeFileSync, mkdirSync, readdirSync, existsSync, rmSync } from "node:fs";
 import { join } from "node:path";
@@ -86,20 +87,24 @@ for (const f of readdirSync(join(DATA, "quiz")))
     pruned++;
   }
 
-// audio từng câu còn thiếu
+// audio từng câu còn thiếu: câu bài đọc, rồi câu hỏi + phương án (nút loa trong components/quiz.tsx)
 const AUDIO = join(ROOT, "public", "audio", "sentences");
 const seen = new Set();
 const todo = [];
-for (const m of items)
-  for (const s of m.sentences) {
-    const file = `${hashLong(s.fr)}.mp3`;
-    if (seen.has(file)) continue;
-    seen.add(file);
-    if (!existsSync(join(AUDIO, file))) todo.push({ text: s.fr, file });
-  }
+let nQuizAudio = 0;
+const need = (fr, isQuiz) => {
+  const file = `${hashLong(fr)}.mp3`;
+  if (seen.has(file)) return;
+  seen.add(file);
+  if (isQuiz) nQuizAudio++;
+  if (!existsSync(join(AUDIO, file))) todo.push({ text: fr, file });
+};
+for (const m of items) for (const s of m.sentences) need(s.fr, false);
+for (const m of items) for (const q of quiz.blocks.get(m.id)?.questions ?? []) for (const fr of [q.q.fr, ...q.opts.map((o) => o.fr)]) need(fr, true);
 mkdirSync(join(ROOT, "scripts", "out"), { recursive: true });
 writeFileSync(join(ROOT, "scripts", "out", "audio-readings.json"), JSON.stringify(todo));
 
 const per = LEVEL_KEYS.map((k) => `${k.toUpperCase()} ${byLevel.get(k).length}`).join(" · ");
 console.log(`bài đọc: ${index.length} (${per}) · câu hỏi: ${quizIds.size} bài${pruned ? ` · xoá ${pruned} file câu hỏi cũ` : ""}`);
-console.log(`audio thiếu: ${todo.length} câu → scripts/out/audio-readings.json${todo.length ? "\n  chạy: cd scripts && ~/code/english_words/code/scripts/.venv-tts/bin/python build-audio.py out/audio-readings.json ../public/audio/sentences" : ""}`);
+console.log(`audio câu hỏi + phương án: ${nQuizAudio} câu (không tính câu trùng)`);
+console.log(`audio thiếu: ${todo.length} câu → scripts/out/audio-readings.json${todo.length ? "\n  chạy: cd scripts && CONC=48 ~/code/english_words/code/scripts/.venv-tts/bin/python build-audio.py out/audio-readings.json ../public/audio/sentences" : ""}`);

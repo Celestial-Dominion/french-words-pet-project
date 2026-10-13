@@ -3,9 +3,10 @@
 // Câu hỏi đọc hiểu trắc nghiệm cuối bài đọc (port app Anh components/library/quiz.tsx). Chọn là chấm ngay (không đổi
 // được): đáp án đúng tô xanh, chọn sai tô đỏ, rồi lộ nghĩa mọi phương án + lời giải thích trích «nguyên văn» câu trong
 // bài. Phương án xáo lại mỗi lần mở / Làm lại. Không lưu điểm. Chữ câu hỏi + phương án bấm-tra được.
+// Nút loa đọc câu hỏi và từng phương án (MP3 câu như bài đọc: public/audio/sentences/hashLong(fr).mp3).
 // Cha đặt key theo bài để đổi bài là trạng thái mới.
 import { useState } from "react";
-import { Check, RotateCcw, X } from "lucide-react";
+import { Check, RotateCcw, Volume2, X } from "lucide-react";
 import { quizScore, shuffledOrder, splitQuotes } from "@/lib/quiz-pure";
 import type { QuizQuestion } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -29,7 +30,30 @@ function Why({ text }: { text: string }) {
   );
 }
 
-export function Quiz({ questions, showVi, onTapWord }: { questions: QuizQuestion[]; showVi: boolean; onTapWord: (w: string) => void }) {
+function ListenButton({ fr, onListen, className }: { fr: string; onListen: (fr: string) => void; className?: string }) {
+  return (
+    <button
+      type="button"
+      onClick={() => onListen(fr)}
+      aria-label={`Nghe: ${fr}`}
+      className={cn("grid shrink-0 place-items-center rounded-xl text-muted-foreground transition-colors hover:bg-muted hover:text-primary active:scale-95", className)}
+    >
+      <Volume2 className="size-[1.15rem]" />
+    </button>
+  );
+}
+
+export function Quiz({
+  questions,
+  showVi,
+  onTapWord,
+  onListen,
+}: {
+  questions: QuizQuestion[];
+  showVi: boolean;
+  onTapWord: (w: string) => void;
+  onListen?: (fr: string) => void;
+}) {
   const [orders, setOrders] = useState(() => questions.map((q) => shuffledOrder(q.opts.length)));
   const [picks, setPicks] = useState<(number | undefined)[]>(() => questions.map(() => undefined));
   const { done, correct, total } = quizScore(
@@ -60,10 +84,13 @@ export function Quiz({ questions, showVi, onTapWord }: { questions: QuizQuestion
           const right = pick === q.a;
           return (
             <li key={i}>
-              <p className="text-[1.06rem] leading-relaxed font-medium sm:text-[1.12rem]">
-                <span className="mr-1.5 text-base font-semibold text-muted-foreground">{i + 1}.</span>
-                <Words text={q.q.fr} onTap={onTapWord} />
-              </p>
+              <div className="flex items-start gap-1">
+                <p className="min-w-0 flex-1 text-[1.06rem] leading-relaxed font-medium sm:text-[1.12rem]">
+                  <span className="mr-1.5 text-base font-semibold text-muted-foreground">{i + 1}.</span>
+                  <Words text={q.q.fr} onTap={onTapWord} />
+                </p>
+                {onListen && <ListenButton fr={q.q.fr} onListen={onListen} className="-mt-1 size-9" />}
+              </div>
               {(showVi || answered) && <p className="mt-1 border-l-[3px] border-primary/30 pl-3 text-[0.95rem] text-muted-foreground">{q.q.vi}</p>}
               <div className="mt-3 grid gap-2">
                 {(orders[i] ?? []).map((oi, k) => {
@@ -81,22 +108,24 @@ export function Quiz({ questions, showVi, onTapWord }: { questions: QuizQuestion
                     cls = "border-border bg-card opacity-60";
                   }
                   return (
-                    <button
-                      key={oi}
-                      type="button"
-                      disabled={answered}
-                      onClick={() => choose(i, oi)}
-                      className={cn(
-                        "flex min-h-[3.25rem] items-center gap-3 rounded-2xl border px-4 py-2.5 text-left transition-all focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:outline-none",
-                        cls,
-                      )}
-                    >
-                      <span className={cn("flex size-8 shrink-0 items-center justify-center rounded-lg text-sm font-semibold", badge)}>{LETTERS[k] ?? k + 1}</span>
-                      <span className="min-w-0">
-                        <span className="block text-[1.02rem] leading-snug">{o.fr}</span>
-                        {(showVi || answered) && <span className="mt-0.5 block text-sm opacity-75">{o.vi}</span>}
-                      </span>
-                    </button>
+                    <div key={oi} className="flex items-stretch gap-1">
+                      <button
+                        type="button"
+                        disabled={answered}
+                        onClick={() => choose(i, oi)}
+                        className={cn(
+                          "flex min-h-[3.25rem] min-w-0 flex-1 items-center gap-3 rounded-2xl border px-4 py-2.5 text-left transition-all focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:outline-none",
+                          cls,
+                        )}
+                      >
+                        <span className={cn("flex size-8 shrink-0 items-center justify-center rounded-lg text-sm font-semibold", badge)}>{LETTERS[k] ?? k + 1}</span>
+                        <span className="min-w-0">
+                          <span className="block text-[1.02rem] leading-snug">{o.fr}</span>
+                          {(showVi || answered) && <span className="mt-0.5 block text-sm opacity-75">{o.vi}</span>}
+                        </span>
+                      </button>
+                      {onListen && <ListenButton fr={o.fr} onListen={onListen} className="w-9" />}
+                    </div>
                   );
                 })}
               </div>

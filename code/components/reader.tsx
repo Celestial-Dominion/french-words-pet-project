@@ -11,6 +11,7 @@ import { DoneButton, useIsRead } from "@/components/done-toggle";
 import { NextLink, type NextItem } from "@/components/story-reader";
 import { Quiz } from "@/components/quiz";
 import { SourceNote } from "@/components/source-note";
+import { playAudio, sentenceAudioUrl } from "@/lib/tts";
 
 export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack: () => void; next?: NextItem | null }) {
   const [selected, setSelected] = useState<Word | null>(null);
@@ -54,6 +55,12 @@ export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack:
     void markRead(doc.id, !read).catch(() => {});
   };
 
+  // Nghe câu hỏi / phương án: tạm dừng (không xoá vị trí) phần đọc cả bài, cùng tốc độ đọc đang chọn.
+  const listen = (fr: string) => {
+    if (playing) toggle();
+    playAudio(sentenceAudioUrl(fr)).playbackRate = rate;
+  };
+
   const onTapWord = async (token: string) => {
     const w = await lookupWord(token);
     if (!w) return;
@@ -92,7 +99,7 @@ export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack:
 
       <div ref={endRef} data-testid="reading-end" aria-hidden className="h-px" />
 
-      {quiz && quiz.length > 0 && <Quiz key={doc.id} questions={quiz} showVi={showVi} onTapWord={onTapWord} />}
+      {quiz && quiz.length > 0 && <Quiz key={doc.id} questions={quiz} showVi={showVi} onTapWord={onTapWord} onListen={listen} />}
       {/* Đánh dấu đã đọc — bật/tắt được (như HSK) */}
       <div className="mt-8 flex justify-center">
         <DoneButton kind="read" done={read === true} onToggle={toggleRead} />

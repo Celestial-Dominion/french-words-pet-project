@@ -16,7 +16,7 @@ import sys
 import edge_tts
 
 VOICE = "fr-FR-DeniseNeural"
-CONCURRENCY = 8
+CONCURRENCY = int(os.environ.get("CONC", "8"))  # số yêu cầu edge-tts song song (CONC=48 … để chạy nhanh hơn)
 
 
 async def synth(sem, text, out_path, stats):
