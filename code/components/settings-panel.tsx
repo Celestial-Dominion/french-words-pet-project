@@ -238,6 +238,17 @@ export default function SettingsPanel() {
             </a>{" "}
             (CC BY 2.0 FR; bản dịch tiếng Việt do dự án biên soạn)
           </li>
+          <li>
+            Một số bài đọc A1–A2 kể lại từ truyện của{" "}
+            <a href="https://www.africanstorybook.org/" className="underline" target="_blank" rel="noreferrer">
+              African Storybook
+            </a>{" "}
+            (CC BY 4.0 / CC BY-NC 4.0, tác giả ghi ở cuối từng bài) và tác phẩm phạm vi công cộng trên{" "}
+            <a href="https://fr.wikisource.org/" className="underline" target="_blank" rel="noreferrer">
+              Wikisource
+            </a>{" "}
+            (La Fontaine, Ésope, Perrault, Leprince de Beaumont, Andersen – bản dịch David Soldi)
+          </li>
           <li>Nghĩa tiếng Việt, câu ví dụ còn lại, bài đọc, truyện, khóa phát âm &amp; ngữ pháp — do dự án này biên soạn</li>
           <li>Giọng đọc — Microsoft Edge neural TTS (fr-FR), sinh sẵn lúc build</li>
         </ul>

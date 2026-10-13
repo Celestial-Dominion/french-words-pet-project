@@ -39,7 +39,7 @@
 
 | Hạng mục | App Anh | App Pháp |
 |---|---|---|
-| Bài đọc | 1.377 (A1–C2) | 60 |
+| Bài đọc | 1.377 (A1–C2) | 60 → 448 (13/10: A1 160, A2 252, B1–C2 36 cũ) |
 | Truyện | 373, có chuỗi truyện dài | 16 |
 | Video hội thoại | 160 | 0 |
 | Ngữ pháp | 188 bài, video giảng SVG, luyện tập, lịch ôn riêng | 11 bài chữ |
@@ -79,6 +79,7 @@ Lý do: phiên mới cho tới 5 câu điền/từ + xoay câu theo lần ôn, n
 **Câu hỏi đọc hiểu** (quyết định 11/10/2026): soạn NGAY khi viết từng bài đọc / truyện mới ở C7–C9, không làm thành đợt riêng. Độ phủ như app Anh — 100% bài và chương có câu hỏi (app Anh: 1.377/1.377 bài đọc ~4 câu/bài, 1.740/1.740 chương truyện 3 câu/chương). Mỗi câu: câu hỏi Pháp + dịch Việt, 4 phương án (1 đúng) + dịch, giải thích trích «nguyên văn» câu trong bài; độ dài câu hỏi/phương án theo cấp (`quiz` trong `scripts/lib/content-spec.mjs` app Anh). 60 bài đọc + 16 truyện hiện có: bổ sung câu hỏi khi đợt nội dung đi qua cấp tương ứng, để cả thư viện đạt 100%.
 
 - [ ] **C7.** A1–A2: Storybooks Canada / African Storybook bản Pháp (CC BY 4.0, 40 truyện có audio) + tự soạn. **Làm kèm phần code của C3 ngay ở lô đầu:** giao diện trắc nghiệm cuối bài / cuối chương (port `quiz.tsx` app Anh: chọn là chấm, lộ nghĩa + giải thích trích «nguyên văn», xáo phương án, Làm lại, không lưu điểm), trường `quiz` + kiểm tra định dạng khi dựng dữ liệu, ghi nguồn `source-note` (Storybooks là CC BY 4.0 — bắt buộc ghi tác giả, nguồn, giấy phép, đã chỉnh sửa), chuỗi truyện dài `series` (Phần n/m, nút sang phần sau; chuỗi bài đọc cùng chủ đề qua các cấp).
+  - **13/10/2026 — bài đọc A1–A2 xong**: viết lại toàn bộ (24 bài cũ quá ngắn), A1 160 bài (3–4 câu hỏi/bài), A2 252 bài (4 câu hỏi/bài), cả hai dòng FR | VI soạn tay (dịch máy Apple sai ~½ câu), pipeline `content/readings|quiz/{cấp}/*.txt` → `build-content.mjs`, kiểm `check-content.mjs` (0 lỗi), phủ từ A1 92,9% / A2 90,8% (≥1 lần). Nguồn: African Storybook (kể lại), La Fontaine, Ésope, Perrault, Leprince de Beaumont, Andersen (Soldi) — ghi ở cuối bài + Cài đặt. Còn: truyện A1–A2, chuỗi `series`.
 - [ ] **C8.** Truyện kể lại từ phạm vi công cộng: Wikisource FR, Project Gutenberg, Bibliothèque numérique romande, Gallica — Perrault, La Fontaine, Daudet (*Lettres de mon moulin*), Maupassant, Verne, Hugo, Comtesse de Ségur. Kể lại theo cấp, làm nhẹ bạo lực (playbook §14).
 - [ ] **C9.** Bài dữ kiện A2–B1: Vikidia (CC BY-SA 3.0); tin tức: Wikinews FR (CC BY 2.5); B2–C1: Wikipedia FR chỉ làm nguồn dữ kiện, kể lại hoàn toàn.
 - [ ] **C10.** Audio thư viện ~1,5 GB (Denise; Henri cho vai thứ hai).
