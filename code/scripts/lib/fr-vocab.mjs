@@ -32,7 +32,7 @@ const CONTRACT = { au: ["à", "le"], aux: ["à", "les"], du: ["de", "le"], des: 
 const VARIANT = { nouvel: "nouveau", vieil: "vieux", bel: "beau", cet: "ce", fol: "fou", mol: "mou" };
 // Cấp bộ từ gán lệch cho từ chức năng (do tách lược âm/cụm) → cấp dùng khi chấm.
 // euro: tần suất phụ đề thấp (B2) nhưng là từ đời thường, trong suốt với người học.
-const BAND_FIX = { parce: 0, jusque: 1, qu: 0, l: 0, "s'": 0, euro: 0 };
+const BAND_FIX = { parce: 0, jusque: 0, qu: 0, l: 0, "s'": 0, euro: 0 };
 
 const NUM = [
   "zéro", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix", "onze", "douze", "treize",
