@@ -34,7 +34,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-oulipo` · L'Oulipo, écrire sous la contrainte · literature/explanation · 1960 Queneau et Le Lionnais, La Disparition sans « e », Exercices de style
 - `rd-c1-radios-libres` · 1981, la libération des ondes · media/narrative · radios pirates, monopole d'État, loi 1981, publicité 1984
 
-### [ ] c1-03
+### [x] c1-03
 - `rd-c1-ours-des-pyrenees` · L'ours des Pyrénées · nature/case-study · réintroduction 1996 depuis la Slovénie, Cannelle 2004, conflits, ~80 ours
 - `rd-c1-telephone-a-l-ecole` · Le téléphone banni des écoles · technology/analysis · loi 2018 collèges, « pause numérique » 2024, résultats
 - `rd-c1-entreprises-centenaires` · Les entreprises familiales bicentenaires · business/analysis · association des Hénokiens, transmission, prudence, long terme
