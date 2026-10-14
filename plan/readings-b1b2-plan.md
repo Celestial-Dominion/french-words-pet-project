@@ -171,7 +171,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-sms-et-langue` · Les SMS abîment-ils la langue ? · communication/opinion · abréviations, jeunes écrivent plus, deux registres
 - `rd-b1-vendre-ses-creations` · Vendre ses créations sur un marché · business/how-to · micro-entrepreneur, prix, stand, sourire, cartes
 
-### [ ] b1-18
+### [x] b1-18
 - `rd-b1-l-ascenseur-en-panne` · L'ascenseur est encore en panne · daily-life/letter · 6e étage, voisine âgée, 3 semaines, syndic
 - `rd-b1-critique-le-grand-meaulnes` · Critique : Le Grand Meaulnes · literature/review · Alain-Fournier 1913, Sologne, fête étrange, Yvonne de Galais, adolescence, auteur mort en 1914
 - `rd-b1-le-pot-de-depart` · Le pot de départ de Monsieur Royer · work/narrative · 40 ans même entreprise, discours, cadeau, émotion, dernier jour
