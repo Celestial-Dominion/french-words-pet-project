@@ -441,7 +441,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-libre-evolution` · Faut-il laisser certaines forêts redevenir sauvages ? · nature/argument · sans coupe, bois mort, biodiversité, filière bois, incendies
 - `rd-b2-cdi-cdd-interim` · CDI, CDD, intérim : quelles différences ? · work/comparison · sécurité, prime de précarité 10 %, banques et logement, jeunes
 
-### [ ] b2-14
+### [x] b2-14
 - `rd-b2-steward` · Steward depuis vingt ans · travel/interview · décalage, sécurité d'abord, passagers difficiles, vie de famille
 - `rd-b2-francophonie` · Le français, une langue de plus en plus africaine · communication/news · OIF ~320 millions de locuteurs, Afrique majorité, 2050
 - `rd-b2-ecologie-punitive` · L'écologie doit-elle punir ? · environment/opinion · gilets jaunes et taxe carbone 2018, interdictions, incitations
