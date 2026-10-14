@@ -117,7 +117,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-usine-de-the` · Les ouvriers qui ont sauvé leur usine de thé · work/news · Fralib Gémenos, Unilever ferme 2010, 1336 jours de lutte, coopérative 2014, marque 1336
 - `rd-b1-mon-vol-a-ete-annule` · Mon vol a été annulé · travel/letter · règle européenne 250–600 €, remboursement + indemnisation, délai
 
-### [ ] b1-15
+### [x] b1-15
 - `rd-b1-se-proteger-du-soleil` · Bien se protéger du soleil · health/how-to · 12–16 h, crème toutes les 2 h, chapeau, enfants, lunettes
 - `rd-b1-mon-fils-est-harcele` · Mon fils est harcelé au collège · education/letter · lettre à la principale, faits, messages, demande de rendez-vous
 - `rd-b1-test-montre-connectee` · Test : un mois avec une montre connectée · technology/review · pas, sommeil, notifications, batterie, dépendance
