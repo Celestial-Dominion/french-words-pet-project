@@ -8,17 +8,18 @@ export const LICENSES = L;
 
 // words = số từ bài đọc; sent = câu trung bình (từ/câu) [min, max]; over = tỉ lệ token vượt cấp tối đa;
 // density = tỉ lệ token ĐÚNG cấp tối thiểu (bài "dễ hơn cấp" thì cảnh báo); wpm = tốc độ đọc ước lượng (giờ đọc);
-// quiz = độ dài tối đa (số từ) của câu hỏi / mỗi phương án. Cùng mốc app Anh.
+// quiz = độ dài tối đa (số từ) của câu hỏi / mỗi phương án; story = số chương [min, max] + số từ CẢ truyện [min, max]
+// (mỗi chương 3–4 câu hỏi). Cùng mốc app Anh.
 // over = mọi token vượt cấp; far = token vượt từ HAI cấp trở lên (A1 gặp từ B1+). Khác app Anh (over A1 1,2%): cấp từ của
 // app Pháp xếp theo TẦN SUẤT phụ đề nên nhiều từ chủ đề A1 kinh điển nằm ở A2 (magasin, bus, professeur) hoặc B2
 // (boulangerie, banane, supermarché) → cho phép từ cấp KỀ nhiều hơn, giữ chặt từ xa cấp (khai gloss: nếu thật cần).
 export const SPEC = {
-  a1: { words: [80, 150], sent: [4, 10.5], over: 0.05, far: 0.015, density: 0, wpm: 70, topics: 12, quiz: { q: 10, opt: 8 } },
-  a2: { words: [120, 220], sent: [6, 13.5], over: 0.04, far: 0.015, density: 0.07, wpm: 90, topics: 12, quiz: { q: 13, opt: 10 } },
-  b1: { words: [180, 320], sent: [9, 16.5], over: 0.03, far: 0.015, density: 0.05, wpm: 110, topics: 18, quiz: { q: 16, opt: 13 } },
-  b2: { words: [250, 450], sent: [12, 20.5], over: 0.04, far: 0.02, density: 0.05, wpm: 130, topics: 18, quiz: { q: 20, opt: 16 } },
-  c1: { words: [350, 650], sent: [15, 24.5], over: 0.05, far: 0.05, density: 0.045, wpm: 150, topics: 18, quiz: { q: 24, opt: 18 } },
-  c2: { words: [450, 800], sent: [17, 28.5], over: 1, far: 1, density: 0.035, wpm: 170, topics: 18, quiz: { q: 28, opt: 20 } },
+  a1: { words: [80, 150], sent: [4, 10.5], over: 0.05, far: 0.015, density: 0, wpm: 70, topics: 12, quiz: { q: 10, opt: 8 }, story: { ch: [3, 3], words: [280, 520] } },
+  a2: { words: [120, 220], sent: [6, 13.5], over: 0.04, far: 0.015, density: 0.07, wpm: 90, topics: 12, quiz: { q: 13, opt: 10 }, story: { ch: [4, 4], words: [380, 820] } },
+  b1: { words: [180, 320], sent: [9, 16.5], over: 0.03, far: 0.015, density: 0.05, wpm: 110, topics: 18, quiz: { q: 16, opt: 13 }, story: { ch: [5, 5], words: [600, 1100] } },
+  b2: { words: [250, 450], sent: [12, 20.5], over: 0.04, far: 0.02, density: 0.05, wpm: 130, topics: 18, quiz: { q: 20, opt: 16 }, story: { ch: [5, 6], words: [800, 1450] } },
+  c1: { words: [350, 650], sent: [15, 24.5], over: 0.05, far: 0.05, density: 0.045, wpm: 150, topics: 18, quiz: { q: 24, opt: 18 }, story: { ch: [5, 6], words: [1000, 1800] } },
+  c2: { words: [450, 800], sent: [17, 28.5], over: 1, far: 1, density: 0.035, wpm: 170, topics: 18, quiz: { q: 28, opt: 20 }, story: { ch: [5, 7], words: [1100, 2000] } },
 };
 
 // Cấp đã soạn theo chuẩn mới (bắt buộc câu hỏi đọc hiểu, kiểm từ vựng/độ dài đầy đủ). Cấp khác còn bài cũ (legacy.txt)

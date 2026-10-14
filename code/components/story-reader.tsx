@@ -2,13 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { lookupWord, loadExamplesForWords, type StoryDoc, type ExampleSentence } from "@/lib/data";
+import { lookupWord, loadExamplesForWords, loadStoryQuiz, type StoryDoc, type ExampleSentence, type QuizQuestion } from "@/lib/data";
 import { markRead } from "@/lib/db";
 import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import { Passage, ReaderToolbar, useListenAll } from "@/components/passage";
 import { DoneButton, useIsRead } from "@/components/done-toggle";
 import { savedChapter, saveChapter } from "@/lib/story-progress";
+import { Quiz } from "@/components/quiz";
+import { SourceNote } from "@/components/source-note";
+import { playAudio, sentenceAudioUrl } from "@/lib/tts";
 import Link from "next/link";
 
 export interface NextItem {
@@ -26,6 +29,25 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
   const chapter = doc.chapters[ci];
   const last = ci === doc.chapters.length - 1;
   const { activeIdx, playing, toggle, playFrom, step, rate, cycleRate, stop } = useListenAll(chapter.sentences);
+
+  // Câu hỏi đọc hiểu cuối mỗi chương (tải lười, một file cho cả truyện)
+  const [quiz, setQuiz] = useState<QuizQuestion[][] | null>(null);
+  useEffect(() => {
+    if (!doc.quiz) return;
+    let live = true;
+    loadStoryQuiz(doc.id)
+      .then((q) => live && setQuiz(q))
+      .catch(() => {});
+    return () => {
+      live = false;
+    };
+  }, [doc.id, doc.quiz]);
+  const chQuiz = quiz?.[ci] ?? [];
+  // Nghe câu hỏi / phương án: tạm dừng (không xoá vị trí) phần đọc cả chương, cùng tốc độ đọc đang chọn.
+  const listen = (fr: string) => {
+    if (playing) toggle();
+    playAudio(sentenceAudioUrl(fr)).playbackRate = rate;
+  };
 
   const read = useIsRead(doc.id); // undefined = đang đọc IndexedDB
   const manual = useRef(false); // đã bấm tay ở lần mở này → không tự đánh dấu nữa
@@ -90,7 +112,7 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
         >
           {doc.chapters.map((c, i) => (
             <option key={i} value={i}>
-              Chương {i + 1}/{doc.chapters.length} · {c.title_vi}
+              Chương {i + 1}/{doc.chapters.length} · {c.title_fr ?? c.title_vi}
             </option>
           ))}
         </select>
@@ -107,8 +129,19 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
         onToggleVi={() => setShowVi((v) => !v)}
       />
 
-      <Passage sentences={chapter.sentences} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} onPlayFrom={(i) => playFrom(i, true)} />
+      {chapter.title_fr && (
+        <h2 className="mt-5 mb-1 text-lg leading-snug font-bold sm:text-xl">
+          <span className="mr-1.5 text-muted-foreground">{ci + 1}.</span>
+          {chapter.title_fr}
+          {showVi && <span className="mt-0.5 block text-sm font-normal text-muted-foreground">{chapter.title_vi}</span>}
+        </h2>
+      )}
+
+      <Passage sentences={chapter.sentences} paras={chapter.paras} showVi={showVi} activeIdx={activeIdx} onTapWord={onTapWord} onPlayFrom={(i) => playFrom(i, true)} />
+      {last && doc.source && <SourceNote source={doc.source} className="mt-6 text-xs leading-relaxed text-muted-foreground" />}
       <div ref={endRef} data-testid="story-end" aria-hidden className="h-px" />
+
+      {chQuiz.length > 0 && <Quiz key={`${doc.id}-${ci}`} questions={chQuiz} showVi={showVi} onTapWord={onTapWord} onListen={listen} />}
 
       {/* điều hướng chương — đếm n/tổng ở giữa (như HSK) */}
       <div className="mt-8 flex items-center justify-between gap-3">

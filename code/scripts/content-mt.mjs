@@ -56,7 +56,7 @@ function appleTranslate(lines) {
   });
 }
 
-const isMeta = (t) => /^(\/\/|===|names:|gloss:|topic:|genre:|series:|source:|license:|source-url:)/.test(t);
+const isMeta = (t) => /^(\/\/|===|##|names:|gloss:|topic:|genre:|summary:|series:|source:|license:|source-url:)/.test(t);
 
 function plan(lines, kind) {
   // → [{i, fr, put(vi) → dòng mới}]
@@ -95,35 +95,39 @@ function plan(lines, kind) {
 
 // ---- câu hỏi: "> ~cụm" → trích nguyên văn câu trong bài ----
 let LIB = null;
-function quoteFor(id, phrase) {
+function quoteFor(id, ch, phrase) {
   LIB ??= new Map(loadLibrary().items.map((m) => [m.id, m]));
   const m = LIB.get(id);
   if (!m) throw new Error(`không thấy bài ${id} (điền file bài trước, hoặc bài chưa đúng định dạng)`);
   const low = phrase.toLowerCase();
-  const hit = m.sentences.filter((s) => s.fr.toLowerCase().includes(low));
-  if (!hit.length) throw new Error(`${id}: không câu nào chứa "${phrase}"`);
+  // truyện: chỉ tìm trong chương của block câu hỏi ("=== st-… n")
+  const pool = ch ? (m.chapters?.[ch - 1]?.sentences ?? []) : m.sentences;
+  const hit = pool.filter((s) => s.fr.toLowerCase().includes(low));
+  if (!hit.length) throw new Error(`${id}${ch ? ` ch${ch}` : ""}: không câu nào chứa "${phrase}"`);
   let q = hit[0].fr;
   if (/[«"]/.test(q)) {
     const parts = [...q.matchAll(/«\s*([^»]+?)\s*»|"([^"]+)"/g)].map((x) => x[1] ?? x[2]);
     const inQ = parts.find((p) => p.toLowerCase().includes(low));
     if (inQ) q = inQ.replace(/[,]$/, "");
   }
-  return `> Bài đọc: «${q.trim()}»`;
+  return `> ${ch ? "Trong truyện" : "Bài đọc"}: «${q.trim()}»`;
 }
 
 function expandQuotes(lines) {
   let id = null;
+  let ch = null;
   const errs = [];
   const out = lines.map((t) => {
-    const h = /^===\s+(\S+)\s*$/.exec(t);
+    const h = /^===\s+(\S+)(?:\s+(\d+))?\s*$/.exec(t);
     if (h) {
       id = h[1];
+      ch = h[2] ? Number(h[2]) : null;
       return t;
     }
     const q = /^>\s*~(.+)$/.exec(t);
     if (!q) return t;
     try {
-      return quoteFor(id, q[1].trim());
+      return quoteFor(id, ch, q[1].trim());
     } catch (e) {
       errs.push(e.message);
       return t;

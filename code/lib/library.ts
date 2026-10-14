@@ -1,5 +1,5 @@
 // Thư viện đọc (bài đọc + truyện): nhãn chủ đề / thể loại (cùng bộ khoá với app Anh), đường dẫn trang bài, thời lượng.
-// Chủ đề, thể loại, tóm tắt truyện soạn tay ở scripts/out/library-meta.json → build-readings / build-stories ghép vào chỉ mục.
+// Chủ đề, thể loại, tóm tắt truyện khai ở đầu mỗi bài/truyện trong content/ → scripts/build-content.mjs ghép vào chỉ mục.
 import { levelFromCefr, levelSlug, LEVELS } from "./levels";
 
 export { GENRES, LICENSES, TOPICS } from "./library-labels";

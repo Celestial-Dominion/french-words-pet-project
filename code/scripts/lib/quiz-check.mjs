@@ -1,8 +1,8 @@
 // Kiểm câu hỏi đọc hiểu (content/quiz/**.txt) — port app Anh (scripts/lib/quiz-check.mjs).
 // Luật (✗ = lỗi chặn build, ! = cảnh báo):
-//   ✗ 3–4 câu / bài; mỗi câu đúng 4 phương án, đúng MỘT dòng "+"; phương án không trùng; câu hỏi kết bằng "?";
-//     có giải thích (>) chứa ít nhất một «trích dẫn» NGUYÊN VĂN câu trong bài; từ của câu hỏi + phương án ≤ cấp bài
-//     (từ/tên/thuật ngữ đã có trong bài thì được dùng lại); độ dài câu hỏi / phương án ≤ mốc cấp; không
+//   ✗ 3–4 câu / bài hoặc / chương truyện (block "=== st-… n"); mỗi câu đúng 4 phương án, đúng MỘT dòng "+"; phương án không trùng; câu hỏi kết bằng "?";
+//     có giải thích (>) chứa ít nhất một «trích dẫn» NGUYÊN VĂN câu trong bài / chương đó; từ của câu hỏi + phương án ≤ cấp
+//     bài (từ/tên/thuật ngữ đã có trong bài — với truyện: chương 1..n — thì được dùng lại); độ dài câu hỏi / phương án ≤ mốc cấp; không
 //     "toutes les réponses" (giao diện xáo phương án); không passé simple / subjonctif ở A1–A2.
 //   ! dịch câu hỏi không kết bằng "?", giải thích không có dấu tiếng Việt, đáp án đúng dài hẳn các phương án khác.
 import { profile, tenseFlags, normText, analyzeSentence } from "./fr-vocab.mjs";
@@ -42,32 +42,44 @@ export function quoteFound(quote, sentences) {
   return false;
 }
 
-const SEEN = new WeakMap();
-function seenOf(m) {
-  let r = SEEN.get(m);
+// Đoạn mà câu hỏi bám vào: bài đọc = cả bài; truyện = chương n (trích dẫn) + các chương 1..n (từ được dùng lại).
+function scopeOf(m, ch) {
+  if (!ch) return { own: m.sentences, seen: m.sentences };
+  return { own: m.chapters[ch - 1]?.sentences ?? [], seen: m.chapters.slice(0, ch).flatMap((c) => c.sentences) };
+}
+const SEEN = new WeakMap(); // m → Map(ch → {lemmas, tokens})
+function seenOf(m, ch, seen) {
+  let byCh = SEEN.get(m);
+  if (!byCh) SEEN.set(m, (byCh = new Map()));
+  let r = byCh.get(ch ?? 0);
   if (!r) {
     const p = profile(
-      m.sentences.map((s) => s.fr),
+      seen.map((s) => s.fr),
       { names: m.names, level: m.band },
     );
-    r = { lemmas: new Set(p.counts.keys()), tokens: tokenSet(m.sentences) };
-    SEEN.set(m, r);
+    r = { lemmas: new Set(p.counts.keys()), tokens: tokenSet(seen) };
+    byCh.set(ch ?? 0, r);
   }
   return r;
 }
 
-/** Kiểm một block câu hỏi của bài m. Trả {e:[], w:[], stats}. */
+/** Kiểm một block câu hỏi của bài/truyện m (block.ch = số chương 1-based cho truyện). Trả {e:[], w:[], stats}. */
 export function checkQuizBlock(block, m) {
   const e = [];
   const w = [];
   const stats = { questions: block.questions.length, longest: 0 };
-  const at = "hỏi";
+  const at = block.ch ? `hỏi ch${block.ch}` : "hỏi";
+  if (m.type === "story" && (block.ch < 1 || block.ch > m.chapters.length)) {
+    e.push(`${at}: truyện chỉ có ${m.chapters.length} chương`);
+    return { e, w, stats };
+  }
   const spec = SPEC[m.level].quiz;
   const n = block.questions.length;
   if (n < 3 || n > 4) e.push(`${at}: ${n} câu hỏi (cần 3–4)`);
-  if (m.level === "a2" && n < 4) w.push(`${at}: A2 nên có 4 câu hỏi`);
-  const own = m.sentences;
-  const allowed = seenOf(m);
+  if (m.type === "reading" && m.level === "a2" && n < 4) w.push(`${at}: A2 nên có 4 câu hỏi`);
+  const { own, seen } = scopeOf(m, block.ch);
+  const allowed = seenOf(m, block.ch, seen);
+  const unit = m.type === "story" ? `chương ${block.ch}` : "bài";
   const qTexts = new Set();
   block.questions.forEach((q, i) => {
     const where = `${at} câu ${i + 1} (dòng ${q.line})`;
@@ -95,8 +107,8 @@ export function checkQuizBlock(block, m) {
     else {
       if (!VI_LETTERS.test(q.why.replace(/«[^»]*»/g, ""))) w.push(`${where}: giải thích nên viết tiếng Việt`);
       const qs = quotesOf(q.why);
-      if (!qs.length) e.push(`${where}: giải thích phải trích «nguyên văn» câu trong bài`);
-      for (const x of qs) if (!quoteFound(x, own)) e.push(`${where}: trích dẫn không khớp nguyên văn bài: «${x.slice(0, 60)}»`);
+      if (!qs.length) e.push(`${where}: giải thích phải trích «nguyên văn» câu trong ${unit}`);
+      for (const x of qs) if (!quoteFound(x, own)) e.push(`${where}: trích dẫn không khớp nguyên văn ${unit}: «${x.slice(0, 60)}»`);
     }
     // từ vựng: ≤ cấp bài, hoặc đã có trong bài, tên riêng, thuật ngữ khai gloss:
     const texts = [q.q.fr, ...q.opts.map((o) => o.fr)];
@@ -122,7 +134,8 @@ export function checkQuizBlock(block, m) {
 
 /**
  * Kiểm toàn bộ câu hỏi so với thư viện. items = model (loadLibrary), quiz = loadQuizzes().
- * requireLevels = các cấp bắt buộc có câu hỏi. Trả { perItem: Map<id,{e,w}>, libErr, libWarn, coverage: {lv: {r, rAll}} }.
+ * requireLevels = các cấp bắt buộc có câu hỏi (mọi bài đọc + mọi chương truyện).
+ * Trả { perItem: Map<id,{e,w}>, libErr, libWarn, coverage: {lv: {r, rAll, ch, chAll}} }.
  */
 export function checkQuizzes(items, quiz, { requireLevels = [] } = {}) {
   const perItem = new Map();
@@ -149,10 +162,18 @@ export function checkQuizzes(items, quiz, { requireLevels = [] } = {}) {
   }
   const coverage = {};
   for (const m of items) {
-    const c = (coverage[m.level] ??= { r: 0, rAll: 0 });
-    c.rAll++;
-    if (quiz.blocks.has(m.id)) c.r++;
-    else if (requireLevels.includes(m.level)) R(m.id).e.push("chưa có câu hỏi đọc hiểu (content/quiz/…)");
+    const c = (coverage[m.level] ??= { r: 0, rAll: 0, ch: 0, chAll: 0 });
+    const need = requireLevels.includes(m.level);
+    if (m.type === "reading") {
+      c.rAll++;
+      if (quiz.blocks.has(m.id)) c.r++;
+      else if (need) R(m.id).e.push("chưa có câu hỏi đọc hiểu (content/quiz/…)");
+    } else
+      m.chapters.forEach((_, k) => {
+        c.chAll++;
+        if (quiz.blocks.has(`${m.id}#${k + 1}`)) c.ch++;
+        else if (need) R(m.id).e.push(`chương ${k + 1} chưa có câu hỏi đọc hiểu`);
+      });
   }
   for (const [lv, [a, t]] of longest) if (t >= 40 && a / t > 0.3) libWarn.push(`${lv} câu hỏi: ${a}/${t} câu có đáp án đúng dài hẳn phương án sai (> 30%) — cân lại độ dài phương án`);
   return { perItem, libErr, libWarn, coverage };

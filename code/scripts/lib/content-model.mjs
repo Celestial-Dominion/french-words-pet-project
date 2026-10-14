@@ -1,14 +1,14 @@
-// Nạp toàn bộ nguồn học liệu (content/readings/**.txt) → model chuẩn hoá cho check / coverage / build (port app Anh).
+// Nạp toàn bộ nguồn học liệu (content/readings|stories/**.txt) → model chuẩn hoá cho check / coverage / build (port app Anh).
 // Lỗi CẤU TRÚC (không đọc được) gom vào `errors` kèm file:dòng; lỗi NỘI DUNG để check-content lo.
-// Truyện hiện vẫn ở pipeline cũ (scripts/build-stories.mjs) — chỉ bài đọc đi qua đây.
+// Truyện: item có thêm `chapters` [{title, paras, sentences}]; `sentences` = mọi câu nối các chương (kiểm từ vựng cả truyện).
 import { join } from "node:path";
 import { existsSync } from "node:fs";
-import { listSources, parseFile, parseProse, splitPair, parseQuizFile, FormatError } from "./content-format.mjs";
+import { listSources, parseFile, parseProse, parseChapters, splitPair, parseQuizFile, FormatError } from "./content-format.mjs";
 import { analyzeToken, profile, bandOfKey, normText } from "./fr-vocab.mjs";
 
 export const ROOT = join(import.meta.dirname, "..", "..");
 export const CONTENT = join(ROOT, "content");
-export const LIBRARY_DIRS = ["readings"];
+export const LIBRARY_DIRS = ["readings", "stories"];
 export const QUIZ_DIR = join(CONTENT, "quiz");
 
 const list = (s) =>
@@ -70,6 +70,33 @@ function normReading(it, fail) {
   };
 }
 
+function normStory(it, fail) {
+  const h = it.header;
+  const title = splitPair(h.title ?? "");
+  if (!title) fail(it.line, `thiếu/sai title "FR | VI"`);
+  const chapters = parseChapters(it.body, fail);
+  return {
+    id: it.id,
+    type: it.type,
+    level: it.level,
+    band: bandOfKey(it.level),
+    file: it.file,
+    line: it.line,
+    header: h,
+    title,
+    topic: h.topic,
+    genre: h.genre ?? "narrative",
+    summary: h.summary ?? "",
+    series: seriesOf(h),
+    source: sourceOf(h),
+    names: nameSet(list(h.names)),
+    gloss: glossSet(list(h.gloss)),
+    chapters,
+    paras: [],
+    sentences: chapters.flatMap((c) => c.sentences),
+  };
+}
+
 /** Nạp thư viện. Trả { items, errors } — items giữ thứ tự file (thứ tự trong cấp = thứ tự viết). */
 export function loadLibrary(dir = CONTENT) {
   const items = [];
@@ -94,8 +121,7 @@ export function loadLibrary(dir = CONTENT) {
         throw new FormatError(`${it.file}:${line}: [${it.id}] ${msg}`);
       };
       try {
-        if (it.type !== "reading") fail(it.line, "truyện chưa chuyển sang content/ (dùng scripts/build-stories.mjs)");
-        items.push(normReading(it, fail));
+        items.push(it.type === "story" ? normStory(it, fail) : normReading(it, fail));
       } catch (e) {
         if (e instanceof FormatError) errors.push(e.message);
         else throw e;

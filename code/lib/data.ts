@@ -211,6 +211,11 @@ export async function loadQuiz(id: string): Promise<QuizQuestion[]> {
   const res = await fetch(`${BASE}/data/quiz/${encodeURIComponent(id)}.json`);
   return res.ok ? ((await res.json()) as QuizQuestion[]) : [];
 }
+/** Câu hỏi của truyện: một mảng mỗi chương (chương chưa có câu hỏi = mảng rỗng). */
+export async function loadStoryQuiz(id: string): Promise<QuizQuestion[][]> {
+  const res = await fetch(`${BASE}/data/quiz/${encodeURIComponent(id)}.json`);
+  return res.ok ? ((await res.json()) as QuizQuestion[][]) : [];
+}
 export interface ReadingMeta {
   id: string;
   level: number;
@@ -245,8 +250,10 @@ export async function loadReadings(level: number): Promise<ReadingDoc[]> {
 
 // ---- Truyện nhiều chương ----
 export interface StoryChapterDoc {
+  title_fr?: string; // truyện cũ B1–C2 chỉ có tên chương tiếng Việt
   title_vi: string;
   sentences: ReadingSentence[];
+  paras?: number[]; // chỉ số câu mở mỗi đoạn (không có = một đoạn)
 }
 export interface StoryDoc {
   id: string;
@@ -254,6 +261,8 @@ export interface StoryDoc {
   title_fr: string;
   title_vi: string;
   chapters: StoryChapterDoc[];
+  source?: ContentSource;
+  quiz?: number; // tổng số câu hỏi (public/data/quiz/{id}.json, theo chương)
 }
 export interface StoryMetaDoc {
   id: string;

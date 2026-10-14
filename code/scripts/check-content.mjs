@@ -1,5 +1,5 @@
-// Kiểm học liệu nguồn (content/readings/**.txt + content/quiz/**.txt) — port app Anh, docs/CONTENT_PLAYBOOK.md.
-//   node scripts/check-content.mjs [--level a1] [--id rd-a1-…] [--errors] [--draft] [--verbose]
+// Kiểm học liệu nguồn (content/readings|stories/**.txt + content/quiz/**.txt) — port app Anh, docs/CONTENT_PLAYBOOK.md.
+//   node scripts/check-content.mjs [--level a1] [--type reading|story] [--id rd-a1-…] [--errors] [--draft] [--verbose]
 // ✗ = LỖI (exit 1): chặn build.  ! = CẢNH BÁO: đọc và xử lý hoặc chấp nhận có lý do.
 // --draft: chưa bắt buộc câu hỏi đọc hiểu (lô đang viết dở).
 // Cấp STRICT_LEVELS (A1–A2) kiểm đủ từ vựng/độ dài/thì; cấp khác (bài cũ legacy.txt) chỉ kiểm định dạng.
@@ -15,6 +15,7 @@ const opt = (k) => {
 };
 const ONLY_LEVEL = opt("--level");
 const ONLY_ID = opt("--id");
+const ONLY_TYPE = opt("--type");
 const ERRORS_ONLY = args.includes("--errors");
 const DRAFT = args.includes("--draft");
 const VERBOSE = args.includes("--verbose");
@@ -51,6 +52,15 @@ export function runChecks({ draft = false } = {}) {
     }
     if (m.series && (!m.series.id || !Number.isInteger(m.series.order) || m.series.order < 1)) err(`series phải dạng "id thứ-tự": ${m.header.series}`);
     if (!m.sentences.length) err("không có câu nào");
+    if (m.type === "story") {
+      m.chapters.forEach((c, k) => {
+        if (!c.sentences.length) err(`chương ${k + 1} không có câu nào`);
+        if (strict && !c.title.fr) err(`chương ${k + 1}: tên chương phải dạng "## FR | VI"`);
+      });
+      if (strict && !m.summary) err("thiếu summary: (tóm tắt tiếng Việt, không lộ kết)");
+      const [cLo, cHi] = spec.story.ch;
+      if (strict && (m.chapters.length < cLo || m.chapters.length > cHi)) err(`${m.chapters.length} chương (cấp ${m.level.toUpperCase()}: ${cLo === cHi ? cLo : `${cLo}–${cHi}`})`);
+    }
 
     for (const s of m.sentences) checkSentence(s, err, warn, strict, draft);
     if (!strict) continue;
@@ -91,7 +101,7 @@ export function runChecks({ draft = false } = {}) {
     // ---- độ dài ----
     const nw = p.nWords;
     const sentAvg = nw / Math.max(1, m.sentences.length);
-    const [lo, hi] = spec.words;
+    const [lo, hi] = m.type === "story" ? spec.story.words : spec.words;
     if (nw < lo * 0.85 || nw > hi * 1.15) warn(`độ dài ${nw} từ (mốc ${lo}–${hi})`);
     if (sentAvg < spec.sent[0] || sentAvg > spec.sent[1]) warn(`câu TB ${sentAvg.toFixed(1)} từ (mốc ${spec.sent[0]}–${spec.sent[1]})`);
   }
@@ -104,9 +114,10 @@ export function runChecks({ draft = false } = {}) {
     if (titles.has(k)) R(m.id).e.push(`tiêu đề trùng với ${titles.get(k)}`);
     else titles.set(k, m.id);
   }
-  for (const lv of STRICT_LEVELS) {
-    const list = items.filter((m) => m.level === lv);
+  for (const [lv, type] of STRICT_LEVELS.flatMap((l) => [[l, "reading"], [l, "story"]])) {
+    const list = items.filter((m) => m.level === lv && m.type === type);
     if (!list.length) continue;
+    const what = type === "story" ? "truyện" : "bài";
     const cap = Math.max(2, Math.ceil(list.length * 0.12));
     for (const [label, pick] of [
       ["mở bài", (m) => m.sentences[0]?.fr],
@@ -119,15 +130,15 @@ export function runChecks({ draft = false } = {}) {
         if (!groups.has(k)) groups.set(k, []);
         groups.get(k).push(m.id);
       }
-      for (const [k, ids] of groups) if (ids.length > cap) libWarn.push(`${lv}: ${label} "${k}…" lặp ${ids.length} bài (${ids.slice(0, 4).join(", ")}…)`);
+      for (const [k, ids] of groups) if (ids.length > cap) libWarn.push(`${lv}: ${label} "${k}…" lặp ${ids.length} ${what} (${ids.slice(0, 4).join(", ")}…)`);
     }
     if (list.length >= 20) {
       const topics = new Map();
       for (const m of list) topics.set(m.topic, (topics.get(m.topic) ?? 0) + 1);
-      for (const [t, n] of topics) if (n / list.length > 0.15) libWarn.push(`${lv}: chủ đề ${t} chiếm ${n}/${list.length} (>15%)`);
-      if (list.length >= 40 && topics.size < SPEC[lv].topics) libWarn.push(`${lv}: chỉ ${topics.size} chủ đề (mốc ≥ ${SPEC[lv].topics})`);
+      for (const [t, n] of topics) if (n / list.length > 0.15) libWarn.push(`${lv}: ${what} chủ đề ${t} chiếm ${n}/${list.length} (>15%)`);
+      if (list.length >= 40 && topics.size < SPEC[lv].topics) libWarn.push(`${lv}: ${what} chỉ ${topics.size} chủ đề (mốc ≥ ${SPEC[lv].topics})`);
       const fp = list.filter(firstPerson).length;
-      if (fp / list.length > 0.3) libWarn.push(`${lv}: ngôi thứ nhất ${fp}/${list.length} (> 30%)`);
+      if (fp / list.length > 0.3) libWarn.push(`${lv}: ${what} ngôi thứ nhất ${fp}/${list.length} (> 30%)`);
     }
   }
 
@@ -221,12 +232,13 @@ if (process.argv[1] && import.meta.filename === process.argv[1]) {
   const { items, report, libErr, libWarn, quizCoverage } = runChecks({ draft: DRAFT });
   let nErr = libErr.length;
   let nWarn = libWarn.length;
-  const shown = items.filter((m) => (!ONLY_LEVEL || m.level === ONLY_LEVEL) && (!ONLY_ID || m.id === ONLY_ID));
+  const shown = items.filter((m) => (!ONLY_LEVEL || m.level === ONLY_LEVEL) && (!ONLY_ID || m.id === ONLY_ID) && (!ONLY_TYPE || m.type === ONLY_TYPE));
   for (const lv of LEVEL_KEYS) {
     const list = shown.filter((m) => m.level === lv);
     if (!list.length) continue;
-    const qc = quizCoverage[lv] ?? { r: 0, rAll: 0 };
-    console.log(`\n== ${LEVEL_LABEL[LEVEL_KEYS.indexOf(lv)]}: ${list.length} bài đọc · câu hỏi ${qc.r}/${qc.rAll}`);
+    const qc = quizCoverage[lv] ?? { r: 0, rAll: 0, ch: 0, chAll: 0 };
+    const nSt = list.filter((m) => m.type === "story").length;
+    console.log(`\n== ${LEVEL_LABEL[LEVEL_KEYS.indexOf(lv)]}: ${list.length - nSt} bài đọc (câu hỏi ${qc.r}/${qc.rAll}) · ${nSt} truyện (chương có câu hỏi ${qc.ch}/${qc.chAll})`);
     for (const m of list) {
       const r = report.get(m.id) ?? { e: [], w: [] };
       nErr += r.e.length;

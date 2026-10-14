@@ -10,13 +10,17 @@
 //   Le samedi, Léa va au marché. | Thứ Bảy, Léa đi chợ.     ← mỗi dòng một câu "FR | VI"
 //   (dòng trống = sang đoạn mới)
 //
+// Truyện (content/stories/{cấp}/*.txt, id st-<cấp>-…) thêm summary: (tóm tắt VI, không lộ kết) và chia chương bằng
+// dòng "## Tên chương FR | VI" (truyện cũ B1–C2 chỉ có tên VI: "## Đến biển").
+//
 // Dòng bắt đầu "//" là ghi chú, bị bỏ qua. Bài phỏng theo nguồn mở thêm source: / license: / source-url:.
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 import { LEVEL_KEYS } from "./fr-vocab.mjs";
 
 export const TYPE_OF_PREFIX = { rd: "reading", st: "story" };
-const ID_RE = /^(?:(rd|st)-(a1|a2|b1|b2|c1|c2)-[a-z0-9]+(?:-[a-z0-9]+)*|(a1|a2|b1|b2|c1|c2)-\d{2})$/;
+// id mới: rd-/st-<cấp>-chữ-thường; id cũ giữ tiến độ "đã đọc": bài đọc a1-01, truyện b1-story-01.
+const ID_RE = /^(?:(rd|st)-(a1|a2|b1|b2|c1|c2)-[a-z0-9]+(?:-[a-z0-9]+)*|(a1|a2|b1|b2|c1|c2)-(story-)?\d{2})$/;
 
 export class FormatError extends Error {}
 
@@ -48,7 +52,7 @@ export function splitPair(s) {
 export function idInfo(id) {
   const m = ID_RE.exec(id);
   if (!m) return null;
-  return m[3] ? { type: "reading", level: m[3] } : { type: TYPE_OF_PREFIX[m[1]], level: m[2] };
+  return m[3] ? { type: m[4] ? "story" : "reading", level: m[3] } : { type: TYPE_OF_PREFIX[m[1]], level: m[2] };
 }
 
 /**
@@ -124,6 +128,30 @@ export function parseProse(body, fail) {
     sentences.push({ ...p, line });
   }
   return { paras, sentences };
+}
+
+/** Thân truyện → [{title:{fr,vi}, line, paras, sentences}] theo dòng "## FR | VI" (truyện cũ: "## VI", fr = ""). */
+export function parseChapters(body, fail) {
+  const chapters = [];
+  let buf = null;
+  const flush = () => {
+    if (buf) chapters.push({ title: buf.title, line: buf.line, ...parseProse(buf.body, fail) });
+  };
+  for (const b of body) {
+    const m = /^##\s+(.*)$/.exec(b.text);
+    if (m) {
+      flush();
+      buf = { title: splitPair(m[1]) ?? { fr: "", vi: m[1].trim() }, line: b.line, body: [] };
+      continue;
+    }
+    if (!buf) {
+      if (b.text.trim()) fail(b.line, "truyện phải mở bằng một dòng ## chương");
+      continue;
+    }
+    buf.body.push(b);
+  }
+  flush();
+  return chapters;
 }
 
 export function levelIndex(key) {
