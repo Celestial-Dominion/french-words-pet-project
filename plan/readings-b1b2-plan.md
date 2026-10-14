@@ -279,7 +279,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-canal-de-suez` · Le canal de Suez, une aventure française · history/case-study · Lesseps, 1859–1869, 160 km, ouvriers, nationalisation 1956
 - `rd-b2-tgv-partout` · Faut-il des TGV partout ? · geography/argument · régions oubliées, petites lignes, coût, train du quotidien
 
-### [ ] b2-05
+### [x] b2-05
 - `rd-b2-les-bijoux` · Les Bijoux · literature/narrative · Maupassant 1883; M. Lantin, bijoux « faux » de sa femme, vrais
 - `rd-b2-service-national` · Faut-il un service national obligatoire ? · society/argument · SNU 2019, mixité, coût, efficacité, armée
 - `rd-b2-critique-en-therapie` · Critique : En thérapie · psychology/review · Arte 2021, Toledano–Nakache, après novembre 2015, psychanalyste Dayan, huis clos
