@@ -362,7 +362,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-panoptique` · Le panoptique, de Bentham à nos écrans · philosophy/analysis · Bentham 1791, Surveiller et punir 1975, se surveiller soi-même
 - `rd-c2-politesse` · La politesse, hypocrisie ou civilisation ? · communication/opinion · Norbert Elias, Comte-Sponville « petite vertu », Kant
 
-### [ ] c2-05
+### [x] c2-05
 - `rd-c2-critique-la-societe-du-spectacle` · Critique : La Société du spectacle · culture/review · Guy Debord 1967, 221 thèses, aliénation, actualité
 - `rd-c2-main-invisible` · La main invisible, un malentendu · economics/analysis · Smith 1776, une seule occurrence, Théorie des sentiments moraux
 - `rd-c2-ferdinand-buisson` · Ferdinand Buisson, l'homme de la laïcité scolaire · education/biography · Dictionnaire de pédagogie, Ligue des droits de l'homme, Nobel 1927
