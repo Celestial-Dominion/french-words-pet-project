@@ -22,9 +22,10 @@ export const SPEC = {
   c2: { words: [450, 800], sent: [17, 28.5], over: 1, far: 1, density: 0.035, wpm: 170, topics: 18, quiz: { q: 28, opt: 20 }, story: { ch: [5, 7], words: [1100, 2000] } },
 };
 
-// Cấp đã soạn theo chuẩn mới (bắt buộc câu hỏi đọc hiểu, kiểm từ vựng/độ dài đầy đủ). Cấp khác còn bài cũ (legacy.txt)
-// chờ đợt viết lại — chỉ kiểm định dạng.
-export const STRICT_LEVELS = ["a1", "a2"];
+// Cấp đã soạn theo chuẩn mới (bắt buộc câu hỏi đọc hiểu, kiểm từ vựng/độ dài đầy đủ), theo loại bài đọc / truyện.
+// Cấp khác còn bài cũ (legacy.txt) chờ đợt viết lại — chỉ kiểm định dạng.
+export const STRICT = { reading: ["a1", "a2", "b1"], story: ["a1", "a2"] };
+export const isStrict = (level, type) => STRICT[type]?.includes(level) ?? false;
 
 // Mục tiêu "học hết là đủ lên cấp" (Mục tiêu 2.0 của app Anh) — `npm run content:coverage -- --targets`.
 // cov1/cov3/cov5 = tỉ lệ từ của cấp L gặp trong ≥ 1/3/5 bài KHÁC NHAU ở cấp ≤ L; hours = giờ đọc của cấp;
@@ -32,6 +33,8 @@ export const STRICT_LEVELS = ["a1", "a2"];
 export const TARGETS = {
   a1: { cov1: 0.98, cov3: 0.9, cov5: 0.65, hours: 8, topic: 2, genreMin: 3, genres: ["narrative", "description", "informational", "practical", "letter", "how-to", "news"] },
   a2: { cov1: 0.97, cov3: 0.8, cov5: 0.4, hours: 12, topic: 2, genreMin: 4, genres: ["narrative", "description", "informational", "practical", "letter", "how-to", "news", "review", "biography"] },
+  b1: { cov1: 0.96, cov3: 0.7, cov5: 0.35, hours: 20, topic: 3, genreMin: 5, genres: ["narrative", "explanation", "informational", "news", "opinion", "how-to", "letter", "biography", "review", "interview"] },
+  b2: { cov1: 0.9, cov3: 0.6, cov5: 0.3, hours: 20, topic: 3, genreMin: 5, genres: ["narrative", "explanation", "analysis", "argument", "news", "opinion", "review", "interview", "case-study", "biography", "letter", "comparison"] },
 };
 
 export const minutesOf = (words, level) => Math.round((words / SPEC[level].wpm) * 10) / 10;

@@ -76,7 +76,7 @@ export function checkQuizBlock(block, m) {
   const spec = SPEC[m.level].quiz;
   const n = block.questions.length;
   if (n < 3 || n > 4) e.push(`${at}: ${n} câu hỏi (cần 3–4)`);
-  if (m.type === "reading" && m.level === "a2" && n < 4) w.push(`${at}: A2 nên có 4 câu hỏi`);
+  if (m.type === "reading" && m.band >= 1 && n < 4) w.push(`${at}: ${m.level.toUpperCase()} nên có 4 câu hỏi`);
   const { own, seen } = scopeOf(m, block.ch);
   const allowed = seenOf(m, block.ch, seen);
   const unit = m.type === "story" ? `chương ${block.ch}` : "bài";
@@ -134,10 +134,10 @@ export function checkQuizBlock(block, m) {
 
 /**
  * Kiểm toàn bộ câu hỏi so với thư viện. items = model (loadLibrary), quiz = loadQuizzes().
- * requireLevels = các cấp bắt buộc có câu hỏi (mọi bài đọc + mọi chương truyện).
+ * require(level, type) = bài đọc / truyện ở cấp đó bắt buộc có câu hỏi (mọi bài đọc + mọi chương truyện).
  * Trả { perItem: Map<id,{e,w}>, libErr, libWarn, coverage: {lv: {r, rAll, ch, chAll}} }.
  */
-export function checkQuizzes(items, quiz, { requireLevels = [] } = {}) {
+export function checkQuizzes(items, quiz, { require = () => false } = {}) {
   const perItem = new Map();
   const R = (id) => {
     if (!perItem.has(id)) perItem.set(id, { e: [], w: [] });
@@ -163,7 +163,7 @@ export function checkQuizzes(items, quiz, { requireLevels = [] } = {}) {
   const coverage = {};
   for (const m of items) {
     const c = (coverage[m.level] ??= { r: 0, rAll: 0, ch: 0, chAll: 0 });
-    const need = requireLevels.includes(m.level);
+    const need = require(m.level, m.type);
     if (m.type === "reading") {
       c.rAll++;
       if (quiz.blocks.has(m.id)) c.r++;

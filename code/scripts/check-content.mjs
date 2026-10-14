@@ -2,10 +2,10 @@
 //   node scripts/check-content.mjs [--level a1] [--type reading|story] [--id rd-a1-…] [--errors] [--draft] [--verbose]
 // ✗ = LỖI (exit 1): chặn build.  ! = CẢNH BÁO: đọc và xử lý hoặc chấp nhận có lý do.
 // --draft: chưa bắt buộc câu hỏi đọc hiểu (lô đang viết dở).
-// Cấp STRICT_LEVELS (A1–A2) kiểm đủ từ vựng/độ dài/thì; cấp khác (bài cũ legacy.txt) chỉ kiểm định dạng.
+// Cấp/loại trong STRICT kiểm đủ từ vựng/độ dài/thì; cấp khác (bài cũ legacy.txt) chỉ kiểm định dạng.
 import { loadLibrary, loadQuizzes, profileOf } from "./lib/content-model.mjs";
 import { LEVEL_KEYS, LEVEL_LABEL, tenseFlags, normText, analyzeSentence } from "./lib/fr-vocab.mjs";
-import { SPEC, TOPICS, GENRES, LICENSES, STRICT_LEVELS } from "./lib/content-spec.mjs";
+import { SPEC, TOPICS, GENRES, LICENSES, STRICT, isStrict } from "./lib/content-spec.mjs";
 import { checkQuizzes } from "./lib/quiz-check.mjs";
 
 const args = process.argv.slice(2);
@@ -40,7 +40,7 @@ export function runChecks({ draft = false } = {}) {
     const err = (s) => r.e.push(s);
     const warn = (s) => r.w.push(s);
     const spec = SPEC[m.level];
-    const strict = STRICT_LEVELS.includes(m.level);
+    const strict = isStrict(m.level, m.type);
 
     if (!m.title?.fr || !m.title?.vi) err("thiếu tiêu đề FR | VI");
     if (!TOPICS.includes(m.topic)) err(`topic lạ: ${m.topic}`);
@@ -91,12 +91,15 @@ export function runChecks({ draft = false } = {}) {
     const density = p.nScored ? p.bands[m.band] / p.nScored : 0;
     if (spec.density && density < spec.density) warn(`tỉ lệ từ đúng cấp ${(density * 100).toFixed(1)}% < ${(spec.density * 100).toFixed(0)}% — bài dễ hơn cấp`);
 
-    // ---- thì/thức: A1–A2 không passé simple; subjonctif chỉ cảnh báo ở A2 ----
-    const tf = m.sentences.flatMap((s) => tenseFlags(s.fr).map((x) => ({ ...x, line: s.line })));
+    // ---- thì/thức: passé simple lỗi ở A1–A2, cảnh báo ở B1 (chỉ hợp truyện kể), B2+ tự do;
+    //      subjonctif lỗi ở A1, cảnh báo ở A2, B1+ tự do ----
+    // tên riêng đã khai trùng dạng động từ ("Maria" ~ il maria) không tính
+    const isName = (t) => /^\p{Lu}/u.test(t) && (m.names.has(`^${t.toLowerCase()}`) || m.names.has(t.toLowerCase()));
+    const tf = m.sentences.flatMap((s) => tenseFlags(s.fr).filter((x) => !isName(x.t)).map((x) => ({ ...x, line: s.line })));
     const ps = tf.filter((x) => x.kind === "passé simple");
     const sj = tf.filter((x) => x.kind === "subjonctif");
-    if (ps.length) err(`passé simple chưa hợp ${LEVEL_LABEL[m.band]}: ${ps.map((x) => `${x.t}(dòng ${x.line})`).join(" ")}`);
-    if (sj.length) (m.band === 0 ? err : warn)(`subjonctif: ${sj.map((x) => `${x.t}(dòng ${x.line})`).join(" ")}`);
+    if (ps.length && m.band <= 2) (m.band <= 1 ? err : warn)(`passé simple chưa hợp ${LEVEL_LABEL[m.band]}: ${ps.map((x) => `${x.t}(dòng ${x.line})`).join(" ")}`);
+    if (sj.length && m.band <= 1) (m.band === 0 ? err : warn)(`subjonctif: ${sj.map((x) => `${x.t}(dòng ${x.line})`).join(" ")}`);
 
     // ---- độ dài ----
     const nw = p.nWords;
@@ -114,7 +117,7 @@ export function runChecks({ draft = false } = {}) {
     if (titles.has(k)) R(m.id).e.push(`tiêu đề trùng với ${titles.get(k)}`);
     else titles.set(k, m.id);
   }
-  for (const [lv, type] of STRICT_LEVELS.flatMap((l) => [[l, "reading"], [l, "story"]])) {
+  for (const [lv, type] of Object.entries(STRICT).flatMap(([type, lvs]) => lvs.map((l) => [l, type]))) {
     const list = items.filter((m) => m.level === lv && m.type === type);
     if (!list.length) continue;
     const what = type === "story" ? "truyện" : "bài";
@@ -164,7 +167,7 @@ export function runChecks({ draft = false } = {}) {
   }
   // câu hỏi đọc hiểu
   const quiz = loadQuizzes();
-  const qc = checkQuizzes(items, quiz, { requireLevels: draft ? [] : STRICT_LEVELS });
+  const qc = checkQuizzes(items, quiz, { require: draft ? () => false : isStrict });
   for (const [id, r] of qc.perItem) {
     R(id).e.push(...r.e);
     R(id).w.push(...r.w);
