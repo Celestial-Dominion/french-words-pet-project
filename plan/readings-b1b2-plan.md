@@ -351,7 +351,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-luxe-francais` · Pourquoi le luxe français domine le monde · business/analysis · LVMH, Hermès, savoir-faire, rêve, Chine
 - `rd-b2-animaux-trop-humains` · Traitons-nous nos animaux comme des enfants ? · nature/opinion · vêtements, anniversaires, budget, besoins réels
 
-### [ ] b2-09
+### [x] b2-09
 - `rd-b2-mateo-falcone` · Mateo Falcone · literature/narrative · Mérimée 1829; Corse, Fortunato trahit pour une montre, père
 - `rd-b2-favi-usine-sans-chefs` · Favi, l'usine sans chefs · work/case-study · Hallencourt, fonderie, Jean-François Zobrist 1983, suppression des contrôles, résultats, limites
 - `rd-b2-vacances-en-france` · Pourquoi les Français partent-ils surtout en France ? · travel/analysis · majorité des séjours en France, diversité, budget, langue, résidences familiales
