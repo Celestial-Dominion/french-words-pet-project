@@ -81,7 +81,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-prix-de-l-essence` · Pourquoi l'essence coûte-t-elle si cher ? · economics/explanation · taxes ≈ moitié du prix, pétrole, dollar, distribution
 - `rd-b1-critique-covoiturage` · Critique : un mois de covoiturage · daily-life/review · appli, prix, rencontres, retards, annulations
 
-### [ ] b1-13
+### [x] b1-13
 - `rd-b1-notre-dame-rouvre` · Notre-Dame de Paris rouvre ses portes · culture/news · incendie 15 avril 2019, 5 ans de travaux, décembre 2024, artisans
 - `rd-b1-condoleances` · Écrire un message de condoléances · communication/how-to · court, sincère, souvenir, aide concrète, éviter les formules
 - `rd-b1-louis-vuitton` · Louis Vuitton, de l'atelier au luxe · business/biography · 1821 Jura, Paris à pied, malles plates, toile
