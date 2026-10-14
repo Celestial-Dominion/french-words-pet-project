@@ -70,7 +70,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-la-librairie-du-port` · La librairie du port · business/narrative · fiction: libraire de Concarneau, loyer, plateformes, club de lecture, rachat par les clients
 - `rd-c1-outre-mer` · La France des outre-mer · geography/explanation · ZEE 2e mondiale, Guyane, vie chère, éloignement
 
-### [ ] c1-06
+### [x] c1-06
 - `rd-c1-affaire-calas` · Voltaire et l'affaire Calas · philosophy/narrative · Toulouse 1761–1762, Jean Calas, Traité sur la tolérance 1763, réhabilitation 1765
 - `rd-c1-metro-de-paris` · Le métro de Paris, une ville sous la ville · cities/explanation · 1900 Bienvenüe, ligne 1, ligne 14 automatique, stations fantômes
 - `rd-c1-emojis` · Les émojis, une langue universelle ? · communication/analysis · Shigetaka Kurita 1999, malentendus, différences culturelles
