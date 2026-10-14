@@ -477,7 +477,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-le-dimanche` · Le dimanche doit-il rester un jour à part ? · daily-life/opinion · ouverture des magasins, salariés, repos commun, tourisme
 - `rd-b2-devenir-riche` · Lettre à un jeune qui veut devenir riche · economics/letter · oncle à neveu, argent outil, patience, crypto, bonheur
 
-### [ ] b2-16
+### [x] b2-16
 - `rd-b2-medecin-du-samu` · Au bout du fil, le SAMU · health/interview · régulateur, 15, tri des appels, nuits, décisions rapides
 - `rd-b2-jeux-video-art` · Les jeux vidéo sont-ils de l'art ? · culture/opinion · récit, musique, musées, industrie, préjugés
 - `rd-b2-droit-a-l-oubli` · Le droit à l'oubli sur Internet · ethics/news · arrêt européen 2014, Google, demandes de retrait, limites
