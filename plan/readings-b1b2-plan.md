@@ -1,4 +1,4 @@
-# Kế hoạch tổng bài đọc B1–B2 (lập 14/10/2026)
+# Kế hoạch tổng bài đọc B1–B2 (lập 14/10/2026 — XONG 15/10/2026: B1 300, B2 285, 4 câu hỏi/bài, kiểm 0 lỗi 0 cảnh báo)
 
 Mỗi dòng: `id` · tựa FR · chủ đề/thể loại · ý chính. Viết theo thứ tự lô; xong lô nào đánh [x].
 Đã kiểm một lượt: tựa không trùng 672 bài đọc + 132 truyện hiện có, id không trùng; chủ đề/thể loại đã cân.

@@ -39,7 +39,7 @@
 
 | Hạng mục | App Anh | App Pháp |
 |---|---|---|
-| Bài đọc | 1.377 (A1–C2) | 60 → 448 (13/10: A1 160, A2 252, B1–C2 36 cũ) |
+| Bài đọc | 1.377 (A1–C2) | 60 → 1.287 (15/10: A1 160, A2 252, B1 300, B2 285, C1 250, C2 40/145 — C1/C2 phiên khác đang làm) |
 | Truyện | 373, có chuỗi truyện dài | 16 → 132 (14/10: A1 54, A2 62, B1–C2 16 cũ) |
 | Video hội thoại | 160 | 0 |
 | Ngữ pháp | 188 bài, video giảng SVG, luyện tập, lịch ôn riêng | 11 bài chữ |
@@ -83,6 +83,7 @@ Lý do: phiên mới cho tới 5 câu điền/từ + xoay câu theo lần ôn, n
   - **14/10/2026 — truyện A1–A2 xong**: A1 54 truyện × 3 chương (486 câu hỏi), A2 62 truyện × 4 chương (744 câu hỏi), 100% chương có 3 câu hỏi + audio câu hỏi/phương án; `content/stories|quiz/{cấp}/st-NN.txt`, kiểm `check-content.mjs --type story` 0 lỗi 0 cảnh báo. Nguồn kể lại thêm: Grimm, Joseph Jacobs, Andrew Lang, Daudet, Verne, Tolstoï, Roman de Renart (Wikisource/Gutenberg) — ghi cuối truyện + Cài đặt.
 - [ ] **C8.** Truyện kể lại từ phạm vi công cộng: Wikisource FR, Project Gutenberg, Bibliothèque numérique romande, Gallica — Perrault, La Fontaine, Daudet (*Lettres de mon moulin*), Maupassant, Verne, Hugo, Comtesse de Ségur. Kể lại theo cấp, làm nhẹ bạo lực (playbook §14).
 - [ ] **C9.** Bài dữ kiện A2–B1: Vikidia (CC BY-SA 3.0); tin tức: Wikinews FR (CC BY 2.5); B2–C1: Wikipedia FR chỉ làm nguồn dữ kiện, kể lại hoàn toàn.
+  - **15/10/2026 — bài đọc B1–B2 xong**: B1 300 bài (1.200 câu hỏi), B2 285 bài (1.140 câu hỏi), soạn tay FR | VI theo kế hoạch `plan/readings-b1b2-plan.md` (lô b1-01…19, b2-01…18; 36 bài cũ viết lại giữ id), B1 10 thể loại × 30 bài, B2 12 thể loại (mỗi loại ≥23 bài), chủ đề ≤15%; `check-content.mjs` 0 lỗi 0 cảnh báo; audio câu + câu hỏi/phương án. Dữ kiện tự kể lại (không chép nguồn). Độ phủ từ ≥1 lần: B1 62,1% (mục tiêu app Anh 96%), B2 51,0% (90%) — còn thiếu, muốn tăng cần lô bài nhắm từ chưa phủ (`content-kit.mjs need`).
 - [ ] **C10.** Audio thư viện ~1,5 GB (Denise; Henri cho vai thứ hai).
 
 ## 5. Video hội thoại (sau mục 4)
