@@ -286,7 +286,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-grotte-chauvet` · La grotte Chauvet · art/narrative · 18 décembre 1994, trois spéléologues, ~36 000 ans, lions, réplique 2015
 - `rd-c1-paradoxe-du-choix` · Trop de choix tue le choix · psychology/explanation · confitures 24 vs 6 (Iyengar 2000), regret, maximisateurs
 
-### [ ] c1-24
+### [x] c1-24
 - `rd-c1-tiers-lieux` · Les tiers-lieux, ni maison ni bureau · society/explanation · Ray Oldenburg 1989, fablabs, cafés associatifs, villages, espaces de travail partagés
 - `rd-c1-edit-de-nantes` · L'édit de Nantes, une tolérance fragile · history/explanation · Henri IV 1598, protestants, places de sûreté, révocation 1685, huguenots en exil
 - `rd-c1-reconstruire-a-l-identique` · Reconstruire à l'identique ? · culture/argument · Viollet-le-Duc, charte de Venise 1964, flèche de Notre-Dame, authenticité
