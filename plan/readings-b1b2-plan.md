@@ -45,7 +45,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-le-velcro` · Le Velcro, une idée venue de la nature · innovation/explanation · Mestral 1941, chien, bardane, crochets et boucles
 - `rd-b1-descendre-le-rhone` · Descendre le Rhône en canoë · geography/narrative · amis, Lyon → mer, Camargue, orage, camping
 
-### [ ] b1-11
+### [x] b1-11
 - `rd-b1-la-laicite` · La laïcité, c'est quoi ? · society/informational · loi 1905, État neutre, liberté de croire ou non, école
 - `rd-b1-la-jalousie` · La jalousie est-elle toujours mauvaise ? · psychology/opinion · signal, peur de perdre, contrôle, en parler
 - `rd-b1-critique-je-sais-cuisiner` · Critique : Je sais cuisiner, de Ginette Mathiot · food/review · 1932, ~2 000 recettes, des millions d'exemplaires, simple
