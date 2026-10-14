@@ -495,7 +495,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-lire-un-tableau` · Comment regarder un tableau ? · art/explanation · composition, lumière, regard, symboles, contexte, prendre son temps
 - `rd-b2-critique-madame-bovary` · Critique : Madame Bovary · literature/review · Flaubert 1857, procès, Emma, ennui, style
 
-### [ ] b2-17
+### [x] b2-17
 - `rd-b2-brillat-savarin` · Brillat-Savarin, le philosophe du goût · food/biography · 1755–1826, Physiologie du goût 1825, « Dis-moi ce que tu manges »
 - `rd-b2-ingenieure-airbus` · Ingénieure chez Airbus · innovation/interview · Toulouse, essais en vol, femmes, avions moins gourmands
 - `rd-b2-lettre-du-patron` · Lettre d'un patron à ses salariés · business/letter · année difficile, pas de licenciement, efforts, partage
