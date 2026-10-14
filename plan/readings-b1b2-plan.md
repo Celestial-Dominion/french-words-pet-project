@@ -423,7 +423,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-taxer-les-plus-riches` · Faut-il taxer davantage les plus riches ? · economics/argument · taxe Zucman 2025, 2 % au-delà de 100 M€, exil, justice
 - `rd-b2-directrice-ecole-village` · Directrice d'une école de trois classes · education/interview · classes à plusieurs niveaux, mairie, fermeture menacée, parents
 
-### [ ] b2-13
+### [x] b2-13
 - `rd-b2-logiciel-libre` · Logiciel libre ou propriétaire ? · technology/comparison · Linux, LibreOffice, Gendarmerie, coût, support, liberté
 - `rd-b2-chercheurs-et-medias` · Les chercheurs doivent-ils parler aux médias ? · science/opinion · Covid, débats télé, simplification, confiance
 - `rd-b2-chute-de-rome` · Pourquoi l'Empire romain est-il tombé ? · history/analysis · 476, causes multiples, climat, épidémies, division
