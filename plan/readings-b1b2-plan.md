@@ -9,7 +9,7 @@ Tác phẩm công cộng (literature/narrative): ghi `source:` + `license: publi
 Thể loại: letter 20, review 19, how-to 18, news 17, biography 17, opinion 17, interview 17, narrative 16, informational 16, explanation 15
 Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7, nature 7, geography 7, economics 7, communication 7, history 7, work 6, travel 6, health 6, education 6, technology 6, media 6, family 6, environment 6, cities 6, art 6, philosophy 6, innovation 6, ethics 6, business 6, literature 6
 
-### [ ] b1-09
+### [x] b1-09
 - `rd-b1-cafe-suspendu` · Un café payé pour un inconnu · society/news · tradition de Naples, café payé d'avance, ardoise, sans-abri
 - `rd-b1-deja-vu` · Pourquoi a-t-on des impressions de déjà-vu ? · psychology/explanation · 2 personnes sur 3, fatigue, cerveau, plus fréquent chez les jeunes
 - `rd-b1-repas-belle-famille` · Mon premier repas dans ma belle-famille · food/narrative · Vietnamien chez des Français, 4 h à table, fromages, malentendus
