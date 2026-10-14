@@ -106,7 +106,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-glottophobie` · L'accent, une discrimination comme les autres ? · communication/argument · glottophobie, accent du Sud, médias, embauche
 - `rd-c1-apprentissage` · L'apprentissage, voie de garage ou voie royale ? · education/analysis · réforme 2018, aides, Allemagne, diplômes du supérieur
 
-### [ ] c1-09
+### [x] c1-09
 - `rd-c1-vin-et-climat` · Le vin face au réchauffement · food/cause-effect · vendanges avancées, degré d'alcool, cépages, vignobles anglais
 - `rd-c1-surtourisme` · Le surtourisme, quand les visiteurs chassent les habitants · travel/analysis · Venise taxe 2024, calanques sur réservation, Mont-Saint-Michel
 - `rd-c1-lanceurs-d-alerte` · Les lanceurs d'alerte · ethics/explanation · loi Sapin II 2016, loi Waserman 2022, représailles, dilemme loyauté/intérêt général
