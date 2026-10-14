@@ -315,7 +315,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-critique-le-1` · Critique : Le 1, un journal, une seule question · media/review · hebdo 2014 Fottorino, grande feuille dépliée, un sujet, écrivains, lenteur
 - `rd-b2-centres-villes-vides` · Pourquoi les centres-villes se vident-ils ? · cities/analysis · grandes surfaces en périphérie, Internet, loyers, Action cœur de ville 2018
 
-### [ ] b2-07
+### [x] b2-07
 - `rd-b2-trois-messes-basses` · Les Trois Messes basses · literature/narrative · Daudet; dom Balaguère, Garrigou-diable, réveillon, messes bâclées
 - `rd-b2-art-contemporain` · Pourquoi l'art contemporain dérange-t-il ? · art/analysis · banane de Cattelan 2019, idée vs savoir-faire, marché
 - `rd-b2-manger-des-insectes` · Faut-il manger des insectes ? · food/argument · protéines, eau, dégoût culturel, Asie, farine
