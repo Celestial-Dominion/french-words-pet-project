@@ -333,7 +333,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-experience-de-milgram` · Pourquoi obéit-on ? L'expérience de Milgram · ethics/analysis · 1961 Yale, 65 % jusqu'au bout, autorité, Le jeu de la mort 2010
 - `rd-b2-decroissance` · La croissance doit-elle continuer ? · economics/opinion · PIB, planète limitée, emplois, bonheur
 
-### [ ] b2-08
+### [x] b2-08
 - `rd-b2-l-enfant-espion` · L'Enfant espion · literature/narrative · Daudet, Contes du lundi; Stenne, siège de Paris 1870, trahison, père
 - `rd-b2-uniforme-a-l-ecole` · Faut-il un uniforme à l'école ? · education/argument · expérimentation 2024, égalité, coût, liberté, Royaume-Uni
 - `rd-b2-mistral-ai` · Mistral AI, l'ambition française · technology/case-study · 2023 Paris, anciens de Google et Meta, modèles ouverts, levées de fonds
