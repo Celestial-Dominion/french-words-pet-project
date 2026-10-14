@@ -513,7 +513,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-costumiere-opera` · Costumière à l'Opéra · culture/interview · ateliers, 300 h pour une robe, danseurs, sueur, réparations
 - `rd-b2-epargne-record` · Les Français n'ont jamais autant épargné · economics/news · taux ~18 %, peur, retraites, consommation faible
 
-### [ ] b2-18
+### [x] b2-18
 - `rd-b2-louis-pouzin` · Louis Pouzin, un père oublié d'Internet · technology/biography · Cyclades 1971, datagramme, abandon par l'État, reconnu tard
 - `rd-b2-nouvelle-espece` · Une nouvelle espèce de grenouille découverte en Guyane · science/news · expédition, chant particulier, ADN, menace
 - `rd-b2-madame-de-sevigne` · « La chose la plus étonnante » · history/letter · lettre de 1670 à Coulanges, mariage de Lauzun et Mademoiselle, suspense
