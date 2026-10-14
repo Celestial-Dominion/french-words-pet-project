@@ -118,7 +118,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-henri-langlois` · Henri Langlois, le sauveur de films · culture/biography · Cinémathèque française 1936, films cachés pendant la guerre, affaire Langlois 1968
 - `rd-c1-sante-mentale-etudiants` · La santé mentale des étudiants · health/analysis · confinement, précarité, chèques psy 2021, solitude, files d'attente
 
-### [ ] c1-10
+### [x] c1-10
 - `rd-c1-iter` · ITER, un soleil en bouteille · science/case-study · fusion, Cadarache, 35 pays, retards, coûts, plasma 150 millions de degrés
 - `rd-c1-bourgeois-de-calais` · Les Bourgeois de Calais de Rodin · art/description · 1347 siège, six notables, commande 1884, corde au cou, socle bas
 - `rd-c1-colere` · Faut-il exprimer sa colère ? · psychology/analysis · catharsis remise en cause, Bushman 2002, recadrage
