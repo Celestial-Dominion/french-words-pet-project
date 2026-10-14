@@ -250,7 +250,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-spinoza-joie` · Spinoza et la joie · philosophy/explanation · Éthique 1677, polisseur de verres, conatus, passions tristes, liberté
 - `rd-c1-neoruraux` · Quitter la ville pour de bon ? · society/analysis · néoruraux, confinement 2020, télétravail, prix immobilier, intégration, désillusions
 
-### [ ] c1-21
+### [x] c1-21
 - `rd-c1-calendrier-republicain` · Le calendrier républicain · history/explanation · 1793, vendémiaire…, décadi, Fabre d'Églantine, aboli 1806
 - `rd-c1-ecriture-inclusive` · La querelle du point médian · culture/argument · point médian, accord de proximité, circulaire 2017, lisibilité, langue vivante
 - `rd-c1-myopie` · L'épidémie de myopie · health/cause-effect · Asie de l'Est 80–90 % des jeunes, lumière du jour, écrans, deux heures dehors
