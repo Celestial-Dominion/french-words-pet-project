@@ -189,7 +189,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-critique-vice-versa` · Critique : Vice-versa · psychology/review · Pixar 2015, Riley 11 ans, Joie, Tristesse, rôle de la tristesse
 - `rd-b1-simone-de-beauvoir` · Simone de Beauvoir, une femme libre · philosophy/biography · 1908–1986, agrégation 1929, Sartre, Le Deuxième Sexe 1949
 
-### [ ] b1-19
+### [x] b1-19
 - `rd-b1-classe-dans-les-bois` · Le vendredi, la classe se fait dans les bois · education/news · école de village, demi-journée/semaine, concentration, parents inquiets
 - `rd-b1-lettre-a-mon-frere` · Lettre à mon frère, après notre dispute · family/letter · mots durs au repas de famille, regret, proposition de se voir
 - `rd-b1-se-soigner-en-france` · Se soigner en France quand on vient d'arriver · society/how-to · médecin traitant, carte Vitale, mutuelle, 15 et 112
