@@ -82,7 +82,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-plan-calcul` · Le Plan Calcul, le rêve d'une informatique française · innovation/case-study · 1966, CII, Unidata, abandon 1975, souveraineté
 - `rd-c1-minimalisme` · Le minimalisme, vivre avec moins · daily-life/opinion · objets, consommation, liberté, mode passagère
 
-### [ ] c1-07
+### [x] c1-07
 - `rd-c1-ecart-salarial` · L'écart de salaire entre femmes et hommes · society/analysis · temps partiel, métiers, maternité, index égalité 2019, plafond de verre
 - `rd-c1-mai-68` · Mai 68, un mois qui a changé la France ? · history/analysis · Nanterre, Sorbonne, barricades, grève générale, Grenelle, de Gaulle
 - `rd-c1-jacques-brel` · Jacques Brel, l'homme qui brûlait les planches · culture/biography · 1929–1978, Bruxelles, adieux à la scène 1966, voilier, Marquises
