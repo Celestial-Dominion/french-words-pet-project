@@ -63,7 +63,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-code-qr` · Comment marche un code QR ? · technology/explanation · 1994 Japon, usines de voitures, carrés, menus, arnaques
 - `rd-b1-compter-les-oiseaux` · Les habitants comptent les oiseaux des jardins · science/news · dernier week-end de janvier, 1 h, moineaux en baisse, science participative
 
-### [ ] b1-12
+### [x] b1-12
 - `rd-b1-chat-retombe-sur-ses-pattes` · Comment le chat retombe-t-il sur ses pattes ? · nature/explanation · oreille interne, tête puis corps, pas sans danger
 - `rd-b1-critique-canard-enchaine` · Critique : Le Canard enchaîné · media/review · depuis 1915, mercredi, pas de publicité, satire, enquêtes
 - `rd-b1-les-gaulois` · Les Gaulois, vraiment comme Astérix ? · history/informational · pas de casques ailés, artisans, routes, savon, tonneaux
