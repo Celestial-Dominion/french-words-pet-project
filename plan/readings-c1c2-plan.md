@@ -166,7 +166,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-pari-de-pascal` · Le pari de Pascal · philosophy/explanation · Pensées, gain infini, roseau pensant, objections
 - `rd-c1-retour-du-tramway` · Le retour du tramway · cities/explanation · disparu vers 1930–1960, Nantes 1985, Strasbourg 1994, rues transformées
 
-### [ ] c1-14
+### [x] c1-14
 - `rd-c1-tu-ou-vous` · Tu ou vous ? · communication/comparison · entreprises, Suède, règles implicites, tutoiement imposé
 - `rd-c1-baccalaureat` · Le baccalauréat, deux siècles d'histoire · education/explanation · 1808 Napoléon, oral, 1968, réforme 2021, grand oral
 - `rd-c1-baguette-unesco` · La baguette, patrimoine de l'humanité · food/explanation · UNESCO 2022, décret pain 1993, boulangeries rurales qui ferment
