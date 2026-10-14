@@ -135,7 +135,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-critique-arts-et-metiers` · Critique : le musée des Arts et Métiers · innovation/review · pendule de Foucault, avion d'Ader, pascaline, présentation vieillie
 - `rd-b1-lettre-de-noumea` · Lettre de Nouméa · geography/letter · lagon UNESCO 2008, Kanaks, case, à 17 000 km
 
-### [ ] b1-16
+### [x] b1-16
 - `rd-b1-plus-de-bio-a-la-cantine` · Plus de bio à la cantine · food/news · loi EGalim 2018, 50 % qualité dont 20 % bio, menu végétarien
 - `rd-b1-critique-hors-normes` · Critique : Hors normes · ethics/review · 2019, Toledano–Nakache, Cassel, Kateb, autisme, associations
 - `rd-b1-lettre-a-ma-banque` · Lettre à ma banque : des frais injustes · economics/letter · frais pour 2 jours de découvert, remboursement, changer de banque
