@@ -297,7 +297,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-sac-papier-plastique` · Sac en papier ou sac en plastique ? · environment/comparison · analyse cycle de vie, eau, arbres, réutilisation, coton pire
 - `rd-b2-loi-anti-fessee` · Faut-il interdire la fessée ? · family/argument · loi 2019, violences éducatives ordinaires, Suède 1979, tradition
 
-### [ ] b2-06
+### [x] b2-06
 - `rd-b2-elixir-du-pere-gaucher` · L'Élixir du révérend père Gaucher · literature/narrative · Daudet; moine, liqueur sauve le couvent, goûte trop
 - `rd-b2-toujours-presses` · Pourquoi sommes-nous toujours pressés ? · daily-life/analysis · accélération (Rosa), téléphone, choix multiples, lenteur
 - `rd-b2-taxer-le-sucre` · Faut-il taxer le sucre ? · health/argument · taxe soda 2012/2018, recettes modifiées, liberté, pauvres
