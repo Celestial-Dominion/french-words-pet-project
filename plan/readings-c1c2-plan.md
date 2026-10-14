@@ -226,7 +226,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-communication-non-violente` · La communication non violente · communication/explanation · Marshall Rosenberg, observation, sentiment, besoin, demande
 - `rd-c1-redoublement` · Faut-il faire redoubler ? · education/argument · effets débattus, coût, France l'a réduit
 
-### [ ] c1-19
+### [x] c1-19
 - `rd-c1-cuisine-moleculaire` · La gastronomie moléculaire · food/explanation · Hervé This, Nicholas Kurti 1988, sphérification, œuf parfait
 - `rd-c1-trains-de-nuit` · Le retour des trains de nuit · travel/comparison · Paris–Nice 2021, Paris–Vienne, avion, rentabilité
 - `rd-c1-canicule-2003` · L'été 2003, quand la chaleur a révélé la solitude · society/cause-effect · près de 15 000 morts, personnes âgées isolées, plan canicule, registre en mairie, journée de solidarité
