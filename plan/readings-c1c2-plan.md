@@ -274,7 +274,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-nouvelle-vague` · La Nouvelle Vague · art/explanation · Cahiers du cinéma, Les Quatre Cents Coups 1959, À bout de souffle 1960, tournage dans la rue
 - `rd-c1-faux-souvenirs` · Les faux souvenirs · psychology/explanation · Elizabeth Loftus, « perdu au centre commercial », témoignages judiciaires
 
-### [ ] c1-23
+### [x] c1-23
 - `rd-c1-prix-unique-du-livre` · Le prix unique du livre · economics/explanation · loi Lang 1981, remise max 5 %, librairies indépendantes, frais de port 2023
 - `rd-c1-ski-sans-neige` · Les stations de ski sans neige · environment/analysis · canons à neige, retenues d'eau, stations fermées, quatre saisons
 - `rd-c1-presenteisme` · Le présentéisme · work/explanation · venir malade, rester tard pour être vu, coût caché, culture d'entreprise
