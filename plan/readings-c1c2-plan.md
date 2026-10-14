@@ -262,7 +262,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-teletravail` · Le télétravail, liberté ou isolement ? · work/argument · 2020, hybride, bureaux vides, frontière vie privée
 - `rd-c1-le-horla` · Le Horla · literature/narrative · Maupassant 1887, journal, être invisible, eau bue la nuit, folie (kể lại)
 
-### [ ] c1-22
+### [x] c1-22
 - `rd-c1-loi-influenceurs` · La loi sur les influenceurs · media/explanation · juin 2023, publicité signalée, chirurgie esthétique interdite, retouches
 - `rd-c1-cultures-animales` · Les animaux ont-ils une culture ? · nature/explanation · macaques de Koshima 1953, mésanges et bouteilles de lait 1921, chants de baleines, outils des chimpanzés
 - `rd-c1-gps` · Comment le GPS sait où vous êtes · technology/explanation · 24+ satellites, horloges atomiques, relativité, Galileo
