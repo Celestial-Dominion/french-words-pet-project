@@ -239,7 +239,7 @@ export default function SettingsPanel() {
             (CC BY 2.0 FR; bản dịch tiếng Việt do dự án biên soạn)
           </li>
           <li>
-            Một số bài đọc A1–A2 kể lại từ truyện của{" "}
+            Một số bài đọc và truyện A1–A2 kể lại từ truyện của{" "}
             <a href="https://www.africanstorybook.org/" className="underline" target="_blank" rel="noreferrer">
               African Storybook
             </a>{" "}
@@ -247,7 +247,12 @@ export default function SettingsPanel() {
             <a href="https://fr.wikisource.org/" className="underline" target="_blank" rel="noreferrer">
               Wikisource
             </a>{" "}
-            (La Fontaine, Ésope, Perrault, Leprince de Beaumont, Andersen – bản dịch David Soldi)
+            và{" "}
+            <a href="https://www.gutenberg.org/" className="underline" target="_blank" rel="noreferrer">
+              Project Gutenberg
+            </a>{" "}
+            (La Fontaine, Ésope, Perrault, Leprince de Beaumont, Andersen – bản dịch David Soldi, anh em Grimm, Joseph
+            Jacobs, Andrew Lang, Daudet, Jules Verne, Tolstoï, Roman de Renart)
           </li>
           <li>Nghĩa tiếng Việt, câu ví dụ còn lại, bài đọc, truyện, khóa phát âm &amp; ngữ pháp — do dự án này biên soạn</li>
           <li>Giọng đọc — Microsoft Edge neural TTS (fr-FR), sinh sẵn lúc build</li>
