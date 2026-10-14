@@ -369,7 +369,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-la-fuite-a-varennes` · La nuit de Varennes · history/narrative · juin 1791, Louis XVI déguisé, Drouet le reconnaît, retour à Paris
 - `rd-b2-centralisation` · Pourquoi tout passe-t-il par Paris ? · geography/analysis · étoile ferroviaire, État, universités, 20 % population, décentralisation
 
-### [ ] b2-10
+### [x] b2-10
 - `rd-b2-premier-vote` · Mon premier vote · society/narrative · jeune de 18 ans, débats en famille, isoloir, émotion, résultat
 - `rd-b2-effet-pygmalion` · L'effet Pygmalion · psychology/case-study · Rosenthal 1968, élèves « prometteurs » au hasard, progrès, attentes
 - `rd-b2-libre-arbitre` · Sommes-nous vraiment libres ? · philosophy/argument · Spinoza, neurosciences (Libet), responsabilité
