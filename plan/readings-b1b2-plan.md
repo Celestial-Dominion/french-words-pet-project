@@ -405,7 +405,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-algorithmes` · Les algorithmes choisissent-ils nos opinions ? · media/opinion · bulles de filtre, colère, choix actif
 - `rd-b2-trottinettes` · Faut-il bannir les trottinettes en libre-service ? · cities/argument · Paris vote avril 2023 (89 % contre), accidents, trottoirs, alternatives
 
-### [ ] b2-12
+### [x] b2-12
 - `rd-b2-preter-les-chefs-d-oeuvre` · Faut-il prêter les chefs-d'œuvre ? · art/argument · tapisserie de Bayeux prêtée au British Museum, fragilité, diplomatie
 - `rd-b2-manger-vite` · Pourquoi mangeons-nous de plus en plus vite ? · food/analysis · repas français ~2 h/jour, sandwich, écran, digestion, satiété 20 min
 - `rd-b2-tgv-et-shinkansen` · Le TGV et le Shinkansen · innovation/comparison · 1964 vs 1981, record 574,8 km/h 2007, ponctualité
