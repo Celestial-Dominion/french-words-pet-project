@@ -326,7 +326,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-traduire-c-est-trahir` · Traduire, est-ce trahir ? · literature/interview · traductrice littéraire (fictive), belles infidèles, intraduisibles, voix de l'auteur, humour
 - `rd-c2-debussy` · Debussy, la musique comme une eau · art/biography · Faune 1894, La Mer 1905, gamelan 1889, harmonie libre
 
-### [ ] c2-02
+### [x] c2-02
 - `rd-c2-histoire-des-odeurs` · Le miasme et la jonquille · history/description · Alain Corbin 1982, odeurs, hygiénisme, Paris puant
 - `rd-c2-moyennisation` · Que reste-t-il des classes moyennes ? · society/analysis · Mendras « seconde Révolution française », déclassement, sablier
 - `rd-c2-deuxieme-sexe` · « On ne naît pas femme » · philosophy/analysis · Le Deuxième Sexe 1949, mise à l'Index, construction sociale
