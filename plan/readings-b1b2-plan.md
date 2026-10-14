@@ -261,7 +261,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-guide-michelin` · Le guide Michelin, de la roue à la table · business/case-study · 1900 guide gratuit, pneus, étoiles 1926, inspecteurs anonymes
 - `rd-b2-face-a-l-ours` · Face à l'ours · nature/narrative · randonneur dans les Pyrénées, ourse et oursons, peur, recul lent, réintroduction 1996
 
-### [ ] b2-04
+### [x] b2-04
 - `rd-b2-la-rempailleuse` · La Rempailleuse · literature/narrative · Maupassant 1882; amour d'une vie pour le pharmacien Chouquet, héritage
 - `rd-b2-la-grande-demission` · Pourquoi tant de gens quittent-ils leur emploi ? · work/analysis · après 2020, record de ruptures conventionnelles, sens, conditions, télétravail
 - `rd-b2-limiter-les-croisieres` · Faut-il limiter les croisières ? · travel/argument · Marseille, pollution des ports, emplois, Venise, taxe
