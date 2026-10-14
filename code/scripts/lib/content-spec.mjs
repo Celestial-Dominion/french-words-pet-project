@@ -24,7 +24,8 @@ export const SPEC = {
 
 // Cấp đã soạn theo chuẩn mới (bắt buộc câu hỏi đọc hiểu, kiểm từ vựng/độ dài đầy đủ), theo loại bài đọc / truyện.
 // Cấp khác còn bài cũ (legacy.txt) chờ đợt viết lại — chỉ kiểm định dạng.
-export const STRICT = { reading: ["a1", "a2", "b1", "b2"], story: ["a1", "a2"] };
+// c2 bật lại khi viết lại xong lô C2 đầu (bài C2 cũ chưa có câu hỏi)
+export const STRICT = { reading: ["a1", "a2", "b1", "b2", "c1"], story: ["a1", "a2"] };
 export const isStrict = (level, type) => STRICT[type]?.includes(level) ?? false;
 
 // Mục tiêu "học hết là đủ lên cấp" (Mục tiêu 2.0 của app Anh) — `npm run content:coverage -- --targets`.
@@ -35,6 +36,8 @@ export const TARGETS = {
   a2: { cov1: 0.97, cov3: 0.8, cov5: 0.4, hours: 12, topic: 2, genreMin: 4, genres: ["narrative", "description", "informational", "practical", "letter", "how-to", "news", "review", "biography"] },
   b1: { cov1: 0.96, cov3: 0.7, cov5: 0.35, hours: 20, topic: 3, genreMin: 5, genres: ["narrative", "explanation", "informational", "news", "opinion", "how-to", "letter", "biography", "review", "interview"] },
   b2: { cov1: 0.9, cov3: 0.6, cov5: 0.3, hours: 20, topic: 3, genreMin: 5, genres: ["narrative", "explanation", "analysis", "argument", "news", "opinion", "review", "interview", "case-study", "biography", "letter", "comparison"] },
+  c1: { cov1: 0.87, cov3: 0.5, cov5: 0.25, hours: 21, topic: 3, genreMin: 5, genres: ["narrative", "analysis", "argument", "explanation", "opinion", "review", "case-study", "biography", "interview", "comparison", "description"] },
+  c2: { cov1: 0.7, cov3: 0.35, cov5: 0, hours: 13, topic: 3, genreMin: 5, genres: ["narrative", "analysis", "argument", "explanation", "opinion", "review", "case-study", "biography", "interview", "comparison", "description"] },
 };
 
 export const minutesOf = (words, level) => Math.round((words / SPEC[level].wpm) * 10) / 10;
