@@ -387,7 +387,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-quebec-et-france` · Le français du Québec et celui de France · communication/comparison · accent, courriel, char, anglicismes, loi 101
 - `rd-b2-conge-paternite` · Un mois de congé pour les pères · family/case-study · juillet 2021, 25 + 3 jours, 7 jours obligatoires, effets, Suède
 
-### [ ] b2-11
+### [x] b2-11
 - `rd-b2-leboncoin` · Leboncoin, le vide-grenier géant des Français · daily-life/case-study · 2006, gratuit, annonces locales, millions de visiteurs, arnaques
 - `rd-b2-medecines-douces` · Médecine classique et médecines douces · health/comparison · preuves, déremboursement homéopathie 2021, écoute, complément
 - `rd-b2-statues-controversees` · Faut-il déboulonner les statues ? · culture/argument · Colbert et le Code noir, contexte, plaques explicatives, musées
