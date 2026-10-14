@@ -298,7 +298,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-templiers` · La chute des Templiers · history/narrative · vendredi 13 octobre 1307, Philippe le Bel, Jacques de Molay 1314, dettes, légendes
 - `rd-c1-critique-quai-branly` · Critique : le musée du quai Branly · culture/review · 2006, Jean Nouvel, mur végétal Patrick Blanc, pénombre, restitutions 2021
 
-### [ ] c1-25
+### [x] c1-25
 - `rd-c1-maladie-de-lyme` · La maladie de Lyme, piqûre discrète · health/explanation · tiques, bactérie, érythème migrant, prévention, controverse forme chronique
 - `rd-c1-sciences-participatives` · Tous chercheurs : les sciences participatives · science/explanation · Galaxy Zoo 2007, Foldit 2011, herbiers en ligne, qualité des données
 - `rd-c1-pourboire` · Faut-il en finir avec le pourboire ? · society/opinion · service compris 1987, États-Unis 15–20 %, paiement par carte, salaires
