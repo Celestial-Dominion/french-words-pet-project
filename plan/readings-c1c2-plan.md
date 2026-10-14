@@ -202,7 +202,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-voyager-lentement` · Éloge du voyage lent · travel/opinion · avion vs train, slow travel, rencontres, temps
 - `rd-c1-droit-de-mentir` · A-t-on le droit de mentir ? · ethics/analysis · Kant vs Benjamin Constant 1797, assassin à la porte
 
-### [ ] c1-17
+### [x] c1-17
 - `rd-c1-abstention-des-jeunes` · Les jeunes se désintéressent-ils de la politique ? · society/analysis · abstention, vote intermittent, pétitions, associations, défiance
 - `rd-c1-vote-des-femmes` · 1944, enfin le vote des femmes · history/narrative · ordonnance 21 avril 1944, 29 avril 1945 municipales, Sénat bloquait, Nouvelle-Zélande 1893
 - `rd-c1-manga-en-france` · La France, deuxième pays du manga · culture/analysis · Goldorak 1978, Club Dorothée, Japan Expo, pass Culture 2021
