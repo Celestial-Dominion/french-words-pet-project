@@ -142,7 +142,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-mecenat` · Le mécénat, générosité ou calcul ? · ethics/analysis · loi Aillagon 2003 (60 %), dons pour Notre-Dame, fondations
 - `rd-c1-lettre-a-ma-soeur` · Lettre à ma sœur, après dix ans de silence · family/letter · brouille, maison de famille, malentendus, réconciliation
 
-### [ ] c1-12
+### [x] c1-12
 - `rd-c1-low-tech` · Les low-tech, l'innovation sobre · innovation/explanation · Low-tech Lab Concarneau, Nomade des mers, réparabilité
 - `rd-c1-lettre-au-maire` · Lettre ouverte au maire · daily-life/letter · abattage des platanes, place du marché, concertation
 - `rd-c1-pompiers-volontaires` · Pompier volontaire, un engagement exigeant · society/interview · ~80 % des pompiers volontaires, formation, astreintes, crise des vocations (personnage fictif)
