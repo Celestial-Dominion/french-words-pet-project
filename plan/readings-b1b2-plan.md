@@ -225,7 +225,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-genetique` · Ce que notre ADN raconte · science/interview · généticienne, tests ADN grand public interdits en France, maladies, origines
 - `rd-b2-histoire-se-repete` · L'histoire se répète-t-elle ? · history/opinion · Marx, leçons, contextes différents, tentation
 
-### [ ] b2-02
+### [x] b2-02
 - `rd-b2-deux-amis` · Deux Amis · literature/narrative · Maupassant 1883; Paris assiégé, Morissot et Sauvage, pêche, Prussiens, mot de passe refusé
 - `rd-b2-critique-baron-noir` · Critique : Baron noir · society/review · série Canal+ 2016–2020, Kad Merad, coulisses politiques, réalisme
 - `rd-b2-theories-du-complot` · Pourquoi les théories du complot séduisent-elles ? · psychology/analysis · besoin de sens, méfiance, réseaux, intelligence ne protège pas
