@@ -58,7 +58,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-volcanologue` · Volcanologue, au bord du cratère · science/interview · Piton de la Fournaise, sismographes, prévision, Katia et Maurice Krafft (personnage fictif)
 - `rd-c1-bleu-de-chartres` · Le bleu de Chartres · art/description · vitraux XIIe–XIIIe, lumière, restauration contestée
 
-### [ ] c1-05
+### [x] c1-05
 - `rd-c1-syndrome-de-l-imposteur` · Le syndrome de l'imposteur · psychology/explanation · Clance & Imes 1978, perfectionnisme, réussite attribuée à la chance
 - `rd-c1-economie-circulaire` · L'économie circulaire · economics/explanation · réparer, réemployer, indice de réparabilité 2021, loi anti-gaspillage 2020
 - `rd-c1-incendies-de-gironde` · L'été où la forêt landaise a brûlé · environment/narrative · 2022, Landiras, La Teste-de-Buch, ~30 000 ha, pins, évacuations
