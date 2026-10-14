@@ -22,7 +22,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-service-civique` · Le service civique, une année pour les autres · society/explanation · 2010, 16–25 ans, indemnité, missions, critiques emploi déguisé
 - `rd-c1-canal-du-midi` · Le canal du Midi, le pari de Riquet · history/case-study · Pierre-Paul Riquet, 1666–1681, 240 km, rigole de la Montagne Noire, UNESCO 1996
 
-### [ ] c1-02
+### [x] c1-02
 - `rd-c1-carnaval-de-dunkerque` · Le carnaval de Dunkerque · culture/description · bandes, harengs lancés du balcon de l'hôtel de ville, pêcheurs d'Islande, chahut
 - `rd-c1-sedentarite` · Rester assis, le nouveau tabac ? · health/argument · 8 h assis, OMS 150 minutes, marche, bureaux debout, exagération ?
 - `rd-c1-crispr` · CRISPR, des ciseaux pour réécrire le vivant · science/explanation · Charpentier et Doudna Nobel 2020, bactéries, éthique, bébés 2018
