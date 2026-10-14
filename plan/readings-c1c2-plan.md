@@ -338,7 +338,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-bourbaki` · Nicolas Bourbaki, le mathématicien qui n'existait pas · science/narrative · 1935 Besse-en-Chandesse, Weil, Dieudonné, Éléments, canulars
 - `rd-c2-paradoxe-de-jevons` · Le paradoxe de Jevons · environment/explanation · 1865 charbon, machines efficaces, effet rebond, LED
 
-### [ ] c2-03
+### [x] c2-03
 - `rd-c2-vivre-cent-ans` · Vivre cent ans · health/analysis · Jeanne Calment 122 ans, zones bleues contestées, limite biologique
 - `rd-c2-critique-bureau-des-legendes` · Critique : Le Bureau des légendes · media/review · Éric Rochant, 2015–2020, espions de la DGSE, réalisme, lenteur
 - `rd-c2-machine-creatrice` · Une machine peut-elle créer ? · technology/argument · Portrait d'Edmond de Belamy 2018 (Obvious), Ada Lovelace, originalité
