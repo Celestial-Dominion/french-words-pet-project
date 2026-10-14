@@ -350,7 +350,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-memoire-collective` · Halbwachs et la mémoire collective · psychology/analysis · 1925 cadres sociaux, commémorations, Buchenwald 1945
 - `rd-c2-ella-maillart` · Ella Maillart, voyageuse obstinée · travel/biography · Oasis interdites 1935, Pékin–Cachemire, Peter Fleming
 
-### [ ] c2-04
+### [x] c2-04
 - `rd-c2-travail-torture` · Le travail, une torture ? · work/explanation · tripalium contesté, Genèse, Weber, valeur travail
 - `rd-c2-brevets` · Les brevets freinent-ils l'innovation ? · innovation/argument · Watt 1769, Salk et le soleil, logiciels
 - `rd-c2-lamarck` · Lamarck, le grand oublié · nature/biography · 1809 Philosophie zoologique, girafe caricaturée, éloge de Cuvier
