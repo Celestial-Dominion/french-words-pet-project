@@ -27,7 +27,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-prendre-des-notes` · Prendre de bonnes notes en cours · education/how-to · abréviations, mots-clés, relire le soir, couleurs
 - `rd-b1-toujours-pas-d-internet` · Toujours pas d'Internet ! · technology/letter · 3 semaines sans connexion, télétravail, technicien absent, remboursement
 
-### [ ] b1-10
+### [x] b1-10
 - `rd-b1-vote-obligatoire` · Faut-il rendre le vote obligatoire ? · society/opinion · abstention, Belgique, amende, vote blanc
 - `rd-b1-se-faire-des-amis` · Se faire des amis dans une nouvelle ville · psychology/how-to · associations, régularité, dire oui, patience, ~50 h ensemble
 - `rd-b1-les-aop` · Pourquoi le roquefort ne vient que de Roquefort · food/informational · 1925 premier, caves, lait de brebis, comté, piment d'Espelette
