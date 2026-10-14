@@ -207,7 +207,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 Thể loại: narrative 24, argument 24, analysis 24, case-study 24, comparison 24, interview 24, opinion 24, news 24, biography 24, review 23, letter 23, explanation 23
 Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily-life 11, health 11, culture 11, ethics 11, economics 11, education 11, technology 11, science 11, history 11, society 11, psychology 11, media 11, cities 11, art 11, food 11, nature 11, communication 10, geography 10, philosophy 10, innovation 10, business 10
 
-### [ ] b2-01
+### [x] b2-01
 - `b2-01` · Le dernier jour à l'usine · work/narrative · ouvrière textile des Vosges, fermeture, 30 ans de souvenirs, collègues, avenir
 - `b2-02` · Sur le chemin de Stevenson · travel/narrative · GR70, 1878 Stevenson et l'ânesse Modestine, randonneuse seule, rencontres, silence
 - `b2-03` · Le malentendu · communication/narrative · collègue vietnamienne dit « oui » par politesse, projet raté, explication, amitié
