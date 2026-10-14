@@ -238,7 +238,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-test-du-marshmallow` · Le test du marshmallow revisité · psychology/analysis · Mischel Stanford années 1960–70, réplication 2018, milieu social
 - `rd-c1-dette-publique` · La dette publique, faut-il s'inquiéter ? · economics/analysis · plus de 3 000 milliards, 110 % du PIB, taux d'intérêt, Maastricht 60 %
 
-### [ ] c1-20
+### [x] c1-20
 - `rd-c1-mega-bassines` · Les « méga-bassines », l'eau de la discorde · environment/analysis · irrigation, nappes, Sainte-Soline, conflit d'usage
 - `rd-c1-de-cadre-a-boulanger` · De cadre à boulanger · work/narrative · reconversion à 40 ans, CAP, nuits, fatigue, fierté (3e personne)
 - `rd-c1-lettres-persanes` · Les Lettres persanes · literature/explanation · Montesquieu 1721, regard étranger, satire, harem
