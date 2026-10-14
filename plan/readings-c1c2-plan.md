@@ -178,7 +178,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-trente-glorieuses` · Les Trente Glorieuses · history/analysis · Fourastié 1979, 1945–1975, croissance ~5 %, exode rural, choc pétrolier 1973
 - `rd-c1-petanque` · La pétanque, de La Ciotat au monde entier · culture/narrative · 1907 Jules Lenoir, « pieds tanqués », boules, cochonnet, mondial
 
-### [ ] c1-15
+### [x] c1-15
 - `rd-c1-jeune-intermittent` · Le jeûne intermittent, mode ou médecine ? · health/analysis · 16/8, études sur l'animal, perte de poids comparable, prudence
 - `rd-c1-horloge-biologique` · L'horloge de nos cellules · science/explanation · rythme circadien, Nobel 2017, décalage horaire, travail de nuit
 - `rd-c1-critique-musee-soulages` · Critique : le musée Soulages · art/review · Rodez 2014, outrenoir, acier Corten, RCR arquitectes
