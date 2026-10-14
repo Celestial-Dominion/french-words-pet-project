@@ -214,7 +214,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-sobriete-energetique` · La sobriété, le mot qui gênait · environment/argument · hiver 2022, 19 °C, éclairage, efficacité vs sobriété
 - `rd-c1-infirmiere-de-nuit` · Infirmière de nuit · work/interview · rythme, santé, famille, silence des couloirs (personnage fictif)
 
-### [ ] c1-18
+### [x] c1-18
 - `rd-c1-george-sand` · George Sand, une femme libre · literature/biography · Aurore Dupin, Nohant, pseudonyme, pantalon, Chopin, romans champêtres
 - `rd-c1-ouest-france` · Ouest-France, le géant régional · media/case-study · premier quotidien français, Rennes, éditions locales, lecteurs âgés, numérique
 - `rd-c1-retour-du-loup` · Le retour du loup · nature/analysis · 1992 Mercantour depuis l'Italie, ~1 000 loups, éleveurs, patous, tirs
