@@ -314,7 +314,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 Thể loại: analysis 47, explanation 26, biography 17, argument 13, narrative 10, description 5, case-study 5, interview 5, comparison 5, review 5, opinion 5, cause-effect 1, letter 1
 Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economics 6, culture 6, communication 6, science 6, ethics 6, education 6, nature 5, psychology 5, travel 5, cities 5, media 5, health 5, technology 5, environment 5, food 4, family 4, geography 4, work 4, business 4, innovation 3, daily-life 2
 
-### [ ] c2-01
+### [x] c2-01
 - `c2-01` · L'heure bleue · nature/description · crépuscule, diffusion de Rayleigh, ozone, rayon vert (Jules Verne), photographes
 - `c2-02` · Les vertus de l'oubli · psychology/analysis · Nietzsche, Funes de Borges, droit à l'oubli 2014, mémoire sélective
 - `c2-03` · Nicolas Bouvier, l'usage du monde · travel/biography · Genève 1953, Fiat Topolino, Thierry Vernet, Kaboul, Ceylan, lenteur
