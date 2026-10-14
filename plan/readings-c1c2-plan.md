@@ -94,7 +94,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-abeilles-neonicotinoides` · Les abeilles et les néonicotinoïdes · environment/analysis · interdiction 2018, dérogation betteraves 2020, frelon asiatique
 - `rd-c1-burn-out` · Le burn-out, quand le travail consume · work/explanation · Freudenberger 1974, épuisement, cynisme, inefficacité, reconnaissance
 
-### [ ] c1-08
+### [x] c1-08
 - `rd-c1-boule-de-suif` · Boule de suif · literature/narrative · Maupassant 1880, diligence, Rouen occupé, hypocrisie des notables (kể lại)
 - `rd-c1-fausses-nouvelles-histoire` · Les fausses nouvelles ne datent pas d'hier · media/analysis · canards, pamphlets contre Marie-Antoinette, Guerre des mondes 1938 (panique exagérée), vitesse
 - `rd-c1-anguilles` · Le mystère des anguilles · nature/explanation · mer des Sargasses, ~6 000 km, reproduction jamais observée, Johannes Schmidt, civelles, espèce menacée
