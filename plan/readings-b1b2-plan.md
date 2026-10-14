@@ -459,7 +459,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-mayotte-chido` · Mayotte après le cyclone Chido · geography/news · décembre 2024, quartiers détruits, eau, reconstruction
 - `rd-b2-jean-jaures` · Jean Jaurès, la voix de la paix · society/biography · 1859–1914, Carmaux, L'Humanité, contre la guerre, assassiné 31 juillet 1914
 
-### [ ] b2-15
+### [x] b2-15
 - `rd-b2-obligation-d-etre-heureux` · Doit-on toujours être heureux ? · psychology/opinion · injonction, réseaux, émotions négatives utiles
 - `rd-b2-epicure-et-stoiciens` · Épicure et les stoïciens : deux chemins vers le bonheur · philosophy/comparison · plaisir simple vs vertu, Sénèque, Marc Aurèle
 - `rd-b2-correspondante-de-guerre` · Correspondante de guerre · media/interview · danger, gilet, fixeur, traumatisme, témoigner
