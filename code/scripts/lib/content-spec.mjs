@@ -24,7 +24,7 @@ export const SPEC = {
 
 // Cấp đã soạn theo chuẩn mới (bắt buộc câu hỏi đọc hiểu, kiểm từ vựng/độ dài đầy đủ), theo loại bài đọc / truyện.
 // Cấp khác còn bài cũ (legacy.txt) chờ đợt viết lại — chỉ kiểm định dạng.
-export const STRICT = { reading: ["a1", "a2", "b1"], story: ["a1", "a2"] };
+export const STRICT = { reading: ["a1", "a2", "b1", "b2"], story: ["a1", "a2"] };
 export const isStrict = (level, type) => STRICT[type]?.includes(level) ?? false;
 
 // Mục tiêu "học hết là đủ lên cấp" (Mục tiêu 2.0 của app Anh) — `npm run content:coverage -- --targets`.
