@@ -190,7 +190,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-age-d-or-du-podcast` · L'âge d'or du podcast · media/analysis · radio à la demande, récits, publicité, intimité de la voix
 - `rd-c1-chenes-de-colbert` · Les chênes de Colbert · nature/narrative · forêt de Tronçais, ordonnance 1669, marine, chênes pour Notre-Dame 2021
 
-### [ ] c1-16
+### [x] c1-16
 - `rd-c1-hypertrucages` · Les hypertrucages · technology/explanation · deepfakes, réseaux antagonistes, arnaques à la voix, détection
 - `rd-c1-marques-de-distributeur` · Les marques de distributeur · business/explanation · « produits libres » 1976, fabricants, prix, qualité
 - `rd-c1-naufrages-de-tromelin` · Les oubliés de l'île Tromelin · geography/narrative · 1761 navire L'Utile, esclaves malgaches abandonnés, 15 ans, survivants 1776
