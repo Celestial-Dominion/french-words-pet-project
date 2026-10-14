@@ -46,7 +46,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-lait-cru` · La guerre du camembert au lait cru · food/argument · camembert de Normandie AOP 2021, pasteurisé, sécurité, tradition
 - `rd-c1-orient-express` · L'Orient-Express, la légende du rail · travel/narrative · 1883 Nagelmackers, Paris–Constantinople, Agatha Christie 1934, renaissance
 
-### [ ] c1-04
+### [x] c1-04
 - `rd-c1-fin-de-vie` · Le débat sur la fin de vie · ethics/analysis · convention citoyenne 2022–2023, Belgique, Suisse, soins palliatifs
 - `rd-c1-prenoms` · Ce que les prénoms disent de nous · family/analysis · loi 1993 liberté du prénom, modes, Baptiste Coulmont, classes sociales
 - `rd-c1-biomimetisme` · Le biomimétisme · innovation/explanation · Shinkansen et martin-pêcheur, termitière Eastgate Harare, gecko
