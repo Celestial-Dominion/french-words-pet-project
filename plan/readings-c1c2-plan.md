@@ -130,7 +130,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-pieuvres` · L'intelligence venue d'ailleurs : la pieuvre · nature/explanation · neurones dans les bras, camouflage, évasion d'Inky 2016
 - `rd-c1-ia-qui-ecrit` · Comment une IA écrit-elle ? · technology/explanation · prédire le mot suivant, apprentissage sur textes, hallucinations
 
-### [ ] c1-11
+### [x] c1-11
 - `rd-c1-start-up` · La France des start-up · business/analysis · Station F 2017, licornes, French Tech, financement
 - `rd-c1-sommet-du-mont-blanc` · À qui appartient le sommet du mont Blanc ? · geography/explanation · 4 806 m variable, traité de Turin 1860, cartes divergentes, Italie
 - `rd-c1-tocqueville` · Tocqueville en Amérique · philosophy/narrative · 1831 prisons, De la démocratie en Amérique 1835, tyrannie de la majorité
