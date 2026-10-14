@@ -153,7 +153,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-cueillir-des-champignons` · Cueillir des champignons sans danger · nature/how-to · pharmacien vérifie, panier, ne pas mélanger, intoxications
 - `rd-b1-merci-pour-votre-enquete` · Merci pour votre enquête · media/letter · lectrice, article sur la rivière polluée, la mairie a réagi
 
-### [ ] b1-17
+### [x] b1-17
 - `rd-b1-pourquoi-des-departements` · Pourquoi la France a-t-elle des départements ? · history/explanation · 1790, une journée à cheval, noms de rivières, 101 aujourd'hui
 - `rd-b1-la-maison-vendue` · La maison de mon enfance est vendue · family/narrative · dernier tour, souvenirs, frères et sœurs, clé
 - `rd-b1-zero-dechet` · Vers le zéro déchet, pas à pas · environment/how-to · sacs, vrac, gourde, refuser, composter, petit à petit
