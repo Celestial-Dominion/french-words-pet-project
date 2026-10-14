@@ -154,7 +154,7 @@ Chủ đề: society 20, psychology 14, history 14, art 13, health 13, science 1
 - `rd-c1-resilience` · La résilience · psychology/explanation · Boris Cyrulnik, Emmy Werner à Kauai, tuteurs de résilience
 - `rd-c1-gratuit-produit` · « Si c'est gratuit, c'est vous le produit » · economics/analysis · publicité ciblée, données, abonnements, modèle freemium
 
-### [ ] c1-13
+### [x] c1-13
 - `rd-c1-algues-vertes` · Les algues vertes de Bretagne · environment/cause-effect · nitrates, élevage, gaz toxique, plages fermées
 - `rd-c1-trente-cinq-heures` · Les 35 heures, vingt-cinq ans après · work/analysis · lois Aubry 1998/2000, RTT, emplois créés (débat), heures supplémentaires
 - `rd-c1-petit-prince-adultes` · Le Petit Prince, un livre pour adultes ? · literature/analysis · 1943 New York, renard, apprivoiser, disparition 1944
