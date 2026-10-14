@@ -99,7 +99,7 @@ Chủ đề: society 8, psychology 8, food 8, daily-life 8, culture 8, science 7
 - `rd-b1-d-ou-vient-l-electricite` · D'où vient l'électricité de nos prises ? · environment/explanation · environ deux tiers nucléaire, barrages, éolien, solaire, réseau
 - `rd-b1-le-bar-d-en-bas` · Le bar d'en bas fait trop de bruit · cities/letter · lettre au patron, 2 h du matin, sommeil, solution amiable
 
-### [ ] b1-14
+### [x] b1-14
 - `rd-b1-critique-carmen` · Critique : Carmen à l'opéra · art/review · Bizet 1875, Séville, mise en scène, voix, airs connus
 - `rd-b1-merci-aux-pompiers` · Merci aux pompiers de Saint-Aubin · society/letter · feu de cuisine, grand-mère sauvée, reconnaissance
 - `rd-b1-peur-de-l-avion` · Elle aide les gens à vaincre la peur de l'avion · psychology/interview · stages, pilotes expliquent, respiration, simulateur
