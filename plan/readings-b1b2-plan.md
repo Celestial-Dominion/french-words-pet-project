@@ -243,7 +243,7 @@ Chủ đề: literature 15, work 11, travel 11, environment 11, family 11, daily
 - `rd-b2-corrida` · Faut-il interdire la corrida ? · ethics/argument · tradition du Sud, souffrance, proposition de loi retirée 2022, enfants
 - `rd-b2-epargner-ou-investir` · Épargner ou investir ? · economics/comparison · livret sûr, Bourse risquée, inflation, long terme
 
-### [ ] b2-03
+### [x] b2-03
 - `rd-b2-le-petit-fut` · Le Petit Fût · literature/narrative · Maupassant 1884; maître Chicot, mère Magloire, ferme en viager, eau-de-vie
 - `rd-b2-critique-entre-les-murs` · Critique : Entre les murs · education/review · film 2008 Cantet, Palme d'or, Bégaudeau, collège parisien, élèves non professionnels
 - `rd-b2-telephones-addictifs` · Pourquoi nos téléphones sont-ils si addictifs ? · technology/analysis · notifications, défilement infini, récompense variable, dopamine
