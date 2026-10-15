@@ -422,7 +422,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-conflit-des-generations` · Le conflit des générations, mythe ou réalité ? · society/argument · baby-boomers, retraites, logement, valeurs proches
 - `rd-c2-pascal-divertissement` · Pascal et le divertissement · philosophy/analysis · Pensées, « demeurer en repos dans une chambre », roi, chasse, écrans
 
-### [ ] c2-10
+### [x] c2-10
 - `rd-c2-dire-c-est-faire` · Dire, c'est faire · communication/explanation · Austin 1955, performatifs, Grice implicatures
 - `rd-c2-cafe-a-la-francaise` · Le café, une institution française · culture/description · Procope 1686, Flore, Deux Magots, garçon de café, terrasse
 - `rd-c2-systeme-de-law` · John Law et la faillite du Système · economics/narrative · 1716 Banque générale, Mississippi, rue Quincampoix, 1720, méfiance du papier-monnaie
