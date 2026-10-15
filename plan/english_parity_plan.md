@@ -84,6 +84,7 @@ Lý do: phiên mới cho tới 5 câu điền/từ + xoay câu theo lần ôn, n
 - [ ] **C8.** Truyện kể lại từ phạm vi công cộng: Wikisource FR, Project Gutenberg, Bibliothèque numérique romande, Gallica — Perrault, La Fontaine, Daudet (*Lettres de mon moulin*), Maupassant, Verne, Hugo, Comtesse de Ségur. Kể lại theo cấp, làm nhẹ bạo lực (playbook §14).
 - [ ] **C9.** Bài dữ kiện A2–B1: Vikidia (CC BY-SA 3.0); tin tức: Wikinews FR (CC BY 2.5); B2–C1: Wikipedia FR chỉ làm nguồn dữ kiện, kể lại hoàn toàn.
   - **15/10/2026 — bài đọc B1–B2 xong**: B1 300 bài (1.200 câu hỏi), B2 285 bài (1.140 câu hỏi), soạn tay FR | VI theo kế hoạch `plan/readings-b1b2-plan.md` (lô b1-01…19, b2-01…18; 36 bài cũ viết lại giữ id), B1 10 thể loại × 30 bài, B2 12 thể loại (mỗi loại ≥23 bài), chủ đề ≤15%; `check-content.mjs` 0 lỗi 0 cảnh báo; audio câu + câu hỏi/phương án. Dữ kiện tự kể lại (không chép nguồn). Độ phủ từ ≥1 lần: B1 62,1% (mục tiêu app Anh 96%), B2 51,0% (90%) — còn thiếu, muốn tăng cần lô bài nhắm từ chưa phủ (`content-kit.mjs need`).
+  - **15/10/2026 — bài đọc C1–C2 xong**: C1 250 bài (1.000 câu hỏi), C2 145 bài (580 câu hỏi), soạn tay FR | VI theo `plan/readings-c1c2-plan.md` (lô c1-01…25, c2-01…15, 10 bài/lô), mật độ từ đúng cấp ≥4%; `check-content.mjs` 0 lỗi; audio câu + câu hỏi/phương án. Độ phủ từ ≥1 lần: C1 42,2% (mục tiêu 87%), C2 59,3% (70%).
 - [ ] **C10.** Audio thư viện ~1,5 GB (Denise; Henri cho vai thứ hai).
 
 ## 5. Video hội thoại (sau mục 4)
