@@ -482,7 +482,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-banalite-du-mal` · La banalité du mal · philosophy/analysis · procès Eichmann 1961, Arendt, controverse, absence de pensée
 - `rd-c2-liaisons-dangereuses` · Les Liaisons dangereuses, un roman par lettres · literature/analysis · Laclos 1782, Merteuil, Valmont, lecteur complice
 
-### [ ] c2-15
+### [x] c2-15
 - `rd-c2-le-corbusier` · Le Corbusier, génie ou fossoyeur de la ville ? · art/argument · cinq points 1927, plan Voisin, Chandigarh, Ronchamp
 - `rd-c2-indochine-coloniale` · L'Indochine française, une histoire à deux voix · history/analysis · Tourane 1858, Union indochinoise 1887, plantations, Phan Châu Trinh, 1954
 - `rd-c2-individualisme` · L'individualisme, conquête ou malédiction ? · society/argument · Tocqueville, Durkheim anomie, Lipovetsky
