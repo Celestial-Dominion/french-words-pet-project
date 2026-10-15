@@ -225,10 +225,13 @@ export function weightOf(lemma) {
   return loadVocab().zipf.get(lemma) ?? 2;
 }
 
-/** Từ đích được đặt mục tiêu phủ: không tục/xúc phạm, không phải từ tự do/lược âm. */
+// Mục từ không đáng nhắm phủ mà từ điển chưa gắn register: viết tắt + từ tục/miệt thị (chữ cái đơn lọc theo độ dài).
+const NOT_TARGET = new Set(["etc", "mlle", "mme", "merde", "cul", "bordel", "déconner", "nègre", "enculé", "salopard", "niquer", "tapette", "ducon", "emmerdement"]);
+
+/** Từ đích được đặt mục tiêu phủ: không tục/xúc phạm, không phải từ tự do/lược âm, chữ cái đơn hay viết tắt. */
 export function isTarget(id) {
   const v = loadVocab();
-  if (isFree(id) || id.endsWith("'") || id.includes(" ")) return false;
+  if (isFree(id) || id.endsWith("'") || id.includes(" ") || id.length === 1 || NOT_TARGET.has(id)) return false;
   const reg = v.words.get(id)?.register ?? [];
   return !reg.some((r) => r === "vulgar" || r === "offensive");
 }
