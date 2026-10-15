@@ -374,7 +374,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-souverainete-numerique` · La souveraineté numérique · technology/analysis · cloud américain, Cloud Act 2018, RGPD, dépendance
 - `rd-c2-pouvoir-des-marques` · Le pouvoir des marques · business/analysis · No Logo 1999, marques de distributeur, luxe
 
-### [ ] c2-06
+### [x] c2-06
 - `rd-c2-grands-ensembles` · Les grands ensembles, utopie déchue ? · cities/interview · architecte-urbaniste (fictif), Sarcelles, ZUP 1958, démolitions, ANRU 2003
 - `rd-c2-heritage` · Doit-on pouvoir tout léguer ? · family/comparison · réserve héréditaire vs liberté de tester, impôt
 - `rd-c2-careme` · Antonin Carême, cuisinier des rois · food/biography · 1784–1833, pièces montées, architecture, Talleyrand, sauces mères
