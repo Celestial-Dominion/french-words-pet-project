@@ -458,7 +458,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-intrication-quantique` · L'intrication quantique · science/explanation · Einstein « action fantôme », Bell 1964, Aspect Orsay 1982, Nobel 2022
 - `rd-c2-anthropocene` · L'Anthropocène · environment/explanation · Crutzen 2000, marqueurs géologiques, refus 2024 de la commission
 
-### [ ] c2-13
+### [x] c2-13
 - `rd-c2-medicalisation` · La médicalisation de l'existence · health/analysis · Illich Némésis médicale 1975, timidité, DSM
 - `rd-c2-historien-de-la-presse` · À qui appartient l'information ? · media/interview · historien de la presse (fictif), ordonnances 1944, concentration, indépendance des rédactions
 - `rd-c2-lecture-profonde` · Désapprenons-nous à lire ? · technology/opinion · Maryanne Wolf, lecture profonde, écrémage, papier vs écran
