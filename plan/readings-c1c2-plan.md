@@ -470,7 +470,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-rhetorique` · Aristote et les ressorts de la persuasion · communication/explanation · ethos, pathos, logos, publicité
 - `rd-c2-invention-du-patrimoine` · L'invention du patrimoine · culture/analysis · abbé Grégoire « vandalisme » 1794, Mérimée 1834, Journées du patrimoine 1984
 
-### [ ] c2-14
+### [x] c2-14
 - `rd-c2-economie-comportementale` · L'économie comportementale · economics/explanation · Kahneman et Tversky, aversion à la perte, nudge Thaler 2017
 - `rd-c2-que-mesure-pisa` · Que mesure vraiment PISA ? · education/analysis · OCDE 2000, classements, biais, effet palmarès
 - `rd-c2-separer-l-oeuvre` · Peut-on séparer l'œuvre de l'artiste ? · ethics/argument · morale, biographie, réception, cas classiques
