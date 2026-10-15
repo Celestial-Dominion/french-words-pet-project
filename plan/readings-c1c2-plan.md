@@ -446,7 +446,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-un-coeur-simple` · Un cœur simple · literature/narrative · Flaubert 1877, Félicité, perroquet Loulou, Pont-l'Évêque (kể lại)
 - `rd-c2-nadar` · Nadar, le photographe d'un siècle · art/biography · ballon Le Géant, portraits, exposition 1874 dans son atelier
 
-### [ ] c2-12
+### [x] c2-12
 - `rd-c2-encyclopedie` · L'aventure de l'Encyclopédie · history/narrative · 1751–1772, Diderot, d'Alembert, censure, Malesherbes
 - `rd-c2-societe-de-defiance` · La société de défiance · society/analysis · Algan et Cahuc 2007, confiance interpersonnelle, corporatisme
 - `rd-c2-merleau-ponty` · Merleau-Ponty et le corps vécu · philosophy/explanation · Phénoménologie de la perception 1945, membre fantôme, canne de l'aveugle
