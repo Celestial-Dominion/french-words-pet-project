@@ -410,7 +410,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-fermentation` · La fermentation, cuisine du vivant · food/explanation · nước mắm, choucroute, kimchi, microbes
 - `rd-c2-expedition-du-mekong` · L'expédition du Mékong · geography/narrative · 1866–1868, Doudart de Lagrée, Francis Garnier, Angkor, Yunnan
 
-### [ ] c2-09
+### [x] c2-09
 - `rd-c2-deux-vitesses` · Les deux vitesses de la pensée · psychology/comparison · Kahneman 2011, batte et balle, intuition vs calcul
 - `rd-c2-recit-de-voyage` · Le récit de voyage, entre témoignage et fiction · travel/analysis · Marco Polo, Chateaubriand et l'Amérique, Lévi-Strauss
 - `rd-c2-bullshit-jobs` · Les « jobs à la con » · work/analysis · Graeber 2013/2018, sens, contestations empiriques
