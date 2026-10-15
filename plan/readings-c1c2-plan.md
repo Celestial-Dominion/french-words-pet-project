@@ -398,7 +398,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-hussards-noirs` · Les hussards noirs de la République · education/analysis · instituteurs, écoles normales, Péguy, leçons de morale, mythe
 - `rd-c2-utilitarisme` · Le plus grand bonheur du plus grand nombre · ethics/explanation · Bentham, Mill, calcul des plaisirs, sacrifice d'un innocent
 
-### [ ] c2-08
+### [x] c2-08
 - `rd-c2-popper` · Popper et le critère de falsifiabilité · science/explanation · cygnes noirs, psychanalyse, astrologie, science provisoire
 - `rd-c2-geo-ingenierie` · La géo-ingénierie, jouer aux apprentis sorciers ? · environment/argument · aérosols soufrés, Pinatubo 1991, choc terminal
 - `rd-c2-phages` · Les phages, le remède oublié · health/explanation · Félix d'Hérelle 1917, Tbilissi, antibiorésistance
