@@ -386,7 +386,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-darwin-wallace` · Darwin, Wallace et la course à l'évolution · nature/narrative · lettre de Ternate 1858, Linnean Society, Origine 1859
 - `rd-c2-dimanche-soir` · La mélancolie du dimanche soir · daily-life/opinion · ennui, lundi, Baudelaire spleen, rituels
 
-### [ ] c2-07
+### [x] c2-07
 - `rd-c2-rimbaud` · Rimbaud, l'homme aux semelles de vent · literature/biography · 1854–1891, poésie de 15 à 20 ans, Harar, commerce, silence
 - `rd-c2-delacroix-au-maroc` · Delacroix au Maroc · art/biography · 1832, carnets d'aquarelles, lumière, Femmes d'Alger 1834, orientalisme
 - `rd-c2-braudel` · Braudel et la longue durée · history/explanation · La Méditerranée 1949, écrite en captivité, trois temps
