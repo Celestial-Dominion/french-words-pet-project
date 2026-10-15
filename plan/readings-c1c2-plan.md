@@ -434,7 +434,7 @@ Chủ đề: philosophy 10, literature 10, society 8, history 8, art 8, economic
 - `rd-c2-post-verite` · L'ère de la post-vérité · media/analysis · mot de l'année Oxford 2016, émotion, faits, Arendt
 - `rd-c2-cybernetique` · Norbert Wiener et la cybernétique · technology/explanation · 1948, rétroaction, conférences Macy, homéostasie
 
-### [ ] c2-11
+### [x] c2-11
 - `rd-c2-rse` · La responsabilité sociale des entreprises · business/analysis · Friedman 1970, parties prenantes, écoblanchiment, devoir de vigilance 2017
 - `rd-c2-droit-a-la-ville` · Le droit à la ville · cities/explanation · Henri Lefebvre 1968, David Harvey, espace public
 - `rd-c2-invention-de-l-enfance` · L'invention de l'enfance · family/analysis · Philippe Ariès 1960, critiques, nourrices
