@@ -1,6 +1,7 @@
 // Độ phủ từ vựng của thư viện đọc theo cấp (port app Anh, docs/CONTENT_PLAYBOOK.md §4, §15).
 //   node scripts/content-coverage.mjs              bảng: số bài, chữ, giờ đọc, phủ ≥1/≥3/≥5 bài, so mục tiêu (TARGETS)
 //   node scripts/content-coverage.mjs --topics a1  phân bố chủ đề / thể loại / độ dài của cấp
+//   node scripts/content-coverage.mjs --stories    độ phủ chỉ tính truyện + số truyện so với app Anh
 // "Bài" = một bài đọc (hoặc một truyện cũ ở public/data/stories) ở cấp ≤ L — người học đi từ dưới lên.
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
@@ -8,17 +9,20 @@ import { loadLibrary, profileOf, ROOT } from "./lib/content-model.mjs";
 import { LEVEL_KEYS, LEVEL_LABEL, targetWords, profile } from "./lib/fr-vocab.mjs";
 import { SPEC, TARGETS, TOPICS } from "./lib/content-spec.mjs";
 
-/** Mọi "ngữ cảnh": bài đọc content/ + truyện cũ (JSON) → [{id, band, type, lemmas:Set, words}]. */
+/** Mọi "ngữ cảnh": bài đọc + truyện ở content/ (+ truyện JSON không có nguồn content/) → [{id, band, type R|S, lemmas:Set, words}].
+ *  public/data/stories/*.json do build-content dựng TỪ content/ → bỏ id đã có, không đếm một truyện hai lần. */
 export function contexts() {
   const { items } = loadLibrary();
   const out = items.map((m) => {
     const p = profileOf(m);
-    return { id: m.id, band: m.band, type: "R", lemmas: new Set(p.counts.keys()), words: p.nWords, m };
+    return { id: m.id, band: m.band, type: m.type === "story" ? "S" : "R", lemmas: new Set(p.counts.keys()), words: p.nWords, m };
   });
+  const have = new Set(out.map((c) => c.id));
   for (const k of LEVEL_KEYS) {
     const f = join(ROOT, "public", "data", "stories", `${k}.json`);
     if (!existsSync(f)) continue;
     for (const d of JSON.parse(readFileSync(f, "utf8"))) {
+      if (have.has(d.id)) continue;
       const p = profile(d.chapters.flatMap((c) => c.sentences.map((s) => s.fr)));
       out.push({ id: d.id, band: LEVEL_KEYS.indexOf(k), type: "S", lemmas: new Set(p.counts.keys()), words: p.nWords });
     }
@@ -71,6 +75,19 @@ if (process.argv[1] && import.meta.filename === process.argv[1]) {
     console.log(`thể loại: ${tally((m) => m.genre)}`);
     const ws = list.map((m) => profileOf(m).nWords).sort((a, b) => a - b);
     if (ws.length) console.log(`độ dài: min ${ws[0]} · trung vị ${ws[ws.length >> 1]} · max ${ws.at(-1)} · tổng ${ws.reduce((a, b) => a + b, 0)}`);
+  } else if (args[0] === "--stories") {
+    // độ phủ CHỈ tính truyện (cấp ≤ L) + số truyện so với app Anh (TARGETS.stories) — plan/story-plan.md
+    const ctx = contexts().filter((c) => c.type === "S");
+    console.log("Cấp  truyện (app Anh)  chữ     giờ    phủ ≥1   ≥3       ≥5");
+    LEVEL_KEYS.forEach((k, b) => {
+      const T = targetWords(b);
+      const cnt = ctxCount(ctx, b);
+      const own = ctx.filter((c) => c.band === b);
+      const words = own.reduce((s, c) => s + c.words, 0);
+      const f = (n) => pct(T.filter((t) => (cnt.get(t) ?? 0) >= n).length / Math.max(1, T.length)).padEnd(8);
+      const want = TARGETS[k]?.stories;
+      console.log(`${LEVEL_LABEL[b].padEnd(4)} ${`${own.length} (${want ?? "-"})${want && own.length >= want ? " ✓" : ""}`.padEnd(17)} ${String(words).padEnd(7)} ${(words / SPEC[k].wpm / 60).toFixed(1).padEnd(6)} ${f(1)} ${f(3)} ${f(5)}`);
+    });
   } else {
     const rows = coverageRows();
     console.log("Cấp  bài(R/S)  chữ     giờ (mục tiêu)   phủ ≥1 (mt)      ≥3 (mt)          ≥5 (mt)          thiếu ngữ cảnh");

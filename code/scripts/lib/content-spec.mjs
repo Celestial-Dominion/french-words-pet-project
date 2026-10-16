@@ -31,13 +31,14 @@ export const isStrict = (level, type) => STRICT[type]?.includes(level) ?? false;
 // Mục tiêu "học hết là đủ lên cấp" (Mục tiêu 2.0 của app Anh) — `npm run content:coverage -- --targets`.
 // cov1/cov3/cov5 = tỉ lệ từ của cấp L gặp trong ≥ 1/3/5 bài KHÁC NHAU ở cấp ≤ L; hours = giờ đọc của cấp;
 // topic = số bài tối thiểu cho mỗi chủ đề có mặt; genres = thể loại bắt buộc, mỗi loại ≥ genreMin bài.
+// stories = số truyện mục tiêu (ngang app Anh, plan/story-plan.md) — `content:coverage -- --stories`.
 export const TARGETS = {
-  a1: { cov1: 0.98, cov3: 0.9, cov5: 0.65, hours: 8, topic: 2, genreMin: 3, genres: ["narrative", "description", "informational", "practical", "letter", "how-to", "news"] },
-  a2: { cov1: 0.97, cov3: 0.8, cov5: 0.4, hours: 12, topic: 2, genreMin: 4, genres: ["narrative", "description", "informational", "practical", "letter", "how-to", "news", "review", "biography"] },
-  b1: { cov1: 0.96, cov3: 0.7, cov5: 0.35, hours: 20, topic: 3, genreMin: 5, genres: ["narrative", "explanation", "informational", "news", "opinion", "how-to", "letter", "biography", "review", "interview"] },
-  b2: { cov1: 0.9, cov3: 0.6, cov5: 0.3, hours: 20, topic: 3, genreMin: 5, genres: ["narrative", "explanation", "analysis", "argument", "news", "opinion", "review", "interview", "case-study", "biography", "letter", "comparison"] },
-  c1: { cov1: 0.87, cov3: 0.5, cov5: 0.25, hours: 21, topic: 3, genreMin: 5, genres: ["narrative", "analysis", "argument", "explanation", "opinion", "review", "case-study", "biography", "interview", "comparison", "description"] },
-  c2: { cov1: 0.7, cov3: 0.35, cov5: 0, hours: 13, topic: 3, genreMin: 5, genres: ["narrative", "analysis", "argument", "explanation", "opinion", "review", "case-study", "biography", "interview", "comparison", "description"] },
+  a1: { stories: 53, cov1: 0.98, cov3: 0.9, cov5: 0.65, hours: 8, topic: 2, genreMin: 3, genres: ["narrative", "description", "informational", "practical", "letter", "how-to", "news"] },
+  a2: { stories: 61, cov1: 0.97, cov3: 0.8, cov5: 0.4, hours: 12, topic: 2, genreMin: 4, genres: ["narrative", "description", "informational", "practical", "letter", "how-to", "news", "review", "biography"] },
+  b1: { stories: 79, cov1: 0.96, cov3: 0.7, cov5: 0.35, hours: 20, topic: 3, genreMin: 5, genres: ["narrative", "explanation", "informational", "news", "opinion", "how-to", "letter", "biography", "review", "interview"] },
+  b2: { stories: 68, cov1: 0.9, cov3: 0.6, cov5: 0.3, hours: 20, topic: 3, genreMin: 5, genres: ["narrative", "explanation", "analysis", "argument", "news", "opinion", "review", "interview", "case-study", "biography", "letter", "comparison"] },
+  c1: { stories: 67, cov1: 0.87, cov3: 0.5, cov5: 0.25, hours: 21, topic: 3, genreMin: 5, genres: ["narrative", "analysis", "argument", "explanation", "opinion", "review", "case-study", "biography", "interview", "comparison", "description"] },
+  c2: { stories: 49, cov1: 0.7, cov3: 0.35, cov5: 0, hours: 13, topic: 3, genreMin: 5, genres: ["narrative", "analysis", "argument", "explanation", "opinion", "review", "case-study", "biography", "interview", "comparison", "description"] },
 };
 
 export const minutesOf = (words, level) => Math.round((words / SPEC[level].wpm) * 10) / 10;
