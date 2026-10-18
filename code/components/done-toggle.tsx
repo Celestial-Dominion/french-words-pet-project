@@ -98,9 +98,11 @@ export function TickCard({
   onToggle,
   name,
   top = false,
+  prefetch,
   children,
 }: {
   href: string;
+  prefetch?: boolean;
   cardClass: string;
   kind: DoneKind;
   done: boolean;
@@ -111,7 +113,7 @@ export function TickCard({
 }) {
   return (
     <div className="group relative transition-transform duration-200 hover:-translate-y-0.5">
-      <Link href={href} className={cn(cardClass, !top && "pr-14")}>
+      <Link href={href} prefetch={prefetch} className={cn(cardClass, !top && "pr-14")}>
         {children}
       </Link>
       <DoneCheck kind={kind} done={done} onToggle={onToggle} name={name} className={cn("absolute right-2", top ? "top-2.5" : "top-1/2 -translate-y-1/2")} />

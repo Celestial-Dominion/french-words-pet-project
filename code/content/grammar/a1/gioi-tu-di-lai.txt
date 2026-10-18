@@ -1,0 +1,78 @@
+=== gioi-tu-di-lai
+sum: Với thành phố dùng à (à Paris). Với nước giống cái dùng en (en France), nước giống đực dùng au (au Japon, au Vietnam). Cùng một giới từ cho cả “ở” lẫn “đến”. Từ đâu đến thì dùng de, d', du. Đến nhà ai đó thì dùng chez.
+form: à + thành phố | à Paris · à Hanoï
+form: en + nước giống cái · au + nước giống đực | en France · au Japon
+form: de / du + nơi đi · chez + người | de Paris · du Vietnam · chez moi
+cast: hugo linh
+bg: airport
+words: à, en, au, de, chez
+
+#hook
+hugo: Tu viens d'où, Linh ? | Cậu từ đâu đến, Linh? [thinking]
+linh: Je viens du Vietnam, mais j'habite en France. | Mình đến từ Việt Nam, nhưng mình sống ở Pháp. [happy explain]
+> Một câu ngắn mà có hai giới từ khác nhau: [[du Vietnam]] và [[en France]]. Giới từ thay đổi theo loại nơi chốn.
+
+#meaning
+> Tiếng Việt chỉ cần “ở” và “đến”. Tiếng Pháp chọn giới từ theo nơi chốn là thành phố hay đất nước.
+- J'habite {à|k} Paris. | Tôi sống ở Paris. || thành phố → à
+- Je vais {à|k} Lyon demain. | Mai tôi đi Lyon. || đến thành phố → cũng là à
+> Chú ý: “ở” và “đến” dùng chung một giới từ. [[À Paris]] vừa là ở, vừa là đến.
+
+#form
+th: Nơi chốn | Ở / đến | Từ
+tb: thành phố | à Paris | de Paris
+tb: nước giống cái | en France | de France
+tb: nước giống đực | au Japon | du Japon
+> Hầu hết tên nước tận cùng bằng [[e]] là giống cái: [[la France]], [[l'Italie]], [[la Chine]]. Với chúng, dùng [[en]].
+> Các nước khác là giống đực: [[le Japon]], [[le Canada]], [[le Vietnam]]. Với chúng, dùng [[au]].
+> Nơi đi dùng [[de]]. Với nước giống đực, [[de]] gộp với [[le]] thành [[du]]: [[du Japon]].
+
+#examples
+- Mes parents habitent {au|k} Vietnam. | Bố mẹ tôi sống ở Việt Nam.
+- Elle travaille {en|k} Italie. | Cô ấy làm việc ở Ý.
+- Nous allons {au|k} Canada en juillet. | Chúng tôi đi Canada vào tháng bảy.
+- Il vient {de|k} Lyon. | Anh ấy đến từ Lyon.
+- Ce train arrive {d'Espagne|k}. | Chuyến tàu này đến từ Tây Ban Nha. || de + nguyên âm → d'
+
+#real
+> Đến nhà ai đó, hay ở chỗ ai đó, thì dùng [[chez]].
+- Je rentre {chez|k} moi. | Tôi về nhà. || chez moi = nhà tôi
+- On dîne {chez|k} Paul ce soir. | Tối nay mình ăn ở nhà Paul.
+- Je vais {chez|k} le médecin. | Tôi đi khám bác sĩ. || chỗ của bác sĩ
+> [[Chez]] luôn đi với người, không đi với nơi chốn.
+
+#pronunciation
+pron: en Italie | en‿Italie | ɑ̃nitali
+pron: au Japon | au Japon | o ʒapɔ̃
+pron: du Vietnam | du Vietnam | dy vjɛtnam
+> [[En]] là âm mũi. Trước nguyên âm, nó nối âm n: [[en Italie]].
+> [[Au]] đọc gọn là “ô”, và [[du]] đọc là “đuy”.
++ Il habite en Italie. | Anh ấy sống ở Ý.
+
+#mistakes
+x: Je vais à France. => Je vais en France. | Tôi đi Pháp. >> [[France]] là nước giống cái, dùng [[en]].
+x: J'habite en Japon. => J'habite au Japon. | Tôi sống ở Nhật. >> [[Japon]] là nước giống đực, dùng [[au]].
+x: Je viens de le Vietnam. => Je viens du Vietnam. | Tôi đến từ Việt Nam. >> [[De]] cộng [[le]] luôn gộp thành [[du]].
+
+#dialogue
+linh: Tu pars où cet été, Hugo ? | Hè này cậu đi đâu, Hugo? [happy]
+hugo: Je vais au Japon, à Tokyo ! | Mình đi Nhật, đến Tokyo! [happy cheer]
+linh: Super ! Moi, je rentre chez mes parents. | Tuyệt! Còn mình về nhà bố mẹ. [happy]
+hugo: Au Vietnam ? | Ở Việt Nam à? [surprised]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi sống ở Pháp. => J'habite en France. | Tôi sống ở Pháp.
+? Nói bằng tiếng Pháp: Tôi đến từ Việt Nam. => Je viens du Vietnam. | Tôi đến từ Việt Nam.
+
+#recap
+> Tóm lại: thành phố dùng [[à]], nước giống cái dùng [[en]], nước giống đực dùng [[au]]. Từ đâu đến dùng [[de]] hay [[du]]. Đến nhà ai thì dùng [[chez]].
+
+#practice
+fill: J'habite ___ Paris. | à* / en / au || Thành phố → à.
+fill: Elle travaille ___ Italie. | en* / au / à || Nước giống cái → en.
+fill: Mes parents habitent ___ Vietnam. | au* / en / à || Nước giống đực → au.
+fill: Je viens ___ Japon. | du* / de / au || de + le → du.
+type: Je rentre ___ moi. | chez || Về nhà mình: chez moi.
+fix: Je vais à France. | Je vais en France.* / Je vais au France. / Je vais à la France. || France giống cái → en.
+order: Nous / allons / au / Canada. | Chúng tôi đi Canada.
+listen: Il habite en Italie. | Il habite en Italie.* / Il habite au Japon. / Il habite à Paris. || en‿Italie = ɑ̃nitali.

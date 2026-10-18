@@ -1,0 +1,76 @@
+=== cau-hoi
+sum: Câu hỏi có / không có ba cách: lên giọng ở cuối câu (Tu viens ?), thêm est-ce que ở đầu (Est-ce que tu viens ?), hoặc đảo động từ lên trước (Viens-tu ?). Hai cách đầu dùng hằng ngày. Trả lời câu hỏi phủ định bằng si thay cho oui.
+form: câu thường + lên giọng | Tu viens ?
+form: Est-ce que + câu thường | Est-ce que tu viens ?
+form: oui · non · si (trả lời câu phủ định) | Tu ne viens pas ? — Si !
+cast: lea karim
+bg: street
+words: oui, non, si
+
+#hook
+karim: Tu viens au cinéma ? | Cậu đi xem phim không? [happy]
+lea: Oui, je viens ! | Có, mình đi! [happy cheer]
+> Câu hỏi này giống hệt câu thường [[tu viens]]. Chỉ khác là giọng lên cao ở cuối câu.
+
+#meaning
+> Cách dễ nhất để hỏi: giữ nguyên câu, chỉ lên giọng ở cuối.
+vs: Tu parles français. | Cậu nói tiếng Pháp. || giọng đi xuống
+vs: Tu parles français ? | Cậu nói tiếng Pháp à? || giọng đi lên
+> Khi viết, chỉ cần thêm dấu hỏi. Nhớ là tiếng Pháp có một dấu cách trước dấu hỏi.
+
+#form
+th: Cách | Ví dụ | Dùng khi
+tb: lên giọng | Tu viens ? | nói chuyện hằng ngày
+tb: est-ce que | Est-ce que tu viens ? | nói và viết, rõ ràng
+tb: đảo ngữ | Viens-tu ? | viết, rất lịch sự
+> Cách thứ hai: thêm [[est-ce que]] ở đầu câu. Phần còn lại giữ nguyên. Trước nguyên âm, nó thành [[est-ce qu']].
+> Cách thứ ba là đảo động từ lên trước, nối bằng gạch ngang. Cách này trang trọng, bạn chỉ cần nhận ra khi đọc.
+
+#examples
+- {Est-ce que|q} vous habitez ici ? | Ông sống ở đây à?
+- {Est-ce qu'il|q} aime le sport ? | Anh ấy có thích thể thao không?
+- Elle a un chien ? | Cô ấy có chó à?
+- {Est-ce que|q} tu as faim ? | Cậu có đói không?
+- {Parlez-vous|v} français ? | Ông có nói tiếng Pháp không? || đảo ngữ, trang trọng
+
+#real
+> Trả lời rất đơn giản: [[oui]] là có, [[non]] là không.
+> Nhưng nếu câu hỏi là phủ định, mà bạn muốn nói “có”, thì phải dùng [[si]].
+- Tu n'as pas faim ? — {Si|k}, j'ai faim ! | Cậu không đói à? — Có chứ, mình đói! || câu hỏi phủ định → si
+- Tu n'as pas faim ? — {Non|k}, je n'ai pas faim. | Cậu không đói à? — Ừ, mình không đói. || đồng ý với phủ định → non
+> Người Việt hay bối rối ở đây. Hãy nhớ: [[si]] luôn nghĩa là “có, ngược với điều bạn vừa hỏi”.
+
+#pronunciation
+pron: est-ce que | est-ce que | ɛskə
+pron: est-ce qu'il | est-ce qu'il | ɛskil
+pron: est-ce qu'elle | est-ce qu'elle | ɛskɛl
+> [[Est-ce que]] đọc gọn thành ba âm “ét-xơ-cơ”. Trước [[il]], [[elle]], nó thành [[est-ce qu'il]], [[est-ce qu'elle]].
++ Est-ce qu'elle vient ce soir ? | Tối nay cô ấy có đến không?
+
+#mistakes
+x: Est-ce tu parles français ? => Est-ce que tu parles français ? | Cậu có nói tiếng Pháp không? >> Phải có đủ ba chữ [[est-ce que]].
+x: Est-ce que il vient ? => Est-ce qu'il vient ? | Anh ấy có đến không? >> Trước nguyên âm, [[que]] thành [[qu']].
+x: Tu ne viens pas ? — Oui, je viens. => Tu ne viens pas ? — Si, je viens. | Cậu không đến à? — Có, mình đến. >> Trả lời “có” cho câu hỏi phủ định thì dùng [[si]].
+
+#dialogue
+lea: Est-ce que tu as un frère ? | Cậu có anh em trai không? [thinking]
+karim: Oui, j'ai deux frères. | Có, mình có hai anh trai. [happy]
+lea: Tu n'as pas de sœur ? | Cậu không có chị em gái à? [surprised]
+karim: Si, j'ai une petite sœur ! | Có chứ, mình có một em gái! [happy explain]
+
+#recall
+? Nói bằng tiếng Pháp, dùng cách thứ hai: Cậu có đói không? => Est-ce que tu as faim ? | Cậu có đói không?
+? Bạn bị hỏi: cậu không thích trà à? Bạn thích. Trả lời thế nào? => Si, j'aime le thé. | Có chứ, tôi thích trà.
+
+#recap
+> Tóm lại: hỏi bằng cách lên giọng, hoặc thêm [[est-ce que]] ở đầu câu. Trả lời [[oui]] hoặc [[non]]. Câu hỏi phủ định mà muốn nói có thì dùng [[si]].
+
+#practice
+fill: ___ tu as faim ? | Est-ce que* / Est-ce / Que || Đủ ba chữ: est-ce que.
+fill: Est-ce ___ il aime le sport ? | qu'* / que / qui || Trước nguyên âm: qu'.
+choice: Tu n'aimes pas le café ? Bạn thích cà phê. Trả lời thế nào? | Si, j'aime le café.* / Oui, j'aime le café. / Non, j'aime le café. || Câu hỏi phủ định, trả lời có → si.
+transform: Viết câu hỏi với est-ce que: | Vous habitez ici. >> Est-ce que vous habitez ici ?* / Est-ce vous habitez ici ? / Est-ce que habitez-vous ici ? || est-ce que + câu thường.
+fix: Est-ce que il vient ? | Est-ce qu'il vient ?* / Est-ce qu'il viens ? / Est-ce il vient ? || que + nguyên âm → qu'.
+natural: Tu ne viens pas ? — Si, je viens.* / Tu ne viens pas ? — Oui, je viens. || Trả lời có cho câu phủ định: si.
+order: Est-ce / que / tu / as / faim ? | Cậu có đói không?
+listen: Est-ce qu'elle vient ce soir ? | Est-ce qu'elle vient ce soir ?* / Est-ce qu'il vient ce soir ? / Elle vient ce soir. || ɛskɛl = est-ce qu'elle.

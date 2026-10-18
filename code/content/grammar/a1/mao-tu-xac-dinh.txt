@@ -1,0 +1,76 @@
+=== mao-tu-xac-dinh
+sum: Le, la, l', les là mạo từ xác định, giống chữ “cái … đó” trong tiếng Việt: dùng khi cả hai người đều biết vật nào. Le cho giống đực, la cho giống cái, l' trước nguyên âm hoặc h câm, les cho số nhiều.
+form: le + giống đực · la + giống cái | le livre · la table
+form: l' + nguyên âm / h câm | l'école · l'hôtel
+form: les + số nhiều | les amis
+cast: lea hugo
+bg: classroom
+words: le, la, les, école, hôtel
+
+#hook
+lea: Où est le livre de français ? | Quyển sách tiếng Pháp đâu rồi? [thinking]
+hugo: Il est sur la table. | Nó ở trên bàn. [point]
+> Ở đây Léa không hỏi “một quyển sách” nào đó, mà hỏi đúng quyển cả hai đều biết. Khi ấy tiếng Pháp dùng [[le]] hay [[la]].
+
+#meaning
+> [[Un]] là “một cái nào đó”. [[Le]] là “cái đó”, cái mà người nghe biết là cái nào.
+vs: J'ai un livre. | Tôi có một quyển sách. || một quyển nào đó
+vs: Le livre est rouge. | Quyển sách đó màu đỏ. || quyển ta đang nói
+> Câu thứ hai nói về một quyển sách cụ thể, nên dùng [[le]].
+
+#form
+th: Trường hợp | Số ít | Số nhiều
+tb: giống đực | le livre | les livres
+tb: giống cái | la table | les tables
+tb: trước nguyên âm, h câm | l'école · l'hôtel | les écoles
+> [[Le]] đi với giống đực, [[la]] đi với giống cái.
+> Trước nguyên âm hoặc chữ h câm, cả hai đều thành [[l']]: [[l'école]], [[l'hôtel]].
+> Số nhiều thì chỉ có một từ cho cả hai giống: [[les]].
+
+#examples
+- {Le|k} chat est dans {la|k} cuisine. | Con mèo ở trong bếp.
+- {L'école|k} est à côté de {la|k} gare. | Trường học ở cạnh nhà ga.
+- {Les|k} enfants sont dans {le|k} jardin. | Bọn trẻ ở trong vườn.
+- {La|k} porte est ouverte. | Cửa đang mở.
+
+#real
+> Tiếng Pháp cũng dùng [[le]], [[la]] cho những thứ duy nhất ai cũng biết.
+- {le|k} soleil · {la|k} mer · {la|k} France | mặt trời · biển · nước Pháp || thứ duy nhất, tên nước
+- Je vais à {l'école|k}. | Tôi đi học. || nơi quen thuộc
+> Tiếng Việt nói “nước Pháp” không cần “cái”, nhưng tiếng Pháp phải có mạo từ: [[la France]].
+
+#pronunciation
+pron: le livre | le livre | lə livʁ
+pron: les livres | les livres | le livʁ
+pron: les amis | les‿amis | lezami
+> Khi nói, chữ s của [[livres]] không đọc. Người nghe phân biệt một hay nhiều chỉ nhờ mạo từ: [[le]] đọc là “lơ”, [[les]] đọc là “lê”.
+> Trước nguyên âm, [[les]] nối âm z: [[les amis]].
++ Les amis de Léa sont ici. | Các bạn của Léa ở đây.
+
+#mistakes
+x: La école est grande. => L'école est grande. | Trường học rộng. >> Trước nguyên âm, [[la]] phải thành [[l']].
+x: Le voiture de Paul est rouge. => La voiture de Paul est rouge. | Xe của Paul màu đỏ. >> [[Voiture]] là giống cái, nên dùng [[la]].
+x: J'habite en France. Le France est belle. => J'habite en France. La France est belle. | Tôi sống ở Pháp. Nước Pháp đẹp. >> [[France]] là giống cái: [[la France]].
+
+#dialogue
+lea: Hugo, où sont les clés ? | Hugo, chìa khóa đâu rồi? [worried]
+hugo: Elles sont sur la table. | Chúng ở trên bàn. [point]
+lea: Et le téléphone ? | Còn điện thoại? [thinking]
+hugo: Il est dans le sac. | Nó ở trong túi. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Cửa đang mở. => La porte est ouverte. | Cửa đang mở.
+? Nói bằng tiếng Pháp: Bọn trẻ ở trong vườn. => Les enfants sont dans le jardin. | Bọn trẻ ở trong vườn.
+
+#recap
+> Tóm lại: [[le]] cho giống đực, [[la]] cho giống cái, [[l']] trước nguyên âm, [[les]] cho số nhiều. Dùng khi người nghe biết đang nói về cái nào.
+
+#practice
+fill: ___ école est grande. | L'* / La / Le || nguyên âm → l'.
+fill: ___ enfants sont dans le jardin. | Les* / Le / La || số nhiều → les.
+fill: ___ porte est ouverte. | La* / Le / L' || porte là giống cái.
+type: Où est ___ hôtel ? | l' || h câm → l'hôtel.
+fix: Le voiture est rouge. | La voiture est rouge.* / L'voiture est rouge. / Les voiture est rouge. || voiture là giống cái.
+choice: “Quyển sách đó màu đỏ” nói thế nào? | Le livre est rouge.* / Un livre est rouge. / Livre est rouge. || Quyển cụ thể → le.
+order: Le / chat / est / dans / la / cuisine. | Con mèo ở trong bếp.
+listen: Les amis de Léa sont ici. | Les amis de Léa sont ici.* / L'ami de Léa est ici. / Des amis de Léa sont ici. || les nối âm z: lezami.

@@ -11,6 +11,7 @@ import {
 } from "./srs-pure";
 import { dailyQuests, questProgress, questKey, pruneQuestKeys, type QuestProgress } from "./gamify";
 import { mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify, mergeCourseEntries } from "./sync-merge";
+import { mergeGrammarCodes } from "./grammar";
 
 // Re-export để phần còn lại của app vẫn import từ lib/db như trước.
 export { todayStr, computeStreak };
@@ -599,7 +600,7 @@ export interface BackupData {
   notes?: NoteRow[];
   revlog?: RevlogRow[]; // nhật ký lượt chấm (nền tối ưu FSRS) — đổi máy không mất
   phonics?: string[]; // bài phát âm đã học (localStorage)
-  grammar?: string[]; // bài ngữ pháp đã học (localStorage)
+  grammar?: string[]; // tiến độ bài ngữ pháp — mỗi bài một chuỗi mã hoá (encodeGrammarRow, localStorage)
 }
 
 const PHONICS_KEY = "fr.phonicsDone";
@@ -687,13 +688,18 @@ export async function importData(
     if (Array.isArray(data.config)) await db.config.bulkPut(data.config);
   });
   try {
-    const mergeLocal = (k: string, ids: string[]) => {
-      if (mode === "replace") return localStorage.setItem(k, JSON.stringify(ids));
+    const mergeLocal = (k: string, ids: string[], merge: (a: string[], b: string[]) => string[]) => {
+      const strs = ids.filter((x) => typeof x === "string");
+      if (mode === "replace") return localStorage.setItem(k, JSON.stringify(merge([], strs)));
       const cur = JSON.parse(localStorage.getItem(k) ?? "[]") as string[];
-      localStorage.setItem(k, JSON.stringify(mergeCourseEntries(cur, ids))); // tích / bỏ tích: hành động sau cùng thắng
+      localStorage.setItem(k, JSON.stringify(merge(cur, strs))); // tích / bỏ tích: hành động sau cùng thắng
     };
-    if (Array.isArray(data.phonics)) mergeLocal(PHONICS_KEY, data.phonics);
-    if (Array.isArray(data.grammar)) mergeLocal(GRAMMAR_KEY, data.grammar);
+    if (Array.isArray(data.phonics)) mergeLocal(PHONICS_KEY, data.phonics, mergeCourseEntries);
+    // ngữ pháp: dòng mã hoá (điểm, lịch ôn) — lịch theo lần luyện gần hơn, điểm cao nhất lấy max
+    if (Array.isArray(data.grammar)) {
+      mergeLocal(GRAMMAR_KEY, data.grammar, mergeGrammarCodes);
+      window.dispatchEvent(new Event("fr:grammar"));
+    }
   } catch {
     /* bỏ qua */
   }

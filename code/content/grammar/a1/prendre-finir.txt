@@ -1,0 +1,76 @@
+=== prendre-finir
+sum: Ba mẫu chia hay gặp ngoài -er: prendre (lấy, đi xe, dùng món), finir (xong) và partir (rời đi). Prendre đổi gốc ở số nhiều (ils prennent). Finir thêm -iss- ở số nhiều (nous finissons). Partir bỏ phụ âm ở số ít (je pars) và giữ lại ở số nhiều (nous partons).
+form: je prends · il prend · nous prenons · ils prennent | prendre (cả apprendre, comprendre)
+form: je finis · il finit · nous finissons · ils finissent | finir (cả choisir)
+form: je pars · il part · nous partons · ils partent | partir (cả sortir, dormir)
+cast: linh paul
+bg: train
+words: prendre, finir, partir, comprendre, choisir, dormir
+
+#hook
+paul: Tu prends le train de huit heures ? | Cậu đi chuyến tàu tám giờ à? [thinking]
+linh: Oui, je pars tôt et je finis tôt ! | Ừ, mình đi sớm và xong việc sớm! [happy]
+> Ba động từ trong hai câu này, [[prends]], [[pars]] và [[finis]], không theo luật [[-er]]. Mỗi cái có một kiểu chia riêng.
+
+#meaning
+> [[Prendre]] nghĩa gốc là lấy. Nhưng nó dùng rất rộng: đi xe, ăn uống, mang theo.
+- Je {prends|k} le bus. | Tôi đi xe buýt. || đi phương tiện
+- Tu {prends|k} un café ? | Cậu uống cà phê không? || dùng món
+- Le film {finit|k} à dix heures. | Phim kết thúc lúc mười giờ.
+- Nous {partons|k} demain. | Mai chúng tôi đi.
+
+#form
+th: Chủ ngữ | prendre | finir | partir
+tb: je | prends | finis | pars
+tb: tu | prends | finis | pars
+tb: il · elle · on | prend | finit | part
+tb: nous | prenons | finissons | partons
+tb: vous | prenez | finissez | partez
+tb: ils · elles | prennent | finissent | partent
+> [[Prendre]]: số nhiều mất chữ d, và [[ils prennent]] có hai chữ n. [[Apprendre]] và [[comprendre]] chia y hệt.
+> [[Finir]]: số nhiều thêm [[iss]]: [[finissons]], [[finissent]]. [[Choisir]] chia giống vậy.
+> [[Partir]]: số ít bỏ chữ t: [[je pars]]. [[Sortir]] và [[dormir]] cũng thế: [[je sors]], [[je dors]].
+
+#examples
+- Vous {comprenez|k} le français ? | Ông hiểu tiếng Pháp không?
+- Ils {prennent|k} le train tous les jours. | Họ đi tàu hỏa mỗi ngày.
+- Je {choisis|k} le poisson. | Tôi chọn món cá.
+- Les cours {finissent|k} à midi. | Các buổi học kết thúc lúc trưa.
+- Le bébé {dort|k} dans sa chambre. | Em bé ngủ trong phòng.
+
+#pronunciation
+pron: il prend | prend | pʁɑ̃
+pron: ils prennent | prennent | pʁɛn
+pron: il finit | finit | fini
+pron: ils finissent | finissent | finis
+> Số ít và số nhiều nghe khác nhau rõ: [[il prend]] có âm mũi, [[ils prennent]] đọc rõ âm n.
+> [[Il finit]] kết thúc bằng “i”, [[ils finissent]] có thêm âm s.
++ Ils prennent le bus. | Họ đi xe buýt.
+
+#mistakes
+x: Ils prendent le bus. => Ils prennent le bus. | Họ đi xe buýt. >> Số nhiều của [[prendre]] mất chữ d: [[ils prennent]].
+x: Nous finons à six heures. => Nous finissons à six heures. | Chúng tôi xong lúc sáu giờ. >> [[Finir]] thêm [[iss]] ở số nhiều.
+x: Tu dormes bien ? => Tu dors bien ? | Cậu ngủ ngon không? >> [[Dormir]] số ít bỏ chữ m: [[je dors]], [[tu dors]].
+
+#dialogue
+paul: Tu pars à quelle heure ce soir ? | Tối nay cậu về lúc mấy giờ? [thinking]
+linh: Je finis à six heures, donc je pars à six heures dix. | Mình xong lúc sáu giờ, nên sáu giờ mười mình về. [explain]
+paul: Tu prends le bus ? | Cậu đi xe buýt à? [thinking]
+linh: Non, je prends ma voiture. | Không, mình đi xe hơi. [happy shake]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi đi xe buýt. => Je prends le bus. | Tôi đi xe buýt.
+? Nói bằng tiếng Pháp: Chúng tôi xong lúc sáu giờ. => Nous finissons à six heures. | Chúng tôi xong lúc sáu giờ.
+
+#recap
+> Tóm lại: [[prendre]] đổi gốc ở số nhiều: [[ils prennent]]. [[Finir]] thêm [[iss]]: [[nous finissons]]. [[Partir]] bỏ phụ âm ở số ít: [[je pars]]. Đi xe, ăn uống thì dùng [[prendre]].
+
+#practice
+fill: Ils ___ le train. | prennent* / prendent / prend || prendre với ils: prennent.
+fill: Nous ___ à six heures. | finissons* / finons / finissez || finir với nous: finissons.
+fill: Je ___ demain. | pars* / part / pare || partir với je: pars.
+type: Vous ___ le français ? (comprendre) | comprenez || comprendre như prendre.
+fix: Tu dormes bien ? | Tu dors bien ?* / Tu dort bien ? / Tu dormis bien ? || dormir với tu: dors.
+natural: Je prends le bus.* / Je vais le bus. || Đi phương tiện: prendre.
+order: Je / choisis / le / poisson. | Tôi chọn món cá.
+listen: Ils prennent le bus. | Ils prennent le bus.* / Il prend le bus. / Ils prenaient le bus. || prennent: âm n rõ.

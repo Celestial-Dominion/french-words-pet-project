@@ -1,0 +1,79 @@
+=== phu-dinh-khac
+sum: Ngoài ne… pas còn có ne… jamais (không bao giờ), ne… plus (không… nữa), ne… rien (không gì cả), ne… personne (không ai). Cấu trúc giống ne… pas: kẹp quanh động từ. Ở passé composé, personne đứng sau phân từ: je n'ai vu personne.
+form: ne… jamais · ne… plus | Je ne fume jamais. · Il n'habite plus ici.
+form: ne… rien · ne… personne | Je ne vois rien. · Je ne connais personne.
+form: Rien ! · Personne ! · Jamais ! (trả lời ngắn) | Qui est là ? — Personne.
+cast: hugo lea
+bg: home-evening
+words: jamais, plus, rien, personne
+
+#hook
+lea: Tu fumes encore, Hugo ? | Cậu vẫn còn hút thuốc à, Hugo? [thinking]
+hugo: Non, je ne fume plus. Et je ne vais jamais fumer ! | Không, mình không hút nữa. Và sẽ không bao giờ hút! [happy shake]
+> [[Ne… plus]] là không… nữa. [[Ne… jamais]] là không bao giờ. Chúng thay chỗ của [[pas]].
+
+#meaning
+> Thay [[pas]] bằng một từ khác là có nghĩa phủ định khác.
+th: Phủ định | Nghĩa | Ví dụ
+tb: ne… pas | không | Je ne mange pas.
+tb: ne… jamais | không bao giờ | Je ne mange jamais de viande.
+tb: ne… plus | không… nữa | Je ne mange plus de viande.
+tb: ne… rien | không gì cả | Je ne mange rien.
+tb: ne… personne | không ai | Je ne vois personne.
+> Tất cả đều kẹp quanh động từ như [[ne… pas]].
+
+#form
+f: Il + [n'] + habite + [plus] + ici
+> [[Ne]] đứng trước động từ, từ phủ định đứng sau.
+f: Je + [n'] + ai + [rien] + mangé
+> Ở [[passé composé]], [[jamais]], [[plus]], [[rien]] đứng giữa trợ động từ và phân từ, như [[pas]]. Riêng [[personne]] đứng sau phân từ: [[je n'ai vu personne]].
+
+#examples
+- Elle {ne|n} boit {jamais|n} de café. | Cô ấy không bao giờ uống cà phê.
+- Mon grand-père {ne|n} travaille {plus|n}. | Ông tôi không đi làm nữa.
+- Il {ne|n} dit {rien|n}. | Anh ấy không nói gì cả.
+- Je {ne|n} connais {personne|n} ici. | Tôi không quen ai ở đây.
+- Nous {n'avons|n} {rien|n} acheté. | Chúng tôi không mua gì cả.
+- Je {n'ai|n} vu {personne|n}. | Tôi không thấy ai cả.
+
+#real
+> [[Rien]], [[personne]] và [[jamais]] có thể đứng một mình để trả lời ngắn.
+- Qu'est-ce que tu fais ? — {Rien|n}. | Cậu đang làm gì đấy? — Chẳng làm gì.
+- Qui est là ? — {Personne|n}. | Ai đấy? — Không có ai.
+> Chúng cũng có thể làm chủ ngữ, khi đó [[ne]] vẫn đứng trước động từ: [[personne ne sait]], không ai biết.
+- {Personne|n} {ne|n} répond. | Không ai trả lời.
+
+#pronunciation
+pron: je ne fume plus | je ne fume plus | ʒənfymply
+pron: jamais | jamais | ʒamɛ
+pron: rien | rien | ʁjɛ̃
+> [[Plus]] trong [[ne… plus]] không có âm s ở cuối.
++ Il n'habite plus ici. | Anh ấy không sống ở đây nữa.
+
+#mistakes
+x: Je ne fume pas jamais. => Je ne fume jamais. | Tôi không bao giờ hút thuốc. >> [[Jamais]] thay cho [[pas]], không dùng cả hai.
+x: Je n'ai personne vu. => Je n'ai vu personne. | Tôi không thấy ai. >> [[Personne]] đứng sau phân từ.
+x: Je mange rien. => Je ne mange rien. | Tôi không ăn gì. >> Khi viết, cần có [[ne]] trước động từ.
+
+#dialogue
+hugo: Tu as faim ? Il n'y a plus rien dans le frigo ! | Cậu đói không? Trong tủ lạnh chẳng còn gì cả! [worried]
+lea: Je n'ai pas faim. Je ne mange jamais le soir. | Mình không đói. Mình không bao giờ ăn tối. [shake]
+hugo: Jamais ? Moi, je ne peux pas dormir sans manger ! | Không bao giờ á? Mình mà không ăn thì không ngủ được! [surprised]
+lea: Alors, va à la boulangerie ! | Thế thì ra tiệm bánh đi! [happy point]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi không quen ai ở đây. => Je ne connais personne ici. | Tôi không quen ai ở đây.
+? Nói bằng tiếng Pháp: Ông tôi không đi làm nữa. => Mon grand-père ne travaille plus. | Ông tôi không đi làm nữa.
+
+#recap
+> Tóm lại: [[ne… jamais]] không bao giờ, [[ne… plus]] không nữa, [[ne… rien]] không gì, [[ne… personne]] không ai. Ở quá khứ, [[personne]] đứng sau phân từ: [[je n'ai vu personne]].
+
+#practice
+fill: Elle ne boit ___ de café. | jamais* / pas jamais / rien || Không bao giờ → jamais.
+fill: Il a quatre-vingts ans, il ne travaille ___ . | plus* / rien / personne || Không nữa → plus.
+fill: Je ne connais ___ ici. | personne* / rien / jamais || Không ai → personne.
+fill: Nous n'avons ___ acheté. | rien* / personne / plus || Không gì → rien.
+fix: Je n'ai personne vu. | Je n'ai vu personne.* / Je personne n'ai vu. / Je n'ai pas vu personne. || personne sau phân từ.
+natural: Je ne fume jamais.* / Je ne fume pas jamais. || jamais thay cho pas.
+order: Personne / ne / répond. | Không ai trả lời.
+listen: Il n'habite plus ici. | Il n'habite plus ici.* / Il n'habite pas ici. / Il habite ici. || n'habite plus: không… nữa.

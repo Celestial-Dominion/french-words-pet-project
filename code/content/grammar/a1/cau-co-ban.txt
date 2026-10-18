@@ -1,0 +1,80 @@
+=== cau-co-ban
+sum: Câu tiếng Pháp xếp như tiếng Việt: chủ ngữ + động từ + bổ ngữ. Chủ ngữ thường là một trong tám đại từ je, tu, il, elle, on, nous, vous, ils, elles. Với người lạ hay người lớn tuổi, nói vous thay cho tu.
+form: je · tu · il / elle / on | tôi · bạn · anh ấy / cô ấy / người ta
+form: nous · vous · ils / elles | chúng tôi · các bạn, ông bà · họ
+form: chủ ngữ + động từ + bổ ngữ | Je parle français.
+cast: lea nam
+bg: campus-gate
+words: je, tu, il, elle, nous, vous, on
+
+#hook
+lea: Salut ! Je suis Léa. | Chào cậu! Mình là Léa. [happy wave]
+nam: Bonjour, Léa ! Je suis Nam. | Chào Léa! Mình là Nam. [happy]
+> Cả hai câu đều mở đầu bằng [[je]], nghĩa là “tôi”. Hầu như câu tiếng Pháp nào cũng bắt đầu bằng một chủ ngữ như thế.
+
+#meaning
+> Tin vui: câu tiếng Pháp xếp giống tiếng Việt. Ai, làm gì, rồi tới cái gì.
+- {Je|s} {parle|v} {français|o}. | Tôi nói tiếng Pháp.
+> Chủ ngữ [[je]], động từ [[parle]], rồi bổ ngữ [[français]]. Thứ tự y như “tôi nói tiếng Pháp”.
+- {Nous|s} {habitons|v} {à Lyon|t}. | Chúng tôi sống ở Lyon.
+
+#form
+th: Ngôi | Số ít | Số nhiều
+tb: thứ nhất | je · tôi | nous · chúng tôi
+tb: thứ hai | tu · bạn | vous · các bạn, ông, bà
+tb: thứ ba | il · elle · on | ils · elles
+> Có tám đại từ cần thuộc. Ngôi thứ nhất là [[je]] và [[nous]]. Ngôi thứ hai là [[tu]] và [[vous]].
+> Ngôi thứ ba số ít có [[il]] cho nam, [[elle]] cho nữ, và [[on]], nghĩa là người ta hoặc chúng mình.
+> Số nhiều có [[ils]] cho nhóm có ít nhất một nam, và [[elles]] khi cả nhóm đều là nữ.
+
+#examples
+- {Il|s} est grand. | Anh ấy cao.
+- {Elles|s} sont sœurs. | Họ là chị em. || cả nhóm là nữ → elles
+- Paul et Marie ? {Ils|s} sont au café. | Paul và Marie hả? Họ ở quán cà phê. || có một nam → ils
+- Le livre ? {Il|s} est sur la table. | Quyển sách à? Nó ở trên bàn. || đồ vật cũng là il / elle
+> Đồ vật cũng dùng [[il]] hay [[elle]], tùy giống của danh từ. [[Le livre]] là giống đực, nên gọi là [[il]].
+- {On|s} va au café ? | Mình đi cà phê nhé? || on = chúng mình (khi nói)
+> Khi nói chuyện, người Pháp rất hay dùng [[on]] thay cho [[nous]]. [[On]] chia động từ giống như [[il]].
+
+#contrast
+vs: Tu es malade ? | Cậu ốm à? || bạn bè, người nhà
+vs: Vous êtes malade ? | Ông ốm à? || người lạ, người lớn
+> [[Tu]] dùng với bạn bè, người trong nhà và trẻ em. [[Vous]] dùng với người lạ, thầy cô, khách hàng, và khi nói với nhiều người.
+> Không chắc thì cứ dùng [[vous]]. Lịch sự thì không bao giờ sai.
+
+#pronunciation
+pron: je aime | j'aime | ʒɛm
+pron: je habite | j'habite | ʒabit
+pron: ils ont | ils‿ont | ilzɔ̃
+pron: ils sont | ils sont | ilsɔ̃
+> Trước nguyên âm hoặc chữ h câm, [[je]] mất chữ e, thành [[j'aime]], [[j'habite]].
+> Còn [[ils ont]] đọc nối, chữ s cuối biến thành âm z. Đừng nhầm với [[ils sont]]: một bên là “họ có”, một bên là “họ là”.
++ Ils ont un chien. | Họ có một con chó.
+
+#mistakes
+x: Je ai un chat. => J'ai un chat. | Tôi có một con mèo. >> Trước nguyên âm, [[je]] phải bỏ chữ e và viết liền: [[j'ai]].
+x: Marie et Paul ? Elles sont ici. => Marie et Paul ? Ils sont ici. | Marie và Paul à? Họ ở đây. >> Chỉ cần một nam trong nhóm là dùng [[ils]]. [[Elles]] chỉ dành cho nhóm toàn nữ.
+x: Bonjour madame, tu vas bien ? => Bonjour madame, vous allez bien ? | Chào bà, bà khỏe không? >> Với người lạ, người lớn tuổi, phải dùng [[vous]]. Nói [[tu]] nghe rất suồng sã.
+
+#dialogue
+lea: Nam, tu es étudiant ? | Nam, cậu là sinh viên à? [happy]
+nam: Oui, j'étudie le français ici. | Ừ, mình học tiếng Pháp ở đây. [nod]
+lea: Et tes parents ? Ils habitent à Lyon ? | Còn bố mẹ cậu? Họ sống ở Lyon à? [thinking]
+nam: Non, ils habitent au Vietnam. | Không, họ sống ở Việt Nam. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Chúng tôi nói tiếng Pháp. => Nous parlons français. | Chúng tôi nói tiếng Pháp.
+? Hỏi một bà cụ: Bà ốm à? => Vous êtes malade ? | Bà ốm à?
+
+#recap
+> Tóm lại: câu tiếng Pháp xếp như tiếng Việt và mở đầu bằng chủ ngữ. Tám đại từ là [[je, tu, il, elle]], [[on, nous, vous]] và [[ils, elles]]. Với người lạ, hãy nói [[vous]].
+
+#practice
+fill: ___ parlons français. | Nous* / Vous / Ils || parlons đi với nous.
+fill: Paul et Léa ? ___ sont au café. | Ils* / Elles / Il || Nhóm có một nam → ils.
+type: ___ à Paris. (je / habiter) | J'habite / j'habite || je + h câm → j'habite.
+choice: Nói với cô giáo, bạn dùng đại từ nào? | vous* / tu / on || Với thầy cô, người lạ: vous.
+natural: Bonjour madame, vous allez bien ?* / Bonjour madame, tu vas bien ? || Với người lạ phải dùng vous.
+fix: Je habite à Lyon. | J'habite à Lyon.* / Je habites à Lyon. / Jhabite à Lyon. || je + h câm → j'.
+order: Nous / habitons / à / Lyon. | Chúng tôi sống ở Lyon.
+listen: Ils ont un chien. | Ils ont un chien.* / Ils sont un chien. / Il a un chien. || Nghe âm nối z trong ils‿ont.

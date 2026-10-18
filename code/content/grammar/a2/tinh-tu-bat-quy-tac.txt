@@ -1,0 +1,82 @@
+=== tinh-tu-bat-quy-tac
+sum: Một số tính từ đổi đặc biệt ở giống cái: -eux → -euse (heureux → heureuse), -if → -ive (sportif → sportive), -er → -ère (cher → chère), -on → -onne (bon → bonne). Ba tính từ beau, nouveau, vieux có thêm dạng bel, nouvel, vieil trước danh từ giống đực bắt đầu bằng nguyên âm: un bel hôtel.
+form: -eux → -euse · -if → -ive · -er → -ère · -on / -en → -onne / -enne | heureuse · sportive · chère · bonne
+form: beau → belle · nouveau → nouvelle · vieux → vieille | une belle maison · une vieille amie
+form: bel · nouvel · vieil + giống đực có nguyên âm | un bel hôtel · un vieil ami
+cast: maman papa
+bg: home-evening
+words: beau, nouveau, vieux, heureux, cher
+
+#hook
+papa: Regarde, un bel appartement ! Et la cuisine est très belle. | Nhìn này, một căn hộ đẹp! Và căn bếp rất đẹp. [happy point]
+maman: Oui, mais il est vieux, et le prix est cher. | Ừ, nhưng nó cũ, mà giá lại đắt. [thinking]
+> [[Un bel appartement]], [[la cuisine est belle]]: cùng một tính từ [[beau]], nhưng có ba dạng.
+
+#meaning
+> Bạn đã biết luật chung: thêm [[e]] cho giống cái. Nhưng nhiều tính từ thay đổi nhiều hơn thế ở phần đuôi.
+- un garçon {heureux|k} → une fille {heureuse|k} | một cậu bé hạnh phúc → một cô bé hạnh phúc || -eux → -euse
+- un homme {sportif|k} → une femme {sportive|k} | một người đàn ông thể thao → một phụ nữ thể thao || -if → -ive
+
+#form
+th: Đuôi | Giống đực | Giống cái
+tb: -eux → -euse | heureux | heureuse
+tb: -if → -ive | sportif | sportive
+tb: -er → -ère | cher | chère
+tb: -on → -onne | bon | bonne
+tb: -en → -enne | italien | italienne
+tb: riêng | blanc · long · gentil | blanche · longue · gentille
+> Học theo nhóm đuôi sẽ nhớ nhanh hơn từng từ một.
+
+#examples
+- Ma grand-mère est très {gentille|k}. | Bà tôi rất hiền.
+- Cette robe est trop {chère|k}. | Chiếc váy này đắt quá.
+- J'ai une {bonne|k} nouvelle ! | Tôi có một tin vui!
+- Elle est {sportive|k} et {courageuse|k}. | Cô ấy giỏi thể thao và dũng cảm.
+- Il a une {longue|k} histoire. | Nó có một lịch sử lâu dài.
+
+#real
+> Ba tính từ đứng trước danh từ có một dạng thứ ba, dùng trước danh từ giống đực bắt đầu bằng nguyên âm, cho dễ đọc.
+th: Giống đực | + nguyên âm | Giống cái
+tb: beau | bel | belle
+tb: nouveau | nouvel | nouvelle
+tb: vieux | vieil | vieille
+> Dạng ở giữa chỉ dùng khi danh từ giống đực bắt đầu bằng nguyên âm hoặc h câm.
+- C'est un {bel|k} hôtel. | Đó là một khách sạn đẹp.
+- Voici mon {vieil|k} ami Paul. | Đây là bạn cũ của tôi, Paul.
+- Nous avons un {nouvel|k} appartement. | Chúng tôi có một căn hộ mới.
+> [[Bel]], [[nouvel]], [[vieil]] đọc giống hệt dạng giống cái: [[bel]] như [[belle]].
+
+#pronunciation
+pron: heureux · heureuse | heureuse | øʁø · øʁøz
+pron: sportif · sportive | sportive | spɔʁtif · spɔʁtiv
+pron: vieil · vieille | vieil | vjɛj
+> Ở giống cái, phụ âm cuối thay đổi và được đọc: [[heureuse]] có âm z, [[sportive]] có âm v.
++ C'est une femme heureuse. | Đó là một người phụ nữ hạnh phúc.
+
+#mistakes
+x: Elle est heureux. => Elle est heureuse. | Cô ấy hạnh phúc. >> Đuôi [[eux]] thành [[euse]] ở giống cái.
+x: C'est un beau hôtel. => C'est un bel hôtel. | Đó là một khách sạn đẹp. >> Trước danh từ giống đực có nguyên âm, [[beau]] thành [[bel]].
+x: Une robe cher. => Une robe chère. | Một chiếc váy đắt. >> Đuôi [[er]] thành [[ère]], có dấu huyền.
+
+#dialogue
+maman: Mais regarde la vue, elle est magnifique ! | Nhưng nhìn quang cảnh này, tuyệt đẹp! [surprised point]
+papa: C'est vrai. Et le quartier est calme. | Đúng thật. Mà khu phố lại yên tĩnh. [happy]
+maman: Bon, c'est une bonne idée. On le prend ? | Thôi được, ý hay đấy. Mình lấy căn này nhé? [happy]
+papa: D'accord ! Notre nouvel appartement ! | Đồng ý! Căn hộ mới của chúng ta! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Cô ấy hạnh phúc. => Elle est heureuse. | Cô ấy hạnh phúc.
+? Nói bằng tiếng Pháp: Đó là một khách sạn đẹp. => C'est un bel hôtel. | Đó là một khách sạn đẹp.
+
+#recap
+> Tóm lại: [[eux]] thành [[euse]], [[if]] thành [[ive]], [[er]] thành [[ère]], [[on]] thành [[onne]]. [[Beau]], [[nouveau]], [[vieux]] có dạng [[bel]], [[nouvel]], [[vieil]] trước nguyên âm.
+
+#practice
+fill: Elle est très ___ . (heureux) | heureuse* / heureux / heureuxe || eux → euse.
+fill: Cette robe est trop ___ . (cher) | chère* / cher / chèr || er → ère.
+fill: C'est un ___ hôtel. (beau) | bel* / beau / belle || Giống đực + nguyên âm → bel.
+fill: Elle est ___ . (sportif) | sportive* / sportif / sportife || if → ive.
+type: Voici mon ___ ami Paul. (vieux) | vieil || vieux + nguyên âm → vieil.
+fix: Elle est heureux. | Elle est heureuse.* / Elle est heureuxe. / Elle est heureuses. || eux → euse.
+order: Nous / avons / un / nouvel / appartement. | Chúng tôi có một căn hộ mới.
+listen: C'est une femme heureuse. | C'est une femme heureuse.* / C'est un homme heureux. / C'est une femme sérieuse. || heureuse: âm z cuối.

@@ -1,0 +1,79 @@
+=== passe-compose-etre
+sum: Khoảng mười lăm động từ chỉ di chuyển hay thay đổi trạng thái (aller, venir, partir, arriver, entrer, sortir, rester, tomber, naître, mourir…) và mọi động từ phản thân dùng être thay cho avoir. Khi đó phân từ hợp giống và số với chủ ngữ: elle est allée, ils sont partis.
+form: être (hiện tại) + phân từ | je suis allé · elle est partie
+form: phân từ + e (nữ) · + s (nhiều) | elle est allée · ils sont venus · elles sont arrivées
+form: động từ phản thân → être | je me suis levé(e)
+cast: linh paul
+bg: office
+words: aller, venir, partir, arriver, rester, tomber, naître
+
+#hook
+paul: Tu es allée où pendant les vacances ? | Kỳ nghỉ cậu đã đi đâu? [happy]
+linh: Je suis allée à Nice. Je suis rentrée hier. | Mình đi Nice. Hôm qua mình mới về. [happy explain]
+> Linh không nói “j'ai allé”, mà nói [[je suis allée]]. Một số động từ dùng [[être]] thay cho [[avoir]].
+
+#meaning
+> Phần lớn động từ dùng [[avoir]]. Nhưng các động từ chỉ đi, đến, ở lại, hay thay đổi trạng thái thì dùng [[être]].
+vs: J'ai dormi. | Tôi đã ngủ. || phần lớn động từ → avoir
+vs: Je suis parti. | Tôi đã đi rồi. || di chuyển → être
+> Hãy hình dung một ngôi nhà: đến, vào, lên, xuống, ra, đi, ở lại. Những động từ quanh ngôi nhà ấy đều dùng [[être]].
+
+#form
+th: Động từ | Phân từ | Nghĩa
+tb: aller · venir | allé · venu | đi · đến
+tb: arriver · partir | arrivé · parti | tới nơi · rời đi
+tb: entrer · sortir | entré · sorti | vào · ra
+tb: monter · descendre | monté · descendu | lên · xuống
+tb: rester · tomber | resté · tombé | ở lại · ngã
+tb: naître · mourir | né · mort | sinh ra · chết
+> Thêm các động từ có tiền tố [[re-]]: [[revenir]], [[rentrer]], [[retourner]].
+> Với [[être]], phân từ phải hợp với chủ ngữ như một tính từ: thêm [[e]] cho nữ, [[s]] cho số nhiều.
+
+#examples
+- Elle {est|a} {arrivée|v} en retard. | Cô ấy đến muộn.
+- Nous {sommes|a} {restés|v} à la maison. | Chúng tôi đã ở nhà.
+- Ils {sont|a} {partis|v} à huit heures. | Họ đã đi lúc tám giờ.
+- Mes sœurs {sont|a} {venues|v} me voir. | Các chị tôi đã đến thăm tôi.
+- Ma grand-mère {est|a} {née|v} en 1950. | Bà tôi sinh năm 1950.
+
+#real
+> Tất cả động từ phản thân cũng dùng [[être]] ở thì quá khứ.
+- Ce matin, je {me suis levée|v} à six heures. | Sáng nay tôi dậy lúc sáu giờ. || người nói là nữ
+- Ils {se sont couchés|v} tard. | Họ đã đi ngủ muộn.
+> Đại từ phản thân đứng trước [[être]]: [[je me suis]], [[tu t'es]], [[il s'est]].
+
+#pronunciation
+pron: allé · allée | allé | ale
+pron: parti · partie | parti | paʁti
+pron: mort · morte | mort | mɔʁ · mɔʁt
+> Phần lớn phân từ đọc giống nhau dù có thêm [[e]] hay [[s]]: [[allé]], [[allée]], [[allés]] đều là “a-lê”.
+> Chỉ khi phân từ tận cùng bằng phụ âm thì nghe khác: [[mort]] và [[morte]].
++ Elles sont arrivées hier. | Họ đến hôm qua.
+
+#mistakes
+x: J'ai allé à Paris. => Je suis allé à Paris. | Tôi đã đi Paris. >> [[Aller]] dùng [[être]], không dùng [[avoir]].
+x: Elle est allé au cinéma. => Elle est allée au cinéma. | Cô ấy đã đi xem phim. >> Với [[être]], phân từ hợp với chủ ngữ nữ: thêm [[e]].
+x: Je me ai levé tôt. => Je me suis levé tôt. | Tôi đã dậy sớm. >> Động từ phản thân dùng [[être]]: [[je me suis levé]].
+
+#dialogue
+paul: Tu es partie avec ta famille ? | Cậu đi cùng gia đình à? [thinking]
+linh: Non, ma sœur et moi, nous sommes parties seules. | Không, chị mình và mình đi riêng hai chị em. [explain]
+paul: Et vous êtes restées combien de temps ? | Thế hai người ở lại bao lâu? [thinking]
+linh: Une semaine. On est rentrées samedi. | Một tuần. Bọn mình về hôm thứ bảy. [happy]
+
+#recall
+? Nói bằng tiếng Pháp, người nói là nữ: Tôi đã ở nhà. => Je suis restée à la maison. | Tôi đã ở nhà.
+? Nói bằng tiếng Pháp: Họ đã đi ngủ muộn. => Ils se sont couchés tard. | Họ đã đi ngủ muộn.
+
+#recap
+> Tóm lại: động từ di chuyển, thay đổi trạng thái và động từ phản thân dùng [[être]]: [[je suis allé]], [[je me suis levé]]. Phân từ hợp với chủ ngữ: [[elle est allée]], [[ils sont partis]].
+
+#practice
+fill: Je ___ allé à Paris. | suis* / ai / es || aller dùng être.
+fill: Elle est ___ en retard. | arrivée* / arrivé / arrivés || Chủ ngữ nữ → + e.
+fill: Ils sont ___ à huit heures. | partis* / parti / partie || Số nhiều → + s.
+contrast: Hier, nous ___ un film. | avons regardé* / sommes regardés || regarder dùng avoir.
+type: Ce matin, je me ___ levé tôt. | suis || Phản thân → être.
+fix: J'ai allé à Paris. | Je suis allé à Paris.* / J'ai allée à Paris. / Je suis aller à Paris. || aller dùng être.
+order: Nous / sommes / restés / à / la / maison. | Chúng tôi đã ở nhà.
+listen: Elles sont arrivées hier. | Elles sont arrivées hier.* / Elles ont arrivé hier. / Elles arrivent hier. || sont‿arrivées: nối âm t.

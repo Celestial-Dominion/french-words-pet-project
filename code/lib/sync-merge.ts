@@ -6,8 +6,9 @@
 //   reads    — hành động sau cùng thắng (kể cả bỏ đánh dấu — tombstone)
 //   notes    — máy sửa sau thắng ("" = đã xoá)
 //   phonics/grammar — mỗi bài một mục "id~mốc[~0]": hành động sau cùng thắng (tích / bỏ tích); mục cũ chỉ có "id" = đã học từ thuở đầu
+import { mergeGrammarCodes } from "./grammar.ts"; // đuôi .ts: scripts/test-grammar.mjs chạy thẳng file này bằng node
 import type { ReviewRecord, DailyStat, ReadRow, NoteRow, GamifyRow, SrsConfig } from "./types";
-import { upgradeLegacyKnown } from "./srs-pure";
+import { upgradeLegacyKnown } from "./srs-pure.ts";
 
 /** "Phiên bản" của thẻ ôn: ưu tiên số lượt ôn, sau đó tới thời điểm ôn gần nhất. */
 export function reviewScore(r: ReviewRecord): number {
@@ -153,7 +154,7 @@ export interface SyncSnapshot {
   notes: NoteRow[];
   xp: number;
   phonics: string[]; // mục tiến độ bài phát âm (xem mergeCourseEntries)
-  grammar: string[]; // mục tiến độ bài ngữ pháp
+  grammar: string[]; // tiến độ bài ngữ pháp — dòng mã hoá (lib/grammar.ts encodeGrammarRow)
   gamify: GamifyRow;
 }
 
@@ -197,7 +198,7 @@ export function fingerprint(s: SyncSnapshot, cfgStamp: string): Fp {
     ra,
     xp: s.xp,
     nt,
-    co: `${mergeCourseEntries(s.phonics, []).join(",")}|${mergeCourseEntries(s.grammar, []).join(",")}`,
+    co: `${mergeCourseEntries(s.phonics, []).join(",")}|${mergeGrammarCodes(s.grammar, []).join(",")}`,
     fz: `${g.freezes ?? 0}|${(g.frozenDates ?? []).length}|${g.grantStreak ?? 0}|${g.maxCombo ?? 0}|${(g.questsDone ?? []).length}`,
     cu: cfgStamp,
   };
@@ -219,7 +220,7 @@ export function mergeSnapshots(local: SyncSnapshot, remote: SyncSnapshot): SyncS
     notes: mergeNotes(local.notes, remote.notes),
     xp: Math.max(local.xp, remote.xp),
     phonics: mergeCourseEntries(local.phonics, remote.phonics),
-    grammar: mergeCourseEntries(local.grammar, remote.grammar),
+    grammar: mergeGrammarCodes(local.grammar, remote.grammar),
     gamify: mergeGamify(local.gamify, remote.gamify),
   };
 }

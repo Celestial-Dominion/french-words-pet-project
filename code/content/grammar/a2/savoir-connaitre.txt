@@ -1,0 +1,75 @@
+=== savoir-connaitre
+sum: Savoir hay connaître? Cả hai đều là “biết”. Savoir là biết một thông tin hay biết làm gì: je sais nager, je sais où il habite. Connaître là quen biết, biết đến một người, một nơi, một vật: je connais Paul, je connais Paris.
+form: savoir + động từ nguyên mẫu / mệnh đề (que, où, si…) | Je sais nager. · Je sais qu'il est là.
+form: connaître + người / nơi / vật | Je connais Paul. · Tu connais ce restaurant ?
+form: je sais · il sait · nous savons · ils savent / je connais · il connaît · nous connaissons | savoir / connaître
+cast: paul linh
+bg: street
+words: savoir, connaître
+
+#hook
+paul: Tu connais ce quartier ? | Cậu có biết khu phố này không? [thinking]
+linh: Oui, je le connais bien. Je sais où est la poste ! | Có, mình biết rõ khu này. Mình biết bưu điện ở đâu! [happy point]
+> Hai câu đều dịch là “biết”, nhưng tiếng Pháp dùng hai động từ khác nhau: [[connaître]] cho khu phố, [[savoir]] cho thông tin.
+
+#meaning
+vs: Je connais Paris. | Tôi biết Paris. || quen một nơi → connaître
+vs: Je sais nager. | Tôi biết bơi. || biết làm gì → savoir
+> Mẹo: nếu sau “biết” là một người, một nơi, một vật, dùng [[connaître]]. Nếu sau là một động từ hay cả một câu, dùng [[savoir]].
+
+#form
+th: Chủ ngữ | savoir | connaître
+tb: je · tu | sais | connais
+tb: il · elle | sait | connaît
+tb: nous | savons | connaissons
+tb: vous | savez | connaissez
+tb: ils · elles | savent | connaissent
+> Cả hai đều bất quy tắc. Chú ý [[il connaît]] có dấu mũ trên chữ i.
+
+#examples
+- Elle {sait|k} parler trois langues. | Cô ấy biết nói ba thứ tiếng.
+- Tu {sais|k} où est la gare ? | Cậu có biết nhà ga ở đâu không?
+- Je ne {sais|k} pas pourquoi il est parti. | Tôi không biết tại sao anh ấy đi.
+- Vous {connaissez|k} mon frère ? | Ông có quen anh trai tôi không?
+- Nous {connaissons|k} un bon restaurant près d'ici. | Chúng tôi biết một nhà hàng ngon gần đây.
+
+#real
+> Hai câu rất hay dùng hằng ngày.
+- Je ne {sais|k} pas, désolé. | Tôi không biết, xin lỗi. || câu trả lời thông dụng nhất
+- Tu {connais|k} ? | Cậu biết chỗ đó / người đó không? || hỏi ngắn
+> Khi nói nhanh, [[je ne sais pas]] thành [[je sais pas]].
+
+#mistakes
+x: Je connais nager. => Je sais nager. | Tôi biết bơi. >> Biết làm gì thì dùng [[savoir]].
+x: Je sais Paul. => Je connais Paul. | Tôi quen Paul. >> Quen một người thì dùng [[connaître]].
+x: Tu connais où il habite ? => Tu sais où il habite ? | Cậu có biết anh ấy sống ở đâu không? >> Sau là cả một câu với [[où]], nên dùng [[savoir]].
+
+#pronunciation
+pron: je sais | je sais | ʒəsɛ
+pron: ils savent | ils savent | ilsav
+pron: je connais | je connais | ʒəkɔnɛ
+> [[Je sais]] và [[c'est]] đọc gần giống nhau: “xê”. [[Ils savent]] đọc rõ âm v cuối.
++ Ils savent conduire. | Họ biết lái xe.
+
+#dialogue
+paul: Et tu connais quelqu'un ici ? | Thế cậu có quen ai ở đây không? [thinking]
+linh: Oui, je connais la dame du café. | Có, mình quen bà chủ quán cà phê. [happy]
+paul: Tu sais à quelle heure elle ouvre ? | Cậu có biết mấy giờ bà ấy mở cửa không? [thinking]
+linh: Non, ça, je ne sais pas ! | Không, cái đó thì mình không biết! [shrug]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi biết bơi. => Je sais nager. | Tôi biết bơi.
+? Nói bằng tiếng Pháp: Ông có quen anh trai tôi không? => Vous connaissez mon frère ? | Ông có quen anh trai tôi không?
+
+#recap
+> Tóm lại: [[savoir]] là biết thông tin, biết làm gì, theo sau là động từ hoặc một câu. [[Connaître]] là quen biết một người, một nơi, một vật.
+
+#practice
+contrast: Je ___ nager. | sais* / connais || Biết làm gì → savoir.
+contrast: Tu ___ mon frère ? | connais* / sais || Quen người → connaître.
+contrast: Tu ___ où est la gare ? | sais* / connais || Sau là câu với où → savoir.
+contrast: Nous ___ un bon restaurant. | connaissons* / savons || Biết một nơi → connaître.
+fill: Elle ___ parler trois langues. | sait* / connaît / sais || savoir với elle: sait.
+fix: Je connais nager. | Je sais nager.* / Je connais à nager. / Je sais de nager. || Biết làm → savoir.
+order: Je / ne / sais / pas / pourquoi / il / est / parti. | Tôi không biết tại sao anh ấy đi.
+listen: Ils savent conduire. | Ils savent conduire.* / Il sait conduire. / Ils vont conduire. || savent: âm v cuối.

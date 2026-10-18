@@ -1,0 +1,78 @@
+=== devoir-il-faut
+sum: Devoir + động từ nguyên mẫu nghĩa là “phải” (je dois partir), chia bất quy tắc: dois, dois, doit, devons, devez, doivent. Il faut + nguyên mẫu cũng là “phải”, nhưng nói chung, không chỉ riêng ai (il faut manger). Phủ định il ne faut pas nghĩa là “không được”.
+form: je dois · tu dois · il doit · nous devons · vous devez · ils doivent | devoir = phải
+form: devoir + động từ nguyên mẫu | Je dois partir.
+form: il faut + nguyên mẫu (nói chung) · il ne faut pas = không được | Il faut dormir. · Il ne faut pas fumer.
+cast: dr-roux paul
+bg: hospital
+words: devoir, falloir
+
+#hook
+dr-roux: Vous devez dormir huit heures par nuit. | Anh phải ngủ tám tiếng mỗi đêm. [explain]
+paul: Huit heures ? Mais je dois travailler tard ! | Tám tiếng ạ? Nhưng tôi phải làm việc muộn! [surprised]
+> [[Vous devez dormir]], [[je dois travailler]]: [[devoir]] cộng động từ nguyên mẫu nghĩa là “phải làm gì”.
+
+#meaning
+> [[Devoir]] nói một người cụ thể phải làm gì. [[Il faut]] nói điều cần làm nói chung, cho mọi người.
+vs: Tu dois manger. | Cậu phải ăn. || một người cụ thể
+vs: Il faut manger. | Phải ăn uống chứ. || nói chung
+> [[Il faut]] không đổi theo người: luôn là [[il faut]].
+
+#form
+th: Chủ ngữ | devoir
+tb: je · tu | dois
+tb: il · elle · on | doit
+tb: nous | devons
+tb: vous | devez
+tb: ils · elles | doivent
+> Giống [[vouloir]] và [[pouvoir]], sau [[devoir]] là động từ nguyên mẫu: [[je dois partir]].
+f: Il + [faut] + partir
+> [[Il faut]] cũng đi thẳng với nguyên mẫu.
+
+#examples
+- Nous {devons|k} partir à six heures. | Chúng tôi phải đi lúc sáu giờ.
+- Les enfants {doivent|k} faire leurs devoirs. | Bọn trẻ phải làm bài tập.
+- {Il faut|k} boire beaucoup d'eau. | Phải uống nhiều nước.
+- Pour aller à la gare, {il faut|k} prendre le bus 12. | Muốn đến nhà ga thì phải đi xe buýt số 12.
+- Tu {dois|k} être fatigué après ce voyage. | Chắc cậu mệt lắm sau chuyến đi này. || devoir = chắc hẳn
+
+#real
+> Phủ định có nghĩa khác nhau. [[Il ne faut pas]] là “không được”, một lời cấm.
+- {Il ne faut pas|n} fumer ici. | Không được hút thuốc ở đây.
+- Tu {ne dois pas|n} oublier ton passeport. | Cậu không được quên hộ chiếu.
+> [[Il faut]] còn đi với danh từ, nghĩa là “cần”: [[il faut du temps]], cần có thời gian.
+
+#pronunciation
+pron: je dois | je dois | ʒədwa
+pron: ils doivent | ils doivent | ildwav
+pron: il faut | il faut | ilfo
+> [[Dois]] đọc “đoa”. Ở [[ils doivent]], âm v cuối được đọc rõ.
++ Les enfants doivent dormir. | Bọn trẻ phải đi ngủ.
+
+#mistakes
+x: Je dois de partir. => Je dois partir. | Tôi phải đi. >> Sau [[devoir]], không thêm [[de]].
+x: Je faut travailler. => Il faut travailler. | Phải làm việc. >> [[Il faut]] không đổi chủ ngữ. Muốn nói “tôi phải” thì dùng [[je dois]].
+x: Il faut que partir. => Il faut partir. | Phải đi thôi. >> [[Il faut]] đi thẳng với nguyên mẫu.
+
+#dialogue
+dr-roux: Et il ne faut pas boire de café le soir. | Và buổi tối không được uống cà phê. [explain]
+paul: Pas de café ? C'est difficile… | Không cà phê ạ? Khó quá… [sad]
+dr-roux: Vous devez faire un effort. Votre santé est importante. | Anh phải cố gắng. Sức khỏe của anh rất quan trọng. [thinking]
+paul: D'accord, docteur. Je vais essayer. | Vâng, thưa bác sĩ. Tôi sẽ cố. [nod]
+
+#recall
+? Nói bằng tiếng Pháp: Chúng tôi phải đi lúc sáu giờ. => Nous devons partir à six heures. | Chúng tôi phải đi lúc sáu giờ.
+? Nói bằng tiếng Pháp: Không được hút thuốc ở đây. => Il ne faut pas fumer ici. | Không được hút thuốc ở đây.
+
+#recap
+> Tóm lại: [[devoir]] cộng nguyên mẫu là một người phải làm gì: [[je dois partir]]. [[Il faut]] cộng nguyên mẫu là phải làm, nói chung. [[Il ne faut pas]] là không được.
+
+#practice
+fill: Nous ___ partir à six heures. | devons* / doivent / devez || devoir với nous: devons.
+fill: Les enfants ___ faire leurs devoirs. | doivent* / devent / doit || devoir với ils: doivent.
+fill: ___ boire beaucoup d'eau. | Il faut* / Je faut / On faut || Nói chung → il faut.
+type: Tu ___ être fatigué. (devoir) | dois || devoir với tu: dois.
+contrast: ___ fumer ici. (interdit) | Il ne faut pas* / Il ne doit pas || Lời cấm chung → il ne faut pas.
+fix: Je dois de partir. | Je dois partir.* / Je dois à partir. / Je doit partir. || devoir + nguyên mẫu.
+order: Il / ne / faut / pas / fumer / ici. | Không được hút thuốc ở đây.
+listen: Les enfants doivent dormir. | Les enfants doivent dormir.* / L'enfant doit dormir. / Les enfants veulent dormir. || doivent: âm v cuối.

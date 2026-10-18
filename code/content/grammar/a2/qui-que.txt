@@ -1,0 +1,70 @@
+=== qui-que
+sum: Mệnh đề quan hệ nối hai câu bằng qui, que, où (giống “mà, người mà, nơi mà”). Qui thay cho chủ ngữ, theo sau là động từ: l'homme qui parle. Que thay cho tân ngữ, theo sau là chủ ngữ: le livre que je lis. Où thay cho nơi chốn hay thời gian: la ville où j'habite.
+form: qui + động từ (thay chủ ngữ) | l'homme qui parle
+form: que / qu' + chủ ngữ + động từ (thay tân ngữ) | le livre que je lis
+form: où + câu (nơi chốn, thời gian) | la ville où j'habite · le jour où je suis né
+cast: linh m-dubois
+bg: library
+words: qui, que, où
+
+#hook
+m-dubois: Vous cherchez quelque chose ? | Cô đang tìm gì à? [happy]
+linh: Oui, le livre que mon professeur a recommandé, celui qui parle de Paris. | Vâng, quyển sách mà thầy tôi giới thiệu, quyển nói về Paris. [explain]
+> [[Que mon professeur a recommandé]], [[qui parle de Paris]]: hai mệnh đề nhỏ giải thích rõ đó là quyển sách nào.
+
+#meaning
+> Mệnh đề quan hệ giúp nối hai câu thành một, khỏi lặp lại danh từ.
+- J'ai un ami. Il habite à Nice. → J'ai un ami {qui|k} habite à Nice. | Tôi có một người bạn sống ở Nice.
+- Voici le gâteau. J'ai fait ce gâteau. → Voici le gâteau {que|k} j'ai fait. | Đây là cái bánh mà tôi đã làm.
+> Tiếng Việt thường dùng “mà”, hoặc không cần từ nối nào. Tiếng Pháp thì bắt buộc phải có.
+
+#form
+th: Từ nối | Thay cho | Theo sau là
+tb: qui | chủ ngữ | động từ: qui parle
+tb: que · qu' | tân ngữ | chủ ngữ: que je lis
+tb: où | nơi chốn, thời gian | câu: où j'habite
+> Mẹo: nhìn từ đứng ngay sau. Nếu là động từ, dùng [[qui]]. Nếu là chủ ngữ như [[je]], [[tu]], [[il]], dùng [[que]].
+> [[Que]] thành [[qu']] trước nguyên âm. [[Qui]] thì không bao giờ đổi.
+
+#examples
+- La femme {qui|k} chante est ma tante. | Người phụ nữ đang hát là dì tôi.
+- C'est un film {qui|k} fait peur. | Đó là một bộ phim đáng sợ.
+- Le pull {que|k} tu portes est joli. | Chiếc áo len cậu đang mặc đẹp đấy.
+- Les amis {qu'il|k} a invités sont sympas. | Những người bạn mà anh ấy mời rất dễ mến.
+- C'est la ville {où|k} je suis né. | Đó là thành phố nơi tôi sinh ra.
+- Je me souviens du jour {où|k} on s'est rencontrés. | Tôi nhớ ngày mà chúng ta gặp nhau.
+
+#pronunciation
+pron: qui | qui | ki
+pron: que | que | kə
+pron: qu'il | qu'il | kil
+> [[Qui]] đọc “ki”, [[que]] đọc nhẹ “cơ”. Trước [[il]], [[elle]], [[on]], [[que]] thành [[qu']]: [[qu'il]].
++ C'est le café où on se voit. | Đó là quán cà phê nơi bọn mình hay gặp.
+
+#mistakes
+x: L'homme que parle est mon père. => L'homme qui parle est mon père. | Người đàn ông đang nói là bố tôi. >> Theo sau là động từ [[parle]], nên dùng [[qui]].
+x: Le livre qui je lis est bon. => Le livre que je lis est bon. | Quyển sách tôi đang đọc hay. >> Theo sau là chủ ngữ [[je]], nên dùng [[que]].
+x: La ville que j'habite est belle. => La ville où j'habite est belle. | Thành phố tôi sống rất đẹp. >> Nơi chốn dùng [[où]].
+
+#dialogue
+m-dubois: C'est le livre qui a une couverture bleue ? | Có phải quyển có bìa xanh không? [thinking]
+linh: Oui, c'est celui que tout le monde lit ! | Vâng, chính là quyển mà ai cũng đọc! [happy]
+m-dubois: Il est dans la salle où il y a les journaux. | Nó ở trong phòng có báo. [point]
+linh: Merci, monsieur, vous êtes très gentil. | Cảm ơn ông, ông thật tốt bụng. [happy bow]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi có một người bạn nói tiếng Pháp. => J'ai un ami qui parle français. | Tôi có một người bạn nói tiếng Pháp.
+? Nói bằng tiếng Pháp: Đây là cái bánh mà tôi đã làm. => Voici le gâteau que j'ai fait. | Đây là cái bánh mà tôi đã làm.
+
+#recap
+> Tóm lại: [[qui]] thay chủ ngữ, theo sau là động từ. [[Que]] thay tân ngữ, theo sau là chủ ngữ. [[Où]] dùng cho nơi chốn và thời gian.
+
+#practice
+fill: La femme ___ chante est ma tante. | qui* / que / où || Sau là động từ → qui.
+fill: Le pull ___ tu portes est joli. | que* / qui / où || Sau là chủ ngữ → que.
+fill: C'est la ville ___ je suis né. | où* / que / qui || Nơi chốn → où.
+fill: Les amis ___ il a invités sont sympas. | qu'* / qui / que || que + nguyên âm → qu'.
+contrast: C'est un film ___ fait peur. | qui* / que || Sau là động từ → qui.
+fix: L'homme que parle est mon père. | L'homme qui parle est mon père.* / L'homme qu'il parle est mon père. / L'homme où parle est mon père. || Động từ → qui.
+order: Voici / le / gâteau / que / j'ai / fait. | Đây là cái bánh mà tôi đã làm.
+listen: C'est le café où on se voit. | C'est le café où on se voit.* / C'est le café que je connais. / C'est le café qui est ouvert. || où = u.

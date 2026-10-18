@@ -1,0 +1,78 @@
+=== so-nhieu
+sum: Số nhiều thường thêm -s vào cuối danh từ, nhưng chữ s này không đọc. Từ tận cùng -eau thêm -x, từ tận cùng -al đổi thành -aux. Mạo từ cũng đổi: un, une thành des; le, la thành les.
+form: danh từ + s (không đọc) | un livre → des livres
+form: -eau → -eaux · -al → -aux | un bateau → des bateaux · un journal → des journaux
+form: un / une → des · le / la → les | des amis · les amis
+cast: lucas zoe
+bg: market
+words: des, livre, bateau, journal, cheval
+
+#hook
+lucas: J'ai un ballon. | Tớ có một quả bóng. [happy]
+zoe: Moi, j'ai deux ballons ! | Tớ có hai quả bóng cơ! [happy cheer]
+> Một quả là [[un ballon]], hai quả là [[deux ballons]]. Chữ s được thêm vào, nhưng khi nói, hai từ nghe y hệt nhau.
+
+#meaning
+> Muốn nói nhiều thứ, ta đổi cả danh từ lẫn mạo từ.
+- {un|k} livre → {des|k} {livres|k} | một quyển sách → những quyển sách
+- {le|k} livre → {les|k} {livres|k} | quyển sách đó → những quyển sách đó
+> [[Des]] là số nhiều của [[un]] và [[une]]. [[Les]] là số nhiều của [[le]] và [[la]].
+
+#form
+th: Số ít | Số nhiều | Luật
+tb: un livre | des livres | thêm -s
+tb: une table | des tables | thêm -s
+tb: un bateau | des bateaux | -eau → -eaux
+tb: un journal | des journaux | -al → -aux
+tb: un prix | des prix | -s, -x, -z → giữ nguyên
+> Phần lớn danh từ chỉ cần thêm [[s]].
+> Từ tận cùng [[-eau]] thêm [[x]]: [[bateaux]]. Từ tận cùng [[-al]] đổi thành [[-aux]]: [[journaux]], [[chevaux]].
+> Từ đã tận cùng bằng s, x hay z thì giữ nguyên: [[un prix]], [[des prix]].
+
+#examples
+- J'ai {des|k} {amis|k} à Lyon. | Tôi có những người bạn ở Lyon.
+- {Les|k} {enfants|k} jouent dans le parc. | Bọn trẻ chơi trong công viên.
+- Il y a {des|k} {bateaux|k} sur la mer. | Có những chiếc thuyền trên biển.
+- Mon père lit {deux|k} {journaux|k}. | Bố tôi đọc hai tờ báo.
+- {Les|k} {chevaux|k} sont dans le champ. | Những con ngựa ở ngoài đồng.
+
+#real
+> Tiếng Việt nói “tôi có bạn ở Lyon” mà không cần “những”. Tiếng Pháp thì luôn phải có mạo từ: [[des amis]].
+- Tu as {des|k} frères ? | Cậu có anh em trai không? || không bỏ được des
+- Elle aime {les|k} chats. | Cô ấy thích mèo. || nói chung: les
+
+#pronunciation
+pron: le livre | le livre | lə livʁ
+pron: les livres | les livres | le livʁ
+pron: des enfants | des‿enfants | dezɑ̃fɑ̃
+> Chữ s cuối danh từ không đọc. Khi nói, chỉ mạo từ cho biết là một hay nhiều.
+> Vì vậy hãy nghe kỹ mạo từ: [[le]] là “lơ”, [[les]] là “lê”, [[des]] là “đê”. Trước nguyên âm, chúng nối âm z.
++ Les enfants sont ici. | Bọn trẻ ở đây.
+
+#mistakes
+x: J'ai des journals. => J'ai des journaux. | Tôi có mấy tờ báo. >> Từ tận cùng [[-al]] đổi thành [[-aux]]: [[journaux]].
+x: Il y a des bateaus. => Il y a des bateaux. | Có những chiếc thuyền. >> Từ tận cùng [[-eau]] thêm [[x]], không thêm s.
+x: J'ai amis à Paris. => J'ai des amis à Paris. | Tôi có bạn ở Paris. >> Không được bỏ mạo từ. Số nhiều không xác định dùng [[des]].
+
+#dialogue
+zoe: Il y a des gâteaux ? | Có bánh ngọt không? [happy]
+lucas: Oui, et des fruits aussi ! | Có, và cả trái cây nữa! [happy cheer]
+zoe: Les fruits sont pour qui ? | Trái cây cho ai vậy? [thinking]
+lucas: Pour les enfants de l'école. | Cho bọn trẻ ở trường. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi có hai con mèo. => J'ai deux chats. | Tôi có hai con mèo.
+? Nói bằng tiếng Pháp: Có những chiếc thuyền trên biển. => Il y a des bateaux sur la mer. | Có những chiếc thuyền trên biển.
+
+#recap
+> Tóm lại: số nhiều thêm [[s]] nhưng không đọc. [[-eau]] thêm [[x]], [[-al]] thành [[-aux]]. [[Un]], [[une]] thành [[des]]; [[le]], [[la]] thành [[les]]. Nghe mạo từ để biết một hay nhiều.
+
+#practice
+fill: J'ai deux ___ . (chat) | chats* / chat / chaux || Thêm -s.
+fill: Il y a des ___ sur la mer. | bateaux* / bateaus / bateau || -eau → -eaux.
+type: Mon père lit deux ___ . (journal) | journaux || -al → -aux.
+fill: ___ enfants jouent dans le parc. | Les* / Le / Un || Số nhiều → les.
+fix: J'ai amis à Paris. | J'ai des amis à Paris.* / J'ai les amis à Paris. / J'ai un amis à Paris. || Phải có mạo từ des.
+natural: Il y a des chevaux.* / Il y a des chevals. || -al → -aux.
+order: Les / enfants / sont / ici. | Bọn trẻ ở đây.
+listen: Les enfants sont ici. | Les enfants sont ici.* / L'enfant est ici. / Des enfants sont ici. || les nối âm z: lezɑ̃fɑ̃.

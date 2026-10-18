@@ -1,0 +1,78 @@
+=== so-huu
+sum: Tính từ sở hữu (mon, ma, mes…) hợp với vật được sở hữu, không hợp với người sở hữu. Vì vậy son père là bố của anh ấy hoặc của cô ấy, sa mère là mẹ của anh ấy hoặc của cô ấy. Trước nguyên âm, ma, ta, sa đổi thành mon, ton, son.
+form: mon · ma · mes | của tôi
+form: ton · ta · tes / son · sa · ses | của bạn / của anh ấy, cô ấy
+form: notre · nos / votre · vos / leur · leurs | của chúng tôi / các bạn / họ
+cast: nam maman
+bg: home-evening
+words: mon, ton, son, notre, votre, leur
+
+#hook
+maman: C'est ton frère sur la photo ? | Người trong ảnh là anh con à? [thinking point]
+nam: Oui, c'est mon frère, et ma sœur. | Vâng, đó là anh con, và chị con. [happy explain]
+> Nam nói [[mon frère]] nhưng lại nói [[ma sœur]]. Cùng là “của tôi”, sao lại khác?
+
+#meaning
+> Tính từ sở hữu đổi theo vật được sở hữu: giống đực, giống cái hay số nhiều.
+- {mon|k} frère | anh trai tôi || frère giống đực → mon
+- {ma|k} sœur | chị gái tôi || sœur giống cái → ma
+- {mes|k} parents | bố mẹ tôi || số nhiều → mes
+
+#form
+th: Người sở hữu | Giống đực | Giống cái | Số nhiều
+tb: je | mon | ma | mes
+tb: tu | ton | ta | tes
+tb: il · elle | son | sa | ses
+tb: nous | notre | notre | nos
+tb: vous | votre | votre | vos
+tb: ils · elles | leur | leur | leurs
+> Ba dòng đầu có ba dạng. Ba dòng sau chỉ có hai: số ít và số nhiều.
+
+#examples
+- {Notre|k} maison est petite. | Nhà chúng tôi nhỏ.
+- C'est {votre|k} voiture, madame ? | Đây là xe của bà phải không?
+- {Leurs|k} enfants sont à l'école. | Con cái họ đang ở trường.
+- Tu as {ton|k} téléphone ? | Cậu có mang điện thoại không?
+
+#real
+> Đây là điểm người Việt dễ nhầm nhất. [[Son]], [[sa]] không cho biết người sở hữu là nam hay nữ. Chúng chỉ theo vật được sở hữu.
+- Paul aime {sa|k} mère. | Paul yêu mẹ anh ấy. || mère giống cái → sa
+- Marie aime {son|k} père. | Marie yêu bố cô ấy. || père giống đực → son
+> Cô ấy là nữ, nhưng [[père]] là giống đực, nên vẫn là [[son père]].
+> Thêm một luật nhỏ: trước nguyên âm, [[ma]], [[ta]], [[sa]] đổi thành [[mon]], [[ton]], [[son]] cho dễ đọc.
+- C'est {mon|k} amie Linh. | Đây là bạn gái tôi, Linh. || amie giống cái, nhưng có nguyên âm → mon
+
+#pronunciation
+pron: mon ami | mon‿ami | mɔ̃nami
+pron: mes amis | mes‿amis | mezami
+pron: son école | son‿école | sɔ̃nekɔl
+> Trước nguyên âm, [[mon]], [[ton]], [[son]] nối âm n. [[Mes]], [[tes]], [[ses]] nối âm z.
++ Ce sont mes amis. | Đây là các bạn tôi.
+
+#mistakes
+x: Paul parle avec son mère. => Paul parle avec sa mère. | Paul nói chuyện với mẹ anh ấy. >> [[Mère]] là giống cái nên dùng [[sa]], dù người con là nam.
+x: C'est ma amie. => C'est mon amie. | Đây là bạn gái tôi. >> Trước nguyên âm, [[ma]] đổi thành [[mon]].
+x: Ils aiment leur enfants. => Ils aiment leurs enfants. | Họ yêu các con của họ. >> Nhiều con thì dùng [[leurs]].
+
+#dialogue
+maman: Où sont tes clés, Nam ? | Chìa khóa của con đâu, Nam? [worried]
+nam: Dans mon sac, je pense. | Trong túi con, con nghĩ thế. [thinking]
+maman: Et ton téléphone ? | Còn điện thoại của con? [thinking]
+nam: Il est sur ma table ! | Nó ở trên bàn con! [happy point]
+
+#recall
+? Nói bằng tiếng Pháp: Cô ấy yêu bố mình. => Elle aime son père. | Cô ấy yêu bố mình.
+? Nói bằng tiếng Pháp: Đây là các bạn tôi. => Ce sont mes amis. | Đây là các bạn tôi.
+
+#recap
+> Tóm lại: sở hữu theo vật, không theo người. [[Son père]], [[sa mère]] dùng cho cả anh ấy lẫn cô ấy. Trước nguyên âm, [[ma]] thành [[mon]]: [[mon amie]].
+
+#practice
+fill: C'est ___ mère. (je) | ma* / mon / mes || mère giống cái → ma.
+fill: Marie aime ___ père. | son* / sa / ses || père giống đực → son.
+fill: C'est ___ amie Linh. (je) | mon* / ma / mes || Nguyên âm → mon.
+type: Ils aiment ___ enfants. (ils) | leurs || Số nhiều: leurs.
+fix: Paul parle avec son mère. | Paul parle avec sa mère.* / Paul parle avec ses mère. / Paul parle avec leur mère. || mère giống cái → sa.
+natural: C'est mon amie.* / C'est ma amie. || ma + nguyên âm → mon.
+order: Notre / maison / est / petite. | Nhà chúng tôi nhỏ.
+listen: Ce sont mes amis. | Ce sont mes amis.* / C'est mon ami. / Ce sont ses amis. || mes‿amis = mezami.

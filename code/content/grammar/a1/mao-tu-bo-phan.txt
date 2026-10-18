@@ -1,0 +1,77 @@
+=== mao-tu-bo-phan
+sum: Với thứ không đếm được như bánh mì, nước, súp, tiếng Pháp dùng du, de la, de l' với nghĩa “một ít”: je mange du pain, je bois de l'eau. Sau phủ định và sau từ chỉ lượng (beaucoup, un peu, un verre…), tất cả thành de: pas de pain, beaucoup de sucre.
+form: du + giống đực · de la + giống cái · de l' + nguyên âm | du pain · de la soupe · de l'eau
+form: pas de · beaucoup de · un peu de + danh từ | Je ne mange pas de viande.
+form: aimer le… nhưng manger du… | J'aime le pain. · Je mange du pain.
+cast: papi lucas
+bg: kitchen
+words: du, de, beaucoup, peu
+
+#hook
+papi: Tu veux du pain, Lucas ? | Cháu muốn ăn bánh mì không, Lucas? [happy]
+lucas: Oui, et de la confiture, s'il te plaît ! | Có ạ, và cả mứt nữa ông ơi! [happy cheer]
+> [[Du pain]], [[de la confiture]]: không phải một ổ bánh, một hũ mứt, mà là “một ít” bánh, “một ít” mứt.
+
+#meaning
+> Bánh mì, nước, sữa, mứt là những thứ không đếm từng cái được. Khi ăn hay uống một phần của chúng, tiếng Pháp dùng mạo từ bộ phận.
+- Je bois {du|k} lait. | Tôi uống sữa. || một ít sữa
+- Elle mange {de la|k} soupe. | Cô ấy ăn súp.
+- Tu veux {de l'|k} eau ? | Cậu muốn uống nước không?
+> Tiếng Việt không cần chữ nào ở đây, nhưng tiếng Pháp thì không được bỏ.
+
+#form
+th: Loại | Mạo từ | Ví dụ
+tb: giống đực | du | du pain · du riz
+tb: giống cái | de la | de la soupe · de la viande
+tb: nguyên âm / h câm | de l' | de l'eau · de l'huile
+> Ba dạng đi theo giống của danh từ: [[du]], [[de la]], [[de l']].
+
+#examples
+- Le matin, je mange {du|k} pain avec {du|k} beurre. | Buổi sáng, tôi ăn bánh mì với bơ.
+- On achète {de la|k} viande pour ce soir ? | Mình mua thịt cho tối nay nhé?
+- Il y a {du|k} fromage dans le frigo. | Trong tủ lạnh có phô mai.
+- Vous voulez {du|k} thé ou {du|k} café ? | Ông muốn uống trà hay cà phê?
+
+#real
+> Hai trường hợp mạo từ thu gọn thành [[de]]. Thứ nhất, sau phủ định.
+vs: Je mange de la viande. | Tôi ăn thịt. || khẳng định: de la
+vs: Je ne mange pas de viande. | Tôi không ăn thịt. || phủ định: de
+> Thứ hai, sau các từ chỉ lượng như [[beaucoup de]], [[un peu de]], [[un verre de]].
+- Il y a {beaucoup de|k} sucre dans ce gâteau. | Bánh này nhiều đường quá.
+- Je voudrais {un verre d'eau|k}, s'il vous plaît. | Cho tôi một cốc nước ạ.
+> Và nhớ: nói thích một thứ nói chung thì vẫn dùng [[le]]: [[j'aime le pain]], nhưng [[je mange du pain]].
+
+#pronunciation
+pron: du | du | dy
+pron: de | de | də
+pron: de l'eau | de l'eau | dəlo
+> Nghe kỹ sự khác nhau: [[du]] tròn môi như “đuy”, [[de]] nhẹ như “đơ”.
++ Il ne boit pas de café. | Anh ấy không uống cà phê.
+
+#mistakes
+x: Je mange pain le matin. => Je mange du pain le matin. | Buổi sáng tôi ăn bánh mì. >> Không được bỏ mạo từ: một ít bánh mì là [[du pain]].
+x: Je ne bois pas du café. => Je ne bois pas de café. | Tôi không uống cà phê. >> Sau phủ định, [[du]] thành [[de]].
+x: J'ai beaucoup des amis. => J'ai beaucoup d'amis. | Tôi có nhiều bạn. >> Sau [[beaucoup]], chỉ dùng [[de]] hay [[d']].
+
+#dialogue
+lucas: Papi, il y a encore du lait ? | Ông ơi, còn sữa không ạ? [thinking]
+papi: Non, il n'y a plus de lait. | Không, hết sữa rồi. [sad shake]
+lucas: Alors je bois du jus d'orange. | Vậy cháu uống nước cam. [happy]
+papi: Bonne idée, il y a beaucoup de jus ! | Ý hay, còn nhiều nước cam lắm! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi uống nước. => Je bois de l'eau. | Tôi uống nước.
+? Nói bằng tiếng Pháp: Tôi không ăn thịt. => Je ne mange pas de viande. | Tôi không ăn thịt.
+
+#recap
+> Tóm lại: một ít thứ không đếm được thì dùng [[du]], [[de la]], [[de l']]. Sau phủ định và sau từ chỉ lượng, tất cả thành [[de]]: [[pas de café]], [[beaucoup de sucre]].
+
+#practice
+fill: Je bois ___ lait. | du* / de la / le || lait giống đực → du.
+fill: Elle mange ___ soupe. | de la* / du / de l' || soupe giống cái → de la.
+fill: Tu veux ___ eau ? | de l'* / du / de la || Nguyên âm → de l'.
+fill: Je ne mange pas ___ viande. | de* / de la / la || Sau phủ định → de.
+contrast: J'aime ___ pain. | le* / du || Thích nói chung → le.
+fix: J'ai beaucoup des amis. | J'ai beaucoup d'amis.* / J'ai beaucoup les amis. / J'ai beaucoup amis. || beaucoup + de.
+order: On / achète / de / la / viande ? | Mình mua thịt nhé?
+listen: Il ne boit pas de café. | Il ne boit pas de café.* / Il boit du café. / Il ne boit pas le café. || pas de: “đơ”.

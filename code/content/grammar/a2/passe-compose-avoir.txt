@@ -1,0 +1,78 @@
+=== passe-compose-avoir
+sum: Passé composé là thì quá khứ dùng nhiều nhất, kể một việc đã xảy ra và đã xong. Phần lớn động từ dùng avoir ở hiện tại + quá khứ phân từ: j'ai mangé. Động từ -er đổi thành -é, -ir thành -i, -re thành -u.
+form: avoir (hiện tại) + quá khứ phân từ | j'ai mangé · tu as fini
+form: -er → é · -ir → i · -re → u | parler → parlé · finir → fini · attendre → attendu
+form: hier · ce matin · la semaine dernière · déjà | Hier, j'ai travaillé.
+cast: lea nam
+bg: cafe
+words: hier, dernier, déjà
+
+#hook
+lea: Tu as passé un bon week-end ? | Cuối tuần của cậu vui không? [happy]
+nam: Oui ! J'ai visité Lyon et j'ai mangé dans un bon restaurant. | Vui lắm! Mình đi thăm Lyon và ăn ở một nhà hàng ngon. [happy explain]
+> [[J'ai visité]], [[j'ai mangé]]: Nam kể những việc đã làm xong. Đó là thì [[passé composé]].
+
+#meaning
+> Tiếng Việt chỉ cần thêm “đã” hay “rồi”. Tiếng Pháp đổi hình thức động từ: [[avoir]] ở hiện tại, cộng với quá khứ phân từ.
+vs: Je mange. | Tôi ăn. || hiện tại
+vs: J'ai mangé. | Tôi đã ăn rồi. || passé composé
+> Thì này dùng cho một việc đã xảy ra ở một thời điểm trong quá khứ và đã kết thúc.
+
+#form
+f: J' + [ai] + [mangé]
+> Phần thứ nhất là [[avoir]] chia theo chủ ngữ: [[j'ai]], [[tu as]], [[il a]], [[nous avons]], [[vous avez]], [[ils ont]].
+th: Nguyên mẫu | Phân từ | Ví dụ
+tb: parler (-er) | parlé | j'ai parlé
+tb: finir (-ir) | fini | j'ai fini
+tb: attendre (-re) | attendu | j'ai attendu
+> Phần thứ hai là quá khứ phân từ. Động từ [[-er]] đổi thành [[é]], [[-ir]] thành [[i]], [[-re]] thành [[u]].
+
+#examples
+- Hier, nous {avons|a} {regardé|v} un film. | Hôm qua chúng tôi đã xem một bộ phim.
+- Tu {as|a} {fini|v} tes devoirs ? | Con làm xong bài tập chưa?
+- Ils {ont|a} {acheté|v} une nouvelle voiture. | Họ đã mua một chiếc xe mới.
+- J'{ai|a} {attendu|v} le bus pendant vingt minutes. | Tôi đã chờ xe buýt hai mươi phút.
+- Elle {a|a} {choisi|v} une robe bleue. | Cô ấy đã chọn một chiếc váy xanh.
+
+#real
+> Những từ chỉ thời gian quá khứ thường đi kèm thì này.
+- {Ce matin|t}, j'ai téléphoné à ma mère. | Sáng nay tôi đã gọi điện cho mẹ.
+- {La semaine dernière|t}, on a travaillé tard. | Tuần trước bọn mình làm việc muộn.
+- Vous avez {déjà|t} mangé ? | Ông ăn rồi à? || déjà = rồi
+> [[Déjà]] đứng giữa [[avoir]] và phân từ: [[j'ai déjà mangé]].
+
+#pronunciation
+pron: je mange | je mange | ʒəmɑ̃ʒ
+pron: j'ai mangé | j'ai mangé | ʒemɑ̃ʒe
+pron: j'ai fini | j'ai fini | ʒefini
+> Nghe kỹ hai chỗ: [[je]] đọc “giơ”, còn [[j'ai]] đọc “giê”. Và phân từ [[mangé]] có âm “ê” ở cuối.
+> Nhờ hai âm này, người nghe biết là hiện tại hay quá khứ.
++ J'ai mangé une pomme. | Tôi đã ăn một quả táo.
+
+#mistakes
+x: Hier, je mange au restaurant. => Hier, j'ai mangé au restaurant. | Hôm qua tôi đã ăn ở nhà hàng. >> Việc đã xong trong quá khứ thì dùng [[passé composé]].
+x: Je mangé une pizza. => J'ai mangé une pizza. | Tôi đã ăn một cái pizza. >> Không được bỏ [[avoir]]: [[j'ai mangé]].
+x: J'ai manger une pizza. => J'ai mangé une pizza. | Tôi đã ăn một cái pizza. >> Sau [[avoir]] là phân từ [[mangé]], không phải nguyên mẫu. Hai từ đọc giống nhau nhưng viết khác.
+
+#dialogue
+nam: Et toi, qu'est-ce que tu as fait samedi ? | Còn cậu, thứ bảy cậu làm gì? [thinking]
+lea: J'ai travaillé le matin, et le soir, j'ai dansé avec des amis. | Buổi sáng mình đi làm, buổi tối mình đi nhảy với bạn. [happy]
+nam: Vous avez dansé où ? | Các cậu nhảy ở đâu? [surprised]
+lea: Dans un petit club près de la gare. | Ở một câu lạc bộ nhỏ gần nhà ga. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Hôm qua tôi đã xem một bộ phim. => Hier, j'ai regardé un film. | Hôm qua tôi đã xem một bộ phim.
+? Nói bằng tiếng Pháp: Ông ăn rồi à? => Vous avez déjà mangé ? | Ông ăn rồi à?
+
+#recap
+> Tóm lại: [[passé composé]] là [[avoir]] ở hiện tại cộng phân từ: [[j'ai mangé]]. [[-er]] thành [[é]], [[-ir]] thành [[i]], [[-re]] thành [[u]]. Dùng cho việc đã xảy ra và đã xong.
+
+#practice
+fill: Hier, nous ___ regardé un film. | avons* / sommes / avez || avoir với nous: avons.
+fill: Tu as ___ tes devoirs ? | fini* / finé / finir || -ir → i.
+fill: J'ai ___ le bus. | attendu* / attendé / attendi || -re → u.
+type: Ils ont ___ une voiture. (acheter) | acheté || -er → é.
+fix: J'ai manger une pizza. | J'ai mangé une pizza.* / Je mangé une pizza. / J'ai mange une pizza. || avoir + phân từ mangé.
+contrast: Hier, je ___ au restaurant. | suis allé* / vais || Hôm qua → quá khứ.
+order: Elle / a / choisi / une / robe / bleue. | Cô ấy đã chọn một chiếc váy xanh.
+listen: J'ai mangé une pomme. | J'ai mangé une pomme.* / Je mange une pomme. / Je vais manger une pomme. || j'ai = “giê”, mangé có âm “ê”.

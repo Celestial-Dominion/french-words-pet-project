@@ -42,7 +42,7 @@
 | Bài đọc | 1.377 (A1–C2) | 60 → 1.287 (15/10: A1 160, A2 252, B1 300, B2 285, C1 250, C2 40/145 — C1/C2 phiên khác đang làm) |
 | Truyện | 373, có chuỗi truyện dài | 16 → 132 (14/10: A1 54, A2 62, B1–C2 16 cũ) |
 | Video hội thoại | 160 | 0 |
-| Ngữ pháp | 188 bài, video giảng SVG, luyện tập, lịch ôn riêng | 11 bài chữ |
+| Ngữ pháp | 188 bài, video giảng SVG, luyện tập, lịch ôn riêng | 54 bài A1–A2 cùng bộ máy (18/10) |
 | Câu ví dụ/từ | 5 câu đã soát | 3 câu |
 | Thẻ từ | họ từ, cụm đi kèm, nhãn văn phong | chưa có |
 | Đánh dấu đã đọc/xem/học + lọc · câu hỏi đọc hiểu · ghi nguồn | có | chưa |
@@ -94,8 +94,8 @@ Lý do: phiên mới cho tới 5 câu điền/từ + xoay câu theo lần ôn, n
 
 ## 6. Khoá ngữ pháp có video
 
-- [ ] **E1.** Port bộ máy: bài giảng SVG, luyện tập, lịch ôn riêng, liên kết từ thẻ từ → bài ngữ pháp, đồng bộ tiến độ mã hoá (~2.700 dòng). Chuyển 11 bài hiện có sang định dạng mới.
-- [ ] **E2.** Khung chương trình A1–C2 (~150–180 bài): "Inventaire linguistique des contenus clés des niveaux du CECRL" (France Éducation international, miễn phí, đơn vị ra đề DELF) + đối chiếu danh sách ngữ pháp DELF. Tự viết bài, không chép (`ENGLISH_GRAMMAR_PLAYBOOK.md`).
+- [x] **E1.** Port bộ máy (18/10/2026): bài giảng SVG có tiếng (`components/video`, `components/grammar`, `app/ngu-phap`), luyện tập 9 dạng, lịch ôn riêng, liên kết thẻ từ → bài ngữ pháp (`lib/grammar-refs.ts`), đồng bộ tiến độ mã hoá `id~doneAt~lastAt~reps~best~last~off~man` qua trường `grammar` (vẫn đọc mục cũ "id" / "id~mốc[~0]"). Pipeline: `content/grammar/<cấp>/*.txt` → `npm run grammar:build` (build → `scripts/build-grammar-audio.py` edge-tts: giọng giảng vi-VN-HoaiMy, giọng Pháp Denise + 12 vai → build `--prune`), kiểm `npm run grammar:check`. Cách viết: `docs/GRAMMAR_PLAYBOOK.md`. 11 bài chữ cũ thay bằng khung mới.
+- [ ] **E2.** Khung chương trình A1–C2 (~150–180 bài): "Inventaire linguistique des contenus clés des niveaux du CECRL" (France Éducation international, miễn phí, đơn vị ra đề DELF) + đối chiếu danh sách ngữ pháp DELF. Tự viết bài, không chép. **A1 27 bài + A2 27 bài XONG (18/10/2026, audio đủ).** Còn B1–C2: thêm mục vào `content/grammar/curriculum.json` + viết theo playbook.
 
 ## 7. Tuỳ chọn
 

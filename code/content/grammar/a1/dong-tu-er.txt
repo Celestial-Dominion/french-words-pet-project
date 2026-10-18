@@ -1,0 +1,79 @@
+=== dong-tu-er
+sum: Phần lớn động từ tiếng Pháp tận cùng bằng -er và chia cùng một kiểu: bỏ -er, thêm -e, -es, -e, -ons, -ez, -ent. Các đuôi -e, -es, -ent đều không đọc, nên parle, parles, parlent nghe giống hệt nhau. Thì hiện tại vừa là “làm” vừa là “đang làm”.
+form: gốc + e · es · e | je parle · tu parles · il parle
+form: gốc + ons · ez · ent | nous parlons · vous parlez · ils parlent
+form: -e, -es, -ent không đọc | parle = parles = parlent /paʁl/
+cast: linh paul
+bg: office
+words: parler, travailler, habiter, écouter, regarder, manger
+
+#hook
+paul: Tu parles français ? | Cậu nói tiếng Pháp à? [surprised]
+linh: Oui, je parle un peu. | Ừ, mình nói được một chút. [shy]
+> [[Parles]] và [[parle]] viết khác nhau nhưng đọc y hệt. Đó là bí mật của động từ đuôi [[-er]].
+
+#meaning
+> Động từ nguyên mẫu trong từ điển có dạng [[parler]], [[habiter]], [[travailler]]. Chín phần mười động từ tiếng Pháp tận cùng bằng [[-er]].
+- Je {travaille|k} à Lyon. | Tôi làm việc ở Lyon.
+- Nous {habitons|k} près de l'école. | Chúng tôi sống gần trường học.
+> Muốn chia, ta bỏ [[-er]] để lấy phần gốc, rồi thêm đuôi theo chủ ngữ.
+
+#form
+th: Chủ ngữ | Đuôi | parler
+tb: je | -e | je parle
+tb: tu | -es | tu parles
+tb: il · elle · on | -e | il parle
+tb: nous | -ons | nous parlons
+tb: vous | -ez | vous parlez
+tb: ils · elles | -ent | ils parlent
+> Sáu đuôi cần nhớ: [[e]], [[es]], [[e]], [[ons]], [[ez]], [[ent]].
+> Trước nguyên âm, [[je]] thành [[j']]: [[j'habite]], [[j'écoute]], [[j'aime]].
+
+#examples
+- Tu {regardes|k} un film ? | Cậu xem phim à?
+- Elle {écoute|k} de la musique. | Cô ấy nghe nhạc.
+- Vous {mangez|k} avec nous ce soir ? | Tối nay các bạn ăn với chúng tôi chứ?
+- Mes parents {travaillent|k} le samedi. | Bố mẹ tôi làm việc vào thứ bảy.
+- On {chante|k} et on {danse|k} ! | Mình hát và nhảy nào!
+
+#real
+> Tiếng Pháp không có thì “đang” riêng. Một câu ở hiện tại dịch được cả “làm” lẫn “đang làm”.
+- Je {travaille|k} maintenant. | Bây giờ tôi đang làm việc. || đang làm
+- Je {travaille|k} le matin. | Tôi làm việc vào buổi sáng. || thói quen
+> Chỉ cần một chữ như [[maintenant]], nghĩa là “bây giờ”, là người nghe hiểu việc đang diễn ra.
+
+#pronunciation
+pron: je parle · tu parles · ils parlent | parle | paʁl
+pron: nous parlons | parlons | paʁlɔ̃
+pron: vous parlez | parlez | paʁle
+> Ba đuôi [[e]], [[es]], [[ent]] đều câm. Chỉ có [[nous]] và [[vous]] nghe khác: [[parlons]] có âm mũi “ông”, [[parlez]] đọc là “lê”.
+> Đừng bao giờ đọc chữ [[ent]] ở [[ils parlent]]. Đây là lỗi người mới học rất hay mắc.
++ Ils parlent français. | Họ nói tiếng Pháp.
+
+#mistakes
+x: Je parles français. => Je parle français. | Tôi nói tiếng Pháp. >> Với [[je]], đuôi là [[e]], không có s.
+x: Ils parlont français. => Ils parlent français. | Họ nói tiếng Pháp. >> Đuôi [[ons]] chỉ dành cho [[nous]]. Với [[ils]], đuôi là [[ent]].
+x: Nous mangons ensemble. => Nous mangeons ensemble. | Chúng tôi ăn cùng nhau. >> Với [[manger]], phải giữ chữ e trước [[ons]] để đọc đúng âm “gi”: [[mangeons]].
+
+#dialogue
+paul: Linh, tu habites où ? | Linh, cậu sống ở đâu? [thinking]
+linh: J'habite à Lyon, près de l'école. | Mình sống ở Lyon, gần trường học. [explain]
+paul: Et tu travailles ici ? | Cậu làm việc ở đây à? [happy]
+linh: Oui, je travaille ici le matin. | Ừ, mình làm ở đây vào buổi sáng. [nod]
+
+#recall
+? Nói bằng tiếng Pháp: Chúng tôi làm việc ở đây. => Nous travaillons ici. | Chúng tôi làm việc ở đây.
+? Nói bằng tiếng Pháp: Cô ấy đang nghe nhạc. => Elle écoute de la musique. | Cô ấy đang nghe nhạc.
+
+#recap
+> Tóm lại: động từ [[-er]] bỏ [[er]] rồi thêm [[e]], [[es]], [[e]], [[ons]], [[ez]], [[ent]]. Ba đuôi [[e]], [[es]], [[ent]] câm. Hiện tại vừa là “làm” vừa là “đang làm”.
+
+#practice
+fill: Nous ___ à Lyon. | habitons* / habitez / habitent || nous → -ons.
+fill: Ils ___ le samedi. | travaillent* / travaillons / travaille || ils → -ent.
+type: Vous ___ avec nous ? (manger) | mangez || vous → -ez.
+type: Tu ___ un film ? (regarder) | regardes || tu → -es.
+fix: Je parles français. | Je parle français.* / Je parlons français. / J'parle français. || je → -e.
+natural: Nous mangeons ensemble.* / Nous mangons ensemble. || manger giữ e: mangeons.
+order: Elle / écoute / de / la / musique. | Cô ấy nghe nhạc.
+listen: Ils parlent français. | Ils parlent français.* / Nous parlons français. / Vous parlez français. || parlent đọc /paʁl/, đuôi ent câm.

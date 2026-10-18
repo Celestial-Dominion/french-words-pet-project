@@ -1,0 +1,80 @@
+=== tinh-tu
+sum: Tính từ đổi theo danh từ: thêm -e cho giống cái, thêm -s cho số nhiều. Phần lớn tính từ đứng sau danh từ như tiếng Việt (un chat noir), nhưng vài tính từ ngắn, hay dùng như petit, grand, beau, bon, jeune, vieux, nouveau lại đứng trước (une petite maison).
+form: giống cái + e · số nhiều + s | petit · petite · petits · petites
+form: danh từ + tính từ (phần lớn) | un chat noir · une voiture rouge
+form: petit, grand, beau, bon, jeune, vieux, nouveau + danh từ | une petite maison
+cast: zoe papi
+bg: park
+words: petit, grand, beau, noir, rouge, nouveau
+
+#hook
+zoe: Papi, regarde ! Un chat noir ! | Ông ơi, nhìn kìa! Một con mèo đen! [surprised point]
+papi: Oh, et il est petit ! | Ồ, nó nhỏ xíu! [happy]
+> [[Un chat noir]]: tính từ [[noir]] đứng sau danh từ, giống hệt “con mèo đen” trong tiếng Việt.
+
+#meaning
+> Trong tiếng Pháp, tính từ phải hợp với danh từ: cùng giống, cùng số.
+- un chat {noir|k} | một con mèo đen || giống đực
+- une voiture {noire|k} | một chiếc xe màu đen || giống cái: + e
+- des chats {noirs|k} | những con mèo đen || số nhiều: + s
+- des voitures {noires|k} | những chiếc xe màu đen || giống cái số nhiều: + es
+
+#form
+th: Loại | Số ít | Số nhiều
+tb: giống đực | petit | petits
+tb: giống cái | petite | petites
+tb: đã có -e | rouge | rouges
+> Luật chung: thêm [[e]] cho giống cái, thêm [[s]] cho số nhiều.
+> Tính từ đã tận cùng bằng [[e]] thì giống cái không đổi: [[un livre rouge]], [[une table rouge]].
+> Vài tính từ đổi nhiều hơn: [[beau]] thành [[belle]], [[bon]] thành [[bonne]], [[blanc]] thành [[blanche]], [[vieux]] thành [[vieille]].
+
+#examples
+- J'ai une voiture {rouge|k}. | Tôi có một chiếc xe màu đỏ.
+- Elle porte une robe {blanche|k}. | Cô ấy mặc một chiếc váy trắng.
+- Ce sont des livres {intéressants|k}. | Đó là những quyển sách hay.
+- Paul est {grand|k} et Marie est {petite|k}. | Paul cao còn Marie thì thấp.
+
+#real
+> Phần lớn tính từ đứng sau danh từ. Nhưng một nhóm nhỏ, ngắn và rất hay dùng, lại đứng trước.
+- une {petite|k} maison | một ngôi nhà nhỏ || petit đứng trước
+- un {beau|k} jardin | một khu vườn đẹp || beau đứng trước
+- une {bonne|k} idée | một ý hay || bon đứng trước
+- un {jeune|k} homme | một chàng trai trẻ || jeune đứng trước
+> Nhóm đứng trước gồm: [[petit]], [[grand]], [[beau]], [[joli]], [[bon]], [[mauvais]], [[jeune]], [[vieux]], [[nouveau]]. Chúng nói về kích cỡ, vẻ đẹp, tốt xấu, tuổi tác.
+
+#pronunciation
+pron: petit | petit | pəti
+pron: petite | petite | pətit
+pron: grand | grand | ɡʁɑ̃
+pron: grande | grande | ɡʁɑ̃d
+> Ở giống đực, phụ âm cuối câm. Thêm [[e]] thì phụ âm cuối được đọc ra: [[petit]] thành [[petite]], có thêm âm t.
+> Vì vậy, khi nghe thấy phụ âm cuối, thường đó là giống cái.
++ Marie est petite. | Marie thấp.
+
+#mistakes
+x: Une maison petite. => Une petite maison. | Một ngôi nhà nhỏ. >> [[Petit]] thuộc nhóm đứng trước danh từ.
+x: Une voiture noir. => Une voiture noire. | Một chiếc xe màu đen. >> [[Voiture]] là giống cái, tính từ phải thêm [[e]].
+x: Des chats noir. => Des chats noirs. | Những con mèo đen. >> Danh từ số nhiều thì tính từ cũng thêm [[s]].
+
+#dialogue
+papi: Tu aimes ta nouvelle école ? | Cháu thích trường mới không? [happy]
+zoe: Oui ! Elle est grande et belle. | Có ạ! Trường to và đẹp lắm. [happy cheer]
+papi: Et ta maîtresse ? | Còn cô giáo của cháu? [thinking]
+zoe: Elle est jeune et très gentille ! | Cô trẻ và hiền lắm ạ! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: một chiếc xe màu đỏ => une voiture rouge | một chiếc xe màu đỏ
+? Nói bằng tiếng Pháp: một ngôi nhà nhỏ => une petite maison | một ngôi nhà nhỏ
+
+#recap
+> Tóm lại: tính từ thêm [[e]] cho giống cái, [[s]] cho số nhiều. Phần lớn đứng sau danh từ: [[un chat noir]]. Nhóm ngắn như [[petit]], [[beau]], [[bon]], [[jeune]] đứng trước: [[une petite maison]].
+
+#practice
+fill: Une voiture ___ . | noire* / noir / noirs || Giống cái: + e.
+fill: Des chats ___ . | noirs* / noir / noires || Giống đực số nhiều: + s.
+fill: Une ___ idée. | bonne* / bon / bons || bon → bonne, đứng trước.
+choice: Câu nào đúng? | J'ai une petite maison.* / J'ai une maison petite. / J'ai un petit maison. || petit đứng trước, hợp giống.
+type: Marie est ___ . (petit) | petite || Marie là nữ → petite.
+fix: Une voiture noir. | Une voiture noire.* / Un voiture noire. / Une noire voiture. || voiture giống cái → noire.
+order: Elle / porte / une / robe / blanche. | Cô ấy mặc một chiếc váy trắng.
+listen: Marie est petite. | Marie est petite.* / Marie est petit. / Marie est grande. || Nghe âm t cuối: petite.

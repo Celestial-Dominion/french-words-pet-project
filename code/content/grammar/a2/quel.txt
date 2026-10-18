@@ -1,0 +1,74 @@
+=== quel
+sum: Quel (nào, gì) đứng trước danh từ và hợp giống, số với nó: quel (đực), quelle (cái), quels, quelles (số nhiều). Dùng để hỏi: Quel âge as-tu ? Quelle heure est-il ? Đứng trước être: Quel est ton nom ? Còn dùng để cảm thán: Quelle belle journée !
+form: quel + danh từ đực · quelle + danh từ cái | Quel âge ? · Quelle heure ?
+form: quels · quelles + số nhiều | Quels films ? · Quelles couleurs ?
+form: Quel est… ? · Quel… ! (cảm thán) | Quel est ton numéro ? · Quelle chance !
+cast: lucas mme-martin
+bg: classroom
+words: quel
+
+#hook
+mme-martin: Quel est ton sport préféré, Lucas ? | Môn thể thao em thích nhất là gì, Lucas? [happy]
+lucas: Le football ! Et quelle est votre couleur préférée, madame ? | Bóng đá ạ! Còn màu cô thích nhất là màu gì ạ? [happy]
+> [[Quel est ton sport]], [[quelle est votre couleur]]: cùng một từ hỏi, nhưng đổi theo giống của danh từ.
+
+#meaning
+> [[Quel]] hỏi “nào”, “gì” về một danh từ. Nó hợp giống và số với danh từ đó, như một tính từ.
+- {Quel|q} âge as-tu ? | Cậu bao nhiêu tuổi? || âge giống đực
+- {Quelle|q} heure est-il ? | Mấy giờ rồi? || heure giống cái
+- {Quels|q} films tu aimes ? | Cậu thích những phim nào? || số nhiều
+
+#form
+th: Loại | Số ít | Số nhiều
+tb: giống đực | quel | quels
+tb: giống cái | quelle | quelles
+> Bốn dạng này đọc giống hệt nhau: “ken”. Chỉ khác khi viết.
+f: [Quel] + est + ton nom ?
+> [[Quel]] có thể đứng trước [[être]]. Khi đó nó hợp với danh từ phía sau: [[quelle est ton adresse]].
+
+#examples
+- {Quelle|q} est ton adresse ? | Địa chỉ của cậu là gì?
+- Tu prends {quel|q} train ? | Cậu đi chuyến tàu nào?
+- {Quelles|q} langues parlez-vous ? | Ông nói những thứ tiếng nào?
+- {Quel|q} temps fait-il aujourd'hui ? | Hôm nay thời tiết thế nào?
+- À {quelle|q} heure commence le film ? | Mấy giờ phim bắt đầu?
+
+#real
+> [[Quel]] còn dùng để cảm thán, giống “thật là…!” trong tiếng Việt. Khi đó không có mạo từ.
+- {Quelle|q} belle journée ! | Một ngày thật đẹp!
+- {Quel|q} dommage ! | Tiếc quá!
+- {Quelle|q} chance ! | May quá!
+
+#pronunciation
+pron: quel · quelle · quels · quelles | quel | kɛl
+pron: quels amis | quels‿amis | kɛlzami
+> Cả bốn dạng đều đọc “ken”. Chỉ ở số nhiều, trước nguyên âm, mới có âm z nối: [[quels amis]].
++ Quels amis ? | Những người bạn nào?
+
+#mistakes
+x: Quel heure est-il ? => Quelle heure est-il ? | Mấy giờ rồi? >> [[Heure]] là giống cái, nên dùng [[quelle]].
+x: Qu'est-ce que ton nom ? => Quel est ton nom ? | Tên cậu là gì? >> Hỏi thông tin về một danh từ, dùng [[quel est]].
+x: Quel une belle journée ! => Quelle belle journée ! | Một ngày thật đẹp! >> Câu cảm thán với [[quel]] không có mạo từ.
+
+#dialogue
+mme-martin: Le rouge. Et quels sports tu fais à l'école ? | Màu đỏ. Thế ở trường em chơi những môn gì? [thinking]
+lucas: Le football et le basket. Quelle heure est-il, madame ? | Bóng đá và bóng rổ ạ. Mấy giờ rồi cô ơi? [thinking]
+mme-martin: Il est midi. C'est l'heure de manger ! | Mười hai giờ rồi. Đến giờ ăn rồi! [happy]
+lucas: Quelle bonne nouvelle ! | Tin vui quá ạ! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Mấy giờ rồi? => Quelle heure est-il ? | Mấy giờ rồi?
+? Nói bằng tiếng Pháp: Tiếc quá! => Quel dommage ! | Tiếc quá!
+
+#recap
+> Tóm lại: [[quel]], [[quelle]], [[quels]], [[quelles]] hợp với danh từ, đều đọc là “ken”. Hỏi: [[quelle heure est-il]], [[quel est ton nom]]. Cảm thán: [[quelle chance]].
+
+#practice
+fill: ___ heure est-il ? | Quelle* / Quel / Quels || heure giống cái → quelle.
+fill: ___ âge as-tu ? | Quel* / Quelle / Quelles || âge giống đực → quel.
+fill: ___ langues parlez-vous ? | Quelles* / Quels / Quelle || langues cái, số nhiều → quelles.
+type: ___ est ton nom ? | Quel / quel || nom giống đực → quel.
+fix: Qu'est-ce que ton nom ? | Quel est ton nom ?* / Quelle est ton nom ? / Quel ton nom ? || Hỏi tên → quel est.
+natural: Quelle belle journée !* / Quelle une belle journée ! || Cảm thán: không mạo từ.
+order: À / quelle / heure / commence / le / film ? | Mấy giờ phim bắt đầu?
+listen: Quels amis ? | Quels amis ?* / Quel ami ? / Quelle amie ? || quels‿amis: âm z nối.

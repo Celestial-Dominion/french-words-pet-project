@@ -1,0 +1,74 @@
+=== phan-tu-bat-quy-tac
+sum: Nhiều động từ hay dùng có quá khứ phân từ bất quy tắc: faire → fait, prendre → pris, voir → vu, avoir → eu, être → été. Dễ nhớ hơn nếu chia theo đuôi: -u (vu, bu, lu, eu), -is (pris, mis), -it (fait, dit, écrit).
+form: -u: voir → vu · boire → bu · lire → lu · avoir → eu | J'ai vu un film.
+form: -is: prendre → pris · mettre → mis · -it: faire → fait · dire → dit | J'ai pris le bus. · J'ai fait un gâteau.
+form: riêng: être → été · ouvrir → ouvert | J'ai été malade.
+cast: hugo chloe
+bg: home-evening
+words: faire, prendre, voir, boire, lire, mettre, dire, écrire
+
+#hook
+chloe: Qu'est-ce que tu as fait hier soir ? | Tối qua cậu làm gì? [thinking]
+hugo: J'ai vu un film et j'ai bu un chocolat chaud. | Mình xem một bộ phim và uống một cốc sô-cô-la nóng. [happy]
+> [[Fait]], [[vu]], [[bu]]: không theo luật [[é]], [[i]], [[u]] của bài trước. Đây là những phân từ bất quy tắc.
+
+#meaning
+> Những động từ dùng nhiều nhất lại hay bất quy tắc nhất. Tin vui là chúng có thể chia thành vài nhóm theo âm cuối.
+- J'{ai|a} {fait|v} la cuisine. | Tôi đã nấu ăn. || faire → fait
+- Elle {a|a} {pris|v} le train. | Cô ấy đã đi tàu. || prendre → pris
+- Nous {avons|a} {eu|v} de la chance. | Chúng tôi đã gặp may. || avoir → eu
+
+#form
+th: Đuôi | Nguyên mẫu → phân từ
+tb: -u | voir → vu · boire → bu · lire → lu · avoir → eu
+tb: -u | pouvoir → pu · vouloir → voulu · connaître → connu
+tb: -is | prendre → pris · mettre → mis · comprendre → compris
+tb: -it | faire → fait · dire → dit · écrire → écrit
+tb: riêng | être → été · ouvrir → ouvert
+> Nhóm [[-u]] đông nhất. Nhóm [[-is]] gồm [[prendre]] và các động từ giống nó: [[appris]], [[compris]].
+> Chú ý [[être]] có phân từ là [[été]], và [[avoir]] có phân từ là [[eu]].
+
+#examples
+- Tu {as|a} {lu|v} ce livre ? | Cậu đọc quyển sách này chưa?
+- J'{ai|a} {mis|v} mon manteau. | Tôi đã mặc áo khoác.
+- Il {a|a} {dit|v} merci. | Anh ấy đã nói cảm ơn.
+- Vous {avez|a} {compris|v} la question ? | Các bạn đã hiểu câu hỏi chưa?
+- Elle {a|a} {été|v} malade la semaine dernière. | Tuần trước cô ấy bị ốm.
+- Qui {a|a} {ouvert|v} la fenêtre ? | Ai đã mở cửa sổ?
+
+#pronunciation
+pron: eu | eu | y
+pron: pris · mis | pris | pʁi
+pron: fait | fait | fɛ
+pron: écrit | écrit | ekʁi
+> [[Eu]] đọc chỉ một âm “uy”, như chữ u tròn môi: [[j'ai eu]].
+> Chữ cuối của [[pris]], [[fait]], [[écrit]] đều câm.
++ Ils ont eu un bébé. | Họ đã có em bé.
+
+#mistakes
+x: J'ai prendu le bus. => J'ai pris le bus. | Tôi đã đi xe buýt. >> Phân từ của [[prendre]] là [[pris]].
+x: J'ai faisé mes devoirs. => J'ai fait mes devoirs. | Tôi đã làm bài tập. >> Phân từ của [[faire]] là [[fait]].
+x: J'ai voyé ce film. => J'ai vu ce film. | Tôi đã xem bộ phim này. >> Phân từ của [[voir]] là [[vu]].
+
+#dialogue
+hugo: Et toi, tu as lu le message de Paul ? | Còn cậu, cậu đã đọc tin nhắn của Paul chưa? [thinking]
+chloe: Oui, et j'ai écrit une réponse. | Rồi, và mình đã viết trả lời. [nod]
+hugo: Qu'est-ce qu'il a dit ? | Cậu ấy nói gì? [thinking]
+chloe: Il a eu un accident de vélo, mais il va bien. | Cậu ấy bị tai nạn xe đạp, nhưng không sao. [worried explain]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi đã đi xe buýt. => J'ai pris le bus. | Tôi đã đi xe buýt.
+? Nói bằng tiếng Pháp: Cậu đọc quyển sách này chưa? => Tu as lu ce livre ? | Cậu đọc quyển sách này chưa?
+
+#recap
+> Tóm lại: nhóm [[-u]]: [[vu]], [[bu]], [[lu]], [[eu]]. Nhóm [[-is]]: [[pris]], [[mis]]. Nhóm [[-it]]: [[fait]], [[dit]], [[écrit]]. Riêng: [[été]], [[ouvert]].
+
+#practice
+fill: J'ai ___ le bus. (prendre) | pris* / prendu / pri || prendre → pris.
+fill: Tu as ___ ce livre ? (lire) | lu* / lisé / li || lire → lu.
+fill: Il a ___ merci. (dire) | dit* / disé / du || dire → dit.
+type: Nous avons ___ de la chance. (avoir) | eu || avoir → eu.
+type: Elle a ___ malade. (être) | été || être → été.
+fix: J'ai faisé mes devoirs. | J'ai fait mes devoirs.* / J'ai fais mes devoirs. / J'ai faire mes devoirs. || faire → fait.
+order: Qui / a / ouvert / la / fenêtre ? | Ai đã mở cửa sổ?
+listen: Ils ont eu un bébé. | Ils ont eu un bébé.* / Ils ont un bébé. / Ils vont avoir un bébé. || eu = y.

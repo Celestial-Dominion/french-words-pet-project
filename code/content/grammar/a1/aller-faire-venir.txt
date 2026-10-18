@@ -1,0 +1,79 @@
+=== aller-faire-venir
+sum: Aller (đi), faire (làm) và venir (đến) là ba động từ bất quy tắc dùng hằng ngày, phải thuộc lòng. Aller còn dùng để hỏi thăm (ça va ?), faire dùng cho việc nhà, thể thao và thời tiết (il fait beau).
+form: je vais · tu vas · il va · nous allons · vous allez · ils vont | aller = đi
+form: je fais · tu fais · il fait · nous faisons · vous faites · ils font | faire = làm
+form: je viens · tu viens · il vient · nous venons · vous venez · ils viennent | venir = đến
+cast: lucas lea
+bg: street
+words: aller, faire, venir
+
+#hook
+lea: Salut Lucas ! Tu vas où ? | Chào Lucas! Cậu đi đâu đấy? [happy wave]
+lucas: Je vais chez Paul. Tu viens ? | Mình đến nhà Paul. Cậu đi cùng không? [happy]
+> Hai câu ngắn, hai động từ bất quy tắc: [[vas]] của [[aller]], và [[viens]] của [[venir]].
+
+#meaning
+> Ba động từ này không theo luật [[-er]]. Chúng hay dùng đến mức phải thuộc như thuộc tên mình.
+- Je {vais|k} à l'école. | Tôi đi học. || aller = đi
+- Qu'est-ce que tu {fais|k} ? | Cậu đang làm gì? || faire = làm
+- Ils {viennent|k} de Lyon. | Họ đến từ Lyon. || venir = đến
+
+#form
+th: Chủ ngữ | aller | faire | venir
+tb: je | vais | fais | viens
+tb: tu | vas | fais | viens
+tb: il · elle · on | va | fait | vient
+tb: nous | allons | faisons | venons
+tb: vous | allez | faites | venez
+tb: ils · elles | vont | font | viennent
+> Chú ý ba dạng lạ: [[vous faites]], [[ils vont]] và [[ils font]].
+> [[Venir]] đổi gốc: [[je viens]] nhưng [[nous venons]], rồi lại [[ils viennent]].
+
+#examples
+- Nous {allons|k} au cinéma ce soir. | Tối nay chúng tôi đi xem phim.
+- Vous {faites|k} quoi le dimanche ? | Chủ nhật các bạn làm gì?
+- Elle {vient|k} avec nous. | Cô ấy đi cùng chúng tôi.
+- Mes parents {font|k} les courses le samedi. | Bố mẹ tôi đi chợ vào thứ bảy.
+
+#real
+> Mỗi động từ còn có những cách dùng riêng, rất hay gặp.
+- Comment ça {va|k} ? — Ça {va|k} bien, merci ! | Bạn khỏe không? — Mình khỏe, cảm ơn! || aller: hỏi thăm
+- Il {fait|k} beau aujourd'hui. | Hôm nay trời đẹp. || faire: thời tiết
+- Je {fais|k} la cuisine et tu {fais|k} le café. | Tôi nấu ăn còn cậu pha cà phê. || faire: việc nhà
+> Tiếng Việt dùng nhiều động từ khác nhau: nấu, pha, chơi. Tiếng Pháp thường chỉ cần [[faire]].
+
+#pronunciation
+pron: nous faisons | faisons | fəzɔ̃
+pron: il vient | vient | vjɛ̃
+pron: ils viennent | viennent | vjɛn
+> [[Faisons]] viết “ai” nhưng đọc nhẹ như “phơ-dông”.
+> [[Il vient]] kết thúc bằng âm mũi. [[Ils viennent]] đọc rõ âm n ở cuối. Nhờ vậy ta nghe ra một hay nhiều người.
++ Elles viennent ce soir. | Tối nay họ đến.
+
+#mistakes
+x: Vous faisez la cuisine ? => Vous faites la cuisine ? | Các bạn nấu ăn à? >> Dạng của [[vous]] là [[faites]], một dạng rất đặc biệt.
+x: Ils allent à Paris. => Ils vont à Paris. | Họ đi Paris. >> [[Aller]] không theo luật [[-er]]: [[ils vont]].
+x: Ils venent ce soir. => Ils viennent ce soir. | Tối nay họ đến. >> Với [[ils]], gốc đổi thành [[vienn]]: [[ils viennent]].
+
+#dialogue
+lucas: Qu'est-ce que tu fais demain ? | Mai cậu làm gì? [thinking]
+lea: Je vais chez ma grand-mère. | Mình đến nhà bà. [explain]
+lucas: Et tes frères, ils viennent aussi ? | Thế các anh cậu có đi cùng không? [happy]
+lea: Non, ils font du sport. | Không, các anh ấy chơi thể thao. [shake]
+
+#recall
+? Nói bằng tiếng Pháp: Tối nay chúng tôi đi xem phim. => Nous allons au cinéma ce soir. | Tối nay chúng tôi đi xem phim.
+? Nói bằng tiếng Pháp: Hôm nay trời đẹp. => Il fait beau aujourd'hui. | Hôm nay trời đẹp.
+
+#recap
+> Tóm lại: [[aller]], [[faire]], [[venir]] bất quy tắc, phải thuộc. Nhớ ba dạng lạ: [[vous faites]], [[ils vont]], [[ils viennent]]. Thời tiết dùng [[il fait]].
+
+#practice
+fill: Nous ___ au cinéma. | allons* / vont / allez || aller với nous: allons.
+fill: Vous ___ quoi le dimanche ? | faites* / faisez / font || faire với vous: faites.
+fill: Ils ___ de Lyon. | viennent* / venent / vient || venir với ils: viennent.
+type: Il ___ beau aujourd'hui. (faire) | fait || Thời tiết: il fait.
+fix: Ils allent à Paris. | Ils vont à Paris.* / Ils vas à Paris. / Ils allons à Paris. || aller với ils: vont.
+natural: Je fais la cuisine.* / Je cuisine la cuisine. || Việc nhà: faire.
+order: Mes / parents / font / les / courses. | Bố mẹ tôi đi chợ.
+listen: Elles viennent ce soir. | Elles viennent ce soir.* / Elle vient ce soir. / Elles vont bien ce soir. || viennent đọc rõ âm n cuối.

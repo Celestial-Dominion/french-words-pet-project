@@ -1,0 +1,76 @@
+=== tout
+sum: Tout (tất cả, cả) hợp giống, số với danh từ: tout (đực), toute (cái), tous (đực nhiều), toutes (cái nhiều), và đứng trước mạo từ: tout le monde, toute la journée, tous les jours. Tout đứng một mình nghĩa là “mọi thứ”: tout va bien.
+form: tout le / toute la + danh từ số ít = cả | tout le gâteau · toute la journée
+form: tous les / toutes les + số nhiều = mọi, tất cả | tous les jours · toutes les filles
+form: tout = mọi thứ · tout le monde = mọi người | Tout va bien. · Tout le monde est là.
+cast: maman zoe
+bg: home-day
+words: tout
+
+#hook
+maman: Zoé, tu as mangé tout le gâteau ? | Zoé, con ăn hết cả cái bánh rồi à? [surprised]
+zoe: Non, maman ! J'ai partagé avec tous mes amis ! | Không mẹ ơi! Con chia cho tất cả các bạn mà! [shy]
+> [[Tout le gâteau]] là cả cái bánh. [[Tous mes amis]] là tất cả các bạn. [[Tout]] đổi hình thức theo danh từ.
+
+#meaning
+> [[Tout]] có bốn dạng, hợp với danh từ đi sau. Nó đứng trước mạo từ hoặc sở hữu.
+- {tout|k} le gâteau | cả cái bánh || giống đực số ít
+- {toute|k} la nuit | cả đêm || giống cái số ít
+- {tous|k} les enfants | tất cả bọn trẻ || giống đực số nhiều
+- {toutes|k} les filles | tất cả các cô gái || giống cái số nhiều
+
+#form
+th: Loại | Số ít | Số nhiều
+tb: giống đực | tout le jour | tous les jours
+tb: giống cái | toute la semaine | toutes les semaines
+> Ở số ít, [[tout]] nghĩa là “cả”: [[toute la semaine]], cả tuần.
+> Ở số nhiều, nghĩa là “mọi, tất cả”: [[toutes les semaines]], mọi tuần.
+
+#examples
+- J'ai travaillé {toute|k} la journée. | Tôi đã làm việc cả ngày.
+- Il va à la piscine {tous|k} les samedis. | Thứ bảy nào anh ấy cũng đi bơi.
+- {Tous|k} mes amis sont venus. | Tất cả bạn bè tôi đều đến.
+- {Toutes|k} les places sont prises. | Tất cả các chỗ đều có người rồi.
+- {Tout le monde|k} aime le chocolat. | Ai cũng thích sô-cô-la.
+
+#real
+> Hai cụm cần nhớ. [[Tout le monde]] là mọi người, nhưng động từ chia ở số ít.
+- {Tout le monde|k} est prêt ? | Mọi người sẵn sàng chưa? || động từ số ít: est
+> [[Tout]] đứng một mình là “mọi thứ”.
+- {Tout|k} va bien. | Mọi thứ đều ổn.
+- C'est {tout|k} ? | Hết chưa? / Vậy thôi à?
+
+#pronunciation
+pron: tout · tous (trước danh từ) | tout | tu
+pron: toute · toutes | toute | tut
+pron: tous les jours | tous les jours | tulεʒuʁ
+> [[Tout]] và [[tous]] trước danh từ đều đọc “tu”. [[Toute]], [[toutes]] đọc rõ âm t cuối: “tút”.
++ Toutes les filles chantent. | Tất cả các cô gái đều hát.
+
+#mistakes
+x: Tout les jours, je cours. => Tous les jours, je cours. | Ngày nào tôi cũng chạy. >> Số nhiều giống đực là [[tous]].
+x: Tout la journée. => Toute la journée. | Cả ngày. >> [[Journée]] là giống cái: [[toute]].
+x: Tout le monde sont là. => Tout le monde est là. | Mọi người đều ở đây. >> [[Tout le monde]] đi với động từ số ít.
+
+#dialogue
+maman: Et tous tes amis ont aimé ? | Thế các bạn con đều thích chứ? [happy]
+zoe: Oui ! Tout le monde a dit que c'était délicieux. | Có ạ! Ai cũng bảo ngon tuyệt. [happy cheer]
+maman: Bon, alors je fais un autre gâteau pour toute la famille ! | Thôi được, vậy mẹ làm thêm một cái bánh cho cả nhà! [happy]
+zoe: Merci, maman ! Tu es la meilleure ! | Con cảm ơn mẹ! Mẹ là nhất! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi đã làm việc cả ngày. => J'ai travaillé toute la journée. | Tôi đã làm việc cả ngày.
+? Nói bằng tiếng Pháp: Mọi thứ đều ổn. => Tout va bien. | Mọi thứ đều ổn.
+
+#recap
+> Tóm lại: [[tout]], [[toute]], [[tous]], [[toutes]] hợp với danh từ và đứng trước mạo từ. Số ít là “cả”, số nhiều là “mọi”. [[Tout le monde]] đi với động từ số ít.
+
+#practice
+fill: J'ai travaillé ___ la journée. | toute* / tout / tous || journée giống cái → toute.
+fill: Il va à la piscine ___ les samedis. | tous* / tout / toutes || Đực nhiều → tous.
+fill: ___ les places sont prises. | Toutes* / Tous / Toute || places cái nhiều → toutes.
+fill: Tout le monde ___ prêt ? | est* / sont / êtes || tout le monde → số ít.
+type: ___ va bien. | Tout / tout || Mọi thứ → tout.
+fix: Tout les jours, je cours. | Tous les jours, je cours.* / Toute les jours, je cours. / Tout le jours, je cours. || Đực nhiều → tous.
+order: Tous / mes / amis / sont / venus. | Tất cả bạn bè tôi đều đến.
+listen: Toutes les filles chantent. | Toutes les filles chantent.* / Tous les fils chantent. / Toute la fille chante. || toutes: âm t rõ.

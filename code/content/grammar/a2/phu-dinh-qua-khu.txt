@@ -1,0 +1,74 @@
+=== phu-dinh-qua-khu
+sum: Ở passé composé, ne… pas kẹp quanh trợ động từ (avoir hoặc être), còn phân từ đứng sau: je n'ai pas mangé, elle n'est pas venue. Động từ phản thân: je ne me suis pas levé. Sau phủ định, un, une, des, du vẫn thành de.
+form: ne + avoir / être + pas + phân từ | Je n'ai pas mangé.
+form: ne + me / te / se + être + pas + phân từ | Je ne me suis pas levé.
+form: pas de sau phủ định | Je n'ai pas acheté de pain.
+cast: maman tom
+bg: home-evening
+words: ne, pas, encore
+
+#hook
+maman: Tom, tu as fait tes devoirs ? | Tom, con làm bài tập chưa? [thinking]
+tom: Euh… non, je n'ai pas fait mes devoirs. | Ơ… chưa ạ, con chưa làm bài tập. [shy]
+> [[Je n'ai pas fait]]: [[ne]] và [[pas]] kẹp quanh [[ai]], còn [[fait]] đứng ra ngoài, phía sau.
+
+#meaning
+> Ở thì quá khứ kép, động từ có hai phần. Chỉ phần thứ nhất, trợ động từ, bị kẹp giữa [[ne]] và [[pas]].
+vs: J'ai fini. | Tôi đã xong. || khẳng định
+vs: Je n'ai pas fini. | Tôi chưa xong. || phủ định
+> Tiếng Việt thường dịch phủ định quá khứ là “chưa” hoặc “không”.
+
+#form
+f: Je + [n'] + ai + [pas] + fini
+> Với [[avoir]], [[ne]] thành [[n']] vì [[ai]], [[as]], [[a]] bắt đầu bằng nguyên âm.
+f: Elle + [n'] + est + [pas] + venue
+> Với [[être]] cũng vậy: [[elle n'est pas venue]], [[ils ne sont pas partis]].
+
+#examples
+- Nous {n'avons|n} {pas|n} vu ce film. | Chúng tôi chưa xem bộ phim này.
+- Il {n'a|n} {pas|n} compris la question. | Anh ấy không hiểu câu hỏi.
+- Elles {ne sont|n} {pas|n} restées longtemps. | Họ không ở lại lâu.
+- Tu {n'as|n} {pas|n} pris ton parapluie ? | Cậu không mang ô à?
+
+#real
+> Với động từ phản thân, [[ne]] đứng trước đại từ, [[pas]] đứng sau [[être]].
+- Je {ne|n} me suis {pas|n} réveillé à l'heure. | Tôi đã không dậy đúng giờ.
+> Và luật cũ vẫn đúng: sau phủ định, [[un]], [[une]], [[des]], [[du]] đổi thành [[de]].
+- Je {n'ai|n} {pas|n} acheté de pain. | Tôi không mua bánh mì.
+> Muốn nói “chưa… mà sẽ làm”, thêm [[encore]]: [[je n'ai pas encore mangé]], tôi chưa ăn.
+- Je {n'ai|n} {pas|n} encore mangé. | Tôi vẫn chưa ăn.
+
+#pronunciation
+pron: je n'ai pas | je n'ai pas | ʒənepa
+pron: il n'est pas | il n'est pas | ilnɛpa
+pron: je n'ai pas fini | j'ai pas fini | ʒepafini
+> [[N'ai]] đọc liền “nê”. Khi nói thân mật, người Pháp bỏ [[ne]]: [[j'ai pas fini]].
++ Il n'est pas encore arrivé. | Anh ấy vẫn chưa đến.
+
+#mistakes
+x: Je n'ai mangé pas. => Je n'ai pas mangé. | Tôi chưa ăn. >> [[Pas]] đứng ngay sau trợ động từ, trước phân từ.
+x: Je ne pas suis venu. => Je ne suis pas venu. | Tôi đã không đến. >> [[Ne]] và [[pas]] kẹp quanh [[suis]].
+x: Je n'ai pas acheté du pain. => Je n'ai pas acheté de pain. | Tôi không mua bánh mì. >> Sau phủ định, [[du]] thành [[de]].
+
+#dialogue
+maman: Pourquoi tu n'as pas fait tes devoirs ? | Sao con chưa làm bài tập? [angry]
+tom: Je n'ai pas compris l'exercice. | Con không hiểu bài tập ạ. [sad]
+maman: Tu n'as pas demandé à ton professeur ? | Con không hỏi thầy à? [thinking]
+tom: Non… Tu peux m'aider, s'il te plaît ? | Không ạ… Mẹ giúp con được không? [shy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi chưa xem bộ phim này. => Je n'ai pas vu ce film. | Tôi chưa xem bộ phim này.
+? Nói bằng tiếng Pháp: Cô ấy đã không đến. => Elle n'est pas venue. | Cô ấy đã không đến.
+
+#recap
+> Tóm lại: kẹp [[ne… pas]] quanh trợ động từ, phân từ đứng sau: [[je n'ai pas mangé]], [[elle n'est pas venue]]. Phản thân: [[je ne me suis pas levé]]. Chưa mà sẽ: [[pas encore]].
+
+#practice
+fill: Nous ___ pas vu ce film. | n'avons* / ne avons / avons || ne + avons → n'avons.
+fill: Je n'ai ___ mangé. | pas* / ne / rien || pas sau trợ động từ.
+fill: Elle n'est pas ___ . | venue* / venu / venir || être → hợp giống: venue.
+type: Je n'ai pas acheté ___ pain. | de || Sau phủ định → de.
+fix: Je n'ai mangé pas. | Je n'ai pas mangé.* / Je ne ai pas mangé. / Je pas ai mangé. || pas trước phân từ.
+transform: Viết sang phủ định: | Je me suis levé tôt. >> Je ne me suis pas levé tôt.* / Je me ne suis pas levé tôt. / Je ne suis pas me levé tôt. || ne + me + suis + pas.
+order: Il / n'a / pas / compris / la / question. | Anh ấy không hiểu câu hỏi.
+listen: Il n'est pas encore arrivé. | Il n'est pas encore arrivé.* / Il est déjà arrivé. / Il n'arrive pas encore. || n'est pas = nɛpa.

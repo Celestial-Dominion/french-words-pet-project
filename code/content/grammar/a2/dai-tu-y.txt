@@ -1,0 +1,73 @@
+=== dai-tu-y
+sum: Đại từ y thay cho một nơi chốn đã nhắc (à Paris, en France, chez moi, dans le jardin), nghĩa là “ở đó, đến đó”. Nó đứng trước động từ như các đại từ khác: j'y vais. Câu cửa miệng: on y va (đi thôi), il y a.
+form: y = à / en / chez / dans + nơi chốn | Tu vas à Paris ? — Oui, j'y vais.
+form: y + động từ · ne + y + động từ + pas | J'y vais. · Je n'y vais pas.
+form: on y va · vas-y · allez-y | Đi thôi! · Làm đi!
+cast: hugo linh
+bg: train
+words: y, aller, rester
+
+#hook
+linh: Tu vas à Marseille ce week-end ? | Cuối tuần này cậu đi Marseille à? [thinking]
+hugo: Oui, j'y vais en train. | Ừ, mình đi bằng tàu. [happy]
+> Cậu ấy không nhắc lại [[à Marseille]]. Cậu thay nó bằng một chữ rất ngắn: [[y]], nghĩa là “đến đó”.
+
+#meaning
+> [[Y]] thay cho một nơi chốn vừa được nhắc tới, thường sau [[à]], [[en]], [[chez]], [[dans]].
+- Tu habites à Lyon ? — Oui, j'{y|k} habite depuis deux ans. | Cậu sống ở Lyon à? — Ừ, mình sống ở đó hai năm rồi.
+- Il est dans sa chambre ? — Oui, il {y|k} est. | Cậu ấy ở trong phòng à? — Ừ, cậu ấy ở trong đó.
+> Tiếng Việt có thể nói “đến đó”, “ở đó”, hoặc bỏ hẳn. Tiếng Pháp thì cần [[y]].
+
+#form
+f: Je + [y] + vais
+> [[Y]] đứng trước động từ, như [[le]], [[la]]. [[Je]] gặp [[y]] thì thành [[j'y]].
+f: Je + [n'y] + vais + pas
+> Phủ định: [[ne]] thành [[n']] trước [[y]], rồi [[pas]] sau động từ.
+
+#examples
+- Tu vas souvent au cinéma ? — Oui, j'{y|k} vais le samedi. | Cậu hay đi xem phim không? — Có, thứ bảy nào mình cũng đi.
+- Vous restez chez vous ce soir ? — Non, on n'{y|k} reste pas. | Tối nay các bạn ở nhà à? — Không, bọn mình không ở nhà.
+- La France ? Nous {y|k} allons en juillet. | Nước Pháp à? Chúng tôi sẽ đến đó vào tháng bảy.
+- Le parc est loin ? — Non, on {y|k} va à pied. | Công viên có xa không? — Không, mình đi bộ đến đó.
+
+#real
+> [[Y]] có mặt trong nhiều câu cửa miệng.
+- On {y|k} va ! | Đi thôi! || rủ nhau
+- Vas-{y|k}, tu peux le faire ! | Cố lên, cậu làm được mà! || động viên
+- Allez-{y|k}, entrez ! | Xin mời, vào đi! || mời lịch sự
+> Và bạn đã gặp [[y]] từ lâu trong [[il y a]].
+
+#pronunciation
+pron: j'y vais | j'y vais | ʒivɛ
+pron: on y va | on‿y va | ɔ̃niva
+pron: vas-y | vas‿y | vazi
+> [[J'y vais]] đọc liền “gi-vê”. [[On y va]] nối âm n: “ông-ni-va”.
++ On y va à pied. | Mình đi bộ đến đó.
+
+#mistakes
+x: Je vais y. => J'y vais. | Tôi đi đến đó. >> [[Y]] đứng trước động từ.
+x: Je ne vais pas y. => Je n'y vais pas. | Tôi không đến đó. >> Phủ định: [[n'y]] trước động từ, [[pas]] sau.
+x: Tu vas à Lyon ? — Oui, je vais. => Tu vas à Lyon ? — Oui, j'y vais. | Cậu đi Lyon à? — Ừ, mình đi. >> [[Aller]] cần nói rõ đi đâu, nên không được bỏ [[y]].
+
+#dialogue
+linh: Tu restes combien de temps là-bas ? | Cậu ở đó bao lâu? [thinking]
+hugo: J'y reste trois jours. Mes grands-parents y habitent. | Mình ở đó ba ngày. Ông bà mình sống ở đó. [explain]
+linh: Super ! Moi, je n'y suis jamais allée. | Tuyệt! Mình chưa đến đó bao giờ. [happy]
+hugo: Alors viens avec moi la prochaine fois ! On y va ensemble ! | Vậy lần sau đi với mình! Mình đi cùng nhau! [happy cheer]
+
+#recall
+? Trả lời “có, mình đến đó”, dùng y. => Oui, j'y vais. | Có, mình đến đó.
+? Rủ bạn: Đi thôi! => On y va ! | Đi thôi!
+
+#recap
+> Tóm lại: [[y]] thay cho một nơi chốn đã nhắc, nghĩa là ở đó, đến đó. Nó đứng trước động từ: [[j'y vais]], [[je n'y vais pas]]. Câu cửa miệng: [[on y va]], [[vas-y]].
+
+#practice
+fill: Tu vas à Paris ? — Oui, j'___ vais. | y* / en / le || Nơi chốn → y.
+fill: Tu restes chez toi ? — Non, je n'___ reste pas. | y* / en / le || chez toi → y.
+fill: Le parc ? On y va ___ pied. | à* / en / au || à pied.
+choice: “Cố lên, cậu làm được mà!” nói thế nào? | Vas-y, tu peux le faire !* / Va-le, tu peux le faire ! / Vas-en, tu peux le faire ! || Động viên: vas-y.
+fix: Je vais y. | J'y vais.* / Je y vais. / J'vais y. || y trước động từ.
+transform: Trả lời bằng y: | Vous allez en France en juillet ? >> Oui, nous y allons en juillet.* / Oui, nous allons y en juillet. / Oui, nous en allons en juillet. || France → y.
+order: Je / n'y / vais / pas. | Tôi không đến đó.
+listen: On y va à pied. | On y va à pied.* / On va à pied. / On en va à pied. || on‿y va = ɔ̃niva.

@@ -1,0 +1,75 @@
+=== lien-tu-a2
+sum: Các từ nối ở trình độ A2: quand (khi), comme (vì, đứng đầu câu), donc (nên), pourtant (vậy mà), alors (thế là, vậy thì), puis / ensuite (rồi, sau đó), d'abord (trước hết), enfin (cuối cùng). Chúng giúp kể chuyện mạch lạc và nói rõ lý do, kết quả.
+form: quand (khi) · comme (vì, đầu câu) | Quand il pleut, je reste. · Comme il pleut, je reste.
+form: donc · alors (nên, thế là) · pourtant (vậy mà) | Il est malade, pourtant il travaille.
+form: d'abord · puis / ensuite · enfin (thứ tự) | D'abord je mange, puis je sors.
+cast: hugo chloe
+bg: kitchen
+words: quand, comme, donc, pourtant, alors, ensuite, enfin
+
+#hook
+chloe: Comment tu fais ta soupe ? | Cậu nấu súp thế nào? [thinking]
+hugo: D'abord, je coupe les légumes. Ensuite, je les mets dans l'eau. Enfin, j'ajoute du sel. | Trước hết, mình cắt rau. Sau đó, mình cho vào nước. Cuối cùng, thêm muối. [explain]
+> [[D'abord]], [[ensuite]], [[enfin]]: những từ nối nhỏ này giúp câu chuyện có thứ tự rõ ràng.
+
+#meaning
+th: Từ nối | Nghĩa | Dùng để
+tb: quand | khi | nói thời điểm
+tb: comme | vì (đầu câu) | nêu lý do trước
+tb: donc · alors | nên, thế là | nói kết quả
+tb: pourtant | vậy mà, thế nhưng | nói điều trái ngược
+tb: d'abord · puis · ensuite · enfin | trước hết · rồi · sau đó · cuối cùng | kể theo thứ tự
+> Học theo nhóm chức năng: thời gian, lý do, kết quả, đối lập, thứ tự.
+
+#form
+> [[Comme]] và [[parce que]] đều là “vì”. Nhưng [[comme]] luôn đứng đầu câu, còn [[parce que]] thường đứng giữa.
+vs: Comme il pleut, je reste à la maison. | Vì trời mưa nên tôi ở nhà. || lý do đứng trước → comme
+vs: Je reste à la maison parce qu'il pleut. | Tôi ở nhà vì trời mưa. || lý do đứng sau → parce que
+> [[Pourtant]] mạnh hơn [[mais]]: nó nhấn mạnh điều bất ngờ, trái với mong đợi.
+
+#examples
+- {Quand|c} j'étais petit, j'habitais à Lyon. | Khi còn nhỏ, tôi sống ở Lyon.
+- {Comme|c} c'est ton anniversaire, je t'invite. | Vì hôm nay sinh nhật cậu nên mình mời.
+- Il n'y avait plus de bus, {alors|c} j'ai pris un taxi. | Hết xe buýt rồi, thế là tôi đi taxi.
+- Elle a beaucoup étudié, {pourtant|c} elle a raté l'examen. | Cô ấy học rất nhiều, vậy mà vẫn trượt kỳ thi.
+- Je pense, {donc|c} je suis. | Tôi tư duy, nên tôi tồn tại.
+
+#real
+> Khi kể lại một ngày, một chuyến đi, các từ thứ tự làm câu chuyện dễ theo dõi.
+- {D'abord|c}, on a visité le musée. {Puis|c}, on a mangé au restaurant. {Enfin|c}, on est rentrés. | Trước hết, bọn mình đi bảo tàng. Rồi ăn ở nhà hàng. Cuối cùng thì về nhà.
+> [[Alors]] còn rất hay dùng trong hội thoại, như “vậy thì”, “thế à”: [[alors, on y va]].
+
+#pronunciation
+pron: pourtant | pourtant | puʁtɑ̃
+pron: d'abord | d'abord | dabɔʁ
+pron: ensuite | ensuite | ɑ̃sɥit
+> [[D'abord]] đọc liền “đa-bo”. [[Ensuite]] có âm mũi ở đầu và âm t rõ ở cuối.
++ D'abord, on a visité le musée. | Trước hết, bọn mình đi bảo tàng.
+
+#mistakes
+x: Je reste à la maison comme il pleut. => Je reste à la maison parce qu'il pleut. | Tôi ở nhà vì trời mưa. >> [[Comme]] chỉ đứng đầu câu. Giữa câu dùng [[parce que]].
+x: Il est malade, donc il travaille. => Il est malade, pourtant il travaille. | Anh ấy ốm, vậy mà vẫn đi làm. >> Điều trái với mong đợi thì dùng [[pourtant]], không dùng [[donc]].
+x: Enfin, je coupe les légumes. => D'abord, je coupe les légumes. | Trước hết, tôi cắt rau. >> Việc đầu tiên dùng [[d'abord]]. [[Enfin]] là cuối cùng.
+
+#dialogue
+chloe: Et quand est-ce que tu as appris à cuisiner ? | Thế cậu học nấu ăn từ khi nào? [thinking]
+hugo: Quand j'habitais seul. Comme je n'avais pas d'argent, je cuisinais tous les jours. | Hồi mình sống một mình. Vì không có tiền nên ngày nào mình cũng nấu. [explain]
+chloe: Moi, j'ai essayé, pourtant c'est toujours raté ! | Mình đã thử rồi, vậy mà lần nào cũng hỏng! [sad]
+hugo: Alors, je vais t'apprendre ! | Vậy thì để mình dạy cậu! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp, lý do đứng trước: Vì trời mưa nên tôi ở nhà. => Comme il pleut, je reste à la maison. | Vì trời mưa nên tôi ở nhà.
+? Nói bằng tiếng Pháp: Cô ấy học rất nhiều, vậy mà vẫn trượt. => Elle a beaucoup étudié, pourtant elle a raté. | Cô ấy học rất nhiều, vậy mà vẫn trượt.
+
+#recap
+> Tóm lại: [[quand]] là khi, [[comme]] là vì ở đầu câu, [[donc]] và [[alors]] là nên, [[pourtant]] là vậy mà. Kể theo thứ tự: [[d'abord]], [[puis]], [[ensuite]], [[enfin]].
+
+#practice
+fill: ___ il pleut, je reste à la maison. | Comme* / Donc / Pourtant || Lý do đầu câu → comme.
+fill: Il n'y avait plus de bus, ___ j'ai pris un taxi. | alors* / comme / pourtant || Kết quả → alors.
+fill: Elle a beaucoup étudié, ___ elle a raté. | pourtant* / donc / comme || Trái ngược → pourtant.
+fill: ___ j'étais petit, j'habitais à Lyon. | Quand* / Comme / Donc || Thời điểm → quand.
+contrast: ___ , je coupe les légumes. Ensuite, je les cuis. | D'abord* / Enfin || Việc đầu tiên → d'abord.
+fix: Je reste à la maison comme il pleut. | Je reste à la maison parce qu'il pleut.* / Je reste à la maison donc il pleut. / Je reste comme à la maison il pleut. || Giữa câu → parce que.
+order: D'abord, / on / a / visité / le / musée. | Trước hết, bọn mình đi bảo tàng.
+listen: D'abord, on a visité le musée. | D'abord, on a visité le musée.* / Enfin, on a visité le musée. / Alors, on a visité le musée. || d'abord = dabɔʁ.

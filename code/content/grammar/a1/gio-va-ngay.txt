@@ -1,0 +1,79 @@
+=== gio-va-ngay
+sum: Hỏi giờ: Quelle heure est-il ? Trả lời: Il est huit heures. Làm gì lúc mấy giờ dùng à: à huit heures. Thứ không cần giới từ (lundi = thứ hai này), thêm le là “mỗi thứ hai” (le lundi). Tháng và phần lớn mùa dùng en: en mai, en été, nhưng au printemps.
+form: Il est + số + heure(s) | Il est huit heures.
+form: à + giờ · le + thứ (mỗi tuần) | à midi · le samedi
+form: en + tháng / mùa · au printemps · le + ngày | en mai · le 25 décembre
+cast: nam linh
+bg: train
+words: heure, midi, lundi, samedi, mai
+
+#hook
+nam: Pardon, quelle heure est-il ? | Xin lỗi, mấy giờ rồi? [thinking]
+linh: Il est huit heures. Le train part à huit heures et demie. | Tám giờ. Tàu chạy lúc tám rưỡi. [explain]
+> Hỏi giờ dùng [[quelle heure est-il]]. Trả lời luôn bắt đầu bằng [[il est]], và luôn có chữ [[heures]].
+
+#meaning
+> Nói giờ: [[il est]], rồi con số, rồi [[heure]] hay [[heures]].
+- Il est {une heure|k}. | Một giờ.
+- Il est {trois heures|k}. | Ba giờ.
+- Il est {midi|k}. | Mười hai giờ trưa.
+> Nói việc xảy ra lúc mấy giờ thì dùng [[à]]: [[à trois heures]], lúc ba giờ.
+- Le film commence {à neuf heures|t}. | Phim bắt đầu lúc chín giờ.
+
+#form
+th: Cách nói | Nghĩa
+tb: huit heures | 8:00
+tb: huit heures et quart | 8:15
+tb: huit heures et demie | 8:30
+tb: neuf heures moins le quart | 8:45 (chín giờ kém mười lăm)
+tb: midi · minuit | 12 giờ trưa · 12 giờ đêm
+> Mười lăm phút là [[et quart]], rưỡi là [[et demie]]. Kém mười lăm là [[moins le quart]], giống “kém” trong tiếng Việt.
+> Khi nói lịch tàu xe, người Pháp dùng giờ hai mươi bốn: [[vingt heures]] là tám giờ tối.
+
+#examples
+- Je travaille {le lundi|t}. | Tôi làm việc vào các thứ hai. || le + thứ = mỗi tuần
+- On se voit {samedi|t} ? | Thứ bảy này mình gặp nhau nhé? || không có le = thứ bảy này
+- Mon anniversaire est {en mai|t}. | Sinh nhật tôi vào tháng năm.
+- Nous partons {en juillet|t}. | Chúng tôi đi vào tháng bảy.
+- Noël, c'est {le 25 décembre|t}. | Lễ Giáng sinh là ngày hai mươi lăm tháng mười hai.
+
+#real
+> Ngày tháng dùng [[le]] và con số bình thường: [[le 3 mai]]. Riêng ngày một dùng [[le premier]]: [[le premier janvier]].
+> Mùa: [[en été]], [[en hiver]], [[en automne]], nhưng [[au printemps]], vì [[printemps]] bắt đầu bằng phụ âm.
+- On va à la mer {en été|t}. | Mùa hè mình đi biển.
+- Les fleurs arrivent {au printemps|t}. | Hoa nở vào mùa xuân.
+
+#pronunciation
+pron: deux heures | deux‿heures | døzœʁ
+pron: huit heures | huit‿heures | ɥitœʁ
+pron: neuf heures | neuf‿heures | nœvœʁ
+> Con số luôn nối âm với [[heures]]. Chú ý [[neuf heures]]: chữ f đọc thành v.
++ Il est neuf heures. | Chín giờ rồi.
+
+#mistakes
+x: Il est huit. => Il est huit heures. | Tám giờ. >> Tiếng Pháp không bỏ chữ [[heures]].
+x: Je travaille en lundi. => Je travaille le lundi. | Tôi làm việc vào thứ hai. >> Thứ không đi với [[en]]. Mỗi tuần thì dùng [[le]].
+x: Mon anniversaire est dans mai. => Mon anniversaire est en mai. | Sinh nhật tôi vào tháng năm. >> Tháng đi với [[en]].
+
+#dialogue
+linh: Tu es libre samedi ? | Thứ bảy này cậu rảnh không? [happy]
+nam: Le matin, non. Je travaille le samedi. | Buổi sáng thì không. Thứ bảy nào mình cũng đi làm. [thinking]
+linh: Et à deux heures ? | Thế hai giờ chiều? [thinking]
+nam: Oui, à deux heures, c'est très bien ! | Được, hai giờ thì tốt quá! [happy nod]
+
+#recall
+? Nói bằng tiếng Pháp: Tám giờ rưỡi. => Il est huit heures et demie. | Tám giờ rưỡi.
+? Nói bằng tiếng Pháp: Tôi làm việc vào các thứ hai. => Je travaille le lundi. | Tôi làm việc vào các thứ hai.
+
+#recap
+> Tóm lại: giờ là [[il est huit heures]], lúc mấy giờ là [[à huit heures]]. Thứ không giới từ, thêm [[le]] là mỗi tuần. Tháng và mùa dùng [[en]], trừ [[au printemps]].
+
+#practice
+fill: Il est huit ___ . | heures* / heure / à || Luôn có heures.
+fill: Le film commence ___ neuf heures. | à* / en / le || Lúc mấy giờ → à.
+fill: Mon anniversaire est ___ mai. | en* / à / le || Tháng → en.
+fill: Les fleurs arrivent ___ printemps. | au* / en / à || Riêng mùa xuân: au printemps.
+contrast: Je travaille ___ lundi. (tous les lundis) | le* / en || Mỗi tuần → le lundi.
+fix: Il est huit. | Il est huit heures.* / C'est huit heures. / Il est à huit. || Không bỏ heures.
+order: Il / est / huit / heures / et / demie. | Tám giờ rưỡi.
+listen: Il est neuf heures. | Il est neuf heures.* / Il est deux heures. / Il est onze heures. || neuf‿heures = nœvœʁ.

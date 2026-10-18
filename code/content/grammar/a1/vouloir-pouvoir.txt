@@ -1,0 +1,82 @@
+=== vouloir-pouvoir
+sum: Vouloir (muốn) và pouvoir (có thể) chia bất quy tắc, và đi thẳng với một động từ nguyên mẫu: je veux partir, tu peux venir ? Khi gọi món hay xin gì đó, dùng je voudrais cho lịch sự.
+form: je veux · tu veux · il veut · nous voulons · vous voulez · ils veulent | vouloir = muốn
+form: je peux · tu peux · il peut · nous pouvons · vous pouvez · ils peuvent | pouvoir = có thể
+form: vouloir / pouvoir + động từ nguyên mẫu · je voudrais (lịch sự) | Je veux partir. · Je voudrais un café.
+cast: chloe karim
+bg: cafe
+words: vouloir, pouvoir
+
+#hook
+karim: Tu veux un café ? | Cậu muốn uống cà phê không? [happy]
+chloe: Oui, mais je ne peux pas rester longtemps. | Có, nhưng mình không ở lâu được. [worried]
+> [[Veux]] là “muốn”, [[peux]] là “có thể”. Hai động từ này đi với nhau rất thường xuyên.
+
+#meaning
+> [[Vouloir]] nói điều mình muốn. [[Pouvoir]] nói điều mình làm được, hoặc được phép làm.
+- Je {veux|k} un gâteau. | Tôi muốn một cái bánh.
+- Tu {peux|k} venir demain ? | Mai cậu đến được không?
+> Sau hai động từ này, động từ thứ hai giữ nguyên mẫu, không chia: [[tu peux venir]].
+
+#form
+th: Chủ ngữ | vouloir | pouvoir
+tb: je | veux | peux
+tb: tu | veux | peux
+tb: il · elle · on | veut | peut
+tb: nous | voulons | pouvons
+tb: vous | voulez | pouvez
+tb: ils · elles | veulent | peuvent
+> Hai động từ chia giống nhau một cách lạ kỳ: [[veux]] và [[peux]], [[veulent]] và [[peuvent]].
+f: Je + [veux] + partir
+> Động từ thứ hai luôn ở dạng nguyên mẫu, như [[partir]], [[venir]], [[manger]].
+
+#examples
+- Nous {voulons|k} visiter Paris. | Chúng tôi muốn đi thăm Paris.
+- Vous {pouvez|k} répéter, s'il vous plaît ? | Ông nói lại được không ạ?
+- Ils {veulent|k} manger maintenant. | Họ muốn ăn ngay bây giờ.
+- On {peut|k} entrer ? | Mình vào được không?
+- Elle ne {peut|k} pas venir ce soir. | Tối nay cô ấy không đến được.
+
+#real
+> Nói [[je veux]] với người phục vụ nghe hơi cộc. Người Pháp dùng [[je voudrais]], nghĩa là “tôi muốn… ạ”.
+vs: Je veux un café. | Tôi muốn một ly cà phê. || nghe như ra lệnh
+vs: Je voudrais un café, s'il vous plaît. | Cho tôi một ly cà phê ạ. || lịch sự
+> Còn khi nhờ ai đó, hãy hỏi bằng [[pouvoir]]: [[tu peux m'aider]], cậu giúp mình được không?
+- Tu {peux|k} m'aider ? | Cậu giúp mình được không?
+
+#pronunciation
+pron: je veux | veux | vø
+pron: ils veulent | veulent | vœl
+pron: je peux | peux | pø
+pron: ils peuvent | peuvent | pœv
+> [[Veux]] và [[peux]] có âm “ơ” tròn môi, chữ x không đọc.
+> Ở số nhiều, phụ âm cuối được đọc ra: [[veulent]], [[peuvent]].
++ Elles peuvent venir demain. | Mai họ đến được.
+
+#mistakes
+x: Je veux de partir. => Je veux partir. | Tôi muốn đi. >> Sau [[vouloir]], đặt thẳng động từ, không thêm [[de]].
+x: Il peut vient demain. => Il peut venir demain. | Mai anh ấy đến được. >> Động từ thứ hai phải ở nguyên mẫu: [[venir]].
+x: Je veux une baguette ! => Je voudrais une baguette, s'il vous plaît. | Cho tôi một ổ bánh mì ạ. >> Khi mua hàng, [[je voudrais]] lịch sự hơn nhiều.
+
+#dialogue
+karim: Bonjour ! Je voudrais deux cafés, s'il vous plaît. | Xin chào! Cho tôi hai ly cà phê ạ. [happy]
+chloe: Tu veux aussi un croissant ? | Cậu muốn thêm bánh sừng bò không? [thinking]
+karim: Non merci. On peut payer par carte ? | Thôi, cảm ơn. Trả bằng thẻ được không? [thinking]
+chloe: Oui, bien sûr ! | Được chứ! [happy nod]
+
+#recall
+? Nói lịch sự: Cho tôi một ly trà ạ. => Je voudrais un thé, s'il vous plaît. | Cho tôi một ly trà ạ.
+? Nói bằng tiếng Pháp: Cậu giúp mình được không? => Tu peux m'aider ? | Cậu giúp mình được không?
+
+#recap
+> Tóm lại: [[vouloir]] là muốn, [[pouvoir]] là có thể. Cả hai đi thẳng với động từ nguyên mẫu: [[je veux partir]]. Khi xin hay gọi món, nói [[je voudrais]].
+
+#practice
+fill: Nous ___ visiter Paris. | voulons* / veulent / voulez || vouloir với nous: voulons.
+fill: Vous ___ répéter, s'il vous plaît ? | pouvez* / peuvent / pouvons || pouvoir với vous: pouvez.
+fill: Il peut ___ demain. | venir* / vient / viens || Sau pouvoir: nguyên mẫu.
+type: Ils ___ manger maintenant. (vouloir) | veulent || vouloir với ils: veulent.
+fix: Je veux de partir. | Je veux partir.* / Je veux à partir. / Je veux pars. || vouloir + nguyên mẫu.
+natural: Je voudrais un café, s'il vous plaît.* / Je veux un café ! || Gọi món: je voudrais.
+order: On / peut / entrer ? | Mình vào được không?
+listen: Elles peuvent venir demain. | Elles peuvent venir demain.* / Elle peut venir demain. / Elles veulent venir demain. || peuvent: âm v cuối rõ.

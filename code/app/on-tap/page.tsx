@@ -31,6 +31,7 @@ import type { Word, SrsConfig, ReviewRecord } from "@/lib/types";
 import ReviewRunner from "@/components/review-runner";
 import SyncRow from "@/components/sync-row";
 import DailyQuests from "@/components/daily-quests";
+import { GrammarDueCard } from "@/components/grammar/grammar-due";
 import { openSettings } from "@/components/settings-sheet";
 
 export default function OnTapPage() {
@@ -207,6 +208,9 @@ export default function OnTapPage() {
           {remainNew > 0 ? `Học từ mới (${remainNew})` : "Học từ mới"}
         </Link>
       </div>
+
+      {/* Ngữ pháp có lịch ôn riêng (không trộn vào hàng đợi thẻ từ) — nhắc ở đây khi có bài tới hạn */}
+      <GrammarDueCard />
 
       {/* Nhiệm vụ ngày ngay dưới các nút ôn — vừa ôn xong quay ra là thấy thanh tiến độ nhích */}
       <DailyQuests />

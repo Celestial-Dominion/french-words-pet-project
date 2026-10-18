@@ -1,0 +1,78 @@
+=== giong-danh-tu
+sum: Mọi danh từ tiếng Pháp đều có giống: giống đực đi với un, giống cái đi với une. Giống của đồ vật không theo nghĩa, nên luôn học danh từ kèm un hoặc une. Một số đuôi giúp đoán: -tion, -té thường là giống cái; -ment, -eau thường là giống đực.
+form: un + danh từ giống đực | un livre · un garçon
+form: une + danh từ giống cái | une table · une fille
+form: học từ kèm mạo từ | une maison, không phải “maison”
+cast: chloe nam
+bg: library
+words: un, une, livre, table, maison
+
+#hook
+chloe: C'est un livre ? | Đó là một quyển sách à? [thinking point]
+nam: Non, c'est une table ! | Không, đó là một cái bàn! [happy]
+> Cùng là “một”, nhưng câu đầu nói [[un]], câu sau nói [[une]]. Vì sao vậy?
+
+#meaning
+> Trong tiếng Pháp, danh từ nào cũng có giống: giống đực hoặc giống cái. Cả đồ vật cũng vậy.
+- {un|k} livre | một quyển sách || giống đực
+- {une|k} table | một cái bàn || giống cái
+> [[Un]] đứng trước danh từ giống đực. [[Une]] đứng trước danh từ giống cái. Cả hai đều nghĩa là “một”.
+
+#form
+th: Loại | Giống đực | Giống cái
+tb: người | un garçon | une fille
+tb: người | un ami | une amie
+tb: đồ vật | un livre | une table
+tb: đồ vật | un sac | une maison
+> Với người, giống thường theo giới tính: [[un garçon]], [[une fille]].
+> Với đồ vật thì không có lý do gì cả. Quyển sách là giống đực, cái bàn là giống cái. Phải nhớ từng từ.
+
+#examples
+- J'ai {un|k} frère et {une|k} sœur. | Tôi có một anh trai và một chị gái.
+- Il y a {une|k} voiture devant la maison. | Có một chiếc xe hơi trước nhà.
+- C'est {un|k} hôtel très grand. | Đó là một khách sạn rất lớn.
+- Elle a {un|k} chat et {un|k} chien. | Cô ấy có một con mèo và một con chó.
+
+#real
+> Mẹo nhỏ: một số đuôi từ giúp bạn đoán giống.
+- {une|k} question · {une|k} station | một câu hỏi · một trạm || -tion → thường là giống cái
+- {une|k} ville · {une|k} université | một thành phố · một trường đại học || -té, -lle → thường là giống cái
+- {un|k} bateau · {un|k} moment | một chiếc thuyền · một lúc || -eau, -ment → thường là giống đực
+> Nhưng mẹo chỉ đúng phần lớn thôi. Cách chắc nhất là học từ mới luôn kèm [[un]] hay [[une]].
+
+#pronunciation
+pron: un | un | œ̃
+pron: une | une | yn
+pron: un ami | un‿ami | œ̃nami
+pron: une amie | une‿amie | ynami
+> [[Un]] là một âm mũi, không đọc chữ n. [[Une]] thì đọc rõ chữ n, nghe như “uyn”.
+> Trước nguyên âm, [[un]] nối âm n với từ sau: [[un ami]].
++ C'est un ami de Nam. | Đó là một người bạn của Nam.
+
+#mistakes
+x: J'ai un maison. => J'ai une maison. | Tôi có một ngôi nhà. >> [[Maison]] là giống cái, phải dùng [[une]].
+x: C'est une livre. => C'est un livre. | Đó là một quyển sách. >> [[Livre]] là giống đực. Cẩn thận: [[une livre]] là một cân, nửa ký!
+x: Il a une sac. => Il a un sac. | Anh ấy có một cái túi. >> [[Sac]] là giống đực: [[un sac]].
+
+#dialogue
+chloe: Tu as un stylo ? | Cậu có cây bút không? [thinking]
+nam: Oui, j'ai un stylo bleu. | Có, mình có một cây bút xanh. [nod]
+chloe: Et une feuille ? | Còn một tờ giấy? [happy]
+nam: Voilà une feuille ! | Đây, một tờ giấy! [happy talking]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi có một con mèo. => J'ai un chat. | Tôi có một con mèo.
+? Nói bằng tiếng Pháp: Đó là một ngôi nhà. => C'est une maison. | Đó là một ngôi nhà.
+
+#recap
+> Tóm lại: danh từ nào cũng có giống. Giống đực đi với [[un]], giống cái đi với [[une]]. Học từ mới luôn kèm mạo từ: [[un livre]], [[une table]].
+
+#practice
+fill: J'ai ___ voiture. | une* / un || voiture là giống cái.
+fill: C'est ___ garçon. | un* / une || garçon là giống đực.
+fill: Elle a ___ amie à Paris. | une* / un || amie là nữ → une.
+choice: Từ nào thường là giống cái? | station* / bateau / moment || -tion thường là giống cái.
+fix: J'ai un maison. | J'ai une maison.* / J'ai une maisone. / J'ai maison. || maison là giống cái.
+natural: C'est un livre.* / C'est une livre. || livre (sách) là giống đực.
+order: Il / y / a / une / voiture. | Có một chiếc xe hơi.
+listen: C'est un ami de Nam. | C'est un ami de Nam.* / C'est une amie de Nam. / C'est un livre de Nam. || un ami nối âm n: œ̃nami.

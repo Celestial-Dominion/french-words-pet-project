@@ -1,0 +1,77 @@
+=== noi-lich-su
+sum: Để nói lịch sự, người Pháp dùng thức điều kiện (conditionnel) của vài động từ như một công thức: je voudrais (tôi muốn… ạ), j'aimerais (tôi mong), pourriez-vous… ? (ông có thể… không ạ?), vous devriez (ông nên). Đuôi giống imparfait: -ais, -ais, -ait, -ions, -iez, -aient.
+form: je voudrais · j'aimerais + danh từ / nguyên mẫu | Je voudrais un café. · J'aimerais partir.
+form: pourriez-vous · pourrais-tu + nguyên mẫu ? | Pourriez-vous m'aider ?
+form: tu devrais · vous devriez (lời khuyên) | Tu devrais dormir.
+cast: ines dr-roux
+bg: service-hall
+words: vouloir, aimer, pouvoir, devoir
+
+#hook
+ines: Bonjour, je voudrais un rendez-vous, s'il vous plaît. | Chào ông, tôi muốn đặt một lịch hẹn ạ. [shy]
+dr-roux: Bien sûr. Pourriez-vous me donner votre nom ? | Tất nhiên. Cô có thể cho tôi biết tên không? [happy]
+> [[Je voudrais]], [[pourriez-vous]]: không phải [[je veux]], [[pouvez-vous]], mà là dạng lịch sự hơn. Đó là thức điều kiện.
+
+#meaning
+> Cùng một ý, nói bằng thức điều kiện nghe nhẹ nhàng và lịch sự hơn nhiều.
+vs: Je veux un café. | Tôi muốn một ly cà phê. || thẳng, hơi cộc
+vs: Je voudrais un café. | Cho tôi một ly cà phê ạ. || lịch sự
+vs: Pouvez-vous m'aider ? | Ông giúp tôi được không? || lịch sự
+vs: Pourriez-vous m'aider ? | Ông có thể vui lòng giúp tôi không ạ? || rất lịch sự
+
+#form
+th: Động từ | Lịch sự | Nghĩa
+tb: vouloir | je voudrais | tôi muốn… ạ
+tb: aimer | j'aimerais | tôi mong, tôi muốn
+tb: pouvoir | pourriez-vous · pourrais-tu | ông có thể… · cậu có thể…
+tb: devoir | vous devriez · tu devrais | ông nên · cậu nên
+> Gốc giống thì tương lai: [[voudr]], [[aimer]], [[pourr]], [[devr]]. Đuôi giống [[imparfait]]: [[ais]], [[ait]], [[iez]].
+> Ở trình độ này, bạn chỉ cần thuộc những câu này như công thức.
+
+#examples
+- {J'aimerais|k} visiter le musée. | Tôi muốn đi thăm bảo tàng.
+- {Pourriez-vous|k} parler plus lentement ? | Ông có thể nói chậm hơn được không ạ?
+- {Pourrais-tu|k} fermer la fenêtre ? | Cậu đóng cửa sổ giúp mình được không?
+- Tu as l'air fatigué. Tu {devrais|k} te reposer. | Cậu trông mệt. Cậu nên nghỉ ngơi.
+- Nous {voudrions|k} une table pour quatre. | Chúng tôi muốn một bàn cho bốn người.
+
+#real
+> Những câu này dùng mỗi ngày: ở nhà hàng, ở cửa hàng, khi hỏi đường.
+- {Je voudrais|k} un billet pour Lyon, s'il vous plaît. | Cho tôi một vé đi Lyon ạ.
+- {Vous pourriez|k} m'indiquer la gare ? | Ông chỉ giúp tôi đường ra ga được không?
+> Mẹo: khi không chắc, cứ bắt đầu bằng [[je voudrais]] hoặc [[pourriez-vous]], kèm [[s'il vous plaît]]. Bạn sẽ luôn lịch sự.
+
+#pronunciation
+pron: je voudrais | je voudrais | ʒəvudʁɛ
+pron: pourriez-vous | pourriez-vous | puʁjevu
+pron: j'aimerais | j'aimerais | ʒɛmʁɛ
+> [[Voudrais]] đọc “vu-đrê”, chữ s cuối câm. [[Pourriez-vous]] có âm “ri-ê” lướt nhanh.
++ Je voudrais un billet pour Lyon. | Cho tôi một vé đi Lyon.
+
+#mistakes
+x: Je veux un café ! => Je voudrais un café, s'il vous plaît. | Cho tôi một ly cà phê ạ. >> Với người phục vụ, [[je voudrais]] lịch sự hơn [[je veux]].
+x: Vous pourriez de m'aider ? => Vous pourriez m'aider ? | Ông có thể giúp tôi không? >> Sau [[pourriez]], đặt thẳng động từ nguyên mẫu.
+x: Tu devras te reposer. => Tu devrais te reposer. | Cậu nên nghỉ ngơi. >> Lời khuyên là [[devrais]], có chữ i. [[Devras]] là tương lai: cậu sẽ phải.
+
+#dialogue
+dr-roux: Je m'appelle Docteur Roux. Vous avez mal où ? | Tôi là bác sĩ Roux. Cô đau ở đâu? [happy]
+ines: J'ai mal à la tête. Je voudrais quelque chose pour dormir. | Tôi đau đầu. Tôi muốn xin thuốc gì đó để ngủ. [sick]
+dr-roux: Vous devriez boire plus d'eau et vous reposer. | Cô nên uống nhiều nước hơn và nghỉ ngơi. [explain]
+ines: Merci, docteur. Pourriez-vous m'écrire une ordonnance ? | Cảm ơn bác sĩ. Ông có thể kê đơn cho tôi không ạ? [shy]
+
+#recall
+? Nói lịch sự: Ông có thể nói chậm hơn được không ạ? => Pourriez-vous parler plus lentement ? | Ông có thể nói chậm hơn được không ạ?
+? Khuyên bạn: Cậu nên nghỉ ngơi. => Tu devrais te reposer. | Cậu nên nghỉ ngơi.
+
+#recap
+> Tóm lại: nói lịch sự bằng [[je voudrais]], [[j'aimerais]], [[pourriez-vous]]. Khuyên bằng [[tu devrais]], [[vous devriez]]. Thuộc chúng như công thức.
+
+#practice
+fill: ___ un café, s'il vous plaît. | Je voudrais* / Je veux / Je voudrai || Lịch sự → je voudrais.
+fill: ___ parler plus lentement ? | Pourriez-vous* / Pourrez-vous / Pouvez-vous de || Rất lịch sự → pourriez-vous.
+fill: Tu es fatigué. Tu ___ te reposer. | devrais* / devras / dois de || Lời khuyên → devrais.
+type: Nous ___ une table pour quatre. (vouloir, lịch sự) | voudrions || nous → voudrions.
+natural: Je voudrais un billet pour Lyon, s'il vous plaît.* / Je veux un billet pour Lyon ! || Lịch sự → je voudrais.
+fix: Vous pourriez de m'aider ? | Vous pourriez m'aider ?* / Vous pourriez à m'aider ? / Vous pourrez de m'aider ? || pourriez + nguyên mẫu.
+order: J'aimerais / visiter / le / musée. | Tôi muốn đi thăm bảo tàng.
+listen: Je voudrais un billet pour Lyon. | Je voudrais un billet pour Lyon.* / Je veux un billet pour Lyon. / Je voudrai un billet pour Lyon. || voudrais: “e” mở ở cuối.

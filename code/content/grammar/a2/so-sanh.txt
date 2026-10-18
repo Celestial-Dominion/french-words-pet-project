@@ -1,0 +1,78 @@
+=== so-sanh
+sum: So sánh dùng plus (hơn), moins (kém) hay aussi (bằng) + tính từ / trạng từ + que: plus grand que, aussi vite que. Với danh từ dùng plus de, moins de, autant de. Hai dạng đặc biệt: bon → meilleur (tốt hơn), bien → mieux (giỏi hơn, khá hơn).
+form: plus · moins · aussi + tính từ + que | Paul est plus grand que Marie.
+form: plus de · moins de · autant de + danh từ + que | J'ai plus de livres que toi.
+form: bon → meilleur · bien → mieux | Ce gâteau est meilleur. · Il chante mieux.
+cast: zoe lucas
+bg: park
+words: plus, moins, aussi, que, meilleur, mieux
+
+#hook
+zoe: Je suis plus grande que toi ! | Tớ cao hơn cậu! [happy]
+lucas: Oui, mais je cours plus vite que toi ! | Ừ, nhưng tớ chạy nhanh hơn cậu! [happy cheer]
+> [[Plus grande que]], [[plus vite que]]: tiếng Pháp so sánh bằng cách kẹp tính từ giữa [[plus]] và [[que]].
+
+#meaning
+> Ba mức so sánh: hơn, kém và bằng.
+- Paul est {plus|k} grand {que|k} Marie. | Paul cao hơn Marie. || hơn
+- Le train est {moins|k} cher {que|k} l'avion. | Tàu rẻ hơn máy bay. || kém đắt hơn
+- Léa est {aussi|k} sympa {que|k} sa sœur. | Léa dễ mến như chị cô ấy. || bằng
+> Tính từ vẫn hợp giống với chủ ngữ: [[elle est plus grande]].
+
+#form
+f: [plus] + grand + [que]
+> [[Plus]], [[moins]] hay [[aussi]] đứng trước tính từ, [[que]] đứng sau. Trước nguyên âm, [[que]] thành [[qu']].
+th: So sánh | Với tính từ | Với danh từ
+tb: hơn | plus grand que | plus de livres que
+tb: kém | moins grand que | moins de livres que
+tb: bằng | aussi grand que | autant de livres que
+> Với danh từ, dùng [[plus de]], [[moins de]], và [[autant de]] cho “bằng”.
+
+#examples
+- Ma ville est {plus|k} petite {que|k} Paris. | Thành phố của tôi nhỏ hơn Paris.
+- Il parle {moins|k} vite {que|k} son frère. | Anh ấy nói chậm hơn anh trai.
+- J'ai {plus de|k} travail {que|k} toi. | Mình có nhiều việc hơn cậu.
+- Elle a {autant d'amis|k} {que|k} moi. | Cô ấy có nhiều bạn như tôi.
+
+#real
+> Hai từ đặc biệt cần nhớ. [[Bon]], nghĩa là ngon, tốt, khi so sánh hơn thì thành [[meilleur]].
+- Ce gâteau est {meilleur|k} que l'autre. | Cái bánh này ngon hơn cái kia.
+> [[Bien]], nghĩa là giỏi, tốt, thành [[mieux]].
+- Tu chantes {mieux|k} que moi ! | Cậu hát hay hơn mình!
+> Mẹo: [[meilleur]] đi với danh từ, như [[bon]]. [[Mieux]] đi với động từ, như [[bien]].
+
+#pronunciation
+pron: plus grand | plus grand | plyɡʁɑ̃
+pron: plus âgé | plus‿âgé | plyzaʒe
+pron: plus de | plus de | plysdə
+> Trước phụ âm, chữ s của [[plus]] câm. Trước nguyên âm, nối âm z: [[plus âgé]].
+> Với danh từ, [[plus de]] thường đọc rõ âm s.
++ Mon frère est plus âgé que moi. | Anh tôi lớn tuổi hơn tôi.
+
+#mistakes
+x: Ce gâteau est plus bon. => Ce gâteau est meilleur. | Cái bánh này ngon hơn. >> So sánh hơn của [[bon]] là [[meilleur]].
+x: Il chante plus bien que moi. => Il chante mieux que moi. | Anh ấy hát hay hơn tôi. >> So sánh hơn của [[bien]] là [[mieux]].
+x: J'ai plus livres que toi. => J'ai plus de livres que toi. | Mình có nhiều sách hơn cậu. >> Với danh từ, cần [[de]]: [[plus de livres]].
+
+#dialogue
+lucas: Mais tu as plus de bonbons que moi ! | Nhưng cậu có nhiều kẹo hơn tớ! [angry]
+zoe: Non, on a autant de bonbons ! Regarde, cinq et cinq. | Không, hai đứa có số kẹo bằng nhau mà! Nhìn này, năm và năm. [explain]
+lucas: Oh, c'est vrai. Mais les tiens sont meilleurs ! | Ồ, đúng thật. Nhưng kẹo của cậu ngon hơn! [shy]
+zoe: Bon, on échange ? | Thôi được, đổi nhé? [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Anh trai tôi cao hơn tôi. => Mon frère est plus grand que moi. | Anh trai tôi cao hơn tôi.
+? Nói bằng tiếng Pháp: Cậu hát hay hơn mình. => Tu chantes mieux que moi. | Cậu hát hay hơn mình.
+
+#recap
+> Tóm lại: [[plus]], [[moins]], [[aussi]] cộng tính từ cộng [[que]]. Với danh từ: [[plus de]], [[moins de]], [[autant de]]. Nhớ hai dạng đặc biệt: [[meilleur]] và [[mieux]].
+
+#practice
+fill: Paul est ___ grand que Marie. | plus* / plus de / autant || Tính từ → plus.
+fill: J'ai plus ___ travail que toi. | de* / que / du || Danh từ → plus de.
+fill: Ce gâteau est ___ que l'autre. | meilleur* / plus bon / mieux || bon → meilleur.
+fill: Tu chantes ___ que moi. | mieux* / meilleur / plus bien || bien → mieux.
+contrast: Léa est ___ sympa que sa sœur. | aussi* / autant || Tính từ, bằng → aussi.
+fix: Il chante plus bien que moi. | Il chante mieux que moi.* / Il chante meilleur que moi. / Il chante plus mieux que moi. || bien → mieux.
+order: Le / train / est / moins / cher / que / l'avion. | Tàu rẻ hơn máy bay.
+listen: Mon frère est plus âgé que moi. | Mon frère est plus âgé que moi.* / Mon frère est moins âgé que moi. / Mon frère est aussi âgé que moi. || plus‿âgé = plyzaʒe.

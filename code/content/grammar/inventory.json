@@ -1,0 +1,867 @@
+{
+ "about": "Điểm ngữ pháp tiếng Pháp theo cấp DẠY (docs/GRAMMAR_PLAYBOOK.md §1): tổng hợp Inventaire linguistique des contenus clés des niveaux du CECRL (France Éducation international / Eaquals) + danh sách ngữ pháp DELF A1–A2; ưu tiên chỗ tiếng Việt khác hẳn (giống danh từ, mạo từ, chia động từ, hợp giống tính từ, phủ định hai mảnh). pre = tiên quyết; vs = dễ nhầm; rel = liên quan; pri 1 cốt lõi · 2 quan trọng · 3 mở rộng.",
+ "points": [
+  {
+   "id": "subject-pronouns",
+   "lv": "a1",
+   "cat": "pronouns",
+   "name": "Pronoms sujets",
+   "vi": "Đại từ chủ ngữ: je, tu, il, elle, on, nous, vous, ils, elles",
+   "pre": [],
+   "pri": 1
+  },
+  {
+   "id": "tu-vous",
+   "lv": "a1",
+   "cat": "pronouns",
+   "name": "Tu ou vous",
+   "vi": "tu thân mật · vous lịch sự hoặc số nhiều",
+   "pre": [
+    "subject-pronouns"
+   ],
+   "pri": 1,
+   "reg": "spoken"
+  },
+  {
+   "id": "svo-order",
+   "lv": "a1",
+   "cat": "sentence",
+   "name": "Ordre sujet-verbe-complément",
+   "vi": "Trật tự câu: chủ ngữ + động từ + bổ ngữ",
+   "pre": [
+    "subject-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "etre-present",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "être au présent",
+   "vi": "être (là, thì, ở): je suis, tu es, il est…",
+   "pre": [
+    "subject-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "avoir-present",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "avoir au présent",
+   "vi": "avoir (có): j'ai, tu as, il a…",
+   "pre": [
+    "subject-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "avoir-age",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "avoir + âge",
+   "vi": "Nói tuổi bằng avoir: J'ai vingt ans",
+   "pre": [
+    "avoir-present"
+   ],
+   "pri": 1,
+   "vs": [
+    "etre-present"
+   ]
+  },
+  {
+   "id": "noun-gender",
+   "lv": "a1",
+   "cat": "nouns",
+   "name": "Genre des noms",
+   "vi": "Danh từ có giống đực / giống cái",
+   "pre": [],
+   "pri": 1
+  },
+  {
+   "id": "indefinite-articles",
+   "lv": "a1",
+   "cat": "determiners",
+   "name": "un, une, des",
+   "vi": "Mạo từ không xác định: un, une, des",
+   "pre": [
+    "noun-gender"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "definite-articles",
+   "lv": "a1",
+   "cat": "determiners",
+   "name": "le, la, l', les",
+   "vi": "Mạo từ xác định: le, la, l', les",
+   "pre": [
+    "noun-gender"
+   ],
+   "pri": 1,
+   "vs": [
+    "indefinite-articles"
+   ]
+  },
+  {
+   "id": "noun-plural",
+   "lv": "a1",
+   "cat": "nouns",
+   "name": "Pluriel des noms",
+   "vi": "Số nhiều: thêm -s / -x, thường đọc như số ít",
+   "pre": [
+    "indefinite-articles",
+    "definite-articles"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "present-er",
+   "lv": "a1",
+   "cat": "tense",
+   "name": "Présent des verbes en -er",
+   "vi": "Hiện tại động từ đuôi -er: je parle, nous parlons",
+   "pre": [
+    "subject-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "er-silent-endings",
+   "lv": "a1",
+   "cat": "tense",
+   "name": "Terminaisons muettes",
+   "vi": "Đuôi -e, -es, -ent không đọc",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "ne-pas",
+   "lv": "a1",
+   "cat": "negation",
+   "name": "ne… pas",
+   "vi": "Phủ định ne… pas (n' trước nguyên âm)",
+   "pre": [
+    "present-er",
+    "etre-present"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "pas-de",
+   "lv": "a1",
+   "cat": "negation",
+   "name": "pas de / pas d'",
+   "vi": "Sau phủ định: un, une, des, du → de",
+   "pre": [
+    "ne-pas",
+    "indefinite-articles"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "yes-no-questions",
+   "lv": "a1",
+   "cat": "questions",
+   "name": "Questions fermées",
+   "vi": "Câu hỏi có/không: lên giọng, est-ce que",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "question-words",
+   "lv": "a1",
+   "cat": "questions",
+   "name": "Mots interrogatifs",
+   "vi": "Từ để hỏi: où, quand, comment, combien, pourquoi, qui, que",
+   "pre": [
+    "yes-no-questions"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "quest-ce-que",
+   "lv": "a1",
+   "cat": "questions",
+   "name": "Qu'est-ce que…?",
+   "vi": "Hỏi cái gì: Qu'est-ce que tu fais ?",
+   "pre": [
+    "yes-no-questions"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "adj-agreement",
+   "lv": "a1",
+   "cat": "adjectives",
+   "name": "Accord de l'adjectif",
+   "vi": "Tính từ hợp giống và số với danh từ",
+   "pre": [
+    "noun-gender",
+    "noun-plural"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "adj-position",
+   "lv": "a1",
+   "cat": "adjectives",
+   "name": "Place de l'adjectif",
+   "vi": "Tính từ đứng sau danh từ (trừ grand, petit, bon, beau…)",
+   "pre": [
+    "adj-agreement"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "possessives",
+   "lv": "a1",
+   "cat": "pronouns",
+   "name": "Adjectifs possessifs",
+   "vi": "mon, ma, mes · ton… · son… · notre, votre, leur",
+   "pre": [
+    "noun-gender",
+    "noun-plural"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "son-sa-owned",
+   "lv": "a1",
+   "cat": "pronouns",
+   "name": "son / sa : genre de l'objet",
+   "vi": "son / sa theo giống của VẬT, không theo người sở hữu",
+   "pre": [
+    "possessives"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "prep-cities-countries",
+   "lv": "a1",
+   "cat": "prepositions",
+   "name": "à, en, au + ville / pays",
+   "vi": "à Paris · en France · au Japon · aux États-Unis",
+   "pre": [
+    "definite-articles"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "venir-de-place",
+   "lv": "a1",
+   "cat": "prepositions",
+   "name": "de + lieu",
+   "vi": "Đến từ đâu: Je viens de Lyon, du Japon",
+   "pre": [
+    "prep-cities-countries"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "chez",
+   "lv": "a1",
+   "cat": "prepositions",
+   "name": "chez",
+   "vi": "chez = ở nhà / chỗ của ai",
+   "pre": [
+    "prep-cities-countries"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "contracted-articles",
+   "lv": "a1",
+   "cat": "determiners",
+   "name": "au, aux, du, des",
+   "vi": "à + le = au · de + le = du (mạo từ gộp)",
+   "pre": [
+    "definite-articles"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "aller-present",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "aller au présent",
+   "vi": "aller (đi): je vais, tu vas, il va…",
+   "pre": [
+    "subject-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "faire-present",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "faire au présent",
+   "vi": "faire (làm): je fais… nous faisons, ils font",
+   "pre": [
+    "subject-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "venir-present",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "venir au présent",
+   "vi": "venir (đến): je viens… ils viennent",
+   "pre": [
+    "subject-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "vouloir-pouvoir",
+   "lv": "a1",
+   "cat": "modals",
+   "name": "vouloir, pouvoir + infinitif",
+   "vi": "vouloir (muốn) · pouvoir (có thể) + động từ nguyên mẫu",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "je-voudrais",
+   "lv": "a1",
+   "cat": "modals",
+   "name": "je voudrais",
+   "vi": "je voudrais = tôi muốn (lịch sự)",
+   "pre": [
+    "vouloir-pouvoir"
+   ],
+   "pri": 1,
+   "reg": "spoken"
+  },
+  {
+   "id": "imperative",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "Impératif",
+   "vi": "Mệnh lệnh: Écoute ! Écoutez ! Allons-y !",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "il-y-a",
+   "lv": "a1",
+   "cat": "sentence",
+   "name": "il y a",
+   "vi": "il y a = có (tồn tại); il n'y a pas de",
+   "pre": [
+    "ne-pas",
+    "indefinite-articles"
+   ],
+   "pri": 1,
+   "vs": [
+    "avoir-present"
+   ]
+  },
+  {
+   "id": "cest-ilest",
+   "lv": "a1",
+   "cat": "sentence",
+   "name": "c'est / il est",
+   "vi": "c'est + danh từ có mạo từ · il est + tính từ / nghề",
+   "pre": [
+    "etre-present"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "demonstratives",
+   "lv": "a1",
+   "cat": "determiners",
+   "name": "ce, cet, cette, ces",
+   "vi": "Tính từ chỉ định: này / đó",
+   "pre": [
+    "noun-gender"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "partitive",
+   "lv": "a1",
+   "cat": "determiners",
+   "name": "du, de la, de l'",
+   "vi": "Mạo từ bộ phận: một ít (du pain, de l'eau)",
+   "pre": [
+    "contracted-articles"
+   ],
+   "pri": 1,
+   "vs": [
+    "definite-articles"
+   ]
+  },
+  {
+   "id": "quantity-de",
+   "lv": "a1",
+   "cat": "determiners",
+   "name": "beaucoup de, un peu de",
+   "vi": "Số lượng + de: beaucoup de, un peu de, un kilo de",
+   "pre": [
+    "partitive"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "aimer-article",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "aimer + le / la",
+   "vi": "aimer, adorer, détester + MẠO TỪ XÁC ĐỊNH hoặc động từ",
+   "pre": [
+    "definite-articles",
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "time-telling",
+   "lv": "a1",
+   "cat": "prepositions",
+   "name": "L'heure",
+   "vi": "Nói giờ: Il est huit heures, à midi",
+   "pre": [
+    "etre-present"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "time-prepositions",
+   "lv": "a1",
+   "cat": "prepositions",
+   "name": "à, en, le + temps",
+   "vi": "à 8 h · en mai · le lundi · le 3 mars",
+   "pre": [
+    "time-telling"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "futur-proche",
+   "lv": "a1",
+   "cat": "tense",
+   "name": "Futur proche",
+   "vi": "Tương lai gần: aller + động từ nguyên mẫu",
+   "pre": [
+    "aller-present"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "reflexive-present",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "Verbes pronominaux",
+   "vi": "Động từ phản thân: je me lève, il s'appelle",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "prep-location",
+   "lv": "a1",
+   "cat": "prepositions",
+   "name": "sur, sous, dans, devant…",
+   "vi": "Giới từ vị trí: sur, sous, dans, devant, derrière, à côté de",
+   "pre": [
+    "contracted-articles"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "prendre-finir",
+   "lv": "a1",
+   "cat": "verbs",
+   "name": "prendre, finir, partir",
+   "vi": "Động từ thường gặp: prendre, finir, partir, mettre",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "conjunctions-basic",
+   "lv": "a1",
+   "cat": "clauses",
+   "name": "et, mais, ou, parce que",
+   "vi": "Liên từ: et, mais, ou, parce que, alors",
+   "pre": [],
+   "pri": 1
+  },
+  {
+   "id": "pc-avoir",
+   "lv": "a2",
+   "cat": "tense",
+   "name": "Passé composé avec avoir",
+   "vi": "Quá khứ kép với avoir: j'ai mangé",
+   "pre": [
+    "avoir-present",
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "past-participles",
+   "lv": "a2",
+   "cat": "tense",
+   "name": "Participes passés",
+   "vi": "Quá khứ phân từ: -é, -i, -u và bất quy tắc (fait, pris, vu…)",
+   "pre": [
+    "pc-avoir"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "pc-etre",
+   "lv": "a2",
+   "cat": "tense",
+   "name": "Passé composé avec être",
+   "vi": "Quá khứ kép với être (aller, venir, partir…) + hợp giống",
+   "pre": [
+    "pc-avoir",
+    "etre-present"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "pc-reflexive",
+   "lv": "a2",
+   "cat": "tense",
+   "name": "Passé composé des pronominaux",
+   "vi": "Phản thân ở quá khứ kép: je me suis levé(e)",
+   "pre": [
+    "pc-etre",
+    "reflexive-present"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "pc-negative",
+   "lv": "a2",
+   "cat": "negation",
+   "name": "Passé composé négatif",
+   "vi": "Phủ định quá khứ kép: je n'ai pas mangé",
+   "pre": [
+    "pc-avoir",
+    "ne-pas"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "imparfait",
+   "lv": "a2",
+   "cat": "tense",
+   "name": "Imparfait",
+   "vi": "Thì imparfait: miêu tả, thói quen trong quá khứ",
+   "pre": [
+    "pc-avoir"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "pc-vs-imparfait",
+   "lv": "a2",
+   "cat": "tense",
+   "name": "Passé composé ou imparfait",
+   "vi": "Chọn passé composé (sự việc) hay imparfait (bối cảnh)",
+   "pre": [
+    "imparfait",
+    "pc-etre"
+   ],
+   "pri": 1,
+   "vs": [
+    "imparfait"
+   ]
+  },
+  {
+   "id": "futur-simple",
+   "lv": "a2",
+   "cat": "tense",
+   "name": "Futur simple",
+   "vi": "Tương lai đơn: je parlerai, j'irai",
+   "pre": [
+    "futur-proche"
+   ],
+   "pri": 1,
+   "vs": [
+    "futur-proche"
+   ]
+  },
+  {
+   "id": "cod-pronouns",
+   "lv": "a2",
+   "cat": "pronouns",
+   "name": "le, la, les (COD)",
+   "vi": "Đại từ tân ngữ trực tiếp: Je le vois",
+   "pre": [
+    "definite-articles",
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "coi-pronouns",
+   "lv": "a2",
+   "cat": "pronouns",
+   "name": "lui, leur (COI)",
+   "vi": "Đại từ tân ngữ gián tiếp: Je lui parle",
+   "pre": [
+    "cod-pronouns"
+   ],
+   "pri": 1,
+   "vs": [
+    "cod-pronouns"
+   ]
+  },
+  {
+   "id": "pronoun-y",
+   "lv": "a2",
+   "cat": "pronouns",
+   "name": "Le pronom y",
+   "vi": "y = ở đó (thay à + nơi chốn)",
+   "pre": [
+    "prep-cities-countries"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "pronoun-en",
+   "lv": "a2",
+   "cat": "pronouns",
+   "name": "Le pronom en",
+   "vi": "en = (một ít / số lượng) của nó (thay de + danh từ)",
+   "pre": [
+    "partitive",
+    "quantity-de"
+   ],
+   "pri": 1,
+   "vs": [
+    "pronoun-y"
+   ]
+  },
+  {
+   "id": "stressed-pronouns",
+   "lv": "a2",
+   "cat": "pronouns",
+   "name": "Pronoms toniques",
+   "vi": "moi, toi, lui, elle, nous, vous, eux, elles",
+   "pre": [
+    "subject-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "comparative",
+   "lv": "a2",
+   "cat": "comparison",
+   "name": "plus / moins / aussi … que",
+   "vi": "So sánh hơn, kém, bằng",
+   "pre": [
+    "adj-agreement"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "meilleur-mieux",
+   "lv": "a2",
+   "cat": "comparison",
+   "name": "meilleur / mieux",
+   "vi": "meilleur (tính từ) · mieux (trạng từ)",
+   "pre": [
+    "comparative"
+   ],
+   "pri": 1,
+   "vs": [
+    "comparative"
+   ]
+  },
+  {
+   "id": "superlative",
+   "lv": "a2",
+   "cat": "comparison",
+   "name": "le plus, le moins",
+   "vi": "So sánh nhất: le plus grand, la moins chère",
+   "pre": [
+    "comparative"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "adverbs-ment",
+   "lv": "a2",
+   "cat": "adjectives",
+   "name": "Adverbes en -ment",
+   "vi": "Trạng từ -ment: lentement, facilement",
+   "pre": [
+    "adj-agreement"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "irregular-adjectives",
+   "lv": "a2",
+   "cat": "adjectives",
+   "name": "Adjectifs irréguliers",
+   "vi": "beau/bel/belle, nouveau, vieux · -eux/-euse, -if/-ive",
+   "pre": [
+    "adj-position"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "devoir-falloir",
+   "lv": "a2",
+   "cat": "modals",
+   "name": "devoir, il faut",
+   "vi": "Phải: devoir + nguyên mẫu · il faut + nguyên mẫu",
+   "pre": [
+    "vouloir-pouvoir"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "negation-other",
+   "lv": "a2",
+   "cat": "negation",
+   "name": "ne… jamais, plus, rien, personne",
+   "vi": "Phủ định khác: không bao giờ, không còn, không gì, không ai",
+   "pre": [
+    "ne-pas"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "relative-qui-que",
+   "lv": "a2",
+   "cat": "relative",
+   "name": "qui, que",
+   "vi": "Đại từ quan hệ qui (chủ ngữ) · que (tân ngữ)",
+   "pre": [
+    "svo-order"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "relative-ou",
+   "lv": "a2",
+   "cat": "relative",
+   "name": "où relatif",
+   "vi": "où = nơi mà / khi mà",
+   "pre": [
+    "relative-qui-que"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "depuis-pendant",
+   "lv": "a2",
+   "cat": "prepositions",
+   "name": "depuis, il y a, pendant, dans",
+   "vi": "Thời gian: depuis (từ… đến giờ), il y a (cách đây), pendant, dans",
+   "pre": [
+    "pc-avoir"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "venir-de-inf",
+   "lv": "a2",
+   "cat": "tense",
+   "name": "Passé récent, être en train de",
+   "vi": "venir de + nguyên mẫu (vừa mới) · être en train de (đang)",
+   "pre": [
+    "venir-present"
+   ],
+   "pri": 1,
+   "rel": [
+    "futur-proche"
+   ]
+  },
+  {
+   "id": "si-present",
+   "lv": "a2",
+   "cat": "conditionals",
+   "name": "si + présent",
+   "vi": "Điều kiện có thật: si + hiện tại, tương lai / mệnh lệnh",
+   "pre": [
+    "futur-simple"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "polite-conditional",
+   "lv": "a2",
+   "cat": "conditionals",
+   "name": "Conditionnel de politesse",
+   "vi": "Nói lịch sự: je voudrais, j'aimerais, pourriez-vous",
+   "pre": [
+    "je-voudrais"
+   ],
+   "pri": 1,
+   "reg": "spoken"
+  },
+  {
+   "id": "quel",
+   "lv": "a2",
+   "cat": "questions",
+   "name": "quel, quelle, quels, quelles",
+   "vi": "Từ hỏi quel (nào, gì) hợp giống số",
+   "pre": [
+    "question-words"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "savoir-connaitre",
+   "lv": "a2",
+   "cat": "verbs",
+   "name": "savoir ou connaître",
+   "vi": "savoir (biết việc, biết làm) · connaître (biết người, nơi)",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "tout",
+   "lv": "a2",
+   "cat": "determiners",
+   "name": "tout, toute, tous, toutes",
+   "vi": "tout (tất cả, mọi) hợp giống số",
+   "pre": [
+    "definite-articles"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "conjunctions-a2",
+   "lv": "a2",
+   "cat": "clauses",
+   "name": "quand, comme, donc, pourtant",
+   "vi": "Liên từ A2: quand, comme, donc, pourtant, pendant que",
+   "pre": [
+    "conjunctions-basic"
+   ],
+   "pri": 2
+  }
+ ],
+ "probes": [
+  {
+   "id": "inversion",
+   "find": "\\b(?:[A-Za-zé]+)-(?:tu|vous|il|elle|nous|ils|elles)\\b \\?",
+   "note": "câu hỏi đảo ngữ (Viens-tu ?) — nhận biết ở A2, dạy ở B1"
+  }
+ ]
+}

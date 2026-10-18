@@ -1,0 +1,75 @@
+=== dai-tu-nhan-manh
+sum: Đại từ nhấn mạnh moi, toi, lui, elle, nous, vous, eux, elles dùng khi đại từ đứng một mình (Et toi ?), sau giới từ (avec moi, chez eux), sau c'est (c'est lui) và để nhấn mạnh chủ ngữ (Moi, j'aime le thé).
+form: moi · toi · lui · elle | nous · vous · eux · elles
+form: sau giới từ · đứng một mình | avec moi · chez eux · Et toi ?
+form: nhấn mạnh · sau c'est | Moi, je… · C'est lui !
+cast: chloe karim
+bg: cafe
+words: moi, toi, lui, eux
+
+#hook
+karim: Je prends un café. Et toi ? | Mình gọi cà phê. Còn cậu? [thinking]
+chloe: Moi, je préfère un thé. | Mình thì thích trà hơn. [happy]
+> [[Toi]] và [[moi]] không phải [[tu]] và [[je]]. Chúng là đại từ nhấn mạnh, dùng khi đại từ đứng riêng hoặc cần được làm nổi bật.
+
+#meaning
+> [[Je]], [[tu]], [[il]] luôn phải đi kèm động từ. Khi đại từ đứng một mình hay đi sau giới từ, ta dùng dạng nhấn mạnh.
+vs: Tu viens ? | Cậu đến chứ? || chủ ngữ + động từ → tu
+vs: Et toi ? | Còn cậu? || đứng một mình → toi
+
+#form
+th: Chủ ngữ | Nhấn mạnh
+tb: je · tu | moi · toi
+tb: il · elle | lui · elle
+tb: nous · vous | nous · vous
+tb: ils · elles | eux · elles
+> Cần chú ý ba dạng khác hẳn: [[moi]], [[toi]], và [[eux]] cho [[ils]].
+> [[Lui]] ở đây là “anh ấy”, chỉ người nam.
+
+#examples
+- Tu viens {avec moi|k} ? | Cậu đi với mình không?
+- Ce soir, on dîne {chez eux|k}. | Tối nay mình ăn ở nhà họ.
+- Ce cadeau est {pour toi|k}. | Món quà này dành cho cậu.
+- Qui a fait ça ? — {C'est lui|k} ! | Ai làm thế? — Là anh ấy!
+- J'ai faim. — {Moi aussi|k} ! | Mình đói. — Mình cũng vậy!
+
+#real
+> Người Pháp rất hay đặt đại từ nhấn mạnh ở đầu câu để làm nổi bật người nói, nhất là khi so sánh.
+- {Moi|k}, j'aime la mer. {Lui|k}, il préfère la montagne. | Tôi thì thích biển. Còn anh ấy thì thích núi hơn.
+> Câu trả lời ngắn cũng dùng dạng này: [[moi aussi]] là tôi cũng vậy, [[moi non plus]] là tôi cũng không.
+- Je n'aime pas le café. — {Moi non plus|k}. | Mình không thích cà phê. — Mình cũng không.
+
+#pronunciation
+pron: moi · toi | moi | mwa
+pron: lui | lui | lɥi
+pron: eux | eux | ø
+> [[Moi]], [[toi]] đọc “moa”, “toa”. [[Eux]] chỉ là một âm “ơ” tròn môi.
++ Je viens avec toi. | Mình đi với cậu.
+
+#mistakes
+x: Tu viens avec je ? => Tu viens avec moi ? | Cậu đi với mình không? >> Sau giới từ, dùng [[moi]], không dùng [[je]].
+x: Je, j'aime le thé. => Moi, j'aime le thé. | Tôi thì thích trà. >> Nhấn mạnh chủ ngữ dùng [[moi]].
+x: On dîne chez ils. => On dîne chez eux. | Mình ăn ở nhà họ. >> Dạng nhấn mạnh của [[ils]] là [[eux]].
+
+#dialogue
+karim: Tu viens au concert avec nous samedi ? | Thứ bảy cậu đi xem hòa nhạc với bọn mình không? [happy]
+chloe: Avec vous ? Avec qui exactement ? | Với các cậu à? Cụ thể là với ai? [thinking]
+karim: Avec Lucas et Inès. On va chez eux avant. | Với Lucas và Inès. Bọn mình đến nhà họ trước. [explain]
+chloe: Génial, je viens avec vous ! | Tuyệt, mình đi với các cậu! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Mình đói. — Mình cũng vậy! => Moi aussi ! | Mình cũng vậy!
+? Nói bằng tiếng Pháp: Món quà này dành cho cậu. => Ce cadeau est pour toi. | Món quà này dành cho cậu.
+
+#recap
+> Tóm lại: [[moi]], [[toi]], [[lui]], [[elle]], [[nous]], [[vous]], [[eux]], [[elles]] dùng sau giới từ, khi đứng một mình, sau [[c'est]], và để nhấn mạnh: [[moi, je]], [[avec toi]], [[chez eux]].
+
+#practice
+fill: Tu viens avec ___ ? (je) | moi* / je / me || Sau giới từ → moi.
+fill: On dîne chez ___ . (ils) | eux* / ils / leur || ils → eux.
+fill: Ce cadeau est pour ___ . (tu) | toi* / tu / te || Sau giới từ → toi.
+fill: J'ai faim. — ___ aussi ! | Moi* / Je / Me || Đứng một mình → moi.
+type: Qui a fait ça ? — C'est ___ ! (il) | lui || c'est + lui.
+fix: Je, j'aime le thé. | Moi, j'aime le thé.* / Me, j'aime le thé. / Je, moi aime le thé. || Nhấn mạnh → moi.
+order: Ce / soir, / on / dîne / chez / eux. | Tối nay mình ăn ở nhà họ.
+listen: Je viens avec toi. | Je viens avec toi.* / Je viens avec moi. / Tu viens avec moi. || toi = twa.

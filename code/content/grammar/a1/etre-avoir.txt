@@ -1,0 +1,82 @@
+=== etre-avoir
+sum: Être (là) và avoir (có) là hai động từ dùng nhiều nhất, chia bất quy tắc nên phải thuộc lòng. Tuổi, đói, lạnh, sợ trong tiếng Pháp dùng avoir: j'ai vingt ans, j'ai faim.
+form: je suis · tu es · il est · nous sommes · vous êtes · ils sont | être = là, thì, ở
+form: j'ai · tu as · il a · nous avons · vous avez · ils ont | avoir = có
+form: avoir + tuổi / faim / froid / peur | J'ai vingt ans.
+cast: hugo linh
+bg: cafe
+words: être, avoir, an, faim, froid, peur
+
+#hook
+hugo: Tu es étudiante ? | Cậu là sinh viên à? [happy]
+linh: Oui, et j'ai vingt ans. | Ừ, và mình hai mươi tuổi. [happy nod]
+> Hai câu này dùng hai động từ quan trọng nhất của tiếng Pháp: [[être]], nghĩa là “là”, và [[avoir]], nghĩa là “có”.
+
+#meaning
+> [[Être]] nói ai đó là gì, thế nào, hoặc ở đâu.
+- Je {suis|k} contente. | Tôi vui.
+- Il {est|k} à la maison. | Anh ấy ở nhà.
+> [[Avoir]] nói ai đó có cái gì.
+- J'{ai|k} un frère. | Tôi có một anh trai.
+
+#form
+th: Ngôi | être | avoir
+tb: je | suis | ai (j'ai)
+tb: tu | es | as
+tb: il · elle · on | est | a
+tb: nous | sommes | avons
+tb: vous | êtes | avez
+tb: ils · elles | sont | ont
+> Cả hai động từ đều bất quy tắc, không theo luật nào cả. Cách duy nhất là đọc to nhiều lần cho thuộc.
+> Chú ý [[je]] gặp [[ai]] thì thành [[j'ai]], viết liền.
+
+#examples
+- Nous {sommes|k} amis. | Chúng tôi là bạn.
+- Vous {êtes|k} français ? | Các bạn là người Pháp à?
+- Elle {a|k} une voiture rouge. | Cô ấy có một chiếc xe hơi màu đỏ.
+- Ils {ont|k} deux enfants. | Họ có hai đứa con.
+
+#real
+> Đây là chỗ người Việt hay sai. Tiếng Việt nói “tôi hai mươi tuổi”, nhưng tiếng Pháp nói “tôi CÓ hai mươi năm”.
+- J'{ai|k} vingt ans. | Tôi hai mươi tuổi. || tuổi: avoir
+- Tu {as|k} faim ? | Cậu đói không? || đói: avoir faim
+- Nous {avons|k} froid. | Chúng tôi thấy lạnh. || lạnh: avoir froid
+- Le petit garçon {a|k} peur. | Cậu bé sợ. || sợ: avoir peur
+> Đói, lạnh, nóng, sợ đều đi với [[avoir]]: [[avoir faim]], [[avoir froid]], [[avoir chaud]], [[avoir peur]].
+
+#pronunciation
+pron: vous êtes | vous‿êtes | vuzɛt
+pron: nous avons | nous‿avons | nuzavɔ̃
+pron: ils ont | ils‿ont | ilzɔ̃
+pron: ils sont | ils sont | ilsɔ̃
+> Sau [[nous]], [[vous]], [[ils]], chữ s cuối đọc thành z khi từ sau bắt đầu bằng nguyên âm.
+> Nghe kỹ: [[ils ont]] có âm z là “họ có”. [[Ils sont]] có âm s là “họ là”.
++ Ils ont un chat. | Họ có một con mèo.
+
+#mistakes
+x: Je suis vingt ans. => J'ai vingt ans. | Tôi hai mươi tuổi. >> Tuổi luôn dùng [[avoir]], không dùng [[être]].
+x: Je suis faim. => J'ai faim. | Tôi đói. >> Đói là [[avoir faim]], nghĩa đen là “có cơn đói”.
+x: Je suis froid. => J'ai froid. | Tôi thấy lạnh. >> [[J'ai froid]] là thấy lạnh. [[Je suis froid]] lại có nghĩa là tôi lạnh lùng.
+
+#dialogue
+hugo: Tu as quel âge, Linh ? | Cậu bao nhiêu tuổi, Linh? [thinking]
+linh: J'ai vingt ans. Et toi ? | Mình hai mươi. Còn cậu? [happy]
+hugo: Moi, j'ai vingt-deux ans. Tu as faim ? | Mình hai mươi hai. Cậu đói không? [talking]
+linh: Oui, j'ai très faim ! | Có, mình đói lắm! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi mười tám tuổi. => J'ai dix-huit ans. | Tôi mười tám tuổi.
+? Nói bằng tiếng Pháp: Chúng tôi là sinh viên. => Nous sommes étudiants. | Chúng tôi là sinh viên.
+
+#recap
+> Tóm lại: [[être]] là “là, ở”, [[avoir]] là “có”. Thuộc cả hai bảng chia. Tuổi, đói, lạnh, sợ thì dùng [[avoir]]: [[j'ai vingt ans]], [[j'ai faim]].
+
+#practice
+fill: Nous ___ amis. | sommes* / avons / sont || être với nous: sommes.
+fill: Elle ___ une voiture. | a* / est / as || có: avoir → elle a.
+fill: Tu ___ quel âge ? | as* / es / est || tuổi dùng avoir: tu as.
+type: Vous ___ français ? (être) | êtes || être với vous: êtes.
+fix: Je suis vingt ans. | J'ai vingt ans.* / Je ai vingt ans. / Je suis vingt ans vieux. || Tuổi: avoir.
+natural: J'ai très faim !* / Je suis très faim ! || đói: avoir faim.
+order: Ils / ont / deux / enfants. | Họ có hai đứa con.
+listen: Ils ont un chat. | Ils ont un chat.* / Ils sont un chat. / Il a un chat. || Âm z nối: ils‿ont = họ có.

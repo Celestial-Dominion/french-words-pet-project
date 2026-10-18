@@ -15,7 +15,10 @@
     "content:coverage": "node --no-warnings scripts/content-coverage.mjs",
     "content:kit": "node --no-warnings scripts/content-kit.mjs",
     "content:mt": "node --no-warnings scripts/content-mt.mjs",
-    "content:build": "node --no-warnings scripts/build-content.mjs"
+    "content:build": "node --no-warnings scripts/build-content.mjs",
+    "grammar:check": "node --no-warnings scripts/check-grammar.mjs",
+    "grammar:build": "node --no-warnings scripts/build-grammar.mjs && scripts/.venv/bin/python scripts/build-grammar-audio.py && node --no-warnings scripts/build-grammar.mjs --prune",
+    "grammar:state": "node --no-warnings scripts/grammar-state.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

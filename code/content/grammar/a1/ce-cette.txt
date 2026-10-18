@@ -1,0 +1,78 @@
+=== ce-cette
+sum: Ce, cet, cette, ces nghĩa là “này” hoặc “đó”, đứng trước danh từ. Ce cho giống đực, cet cho giống đực đứng trước nguyên âm hay h câm, cette cho giống cái, ces cho số nhiều.
+form: ce + giống đực · cet + giống đực có nguyên âm | ce livre · cet hôtel
+form: cette + giống cái | cette robe
+form: ces + số nhiều | ces chaussures
+cast: maman zoe
+bg: market
+words: ce, cet, cette, ces
+
+#hook
+zoe: Maman, je peux avoir cette pomme ? | Mẹ ơi, con lấy quả táo này được không? [happy point]
+maman: Oui, et ce fromage aussi, si tu veux. | Được, cả miếng phô mai này nữa nếu con muốn. [happy]
+> [[Cette pomme]], [[ce fromage]]: cả hai đều nghĩa là “… này”, nhưng hình thức khác nhau theo giống của danh từ.
+
+#meaning
+> Tiếng Việt đặt “này”, “đó” sau danh từ. Tiếng Pháp đặt [[ce]], [[cette]] trước danh từ.
+- {ce|k} livre | quyển sách này || giống đực
+- {cette|k} table | cái bàn này || giống cái
+- {ces|k} livres | những quyển sách này || số nhiều
+> [[Ce]] có thể là “này” hoặc “đó”. Ngữ cảnh cho ta biết.
+
+#form
+th: Loại | Từ | Ví dụ
+tb: giống đực | ce | ce garçon
+tb: giống đực + nguyên âm / h câm | cet | cet ami · cet hôtel
+tb: giống cái | cette | cette fille
+tb: số nhiều | ces | ces enfants
+> [[Cet]] chỉ để dễ đọc trước nguyên âm: [[cet ami]], [[cet hôtel]].
+> Số nhiều chỉ có một từ cho cả hai giống: [[ces]].
+
+#examples
+- C'est combien, {cette|k} robe ? | Chiếc váy này giá bao nhiêu?
+- {Ce|k} garçon est mon cousin. | Cậu bé này là em họ tôi.
+- J'aime beaucoup {cet|k} hôtel. | Tôi rất thích khách sạn này.
+- {Ces|k} chaussures sont trop petites. | Đôi giày này chật quá.
+- {Cet|k} homme est très gentil. | Người đàn ông này rất tử tế.
+
+#real
+> Với thời gian, [[ce]], [[cette]] có nghĩa là “này” của hiện tại.
+- {ce|k} matin · {ce|k} soir | sáng nay · tối nay
+- {cette|k} semaine · {cette|k} année | tuần này · năm nay
+> Vì vậy [[ce soir]] là tối nay, [[cette année]] là năm nay.
+- Qu'est-ce que tu fais {ce|k} soir ? | Tối nay cậu làm gì?
+
+#pronunciation
+pron: ce | ce | sə
+pron: cet · cette | cet | sɛt
+pron: ces | ces | se
+> [[Cet]] và [[cette]] đọc giống hệt nhau: “xét”. [[Ce]] đọc nhẹ “xơ”, còn [[ces]] đọc “xê”.
++ Cet arbre est très grand. | Cái cây này rất cao.
+
+#mistakes
+x: J'aime ce hôtel. => J'aime cet hôtel. | Tôi thích khách sạn này. >> Trước h câm hay nguyên âm, [[ce]] thành [[cet]].
+x: Cette livre est intéressant. => Ce livre est intéressant. | Quyển sách này hay. >> [[Livre]] là giống đực, dùng [[ce]].
+x: Ces chaussure sont petites. => Ces chaussures sont petites. | Đôi giày này chật. >> Sau [[ces]], danh từ phải ở số nhiều.
+
+#dialogue
+zoe: Maman, regarde cette robe ! | Mẹ ơi, nhìn chiếc váy này! [surprised point]
+maman: Elle est jolie, mais elle est chère. | Đẹp đấy, nhưng đắt. [thinking]
+zoe: Et ces chaussures ? | Còn đôi giày này? [happy point]
+maman: Pas cette semaine, ma chérie ! | Tuần này thì không được đâu con yêu! [happy shake]
+
+#recall
+? Nói bằng tiếng Pháp: Chiếc váy này giá bao nhiêu? => C'est combien, cette robe ? | Chiếc váy này giá bao nhiêu?
+? Nói bằng tiếng Pháp: Tối nay cậu làm gì? => Qu'est-ce que tu fais ce soir ? | Tối nay cậu làm gì?
+
+#recap
+> Tóm lại: [[ce]] cho giống đực, [[cet]] khi giống đực đứng trước nguyên âm, [[cette]] cho giống cái, [[ces]] cho số nhiều. [[Ce soir]] là tối nay.
+
+#practice
+fill: ___ robe est jolie. | Cette* / Ce / Cet || robe là giống cái.
+fill: J'aime ___ hôtel. | cet* / ce / cette || h câm → cet.
+fill: ___ garçon est mon cousin. | Ce* / Cet / Cette || Giống đực, phụ âm → ce.
+type: ___ chaussures sont petites. | Ces / ces || Số nhiều → ces.
+fix: Cette livre est intéressant. | Ce livre est intéressant.* / Cet livre est intéressant. / Ces livre est intéressant. || livre là giống đực.
+natural: Qu'est-ce que tu fais ce soir ?* / Qu'est-ce que tu fais cette soir ? || soir là giống đực.
+order: C'est / combien, / cette / robe ? | Chiếc váy này giá bao nhiêu?
+listen: Cet arbre est très grand. | Cet arbre est très grand.* / Ces arbres sont très grands. / Cette table est très grande. || cet‿arbre = sɛtaʁbʁ.

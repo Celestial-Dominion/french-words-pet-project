@@ -1,0 +1,71 @@
+=== pc-hay-imparfait
+sum: Passé composé hay imparfait? Passé composé kể sự việc: việc gì đã xảy ra, xảy ra rồi xong, việc nối tiếp việc. Imparfait tả bối cảnh: trời, cảnh, cảm xúc, việc đang diễn ra hoặc thói quen. Trong một câu chuyện, imparfait là phông nền, passé composé là các sự kiện: Il pleuvait quand je suis sorti.
+form: imparfait = bối cảnh, miêu tả, thói quen | Il pleuvait. · J'étais fatigué.
+form: passé composé = sự kiện, việc đã xong | Je suis sorti. · Il a téléphoné.
+form: imparfait + quand + passé composé | Je dormais quand le téléphone a sonné.
+cast: lea hugo
+bg: street
+words: quand, soudain, souvent
+
+#hook
+hugo: Pourquoi tu es en retard ? | Sao cậu đến muộn thế? [thinking]
+lea: Je marchais dans la rue quand il a commencé à pleuvoir ! | Mình đang đi trên phố thì trời bắt đầu mưa! [tired explain]
+> [[Je marchais]] là việc đang diễn ra, khung cảnh. [[Il a commencé]] là sự việc bất ngờ chen vào. Hai thì quá khứ làm hai việc khác nhau.
+
+#meaning
+vs: Il pleuvait. | Trời đang mưa. || bối cảnh → imparfait
+vs: Il a plu toute la nuit. | Trời đã mưa suốt đêm. || sự việc trọn vẹn → passé composé
+> Hãy nghĩ về một bộ phim. [[Imparfait]] là phông nền: trời tối, mưa rơi, nhân vật đang đi. [[Passé composé]] là hành động: điện thoại reo, cửa mở, ai đó bước vào.
+
+#form
+th: Imparfait | Passé composé
+tb: bối cảnh, miêu tả | sự việc chính
+tb: việc đang diễn ra | việc đã xảy ra và xong
+tb: thói quen: souvent, tous les jours | một lần: un jour, soudain, hier
+> Những từ chỉ thói quen như [[souvent]], [[tous les jours]], [[d'habitude]] thường đi với [[imparfait]].
+> Những từ chỉ một lúc cụ thể như [[un jour]], [[soudain]], [[hier]] thường đi với [[passé composé]].
+
+#examples
+- Je {dormais|v} quand le téléphone {a sonné|k}. | Tôi đang ngủ thì điện thoại reo.
+- Il {faisait|v} froid, alors j'{ai mis|k} mon manteau. | Trời lạnh nên tôi đã mặc áo khoác.
+- D'habitude, je {prenais|v} le bus, mais hier j'{ai pris|k} un taxi. | Thường thì tôi đi xe buýt, nhưng hôm qua tôi đã đi taxi.
+- Nous {étions|v} au café quand Paul {est arrivé|k}. | Chúng tôi đang ở quán thì Paul đến.
+- Elle {avait|v} faim, donc elle {a mangé|k} une pomme. | Cô ấy đói nên đã ăn một quả táo.
+
+#real
+> Khi kể chuyện, ta thường mở đầu bằng [[imparfait]] để dựng cảnh, rồi chuyển sang [[passé composé]] cho các sự việc.
+- C'{était|v} un samedi soir. Il {neigeait|v}. {Soudain|t}, quelqu'un {a frappé|k} à la porte. | Đó là một tối thứ bảy. Tuyết đang rơi. Bỗng có ai đó gõ cửa.
+
+#mistakes
+x: Quand j'ai été petit, j'ai joué au foot tous les jours. => Quand j'étais petit, je jouais au foot tous les jours. | Hồi nhỏ ngày nào tôi cũng chơi bóng. >> Thói quen và giai đoạn kéo dài thì dùng [[imparfait]].
+x: Hier, je regardais un film, puis je dormais. => Hier, j'ai regardé un film, puis j'ai dormi. | Hôm qua tôi xem phim rồi đi ngủ. >> Các việc nối tiếp nhau là sự việc, dùng [[passé composé]].
+x: Je dormais quand le téléphone sonnait. => Je dormais quand le téléphone a sonné. | Tôi đang ngủ thì điện thoại reo. >> Việc chen vào, xảy ra một lần, dùng [[passé composé]].
+
+#pronunciation
+pron: je mangeais | je mangeais | ʒəmɑ̃ʒɛ
+pron: j'ai mangé | j'ai mangé | ʒemɑ̃ʒe
+> Hai thì nghe gần giống nhau. [[Je mangeais]] kết thúc bằng âm “e” mở, còn [[j'ai mangé]] có âm “ê” khép, và bắt đầu bằng [[j'ai]].
++ Je mangeais quand il est arrivé. | Tôi đang ăn thì anh ấy đến.
+
+#dialogue
+hugo: Et tu avais un parapluie ? | Thế cậu có mang ô không? [thinking]
+lea: Non ! Alors je suis entrée dans un café. | Không! Thế là mình vào một quán cà phê. [explain]
+hugo: Et après ? | Rồi sao nữa? [happy]
+lea: Il y avait du monde, mais j'ai trouvé une table et j'ai attendu. | Quán đông, nhưng mình tìm được một bàn và ngồi chờ. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi đang ngủ thì điện thoại reo. => Je dormais quand le téléphone a sonné. | Tôi đang ngủ thì điện thoại reo.
+? Nói bằng tiếng Pháp: Trời lạnh nên tôi đã mặc áo khoác. => Il faisait froid, alors j'ai mis mon manteau. | Trời lạnh nên tôi đã mặc áo khoác.
+
+#recap
+> Tóm lại: [[imparfait]] dựng cảnh, tả, kể thói quen. [[Passé composé]] kể sự việc, việc xong, việc nối tiếp. Mẫu hay gặp: [[je dormais quand le téléphone a sonné]].
+
+#practice
+contrast: Je dormais quand le téléphone ___ . | a sonné* / sonnait || Việc chen vào → passé composé.
+contrast: Quand j'étais petit, je ___ au foot tous les jours. | jouais* / ai joué || Thói quen → imparfait.
+contrast: Hier, j'ai regardé un film, puis j'___ . | ai dormi* / dormais || Việc nối tiếp → passé composé.
+contrast: Il ___ froid, alors j'ai mis mon manteau. | faisait* / a fait || Bối cảnh → imparfait.
+fill: Soudain, quelqu'un ___ à la porte. | a frappé* / frappait / frappe || soudain → passé composé.
+fix: Je dormais quand le téléphone sonnait. | Je dormais quand le téléphone a sonné.* / J'ai dormi quand le téléphone sonnait. / Je dors quand le téléphone a sonné. || Việc chen vào → passé composé.
+order: Nous / étions / au / café / quand / Paul / est / arrivé. | Chúng tôi đang ở quán thì Paul đến.
+listen: Je mangeais quand il est arrivé. | Je mangeais quand il est arrivé.* / J'ai mangé quand il est arrivé. / Je mange quand il arrive. || mangeais: âm “e” mở.

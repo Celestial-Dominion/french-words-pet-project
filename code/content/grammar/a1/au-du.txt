@@ -1,0 +1,75 @@
+=== au-du
+sum: À và de không bao giờ đứng cạnh le hay les. Chúng gộp lại: à + le = au, à + les = aux, de + le = du, de + les = des. Với la và l' thì không gộp: à la gare, de l'école.
+form: à + le = au · à + les = aux | Je vais au bureau.
+form: de + le = du · de + les = des | Je rentre du travail.
+form: à la · à l' · de la · de l' (không gộp) | à la gare · de l'école
+cast: papa zoe
+bg: street
+words: au, aux, du, des
+
+#hook
+zoe: Papa, tu vas où ? | Bố ơi, bố đi đâu thế? [thinking]
+papa: Je vais au bureau, et toi, à l'école ! | Bố đi làm, còn con thì đi học! [happy point]
+> Bố nói [[au bureau]]. Trong tiếng Pháp, [[à]] và [[le]] luôn dính vào nhau.
+
+#meaning
+> [[À]] nghĩa là “ở, đến”. [[De]] nghĩa là “của, từ”. Khi gặp [[le]] hay [[les]], chúng gộp thành một từ.
+- Je vais {au|k} bureau. | Tôi đi đến văn phòng. || à + le bureau
+- Je rentre {du|k} travail. | Tôi đi làm về. || de + le travail
+
+#form
+th: Giới từ | + le | + les | + la, l'
+tb: à | au | aux | à la · à l'
+tb: de | du | des | de la · de l'
+> Chỉ có [[le]] và [[les]] là gộp. [[La]] và [[l']] thì giữ nguyên.
+> Bốn dạng cần nhớ: [[au]], [[aux]], [[du]], [[des]].
+
+#examples
+- Il est {à la|k} maison. | Anh ấy ở nhà. || la: không gộp
+- Elle va {à l'hôpital|k}. | Cô ấy đến bệnh viện. || l': không gộp
+- Je parle {aux|k} enfants. | Tôi nói chuyện với bọn trẻ. || à + les
+- C'est la voiture {du|k} professeur. | Đây là xe của thầy giáo. || de + le
+- Voici la chambre {des|k} enfants. | Đây là phòng của bọn trẻ. || de + les
+
+#real
+> Những cụm này gặp mỗi ngày, nên học thuộc như một khối.
+- Je vais {au|k} travail en bus. | Tôi đi làm bằng xe buýt.
+- On mange {au|k} restaurant ce soir ? | Tối nay mình ăn nhà hàng nhé?
+- Le train arrive {de la|k} gare de Lyon. | Tàu đến từ ga Lyon.
+
+#pronunciation
+pron: au · aux | au | o
+pron: aux enfants | aux‿enfants | ozɑ̃fɑ̃
+pron: du | du | dy
+pron: des | des | de
+> [[Au]] và [[aux]] đọc giống nhau, đều là “ô”. Trước nguyên âm, [[aux]] nối âm z.
+> [[Du]] đọc là “đuy”, [[des]] đọc là “đê”. Nghe kỹ để biết một hay nhiều.
++ Il donne un livre aux enfants. | Anh ấy tặng sách cho bọn trẻ.
+
+#mistakes
+x: Je vais à le bureau. => Je vais au bureau. | Tôi đi đến văn phòng. >> [[À]] cộng [[le]] luôn thành [[au]].
+x: Je rentre de le travail. => Je rentre du travail. | Tôi đi làm về. >> [[De]] cộng [[le]] luôn thành [[du]].
+x: Elle va au école. => Elle va à l'école. | Cô ấy đi học. >> Trước nguyên âm là [[l']], và [[à l']] không gộp.
+
+#dialogue
+zoe: Papa, on va au parc après l'école ? | Bố ơi, tan học mình đi công viên nhé? [happy]
+papa: Non, on va au marché. | Không, mình đi chợ. [explain]
+zoe: Et après, au parc ? | Thế sau đó, đi công viên nhé? [happy]
+papa: D'accord, après le marché ! | Được, sau khi đi chợ! [happy nod]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi đi đến văn phòng. => Je vais au bureau. | Tôi đi đến văn phòng.
+? Nói bằng tiếng Pháp: Tôi đi làm về. => Je rentre du travail. | Tôi đi làm về.
+
+#recap
+> Tóm lại: [[à le]] thành [[au]], [[à les]] thành [[aux]], [[de le]] thành [[du]], [[de les]] thành [[des]]. [[La]] và [[l']] không gộp.
+
+#practice
+fill: Je vais ___ bureau. | au* / à le / à la || à + le → au.
+fill: Il est ___ maison. | à la* / au / aux || la không gộp.
+fill: Je rentre ___ travail. | du* / de le / des || de + le → du.
+fill: Je parle ___ enfants. | aux* / au / à les || à + les → aux.
+type: Elle va ___ hôpital. | à l' || l' không gộp.
+fix: Je vais à le bureau. | Je vais au bureau.* / Je vais aux bureau. / Je vais à la bureau. || à + le → au.
+order: C'est / la / voiture / du / professeur. | Đây là xe của thầy giáo.
+listen: Il donne un livre aux enfants. | Il donne un livre aux enfants.* / Il donne un livre à l'enfant. / Il donne un livre aux parents. || aux‿enfants = ozɑ̃fɑ̃.

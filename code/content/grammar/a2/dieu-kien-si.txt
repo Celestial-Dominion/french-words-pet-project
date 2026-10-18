@@ -1,0 +1,73 @@
+=== dieu-kien-si
+sum: Câu điều kiện có thật: si (nếu) + thì hiện tại, rồi vế kết quả ở hiện tại, tương lai hoặc mệnh lệnh: S'il pleut, je reste à la maison. Sau si không bao giờ dùng tương lai. Si thành s' trước il / ils, nhưng giữ nguyên trước elle.
+form: si + hiện tại, + hiện tại / tương lai | S'il pleut, je reste à la maison.
+form: si + hiện tại, + mệnh lệnh | Si tu as faim, mange !
+form: s'il · s'ils · si elle · si on | S'il fait beau, on sort.
+cast: nam chloe
+bg: park
+words: si
+
+#hook
+chloe: On va à la plage demain ? | Mai mình đi biển nhé? [happy]
+nam: S'il fait beau, oui ! Mais s'il pleut, on ira au cinéma. | Nếu trời đẹp thì đi! Nhưng nếu mưa thì mình đi xem phim. [thinking explain]
+> [[S'il fait beau]], [[s'il pleut]]: [[si]] mở đầu một điều kiện. Chú ý động từ sau [[si]] ở thì hiện tại, dù nói về ngày mai.
+
+#meaning
+> Câu điều kiện có hai vế: vế [[si]] nêu điều kiện, vế còn lại nêu kết quả.
+- {Si|c} tu {viens|v}, je {suis|v} content. | Nếu cậu đến, mình sẽ vui. || hiện tại + hiện tại
+- {Si|c} j'{ai|v} le temps, je t'{appellerai|v}. | Nếu có thời gian, mình sẽ gọi cậu. || hiện tại + tương lai
+- {Si|c} tu {es|v} fatigué, {repose-toi|v} ! | Nếu mệt thì nghỉ đi! || hiện tại + mệnh lệnh
+
+#form
+f: [Si] + hiện tại + , + tương lai
+> Vế [[si]] luôn ở thì hiện tại. Vế kết quả có thể ở hiện tại, tương lai, hoặc mệnh lệnh.
+> Hai vế có thể đổi chỗ: [[je reste à la maison s'il pleut]]. Khi [[si]] đứng giữa câu thì không cần dấu phẩy.
+> [[Si]] thành [[s']] chỉ trước [[il]] và [[ils]]: [[s'il]], [[s'ils]]. Trước [[elle]] và [[on]] thì giữ nguyên: [[si elle]], [[si on]].
+
+#examples
+- {S'il|c} fait froid, je mets un manteau. | Nếu trời lạnh, tôi mặc áo khoác.
+- {Si|c} vous avez des questions, demandez-moi. | Nếu các bạn có câu hỏi thì cứ hỏi tôi.
+- On ira au parc {si|c} tu veux. | Mình sẽ đi công viên nếu cậu muốn.
+- {Si|c} elle arrive tard, elle prendra un taxi. | Nếu cô ấy đến muộn, cô ấy sẽ đi taxi.
+- {Si|c} on part maintenant, on arrivera à l'heure. | Nếu đi bây giờ, mình sẽ đến đúng giờ.
+
+#real
+> Đây là chỗ người Việt hay sai. Tiếng Việt nói “nếu mai trời mưa”, có thể thêm “sẽ”. Tiếng Pháp tuyệt đối không dùng tương lai sau [[si]].
+vs: S'il pleut demain, je resterai ici. | Nếu mai trời mưa, tôi sẽ ở lại đây. || đúng
+vs: S'il pleuvra demain, je resterai ici. | Nếu mai trời mưa, tôi sẽ ở lại đây. || sai: tương lai sau si
+> Chỉ vế kết quả mới được ở tương lai.
+
+#pronunciation
+pron: s'il | s'il | sil
+pron: si elle | si elle | siɛl
+pron: s'il te plaît | s'il te plaît | siltəplɛ
+> [[S'il]] đọc liền “xin”. Bạn đã biết nó từ lâu trong [[s'il te plaît]], nghĩa đen là “nếu điều đó làm bạn vui”.
++ S'il pleut, on reste ici. | Nếu trời mưa, mình ở lại đây.
+
+#mistakes
+x: Si il pleut, je reste. => S'il pleut, je reste. | Nếu trời mưa, tôi ở nhà. >> Trước [[il]], [[si]] thành [[s']].
+x: S'il fera beau, on sortira. => S'il fait beau, on sortira. | Nếu trời đẹp, mình sẽ ra ngoài. >> Sau [[si]], dùng hiện tại, không dùng tương lai.
+x: S'elle vient, je serai content. => Si elle vient, je serai content. | Nếu cô ấy đến, tôi sẽ vui. >> Trước [[elle]], [[si]] giữ nguyên.
+
+#dialogue
+chloe: Et si le cinéma est complet ? | Thế nếu rạp hết vé thì sao? [worried]
+nam: Si c'est complet, on mangera une pizza. | Nếu hết vé, mình đi ăn pizza. [explain]
+chloe: Et si tu es en retard, comme toujours ? | Còn nếu cậu đến muộn, như mọi khi thì sao? [happy]
+nam: Si je suis en retard, je t'invite ! | Nếu mình đến muộn, mình sẽ mời cậu! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Nếu trời mưa, tôi ở nhà. => S'il pleut, je reste à la maison. | Nếu trời mưa, tôi ở nhà.
+? Nói bằng tiếng Pháp: Nếu cậu đói thì ăn đi! => Si tu as faim, mange ! | Nếu cậu đói thì ăn đi!
+
+#recap
+> Tóm lại: [[si]] cộng hiện tại, rồi kết quả ở hiện tại, tương lai hoặc mệnh lệnh. Không bao giờ dùng tương lai sau [[si]]. [[Si il]] thành [[s'il]], nhưng [[si elle]] giữ nguyên.
+
+#practice
+fill: ___ il pleut, je reste à la maison. | S'* / Si / Se || si + il → s'il.
+fill: S'il ___ beau, on sortira. | fait* / fera / faisait || Sau si → hiện tại.
+fill: ___ elle vient, je serai content. | Si* / S' / Se || si elle giữ nguyên.
+contrast: Si j'ai le temps, je t'___ . | appellerai* / appellerais || Kết quả tương lai → appellerai.
+type: Si tu as faim, ___ ! (manger, mệnh lệnh) | mange || Mệnh lệnh dạng tu.
+fix: S'il fera beau, on sortira. | S'il fait beau, on sortira.* / Si il fait beau, on sortira. / S'il fait beau, on sort a. || Sau si → hiện tại.
+order: On / ira / au / parc / si / tu / veux. | Mình sẽ đi công viên nếu cậu muốn.
+listen: S'il pleut, on reste ici. | S'il pleut, on reste ici.* / Il pleut, on reste ici. / S'il pleut, on part d'ici. || s'il = sil.

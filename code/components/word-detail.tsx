@@ -11,6 +11,7 @@ import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic, markKnown, un
 import { isKnownPending } from "@/lib/srs-pure";
 import { requestSync } from "@/lib/sync";
 import { occurrencesOf, type Occurrence } from "@/lib/suggest";
+import { grammarRefsFor, type GrammarWordRef } from "@/lib/grammar-refs";
 import { XP } from "@/lib/gamify";
 import type { Word, Conjugation, ReviewRecord } from "@/lib/types";
 
@@ -74,6 +75,7 @@ export default function WordDetail({
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState("");
   const [occ, setOcc] = useState<Occurrence[]>([]);
+  const [gram, setGram] = useState<GrammarWordRef[]>([]);
   const [justMarked, setJustMarked] = useState<string | null>(null); // id vừa bấm "Đã biết rồi" (còn Hoàn tác)
   // Mở rộng danh sách nghĩa EN — lưu theo id để chuyển sang từ khác là tự thu lại.
   const [showAllEnFor, setShowAllEnFor] = useState<string | null>(null);
@@ -144,6 +146,11 @@ export default function WordDetail({
   useEffect(() => {
     if (isVerb) loadConjugation(word.id).then(setConj);
   }, [word.id, isVerb]);
+
+  // từ chức năng / dạng đích của một bài Ngữ pháp (être, avoir, aller, ce…) → mở bài ngữ pháp
+  useEffect(() => {
+    grammarRefsFor(word.id).then(setGram).catch(() => {});
+  }, [word.id]);
 
   const art = article(word);
 
@@ -361,6 +368,20 @@ export default function WordDetail({
 
           {isVerb && tab === "conj" && (
             <ConjugationView conj={conj} lemma={word.id} group={word.verb_group} />
+          )}
+
+          {gram.length > 0 && (!isVerb || tab === "info") && (
+            <div className="mt-5">
+              <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">🧩 Ngữ pháp với từ này</div>
+              <div className="space-y-1.5">
+                {gram.map(([id, lv, t]) => (
+                  <a key={id} href={`/ngu-phap/${lv}/${id}`} className="flex items-center justify-between gap-2 rounded-xl border px-3 py-2 text-sm transition-colors hover:bg-muted">
+                    <span className="min-w-0 truncate font-medium">{t}</span>
+                    <span className="shrink-0 text-xs text-muted-foreground">{lv.toUpperCase()}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
           )}
 
           {/* Gặp lại trong ngữ cảnh: bài đọc/truyện chứa từ này (như HSK) */}

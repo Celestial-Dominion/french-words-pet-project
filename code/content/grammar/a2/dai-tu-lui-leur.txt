@@ -1,0 +1,74 @@
+=== dai-tu-lui-leur
+sum: Lui (cho anh ấy / cô ấy) và leur (cho họ) thay cho “à + người”, sau những động từ như parler à, téléphoner à, donner à, écrire à, demander à. Giống le, la, les, chúng đứng trước động từ: je lui parle. Lui dùng cho cả nam lẫn nữ.
+form: lui = à + một người (nam hoặc nữ) | Je parle à Marie. → Je lui parle.
+form: leur = à + nhiều người | J'écris à mes parents. → Je leur écris.
+form: parler à · téléphoner à · donner à · écrire à · demander à · répondre à | Il lui téléphone.
+cast: ines m-dubois
+bg: office
+words: lui, leur, parler, téléphoner, donner, répondre
+
+#hook
+m-dubois: Vous avez téléphoné à Madame Roux ? | Cô đã gọi cho bà Roux chưa? [thinking]
+ines: Oui, je lui ai téléphoné ce matin. | Rồi, tôi đã gọi cho bà ấy sáng nay. [nod]
+> [[Téléphoner à Madame Roux]] thành [[lui téléphoner]]. Đại từ [[lui]] thay cho cả cụm [[à]] cộng người.
+
+#meaning
+> Có những động từ đi với [[à]] trước người: nói với ai, gọi cho ai, đưa cho ai. Khi thay người đó bằng đại từ, ta dùng [[lui]] hoặc [[leur]].
+- Je parle à Paul. → Je {lui|k} parle. | Tôi nói chuyện với Paul. → Tôi nói chuyện với anh ấy.
+- Je parle à Marie. → Je {lui|k} parle. | Tôi nói với Marie. → Tôi nói với cô ấy. || lui cho cả nữ
+- J'écris à mes parents. → Je {leur|k} écris. | Tôi viết thư cho bố mẹ. → Tôi viết cho họ.
+
+#form
+th: Thay cho | Đại từ | Ví dụ
+tb: à + một người | lui | Je lui donne un livre.
+tb: à + nhiều người | leur | Je leur donne un livre.
+tb: à + moi / toi | me / te | Tu me donnes ton numéro ?
+> Chú ý: [[lui]] không phân biệt nam nữ. [[Il lui parle]] có thể là anh ấy nói với một người đàn ông hay một người phụ nữ.
+> [[Leur]] ở đây không có s, khác với [[leurs]] là “của họ”.
+
+#examples
+- Tu {lui|k} as dit la vérité ? | Cậu đã nói sự thật với cô ấy chưa?
+- On {leur|k} donne des bonbons à Noël. | Chúng tôi cho bọn trẻ kẹo vào dịp Giáng sinh.
+- Je {lui|k} demande l'heure. | Tôi hỏi giờ anh ấy.
+- Le professeur {nous|k} explique la leçon. | Thầy giáo giảng bài cho chúng tôi.
+- Elle ne {leur|k} répond pas. | Cô ấy không trả lời họ.
+
+#real
+> Đây là chỗ khác tiếng Việt: một số động từ đi với [[à]] trong tiếng Pháp, dù tiếng Việt không cần giới từ.
+- Je téléphone {à|k} ma mère. | Tôi gọi điện cho mẹ. → Je lui téléphone.
+- Il répond {au|k} professeur. | Anh ấy trả lời thầy giáo. → Il lui répond.
+> Còn [[voir]], [[aimer]], [[appeler]] thì không có [[à]], nên dùng [[le]], [[la]]: [[je l'appelle]], tôi gọi cô ấy.
+
+#pronunciation
+pron: lui | lui | lɥi
+pron: leur | leur | lœʁ
+> [[Lui]] đọc lướt “luy”. [[Leur]] có âm “ơ” tròn môi và âm r ở cuối.
++ Il leur parle souvent. | Anh ấy hay nói chuyện với họ.
+
+#mistakes
+x: Je la parle. => Je lui parle. | Tôi nói chuyện với cô ấy. >> [[Parler à]] đi với [[à]], nên dùng [[lui]], không dùng [[la]].
+x: Je leurs écris. => Je leur écris. | Tôi viết thư cho họ. >> Đại từ [[leur]] không bao giờ có s.
+x: Je téléphone lui. => Je lui téléphone. | Tôi gọi điện cho anh ấy. >> Đại từ đứng trước động từ.
+
+#dialogue
+m-dubois: Et les clients de Lyon ? Vous leur avez écrit ? | Còn khách ở Lyon thì sao? Cô đã viết cho họ chưa? [thinking]
+ines: Pas encore. Je leur écris cet après-midi. | Chưa ạ. Chiều nay tôi sẽ viết cho họ. [explain]
+m-dubois: Et donnez-leur notre nouveau prix. | Và báo cho họ giá mới của chúng ta nhé. [explain]
+ines: D'accord, je leur envoie tout ça. | Vâng, tôi sẽ gửi họ tất cả. [nod]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi nói chuyện với cô ấy. => Je lui parle. | Tôi nói chuyện với cô ấy.
+? Nói bằng tiếng Pháp: Tôi viết thư cho họ. => Je leur écris. | Tôi viết thư cho họ.
+
+#recap
+> Tóm lại: [[lui]] thay cho [[à]] cộng một người, cả nam lẫn nữ; [[leur]] thay cho [[à]] cộng nhiều người. Chúng đứng trước động từ: [[je lui parle]], [[je leur écris]].
+
+#practice
+fill: Je parle à Marie. → Je ___ parle. | lui* / la / leur || parler à + một người → lui.
+fill: J'écris à mes parents. → Je ___ écris. | leur* / leurs / les || à + nhiều người → leur.
+fill: Je vois Marie. → Je ___ vois. | la* / lui / leur || voir không có à → la.
+contrast: Je ___ téléphone ce soir. (à ma mère) | lui* / la || téléphoner à → lui.
+fix: Je leurs écris. | Je leur écris.* / Je les écris. / Je lui écrisent. || leur không có s.
+natural: Je lui ai téléphoné ce matin.* / Je l'ai téléphoné ce matin. || téléphoner à → lui.
+order: Elle / ne / leur / répond / pas. | Cô ấy không trả lời họ.
+listen: Il leur parle souvent. | Il leur parle souvent.* / Il lui parle souvent. / Il les parle souvent. || leur = lœʁ.

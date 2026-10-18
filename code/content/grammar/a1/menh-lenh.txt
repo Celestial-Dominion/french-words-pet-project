@@ -1,0 +1,75 @@
+=== menh-lenh
+sum: Câu mệnh lệnh dùng động từ không có chủ ngữ, ở ba dạng: tu (Écoute !), nous (Allons-y !) và vous (Écoutez !). Động từ -er bỏ chữ s ở dạng tu. Phủ định thì kẹp ne… pas như thường: Ne touche pas !
+form: dạng tu (bỏ s với -er) | Écoute ! · Viens !
+form: dạng nous · dạng vous | Allons-y ! · Écoutez !
+form: ne + động từ + pas | Ne touche pas !
+cast: mme-martin tom
+bg: classroom
+words: écouter, regarder, fermer, ouvrir
+
+#hook
+mme-martin: Tom, écoute, s'il te plaît ! | Tom, nghe cô nói nào! [angry point]
+tom: Pardon, madame ! | Con xin lỗi cô! [shy bow]
+> Cô giáo nói [[écoute]], không có chữ [[tu]] ở trước. Đó là câu mệnh lệnh.
+
+#meaning
+> Câu mệnh lệnh dùng để ra lệnh, khuyên, hay mời. Ta bỏ chủ ngữ, chỉ giữ động từ.
+vs: Tu écoutes. | Em nghe. || câu thường
+vs: Écoute ! | Nghe này! || mệnh lệnh
+> Có ba dạng: nói với một người thân ([[tu]]), rủ cả nhóm ([[nous]]), hoặc nói lịch sự hay nói với nhiều người ([[vous]]).
+
+#form
+th: Dạng | écouter | venir
+tb: tu | Écoute ! | Viens !
+tb: nous | Écoutons ! | Venons !
+tb: vous | Écoutez ! | Venez !
+> Lấy dạng hiện tại rồi bỏ chủ ngữ. Riêng động từ [[-er]] ở dạng [[tu]] thì bỏ chữ s: [[tu écoutes]] thành [[écoute]].
+> [[Aller]] cũng vậy: [[tu vas]] thành [[va]].
+
+#examples
+- {Regarde|k} ! Il neige ! | Nhìn kìa! Tuyết rơi!
+- {Fermez|k} la porte, s'il vous plaît. | Làm ơn đóng cửa lại.
+- {Allons|k} au parc ! | Mình đi công viên đi!
+- {Ouvre|k} la fenêtre, j'ai chaud. | Mở cửa sổ ra, mình nóng quá.
+- {Venez|k} manger, c'est prêt ! | Vào ăn đi, xong rồi!
+
+#real
+> Muốn nói đừng làm gì, ta kẹp động từ giữa [[ne]] và [[pas]].
+- {Ne|n} touche {pas|n} ! | Đừng sờ vào!
+- {N'oubliez|n} {pas|n} vos livres. | Đừng quên sách nhé.
+> Thêm [[s'il te plaît]] hoặc [[s'il vous plaît]] để mệnh lệnh nhẹ nhàng hơn, giống chữ “nhé”, “làm ơn”.
+
+#pronunciation
+pron: écoute · écoutes | écoute | ekut
+pron: allons-y | allons‿y | alɔ̃zi
+> [[Écoute]] và [[tu écoutes]] đọc giống hệt nhau. Chỉ khác ở chỗ có chủ ngữ hay không.
+> [[Allons-y]] nối âm z: “a-lông-di”.
++ Allons-y ! | Đi thôi!
+
+#mistakes
+x: Écoutes ! => Écoute ! | Nghe này! >> Động từ [[-er]] ở dạng [[tu]] bỏ chữ s khi ra lệnh.
+x: Vas à l'école ! => Va à l'école ! | Đi học đi! >> [[Aller]] cũng bỏ s: [[va]].
+x: Pas touche ! => Ne touche pas ! | Đừng sờ vào! >> Mệnh lệnh phủ định vẫn cần [[ne]] trước và [[pas]] sau.
+
+#dialogue
+mme-martin: Ouvrez vos livres, page dix. | Các em mở sách, trang mười. [explain]
+tom: Madame, je n'ai pas mon livre. | Thưa cô, con không mang sách. [worried]
+mme-martin: Regarde avec Zoé, alors. | Vậy em xem chung với Zoé nhé. [happy point]
+tom: Merci, madame ! | Con cảm ơn cô! [happy bow]
+
+#recall
+? Nói lịch sự: Làm ơn đóng cửa lại. => Fermez la porte, s'il vous plaît. | Làm ơn đóng cửa lại.
+? Rủ cả nhóm: Đi thôi! => Allons-y ! | Đi thôi!
+
+#recap
+> Tóm lại: mệnh lệnh bỏ chủ ngữ, có ba dạng [[tu]], [[nous]], [[vous]]. Động từ [[-er]] ở dạng [[tu]] bỏ chữ s: [[écoute]]. Đừng làm gì thì dùng [[ne… pas]].
+
+#practice
+fill: ___ ! Il neige ! (tu) | Regarde* / Regardes / Regardez || -er dạng tu: bỏ s.
+fill: ___ la porte, s'il vous plaît. | Fermez* / Ferme / Fermons || Lịch sự: dạng vous.
+fill: ___ au parc ! (nous) | Allons* / Allez / Va || Rủ cả nhóm: allons.
+type: ___ à l'école ! (aller, tu) | Va || aller dạng tu: va.
+fix: Écoutes ! | Écoute !* / Tu écoute ! / Écoutons ! || -er dạng tu bỏ s.
+natural: Ne touche pas !* / Pas touche ! || Phủ định: ne… pas.
+order: N'oubliez / pas / vos / livres. | Đừng quên sách nhé.
+listen: Allons-y ! | Allons-y !* / Allez-y ! / Allons ici ! || allons‿y = alɔ̃zi.

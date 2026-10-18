@@ -1,0 +1,70 @@
+=== lien-tu-co-ban
+sum: Bốn liên từ cơ bản nối từ và câu: et (và), mais (nhưng), ou (hoặc), parce que (bởi vì). Parce que thành parce qu' trước nguyên âm. Sau et không bao giờ nối âm.
+form: et · mais · ou | du thé et du café · petit mais joli
+form: parce que + câu · parce qu' + nguyên âm | parce que je suis malade · parce qu'il pleut
+form: thêm donc (nên), aussi (cũng) | Il pleut, donc je reste.
+cast: karim lea
+bg: cafe
+words: et, mais, ou, donc, aussi
+
+#hook
+karim: Tu veux du thé ou du café ? | Cậu muốn trà hay cà phê? [thinking]
+lea: Du thé, parce que le café, c'est trop fort pour moi. | Trà, vì cà phê thì quá mạnh với mình. [happy explain]
+> [[Ou]] đưa ra lựa chọn, [[parce que]] nói lý do. Những từ nhỏ này nối các ý lại với nhau.
+
+#form
+th: Liên từ | Nghĩa | Ví dụ
+tb: et | và | Paul et Marie
+tb: mais | nhưng | petit mais joli
+tb: ou | hoặc, hay | du thé ou du café
+tb: parce que | bởi vì | parce que j'ai faim
+> Ba từ đầu nối hai từ hoặc hai câu. [[Parce que]] mở đầu cho một lý do.
+
+#examples
+- J'ai un frère {et|c} une sœur. | Tôi có một anh trai và một chị gái.
+- L'appartement est petit, {mais|c} il est joli. | Căn hộ nhỏ nhưng xinh.
+- On mange ici {ou|c} chez toi ? | Mình ăn ở đây hay ở nhà cậu?
+- Je reste à la maison {parce que|c} je suis malade. | Tôi ở nhà vì tôi ốm.
+- Il ne vient pas {parce qu'il|c} travaille. | Anh ấy không đến vì anh ấy phải làm việc.
+
+#real
+> Hai từ nhỏ nữa rất hay dùng: [[donc]], nghĩa là “nên, vì vậy”, và [[aussi]], nghĩa là “cũng”.
+- Il pleut, {donc|c} je prends un taxi. | Trời mưa nên tôi đi taxi. || donc = nên
+- Moi {aussi|c}, j'aime le chocolat ! | Mình cũng thích sô-cô-la! || aussi = cũng
+> Chú ý thứ tự: [[parce que]] đi với lý do, [[donc]] đi với kết quả.
+
+#pronunciation
+pron: parce que | parce que | paʁskə
+pron: parce qu'il | parce qu'il | paʁskil
+pron: et un | et un | e œ̃
+> [[Parce que]] đọc gọn “pác-xơ-cơ”. Trước nguyên âm thành [[parce qu']].
+> Chữ t trong [[et]] không bao giờ đọc, kể cả trước nguyên âm. [[Et un]] đọc tách ra, không nối.
++ J'ai un chat et un chien. | Tôi có một con mèo và một con chó.
+
+#mistakes
+x: Il ne vient pas parce que il travaille. => Il ne vient pas parce qu'il travaille. | Anh ấy không đến vì phải làm việc. >> Trước nguyên âm, [[que]] thành [[qu']].
+x: Tu veux du thé ou café ? => Tu veux du thé ou du café ? | Cậu muốn trà hay cà phê? >> Mỗi danh từ cần mạo từ riêng: [[du thé ou du café]].
+x: Je suis malade, parce que je reste à la maison. => Je suis malade, donc je reste à la maison. | Tôi ốm nên tôi ở nhà. >> Ở nhà là kết quả, không phải lý do. Dùng [[donc]].
+
+#dialogue
+lea: Tu viens au cinéma ce soir ? | Tối nay cậu đi xem phim không? [happy]
+karim: Je voudrais bien, mais je ne peux pas. | Mình muốn lắm, nhưng không được. [sad]
+lea: Pourquoi ? | Sao vậy? [surprised]
+karim: Parce que je travaille demain matin, donc je me couche tôt. | Vì sáng mai mình đi làm, nên mình đi ngủ sớm. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Cậu muốn trà hay cà phê? => Tu veux du thé ou du café ? | Cậu muốn trà hay cà phê?
+? Nói bằng tiếng Pháp: Tôi ở nhà vì tôi ốm. => Je reste à la maison parce que je suis malade. | Tôi ở nhà vì tôi ốm.
+
+#recap
+> Tóm lại: [[et]] là và, [[mais]] là nhưng, [[ou]] là hoặc, [[parce que]] là bởi vì. Trước nguyên âm: [[parce qu']]. Kết quả thì dùng [[donc]].
+
+#practice
+fill: J'ai un frère ___ une sœur. | et* / ou / mais || và → et.
+fill: C'est petit, ___ c'est joli. | mais* / ou / donc || nhưng → mais.
+fill: Il ne vient pas parce ___ il travaille. | qu'* / que / qui || Trước nguyên âm: qu'.
+contrast: Il pleut, ___ je prends un taxi. | donc* / parce que || Kết quả → donc.
+choice: “Mình ăn ở đây hay ở nhà cậu?” nói thế nào? | On mange ici ou chez toi ?* / On mange ici et chez toi ? / On mange ici mais chez toi ? || Lựa chọn → ou.
+fix: Tu veux du thé ou café ? | Tu veux du thé ou du café ?* / Tu veux thé ou café ? / Tu veux du thé et café ? || Mỗi danh từ có mạo từ riêng.
+order: Je / reste / à / la / maison / parce que / je / suis / malade. | Tôi ở nhà vì tôi ốm.
+listen: J'ai un chat et un chien. | J'ai un chat et un chien.* / J'ai un chat ou un chien. / J'ai un chat mais pas de chien. || et đọc “ê”, không nối âm.

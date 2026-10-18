@@ -1,0 +1,77 @@
+=== c-est-il-est
+sum: C'est hay il est? Trước một danh từ có mạo từ hay sở hữu (un, le, mon…) hoặc trước tên riêng, dùng c'est: c'est un médecin, c'est mon frère. Trước một tính từ nói về người hay vật cụ thể, dùng il est / elle est: il est grand. Nghề nghiệp không có mạo từ thì cũng dùng il est: il est médecin.
+form: C'est + un / le / mon… + danh từ · tên riêng | C'est un médecin. · C'est Paul.
+form: Il est / Elle est + tính từ · nghề (không mạo từ) | Il est grand. · Elle est médecin.
+form: Ce sont… / Ils sont… (số nhiều) | Ce sont mes amis. · Ils sont gentils.
+cast: lea papi
+bg: home-day
+words: ce, il, elle
+
+#hook
+papi: C'est qui, sur la photo ? | Ai trong ảnh thế? [thinking point]
+lea: C'est mon amie Chloé. Elle est très gentille ! | Đó là bạn cháu, Chloé. Bạn ấy hiền lắm! [happy explain]
+> Cùng nói về một người, Léa dùng [[c'est]] trước [[mon amie]], rồi dùng [[elle est]] trước [[gentille]]. Hai cách này không thay cho nhau được.
+
+#meaning
+vs: C'est un médecin. | Đó là một bác sĩ. || + mạo từ + danh từ → c'est
+vs: Il est grand. | Anh ấy cao. || + tính từ → il est
+> Luật đơn giản: nhìn từ đứng ngay sau. Nếu là [[un]], [[le]], [[mon]] hay một cái tên, dùng [[c'est]]. Nếu là tính từ, dùng [[il est]] hay [[elle est]].
+
+#form
+th: Theo sau là | Dùng | Ví dụ
+tb: mạo từ + danh từ | c'est | C'est un livre.
+tb: sở hữu + danh từ | c'est | C'est ma sœur.
+tb: tên riêng | c'est | C'est Paul.
+tb: tính từ | il est · elle est | Elle est jolie.
+tb: nghề, không mạo từ | il est · elle est | Il est médecin.
+> Nghề nghiệp có hai cách. Không có mạo từ thì dùng [[il est]]: [[il est médecin]]. Có mạo từ thì dùng [[c'est]]: [[c'est un médecin]].
+
+#examples
+- {C'est|k} mon frère Lucas. | Đây là anh trai tôi, Lucas.
+- {Il est|k} étudiant à Lyon. | Anh ấy là sinh viên ở Lyon.
+- {C'est|k} une voiture rouge. | Đó là một chiếc xe màu đỏ.
+- {Elle est|k} très belle. | Nó rất đẹp.
+- {Ce sont|k} mes parents. | Đây là bố mẹ tôi. || số nhiều: ce sont
+- {Ils sont|k} gentils. | Họ tử tế lắm.
+
+#real
+> [[C'est]] còn dùng với tính từ để nhận xét chung một tình huống, không nói về người hay vật cụ thể nào.
+- {C'est|k} beau ! | Đẹp quá! || nhận xét chung
+- {C'est|k} facile. | Dễ thôi.
+- Paris ? {C'est|k} très beau ! | Paris hả? Đẹp lắm! || nhận xét cả thành phố
+> Còn nói về một người, một vật cụ thể vừa nhắc thì dùng [[il est]], [[elle est]]: [[ma maison]]… [[elle est petite]].
+
+#mistakes
+x: Il est un médecin. => Il est médecin. | Anh ấy là bác sĩ. >> Sau [[il est]], nghề không có mạo từ. Hoặc nói [[c'est un médecin]].
+x: Elle est ma sœur. => C'est ma sœur. | Đó là chị gái tôi. >> Trước sở hữu như [[ma]], dùng [[c'est]].
+x: C'est gentille, ton amie. => Elle est gentille, ton amie. | Bạn cậu hiền thật. >> Nói về một người cụ thể với tính từ, dùng [[elle est]].
+
+#pronunciation
+pron: c'est | c'est | sɛ
+pron: ce sont | ce sont | səsɔ̃
+pron: il est | il‿est | ilɛ
+> [[C'est]] đọc là “xê”, không đọc chữ t. Trước nguyên âm thì nối âm t: [[c'est un livre]].
++ C'est un livre. | Đó là một quyển sách.
+
+#dialogue
+papi: Et lui, c'est qui ? | Thế còn người này là ai? [thinking point]
+lea: C'est Hugo. Il est médecin. | Đó là Hugo. Anh ấy là bác sĩ. [explain]
+papi: Il est gentil ? | Cậu ấy tử tế không? [happy]
+lea: Oui, et c'est un très bon médecin ! | Có ạ, và anh ấy là một bác sĩ rất giỏi! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Đây là bố mẹ tôi. => Ce sont mes parents. | Đây là bố mẹ tôi.
+? Nói bằng tiếng Pháp, không dùng mạo từ: Cô ấy là bác sĩ. => Elle est médecin. | Cô ấy là bác sĩ.
+
+#recap
+> Tóm lại: trước mạo từ, sở hữu hay tên riêng thì dùng [[c'est]]. Trước tính từ nói về người hay vật cụ thể thì dùng [[il est]], [[elle est]]. Nghề không mạo từ: [[il est médecin]].
+
+#practice
+contrast: ___ mon frère. | C'est* / Il est || Trước sở hữu → c'est.
+contrast: ___ très gentille. (Chloé) | Elle est* / C'est || Tính từ, người cụ thể → elle est.
+contrast: ___ médecin. | Il est* / C'est || Nghề không mạo từ → il est.
+fill: ___ mes parents. | Ce sont* / Ils sont / C'est || Số nhiều + sở hữu → ce sont.
+fix: Il est un médecin. | Il est médecin.* / Il est une médecin. / C'est médecin. || il est + nghề, không mạo từ.
+natural: Paris ? C'est très beau !* / Paris ? Il est très beau ! || Nhận xét chung → c'est.
+order: C'est / un / très / bon / médecin. | Anh ấy là một bác sĩ rất giỏi.
+listen: C'est un livre. | C'est un livre.* / Il est libre. / Ce sont des livres. || c'est‿un = sɛtœ̃.

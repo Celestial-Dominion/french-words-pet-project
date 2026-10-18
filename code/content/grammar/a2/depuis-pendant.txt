@@ -1,0 +1,75 @@
+=== depuis-pendant
+sum: Bốn cách nói về khoảng thời gian: depuis (từ… đến giờ, việc vẫn còn tiếp diễn) đi với thì hiện tại; il y a (cách đây) đi với quá khứ; pendant (trong suốt) cho một khoảng đã trọn vẹn; dans (sau… nữa) cho tương lai.
+form: depuis + hiện tại (vẫn đang tiếp diễn) | J'habite ici depuis deux ans.
+form: il y a + quá khứ (cách đây) | Je suis arrivé il y a trois jours.
+form: pendant (trong suốt) · dans (… nữa) | J'ai dormi pendant dix heures. · Je pars dans une heure.
+cast: karim ines
+bg: riverside
+words: depuis, pendant, dans
+
+#hook
+ines: Tu habites à Lyon depuis combien de temps ? | Cậu sống ở Lyon bao lâu rồi? [thinking]
+karim: Depuis cinq ans. Je suis arrivé il y a cinq ans, en septembre. | Năm năm rồi. Mình đến cách đây năm năm, vào tháng chín. [explain]
+> [[Depuis cinq ans]] và [[il y a cinq ans]] cùng có “năm năm”, nhưng nghĩa khác nhau: một cái là khoảng thời gian kéo dài đến giờ, một cái là mốc trong quá khứ.
+
+#meaning
+> Đây là điểm rất khác tiếng Việt: với [[depuis]], động từ ở thì hiện tại, vì việc đó vẫn đang tiếp diễn.
+vs: J'habite ici depuis deux ans. | Tôi sống ở đây được hai năm rồi. || vẫn đang sống → hiện tại
+vs: Je suis arrivé il y a deux ans. | Tôi đến đây cách đây hai năm. || một lần trong quá khứ
+> Tiếng Việt nói “đã sống hai năm”, nhưng tiếng Pháp dùng hiện tại: [[j'habite]].
+
+#form
+th: Từ | Nghĩa | Thì
+tb: depuis | từ… đến giờ | hiện tại
+tb: il y a | cách đây | passé composé
+tb: pendant | trong suốt | thường là quá khứ
+tb: dans | sau… nữa | tương lai
+> [[Pendant]] cho một khoảng thời gian trọn vẹn, có đầu có cuối. [[Dans]] chỉ một mốc trong tương lai, tính từ bây giờ.
+
+#examples
+- Elle apprend le français {depuis|t} six mois. | Cô ấy học tiếng Pháp được sáu tháng rồi.
+- Il a téléphoné {il y a|t} dix minutes. | Anh ấy gọi điện cách đây mười phút.
+- Nous avons voyagé {pendant|t} deux semaines. | Chúng tôi đã đi du lịch suốt hai tuần.
+- Le film commence {dans|t} cinq minutes. | Năm phút nữa phim bắt đầu.
+- Je t'attends {depuis|t} une heure ! | Mình chờ cậu cả tiếng rồi đấy!
+
+#real
+> [[Depuis]] cũng đi với một mốc thời gian, nghĩa là “từ”.
+- Je travaille ici {depuis|t} 2020. | Tôi làm việc ở đây từ năm 2020.
+- Il pleut {depuis|t} ce matin. | Trời mưa từ sáng đến giờ.
+> Câu hỏi hay gặp: [[depuis combien de temps]], nghĩa là bao lâu rồi, và [[depuis quand]], nghĩa là từ khi nào.
+
+#pronunciation
+pron: depuis | depuis | dəpɥi
+pron: pendant | pendant | pɑ̃dɑ̃
+pron: il y a deux ans | il y a deux‿ans | iljadøzɑ̃
+> [[Depuis]] đọc lướt “đơ-puy”. [[Pendant]] có hai âm mũi giống nhau.
++ Je t'attends depuis une heure. | Mình chờ cậu cả tiếng rồi.
+
+#mistakes
+x: J'ai habité ici depuis deux ans. => J'habite ici depuis deux ans. | Tôi sống ở đây được hai năm rồi. >> Việc vẫn tiếp diễn thì dùng hiện tại với [[depuis]].
+x: Je suis arrivé depuis trois jours. => Je suis arrivé il y a trois jours. | Tôi đến cách đây ba ngày. >> Mốc trong quá khứ thì dùng [[il y a]].
+x: Je pars pendant une heure. => Je pars dans une heure. | Một tiếng nữa tôi đi. >> “Sau … nữa” là [[dans]].
+
+#dialogue
+ines: Et tu travailles dans ce restaurant depuis longtemps ? | Cậu làm ở nhà hàng này lâu chưa? [thinking]
+karim: Depuis deux ans. Avant, j'ai travaillé à Paris pendant un an. | Hai năm rồi. Trước đó mình làm ở Paris một năm. [explain]
+ines: Et tu vas rester ? | Thế cậu sẽ ở lại chứ? [happy]
+karim: Non, je pars au Canada dans trois mois ! | Không, ba tháng nữa mình sang Canada! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi sống ở đây được hai năm rồi. => J'habite ici depuis deux ans. | Tôi sống ở đây được hai năm rồi.
+? Nói bằng tiếng Pháp: Năm phút nữa phim bắt đầu. => Le film commence dans cinq minutes. | Năm phút nữa phim bắt đầu.
+
+#recap
+> Tóm lại: [[depuis]] cộng hiện tại cho việc vẫn tiếp diễn. [[Il y a]] là cách đây, đi với quá khứ. [[Pendant]] là trong suốt. [[Dans]] là sau bao lâu nữa.
+
+#practice
+fill: J'habite ici ___ deux ans. | depuis* / il y a / pendant || Vẫn tiếp diễn → depuis.
+fill: Il a téléphoné ___ dix minutes. | il y a* / depuis / dans || Cách đây → il y a.
+fill: Le film commence ___ cinq minutes. | dans* / pendant / depuis || Sau… nữa → dans.
+fill: Nous avons voyagé ___ deux semaines. | pendant* / depuis / dans || Trọn khoảng → pendant.
+contrast: Elle ___ le français depuis six mois. | apprend* / a appris || depuis → hiện tại.
+fix: J'ai habité ici depuis deux ans. | J'habite ici depuis deux ans.* / J'habite ici il y a deux ans. / J'habitais ici dans deux ans. || depuis + hiện tại.
+order: Il / pleut / depuis / ce / matin. | Trời mưa từ sáng đến giờ.
+listen: Je t'attends depuis une heure. | Je t'attends depuis une heure.* / Je t'attends dans une heure. / Je t'ai attendu une heure. || depuis = dəpɥi.

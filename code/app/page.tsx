@@ -1,11 +1,13 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { Volume2, BookOpenText, Library, ChevronRight } from "lucide-react";
+import { Volume2, BookOpenText, Library, ChevronRight, Puzzle } from "lucide-react";
 import HomeStats from "@/components/home-stats";
 import LevelGrid from "@/components/level-grid";
 import DailyQuests from "@/components/daily-quests";
+import { grammarIndex } from "@/lib/grammar-server";
 
 export default function Home() {
+  const grammar = grammarIndex().lessons.length;
   return (
     <div className="space-y-6 lg:space-y-8">
       <HomeStats />
@@ -19,7 +21,7 @@ export default function Home() {
 
       <section className="space-y-3">
         <h2 className="text-lg font-semibold">Khám phá</h2>
-        <div className="grid gap-4 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2">
           <ExploreCard
             href="/phat-am"
             icon={<Volume2 className="size-6" />}
@@ -43,6 +45,14 @@ export default function Home() {
             grad="from-violet-500/15"
             title="Truyện"
             desc="16 truyện nhiều chương, có dịch."
+          />
+          <ExploreCard
+            href="/ngu-phap"
+            icon={<Puzzle className="size-6" />}
+            tint="bg-amber-500/15 text-amber-600 dark:text-amber-400"
+            grad="from-amber-500/15"
+            title="Ngữ pháp"
+            desc={`${grammar} bài video giảng giải — bảng minh hoạ, ví dụ, luyện tập.`}
           />
         </div>
       </section>

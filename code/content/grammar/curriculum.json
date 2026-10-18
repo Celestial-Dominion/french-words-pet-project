@@ -1,0 +1,640 @@
+{
+ "about": "Bài ngữ pháp theo thứ tự học (docs/GRAMMAR_PLAYBOOK.md §1–2). id bài đã phát hành là ổn định (tiến độ người học lưu theo id; 11 id của khoá chữ cũ giữ nguyên). find = regex câu thật trong Thư viện (≤3 liên kết / bài, build tự tìm).",
+ "cats": {
+  "sentence": "Câu & trật tự từ",
+  "verbs": "Động từ",
+  "tense": "Thì & thể",
+  "modals": "Động từ tình thái",
+  "nouns": "Danh từ & giống",
+  "determiners": "Mạo từ & từ hạn định",
+  "pronouns": "Đại từ & sở hữu",
+  "adjectives": "Tính từ & trạng từ",
+  "comparison": "So sánh",
+  "prepositions": "Giới từ",
+  "questions": "Câu hỏi",
+  "negation": "Phủ định",
+  "conditionals": "Điều kiện & lịch sự",
+  "relative": "Mệnh đề quan hệ",
+  "clauses": "Liên từ & mệnh đề"
+ },
+ "lessons": [
+  {
+   "id": "cau-co-ban",
+   "lv": "a1",
+   "cat": "pronouns",
+   "t": "Đại từ chủ ngữ & câu cơ bản",
+   "en": "je · tu · il · elle · nous · vous",
+   "pts": [
+    "subject-pronouns",
+    "tu-vous",
+    "svo-order"
+   ],
+   "find": "^(Je|Tu|Il|Elle|On|Nous|Vous|Ils|Elles) [a-zéè]+"
+  },
+  {
+   "id": "etre-avoir",
+   "lv": "a1",
+   "cat": "verbs",
+   "t": "Hai động từ gốc: être và avoir",
+   "en": "je suis · j'ai · il a vingt ans",
+   "pts": [
+    "etre-present",
+    "avoir-present",
+    "avoir-age"
+   ],
+   "find": "\\b(je suis|tu es|nous sommes|vous êtes|ils sont|j'ai|tu as|nous avons|ils ont)\\b"
+  },
+  {
+   "id": "giong-danh-tu",
+   "lv": "a1",
+   "cat": "nouns",
+   "t": "Giống của danh từ: un hay une?",
+   "en": "un livre · une table",
+   "pts": [
+    "noun-gender",
+    "indefinite-articles"
+   ],
+   "find": "\\b(un|une) [a-zéèêç]+"
+  },
+  {
+   "id": "mao-tu-xac-dinh",
+   "lv": "a1",
+   "cat": "determiners",
+   "t": "Mạo từ xác định: le, la, l', les",
+   "en": "le café · la gare · l'école · les amis",
+   "pts": [
+    "definite-articles"
+   ],
+   "find": "\\b(le|la|les) [a-zéèêç]+|\\bl'[aeiouéh]"
+  },
+  {
+   "id": "so-nhieu",
+   "lv": "a1",
+   "cat": "nouns",
+   "t": "Số nhiều của danh từ",
+   "en": "des livres · les gâteaux",
+   "pts": [
+    "noun-plural"
+   ],
+   "find": "\\b(des|les) [a-zéèêç]+(s|x)\\b"
+  },
+  {
+   "id": "dong-tu-er",
+   "lv": "a1",
+   "cat": "tense",
+   "t": "Động từ -er ở hiện tại",
+   "en": "je parle · nous parlons · ils parlent",
+   "pts": [
+    "present-er",
+    "er-silent-endings"
+   ],
+   "find": "\\b(je|tu|il|elle|on|nous|vous|ils|elles) [a-zé]+(e|es|ons|ez|ent)\\b"
+  },
+  {
+   "id": "phu-dinh",
+   "lv": "a1",
+   "cat": "negation",
+   "t": "Phủ định: ne… pas",
+   "en": "Je ne parle pas · pas de café",
+   "pts": [
+    "ne-pas",
+    "pas-de"
+   ],
+   "find": "\\b(ne|n') ?[a-zéèê' ]+ pas\\b"
+  },
+  {
+   "id": "aimer-mao-tu",
+   "lv": "a1",
+   "cat": "verbs",
+   "t": "J'aime le café: aimer + le, la",
+   "en": "j'aime le thé · je déteste courir",
+   "pts": [
+    "aimer-article"
+   ],
+   "find": "\\b(aime|aimes|aimons|aimez|aiment|adore|déteste|préfère) (le|la|les|l')"
+  },
+  {
+   "id": "cau-hoi",
+   "lv": "a1",
+   "cat": "questions",
+   "t": "Câu hỏi có / không",
+   "en": "Tu viens ? · Est-ce que tu viens ?",
+   "pts": [
+    "yes-no-questions"
+   ],
+   "find": "^Est-ce que|\\best-ce qu'"
+  },
+  {
+   "id": "tu-de-hoi",
+   "lv": "a1",
+   "cat": "questions",
+   "t": "Từ để hỏi: où, quand, comment…",
+   "en": "Où ? · Quand ? · Qu'est-ce que… ?",
+   "pts": [
+    "question-words",
+    "quest-ce-que"
+   ],
+   "find": "^(Où|Quand|Comment|Combien|Pourquoi|Qui|Qu'est-ce)\\b"
+  },
+  {
+   "id": "tinh-tu",
+   "lv": "a1",
+   "cat": "adjectives",
+   "t": "Tính từ: hợp giống, số và vị trí",
+   "en": "un chat noir · une petite maison",
+   "pts": [
+    "adj-agreement",
+    "adj-position"
+   ],
+   "find": "\\b(petite|grande|noire|verte|belle|bonne|nouvelle) [a-zé]+"
+  },
+  {
+   "id": "so-huu",
+   "lv": "a1",
+   "cat": "pronouns",
+   "t": "Sở hữu: mon, ma, mes…",
+   "en": "mon frère · sa mère · leurs enfants",
+   "pts": [
+    "possessives",
+    "son-sa-owned"
+   ],
+   "find": "\\b(mon|ma|mes|ton|ta|tes|son|sa|ses|notre|votre|nos|vos|leur|leurs) [a-zéè]+"
+  },
+  {
+   "id": "gioi-tu-di-lai",
+   "lv": "a1",
+   "cat": "prepositions",
+   "t": "Đi đâu, từ đâu: à, en, au, de, chez",
+   "en": "à Paris · en France · chez moi",
+   "pts": [
+    "prep-cities-countries",
+    "venir-de-place",
+    "chez"
+   ],
+   "find": "\\b(à Paris|à Lyon|en France|au Japon|au Canada|chez (moi|toi|lui|elle|nous|vous))\\b"
+  },
+  {
+   "id": "au-du",
+   "lv": "a1",
+   "cat": "determiners",
+   "t": "Mạo từ gộp: au, aux, du, des",
+   "en": "au cinéma · du travail",
+   "pts": [
+    "contracted-articles"
+   ],
+   "find": "\\b(au|aux) [a-zéè]+|\\bdu (travail|bureau|marché|parc|matin|soir)\\b"
+  },
+  {
+   "id": "aller-faire-venir",
+   "lv": "a1",
+   "cat": "verbs",
+   "t": "Ba động từ bất quy tắc: aller, faire, venir",
+   "en": "je vais · je fais · je viens",
+   "pts": [
+    "aller-present",
+    "faire-present",
+    "venir-present"
+   ],
+   "find": "\\b(je vais|tu vas|il va|nous allons|ils vont|je fais|nous faisons|ils font|je viens|ils viennent)\\b"
+  },
+  {
+   "id": "vouloir-pouvoir",
+   "lv": "a1",
+   "cat": "modals",
+   "t": "Muốn và có thể: vouloir, pouvoir",
+   "en": "je veux partir · tu peux venir ?",
+   "pts": [
+    "vouloir-pouvoir",
+    "je-voudrais"
+   ],
+   "find": "\\b(veux|veut|voulons|voulez|veulent|peux|peut|pouvons|pouvez|peuvent|voudrais) [a-zé]+(er|ir|re)\\b"
+  },
+  {
+   "id": "menh-lenh",
+   "lv": "a1",
+   "cat": "verbs",
+   "t": "Câu mệnh lệnh",
+   "en": "Écoute ! · Venez ! · Allons-y !",
+   "pts": [
+    "imperative"
+   ],
+   "find": "^(Écoute|Écoutez|Regarde|Regardez|Viens|Venez|Allons|Attends|Attendez|Prends|Prenez)\\b"
+  },
+  {
+   "id": "il-y-a",
+   "lv": "a1",
+   "cat": "sentence",
+   "t": "Có… : il y a",
+   "en": "il y a un parc · il n'y a pas de bus",
+   "pts": [
+    "il-y-a"
+   ],
+   "find": "\\bil (n')?y a\\b"
+  },
+  {
+   "id": "c-est-il-est",
+   "lv": "a1",
+   "cat": "sentence",
+   "t": "C'est hay il est?",
+   "en": "c'est un médecin · il est médecin",
+   "pts": [
+    "cest-ilest"
+   ],
+   "find": "\\b(c'est un|c'est une|il est|elle est)\\b",
+   "kind": "contrast"
+  },
+  {
+   "id": "ce-cette",
+   "lv": "a1",
+   "cat": "determiners",
+   "t": "Này, đó: ce, cet, cette, ces",
+   "en": "ce livre · cet hôtel · cette ville",
+   "pts": [
+    "demonstratives"
+   ],
+   "find": "\\b(ce|cet|cette|ces) [a-zéèh]+"
+  },
+  {
+   "id": "mao-tu-bo-phan",
+   "lv": "a1",
+   "cat": "determiners",
+   "t": "Một ít: du, de la, de l'",
+   "en": "du pain · de la soupe · beaucoup de sucre",
+   "pts": [
+    "partitive",
+    "quantity-de"
+   ],
+   "find": "\\b(du pain|de la|de l'eau|beaucoup de|un peu de)\\b"
+  },
+  {
+   "id": "gio-va-ngay",
+   "lv": "a1",
+   "cat": "prepositions",
+   "t": "Giờ, ngày, tháng",
+   "en": "Il est huit heures · le lundi · en mai",
+   "pts": [
+    "time-telling",
+    "time-prepositions"
+   ],
+   "find": "\\b(il est \\w+ heures?|à \\w+ heures?|le (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)|en (janvier|mai|juillet|août|décembre))\\b"
+  },
+  {
+   "id": "tuong-lai-gan",
+   "lv": "a1",
+   "cat": "tense",
+   "t": "Sắp làm: tương lai gần",
+   "en": "je vais manger · il va pleuvoir",
+   "pts": [
+    "futur-proche"
+   ],
+   "find": "\\b(vais|vas|va|allons|allez|vont) [a-zé]+(er|ir|re)\\b"
+  },
+  {
+   "id": "dong-tu-phan-than",
+   "lv": "a1",
+   "cat": "verbs",
+   "t": "Động từ phản thân: se lever",
+   "en": "je me lève · il s'appelle",
+   "pts": [
+    "reflexive-present"
+   ],
+   "find": "\\b(me|te|se|nous|vous) (lève|lèves|levons|levez|lèvent|couche|couches|lave|appelle|réveille)\\b|\\bs'appelle\\b"
+  },
+  {
+   "id": "gioi-tu-vi-tri",
+   "lv": "a1",
+   "cat": "prepositions",
+   "t": "Ở đâu: sur, sous, dans, devant…",
+   "en": "sur la table · à côté de la gare",
+   "pts": [
+    "prep-location"
+   ],
+   "find": "\\b(sur|sous|dans|devant|derrière) (le|la|les|l'|un|une)\\b|\\bà côté d"
+  },
+  {
+   "id": "prendre-finir",
+   "lv": "a1",
+   "cat": "verbs",
+   "t": "prendre, finir, partir ở hiện tại",
+   "en": "je prends · je finis · je pars",
+   "pts": [
+    "prendre-finir"
+   ],
+   "find": "\\b(prends|prend|prenons|prenez|prennent|finis|finit|finissons|finissent|pars|part|partons|partent)\\b"
+  },
+  {
+   "id": "lien-tu-co-ban",
+   "lv": "a1",
+   "cat": "clauses",
+   "t": "Nối câu: et, mais, ou, parce que",
+   "en": "et · mais · ou · parce que",
+   "pts": [
+    "conjunctions-basic"
+   ],
+   "find": "\\b(mais|parce que|parce qu')\\b"
+  },
+  {
+   "id": "passe-compose-avoir",
+   "lv": "a2",
+   "cat": "tense",
+   "t": "Quá khứ kép với avoir",
+   "en": "j'ai mangé · tu as fini",
+   "pts": [
+    "pc-avoir"
+   ],
+   "find": "\\b(j'ai|tu as|il a|elle a|on a|nous avons|vous avez|ils ont|elles ont) [a-zé]+(é|i)\\b"
+  },
+  {
+   "id": "phan-tu-bat-quy-tac",
+   "lv": "a2",
+   "cat": "tense",
+   "t": "Quá khứ phân từ bất quy tắc",
+   "en": "fait · pris · vu · eu · été",
+   "pts": [
+    "past-participles"
+   ],
+   "find": "\\b(ai|as|a|avons|avez|ont) (fait|pris|vu|eu|été|bu|lu|dit|écrit|mis|su|pu|voulu|dû)\\b"
+  },
+  {
+   "id": "passe-compose-etre",
+   "lv": "a2",
+   "cat": "tense",
+   "t": "Quá khứ kép với être",
+   "en": "je suis allé(e) · elle est partie",
+   "pts": [
+    "pc-etre",
+    "pc-reflexive"
+   ],
+   "find": "\\b(suis|es|est|sommes|êtes|sont) (allée?s?|venue?s?|partie?s?|arrivée?s?|née?s?|restée?s?|tombée?s?|rentrée?s?)\\b"
+  },
+  {
+   "id": "phu-dinh-qua-khu",
+   "lv": "a2",
+   "cat": "negation",
+   "t": "Phủ định ở quá khứ kép",
+   "en": "je n'ai pas vu · il n'est pas venu",
+   "pts": [
+    "pc-negative"
+   ],
+   "find": "\\bn'(ai|as|a|avons|avez|ont|est|suis|sont) pas [a-zé]+"
+  },
+  {
+   "id": "imparfait",
+   "lv": "a2",
+   "cat": "tense",
+   "t": "Thì imparfait: miêu tả và thói quen",
+   "en": "il faisait beau · je jouais",
+   "pts": [
+    "imparfait"
+   ],
+   "find": "\\b[a-zé]+(ais|ait|ions|iez|aient)\\b"
+  },
+  {
+   "id": "pc-hay-imparfait",
+   "lv": "a2",
+   "cat": "tense",
+   "t": "Passé composé hay imparfait?",
+   "en": "Il pleuvait quand je suis sorti",
+   "pts": [
+    "pc-vs-imparfait"
+   ],
+   "find": "\\b(était|faisait|avait|pleuvait)\\b.*\\b(a|est|ai|suis) [a-zé]+(é|i|u)\\b",
+   "kind": "contrast"
+  },
+  {
+   "id": "tuong-lai-don",
+   "lv": "a2",
+   "cat": "tense",
+   "t": "Tương lai đơn",
+   "en": "je parlerai · j'irai · il fera",
+   "pts": [
+    "futur-simple"
+   ],
+   "find": "\\b[a-zé]+(rai|ras|ra|rons|rez|ront)\\b"
+  },
+  {
+   "id": "dai-tu-le-la-les",
+   "lv": "a2",
+   "cat": "pronouns",
+   "t": "Đại từ tân ngữ: le, la, les",
+   "en": "je le vois · tu la connais",
+   "pts": [
+    "cod-pronouns"
+   ],
+   "find": "\\b(je|tu|il|elle|on|nous|vous|ils|elles) (le|la|les|l') ?[a-zéè]+"
+  },
+  {
+   "id": "dai-tu-lui-leur",
+   "lv": "a2",
+   "cat": "pronouns",
+   "t": "Đại từ gián tiếp: lui, leur",
+   "en": "je lui parle · je leur écris",
+   "pts": [
+    "coi-pronouns"
+   ],
+   "find": "\\b(lui|leur) (parle|écris|téléphone|donne|dis|demande|réponds)"
+  },
+  {
+   "id": "dai-tu-y",
+   "lv": "a2",
+   "cat": "pronouns",
+   "t": "Đại từ y: ở đó",
+   "en": "j'y vais · on y va",
+   "pts": [
+    "pronoun-y"
+   ],
+   "find": "\\b(j'y|y va|y vais|y allons|y suis|y est|n'y)\\b"
+  },
+  {
+   "id": "dai-tu-en",
+   "lv": "a2",
+   "cat": "pronouns",
+   "t": "Đại từ en: một ít, mấy cái",
+   "en": "j'en veux · il en a deux",
+   "pts": [
+    "pronoun-en"
+   ],
+   "find": "\\b(j'en|en veux|en ai|en a|en avons|en prends|n'en)\\b"
+  },
+  {
+   "id": "dai-tu-nhan-manh",
+   "lv": "a2",
+   "cat": "pronouns",
+   "t": "Đại từ nhấn mạnh: moi, toi, lui…",
+   "en": "Moi, je… · avec toi · chez eux",
+   "pts": [
+    "stressed-pronouns"
+   ],
+   "find": "\\b(moi|toi|eux)\\b"
+  },
+  {
+   "id": "so-sanh",
+   "lv": "a2",
+   "cat": "comparison",
+   "t": "So sánh: plus, moins, aussi… que",
+   "en": "plus grand que · aussi vite que",
+   "pts": [
+    "comparative",
+    "meilleur-mieux"
+   ],
+   "find": "\\b(plus|moins|aussi) [a-zéè]+ (que|qu')|\\b(meilleur|meilleure|mieux)\\b"
+  },
+  {
+   "id": "so-sanh-nhat",
+   "lv": "a2",
+   "cat": "comparison",
+   "t": "So sánh nhất: le plus, le moins",
+   "en": "le plus grand · la moins chère",
+   "pts": [
+    "superlative"
+   ],
+   "find": "\\b(le|la|les) (plus|moins) [a-zéè]+"
+  },
+  {
+   "id": "trang-tu-ment",
+   "lv": "a2",
+   "cat": "adjectives",
+   "t": "Trạng từ đuôi -ment",
+   "en": "lentement · vraiment · facilement",
+   "pts": [
+    "adverbs-ment"
+   ],
+   "find": "\\b[a-zéè]{4,}ment\\b"
+  },
+  {
+   "id": "tinh-tu-bat-quy-tac",
+   "lv": "a2",
+   "cat": "adjectives",
+   "t": "Tính từ đặc biệt: beau, nouveau, vieux…",
+   "en": "un bel hôtel · une vieille amie · heureuse",
+   "pts": [
+    "irregular-adjectives"
+   ],
+   "find": "\\b(bel|belle|beaux|nouvel|nouvelle|vieil|vieille|heureuse|sportive|gentille)\\b"
+  },
+  {
+   "id": "devoir-il-faut",
+   "lv": "a2",
+   "cat": "modals",
+   "t": "Phải làm gì: devoir, il faut",
+   "en": "je dois partir · il faut manger",
+   "pts": [
+    "devoir-falloir"
+   ],
+   "find": "\\b(dois|doit|devons|devez|doivent|il faut)\\b"
+  },
+  {
+   "id": "phu-dinh-khac",
+   "lv": "a2",
+   "cat": "negation",
+   "t": "ne… jamais, plus, rien, personne",
+   "en": "je ne fume plus · il ne dit rien",
+   "pts": [
+    "negation-other"
+   ],
+   "find": "\\b(ne|n') ?[a-zéèê' ]+ (jamais|plus|rien|personne)\\b"
+  },
+  {
+   "id": "qui-que",
+   "lv": "a2",
+   "cat": "relative",
+   "t": "Mệnh đề quan hệ: qui, que",
+   "en": "l'homme qui parle · le livre que je lis",
+   "pts": [
+    "relative-qui-que",
+    "relative-ou"
+   ],
+   "find": "\\b(qui|que|qu'|où) (je|tu|il|elle|on|nous|vous|ils|elles|[a-zé]+e|[a-zé]+ent)\\b"
+  },
+  {
+   "id": "depuis-pendant",
+   "lv": "a2",
+   "cat": "prepositions",
+   "t": "Thời gian: depuis, il y a, pendant, dans",
+   "en": "depuis deux ans · il y a trois jours",
+   "pts": [
+    "depuis-pendant"
+   ],
+   "find": "\\b(depuis|pendant|il y a \\w+ (jours|ans|mois|heures|semaines))\\b"
+  },
+  {
+   "id": "venir-de",
+   "lv": "a2",
+   "cat": "tense",
+   "t": "Vừa mới, đang: venir de, être en train de",
+   "en": "je viens de manger · il est en train de lire",
+   "pts": [
+    "venir-de-inf"
+   ],
+   "find": "\\b(viens|vient|venons|venez|viennent) de [a-zé]+(er|ir|re)\\b|\\ben train de\\b"
+  },
+  {
+   "id": "dieu-kien-si",
+   "lv": "a2",
+   "cat": "conditionals",
+   "t": "Nếu… thì: si + hiện tại",
+   "en": "S'il pleut, je reste",
+   "pts": [
+    "si-present"
+   ],
+   "find": "^(Si|S'il|S'ils) "
+  },
+  {
+   "id": "noi-lich-su",
+   "lv": "a2",
+   "cat": "conditionals",
+   "t": "Nói lịch sự: je voudrais, pourriez-vous",
+   "en": "j'aimerais · pourriez-vous m'aider ?",
+   "pts": [
+    "polite-conditional"
+   ],
+   "find": "\\b(voudrais|aimerais|pourriez|pourrais|serait)\\b",
+   "reg": "spoken"
+  },
+  {
+   "id": "quel",
+   "lv": "a2",
+   "cat": "questions",
+   "t": "Từ hỏi quel, quelle…",
+   "en": "Quel âge ? · Quelle heure ?",
+   "pts": [
+    "quel"
+   ],
+   "find": "\\b(Quel|Quelle|Quels|Quelles|quel|quelle) [a-zéè]+"
+  },
+  {
+   "id": "savoir-connaitre",
+   "lv": "a2",
+   "cat": "verbs",
+   "t": "Savoir hay connaître?",
+   "en": "je sais nager · je connais Paris",
+   "pts": [
+    "savoir-connaitre"
+   ],
+   "find": "\\b(sais|sait|savons|savez|savent|connais|connaît|connaissons|connaissez|connaissent)\\b",
+   "kind": "contrast"
+  },
+  {
+   "id": "tout",
+   "lv": "a2",
+   "cat": "determiners",
+   "t": "tout, toute, tous, toutes",
+   "en": "tout le monde · tous les jours",
+   "pts": [
+    "tout"
+   ],
+   "find": "\\b(tout le|toute la|tous les|toutes les)\\b"
+  },
+  {
+   "id": "lien-tu-a2",
+   "lv": "a2",
+   "cat": "clauses",
+   "t": "Nối câu A2: quand, comme, donc, pourtant",
+   "en": "quand il pleut · donc · pourtant",
+   "pts": [
+    "conjunctions-a2"
+   ],
+   "find": "\\b(quand|comme|donc|pourtant|pendant que)\\b"
+  }
+ ]
+}

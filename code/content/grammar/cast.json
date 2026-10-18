@@ -1,0 +1,24 @@
+{
+  "about": "Nhân vật dùng chung cho hội thoại trong bài Ngữ pháp (docs/GRAMMAR_PLAYBOOK.md §6). Khoá = tên vai trong nguồn bài (dòng `lea: …`). look/style theo rig Video (components/video/rig.ts); voice/rate/pitch chỉ dùng lúc build audio (cộng thêm tốc độ nền theo cấp). Hai vai trong cùng bài không được trùng hẳn giọng (voice+rate+pitch). Giọng thuộc bộ scripts/lib/grammar-spec.mjs VOICES.",
+  "teacher": {"name": "Cô giáo", "look": "woman", "style": {"outfit": "cardigan", "top": "#3E6FB0", "topShade": "#325B92", "collar": "#F4F1EA", "accent": "#325B92", "glasses": true, "hair": "bun", "hairColor": "#2E2220"}, "narrator": {"voice": "vi-VN-HoaiMyNeural", "rate": "+0%"}, "voice": "fr-FR-DeniseNeural"},
+  "roster": {
+    "lea": {"name": "Léa", "look": "woman", "style": {"outfit": "blouse", "top": "#D9774F", "topShade": "#BF6340", "accent": "#C8603B", "hair": "long", "hairColor": "#6B4226"}, "voice": "fr-FR-VivienneMultilingualNeural"},
+    "hugo": {"name": "Hugo", "look": "man", "style": {"outfit": "tee", "top": "#3E8E7E", "topShade": "#32766A", "collar": "#32766A", "accent": "#2F7D6D", "hairColor": "#3B2A20"}, "voice": "fr-FR-RemyMultilingualNeural"},
+    "nam": {"name": "Nam", "vi": "Nam", "look": "man", "style": {"outfit": "shirt", "top": "#4F7CC4", "topShade": "#3F68A8", "accent": "#3F68A8", "hair": "fringe", "hairColor": "#1F1B1A", "skin": "#EFC9A4", "skinShade": "#DDB08A"}, "voice": "fr-FR-HenriNeural", "pitch": "+4Hz"},
+    "linh": {"name": "Linh", "vi": "Linh", "look": "woman", "style": {"outfit": "blouse", "top": "#9A6FC4", "topShade": "#8159AA", "accent": "#8159AA", "hair": "bob", "hairColor": "#1C1716", "skin": "#F2CFAE", "skinShade": "#E0B592"}, "voice": "fr-CH-ArianeNeural"},
+    "chloe": {"name": "Chloé", "look": "teengirl", "style": {"top": "#E0607E", "topShade": "#C44B68", "accent": "#C44B68", "hair": "ponytail", "hairColor": "#8B5A2B"}, "voice": "fr-FR-EloiseNeural", "pitch": "-4Hz"},
+    "lucas": {"name": "Lucas", "look": "teenboy", "style": {"top": "#F0A43A", "topShade": "#D68C27", "accent": "#C77E1C", "hairColor": "#5A3A22", "skin": "#C98E68", "skinShade": "#B27852"}, "voice": "fr-FR-HenriNeural", "pitch": "+10Hz", "rate": "+4%"},
+    "maman": {"name": "Maman", "vi": "Mẹ", "look": "mom", "voice": "fr-BE-CharlineNeural"},
+    "papa": {"name": "Papa", "vi": "Bố", "look": "dad", "voice": "fr-FR-HenriNeural", "pitch": "-3Hz"},
+    "mamie": {"name": "Mamie", "vi": "Bà", "look": "grandma", "voice": "fr-FR-DeniseNeural", "rate": "-10%", "pitch": "-6Hz"},
+    "papi": {"name": "Papi", "vi": "Ông", "look": "grandpa", "voice": "fr-BE-GerardNeural", "rate": "-8%", "pitch": "-4Hz"},
+    "zoe": {"name": "Zoé", "look": "girl", "voice": "fr-FR-EloiseNeural"},
+    "tom": {"name": "Tom", "look": "boy", "style": {"top": "#5DBB63", "topShade": "#4AA350", "collar": "#4AA350", "accent": "#3E9A45", "hairColor": "#C98A3C"}, "voice": "fr-FR-EloiseNeural", "pitch": "-12Hz"},
+    "mme-martin": {"name": "Mme Martin", "vi": "cô Martin", "look": "woman", "style": {"outfit": "suit", "top": "#3B3F4A", "topShade": "#2E323B", "collar": "#F2F2F2", "accent": "#6B4E9B", "hair": "bun", "hairColor": "#1E1A18", "glasses": true, "skin": "#C69272", "skinShade": "#B07C5C"}, "voice": "fr-FR-VivienneMultilingualNeural", "rate": "-4%", "pitch": "-3Hz"},
+    "m-dubois": {"name": "M. Dubois", "vi": "thầy Dubois", "look": "man", "style": {"outfit": "tie", "top": "#6E7F92", "topShade": "#5B6B7D", "collar": "#F2F2F2", "accent": "#4A5F8F", "glasses": true, "hair": "part", "hairColor": "#7A6A5A"}, "voice": "fr-CH-FabriceNeural"},
+    "dr-roux": {"name": "Dr Roux", "vi": "bác sĩ Roux", "look": "man", "style": {"outfit": "coat", "top": "#F4F6F8", "topShade": "#DDE2E7", "accent": "#2E8A8A", "hair": "short", "hairColor": "#1F1B1A"}, "voice": "fr-BE-GerardNeural"},
+    "ines": {"name": "Inès", "look": "woman", "style": {"outfit": "jacket", "top": "#8C3B4A", "topShade": "#76303D", "accent": "#A23B55", "hair": "curly", "hairColor": "#2B1D18", "skin": "#8D5A3C", "skinShade": "#784A30"}, "voice": "fr-CH-ArianeNeural", "pitch": "+3Hz", "rate": "+3%"},
+    "paul": {"name": "Paul", "look": "man", "style": {"outfit": "jacket", "top": "#5A6B8C", "topShade": "#4A5A78", "accent": "#4A5F8F", "hair": "short", "hairColor": "#B8863B"}, "voice": "fr-FR-RemyMultilingualNeural", "pitch": "-4Hz"},
+    "karim": {"name": "Karim", "look": "man", "style": {"outfit": "apron", "top": "#2E2E2E", "topShade": "#222222", "accent": "#707070", "hair": "short", "hairColor": "#1F1B1A", "skin": "#A86F4C", "skinShade": "#93603F"}, "voice": "fr-CH-FabriceNeural", "pitch": "+6Hz", "rate": "+4%"}
+  }
+}

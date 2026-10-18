@@ -51,3 +51,28 @@ const ACCENTS: Record<number, LevelAccent> = {
 export function levelAccent(level: number): LevelAccent {
   return ACCENTS[level] ?? ACCENTS[1];
 }
+
+// Cấp học liệu theo khoá chuỗi a1..c2 (Ngữ pháp, Thư viện): band 0..5, vocabLevel = cấp từ vựng 1..6 cùng màu.
+export interface ContentLevel {
+  key: string;
+  cefr: string;
+  label: string;
+  band: number;
+  vocabLevel: number;
+}
+export const CONTENT_LEVELS: ContentLevel[] = LEVELS.map((l, i) => ({
+  key: l.cefr.toLowerCase(),
+  cefr: l.cefr,
+  label: l.label,
+  band: i,
+  vocabLevel: l.level,
+}));
+
+export function contentLevel(key: string): ContentLevel | undefined {
+  return CONTENT_LEVELS.find((l) => l.key === key);
+}
+
+/** Màu nhấn theo cấp học liệu = màu cấp từ vựng tương ứng. */
+export function contentAccent(key: string): LevelAccent {
+  return levelAccent(contentLevel(key)?.vocabLevel ?? 1);
+}

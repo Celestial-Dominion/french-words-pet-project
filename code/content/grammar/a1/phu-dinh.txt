@@ -1,0 +1,73 @@
+=== phu-dinh
+sum: Câu phủ định kẹp động từ giữa ne và pas: je ne parle pas. Trước nguyên âm, ne thành n'. Sau phủ định, un, une, des đổi thành de: je n'ai pas de voiture. Khi nói chuyện, người Pháp hay bỏ ne.
+form: ne + động từ + pas | Je ne parle pas.
+form: n' + nguyên âm | Je n'aime pas.
+form: pas de thay un / une / des | Je n'ai pas de chat.
+cast: maman tom
+bg: home-day
+words: ne, pas
+
+#hook
+maman: Tom, tu manges ta soupe ? | Tom, con ăn súp chứ? [happy]
+tom: Non, je ne mange pas la soupe ! | Không, con không ăn súp đâu! [angry shake]
+> Tom nói không bằng hai chữ: [[ne]] đứng trước động từ, [[pas]] đứng sau. Động từ bị kẹp ở giữa.
+
+#meaning
+> Tiếng Việt chỉ cần một chữ “không”. Tiếng Pháp cần hai: [[ne]] và [[pas]].
+vs: Je parle français. | Tôi nói tiếng Pháp. || khẳng định
+vs: Je ne parle pas français. | Tôi không nói tiếng Pháp. || phủ định
+> Hãy nghĩ [[ne]] và [[pas]] như hai miếng bánh mì kẹp động từ.
+
+#form
+f: Je + [ne] + parle + [pas]
+> [[Ne]] đứng ngay trước động từ, [[pas]] đứng ngay sau.
+f: Je + [n'] + aime + [pas]
+> Nếu động từ bắt đầu bằng nguyên âm hoặc h câm, [[ne]] thành [[n']]: [[je n'aime pas]], [[il n'habite pas]].
+
+#examples
+- Il {ne|n} travaille {pas|n} le dimanche. | Anh ấy không làm việc vào chủ nhật.
+- Nous {n'habitons|n} {pas|n} à Paris. | Chúng tôi không sống ở Paris.
+- Ce {n'est|n} {pas|n} grave. | Không sao đâu.
+- Elle {ne|n} regarde {pas|n} la télé. | Cô ấy không xem ti vi.
+
+#real
+> Có một luật quan trọng: sau phủ định, [[un]], [[une]], [[des]] đổi thành [[de]].
+vs: J'ai une voiture. | Tôi có một chiếc xe hơi. || khẳng định: une
+vs: Je n'ai pas de voiture. | Tôi không có xe hơi. || phủ định: de
+- Il {n'a|n} {pas|n} {d'enfants|k}. | Anh ấy không có con. || de + nguyên âm → d'
+> Nhưng [[le]], [[la]], [[les]] thì giữ nguyên: [[je n'aime pas le café]].
+> Khi nói chuyện thân mật, người Pháp thường bỏ [[ne]]. Bạn sẽ nghe [[je sais pas]] thay cho [[je ne sais pas]]. Khi viết, hãy giữ đủ cả hai.
+
+#mistakes
+x: Je pas parle français. => Je ne parle pas français. | Tôi không nói tiếng Pháp. >> [[Pas]] đứng sau động từ, và đừng quên [[ne]] đứng trước.
+x: Je n'ai pas une voiture. => Je n'ai pas de voiture. | Tôi không có xe hơi. >> Sau phủ định, [[une]] đổi thành [[de]].
+x: Je ne aime pas le lait. => Je n'aime pas le lait. | Tôi không thích sữa. >> Trước nguyên âm, [[ne]] thành [[n']].
+
+#pronunciation
+pron: je ne sais pas | je n(e) sais pas | ʒən sɛ pa
+pron: je sais pas | j'sais pas | ʃɛ pa
+> Khi nói nhanh, chữ e của [[ne]] gần như biến mất. Trong đời thường, [[ne]] còn bị bỏ hẳn.
++ Je ne sais pas. | Tôi không biết.
+
+#dialogue
+maman: Tu n'as pas faim ? | Con không đói à? [worried]
+tom: Non, je n'ai pas faim. | Không, con không đói. [sad shake]
+maman: Tu ne veux pas de gâteau ? | Con không muốn bánh à? [surprised]
+tom: Ah si, je veux bien un gâteau ! | À có, con muốn bánh! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi không có chó. => Je n'ai pas de chien. | Tôi không có chó.
+? Nói bằng tiếng Pháp: Cô ấy không sống ở đây. => Elle n'habite pas ici. | Cô ấy không sống ở đây.
+
+#recap
+> Tóm lại: kẹp động từ giữa [[ne]] và [[pas]]. Trước nguyên âm, [[ne]] thành [[n']]. Sau phủ định, [[un]], [[une]], [[des]] thành [[de]]: [[je n'ai pas de voiture]].
+
+#practice
+fill: Il ___ travaille pas le dimanche. | ne* / pas / n' || ne đứng trước động từ.
+fill: Nous ___ habitons pas à Paris. | n'* / ne / pas || nguyên âm → n'.
+fill: Je n'ai pas ___ voiture. | de* / une / la || Sau phủ định: une → de.
+transform: Viết sang phủ định: | J'aime le café. >> Je n'aime pas le café.* / Je ne aime pas le café. / Je n'aime pas de café. || le giữ nguyên.
+fix: Je pas parle français. | Je ne parle pas français.* / Je parle ne pas français. / Je ne pas parle français. || ne + động từ + pas.
+natural: Je n'ai pas de chien.* / Je n'ai pas un chien. || Sau phủ định: un → de.
+order: Elle / ne / regarde / pas / la / télé. | Cô ấy không xem ti vi.
+listen: Je ne sais pas. | Je ne sais pas.* / Je sais. / Je ne suis pas. || Nghe hai chữ phủ định ne… pas.

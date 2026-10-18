@@ -1,0 +1,74 @@
+=== so-sanh-nhat
+sum: So sánh nhất thêm le, la, les trước plus hay moins: le plus grand (lớn nhất), la moins chère (rẻ nhất). Mạo từ hợp giống và số với danh từ. Nhóm “trong số…” dùng de: le plus grand de la classe. Đặc biệt: le meilleur (tốt nhất), le mieux (giỏi nhất).
+form: le / la / les + plus / moins + tính từ | le plus grand · la moins chère
+form: … + de + nhóm | la plus belle ville du monde
+form: le meilleur · le mieux | C'est le meilleur restaurant.
+cast: lea hugo
+bg: restaurant
+words: plus, moins, meilleur, mieux
+
+#hook
+lea: C'est le meilleur restaurant de la ville ! | Đây là nhà hàng ngon nhất thành phố! [happy]
+hugo: Oui, mais c'est aussi le plus cher ! | Ừ, nhưng cũng là đắt nhất! [worried]
+> [[Le meilleur]], [[le plus cher]]: thêm [[le]] trước so sánh hơn là thành so sánh nhất.
+
+#meaning
+> So sánh hơn: [[plus cher]]. So sánh nhất: [[le plus cher]]. Chỉ cần thêm mạo từ.
+vs: Ce sac est plus cher. | Cái túi này đắt hơn. || so sánh hơn
+vs: Ce sac est le plus cher. | Cái túi này đắt nhất. || so sánh nhất
+> Mạo từ đổi theo danh từ: [[le]] cho giống đực, [[la]] cho giống cái, [[les]] cho số nhiều.
+
+#form
+th: Danh từ | Nhất | Kém nhất
+tb: giống đực | le plus grand | le moins grand
+tb: giống cái | la plus grande | la moins grande
+tb: số nhiều | les plus grands | les moins grands
+> Muốn nói “trong số…”, dùng [[de]]: [[de la classe]], [[du monde]], [[de la famille]].
+
+#examples
+- Paul est {le plus grand|k} de la classe. | Paul cao nhất lớp.
+- C'est {la plus belle|k} ville du monde. | Đó là thành phố đẹp nhất thế giới.
+- Voici {la robe la moins chère|k}. | Đây là chiếc váy rẻ nhất.
+- Ce sont {les plus beaux|k} jours de l'année. | Đó là những ngày đẹp nhất trong năm.
+
+#real
+> Vị trí: nếu tính từ thường đứng trước danh từ, so sánh nhất cũng đứng trước: [[la plus belle ville]].
+> Nếu tính từ đứng sau danh từ, thì mạo từ xuất hiện hai lần: [[la robe la moins chère]].
+> Và hai dạng đặc biệt: [[le meilleur]] là tốt nhất, ngon nhất; [[le mieux]] là giỏi nhất, tốt nhất khi đi với động từ.
+- C'est elle qui danse {le mieux|k}. | Cô ấy là người nhảy giỏi nhất.
+- Ma mère fait {les meilleurs|k} gâteaux. | Mẹ tôi làm bánh ngon nhất.
+
+#pronunciation
+pron: le plus grand | le plus grand | ləplyɡʁɑ̃
+pron: les plus âgés | les plus‿âgés | leplyzaʒe
+pron: le meilleur | le meilleur | ləmɛjœʁ
+> [[Meilleur]] có âm “ây” ở giữa: “mê-yơr”.
++ C'est le plus beau jour de ma vie. | Đây là ngày đẹp nhất đời tôi.
+
+#mistakes
+x: C'est le plus bon restaurant. => C'est le meilleur restaurant. | Đây là nhà hàng ngon nhất. >> So sánh nhất của [[bon]] là [[le meilleur]].
+x: C'est la plus grande ville en France. => C'est la plus grande ville de France. | Đó là thành phố lớn nhất nước Pháp. >> “Trong số” dùng [[de]], không dùng [[en]].
+x: C'est la robe moins chère. => C'est la robe la moins chère. | Đó là chiếc váy rẻ nhất. >> Tính từ đứng sau thì cần thêm [[la]] trước [[moins]].
+
+#dialogue
+hugo: Qu'est-ce que tu me conseilles ? | Cậu gợi ý mình món gì? [thinking]
+lea: Le poisson. C'est le plat le plus populaire. | Món cá. Đó là món được ưa chuộng nhất. [explain]
+hugo: Et le dessert ? | Còn tráng miệng? [happy]
+lea: La tarte aux pommes, c'est la meilleure de Paris ! | Bánh táo, ngon nhất Paris đấy! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Cô ấy cao nhất lớp. => Elle est la plus grande de la classe. | Cô ấy cao nhất lớp.
+? Nói bằng tiếng Pháp: Đây là nhà hàng ngon nhất. => C'est le meilleur restaurant. | Đây là nhà hàng ngon nhất.
+
+#recap
+> Tóm lại: so sánh nhất là [[le]], [[la]], [[les]] cộng [[plus]] hay [[moins]] cộng tính từ. “Trong số” dùng [[de]]. Đặc biệt: [[le meilleur]], [[le mieux]].
+
+#practice
+fill: Paul est ___ plus grand de la classe. | le* / la / les || Paul → le.
+fill: C'est la plus belle ville ___ monde. | du* / en / dans || Trong số → de + le = du.
+fill: C'est ___ restaurant de la ville. | le meilleur* / le plus bon / le mieux || bon → le meilleur.
+fill: C'est elle qui danse ___ . | le mieux* / la meilleure / le plus bien || Động từ → le mieux.
+type: Voici la robe ___ moins chère. | la || Tính từ sau → mạo từ lặp lại.
+fix: C'est le plus bon restaurant. | C'est le meilleur restaurant.* / C'est le mieux restaurant. / C'est plus bon restaurant. || le meilleur.
+order: C'est / la / plus / belle / ville / du / monde. | Đó là thành phố đẹp nhất thế giới.
+listen: C'est le plus beau jour de ma vie. | C'est le plus beau jour de ma vie.* / C'est le moins beau jour de ma vie. / C'est un très beau jour de ma vie. || le plus beau = ləplybo.

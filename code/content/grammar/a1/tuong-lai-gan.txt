@@ -1,0 +1,77 @@
+=== tuong-lai-gan
+sum: Tương lai gần nói việc sắp làm hoặc đã định làm: aller ở hiện tại + động từ nguyên mẫu (je vais manger). Phủ định kẹp ne… pas quanh aller: je ne vais pas manger. Hay đi với demain, ce soir, la semaine prochaine.
+form: aller (hiện tại) + động từ nguyên mẫu | Je vais manger.
+form: ne + aller + pas + nguyên mẫu | Je ne vais pas manger.
+form: demain · ce soir · la semaine prochaine | Il va pleuvoir demain.
+cast: hugo chloe
+bg: park
+words: aller, demain, prochain
+
+#hook
+chloe: Qu'est-ce que tu vas faire samedi ? | Thứ bảy này cậu định làm gì? [happy]
+hugo: Je vais aller à Lyon avec mon frère. | Mình sẽ đi Lyon với anh trai. [happy explain]
+> Trong [[je vais aller]], chữ [[vais]] không có nghĩa là đi, mà là “sẽ”. Chữ [[aller]] phía sau mới là đi.
+
+#meaning
+> Tiếng Việt thêm “sẽ” hay “sắp” trước động từ. Tiếng Pháp dùng [[aller]] chia ở hiện tại, rồi động từ chính ở nguyên mẫu.
+- Je {vais|a} {manger|v}. | Tôi sắp ăn.
+- Il {va|a} {pleuvoir|v}. | Trời sắp mưa.
+> Cách này dùng cho việc sắp xảy ra, hoặc việc đã lên kế hoạch.
+
+#form
+th: Chủ ngữ | aller | + nguyên mẫu
+tb: je | vais | partir
+tb: tu | vas | partir
+tb: il · elle · on | va | partir
+tb: nous | allons | partir
+tb: vous | allez | partir
+tb: ils · elles | vont | partir
+> Chỉ [[aller]] đổi theo chủ ngữ. Động từ thứ hai luôn giữ nguyên mẫu.
+
+#examples
+- Nous {allons|a} {partir|v} en juillet. | Chúng tôi sẽ đi xa vào tháng bảy.
+- Tu {vas|a} {aimer|v} ce film. | Cậu sẽ thích bộ phim này.
+- Ils {vont|a} {arriver|v} {ce soir|t}. | Tối nay họ sẽ đến.
+- Elle {va|a} {avoir|v} un bébé. | Cô ấy sắp có em bé.
+- Je {vais|a} {commencer|v} {la semaine prochaine|t}. | Tuần sau tôi sẽ bắt đầu.
+
+#real
+> Phủ định: kẹp [[ne… pas]] quanh [[aller]], không quanh động từ thứ hai.
+- Je {ne|n} vais {pas|n} sortir ce soir. | Tối nay tôi sẽ không ra ngoài.
+> Khi nói chuyện, tương lai gần dùng nhiều hơn tương lai đơn rất nhiều. Bạn có thể dùng nó cho hầu hết mọi việc trong tương lai.
+- {Attention|k}, tu vas tomber ! | Cẩn thận, cậu sắp ngã đấy! || việc sắp xảy ra ngay
+
+#pronunciation
+pron: je vais partir | je vais partir | ʒəvɛpaʁtiʁ
+pron: il va pleuvoir | il va pleuvoir | ilvaplœvwaʁ
+pron: ils vont arriver | ils vont‿arriver | ilvɔ̃taʁive
+> [[Vais]] đọc là “vê”. Trước nguyên âm, [[vont]] nối âm t: [[ils vont arriver]].
++ Elles vont arriver demain. | Mai họ sẽ đến.
+
+#mistakes
+x: Je vais mange. => Je vais manger. | Tôi sắp ăn. >> Động từ thứ hai phải ở nguyên mẫu: [[manger]].
+x: Je vais ne pas sortir. => Je ne vais pas sortir. | Tôi sẽ không ra ngoài. >> [[Ne… pas]] kẹp quanh [[aller]].
+x: Je vais à manger. => Je vais manger. | Tôi sắp ăn. >> Không có [[à]] giữa [[aller]] và động từ.
+
+#dialogue
+hugo: Et toi, Chloé, tu vas rester ici ? | Còn cậu, Chloé, cậu sẽ ở lại đây à? [thinking]
+chloe: Non, je vais aller chez mes parents. | Không, mình sẽ về nhà bố mẹ. [explain]
+hugo: Il va faire beau samedi. | Thứ bảy trời sẽ đẹp đấy. [happy]
+chloe: Oh oui, on va manger dans le jardin ! | Tuyệt, nhà mình sẽ ăn ngoài vườn! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Trời sắp mưa. => Il va pleuvoir. | Trời sắp mưa.
+? Nói bằng tiếng Pháp: Tối nay tôi sẽ không ra ngoài. => Je ne vais pas sortir ce soir. | Tối nay tôi sẽ không ra ngoài.
+
+#recap
+> Tóm lại: tương lai gần là [[aller]] ở hiện tại cộng động từ nguyên mẫu: [[je vais manger]]. Phủ định kẹp quanh [[aller]]: [[je ne vais pas manger]].
+
+#practice
+fill: Nous ___ partir en juillet. | allons* / vont / allez || aller với nous: allons.
+fill: Je vais ___ demain. | partir* / pars / parti || Sau aller: nguyên mẫu.
+fill: Ils ___ arriver ce soir. | vont* / va / allons || aller với ils: vont.
+type: Il ___ pleuvoir. (aller) | va || aller với il: va.
+fix: Je vais ne pas sortir. | Je ne vais pas sortir.* / Je ne vais sortir pas. / Je vais pas ne sortir. || ne… pas quanh aller.
+natural: Tu vas aimer ce film.* / Tu vas aimes ce film. || Sau aller: nguyên mẫu.
+order: Je / vais / commencer / la / semaine / prochaine. | Tuần sau tôi sẽ bắt đầu.
+listen: Elles vont arriver demain. | Elles vont arriver demain.* / Elle va arriver demain. / Elles vont partir demain. || vont‿arriver: nối âm t.

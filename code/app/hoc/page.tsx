@@ -1,5 +1,6 @@
 import LevelGrid from "@/components/level-grid";
 import { GlobalWordSearch, CourseCards } from "@/components/hoc-extras";
+import { grammarIndex } from "@/lib/grammar-server";
 
 export const metadata = { title: "Học từ · Từ vựng tiếng Pháp" };
 
@@ -13,7 +14,7 @@ export default function HocIndex() {
         </p>
       </div>
       <GlobalWordSearch />
-      <CourseCards />
+      <CourseCards grammarIds={grammarIndex().lessons.map((l) => l.id)} />
       <LevelGrid />
     </div>
   );

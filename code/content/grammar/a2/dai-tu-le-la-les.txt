@@ -1,0 +1,76 @@
+=== dai-tu-le-la-les
+sum: Đại từ tân ngữ trực tiếp le (anh ấy, nó – đực), la (cô ấy, nó – cái), les (họ, chúng) thay cho danh từ đứng ngay sau động từ, để khỏi lặp lại. Khác tiếng Việt, chúng đứng TRƯỚC động từ: je le vois. Trước nguyên âm thành l'. Cùng nhóm có me, te, nous, vous: je t'aime.
+form: le · la · l' · les + động từ | Je le vois. · Je l'aime.
+form: me · te · nous · vous + động từ | Il m'appelle. · Je t'aime.
+form: ne + le + động từ + pas · aller + le + nguyên mẫu | Je ne le vois pas. · Je vais le voir.
+cast: maman lucas
+bg: supermarket
+words: le, la, les, me, te
+
+#hook
+maman: Tu prends le lait ? | Con lấy sữa chưa? [thinking]
+lucas: Oui, je le prends ! | Rồi, con lấy rồi! [happy]
+> Cậu bé không nói lại [[le lait]]. Cậu dùng [[le]] thay cho nó, và đặt [[le]] trước động từ.
+
+#meaning
+> Để khỏi lặp lại một danh từ, ta thay nó bằng một đại từ nhỏ. Đại từ chọn theo giống và số của danh từ.
+- Tu vois Paul ? — Oui, je {le|k} vois. | Cậu thấy Paul không? — Có, mình thấy anh ấy. || le = Paul
+- Tu connais Marie ? — Oui, je {la|k} connais. | Cậu biết Marie không? — Có, mình biết cô ấy. || la = Marie
+- Tu aimes les fraises ? — Oui, je {les|k} adore. | Cậu thích dâu không? — Có, mình mê chúng. || les = les fraises
+
+#form
+f: Je + [le] + vois
+> Trong tiếng Việt, “nó” đứng sau động từ: “tôi thấy nó”. Trong tiếng Pháp, đại từ đứng trước động từ: [[je le vois]].
+th: Danh từ | Đại từ | Ví dụ
+tb: giống đực số ít | le | Je le vois.
+tb: giống cái số ít | la | Je la vois.
+tb: trước nguyên âm | l' | Je l'aime.
+tb: số nhiều | les | Je les vois.
+> [[Me]], [[te]], [[nous]], [[vous]] cũng đứng trước động từ: [[il me regarde]], [[je vous écoute]].
+
+#examples
+- Ce livre ? Je {l'ai|k} acheté hier. | Quyển sách này à? Tôi mua nó hôm qua.
+- Tes clés ? Je {les|k} cherche partout ! | Chìa khóa của cậu à? Mình tìm khắp nơi!
+- Je {t'appelle|k} ce soir. | Tối nay mình gọi cho cậu.
+- Le professeur {nous|k} regarde. | Thầy giáo đang nhìn chúng tôi.
+
+#real
+> Phủ định: [[ne]] đứng trước đại từ, [[pas]] đứng sau động từ. Đại từ luôn dính liền với động từ.
+- Je {ne|n} le vois {pas|n}. | Tôi không thấy anh ấy.
+> Khi có hai động từ, đại từ đứng trước động từ mà nó bổ nghĩa, thường là động từ nguyên mẫu.
+- Ce film ? Je vais {le|k} regarder ce soir. | Bộ phim đó à? Tối nay tôi sẽ xem nó.
+
+#pronunciation
+pron: je l'aime | je l'aime | ʒəlɛm
+pron: je les aime | je les‿aime | ʒəlezɛm
+pron: je t'aime | je t'aime | ʒətɛm
+> [[Je l'aime]] và [[je les aime]] chỉ khác nhau ở âm z nối. Nghe kỹ để biết một hay nhiều.
++ Je les aime beaucoup. | Tôi rất quý họ.
+
+#mistakes
+x: Je vois le. => Je le vois. | Tôi thấy anh ấy. >> Đại từ đứng trước động từ, không đứng sau như tiếng Việt.
+x: Je ne vois le pas. => Je ne le vois pas. | Tôi không thấy anh ấy. >> Đại từ dính liền trước động từ, [[ne]] đứng trước cả hai.
+x: Je le vais regarder. => Je vais le regarder. | Tôi sẽ xem nó. >> Đại từ đứng trước động từ nguyên mẫu mà nó bổ nghĩa.
+
+#dialogue
+lucas: Maman, tu as les biscuits ? | Mẹ ơi, mẹ lấy bánh quy chưa? [thinking]
+maman: Non, je ne les vois pas. | Chưa, mẹ không thấy đâu cả. [thinking]
+lucas: Ils sont là ! Je les prends ? | Chúng ở đây này! Con lấy nhé? [happy point]
+maman: D'accord, mais tu vas les partager avec ta sœur ! | Được, nhưng con phải chia cho chị đấy! [happy]
+
+#recall
+? Trả lời “có, mình thấy anh ấy”, dùng đại từ. => Oui, je le vois. | Có, mình thấy anh ấy.
+? Nói bằng tiếng Pháp: Tối nay tôi sẽ xem nó (bộ phim). => Je vais le regarder ce soir. | Tối nay tôi sẽ xem nó.
+
+#recap
+> Tóm lại: [[le]], [[la]], [[l']], [[les]] thay cho danh từ, và đứng trước động từ: [[je le vois]]. Phủ định: [[je ne le vois pas]]. Có hai động từ: [[je vais le voir]].
+
+#practice
+fill: Tu vois Paul ? — Oui, je ___ vois. | le* / la / les || Paul → le.
+fill: Tu connais Marie ? — Oui, je ___ connais. | la* / le / lui || Marie → la.
+fill: Tes clés ? Je ___ cherche partout. | les* / la / le || les clés → les.
+type: Ce livre ? Je ___ adore. | l' || le + nguyên âm → l'.
+fix: Je vois le. | Je le vois.* / Je vois lui. / Le je vois. || Đại từ trước động từ.
+transform: Thay danh từ bằng đại từ: | Je vais regarder ce film. >> Je vais le regarder.* / Je le vais regarder. / Je vais regarder le. || Đại từ trước nguyên mẫu.
+order: Je / ne / le / vois / pas. | Tôi không thấy anh ấy.
+listen: Je les aime beaucoup. | Je les aime beaucoup.* / Je l'aime beaucoup. / Je t'aime beaucoup. || les‿aime: âm z nối.

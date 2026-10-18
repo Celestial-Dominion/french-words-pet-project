@@ -1,0 +1,77 @@
+=== aimer-mao-tu
+sum: Khi nói thích hay ghét một thứ nói chung, tiếng Pháp luôn dùng le, la, les: j'aime le café, elle adore les chats. Sau aimer, adorer, préférer, détester cũng có thể đặt thẳng một động từ nguyên mẫu: j'aime lire.
+form: aimer / adorer / préférer + le, la, les | J'aime le thé.
+form: aimer + động từ nguyên mẫu | J'aime lire.
+form: phủ định vẫn giữ le, la, les | Je n'aime pas le lait.
+cast: chloe hugo
+bg: restaurant
+words: aimer, adorer, préférer, détester
+
+#hook
+hugo: Tu aimes le café ? | Cậu thích cà phê không? [thinking]
+chloe: Non, je préfère le thé. | Không, mình thích trà hơn. [happy shake]
+> Tiếng Việt nói “thích cà phê”, không cần thêm gì. Nhưng tiếng Pháp phải nói [[le café]], [[le thé]].
+
+#meaning
+> Khi nói về một thứ nói chung, cả loại đó, tiếng Pháp dùng mạo từ xác định [[le]], [[la]], [[les]].
+- J'aime {le|k} chocolat. | Tôi thích sô-cô-la. || chocolat nói chung
+- Elle adore {les|k} chats. | Cô ấy mê mèo. || mọi con mèo
+> Ở đây [[les chats]] không phải mấy con mèo cụ thể nào, mà là loài mèo nói chung.
+
+#form
+th: Động từ | Nghĩa | Ví dụ
+tb: aimer | thích, yêu | J'aime le thé.
+tb: adorer | rất thích, mê | J'adore la musique.
+tb: préférer | thích hơn | Je préfère le vin.
+tb: détester | ghét | Je déteste le lait.
+> Bốn động từ này đều đi với [[le]], [[la]], [[les]] khi nói về sở thích.
+> [[Préférer]] có dấu hơi khác khi chia: [[je préfère]], [[nous préférons]].
+
+#examples
+- Mon frère aime {le|k} football. | Anh trai tôi thích bóng đá.
+- Nous adorons {la|k} cuisine française. | Chúng tôi mê món ăn Pháp.
+- Tu préfères {la|k} mer ou {la|k} montagne ? | Cậu thích biển hay núi hơn?
+- Ils n'aiment pas {les|k} légumes. | Họ không thích rau.
+
+#real
+> Sau các động từ này, ta có thể đặt thẳng một động từ nguyên mẫu, không cần thêm gì.
+- J'aime {lire|k}. | Tôi thích đọc sách.
+- Elle adore {danser|k}. | Cô ấy mê nhảy.
+- Je déteste {attendre|k}. | Tôi ghét phải chờ.
+> Và để nói thích vừa phải, thêm [[bien]]: [[j'aime bien le thé]], nghĩa là tôi khá thích trà.
+
+#mistakes
+x: J'aime café. => J'aime le café. | Tôi thích cà phê. >> Danh từ nói chung luôn cần mạo từ: [[le café]].
+x: Je n'aime pas de lait. => Je n'aime pas le lait. | Tôi không thích sữa. >> Luật [[pas de]] không áp dụng ở đây. Sau [[aimer]] phủ định, vẫn giữ [[le]].
+x: J'aime un chat. => J'aime les chats. | Tôi thích mèo. >> Thích cả loài thì dùng [[les]] và số nhiều.
+
+#pronunciation
+pron: j'aime | j'aime | ʒɛm
+pron: j'adore | j'adore | ʒadɔʁ
+pron: tu aimes | tu aimes | ty ɛm
+> [[Je]] gặp nguyên âm thì thành [[j']], đọc liền: [[j'aime]], [[j'adore]].
+> Nhưng [[tu]] không bao giờ mất chữ u: luôn là [[tu aimes]].
++ J'adore la musique. | Tôi mê âm nhạc.
+
+#dialogue
+hugo: Tu aimes la cuisine française ? | Cậu thích món ăn Pháp không? [happy]
+chloe: J'adore ! Surtout le fromage. | Mê luôn! Nhất là phô mai. [happy cheer]
+hugo: Moi, je n'aime pas le fromage. | Mình thì không thích phô mai. [shy shake]
+chloe: Ah bon ? Tu préfères le chocolat ? | Thật à? Cậu thích sô-cô-la hơn à? [surprised]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi thích âm nhạc. => J'aime la musique. | Tôi thích âm nhạc.
+? Nói bằng tiếng Pháp: Cô ấy mê nhảy. => Elle adore danser. | Cô ấy mê nhảy.
+
+#recap
+> Tóm lại: thích hay ghét một thứ nói chung thì dùng [[le]], [[la]], [[les]]: [[j'aime le café]]. Phủ định vẫn giữ mạo từ. Sau [[aimer]] có thể đặt thẳng động từ: [[j'aime lire]].
+
+#practice
+fill: J'aime ___ café. | le* / un / de || Nói chung → le.
+fill: Elle adore ___ chats. | les* / des / de || Cả loài mèo → les.
+fill: Je n'aime pas ___ lait. | le* / de / du || Sau aimer phủ định vẫn giữ le.
+type: Tu ___ la mer ou la montagne ? (préférer) | préfères || tu préfères.
+fix: J'aime café. | J'aime le café.* / J'aime de café. / J'aime un café. || Danh từ nói chung cần le.
+natural: J'aime lire.* / J'aime de lire. || aimer + nguyên mẫu, không cần de.
+order: Nous / adorons / la / cuisine / française. | Chúng tôi mê món ăn Pháp.
+listen: J'adore la musique. | J'adore la musique.* / Je déteste la musique. / J'aime la musique. || Nghe động từ: adore = mê.

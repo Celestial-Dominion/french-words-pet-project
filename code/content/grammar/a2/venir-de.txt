@@ -1,0 +1,73 @@
+=== venir-de
+sum: Venir de + động từ nguyên mẫu nghĩa là “vừa mới” (je viens de manger). Être en train de + nguyên mẫu nghĩa là “đang” (il est en train de lire), nhấn mạnh việc đang diễn ra ngay lúc này. Cùng với aller + nguyên mẫu (sắp), ta có ba mốc: vừa, đang, sắp.
+form: venir (hiện tại) + de + nguyên mẫu | Je viens de manger.
+form: être (hiện tại) + en train de + nguyên mẫu | Il est en train de lire.
+form: vừa · đang · sắp | je viens de partir · je suis en train de partir · je vais partir
+cast: lea papa
+bg: home-day
+words: venir, train
+
+#hook
+papa: Léa, tu as mangé ? | Léa, con ăn chưa? [thinking]
+lea: Oui, je viens de manger. Je suis en train de faire mes devoirs. | Rồi ạ, con vừa ăn xong. Con đang làm bài tập. [happy explain]
+> [[Je viens de manger]] là vừa mới ăn. [[Je suis en train de faire]] là đang làm, ngay lúc này.
+
+#meaning
+> Tiếng Việt có “vừa”, “đang”, “sắp”. Tiếng Pháp diễn tả ba mốc này bằng ba cụm động từ.
+- Je {viens de|k} rentrer. | Tôi vừa mới về. || vừa
+- Je {suis en train de|k} cuisiner. | Tôi đang nấu ăn. || đang
+- Je {vais|k} sortir. | Tôi sắp ra ngoài. || sắp
+
+#form
+f: Je + [viens de] + manger
+> [[Venir]] chia ở hiện tại: [[je viens]], [[tu viens]], [[il vient]], [[nous venons]], [[vous venez]], [[ils viennent]]. Sau đó là [[de]] và động từ nguyên mẫu.
+f: Il + [est en train de] + lire
+> [[Être]] chia ở hiện tại, rồi [[en train de]], rồi nguyên mẫu.
+> Trước nguyên âm, [[de]] thành [[d']]: [[il vient d'arriver]].
+
+#examples
+- Le train {vient de|k} partir. | Tàu vừa mới chạy.
+- Nous {venons d'arriver|k} à Paris. | Chúng tôi vừa đến Paris.
+- Ils {viennent de|k} se marier. | Họ vừa mới cưới.
+- Ne fais pas de bruit, le bébé {est en train de|k} dormir. | Đừng làm ồn, em bé đang ngủ.
+- Tu peux rappeler ? Je {suis en train de|k} conduire. | Cậu gọi lại được không? Mình đang lái xe.
+
+#real
+> Thì hiện tại thường đã đủ nghĩa “đang”. [[Être en train de]] chỉ dùng khi muốn nhấn mạnh: đang bận làm việc đó, ngay bây giờ.
+vs: Je lis. | Tôi đọc sách. || thường, hoặc đang
+vs: Je suis en train de lire. | Tôi đang đọc dở. || nhấn mạnh: đang bận
+> [[Venir de]] thì không thay được bằng thì hiện tại. Nó luôn có nghĩa là “vừa mới xong”.
+
+#pronunciation
+pron: je viens de | je viens de | ʒəvjɛ̃də
+pron: en train de | en train de | ɑ̃tʁɛ̃də
+> [[En train de]] có hai âm mũi liền nhau. Khi nói nhanh: “ăng-trăng-đơ”.
++ Il vient d'arriver. | Anh ấy vừa mới đến.
+
+#mistakes
+x: Je viens manger. => Je viens de manger. | Tôi vừa ăn xong. >> Thiếu [[de]], câu thành “tôi đến để ăn”. “Vừa mới” cần có [[de]].
+x: Je suis en train de mangé. => Je suis en train de manger. | Tôi đang ăn. >> Sau [[en train de]] là nguyên mẫu.
+x: Il vient de arriver. => Il vient d'arriver. | Anh ấy vừa mới đến. >> Trước nguyên âm, [[de]] thành [[d']].
+
+#dialogue
+papa: Et ta sœur ? Elle est où ? | Còn chị con? Chị đâu rồi? [thinking]
+lea: Elle vient de sortir avec ses amis. | Chị vừa đi chơi với bạn rồi ạ. [explain]
+papa: Et ta mère ? | Còn mẹ con? [thinking]
+lea: Elle est en train de téléphoner à mamie. | Mẹ đang gọi điện cho bà ạ. [point]
+
+#recall
+? Nói bằng tiếng Pháp: Tàu vừa mới chạy. => Le train vient de partir. | Tàu vừa mới chạy.
+? Nói bằng tiếng Pháp, nhấn mạnh: Em bé đang ngủ. => Le bébé est en train de dormir. | Em bé đang ngủ.
+
+#recap
+> Tóm lại: [[venir de]] cộng nguyên mẫu là vừa mới. [[Être en train de]] cộng nguyên mẫu là đang, nhấn mạnh. [[Aller]] cộng nguyên mẫu là sắp.
+
+#practice
+fill: Le train ___ de partir. | vient* / va / est || Vừa mới → venir de.
+fill: Nous ___ d'arriver. | venons* / venez / viennent || venir với nous: venons.
+fill: Le bébé est en train ___ dormir. | de* / à / en || en train de.
+type: Il vient ___ arriver. | d' || de + nguyên âm → d'.
+contrast: Je ___ manger, je n'ai plus faim. | viens de* / vais || Đã ăn xong → viens de.
+fix: Je viens manger. | Je viens de manger.* / Je viens à manger. / Je viens mangé. || vừa mới → venir de.
+order: Ils / viennent / de / se / marier. | Họ vừa mới cưới.
+listen: Il vient d'arriver. | Il vient d'arriver.* / Il va arriver. / Il vient arriver. || vient d'arriver: có âm d.

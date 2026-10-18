@@ -1,0 +1,73 @@
+=== il-y-a
+sum: Il y a nghĩa là “có” khi nói một thứ tồn tại ở đâu đó: il y a un parc près d'ici. Il y a không đổi, dù sau nó là một hay nhiều thứ. Phủ định là il n'y a pas de; câu hỏi là est-ce qu'il y a… ?
+form: il y a + un / une / des + danh từ | Il y a un parc ici.
+form: il n'y a pas de + danh từ | Il n'y a pas de bus.
+form: Est-ce qu'il y a… ? · Qu'est-ce qu'il y a ? | Có… không? · Có chuyện gì vậy?
+cast: ines karim
+bg: village
+words: y, avoir
+
+#hook
+ines: Il y a une boulangerie dans le village ? | Trong làng có tiệm bánh mì không? [thinking]
+karim: Oui, il y a une boulangerie et deux cafés. | Có, có một tiệm bánh và hai quán cà phê. [happy point]
+> Muốn nói ở đâu đó “có” cái gì, tiếng Pháp dùng một cụm cố định: [[il y a]].
+
+#meaning
+> [[Il y a]] giới thiệu một thứ đang tồn tại ở một nơi. Nó khác với [[avoir]], là ai đó sở hữu cái gì.
+vs: J'ai un chien. | Tôi có một con chó. || sở hữu → avoir
+vs: Il y a un chien dans le jardin. | Trong vườn có một con chó. || tồn tại → il y a
+> Tiếng Việt dùng chung chữ “có”, nên hãy tự hỏi: có ai sở hữu không, hay chỉ là có mặt ở đó?
+
+#form
+f: [Il y a] + un parc + près d'ici
+> [[Il y a]] luôn giữ nguyên, kể cả khi theo sau là nhiều thứ: [[il y a deux cafés]].
+> Theo sau thường là [[un]], [[une]], [[des]], hoặc một con số.
+
+#examples
+- {Il y a|k} un problème. | Có một vấn đề.
+- {Il y a|k} beaucoup de monde ici. | Ở đây đông người quá.
+- {Il y a|k} trois chambres dans la maison. | Nhà có ba phòng ngủ.
+- Dans mon sac, {il y a|k} un livre et des clés. | Trong túi tôi có một quyển sách và mấy cái chìa khóa.
+
+#real
+> Phủ định dùng [[il n'y a pas de]]. Nhớ luật cũ: sau phủ định, [[un]], [[une]], [[des]] thành [[de]].
+- {Il n'y a pas|n} de bus le dimanche. | Chủ nhật không có xe buýt.
+> Hỏi “có… không” thì thêm [[est-ce que]], hoặc chỉ lên giọng.
+- {Est-ce qu'il y a|q} un hôtel près d'ici ? | Gần đây có khách sạn không?
+- {Qu'est-ce qu'il y a|q} ? Tu es triste ? | Có chuyện gì vậy? Cậu buồn à? || câu cố định
+> [[Qu'est-ce qu'il y a]] là câu hỏi thăm rất hay gặp, nghĩa là “có chuyện gì thế”.
+
+#pronunciation
+pron: il y a | il y a | ilja
+pron: il n'y a pas | il n'y a pas | ilnjapa
+pron: y a | y a | ja
+> [[Il y a]] đọc liền thành “i-li-a”. Khi nói nhanh, người Pháp chỉ còn [[y a]], nghe như “da”.
++ Il n'y a pas de problème. | Không sao đâu.
+
+#mistakes
+x: Il y ont deux cafés. => Il y a deux cafés. | Có hai quán cà phê. >> [[Il y a]] không bao giờ đổi theo số nhiều.
+x: Il n'y a pas des bus. => Il n'y a pas de bus. | Không có xe buýt. >> Sau phủ định, [[des]] thành [[de]].
+x: Dans le village a une église. => Dans le village, il y a une église. | Trong làng có một nhà thờ. >> Không thể bỏ [[il y]]. Cụm này luôn đủ ba chữ.
+
+#dialogue
+karim: Qu'est-ce qu'il y a dans ton sac ? | Trong túi cậu có gì thế? [thinking]
+ines: Il y a des pommes et du pain. | Có mấy quả táo và bánh mì. [happy]
+karim: Il n'y a pas de fromage ? | Không có phô mai à? [surprised]
+ines: Si, il y a aussi un petit fromage ! | Có chứ, còn có một miếng phô mai nhỏ! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Có một vấn đề. => Il y a un problème. | Có một vấn đề.
+? Nói bằng tiếng Pháp: Gần đây có khách sạn không? => Est-ce qu'il y a un hôtel près d'ici ? | Gần đây có khách sạn không?
+
+#recap
+> Tóm lại: [[il y a]] là “có” khi nói một thứ tồn tại ở đâu đó, và luôn giữ nguyên. Phủ định là [[il n'y a pas de]]. Hỏi thăm: [[qu'est-ce qu'il y a]].
+
+#practice
+fill: ___ un parc près d'ici. | Il y a* / Il a / Il est || Tồn tại → il y a.
+fill: Il y ___ deux cafés. | a* / ont / sont || il y a không đổi.
+fill: Il n'y a pas ___ bus. | de* / des / un || Sau phủ định → de.
+contrast: ___ un chien. (je) | J'ai* / Il y a || Sở hữu → avoir.
+fix: Il y ont deux cafés. | Il y a deux cafés.* / Ils y ont deux cafés. / Il y sont deux cafés. || il y a giữ nguyên.
+natural: Qu'est-ce qu'il y a ?* / Qu'est-ce qu'il a y ? || Thứ tự: il y a.
+order: Il / y / a / trois / chambres. | Có ba phòng ngủ.
+listen: Il n'y a pas de problème. | Il n'y a pas de problème.* / Il a un problème. / Il y a un problème. || il n'y a pas = ilnjapa.

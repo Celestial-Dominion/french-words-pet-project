@@ -1,0 +1,74 @@
+=== gioi-tu-vi-tri
+sum: Giới từ chỉ vị trí: sur (trên), sous (dưới), dans (trong), devant (trước), derrière (sau), entre (giữa). Những cụm có de như à côté de (bên cạnh), près de (gần), loin de (xa), en face de (đối diện) gộp với le thành du: à côté du lit.
+form: sur · sous · dans · devant · derrière · entre | sur la table · sous le lit
+form: à côté de · près de · loin de · en face de | à côté de la gare
+form: de + le = du · de + les = des | à côté du lit · près des magasins
+cast: lucas maman
+bg: home-evening
+words: sur, sous, dans, devant, derrière, entre, côté
+
+#hook
+lucas: Maman, où est mon chat ? | Mẹ ơi, con mèo của con đâu? [worried]
+maman: Il est sous le lit, à côté de tes chaussures. | Nó ở dưới gầm giường, cạnh đôi giày của con. [point]
+> [[Sous le lit]], [[à côté de tes chaussures]]: giới từ cho biết vật nằm ở đâu.
+
+#meaning
+th: Giới từ | Nghĩa | Ví dụ
+tb: sur | trên | sur la table
+tb: sous | dưới | sous la table
+tb: dans | trong | dans le sac
+tb: devant | trước | devant la maison
+tb: derrière | sau | derrière la porte
+tb: entre | giữa | entre la gare et le café
+> Sáu giới từ này đứng ngay trước danh từ, như tiếng Việt: [[sur la table]], trên bàn.
+
+#form
+> Một nhóm khác có thêm chữ [[de]] ở cuối.
+- Le café est {à côté de|k} la gare. | Quán cà phê ở cạnh nhà ga.
+- J'habite {près de|k} l'école. | Tôi sống gần trường.
+- La mer est {loin de|k} l'hôtel. | Biển ở xa khách sạn.
+- Mon école est {en face de|k} la maison de Paul. | Trường tôi ở đối diện nhà Paul.
+> Khi chữ [[de]] gặp [[le]], chúng gộp thành [[du]]. Gặp [[les]] thì thành [[des]].
+- Le chat dort {à côté du|k} lit. | Con mèo ngủ cạnh giường. || de + le → du
+
+#examples
+- Le téléphone est {sur|k} la table. | Điện thoại ở trên bàn.
+- Le chien dort {sous|k} la chaise. | Con chó ngủ dưới ghế.
+- Il y a une voiture {devant|k} la maison. | Có một chiếc xe hơi trước nhà.
+- Le jardin est {derrière|k} la maison. | Khu vườn ở sau nhà.
+- Je suis assise {entre|k} Paul et Marie. | Tôi ngồi giữa Paul và Marie.
+
+#pronunciation
+pron: sur | sur | syʁ
+pron: sous | sous | su
+pron: dans | dans | dɑ̃
+> [[Sur]] và [[sous]] rất dễ nhầm. [[Sur]] tròn môi “xuya”, nghĩa là trên. [[Sous]] là “xu”, nghĩa là dưới.
++ Le livre est sous la table. | Quyển sách ở dưới bàn.
+
+#mistakes
+x: Le café est à côté la gare. => Le café est à côté de la gare. | Quán cà phê ở cạnh nhà ga. >> [[À côté]] luôn cần [[de]] theo sau.
+x: Le chat est à côté de le lit. => Le chat est à côté du lit. | Con mèo ở cạnh giường. >> [[De]] cộng [[le]] thành [[du]].
+x: Le téléphone est dans la table. => Le téléphone est sur la table. | Điện thoại ở trên bàn. >> Đặt lên mặt bàn là [[sur]]. [[Dans]] là bên trong.
+
+#dialogue
+lucas: Et mon livre ? Il n'est pas dans mon sac ! | Còn quyển sách của con? Nó không có trong cặp! [worried]
+maman: Regarde sur ton bureau, près de la fenêtre. | Con xem trên bàn học, gần cửa sổ ấy. [explain]
+lucas: Non, il n'est pas là… | Không, không có ở đó… [sad]
+maman: Ah, il est derrière toi, sur la chaise ! | À, nó ở sau lưng con, trên ghế kìa! [happy point]
+
+#recall
+? Nói bằng tiếng Pháp: Điện thoại ở trên bàn. => Le téléphone est sur la table. | Điện thoại ở trên bàn.
+? Nói bằng tiếng Pháp: Con mèo ngủ cạnh giường. => Le chat dort à côté du lit. | Con mèo ngủ cạnh giường.
+
+#recap
+> Tóm lại: [[sur]] trên, [[sous]] dưới, [[dans]] trong, [[devant]] trước, [[derrière]] sau, [[entre]] giữa. [[À côté de]], [[près de]], [[loin de]] gộp với [[le]] thành [[du]].
+
+#practice
+fill: Le téléphone est ___ la table. | sur* / sous / dans || Trên mặt bàn → sur.
+fill: Le chien dort ___ la chaise. | sous* / sur / entre || Dưới ghế → sous.
+fill: Le café est à côté ___ la gare. | de* / du / à || à côté de + la.
+fill: Le chat dort à côté ___ lit. | du* / de le / de || de + le → du.
+type: Le jardin est ___ la maison. (sau) | derrière || Sau → derrière.
+fix: Le café est à côté la gare. | Le café est à côté de la gare.* / Le café est à côté à la gare. / Le café est côté de la gare. || à côté de.
+order: J'habite / près / de / l'école. | Tôi sống gần trường.
+listen: Le livre est sous la table. | Le livre est sous la table.* / Le livre est sur la table. / Le livre est dans la table. || sous = su (dưới).

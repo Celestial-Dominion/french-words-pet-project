@@ -43,3 +43,11 @@ next-env.d.ts
 # scripts/deploy.sh: kế hoạch + danh sách file đổi, log debug firebase-tools
 /scripts/.deploy-*.txt
 /firebase-debug*.log
+
+# ngữ pháp: cache TTS từng mảnh, mốc thời gian audio (sinh lại bằng npm run grammar:build), checkpoint sản xuất
+/scripts/.grammar-tts-cache/
+/scripts/.grammar-audio/
+/scripts/out/grammar-audio.json
+/.french-grammar-state.json
+/scripts/.venv/
+/.grammar-progress.md

@@ -1,0 +1,73 @@
+=== dai-tu-en
+sum: Đại từ en thay cho một danh từ có du, de la, des hoặc de đi trước, nghĩa là “một ít, (một vài) cái đó”. Khi có con số hay từ chỉ lượng, giữ lại con số ở cuối câu: j'en ai deux, il en veut beaucoup. En đứng trước động từ.
+form: en = du / de la / des / de + danh từ | Tu veux du pain ? — Oui, j'en veux.
+form: en + động từ + số / lượng | J'ai trois frères. → J'en ai trois.
+form: ne + en + động từ + pas | Je n'en veux pas.
+cast: papi lucas
+bg: kitchen
+words: en, beaucoup, peu
+
+#hook
+papi: Tu veux des cerises ? | Cháu ăn anh đào không? [happy]
+lucas: Oui, j'en veux beaucoup ! | Có ạ, cháu muốn nhiều cơ! [happy cheer]
+> [[J'en veux]]: [[en]] thay cho [[des cerises]]. Cậu bé không cần nhắc lại cả cụm.
+
+#meaning
+> [[En]] thay cho một danh từ mang nghĩa “một ít” hay “một số”: những cụm có [[du]], [[de la]], [[des]].
+- Tu bois du café ? — Oui, j'{en|k} bois. | Cậu uống cà phê không? — Có, mình có uống.
+- Il y a de la soupe ? — Oui, il {en|k} reste. | Còn súp không? — Còn, vẫn còn một ít.
+> [[Le]], [[la]], [[les]] thay cho một vật xác định. [[En]] thay cho một lượng không xác định.
+
+#form
+f: J' + [en] + ai + trois
+> Khi có con số hay từ chỉ lượng, [[en]] thay cho danh từ, còn con số vẫn ở lại cuối câu.
+- Tu as des frères ? — Oui, j'{en|k} ai deux. | Cậu có anh em trai không? — Có, mình có hai.
+- Vous voulez des pommes ? — J'{en|k} voudrais un kilo. | Ông muốn táo không? — Tôi muốn một ký.
+> Phủ định: [[je n'en ai pas]], [[je n'en veux pas]].
+
+#examples
+- Des enfants ? Ils {en|k} ont trois. | Con cái à? Họ có ba đứa.
+- Du sucre ? Non merci, je n'{en|k} prends pas. | Đường à? Không, cảm ơn, tôi không dùng.
+- Combien de livres tu as ? — J'{en|k} ai beaucoup ! | Cậu có bao nhiêu sách? — Mình có nhiều lắm!
+- Elle mange des légumes ? — Oui, elle {en|k} mange tous les jours. | Cô ấy có ăn rau không? — Có, ngày nào cô ấy cũng ăn.
+
+#real
+> [[En]] cũng thay cho [[de]] cộng nơi chốn, nghĩa là “từ đó”.
+- Tu viens de la boulangerie ? — Oui, j'{en|k} viens. | Cậu từ tiệm bánh về à? — Ừ, mình vừa ở đó về.
+> Và câu cửa miệng [[il y en a]], nghĩa là “có”, khi đã biết đang nói về thứ gì.
+- Du pain ? Il y {en|k} a dans la cuisine. | Bánh mì à? Có trong bếp đấy.
+
+#pronunciation
+pron: j'en ai | j'en‿ai | ʒɑ̃ne
+pron: il y en a | il y en‿a | iljɑ̃na
+pron: je n'en veux pas | je n'en veux pas | ʒənɑ̃vøpa
+> [[En]] là âm mũi. Trước nguyên âm, nó nối âm n: [[j'en ai]] đọc “giăng-nê”.
++ Il y en a dans la cuisine. | Có trong bếp đấy.
+
+#mistakes
+x: J'ai deux. => J'en ai deux. | Tôi có hai cái. >> Khi bỏ danh từ mà giữ con số, phải thêm [[en]].
+x: Tu veux du café ? — Oui, je le veux. => Tu veux du café ? — Oui, j'en veux. | Cậu muốn cà phê không? — Có, mình muốn. >> [[Du café]] là một ít, nên dùng [[en]], không dùng [[le]].
+x: Je ne veux pas en. => Je n'en veux pas. | Tôi không muốn. >> [[En]] đứng trước động từ, sau [[ne]].
+
+#dialogue
+lucas: Papi, il reste des gâteaux ? | Ông ơi, còn bánh không ạ? [thinking]
+papi: Oui, il y en a deux dans la boîte. | Còn, có hai cái trong hộp. [explain]
+lucas: Je peux en prendre un ? | Cháu lấy một cái được không ạ? [shy]
+papi: Prends-en deux, un pour toi et un pour ta sœur ! | Lấy cả hai đi, một cho cháu và một cho chị! [happy]
+
+#recall
+? Trả lời “có, mình có hai”, dùng en. => Oui, j'en ai deux. | Có, mình có hai.
+? Nói bằng tiếng Pháp: Tôi không muốn (cái đó). => Je n'en veux pas. | Tôi không muốn.
+
+#recap
+> Tóm lại: [[en]] thay cho danh từ có [[du]], [[de la]], [[des]], [[de]]. Con số hay từ chỉ lượng vẫn ở lại: [[j'en ai deux]]. Phủ định: [[je n'en veux pas]]. Hay gặp: [[il y en a]].
+
+#practice
+fill: Tu veux du pain ? — Oui, j'___ veux. | en* / le / y || du pain → en.
+fill: Tu as des frères ? — Oui, j'en ai ___ . | deux* / des / les || Giữ con số.
+fill: Tu veux ce livre ? — Oui, je ___ veux. | le* / en / y || Vật xác định → le.
+contrast: Du sucre ? Non merci, je n'___ prends pas. | en* / le || Một ít → en.
+fix: J'ai deux. | J'en ai deux.* / Je les ai deux. / J'y ai deux. || Giữ số thì cần en.
+transform: Thay danh từ bằng en: | Ils ont trois enfants. >> Ils en ont trois.* / Ils les ont trois. / Ils ont en trois. || en + động từ + số.
+order: Je / n'en / veux / pas. | Tôi không muốn.
+listen: Il y en a dans la cuisine. | Il y en a dans la cuisine.* / Il y a dans la cuisine. / Il en a dans la cuisine. || il y en‿a = iljɑ̃na.

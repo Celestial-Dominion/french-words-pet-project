@@ -7,7 +7,6 @@ import { Volume2, BookOpenCheck, ChevronRight, Search } from "lucide-react";
 import { loadWordLevels, loadWords, loadExamplesForWords, loadPhonics, type ExampleSentence } from "@/lib/data";
 import { getCourseDone } from "@/lib/progress-local";
 import { onSyncMerged } from "@/lib/sync";
-import { GRAMMAR_LESSONS } from "@/app/ngu-phap/lessons";
 import { toSearch } from "@/lib/slug";
 import { levelMeta } from "@/lib/levels";
 import type { Word } from "@/lib/types";
@@ -96,14 +95,14 @@ export function GlobalWordSearch() {
   );
 }
 
-export function CourseCards() {
+export function CourseCards({ grammarIds }: { grammarIds: string[] }) {
   const [phonics, setPhonics] = useState<{ done: number; total: number } | null>(null);
   const [grammar, setGrammar] = useState<{ done: number; total: number } | null>(null);
 
   useEffect(() => {
     const load = () => {
       const g = getCourseDone("grammar");
-      setGrammar({ done: GRAMMAR_LESSONS.filter((l) => g.has(l.id)).length, total: GRAMMAR_LESSONS.length });
+      setGrammar({ done: grammarIds.filter((id) => g.has(id)).length, total: grammarIds.length });
       loadPhonics().then((lessons) => {
         const p = getCourseDone("phonics");
         setPhonics({ done: lessons.filter((l) => p.has(l.id)).length, total: lessons.length });
@@ -113,7 +112,7 @@ export function CourseCards() {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     load();
     return onSyncMerged(load);
-  }, []);
+  }, [grammarIds]);
 
   return (
     <div className="grid gap-3 sm:grid-cols-2">
@@ -129,8 +128,8 @@ export function CourseCards() {
         href="/ngu-phap"
         icon={<BookOpenCheck className="size-5" />}
         tint="bg-teal-500/15 text-teal-600 dark:text-teal-400"
-        title="Khóa ngữ pháp vỡ lòng"
-        desc="11 bài nền tảng: giống, mạo từ, chia động từ…"
+        title="Ngữ pháp có video"
+        desc={`${grammarIds.length} bài video giảng giải — bảng minh hoạ, hội thoại, luyện tập`}
         progress={grammar}
       />
     </div>

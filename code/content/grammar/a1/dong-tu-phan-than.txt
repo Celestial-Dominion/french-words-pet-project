@@ -1,0 +1,79 @@
+=== dong-tu-phan-than
+sum: Động từ phản thân có thêm một đại từ chỉ chính chủ ngữ: je me lève (tôi tự dậy), il s'appelle (anh ấy tên là). Đại từ đổi theo chủ ngữ: me, te, se, nous, vous, se; trước nguyên âm thành m', t', s'. Rất hay dùng cho việc hằng ngày: se réveiller, se lever, s'habiller, se coucher.
+form: me · te · se | je me lève · tu te lèves · il se lève
+form: nous · vous · se | nous nous levons · vous vous levez · ils se lèvent
+form: m' · t' · s' + nguyên âm · ne + me + động từ + pas | il s'appelle · je ne me lève pas
+cast: maman tom
+bg: home-day
+words: lever, coucher, réveiller, appeler
+
+#hook
+maman: Tom, lève-toi ! Il est sept heures ! | Tom, dậy đi con! Bảy giờ rồi! [angry point]
+tom: Oui, maman, je me lève… | Vâng mẹ ơi, con dậy đây… [tired]
+> Cậu bé nói [[je me lève]], có thêm chữ [[me]]. Chữ này cho biết cậu tự làm việc đó cho chính mình.
+
+#meaning
+> Động từ phản thân là khi chủ ngữ tự làm hành động lên chính mình.
+vs: Je lève la main. | Tôi giơ tay lên. || nâng một vật
+vs: Je me lève. | Tôi thức dậy. || tự nâng mình
+> Tiếng Việt không có chữ này, nên người Việt hay quên [[me]], [[te]], [[se]].
+
+#form
+th: Chủ ngữ | Đại từ | se lever
+tb: je | me | je me lève
+tb: tu | te | tu te lèves
+tb: il · elle · on | se | il se lève
+tb: nous | nous | nous nous levons
+tb: vous | vous | vous vous levez
+tb: ils · elles | se | ils se lèvent
+> Đại từ đứng ngay trước động từ, và đổi theo chủ ngữ.
+> Trước nguyên âm hoặc h câm, [[me]], [[te]], [[se]] thành [[m']], [[t']], [[s']].
+
+#examples
+- Je {m'appelle|k} Nam. | Tôi tên là Nam.
+- Comment tu {t'appelles|k} ? | Cậu tên là gì?
+- Elle {se réveille|k} à six heures. | Cô ấy thức dậy lúc sáu giờ.
+- Nous {nous couchons|k} tard le samedi. | Thứ bảy chúng tôi đi ngủ muộn.
+- Les enfants {s'habillent|k} vite. | Bọn trẻ mặc quần áo nhanh.
+
+#real
+> Một ngày bình thường của người Pháp được kể bằng động từ phản thân.
+- Le matin, je {me réveille|k}, je {me lève|k} et je {m'habille|k}. | Buổi sáng, tôi thức dậy, rời giường và mặc quần áo.
+> Phủ định: đại từ dính liền với động từ, [[ne]] đứng trước cả hai.
+- Le dimanche, je {ne|n} me lève {pas|n} tôt. | Chủ nhật tôi không dậy sớm.
+
+#pronunciation
+pron: je m'appelle | je m'appelle | ʒəmapɛl
+pron: il s'appelle | il s'appelle | ilsapɛl
+pron: je me lève | je me lève | ʒəmlɛv
+> [[Je m'appelle]] là câu đầu tiên ai cũng học. Đọc liền: “giơ-ma-pen”.
+> Khi nói nhanh, chữ e của [[me]] gần như biến mất: [[je me lève]].
++ Il s'appelle Hugo. | Anh ấy tên là Hugo.
+
+#mistakes
+x: Je lève à sept heures. => Je me lève à sept heures. | Tôi dậy lúc bảy giờ. >> Thức dậy là tự mình làm, cần [[me]].
+x: Il se appelle Paul. => Il s'appelle Paul. | Anh ấy tên là Paul. >> Trước nguyên âm, [[se]] thành [[s']].
+x: Je ne lève me pas. => Je ne me lève pas. | Tôi không dậy. >> [[Me]] luôn dính liền trước động từ, [[ne]] đứng trước cả hai.
+
+#dialogue
+tom: Maman, je me couche à quelle heure ce soir ? | Mẹ ơi, tối nay con đi ngủ lúc mấy giờ? [thinking]
+maman: À neuf heures, comme toujours. | Chín giờ, như mọi khi. [explain]
+tom: Et demain, on se lève tôt ? | Thế mai mình có dậy sớm không ạ? [worried]
+maman: Non, demain c'est dimanche ! | Không, mai là chủ nhật mà! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Cậu tên là gì? => Comment tu t'appelles ? | Cậu tên là gì?
+? Nói bằng tiếng Pháp: Cô ấy thức dậy lúc sáu giờ. => Elle se réveille à six heures. | Cô ấy thức dậy lúc sáu giờ.
+
+#recap
+> Tóm lại: động từ phản thân có thêm [[me]], [[te]], [[se]], [[nous]], [[vous]], [[se]] trước động từ. Trước nguyên âm thành [[m']], [[t']], [[s']]. Phủ định: [[je ne me lève pas]].
+
+#practice
+fill: Je ___ lève à sept heures. | me* / se / te || je → me.
+fill: Comment tu ___ appelles ? | t'* / te / s' || tu + nguyên âm → t'.
+fill: Nous ___ couchons tard. | nous* / se / vous || nous → nous.
+type: Il ___ Hugo. (s'appeler) | s'appelle || il s'appelle.
+fix: Je ne lève me pas. | Je ne me lève pas.* / Je me ne lève pas. / Je ne lève pas me. || ne + me + động từ + pas.
+natural: Je me lève à sept heures.* / Je lève à sept heures. || Thức dậy: se lever.
+order: Les / enfants / s'habillent / vite. | Bọn trẻ mặc quần áo nhanh.
+listen: Il s'appelle Hugo. | Il s'appelle Hugo.* / Je m'appelle Hugo. / Tu t'appelles Hugo. || s'appelle = sapɛl.
