@@ -10,7 +10,11 @@
 //   scripts/out/audio-readings.json     câu bài đọc + câu hỏi/phương án CHƯA có MP3 (public/audio/sentences/hashLong(fr).mp3)
 //                                       cho build-audio.py
 // Chạy check-content trước; còn lỗi thì dừng (--draft: chưa bắt buộc câu hỏi).
-import { writeFileSync, mkdirSync, readdirSync, existsSync, rmSync } from "node:fs";
+//
+// ONLY=c1[,c2] — dựng riêng các cấp này (hai phiên viết song song nhiều cấp): chỉ lỗi của cấp đó chặn; chỉ ghi
+// {readings,stories}/{cấp}.json + quiz của cấp đó; trong *-index.json chỉ thay mục của cấp đó (giữ cấp khác như
+// đang có); audio thiếu của cấp đó → scripts/out/audio-only-{cấp}.json (không đụng audio-readings.json).
+import { writeFileSync, mkdirSync, readdirSync, existsSync, rmSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { runChecks } from "./check-content.mjs";
 import { ROOT, profileOf } from "./lib/content-model.mjs";
@@ -20,10 +24,19 @@ import { hashLong } from "../lib/slug.ts";
 
 const DRAFT = process.argv.includes("--draft");
 const DATA = join(ROOT, "public", "data");
-const { items, report, libErr, quiz } = runChecks({ draft: DRAFT });
+const ONLY = (process.env.ONLY ?? "").split(",").filter(Boolean);
+for (const k of ONLY) if (!LEVEL_KEYS.includes(k)) throw new Error(`ONLY: cấp lạ "${k}" (${LEVEL_KEYS.join(",")})`);
+const all = runChecks({ draft: DRAFT });
+const { report, libErr, quiz } = all;
+const lvOf = new Map(all.items.map((m) => [m.id, m.level]));
+const lvGuess = (s) => s.match(/(?:^|[-/])(a1|a2|b1|b2|c1|c2)[-/]/)?.[1];
+const inScope = (lv) => !ONLY.length || ONLY.includes(lv);
+const idInScope = (id) => inScope(lvOf.get(id.split("#")[0]) ?? lvGuess(id));
+const items = all.items.filter((m) => inScope(m.level));
+const quizBlocks = [...quiz.blocks].filter(([k]) => idInScope(k));
 
-const errs = [...libErr];
-for (const [id, r] of report) for (const e of r.e) errs.push(`${id}: ${e}`);
+const errs = libErr.filter((e) => !ONLY.length || ONLY.some((lv) => new RegExp(`(?:^|[-/ ])${lv}[-/]`).test(e)));
+for (const [id, r] of report) if (idInScope(id)) for (const e of r.e) errs.push(`${id}: ${e}`);
 if (errs.length) {
   console.log(errs.slice(0, 40).join("\n"));
   console.log(`\n✗ ${errs.length} lỗi — sửa rồi chạy lại (xem: node scripts/check-content.mjs --errors)`);
@@ -118,26 +131,37 @@ for (const m of items.filter((x) => x.type === "reading")) {
   });
 }
 
+// ONLY: giữ nguyên mục của cấp khác trong chỉ mục đang có, chỉ thay mục của cấp đang dựng
+const keepOthers = (name, fresh) => {
+  if (!ONLY.length) return fresh;
+  const p = join(DATA, name);
+  const old = existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : [];
+  return [...old.filter((x) => !inScope(LEVEL_KEYS[x.level - 1])), ...fresh];
+};
 for (const [lv, docs] of byLevel) {
+  if (!inScope(lv)) continue;
   const p = join(DATA, "readings", `${lv}.json`);
   if (docs.length) writeFileSync(p, JSON.stringify(docs));
   else if (existsSync(p)) rmSync(p);
 }
-index.sort((a, b) => a.level - b.level); // giữ thứ tự viết trong cấp (sort ổn định)
-writeFileSync(join(DATA, "readings-index.json"), JSON.stringify(index));
+const rIndex = keepOthers("readings-index.json", index).sort((a, b) => a.level - b.level); // giữ thứ tự viết trong cấp (sort ổn định)
+writeFileSync(join(DATA, "readings-index.json"), JSON.stringify(rIndex));
 for (const [lv, docs] of storiesByLevel) {
+  if (!inScope(lv)) continue;
   const p = join(DATA, "stories", `${lv}.json`);
   if (docs.length) writeFileSync(p, JSON.stringify(docs));
   else if (existsSync(p)) rmSync(p);
 }
-sIndex.sort((a, b) => a.level - b.level);
-writeFileSync(join(DATA, "stories-index.json"), JSON.stringify(sIndex));
+const stIndex = keepOthers("stories-index.json", sIndex).sort((a, b) => a.level - b.level);
+writeFileSync(join(DATA, "stories-index.json"), JSON.stringify(stIndex));
 let pruned = 0;
-for (const f of readdirSync(join(DATA, "quiz")))
-  if (!quizIds.has(f.replace(/\.json$/, ""))) {
+for (const f of readdirSync(join(DATA, "quiz"))) {
+  const id = f.replace(/\.json$/, "");
+  if (!quizIds.has(id) && idInScope(id)) {
     rmSync(join(DATA, "quiz", f));
     pruned++;
   }
+}
 
 // audio từng câu còn thiếu: câu bài đọc, rồi câu hỏi + phương án (nút loa trong components/quiz.tsx)
 const AUDIO = join(ROOT, "public", "audio", "sentences");
@@ -152,11 +176,13 @@ const need = (fr, isQuiz) => {
   if (!existsSync(join(AUDIO, file))) todo.push({ text: fr, file });
 };
 for (const m of items) for (const s of m.sentences) need(s.fr, false);
-for (const b of quiz.blocks.values()) for (const q of b.questions) for (const fr of [q.q.fr, ...q.opts.map((o) => o.fr)]) need(fr, true);
+for (const [, b] of quizBlocks) for (const q of b.questions) for (const fr of [q.q.fr, ...q.opts.map((o) => o.fr)]) need(fr, true);
 mkdirSync(join(ROOT, "scripts", "out"), { recursive: true });
-writeFileSync(join(ROOT, "scripts", "out", "audio-readings.json"), JSON.stringify(todo));
+const audioOut = ONLY.length ? `audio-only-${ONLY.join("-")}.json` : "audio-readings.json";
+writeFileSync(join(ROOT, "scripts", "out", audioOut), JSON.stringify(todo));
 
 const per = (map) => LEVEL_KEYS.map((k) => `${k.toUpperCase()} ${map.get(k).length}`).join(" · ");
+if (ONLY.length) console.log(`ONLY=${ONLY.join(",")}: chỉ dựng cấp này, cấp khác giữ nguyên`);
 console.log(`bài đọc: ${index.length} (${per(byLevel)}) · truyện: ${sIndex.length} (${per(storiesByLevel)}) · câu hỏi: ${quizIds.size} bài/truyện${pruned ? ` · xoá ${pruned} file câu hỏi cũ` : ""}`);
 console.log(`audio câu hỏi + phương án: ${nQuizAudio} câu (không tính câu trùng)`);
-console.log(`audio thiếu: ${todo.length} câu → scripts/out/audio-readings.json${todo.length ? "\n  chạy: cd scripts && CONC=48 ~/code/english_words/code/scripts/.venv-tts/bin/python build-audio.py out/audio-readings.json ../public/audio/sentences" : ""}`);
+console.log(`audio thiếu: ${todo.length} câu → scripts/out/${audioOut}${todo.length ? `\n  chạy: cd scripts && CONC=48 <venv edge-tts ≥7.3.1>/bin/python build-audio.py out/${audioOut} ../public/audio/sentences` : ""}`);
