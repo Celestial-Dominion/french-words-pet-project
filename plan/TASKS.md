@@ -29,7 +29,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | Mã | Việc | Loại | Khối lượng | Ước tính % tuần | Trạng thái |
 |---|---|---|---|---|---|
 | X-skip | Port "bắt đầu từ A1 / bỏ qua cấp" trong Cài đặt | tùy chọn | code nhỏ | ~0,5–1% | chưa làm |
-| P-A1 | A1 — nâng độ phủ từ | **bắt buộc** | ~25 bài đọc ngắn (3 lô) | ~1% | đang làm: lô 01 xong (thiếu 226→135) |
+| P-A1 | A1 — nâng độ phủ từ | **bắt buộc** | ~25 bài đọc ngắn (3 lô) | ~1% | đang làm: lô 02 xong (thiếu 226→56) |
 | P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | chưa làm (giỏ lô 08 có sẵn) |
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | chưa làm |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
@@ -58,6 +58,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
   thư, hội thoại. Từ tục trong giỏ (foutre, gueule, mec) thì bỏ qua.
 - **Nhật ký:**
   - 20/10 lô 01: 10 bài (a1-p01, 3–4 câu hỏi/bài, audio đủ), giỏ 87/90; ≥1 93,6→97,1 · ≥3 74,2→80,2 · ≥5 64,0→65,4 ✓; thiếu 226→135; 5 giờ 25% · tuần 4%; 4ec0fac
+  - 20/10 lô 02: 10 bài (a1-p02, 3 câu hỏi/bài, audio đủ), giỏ 86/90 (bỏ gueule foutre mec flic); ≥1 97,1→97,5 · ≥3 80,2→83,3 · ≥5 65,4→65,5 ✓; thiếu 135→56; 5 giờ 26% · tuần 4%; COMMIT
 
 ## P-C1 — Độ phủ từ C1 [ ]
 
