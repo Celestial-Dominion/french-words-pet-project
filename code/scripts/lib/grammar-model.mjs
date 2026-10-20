@@ -11,6 +11,7 @@ import { listGrammarSources, loadGrammarSource, splitEnVi, splitTail, splitAnn, 
 import { loadVocab, profile, bandOfKey, LEVEL_LABEL } from "./fr-vocab.mjs";
 import { ipaOf, HETERONYMS } from "./fr-ipa.mjs";
 import { SPEC as CSPEC } from "./content-spec.mjs";
+import { readLibrary } from "./library-data.mjs";
 import { RATE, VOICES } from "./grammar-spec.mjs";
 import { lineTokens, EXPRESSIONS, GESTURES, parseBubble } from "../../lib/video.ts";
 import { BACKGROUND_IDS, PROP_IDS, BUBBLE_IDS, LOOK_IDS } from "../../lib/video-assets.ts";
@@ -976,13 +977,14 @@ let CORPUS = null;
 export function corpus() {
   if (CORPUS) return CORPUS;
   const out = [];
-  const DATA = join(ROOT, "public", "data");
-  const read = (p) => (existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : null);
+  const readings = readLibrary("readings");
+  const stories = readLibrary("stories");
+  const ofLevel = (list, lv) => list.filter((x) => x.doc && LEVELS[x.meta.level - 1] === lv).map((x) => x.doc);
   for (const lv of LEVELS) {
     const band = bandOfKey(lv);
-    for (const r of read(join(DATA, "readings", `${lv}.json`)) ?? [])
+    for (const r of ofLevel(readings, lv))
       for (const s of r.sentences ?? []) out.push({ type: "reading", id: r.id, level: lv, band, title: r.title_fr, en: s.fr, focus: 0 });
-    for (const r of read(join(DATA, "stories", `${lv}.json`)) ?? [])
+    for (const r of ofLevel(stories, lv))
       for (const ch of r.chapters ?? []) for (const s of ch.sentences ?? []) out.push({ type: "story", id: r.id, level: lv, band, title: r.title_fr, en: s.fr, focus: 0 });
   }
   CORPUS = out;

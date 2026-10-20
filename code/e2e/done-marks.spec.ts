@@ -114,7 +114,7 @@ test("truyện: câu hỏi chương 1 không đổi trạng thái, chương cu�
 
 test("thẻ từ: 'Gặp lại trong ngữ cảnh' tra chỉ mục word-refs, không tải chữ cả kho bài", async ({ page }) => {
   await freshStart(page, "/bai-doc/a1/a1-01");
-  await expect(page.getByRole("heading", { name: "La famille de Marie" })).toBeVisible(); // trang bài đã tải xong a1.json
+  await expect(page.getByRole("heading", { name: "La famille de Marie" })).toBeVisible(); // trang bài đã tải xong (file a1-01.json)
   const urls: string[] = [];
   page.on("request", (r) => urls.push(new URL(r.url()).pathname));
   await page.getByRole("button", { name: "famille", exact: true }).first().click();

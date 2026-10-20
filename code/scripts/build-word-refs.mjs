@@ -1,34 +1,31 @@
 // Dựng chỉ mục từ → học liệu public/data/word-refs/{0..15}.json (định dạng + cách chọn bài: lib/word-refs.ts).
 //   node scripts/build-word-refs.mjs        (build-content.mjs tự gọi sau khi ghi dữ liệu bài)
-// Đọc ĐÚNG dữ liệu app đang phát hành (readings|stories-index.json + readings|stories/{cấp}.json) nên chạy riêng được
+// Đọc ĐÚNG dữ liệu app đang phát hành (readings|stories-index.json + readings|stories/{id}.json) nên chạy riêng được
 // mà không dựng lại bài (an toàn khi phiên khác đang viết dở nội dung), kể cả sau `ONLY=c1 build-content`.
 // Tách từ / quy về lemma bằng chính bộ kiểm học liệu (scripts/lib/fr-vocab.mjs) — chỉ giữ lemma có trong bộ từ của app;
 // tên riêng lấy từ khai `names:` trong content/ để "Marie" đầu câu không thành "marier".
-import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { ROOT, loadLibrary } from "./lib/content-model.mjs";
+import { loadLibrary } from "./lib/content-model.mjs";
+import { DATA, readLibrary } from "./lib/library-data.mjs";
 import { loadVocab, profile } from "./lib/fr-vocab.mjs";
 import { WORD_REF_SHARDS, pickRefs, wordRefKey, wordRefShardOf } from "../lib/word-refs.ts";
 
-const DATA = join(ROOT, "public", "data");
 const OUT = join(DATA, "word-refs");
-const readJson = (p) => JSON.parse(readFileSync(p, "utf8"));
 
 /** items (tuỳ chọn) = mục content/ đã nạp sẵn (build-content truyền vào để khỏi đọc lại) — chỉ dùng lấy tên riêng. */
 export function buildWordRefs({ items } = {}) {
   const t0 = Date.now();
   const { band } = loadVocab();
   const names = new Map((items ?? loadLibrary().items).map((m) => [m.id, m.names]));
-  const rIndex = readJson(join(DATA, "readings-index.json"));
-  const sIndex = readJson(join(DATA, "stories-index.json"));
-  const docs = new Map();
-  for (const dir of ["readings", "stories"])
-    for (const f of readdirSync(join(DATA, dir)).filter((x) => x.endsWith(".json"))) for (const d of readJson(join(DATA, dir, f))) docs.set(d.id, d);
+  const readings = readLibrary("readings");
+  const stories = readLibrary("stories");
+  const rIndex = readings.map((x) => x.meta);
+  const sIndex = stories.map((x) => x.meta);
 
   const refs = new Map(); // lemma → [{code, level, count}]
   let missing = 0;
-  const add = (meta, code) => {
-    const d = docs.get(meta.id);
+  const add = ({ meta, doc: d }, code) => {
     if (!d) return void missing++;
     const sentences = (d.chapters ? d.chapters.flatMap((c) => c.sentences) : d.sentences).map((s) => s.fr);
     for (const [lemma, count] of profile(sentences, { names: names.get(meta.id) }).counts) {
@@ -38,8 +35,8 @@ export function buildWordRefs({ items } = {}) {
       list.push({ code, level: meta.level, count });
     }
   };
-  rIndex.forEach((m, i) => add(m, `r${i}`));
-  sIndex.forEach((m, i) => add(m, `s${i}`));
+  readings.forEach((x, i) => add(x, `r${i}`));
+  stories.forEach((x, i) => add(x, `s${i}`));
 
   const k = wordRefKey(
     rIndex.map((m) => m.id),

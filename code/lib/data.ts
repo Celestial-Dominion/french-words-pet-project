@@ -1,6 +1,7 @@
 // Truy cập dữ liệu tĩnh trong public/data.
 import type { Word, Conjugation, WordIndex } from "./types";
 import { levelSlug } from "./levels";
+import { libraryDocPath, type LibraryDir } from "./library-files";
 
 // Base path để fetch chạy cả khi deploy dưới sub-path (F7). Rỗng ở local.
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -237,16 +238,20 @@ export async function loadReadingsIndex(): Promise<ReadingMeta[]> {
   return readingsIndexCache;
 }
 
-const readingsByLevel = new Map<number, ReadingDoc[]>();
-export async function loadReadings(level: number): Promise<ReadingDoc[]> {
-  let r = readingsByLevel.get(level);
-  if (!r) {
-    const res = await fetch(`${BASE}/data/readings/${levelSlug(level)}.json`);
-    r = res.ok ? ((await res.json()) as ReadingDoc[]) : [];
-    readingsByLevel.set(level, r);
+// Chữ một bài / một truyện = một file (lib/library-files.ts): trang bài chỉ tải đúng bài đang mở. null = không có bài;
+// lỗi mạng thì bỏ khỏi cache để lần sau thử lại.
+const libraryDocs = new Map<string, Promise<unknown>>();
+function loadLibraryDoc<T>(dir: LibraryDir, id: string): Promise<T | null> {
+  const url = BASE + libraryDocPath(dir, id);
+  let p = libraryDocs.get(url) as Promise<T | null> | undefined;
+  if (!p) {
+    p = fetch(url).then((res) => (res.ok ? (res.json() as Promise<T>) : null));
+    p.catch(() => libraryDocs.delete(url));
+    libraryDocs.set(url, p);
   }
-  return r;
+  return p;
 }
+export const loadReading = (id: string) => loadLibraryDoc<ReadingDoc>("readings", id);
 
 // ---- Truyện nhiều chương ----
 export interface StoryChapterDoc {
@@ -284,13 +289,4 @@ export async function loadStoriesIndex(): Promise<StoryMetaDoc[]> {
   return storiesIndexCache;
 }
 
-const storiesByLevel = new Map<number, StoryDoc[]>();
-export async function loadStories(level: number): Promise<StoryDoc[]> {
-  let r = storiesByLevel.get(level);
-  if (!r) {
-    const res = await fetch(`${BASE}/data/stories/${levelSlug(level)}.json`);
-    r = res.ok ? ((await res.json()) as StoryDoc[]) : [];
-    storiesByLevel.set(level, r);
-  }
-  return r;
-}
+export const loadStory = (id: string) => loadLibraryDoc<StoryDoc>("stories", id);

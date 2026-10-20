@@ -13,6 +13,6 @@
 
 ## Tránh
 
-- Dữ liệu lớn: `code/public/data` (2k file JSON, có trong git), `code/public/audio`, `code/scripts/tatoeba`, `code/scripts/out`, `code/out`, `code/.next`.
+- Dữ liệu lớn: `code/public/data` (6,5k file JSON, có trong git; mỗi bài đọc / truyện một file `readings|stories/<id>.json`), `code/public/audio`, `code/scripts/tatoeba`, `code/scripts/out`, `code/out`, `code/.next`.
 - Tìm code thì giới hạn thư mục: `rg -n 'X' code/app code/components code/lib code/scripts`.
 - File JSON dữ liệu: dùng `jq` lấy đúng phần cần, không Read cả file.

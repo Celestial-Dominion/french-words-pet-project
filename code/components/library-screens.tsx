@@ -1,10 +1,10 @@
 "use client";
 
-// Màn đọc theo route /bai-doc/[cấp]/[id], /truyen/[cấp]/[id]: trang tĩnh chỉ mang id — nội dung bài (JSON theo cấp)
-// tải phía client khi mở. "Bài tiếp theo" = bài kế trong chỉ mục (hết cấp thì sang cấp sau).
+// Màn đọc theo route /bai-doc/[cấp]/[id], /truyen/[cấp]/[id]: trang tĩnh chỉ mang id — chữ bài (một file JSON
+// mỗi bài) tải phía client khi mở. "Bài tiếp theo" = bài kế trong chỉ mục (hết cấp thì sang cấp sau).
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { loadReadings, loadReadingsIndex, loadStories, loadStoriesIndex, type ReadingDoc, type StoryDoc } from "@/lib/data";
+import { loadReading, loadReadingsIndex, loadStory, loadStoriesIndex, type ReadingDoc, type StoryDoc } from "@/lib/data";
 import { libraryHref, libraryLevelHref } from "@/lib/library";
 import Reader from "@/components/reader";
 import StoryReader, { type NextItem } from "@/components/story-reader";
@@ -22,16 +22,15 @@ export function ReadingScreen({ level, id }: { level: number; id: string }) {
   const [state, setState] = useState<Load<ReadingDoc>>(null);
   useEffect(() => {
     let live = true;
-    Promise.all([loadReadings(level), loadReadingsIndex()])
-      .then(([docs, index]) => {
-        const doc = docs.find((d) => d.id === id);
+    Promise.all([loadReading(id), loadReadingsIndex()])
+      .then(([doc, index]) => {
         if (live) setState(doc ? { doc, next: nextOf(index, id, "reading") } : "missing");
       })
       .catch(() => live && setState("missing"));
     return () => {
       live = false;
     };
-  }, [level, id]);
+  }, [id]);
   if (state === null) return <p className="text-sm text-muted-foreground">Đang tải…</p>;
   if (state === "missing") return <p className="text-sm text-destructive">Không tải được bài đọc. Kiểm tra kết nối rồi tải lại trang.</p>;
   return <Reader key={state.doc.id} doc={state.doc} next={state.next} onBack={() => router.push(libraryLevelHref("reading", level))} />;
@@ -42,16 +41,15 @@ export function StoryScreen({ level, id }: { level: number; id: string }) {
   const [state, setState] = useState<Load<StoryDoc>>(null);
   useEffect(() => {
     let live = true;
-    Promise.all([loadStories(level), loadStoriesIndex()])
-      .then(([docs, index]) => {
-        const doc = docs.find((d) => d.id === id);
+    Promise.all([loadStory(id), loadStoriesIndex()])
+      .then(([doc, index]) => {
         if (live) setState(doc ? { doc, next: nextOf(index, id, "story") } : "missing");
       })
       .catch(() => live && setState("missing"));
     return () => {
       live = false;
     };
-  }, [level, id]);
+  }, [id]);
   if (state === null) return <p className="text-sm text-muted-foreground">Đang tải…</p>;
   if (state === "missing") return <p className="text-sm text-destructive">Không tải được truyện. Kiểm tra kết nối rồi tải lại trang.</p>;
   return <StoryReader key={state.doc.id} doc={state.doc} next={state.next} onBack={() => router.push(libraryLevelHref("story", level))} />;

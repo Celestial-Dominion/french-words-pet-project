@@ -1,9 +1,10 @@
 // Dựng bài đọc + truyện từ nguồn content/ → dữ liệu tĩnh cho app (port app Anh, docs/CONTENT_PLAYBOOK.md).
 //   node scripts/build-content.mjs [--draft]
 // Ra:
-//   public/data/readings/{cấp}.json     chữ bài (FR + VI, đoạn, nguồn)
+//   public/data/readings/{id}.json      chữ từng bài (FR + VI, đoạn, nguồn) — trang bài chỉ tải file của bài đó
 //   public/data/readings-index.json     chỉ mục nhẹ (tiêu đề, chủ đề, thể loại, số chữ, phút đọc)
-//   public/data/stories/{cấp}.json      truyện: chương [{title_fr, title_vi, sentences, paras}], nguồn
+//   public/data/stories/{id}.json       từng truyện: chương [{title_fr, title_vi, sentences, paras}], nguồn
+//                                       (chỉ ghi file có nội dung đổi; xoá file bài không còn trong content/ — lib/library-files.ts)
 //   public/data/stories-index.json      chỉ mục truyện (số chương, chủ đề, tóm tắt, số chữ, phút đọc)
 //   public/data/quiz/{id}.json          câu hỏi đọc hiểu — tải lười khi mở bài (xoá file của bài không còn câu hỏi);
 //                                       bài đọc: [câu hỏi]; truyện: [[câu hỏi chương 1], [chương 2], …]
@@ -13,8 +14,8 @@
 //                                       cho build-audio.py
 // Chạy check-content trước; còn lỗi thì dừng (--draft: chưa bắt buộc câu hỏi).
 //
-// ONLY=c1[,c2] — dựng riêng các cấp này (hai phiên viết song song nhiều cấp): chỉ lỗi của cấp đó chặn; chỉ ghi
-// {readings,stories}/{cấp}.json + quiz của cấp đó; trong *-index.json chỉ thay mục của cấp đó (giữ cấp khác như
+// ONLY=c1[,c2] — dựng riêng các cấp này (hai phiên viết song song nhiều cấp): chỉ lỗi của cấp đó chặn; chỉ ghi / dọn
+// {readings,stories}/{id}.json + quiz của cấp đó; trong *-index.json chỉ thay mục của cấp đó (giữ cấp khác như
 // đang có); audio thiếu của cấp đó → scripts/out/audio-only-{cấp}.json (không đụng audio-readings.json).
 import { writeFileSync, mkdirSync, readdirSync, existsSync, rmSync, readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -24,6 +25,7 @@ import { minutesOf } from "./lib/content-spec.mjs";
 import { LEVEL_KEYS } from "./lib/fr-vocab.mjs";
 import { hashLong } from "../lib/slug.ts";
 import { buildWordRefs } from "./build-word-refs.mjs";
+import { levelOfId, staleLibraryFiles } from "../lib/library-files.ts";
 
 const DRAFT = process.argv.includes("--draft");
 const DATA = join(ROOT, "public", "data");
@@ -32,9 +34,8 @@ for (const k of ONLY) if (!LEVEL_KEYS.includes(k)) throw new Error(`ONLY: cấp 
 const all = runChecks({ draft: DRAFT });
 const { report, libErr, quiz } = all;
 const lvOf = new Map(all.items.map((m) => [m.id, m.level]));
-const lvGuess = (s) => s.match(/(?:^|[-/])(a1|a2|b1|b2|c1|c2)[-/]/)?.[1];
 const inScope = (lv) => !ONLY.length || ONLY.includes(lv);
-const idInScope = (id) => inScope(lvOf.get(id.split("#")[0]) ?? lvGuess(id));
+const idInScope = (id) => inScope(lvOf.get(id.split("#")[0]) ?? levelOfId(id));
 const items = all.items.filter((m) => inScope(m.level));
 const quizBlocks = [...quiz.blocks].filter(([k]) => idInScope(k));
 
@@ -48,10 +49,21 @@ if (errs.length) {
 
 const levelNum = (k) => LEVEL_KEYS.indexOf(k) + 1;
 const index = [];
-const byLevel = new Map(LEVEL_KEYS.map((k) => [k, []]));
+const byLevel = new Map(LEVEL_KEYS.map((k) => [k, []])); // id bài đọc theo cấp (đếm cho log)
 const sIndex = [];
 const storiesByLevel = new Map(LEVEL_KEYS.map((k) => [k, []]));
 const quizIds = new Set();
+const wrote = { readings: new Set(), stories: new Set() };
+let docsChanged = 0;
+// Ghi chữ một bài; file đã đúng nội dung thì để nguyên (giữ mtime — deploy khỏi băm lại, git không thấy đổi).
+const writeDoc = (dir, doc) => {
+  const p = join(DATA, dir, `${doc.id}.json`);
+  const txt = JSON.stringify(doc);
+  wrote[dir].add(doc.id);
+  if (existsSync(p) && readFileSync(p, "utf8") === txt) return;
+  writeFileSync(p, txt);
+  docsChanged++;
+};
 mkdirSync(join(DATA, "readings"), { recursive: true });
 mkdirSync(join(DATA, "stories"), { recursive: true });
 mkdirSync(join(DATA, "quiz"), { recursive: true });
@@ -68,7 +80,8 @@ const sourceJson = (m) => (m.source ? { source: { title: m.source.title, credit:
 for (const m of items.filter((x) => x.type === "story")) {
   const level = levelNum(m.level);
   const qs = m.chapters.map((_, k) => quiz.blocks.get(`${m.id}#${k + 1}`));
-  storiesByLevel.get(m.level).push({
+  storiesByLevel.get(m.level).push(m.id);
+  writeDoc("stories", {
     id: m.id,
     level,
     title_fr: m.title.fr,
@@ -114,7 +127,8 @@ for (const m of items.filter((x) => x.type === "reading")) {
     ...sourceJson(m),
     ...(qb ? { quiz: qb.questions.length } : {}),
   };
-  byLevel.get(m.level).push(doc);
+  byLevel.get(m.level).push(m.id);
+  writeDoc("readings", doc);
   if (qb) {
     quizIds.add(m.id);
     writeFileSync(join(DATA, "quiz", `${m.id}.json`), JSON.stringify(quizJson(qb)));
@@ -141,20 +155,15 @@ const keepOthers = (name, fresh) => {
   const old = existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : [];
   return [...old.filter((x) => !inScope(LEVEL_KEYS[x.level - 1])), ...fresh];
 };
-for (const [lv, docs] of byLevel) {
-  if (!inScope(lv)) continue;
-  const p = join(DATA, "readings", `${lv}.json`);
-  if (docs.length) writeFileSync(p, JSON.stringify(docs));
-  else if (existsSync(p)) rmSync(p);
-}
+// file bài không còn trong content/ (của cấp đang dựng) + file cũ theo cấp ({cấp}.json, trước 20/10/2026)
+let docsPruned = 0;
+for (const dir of ["readings", "stories"])
+  for (const f of staleLibraryFiles(readdirSync(join(DATA, dir)), wrote[dir], idInScope)) {
+    rmSync(join(DATA, dir, f));
+    docsPruned++;
+  }
 const rIndex = keepOthers("readings-index.json", index).sort((a, b) => a.level - b.level); // giữ thứ tự viết trong cấp (sort ổn định)
 writeFileSync(join(DATA, "readings-index.json"), JSON.stringify(rIndex));
-for (const [lv, docs] of storiesByLevel) {
-  if (!inScope(lv)) continue;
-  const p = join(DATA, "stories", `${lv}.json`);
-  if (docs.length) writeFileSync(p, JSON.stringify(docs));
-  else if (existsSync(p)) rmSync(p);
-}
 const stIndex = keepOthers("stories-index.json", sIndex).sort((a, b) => a.level - b.level);
 writeFileSync(join(DATA, "stories-index.json"), JSON.stringify(stIndex));
 buildWordRefs({ items: all.items });
@@ -188,5 +197,6 @@ writeFileSync(join(ROOT, "scripts", "out", audioOut), JSON.stringify(todo));
 const per = (map) => LEVEL_KEYS.map((k) => `${k.toUpperCase()} ${map.get(k).length}`).join(" · ");
 if (ONLY.length) console.log(`ONLY=${ONLY.join(",")}: chỉ dựng cấp này, cấp khác giữ nguyên`);
 console.log(`bài đọc: ${index.length} (${per(byLevel)}) · truyện: ${sIndex.length} (${per(storiesByLevel)}) · câu hỏi: ${quizIds.size} bài/truyện${pruned ? ` · xoá ${pruned} file câu hỏi cũ` : ""}`);
+console.log(`file từng bài: ${docsChanged} ghi mới/đổi${docsPruned ? ` · xoá ${docsPruned} file bài cũ` : ""}`);
 console.log(`audio câu hỏi + phương án: ${nQuizAudio} câu (không tính câu trùng)`);
 console.log(`audio thiếu: ${todo.length} câu → scripts/out/${audioOut}${todo.length ? `\n  chạy: cd scripts && CONC=48 <venv edge-tts ≥7.3.1>/bin/python build-audio.py out/${audioOut} ../public/audio/sentences` : ""}`);

@@ -26,6 +26,23 @@ test("trang bài: tải theo đường dẫn trực tiếp, có 'Bài tiếp the
   await expect(page).toHaveURL(/\/bai-doc\/a1$/);
 });
 
+test("trang bài / truyện chỉ tải file chữ của đúng bài đó, không tải file cả cấp", async ({ page }) => {
+  type Meta = { id: string; level: number; title_fr: string };
+  const r = publicData<Meta[]>("readings-index.json").find((x) => x.level === 5)!; // C1: file cả cấp từng nặng 2,2 MB
+  const s = publicData<Meta[]>("stories-index.json").find((x) => x.level === 5)!;
+  const docs: string[] = [];
+  page.on("request", (q) => {
+    const p = new URL(q.url()).pathname;
+    if (/^\/data\/(readings|stories)\//.test(p)) docs.push(p);
+  });
+  await freshStart(page, `/bai-doc/c1/${r.id}`);
+  await expect(page.getByRole("heading", { name: r.title_fr })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Bài tiếp theo/ })).toBeVisible();
+  await page.goto(`/truyen/c1/${s.id}`);
+  await expect(page.getByRole("heading", { name: s.title_fr })).toBeVisible();
+  expect([...new Set(docs)]).toEqual([`/data/readings/${r.id}.json`, `/data/stories/${s.id}.json`]);
+});
+
 test("truyện theo cấp: tóm tắt + mở truyện qua trang riêng", async ({ page }) => {
   const s = publicData<{ id: string; level: number; title_fr: string; summary: string }[]>("stories-index.json").find((x) => x.level === 3)!; // B1: truyện đầu cấp
   await freshStart(page, "/truyen");

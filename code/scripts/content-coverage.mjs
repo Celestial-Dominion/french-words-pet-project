@@ -3,14 +3,13 @@
 //   node scripts/content-coverage.mjs --topics a1  phân bố chủ đề / thể loại / độ dài của cấp
 //   node scripts/content-coverage.mjs --stories    độ phủ chỉ tính truyện + số truyện so với app Anh
 // "Bài" = một bài đọc (hoặc một truyện cũ ở public/data/stories) ở cấp ≤ L — người học đi từ dưới lên.
-import { readFileSync, existsSync } from "node:fs";
-import { join } from "node:path";
-import { loadLibrary, profileOf, ROOT } from "./lib/content-model.mjs";
+import { loadLibrary, profileOf } from "./lib/content-model.mjs";
+import { readLibrary } from "./lib/library-data.mjs";
 import { LEVEL_KEYS, LEVEL_LABEL, targetWords, profile } from "./lib/fr-vocab.mjs";
 import { SPEC, TARGETS, TOPICS } from "./lib/content-spec.mjs";
 
 /** Mọi "ngữ cảnh": bài đọc + truyện ở content/ (+ truyện JSON không có nguồn content/) → [{id, band, type R|S, lemmas:Set, words}].
- *  public/data/stories/*.json do build-content dựng TỪ content/ → bỏ id đã có, không đếm một truyện hai lần. */
+ *  public/data/stories/{id}.json do build-content dựng TỪ content/ → bỏ id đã có, không đếm một truyện hai lần. */
 export function contexts() {
   const { items } = loadLibrary();
   const out = items.map((m) => {
@@ -18,14 +17,10 @@ export function contexts() {
     return { id: m.id, band: m.band, type: m.type === "story" ? "S" : "R", lemmas: new Set(p.counts.keys()), words: p.nWords, m };
   });
   const have = new Set(out.map((c) => c.id));
-  for (const k of LEVEL_KEYS) {
-    const f = join(ROOT, "public", "data", "stories", `${k}.json`);
-    if (!existsSync(f)) continue;
-    for (const d of JSON.parse(readFileSync(f, "utf8"))) {
-      if (have.has(d.id)) continue;
-      const p = profile(d.chapters.flatMap((c) => c.sentences.map((s) => s.fr)));
-      out.push({ id: d.id, band: LEVEL_KEYS.indexOf(k), type: "S", lemmas: new Set(p.counts.keys()), words: p.nWords });
-    }
+  for (const { meta, doc: d } of readLibrary("stories")) {
+    if (!d || have.has(d.id)) continue;
+    const p = profile(d.chapters.flatMap((c) => c.sentences.map((s) => s.fr)));
+    out.push({ id: d.id, band: meta.level - 1, type: "S", lemmas: new Set(p.counts.keys()), words: p.nWords });
   }
   return out;
 }
