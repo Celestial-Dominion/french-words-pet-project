@@ -58,7 +58,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
   thư, hội thoại. Từ tục trong giỏ (foutre, gueule, mec) thì bỏ qua.
 - **Nhật ký:**
   - 20/10 lô 01: 10 bài (a1-p01, 3–4 câu hỏi/bài, audio đủ), giỏ 87/90; ≥1 93,6→97,1 · ≥3 74,2→80,2 · ≥5 64,0→65,4 ✓; thiếu 226→135; 5 giờ 25% · tuần 4%; 4ec0fac
-  - 20/10 lô 02: 10 bài (a1-p02, 3 câu hỏi/bài, audio đủ), giỏ 86/90 (bỏ gueule foutre mec flic); ≥1 97,1→97,5 · ≥3 80,2→83,3 · ≥5 65,4→65,5 ✓; thiếu 135→56; 5 giờ 26% · tuần 4%; COMMIT
+  - 20/10 lô 02: 10 bài (a1-p02, 3 câu hỏi/bài, audio đủ), giỏ 86/90 (bỏ gueule foutre mec flic); ≥1 97,1→97,5 · ≥3 80,2→83,3 · ≥5 65,4→65,5 ✓; thiếu 135→56; 5 giờ 26% · tuần 4%; 0fc612d
 
 ## P-C1 — Độ phủ từ C1 [ ]
 
