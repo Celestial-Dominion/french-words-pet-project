@@ -1,4 +1,5 @@
 // Logic thuần của câu hỏi đọc hiểu (components/quiz.tsx) — port app Anh lib/quiz-pure.ts, test ở lib/quiz-pure.test.ts.
+import { PASS_SCORE } from "./grammar";
 
 // Thứ tự hiện phương án: xáo Fisher–Yates mỗi lần mở/làm lại (đáp án đúng không đứng cố định). rand tiêm được để test.
 export function shuffledOrder(n: number, rand: () => number = Math.random): number[] {
@@ -20,6 +21,14 @@ export function quizScore(answers: readonly number[], picks: readonly (number | 
     if (picks[i] === a) correct++;
   });
   return { done, correct, total: answers.length };
+}
+
+// Đạt (làm xong → tự đánh dấu Đã đọc) = đúng từ PASS_SCORE% — cùng ngưỡng bài luyện Ngữ pháp: 3 câu cần 3, 4 cần 3.
+export function quizPassMin(total: number): number {
+  return Math.ceil((total * PASS_SCORE) / 100);
+}
+export function quizPassed(correct: number, total: number): boolean {
+  return total > 0 && correct >= quizPassMin(total);
 }
 
 // Lời giải thích: tách «trích dẫn nguyên văn» để tô riêng → [{text, quote}].

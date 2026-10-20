@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { paragraphs, quizScore, shuffledOrder, splitQuotes } from "./quiz-pure";
+import { paragraphs, quizPassMin, quizPassed, quizScore, shuffledOrder, splitQuotes } from "./quiz-pure";
 
 describe("quiz-pure", () => {
   it("xáo đủ phương án, không mất/lặp", () => {
@@ -9,6 +9,10 @@ describe("quiz-pure", () => {
   });
   it("chấm điểm theo chỉ số gốc", () => {
     expect(quizScore([0, 2, 1], [0, 1, undefined])).toEqual({ done: 2, correct: 1, total: 3 });
+  });
+  it("ngưỡng đạt 70% như Ngữ pháp: 3/4/5/10 câu cần 3/3/4/7", () => {
+    expect([3, 4, 5, 10].map(quizPassMin)).toEqual([3, 3, 4, 7]);
+    expect([quizPassed(2, 3), quizPassed(3, 3), quizPassed(2, 4), quizPassed(3, 4), quizPassed(4, 4), quizPassed(0, 0)]).toEqual([false, true, false, true, true, false]);
   });
   it("tách trích dẫn", () => {
     expect(splitQuotes("Bài đọc: «Il pleut.» — rồi «Il fait froid.»")).toEqual([

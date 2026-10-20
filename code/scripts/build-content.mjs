@@ -1,12 +1,14 @@
 // Dựng bài đọc + truyện từ nguồn content/ → dữ liệu tĩnh cho app (port app Anh, docs/CONTENT_PLAYBOOK.md).
 //   node scripts/build-content.mjs [--draft]
 // Ra:
-//   public/data/readings/{cấp}.json     chữ bài (FR + VI, đoạn, nguồn) — suggest.ts / "gặp lại trong ngữ cảnh" đọc cả cấp
+//   public/data/readings/{cấp}.json     chữ bài (FR + VI, đoạn, nguồn)
 //   public/data/readings-index.json     chỉ mục nhẹ (tiêu đề, chủ đề, thể loại, số chữ, phút đọc)
 //   public/data/stories/{cấp}.json      truyện: chương [{title_fr, title_vi, sentences, paras}], nguồn
 //   public/data/stories-index.json      chỉ mục truyện (số chương, chủ đề, tóm tắt, số chữ, phút đọc)
 //   public/data/quiz/{id}.json          câu hỏi đọc hiểu — tải lười khi mở bài (xoá file của bài không còn câu hỏi);
 //                                       bài đọc: [câu hỏi]; truyện: [[câu hỏi chương 1], [chương 2], …]
+//   public/data/word-refs/{0..15}.json  chỉ mục từ → bài ("Gặp lại trong ngữ cảnh", gợi ý sau phiên — lib/suggest.ts),
+//                                       dựng lại từ dữ liệu vừa ghi bằng scripts/build-word-refs.mjs (luôn cả kho, kể cả ONLY)
 //   scripts/out/audio-readings.json     câu bài đọc + câu hỏi/phương án CHƯA có MP3 (public/audio/sentences/hashLong(fr).mp3)
 //                                       cho build-audio.py
 // Chạy check-content trước; còn lỗi thì dừng (--draft: chưa bắt buộc câu hỏi).
@@ -21,6 +23,7 @@ import { ROOT, profileOf } from "./lib/content-model.mjs";
 import { minutesOf } from "./lib/content-spec.mjs";
 import { LEVEL_KEYS } from "./lib/fr-vocab.mjs";
 import { hashLong } from "../lib/slug.ts";
+import { buildWordRefs } from "./build-word-refs.mjs";
 
 const DRAFT = process.argv.includes("--draft");
 const DATA = join(ROOT, "public", "data");
@@ -154,6 +157,7 @@ for (const [lv, docs] of storiesByLevel) {
 }
 const stIndex = keepOthers("stories-index.json", sIndex).sort((a, b) => a.level - b.level);
 writeFileSync(join(DATA, "stories-index.json"), JSON.stringify(stIndex));
+buildWordRefs({ items: all.items });
 let pruned = 0;
 for (const f of readdirSync(join(DATA, "quiz"))) {
   const id = f.replace(/\.json$/, "");

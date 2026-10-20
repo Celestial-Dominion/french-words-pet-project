@@ -6,6 +6,7 @@
 //   reads    — hành động sau cùng thắng (kể cả bỏ đánh dấu — tombstone)
 //   notes    — máy sửa sau thắng ("" = đã xoá)
 //   phonics/grammar — mỗi bài một mục "id~mốc[~0]": hành động sau cùng thắng (tích / bỏ tích); mục cũ chỉ có "id" = đã học từ thuở đầu
+//   storyPos — chương đang đọc của từng truyện: máy đọc sau thắng (theo mốc thời gian)
 import { mergeGrammarCodes } from "./grammar.ts"; // đuôi .ts: scripts/test-grammar.mjs chạy thẳng file này bằng node
 import type { ReviewRecord, DailyStat, ReadRow, NoteRow, GamifyRow, SrsConfig } from "./types";
 import { upgradeLegacyKnown } from "./srs-pure.ts";
@@ -109,6 +110,26 @@ export function courseDoneIds(entries: string[]): string[] {
     .map((x) => x.id);
 }
 
+// ---- Vị trí đọc truyện (lib/story-progress.ts) ----
+export interface StoryPos {
+  ch: number; // chỉ số chương (0 = chương 1)
+  at: number; // ms lúc chuyển tới chương này (0 = khoá cũ chưa có mốc)
+}
+export function mergeStoryPos(a: Record<string, StoryPos>, b: Record<string, StoryPos>): Record<string, StoryPos> {
+  const out: Record<string, StoryPos> = { ...(a ?? {}) };
+  for (const [id, r] of Object.entries(b ?? {})) {
+    if (!r || typeof r.ch !== "number") continue;
+    const l = out[id];
+    if (!l || (r.at ?? 0) > (l.at ?? 0)) out[id] = { ch: r.ch, at: r.at ?? 0 };
+  }
+  return out;
+}
+/** Dấu vân tay vị trí đọc: số truyện + mốc mới nhất (mỗi lần chuyển chương mốc đều tăng). */
+export function storyPosStamp(pos: Record<string, StoryPos> | undefined): string {
+  const all = Object.values(pos ?? {});
+  return all.length ? `${all.length}|${all.reduce((m, p) => Math.max(m, p.at ?? 0), 0)}` : "";
+}
+
 /** Gộp trạng thái gamify (đóng băng chuỗi + XP) — dùng cả khi merge remote lẫn khi ghi local. */
 export function mergeGamify(a: GamifyRow, b: GamifyRow): GamifyRow {
   return {
@@ -155,6 +176,7 @@ export interface SyncSnapshot {
   xp: number;
   phonics: string[]; // mục tiến độ bài phát âm (xem mergeCourseEntries)
   grammar: string[]; // tiến độ bài ngữ pháp — dòng mã hoá (lib/grammar.ts encodeGrammarRow)
+  storyPos: Record<string, StoryPos>; // chương đang đọc của từng truyện
   gamify: GamifyRow;
 }
 
@@ -174,6 +196,7 @@ export interface Fp {
   co: string; // tiến độ phát âm + ngữ pháp (mục đã gộp, gồm cả bỏ tích)
   fz: string; // trạng thái đóng băng chuỗi
   cu: string; // thời điểm đổi cài đặt trên máy này
+  sp?: string; // vị trí đọc truyện (fp lưu từ bản trước khi có trường này: thiếu = "")
 }
 
 export function fingerprint(s: SyncSnapshot, cfgStamp: string): Fp {
@@ -201,13 +224,14 @@ export function fingerprint(s: SyncSnapshot, cfgStamp: string): Fp {
     co: `${mergeCourseEntries(s.phonics, []).join(",")}|${mergeGrammarCodes(s.grammar, []).join(",")}`,
     fz: `${g.freezes ?? 0}|${(g.frozenDates ?? []).length}|${g.grantStreak ?? 0}|${g.maxCombo ?? 0}|${(g.questsDone ?? []).length}`,
     cu: cfgStamp,
+    sp: storyPosStamp(s.storyPos),
   };
 }
 
 export function fpEq(a: Fp, b: Fp): boolean {
   return (
     a.rc === b.rc && a.mlr === b.mlr && a.tr === b.tr && a.rd === b.rd && a.ra === b.ra &&
-    a.xp === b.xp && a.nt === b.nt && a.co === b.co && a.fz === b.fz && a.cu === b.cu
+    a.xp === b.xp && a.nt === b.nt && a.co === b.co && a.fz === b.fz && a.cu === b.cu && (a.sp ?? "") === (b.sp ?? "")
   );
 }
 
@@ -221,6 +245,7 @@ export function mergeSnapshots(local: SyncSnapshot, remote: SyncSnapshot): SyncS
     xp: Math.max(local.xp, remote.xp),
     phonics: mergeCourseEntries(local.phonics, remote.phonics),
     grammar: mergeGrammarCodes(local.grammar, remote.grammar),
+    storyPos: mergeStoryPos(local.storyPos, remote.storyPos),
     gamify: mergeGamify(local.gamify, remote.gamify),
   };
 }
@@ -314,6 +339,17 @@ export function sanitizeIdList(raw: unknown): string[] {
   return raw.filter((x): x is string => typeof x === "string" && !!x);
 }
 
+/** Vị trí đọc truyện: chỉ nhận { ch: số nguyên ≥ 0, at: số }, key an toàn. */
+export function sanitizeStoryPos(raw: unknown): Record<string, StoryPos> {
+  if (!isObj(raw)) return {};
+  const out: Record<string, StoryPos> = {};
+  for (const [id, v] of Object.entries(raw)) {
+    if (!id || !safeKey(id) || !isObj(v) || !Number.isInteger(v.ch) || (v.ch as number) < 0) continue;
+    out[id] = { ch: v.ch as number, at: num(v.at) };
+  }
+  return out;
+}
+
 /**
  * Cài đặt phiên học kéo từ cloud: chỉ nhận field đúng kiểu, số nằm trong khoảng hợp lý.
  * Giá trị lạ (newPerDay = "nhiều", direction = "xyz") sẽ chảy thẳng qua getConfig() vì hàm đó
@@ -364,6 +400,7 @@ export function sanitizeRemote(remote: Record<string, unknown>): SyncSnapshot {
     xp,
     phonics: sanitizeIdList(remote.phonics),
     grammar: sanitizeIdList(remote.grammar),
+    storyPos: sanitizeStoryPos(remote.storyPos),
     gamify: {
       key: "state",
       xp,

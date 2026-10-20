@@ -4,10 +4,11 @@
 // được): đáp án đúng tô xanh, chọn sai tô đỏ, rồi lộ nghĩa mọi phương án + lời giải thích trích «nguyên văn» câu trong
 // bài. Phương án xáo lại mỗi lần mở / Làm lại. Không lưu điểm. Chữ câu hỏi + phương án bấm-tra được.
 // Nút loa đọc câu hỏi và từng phương án (MP3 câu như bài đọc: public/audio/sentences/hashLong(fr).mp3).
-// Cha đặt key theo bài để đổi bài là trạng thái mới.
+// Có autoMark (bài đọc / chương cuối truyện): trả lời xong câu cuối → onFinish(đạt?) để cha tự đánh dấu Đã đọc khi đạt
+// (không bao giờ tự bỏ đánh dấu), khung tổng kết báo lại. Cha đặt key theo bài/chương để đổi bài là trạng thái mới.
 import { useState } from "react";
 import { Check, RotateCcw, Volume2, X } from "lucide-react";
-import { quizScore, shuffledOrder, splitQuotes } from "@/lib/quiz-pure";
+import { quizPassMin, quizPassed, quizScore, shuffledOrder, splitQuotes } from "@/lib/quiz-pure";
 import type { QuizQuestion } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Words } from "@/components/passage";
@@ -48,34 +49,47 @@ export function Quiz({
   showVi,
   onTapWord,
   onListen,
+  autoMark,
+  title = "Câu hỏi đọc hiểu",
 }: {
   questions: QuizQuestion[];
   showVi: boolean;
   onTapWord: (w: string) => void;
   onListen?: (fr: string) => void;
+  // done = trạng thái Đã đọc hiện tại (undefined = đang đọc IndexedDB)
+  autoMark?: { unit: "bài" | "truyện"; done: boolean | undefined; onFinish: (passed: boolean) => void };
+  title?: string;
 }) {
   const [orders, setOrders] = useState(() => questions.map((q) => shuffledOrder(q.opts.length)));
   const [picks, setPicks] = useState<(number | undefined)[]>(() => questions.map(() => undefined));
-  const { done, correct, total } = quizScore(
-    questions.map((q) => q.a),
-    picks,
-  );
+  const answers = questions.map((q) => q.a);
+  const { done, correct, total } = quizScore(answers, picks);
+  const need = quizPassMin(total);
+  const needText = need === total ? `đúng hết ${total} câu` : `đúng từ ${need}/${total} câu`;
 
-  const choose = (i: number, oi: number) => setPicks((p) => (p[i] !== undefined ? p : p.map((v, k) => (k === i ? oi : v))));
+  const choose = (i: number, oi: number) => {
+    setPicks((p) => (p[i] !== undefined ? p : p.map((v, k) => (k === i ? oi : v))));
+    if (picks[i] !== undefined || !autoMark) return;
+    const s = quizScore(answers, picks.map((v, k) => (k === i ? oi : v)));
+    if (s.done === s.total) autoMark.onFinish(quizPassed(s.correct, s.total)); // gọi ngay trong sự kiện, không qua effect
+  };
   const redo = () => {
     setOrders(questions.map((q) => shuffledOrder(q.opts.length)));
     setPicks(questions.map(() => undefined));
   };
 
   return (
-    <section aria-label="Câu hỏi đọc hiểu" data-testid="quiz" className="mt-10 rounded-3xl border bg-card p-5 shadow-sm sm:p-7">
+    <section aria-label={title} data-testid="quiz" className="mt-10 rounded-3xl border bg-card p-5 shadow-sm sm:p-7">
       <div className="flex items-baseline justify-between gap-3">
-        <h2 className="text-lg font-bold">Câu hỏi đọc hiểu</h2>
+        <h2 className="text-lg font-bold">{title}</h2>
         <span className="text-sm text-muted-foreground tabular-nums">
           {done}/{total}
         </span>
       </div>
-      <p className="mt-1 text-sm text-muted-foreground">Chạm đáp án đúng · bật Dịch để xem tiếng Việt</p>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Chạm đáp án đúng · bật Dịch để xem tiếng Việt
+        {autoMark && ` · ${needText} là tính Đã đọc`}
+      </p>
 
       <ol className="mt-5 space-y-8">
         {questions.map((q, i) => {
@@ -154,6 +168,19 @@ export function Quiz({
             Đúng {correct}/{total} câu
           </p>
           <p className="text-sm text-muted-foreground">{correct === total ? "Tuyệt vời — bạn hiểu hết bài!" : "Đọc lại đoạn liên quan rồi làm lại nhé."}</p>
+          {autoMark?.done ? (
+            <p className="text-sm font-medium text-balance text-emerald-700 dark:text-emerald-400">
+              <Check className="mr-1 inline size-4 align-[-0.15em]" />
+              Đã đánh dấu {autoMark.unit}: Đã đọc
+            </p>
+          ) : (
+            autoMark &&
+            !quizPassed(correct, total) && (
+              <p className="text-sm font-medium text-balance text-amber-700 dark:text-amber-400">
+                Cần {needText} để tính {autoMark.unit} Đã đọc
+              </p>
+            )
+          )}
           <button
             type="button"
             onClick={redo}

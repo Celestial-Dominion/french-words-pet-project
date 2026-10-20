@@ -22,9 +22,10 @@ service cloud.firestore {
       allow read, delete: if isOwner(uid);
       allow create, update: if isOwner(uid)
         && request.resource.data.keys().hasOnly([
-             "daily", "reads", "xp", "notes", "phonics", "grammar",
+             "daily", "reads", "xp", "notes", "phonics", "grammar", "storyPos",
              "freeze", "reviewChunks", "updatedAt", "config", "configUpdatedAt"
            ])
+        && request.resource.data.get("storyPos", {}) is map
         && request.resource.data.xp is number
         && request.resource.data.xp >= 0
         && request.resource.data.updatedAt is string

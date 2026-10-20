@@ -32,7 +32,7 @@ const rev = (wordId, reps, last_review, level = 1) => ({
 });
 const emptySnapshot = () => ({
   reviews: [], daily: [], reads: [], notes: [], xp: 0,
-  phonics: [], grammar: [], gamify: { key: "state", xp: 0 },
+  phonics: [], grammar: [], storyPos: {}, gamify: { key: "state", xp: 0 },
 });
 
 /** "Firestore" trong bộ nhớ: 1 doc user + các chunk reviews (đúng mô hình app dùng). */
@@ -191,6 +191,20 @@ t("2 máy: bỏ tích bài ngữ pháp ở máy A không bị máy B hồi sinh"
   a.sync();
   assert.deepEqual(grammarDone(b.local.grammar), []);
   assert.deepEqual(grammarDone(a.local.grammar), []);
+});
+
+t("2 máy: đọc truyện tới chương 3 trên A → mở trên B về đúng chương; B chuyển chương sau thì A theo B", () => {
+  const { a, b } = makeWorld();
+  a.local.storyPos = { "st-a1-le-vieux-coq": { ch: 2, at: 1000 } };
+  a.sync();
+  b.local.storyPos = { "st-b1-autre": { ch: 1, at: 1100 } };
+  b.sync();
+  assert.deepEqual(b.local.storyPos["st-a1-le-vieux-coq"], { ch: 2, at: 1000 });
+  b.local.storyPos = { ...b.local.storyPos, "st-a1-le-vieux-coq": { ch: 0, at: 2000 } }; // B quay về chương 1 sau
+  b.sync();
+  assert.equal(a.sync().pulled, true);
+  assert.deepEqual(a.local.storyPos, { "st-a1-le-vieux-coq": { ch: 0, at: 2000 }, "st-b1-autre": { ch: 1, at: 1100 } });
+  assert.equal(a.sync().skipped, true); // đã khớp → lần sau không ghi gì
 });
 
 // ---- kịch bản 3 (S3): quay lại app thì kéo về, không đổi thì không tốn gì ----

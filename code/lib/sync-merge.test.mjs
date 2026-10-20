@@ -8,6 +8,7 @@ import {
   sanitizeConfig,
   mergeCourseEntries,
   courseDoneIds,
+  mergeStoryPos, sanitizeStoryPos, storyPosStamp, fingerprint, fpEq,
 } from "./sync-merge";
 import { DEFAULT_SRS_CONFIG } from "./types";
 
@@ -295,4 +296,37 @@ t("khoá nhỏ: bỏ tích sau thắng tích trước, tích lại sau thắng b
   assert.deepEqual(courseDoneIds(ab), ["g2", "g3"]);
   // mục hỏng bị bỏ qua
   assert.deepEqual(courseDoneIds(["", "~1", "g4"]), ["g4"]);
+});
+
+// ---- vị trí đọc truyện (storyPos) ----
+t("storyPos: máy chuyển chương sau thắng, truyện chỉ có ở một bên được giữ, giao hoán", () => {
+  const a = { s1: { ch: 2, at: 100 }, s2: { ch: 1, at: 50 } };
+  const b = { s1: { ch: 4, at: 200 }, s3: { ch: 0, at: 10 } };
+  const ab = mergeStoryPos(a, b);
+  assert.deepEqual(ab, { s1: { ch: 4, at: 200 }, s2: { ch: 1, at: 50 }, s3: { ch: 0, at: 10 } });
+  assert.deepEqual(mergeStoryPos(b, a), ab);
+  assert.deepEqual(mergeStoryPos(ab, ab), ab);
+  // khoá cũ chuyển sang (mốc 0) thua mọi bản có mốc, nhưng vẫn giữ khi bên kia chưa có
+  assert.deepEqual(mergeStoryPos({ s1: { ch: 3, at: 0 } }, { s1: { ch: 1, at: 5 } }), { s1: { ch: 1, at: 5 } });
+  assert.deepEqual(mergeStoryPos({ s1: { ch: 3, at: 0 } }, undefined), { s1: { ch: 3, at: 0 } });
+});
+
+t("storyPos: lọc dữ liệu cloud hỏng (chương âm/lẻ/chuỗi, key nguy hiểm, không phải object)", () => {
+  const raw = JSON.parse('{"ok":{"ch":2,"at":9},"neg":{"ch":-1,"at":1},"frac":{"ch":1.5},"str":{"ch":"2"},"__proto__":{"ch":1,"at":1},"noat":{"ch":1}}');
+  assert.deepEqual(sanitizeStoryPos(raw), { ok: { ch: 2, at: 9 }, noat: { ch: 1, at: 0 } });
+  assert.deepEqual(sanitizeStoryPos(null), {});
+  assert.deepEqual(sanitizeStoryPos([1, 2]), {});
+  assert.deepEqual(sanitizeRemote({}).storyPos, {});
+});
+
+t("storyPos: chuyển chương đổi dấu vân tay (để sync biết mà ghi lên); fp cũ thiếu trường sp vẫn so được", () => {
+  const snap = { reviews: [], daily: [], reads: [], notes: [], xp: 0, phonics: [], grammar: [], storyPos: {}, gamify: { key: "state", xp: 0 } };
+  const f0 = fingerprint(snap, "");
+  assert.equal(storyPosStamp({}), "");
+  const { sp: _sp, ...oldFp } = f0; // fp lưu từ bản trước khi có storyPos
+  assert.equal(fpEq(oldFp, f0), true);
+  const f1 = fingerprint({ ...snap, storyPos: { s1: { ch: 1, at: 100 } } }, "");
+  assert.equal(fpEq(f0, f1), false);
+  const f2 = fingerprint({ ...snap, storyPos: { s1: { ch: 2, at: 200 } } }, "");
+  assert.equal(fpEq(f1, f2), false);
 });

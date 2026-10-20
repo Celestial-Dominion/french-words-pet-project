@@ -24,7 +24,7 @@ test("bài đọc: tích ngay trên danh sách, lọc Đã đọc / Chưa đọc
 test("bài đọc: nút trạng thái trong trang bài bật/tắt được, danh sách đổi theo", async ({ page }) => {
   await freshStart(page, "/bai-doc/a1/a1-01");
   const btn = page.getByRole("button", { name: /^(Đã đọc|Chưa đọc)$/ }).first();
-  await page.waitForTimeout(500); // bài ngắn: mốc cuối bài lọt màn hình → tự đánh dấu; chờ trạng thái ổn định
+  await page.waitForTimeout(500); // chờ trạng thái đọc từ IndexedDB ổn định (bài có câu hỏi: chỉ tự đánh dấu khi làm đạt)
   const before = await btn.getAttribute("aria-pressed");
   const after = before === "true" ? "false" : "true";
   await btn.click(); // bấm tay → không tự đánh dấu lại nữa ở lần mở này

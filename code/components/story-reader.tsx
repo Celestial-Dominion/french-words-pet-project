@@ -1,5 +1,9 @@
 "use client";
 
+// Trang một truyện nhiều chương: nhớ chương đang đọc (lib/story-progress, đồng bộ qua Firebase). Cuộn tới cuối truyện
+// KHÔNG tự đánh dấu khi chương cuối có câu hỏi: trả lời xong câu cuối của câu hỏi CHƯƠNG CUỐI, đúng từ 70% (PASS_SCORE
+// như Ngữ pháp) mới tự đánh dấu Đã đọc (câu hỏi các chương trước không đổi trạng thái; không bao giờ tự bỏ đánh dấu).
+// Chương cuối không có câu hỏi giữ cách cũ: cuộn tới cuối chương cuối là đánh dấu. Nút tay bấm lúc nào cũng được.
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { lookupWord, loadExamplesForWords, loadStoryQuiz, type StoryDoc, type ExampleSentence, type QuizQuestion } from "@/lib/data";
@@ -37,7 +41,7 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
     let live = true;
     loadStoryQuiz(doc.id)
       .then((q) => live && setQuiz(q))
-      .catch(() => {});
+      .catch(() => live && setQuiz([]));
     return () => {
       live = false;
     };
@@ -50,16 +54,14 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
   };
 
   const read = useIsRead(doc.id); // undefined = đang đọc IndexedDB
-  const manual = useRef(false); // đã bấm tay ở lần mở này → không tự đánh dấu nữa
+  const manual = useRef(false); // đã bấm tay ở lần mở này → cuộn tới cuối không tự đánh dấu nữa
   const endRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    saveChapter(doc.id, ci);
-  }, [doc.id, ci]);
-  // Tự đánh dấu "đã đọc" khi cuộn tới cuối CHƯƠNG CUỐI (trước đây: hễ mở tới chương cuối là đánh dấu, kể cả khi vừa bỏ tích).
+  // Chương cuối có câu hỏi (đang tải cũng tính) → đánh dấu qua câu hỏi; không có → cuộn tới cuối CHƯƠNG CUỐI.
+  const byQuiz = !!doc.quiz && (quiz === null || (quiz[doc.chapters.length - 1]?.length ?? 0) > 0);
   useEffect(() => {
     const el = endRef.current;
-    if (!el || read !== false || !last || manual.current) return;
+    if (!el || byQuiz || read !== false || !last || manual.current) return;
     const io = new IntersectionObserver(
       ([e]) => {
         if (!e.isIntersecting || manual.current) return;
@@ -70,15 +72,19 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [doc.id, read, last, ci]);
+  }, [doc.id, read, last, ci, byQuiz]);
   const toggleRead = () => {
     manual.current = true;
     void markRead(doc.id, !read).catch(() => {});
+  };
+  const quizDone = (passed: boolean) => {
+    if (passed && read !== true) void markRead(doc.id, true).catch(() => {});
   };
 
   const goChapter = (n: number) => {
     stop();
     setCi(n);
+    saveChapter(doc.id, n); // chỉ ghi khi người dùng chuyển chương (mở truyện không đẩy mốc đồng bộ lên)
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -141,7 +147,17 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
       {last && doc.source && <SourceNote source={doc.source} className="mt-6 text-xs leading-relaxed text-muted-foreground" />}
       <div ref={endRef} data-testid="story-end" aria-hidden className="h-px" />
 
-      {chQuiz.length > 0 && <Quiz key={`${doc.id}-${ci}`} questions={chQuiz} showVi={showVi} onTapWord={onTapWord} onListen={listen} />}
+      {chQuiz.length > 0 && (
+        <Quiz
+          key={`${doc.id}-${ci}`}
+          questions={chQuiz}
+          showVi={showVi}
+          onTapWord={onTapWord}
+          onListen={listen}
+          autoMark={last ? { unit: "truyện", done: read, onFinish: quizDone } : undefined}
+          title={`Câu hỏi · Chương ${ci + 1}`}
+        />
+      )}
 
       {/* điều hướng chương — đếm n/tổng ở giữa (như HSK) */}
       <div className="mt-8 flex items-center justify-between gap-3">

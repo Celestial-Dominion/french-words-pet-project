@@ -10,7 +10,8 @@ import {
   upgradeLegacyKnown,
 } from "./srs-pure";
 import { dailyQuests, questProgress, questKey, pruneQuestKeys, type QuestProgress } from "./gamify";
-import { mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify, mergeCourseEntries } from "./sync-merge";
+import { mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify, mergeCourseEntries, type StoryPos } from "./sync-merge";
+import { getStoryPositions, mergeStoryPositions } from "./story-progress";
 import { mergeGrammarCodes } from "./grammar";
 
 // Re-export để phần còn lại của app vẫn import từ lib/db như trước.
@@ -601,6 +602,7 @@ export interface BackupData {
   revlog?: RevlogRow[]; // nhật ký lượt chấm (nền tối ưu FSRS) — đổi máy không mất
   phonics?: string[]; // bài phát âm đã học (localStorage)
   grammar?: string[]; // tiến độ bài ngữ pháp — mỗi bài một chuỗi mã hoá (encodeGrammarRow, localStorage)
+  storyPos?: Record<string, StoryPos>; // chương đang đọc của từng truyện (lib/story-progress.ts, localStorage)
 }
 
 const PHONICS_KEY = "fr.phonicsDone";
@@ -630,6 +632,7 @@ export async function exportData(): Promise<BackupData> {
     reviews, daily, reads, config, gamify, notes, revlog,
     phonics: local(PHONICS_KEY),
     grammar: local(GRAMMAR_KEY),
+    storyPos: getStoryPositions(),
   };
 }
 
@@ -700,6 +703,7 @@ export async function importData(
       mergeLocal(GRAMMAR_KEY, data.grammar, mergeGrammarCodes);
       window.dispatchEvent(new Event("fr:grammar"));
     }
+    if (data.storyPos) mergeStoryPositions(data.storyPos, mode === "replace");
   } catch {
     /* bỏ qua */
   }

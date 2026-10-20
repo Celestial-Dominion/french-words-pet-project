@@ -10,6 +10,7 @@ import { doc, getDoc, collection, getDocs, writeBatch, getFirestore, type Firest
 import { getFbApp } from "./firebase";
 import { db, getXp, getConfig, getGamifyState, invalidateProgressSummary } from "./db";
 import { courseEntries, mergeCourseDone } from "./progress-local";
+import { getStoryPositions, mergeStoryPositions } from "./story-progress";
 import {
   fingerprint, fpEq, mergeSnapshots, pruneUndefined,
   mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify,
@@ -124,6 +125,7 @@ async function runSync(uid: string): Promise<SyncResult> {
     xp: localXp,
     phonics: courseEntries("phonics"),
     grammar: courseEntries("grammar"),
+    storyPos: getStoryPositions(),
     gamify: localGamify,
   };
   const localFp = fpLocal(local);
@@ -162,6 +164,7 @@ async function runSync(uid: string): Promise<SyncResult> {
     // phần lưu ở localStorage phải ghi qua helper của progress-local (merge + persist)
     mergeCourseDone("phonics", merged.phonics);
     mergeCourseDone("grammar", merged.grammar);
+    mergeStoryPositions(merged.storyPos);
     await db.transaction("rw", [db.reviews, db.daily, db.reads, db.gamify, db.notes], async () => {
       // ĐỌC LẠI ngay trong transaction rồi merge tiếp: giữa lúc đọc snapshot ở đầu hàm và lúc
       // này đã có vài giây đi mạng, người dùng có thể vừa trả lời thêm thẻ. bulkPut thẳng
@@ -212,7 +215,7 @@ async function runSync(uid: string): Promise<SyncResult> {
     batch.set(
       userRef,
       pruneUndefined({
-        daily, reads, xp, notes, phonics: merged.phonics, grammar: merged.grammar,
+        daily, reads, xp, notes, phonics: merged.phonics, grammar: merged.grammar, storyPos: merged.storyPos,
         freeze: {
           freezes: gamify.freezes ?? 0,
           frozenDates: gamify.frozenDates ?? [],
