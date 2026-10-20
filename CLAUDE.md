@@ -1,6 +1,10 @@
 # Bản đồ dự án tiếng Pháp (đọc trước, đỡ phải mò)
 
-- Repo git là thư mục này. App ở `code/`, kế hoạch ở `plan/`.
+- Repo git là thư mục này. App ở `code/`.
+- **Việc còn lại + tiến độ: `plan/TASKS.md`** (nguồn duy nhất). Đọc mục "Cách dùng" trong đó trước khi nhận việc nội
+  dung / ngữ pháp / port từ app Anh; sau mỗi lô ghi Nhật ký + bảng Tổng quan và commit cùng lô.
+- Cách viết: bài đọc/truyện `code/docs/CONTENT_PLAYBOOK.md`, ngữ pháp `code/docs/GRAMMAR_PLAYBOOK.md`.
+  `plan/gap-banks/`, `plan/story-banks/` = dữ liệu giỏ từ của `content-kit.mjs` (giữ nguyên).
 - App Next.js 16 xuất tĩnh: `code/app`, `code/components`, `code/lib` (logic thuần, kèm unit test `*.test.ts`).
 - Pipeline nội dung: `code/scripts/` (Node + Python; Python chạy bằng `code/scripts/.venv`).
 - Deploy: chỉ dùng `npm run deploy` (= `code/scripts/deploy.sh`), đọc `code/DEPLOY.md` trước (chi tiết ở `code/CLAUDE.md`).

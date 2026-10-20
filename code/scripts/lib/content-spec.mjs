@@ -31,7 +31,7 @@ export const isStrict = (level, type) => STRICT[type]?.includes(level) ?? false;
 // Mục tiêu "học hết là đủ lên cấp" (Mục tiêu 2.0 của app Anh) — `npm run content:coverage -- --targets`.
 // cov1/cov3/cov5 = tỉ lệ từ của cấp L gặp trong ≥ 1/3/5 bài KHÁC NHAU ở cấp ≤ L; hours = giờ đọc của cấp;
 // topic = số bài tối thiểu cho mỗi chủ đề có mặt; genres = thể loại bắt buộc, mỗi loại ≥ genreMin bài.
-// stories = số truyện mục tiêu (ngang app Anh, plan/story-plan.md) — `content:coverage -- --stories`.
+// stories = số truyện mục tiêu (ngang app Anh, plan/TASKS.md) — `content:coverage -- --stories`.
 export const TARGETS = {
   a1: { stories: 53, cov1: 0.98, cov3: 0.9, cov5: 0.65, hours: 8, topic: 2, genreMin: 3, genres: ["narrative", "description", "informational", "practical", "letter", "how-to", "news"] },
   a2: { stories: 61, cov1: 0.97, cov3: 0.8, cov5: 0.4, hours: 12, topic: 2, genreMin: 4, genres: ["narrative", "description", "informational", "practical", "letter", "how-to", "news", "review", "biography"] },

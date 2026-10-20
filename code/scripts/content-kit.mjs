@@ -1,4 +1,4 @@
-// Bộ công cụ soạn nhanh, ít token (port app Anh, docs/CONTENT_PLAYBOOK.md §16).
+// Bộ công cụ soạn nhanh, ít token (port app Anh; cách dùng: docs/CONTENT_PLAYBOOK.md §3).
 //   node scripts/content-kit.mjs need <cấp> [k=3] [N=120] [--re <regex nghĩa VI/EN>]
 //        từ đích của cấp đang gặp < k bài (cấp ≤ L), thường gặp trước — để gom một bài theo cụm chủ đề.
 //        In "từ(số bài) nghĩa" gọn một dòng/từ.
@@ -11,7 +11,7 @@
 //   node scripts/content-kit.mjs sbanks <cấp> <lô> [--n 6] [--size N] [--write]
 //        giỏ từ cho lô TRUYỆN: từ đích còn thiếu ngữ cảnh để đạt TARGETS cov1/cov3/cov5 (từ gần ngưỡng trước,
 //        thường gặp trước; đạt hết thì lấy từ < 3 rồi < 5 bài), chia n giỏ có lõi chủ đề. Sinh lúc BẮT ĐẦU lô
-//        (theo độ phủ hiện tại), --write nối vào plan/story-banks/<cấp>.txt (mã b1-s01a…). plan/story-plan.md
+//        (theo độ phủ hiện tại), --write nối vào plan/story-banks/<cấp>.txt (mã b1-s01a…). plan/TASKS.md
 //   node scripts/content-kit.mjs bankcheck <đoạn-tên-file>…
 //        bài/truyện có dòng "// giỏ b1-g001" / "// giỏ b1-s01a": đã dùng bao nhiêu từ của giỏ
 //        (mốc: thiếu ≤ 4 từ hoặc dùng ≥ 80%, lấy mốc thấp hơn) + từ còn thiếu.
@@ -129,7 +129,7 @@ if (cmd === "need") {
   if (args.includes("--write")) {
     const dir = join(ROOT, "..", "plan", "gap-banks");
     mkdirSync(dir, { recursive: true });
-    const head = `# Giỏ từ ${lv.toUpperCase()} — sinh ${new Date().toISOString().slice(0, 10)} bằng \`node scripts/content-kit.mjs banks ${lv} --size ${SIZE} --write\` (giữ cố định, không sinh lại).\n# Mỗi dòng = một bài: dùng ≥ ${SIZE - 2}/${SIZE} từ (dạng biến hình được), chủ đề gợi ý trong ngoặc. Chuẩn viết: plan/gap-plan.md\n`;
+    const head = `# Giỏ từ ${lv.toUpperCase()} — sinh ${new Date().toISOString().slice(0, 10)} bằng \`node scripts/content-kit.mjs banks ${lv} --size ${SIZE} --write\` (giữ cố định, không sinh lại).\n# Mỗi dòng = một bài: dùng ≥ ${SIZE - 2}/${SIZE} từ (dạng biến hình được), chủ đề gợi ý trong ngoặc. Chuẩn viết: code/docs/CONTENT_PLAYBOOK.md\n`;
     writeFileSync(join(dir, `${lv}.txt`), head + lines.join("\n") + "\n");
     console.log(`→ plan/gap-banks/${lv}.txt`);
   } else console.log(lines.slice(0, 4).join("\n"));
@@ -196,7 +196,7 @@ if (cmd === "need") {
     const dir = join(ROOT, "..", "plan", "story-banks");
     mkdirSync(dir, { recursive: true });
     const f = join(dir, `${lv}.txt`);
-    const old = existsSync(f) ? readFileSync(f, "utf8") : `# Giỏ từ TRUYỆN ${lv.toUpperCase()} — mỗi lô sinh lúc bắt đầu bằng \`node scripts/content-kit.mjs sbanks ${lv} <lô> --write\`, giữ cố định.\n# Mỗi dòng = một truyện: dùng ≥ 80% từ của giỏ (rải qua các chương, dạng gốc), số trong ngoặc = số bài đang có từ lúc sinh. Chuẩn: plan/story-plan.md\n`;
+    const old = existsSync(f) ? readFileSync(f, "utf8") : `# Giỏ từ TRUYỆN ${lv.toUpperCase()} — mỗi lô sinh lúc bắt đầu bằng \`node scripts/content-kit.mjs sbanks ${lv} <lô> --write\`, giữ cố định.\n# Mỗi dòng = một truyện: dùng ≥ 80% từ của giỏ (rải qua các chương, dạng gốc), số trong ngoặc = số bài đang có từ lúc sinh. Chuẩn: code/docs/CONTENT_PLAYBOOK.md\n`;
     if (old.includes(`\n${lv}-s${lot}a `)) throw new Error(`lô ${lot} đã có trong ${f} — giỏ giữ cố định, không sinh lại`);
     writeFileSync(f, `${old}\n## lô ${lot} (${new Date().toISOString().slice(0, 10)}, thiếu ${missing} ngữ cảnh)\n${lines.join("\n")}\n`);
     console.log(`→ plan/story-banks/${lv}.txt`);

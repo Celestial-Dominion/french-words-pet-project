@@ -1,4 +1,4 @@
-// Dịch máy bản nháp tiếng Việt cho bài đọc / câu hỏi (port app Anh, docs/CONTENT_PLAYBOOK.md §16) — người soạn chỉ
+// Dịch máy bản nháp tiếng Việt cho bài đọc / câu hỏi (port app Anh; cách dùng: docs/CONTENT_PLAYBOOK.md §1) — người soạn chỉ
 // viết tiếng Pháp, máy điền tiếng Việt, người soạn đọc soát rồi sửa đúng dòng sai.
 //
 //   node scripts/content-mt.mjs fill <file>…   điền " | VI" cho mọi dòng còn thiếu:

@@ -1,4 +1,4 @@
-// Độ phủ từ vựng của thư viện đọc theo cấp (port app Anh, docs/CONTENT_PLAYBOOK.md §4, §15).
+// Độ phủ từ vựng của thư viện đọc theo cấp (port app Anh; cách dùng: docs/CONTENT_PLAYBOOK.md §2).
 //   node scripts/content-coverage.mjs              bảng: số bài, chữ, giờ đọc, phủ ≥1/≥3/≥5 bài, so mục tiêu (TARGETS)
 //   node scripts/content-coverage.mjs --topics a1  phân bố chủ đề / thể loại / độ dài của cấp
 //   node scripts/content-coverage.mjs --stories    độ phủ chỉ tính truyện + số truyện so với app Anh
@@ -71,7 +71,7 @@ if (process.argv[1] && import.meta.filename === process.argv[1]) {
     const ws = list.map((m) => profileOf(m).nWords).sort((a, b) => a - b);
     if (ws.length) console.log(`độ dài: min ${ws[0]} · trung vị ${ws[ws.length >> 1]} · max ${ws.at(-1)} · tổng ${ws.reduce((a, b) => a + b, 0)}`);
   } else if (args[0] === "--stories") {
-    // độ phủ CHỈ tính truyện (cấp ≤ L) + số truyện so với app Anh (TARGETS.stories) — plan/story-plan.md
+    // độ phủ CHỈ tính truyện (cấp ≤ L) + số truyện so với app Anh (TARGETS.stories) — plan/TASKS.md
     const ctx = contexts().filter((c) => c.type === "S");
     console.log("Cấp  truyện (app Anh)  chữ     giờ    phủ ≥1   ≥3       ≥5");
     LEVEL_KEYS.forEach((k, b) => {
