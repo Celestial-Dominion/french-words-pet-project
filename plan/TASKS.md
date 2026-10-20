@@ -59,7 +59,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 - **Nhật ký:**
   - 20/10 lô 01: 10 bài (a1-p01, 3–4 câu hỏi/bài, audio đủ), giỏ 87/90; ≥1 93,6→97,1 · ≥3 74,2→80,2 · ≥5 64,0→65,4 ✓; thiếu 226→135; 5 giờ 25% · tuần 4%; 4ec0fac
   - 20/10 lô 02: 10 bài (a1-p02, 3 câu hỏi/bài, audio đủ), giỏ 86/90 (bỏ gueule foutre mec flic); ≥1 97,1→97,5 · ≥3 80,2→83,3 · ≥5 65,4→65,5 ✓; thiếu 135→56; 5 giờ 26% · tuần 4%; 0fc612d
-  - 20/10 lô 03: 10 bài (a1-p03, 3 câu hỏi/bài, audio đủ), giỏ 85/90 + 13 từ chưa gặp (malgré, cesser, lorsque, situation, échapper, retenir, manière, installer, maintenir, rejoindre, tendre, passé, arranger); ≥1 97,5→99,3 ✓ · ≥3 83,3→90,9 ✓ · ≥5 65,5→66,1 ✓; thiếu 56→0; 5 giờ 28% · tuần 4%; COMMIT
+  - 20/10 lô 03: 10 bài (a1-p03, 3 câu hỏi/bài, audio đủ), giỏ 85/90 + 13 từ chưa gặp (malgré, cesser, lorsque, situation, échapper, retenir, manière, installer, maintenir, rejoindre, tendre, passé, arranger); ≥1 97,5→99,3 ✓ · ≥3 83,3→90,9 ✓ · ≥5 65,5→66,1 ✓; thiếu 56→0; 5 giờ 28% · tuần 4%; 5b1f9d7
   - **Kết quả:** A1 190 bài đọc, đạt cả 3 mốc. Cả việc: 3 lô, 5 giờ 23→28%, tuần 4→4%.
   - Mẹo cho P-A2: `sbanks` chỉ nhắm mốc ≥3/≥5; mốc ≥1 phải tự lấy từ (0) trong `content-kit need <lv>` rải 1–2 từ/bài.
 
