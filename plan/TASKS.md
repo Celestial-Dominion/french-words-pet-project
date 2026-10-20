@@ -30,7 +30,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 |---|---|---|---|---|---|
 | X-skip | Port "bắt đầu từ A1 / bỏ qua cấp" trong Cài đặt | tùy chọn | code nhỏ | ~0,5–1% | chưa làm |
 | P-A1 | A1 — nâng độ phủ từ | **bắt buộc** | ~25 bài đọc ngắn (3 lô) | ~1% | **xong 20/10** (30 bài, thực tế <1% tuần) |
-| P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | chưa làm (giỏ lô 08 có sẵn) |
+| P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | đang làm: lô 08 xong (thiếu 202→63) |
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | chưa làm |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | chưa làm |
@@ -79,6 +79,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
     Bỏ từ rác trong giỏ: couillon, avorter, fi, bé, pet, peloter, eunuque, crève.
   - Đo lại sau lô 08. Còn thiếu thì chạy `sbanks c1 09 --n 2 --write` và viết 2 truyện (`st-09.txt`).
 - **Nhật ký:**
+  - 20/10 lô 08: 6 truyện (st-08, 3 câu hỏi/chương, audio đủ), giỏ 146/156 (bỏ từ rác); ≥3 44,5→48,0 · ≥5 24,9→25,0; thiếu 202→63; C1 48 truyện; 5 giờ 31% · tuần 5%; COMMIT
 
 ## P-A2 — Độ phủ từ A2 [ ]
 
