@@ -1,5 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
-import { freshStart, openSettings, shortSessions, patchReview } from "./helpers";
+import { freshStart, grammarLessons, openSettings, shortSessions, patchReview } from "./helpers";
 
 // Smoke test các luồng chính (chạy local trên dev, không cần backend —
 // AuthGate tự bỏ qua chặn đăng nhập khi chạy máy tự động ngoài production).
@@ -173,13 +173,20 @@ test("đọc hub /doc + học /hoc: trang mới như HSK", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Học từ theo cấp" })).toBeVisible();
 });
 
-test("khóa ngữ pháp: danh sách bài + mở bài + đánh dấu xong", async ({ page }) => {
+test("khóa ngữ pháp: lưới cấp → danh sách bài → mở bài → đánh dấu xong", async ({ page }) => {
+  const lessons = grammarLessons();
+  const g = lessons.find((l) => l.id === "giong-danh-tu")!;
+  await freshStart(page, "/ngu-phap");
+  await expect(page.getByRole("heading", { name: "Ngữ pháp", exact: true })).toBeVisible();
+  await page.getByRole("link", { name: /^A1 Vỡ lòng/ }).click();
+  await expect(page).toHaveURL(/\/ngu-phap\/a1$/);
+  await page.getByRole("link", { name: g.t }).click();
+  await expect(page).toHaveURL(new RegExp(`/ngu-phap/${g.lv}/${g.id}$`));
+  await expect(page.getByRole("heading", { name: g.t })).toBeVisible();
+  await page.getByRole("button", { name: "Chưa học", exact: true }).click();
+  await expect(page.getByRole("button", { name: "Đã học", exact: true })).toHaveAttribute("aria-pressed", "true");
   await page.goto("/ngu-phap");
-  await expect(page.getByRole("heading", { name: "Khóa ngữ pháp vỡ lòng" })).toBeVisible();
-  await page.getByRole("button", { name: /Giống của danh từ/ }).click();
-  await expect(page.getByText("un = một (đực) · une = một (cái)")).toBeVisible();
-  await page.getByRole("button", { name: "Đã học xong bài này" }).click();
-  await expect(page.getByText("1/11 bài")).toBeVisible();
+  await expect(page.getByText(`Đã học 1/${lessons.length} bài`)).toBeVisible();
 });
 
 test("cài đặt: trang /cai-dat cũ vẫn có đủ cài đặt + sao lưu", async ({ page }) => {
@@ -282,7 +289,10 @@ test("luyện tập tự do: nghe & gõ câu chịu sai dấu, chấm từng t�
 
 test("học từ: tìm kiếm toàn app + card khóa học", async ({ page }) => {
   await page.goto("/hoc");
-  await expect(page.getByText("Khóa ngữ pháp vỡ lòng")).toBeVisible();
+  await expect(page.getByRole("link", { name: /^Khóa phát âm/ })).toHaveAttribute("href", "/phat-am");
+  const grammar = page.getByRole("link", { name: /^Ngữ pháp có video/ });
+  await expect(grammar).toHaveAttribute("href", "/ngu-phap");
+  await expect(grammar).toContainText(`${grammarLessons().length} bài video giảng giải`);
   await page.getByPlaceholder(/Tra nhanh một từ/).fill("bonjour");
   await page.getByRole("button", { name: /bonjour/ }).first().click();
   await expect(page.getByText(/xin chào/).first()).toBeVisible();

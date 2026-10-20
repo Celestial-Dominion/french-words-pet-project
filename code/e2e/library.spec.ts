@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { freshStart } from "./helpers";
+import { freshStart, publicData } from "./helpers";
 
 // C1: thư viện theo cấp — trang riêng cho từng cấp / từng bài, lọc chủ đề, bài tiếp theo, liên kết cũ ?open= vẫn chạy.
 
@@ -27,19 +27,21 @@ test("trang bài: tải theo đường dẫn trực tiếp, có 'Bài tiếp the
 });
 
 test("truyện theo cấp: tóm tắt + mở truyện qua trang riêng", async ({ page }) => {
+  const s = publicData<{ id: string; level: number; title_fr: string; summary: string }[]>("stories-index.json").find((x) => x.level === 3)!; // B1: truyện đầu cấp
   await freshStart(page, "/truyen");
   await page.getByRole("link", { name: /^B1 Trung cấp/ }).click();
   await expect(page).toHaveURL(/\/truyen\/b1$/);
-  await expect(page.getByText(/Marie và Paul đi biển/)).toBeVisible();
-  await page.getByRole("link", { name: /Le voyage à la mer/ }).last().click();
-  await expect(page).toHaveURL(/\/truyen\/b1\/b1-story-01$/);
+  await expect(page.getByText(s.summary, { exact: true })).toBeVisible();
+  await page.getByRole("link", { name: s.title_fr }).last().click();
+  await expect(page).toHaveURL(new RegExp(`/truyen/b1/${s.id}$`));
   await expect(page.getByRole("combobox")).toBeVisible(); // chọn chương
 });
 
 test("liên kết cũ /bai-doc?open=<id> chuyển sang trang bài mới", async ({ page }) => {
+  const title = publicData<{ id: string; title_fr: string }[]>("readings-index.json").find((x) => x.id === "a2-03")!.title_fr;
   await freshStart(page, "/bai-doc?open=a2-03");
   await expect(page).toHaveURL(/\/bai-doc\/a2\/a2-03$/);
-  await expect(page.getByRole("heading", { name: "Au marché" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: title })).toBeVisible();
 });
 
 // C2: trình đọc — tốc độ nhớ qua lần mở, nghe riêng một câu, câu trước / sau, tạm dừng giữ đúng câu.

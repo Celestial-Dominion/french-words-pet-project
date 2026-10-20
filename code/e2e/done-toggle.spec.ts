@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { freshStart } from "./helpers";
+import { freshStart, grammarLessons } from "./helpers";
 
 // A5: tích / bỏ tích "đã đọc · đã học" ngay trên danh sách + thanh lọc trạng thái + nút trạng thái trong trang bài.
 
@@ -34,13 +34,14 @@ test("bài đọc: nút trạng thái trong trang bài bật/tắt được, dan
 });
 
 test("ngữ pháp: tích trên danh sách, giữ sau tải lại, lọc + nút trong bài", async ({ page }) => {
-  await freshStart(page, "/ngu-phap");
-  const tick = page.getByRole("checkbox", { name: /^Đã học: Bài \d+ · Giống của danh từ/ });
+  const g = grammarLessons().find((l) => l.id === "giong-danh-tu")!; // id cố định: cổng câu chọn un/une đọc đúng bài này
+  await freshStart(page, `/ngu-phap/${g.lv}`);
+  const tick = page.getByRole("checkbox", { name: `Đã học: ${g.t}`, exact: true });
   await tick.click();
-  await expect(page.getByText("1/11 bài")).toBeVisible();
-  // lưu kèm mốc thời gian (bỏ tích không bị đồng bộ hồi sinh)
+  await expect(page.getByRole("radio", { name: /^Đã học/ })).toHaveText(/^Đã học\s*1$/);
+  // lưu kèm mốc thời gian (bỏ tích không bị đồng bộ hồi sinh): mã hoá "id~học~cuối~lần~điểm~~~tích tay"
   const raw = await page.evaluate(() => localStorage.getItem("fr.grammarDone"));
-  expect(JSON.parse(raw!)).toEqual([expect.stringMatching(/^giong-danh-tu~[0-9a-z]+$/)]);
+  expect(JSON.parse(raw!)).toEqual([expect.stringMatching(/^giong-danh-tu~[0-9a-z]+~[0-9a-z]+~1~0~~~1$/)]);
 
   await page.reload();
   await expect(tick).toHaveAttribute("aria-checked", "true");
@@ -49,13 +50,14 @@ test("ngữ pháp: tích trên danh sách, giữ sau tải lại, lọc + nút t
   await page.getByRole("radio", { name: /^Đã học/ }).click();
   await expect(page.getByRole("checkbox", { name: /^Đã học:/ })).toHaveCount(1);
 
-  await page.getByRole("button", { name: /Giống của danh từ/ }).click();
+  await page.getByRole("link", { name: g.t }).click();
+  await expect(page).toHaveURL(new RegExp(`/ngu-phap/${g.lv}/${g.id}$`));
   const state = page.getByRole("button", { name: "Đã học", exact: true });
   await expect(state).toHaveAttribute("aria-pressed", "true");
   await state.click();
   await expect(page.getByRole("button", { name: "Chưa học", exact: true })).toHaveAttribute("aria-pressed", "false");
   const raw2 = await page.evaluate(() => localStorage.getItem("fr.grammarDone"));
-  expect(JSON.parse(raw2!)).toEqual([expect.stringMatching(/^giong-danh-tu~[0-9a-z]+~0$/)]);
+  expect(JSON.parse(raw2!)).toEqual([expect.stringMatching(/^giong-danh-tu~~[0-9a-z]+~0~0~~1$/)]);
 });
 
 test("phát âm: tích bài trên danh sách + lọc", async ({ page }) => {

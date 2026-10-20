@@ -1,7 +1,16 @@
 import { expect, type Page } from "@playwright/test";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 
 // Tiện ích dùng chung cho e2e (port từ app Anh). DB IndexedDB của app: "french-words".
 export const DB_NAME = "french-words";
+
+/** Đọc JSON dữ liệu dựng sẵn ở public/data (chỉ mục bài đọc / truyện / ngữ pháp…) để test không gõ cứng tiêu đề bài. */
+export const publicData = <T>(path: string) => JSON.parse(readFileSync(join(process.cwd(), "public", "data", path), "utf8")) as T;
+
+export type GrammarLesson = { id: string; lv: string; n: number; t: string };
+/** Chỉ mục khoá Ngữ pháp video (public/data/grammar/index.json). */
+export const grammarLessons = () => publicData<{ lessons: GrammarLesson[] }>("grammar/index.json").lessons;
 
 /** Xoá IndexedDB + cache + localStorage để mỗi test bắt đầu từ trạng thái sạch, tránh phụ thuộc thứ tự. */
 export async function freshStart(page: Page, path = "/") {
