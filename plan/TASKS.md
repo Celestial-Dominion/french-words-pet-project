@@ -57,7 +57,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
   tuer, cela, dont, ainsi, affaire, ailleurs, agir, doute, seigneur, malgré, esprit… Hợp với ngụ ngôn/cổ tích kể lại,
   thư, hội thoại. Từ tục trong giỏ (foutre, gueule, mec) thì bỏ qua.
 - **Nhật ký:**
-  - 20/10 lô 01: 10 bài (a1-p01, 3–4 câu hỏi/bài, audio đủ), giỏ 87/90; ≥1 93,6→97,1 · ≥3 74,2→80,2 · ≥5 64,0→65,4 ✓; thiếu 226→135; 5 giờ 25% · tuần 4%; COMMIT
+  - 20/10 lô 01: 10 bài (a1-p01, 3–4 câu hỏi/bài, audio đủ), giỏ 87/90; ≥1 93,6→97,1 · ≥3 74,2→80,2 · ≥5 64,0→65,4 ✓; thiếu 226→135; 5 giờ 25% · tuần 4%; 4ec0fac
 
 ## P-C1 — Độ phủ từ C1 [ ]
 
