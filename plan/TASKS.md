@@ -16,8 +16,9 @@
    - commit file này **cùng commit của lô**, rồi push.
 4. Nháp dài (ý tưởng bài, bước đang dở) ghi vào `plan/.progress-<mã>.md` (git bỏ qua). Xoá file nháp khi xong việc.
 5. Xong việc: đổi `[ ]` → `[x]` ở tiêu đề mục, ghi "xong" trong bảng; có bẫy mới thì cập nhật memory; báo người dùng.
-6. Hạn mức: chạy `get_usage` sau mỗi lô. Dừng khi tuần ≥ ngưỡng người dùng đặt; người dùng chưa nói thì dừng ở **90%**.
-   Ghi chỗ dừng vào Nhật ký để phiên sau làm tiếp.
+6. **Hạn mức — ngưỡng dừng hiện hành (người dùng đặt 20/10/2026): dừng ngay khi hạn mức 5 giờ > 50% HOẶC hạn mức tuần
+   > 40%.** Chạy `get_usage` sau mỗi lô và giữa lô (sau mỗi lần ghi file bài). Chạm ngưỡng thì commit phần đã xong, ghi
+   chỗ dừng vào Nhật ký, rồi báo người dùng. Người dùng đổi ngưỡng thì sửa dòng này.
 7. Phong cách: tự làm trọn, không hỏi lại, không dùng subagent, báo cáo tiếng Việt kèm số liệu. Deploy khi người dùng bảo.
 
 ## Tổng quan (số đo 20/10/2026)
@@ -28,7 +29,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | Mã | Việc | Loại | Khối lượng | Ước tính % tuần | Trạng thái |
 |---|---|---|---|---|---|
 | X-skip | Port "bắt đầu từ A1 / bỏ qua cấp" trong Cài đặt | tùy chọn | code nhỏ | ~0,5–1% | chưa làm |
-| P-A1 | A1 — nâng độ phủ từ | **bắt buộc** | ~25 bài đọc ngắn (3 lô) | ~1% | chưa làm |
+| P-A1 | A1 — nâng độ phủ từ | **bắt buộc** | ~25 bài đọc ngắn (3 lô) | ~1% | đang làm: lô 01 xong (thiếu 226→135) |
 | P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | chưa làm (giỏ lô 08 có sẵn) |
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | chưa làm |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
@@ -56,6 +57,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
   tuer, cela, dont, ainsi, affaire, ailleurs, agir, doute, seigneur, malgré, esprit… Hợp với ngụ ngôn/cổ tích kể lại,
   thư, hội thoại. Từ tục trong giỏ (foutre, gueule, mec) thì bỏ qua.
 - **Nhật ký:**
+  - 20/10 lô 01: 10 bài (a1-p01, 3–4 câu hỏi/bài, audio đủ), giỏ 87/90; ≥1 93,6→97,1 · ≥3 74,2→80,2 · ≥5 64,0→65,4 ✓; thiếu 226→135; 5 giờ 25% · tuần 4%; COMMIT
 
 ## P-C1 — Độ phủ từ C1 [ ]
 

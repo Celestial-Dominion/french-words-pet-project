@@ -1,0 +1,14 @@
+# Giỏ từ TRUYỆN A1 — mỗi lô sinh lúc bắt đầu bằng `node scripts/content-kit.mjs sbanks a1 <lô> --write`, giữ cố định.
+# Mỗi dòng = một truyện: dùng ≥ 80% từ của giỏ (rải qua các chương, dạng gốc), số trong ngoặc = số bài đang có từ lúc sinh. Chuẩn: code/docs/CONTENT_PLAYBOOK.md
+
+## lô 01 (2026-10-20, thiếu 226 ngữ cảnh)
+a1-s01a · cơ thể, sức khoẻ (health) · rendre(4: trả lại) · sang(2: máu) · fond(4: đáy) · remettre(0: đặt lại) · ramener(0: đưa về) · croire(4: tin) · cela(0: cái đó) · dont(0: mà) · ni(2: cũng không)
+a1-s01b · gia đình, tình cảm (family) · amour(2: tình yêu) · fils(2: con trai) · mari(2: chồng) · embrasser(2: hôn) · copain(2: bạn) · tant(0: nhiều thế) · sembler(2: có vẻ) · ainsi(0: như vậy) · foutre(0: làm)
+a1-s01c · cảm xúc, tính cách (psychology) · peine(1: nỗi buồn) · type(1: loại) · espérer(1: hy vọng) · genre(1: loại) · sorte(1: loại) · servir(2: phục vụ) · quitter(2: rời khỏi) · souvenir(4: kỷ niệm) · chance(2: may mắn)
+a1-s01d · chiến tranh, tôn giáo, lịch sử (history) · prier(2: cầu nguyện) · seigneur(0: lãnh chúa) · prévenir(2: báo trước) · ennemi(2: kẻ thù) · dieu(1: thần) · point(2: điểm) · excuser(2: tha lỗi) · ceux(0: những cái đó) · mauvais(4: xấu)
+a1-s01e · phố xá, đi lại (cities) · affaire(0: việc) · car(1: vì) · occuper(1: chiếm) · mec(0: gã) · lieu(2: nơi) · ailleurs(0: ở nơi khác) · imaginer(2: tưởng tượng) · valoir(2: đáng giá) · cause(0: nguyên nhân)
+a1-s01f · tự chọn chủ đề (daily-life) · pourtant(2: tuy nhiên) · regard(2: ánh mắt) · surtout(4: nhất là) · agir(0: hành động) · recevoir(4: nhận) · plaisir(2: niềm vui) · doute(0: sự nghi ngờ) · celle(0: cái đó) · suffire(2: đủ)
+a1-s01g · tự chọn chủ đề (daily-life) · silence(2: sự im lặng) · battre(2: đánh) · sauver(2: cứu) · autant(0: nhiều như thế) · esprit(0: tinh thần) · tellement(2: rất) · reconnaître(2: nhận ra) · désolé(2: xin lỗi) · tiens(2: này)
+a1-s01h · tự chọn chủ đề (daily-life) · l'un(0: một trong số) · découvrir(2: khám phá) · amener(0: dẫn đến) · approcher(2: đến gần) · refuser(2: từ chối) · âme(0: linh hồn) · empêcher(0: ngăn cản) · exister(2: tồn tại) · lâcher(2: buông)
+a1-s01i · tự chọn chủ đề (daily-life) · ignorer(0: không biết) · rapport(0: báo cáo) · confiance(2: sự tin tưởng) · amuser(0: làm vui) · réussir(2: thành công) · plan(2: kế hoạch) · traverser(2: đi qua) · habitude(2: thói quen) · abandonner(0: từ bỏ)
+a1-s01j · tự chọn chủ đề (daily-life) · laquelle(0: cái nào) · assurer(0: đảm bảo) · mener(0: dẫn dắt) · lancer(2: ném) · parmi(2: giữa) · avis(2: ý kiến) · lui-même(2: chính anh ấy) · avion(2: máy bay) · brûler(2: đốt)
