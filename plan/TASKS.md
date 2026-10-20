@@ -81,7 +81,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 - **Nhật ký:**
   - 20/10 lô 08: 6 truyện (st-08, 3 câu hỏi/chương, audio đủ), giỏ 146/156 (bỏ từ rác); ≥3 44,5→48,0 · ≥5 24,9→25,0; thiếu 202→63; C1 48 truyện; 5 giờ 31% · tuần 5%; 62d6031
   - 20/10 lô 09: 3 truyện (st-09, giỏ c1-s09a…c qua `sbanks c1 09 --n 3`), giỏ 69/78 (bỏ từ rác/tục); ≥3 48,0→49,8 · ≥5 25,0→25,2 ✓; thiếu 63→5; C1 51 truyện; 5 giờ 32% · tuần 5%; c153b8a
-  - 20/10 lô 10: 1 truyện (st-10, giỏ c1-s10a qua `sbanks c1 10 --n 1`), giỏ 26/26; ≥3 49,8→50,7 ✓ · ≥5 25,2 ✓; thiếu 5→0; C1 52 truyện; 5 giờ 32% · tuần 5%; COMMIT
+  - 20/10 lô 10: 1 truyện (st-10, giỏ c1-s10a qua `sbanks c1 10 --n 1`), giỏ 26/26; ≥3 49,8→50,7 ✓ · ≥5 25,2 ✓; thiếu 5→0; C1 52 truyện; 5 giờ 32% · tuần 5%; ee8b181
   - **Kết quả:** C1 đạt cả 3 mốc (≥1 98,0 · ≥3 50,7 · ≥5 25,2), giờ đọc 23,2/21. Cả việc: 3 lô, 10 truyện, 5 giờ ~30→32%, tuần 5%.
 
 ## P-A2 — Độ phủ từ A2 [ ]
