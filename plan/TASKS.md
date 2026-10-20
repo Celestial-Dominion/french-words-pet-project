@@ -30,7 +30,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 |---|---|---|---|---|---|
 | X-skip | Port "bắt đầu từ A1 / bỏ qua cấp" trong Cài đặt | tùy chọn | code nhỏ | ~0,5–1% | chưa làm |
 | P-A1 | A1 — nâng độ phủ từ | **bắt buộc** | ~25 bài đọc ngắn (3 lô) | ~1% | **xong 20/10** (30 bài, thực tế <1% tuần) |
-| P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | đang làm: lô 09 xong (thiếu 202→5) |
+| P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | **xong 20/10** (52 truyện, ≥3 50,7% · ≥5 25,2%) |
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | chưa làm |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | chưa làm |
@@ -63,7 +63,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
   - **Kết quả:** A1 190 bài đọc, đạt cả 3 mốc. Cả việc: 3 lô, 5 giờ 23→28%, tuần 4→4%.
   - Mẹo cho P-A2: `sbanks` chỉ nhắm mốc ≥3/≥5; mốc ≥1 phải tự lấy từ (0) trong `content-kit need <lv>` rải 1–2 từ/bài.
 
-## P-C1 — Độ phủ từ C1 [ ]
+## P-C1 — Độ phủ từ C1 [x]
 
 - **Đích:** ≥3 bài 50% · ≥5 bài 25%. Mốc ≥1 (98,0%) và giờ đọc (22,1/21) đã đạt.
 - **20/10:** ≥3 44,5% (1.649 từ < 3 bài, cần ≤ ~1.485) · ≥5 24,9% · thiếu 202 ngữ cảnh. C1 có 42 truyện.
@@ -81,6 +81,8 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 - **Nhật ký:**
   - 20/10 lô 08: 6 truyện (st-08, 3 câu hỏi/chương, audio đủ), giỏ 146/156 (bỏ từ rác); ≥3 44,5→48,0 · ≥5 24,9→25,0; thiếu 202→63; C1 48 truyện; 5 giờ 31% · tuần 5%; 62d6031
   - 20/10 lô 09: 3 truyện (st-09, giỏ c1-s09a…c qua `sbanks c1 09 --n 3`), giỏ 69/78 (bỏ từ rác/tục); ≥3 48,0→49,8 · ≥5 25,0→25,2 ✓; thiếu 63→5; C1 51 truyện; 5 giờ 32% · tuần 5%; c153b8a
+  - 20/10 lô 10: 1 truyện (st-10, giỏ c1-s10a qua `sbanks c1 10 --n 1`), giỏ 26/26; ≥3 49,8→50,7 ✓ · ≥5 25,2 ✓; thiếu 5→0; C1 52 truyện; 5 giờ 32% · tuần 5%; COMMIT
+  - **Kết quả:** C1 đạt cả 3 mốc (≥1 98,0 · ≥3 50,7 · ≥5 25,2), giờ đọc 23,2/21. Cả việc: 3 lô, 10 truyện, 5 giờ ~30→32%, tuần 5%.
 
 ## P-A2 — Độ phủ từ A2 [ ]
 
@@ -104,7 +106,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 
 ## S-C1 — Truyện C1 cho đủ 67 (tùy chọn, sau P-C1) [ ]
 
-- Sau P-C1, C1 có khoảng 50/67 truyện. Mỗi lô chạy `sbanks c1 NN --write` (đủ mốc thì tool tự lấy từ < 3 rồi < 5 bài),
+- Sau P-C1, C1 có 52/67 truyện (còn 15 → 3 lô: 6 + 6 + 3). Mỗi lô chạy `sbanks c1 NN --write` (đủ mốc thì tool tự lấy từ < 3 rồi < 5 bài),
   6 truyện/lô, lô cuối lẻ.
 - **Nhật ký:**
 
