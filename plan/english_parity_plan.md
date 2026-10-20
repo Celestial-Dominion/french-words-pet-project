@@ -39,13 +39,14 @@
 
 | Hạng mục | App Anh | App Pháp |
 |---|---|---|
-| Bài đọc | 1.377 (A1–C2) | 60 → 1.287 (15/10: A1 160, A2 252, B1 300, B2 285, C1 250, C2 40/145 — C1/C2 phiên khác đang làm) |
-| Truyện | 373, có chuỗi truyện dài | 16 → 132 (14/10: A1 54, A2 62, B1–C2 16 cũ) |
+| Bài đọc | 1.392 (A1 161, A2 248, B1 301, B2 287, C1 250, C2 145), 28 bài thuộc chuỗi | 1.699 (20/10: A1 160, A2 252, B1 353, B2 372, C1 373, C2 189 — kể cả bài lấp từ thiếu), chưa có chuỗi |
+| Truyện | 377 (A1 53, A2 61, B1 79, B2 68, C1 67, C2 49), 46 truyện thuộc 6 tác phẩm dài chia phần | 344 (20/10: A1 54, A2 62, B1 79, B2 68, C1 42, C2 39), chưa có chuỗi |
 | Video hội thoại | 160 | 0 |
-| Ngữ pháp | 188 bài, video giảng SVG, luyện tập, lịch ôn riêng | 54 bài A1–A2 cùng bộ máy (18/10) |
+| Ngữ pháp | 188 bài (A1 28, A2 32, B1 39, B2 36, C1 30, C2 23) | 54 bài A1–A2 cùng bộ máy (18/10; CSS bài giảng bổ sung 20/10 `efab1e5`) |
 | Câu ví dụ/từ | 5 câu đã soát | 3 câu |
 | Thẻ từ | họ từ, cụm đi kèm, nhãn văn phong | chưa có |
-| Đánh dấu đã đọc/xem/học + lọc · câu hỏi đọc hiểu · ghi nguồn | có | chưa |
+| Độ phủ từ "Mục tiêu 2.0" (20/10) | A1–C2 đạt | B1, B2, C2 đạt; A1 ≥1 93,6/98 ≥3 74,2/90 · A2 ≥1 92,4/97 ≥3 55,6/80 · C1 ≥3 44,5/50 ≥5 24,9/25 |
+| Đánh dấu đã đọc | khi làm xong câu hỏi cuối bài (`5f38237`) | khi cuộn tới cuối bài |
 
 ## 2. Việc nhỏ — chỉ code, dữ liệu có sẵn trên máy (làm trước)
 
@@ -71,6 +72,7 @@ Lý do: phiên mới cho tới 5 câu điền/từ + xoay câu theo lần ôn, n
 - [x] **C2.** Trình đọc (`components/passage.tsx`, port `passage-audio.ts` app Anh nhưng giữ audio TỪNG CÂU sẵn có — đủ 786/786 câu): nghe cả bài kiểu karaoke (tô sáng + tự cuộn câu đang đọc, nhường 4 s khi người dùng tự cuộn), tạm dừng / nghe tiếp đúng câu đang dở (trước đây bấm lại là phát từ đầu), câu trước / câu sau, tốc độ 1 → 1,25 → 1,5 → 0,75× nhớ qua lần mở (`fr.readRate`), tự đánh dấu khi đọc tới cuối (làm ở A5), nút ▶ trên từng câu khi bật Dịch. (`db876ff`)
 - [~] **C3.** Gộp vào C7 (quyết định 11/10/2026): khung câu hỏi đọc hiểu, ghi nguồn (`source-note`), chuỗi truyện dài (`series`) làm cùng lô nội dung đầu tiên để kiểm tra bằng bài thật — xem C7.
 - [ ] **C4.** Chỉ mục từ → học liệu (`word-refs`): "Gặp lại trong ngữ cảnh" + gợi ý sau phiên đọc theo chỉ mục.
+- [ ] **C4b.** Đánh dấu bài đọc/truyện "đã đọc" khi làm xong câu hỏi cuối bài thay vì khi cuộn tới cuối (app Anh `5f38237`: `quiz.tsx`, `reading-reader`, `story-reader`, `quiz-pure.ts`, e2e `done-marks`).
 - [ ] **C5.** Đồng bộ vị trí đọc truyện (`storyPos`) — nhớ thêm field vào `firestore.rules`.
 - [ ] **C6.** Pipeline nội dung: `content:check`, `content:coverage --targets`, `content:kit`, `content:build` (+ audio).
 
