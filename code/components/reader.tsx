@@ -12,7 +12,7 @@ import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import { Passage, ReaderToolbar, useListenAll } from "@/components/passage";
 import { DoneButton, useIsRead } from "@/components/done-toggle";
-import { NextLink, type NextItem } from "@/components/story-reader";
+import { NextLink, SeriesBox, type NextItem } from "@/components/story-reader";
 import { Quiz } from "@/components/quiz";
 import { SourceNote } from "@/components/source-note";
 import { playAudio, sentenceAudioUrl } from "@/lib/tts";
@@ -122,6 +122,7 @@ export default function Reader({ doc, onBack, next }: { doc: ReadingDoc; onBack:
         <DoneButton kind="read" done={read === true} onToggle={toggleRead} />
       </div>
 
+      {doc.series && <SeriesBox kind="reading" series={doc.series} />}
       {next && <NextLink next={next} noun="Bài tiếp theo" />}
 
       {selected && <WordDetail word={selected} examples={examples} onClose={() => setSelected(null)} />}

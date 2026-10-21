@@ -5,8 +5,10 @@
 // như Ngữ pháp) mới tự đánh dấu Đã đọc (câu hỏi các chương trước không đổi trạng thái; không bao giờ tự bỏ đánh dấu).
 // Chương cuối không có câu hỏi giữ cách cũ: cuộn tới cuối chương cuối là đánh dấu. Nút tay bấm lúc nào cũng được.
 import { useEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { lookupWord, loadExamplesForWords, loadStoryQuiz, type StoryDoc, type ExampleSentence, type QuizQuestion } from "@/lib/data";
+import { ChevronLeft, ChevronRight, Layers3 } from "lucide-react";
+import { lookupWord, loadExamplesForWords, loadStoryQuiz, type StoryDoc, type ExampleSentence, type QuizQuestion, type SeriesLink, type SeriesPos } from "@/lib/data";
+import { libraryHref, type LibraryKind } from "@/lib/library";
+import { levelSlug } from "@/lib/levels";
 import { markRead } from "@/lib/db";
 import type { Word } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
@@ -104,7 +106,14 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
         </button>
         <div className="min-w-0 flex-1">
           <h1 className="text-xl leading-tight font-bold break-words sm:text-3xl">{doc.title_fr}</h1>
-          <div className="mt-0.5 text-sm text-muted-foreground">{doc.title_vi}</div>
+          <div className="mt-0.5 text-sm text-muted-foreground">
+            {doc.title_vi}
+            {doc.series && (
+              <span className="ml-2 inline-block rounded-full bg-primary/15 px-2 py-0.5 text-xs font-semibold whitespace-nowrap text-primary">
+                Phần {doc.series.order}/{doc.series.count}
+              </span>
+            )}
+          </div>
         </div>
         <DoneButton kind="read" done={read === true} onToggle={toggleRead} className="h-9" />
       </div>
@@ -168,18 +177,28 @@ export default function StoryReader({ doc, onBack, next }: { doc: StoryDoc; onBa
         >
           <ChevronLeft className="size-4" /> Trước
         </button>
-        <span className="text-sm tabular-nums text-muted-foreground">
+        <span className="text-sm whitespace-nowrap tabular-nums text-muted-foreground">
           {ci + 1} / {doc.chapters.length}
         </span>
-        <button
-          onClick={() => (last ? onBack() : goChapter(ci + 1))}
-          className="flex items-center gap-1 rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
-        >
-          {last ? "Xong" : "Chương sau"} {!last && <ChevronRight className="size-4" />}
-        </button>
+        {last && doc.series?.next ? (
+          <Link
+            href={libraryHref("story", doc.series.next.level, doc.series.next.id)}
+            className="flex items-center gap-1 rounded-xl bg-primary px-4 py-2 text-sm font-semibold whitespace-nowrap text-primary-foreground"
+          >
+            Phần {doc.series.order + 1} <ChevronRight className="size-4" />
+          </Link>
+        ) : (
+          <button
+            onClick={() => (last ? onBack() : goChapter(ci + 1))}
+            className="flex items-center gap-1 rounded-xl bg-primary px-4 py-2 text-sm font-semibold whitespace-nowrap text-primary-foreground"
+          >
+            {last ? "Xong" : "Chương sau"} {!last && <ChevronRight className="size-4" />}
+          </button>
+        )}
       </div>
 
-      {last && next && <NextLink next={next} noun="Truyện tiếp theo" />}
+      {doc.series && <SeriesBox kind="story" series={doc.series} />}
+      {last && next && !doc.series?.next && <NextLink next={next} noun="Truyện tiếp theo" />}
 
       {selected && <WordDetail word={selected} examples={examples} onClose={() => setSelected(null)} />}
     </div>
@@ -199,5 +218,37 @@ export function NextLink({ next, noun }: { next: NextItem; noun: string }) {
       </span>
       <ChevronRight className="size-5 shrink-0 text-primary" />
     </Link>
+  );
+}
+
+/** Khối chuỗi cuối trang: truyện dài (phần trước/sau, cùng cấp) · bài đọc theo cấp (bậc trước/sau, khác cấp). */
+export function SeriesBox({ kind, series }: { kind: LibraryKind; series: SeriesPos }) {
+  const story = kind === "story";
+  const label = (l: SeriesLink, n: number) => (story ? `Phần ${n}` : levelSlug(l.level).toUpperCase());
+  const cell = "min-w-0 rounded-xl border bg-card px-3 py-2 text-sm transition-colors hover:border-primary/40";
+  return (
+    <section className="mt-6 rounded-2xl border bg-muted/30 p-4" data-testid="series-box">
+      <div className="flex items-center gap-2 text-sm font-semibold">
+        <Layers3 className="size-4 shrink-0 text-primary" />
+        {story ? `Truyện dài · phần ${series.order}/${series.count}` : `Chuỗi bài theo cấp · bậc ${series.order}/${series.count}`}
+      </div>
+      {!story && <p className="mt-1 text-xs text-muted-foreground">Cùng một chủ đề, mỗi cấp đào sâu hơn.</p>}
+      {(series.prev || series.next) && (
+        <div className="mt-3 grid gap-2 sm:grid-cols-2">
+          {series.prev && (
+            <Link href={libraryHref(kind, series.prev.level, series.prev.id)} className={cell}>
+              <span className="block text-xs text-muted-foreground">← {label(series.prev, series.order - 1)}</span>
+              <span className="line-clamp-2 font-medium">{series.prev.title_fr}</span>
+            </Link>
+          )}
+          {series.next && (
+            <Link href={libraryHref(kind, series.next.level, series.next.id)} className={`${cell} text-right sm:col-start-2`}>
+              <span className="block text-xs text-muted-foreground">{label(series.next, series.order + 1)} →</span>
+              <span className="line-clamp-2 font-medium">{series.next.title_fr}</span>
+            </Link>
+          )}
+        </div>
+      )}
+    </section>
   );
 }

@@ -198,6 +198,22 @@ export interface ReadingDoc {
   paras?: number[]; // chỉ số câu mở mỗi đoạn (không có = một đoạn)
   source?: ContentSource;
   quiz?: number; // số câu hỏi đọc hiểu (public/data/quiz/{id}.json)
+  series?: SeriesPos; // chuỗi bài theo cấp (bậc n/tổng)
+}
+
+// Chuỗi (scripts/build-content.mjs): bài đọc cùng chủ đề qua các cấp · các phần của một truyện dài (cùng cấp).
+export interface SeriesLink {
+  id: string;
+  level: number;
+  title_fr: string;
+  title_vi: string;
+}
+export interface SeriesPos {
+  id: string;
+  order: number; // 1..count
+  count: number;
+  prev?: SeriesLink;
+  next?: SeriesLink;
 }
 
 // Câu hỏi đọc hiểu cuối bài (content/quiz → scripts/build-content.mjs). a = chỉ số phương án ĐÚNG trong opts
@@ -227,7 +243,8 @@ export interface ReadingMeta {
   genre: string; // khoá GENRES
   words: number;
   min: number; // phút đọc ước lượng
-  series?: { id: string; order: number }; // chuỗi bài cùng chủ đề
+  series?: string; // id chuỗi bài theo cấp
+  src?: 1; // phỏng theo nguồn mở
 }
 
 let readingsIndexCache: ReadingMeta[] | null = null;
@@ -268,6 +285,7 @@ export interface StoryDoc {
   chapters: StoryChapterDoc[];
   source?: ContentSource;
   quiz?: number; // tổng số câu hỏi (public/data/quiz/{id}.json, theo chương)
+  series?: SeriesPos; // truyện dài chia phần: phần n/tổng
 }
 export interface StoryMetaDoc {
   id: string;
@@ -279,6 +297,10 @@ export interface StoryMetaDoc {
   summary: string; // tóm tắt tiếng Việt, không lộ kết
   words: number;
   min: number; // phút đọc ước lượng
+  series?: string; // truyện dài chia nhiều phần: id chuỗi + phần thứ part/parts
+  part?: number;
+  parts?: number;
+  src?: 1; // phỏng theo nguồn mở
 }
 
 let storiesIndexCache: StoryMetaDoc[] | null = null;

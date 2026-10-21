@@ -157,13 +157,17 @@ export function runChecks({ draft = false } = {}) {
       else if (J >= 0.12) R(b.id).w.push(`khá giống ${a.id} (Jaccard ${J.toFixed(2)})`);
     }
   }
-  // chuỗi (series): thứ tự không trùng, liền 1..n
-  const groups = new Map();
-  for (const m of items.filter((x) => x.series)) (groups.get(m.series.id) ?? groups.set(m.series.id, []).get(m.series.id)).push(m);
-  for (const [sid, list] of groups) {
-    const orders = list.map((m) => m.series.order).sort((a, b) => a - b);
-    if (new Set(orders).size !== orders.length) libErr.push(`series ${sid}: thứ tự trùng (${orders.join(",")})`);
-    else if (orders.some((o, i) => o !== i + 1)) libWarn.push(`series ${sid}: thứ tự không liền 1..${orders.length} (${orders.join(",")})`);
+  // chuỗi (series): thứ tự không trùng, liền 1..n trong cùng loại (bài đọc: bậc theo cấp; truyện dài: các phần cùng cấp)
+  for (const type of ["reading", "story"]) {
+    const groups = new Map();
+    for (const m of items.filter((x) => x.type === type && x.series)) (groups.get(m.series.id) ?? groups.set(m.series.id, []).get(m.series.id)).push(m);
+    for (const [sid, list] of groups) {
+      const orders = list.map((m) => m.series.order).sort((a, b) => a - b);
+      const lvs = [...new Set(list.map((m) => m.level))].join("/");
+      if (new Set(orders).size !== orders.length) libErr.push(`${lvs}/ series ${type} ${sid}: thứ tự trùng (${orders.join(",")})`);
+      else if (orders.some((o, i) => o !== i + 1)) libWarn.push(`${lvs}/ series ${type} ${sid}: thứ tự không liền 1..${orders.length} (${orders.join(",")})`);
+      if (type === "story" && lvs.includes("/")) libErr.push(`${lvs}/ series story ${sid}: các phần phải cùng cấp`);
+    }
   }
   // câu hỏi đọc hiểu
   const quiz = loadQuizzes();

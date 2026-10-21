@@ -34,7 +34,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | **xong 21/10** (49 truyện, ≥3 76,5% · ≥5 31,9%) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | **xong 21/10** (20 bài, 20 điểm phủ 100%) |
-| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
+| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | đang làm: code xong, A2 4/4 phần |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
@@ -229,7 +229,16 @@ sorte que, à force de, tant et si bien que).
   tác phẩm/cấp từ phạm vi công cộng. Gợi ý: Ségur *Les Malheurs de Sophie* (A2), Malot *Sans famille* (B1),
   Verne *Le Tour du monde en quatre-vingts jours* (B2), Leroux *Le Mystère de la chambre jaune* (C1), Balzac
   *Eugénie Grandet* (C2). Tránh *Le Petit Prince*, vì ở Pháp chưa thuộc phạm vi công cộng.
+- **Đổi B2 → Dumas *Les Trois Mousquetaires*** (21/10): A2 đã có truyện ngắn "Le Tour du monde en quatre-vingts jours"
+  (`content/stories/a2/st-08.txt`), kể lại Verne lần nữa ở B2 thì trùng cốt truyện.
 - **Nhật ký:**
+  - 21/10 lô 1: port code — `build-content.mjs` (seriesMap từ CẢ kho, kể cả ONLY → file bài có `series {id, order, count,
+    prev, next}`; chỉ mục truyện thêm `series/part/parts`; chỉ mục bài/truyện thêm `src: 1` khi có nguồn), `check-content.mjs`
+    (thứ tự theo loại, truyện dài phải cùng cấp), `lib/data.ts` (SeriesLink/SeriesPos), `story-reader.tsx` (huy hiệu
+    "Phần n/m", chương cuối có nút "Phần n+1", khối `SeriesBox` dùng chung với `reader.tsx` cho bài đọc theo cấp),
+    `library-lists.tsx` ("phần n/m · phỏng theo nguồn mở"). Soát fr-qa 375 px + máy bàn. Nội dung: A2 *Les Malheurs de
+    Sophie* 4 phần × 4 chương (`stories/a2/st-12.txt`, series `sophie`, 686–834 từ/phần) + 48 câu hỏi có audio (532 MP3)
+    → A2 66 truyện; 0 lỗi, 0 cảnh báo.
 
 ## X-skip — "Bắt đầu từ A1 / bỏ qua cấp" (tùy chọn) [x]
 

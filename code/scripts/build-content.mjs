@@ -5,7 +5,9 @@
 //   public/data/readings-index.json     chỉ mục nhẹ (tiêu đề, chủ đề, thể loại, số chữ, phút đọc)
 //   public/data/stories/{id}.json       từng truyện: chương [{title_fr, title_vi, sentences, paras}], nguồn
 //                                       (chỉ ghi file có nội dung đổi; xoá file bài không còn trong content/ — lib/library-files.ts)
-//   public/data/stories-index.json      chỉ mục truyện (số chương, chủ đề, tóm tắt, số chữ, phút đọc)
+//   public/data/stories-index.json      chỉ mục truyện (số chương, chủ đề, tóm tắt, số chữ, phút đọc, phần n/m)
+//   series: <id> <thứ tự> (nguồn)       chuỗi: bài đọc theo cấp · các phần của một truyện dài → {series} trong file bài
+//                                       (thứ tự, tổng, bài trước/sau); file nguồn kể lại thêm src: 1 vào chỉ mục
 //   public/data/quiz/{id}.json          câu hỏi đọc hiểu — tải lười khi mở bài (xoá file của bài không còn câu hỏi);
 //                                       bài đọc: [câu hỏi]; truyện: [[câu hỏi chương 1], [chương 2], …]
 //   public/data/word-refs/{0..15}.json  chỉ mục từ → bài ("Gặp lại trong ngữ cảnh", gợi ý sau phiên — lib/suggest.ts),
@@ -75,11 +77,29 @@ const quizJson = (b) =>
     a: q.opts.findIndex((o) => o.ok),
     why: q.why,
   }));
+// chuỗi (series): bậc bài đọc theo cấp · các phần của một truyện dài. Lấy từ cả kho (kể cả ONLY) để liên kết
+// bậc ở cấp khác vẫn đúng.
+const seriesMap = (type) => {
+  const out = new Map();
+  for (const m of all.items) if (m.type === type && m.series) (out.get(m.series.id) ?? out.set(m.series.id, []).get(m.series.id)).push(m);
+  for (const l of out.values()) l.sort((a, b) => a.series.order - b.series.order);
+  return out;
+};
+const seriesOf = { reading: seriesMap("reading"), story: seriesMap("story") };
+const seriesLink = (m) => ({ id: m.id, level: levelNum(m.level), title_fr: m.title.fr, title_vi: m.title.vi });
+/** {series} cho file bài: thứ tự n/tổng + bài trước/sau; null nếu không thuộc chuỗi. */
+const seriesPos = (m) => {
+  const s = m.series ? seriesOf[m.type].get(m.series.id) : null;
+  if (!s) return null;
+  const k = s.indexOf(m);
+  return { id: m.series.id, order: k + 1, count: s.length, ...(s[k - 1] ? { prev: seriesLink(s[k - 1]) } : {}), ...(s[k + 1] ? { next: seriesLink(s[k + 1]) } : {}) };
+};
 const sourceJson = (m) => (m.source ? { source: { title: m.source.title, credit: m.source.credit, license: m.source.license, url: m.source.url } } : {});
 
 for (const m of items.filter((x) => x.type === "story")) {
   const level = levelNum(m.level);
   const qs = m.chapters.map((_, k) => quiz.blocks.get(`${m.id}#${k + 1}`));
+  const sp = seriesPos(m);
   storiesByLevel.get(m.level).push(m.id);
   writeDoc("stories", {
     id: m.id,
@@ -94,6 +114,7 @@ for (const m of items.filter((x) => x.type === "story")) {
     })),
     ...sourceJson(m),
     ...(qs.some(Boolean) ? { quiz: qs.reduce((n, b) => n + (b?.questions.length ?? 0), 0) } : {}),
+    ...(sp ? { series: sp } : {}),
   });
   if (qs.some(Boolean)) {
     quizIds.add(m.id);
@@ -110,7 +131,8 @@ for (const m of items.filter((x) => x.type === "story")) {
     summary: m.summary,
     words,
     min: minutesOf(words, m.level),
-    ...(m.series ? { series: m.series } : {}),
+    ...(sp ? { series: sp.id, part: sp.order, parts: sp.count } : {}),
+    ...(m.source ? { src: 1 } : {}),
   });
 }
 
@@ -126,6 +148,7 @@ for (const m of items.filter((x) => x.type === "reading")) {
     ...(m.paras.length > 1 ? { paras: m.paras } : {}),
     ...sourceJson(m),
     ...(qb ? { quiz: qb.questions.length } : {}),
+    ...(seriesPos(m) ? { series: seriesPos(m) } : {}),
   };
   byLevel.get(m.level).push(m.id);
   writeDoc("readings", doc);
@@ -144,7 +167,8 @@ for (const m of items.filter((x) => x.type === "reading")) {
     genre: m.genre,
     words,
     min: minutesOf(words, m.level),
-    ...(m.series ? { series: m.series } : {}),
+    ...(m.series ? { series: m.series.id } : {}),
+    ...(m.source ? { src: 1 } : {}),
   });
 }
 
