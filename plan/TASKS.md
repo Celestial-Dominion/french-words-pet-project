@@ -37,7 +37,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
-| S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | chưa làm |
+| S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | đang làm: lô 11 xong (58/67) |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
 
 Cộng (còn lại, sau P-A1): bắt buộc ~13,5% (độ phủ ~3,5% + ngữ pháp ~10%) · tùy chọn ~8% · tất cả ~21–22% tuần.
@@ -119,6 +119,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 - Sau P-C1, C1 có 52/67 truyện (còn 15 → 3 lô: 6 + 6 + 3). Mỗi lô chạy `sbanks c1 NN --write` (đủ mốc thì tool tự lấy từ < 3 rồi < 5 bài),
   6 truyện/lô, lô cuối lẻ.
 - **Nhật ký:**
+  - 21/10 lô 11: 6 truyện (Le bandeau de Lucas, Le joueur de bridge, Le signor du campus, Le verger d'Hélène, L'atelier du sergent, Le campement de papy) + 90 câu hỏi có audio (708 file); 1029–1093 từ, đúng cấp 4,5–5,5%, giỏ 21–26/26 → C1 58/67; độ phủ C1 98,0% / ≥3 51,7% / ≥5 25,3% ✓. Commit: (điền sau).
 
 ---
 
