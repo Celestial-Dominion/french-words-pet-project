@@ -191,7 +191,7 @@ présent de narration & imparfait narratif · si hỗn hợp · à peine… que,
 - **Nhật ký:**
   - 21/10 lô 1: 7 bài (passé simple, passé antérieur, subjonctif imparfait, kể chuyện bằng hiện tại/imparfait/futur, conditionnel báo chí, sắc thái devoir/pouvoir, giả thiết C1) + 7 điểm inventory; 127/127 bài, 0 lỗi; 5 giờ 15% · tuần 9% trước lô; e9808ce
   - 21/10 lô 2: 7 bài (đảo ngữ sau trạng từ, đảo ngữ văn phong, nhượng bộ C1, subjonctif trong mệnh đề quan hệ, quan hệ C1, vô nhân xưng, subjonctif C1) + 7 điểm inventory; 134/134 bài, 0 lỗi; 5 giờ 17% · tuần 9% sau lô 1; 5e7f4c4
-  - 21/10 lô 3: 6 bài (từ nối C1, khẩu ngữ và văn viết, phủ định văn chương, nhấn mạnh C1, so sánh C1, câu danh từ) + 6 điểm inventory; 140/140 bài, 0 lỗi; 5 giờ 18% · tuần 10% sau lô 2; COMMIT
+  - 21/10 lô 3: 6 bài (từ nối C1, khẩu ngữ và văn viết, phủ định văn chương, nhấn mạnh C1, so sánh C1, câu danh từ) + 6 điểm inventory; 140/140 bài, 0 lỗi; 5 giờ 18% · tuần 10% sau lô 2; 42f6033
 
 ### G-C2 — Ngữ pháp C2 [ ] (app Anh 23 bài)
 
