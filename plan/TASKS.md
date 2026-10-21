@@ -172,7 +172,7 @@ câu hỏi gián tiếp (ce que, si, où).
 - **Nhật ký:** (kế hoạch 32 bài, bỏ phần đã có ở B1: n'importe, plus… plus, c'est… qui, câu hỏi gián tiếp hiện tại)
   - 21/10 lô 1: 7 bài (subjonctif passé, conditionnel passé, si + plus-que-parfait, futur antérieur, tương lai trong quá khứ, lời nói gián tiếp ở quá khứ, nguyên mẫu quá khứ) + 7 điểm inventory; 95/95 bài xuất bản, 0 lỗi; 5 giờ 10% · tuần 8% lúc bắt đầu; df739c9
   - 21/10 lô 2: 7 bài (participe présent và tính từ -ant, cụm phân từ đầu câu, faire / laisser + nguyên mẫu, bị động nâng cao, hợp phân từ nâng cao, lequel / auquel / duquel, le / en / y thay cả một ý) + 8 điểm inventory; 102/102 bài, 0 lỗi; 5 giờ 12% · tuần 9% sau lô 1; 0e6c0e0
-  - 21/10 lô 3: 7 bài (nhượng bộ quoique / avoir beau, giả thiết au cas où / à condition que, liên từ thời gian B2, ne explétif, nguyên nhân B2, kết quả / mục đích B2, từ nối lập luận) + 7 điểm inventory; 109/109 bài, 0 lỗi; 5 giờ 13% · tuần 9% sau lô 2; COMMIT
+  - 21/10 lô 3: 7 bài (nhượng bộ quoique / avoir beau, giả thiết au cas où / à condition que, liên từ thời gian B2, ne explétif, nguyên nhân B2, kết quả / mục đích B2, từ nối lập luận) + 7 điểm inventory; 109/109 bài, 0 lỗi; 5 giờ 13% · tuần 9% sau lô 2; f265c14
 
 ### G-C1 — Ngữ pháp C1 [ ] (app Anh 30 bài)
 
