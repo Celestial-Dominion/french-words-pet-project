@@ -1,0 +1,64 @@
+=== lien-tu-thoi-gian-b2
+sum: B1 đã có lorsque, dès que, pendant que, depuis que, avant que. B2 thêm: après que + indicatif (sau khi: après que tu es parti), une fois que + indicatif (một khi đã), à mesure que + indicatif (dần theo), jusqu'à ce que + subjonctif (cho đến khi: jusqu'à ce que la sauce soit épaisse), en attendant que + subjonctif (trong lúc chờ). Việc chưa chắc xảy ra dùng subjonctif, việc đã thật sự xảy ra dùng thức thường.
+form: après que + indicatif | Après que l'eau a bouilli, ajoute le riz.
+form: jusqu'à ce que + subjonctif | Attends jusqu'à ce que je revienne.
+form: en attendant que + subjonctif | Lis en attendant que je finisse.
+form: à mesure que + indicatif | À mesure qu'on monte, l'air devient frais.
+cast: lea tom
+bg: kitchen
+words: sauce, épais, remuer, goûter
+
+#hook
+tom: Je mets les pâtes maintenant ? | Giờ em cho mì vào luôn ạ? [thinking]
+lea: Non, attends jusqu'à ce que l'eau bouille. Et après qu'elles auront cuit dix minutes, goûte-les. | Chưa, chờ đến khi nước sôi đã. Và sau khi mì nấu được mười phút thì nếm thử. [explain]
+> [[Jusqu'à ce que]] đi với [[subjonctif]]: [[l'eau bouille]]. [[Après que]] lại đi với thức thường: [[elles auront cuit]].
+
+#meaning
+vs: Avant que tu partes, ferme la fenêtre. | Trước khi đi, đóng cửa sổ lại. || avant que + subjonctif: việc chưa xảy ra
+vs: Après que tu es parti, il a commencé à pleuvoir. | Sau khi bạn đi thì trời bắt đầu mưa. || après que + indicatif: việc đã xảy ra
+> Việc chưa chắc xảy ra dùng [[subjonctif]]. Việc đã thật sự xảy ra dùng thức thường, vì vậy [[après que]] đi với thức thường.
+
+#form
+th: Liên từ | Nghĩa | Theo sau là
+tb: après que | sau khi | indicatif
+tb: une fois que | một khi đã | indicatif
+tb: à mesure que | dần theo | indicatif
+tb: jusqu'à ce que | cho đến khi | subjonctif
+tb: en attendant que | trong lúc chờ | subjonctif
+> Cùng chủ ngữ thì dùng nguyên mẫu: [[après avoir mangé]], [[en attendant de partir]].
+
+#examples
+- Remue {jusqu'à ce que|k} la sauce soit épaisse. | Khuấy cho đến khi nước sốt sánh lại.
+- Lis un livre {en attendant que|k} le dîner soit prêt. | Đọc sách trong lúc chờ bữa tối xong.
+- {Après que|k} le film a commencé, personne n'a parlé. | Sau khi phim bắt đầu, không ai nói gì.
+- {Une fois que|k} les invités sont arrivés, on passe à table. | Khách đến đủ là mọi người vào bàn ăn.
+- {À mesure que|k} les jours passent, il fait plus froid. | Ngày càng trôi qua, trời càng lạnh.
+
+#mistakes
+x: Attends ici jusqu'à ce que je reviens. => Attends ici jusqu'à ce que je revienne. | Đợi ở đây cho đến khi tôi quay lại. >> [[Jusqu'à ce que]] đi với [[subjonctif]].
+x: Après qu'il soit parti, on a fait la fête. => Après qu'il est parti, on a fait la fête. | Sau khi anh ấy đi, chúng tôi mở tiệc. >> Theo chuẩn, [[après que]] đi với thức thường, dù nhiều người vẫn nói sai.
+x: Je lis en attendant que le bus arrivera. => Je lis en attendant que le bus arrive. | Tôi đọc sách trong lúc chờ xe buýt đến. >> [[En attendant que]] đi với [[subjonctif]].
+
+#dialogue
+tom: Et la sauce, je la laisse sur le feu combien de temps ? | Còn nước sốt, em để trên bếp bao lâu ạ? [thinking]
+lea: Jusqu'à ce qu'elle devienne plus épaisse. À mesure qu'elle cuit, elle change de couleur. | Đến khi nó sánh lại. Nấu càng lâu, nó càng đổi màu. [explain]
+tom: Et en attendant que tout soit prêt, je mets la table ? | Trong lúc chờ mọi thứ xong, em dọn bàn nhé? [happy]
+lea: Parfait. Une fois que tu auras mis la table, appelle les autres. | Tốt lắm. Dọn bàn xong thì gọi mọi người. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Khuấy cho đến khi nước sốt sánh lại. => Remue jusqu'à ce que la sauce soit épaisse. | Khuấy cho đến khi nước sốt sánh lại.
+? Nói bằng tiếng Pháp: Đọc sách trong lúc chờ bữa tối xong. => Lis un livre en attendant que le dîner soit prêt. | Đọc sách trong lúc chờ bữa tối xong.
+
+#recap
+> [[Après que]], [[une fois que]], [[à mesure que]] đi với thức thường. [[Jusqu'à ce que]], [[en attendant que]] đi với [[subjonctif]], giống [[avant que]].
+
+#practice
+fill: Attends ici jusqu'à ce que je ___ . | revienne* / reviens / reviendrai || subjonctif.
+fill: Après que le film ___ commencé, personne n'a parlé. | a* / ait / aie || indicatif.
+fill: Lis un livre en attendant que le dîner ___ prêt. | soit* / est / sera || subjonctif.
+fill: Il fait plus froid à ___ que les jours passent. | mesure* / moment / cause || à mesure que.
+contrast: Avant que tu ___ , ferme la fenêtre. | partes* / es parti || subjonctif.
+contrast: Après que tu ___ , il a commencé à pleuvoir. | es parti* / partes || indicatif.
+type: Je lis en attendant que le bus ___ (arriver). | arrive || subjonctif.
+fix: Après qu'il soit parti, on a fait la fête. | Après qu'il est parti, on a fait la fête.* / Après qu'il part, on a fait la fête. / Après il soit parti, on a fait la fête. || indicatif.
+listen: Remue jusqu'à ce que la sauce soit épaisse. | Remue jusqu'à ce que la sauce soit épaisse.* / Remue avant que la sauce soit épaisse. / Remue quand la sauce est épaisse. || jusqu'à ce que.

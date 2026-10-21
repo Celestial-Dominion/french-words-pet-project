@@ -1172,6 +1172,83 @@
     "neutral-pronouns"
    ],
    "find": "(?<![\\p{L}'])(je le sais|je le crois|je le pense|je l'espère|te l'ai dit|vous l'ai dit|je le savais|j'en suis sûr|j'en suis sûre|j'y pense|j'y tiens|je m'en doutais|je m'y attendais|il le faut)(?![\\p{L}])"
+  },
+  {
+   "id": "nhuong-bo",
+   "lv": "b2",
+   "cat": "clauses",
+   "t": "Nhượng bộ: quoique, avoir beau, quand bien même",
+   "en": "j'ai beau chercher · quoiqu'il soit tard",
+   "pts": [
+    "concession"
+   ],
+   "find": "(?<![\\p{L}'])(quoiqu'|(quoique|avoir beau|ai beau|as beau|a beau|avons beau|avez beau|ont beau|avais beau|avait beau|quand bien même)(?![\\p{L}]))"
+  },
+  {
+   "id": "gia-thiet",
+   "lv": "b2",
+   "cat": "conditionals",
+   "t": "Giả thiết: au cas où, à condition que, à moins que",
+   "en": "au cas où il pleuvrait · à condition que tu viennes",
+   "pts": [
+    "hypothesis"
+   ],
+   "find": "(?<![\\p{L}'])(au cas où|à condition que|à condition qu'|à condition de|à condition d'|pourvu que|pourvu qu'|à moins que|à moins qu'|à moins de|à moins d'|en cas de|en cas d')"
+  },
+  {
+   "id": "lien-tu-thoi-gian-b2",
+   "lv": "b2",
+   "cat": "clauses",
+   "t": "Liên từ thời gian B2: après que, jusqu'à ce que",
+   "en": "jusqu'à ce qu'il revienne · après qu'elle est partie",
+   "pts": [
+    "time-clauses-b2"
+   ],
+   "find": "(?<![\\p{L}'])(après que|après qu'|jusqu'à ce que|jusqu'à ce qu'|en attendant que|en attendant qu'|une fois que|une fois qu'|à mesure que|à mesure qu')"
+  },
+  {
+   "id": "ne-expletif",
+   "lv": "b2",
+   "cat": "negation",
+   "t": "Ne explétif: ne không phủ định",
+   "en": "avant qu'il ne parte · j'ai peur qu'il ne pleuve",
+   "pts": [
+    "ne-expletif"
+   ],
+   "find": "(?<![\\p{L}'])(avant |moins |peur |crainte |crains |craint |craignais )(que |qu')(je |j'|tu |il |elle |on |nous |vous |ils |elles )(ne |n')"
+  },
+  {
+   "id": "nguyen-nhan-b2",
+   "lv": "b2",
+   "cat": "clauses",
+   "t": "Nguyên nhân B2: vu que, faute de, sous prétexte que",
+   "en": "vu qu'il pleut · faute de temps",
+   "pts": [
+    "cause-b2"
+   ],
+   "find": "(?<![\\p{L}'])(étant donné que|étant donné qu'|vu que|vu qu'|du fait que|du fait qu'|sous prétexte que|sous prétexte qu'|sous prétexte de|faute de|faute d'|à force de|à force d'|non que|non qu')"
+  },
+  {
+   "id": "ket-qua-muc-dich-b2",
+   "lv": "b2",
+   "cat": "clauses",
+   "t": "Kết quả, mục đích B2: au point que, de sorte que",
+   "en": "au point qu'il est tombé malade · de sorte qu'on t'entende",
+   "pts": [
+    "consequence-purpose-b2"
+   ],
+   "find": "(?<![\\p{L}'])(de sorte que|de sorte qu'|au point que|au point qu'|à tel point que|à tel point qu'|de peur que|de peur qu'|de crainte que|de crainte qu'|de façon à|de manière à|de façon que|de manière que|de peur de|de peur d')"
+  },
+  {
+   "id": "tu-noi-lap-luan",
+   "lv": "b2",
+   "cat": "clauses",
+   "t": "Từ nối lập luận",
+   "en": "en outre · néanmoins · en revanche · quant à",
+   "pts": [
+    "connectors"
+   ],
+   "find": "(?<![\\p{L}'])(en outre|néanmoins|toutefois|en revanche|par contre|d'ailleurs|par ailleurs|quant à|quant au|quant aux|en somme|bref|par conséquent)(?![\\p{L}])"
   }
  ]
 }

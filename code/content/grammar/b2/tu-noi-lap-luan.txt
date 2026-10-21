@@ -1,0 +1,65 @@
+=== tu-noi-lap-luan
+sum: Từ nối giúp bài nói, bài viết mạch lạc. Thêm ý: de plus, en outre, par ailleurs. Đối lập: néanmoins, toutefois (tuy nhiên, trang trọng hơn mais), en revanche, par contre (ngược lại). Thêm lý do: d'ailleurs (vả lại). Chuyển sang người, việc khác: quant à (còn về). Kết quả: par conséquent. Kết luận: bref, en somme.
+form: thêm ý | De plus, … · En outre, …
+form: đối lập | Néanmoins, … · En revanche, …
+form: còn về | Quant à moi, …
+form: kết luận | Bref, … · En somme, …
+cast: hugo mme-martin
+bg: stage
+words: avis, polluer, embouteillage, conclusion
+
+#hook
+mme-martin: Alors, ton avis sur les vélos en ville ? | Thế ý kiến của em về xe đạp trong thành phố? [thinking]
+hugo: Le vélo est bon pour la santé. En outre, il ne pollue pas. Néanmoins, il peut être dangereux. | Xe đạp tốt cho sức khoẻ. Hơn nữa, nó không gây ô nhiễm. Tuy nhiên, nó có thể nguy hiểm. [explain]
+> [[En outre]] thêm một ý cùng chiều. [[Néanmoins]] đưa ra ý ngược lại. Hai từ này làm bài nói chặt chẽ hơn.
+
+#meaning
+vs: C'est cher, mais c'est utile. | Đắt nhưng hữu ích. || mais: văn nói
+vs: C'est cher. Néanmoins, c'est très utile. | Đắt. Tuy nhiên, rất hữu ích. || néanmoins: trang trọng
+> [[Néanmoins]], [[toutefois]] nghĩa như [[mais]] nhưng trang trọng hơn và hay đứng đầu câu.
+
+#form
+th: Chức năng | Từ nối
+tb: thêm ý | de plus, en outre, par ailleurs
+tb: đối lập | néanmoins, toutefois, en revanche, par contre
+tb: thêm lý do | d'ailleurs
+tb: chuyển sang người khác | quant à
+tb: kết quả | par conséquent
+tb: kết luận | bref, en somme
+> [[Par contre]] hay dùng khi nói, [[en revanche]] dùng khi viết. [[Quant à]] gộp với mạo từ: [[quant au]], [[quant aux]].
+
+#examples
+- Cet hôtel est bien situé. {De plus|k}, il n'est pas cher. | Khách sạn này ở vị trí tốt. Hơn nữa, lại không đắt.
+- Mon frère adore le sport. Ma sœur, {en revanche|k}, préfère lire. | Anh tôi mê thể thao. Ngược lại, chị tôi thích đọc sách.
+- Je n'ai pas envie de sortir. {D'ailleurs|k}, il pleut. | Tôi không muốn ra ngoài. Vả lại, trời đang mưa.
+- Les enfants partent demain. {Quant aux|k} parents, ils restent ici. | Bọn trẻ đi ngày mai. Còn bố mẹ thì ở lại.
+- Il a raté le bus, il a perdu ses clés. {Bref|k}, une mauvaise journée. | Lỡ xe buýt, mất chìa khoá. Tóm lại, một ngày tồi tệ.
+
+#mistakes
+x: Quant à les enfants, ils dorment déjà. => Quant aux enfants, ils dorment déjà. | Còn bọn trẻ thì đã ngủ rồi. >> [[À]] với [[les]] gộp thành [[aux]].
+x: Il fait beau. En revanche, il fait chaud. => Il fait beau. De plus, il fait chaud. | Trời đẹp. Hơn nữa, trời ấm. >> Hai ý cùng chiều: dùng [[de plus]].
+x: Il est riche. Par conséquent, il n'est pas heureux. => Il est riche. Néanmoins, il n'est pas heureux. | Anh ấy giàu. Tuy nhiên, anh ấy không hạnh phúc. >> Ý ngược lại: [[néanmoins]].
+
+#dialogue
+mme-martin: Très bien. Et quant aux voitures ? | Rất tốt. Còn ô tô thì sao? [happy]
+hugo: Elles sont rapides. En revanche, elles polluent beaucoup. D'ailleurs, il y a trop d'embouteillages. | Ô tô nhanh. Ngược lại, chúng gây ô nhiễm nhiều. Vả lại, tắc đường quá nhiều. [explain]
+mme-martin: Et ta conclusion ? | Còn kết luận của em? [thinking]
+hugo: Bref, le vélo est meilleur pour la ville. Par conséquent, il faut plus de pistes. | Tóm lại, xe đạp tốt hơn cho thành phố. Vì vậy, cần thêm làn đường cho xe đạp. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi không muốn ra ngoài. Vả lại, trời đang mưa. => Je n'ai pas envie de sortir. D'ailleurs, il pleut. | Tôi không muốn ra ngoài. Vả lại, trời đang mưa.
+? Nói bằng tiếng Pháp: Anh tôi mê thể thao. Ngược lại, chị tôi thích đọc sách. => Mon frère adore le sport. Ma sœur, en revanche, préfère lire. | Anh tôi mê thể thao. Ngược lại, chị tôi thích đọc sách.
+
+#recap
+> Thêm ý: [[de plus]], [[en outre]]. Đối lập: [[néanmoins]], [[toutefois]], [[en revanche]]. Thêm lý do: [[d'ailleurs]]. Còn về: [[quant à]]. Kết quả: [[par conséquent]]. Kết luận: [[bref]], [[en somme]].
+
+#practice
+fill: Cet hôtel est bien situé et, ___ , il n'est pas cher. | de plus* / en revanche / quant à || thêm ý.
+fill: Mon frère adore le sport. Ma sœur, en ___ , préfère lire. | revanche* / outre / somme || ngược lại.
+fill: Je n'ai pas envie de sortir et, d'___ , il pleut. | ailleurs* / abord / accord || vả lại.
+fill: Les enfants partent demain. Quant ___ parents, ils restent ici. | aux* / à les / des || à + les.
+contrast: Il est riche, ___ il n'est pas heureux. | néanmoins* / par conséquent || ý ngược lại.
+contrast: Il a trop travaillé, ___ il est fatigué. | par conséquent* / néanmoins || kết quả.
+type: Il a raté le bus et perdu ses clés. En ___ , une mauvaise journée. | somme || en somme = bref.
+fix: Quant à les enfants, ils dorment déjà. | Quant aux enfants, ils dorment déjà.* / Quant des enfants, ils dorment déjà. / Quant au enfants, ils dorment déjà. || à + les = aux.
+listen: Je n'ai pas envie de sortir. D'ailleurs, il pleut. | Je n'ai pas envie de sortir. D'ailleurs, il pleut.* / Je n'ai pas envie de sortir. Pourtant, il fait beau. / J'ai envie de sortir. D'ailleurs, il fait beau. || d'ailleurs.

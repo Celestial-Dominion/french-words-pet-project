@@ -1472,6 +1472,86 @@
     "y-en-verbs"
    ],
    "pri": 2
+  },
+  {
+   "id": "concession",
+   "lv": "b2",
+   "cat": "clauses",
+   "name": "Concession (B2)",
+   "vi": "Nhượng bộ B2: quoique + subjonctif (quoiqu'il soit tard), avoir beau + nguyên mẫu (j'ai beau chercher, je ne trouve pas), quand bien même + conditionnel, tout + tính từ + que; phân biệt quoique / quoi que",
+   "pre": [
+    "opposition"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "hypothesis",
+   "lv": "b2",
+   "cat": "conditionals",
+   "name": "Hypothèse sans si",
+   "vi": "Giả thiết không dùng si: au cas où + conditionnel, à condition que / pourvu que / à moins que + subjonctif, à condition de / à moins de + nguyên mẫu (cùng chủ ngữ), en cas de + danh từ",
+   "pre": [
+    "si-imparfait",
+    "subjonctif-forms"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "time-clauses-b2",
+   "lv": "b2",
+   "cat": "clauses",
+   "name": "Subordonnées de temps (B2)",
+   "vi": "Mệnh đề thời gian B2: après que / une fois que / à mesure que + indicatif; jusqu'à ce que / en attendant que + subjonctif",
+   "pre": [
+    "time-clauses"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "ne-expletif",
+   "lv": "b2",
+   "cat": "negation",
+   "name": "Ne explétif",
+   "vi": "Ne không mang nghĩa phủ định trong văn trang trọng: avant qu'il ne pleuve, à moins qu'il ne neige, de peur qu'il ne tombe, j'ai peur qu'il ne vienne, plus cher que je ne pensais; không bao giờ có pas",
+   "pre": [
+    "time-clauses-b2",
+    "subj-emotion-doubt"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "cause-b2",
+   "lv": "b2",
+   "cat": "clauses",
+   "name": "Cause (B2)",
+   "vi": "Nguyên nhân B2: étant donné que, vu que, du fait que; sous prétexte que (người nói không tin); faute de + danh từ / nguyên mẫu; à force de; non que + subjonctif",
+   "pre": [
+    "cause"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "consequence-purpose-b2",
+   "lv": "b2",
+   "cat": "clauses",
+   "name": "Conséquence et but (B2)",
+   "vi": "Kết quả, mục đích B2: au point que, à tel point que; de sorte que + indicatif (kết quả) / + subjonctif (mục đích); de peur que + subjonctif; de peur de, de façon à + nguyên mẫu",
+   "pre": [
+    "consequence",
+    "purpose"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "connectors",
+   "lv": "b2",
+   "cat": "clauses",
+   "name": "Connecteurs logiques",
+   "vi": "Từ nối lập luận: de plus, en outre, par ailleurs; néanmoins, toutefois, en revanche, par contre; d'ailleurs; quant à; par conséquent; bref, en somme",
+   "pre": [
+    "conjunctions-a2"
+   ],
+   "pri": 1
   }
  ],
  "probes": [

@@ -1,0 +1,62 @@
+=== ket-qua-muc-dich-b2
+sum: B1 đã có donc, si bien que, si / tellement… que, pour que, afin que. B2 thêm: au point que, à tel point que (đến mức); de sorte que, de façon que + indicatif chỉ kết quả, + subjonctif chỉ mục đích; de peur que, de crainte que + subjonctif (kẻo, vì sợ); khi cùng chủ ngữ: de peur de, de façon à + nguyên mẫu.
+form: au point que / à tel point que + indicatif | Il a tant travaillé, au point qu'il est tombé malade.
+form: de sorte que + subjonctif: mục đích | Parle fort de sorte qu'on t'entende.
+form: de sorte que + indicatif: kết quả | Il a plu, de sorte que le match a été annulé.
+form: de peur que + subjonctif | Je pars tôt de peur qu'il y ait des bouchons.
+cast: linh lucas
+bg: campus-gate
+words: réviser, examen, pause, rêver
+
+#hook
+lucas: J'ai tellement révisé que j'ai mal à la tête. | Tớ ôn bài nhiều đến mức đau đầu luôn. [sad]
+linh: Moi, j'ai révisé au point que je rêve de grammaire la nuit ! | Tớ thì ôn đến mức đêm nằm mơ thấy ngữ pháp! [happy]
+> [[Au point que]]: đến mức, chỉ một kết quả mạnh. Nó gần nghĩa với [[tellement que]], nhưng nhấn hơn.
+
+#meaning
+vs: Il a parlé fort, de sorte que tout le monde l'a entendu. | Anh ấy nói to nên ai cũng nghe thấy. || de sorte que + indicatif: kết quả
+vs: Parle fort, de sorte que tout le monde t'entende. | Nói to lên để mọi người nghe thấy. || de sorte que + subjonctif: mục đích
+> Cùng một liên từ, nhưng thức của động từ đổi nghĩa: thức thường cho kết quả, [[subjonctif]] cho mục đích.
+
+#form
+th: Cấu trúc | Nghĩa | Theo sau là
+tb: au point que, à tel point que | đến mức | indicatif
+tb: de sorte que, de façon que | nên, để | indicatif, subjonctif
+tb: de peur que, de crainte que | kẻo, vì sợ | subjonctif
+tb: de peur de, de façon à | cùng chủ ngữ | nguyên mẫu
+> Khi hai vế cùng chủ ngữ, dùng nguyên mẫu: [[je me dépêche de peur d'être en retard]].
+
+#examples
+- Elle était fatiguée au {point|k} qu'elle s'est endormie en classe. | Cô ấy mệt đến mức ngủ gật trong lớp.
+- Il a neigé toute la nuit, {de sorte que|k} les routes sont fermées. | Tuyết rơi cả đêm nên đường bị đóng.
+- J'explique lentement {de sorte que|k} tout le monde comprenne. | Tôi giải thích chậm để ai cũng hiểu.
+- Nous parlons bas {de peur que|k} le bébé se réveille. | Chúng tôi nói khẽ kẻo em bé thức giấc.
+- Range tes affaires {de façon à|k} tout trouver facilement. | Xếp đồ đạc sao cho dễ tìm mọi thứ.
+
+#mistakes
+x: Je parle lentement de sorte que tu comprends. => Je parle lentement de sorte que tu comprennes. | Tôi nói chậm để bạn hiểu. >> Mục đích: [[subjonctif]].
+x: Il est parti tôt de peur qu'il rate le train. => Il est parti tôt de peur de rater le train. | Anh ấy đi sớm vì sợ lỡ tàu. >> Cùng chủ ngữ: [[de peur de]] với nguyên mẫu.
+x: Il a tellement plu au point que la rivière a débordé. => Il a plu au point que la rivière a débordé. | Mưa nhiều đến mức sông tràn bờ. >> Không dùng [[tellement]] cùng với [[au point que]].
+
+#dialogue
+linh: Viens, on va réviser ensemble, de façon à s'aider. | Lại đây, mình ôn cùng nhau để giúp nhau. [happy]
+lucas: D'accord, mais lentement, de sorte que je retienne quelque chose ! | Được, nhưng chậm thôi, để tớ nhớ được chút gì! [thinking]
+linh: Et on fait une pause toutes les heures, de peur que ta tête n'explose. | Và cứ mỗi tiếng mình nghỉ một lần, kẻo đầu cậu nổ tung. [happy]
+lucas: Tu es drôle, à tel point que je ne suis plus stressé. | Cậu vui tính đến mức tớ hết căng thẳng luôn. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi giải thích chậm để ai cũng hiểu. => J'explique lentement de sorte que tout le monde comprenne. | Tôi giải thích chậm để ai cũng hiểu.
+? Nói bằng tiếng Pháp: Chúng tôi nói khẽ kẻo em bé thức giấc. => Nous parlons bas de peur que le bébé se réveille. | Chúng tôi nói khẽ kẻo em bé thức giấc.
+
+#recap
+> [[Au point que]], [[à tel point que]]: đến mức. [[De sorte que]] với thức thường chỉ kết quả, với [[subjonctif]] chỉ mục đích. [[De peur que]] với [[subjonctif]]; cùng chủ ngữ thì [[de peur de]], [[de façon à]] với nguyên mẫu.
+
+#practice
+fill: J'explique lentement de sorte que tout le monde ___ . | comprenne* / comprend / comprendra || mục đích: subjonctif.
+fill: Il a neigé toute la nuit, de sorte que les routes ___ fermées. | sont* / soient / seraient || kết quả: indicatif.
+fill: Nous parlons bas de peur que le bébé se ___ . | réveille* / réveillera / réveillé || subjonctif.
+fill: Elle était fatiguée au ___ qu'elle s'est endormie en classe. | point* / sorte / peur || au point que.
+contrast: Il est parti tôt de peur ___ rater le train. | de* / qu'il || cùng chủ ngữ.
+type: Range tes affaires de façon ___ tout trouver facilement. | à || de façon à + nguyên mẫu.
+fix: Je parle lentement de sorte que tu comprends. | Je parle lentement de sorte que tu comprennes.* / Je parle lentement de sorte de comprendre. / Je parle lentement au point que tu comprennes. || subjonctif.
+listen: Il a neigé toute la nuit, de sorte que les routes sont fermées. | Il a neigé toute la nuit, de sorte que les routes sont fermées.* / Il a neigé toute la nuit, alors les routes sont fermées. / Il a neigé toute la nuit, mais les routes sont ouvertes. || de sorte que.

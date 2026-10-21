@@ -1,0 +1,63 @@
+=== nguyen-nhan-b2
+sum: B1 đã có parce que, comme, puisque, car, à cause de, grâce à. B2 thêm: étant donné que, vu que, du fait que (vì, xét thấy, trang trọng); sous prétexte que (lấy cớ là, người nói không tin); faute de + danh từ / nguyên mẫu (vì thiếu); à force de + nguyên mẫu / danh từ (nhờ cố mãi); non que + subjonctif (không phải vì).
+form: étant donné que / vu que + indicatif | Vu qu'il est tard, je rentre.
+form: sous prétexte que | Il est parti sous prétexte qu'il était malade.
+form: faute de + danh từ | Faute de temps, je n'ai pas fini.
+form: à force de + nguyên mẫu | À force de chercher, j'ai trouvé.
+cast: m-dubois zoe
+bg: service-hall
+words: guichet, personnel, prétexte, collègue
+
+#hook
+zoe: Pourquoi le guichet est fermé ? | Sao quầy lại đóng cửa vậy ạ? [surprised]
+m-dubois: Faute de personnel, nous fermons à midi aujourd'hui. Étant donné que vous êtes déjà là, je vais quand même vous aider. | Vì thiếu nhân viên nên hôm nay chúng tôi đóng cửa lúc trưa. Xét thấy chị đã đến đây rồi, tôi vẫn sẽ giúp chị. [explain]
+> [[Faute de personnel]]: vì thiếu người. [[Étant donné que]]: vì, xét thấy, cách nói trang trọng.
+
+#meaning
+vs: Il n'est pas venu parce qu'il était malade. | Anh ấy không đến vì bị ốm. || parce que: nguyên nhân thật
+vs: Il n'est pas venu sous prétexte qu'il était malade. | Anh ấy không đến, lấy cớ là bị ốm. || sous prétexte que: người nói không tin
+> [[Sous prétexte que]] cho thấy người nói nghi ngờ lý do đó.
+
+#form
+th: Cấu trúc | Nghĩa | Theo sau là
+tb: étant donné que, vu que | vì, xét thấy | indicatif
+tb: sous prétexte que | lấy cớ là | indicatif
+tb: faute de | vì thiếu | danh từ, nguyên mẫu
+tb: à force de | nhờ cố mãi | nguyên mẫu, danh từ
+tb: non que | không phải vì | subjonctif
+> [[Faute de]] và [[à force de]] không có mạo từ trước danh từ: [[faute de temps]], [[à force de patience]].
+
+#examples
+- {Vu que|k} tout le monde est là, commençons. | Vì mọi người đã có mặt, ta bắt đầu thôi.
+- {Étant donné|k} qu'il neige, les cours sont annulés. | Vì tuyết rơi nên các lớp học bị huỷ.
+- {Faute|k} d'argent, ils ont annulé leurs vacances. | Vì thiếu tiền, họ đã huỷ kỳ nghỉ.
+- {À force de|k} s'entraîner, elle est devenue championne. | Nhờ tập luyện mãi, cô ấy trở thành nhà vô địch.
+- Je ne sors pas ce soir, {non que|k} je sois fatigué, mais j'ai du travail. | Tối nay tôi không ra ngoài, không phải vì mệt, mà vì có việc.
+
+#mistakes
+x: Faute du temps, il n'a pas pu venir. => Faute de temps, il n'a pas pu venir. | Vì không có thời gian, anh ấy không đến được. >> Sau [[faute de]] không có mạo từ.
+x: Non qu'il est méchant, mais il est timide. => Non qu'il soit méchant, mais il est timide. | Không phải anh ấy xấu tính, mà là nhút nhát. >> [[Non que]] đi với [[subjonctif]].
+x: À force de travaille, il a réussi. => À force de travailler, il a réussi. | Nhờ làm việc chăm chỉ mãi, anh ấy đã thành công. >> Sau [[à force de]] là nguyên mẫu.
+
+#dialogue
+zoe: Merci beaucoup ! Vu que je viens de loin, c'est très gentil. | Cảm ơn ông nhiều! Tôi đến từ xa nên thật quý lòng ông. [happy]
+m-dubois: Mon collègue est parti tôt, sous prétexte qu'il avait un rendez-vous chez le dentiste. | Đồng nghiệp tôi về sớm, lấy cớ là có hẹn với nha sĩ. [angry]
+zoe: Vous ne le croyez pas ? | Ông không tin anh ấy à? [surprised]
+m-dubois: Non que je doute de lui, mais ça arrive souvent ce mois-ci ! | Không phải tôi nghi ngờ anh ấy, nhưng tháng này chuyện đó xảy ra hoài! [thinking]
+
+#recall
+? Nói bằng tiếng Pháp: Vì mọi người đã có mặt, ta bắt đầu thôi. => Vu que tout le monde est là, commençons. | Vì mọi người đã có mặt, ta bắt đầu thôi.
+? Nói bằng tiếng Pháp: Nhờ tập luyện mãi, cô ấy trở thành nhà vô địch. => À force de s'entraîner, elle est devenue championne. | Nhờ tập luyện mãi, cô ấy trở thành nhà vô địch.
+
+#recap
+> Nguyên nhân B2: [[étant donné que]], [[vu que]] trang trọng; [[sous prétexte que]] khi không tin lý do; [[faute de]] vì thiếu; [[à force de]] nhờ cố mãi; [[non que]] với [[subjonctif]] để bác một lý do.
+
+#practice
+fill: Faute ___ temps, il n'a pas pu venir. | de* / du / des || không có mạo từ.
+fill: À force de ___ , elle est devenue championne. | s'entraîner* / s'entraîne / entraîné || nguyên mẫu.
+fill: Je ne sors pas, non que je ___ fatigué, mais j'ai du travail. | sois* / suis / serai || subjonctif.
+contrast: Il n'est pas venu, ___ qu'il était malade, mais je ne le crois pas. | sous prétexte* / parce || người nói không tin.
+fill: Commençons, ___ tout le monde est là. | vu que* / faute de / à force de || vì.
+type: Étant ___ qu'il neige, les cours sont annulés. | donné || étant donné que.
+fix: Non qu'il est méchant, mais il est timide. | Non qu'il soit méchant, mais il est timide.* / Non qu'il sera méchant, mais il est timide. / Non que il soit méchant, mais il est timide. || subjonctif.
+listen: Étant donné qu'il neige, les cours sont annulés. | Étant donné qu'il neige, les cours sont annulés.* / Étant donné qu'il pleut, les cours sont annulés. / Parce qu'il neige, les cours sont annulés. || étant donné que.

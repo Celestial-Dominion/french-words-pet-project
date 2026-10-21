@@ -1,0 +1,70 @@
+=== nhuong-bo
+sum: B1 đã có bien que, même si, malgré. B2 thêm: quoique + subjonctif (nghĩa như bien que: quoiqu'il soit tard), avoir beau + nguyên mẫu (cố mấy cũng không: j'ai beau chercher, je ne trouve pas), quand bien même + conditionnel (cho dù: quand bien même tu insisterais, je refuserais), tout + tính từ + que (tout fatigué qu'il est, il travaille). Đừng nhầm quoique (dù) với quoi que (dù gì đi nữa).
+form: quoique + subjonctif | Quoiqu'il soit riche, il vit simplement.
+form: avoir beau + nguyên mẫu | Elle a beau crier, personne ne l'entend.
+form: quand bien même + conditionnel | Quand bien même tu insisterais, je refuserais.
+form: tout + tính từ + que | Tout fatigué qu'il est, il travaille.
+cast: hugo zoe
+bg: mountain-night
+words: refuge, carte, batterie, lumière
+gloss: quoiqu
+
+#hook
+zoe: On marche depuis trois heures, et toujours pas de refuge ! | Mình đi bộ ba tiếng rồi mà vẫn chưa thấy nhà nghỉ trên núi! [worried]
+hugo: J'ai beau regarder la carte, je ne comprends pas où nous sommes. | Anh xem bản đồ mãi mà vẫn không hiểu mình đang ở đâu. [sad]
+> [[J'ai beau regarder]]: cố xem mấy cũng không có kết quả. [[Avoir beau]] đi với nguyên mẫu, sau đó là vế cho thấy nỗ lực vô ích.
+
+#meaning
+vs: Je cherche, mais je ne trouve pas. | Tôi tìm nhưng không thấy. || mais: đối lập đơn giản
+vs: J'ai beau chercher, je ne trouve pas. | Tôi tìm mãi mà vẫn không thấy. || avoir beau: cố mấy cũng vô ích
+> [[Avoir beau]] nhấn mạnh nỗ lực nhiều mà không có kết quả.
+
+#form
+th: Cấu trúc | Theo sau là | Nghĩa
+tb: quoique | subjonctif | dù
+tb: avoir beau | nguyên mẫu | cố mấy cũng không
+tb: quand bien même | conditionnel | cho dù
+tb: tout… que | tính từ, indicatif | dù… đến đâu
+> [[Quoique]] nghĩa như [[bien que]], trang trọng hơn một chút. [[Avoir beau]] chia được ở mọi thì: [[j'avais beau]], [[il aura beau]].
+
+#examples
+- {Quoique|k} la maison soit petite, elle est très agréable. | Dù căn nhà nhỏ nhưng rất dễ chịu.
+- Il {a beau|k} manger beaucoup, il ne grossit pas. | Anh ấy ăn bao nhiêu cũng không béo.
+- J'{avais beau|k} lui expliquer, il ne comprenait rien. | Tôi giải thích mãi mà anh ấy chẳng hiểu gì.
+- {Quand bien même|k} il m'offrirait un million, je ne vendrais pas ma maison. | Cho dù anh ta trả tôi một triệu, tôi cũng không bán nhà.
+- {Tout|k} intelligente qu'elle est, elle fait parfois des erreurs. | Thông minh là thế, cô ấy đôi khi vẫn mắc lỗi.
+
+#contrast
+> Đừng nhầm [[quoique]] viết liền với [[quoi que]] viết rời.
+vs: Quoiqu'il soit jeune, il est très sage. | Dù còn trẻ, cậu ấy rất chín chắn. || quoique: dù
+vs: Quoi qu'il dise, je ne le crois pas. | Dù anh ta nói gì, tôi cũng không tin. || quoi que: dù gì đi nữa
+> Cả hai đều đi với [[subjonctif]].
+
+#mistakes
+x: Quoiqu'il est malade, il travaille. => Quoiqu'il soit malade, il travaille. | Dù bị ốm, anh ấy vẫn làm việc. >> [[Quoique]] đi với [[subjonctif]].
+x: J'ai beau de chercher, je ne trouve rien. => J'ai beau chercher, je ne trouve rien. | Tôi tìm mãi mà không thấy gì. >> Sau [[avoir beau]] không có [[de]].
+x: Quand bien même tu as raison, je ne changerais pas d'avis. => Quand bien même tu aurais raison, je ne changerais pas d'avis. | Cho dù bạn đúng, tôi cũng không đổi ý. >> [[Quand bien même]] đi với [[conditionnel]].
+
+#dialogue
+zoe: Tu veux qu'on appelle quelqu'un ? | Anh có muốn mình gọi ai đó không? [worried]
+hugo: Quoique mon téléphone ait peu de batterie, je peux essayer. | Dù điện thoại anh sắp hết pin, anh vẫn thử được. [thinking]
+zoe: Attends ! Tout fatiguée que je suis, je vois une lumière là-bas ! | Khoan! Mệt là thế nhưng em thấy có ánh đèn đằng kia! [surprised]
+hugo: Le refuge ! Quand bien même il serait plein, on dormirait dans le couloir. | Nhà nghỉ đây rồi! Cho dù hết chỗ, mình cũng ngủ ngoài hành lang. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Anh ấy ăn bao nhiêu cũng không béo. => Il a beau manger beaucoup, il ne grossit pas. | Anh ấy ăn bao nhiêu cũng không béo.
+? Nói bằng tiếng Pháp: Dù căn nhà nhỏ nhưng rất dễ chịu. => Quoique la maison soit petite, elle est très agréable. | Dù căn nhà nhỏ nhưng rất dễ chịu.
+
+#recap
+> Nhượng bộ B2: [[quoique]] với [[subjonctif]], [[avoir beau]] với nguyên mẫu, [[quand bien même]] với [[conditionnel]], [[tout]] với tính từ và [[que]]. Đừng nhầm [[quoique]] với [[quoi que]].
+
+#practice
+fill: Quoiqu'il ___ malade, il travaille. | soit* / est / sera || quoique + subjonctif.
+fill: Il a beau ___ beaucoup, il ne grossit pas. | manger* / de manger / mange || avoir beau + nguyên mẫu.
+fill: Quand bien même tu ___ raison, je ne changerais pas d'avis. | aurais* / as / aies || conditionnel.
+contrast: Je ne le crois pas, ___ il dise. | quoi qu'* / quoiqu' || dù gì đi nữa.
+contrast: Il est très sage, ___ il soit jeune. | quoiqu'* / quoi qu' || dù.
+fill: Elle fait parfois des erreurs, ___ intelligente qu'elle est. | tout* / bien / très || tout + tính từ + que.
+type: J'___ (avoir) beau lui expliquer, il ne comprenait rien. | avais || imparfait.
+fix: J'ai beau de chercher, je ne trouve rien. | J'ai beau chercher, je ne trouve rien.* / J'ai beau à chercher, je ne trouve rien. / Je suis beau chercher, je ne trouve rien. || không có de.
+listen: Il a beau manger beaucoup, il ne grossit pas. | Il a beau manger beaucoup, il ne grossit pas.* / Il mange beaucoup, il ne grossit pas. / Il a beaucoup mangé, il n'a pas grossi. || a beau.

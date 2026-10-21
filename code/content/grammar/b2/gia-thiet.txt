@@ -1,0 +1,65 @@
+=== gia-thiet
+sum: Ngoài si, tiếng Pháp có nhiều cách nêu giả thiết, điều kiện: au cas où + conditionnel (phòng khi: au cas où il pleuvrait); à condition que, pourvu que + subjonctif (với điều kiện là); à moins que + subjonctif (trừ khi); khi cùng chủ ngữ: à condition de, à moins de + nguyên mẫu; en cas de + danh từ (en cas de problème).
+form: au cas où + conditionnel | Au cas où tu aurais faim, il y a du pain.
+form: à condition que / pourvu que + subjonctif | Je viendrai à condition que tu m'invites.
+form: à moins que + subjonctif | On sortira, à moins qu'il fasse froid.
+form: en cas de + danh từ | En cas de besoin, appelle-moi.
+cast: maman nam
+bg: train
+words: billet, retard, correspondance, souci
+
+#hook
+maman: Tu as ton billet ? Et au cas où le train aurait du retard, appelle-moi. | Con có vé chưa? Và phòng khi tàu bị trễ, gọi cho mẹ nhé. [worried]
+nam: Oui, maman. Je t'appellerai, à condition que mon téléphone ait de la batterie ! | Vâng ạ. Con sẽ gọi, với điều kiện điện thoại con còn pin! [happy]
+> [[Au cas où]] đi với [[conditionnel]]: phòng khi điều gì đó xảy ra. [[À condition que]] đi với [[subjonctif]]: điều kiện cần có.
+
+#meaning
+vs: S'il pleut, prends un parapluie. | Nếu trời mưa thì mang ô. || si: điều kiện chung
+vs: Au cas où il pleuvrait, prends un parapluie. | Phòng khi trời mưa, hãy mang ô. || au cas où: đề phòng
+> [[Au cas où]] nhấn vào việc đề phòng một khả năng có thể xảy ra.
+
+#form
+th: Cấu trúc | Nghĩa | Theo sau là
+tb: au cas où | phòng khi | conditionnel
+tb: à condition que, pourvu que | với điều kiện | subjonctif
+tb: à moins que | trừ khi | subjonctif
+tb: à condition de, à moins de | cùng chủ ngữ | nguyên mẫu
+tb: en cas de | khi có | danh từ
+> Khi hai vế cùng chủ ngữ, dùng nguyên mẫu: [[je viendrai à condition de finir tôt]].
+
+#examples
+- Prends ma clé, {au cas où|k} je rentrerais tard. | Cầm chìa khoá của tôi đi, phòng khi tôi về muộn.
+- Tu peux sortir, {à condition que|k} tu sois rentré avant minuit. | Con được đi chơi, với điều kiện về trước nửa đêm.
+- {Pourvu|k} qu'il fasse beau demain ! | Mong là mai trời đẹp!
+- Nous partirons à huit heures, à {moins|k} qu'il y ait des bouchons. | Chúng ta sẽ đi lúc tám giờ, trừ khi bị tắc đường.
+- {En cas de|k} problème, appelez ce numéro. | Có vấn đề gì thì gọi số này.
+
+#mistakes
+x: Au cas où tu as froid, voici une couverture. => Au cas où tu aurais froid, voici une couverture. | Phòng khi con lạnh, đây là cái chăn. >> [[Au cas où]] đi với [[conditionnel]].
+x: Je viendrai à condition que tu viens me chercher. => Je viendrai à condition que tu viennes me chercher. | Tôi sẽ đến, với điều kiện bạn đến đón tôi. >> [[À condition que]] đi với [[subjonctif]].
+x: Je ne sortirai pas, à moins que tu viens avec moi. => Je ne sortirai pas, à moins que tu viennes avec moi. | Tôi sẽ không ra ngoài, trừ khi bạn đi cùng. >> [[À moins que]] đi với [[subjonctif]].
+x: Elle réussira à condition qu'elle travaille. => Elle réussira à condition de travailler. | Cô ấy sẽ đỗ với điều kiện chịu học. >> Cùng chủ ngữ: [[à condition de]] với nguyên mẫu.
+
+#dialogue
+nam: Et si je rate la correspondance ? | Còn nếu con lỡ chuyến nối thì sao ạ? [worried]
+maman: Il y a un autre train une heure après, à moins qu'il soit complet. | Một tiếng sau có chuyến khác, trừ khi chuyến đó hết chỗ. [explain]
+nam: Bon, pourvu que tout se passe bien ! | Thôi, mong là mọi chuyện suôn sẻ! [happy]
+maman: Ça ira. Et en cas de souci, tu as l'adresse de ta tante. | Sẽ ổn thôi. Có gì thì con có địa chỉ nhà dì rồi. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Cầm chìa khoá của tôi đi, phòng khi tôi về muộn. => Prends ma clé, au cas où je rentrerais tard. | Cầm chìa khoá của tôi đi, phòng khi tôi về muộn.
+? Nói bằng tiếng Pháp: Có vấn đề gì thì gọi số này. => En cas de problème, appelez ce numéro. | Có vấn đề gì thì gọi số này.
+
+#recap
+> [[Au cas où]] với [[conditionnel]]: phòng khi. [[À condition que]], [[pourvu que]], [[à moins que]] với [[subjonctif]]. Cùng chủ ngữ thì dùng [[à condition de]], [[à moins de]] với nguyên mẫu. [[En cas de]] với danh từ.
+
+#practice
+fill: Prends ma clé, au cas où je ___ tard. | rentrerais* / rentre / rentrerai || au cas où + conditionnel.
+fill: Tu peux sortir, à condition que tu ___ rentré avant minuit. | sois* / es / seras || subjonctif.
+fill: Nous partirons à huit heures, à moins qu'il y ___ des bouchons. | ait* / a / aura || subjonctif.
+fill: Appelez ce numéro en ___ problème. | cas de* / cas où / condition de || en cas de + danh từ.
+contrast: Elle réussira à condition ___ travailler. | de* / qu'elle || cùng chủ ngữ.
+contrast: Je viendrai à condition que tu ___ me chercher. | viennes* / viens || subjonctif.
+type: Au cas où tu ___ (avoir) froid, voici une couverture. | aurais || conditionnel.
+fix: Je ne sortirai pas, à moins que tu viens avec moi. | Je ne sortirai pas, à moins que tu viennes avec moi.* / Je ne sortirai pas, à moins de tu viennes avec moi. / Je ne sortirai pas, à moins que tu viendras avec moi. || subjonctif.
+listen: Prends ma clé, au cas où je rentrerais tard. | Prends ma clé, au cas où je rentrerais tard.* / Prends ma clé, parce que je rentrerai tard. / Prends ma clé, quand tu rentreras tard. || au cas où.

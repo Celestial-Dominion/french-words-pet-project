@@ -1,0 +1,70 @@
+=== ne-expletif
+sum: Trong văn trang trọng, sau một số cụm, người Pháp thêm ne nhưng câu KHÔNG mang nghĩa phủ định: avant qu'il ne pleuve = trước khi trời mưa. Hay gặp sau avant que, à moins que, de peur que / de crainte que, avoir peur que / craindre que, và sau so sánh hơn, kém (c'est plus cher que je ne pensais). Khi nói thường có thể bỏ ne này; nó không bao giờ đi với pas.
+form: avant que… ne + subjonctif | Rentrons avant qu'il ne pleuve.
+form: avoir peur que… ne | J'ai peur qu'il ne soit en retard.
+form: à moins que… ne | Je viendrai, à moins qu'il ne neige.
+form: so sánh: plus… que… ne | C'est plus difficile que je ne pensais.
+cast: papi chloe
+bg: riverside
+words: orage, craindre, pluie, surprendre
+
+#hook
+papi: Rentrons à la maison avant que l'orage n'arrive. | Mình về nhà trước khi giông đến thôi. [worried]
+chloe: Avant que l'orage n'arrive ? Ça veut dire qu'il n'arrive pas ? | Trước khi giông “không” đến à? Nghĩa là nó không đến ạ? [surprised]
+> Không phải. [[Ne]] ở đây không mang nghĩa phủ định. Đây là [[ne explétif]], hay gặp trong văn trang trọng.
+
+#meaning
+vs: Rentrons avant que l'orage arrive. | Về thôi trước khi giông đến. || văn nói: không có ne
+vs: Rentrons avant que l'orage n'arrive. | Ta về trước khi giông tới. || văn trang trọng: ne explétif
+> Hai câu cùng nghĩa. [[Ne]] này không có [[pas]] và không phủ định gì cả.
+
+#form
+th: Sau cụm | Ví dụ
+tb: avant que | Partons avant qu'il ne fasse nuit.
+tb: à moins que | Je sortirai, à moins qu'il ne neige.
+tb: de peur que, de crainte que | Parle bas de peur qu'il ne se réveille.
+tb: avoir peur que, craindre que | Je crains qu'elle ne soit malade.
+tb: so sánh hơn, kém | C'est plus cher que je ne pensais.
+> Không dùng [[ne explétif]] sau [[après que]], [[jusqu'à ce que]] hay khi so sánh bằng.
+
+#examples
+- Pars vite avant qu'il {ne|k} soit trop tard. | Đi nhanh trước khi quá muộn.
+- J'ai peur qu'elle {ne|k} tombe malade. | Tôi sợ cô ấy bị ốm.
+- Le voyage a duré plus longtemps que nous {ne|k} pensions. | Chuyến đi kéo dài hơn chúng tôi nghĩ.
+- Ferme la porte de peur que le chat {ne|k} sorte. | Đóng cửa lại kẻo con mèo chạy ra.
+- Nous irons à la plage, à moins qu'il {ne|k} pleuve. | Chúng ta sẽ ra biển, trừ khi trời mưa.
+
+#contrast
+> So sánh với phủ định thật: phủ định thật có [[pas]].
+vs: J'ai peur qu'il ne vienne. | Tôi sợ anh ấy đến. || ne explétif: sợ anh ấy đến
+vs: J'ai peur qu'il ne vienne pas. | Tôi sợ anh ấy không đến. || phủ định thật: có pas
+> Nghĩa ngược nhau hoàn toàn, chỉ khác một chữ [[pas]].
+
+#mistakes
+x: Pars avant qu'il ne soit pas trop tard. => Pars avant qu'il ne soit trop tard. | Đi trước khi quá muộn. >> [[Ne explétif]] không bao giờ đi với [[pas]].
+x: Attends jusqu'à ce qu'il ne revienne. => Attends jusqu'à ce qu'il revienne. | Đợi cho đến khi anh ấy quay lại. >> Sau [[jusqu'à ce que]] không có [[ne]].
+x: C'est aussi cher que je ne pensais. => C'est aussi cher que je le pensais. | Nó đắt đúng như tôi nghĩ. >> So sánh bằng không có [[ne]].
+
+#dialogue
+chloe: Et si l'orage arrive avant que nous ne soyons à la maison ? | Nhỡ giông đến trước khi mình về tới nhà thì sao ạ? [worried]
+papi: Ne t'inquiète pas, la maison est plus près que tu ne crois. | Đừng lo, nhà gần hơn cháu nghĩ đấy. [happy]
+chloe: Je marche vite, de peur que la pluie ne nous surprenne ! | Cháu đi nhanh đây, kẻo mưa ập tới! [happy]
+papi: Moi, je vais moins vite que je ne voudrais. Attends-moi ! | Ông thì không đi nhanh được như ông muốn. Đợi ông với! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi sợ cô ấy bị ốm. => J'ai peur qu'elle ne tombe malade. | Tôi sợ cô ấy bị ốm.
+? Nói bằng tiếng Pháp: Chuyến đi kéo dài hơn chúng tôi nghĩ. => Le voyage a duré plus longtemps que nous ne pensions. | Chuyến đi kéo dài hơn chúng tôi nghĩ.
+
+#recap
+> [[Ne explétif]]: chữ [[ne]] không phủ định, dùng trong văn trang trọng sau [[avant que]], [[à moins que]], [[de peur que]], [[avoir peur que]] và sau so sánh hơn, kém. Không bao giờ có [[pas]]; khi nói thường có thể bỏ.
+
+#practice
+fill: Pars vite avant qu'il ___ soit trop tard. | ne* / ne pas / n'y || ne explétif.
+fill: Le voyage a duré plus longtemps que nous ___ pensions. | ne* / n'en / ne pas || so sánh hơn.
+fill: Attends jusqu'à ce qu'il ___ . | revienne* / ne revienne / reviendra || không có ne.
+contrast: C'est aussi cher que je ___ pensais. | le* / ne || so sánh bằng: không có ne.
+contrast: Il fait froid, j'ai peur que tu ___ malade. | ne tombes* / ne tombes pas || sợ bị ốm.
+fill: Ferme la porte de peur que le chat ne ___ . | sorte* / sort / sortira || subjonctif.
+type: Nous irons à la plage, à moins qu'il ne ___ (pleuvoir). | pleuve || subjonctif.
+fix: Pars avant qu'il ne soit pas trop tard. | Pars avant qu'il ne soit trop tard.* / Pars avant qu'il n'est trop tard. / Pars avant qu'il soit pas trop tard. || không có pas.
+listen: J'ai peur qu'il ne vienne pas. | J'ai peur qu'il ne vienne pas.* / J'ai peur qu'il ne vienne. / J'ai peur qu'il vienne. || ne… pas: phủ định thật.
