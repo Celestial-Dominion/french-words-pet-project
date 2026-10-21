@@ -189,7 +189,7 @@ je l'ai lu) · khẩu ngữ vs văn viết (bỏ ne, on = nous, ça) · từ n�
 présent de narration & imparfait narratif · si hỗn hợp · à peine… que, sitôt.
 - **Kế hoạch 26 bài** (4 lô; bỏ phần B2 đã dạy: ayant fini, dislocation, ce à quoi, quand bien même, si hỗn hợp, ne… guère).
 - **Nhật ký:**
-  - 21/10 lô 1: 7 bài (passé simple, passé antérieur, subjonctif imparfait, kể chuyện bằng hiện tại/imparfait/futur, conditionnel báo chí, sắc thái devoir/pouvoir, giả thiết C1) + 7 điểm inventory; 127/127 bài, 0 lỗi; 5 giờ 15% · tuần 9% trước lô; COMMIT
+  - 21/10 lô 1: 7 bài (passé simple, passé antérieur, subjonctif imparfait, kể chuyện bằng hiện tại/imparfait/futur, conditionnel báo chí, sắc thái devoir/pouvoir, giả thiết C1) + 7 điểm inventory; 127/127 bài, 0 lỗi; 5 giờ 15% · tuần 9% trước lô; e9808ce
 
 ### G-C2 — Ngữ pháp C2 [ ] (app Anh 23 bài)
 
