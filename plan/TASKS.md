@@ -31,7 +31,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | X-skip | Port "bắt đầu từ A1 / bỏ qua cấp" trong Cài đặt | tùy chọn | code nhỏ | ~0,5–1% | chưa làm |
 | P-A1 | A1 — nâng độ phủ từ | **bắt buộc** | ~25 bài đọc ngắn (3 lô) | ~1% | **xong 20/10** (30 bài, thực tế <1% tuần) |
 | P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | **xong 20/10** (52 truyện, ≥3 50,7% · ≥5 25,2%) |
-| P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | đang làm: lô 02 xong (thiếu 477→201) |
+| P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | đang làm: lô 03 xong (thiếu 477→83) |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | chưa làm |
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
@@ -96,6 +96,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 - **Nhật ký:**
   - 21/10 lô 01: 10 bài (a2-p01, 4 câu hỏi/bài, audio đủ), giỏ 117/120 (bỏ cadavre amant sexe) + 13 từ chưa gặp (tueur, assassin, empreinte, ordonner, supérieur, cercle, au-delà, réclamer, subir, trahir, bénir, fiancé, achever…); ≥1 92,4→96,6 · ≥3 55,7→62,3 · ≥5 39,1→40,6 ✓; thiếu 477→329; 5 giờ 2% · tuần 7%; 880050f
   - 21/10 lô 02: 10 bài (a2-p02, 4 câu hỏi/bài, audio đủ), giỏ 118/120 (bỏ cadavre sexe) + từ chưa gặp (crâne, marre, mien, figurer, domaine, pointer, cuisse, pis, dingue…); ≥1 96,6→97,5 ✓ · ≥3 62,3→70,1 · ≥5 40,6→40,9 ✓; thiếu 329→201; 5 giờ 2% · tuần 7%; 83d46f2
+  - 21/10 lô 03: 10 bài (a2-p03, 4 câu hỏi/bài, audio đủ), giỏ 120/120; ≥1 97,5 ✓ · ≥3 70,1→73,0 · ≥5 40,9→41,3 ✓; thiếu 201→83; 5 giờ 3% · tuần 7%; COMMIT
 
 ## S-C2 — Truyện C2 cho đủ 49 (tùy chọn) [ ]
 
