@@ -122,7 +122,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
   - 21/10 lô 11: 6 truyện (Le bandeau de Lucas, Le joueur de bridge, Le signor du campus, Le verger d'Hélène, L'atelier du sergent, Le campement de papy) + 90 câu hỏi có audio (708 file); 1029–1093 từ, đúng cấp 4,5–5,5%, giỏ 21–26/26 → C1 58/67; độ phủ C1 98,0% / ≥3 51,7% / ≥5 25,3% ✓. Commit: 9926343.
   - 21/10 lô 12: 6 truyện (La chute du jockey, La cocotte du signor, Le bal de la résidence, La halle aux artistes, La cavale de mamie, Le radeau de la Loue) + 90 câu hỏi có audio (712 file); 1009–1101 từ, đúng cấp 4,5–5,6%, giỏ 23–26/26 → C1 64/67; độ phủ C1 98,0% / ≥3 56,9% / ≥5 25,7% ✓. Commit: ab4bfbd.
   - 21/10 lô 13 (cuối, 3 truyện): Le déserteur du camp, Le séminaire des Pyrénées, La soprano de la sierra + 45 câu hỏi có audio (352 file); 1026–1035 từ, đúng cấp 4,6–5,3%, giỏ 22–25/26 → C1 67/67. Commit: 0fc38c4.
-- **Kết quả:** XONG 21/10/2026 — C1 đủ 67 truyện như app Anh (thêm 15 truyện, 225 câu hỏi có audio, 1.772 file MP3). Độ phủ C1 98,0% / ≥3 bài 57,5% / ≥5 bài 25,9% (đều ✓). Hạn mức dùng: 5 giờ 5% → 11%, tuần 13% → 14%. Chưa deploy.
+- **Kết quả:** XONG 21/10/2026 — C1 đủ 67 truyện như app Anh (thêm 15 truyện, 225 câu hỏi có audio, 1.772 file MP3). Độ phủ C1 98,0% / ≥3 bài 57,5% / ≥5 bài 25,9% (đều ✓). Hạn mức dùng: 5 giờ 5% → 11%, tuần 13% → 14%. Đã deploy 21/10 (lần 9, live 42/42).
 
 ---
 
@@ -256,7 +256,7 @@ sorte que, à force de, tant et si bien que).
 
 ## Đồng bộ tính năng với app Anh
 
-- **Mốc: app Anh `7246f71`** (21/10/2026). Đã port mọi tính năng tới mốc này (X-skip `1d0852e` xong 21/10), kèm thay
+- **Mốc: app Anh `c9cb54a`** (21/10/2026). Đã port mọi tính năng tới mốc này (X-skip `1d0852e` xong 21/10; `c9cb54a` = optionWords, đã có từ trước), kèm thay
   đổi chưa commit `optionWords` (phương án nghĩa lộ từ gốc) — lần sau thấy commit đó bên app Anh thì bỏ qua.
 - Lần sau: `cd ~/code/english_words && git log --oneline 7246f71..` → thêm việc mới vào file này → port, giữ đặc thù
   Pháp: mạo từ un/une, câu chọn giống (mở sau bài `giong-danh-tu`), chia động từ, `lib/starter.ts`, 6 cấp A1–C2,
