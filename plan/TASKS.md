@@ -34,7 +34,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | **xong 21/10** (49 truyện, ≥3 76,5% · ≥5 31,9%) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | **xong 21/10** (20 bài, 20 điểm phủ 100%) |
-| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | xong 21/10: code + 5 tác phẩm A2–C2 (20 phần) + 7 chuỗi bài đọc (40 bài) |
+| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | xong 21/10: code + 5 tác phẩm A2–C2 (20 phần) + 23 chuỗi bài đọc (122 bài) |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
@@ -261,7 +261,14 @@ sorte que, à force de, tant et si bien que).
     App Anh có 6 chuỗi / 28 bài. Soát fr-qa 375 px + máy bàn: khối "Chuỗi bài theo cấp · bậc n/m", nút ← cấp trước / cấp
     sau →, không tràn ngang. Muốn thêm chuỗi: tìm tiêu đề cùng chủ đề bằng `rg -i '^title: [^|]*(từ khoá)' content/readings`,
     thêm dòng `series: <id> <n>` sau dòng `genre:`, thứ tự 1..n theo cấp tăng dần.
-  - **Kết quả:** X-series xong — truyện dài cả 5 cấp có (A2–C2; A1 không làm, app Anh cũng bắt đầu từ A2) + 7 chuỗi bài đọc.
+  - 21/10 lô 7: thêm 16 chuỗi bài đọc (82 bài có sẵn): `climat` 6, `internet` 6 (A1 Grand-père et l'ordinateur → B1
+    Minitel → B2 Louis Pouzin → C2 souveraineté numérique), `ia` 5, `velo` 5, `transports` 6, `dechets` 5, `oiseaux` 4,
+    `abeilles` 4, `animaux` 4, `impressionnisme` 5 (A1 Monet → C1 Impression, soleil levant), `musees` 5, `vieillir` 6,
+    `cinema` 5, `musique` 6, `lecture` 5, `photo` 5 (B1 Niépce → C1 Vivian Maier → C2 Nadar). Soát nội dung đầu từng bài
+    trước khi gắn; tránh bài lấp từ (`-gNN`). 0 lỗi, audio không đổi; fr-qa 375 px OK. Chủ đề còn bài rải rác nhưng
+    thiếu cấp (thể thao, vin, mode, Révolution…) chưa gắn.
+  - **Kết quả:** X-series xong — truyện dài cả 5 cấp có (A2–C2; A1 không làm, app Anh cũng bắt đầu từ A2) + 23 chuỗi bài
+    đọc / 122 bài (app Anh 6 chuỗi / 28 bài).
 
 ## X-skip — "Bắt đầu từ A1 / bỏ qua cấp" (tùy chọn) [x]
 
