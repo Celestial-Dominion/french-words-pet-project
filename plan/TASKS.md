@@ -39,7 +39,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
-| L-FLELex | Soát cấp độ 11.000 từ theo FLELex (đổi cấp + sửa bài + bù độ phủ) | tùy chọn | script + nội dung | ~1–2% | **xong 21/10** (pha 1: 136 từ đổi cấp, 24 bài mới, 6 cấp đạt 3 mốc; pha 2 lệch 2 cấp chưa lên lịch) |
+| L-FLELex | Soát cấp độ 11.000 từ theo FLELex (đổi cấp + sửa bài + bù độ phủ) | tùy chọn | script + nội dung | ~1–2% | **xong 21/10, đã deploy** (pha 1: 136 từ đổi cấp, 24 bài mới, 6 cấp đạt 3 mốc; pha 2 lệch 2 cấp chưa lên lịch) |
 
 Cộng (còn lại, sau P-A1): bắt buộc ~13,5% (độ phủ ~3,5% + ngữ pháp ~10%) · tùy chọn ~8% · tất cả ~21–22% tuần.
 Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì bài cấp trên dựa vào bài cấp dưới (trường `pre`).
@@ -290,7 +290,7 @@ sorte que, à force de, tant et si bien que).
   - 21/10 kèm theo: port việc đang làm dở bên app Anh (chưa commit) "lộ từ gốc dưới phương án nghĩa Việt" — câu
     Pháp→nghĩa / Nghe→nghĩa, sau khi chấm mỗi nghĩa hiện từ Pháp (kèm un/une) + IPA (`optionWordMap`).
 
-## L-FLELex — Soát cấp độ từ theo FLELex (tùy chọn) [x] (pha 1 xong 21/10/2026)
+## L-FLELex — Soát cấp độ từ theo FLELex (tùy chọn) [x] (pha 1 xong 21/10/2026, deploy 21/10 22:59: 14.892 file, live 42/42)
 
 - **Nguồn:** FLELex-Beacco (TreeTagger, https://cental.uclouvain.be/cefrlex/flelex/download/) tải 21/10 vào
   `code/scripts/flelex/` (git bỏ qua). Giấy phép **CC BY-NC-SA 4.0** (Pintard & François 2020; François et al. 2014) →
