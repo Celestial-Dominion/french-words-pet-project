@@ -34,7 +34,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | **xong 21/10** (49 truyện, ≥3 76,5% · ≥5 31,9%) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | **xong 21/10** (20 bài, 20 điểm phủ 100%) |
-| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | đang làm: code xong, A2 + B1 + B2 + C1 xong |
+| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | xong 21/10: code + 5 tác phẩm A2–C2 (20 phần); chuỗi bài đọc chưa làm (tùy chọn) |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
@@ -220,7 +220,7 @@ sorte que, à force de, tant et si bien que).
 
 ---
 
-## X-series — Truyện dài chia phần + chuỗi bài đọc (tùy chọn) [ ]
+## X-series — Truyện dài chia phần + chuỗi bài đọc (tùy chọn) [x]
 
 - App Anh có 6 tác phẩm dài chia phần (46 truyện: Oz A2, The Treasure Seekers B1, Around the World in Eighty Days B2,
   The Time Machine C1, Herland và The Age of Innocence C2) và 28 bài đọc theo chuỗi cùng chủ đề (trường `series:`, nút
@@ -250,6 +250,12 @@ sorte que, à force de, tant et si bien que).
     `chambre-jaune`, 959–1165 từ/phần, mật độ C1 4,7–5,9%; ngưỡng C1 thật là 4,5%, bộ kiểm làm tròn hiển thị "5%") + 60
     câu hỏi có audio → C1 71 truyện; 0 lỗi, 0 cảnh báo. Phần 4 bản nháp chỉ 1,5% (nhiều từ tưởng C1 thực ra B1–B2) →
     lấy từ đúng danh sách `word-levels.json` cấp 5 rồi thay.
+  - 21/10 lô 5: C2 *Eugénie Grandet* (Balzac) 4 phần × 5 chương (`stories/c2/st-10.txt`, series `eugenie-grandet`,
+    1088–1174 từ/phần, mật độ C2 3,5–4,2%; ngưỡng thật 3,5%, hiển thị "4%") + 60 câu hỏi có audio (482 MP3) → C2 53
+    truyện; 0 lỗi, 0 cảnh báo. Bẫy: bộ kiểm tính câu trung bình theo DÒNG `FR | VI` → thêm câu thì tạo dòng mới, đừng
+    nối vào dòng cũ (câu TB vọt 28,6 > 28,5). Credit trong `settings-panel.tsx` đã thêm Balzac.
+  - **Kết quả:** truyện dài xong cả 5 cấp có (A2–C2; A1 không làm, app Anh cũng bắt đầu từ A2). Còn lại (tùy chọn): chuỗi
+    bài đọc cùng chủ đề như 28 bài bên app Anh — code đã hỗ trợ `series:` cho bài đọc, chỉ cần viết nội dung.
 
 ## X-skip — "Bắt đầu từ A1 / bỏ qua cấp" (tùy chọn) [x]
 
