@@ -1,0 +1,76 @@
+=== lien-tu-thoi-gian
+sum: Liên từ thời gian B1: lorsque (khi, trang trọng hơn quand), dès que (ngay khi), pendant que (trong khi, cùng lúc), tandis que (trong khi, thường có ý đối lập), depuis que (từ khi), au moment où (đúng lúc). Chúng đi với indicatif; nói về tương lai thì dùng futur sau dès que, lorsque: Dès que j'arriverai, je t'appellerai. Riêng avant que đi với subjonctif.
+form: lorsque, dès que, au moment où + indicatif | Dès qu'il arrive, on part.
+form: tương lai: dès que / lorsque + futur | Dès que j'arriverai, je t'appellerai.
+form: pendant que / tandis que | Pendant que tu dors, je travaille.
+form: depuis que: từ khi | Depuis qu'il habite ici, il est heureux.
+form: avant que + subjonctif | Rentre avant qu'il pleuve.
+cast: paul ines
+bg: airport
+words: arriver, appeler, atterrir, inquiéter
+names: Montréal
+gloss: tandis
+
+#hook
+ines: Dès que tu arriveras à Montréal, appelle-moi ! | Vừa đến Montréal là gọi cho em ngay nhé! [worried]
+paul: Promis. Et pendant que je serai là-bas, tu t'occuperas du chat ? | Anh hứa. Trong lúc anh ở bên đó, em trông con mèo giúp nhé? [happy]
+> [[Dès que]] nghĩa là ngay khi, [[pendant que]] nghĩa là trong khi. Chú ý: nói về tương lai thì động từ sau [[dès que]] cũng ở [[futur]].
+
+#meaning
+th: Liên từ | Nghĩa
+tb: lorsque | khi (trang trọng hơn quand)
+tb: dès que | ngay khi
+tb: pendant que | trong khi (cùng lúc)
+tb: tandis que | trong khi (đối lập)
+tb: depuis que | từ khi
+tb: au moment où | đúng lúc
+> Tất cả đi với [[indicatif]]. Riêng [[avant que]] đi với [[subjonctif]].
+
+#form
+f: [dès que, lorsque] + futur + mệnh đề chính ở futur
+> Tiếng Việt không đổi thì, nhưng tiếng Pháp phải dùng [[futur]] ở cả hai vế khi nói về tương lai.
+vs: Quand il fait beau, je sors. | Khi trời đẹp, tôi ra ngoài. || thói quen: présent
+vs: Quand il fera beau, je sortirai. | Khi trời đẹp, tôi sẽ ra ngoài. || tương lai: futur
+> Quy tắc này giống bài [[quand]] cộng [[futur]] trước đây.
+
+#examples
+- {Lorsque|k} le train est arrivé, tout le monde est descendu. | Khi tàu đến, mọi người đều xuống.
+- {Dès que|k} j'aurai mes résultats, je te le dirai. | Ngay khi có kết quả, tôi sẽ báo bạn.
+- {Pendant que|k} tu fais les courses, je prépare le dîner. | Trong lúc bạn đi chợ, tôi nấu bữa tối.
+- Il travaille beaucoup, {tandis que|k} son frère ne fait rien. | Anh ấy làm việc nhiều, trong khi em trai anh ấy chẳng làm gì.
+- {Depuis que|k} je fais du sport, je dors mieux. | Từ khi chơi thể thao, tôi ngủ ngon hơn.
+- Le téléphone a sonné {au moment où|k} je sortais. | Điện thoại reo đúng lúc tôi đang ra ngoài.
+
+#contrast
+> [[Avant que]] cần [[subjonctif]], vì việc đó chưa xảy ra.
+vs: Pars avant qu'il fasse nuit. | Đi đi trước khi trời tối. || avant que + subjonctif
+vs: Pars dès qu'il fait jour. | Đi ngay khi trời sáng. || dès que + indicatif
+> Nếu cùng một người làm cả hai việc, dùng [[avant de]] cộng nguyên mẫu như bài trước.
+
+#mistakes
+x: Dès que j'arrive demain, je t'appellerai. => Dès que j'arriverai demain, je t'appellerai. | Ngay khi tôi đến vào ngày mai, tôi sẽ gọi bạn. >> Nói về tương lai: [[futur]] ở cả hai vế.
+x: Rentre avant qu'il pleut. => Rentre avant qu'il pleuve. | Về nhà trước khi trời mưa. >> [[Avant que]] cộng [[subjonctif]].
+x: Depuis il habite ici, il est heureux. => Depuis qu'il habite ici, il est heureux. | Từ khi sống ở đây, anh ấy hạnh phúc. >> Trước một mệnh đề, dùng [[depuis que]].
+
+#dialogue
+paul: Lorsque l'avion atterrira, je t'enverrai un message. | Khi máy bay hạ cánh, anh sẽ nhắn tin cho em. [explain]
+ines: Et appelle-moi au moment où tu sortiras de l'aéroport. | Và gọi cho em lúc anh ra khỏi sân bay nhé. [worried]
+paul: Depuis que je te connais, tu t'inquiètes tout le temps ! | Từ khi quen em, lúc nào em cũng lo lắng! [happy]
+ines: Va vite, pendant qu'il y a encore peu de monde au contrôle. | Đi nhanh đi, trong lúc chỗ kiểm tra còn ít người. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Trong lúc bạn đi chợ, tôi nấu bữa tối. => Pendant que tu fais les courses, je prépare le dîner. | Trong lúc bạn đi chợ, tôi nấu bữa tối.
+? Nói bằng tiếng Pháp: Ngay khi có kết quả, tôi sẽ báo bạn. => Dès que j'aurai mes résultats, je te le dirai. | Ngay khi có kết quả, tôi sẽ báo bạn.
+
+#recap
+> [[Lorsque]], [[dès que]], [[pendant que]], [[tandis que]], [[depuis que]], [[au moment où]] đi với [[indicatif]]; nói về tương lai thì dùng [[futur]]. Riêng [[avant que]] đi với [[subjonctif]].
+
+#practice
+fill: ___ j'aurai mes résultats, je te le dirai. | Dès que* / Depuis que / Pendant que || ngay khi.
+fill: Dès que j'___ demain, je t'appellerai. | arriverai* / arrive / arrivais || tương lai → futur.
+contrast: Rentre avant qu'il ___ . | pleuve* / pleut || avant que + subjonctif.
+fill: ___ je fais du sport, je dors mieux. | Depuis que* / Dès que / Avant que || từ khi.
+fill: Le téléphone a sonné ___ je sortais. | au moment où* / depuis que / avant que || đúng lúc.
+fill: Il travaille beaucoup, ___ son frère ne fait rien. | tandis que* / dès que / depuis que || đối lập.
+fix: Depuis il habite ici, il est heureux. | Depuis qu'il habite ici, il est heureux.* / Depuis quand il habite ici, il est heureux. / Dès il habite ici, il est heureux. || depuis que + mệnh đề.
+listen: Pendant que tu fais les courses, je prépare le dîner. | Pendant que tu fais les courses, je prépare le dîner.* / Depuis que tu fais les courses, je prépare le dîner. / Dès que tu fais les courses, je prépare le dîner. || pendant que.

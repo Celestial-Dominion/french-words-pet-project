@@ -1,0 +1,71 @@
+=== menh-de-quan-he-b1
+sum: Bốn đại từ quan hệ cơ bản: qui (chủ ngữ của động từ phía sau), que (bổ ngữ trực tiếp), dont (thay phần có de), où (nơi chốn VÀ thời gian). Với thời gian, tiếng Pháp dùng où, không dùng quand: le jour où je suis né, l'année où nous nous sommes rencontrés.
+form: qui + động từ | l'homme qui parle
+form: que + chủ ngữ + động từ | l'homme que je connais
+form: dont + chủ ngữ + động từ đi với de | l'homme dont je parle
+form: où: nơi chốn, thời gian | la ville où j'habite · le jour où je suis né
+cast: papi tom
+bg: home-evening
+words: naître, rencontrer, jour, époque
+names: Rex
+
+#hook
+tom: Papi, c'est qui sur cette photo ? | Ông ơi, ai trong ảnh này thế ạ? [surprised]
+papi: C'est moi, le jour où j'ai rencontré ta grand-mère. Et voici le café où on s'est vus. | Là ông đấy, vào cái ngày ông gặp bà cháu. Còn đây là quán cà phê nơi ông bà gặp nhau. [happy]
+> Hai câu, cùng một từ [[où]]: [[le jour où]] chỉ thời gian, [[le café où]] chỉ nơi chốn. Tiếng Pháp không nói [[le jour quand]].
+
+#meaning
+vs: La ville où je suis né. | Thành phố nơi tôi sinh ra. || où: nơi chốn
+vs: L'année où je suis né. | Năm tôi sinh ra. || où: thời gian
+> Với thời gian, ta dùng [[où]] sau những từ như [[le jour]], [[l'année]], [[le moment]], [[l'époque]].
+
+#form
+th: Đại từ | Vai trò | Ví dụ
+tb: qui | chủ ngữ | la dame qui chante
+tb: que | bổ ngữ trực tiếp | la chanson que j'écoute
+tb: dont | phần có de | la chanson dont je parle
+tb: où | nơi chốn, thời gian | la salle où elle chante
+> Cách chọn: nhìn động từ phía sau và hỏi nó còn thiếu gì: chủ ngữ, bổ ngữ trực tiếp, phần có [[de]], hay nơi chốn và thời gian.
+
+#examples
+- C'est l'été {où|k} nous sommes allés en Italie. | Đó là mùa hè chúng tôi đi Ý.
+- Je me souviens du moment {où|k} tu es arrivé. | Tôi nhớ lúc bạn đến.
+- C'est un professeur {qui|k} explique très bien. | Đó là một giáo viên giảng rất hay.
+- Le gâteau {que|k} tu as fait est délicieux. | Cái bánh bạn làm rất ngon.
+- La maison {dont|k} je rêve a un grand jardin. | Ngôi nhà tôi mơ ước có một khu vườn lớn.
+
+#contrast
+> Bốn câu, cùng một danh từ [[la plage]], bốn đại từ khác nhau.
+- La plage {qui|k} est près de l'hôtel est très belle. | Bãi biển gần khách sạn rất đẹp.
+- La plage {que|k} je préfère est dans le sud. | Bãi biển tôi thích nhất ở miền Nam.
+- La plage {dont|k} je t'ai parlé est loin d'ici. | Bãi biển tôi đã kể với bạn ở xa đây.
+- La plage {où|k} nous allons est calme. | Bãi biển chúng ta đi rất yên tĩnh.
+
+#mistakes
+x: Le jour quand je suis né, il neigeait. => Le jour où je suis né, il neigeait. | Hôm tôi sinh ra, trời có tuyết. >> Sau [[le jour]], dùng [[où]].
+x: La ville que j'habite est petite. => La ville où j'habite est petite. | Thành phố tôi sống thì nhỏ. >> Nơi chốn thì dùng [[où]].
+x: C'est le professeur que explique bien. => C'est le professeur qui explique bien. | Đó là thầy giáo giảng hay. >> Động từ [[explique]] thiếu chủ ngữ: dùng [[qui]].
+x: C'est l'ami que je t'ai parlé. => C'est l'ami dont je t'ai parlé. | Đó là người bạn tôi đã kể với bạn. >> [[Parler de]]: dùng [[dont]].
+
+#dialogue
+tom: Et cette maison, c'est celle où tu habitais quand tu étais petit ? | Còn ngôi nhà này, là nhà ông ở hồi nhỏ ạ? [thinking]
+papi: Oui, c'est la maison où je suis né. Il y avait un arbre que j'adorais. | Ừ, là ngôi nhà ông sinh ra. Ở đó có một cái cây mà ông rất thích. [happy]
+tom: Et le chien qui est à côté de toi ? | Thế còn con chó đứng cạnh ông? [surprised]
+papi: C'est Rex, le chien dont je t'ai souvent parlé. À l'époque où j'étais petit, il me suivait partout. | Đó là Rex, con chó mà ông hay kể với cháu. Hồi ông còn nhỏ, nó theo ông khắp nơi. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi nhớ lúc bạn đến. => Je me souviens du moment où tu es arrivé. | Tôi nhớ lúc bạn đến.
+? Nói bằng tiếng Pháp: Cái bánh bạn làm rất ngon. => Le gâteau que tu as fait est délicieux. | Cái bánh bạn làm rất ngon.
+
+#recap
+> [[Qui]] thay chủ ngữ, [[que]] thay bổ ngữ trực tiếp, [[dont]] thay phần có [[de]], [[où]] thay nơi chốn và cả thời gian. Nói [[le jour où]], không nói [[le jour quand]].
+
+#practice
+contrast: Le jour ___ je suis né, il neigeait. | où* / quand || thời gian → où.
+fill: La ville ___ j'habite est petite. | où* / que / dont || nơi chốn → où.
+fill: C'est un professeur ___ explique très bien. | qui* / que / où || chủ ngữ → qui.
+fill: Le gâteau ___ tu as fait est délicieux. | que* / qui / dont || bổ ngữ trực tiếp → que.
+fill: La maison ___ je rêve a un grand jardin. | dont* / que / où || rêver de → dont.
+fill: Je me souviens du moment ___ tu es arrivé. | où* / que / quand || moment → où.
+fix: C'est l'ami que je t'ai parlé. | C'est l'ami dont je t'ai parlé.* / C'est l'ami qui je t'ai parlé. / C'est l'ami où je t'ai parlé. || parler de → dont.
+listen: C'est l'été où nous sommes allés en Italie. | C'est l'été où nous sommes allés en Italie.* / C'est l'été quand nous sommes allés en Italie. / C'est l'été que nous sommes allés en Italie. || où: thời gian.

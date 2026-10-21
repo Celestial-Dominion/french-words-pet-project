@@ -1,0 +1,70 @@
+=== loi-noi-gian-tiep
+sum: Lời nói gián tiếp thuật lại lời người khác. Khi động từ dẫn ở hiện tại (il dit, elle demande), thì của động từ giữ nguyên, chỉ đổi đại từ và từ nối: câu kể → que; câu hỏi có/không → si; câu hỏi có từ để hỏi → giữ où, quand, comment…; qu'est-ce que → ce que; câu mệnh lệnh → de + nguyên mẫu.
+form: câu kể → dire que | Il dit qu'il est fatigué.
+form: câu hỏi có/không → demander si | Il demande si tu viens.
+form: từ để hỏi giữ nguyên · qu'est-ce que → ce que | Il demande où tu habites. · Il demande ce que tu veux.
+form: mệnh lệnh → dire de + nguyên mẫu | Il me dit de venir.
+cast: karim lea
+bg: office
+words: dire, demander, répondre, réunion
+
+#hook
+lea: Qu'est-ce que le directeur a dit au téléphone ? | Giám đốc nói gì qua điện thoại vậy? [thinking]
+karim: Il dit que la réunion est annulée, et il demande si tu peux venir demain à neuf heures. | Ông ấy nói cuộc họp bị huỷ, và hỏi chị có thể đến lúc chín giờ sáng mai không. [explain]
+> Người đồng nghiệp không nhắc nguyên văn lời giám đốc mà thuật lại: [[il dit que]], [[il demande si]]. Đây là lời nói gián tiếp.
+
+#meaning
+vs: Le directeur dit : « Je suis en retard. » | Giám đốc nói: “Tôi đến muộn.” || trực tiếp
+vs: Le directeur dit qu'il est en retard. | Giám đốc nói rằng ông ấy đến muộn. || gián tiếp
+> Trong câu gián tiếp, [[je]] đổi thành [[il]], và có thêm [[que]].
+
+#form
+th: Lời nói trực tiếp | Lời nói gián tiếp
+tb: Il dit : « Je pars. » | Il dit qu'il part.
+tb: Il demande : « Tu pars ? » | Il demande si tu pars.
+tb: Il demande : « Où vas-tu ? » | Il demande où tu vas.
+tb: Il demande : « Qu'est-ce que tu fais ? » | Il demande ce que tu fais.
+tb: Il dit : « Pars ! » | Il me dit de partir.
+> Thì của động từ không đổi vì động từ dẫn ở hiện tại. Câu hỏi gián tiếp không đảo ngữ và không có dấu hỏi.
+
+#examples
+- Elle dit qu'elle {arrive|v} dans dix minutes. | Cô ấy nói là mười phút nữa cô ấy đến.
+- Mon voisin demande {si|k} on peut baisser la musique. | Hàng xóm hỏi chúng ta có thể vặn nhỏ nhạc không.
+- Le client demande {combien|k} coûte ce manteau. | Khách hỏi chiếc áo khoác này giá bao nhiêu.
+- Je ne sais pas {ce que|k} tu veux dire. | Tôi không biết bạn muốn nói gì.
+- Le médecin me dit {de|k} rester au lit. | Bác sĩ bảo tôi nằm nghỉ trên giường.
+
+#pronunciation
+pron: s'il | s'il | sil
+pron: si elle | si elle | siɛl
+> [[Si]] chỉ rút gọn trước [[il]] và [[ils]]. Trước [[elle]], giữ nguyên [[si elle]].
++ Il demande s'il peut entrer. | Anh ấy hỏi anh ấy có thể vào không.
+
+#mistakes
+x: Il demande que tu viens. => Il demande si tu viens. | Anh ấy hỏi bạn có đến không. >> Câu hỏi có hoặc không thì dùng [[si]].
+x: Elle demande qu'est-ce que tu fais. => Elle demande ce que tu fais. | Cô ấy hỏi bạn đang làm gì. >> [[Qu'est-ce que]] đổi thành [[ce que]].
+x: Il demande où habites-tu. => Il demande où tu habites. | Anh ấy hỏi bạn sống ở đâu. >> Câu hỏi gián tiếp không đảo ngữ.
+x: Il me dit venir. => Il me dit de venir. | Anh ấy bảo tôi đến. >> Mệnh lệnh thì dùng [[de]] cộng nguyên mẫu.
+
+#dialogue
+lea: Et il dit pourquoi la réunion est annulée ? | Thế ông ấy có nói vì sao cuộc họp bị huỷ không? [surprised]
+karim: Il explique qu'un client important arrive ce matin. | Ông ấy giải thích là sáng nay có một khách hàng quan trọng đến. [explain]
+lea: D'accord. Tu peux lui répondre que je serai là ? | Được. Anh trả lời ông ấy giúp là tôi sẽ có mặt nhé? [happy]
+karim: Bien sûr. Et il te demande de préparer les chiffres du mois. | Tất nhiên. À, ông ấy còn bảo chị chuẩn bị số liệu của tháng. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Hàng xóm hỏi chúng ta có thể vặn nhỏ nhạc không. => Mon voisin demande si on peut baisser la musique. | Hàng xóm hỏi chúng ta có thể vặn nhỏ nhạc không.
+? Nói bằng tiếng Pháp: Bác sĩ bảo tôi nằm nghỉ trên giường. => Le médecin me dit de rester au lit. | Bác sĩ bảo tôi nằm nghỉ trên giường.
+
+#recap
+> Lời nói gián tiếp ở hiện tại: câu kể dùng [[que]], câu hỏi có hoặc không dùng [[si]], từ để hỏi giữ nguyên, [[qu'est-ce que]] thành [[ce que]], mệnh lệnh dùng [[de]] cộng nguyên mẫu. Thì không đổi, không đảo ngữ.
+
+#practice
+fill: Il demande ___ tu viens ce soir. | si* / que / qu'est-ce que || câu hỏi có/không → si.
+fill: Elle dit ___ le train est en retard. | que* / si / ce que || câu kể → que.
+fill: Elle demande ___ tu fais. | ce que* / qu'est-ce que / que || qu'est-ce que → ce que.
+fill: Le médecin me dit ___ rester au lit. | de* / que / à || mệnh lệnh → de + nguyên mẫu.
+contrast: Il demande où ___ . | tu habites* / habites-tu || không đảo ngữ.
+fill: Il demande ___ peut entrer. | s'il* / si il / qu'il || si + il → s'il.
+fix: Il demande que tu viens. | Il demande si tu viens.* / Il demande si viens-tu. / Il demande qu'est-ce que tu viens. || câu hỏi có/không → si.
+listen: Il demande s'il peut entrer. | Il demande s'il peut entrer.* / Il demande s'ils peuvent entrer. / Il demande si elle peut entrer. || s'il: số ít.

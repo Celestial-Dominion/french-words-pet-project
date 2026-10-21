@@ -1,0 +1,70 @@
+=== nguyen-nhan
+sum: Nói nguyên nhân: parce que (vì, trả lời pourquoi), comme (vì, luôn đứng ĐẦU câu), puisque (vì, lý do người nghe đã biết), car (vì, văn viết, đứng giữa câu). Trước danh từ: à cause de (vì, kết quả xấu) và grâce à (nhờ, kết quả tốt).
+form: parce que: trả lời pourquoi | Je reste ici parce que je suis malade.
+form: comme: đầu câu | Comme il pleut, on reste ici.
+form: puisque: lý do đã rõ | Puisque tu es là, aide-moi.
+form: à cause de / grâce à + danh từ | à cause de la pluie · grâce à toi
+cast: mme-martin tom
+bg: classroom
+words: retard, panne, cause, grâce
+
+#hook
+mme-martin: Tom, pourquoi tu es en retard ? | Tom, sao em đến muộn? [thinking]
+tom: Parce que mon bus est tombé en panne. Et comme il pleuvait, je n'ai pas pu venir à vélo. | Vì xe buýt của em bị hỏng ạ. Mà trời mưa nên em không đi xe đạp được. [sad]
+> Cùng nghĩa là vì, nhưng [[parce que]] trả lời câu hỏi [[pourquoi]], còn [[comme]] đứng đầu câu để nêu lý do trước.
+
+#meaning
+th: Từ | Vị trí, sắc thái
+tb: parce que | trả lời pourquoi, thường đứng sau
+tb: comme | luôn đứng đầu câu
+tb: puisque | lý do người nghe đã biết
+tb: car | văn viết, đứng giữa câu
+> Bốn từ này đều đi với một mệnh đề có động từ.
+
+#form
+f: [à cause de, grâce à] + danh từ
+> Trước danh từ, không dùng [[parce que]]. [[À cause de]] cho kết quả xấu, [[grâce à]] cho kết quả tốt.
+vs: Le match est annulé à cause de la pluie. | Trận đấu bị huỷ vì mưa. || kết quả xấu
+vs: J'ai réussi grâce à mon professeur. | Tôi thi đỗ nhờ thầy giáo. || kết quả tốt
+> Nhớ gộp [[de]], [[à]] với mạo từ: [[à cause du bruit]], [[grâce aux amis]].
+
+#examples
+- {Comme|k} il fait beau, on mange dehors. | Vì trời đẹp nên mình ăn ngoài trời.
+- {Puisque|k} tu connais la ville, tu peux nous guider. | Bạn đã biết thành phố này rồi thì dẫn đường cho chúng tôi nhé.
+- Je reste à la maison {parce que|k} j'ai de la fièvre. | Tôi ở nhà vì bị sốt.
+- Le vol est retardé, {car|k} il y a du brouillard. | Chuyến bay bị hoãn vì có sương mù.
+- On a raté le train {à cause des|k} bouchons. | Chúng tôi lỡ tàu vì tắc đường.
+
+#contrast
+> [[Comme]] luôn đứng đầu câu. [[Parce que]] thường đứng sau mệnh đề chính.
+vs: Comme je suis fatigué, je me couche tôt. | Vì mệt nên tôi đi ngủ sớm. || comme: đầu câu
+vs: Je me couche tôt parce que je suis fatigué. | Tôi đi ngủ sớm vì mệt. || parce que: phía sau
+> Hai câu cùng nghĩa, chỉ khác thứ tự.
+
+#mistakes
+x: Je reste ici comme il pleut. => Comme il pleut, je reste ici. | Vì trời mưa nên tôi ở lại đây. >> [[Comme]] phải đứng đầu câu.
+x: Le concert est annulé parce que l'orage. => Le concert est annulé à cause de l'orage. | Buổi hoà nhạc bị huỷ vì giông bão. >> Trước danh từ, dùng [[à cause de]].
+x: J'ai réussi à cause de toi. => J'ai réussi grâce à toi. | Tôi thành công là nhờ bạn. >> Kết quả tốt thì dùng [[grâce à]].
+
+#dialogue
+mme-martin: Puisque tu es là maintenant, ouvre ton livre page vingt. | Em đã đến rồi thì mở sách trang hai mươi đi. [explain]
+tom: J'ai oublié mon livre à cause de la panique ce matin. | Em quên sách vì sáng nay cuống quá ạ. [sad]
+mme-martin: Comme ta voisine a le sien, regarde avec elle. | Bạn ngồi cạnh có sách, em xem chung với bạn ấy nhé. [explain]
+tom: Merci ! Grâce à vous, ma journée commence mieux. | Cảm ơn cô! Nhờ cô mà ngày hôm nay của em khởi đầu tốt hơn. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Vì trời đẹp nên mình ăn ngoài trời. => Comme il fait beau, on mange dehors. | Vì trời đẹp nên mình ăn ngoài trời.
+? Nói bằng tiếng Pháp: Chúng tôi lỡ tàu vì tắc đường. => On a raté le train à cause des bouchons. | Chúng tôi lỡ tàu vì tắc đường.
+
+#recap
+> Trước mệnh đề: [[parce que]], [[comme]] ở đầu câu, [[puisque]] cho lý do đã rõ, [[car]] trong văn viết. Trước danh từ: [[à cause de]] cho điều xấu, [[grâce à]] cho điều tốt.
+
+#practice
+fill: ___ il fait beau, on mange dehors. | Comme* / Parce que / Car || đầu câu → comme.
+fill: Je reste à la maison ___ j'ai de la fièvre. | parce que* / à cause de / grâce à || trước mệnh đề.
+contrast: On a raté le train ___ bouchons. | à cause des* / grâce aux || kết quả xấu.
+contrast: J'ai réussi ___ toi. | grâce à* / à cause de || kết quả tốt.
+fill: ___ tu connais la ville, tu peux nous guider. | Puisque* / Car / À cause de || lý do đã rõ.
+fill: Le match est annulé ___ la pluie. | à cause de* / parce que / comme || trước danh từ.
+fix: Je reste ici comme il pleut. | Comme il pleut, je reste ici.* / Je reste ici comme de la pluie. / Comme la pluie, je reste ici. || comme đứng đầu câu.
+listen: Le vol est retardé, car il y a du brouillard. | Le vol est retardé, car il y a du brouillard.* / Le vol est retardé à cause du brouillard. / Le vol est retardé, comme il y a du brouillard. || car.

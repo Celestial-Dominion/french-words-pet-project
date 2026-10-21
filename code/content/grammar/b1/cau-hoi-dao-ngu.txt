@@ -1,0 +1,79 @@
+=== cau-hoi-dao-ngu
+sum: Câu hỏi đảo ngữ đặt đại từ chủ ngữ SAU động từ, nối bằng gạch nối: Parlez-vous français ? Où habitez-vous ? Đây là cách hỏi trang trọng, hay gặp trong văn viết, phỏng vấn, khi nói với người lạ. Nếu động từ tận cùng bằng nguyên âm và đại từ là il, elle, on, thêm -t-: Parle-t-il ? A-t-elle fini ? Nếu chủ ngữ là danh từ, giữ danh từ và thêm đại từ: Votre sœur vient-elle ?
+form: động từ-đại từ ? | Parlez-vous français ?
+form: từ để hỏi + động từ-đại từ ? | Où habitez-vous ?
+form: -t- giữa hai nguyên âm | Parle-t-il ? · Va-t-elle venir ?
+form: passé composé: trợ động từ-đại từ + phân từ | Avez-vous fini ?
+form: danh từ + động từ-đại từ ? | Votre sœur vient-elle ?
+cast: m-dubois chloe
+bg: street
+words: habiter, quartier, penser, avis
+
+#hook
+m-dubois: Bonjour mademoiselle, habitez-vous dans le quartier ? | Chào cô, cô có sống ở khu này không? [happy]
+chloe: Oui, depuis trois ans. Vous êtes journaliste ? | Có, được ba năm rồi. Ông là nhà báo à? [surprised]
+> Người phóng viên hỏi [[habitez-vous]], đặt [[vous]] sau động từ. Cô gái hỏi lại theo lối thân mật: [[vous êtes journaliste]], chỉ lên giọng.
+
+#meaning
+th: Mức độ | Câu hỏi
+tb: thân mật | Vous habitez ici ?
+tb: trung tính | Est-ce que vous habitez ici ?
+tb: trang trọng | Habitez-vous ici ?
+> Ba câu cùng nghĩa, chỉ khác mức độ trang trọng. Đảo ngữ hay gặp trong văn viết và khi nói với người lạ.
+
+#form
+f: [động từ] + gạch nối + [đại từ]
+> Đại từ chủ ngữ đứng sau động từ, có gạch nối.
+th: Câu thường | Đảo ngữ
+tb: Vous parlez anglais. | Parlez-vous anglais ?
+tb: Tu as faim. | As-tu faim ?
+tb: Il parle anglais. | Parle-t-il anglais ?
+tb: Elle va venir. | Va-t-elle venir ?
+> Khi động từ tận cùng bằng nguyên âm và đại từ là [[il]], [[elle]], [[on]], ta thêm [[t]] cho dễ đọc: [[parle-t-il]], [[a-t-elle]].
+
+#examples
+- Où {travaillez-vous|k} ? | Anh chị làm việc ở đâu?
+- Depuis quand {apprenez-vous|k} le français ? | Anh chị học tiếng Pháp từ bao giờ?
+- {A-t-il|k} déjà mangé ? | Anh ấy ăn chưa?
+- Pourquoi votre sœur {est-elle|k} partie ? | Tại sao chị gái anh lại đi?
+- Que {pensez-vous|k} de ce projet ? | Anh chị nghĩ gì về dự án này?
+
+#contrast
+> Khi chủ ngữ là danh từ, ta giữ danh từ ở đầu và thêm đại từ sau động từ.
+vs: Votre sœur vient ce soir ? | Chị anh tối nay có đến không? || thân mật
+vs: Votre sœur vient-elle ce soir ? | Chị anh tối nay có đến không ạ? || trang trọng
+> Với câu hỏi có hoặc không, không đặt danh từ ra sau động từ.
+
+#pronunciation
+pron: parle-t-il | parle-t-il | paʁltil
+pron: a-t-elle | a-t-elle | atɛl
+> Chữ [[t]] thêm vào được đọc rõ và nối với đại từ phía sau.
++ Aime-t-elle le chocolat ? | Cô ấy có thích sô-cô-la không?
+
+#mistakes
+x: Mange-il ici ? => Mange-t-il ici ? | Anh ấy có ăn ở đây không? >> Giữa hai nguyên âm phải thêm [[t]].
+x: Où vous habitez-vous ? => Où habitez-vous ? | Anh chị sống ở đâu? >> Đại từ chỉ xuất hiện một lần, sau động từ.
+x: Est-ce que habitez-vous ici ? => Habitez-vous ici ? | Anh chị có sống ở đây không? >> Không dùng [[est-ce que]] cùng với đảo ngữ.
+
+#dialogue
+m-dubois: Comment trouvez-vous le nouveau parc du quartier ? | Cô thấy công viên mới của khu này thế nào? [thinking]
+chloe: Je le trouve super ! J'y vais tous les matins avec mon chien. | Tôi thấy rất tuyệt! Sáng nào tôi cũng dắt chó ra đó. [happy]
+m-dubois: Et vos voisins sont-ils du même avis ? | Thế hàng xóm của cô có cùng ý kiến không? [thinking]
+chloe: Pas tous ! Mais pourquoi ne leur demandez-vous pas ? | Không phải ai cũng vậy! Sao ông không hỏi họ luôn? [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Anh chị làm việc ở đâu? (trang trọng) => Où travaillez-vous ? | Anh chị làm việc ở đâu?
+? Nói bằng tiếng Pháp: Anh ấy ăn chưa? (trang trọng) => A-t-il déjà mangé ? | Anh ấy ăn chưa?
+
+#recap
+> Đảo ngữ: động từ, gạch nối, rồi đại từ. Thêm [[t]] giữa hai nguyên âm, như [[parle-t-il]]. Chủ ngữ là danh từ thì giữ danh từ và thêm đại từ. Đây là lối hỏi trang trọng.
+
+#practice
+contrast: ___ français ? | Parlez-vous* / Vous parlez-vous || đảo ngữ: động từ trước đại từ.
+fill: Parle-___ anglais ? | t-il* / il || thêm t giữa hai nguyên âm.
+fill: Où ___ ? | habitez-vous* / vous habitez-vous / habitez vous || đại từ một lần, có gạch nối.
+fill: Votre sœur vient-___ ce soir ? | elle* / il / t-elle || thêm đại từ cho danh từ.
+type: Et vous, ___ fini ? | avez-vous || passé composé: đảo trợ động từ.
+fix: Mange-il ici ? | Mange-t-il ici ?* / Mange-il-t ici ? / Mange il ici ? || thêm t.
+order: Depuis / quand / apprenez-vous / le / français ? | Anh chị học tiếng Pháp từ bao giờ?
+listen: Aime-t-elle le chocolat ? | Aime-t-elle le chocolat ?* / Aime-elle le chocolat ? / Elle aime le chocolat ? || t nối âm.

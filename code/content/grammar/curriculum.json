@@ -859,6 +859,85 @@
     "ce-qui-ce-que"
    ],
    "find": "(?<![\\p{L}'])ce (qui|que|dont)(?![\\p{L}])|(?<![\\p{L}'])ce qu'"
+  },
+  {
+   "id": "menh-de-quan-he-b1",
+   "lv": "b1",
+   "cat": "relative",
+   "kind": "contrast",
+   "t": "Chọn qui, que, dont hay où",
+   "en": "le jour où · l'ami dont je parle · la ville où j'habite",
+   "pts": [
+    "relative-ou-time",
+    "relative-choice"
+   ],
+   "find": "(?<![\\p{L}'])(le jour|l'année|le moment|au moment|le soir|la nuit|l'époque|l'instant) où(?![\\p{L}])"
+  },
+  {
+   "id": "loi-noi-gian-tiep",
+   "lv": "b1",
+   "cat": "clauses",
+   "t": "Lời nói gián tiếp ở hiện tại",
+   "en": "il dit que… · elle demande si… · il me dit de venir",
+   "pts": [
+    "reported-present"
+   ],
+   "find": "(?<![\\p{L}'])(dit|disent|demande|demandent|explique|répond|répète)( qu| si| s'il| où| quand| comment| pourquoi| ce qu| de| d')"
+  },
+  {
+   "id": "cau-hoi-dao-ngu",
+   "lv": "b1",
+   "cat": "questions",
+   "t": "Câu hỏi đảo ngữ",
+   "en": "Parlez-vous français ? · Où habite-t-il ?",
+   "pts": [
+    "inversion-questions"
+   ],
+   "find": "\\p{L}+-(t-)?(il|elle|ils|elles|vous|nous|tu|on)(?![\\p{L}-])"
+  },
+  {
+   "id": "dong-tu-a-de",
+   "lv": "b1",
+   "cat": "verbs",
+   "t": "Động từ + à / de + nguyên mẫu",
+   "en": "commencer à · essayer de · oublier de",
+   "pts": [
+    "verb-a-de-inf"
+   ],
+   "find": "(?<![\\p{L}'])(commence|commencé|apprend|apprends|appris|réussi|réussit|continue|décide|décidé|essaie|essaye|essayé|oublie|oublié|arrête|arrêté|refuse|refusé|promis|accepte|accepté)\\s+(à|de|d')"
+  },
+  {
+   "id": "avant-de-apres-avoir",
+   "lv": "b1",
+   "cat": "verbs",
+   "t": "Avant de + nguyên mẫu, après avoir + phân từ",
+   "en": "avant de partir · après avoir mangé · après être arrivé",
+   "pts": [
+    "avant-apres-inf"
+   ],
+   "find": "(?<![\\p{L}'])(avant de|avant d'|après avoir|après être|après s'être)"
+  },
+  {
+   "id": "lien-tu-thoi-gian",
+   "lv": "b1",
+   "cat": "clauses",
+   "t": "Liên từ thời gian: lorsque, dès que, depuis que…",
+   "en": "dès que j'arrive · pendant que tu dors · depuis qu'il est parti",
+   "pts": [
+    "time-clauses"
+   ],
+   "find": "(?<![\\p{L}'])(lorsque|lorsqu'|dès que|dès qu'|tandis que|tandis qu'|depuis que|depuis qu'|au moment où|avant que|avant qu')"
+  },
+  {
+   "id": "nguyen-nhan",
+   "lv": "b1",
+   "cat": "clauses",
+   "t": "Nói nguyên nhân: parce que, comme, puisque, grâce à…",
+   "en": "comme il pleut · puisque tu es là · grâce à toi",
+   "pts": [
+    "cause"
+   ],
+   "find": "(?<![\\p{L}'])(puisque|puisqu'|grâce à|grâce au|grâce aux|à cause de|à cause du|à cause des|car)(?![\\p{L}])"
   }
  ]
 }

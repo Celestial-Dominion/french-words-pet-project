@@ -1117,6 +1117,99 @@
     "relative-dont"
    ],
    "pri": 2
+  },
+  {
+   "id": "relative-ou-time",
+   "lv": "b1",
+   "cat": "relative",
+   "name": "où (temps)",
+   "vi": "où chỉ thời gian: le jour où, l'année où, au moment où (không dùng quand)",
+   "pre": [
+    "relative-ou"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "relative-choice",
+   "lv": "b1",
+   "cat": "relative",
+   "name": "qui, que, dont, où : choisir",
+   "vi": "Chọn đại từ quan hệ: qui (chủ ngữ), que (bổ ngữ trực tiếp), dont (phần có de), où (nơi chốn, thời gian)",
+   "pre": [
+    "relative-ou",
+    "relative-dont"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "reported-present",
+   "lv": "b1",
+   "cat": "clauses",
+   "name": "Discours indirect au présent",
+   "vi": "Lời nói gián tiếp với động từ dẫn ở hiện tại: il dit que…, il demande si…, il demande où / ce que…, il me dit de + nguyên mẫu",
+   "pre": [
+    "conjunctions-basic",
+    "question-words"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "inversion-questions",
+   "lv": "b1",
+   "cat": "questions",
+   "name": "Question par inversion",
+   "vi": "Câu hỏi đảo ngữ (trang trọng): Parlez-vous français ? Où habite-t-il ? thêm -t- giữa hai nguyên âm",
+   "pre": [
+    "yes-no-questions",
+    "question-words"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "verb-a-de-inf",
+   "lv": "b1",
+   "cat": "verbs",
+   "name": "Verbe + à / de + infinitif",
+   "vi": "Động từ + à / de + nguyên mẫu: commencer à, apprendre à, réussir à; décider de, essayer de, oublier de, arrêter de; aimer, vouloir, pouvoir không giới từ",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "avant-apres-inf",
+   "lv": "b1",
+   "cat": "verbs",
+   "name": "avant de + infinitif, après + infinitif passé",
+   "vi": "avant de + nguyên mẫu; après avoir / être + phân từ (nguyên mẫu quá khứ); cùng chủ ngữ",
+   "pre": [
+    "pc-avoir",
+    "pc-etre"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "time-clauses",
+   "lv": "b1",
+   "cat": "clauses",
+   "name": "Subordonnées de temps",
+   "vi": "Mệnh đề thời gian: lorsque, dès que, pendant que, tandis que, depuis que, au moment où; avant que + subjonctif",
+   "pre": [
+    "conjunctions-a2",
+    "subjonctif-forms"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "cause",
+   "lv": "b1",
+   "cat": "clauses",
+   "name": "Exprimer la cause",
+   "vi": "Nguyên nhân: parce que, comme, puisque, car; à cause de / grâce à + danh từ",
+   "pre": [
+    "conjunctions-a2"
+   ],
+   "pri": 1
   }
  ],
  "probes": [

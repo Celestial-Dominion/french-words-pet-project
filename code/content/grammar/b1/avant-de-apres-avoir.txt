@@ -1,0 +1,71 @@
+=== avant-de-apres-avoir
+sum: Avant de + nguyên mẫu: trước khi làm gì (Lave-toi les mains avant de manger). Après + nguyên mẫu quá khứ (avoir / être + phân từ): sau khi đã làm gì (Après avoir mangé, je fais la vaisselle; après être rentrée, elle a dormi). Chỉ dùng khi hai việc do cùng một người làm.
+form: avant de + nguyên mẫu | avant de partir · avant d'entrer
+form: après avoir + phân từ | après avoir mangé
+form: après être + phân từ (hợp giống, số) | après être arrivée
+form: hai người khác nhau: avant que + subjonctif | avant que tu partes
+cast: maman nam
+bg: kitchen
+words: laver, couper, ajouter, goûter
+
+#hook
+maman: Lave-toi les mains avant de toucher aux légumes ! | Rửa tay trước khi đụng vào rau đi con! [explain]
+nam: D'accord. Et après avoir coupé les carottes, je fais quoi ? | Vâng. Thế cắt cà rốt xong thì con làm gì ạ? [thinking]
+> [[Avant de toucher]]: trước khi làm. [[Après avoir coupé]]: sau khi đã làm xong. Cả hai đều gọn hơn một mệnh đề đầy đủ.
+
+#meaning
+vs: Je me lave les mains avant de cuisiner. | Tôi rửa tay trước khi nấu ăn. || việc xảy ra sau: avant de
+vs: Après avoir cuisiné, je fais la vaisselle. | Nấu xong, tôi rửa bát. || việc đã xong: après avoir
+> Sau [[avant de]] là việc xảy ra sau. Sau [[après]] là việc đã xong trước.
+
+#form
+f: [avant de] + nguyên mẫu
+> Trước nguyên âm, [[de]] thành [[d']]: [[avant d'entrer]].
+f: [après avoir, après être] + phân từ
+> Chọn [[avoir]] hay [[être]] giống như ở [[passé composé]]. Với [[être]], phân từ hợp với chủ ngữ.
+th: Passé composé | Après + nguyên mẫu quá khứ
+tb: j'ai mangé | après avoir mangé
+tb: elle est sortie | après être sortie
+tb: ils se sont levés | après s'être levés
+> Động từ phản thân giữ đại từ và đổi theo ngôi: [[après m'être levé]], [[après s'être levés]].
+
+#examples
+- Éteins la lumière {avant de|k} sortir. | Tắt đèn trước khi ra ngoài.
+- Réfléchis bien {avant de|k} répondre. | Nghĩ kỹ trước khi trả lời.
+- {Après avoir|k} lu le message, elle a souri. | Đọc tin nhắn xong, cô ấy mỉm cười.
+- {Après être|k} rentrés, nous avons dîné. | Về nhà xong, chúng tôi ăn tối.
+- Il a pris un café {après s'être|k} levé. | Anh ấy uống cà phê sau khi dậy.
+
+#contrast
+> Hai cấu trúc này chỉ dùng khi cùng một người làm cả hai việc.
+vs: Avant de partir, je ferme la porte. | Trước khi đi, tôi đóng cửa. || cùng một người
+vs: Avant que tu partes, je veux te parler. | Trước khi bạn đi, tôi muốn nói chuyện với bạn. || hai người: avant que + subjonctif
+> Khi có hai người khác nhau, dùng [[avant que]] cộng [[subjonctif]].
+
+#mistakes
+x: Avant sortir, éteins la lumière. => Avant de sortir, éteins la lumière. | Trước khi ra ngoài, tắt đèn đi. >> Cần [[de]] sau [[avant]].
+x: Après manger, je fais la sieste. => Après avoir mangé, je fais la sieste. | Ăn xong, tôi ngủ trưa. >> Sau [[après]] dùng nguyên mẫu quá khứ.
+x: Après avoir arrivé, elle a appelé. => Après être arrivée, elle a appelé. | Đến nơi xong, cô ấy gọi điện. >> [[Arriver]] dùng [[être]], phân từ hợp với chủ ngữ.
+
+#dialogue
+maman: Après avoir coupé les carottes, mets-les dans la casserole. | Cắt cà rốt xong thì cho vào nồi. [explain]
+nam: Et j'ajoute le sel avant de mettre l'eau ? | Con cho muối trước khi đổ nước ạ? [thinking]
+maman: Non, après avoir mis l'eau. Et goûte avant de servir ! | Không, sau khi đổ nước. Và nếm thử trước khi dọn ra nhé! [explain]
+nam: Après avoir cuisiné avec toi, je serai un vrai chef ! | Nấu với mẹ xong, con sẽ thành đầu bếp thực thụ! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tắt đèn trước khi ra ngoài. => Éteins la lumière avant de sortir. | Tắt đèn trước khi ra ngoài.
+? Nói bằng tiếng Pháp: Đọc tin nhắn xong, cô ấy mỉm cười. => Après avoir lu le message, elle a souri. | Đọc tin nhắn xong, cô ấy mỉm cười.
+
+#recap
+> [[Avant de]] cộng nguyên mẫu: trước khi làm. [[Après avoir]] hoặc [[après être]] cộng phân từ: sau khi đã làm. Chỉ dùng khi cùng một chủ ngữ.
+
+#practice
+fill: Éteins la lumière avant ___ sortir. | de* / à / que || avant de + nguyên mẫu.
+fill: Après ___ lu le message, elle a souri. | avoir* / être / a || lire → avoir.
+fill: Après ___ rentrés, nous avons dîné. | être* / avoir / sommes || rentrer → être.
+contrast: Après avoir ___ , je fais la sieste. | mangé* / manger || après avoir + phân từ.
+contrast: Avant que tu ___ , je veux te parler. | partes* / partir || hai người: avant que + subjonctif.
+type: Il a pris un café après s'être ___ (lever). | levé || phân từ của lever.
+fix: Après manger, je fais la sieste. | Après avoir mangé, je fais la sieste.* / Après mangé, je fais la sieste. / Après de manger, je fais la sieste. || après avoir + phân từ.
+listen: Après être rentrés, nous avons dîné. | Après être rentrés, nous avons dîné.* / Avant de rentrer, nous avons dîné. / Après avoir dîné, nous sommes rentrés. || après être rentrés.

@@ -1,0 +1,75 @@
+=== dong-tu-a-de
+sum: Khi một động từ đứng trước nguyên mẫu, có ba khả năng: không giới từ (aimer, vouloir, pouvoir, devoir, savoir, préférer, espérer), đi với à (commencer à, apprendre à, réussir à, continuer à, aider à, hésiter à) hoặc đi với de (décider de, essayer de, oublier de, arrêter de, finir de, refuser de, accepter de, promettre de). Phải học thuộc từng động từ kèm giới từ.
+form: không giới từ | Je veux partir. · J'aime lire.
+form: động từ + à + nguyên mẫu | J'apprends à nager.
+form: động từ + de + nguyên mẫu | J'ai décidé d'arrêter.
+form: demander, dire, conseiller à quelqu'un de + nguyên mẫu | Je lui demande de venir.
+cast: hugo zoe
+bg: cafe
+words: décider, essayer, arrêter, commencer, oublier
+
+#hook
+zoe: Alors, tes bonnes résolutions de l'année ? | Thế nào, những quyết tâm năm mới của anh đến đâu rồi? [happy]
+hugo: J'ai décidé d'arrêter de manger du sucre, et j'ai commencé à courir le matin. | Anh quyết định bỏ ăn đường, và đã bắt đầu chạy bộ buổi sáng. [explain]
+> [[Décider de]], [[arrêter de]], nhưng [[commencer à]]. Mỗi động từ đi với một giới từ riêng trước nguyên mẫu.
+
+#meaning
+th: Không giới từ | à | de
+tb: aimer, adorer, préférer | commencer à | décider de
+tb: vouloir, pouvoir, devoir | apprendre à | essayer de
+tb: savoir, espérer, aller | réussir à | oublier de
+tb: falloir, laisser | continuer à | arrêter de
+> Nhóm không giới từ thường là động từ chỉ ý muốn, khả năng, sở thích. Hai nhóm còn lại phải học thuộc.
+
+#form
+f: động từ + [à] + nguyên mẫu
+> Động từ đi với [[à]]: [[commencer à]], [[apprendre à]], [[réussir à]], [[continuer à]], [[aider à]], [[hésiter à]].
+f: động từ + [de] + nguyên mẫu
+> Động từ đi với [[de]]: [[décider de]], [[essayer de]], [[oublier de]], [[arrêter de]], [[finir de]], [[refuser de]], [[accepter de]], [[promettre de]].
+
+#examples
+- Ma fille apprend {à|k} nager. | Con gái tôi đang học bơi.
+- J'ai oublié {de|k} fermer la porte. | Tôi quên đóng cửa.
+- Il a enfin réussi {à|k} trouver un travail. | Cuối cùng anh ấy cũng tìm được việc.
+- Essaie {de|k} dormir un peu. | Cố ngủ một chút đi.
+- Nous {espérons|v} partir en juillet. | Chúng tôi hy vọng đi vào tháng Bảy.
+
+#contrast
+> Với [[demander]], [[dire]], [[conseiller]], [[permettre]]: người đi với [[à]], còn hành động đi với [[de]].
+- Je demande à mon voisin {de|k} baisser la musique. | Tôi nhờ hàng xóm vặn nhỏ nhạc.
+- Le médecin m'a conseillé {de|k} marcher tous les jours. | Bác sĩ khuyên tôi đi bộ mỗi ngày.
+
+#pronunciation
+pron: d'arrêter | d'arrêter | daʁete
+pron: d'oublier | d'oublier | dublije
+> Trước nguyên âm, [[de]] rút gọn thành [[d']] và nối liền với động từ phía sau.
++ J'ai essayé d'appeler, mais personne n'a répondu. | Tôi đã thử gọi nhưng không ai trả lời.
+
+#mistakes
+x: J'ai décidé à partir. => J'ai décidé de partir. | Tôi đã quyết định đi. >> Nói [[décider de]].
+x: J'apprends de conduire. => J'apprends à conduire. | Tôi đang học lái xe. >> Nói [[apprendre à]].
+x: Je veux de partir. => Je veux partir. | Tôi muốn đi. >> [[Vouloir]] không cần giới từ.
+x: J'ai arrêté fumer. => J'ai arrêté de fumer. | Tôi đã bỏ thuốc lá. >> Nói [[arrêter de]].
+
+#dialogue
+zoe: Et tu as réussi à tenir ? | Thế anh có giữ được không? [thinking]
+hugo: Pas vraiment. J'ai oublié de mettre mon réveil trois fois ! | Không hẳn. Anh quên đặt báo thức ba lần rồi! [sad]
+zoe: Moi, j'ai promis de lire un livre par mois. J'adore lire. | Em thì hứa đọc mỗi tháng một cuốn sách. Em rất thích đọc. [happy]
+hugo: Tu peux m'aider à choisir le premier ? | Em giúp anh chọn cuốn đầu tiên được không? [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi quên đóng cửa. => J'ai oublié de fermer la porte. | Tôi quên đóng cửa.
+? Nói bằng tiếng Pháp: Con gái tôi đang học bơi. => Ma fille apprend à nager. | Con gái tôi đang học bơi.
+
+#recap
+> Trước nguyên mẫu: [[vouloir]], [[pouvoir]], [[aimer]] không cần giới từ; [[commencer]], [[apprendre]], [[réussir]] đi với [[à]]; [[décider]], [[essayer]], [[oublier]], [[arrêter]] đi với [[de]]. Học mỗi động từ kèm giới từ của nó.
+
+#practice
+fill: J'ai décidé ___ partir. | de* / à || décider de.
+fill: J'apprends ___ conduire. | à* / de || apprendre à.
+contrast: Je veux ___ . | partir* / de partir || vouloir: không giới từ.
+fill: J'ai arrêté ___ fumer. | de* / à || arrêter de.
+fill: Il a enfin réussi ___ trouver un travail. | à* / de || réussir à.
+fill: Le médecin m'a conseillé ___ marcher. | de* / à || conseiller à quelqu'un de.
+fix: J'ai décidé à partir. | J'ai décidé de partir.* / J'ai décidé partir. / J'ai décidé pour partir. || décider de.
+listen: J'ai essayé d'appeler, mais personne n'a répondu. | J'ai essayé d'appeler, mais personne n'a répondu.* / J'ai essayé à appeler, mais personne n'a répondu. / J'ai essayé, mais personne n'a répondu. || d'appeler.
