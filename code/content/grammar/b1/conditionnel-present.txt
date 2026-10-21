@@ -1,0 +1,80 @@
+=== conditionnel-present
+sum: Conditionnel présent = gốc của futur simple + đuôi của imparfait (-ais, -ais, -ait, -ions, -iez, -aient): je parlerais, tu ferais, il serait. Dùng để nói mong muốn (j'aimerais), khuyên (tu devrais), gợi ý (on pourrait), yêu cầu lịch sự, điều tưởng tượng.
+form: gốc futur + -ais, -ais, -ait, -ions, -iez, -aient | je parlerais · nous finirions
+form: j'aimerais / je voudrais + nguyên mẫu = mong muốn | J'aimerais voyager.
+form: tu devrais / à ta place, je… = lời khuyên | Tu devrais dormir.
+form: on pourrait + nguyên mẫu = gợi ý | On pourrait aller au cinéma.
+cast: chloe nam
+bg: cafe
+words: aimer, devoir, pouvoir
+
+#hook
+chloe: J'en ai marre de la ville. J'aimerais vivre au bord de la mer. | Mình chán thành phố rồi. Mình ước được sống bên bờ biển. [tired]
+nam: Tu devrais prendre des vacances. On pourrait partir en Bretagne ce week-end ! | Cậu nên đi nghỉ đi. Cuối tuần này mình có thể đi Bretagne! [happy explain]
+> Ba động từ, cùng một đuôi: [[j'aimerais]], [[tu devrais]], [[on pourrait]]. Đó là [[conditionnel présent]]. Nó làm câu nói mềm hơn: mong muốn, lời khuyên, gợi ý.
+
+#meaning
+th: Dùng để | Ví dụ | Nghĩa
+tb: mong muốn | J'aimerais voyager. | Tôi muốn được đi du lịch.
+tb: khuyên | Tu devrais te reposer. | Bạn nên nghỉ ngơi.
+tb: gợi ý | On pourrait sortir. | Mình có thể đi chơi.
+tb: nhờ lịch sự | Pourriez-vous m'aider ? | Ông có thể giúp tôi không?
+tb: tưởng tượng | Avec toi, ce serait parfait. | Có bạn thì sẽ thật tuyệt.
+> Năm cách dùng, nhưng đều chung một tinh thần: nói nhẹ nhàng, không khẳng định chắc chắn.
+
+#form
+f: gốc futur + [-ais, -ait, -ions, -iez, -aient]
+> Lấy gốc của [[futur simple]], rồi thêm đuôi của [[imparfait]].
+th: Ngôi | parler | être | avoir
+tb: je | parlerais | serais | aurais
+tb: tu | parlerais | serais | aurais
+tb: il, elle, on | parlerait | serait | aurait
+tb: nous | parlerions | serions | aurions
+tb: vous | parleriez | seriez | auriez
+tb: ils, elles | parleraient | seraient | auraient
+> Động từ nào bất quy tắc ở [[futur]] thì cũng bất quy tắc ở đây, với cùng gốc: [[je ferai]] thành [[je ferais]], [[je pourrai]] thành [[je pourrais]], [[j'irai]] thành [[j'irais]].
+
+#examples
+- {J'aimerais|k} apprendre le piano. | Tôi muốn học piano.
+- À ta place, je {parlerais|k} au directeur. | Ở vào vị trí của bạn, tôi sẽ nói chuyện với giám đốc.
+- Vous {devriez|k} essayer ce restaurant. | Các bạn nên thử nhà hàng này.
+- {Pourriez|k}-vous fermer la fenêtre, s'il vous plaît ? | Ông có thể đóng cửa sổ giúp tôi không?
+- Sans téléphone, la vie {serait|k} plus calme. | Không có điện thoại, cuộc sống sẽ yên tĩnh hơn.
+
+#real
+> Trên báo, [[conditionnel]] còn báo một tin chưa được xác nhận: [[le président serait malade]] nghĩa là nghe nói tổng thống bị ốm, chưa chắc chắn.
+- Selon la radio, l'accident {aurait|k} fait trois blessés. | Theo đài, vụ tai nạn có lẽ làm ba người bị thương.
+
+#pronunciation
+pron: je parlerai | je parlerai | ʒəpaʁləʁe
+pron: je parlerais | je parlerais | ʒəpaʁləʁɛ
+> [[Je parlerai]], tương lai, và [[je parlerais]], điều kiện, chỉ khác nhau ở âm cuối, “ê” khép và “e” mở. Nhiều người Pháp đọc gần như giống nhau, nên hãy dựa vào ngữ cảnh.
++ Avec plus de temps, je parlerais mieux français. | Có nhiều thời gian hơn, tôi sẽ nói tiếng Pháp giỏi hơn.
+
+#mistakes
+x: Tu devras te reposer. => Tu devrais te reposer. | Bạn nên nghỉ ngơi. >> Lời khuyên dùng [[conditionnel]]: [[tu devrais]]. [[Tu devras]] là “bạn sẽ phải”.
+x: Je voudrai un café, s'il vous plaît. => Je voudrais un café, s'il vous plaît. | Cho tôi một cà phê. >> Gọi món lịch sự dùng [[je voudrais]].
+x: On pouvrait sortir. => On pourrait sortir. | Mình có thể đi chơi. >> Gốc của [[pouvoir]] là [[pourr-]], giống [[futur]].
+
+#dialogue
+chloe: En Bretagne ? Ce serait génial ! Mais il pleut souvent là-bas... | Đi Bretagne á? Thế thì tuyệt! Nhưng ở đó hay mưa lắm... [thinking]
+nam: On prendrait des imperméables. Et on mangerait des crêpes tous les soirs ! | Mình sẽ mang áo mưa. Và tối nào cũng ăn bánh crêpe! [happy]
+chloe: Tu sais, tu devrais travailler dans une agence de voyage. | Cậu biết không, cậu nên làm ở công ty du lịch đấy. [happy]
+nam: J'aimerais bien, mais je déteste les avions ! | Mình cũng muốn lắm, nhưng mình ghét máy bay! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi muốn học piano. => J'aimerais apprendre le piano. | Tôi muốn học piano.
+? Nói bằng tiếng Pháp: Các bạn nên thử nhà hàng này. => Vous devriez essayer ce restaurant. | Các bạn nên thử nhà hàng này.
+
+#recap
+> Công thức: gốc của [[futur]] cộng đuôi của [[imparfait]]. Ghi nhớ ba câu mẫu: [[j'aimerais]] để nói mong muốn, [[tu devrais]] để khuyên, [[on pourrait]] để gợi ý.
+
+#practice
+fill: Tu ___ te reposer, tu as l'air fatigué. | devrais* / devras / dois || Lời khuyên → conditionnel.
+fill: On ___ aller au cinéma ce soir ? | pourrait* / pourra / peut || Gợi ý → conditionnel.
+contrast: Je ___ un café, s'il vous plaît. | voudrais* / voudrai || Gọi món lịch sự → conditionnel.
+type: Sans téléphone, la vie ___ (être) plus calme. | serait || être → ser- + ait.
+type: Nous ___ (aimer) visiter Paris. | aimerions || aimer → aimer- + ions.
+fix: On pouvrait sortir. | On pourrait sortir.* / On pourra sortir. / On pouvait sortir. || pouvoir → pourr-.
+order: À / ta / place, / je / parlerais / au / directeur. | Ở vị trí của bạn, tôi sẽ nói với giám đốc.
+listen: Vous devriez essayer ce restaurant. | Vous devriez essayer ce restaurant.* / Vous devez essayer ce restaurant. / Vous allez essayer ce restaurant. || devriez = nên.

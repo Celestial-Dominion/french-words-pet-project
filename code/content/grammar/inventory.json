@@ -855,6 +855,94 @@
     "conjunctions-basic"
    ],
    "pri": 2
+  },
+  {
+   "id": "plus-que-parfait",
+   "lv": "b1",
+   "cat": "tense",
+   "name": "Plus-que-parfait",
+   "vi": "Plus-que-parfait: avais / étais + phân từ, việc xảy ra trước một việc quá khứ khác",
+   "pre": [
+    "pc-avoir",
+    "pc-etre",
+    "imparfait"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "past-narration",
+   "lv": "b1",
+   "cat": "tense",
+   "name": "Raconter au passé : PC, imparfait, plus-que-parfait",
+   "vi": "Kể chuyện quá khứ: passé composé (sự việc), imparfait (bối cảnh), plus-que-parfait (việc trước đó)",
+   "pre": [
+    "plus-que-parfait",
+    "pc-vs-imparfait"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "aspect-periphrases",
+   "lv": "b1",
+   "cat": "tense",
+   "name": "être en train de, être sur le point de",
+   "vi": "Đang, sắp, vừa: être en train de, être sur le point de, aller, venir de",
+   "pre": [
+    "futur-proche",
+    "venir-de-inf"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "future-choice",
+   "lv": "b1",
+   "cat": "tense",
+   "name": "futur simple, futur proche ou présent",
+   "vi": "Chọn cách nói tương lai: kế hoạch chắc chắn, dự định gần, dự đoán, lời hứa",
+   "pre": [
+    "futur-simple",
+    "futur-proche"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "quand-futur",
+   "lv": "b1",
+   "cat": "tense",
+   "name": "quand / dès que + futur",
+   "vi": "Sau quand, dès que, lorsque nói về tương lai thì dùng futur simple",
+   "pre": [
+    "futur-simple"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "conditionnel-present",
+   "lv": "b1",
+   "cat": "conditionals",
+   "name": "Conditionnel présent",
+   "vi": "Conditionnel présent: cách chia; mong muốn, lời khuyên, giả định, tin chưa chắc",
+   "pre": [
+    "futur-simple",
+    "polite-conditional"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "si-imparfait",
+   "lv": "b1",
+   "cat": "conditionals",
+   "name": "si + imparfait → conditionnel",
+   "vi": "Giả định trái với hiện tại: Si j'avais le temps, je voyagerais.",
+   "pre": [
+    "si-present",
+    "conditionnel-present",
+    "imparfait"
+   ],
+   "vs": [
+    "si-present"
+   ],
+   "pri": 1
   }
  ],
  "probes": [

@@ -1,0 +1,72 @@
+=== ke-chuyen-qua-khu
+sum: Một câu chuyện quá khứ thường dùng ba thì. Imparfait dựng bối cảnh (trời, cảnh, cảm xúc, việc đang diễn ra). Passé composé kể các sự việc chính nối tiếp nhau. Plus-que-parfait lùi về một việc đã xảy ra trước đó.
+form: imparfait = bối cảnh, việc đang diễn ra | Il neigeait. J'avais froid.
+form: passé composé = sự việc chính | Soudain, j'ai vu une lumière.
+form: plus-que-parfait = việc xảy ra trước đó | J'avais perdu mon chemin.
+cast: papi zoe
+bg: home-evening
+words: soudain, chemin, lumière
+
+#hook
+zoe: Papi, raconte-moi une histoire vraie ! | Ông ơi, kể cháu nghe một chuyện có thật đi! [happy]
+papi: C'était l'hiver. Il neigeait, et j'avais perdu mon chemin dans la forêt. Soudain, j'ai vu une petite lumière. | Hồi đó là mùa đông. Tuyết rơi, và ông đã bị lạc đường trong rừng. Bỗng nhiên, ông thấy một ánh đèn nhỏ. [thinking explain]
+> Chỉ ba câu mà có đủ ba thì quá khứ. [[Il neigeait]] là bối cảnh. [[J'avais perdu mon chemin]] là việc đã xảy ra trước đó. [[J'ai vu une petite lumière]] là sự việc chính, làm câu chuyện đi tiếp.
+
+#meaning
+th: Thì | Vai trò | Câu hỏi tự đặt
+tb: imparfait | phông nền | lúc đó thế nào?
+tb: passé composé | sự việc chính | rồi chuyện gì xảy ra?
+tb: plus-que-parfait | lùi về trước | trước đó đã có chuyện gì?
+> Hãy hình dung một bộ phim. [[Imparfait]] là cảnh nền. [[Passé composé]] là hành động. [[Plus-que-parfait]] là đoạn hồi tưởng.
+
+#form
+> Không có cách chia mới: cả ba thì bạn đều đã học. Điều mới là biết đặt chúng cạnh nhau. Một mẹo nhỏ là tìm từ báo hiệu.
+th: Từ báo hiệu | Thì hay đi kèm
+tb: d'habitude, souvent, pendant que | imparfait
+tb: soudain, un jour, tout à coup | passé composé
+tb: déjà, avant, la veille | plus-que-parfait
+> Đây chỉ là mẹo, không phải luật cứng. Hãy luôn tự hỏi: đây là cảnh, là sự việc, hay là chuyện trước đó?
+
+#examples
+- Il {faisait|v} nuit et la rue {était|v} vide. | Trời tối và đường phố vắng tanh.
+- Je {suis entré|k} dans le café et j'{ai commandé|k} un chocolat. | Tôi bước vào quán và gọi một cốc sô-cô-la.
+- J'{avais oublié|a} mon portefeuille à la maison. | Tôi đã để quên ví ở nhà.
+- Le serveur {a souri|k} : il {connaissait|v} bien ce problème. | Người phục vụ mỉm cười: anh ấy quá quen chuyện này.
+
+#real
+> Khi đọc truyện hay nghe kể chuyện, hãy để ý từng thì. Chúng giúp bạn biết đâu là cảnh, đâu là hành động, đâu là chuyện cũ.
+- Quand Léa {est arrivée|k}, ses amis {étaient|v} déjà là : ils {avaient préparé|a} une surprise. | Khi Léa đến, các bạn đã ở đó rồi: họ đã chuẩn bị một bất ngờ.
+
+#contrast
+vs: Il pleuvait quand je suis sorti. | Trời đang mưa lúc tôi ra ngoài. || mưa là bối cảnh
+vs: Il avait plu quand je suis sorti. | Lúc tôi ra ngoài thì trời đã mưa xong. || mưa đã xảy ra trước
+vs: Il a plu quand je suis sorti. | Tôi ra ngoài thì trời mưa. || mưa là một sự việc
+> Cùng một động từ, ba thì cho ba bức tranh khác nhau. Đường ướt mà không còn mưa? Đó là [[il avait plu]].
+
+#mistakes
+x: C'a été l'hiver et il a neigé. => C'était l'hiver et il neigeait. | Hồi đó là mùa đông và tuyết đang rơi. >> Bối cảnh, thời tiết dùng [[imparfait]].
+x: Soudain, je voyais une lumière. => Soudain, j'ai vu une lumière. | Bỗng nhiên tôi thấy một ánh đèn. >> Sau [[soudain]] là một sự việc, dùng [[passé composé]].
+x: Je n'avais pas d'argent : j'ai oublié mon portefeuille. => Je n'avais pas d'argent : j'avais oublié mon portefeuille. | Tôi không có tiền vì đã quên ví. >> Việc quên ví xảy ra trước đó, dùng [[plus-que-parfait]].
+
+#dialogue
+zoe: Et après, qu'est-ce que tu as fait ? | Rồi sau đó ông làm gì? [thinking]
+papi: J'ai marché vers la lumière. C'était une petite maison. Une vieille dame avait préparé de la soupe. | Ông đi về phía ánh đèn. Đó là một ngôi nhà nhỏ. Một bà cụ đã nấu sẵn súp. [explain]
+zoe: Elle t'attendait ? | Bà ấy đợi ông à? [surprised]
+papi: Non, mais elle avait vu mes traces dans la neige ! | Không, nhưng bà đã thấy dấu chân ông trên tuyết! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Trời tối và đường phố vắng tanh. => Il faisait nuit et la rue était vide. | Trời tối và đường phố vắng tanh.
+? Nói bằng tiếng Pháp: Tôi đã để quên ví ở nhà. => J'avais oublié mon portefeuille à la maison. | Tôi đã để quên ví ở nhà.
+
+#recap
+> Ghi nhớ ba vai: [[imparfait]] dựng cảnh, [[passé composé]] đẩy câu chuyện đi tiếp, [[plus-que-parfait]] quay về chuyện trước đó. Kể chuyện hay là biết đổi thì đúng lúc.
+
+#practice
+contrast: C'___ l'hiver et il neigeait. | était* / a été || Bối cảnh → imparfait.
+contrast: Soudain, j'___ une lumière. | ai vu* / voyais || Sự việc chính → passé composé.
+contrast: Je n'avais pas d'argent : j'___ mon portefeuille. | avais oublié* / ai oublié || Xảy ra trước → plus-que-parfait.
+fill: Quand Léa est arrivée, ses amis ___ une surprise. | avaient préparé* / ont préparé / préparent || Chuẩn bị trước khi Léa đến.
+type: Il ___ (pleuvoir) quand je suis sorti. | pleuvait || Bối cảnh lúc đó → imparfait.
+fix: Soudain, je voyais une lumière. | Soudain, j'ai vu une lumière.* / Soudain, j'avais vu une lumière. / Soudain, je vois une lumière. || soudain → passé composé.
+order: Il / faisait / nuit / et / la / rue / était / vide. | Trời tối và đường phố vắng tanh.
+listen: Il avait plu quand je suis sorti. | Il avait plu quand je suis sorti.* / Il pleuvait quand je suis sorti. / Il a plu quand je suis sorti. || il avait plu = mưa đã xong.

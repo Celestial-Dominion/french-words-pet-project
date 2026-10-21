@@ -635,6 +635,74 @@
     "conjunctions-a2"
    ],
    "find": "\\b(quand|comme|donc|pourtant|pendant que)\\b"
+  },
+  {
+   "id": "plus-que-parfait",
+   "lv": "b1",
+   "cat": "tense",
+   "t": "Plus-que-parfait: quá khứ của quá khứ",
+   "en": "j'avais fini · elle était partie",
+   "pts": [
+    "plus-que-parfait"
+   ],
+   "find": "(?<![\\p{L}'])(avais|avait|avaient|étais|était|étaient) (déjà )?\\p{L}+(é|ée|és|ées|i|ie|is|u|ue|us|it|ert|ort)(?![\\p{L}])"
+  },
+  {
+   "id": "ke-chuyen-qua-khu",
+   "lv": "b1",
+   "cat": "tense",
+   "kind": "contrast",
+   "t": "Kể chuyện quá khứ: passé composé, imparfait, plus-que-parfait",
+   "en": "Il pleuvait. J'ai vu qu'il était parti.",
+   "pts": [
+    "past-narration"
+   ],
+   "find": "(?<![\\p{L}'])(quand|parce qu'|parce que) [^.]*(avait|était) \\p{L}+(é|ée|i|is|u|ue|it)(?![\\p{L}])"
+  },
+  {
+   "id": "dang-sap-vua",
+   "lv": "b1",
+   "cat": "tense",
+   "t": "Đang, sắp, vừa: être en train de, être sur le point de",
+   "en": "je suis en train de lire · il est sur le point de partir",
+   "pts": [
+    "aspect-periphrases"
+   ],
+   "find": "(?<![\\p{L}'])(en train d[e']|sur le point d[e'])"
+  },
+  {
+   "id": "tuong-lai-b1",
+   "lv": "b1",
+   "cat": "tense",
+   "t": "Nói về tương lai: futur, futur proche, présent; quand + futur",
+   "en": "je pars demain · je vais partir · quand je serai grand",
+   "pts": [
+    "future-choice",
+    "quand-futur"
+   ],
+   "find": "(?<![\\p{L}'])(quand|dès que|lorsque) (je|j'|tu|il|elle|on|nous|vous|ils|elles) ?\\p{L}+(rai|ras|ra|rons|rez|ront)(?![\\p{L}])"
+  },
+  {
+   "id": "conditionnel-present",
+   "lv": "b1",
+   "cat": "conditionals",
+   "t": "Conditionnel présent: mong muốn, lời khuyên, giả định",
+   "en": "j'aimerais · tu devrais · on pourrait",
+   "pts": [
+    "conditionnel-present"
+   ],
+   "find": "(?<![\\p{L}'])(aimerais|aimerait|devrais|devrait|pourrais|pourrait|pourrions|voudrais|voudrait|serait|aurait|faudrait)(?![\\p{L}])"
+  },
+  {
+   "id": "si-imparfait",
+   "lv": "b1",
+   "cat": "conditionals",
+   "t": "Si + imparfait → conditionnel",
+   "en": "Si j'avais le temps, je voyagerais.",
+   "pts": [
+    "si-imparfait"
+   ],
+   "find": "(?<![\\p{L}'])[Ss]i (j'|tu |il |elle |on |nous |vous |ils |elles )\\p{L}+(ais|ait|aient|ions|iez)(?![\\p{L}])"
   }
  ]
 }

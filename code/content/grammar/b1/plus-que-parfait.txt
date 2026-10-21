@@ -1,0 +1,82 @@
+=== plus-que-parfait
+sum: Plus-que-parfait kể một việc đã xảy ra TRƯỚC một việc quá khứ khác: Quand je suis arrivé, le train était déjà parti. Cách tạo: avoir hoặc être ở imparfait (avais, étais…) + phân từ quá khứ; chọn trợ động từ như passé composé.
+form: avoir (imparfait) + phân từ | j'avais fini · il avait vu
+form: être (imparfait) + phân từ hợp giống số | elle était partie · ils étaient arrivés
+form: việc trước (plus-que-parfait), việc sau (passé composé) | Le film avait commencé quand on est arrivés.
+cast: ines hugo
+bg: train
+words: déjà, oublier
+
+#hook
+ines: Tu as pris le train de huit heures ? | Cậu đã đi chuyến tàu tám giờ à? [thinking]
+hugo: Non ! Quand je suis arrivé à la gare, le train était déjà parti. | Không! Lúc mình đến ga thì tàu đã chạy mất rồi. [sad explain]
+> Có hai việc trong quá khứ: [[je suis arrivé]] và [[le train était parti]]. Tàu chạy trước, bạn ấy đến sau. Tiếng Pháp đánh dấu việc xảy ra trước bằng một thì riêng, thì [[plus-que-parfait]].
+
+#meaning
+tl: -2 le train était parti | 8 giờ
+tl: -1 je suis arrivé | 8 giờ 10
+tl: now maintenant | bây giờ
+> Trên trục thời gian, việc nằm xa hơn về bên trái dùng [[plus-que-parfait]]. Việc gần hơn dùng [[passé composé]].
+> Tiếng Việt chỉ cần thêm chữ “đã” hay “rồi”. Tiếng Pháp phải đổi hẳn động từ.
+
+#form
+f: [avais, étais] + phân từ
+> Trợ động từ ở [[imparfait]], rồi đến phân từ quá khứ.
+th: Trợ động từ | Ví dụ
+tb: j'avais, tu avais, il avait | j'avais mangé
+tb: nous avions, vous aviez, ils avaient | nous avions fini
+tb: j'étais, il était, elles étaient | elle était partie
+> Chọn [[avoir]] hay [[être]] giống hệt [[passé composé]]. Chỉ khác ở chỗ trợ động từ chuyển sang [[imparfait]].
+> Với [[être]], phân từ vẫn hợp giống và số: [[elle était partie]], [[ils étaient arrivés]].
+
+#examples
+- J'{avais|a} {oublié|k} mes clés, alors je n'ai pas pu entrer. | Tôi đã quên chìa khoá nên không vào được.
+- Quand nous sommes arrivés, le film {avait|a} déjà {commencé|k}. | Khi chúng tôi đến, phim đã bắt đầu rồi.
+- Elle {était|a} {sortie|k} quand tu as appelé. | Lúc bạn gọi thì cô ấy đã ra ngoài rồi.
+- Il m'a dit qu'il {avait|a} {trouvé|k} un nouveau travail. | Anh ấy kể với tôi là anh ấy đã tìm được việc mới.
+- Je n'{avais|a} jamais {vu|k} la mer avant mes vingt ans. | Trước năm hai mươi tuổi, tôi chưa từng thấy biển.
+
+#real
+> Thì này rất hay gặp sau [[il m'a dit que]], và khi giải thích lý do: chuyện gì đã xảy ra trước đó.
+- J'étais fatigué parce que j'{avais mal dormi|k}. | Tôi mệt vì đêm trước đã ngủ không ngon.
+- Le prof était content : tout le monde {avait fait|k} ses devoirs. | Thầy giáo vui vì ai cũng đã làm bài tập.
+
+#contrast
+vs: Quand je suis arrivé, il est parti. | Tôi đến thì anh ấy (mới) đi. || tôi đến trước, anh ấy đi sau
+vs: Quand je suis arrivé, il était parti. | Lúc tôi đến thì anh ấy đã đi rồi. || anh ấy đi trước, tôi đến sau
+> Chỉ đổi một động từ mà thứ tự hai việc đảo ngược. Câu đầu: hai việc nối tiếp nhau. Câu sau: anh ấy đã đi trước khi tôi tới.
+
+#mistakes
+x: Quand je suis arrivé, le train est déjà parti. => Quand je suis arrivé, le train était déjà parti. | Khi tôi đến, tàu đã chạy rồi. >> Việc xảy ra trước một việc quá khứ khác thì dùng [[plus-que-parfait]].
+x: Elle avait partie tôt. => Elle était partie tôt. | Cô ấy đã đi từ sớm. >> [[Partir]] đi với [[être]], như ở [[passé composé]].
+x: Ils étaient arrivé à midi. => Ils étaient arrivés à midi. | Họ đã đến từ trưa. >> Với [[être]], phân từ phải thêm dấu số nhiều.
+
+#pronunciation
+pron: j'avais | j'avais | ʒavɛ
+pron: il avait | il avait | ilavɛ
+pron: ils avaient | ils avaient | ilzavɛ
+> [[Il avait]] và [[ils avaient]] đọc gần như giống nhau. Chỉ có âm “z” nối trong [[ils avaient]] cho biết đó là số nhiều.
++ Ils avaient déjà mangé. | Họ đã ăn rồi.
+
+#dialogue
+ines: Et tu n'avais pas regardé l'heure ? | Thế cậu không xem giờ trước à? [thinking]
+hugo: Si, mais mon téléphone s'était arrêté pendant la nuit. | Có chứ, nhưng điện thoại mình đã tắt từ trong đêm. [tired explain]
+ines: Tu avais encore oublié de le charger ! | Cậu lại quên sạc nó rồi! [happy]
+hugo: Oui... La prochaine fois, je prends un vrai réveil. | Ừ... Lần sau mình sẽ dùng đồng hồ báo thức thật. [sad]
+
+#recall
+? Nói bằng tiếng Pháp: Khi chúng tôi đến, phim đã bắt đầu rồi. => Quand nous sommes arrivés, le film avait déjà commencé. | Khi chúng tôi đến, phim đã bắt đầu rồi.
+? Nói bằng tiếng Pháp: Lúc bạn gọi thì cô ấy đã ra ngoài rồi. => Elle était sortie quand tu as appelé. | Lúc bạn gọi thì cô ấy đã ra ngoài rồi.
+
+#recap
+> Tóm lại: [[plus-que-parfait]] là quá khứ của quá khứ. Lấy [[avoir]] hoặc [[être]] ở [[imparfait]] rồi thêm phân từ, như [[j'avais fini]], [[elle était partie]]. Dùng nó cho việc xảy ra trước một việc quá khứ khác.
+
+#practice
+fill: Quand je suis arrivé, le train ___ déjà parti. | était* / est / avait || partir đi với être; xảy ra trước → plus-que-parfait.
+fill: J'___ oublié mes clés, alors je suis resté dehors. | avais* / étais / ai || oublier đi với avoir.
+contrast: Quand je suis arrivé, il ___ . Je ne l'ai pas vu. | était parti* / est parti || Anh ấy đi trước khi tôi đến.
+type: Elle était fatiguée parce qu'elle ___ (mal dormir). | avait mal dormi || avoir ở imparfait + phân từ.
+fix: Ils étaient arrivé à midi. | Ils étaient arrivés à midi.* / Ils avaient arrivés à midi. / Ils sont arrivé à midi. || être → phân từ hợp số.
+choice: Câu nào cho biết họ đã ăn TRƯỚC khi tôi đến? | Quand je suis arrivé, ils avaient mangé.* / Quand je suis arrivé, ils ont mangé. || plus-que-parfait = xảy ra trước.
+order: Le / film / avait / déjà / commencé. | Phim đã bắt đầu rồi.
+listen: Ils avaient déjà mangé. | Ils avaient déjà mangé.* / Il avait déjà mangé. / Ils ont déjà mangé. || ils avaient: có âm “z” nối.

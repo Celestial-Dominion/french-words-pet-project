@@ -1,0 +1,72 @@
+=== si-imparfait
+sum: Si + imparfait, + conditionnel présent nói về điều không có thật hoặc khó xảy ra ở hiện tại: Si j'avais le temps, je voyagerais (nhưng tôi không có thời gian). Sau si không bao giờ dùng conditionnel. So với si + présent: điều có thể xảy ra thật.
+form: si + imparfait, + conditionnel | Si j'avais de l'argent, j'achèterais une maison.
+form: conditionnel + si + imparfait | Je t'aiderais si je pouvais.
+form: si j'étais toi, je… = lời khuyên | Si j'étais toi, je partirais.
+cast: zoe papa
+bg: home-day
+words: si, gagner
+names: Pékin
+
+#hook
+zoe: Papa, si tu gagnais au loto, qu'est-ce que tu ferais ? | Bố ơi, nếu bố trúng xổ số thì bố sẽ làm gì? [happy thinking]
+papa: Si je gagnais au loto ? J'arrêterais de travailler et j'achèterais un bateau ! | Nếu bố trúng xổ số á? Bố sẽ nghỉ làm và mua một chiếc thuyền! [happy explain]
+> Bố không trúng xổ số, đây chỉ là tưởng tượng. Tiếng Pháp đánh dấu điều đó bằng hai thì: [[si je gagnais]] ở [[imparfait]], rồi [[j'arrêterais]] ở [[conditionnel]].
+
+#meaning
+vs: S'il fait beau demain, on ira à la plage. | Nếu mai trời đẹp, mình sẽ đi biển. || có thể xảy ra thật
+vs: S'il faisait beau, on irait à la plage. | Giá mà trời đẹp thì mình đã đi biển. || trái với thực tế: trời đang xấu
+> Câu đầu là một khả năng thật. Câu sau là giả định: hiện tại trời không đẹp. Tiếng Việt thường thêm “giá mà”, tiếng Pháp đổi thì.
+
+#form
+f: [si] + imparfait + , + conditionnel
+f2: conditionnel + [si] + imparfait
+> Vế [[si]] dùng [[imparfait]], vế kết quả dùng [[conditionnel]]. Hai vế đổi chỗ được: [[je t'aiderais si je pouvais]].
+> Câu [[si j'étais toi]] rất hay gặp khi khuyên ai đó. Lưu ý: dùng [[j'étais]], không phải [[je serais]].
+
+#examples
+- {Si|c} j'{avais|v} plus de temps, je {lirais|k} davantage. | Nếu có nhiều thời gian hơn, tôi sẽ đọc nhiều hơn.
+- {Si|c} elle {parlait|v} chinois, elle {travaillerait|k} à Pékin. | Nếu biết tiếng Trung, cô ấy sẽ làm việc ở Bắc Kinh.
+- Qu'est-ce que tu {ferais|k} {si|c} tu {perdais|v} ton passeport ? | Bạn sẽ làm gì nếu bị mất hộ chiếu?
+- {Si|c} j'{étais|v} toi, je {dirais|k} la vérité. | Nếu tôi là bạn, tôi sẽ nói thật.
+- On {serait|k} plus heureux {si|c} on {travaillait|v} moins. | Chúng ta sẽ hạnh phúc hơn nếu làm việc ít hơn.
+
+#real
+> Mẫu này dùng để mơ mộng, để khuyên, và để từ chối nhẹ nhàng.
+- Je {viendrais|k} volontiers, mais j'ai un rendez-vous. | Tôi rất muốn đến, nhưng tôi có hẹn rồi.
+- {Si|c} on {allait|v} au cinéma ? | Hay là mình đi xem phim nhỉ?
+> Câu cuối là một cách gợi ý thân mật: [[si on allait…]] mà không cần vế sau.
+
+#mistakes
+x: Si j'aurais le temps, je voyagerais. => Si j'avais le temps, je voyagerais. | Nếu có thời gian, tôi sẽ đi du lịch. >> Sau [[si]] không bao giờ dùng [[conditionnel]].
+x: Si j'avais le temps, je voyagerai. => Si j'avais le temps, je voyagerais. | Nếu có thời gian, tôi sẽ đi du lịch. >> Vế kết quả của [[si]] cộng [[imparfait]] phải ở [[conditionnel]].
+x: Si je serais toi, je partirais. => Si j'étais toi, je partirais. | Nếu tôi là bạn, tôi sẽ đi. >> [[Si j'étais toi]], với [[imparfait]].
+
+#pronunciation
+pron: si j'avais | si j'avais | siʒavɛ
+pron: s'il pouvait | s'il pouvait | silpuvɛ
+> Nhớ quy tắc cũ: [[si]] thành [[s']] trước [[il]] và [[ils]]: [[s'il pouvait]], [[s'ils savaient]].
++ S'il pouvait, il viendrait. | Nếu được, anh ấy sẽ đến.
+
+#dialogue
+papa: Et toi, Zoé, si tu étais riche ? | Còn con, Zoé, nếu con giàu thì sao? [thinking]
+zoe: Si j'étais riche, j'aurais un cheval. Et un grand jardin pour lui ! | Nếu con giàu, con sẽ có một con ngựa. Và một khu vườn rộng cho nó! [happy]
+papa: Et si tu rangeais ta chambre d'abord ? | Thế hay là con dọn phòng trước đi? [happy]
+zoe: Papa ! On était en train de rêver ! | Bố! Mình đang mơ mộng mà! [surprised]
+
+#recall
+? Nói bằng tiếng Pháp: Nếu tôi là bạn, tôi sẽ nói thật. => Si j'étais toi, je dirais la vérité. | Nếu tôi là bạn, tôi sẽ nói thật.
+? Nói bằng tiếng Pháp: Nếu có nhiều thời gian hơn, tôi sẽ đọc nhiều hơn. => Si j'avais plus de temps, je lirais davantage. | Nếu có nhiều thời gian hơn, tôi sẽ đọc nhiều hơn.
+
+#recap
+> Điều không có thật ở hiện tại: [[si]] cộng [[imparfait]], vế kia dùng [[conditionnel]]. Câu mẫu dễ nhớ: [[si j'étais toi, je partirais]]. Không bao giờ đặt [[conditionnel]] ngay sau [[si]].
+
+#practice
+fill: Si j'___ le temps, je voyagerais. | avais* / aurais / ai || Sau si → imparfait.
+fill: Si elle parlait chinois, elle ___ à Pékin. | travaillerait* / travaillera / travaillait || Vế kết quả → conditionnel.
+contrast: Il pleut, mais s'il ___ beau, on irait à la plage. | faisait* / fait || Trái thực tế → imparfait.
+contrast: S'il ___ beau demain, on ira à la plage. | fait* / faisait || Khả năng thật, vế sau là futur → présent.
+type: Si j'___ (être) toi, je dirais la vérité. | étais || si j'étais toi.
+fix: Si j'aurais le temps, je voyagerais. | Si j'avais le temps, je voyagerais.* / Si j'avais le temps, je voyagerai. / Si j'ai le temps, je voyagerais. || si + imparfait, + conditionnel.
+order: Je / t'aiderais / si / je / pouvais. | Tôi sẽ giúp bạn nếu tôi có thể.
+listen: S'il pouvait, il viendrait. | S'il pouvait, il viendrait.* / S'il peut, il viendra. / Il pouvait, il venait. || pouvait + viendrait: giả định.

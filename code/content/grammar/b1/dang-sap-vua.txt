@@ -1,0 +1,72 @@
+=== dang-sap-vua
+sum: Bốn cụm động từ cho biết một việc đang ở đâu so với lúc nói: venir de + nguyên mẫu (vừa mới), être en train de + nguyên mẫu (đang), être sur le point de + nguyên mẫu (sắp sửa, ngay bây giờ), aller + nguyên mẫu (sắp, sẽ).
+form: venir de + nguyên mẫu = vừa mới | Je viens de manger.
+form: être en train de + nguyên mẫu = đang | Je suis en train de cuisiner.
+form: être sur le point de + nguyên mẫu = sắp sửa | Le train est sur le point de partir.
+cast: lea karim:call
+bg: kitchen
+words: train, point
+
+#hook
+karim: Allô, Léa ? Tu peux parler deux minutes ? | A lô, Léa à? Cậu nói chuyện hai phút được không? [happy]
+lea: Pas vraiment, je suis en train de cuisiner. Et les invités sont sur le point d'arriver ! | Không hẳn, mình đang nấu ăn. Mà khách sắp đến tới nơi rồi! [worried explain]
+> Tiếng Pháp không có thì tiếp diễn như tiếng Anh. Muốn nhấn mạnh “đang”, người Pháp dùng [[être en train de]]. Muốn nói “sắp sửa”, dùng [[être sur le point de]].
+
+#meaning
+th: Cụm | Nghĩa | Vị trí so với bây giờ
+tb: venir de + nguyên mẫu | vừa mới | ngay trước
+tb: être en train de + nguyên mẫu | đang | ngay lúc này
+tb: être sur le point de + nguyên mẫu | sắp sửa | ngay sau
+tb: aller + nguyên mẫu | sắp, sẽ | tương lai gần
+> Chỉ có [[venir]], [[être]] và [[aller]] được chia. Động từ chính luôn ở nguyên mẫu.
+
+#form
+f: [être] + en train de + nguyên mẫu
+f2: [être] + sur le point de + nguyên mẫu
+> Trước nguyên âm, [[de]] thành [[d']]: [[sur le point d'arriver]], [[en train d'écrire]].
+> Cụm [[être en train de]] chỉ dùng khi muốn nhấn mạnh. Bình thường, thì hiện tại đã đủ nghĩa “đang”: [[je cuisine]].
+
+#examples
+- Ne fais pas de bruit, le bébé {est en train de|k} dormir. | Đừng làm ồn, em bé đang ngủ.
+- Nous {venons de|k} recevoir ta lettre. | Chúng tôi vừa nhận được thư của bạn.
+- Le film {est sur le point de|k} commencer, dépêche-toi ! | Phim sắp bắt đầu rồi, nhanh lên!
+- Il {va|k} pleuvoir, prends un parapluie. | Trời sắp mưa đấy, cầm ô đi.
+- Quand tu as appelé, j'{étais en train de|k} lire. | Lúc bạn gọi, tôi đang đọc sách.
+
+#real
+> Ở quá khứ, chia [[être]] ở [[imparfait]]: [[j'étais en train de lire]]. Câu này rất hợp với [[passé composé]] chen vào: [[quand tu as appelé]].
+- J'{étais sur le point de|k} partir quand il est arrivé. | Tôi vừa định đi thì anh ấy đến.
+
+#contrast
+vs: Je viens de manger. | Tôi vừa ăn xong. || việc đã xong
+vs: Je suis en train de manger. | Tôi đang ăn. || việc chưa xong
+vs: Je suis sur le point de manger. | Tôi sắp ăn đây. || việc chưa bắt đầu
+> Ba câu, cùng một bữa ăn, ba thời điểm khác nhau.
+
+#mistakes
+x: Je suis en train de mange. => Je suis en train de manger. | Tôi đang ăn. >> Sau [[de]] luôn là nguyên mẫu.
+x: Je suis en train d'avoir faim. => J'ai faim. | Tôi đói. >> [[Être en train de]] dùng cho hành động, không dùng cho trạng thái như đói, biết, thích.
+x: Il vient d'arrivé. => Il vient d'arriver. | Anh ấy vừa đến. >> [[Venir de]] cộng nguyên mẫu, không cộng phân từ.
+
+#dialogue
+karim: Tu as besoin d'aide ? Je suis en train de passer devant chez toi. | Cậu cần giúp không? Mình đang đi ngang qua nhà cậu đây. [thinking]
+lea: Oh oui ! Je viens de brûler le gâteau... | Ôi có chứ! Mình vừa làm cháy cái bánh rồi... [sad]
+karim: J'arrive. Je vais acheter un dessert à la boulangerie. | Mình tới ngay. Mình sẽ mua món tráng miệng ở tiệm bánh. [happy]
+lea: Merci ! Tu me sauves la vie ! | Cảm ơn! Cậu cứu mình rồi! [happy cheer]
+
+#recall
+? Nói bằng tiếng Pháp: Phim sắp bắt đầu rồi, nhanh lên! => Le film est sur le point de commencer, dépêche-toi ! | Phim sắp bắt đầu rồi, nhanh lên!
+? Nói bằng tiếng Pháp: Chúng tôi vừa nhận được thư của bạn. => Nous venons de recevoir ta lettre. | Chúng tôi vừa nhận được thư của bạn.
+
+#recap
+> Bốn mốc quanh hiện tại: [[venir de]] là vừa xong, [[être en train de]] là đang làm, [[être sur le point de]] là sắp sửa, [[aller]] là sắp tới. Động từ chính luôn ở nguyên mẫu.
+
+#practice
+fill: Ne fais pas de bruit, le bébé est en train de ___ . | dormir* / dort / dormi || Sau de → nguyên mẫu.
+contrast: J'ai fini mon repas : je ___ manger. | viens de* / suis en train de || Việc đã xong → venir de.
+contrast: Attends, je ne peux pas parler, je ___ conduire. | suis en train de* / viens de || Việc đang diễn ra → être en train de.
+fill: Le train est sur le point ___ partir. | de* / à / pour || être sur le point de.
+type: Quand tu as appelé, j'___ lire. (être en train de) | étais en train de || Quá khứ → être ở imparfait.
+fix: Il vient d'arrivé. | Il vient d'arriver.* / Il vient arriver. / Il est venu d'arriver. || venir de + nguyên mẫu.
+order: Le / film / est / sur / le / point / de / commencer. | Phim sắp bắt đầu.
+listen: Je viens de manger. | Je viens de manger.* / Je vais manger. / Je suis en train de manger. || viens de = vừa xong.

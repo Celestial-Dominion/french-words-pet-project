@@ -38,7 +38,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | chưa làm |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | chưa làm |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | chưa làm |
-| G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | chưa làm |
+| G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | đang làm: lô 1 xong (6/34 bài) |
 
 Cộng (còn lại, sau P-A1): bắt buộc ~13,5% (độ phủ ~3,5% + ngữ pháp ~10%) · tùy chọn ~8% · tất cả ~21–22% tuần.
 Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì bài cấp trên dựa vào bài cấp dưới (trường `pre`).
@@ -150,6 +150,7 @@ kết quả (donc, c'est pourquoi, si/tellement… que) · mục đích (pour, a
 động từ + à / de + nguyên mẫu · futur simple / futur proche / présent (quand + futur) · so sánh B1 (de plus en plus,
 mieux / meilleur) · avant de + inf, après avoir + phân từ · bày tỏ ý kiến (à mon avis, il me semble que).
 - **Nhật ký:**
+  - 21/10 lô 1: 6 bài (plus-que-parfait, ke-chuyen-qua-khu, dang-sap-vua, tuong-lai-b1, conditionnel-present, si-imparfait) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; soát 390 px + desktop; danh sách 34 bài B1 ở `plan/.progress-G-B1.md`; 5 giờ 5% · tuần 7%; COMMIT
 
 ### G-B2 — Ngữ pháp B2 [ ] (app Anh 36 bài)
 
