@@ -109,7 +109,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
     `content/stories/c2/st-07.txt` (+ câu hỏi vào `content/quiz/c2/st-07.txt`).
   - Rồi `sbanks c2 08 --write` (6 truyện, `st-08.txt`), cuối cùng `sbanks c2 09 --n 1 --write` (1 truyện, `st-09.txt`).
 - **Nhật ký:**
-  - 21/10 lô 07 (phần còn lại): 3 truyện (st-c2-les-croutons-d-anselme, la-parure-de-solange, le-carnet-de-lucienne; giỏ s07d/e/f 14+16+16/16), 45 câu hỏi; C2 42 truyện, 0 lỗi 0 cảnh báo; ≥3 69,2→70,6 · ≥5 30,8→31,2; giờ 16,2→16,6; 5 giờ 32% · tuần 12% trước lô; COMMIT
+  - 21/10 lô 07 (phần còn lại): 3 truyện (st-c2-les-croutons-d-anselme, la-parure-de-solange, le-carnet-de-lucienne; giỏ s07d/e/f 14+16+16/16), 45 câu hỏi; C2 42 truyện, 0 lỗi 0 cảnh báo; ≥3 69,2→70,6 · ≥5 30,8→31,2; giờ 16,2→16,6; 5 giờ 32% · tuần 12% trước lô; 143cef3
 
 ## S-C1 — Truyện C1 cho đủ 67 (tùy chọn, sau P-C1) [ ]
 
