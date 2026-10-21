@@ -1,0 +1,64 @@
+=== tu-phiem-chi-b2
+sum: B1 đã có chaque, chacun, quelques, plusieurs, certains, n'importe qui / quoi / où. B2 thêm: n'importe lequel / laquelle (bất cứ cái nào, thay danh từ), n'importe quel / quelle + danh từ, aucun / aucune làm đại từ (aucun ne… : không ai, không cái nào), un tel / une telle (như thế), quiconque (bất cứ ai), nul ne (không ai). Quiconque và nul thuộc văn trang trọng.
+form: n'importe lequel / laquelle | Prends n'importe lequel.
+form: aucun, aucune làm đại từ | Aucune n'est libre.
+form: un tel, une telle + danh từ | Je n'ai jamais eu une telle chance.
+form: quiconque, nul ne | Nul ne sait où il est.
+cast: linh m-dubois
+bg: restaurant
+words: dessert, foule, quiconque, service
+
+#hook
+m-dubois: Vous avez choisi ? Nous avons trois desserts. | Chị đã chọn chưa? Chúng tôi có ba món tráng miệng. [explain]
+linh: Ils ont l'air délicieux. Donnez-moi n'importe lequel ! | Món nào trông cũng ngon. Cho tôi món nào cũng được! [happy]
+> [[N'importe lequel]]: bất cứ cái nào. Nó hợp giống, số với danh từ được nói đến: [[le dessert]] nên dùng [[lequel]].
+
+#meaning
+vs: Je n'ai aucun dessert préféré. | Tôi không có món tráng miệng nào ưa thích. || aucun đi với danh từ
+vs: Aucun ne me plaît. | Chẳng món nào tôi thích. || aucun làm đại từ
+> [[Aucun]] có thể đứng một mình thay cho danh từ, luôn đi với [[ne]].
+
+#form
+th: Từ | Nghĩa | Ví dụ
+tb: n'importe lequel | bất cứ cái nào | Prends n'importe lequel.
+tb: n'importe quel | bất cứ… nào | à n'importe quelle heure
+tb: aucun, aucune | không ai, không cái nào | Aucune n'est libre.
+tb: un tel, une telle | như thế | une telle chance
+tb: quiconque | bất cứ ai | Quiconque entre doit payer.
+tb: nul ne | không ai | Nul ne le sait.
+> [[Quiconque]] và [[nul]] thuộc văn trang trọng. Khi nói, người ta dùng [[n'importe qui]] và [[personne]].
+
+#examples
+- Tu peux m'appeler à {n'importe quelle|k} heure. | Bạn có thể gọi tôi bất cứ giờ nào.
+- {Aucune|k} de mes sœurs n'habite ici. | Không chị em nào của tôi sống ở đây.
+- Je n'ai jamais vu une {telle|k} foule. | Tôi chưa bao giờ thấy một đám đông như thế.
+- {Quiconque|k} a vu cet homme doit appeler la police. | Bất cứ ai đã thấy người đàn ông này phải gọi cảnh sát.
+- Ces deux robes ? Prends {n'importe laquelle|k}, elles sont belles. | Hai chiếc váy này à? Lấy chiếc nào cũng được, đều đẹp cả.
+
+#mistakes
+x: Aucun de mes amis est venu. => Aucun de mes amis n'est venu. | Không người bạn nào của tôi đến. >> [[Aucun]] luôn đi với [[ne]].
+x: Prends n'importe lequel robe. => Prends n'importe quelle robe. | Lấy chiếc váy nào cũng được. >> Trước danh từ: [[n'importe quel]], [[n'importe quelle]].
+x: Je n'ai jamais vu un tel chose. => Je n'ai jamais vu une telle chose. | Tôi chưa từng thấy chuyện như thế. >> [[Chose]] giống cái: [[une telle]].
+
+#dialogue
+m-dubois: Et comme boisson ? Nous avons des jus et des vins. | Còn đồ uống? Chúng tôi có nước ép và rượu vang. [explain]
+linh: Un jus, n'importe quel jus, pourvu qu'il soit frais. | Một ly nước ép, nước ép gì cũng được, miễn là mát. [happy]
+m-dubois: Je vous apporte le meilleur. Nul ne repart d'ici déçu ! | Tôi mang cho chị loại ngon nhất. Không ai rời khỏi đây mà thất vọng! [happy]
+linh: Avec un tel service, je reviendrai ! | Phục vụ như thế này thì tôi sẽ quay lại! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Bạn có thể gọi tôi bất cứ giờ nào. => Tu peux m'appeler à n'importe quelle heure. | Bạn có thể gọi tôi bất cứ giờ nào.
+? Nói bằng tiếng Pháp: Tôi chưa bao giờ thấy một đám đông như thế. => Je n'ai jamais vu une telle foule. | Tôi chưa bao giờ thấy một đám đông như thế.
+
+#recap
+> [[N'importe lequel]] thay cho danh từ, [[n'importe quel]] đứng trước danh từ. [[Aucun]] làm đại từ luôn đi với [[ne]]. [[Un tel]], [[une telle]]: như thế. [[Quiconque]], [[nul ne]]: văn trang trọng.
+
+#practice
+fill: Tu peux m'appeler à n'importe ___ heure. | quelle* / laquelle / quel || trước danh từ giống cái.
+fill: Ces deux robes ? Prends n'importe ___ . | laquelle* / quelle / lequel || thay danh từ giống cái.
+fill: Aucune de mes sœurs ___ ici. | n'habite* / habite / n'habite pas || ne, không có pas.
+fill: Je n'ai jamais vu une ___ foule. | telle* / tel / quelle || foule: giống cái.
+contrast: Prends n'importe ___ robe. | quelle* / laquelle || trước danh từ.
+type: Je n'ai jamais eu une ___ chance. | telle || như thế.
+fix: Aucun de mes amis est venu. | Aucun de mes amis n'est venu.* / Aucun de mes amis n'est pas venu. / Aucuns de mes amis sont venus. || aucun + ne.
+listen: Quiconque a vu cet homme doit appeler la police. | Quiconque a vu cet homme doit appeler la police.* / Quelqu'un a vu cet homme, il doit appeler la police. / Si tu as vu cet homme, appelle la police. || quiconque.

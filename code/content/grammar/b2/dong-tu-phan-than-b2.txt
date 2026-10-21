@@ -1,0 +1,64 @@
+=== dong-tu-phan-than-b2
+sum: A1 đã có động từ phản thân (je me lève). B2 thêm ba nhóm: nghĩa qua lại với chủ ngữ số nhiều (ils se parlent, nous nous écrivons = nói chuyện với nhau, viết thư cho nhau); động từ luôn phản thân (se souvenir de, s'en aller, se moquer de, se méfier de); động từ đổi nghĩa khi thêm se: douter (nghi ngờ) / se douter (đoán trước), attendre (chờ) / s'attendre à (lường trước), rendre (trả) / se rendre compte (nhận ra), passer / se passer de (nhịn, bỏ qua).
+form: nghĩa qua lại | Ils s'aiment. · Nous nous écrivons.
+form: luôn phản thân | se souvenir de · s'en aller
+form: đổi nghĩa với se | douter → se douter
+form: se rendre compte que | Je me rends compte que j'ai tort.
+cast: papi tom
+bg: home-day
+words: souvenir, douter, moquer, quitter
+
+#hook
+tom: Papi, tu te souviens du jour où tu as rencontré mamie ? | Ông ơi, ông có nhớ ngày ông gặp bà không? [happy]
+papi: Bien sûr ! On s'est regardés, on s'est souri, et je me suis douté que c'était elle. | Tất nhiên! Hai ông bà nhìn nhau, cười với nhau, và ông đã đoán trước đó chính là bà. [happy]
+> [[On s'est regardés]]: nhìn nhau, nghĩa qua lại. [[Je me suis douté]]: đoán trước, khác với [[douter]] là nghi ngờ.
+
+#meaning
+vs: Je doute qu'il vienne ce soir. | Tôi không tin là tối nay anh ấy sẽ đến. || douter: nghi ngờ
+vs: Je me doutais qu'il viendrait. | Tôi đã đoán trước là anh ấy sẽ đến. || se douter: đoán trước
+> Thêm [[se]] có thể làm nghĩa đổi hẳn.
+
+#form
+th: Không có se | Có se
+tb: douter: nghi ngờ | se douter: đoán trước
+tb: attendre: chờ | s'attendre à: lường trước
+tb: rendre: trả lại | se rendre compte: nhận ra
+tb: passer: đi qua | se passer de: nhịn, bỏ qua
+> Một số động từ luôn có [[se]]: [[se souvenir de]], [[s'en aller]], [[se moquer de]], [[se méfier de]].
+
+#examples
+- Je {me souviens|k} très bien de mon premier jour d'école. | Tôi nhớ rất rõ ngày đầu tiên đi học.
+- Il est tard, je {m'en vais|k}. | Muộn rồi, tôi về đây.
+- Ne te {moque|k} pas de ton frère ! | Đừng chế giễu em con!
+- Je ne {m'attendais|k} pas à une telle surprise. | Tôi không ngờ có bất ngờ như thế.
+- Tu te {rends compte|k} ? Il a gagné ! | Bạn có nhận ra không? Anh ấy thắng rồi!
+- Mes cousins et moi, nous nous {écrivons|k} chaque semaine. | Anh em họ chúng tôi viết thư cho nhau mỗi tuần.
+
+#mistakes
+x: Je souviens de mon enfance. => Je me souviens de mon enfance. | Tôi nhớ thời thơ ấu. >> [[Se souvenir]] luôn có [[se]].
+x: Je doutais qu'il viendrait, je le savais. => Je me doutais qu'il viendrait, je le savais. | Tôi đã đoán trước là anh ấy sẽ đến, tôi biết mà. >> Đoán trước: [[se douter]].
+x: Je ne peux pas passer de café. => Je ne peux pas me passer de café. | Tôi không thể thiếu cà phê. >> Nhịn, thiếu: [[se passer de]].
+
+#dialogue
+tom: Et vous vous êtes revus le lendemain ? | Thế hôm sau ông bà gặp lại nhau ạ? [surprised]
+papi: Oui, et depuis, nous ne nous sommes jamais quittés. | Ừ, và từ đó ông bà chưa bao giờ rời xa nhau. [happy]
+tom: Elle ne s'est jamais moquée de toi ? | Bà chưa bao giờ trêu ông à? [happy]
+papi: Si, tous les jours ! Mais je ne peux pas me passer d'elle. | Có chứ, ngày nào cũng trêu! Nhưng ông không thể thiếu bà được. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Muộn rồi, tôi về đây. => Il est tard, je m'en vais. | Muộn rồi, tôi về đây.
+? Nói bằng tiếng Pháp: Tôi không ngờ có bất ngờ như thế. => Je ne m'attendais pas à une telle surprise. | Tôi không ngờ có bất ngờ như thế.
+
+#recap
+> Động từ phản thân B2: nghĩa qua lại như [[ils se parlent]]; luôn phản thân như [[se souvenir de]], [[s'en aller]], [[se moquer de]]; đổi nghĩa khi có [[se]]: [[se douter]], [[s'attendre à]], [[se rendre compte]], [[se passer de]].
+
+#practice
+fill: Je ___ souviens très bien de mon premier jour d'école. | me* / m'en / se || se souvenir.
+fill: Il est tard, je m'en ___ . | vais* / va / vas || s'en aller.
+fill: Je ne m'attendais pas ___ une telle surprise. | à* / de / pour || s'attendre à.
+fill: Je ne peux pas me passer ___ café. | de* / du / à || se passer de.
+contrast: Il est souvent en retard, je ___ qu'il vienne à l'heure. | doute* / me doute || nghi ngờ.
+contrast: Je ___ qu'il viendrait, je le savais. | me doutais* / doutais || đoán trước.
+type: Tu te rends ___ ? Il a gagné ! | compte || se rendre compte.
+fix: Je souviens de mon enfance. | Je me souviens de mon enfance.* / Je me souviens mon enfance. / Je souviens mon enfance. || se souvenir de.
+listen: Mes cousins et moi, nous nous écrivons chaque semaine. | Mes cousins et moi, nous nous écrivons chaque semaine.* / Mes cousins et moi, nous écrivons chaque semaine. / Mes cousins m'écrivent chaque semaine. || nous nous écrivons.

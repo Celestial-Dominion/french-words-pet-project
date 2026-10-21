@@ -1328,6 +1328,50 @@
     "dislocation"
    ],
    "find": "(?<![\\p{L}'])(moi|toi|lui|elle|nous|vous|eux|elles), (je|j'|tu|il|elle|on|nous|vous|ils|elles)"
+  },
+  {
+   "id": "phu-dinh-b2",
+   "lv": "b2",
+   "cat": "negation",
+   "t": "Phủ định B2: ne… guère, pas un seul, sans que",
+   "en": "il ne sort guère · pas un seul bruit",
+   "pts": [
+    "negation-b2"
+   ],
+   "find": "(?<![\\p{L}'])(guère|pas un seul|pas une seule|sans que|sans qu'|plus personne|plus rien|jamais rien|jamais personne|non plus)(?![\\p{L}])"
+  },
+  {
+   "id": "tu-phiem-chi-b2",
+   "lv": "b2",
+   "cat": "determiners",
+   "t": "Từ phiếm chỉ B2: n'importe lequel, aucun, tel",
+   "en": "prends n'importe lequel · une telle chance",
+   "pts": [
+    "indefinites-b2"
+   ],
+   "find": "(?<![\\p{L}'])(n'importe lequel|n'importe laquelle|n'importe lesquels|n'importe lesquelles|n'importe quel|n'importe quelle|n'importe quels|n'importe quelles|quiconque|un tel|une telle|de tels|de telles|nul ne|nulle part|aucun ne|aucune ne)(?![\\p{L}])"
+  },
+  {
+   "id": "dong-tu-phan-than-b2",
+   "lv": "b2",
+   "cat": "verbs",
+   "t": "Động từ phản thân B2",
+   "en": "je me souviens · je m'en vais · il se doutait",
+   "pts": [
+    "pronominal-b2"
+   ],
+   "find": "(?<![\\p{L}'])(me souviens|te souviens|se souvient|nous souvenons|vous souvenez|se souviennent|m'en vais|t'en vas|s'en va|s'en vont|me doutais|se doutait|me doute|m'attendais|s'attendait|me rends compte|te rends compte|se rend compte|se moque|te moque|me passer de|se passer de)(?![\\p{L}])"
+  },
+  {
+   "id": "mao-tu-b2",
+   "lv": "b2",
+   "cat": "determiners",
+   "t": "Khi nào bỏ mạo từ",
+   "en": "il est médecin · avec patience · de beaux jours",
+   "pts": [
+    "articles-b2"
+   ],
+   "find": "(?<![\\p{L}'])((est|suis|es|sont|sommes|êtes) (médecin|professeur|professeure|ingénieur|infirmier|infirmière|avocat|avocate|pompier|étudiant|étudiante|cuisinier|cuisinière)|avec (patience|plaisir|soin|courage|gentillesse|attention)|sans (hésitation|problème|peur|bruit|difficulté))(?![\\p{L}])"
   }
  ]
 }

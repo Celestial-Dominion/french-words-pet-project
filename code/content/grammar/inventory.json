@@ -1630,6 +1630,51 @@
     "cleft"
    ],
    "pri": 1
+  },
+  {
+   "id": "negation-b2",
+   "lv": "b2",
+   "cat": "negation",
+   "name": "Négation (B2)",
+   "vi": "Phủ định B2: ne… guère (hầu như không), pas un seul / pas une seule, sans que + subjonctif, ghép nhiều từ phủ định (ne… plus personne, ne… jamais rien); trả lời câu hỏi phủ định bằng si, đồng ý với câu phủ định bằng non plus",
+   "pre": [
+    "negation-b1"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "indefinites-b2",
+   "lv": "b2",
+   "cat": "determiners",
+   "name": "Indéfinis (B2)",
+   "vi": "Từ phiếm chỉ B2: n'importe lequel / laquelle (đại từ), n'importe quel + danh từ, aucun / aucune làm đại từ (aucun ne…), un tel / une telle, quiconque, nul ne (trang trọng)",
+   "pre": [
+    "indefinites"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "pronominal-b2",
+   "lv": "b2",
+   "cat": "verbs",
+   "name": "Verbes pronominaux (B2)",
+   "vi": "Động từ phản thân B2: nghĩa qua lại (ils se parlent, nous nous écrivons), luôn phản thân (se souvenir de, s'en aller, se moquer de, se méfier de), đổi nghĩa khi có se (douter / se douter, attendre / s'attendre à, rendre / se rendre compte, passer / se passer de)",
+   "pre": [
+    "reflexive-present"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "articles-b2",
+   "lv": "b2",
+   "cat": "determiners",
+   "name": "Absence d'article (B2)",
+   "vi": "Bỏ mạo từ: nghề nghiệp, quốc tịch sau être (il est médecin, nhưng c'est un médecin), sans / avec + danh từ trừu tượng (avec patience), en + phương tiện, mùa (en train, en hiver), cụm cố định (avoir faim, faire attention); des → de trước tính từ số nhiều (de beaux jours)",
+   "pre": [
+    "partitive",
+    "definite-articles"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

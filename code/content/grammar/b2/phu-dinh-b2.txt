@@ -1,0 +1,66 @@
+=== phu-dinh-b2
+sum: B1 đã có ne… ni… ni, ne… aucun, ne… que, ne… nulle part, sans + nguyên mẫu. B2 thêm: ne… guère (hầu như không, trang trọng), pas un seul / pas une seule (không một… nào), sans que + subjonctif (mà không, khác chủ ngữ), ghép nhiều từ phủ định (je ne vois plus personne, il ne dit jamais rien). Trả lời có cho câu hỏi phủ định: si. Đồng ý với câu phủ định: non plus.
+form: ne… guère | Il ne mange guère.
+form: pas un seul + danh từ | Pas un seul train n'est parti.
+form: sans que + subjonctif | Il est entré sans que je l'entende.
+form: ghép phủ định | Il ne reste plus rien.
+cast: tom paul
+bg: train
+words: employé, sandwich, guère, bouger
+
+#hook
+tom: Le train ne bouge plus depuis une heure, et pas un seul employé n'est venu nous expliquer ! | Tàu đứng im cả tiếng rồi, mà chẳng có một nhân viên nào đến giải thích! [angry]
+paul: Et le bar ne vend plus rien. On n'a guère de chance aujourd'hui. | Còn quầy bán đồ thì chẳng còn gì để bán. Hôm nay mình chẳng may mắn mấy. [sad]
+> [[Pas un seul employé]]: không một nhân viên nào. [[Ne… plus rien]]: không còn gì nữa. [[Ne… guère]]: hầu như không, cách nói trang trọng.
+
+#meaning
+vs: Je n'ai pas d'argent. | Tôi không có tiền. || phủ định thường
+vs: Je n'ai guère d'argent. | Tôi hầu như chẳng có tiền. || ne… guère: hầu như không
+> [[Ne… guère]] nhẹ hơn [[ne… pas]]: rất ít, hầu như không.
+
+#form
+th: Cấu trúc | Nghĩa | Ví dụ
+tb: ne… guère | hầu như không | Il ne sort guère.
+tb: pas un seul | không một… nào | pas un seul bruit
+tb: sans que, subjonctif | mà không | sans que personne le sache
+tb: ne… plus rien | không còn gì nữa | Il ne reste plus rien.
+tb: ne… jamais personne | chẳng bao giờ ai | Je ne vois jamais personne.
+> Khi ghép, thứ tự thường là [[plus]] hoặc [[jamais]] trước, rồi đến [[rien]] hoặc [[personne]].
+
+#examples
+- Il n'y a {guère|k} de monde ce soir. | Tối nay hầu như chẳng có ai.
+- Pas une {seule|k} voiture n'est passée. | Không một chiếc xe nào đi qua.
+- Elle est sortie {sans que|k} ses parents le sachent. | Cô ấy ra ngoài mà bố mẹ không hay biết.
+- Depuis son départ, je ne vois {plus personne|k}. | Từ khi anh ấy đi, tôi chẳng còn gặp ai nữa.
+- Tu n'aimes pas le café ? {Si|k}, j'adore ça ! | Bạn không thích cà phê à? Có chứ, tôi mê lắm!
+- Il ne fume pas, et sa femme {non plus|k}. | Anh ấy không hút thuốc, vợ anh ấy cũng không.
+
+#mistakes
+x: Pas un seul élève a répondu. => Pas un seul élève n'a répondu. | Không một học sinh nào trả lời. >> Khi viết, cần [[ne]] trước động từ.
+x: Il est parti sans que je le vois. => Il est parti sans que je le voie. | Anh ấy đi mà tôi không thấy. >> [[Sans que]] đi với [[subjonctif]].
+x: Tu ne viens pas ? Oui, je viens ! => Tu ne viens pas ? Si, je viens ! | Bạn không đến à? Có chứ, tôi đến! >> Trả lời có cho câu hỏi phủ định: [[si]].
+x: Je n'aime pas le thé. Moi aussi. => Je n'aime pas le thé. Moi non plus. | Tôi không thích trà. Tôi cũng không. >> Đồng ý với câu phủ định: [[non plus]].
+
+#dialogue
+paul: Tu n'as rien à manger dans ton sac ? | Trong túi cậu không có gì ăn à? [thinking]
+tom: Si ! Un vieux sandwich... mais je n'ai guère envie de le manger. | Có chứ! Một cái bánh mì kẹp cũ... nhưng tớ chẳng muốn ăn lắm. [thinking]
+paul: Donne-le-moi ! Je n'ai rien mangé depuis ce matin. | Đưa tớ! Tớ chưa ăn gì từ sáng. [happy]
+tom: Le voilà. Et ne le dis à personne ! | Đây. Và đừng nói với ai nhé! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Không một chiếc xe nào đi qua. => Pas une seule voiture n'est passée. | Không một chiếc xe nào đi qua.
+? Nói bằng tiếng Pháp: Từ khi anh ấy đi, tôi chẳng còn gặp ai nữa. => Depuis son départ, je ne vois plus personne. | Từ khi anh ấy đi, tôi chẳng còn gặp ai nữa.
+
+#recap
+> Phủ định B2: [[ne… guère]] hầu như không, [[pas un seul]] không một… nào, [[sans que]] với [[subjonctif]], ghép [[ne… plus rien]], [[ne… jamais personne]]. Trả lời câu hỏi phủ định bằng [[si]]; đồng ý với câu phủ định bằng [[non plus]].
+
+#practice
+fill: Il n'y a ___ de monde ce soir. | guère* / pas un / jamais rien || hầu như không.
+fill: Pas une seule voiture ___ passée. | n'est* / est / n'a || cần ne.
+fill: Elle est sortie sans que ses parents le ___ . | sachent* / savent / sauront || subjonctif.
+fill: Il ne reste plus ___ dans le frigo. | rien* / personne / guère || không còn gì.
+contrast: Tu n'aimes pas le café ? Mais ___ , j'adore ça ! | si* / oui || trả lời có cho câu phủ định.
+contrast: Je n'aime pas le thé. Moi ___ . | non plus* / aussi || đồng ý với câu phủ định.
+type: Il est entré sans que je l'___ (entendre). | entende || subjonctif.
+fix: Pas un seul élève a répondu. | Pas un seul élève n'a répondu.* / Pas un seul élève n'a pas répondu. / Pas un seul élève a pas répondu. || cần ne, không có pas.
+listen: Depuis son départ, je ne vois plus personne. | Depuis son départ, je ne vois plus personne.* / Depuis son départ, je ne vois personne. / Depuis son départ, je vois plus de personnes. || plus personne.

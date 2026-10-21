@@ -1,0 +1,65 @@
+=== mao-tu-b2
+sum: A1, A2 đã học khi nào dùng le, un, du. B2 học khi nào BỎ mạo từ hoặc đổi thành de: nghề nghiệp, quốc tịch sau être (il est médecin, nhưng c'est un médecin); sau sans, avec + danh từ trừu tượng (sans problème, avec patience); sau en (en voiture, en été); trong cụm cố định (avoir faim, faire attention); des → de trước tính từ số nhiều (de beaux jours).
+form: être + nghề nghiệp | Elle est avocate.
+form: c'est + un + nghề nghiệp | C'est une avocate célèbre.
+form: sans / avec + danh từ trừu tượng | avec plaisir · sans hésitation
+form: de + tính từ số nhiều + danh từ | de belles photos
+cast: mme-martin nam
+bg: classroom
+words: ingénieur, pompier, hésitation, écrivain
+
+#hook
+nam: Madame, j'ai écrit : mon père est un ingénieur. C'est faux ? | Thưa cô, em viết “bố em là một kỹ sư”. Sai ạ? [surprised]
+mme-martin: Oui. Après être, on dit simplement : mon père est ingénieur. Mais on dit : c'est un ingénieur brillant. | Ừ. Sau être, chỉ cần nói: bố em là kỹ sư. Nhưng lại nói: đó là một kỹ sư xuất sắc. [explain]
+> Sau [[être]], nghề nghiệp không có mạo từ. Sau [[c'est]], phải có mạo từ.
+
+#meaning
+vs: Elle est professeure. | Cô ấy là giáo viên. || être và nghề: không mạo từ
+vs: C'est une professeure très patiente. | Đó là một giáo viên rất kiên nhẫn. || c'est: có mạo từ
+> Khi nghề nghiệp có thêm tính từ hoặc đi sau [[c'est]], ta cần mạo từ.
+
+#form
+th: Trường hợp | Ví dụ
+tb: être với nghề, quốc tịch | Il est médecin. Elle est française.
+tb: sans, avec với danh từ trừu tượng | avec patience, sans peur
+tb: en với phương tiện, mùa | en avion, en hiver
+tb: cụm động từ cố định | avoir faim, faire attention
+tb: de trước tính từ số nhiều | de grands arbres
+> Khi nói, nhiều người vẫn dùng [[des]] trước tính từ: [[des grands arbres]]. Khi viết, nên dùng [[de]].
+
+#examples
+- Mon frère est {pompier|k}. | Anh tôi là lính cứu hoả.
+- Il a accepté {sans|k} hésitation. | Anh ấy đồng ý không chút do dự.
+- Elle répond toujours {avec|k} gentillesse. | Cô ấy luôn trả lời một cách tử tế.
+- Nous voyageons {en|k} train. | Chúng tôi đi bằng tàu hoả.
+- Il y a {de|k} beaux jardins dans ce quartier. | Khu này có nhiều khu vườn đẹp.
+
+#mistakes
+x: Ma sœur est une infirmière. => Ma sœur est infirmière. | Chị tôi là y tá. >> Sau [[être]], nghề nghiệp không có mạo từ.
+x: Il a fait ça avec la patience. => Il a fait ça avec patience. | Anh ấy làm việc đó một cách kiên nhẫn. >> [[Avec]] với danh từ trừu tượng: không mạo từ.
+x: J'ai vu des belles photos. => J'ai vu de belles photos. | Tôi đã xem những bức ảnh đẹp. >> Khi viết, [[des]] thành [[de]] trước tính từ số nhiều.
+x: C'est médecin très connu. => C'est un médecin très connu. | Đó là một bác sĩ rất nổi tiếng. >> Sau [[c'est]] cần mạo từ.
+
+#dialogue
+nam: Et ici : nous sommes partis en voiture avec des grands sacs. | Còn chỗ này: “chúng em đi bằng ô tô với những cái túi to”. [thinking]
+mme-martin: En voiture, c'est parfait. Mais à l'écrit, on préfère : de grands sacs. | Bằng ô tô thì đúng rồi. Nhưng khi viết, nên dùng de grands sacs. [explain]
+nam: Je corrige avec plaisir ! | Em sửa ngay ạ! [happy]
+mme-martin: Bravo. Tu deviens un vrai écrivain ! | Giỏi lắm. Em đang thành một nhà văn thực thụ đấy! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Anh tôi là lính cứu hoả. => Mon frère est pompier. | Anh tôi là lính cứu hoả.
+? Nói bằng tiếng Pháp: Chúng tôi đi bằng tàu hoả. => Nous voyageons en train. | Chúng tôi đi bằng tàu hoả.
+
+#recap
+> Bỏ mạo từ: nghề nghiệp sau [[être]], danh từ trừu tượng sau [[sans]], [[avec]], phương tiện sau [[en]], cụm cố định như [[avoir faim]]. [[Des]] thành [[de]] trước tính từ số nhiều. Sau [[c'est]] thì cần mạo từ.
+
+#practice
+fill: Ma sœur ___ infirmière. | est* / est une / c'est || être + nghề: không mạo từ.
+fill: C'est ___ médecin très connu. | un* / de / en || c'est + mạo từ.
+fill: Il a accepté sans ___ . | hésitation* / une hésitation / l'hésitation || sans + danh từ trừu tượng.
+fill: Nous voyageons ___ train. | en* / à / avec || en + phương tiện.
+contrast: Il y a ___ beaux jardins dans ce quartier. | de* / des || khi viết: de trước tính từ.
+contrast: Elle répond toujours avec ___ . | gentillesse* / la gentillesse || không mạo từ.
+type: Fais ___ , la route est glissante ! | attention || faire attention.
+fix: Ma sœur est une infirmière. | Ma sœur est infirmière.* / Ma sœur est l'infirmière. / Ma sœur c'est infirmière. || không mạo từ.
+listen: Il a accepté sans hésitation. | Il a accepté sans hésitation.* / Il a accepté avec hésitation. / Il a refusé sans hésitation. || sans hésitation.

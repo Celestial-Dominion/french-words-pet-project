@@ -35,7 +35,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | chưa làm |
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
-| G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | đang làm: lô 4 xong (28/32 bài) |
+| G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | chưa làm |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | chưa làm |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
@@ -157,7 +157,7 @@ mieux / meilleur) · avant de + inf, après avoir + phân từ · bày tỏ ý k
   - 21/10 lô 5: 7 bài (ket-qua, muc-dich, doi-lap, nhan-manh-cest-qui, phu-dinh-b1, tu-phiem-chi, so-sanh-b1) + 7 điểm inventory; thay 3 câu B1 trùng với bài A1/A2 (tuong-lai-b1, dang-sap-vua, hai-dai-tu) và dựng lại audio; 5 giờ 10% · tuần 8%; 74abce9
   - **Kết quả:** 34 bài B1 (88 bài toàn khoá), `grammar:check --level b1` 34/34 sạch, inventory B1 37/37 điểm có bài; `grammar:state` đánh dấu đã duyệt a1,a2,b1. Tốn ~5% hạn mức 5 giờ, ~2% tuần. Mẹo + bẫy B1: memory grammar-a1a2. Chưa deploy.
 
-### G-B2 — Ngữ pháp B2 [ ] (app Anh 36 bài)
+### G-B2 — Ngữ pháp B2 [x] (app Anh 36 bài) — xong 21/10/2026, 32 bài
 
 Gợi ý: subjonctif passé · hoà hợp thì (concordance des temps) · lời nói gián tiếp ở quá khứ · si + plus-que-parfait →
 conditionnel passé · conditionnel passé (tiếc nuối, trách, tin chưa xác nhận) · futur antérieur · tương lai trong quá khứ ·
@@ -174,6 +174,8 @@ câu hỏi gián tiếp (ce que, si, où).
   - 21/10 lô 2: 7 bài (participe présent và tính từ -ant, cụm phân từ đầu câu, faire / laisser + nguyên mẫu, bị động nâng cao, hợp phân từ nâng cao, lequel / auquel / duquel, le / en / y thay cả một ý) + 8 điểm inventory; 102/102 bài, 0 lỗi; 5 giờ 12% · tuần 9% sau lô 1; 0e6c0e0
   - 21/10 lô 3: 7 bài (nhượng bộ quoique / avoir beau, giả thiết au cas où / à condition que, liên từ thời gian B2, ne explétif, nguyên nhân B2, kết quả / mục đích B2, từ nối lập luận) + 7 điểm inventory; 109/109 bài, 0 lỗi; 5 giờ 13% · tuần 9% sau lô 2; f265c14
   - 21/10 lô 4: 7 bài (ý kiến và khả năng nâng cao, danh từ hoá, tính từ đổi nghĩa theo vị trí, động từ đổi nghĩa theo giới từ, so sánh nâng cao, ce à quoi / ce sur quoi, nhấn mạnh bằng cách tách thành phần) + 7 điểm inventory; 116/116 bài, 0 lỗi; 5 giờ 14% · tuần 9% sau lô 3; b49a7db
+  - 21/10 lô 5: 4 bài (phủ định B2, từ phiếm chỉ B2, động từ phản thân B2, bỏ mạo từ) + 4 điểm inventory; thay 2 câu trùng với bài B1 (y-kien-nang-cao, dong-tu-phan-than-b2); 120/120 bài, 0 lỗi; 5 giờ 14% · tuần 9% sau lô 4; COMMIT
+  - **Kết quả:** 32 bài B2 (120 bài toàn khoá), `grammar:check --level b2` 32/32 sạch, inventory B2 33/33 điểm có bài, 0 câu trùng với cấp khác; `grammar:state` đánh dấu đã duyệt a1,a2,b1,b2. Tốn ~5% hạn mức 5 giờ (10→15%), ~1% tuần (8→9%). Chưa deploy.
 
 ### G-C1 — Ngữ pháp C1 [ ] (app Anh 30 bài)
 
