@@ -1,0 +1,63 @@
+=== khau-ngu-c2
+sum: C1 đã có: bỏ ne, on, ça, y a, t'es. Khẩu ngữ C2 thêm: từ hỏi để cuối câu (tu vas où ? c'est qui ? il fait quoi ?), bỏ il trong faut que, paraît que (faut qu'on y aille), trop thay très (c'est trop bien), quoi làm từ đệm cuối câu (il est sympa, quoi), t'as thay tu as. Chỉ dùng khi nói thân mật; khi viết hay nói với người không thân thì dùng dạng chuẩn.
+form: từ hỏi cuối câu | Tu vas où ?
+form: bỏ il: faut que, paraît que | Faut qu'on y aille.
+form: trop thay très | C'est trop bien !
+form: quoi đệm cuối câu | Il est sympa, quoi.
+cast: tom lucas
+bg: street
+words: soirée, frère, concert, billet
+
+#hook
+tom: T'as vu l'heure ? Faut qu'on y aille ! | Thấy mấy giờ rồi không? Phải đi thôi! [worried]
+lucas: On va où, déjà ? | Mà mình đi đâu ấy nhỉ? [thinking]
+tom: Au concert ! T'as oublié ? | Đi xem hoà nhạc! Cậu quên rồi à? [surprised]
+> Khi nói thân mật: [[t'as]] thay [[tu as]], [[faut que]] bỏ [[il]], từ hỏi để cuối câu như [[on va où]].
+
+#meaning
+vs: Où vas-tu ce soir ? | Tối nay bạn đi đâu? || viết, trang trọng
+vs: Tu vas où ce soir ? | Tối nay cậu đi đâu thế? || nói, thân mật
+> Cùng một câu hỏi, nhưng khi nói thân mật người Pháp để từ hỏi ở cuối câu.
+
+#form
+th: Văn chuẩn | Khẩu ngữ | Nghĩa
+tb: il faut que je parte | faut que j'y aille | tôi phải đi
+tb: il paraît qu'il pleut | paraît qu'il pleut | nghe nói trời mưa
+tb: qui est-ce ? | c'est qui ? | ai thế?
+tb: c'est très bien | c'est trop bien | hay quá
+tb: tu as faim ? | t'as faim ? | đói không?
+> Những dạng này rất tự nhiên khi nói, nhưng không dùng trong bài viết hay thư trang trọng.
+
+#examples
+- Ton frère, il {fait|k} quoi dans la vie ? | Anh trai cậu làm nghề gì thế?
+- {Paraît|k} que le concert est annulé. | Nghe nói buổi hoà nhạc bị huỷ.
+- La soirée était {trop|k} bien ! | Buổi tối vui quá trời!
+- Il est sympa, ton frère, {quoi|k}. | Anh cậu dễ mến đấy chứ.
+- T'as {pris|k} les billets ? | Cậu lấy vé chưa?
+
+#mistakes
+x: Monsieur, faut que je vous parle. => Monsieur, il faut que je vous parle. | Thưa ông, tôi cần nói chuyện với ông. >> Nói với người không thân: giữ [[il faut que]].
+x: Madame, c'est trop bien, votre livre. => Madame, votre livre est très réussi. | Thưa bà, cuốn sách của bà rất hay. >> Với người không thân, không dùng [[trop]] thay [[très]].
+
+#dialogue
+lucas: Paraît qu'il y a un monde fou là-bas. | Nghe nói ở đó đông kinh khủng. [worried]
+tom: Bon, on se dépêche, quoi ! Il est où, ton billet ? | Thế thì nhanh lên chứ sao! Vé của cậu đâu rồi? [thinking]
+lucas: Dans ma poche. Bon, on y va ? | Trong túi tớ. Thôi, đi nhé? [happy]
+tom: Allez, en route ! Ça va être trop bien ! | Nào, lên đường! Sẽ vui lắm đây! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Nghe nói buổi hoà nhạc bị huỷ. => Paraît que le concert est annulé. | Nghe nói buổi hoà nhạc bị huỷ.
+? Nói bằng tiếng Pháp: Anh trai cậu làm nghề gì thế? => Ton frère, il fait quoi dans la vie ? | Anh trai cậu làm nghề gì thế?
+
+#recap
+> Khẩu ngữ C2: từ hỏi để cuối câu ([[tu vas où]], [[c'est qui]]), bỏ [[il]] trong [[faut que]] và [[paraît que]], [[trop]] thay [[très]], [[quoi]] đệm cuối câu, [[t'as]] thay [[tu as]]. Khi viết, dùng dạng chuẩn.
+
+#practice
+fill: Ton frère, il fait ___ dans la vie ? | quoi* / que / qu'est-ce || từ hỏi cuối câu: quoi.
+fill: La soirée était ___ bien ! | trop* / beaucoup / plus || trop thay très.
+fill: Dis, t'___ pris les billets ? | as* / es / a || t'as = tu as.
+contrast: Tu vas ___ ce soir ? | où* / quoi || hỏi nơi chốn.
+contrast: Il est sympa, ton frère, ___ . | quoi* / que || quoi đệm cuối câu.
+type: Il est ___ , ton billet ? | où || từ hỏi cuối câu.
+fix: Monsieur, faut que je vous parle. | Monsieur, il faut que je vous parle.* / Monsieur, il faut que je vous parler. / Monsieur, faut que je parle vous. || văn trang trọng giữ il.
+listen: Paraît que le concert est annulé. | Paraît que le concert est annulé.* / Paraît que le concert est complet. / Il paraît que le cours est annulé. || paraît que.

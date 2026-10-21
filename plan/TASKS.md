@@ -33,7 +33,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | **xong 20/10** (52 truyện, ≥3 50,7% · ≥5 25,2%) |
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
-| G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | đang làm: lô 2 xong (14/20 bài) |
+| G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | **xong 21/10** (20 bài, 20 điểm phủ 100%) |
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
@@ -193,9 +193,9 @@ présent de narration & imparfait narratif · si hỗn hợp · à peine… que,
   - 21/10 lô 2: 7 bài (đảo ngữ sau trạng từ, đảo ngữ văn phong, nhượng bộ C1, subjonctif trong mệnh đề quan hệ, quan hệ C1, vô nhân xưng, subjonctif C1) + 7 điểm inventory; 134/134 bài, 0 lỗi; 5 giờ 17% · tuần 9% sau lô 1; 5e7f4c4
   - 21/10 lô 3: 6 bài (từ nối C1, khẩu ngữ và văn viết, phủ định văn chương, nhấn mạnh C1, so sánh C1, câu danh từ) + 6 điểm inventory; 140/140 bài, 0 lỗi; 5 giờ 18% · tuần 10% sau lô 2; 42f6033
   - 21/10 lô 4: 6 bài (nguyên mẫu C1, thành ngữ với en / y, hợp giống số tinh tế, faillir / finir par / se mettre à, cấu tạo từ, động từ tường thuật) + 6 điểm inventory; thay 2 câu trùng với cấp dưới trước khi dựng audio; 146/146 bài, 0 lỗi; 5 giờ 19% · tuần 10% sau lô 3; 480c14e
-  - **Kết quả:** 26 bài C1 (146 bài toàn khoá), `grammar:check --level c1` 26/26 0 lỗi, inventory C1 26/26 điểm có bài, 0 câu trùng với cấp khác; `grammar:state` đánh dấu đã duyệt a1,a2,b1,b2,c1. Tốn ~4% hạn mức 5 giờ (15→19%), ~1% tuần (9→10%). Chưa deploy.
+  - **Kết quả:** 26 bài C1 (146 bài toàn khoá), `grammar:check --level c1` 26/26 0 lỗi, inventory C1 26/26 điểm có bài, 0 câu trùng với cấp khác; `grammar:state` đánh dấu đã duyệt a1,a2,b1,b2,c1. Tốn ~4% hạn mức 5 giờ (15→19%), ~1% tuần (9→10%). Đã deploy 21/10 (lần 5).
 
-### G-C2 — Ngữ pháp C2 [ ] (app Anh 23 bài)
+### G-C2 — Ngữ pháp C2 [x] (app Anh 23 bài) — xong 21/10/2026, 20 bài
 
 Gợi ý: hệ thì văn chương (passé simple + passé antérieur + subjonctif imparfait) · đảo ngữ văn chương (Ainsi parlait-il ;
 Rares sont… ; Telle est…) · si văn chương (eût-il su, n'eût été) · que thay liên từ lặp · ne một mình (je n'ose, si je ne
@@ -207,6 +207,8 @@ sorte que, à force de, tant et si bien que).
 - **Nhật ký:**
   - 21/10 lô 1: 7 bài (câu điều kiện văn chương, đảo ngữ văn chương, lời gián tiếp tự do, cảm thán và câu hỏi tu từ, phủ định mang nghĩa khẳng định, động từ cổ trong cụm cố định, nhượng bộ C2) + 7 điểm inventory; 153/153 bài, 0 lỗi; 5 giờ 19% · tuần 10% trước lô; 8a246a1
   - 21/10 lô 2: 7 bài (que thay liên từ, đồng vị ngữ, tỉnh lược, từ nối học thuật, cấu trúc cố định C2, danh từ hoá nguyên mẫu và tính từ, thức đổi nghĩa) + 7 điểm inventory; 160/160 bài, 0 lỗi; 5 giờ 22% · tuần 10% sau lô 1; 263267d
+  - 21/10 lô 3: 6 bài (hợp giống số hiếm, sắc thái thì, đại từ soi và à lui hay y, giới từ en/dans và de/par, nói giảm · uyển ngữ · cường điệu · nói mỉa, khẩu ngữ C2) + 6 điểm inventory; 166/166 bài, 0 lỗi; 5 giờ 22% · tuần 10% sau lô 2; COMMIT
+  - **Kết quả:** 20 bài C2 (166 bài toàn khoá), `grammar:check --level c2` 20/20 0 lỗi, inventory C2 20/20 điểm có bài, 0 câu trùng với cấp khác; `grammar:state` đánh dấu đã duyệt a1,a2,b1,b2,c1,c2 (166/166, 0 điểm chưa phủ). Tốn ~3% hạn mức 5 giờ (19→22%), <1% tuần (10→10%). Chưa deploy.
 
 ---
 

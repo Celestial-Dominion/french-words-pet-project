@@ -1,0 +1,62 @@
+=== tu-tu-ngu-dung
+sum: Người Pháp hay nói không thẳng. Nói giảm: nói ít để hiểu nhiều (ce n'est pas mal: khá hay; je ne dis pas non: tôi đồng ý đấy). Uyển ngữ: nói nhẹ điều buồn (il nous a quittés: ông ấy đã mất). Cường điệu: nói quá (je meurs de faim, je te l'ai dit mille fois). Nói mỉa: nói ngược ý (c'est malin !: thật ngớ ngẩn). Phải đoán ý qua ngữ cảnh và giọng nói.
+form: nói giảm | Ce n'est pas mal du tout.
+form: uyển ngữ | Notre voisin nous a quittés.
+form: cường điệu | J'attends depuis des heures !
+form: nói mỉa | Bravo, c'est malin !
+cast: maman paul
+bg: kitchen
+words: gâteau, voisin, assiette, sel
+
+#hook
+paul: Maman, ton gâteau... ce n'est pas mal. | Mẹ ơi, bánh của mẹ... cũng không tệ. [thinking]
+maman: Pas mal ? Tu en as mangé trois parts ! | Không tệ à? Con ăn ba miếng rồi đấy! [surprised]
+paul: Justement : ça veut dire qu'il est délicieux ! | Thì đó: nghĩa là bánh ngon tuyệt! [happy]
+> Nói giảm: nói ít để người nghe hiểu nhiều. [[Ce n'est pas mal]] thường có nghĩa là khá hay, khá ngon.
+
+#meaning
+vs: Ton plat est vraiment bon. | Món của bạn ngon thật. || nói thẳng
+vs: Ton plat n'est pas mauvais du tout. | Món của bạn chẳng tệ chút nào. || nói giảm, ý khen
+> Trong tiếng Pháp, phủ định một ý xấu thường là một lời khen kín đáo.
+
+#form
+th: Lối nói | Ví dụ | Nghĩa thật
+tb: nói giảm | je ne dis pas non | tôi đồng ý đấy
+tb: uyển ngữ | elle s'est éteinte | bà ấy đã mất
+tb: cường điệu | je suis mort de fatigue | tôi mệt lắm
+tb: nói mỉa | c'est malin | thật ngớ ngẩn
+> Cần đoán ý qua ngữ cảnh và giọng nói, nhất là khi nói mỉa.
+
+#examples
+- Je ne {dis|k} pas non à un deuxième café. | Thêm cốc cà phê nữa thì tôi chẳng từ chối đâu.
+- Notre vieux voisin nous a {quittés|k} cet hiver. | Ông hàng xóm già của chúng tôi đã mất mùa đông này.
+- Je te l'ai dit {mille|k} fois : ferme la porte ! | Mẹ đã nói với con cả nghìn lần: đóng cửa vào!
+- Tu as mis du sel dans le café ? Bravo, c'est {malin|k} ! | Con cho muối vào cà phê à? Hay nhỉ, khôn thật đấy!
+- Il n'est pas {bête|k}, ce garçon. | Cậu bé này không ngốc đâu.
+
+#mistakes
+x: Je meurs de la faim. => Je meurs de faim. | Tôi đói chết mất. >> Thành ngữ không có mạo từ: [[mourir de faim]].
+x: Il nous a quitté. => Il nous a quittés. | Ông ấy đã mất. >> Bổ ngữ trực tiếp [[nous]] đứng trước: phân từ hợp số nhiều.
+
+#dialogue
+maman: Tu m'aides à mettre la table ? | Con giúp mẹ dọn bàn nhé? [thinking]
+paul: Je suis mort de fatigue, maman... | Con mệt chết đi được, mẹ ơi... [sad]
+maman: Ah oui ? Mais pour manger du gâteau, tu n'es pas fatigué ! | Thế à? Nhưng ăn bánh thì con chẳng mệt gì nhỉ! [happy]
+paul: D'accord, d'accord, je ne dis pas non. J'arrive ! | Thôi được, được rồi, con không từ chối đâu. Con đến đây! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Mẹ đã nói với con cả nghìn lần: đóng cửa vào! => Je te l'ai dit mille fois : ferme la porte ! | Mẹ đã nói với con cả nghìn lần: đóng cửa vào!
+? Nói bằng tiếng Pháp: Ông hàng xóm già của chúng tôi đã mất mùa đông này. => Notre vieux voisin nous a quittés cet hiver. | Ông hàng xóm già của chúng tôi đã mất mùa đông này.
+
+#recap
+> Bốn lối nói không thẳng: nói giảm ([[ce n'est pas mal]]), uyển ngữ ([[il nous a quittés]]), cường điệu ([[je meurs de faim]]), nói mỉa ([[c'est malin]]). Hiểu đúng nhờ ngữ cảnh và giọng nói.
+
+#practice
+fill: Je ne dis pas ___ à un deuxième café. | non* / oui / rien || je ne dis pas non: đồng ý.
+fill: Je te l'ai dit ___ fois : ferme la porte ! | mille* / mil / millier || cường điệu.
+fill: Notre vieux voisin nous a ___ cet hiver. | quittés* / quitter / quittait || nous đứng trước: hợp số nhiều.
+contrast: Il ___ bête, ce garçon : il a tout compris. | n'est pas* / est || nói giảm: lời khen.
+contrast: Je meurs ___ faim. | de* / par || thành ngữ: mourir de faim.
+type: Tu as cassé l'assiette ? Bravo, c'est ___ ! | malin || nói mỉa.
+fix: Je meurs de la faim. | Je meurs de faim.* / Je meurs par faim. / Je meurs à faim. || không có mạo từ.
+listen: Il n'est pas bête, ce garçon. | Il n'est pas bête, ce garçon.* / Il n'est pas là, ce garçon. / Il est un peu bête, ce garçon. || nói giảm.

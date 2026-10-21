@@ -1,0 +1,65 @@
+=== hop-giong-hiem
+sum: Một số trường hợp hợp giống số hiếm gặp. La plupart des + danh từ số nhiều: động từ chia số nhiều (la plupart des gens pensent). Plus d'un: động từ chia số ít (plus d'un client a oublié son sac). Quelque chose de, rien de + tính từ giống đực (quelque chose de nouveau). Gens: tính từ đứng ngay trước chia giống cái (de bonnes gens), đứng sau chia giống đực (des gens heureux). Délice giống đực ở số ít (un pur délice), thường giống cái ở số nhiều trong văn chương.
+form: la plupart des + danh từ + động từ số nhiều | La plupart des élèves sont venus.
+form: plus d'un + danh từ + động từ số ít | Plus d'un ami est venu.
+form: quelque chose de + tính từ giống đực | quelque chose de beau
+form: tính từ trước gens: giống cái; sau gens: giống đực | de bonnes gens, des gens heureux
+cast: lea hugo
+bg: market
+words: client, fromage, marchand, fruit
+gloss: délice, plupart, pluriel
+
+#hook
+hugo: Regarde, la plupart des marchands sont déjà partis. | Nhìn kìa, phần lớn người bán đã về rồi. [sad]
+lea: Sont partis ? Mais la plupart, c'est un singulier, non ? | “Sont partis”? Nhưng “la plupart” là số ít mà, phải không? [thinking]
+hugo: Non : on accorde avec marchands, donc au pluriel. | Không: ta hợp với “marchands”, nên chia số nhiều. [explain]
+> Sau [[la plupart des]], động từ hợp với danh từ số nhiều phía sau.
+
+#meaning
+vs: Plusieurs clients sont partis. | Vài khách hàng đã đi. || số nhiều
+vs: Plus d'un client est parti. | Không chỉ một khách hàng đã đi. || động từ số ít
+> Nghĩa là nhiều người, nhưng [[plus d'un]] vẫn đi với động từ số ít vì động từ hợp theo [[un]].
+
+#form
+th: Cấu trúc | Động từ, tính từ | Ví dụ
+tb: la plupart des | số nhiều | la plupart des gens pensent
+tb: plus d'un | số ít | plus d'un ami est venu
+tb: quelque chose de | tính từ giống đực | quelque chose de bon
+tb: rien de | tính từ giống đực | rien de grave
+tb: gens | trước: giống cái; sau: giống đực | de vieilles gens
+> Tính từ đứng ngay trước [[gens]] chia giống cái, tính từ đứng sau [[gens]] chia giống đực.
+
+#examples
+- La plupart des gens {pensent|k} que c'est trop cher. | Phần lớn mọi người nghĩ là quá đắt.
+- Plus d'un client {a|k} oublié son sac ici. | Không ít khách hàng đã để quên túi ở đây.
+- Ce marchand vend quelque chose de {nouveau|k} chaque semaine. | Người bán này tuần nào cũng có món gì đó mới.
+- Ce sont de {bonnes|k} gens, toujours prêts à aider. | Họ là những người tốt, luôn sẵn lòng giúp đỡ.
+- Ces fruits sont un pur {délice|k}. | Những trái cây này ngon tuyệt.
+
+#mistakes
+x: La plupart des clients est content. => La plupart des clients sont contents. | Phần lớn khách hàng hài lòng. >> Động từ hợp với danh từ số nhiều sau [[la plupart des]].
+x: Plus d'un élève ont échoué. => Plus d'un élève a échoué. | Không ít học sinh đã trượt. >> [[Plus d'un]] đi với động từ số ít.
+x: J'ai vu quelque chose de belle. => J'ai vu quelque chose de beau. | Tôi đã thấy một thứ gì đó đẹp. >> Sau [[quelque chose de]], tính từ chia giống đực.
+
+#dialogue
+lea: Tu as trouvé quelque chose d'intéressant ? | Anh tìm được gì hay không? [thinking]
+hugo: Oui, un fromage de chèvre. Le marchand dit que c'est un pur délice ! | Có, một miếng phô mai dê. Người bán bảo ngon tuyệt! [happy]
+lea: Plus d'un client me l'a conseillé aussi. | Cũng không ít khách đã khuyên em món đó. [happy]
+hugo: Alors on le prend, et rien de plus ! | Vậy mình lấy nó, và thôi không mua gì thêm! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Phần lớn mọi người nghĩ là quá đắt. => La plupart des gens pensent que c'est trop cher. | Phần lớn mọi người nghĩ là quá đắt.
+? Nói bằng tiếng Pháp: Họ là những người tốt, luôn sẵn lòng giúp đỡ. => Ce sont de bonnes gens, toujours prêts à aider. | Họ là những người tốt, luôn sẵn lòng giúp đỡ.
+
+#recap
+> [[La plupart des]] với động từ số nhiều, [[plus d'un]] với động từ số ít, [[quelque chose de]] và [[rien de]] với tính từ giống đực; với [[gens]], tính từ đứng trước chia giống cái, đứng sau chia giống đực.
+
+#practice
+fill: La plupart des gens ___ que c'est trop cher. | pensent* / pense / penser || la plupart des: số nhiều.
+fill: Plus d'un client ___ oublié son sac ici. | a* / ont / avons || plus d'un: số ít.
+fill: Ce marchand vend quelque chose de ___ chaque semaine. | nouveau* / nouvelle / nouvelles || tính từ giống đực.
+contrast: Ce sont de ___ gens. | bonnes* / bons || tính từ trước gens: giống cái.
+contrast: Ce sont des gens très ___ . | heureux* / heureuses || tính từ sau gens: giống đực.
+type: Plus d'un ami ___ (venir) hier soir. | est venu || plus d'un: số ít.
+fix: La plupart des clients est content. | La plupart des clients sont contents.* / La plupart des clients est contents. / La plupart des clients sont content. || số nhiều.
+listen: Ces fruits sont un pur délice. | Ces fruits sont un pur délice.* / Ces fruits sont un peu trop doux. / Ce fruit est un pur délice. || un pur délice.

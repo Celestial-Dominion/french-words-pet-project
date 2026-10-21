@@ -2122,6 +2122,73 @@
     "subj-c1"
    ],
    "pri": 1
+  },
+  {
+   "id": "agreement-c2",
+   "lv": "c2",
+   "cat": "adjectives",
+   "name": "Accords rares",
+   "vi": "Hợp giống số hiếm: la plupart des + động từ số nhiều; plus d'un + động từ số ít; quelque chose de, rien de + tính từ giống đực; gens: tính từ đứng trước chia giống cái (de vieilles gens), đứng sau chia giống đực (des gens heureux); délice, amour, orgue đổi giống ở số nhiều trong văn chương",
+   "pre": [
+    "agreement-c1"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "tense-nuances",
+   "lv": "c2",
+   "cat": "tense",
+   "name": "Nuances des temps",
+   "vi": "Thì mang sắc thái: imparfait lịch sự (je voulais vous demander), imparfait chỉ việc suýt xảy ra sau một điều kiện ngầm (un pas de plus et il tombait), conditionnel giảm nhẹ ý kiến (je dirais que), futur thay mệnh lệnh nhẹ, passé composé cho việc sắp xong chắc chắn (j'ai fini dans deux minutes)",
+   "pre": [
+    "narrative-tenses",
+    "futur-anterieur"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "pronouns-c2",
+   "lv": "c2",
+   "cat": "pronouns",
+   "name": "Soi, à lui ou y",
+   "vi": "Soi sau chủ ngữ chung chung (chacun pour soi, on est bien chez soi, en soi); với người dùng à lui, d'elle thay cho y, en (je pense à elle, j'y pense chỉ vật hay ý); le trung tính trong so sánh (plus facile qu'on ne le croit, comme je le disais)",
+   "pre": [
+    "neutral-pronouns"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "prepositions-c2",
+   "lv": "c2",
+   "cat": "prepositions",
+   "name": "Prépositions délicates",
+   "vi": "Cặp giới từ dễ nhầm: en + thời lượng (mất bao lâu) và dans + thời lượng (bao lâu nữa); bị động với de (cảm xúc, trạng thái: aimé de tous, couvert de neige) và par (hành động); facile à faire và il est facile de faire; en train nhưng à pied, à vélo",
+   "pre": [
+    "passive-b2"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "figures",
+   "lv": "c2",
+   "cat": "sentence",
+   "name": "Litote, euphémisme, hyperbole, ironie",
+   "vi": "Lối nói không thẳng: nói giảm (ce n'est pas mal, je ne dis pas non), uyển ngữ (il nous a quittés), cường điệu (je meurs de faim, mille fois), nói mỉa (c'est malin !)",
+   "pre": [
+    "register"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "colloquial-c2",
+   "lv": "c2",
+   "cat": "sentence",
+   "name": "Français parlé familier",
+   "vi": "Khẩu ngữ C2: từ hỏi để cuối câu (tu vas où ?, c'est qui ?), bỏ il trong faut que, paraît que; trop thay très; quoi đệm cuối câu; t'as thay tu as; chỉ dùng khi nói thân mật",
+   "pre": [
+    "register"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

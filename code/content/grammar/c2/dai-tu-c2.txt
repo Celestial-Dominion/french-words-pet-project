@@ -1,0 +1,64 @@
+=== dai-tu-c2
+sum: Một số điểm đại từ tinh tế. Soi dùng sau chủ ngữ chung chung (on, chacun, personne, il faut): on n'est jamais mieux que chez soi, chacun pour soi; en soi: tự bản thân nó. Với người, sau penser à, être fier de… dùng à lui, d'elle chứ không dùng y, en: je pense à elle, nhưng j'y pense cho vật, ý. Le trung tính lặp lại cả một ý trong so sánh: c'est plus facile qu'on ne le croit; comme je te le disais.
+form: chủ ngữ chung chung + soi | Chacun rentre chez soi.
+form: à + người: à lui, à elle | Je pense à elle.
+form: à + vật, ý: y | J'y pense.
+form: comme je le disais | Comme je le disais, il pleut.
+cast: papi zoe
+bg: home-evening
+words: jardin, souvenir, voyage, enfance
+
+#hook
+zoe: Papi, tu penses souvent à mamie ? | Ông ơi, ông có hay nghĩ đến bà không? [thinking]
+papi: Oui, je pense à elle chaque jour. | Có, ngày nào ông cũng nghĩ đến bà. [sad]
+zoe: Et à votre premier voyage ? | Còn chuyến đi đầu tiên của ông bà thì sao? [thinking]
+papi: Ah, j'y pense souvent aussi. C'est un beau souvenir. | À, ông cũng hay nghĩ đến nó. Đó là một kỷ niệm đẹp. [happy]
+> Với người, nói [[je pense à elle]]; với vật hay ý, nói [[j'y pense]].
+
+#meaning
+vs: Après le travail, il rentre chez lui. | Sau giờ làm, anh ấy về nhà mình. || chủ ngữ cụ thể: lui
+vs: Après le travail, chacun rentre chez soi. | Sau giờ làm, ai về nhà nấy. || chủ ngữ chung chung: soi
+> Sau chủ ngữ chung chung như [[on]], [[chacun]], [[personne]], dùng [[soi]] thay cho [[lui]] hay [[elle]].
+
+#form
+th: Trường hợp | Đại từ | Ví dụ
+tb: chủ ngữ chung chung | soi | en soi, c'est simple
+tb: người sau à | à lui, à elle | je pense à lui
+tb: vật, ý sau à | y | j'y pense
+tb: người sau de | de lui, d'elle | je parle d'elle
+tb: vật, ý sau de | en | j'en parle
+> Khi nói, đôi khi người Pháp vẫn dùng [[en]] cho người, nhưng văn chuẩn dùng [[de lui]], [[d'elle]].
+
+#examples
+- Chacun doit prendre soin de {soi|k}. | Mỗi người phải tự chăm sóc bản thân.
+- Cette idée n'est pas mauvaise en {soi|k}. | Bản thân ý tưởng này không tồi.
+- Elle est très fière de {lui|k}. | Bà ấy rất tự hào về anh ấy.
+- C'est plus facile qu'on ne le {croit|k}. | Việc này dễ hơn người ta tưởng.
+- Comme je te le {disais|k}, le jardin a besoin d'eau. | Như ông đã nói với cháu, khu vườn cần nước.
+
+#mistakes
+x: Ma sœur ? J'y pense souvent. => Ma sœur ? Je pense souvent à elle. | Chị tôi à? Tôi hay nghĩ đến chị ấy. >> Với người, dùng [[à elle]], không dùng [[y]].
+x: Chacun pour lui ! => Chacun pour soi ! | Ai lo phận nấy! >> Thành ngữ cố định với [[soi]].
+
+#dialogue
+zoe: Tu parles souvent de ton enfance ? | Ông có hay kể về tuổi thơ không? [thinking]
+papi: J'en parle avec plaisir. Et je parle souvent de mon père : j'étais si fier de lui. | Ông kể với niềm vui. Và ông hay kể về bố ông: ông tự hào về cụ lắm. [happy]
+zoe: Moi aussi, je suis fière de toi, papi ! | Cháu cũng tự hào về ông, ông ạ! [happy]
+papi: Merci, ma chérie. Comme on dit : on n'est jamais mieux que chez soi. | Cảm ơn cháu yêu. Như người ta nói: không đâu bằng nhà mình. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Mỗi người phải tự chăm sóc bản thân. => Chacun doit prendre soin de soi. | Mỗi người phải tự chăm sóc bản thân.
+? Nói bằng tiếng Pháp: Việc này dễ hơn người ta tưởng. => C'est plus facile qu'on ne le croit. | Việc này dễ hơn người ta tưởng.
+
+#recap
+> [[Soi]] sau chủ ngữ chung chung; với người dùng [[à lui]], [[d'elle]], với vật và ý dùng [[y]], [[en]]; [[le]] trung tính lặp lại cả ý trong [[comme je le disais]] và [[qu'on ne le croit]].
+
+#practice
+fill: Chacun doit prendre soin de ___ . | soi* / lui / se || chủ ngữ chung chung: soi.
+fill: Ma sœur ? Je pense souvent à ___ . | elle* / y / lui || người: à elle.
+fill: Ce voyage ? Oui, j'___ pense souvent. | y* / en / le || vật: y.
+contrast: Après le travail, il rentre chez ___ . | lui* / soi || chủ ngữ cụ thể.
+contrast: Après le travail, chacun rentre chez ___ . | soi* / lui || chủ ngữ chung chung.
+type: C'est plus facile qu'on ne ___ croit. | le || le trung tính.
+fix: Chacun pour lui ! | Chacun pour soi !* / Chacun pour se ! / Chacun pour elle ! || thành ngữ với soi.
+listen: Cette idée n'est pas mauvaise en soi. | Cette idée n'est pas mauvaise en soi.* / Cette idée n'est pas mauvaise pour toi. / Cette idée n'est pas mauvaise, je crois. || en soi.

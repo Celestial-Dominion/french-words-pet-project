@@ -1,0 +1,63 @@
+=== sac-thai-thi-c2
+sum: Thì động từ có thể mang sắc thái, không chỉ chỉ thời gian. Imparfait lịch sự làm lời nhờ nhẹ nhàng hơn: je voulais vous demander un service. Imparfait sau một điều kiện ngầm chỉ việc suýt xảy ra: un pas de plus et il tombait (thêm một bước nữa là ngã). Conditionnel làm ý kiến nhẹ đi: je dirais que c'est un peu cher. Futur thay mệnh lệnh nhẹ: vous remplirez ce formulaire. Passé composé cho việc sắp xong chắc chắn: j'ai fini dans deux minutes.
+form: je voulais + nguyên mẫu (lịch sự) | Je voulais vous poser une question.
+form: … de plus et + imparfait (suýt xảy ra) | Un pas de plus et il tombait.
+form: je dirais que (giảm nhẹ) | Je dirais que c'est un peu cher.
+form: futur thay mệnh lệnh | Tu fermeras la porte en partant.
+cast: chloe m-dubois
+bg: service-hall
+words: service, formulaire, guichet, seconde
+
+#hook
+chloe: Bonjour monsieur, je voulais vous demander un renseignement. | Chào ông, tôi muốn hỏi ông một thông tin ạ. [thinking]
+m-dubois: Vous vouliez ? Et maintenant, vous ne voulez plus ? | Cô “đã muốn”? Thế bây giờ cô không muốn nữa à? [happy]
+chloe: Mais si ! C'est juste plus poli. | Có chứ ạ! Chỉ là nói thế lịch sự hơn. [happy]
+> Ở đây [[imparfait]] không chỉ quá khứ: nó làm lời nhờ nhẹ nhàng, lịch sự hơn.
+
+#meaning
+vs: Il a fait un pas de plus et il est tombé. | Anh ấy bước thêm một bước và đã ngã. || đã ngã thật
+vs: Un pas de plus et il tombait. | Thêm một bước nữa là anh ấy ngã. || suýt ngã, không ngã
+> Sau một điều kiện ngầm, [[imparfait]] chỉ việc suýt xảy ra nhưng đã không xảy ra.
+
+#form
+th: Thì | Sắc thái | Ví dụ
+tb: imparfait | lời nhờ lịch sự | je voulais vous demander
+tb: imparfait | suýt xảy ra | une minute de plus et je partais
+tb: conditionnel | giảm nhẹ ý kiến | je dirais que
+tb: futur | mệnh lệnh nhẹ | tu fermeras la porte
+tb: passé composé | sắp xong chắc chắn | j'ai terminé dans une heure
+> Đây là cách người bản ngữ dùng thì trong giao tiếp hằng ngày, không phải lỗi chia thì.
+
+#examples
+- Je {voulais|k} savoir si le bureau ouvre samedi. | Tôi muốn hỏi văn phòng có mở cửa thứ bảy không.
+- Une seconde de plus et je {ratais|k} le train. | Chậm một giây nữa là tôi lỡ tàu.
+- Je {dirais|k} que le formulaire est incomplet. | Tôi e là tờ khai chưa đầy đủ.
+- Vous {remplirez|k} ce formulaire avant de partir. | Ông vui lòng điền tờ khai này trước khi đi.
+- Attendez-moi, j'ai {fini|k} dans deux minutes ! | Đợi tôi nhé, hai phút nữa là tôi xong!
+
+#mistakes
+x: Je dirai que c'est trop tôt. => Je dirais que c'est trop tôt. | Tôi cho là còn hơi sớm. >> Giảm nhẹ ý kiến dùng [[conditionnel]] như [[je dirais]], không dùng [[futur]] như [[je dirai]].
+x: J'ai voulu vous demander un service. => Je voulais vous demander un service. | Tôi muốn nhờ ông một việc. >> Lời nhờ lịch sự dùng [[imparfait]].
+
+#dialogue
+m-dubois: Bien sûr. Vous remplirez d'abord ce formulaire au guichet. | Được thôi. Trước tiên cô điền tờ khai này ở quầy nhé. [explain]
+chloe: Je viens de le remplir. Je dirais qu'il est complet. | Tôi vừa điền xong. Tôi nghĩ là đủ rồi ạ. [thinking]
+m-dubois: Parfait. Une minute de plus et le guichet fermait ! | Tốt lắm. Thêm một phút nữa là quầy đóng cửa rồi! [happy]
+chloe: Ouf ! Merci beaucoup, monsieur. | Phù! Cảm ơn ông nhiều ạ. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Chậm một giây nữa là tôi lỡ tàu. => Une seconde de plus et je ratais le train. | Chậm một giây nữa là tôi lỡ tàu.
+? Nói bằng tiếng Pháp: Đợi tôi nhé, hai phút nữa là tôi xong! => Attendez-moi, j'ai fini dans deux minutes ! | Đợi tôi nhé, hai phút nữa là tôi xong!
+
+#recap
+> Thì mang sắc thái: [[imparfait]] làm lời nhờ lịch sự và chỉ việc suýt xảy ra; [[conditionnel]] làm ý kiến nhẹ đi; [[futur]] thay mệnh lệnh; [[passé composé]] cho việc sắp xong chắc chắn.
+
+#practice
+fill: Une seconde de plus et je ___ le train. | ratais* / ai raté / rate || suýt xảy ra: imparfait.
+fill: Je ___ savoir si le bureau ouvre samedi. | voulais* / voulus / voudrai || lời nhờ lịch sự: imparfait.
+fill: Attendez-moi, j'ai ___ dans deux minutes ! | fini* / finissais / finirai || sắp xong chắc chắn: passé composé.
+contrast: Un pas de plus et il ___ . | tombait* / est tombé || suýt ngã: imparfait.
+contrast: Il a fait un pas de plus et il ___ . | est tombé* / tombait || đã ngã thật: passé composé.
+type: Je ___ (dire, conditionnel) que le formulaire est incomplet. | dirais || giảm nhẹ ý kiến.
+fix: J'ai voulu vous demander un service. | Je voulais vous demander un service.* / Je voulait vous demander un service. / Je voulez vous demander un service. || imparfait lịch sự.
+listen: Je voulais savoir si le bureau ouvre samedi. | Je voulais savoir si le bureau ouvre samedi.* / Je voudrais savoir si le bureau ouvre samedi. / Je voulais savoir si le bureau ferme samedi. || je voulais savoir.

@@ -1812,6 +1812,72 @@
     "mood-meaning"
    ],
    "find": "(?<![\\p{L}'])([Dd]is-lui qu|[Dd]ites-lui qu|[Ii]l semble qu|[Jj]e comprends qu)"
+  },
+  {
+   "id": "hop-giong-hiem",
+   "lv": "c2",
+   "cat": "adjectives",
+   "t": "Hợp giống số hiếm: la plupart, plus d'un, gens",
+   "en": "la plupart des gens pensent · plus d'un client a oublié · quelque chose de nouveau",
+   "pts": [
+    "agreement-c2"
+   ],
+   "find": "(?<![\\p{L}'])([Ll]a plupart (des|d')|[Pp]lus d'une? |[Qq]uelque chose de (bon|beau|nouveau|bizarre|grave|simple|drôle|spécial|important|intéressant)(?!\\p{L}))"
+  },
+  {
+   "id": "sac-thai-thi-c2",
+   "lv": "c2",
+   "cat": "tense",
+   "t": "Sắc thái thì: imparfait lịch sự, việc suýt xảy ra",
+   "en": "je voulais vous demander · une seconde de plus et je ratais le train · je dirais que",
+   "pts": [
+    "tense-nuances"
+   ],
+   "find": "(?<![\\p{L}'])([Jj]e (voulais|venais|souhaitais) (vous|te) |[Uu]ne? (pas|mot|seconde|minute|instant|mètre) de plus,? et |[Jj]e dirais (que|plutôt))"
+  },
+  {
+   "id": "dai-tu-c2",
+   "lv": "c2",
+   "cat": "pronouns",
+   "t": "Đại từ C2: soi, à elle hay y",
+   "en": "chacun pour soi · je pense à elle · plus facile qu'on ne le croit",
+   "pts": [
+    "pronouns-c2"
+   ],
+   "find": "(?<![\\p{L}'])((chez|de|sur|en|pour|à) soi(-même)?|[Cc]omme (je|on|tu|vous) (te |vous )?(le|l') (disais|disait|dis|pensais|croyais|savez|sais)|qu'on ne (le|l') (croit|pense|imagine))(?!\\p{L})"
+  },
+  {
+   "id": "gioi-tu-c2",
+   "lv": "c2",
+   "cat": "prepositions",
+   "t": "Giới từ C2: en hay dans, de hay par",
+   "en": "en deux jours · dans dix minutes · couvert de neige · facile à comprendre",
+   "pts": [
+    "prepositions-c2"
+   ],
+   "find": "(?<![\\p{L}'])(([Ee]n|[Dd]ans) (deux|trois|cinq|dix|quinze|vingt|trente) (minutes|heures|jours|semaines|mois|ans)|aimée?s? de tous|couverte?s? de|(facile|difficile) à (faire|comprendre|lire|trouver|croire|dire))(?!\\p{L})"
+  },
+  {
+   "id": "tu-tu-ngu-dung",
+   "lv": "c2",
+   "cat": "sentence",
+   "t": "Nói giảm, uyển ngữ, cường điệu, nói mỉa",
+   "en": "ce n'est pas mal · il nous a quittés · je meurs de faim · c'est malin !",
+   "pts": [
+    "figures"
+   ],
+   "find": "(?<![\\p{L}'])([Cc]e n'est pas (mal|bête|faux)|[Jj]e ne dis pas non|[Jj]e (meurs|crève) de (faim|soif|chaud|froid)|mille fois|[Cc]'est malin|nous a quittés)(?!\\p{L})"
+  },
+  {
+   "id": "khau-ngu-c2",
+   "lv": "c2",
+   "cat": "sentence",
+   "t": "Khẩu ngữ C2: tu vas où ?, faut que, trop bien",
+   "en": "tu vas où ? · faut qu'on y aille · paraît que · c'est trop bien",
+   "pts": [
+    "colloquial-c2"
+   ],
+   "find": "(?<![\\p{L}'])([Tt]u (vas|pars|habites|fais) (où|quoi)|[Cc]'est qui|[Ii]l est où|[Ff]aut (que|qu')|[Pp]araît qu|[Tt]'as |c'est trop (bien|bon|beau|drôle))"
   }
  ]
 }

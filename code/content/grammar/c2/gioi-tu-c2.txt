@@ -1,0 +1,62 @@
+=== gioi-tu-c2
+sum: Một số cặp giới từ dễ nhầm. En + khoảng thời gian: mất bao lâu để làm xong (j'ai lu ce roman en deux jours); dans + khoảng thời gian: bao lâu nữa (le train part dans dix minutes). Sau bị động, de đi với cảm xúc, trạng thái (aimé de tous, couvert de neige), par đi với người hay vật làm hành động (renversé par une voiture). Ce texte est facile à comprendre (chủ ngữ là danh từ) khác il est facile de comprendre ce texte. Phương tiện có khoang dùng en (en train, en voiture), còn đi bộ, xe đạp dùng à (à pied, à vélo).
+form: en + thời lượng = mất bao lâu | en deux heures
+form: dans + thời lượng = bao lâu nữa | dans deux heures
+form: bị động: de (cảm xúc, trạng thái), par (hành động) | respecté de tous
+form: danh từ + être facile à / il est facile de | facile à lire
+cast: nam ines
+bg: train
+words: neige, montagne, roman, gare
+
+#hook
+ines: Le train arrive en dix minutes ? | Tàu đến “en” mười phút à? [thinking]
+nam: Non : dans dix minutes. En dix minutes, c'est la durée du trajet. | Không: “dans” mười phút nữa. “En” mười phút là thời gian đi hết chặng. [explain]
+> [[Dans]] với khoảng thời gian: bao lâu nữa. [[En]] với khoảng thời gian: mất bao lâu để làm xong.
+
+#meaning
+vs: Il est aimé de tous ses élèves. | Ông ấy được tất cả học trò yêu quý. || de: cảm xúc
+vs: Il a été renversé par une voiture. | Anh ấy bị một chiếc ô tô tông. || par: hành động
+> Sau dạng bị động, [[de]] đi với cảm xúc, trạng thái; [[par]] đi với người hay vật thực hiện hành động.
+
+#form
+th: Giới từ | Dùng khi | Ví dụ
+tb: en | mất bao lâu | en une heure
+tb: dans | bao lâu nữa | dans une heure
+tb: de | bị động: cảm xúc, trạng thái | respecté de tous
+tb: par | bị động: hành động | arrêté par la police
+tb: à | danh từ là chủ ngữ | facile à lire
+> Phương tiện có khoang dùng [[en]], như [[en train]]; đi bộ, xe đạp dùng [[à]], như [[à pied]], [[à vélo]].
+
+#examples
+- J'ai lu ce roman {en|k} deux jours. | Tôi đọc cuốn tiểu thuyết này trong hai ngày.
+- Le train pour Lyon part {dans|k} un quart d'heure. | Mười lăm phút nữa tàu đi Lyon chạy.
+- La montagne était couverte {de|k} neige. | Ngọn núi phủ đầy tuyết.
+- Ce texte est facile {à|k} comprendre. | Văn bản này dễ hiểu.
+- Il est facile {de|k} se perdre dans cette gare. | Trong nhà ga này rất dễ bị lạc.
+
+#mistakes
+x: Le film commence en cinq minutes. => Le film commence dans cinq minutes. | Năm phút nữa phim bắt đầu. >> Bao lâu nữa: [[dans]].
+x: Ce livre est facile de lire. => Ce livre est facile à lire. | Cuốn sách này dễ đọc. >> Chủ ngữ là danh từ: [[facile à]].
+
+#dialogue
+ines: On sera à Lyon dans combien de temps ? | Bao lâu nữa mình tới Lyon anh? [thinking]
+nam: Dans deux heures environ. Le train fait le trajet en moins de trois heures. | Khoảng hai tiếng nữa. Tàu đi hết chặng trong chưa đầy ba tiếng. [explain]
+ines: Et après, on va à l'hôtel à pied ? | Rồi sau đó mình đi bộ về khách sạn à? [thinking]
+nam: Oui, l'hôtel est facile à trouver, juste à côté de la gare. | Ừ, khách sạn dễ tìm lắm, ngay cạnh nhà ga. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi đọc cuốn tiểu thuyết này trong hai ngày. => J'ai lu ce roman en deux jours. | Tôi đọc cuốn tiểu thuyết này trong hai ngày.
+? Nói bằng tiếng Pháp: Văn bản này dễ hiểu. => Ce texte est facile à comprendre. | Văn bản này dễ hiểu.
+
+#recap
+> [[En]] với thời lượng là mất bao lâu, [[dans]] là bao lâu nữa; bị động với [[de]] cho cảm xúc, trạng thái và [[par]] cho hành động; [[facile à]] sau danh từ chủ ngữ, [[il est facile de]] khi ý nói sau.
+
+#practice
+fill: J'ai lu ce roman ___ deux jours. | en* / dans / pour || mất bao lâu: en.
+fill: Le train pour Lyon part ___ un quart d'heure. | dans* / en / depuis || bao lâu nữa: dans.
+fill: La montagne était couverte ___ neige. | de* / par / avec || trạng thái: de.
+contrast: Ce texte est facile ___ comprendre. | à* / de || danh từ chủ ngữ: facile à.
+contrast: Il est facile ___ se perdre dans cette gare. | de* / à || il est facile de.
+type: Il a été renversé ___ une voiture. | par || hành động: par.
+fix: Le film commence en cinq minutes. | Le film commence dans cinq minutes.* / Le film commence depuis cinq minutes. / Le film commence pour cinq minutes. || bao lâu nữa: dans.
+listen: J'ai lu ce roman en deux jours. | J'ai lu ce roman en deux jours.* / J'ai lu ce roman dans deux jours. / J'ai lu ce roman en trois jours. || en deux jours.
