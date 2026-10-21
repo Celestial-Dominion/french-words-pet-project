@@ -320,7 +320,7 @@ sorte que, à force de, tant et si bien que).
     audio 399 câu; A2 ≥1 93,6→97,6 ✓ · ≥3 76,6→81,7 ✓ · ≥5 40,6→41,1 ✓; thiếu 85→0; 5 giờ 6% · tuần 18%; ffecf1b
   - 21/10 lô 4: câu ví dụ của 122 từ kéo xuống — `node scripts/flelex-examples-check.mjs --min 3` (câu "vừa sức" = mọi từ
     khác ≤ cấp mới + 1, tối đa 1 từ vượt): trước 2/5 câu: 7 từ · 3: 11 · 4: 33 · 5: 71; viết lại 7 câu qua `ex5/fix.txt`
-    (africain, canadien, chômeur, culturel, mail, privilégier, technologie) → mọi từ ≥ 3/5; merge + shard + audio 7 câu; COMMIT4
+    (africain, canadien, chômeur, culturel, mail, privilégier, technologie) → mọi từ ≥ 3/5; merge + shard + audio 7 câu; 63f510b
   - **Kết quả pha 1:** 136 từ đổi cấp; bộ kiểm 0 lỗi mọi cấp (B1–C2 0 cảnh báo, A1/A2 = cảnh báo cũ); 6 cấp đạt 3 mốc độ phủ
     (A1 99,6/90,0/65,1 · A2 97,6/81,7/41,1); 24 bài đọc mới (a1-p04, a2-p05, a2-p06). Cả việc: 5 giờ 2→6%, tuần 17→18%.
 - **Còn lại (chưa lên lịch):** pha 2 (lệch 2 cấp, ~1.200 từ) chỉ khi
