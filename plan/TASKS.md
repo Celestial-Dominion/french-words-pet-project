@@ -121,7 +121,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 - **Nhật ký:**
   - 21/10 lô 11: 6 truyện (Le bandeau de Lucas, Le joueur de bridge, Le signor du campus, Le verger d'Hélène, L'atelier du sergent, Le campement de papy) + 90 câu hỏi có audio (708 file); 1029–1093 từ, đúng cấp 4,5–5,5%, giỏ 21–26/26 → C1 58/67; độ phủ C1 98,0% / ≥3 51,7% / ≥5 25,3% ✓. Commit: 9926343.
   - 21/10 lô 12: 6 truyện (La chute du jockey, La cocotte du signor, Le bal de la résidence, La halle aux artistes, La cavale de mamie, Le radeau de la Loue) + 90 câu hỏi có audio (712 file); 1009–1101 từ, đúng cấp 4,5–5,6%, giỏ 23–26/26 → C1 64/67; độ phủ C1 98,0% / ≥3 56,9% / ≥5 25,7% ✓. Commit: ab4bfbd.
-  - 21/10 lô 13 (cuối, 3 truyện): Le déserteur du camp, Le séminaire des Pyrénées, La soprano de la sierra + 45 câu hỏi có audio (352 file); 1026–1035 từ, đúng cấp 4,6–5,3%, giỏ 22–25/26 → C1 67/67. Commit: (điền sau).
+  - 21/10 lô 13 (cuối, 3 truyện): Le déserteur du camp, Le séminaire des Pyrénées, La soprano de la sierra + 45 câu hỏi có audio (352 file); 1026–1035 từ, đúng cấp 4,6–5,3%, giỏ 22–25/26 → C1 67/67. Commit: 0fc38c4.
 - **Kết quả:** XONG 21/10/2026 — C1 đủ 67 truyện như app Anh (thêm 15 truyện, 225 câu hỏi có audio, 1.772 file MP3). Độ phủ C1 98,0% / ≥3 bài 57,5% / ≥5 bài 25,9% (đều ✓). Hạn mức dùng: 5 giờ 5% → 11%, tuần 13% → 14%. Chưa deploy.
 
 ---
