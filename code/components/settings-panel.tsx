@@ -257,7 +257,7 @@ export default function SettingsPanel() {
               Project Gutenberg
             </a>{" "}
             (La Fontaine, Ésope, Perrault, Leprince de Beaumont, Andersen – bản dịch David Soldi, anh em Grimm, Joseph
-            Jacobs, Andrew Lang, Daudet, Maupassant, Jules Verne, Tolstoï, Comtesse de Ségur, Hector Malot, Roman de Renart)
+            Jacobs, Andrew Lang, Daudet, Maupassant, Jules Verne, Tolstoï, Comtesse de Ségur, Hector Malot, Alexandre Dumas, Roman de Renart)
           </li>
           <li>Nghĩa tiếng Việt, câu ví dụ còn lại, bài đọc, truyện, khóa phát âm &amp; ngữ pháp — do dự án này biên soạn</li>
           <li>Giọng đọc — Microsoft Edge neural TTS (fr-FR), sinh sẵn lúc build</li>
