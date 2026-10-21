@@ -151,7 +151,7 @@ kết quả (donc, c'est pourquoi, si/tellement… que) · mục đích (pour, a
 mieux / meilleur) · avant de + inf, après avoir + phân từ · bày tỏ ý kiến (à mon avis, il me semble que).
 - **Nhật ký:**
   - 21/10 lô 1: 6 bài (plus-que-parfait, ke-chuyen-qua-khu, dang-sap-vua, tuong-lai-b1, conditionnel-present, si-imparfait) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; soát 390 px + desktop; danh sách 34 bài B1 ở `plan/.progress-G-B1.md`; 5 giờ 5% · tuần 7%; ed1c5a9
-  - 21/10 lô 2: 7 bài (đảo ngữ sau trạng từ, đảo ngữ văn phong, nhượng bộ C1, subjonctif trong mệnh đề quan hệ, quan hệ C1, vô nhân xưng, subjonctif C1) + 7 điểm inventory; 134/134 bài, 0 lỗi; 5 giờ 17% · tuần 9% sau lô 1; COMMIT
+  - 21/10 lô 2: 7 bài (đảo ngữ sau trạng từ, đảo ngữ văn phong, nhượng bộ C1, subjonctif trong mệnh đề quan hệ, quan hệ C1, vô nhân xưng, subjonctif C1) + 7 điểm inventory; 134/134 bài, 0 lỗi; 5 giờ 17% · tuần 9% sau lô 1; 5e7f4c4
   - 21/10 lô 2: 7 bài (subjonctif-cach-chia, subjonctif-il-faut-que, subjonctif-cam-xuc, y-kien-penser-que, hop-phan-tu, bi-dong, gerondif) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng/công thức 390 px; 5 giờ 6% · tuần 8%; 4b262b1
   - 21/10 lô 3: 7 bài (hai-dai-tu, dai-tu-menh-lenh, y-en-dong-tu, celui-celle, le-mien, dont, ce-qui-ce-que) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng 390 px; 5 giờ 8% · tuần 9%; 082265c
   - 21/10 lô 4: 7 bài (menh-de-quan-he-b1, loi-noi-gian-tiep, cau-hoi-dao-ngu, dong-tu-a-de, avant-de-apres-avoir, lien-tu-thoi-gian, nguyen-nhan) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; 5 giờ 9% · tuần 8%; 8d491de
