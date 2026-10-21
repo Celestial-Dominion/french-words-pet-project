@@ -288,9 +288,9 @@ sorte que, à force de, tant et si bien que).
 
 ## Đồng bộ tính năng với app Anh
 
-- **Mốc: app Anh `c9cb54a`** (21/10/2026). Đã port mọi tính năng tới mốc này (X-skip `1d0852e` xong 21/10; `c9cb54a` = optionWords, đã có từ trước), kèm thay
+- **Mốc: app Anh `f5fc93e`** (21/10/2026). Đã port mọi tính năng tới mốc này (X-skip `1d0852e` xong 21/10; `c9cb54a` = optionWords, đã có từ trước; `f5fc93e` nghe lại câu điền từ = `a370ee8`), kèm thay
   đổi chưa commit `optionWords` (phương án nghĩa lộ từ gốc) — lần sau thấy commit đó bên app Anh thì bỏ qua.
-- Lần sau: `cd ~/code/english_words && git log --oneline 7246f71..` → thêm việc mới vào file này → port, giữ đặc thù
+- Lần sau: `cd ~/code/english_words && git log --oneline f5fc93e..` → thêm việc mới vào file này → port, giữ đặc thù
   Pháp: mạo từ un/une, câu chọn giống (mở sau bài `giong-danh-tu`), chia động từ, `lib/starter.ts`, 6 cấp A1–C2,
   tiền tố `fr.`/`fr:`, DB `french-words`, backup `fr-words`, test vitest → đổi mốc ở dòng trên.
 
