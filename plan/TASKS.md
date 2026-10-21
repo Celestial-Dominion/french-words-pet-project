@@ -39,7 +39,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
-| L-FLELex | Soát cấp độ 11.000 từ theo FLELex (đổi cấp + sửa bài + bù độ phủ) | tùy chọn | script + nội dung | ~1–2% | pha 1: 136 từ đổi cấp; bài B1–C2 sửa xong; A1 + A2 đạt lại 3 mốc (24 bài mới); còn câu ví dụ |
+| L-FLELex | Soát cấp độ 11.000 từ theo FLELex (đổi cấp + sửa bài + bù độ phủ) | tùy chọn | script + nội dung | ~1–2% | **xong 21/10** (pha 1: 136 từ đổi cấp, 24 bài mới, 6 cấp đạt 3 mốc; pha 2 lệch 2 cấp chưa lên lịch) |
 
 Cộng (còn lại, sau P-A1): bắt buộc ~13,5% (độ phủ ~3,5% + ngữ pháp ~10%) · tùy chọn ~8% · tất cả ~21–22% tuần.
 Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì bài cấp trên dựa vào bài cấp dưới (trường `pre`).
@@ -290,7 +290,7 @@ sorte que, à force de, tant et si bien que).
   - 21/10 kèm theo: port việc đang làm dở bên app Anh (chưa commit) "lộ từ gốc dưới phương án nghĩa Việt" — câu
     Pháp→nghĩa / Nghe→nghĩa, sau khi chấm mỗi nghĩa hiện từ Pháp (kèm un/une) + IPA (`optionWordMap`).
 
-## L-FLELex — Soát cấp độ từ theo FLELex (tùy chọn) [ ]
+## L-FLELex — Soát cấp độ từ theo FLELex (tùy chọn) [x] (pha 1 xong 21/10/2026)
 
 - **Nguồn:** FLELex-Beacco (TreeTagger, https://cental.uclouvain.be/cefrlex/flelex/download/) tải 21/10 vào
   `code/scripts/flelex/` (git bỏ qua). Giấy phép **CC BY-NC-SA 4.0** (Pintard & François 2020; François et al. 2014) →
@@ -318,8 +318,12 @@ sorte que, à force de, tant et si bien que).
     thiếu 73→0; 839f43e
   - 21/10 lô 3: 14 bài A2 (a2-p05 10 bài phủ đủ 48 từ mới xuống A2; a2-p06 4 bài đưa từ 2→3 bài), 4 câu hỏi/bài,
     audio 399 câu; A2 ≥1 93,6→97,6 ✓ · ≥3 76,6→81,7 ✓ · ≥5 40,6→41,1 ✓; thiếu 85→0; 5 giờ 6% · tuần 18%; ffecf1b
-- **Còn lại:** câu ví dụ của 122 từ xuống cấp (đo từ
-  vượt cấp mới, viết lại câu quá khó: `scripts/out/examples.json` + audio + shard); pha 2 (lệch 2 cấp, ~1.200 từ) chỉ khi
+  - 21/10 lô 4: câu ví dụ của 122 từ kéo xuống — `node scripts/flelex-examples-check.mjs --min 3` (câu "vừa sức" = mọi từ
+    khác ≤ cấp mới + 1, tối đa 1 từ vượt): trước 2/5 câu: 7 từ · 3: 11 · 4: 33 · 5: 71; viết lại 7 câu qua `ex5/fix.txt`
+    (africain, canadien, chômeur, culturel, mail, privilégier, technologie) → mọi từ ≥ 3/5; merge + shard + audio 7 câu; COMMIT4
+  - **Kết quả pha 1:** 136 từ đổi cấp; bộ kiểm 0 lỗi mọi cấp (B1–C2 0 cảnh báo, A1/A2 = cảnh báo cũ); 6 cấp đạt 3 mốc độ phủ
+    (A1 99,6/90,0/65,1 · A2 97,6/81,7/41,1); 24 bài đọc mới (a1-p04, a2-p05, a2-p06). Cả việc: 5 giờ 2→6%, tuần 17→18%.
+- **Còn lại (chưa lên lịch):** pha 2 (lệch 2 cấp, ~1.200 từ) chỉ khi
   người dùng muốn — chia lô theo cấp, mỗi lô sửa bài như trên.
 
 ---
