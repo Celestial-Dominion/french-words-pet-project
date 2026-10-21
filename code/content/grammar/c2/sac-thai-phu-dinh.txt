@@ -1,0 +1,63 @@
+=== sac-thai-phu-dinh
+sum: Một số cấu trúc có hình thức phủ định nhưng nghĩa khẳng định, nghe trang trọng và tế nhị. Ne pas laisser de + nguyên mẫu: không khỏi (cela ne laisse pas de m'inquiéter). Ne pas manquer de: chắc chắn sẽ, không quên (je ne manquerai pas de vous écrire). Non sans + danh từ: có kèm, không phải không (il accepta, non sans hésitation). Ne… que trop: quá rõ (je ne le sais que trop). Si je ne me trompe: nếu tôi không nhầm.
+form: ne pas laisser de = không khỏi | Cela ne laisse pas de surprendre.
+form: ne pas manquer de = chắc chắn sẽ | Je ne manquerai pas de venir.
+form: non sans + danh từ | non sans peine
+form: ne… que trop = quá rõ | Je ne le sais que trop.
+cast: karim zoe
+bg: office
+words: projet, dépense, résultat, collègue
+
+#hook
+zoe: Le directeur a accepté notre projet ? | Giám đốc đã duyệt dự án của chúng ta à? [surprised]
+karim: Oui, non sans hésitation. Et sa réponse ne laisse pas de m'inquiéter. | Ừ, nhưng có do dự. Và câu trả lời của ông ấy không khỏi làm anh lo. [worried]
+> [[Non sans hésitation]]: có kèm do dự. [[Ne laisse pas de m'inquiéter]]: không khỏi làm tôi lo. Hình thức phủ định, nhưng nghĩa khẳng định.
+
+#meaning
+vs: Cela m'inquiète un peu. | Điều đó làm tôi hơi lo. || câu thường
+vs: Cela ne laisse pas de m'inquiéter. | Điều đó không khỏi làm tôi lo. || trang trọng, tế nhị
+> Cấu trúc này nói một điều khẳng định qua hình thức phủ định, nên nghe nhẹ nhàng và trang trọng hơn.
+
+#form
+th: Cấu trúc | Nghĩa | Ví dụ
+tb: ne pas laisser de | không khỏi | Cela ne laisse pas d'étonner.
+tb: ne pas manquer de | chắc chắn sẽ | Il ne manquera pas de le dire.
+tb: non sans | có kèm | non sans regret
+tb: ne… que trop | quá rõ, quá | Il n'a que trop attendu.
+tb: si je ne me trompe | nếu tôi không nhầm | Vous êtes nouveau, si je ne me trompe.
+> [[Ne pas manquer de]] còn dùng trong lời hứa lịch sự: [[je ne manquerai pas de vous tenir informé]].
+
+#examples
+- Je ne {manquerai|k} pas de vous écrire dès mon arrivée. | Tôi nhất định sẽ viết thư cho anh ngay khi đến nơi.
+- Il a quitté son pays, {non|k} sans tristesse. | Anh ấy đã rời quê hương, không phải không buồn.
+- Je ne connais {que|k} trop ce genre de problème. | Tôi biết quá rõ loại vấn đề này.
+- Ce résultat ne {laisse|k} pas de surprendre. | Kết quả này không khỏi gây bất ngờ.
+- Vous êtes le nouveau collègue, si je ne me {trompe|k}. | Anh là đồng nghiệp mới, nếu tôi không nhầm.
+
+#mistakes
+x: Il a accepté, non sans de difficultés. => Il a accepté, non sans difficulté. | Anh ấy đã đồng ý, không phải không khó khăn. >> Sau [[non sans]] là danh từ không mạo từ.
+x: Je ne manquerai pas vous écrire. => Je ne manquerai pas de vous écrire. | Tôi nhất định sẽ viết thư cho anh. >> [[Manquer de]] cần [[de]].
+x: Je le sais que trop. => Je ne le sais que trop. | Tôi biết quá rõ điều đó. >> [[Ne… que trop]] cần [[ne]] trong văn viết.
+
+#dialogue
+zoe: Il a peur que le projet coûte trop cher ? | Ông ấy sợ dự án tốn quá nhiều tiền à? [thinking]
+karim: Oui. Et il n'a pas tort ; je ne connais que trop nos dépenses. | Ừ. Và ông ấy không sai; anh biết quá rõ các khoản chi của chúng ta. [worried]
+zoe: Alors on fera attention. Je ne manquerai pas de vérifier chaque dépense. | Vậy mình sẽ cẩn thận. Em nhất định sẽ kiểm tra từng khoản chi. [explain]
+karim: Merci. Avec toi, ce projet réussira, si je ne me trompe ! | Cảm ơn em. Có em, dự án này sẽ thành công, nếu anh không nhầm! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi nhất định sẽ viết thư cho anh ngay khi đến nơi. => Je ne manquerai pas de vous écrire dès mon arrivée. | Tôi nhất định sẽ viết thư cho anh ngay khi đến nơi.
+? Nói bằng tiếng Pháp: Anh ấy đã rời quê hương, không phải không buồn. => Il a quitté son pays, non sans tristesse. | Anh ấy đã rời quê hương, không phải không buồn.
+
+#recap
+> Phủ định mang nghĩa khẳng định: [[ne pas laisser de]] (không khỏi), [[ne pas manquer de]] (chắc chắn sẽ), [[non sans]] (có kèm), [[ne… que trop]] (quá rõ), [[si je ne me trompe]] (nếu tôi không nhầm).
+
+#practice
+fill: Je ne manquerai pas ___ vous écrire dès mon arrivée. | de* / à / pour || manquer de.
+fill: Il a quitté son pays, non ___ tristesse. | sans* / pas / plus || non sans.
+fill: Ce résultat ne laisse pas ___ surprendre. | de* / à / pour || laisser de.
+contrast: Vous êtes le nouveau collègue, si je ne me ___ . | trompe* / trompe pas || ne một mình.
+contrast: Il a accepté, non sans ___ . | difficulté* / des difficultés || non sans, không mạo từ.
+type: Je ne connais ___ trop ce genre de problème. | que || ne… que trop.
+fix: Il a accepté, non sans de difficultés. | Il a accepté, non sans difficulté.* / Il a accepté, non pas sans difficulté de. / Il a accepté, sans non difficulté. || non sans với danh từ.
+listen: Ce résultat ne laisse pas de surprendre. | Ce résultat ne laisse pas de surprendre.* / Ce résultat ne va pas surprendre. / Ce résultat ne cesse pas de surprendre. || ne laisse pas de.

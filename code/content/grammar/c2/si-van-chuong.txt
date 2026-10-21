@@ -1,0 +1,62 @@
+=== si-van-chuong
+sum: Văn chương cổ điển dùng subjonctif plus-que-parfait (eût su, fût venu) thay cho cả hai vế của câu điều kiện loại ba: s'il avait su, il serait venu thành s'il eût su, il fût venu. Có thể bỏ si và đảo ngữ: eût-il su la vérité, il aurait agi autrement. Cụm cố định: n'eût été + danh từ (nếu không có, quá khứ), n'était + danh từ (nếu không có, hiện tại). Chỉ cần nhận biết khi đọc; khi nói vẫn dùng si với plus-que-parfait.
+form: si + subjonctif plus-que-parfait | S'il l'eût su, il fût venu.
+form: đảo ngữ, không có si | Eût-il su, il serait venu.
+form: n'eût été + danh từ = nếu không có | N'eût été la pluie, …
+form: khi nói | S'il l'avait su, il serait venu.
+cast: mme-martin lucas
+bg: classroom
+words: roi, courage, fatigue, livre
+
+#hook
+mme-martin: Écoutez cette phrase : s'il l'eût voulu, il eût été roi. | Các em nghe câu này: “nếu ông ấy muốn, ông ấy đã làm vua.” [explain]
+lucas: Eût voulu, eût été... On ne dirait pas plutôt : s'il l'avait voulu, il aurait été roi ? | “Eût voulu, eût été”... Người ta chẳng nói “s'il l'avait voulu, il aurait été roi” sao cô? [thinking]
+> Đúng vậy. Trong văn chương, [[eût voulu]] thay [[avait voulu]], [[eût été]] thay [[aurait été]]. Nghĩa giống hệt câu điều kiện loại ba.
+
+#meaning
+vs: S'il avait pu, il serait venu. | Nếu có thể thì anh ấy đã đến. || câu thường
+vs: S'il eût pu, il fût venu. | Nếu có thể thì anh ấy đã đến. || văn chương: subjonctif plus-que-parfait
+> Hai câu cùng nghĩa. Dạng văn chương chỉ gặp trong sách cổ điển hoặc văn rất trang trọng.
+
+#form
+th: Câu thường | Văn chương | Nghĩa
+tb: s'il avait pu | s'il eût pu | nếu anh ấy đã có thể
+tb: il aurait fallu | il eût fallu | lẽ ra phải
+tb: s'il avait su, il… | eût-il su, il… | nếu anh ấy biết
+tb: sans la pluie | n'eût été la pluie | nếu không có mưa
+> [[N'était]] (hiện tại) và [[n'eût été]] (quá khứ) nghĩa là nếu không có, đi với một danh từ.
+
+#examples
+- S'il {eût|k} écouté ses amis, il n'eût pas tout perdu. | Nếu anh ta nghe lời bạn bè, anh ta đã không mất hết.
+- {Eût|k}-elle été plus prudente, l'accident n'aurait pas eu lieu. | Giá cô ấy cẩn thận hơn thì tai nạn đã không xảy ra.
+- N'eût {été|k} son courage, nous serions tous morts. | Nếu không có lòng dũng cảm của anh ấy, chúng tôi đã chết hết.
+- {N'était|k} la fatigue, je continuerais volontiers. | Nếu không mệt, tôi sẵn lòng làm tiếp.
+- Il {eût|k} mieux valu se taire. | Lẽ ra im lặng thì hơn.
+
+#mistakes
+x: Si elle eût su, elle aurait parti. => Si elle eût su, elle fût partie. | Nếu biết thì cô ấy đã đi. >> [[Partir]] dùng [[être]], hợp giống: [[fût partie]].
+x: N'eût pas été la pluie, nous serions sortis. => N'eût été la pluie, nous serions sortis. | Nếu không có trận mưa, chúng tôi đã ra ngoài. >> Cụm cố định [[n'eût été]] không có [[pas]].
+x: S'il eut su, il fût venu. => S'il eût su, il fût venu. | Nếu biết thì anh ấy đã đến. >> [[Subjonctif]] cần dấu mũ: [[eût]], khác [[eut]] của [[passé simple]].
+
+#dialogue
+lucas: Et n'eût été, ça veut dire quoi ? | Còn “n'eût été” nghĩa là gì ạ? [thinking]
+mme-martin: Sans. N'eût été ton aide, je n'aurais jamais fini ce livre. | “Nếu không có”. Nếu không có em giúp, cô đã không bao giờ viết xong cuốn sách này. [happy]
+lucas: Je dois l'utiliser dans mes devoirs ? | Em có phải dùng nó trong bài làm không ạ? [worried]
+mme-martin: Non ! Le reconnaître en lisant, c'est suffisant. | Không! Nhận ra khi đọc là đủ rồi. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Lẽ ra im lặng thì hơn. => Il eût mieux valu se taire. | Lẽ ra im lặng thì hơn.
+? Nói bằng tiếng Pháp: Nếu không có lòng dũng cảm của anh ấy, chúng tôi đã chết hết. => N'eût été son courage, nous serions tous morts. | Nếu không có lòng dũng cảm của anh ấy, chúng tôi đã chết hết.
+
+#recap
+> Văn chương dùng [[subjonctif plus-que-parfait]] ([[eût su]], [[fût venu]]) thay cho câu điều kiện loại ba; đảo ngữ [[eût-il su]] thay cho [[si]]; [[n'eût été]], [[n'était]]: nếu không có. Khi nói, dùng [[si]] với [[plus-que-parfait]] và [[conditionnel passé]].
+
+#practice
+fill: S'il ___ écouté ses amis, il n'eût pas tout perdu. | eût* / eut / aurait || subjonctif plus-que-parfait.
+fill: N'eût ___ son courage, nous serions tous morts. | été* / pas été / étant || n'eût été.
+fill: Il eût mieux ___ se taire. | valu* / valoir / valait || il eût mieux valu.
+contrast: S'il ___ su, il fût venu. | eût* / eut || subjonctif có dấu mũ.
+contrast: Si elle eût su, elle ___ partie. | fût* / eût || partir dùng être.
+type: Je continuerais volontiers, n'___ la fatigue. | était || n'était: nếu không có.
+fix: N'eût pas été la pluie, nous serions sortis. | N'eût été la pluie, nous serions sortis.* / N'eut été la pluie, nous serions sortis. / N'eût pas la pluie, nous serions sortis. || n'eût été, không có pas.
+listen: Il eût mieux valu se taire. | Il eût mieux valu se taire.* / Il vaut mieux se taire. / Il aurait mieux valu parler. || il eût mieux valu.

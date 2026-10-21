@@ -1966,6 +1966,85 @@
     "reported-past"
    ],
    "pri": 1
+  },
+  {
+   "id": "literary-conditional",
+   "lv": "c2",
+   "cat": "conditionals",
+   "name": "Conditionnel littéraire",
+   "vi": "Câu điều kiện văn chương: subjonctif plus-que-parfait thay cả hai vế câu si loại ba (s'il l'eût su, il fût venu), đảo ngữ thay si (eût-il su…), n'eût été / n'était + danh từ (nếu không có), il eût mieux valu; chỉ cần nhận biết",
+   "pre": [
+    "subj-imparfait",
+    "si-pqp"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "literary-inversion",
+   "lv": "c2",
+   "cat": "sentence",
+   "name": "Inversion littéraire",
+   "vi": "Đảo ngữ văn chương: tính từ hoặc động từ lên đầu, chủ ngữ danh từ ra sau (Rares sont ceux qui…, Nombreux sont…, Telle est la règle, Reste à savoir, Restent deux problèmes, Vient ensuite…, Ainsi parla le roi); hợp với chủ ngữ đứng sau",
+   "pre": [
+    "stylistic-inversion"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "free-indirect",
+   "lv": "c2",
+   "cat": "clauses",
+   "name": "Discours indirect libre",
+   "vi": "Lời nói gián tiếp tự do: suy nghĩ của nhân vật nằm trong câu kể, không có động từ dẫn, không ngoặc kép; thì đổi như lời gián tiếp (imparfait, conditionnel, plus-que-parfait) nhưng giữ câu hỏi, cảm thán của nhân vật (Il attendait. Viendrait-elle ?)",
+   "pre": [
+    "reported-past",
+    "narrative-tenses"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "exclamative-rhetorical",
+   "lv": "c2",
+   "cat": "sentence",
+   "name": "Exclamation et question rhétorique",
+   "vi": "Cảm thán và câu hỏi tu từ: que de + danh từ (biết bao), combien + câu, qui l'eût cru ?, comment ne pas… ?, à quoi bon + nguyên mẫu ?",
+   "pre": [
+    "inversion-questions"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "negation-c2",
+   "lv": "c2",
+   "cat": "negation",
+   "name": "Négations à sens positif",
+   "vi": "Phủ định mang nghĩa khẳng định: ne pas laisser de (không khỏi), ne pas manquer de (chắc chắn sẽ), non sans + danh từ (có kèm), ne… que trop (quá rõ), si je ne me trompe (nếu tôi không nhầm)",
+   "pre": [
+    "negation-c1"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "defective-verbs",
+   "lv": "c2",
+   "cat": "verbs",
+   "name": "Verbes défectifs",
+   "vi": "Động từ cổ chỉ còn trong cụm cố định: ci-gît (gésir), advienne que pourra (advenir), sans coup férir (férir), par ouï-dire (ouïr), il sied (seoir), échoir (rơi vào, đến hạn); chỉ cần hiểu",
+   "pre": [
+    "passe-simple"
+   ],
+   "pri": 3
+  },
+  {
+   "id": "concession-c2",
+   "lv": "c2",
+   "cat": "clauses",
+   "name": "Concession C2",
+   "vi": "Nhượng bộ C2: quelque + tính từ + que + subjonctif (quelque là trạng từ, không đổi: quelque riches qu'ils soient), quelques + danh từ + que (hợp số), n'en… pas moins (dù vậy vẫn), pour autant (không vì thế mà), il n'empêche que (dù sao thì)",
+   "pre": [
+    "concession-c1"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

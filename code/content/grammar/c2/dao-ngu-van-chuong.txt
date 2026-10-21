@@ -1,0 +1,62 @@
+=== dao-ngu-van-chuong
+sum: Văn viết C2 đưa tính từ hoặc động từ lên đầu câu, đẩy chủ ngữ danh từ ra sau để nhấn mạnh hoặc giữ nhịp: Rares sont ceux qui comprennent (hiếm ai hiểu), Nombreux sont les touristes qui… (có rất nhiều du khách), Telle est la vérité (sự thật là như vậy), Reste à savoir si… (còn phải xem…), Vient ensuite la question du prix (tiếp theo là…), Ainsi parla le roi. Tính từ và động từ hợp với chủ ngữ đứng sau.
+form: tính từ + être + chủ ngữ | Rares sont les erreurs.
+form: tel + être + chủ ngữ | Telle est la règle.
+form: reste, restent + chủ ngữ | Reste une question.
+form: vient, suit + chủ ngữ | Vient ensuite le dessert.
+cast: ines dr-roux
+bg: library
+words: étudiant, touriste, musée, conseil
+
+#hook
+dr-roux: Rares sont les étudiants qui lisent encore ces vieux livres. | Hiếm có sinh viên nào còn đọc những cuốn sách cũ này. [sad]
+ines: Rares sont ? Vous voulez dire : les étudiants sont rares ? | “Rares sont”? Ý thầy là sinh viên như thế rất hiếm ạ? [thinking]
+> Đúng. Văn viết đưa [[rares]] lên đầu, đẩy chủ ngữ ra sau để nhấn mạnh: [[rares sont les étudiants qui…]].
+
+#meaning
+vs: Les gens qui le savent sont rares. | Người biết điều đó rất hiếm. || trật tự thường
+vs: Rares sont les gens qui le savent. | Hiếm ai biết điều đó. || đảo ngữ: nhấn mạnh, trang trọng
+> Đảo ngữ giúp chủ ngữ dài, có mệnh đề [[qui]] theo sau, đứng cuối câu cho cân đối.
+
+#form
+th: Mẫu | Ví dụ | Nghĩa
+tb: rares, nombreux | Nombreux sont les candidats. | có nhiều ứng viên
+tb: tel est | Tel est mon avis. | ý kiến tôi là vậy
+tb: reste, restent | Restent deux problèmes. | còn lại hai vấn đề
+tb: vient, suit | Suit une longue discussion. | tiếp theo là một cuộc thảo luận dài
+> Tính từ và động từ hợp giống số với chủ ngữ đứng sau: [[rares sont les erreurs]], [[restent deux problèmes]].
+
+#examples
+- {Nombreux|k} sont les touristes qui visitent ce musée. | Có rất nhiều du khách đến thăm bảo tàng này.
+- {Telle|k} est la décision du conseil. | Quyết định của hội đồng là như vậy.
+- {Reste|k} à savoir s'il acceptera. | Còn phải xem anh ấy có đồng ý không.
+- {Viennent|k} ensuite les questions d'argent. | Tiếp theo là các vấn đề tiền bạc.
+- {Ainsi|k} parlait le vieil homme. | Ông lão đã nói như vậy.
+
+#mistakes
+x: Rare sont les étudiants qui lisent. => Rares sont les étudiants qui lisent. | Hiếm sinh viên nào còn đọc sách. >> Tính từ hợp với chủ ngữ số nhiều đứng sau: [[rares]].
+x: Tel est la situation. => Telle est la situation. | Tình hình là như vậy. >> [[Situation]] giống cái: [[telle]].
+x: Ainsi il parla le roi. => Ainsi parla le roi. | Nhà vua đã nói như vậy. >> Chủ ngữ danh từ đã đứng sau, không thêm đại từ.
+
+#dialogue
+ines: Pourtant, nombreux sont les jeunes qui aiment les classiques ! | Thế nhưng có nhiều bạn trẻ thích sách kinh điển lắm ạ! [happy]
+dr-roux: Vraiment ? Reste à le prouver ! | Thật không? Còn phải chứng minh đã! [thinking]
+ines: Je vous apporterai la liste de mon club de lecture. | Em sẽ mang cho thầy danh sách câu lạc bộ đọc sách của em. [happy]
+dr-roux: Telle est la jeunesse : pleine de surprises ! | Tuổi trẻ là như vậy: đầy bất ngờ! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Quyết định của hội đồng là như vậy. => Telle est la décision du conseil. | Quyết định của hội đồng là như vậy.
+? Nói bằng tiếng Pháp: Còn phải xem anh ấy có đồng ý không. => Reste à savoir s'il acceptera. | Còn phải xem anh ấy có đồng ý không.
+
+#recap
+> Đảo ngữ văn chương: [[rares sont]], [[nombreux sont]], [[tel est]], [[reste à]], [[vient ensuite]], [[ainsi parlait]]. Tính từ và động từ hợp với chủ ngữ đứng sau.
+
+#practice
+fill: Chaque été, nombreux ___ les touristes qui visitent ce musée. | sont* / est / ont || hợp với chủ ngữ số nhiều.
+fill: Telle ___ la décision du conseil. | est* / sont / soit || tel est.
+fill: Reste ___ savoir s'il acceptera. | à* / de / pour || reste à savoir.
+contrast: Voici les faits ; ___ est la situation. | telle* / tel || situation giống cái.
+contrast: Voici mon idée ; ___ est mon avis. | tel* / telle || avis giống đực.
+type: Ainsi ___ (parler, passé simple) le roi. | parla || ainsi đầu câu, đảo ngữ.
+fix: Rare sont les étudiants qui lisent. | Rares sont les étudiants qui lisent.* / Rares est les étudiants qui lisent. / Rare est les étudiants qui lisent. || rares hợp số nhiều.
+listen: Reste à savoir s'il acceptera. | Reste à savoir s'il acceptera.* / Il reste à savoir s'il a accepté. / Reste à voir s'il acceptera. || reste à savoir.

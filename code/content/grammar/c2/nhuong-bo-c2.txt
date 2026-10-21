@@ -1,0 +1,62 @@
+=== nhuong-bo-c2
+sum: Nhượng bộ C2 trong văn trang trọng. Quelque + tính từ + que + subjonctif: dù… đến đâu; quelque ở đây là trạng từ nên không đổi (quelque riches qu'ils soient). Quelques + danh từ + que + subjonctif: dù… nào; hợp số với danh từ (quelques efforts qu'il fasse). N'en… pas moins: dù vậy vẫn (il est riche ; il n'en est pas moins malheureux). Pour autant: không vì thế mà. Il n'empêche que: dù sao thì.
+form: quelque + tính từ + que + subjonctif | quelque difficile que ce soit
+form: quelques + danh từ + que + subjonctif | quelques efforts qu'il fasse
+form: n'en… pas moins = dù vậy vẫn | Il n'en est pas moins vrai.
+form: pour autant = không vì thế mà | Il n'a pas renoncé pour autant.
+cast: linh hugo
+bg: cafe
+words: effort, excuse, progrès, film
+
+#hook
+linh: Quelques efforts qu'il fasse, mon frère n'arrive pas à parler français. | Dù cố gắng đến mấy, em trai em vẫn không nói được tiếng Pháp. [sad]
+hugo: Il échoue souvent, mais il n'abandonne pas pour autant. | Cậu ấy hay thất bại, nhưng không vì thế mà bỏ cuộc. [explain]
+> [[Quelques efforts qu'il fasse]]: dù cố gắng đến mấy. [[Pour autant]]: không vì thế mà. Cả hai thuộc văn phong trang trọng.
+
+#meaning
+vs: Même s'il est riche, il est malheureux. | Dù giàu, anh ấy vẫn bất hạnh. || même si: thông thường
+vs: Il est riche ; il n'en est pas moins malheureux. | Anh ấy giàu; dù vậy vẫn bất hạnh. || n'en… pas moins: trang trọng
+> [[N'en… pas moins]] cho biết điều vừa nói không làm thay đổi điều tiếp theo.
+
+#form
+th: Cấu trúc | Nghĩa | Ví dụ
+tb: quelque, tính từ, que | dù… đến đâu | quelque riches qu'ils soient
+tb: quelques, danh từ, que | dù… nào | quelques raisons qu'il donne
+tb: pour autant | không vì thế mà | Il n'a pas changé pour autant.
+tb: il n'empêche que | dù sao thì | Il n'empêche qu'il a tort.
+> [[Quelque]] trước tính từ là trạng từ nên không đổi; trước danh từ thì hợp số: [[quelques efforts]].
+
+#examples
+- {Quelque|k} intelligents qu'ils soient, ils ont besoin d'aide. | Dù thông minh đến đâu, họ vẫn cần giúp đỡ.
+- {Quelques|k} excuses qu'il trouve, personne ne le croit. | Dù anh ta viện cớ gì, cũng chẳng ai tin.
+- Le film est long ; il n'en est pas {moins|k} passionnant. | Bộ phim dài; dù vậy vẫn rất hấp dẫn.
+- Elle a perdu ; elle ne s'est pas découragée pour {autant|k}. | Cô ấy đã thua; nhưng không vì thế mà nản lòng.
+- Tu as peut-être raison. Il {n'empêche|k} que tu aurais dû me prévenir. | Có thể bạn đúng. Dù sao thì lẽ ra bạn nên báo tôi.
+
+#mistakes
+x: Quelques riches qu'ils soient, ils restent simples. => Quelque riches qu'ils soient, ils restent simples. | Dù giàu đến đâu, họ vẫn giản dị. >> Trước tính từ, [[quelque]] là trạng từ: không thêm [[s]].
+x: Quelques efforts qu'il fait, il échoue. => Quelques efforts qu'il fasse, il échoue. | Dù cố gắng thế nào, anh ấy vẫn thất bại. >> [[Quelque… que]] đi với [[subjonctif]].
+x: Elle est fatiguée ; elle n'est pas moins souriante. => Elle est fatiguée ; elle n'en est pas moins souriante. | Cô ấy mệt; dù vậy vẫn tươi cười. >> Cụm cố định cần [[en]]: [[n'en… pas moins]].
+
+#dialogue
+linh: Tu crois qu'il devrait arrêter ? | Anh nghĩ nó nên bỏ không? [worried]
+hugo: Pas du tout ! Quelque lents que soient ses progrès, il avance. | Không hề! Dù tiến bộ chậm đến đâu, cậu ấy vẫn đang tiến lên. [explain]
+linh: C'est vrai. Il n'empêche qu'il est découragé. | Đúng thế. Dù sao thì nó cũng đang nản. [sad]
+hugo: Invite-le ici. On parlera français ensemble, ça l'aidera ! | Mời cậu ấy đến đây đi. Bọn mình sẽ nói tiếng Pháp cùng nhau, sẽ giúp được cậu ấy! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Dù thông minh đến đâu, họ vẫn cần giúp đỡ. => Quelque intelligents qu'ils soient, ils ont besoin d'aide. | Dù thông minh đến đâu, họ vẫn cần giúp đỡ.
+? Nói bằng tiếng Pháp: Bộ phim dài; dù vậy vẫn rất hấp dẫn. => Le film est long ; il n'en est pas moins passionnant. | Bộ phim dài; dù vậy vẫn rất hấp dẫn.
+
+#recap
+> Nhượng bộ C2: [[quelque]] với tính từ và [[que]] (không đổi), [[quelques]] với danh từ và [[que]] (hợp số), đều đi với [[subjonctif]]; [[n'en… pas moins]] (dù vậy vẫn), [[pour autant]] (không vì thế mà), [[il n'empêche que]] (dù sao thì).
+
+#practice
+fill: Ils ont besoin d'aide, ___ intelligents qu'ils soient. | quelque* / quelques / quels || trước tính từ: không đổi.
+fill: Il échoue, quelques efforts qu'il ___ . | fasse* / fait / fera || subjonctif.
+fill: Le film est long ; il n'en est pas ___ passionnant. | moins* / plus / autant || n'en… pas moins.
+contrast: Ils restent simples, ___ riches qu'ils soient. | quelque* / quelques || trước tính từ: trạng từ.
+contrast: Il échoue, ___ efforts qu'il fasse. | quelques* / quelque || trước danh từ số nhiều: hợp số.
+type: Tu as peut-être raison. Il n'___ que tu aurais dû me prévenir. | empêche || il n'empêche que.
+fix: Quelques riches qu'ils soient, ils restent simples. | Quelque riches qu'ils soient, ils restent simples.* / Quelque riches qu'ils sont, ils restent simples. / Quels que riches qu'ils soient, ils restent simples. || quelque trước tính từ.
+listen: Elle a perdu ; elle ne s'est pas découragée pour autant. | Elle a perdu ; elle ne s'est pas découragée pour autant.* / Elle a perdu ; elle s'est découragée tout de suite. / Elle a gagné ; elle ne s'est pas reposée pour autant. || pour autant.

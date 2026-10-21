@@ -1,0 +1,61 @@
+=== cam-than-tu-tu
+sum: Câu cảm thán và câu hỏi tu từ C2. Que de + danh từ: biết bao (que de souvenirs !). Combien + câu: biết bao (combien il a changé !). Câu hỏi tu từ không cần trả lời: qui l'eût cru ? (ai mà ngờ được?), comment ne pas + nguyên mẫu ? (làm sao mà không… được?), à quoi bon + nguyên mẫu ? (… thì được gì?).
+form: que de + danh từ ! | Que de monde !
+form: combien + câu ! | Combien je t'aime !
+form: comment ne pas + nguyên mẫu ? | Comment ne pas rire ?
+form: à quoi bon + nguyên mẫu ? | À quoi bon pleurer ?
+cast: papi chloe
+bg: home-lake
+words: souvenir, photo, plage, endroit
+
+#hook
+papi: Regarde ces photos... Que de souvenirs ! | Nhìn những tấm ảnh này... Biết bao kỷ niệm! [happy]
+chloe: Tu étais si jeune ! Qui l'eût cru ? | Hồi đó ông trẻ quá! Ai mà ngờ được? [surprised]
+> [[Que de souvenirs]]: biết bao kỷ niệm. [[Qui l'eût cru]]: ai mà ngờ được, một câu hỏi không cần trả lời.
+
+#meaning
+vs: Il y a beaucoup de souvenirs ici. | Ở đây có nhiều kỷ niệm. || câu kể
+vs: Que de souvenirs ici ! | Ở đây biết bao kỷ niệm! || cảm thán: xúc động
+> [[Que de]], [[combien]] biến một câu kể thành lời cảm thán đầy cảm xúc.
+
+#form
+th: Mẫu | Ví dụ | Nghĩa
+tb: que de | Que de temps perdu ! | phí biết bao thời gian
+tb: combien | Combien il a changé ! | anh ấy đã thay đổi biết bao
+tb: qui l'eût cru | Qui l'eût cru ? | ai mà ngờ được
+tb: à quoi bon | À quoi bon insister ? | cố làm gì nữa
+> Câu hỏi tu từ phủ định khẳng định điều ngược lại: [[comment ne pas l'aimer]] nghĩa là ai cũng yêu.
+
+#examples
+- {Que|k} de monde sur cette plage ! | Bãi biển này đông người biết bao!
+- {Combien|k} de fois je te l'ai dit ! | Tôi đã nói với cậu biết bao nhiêu lần rồi!
+- Comment ne pas {aimer|k} un endroit pareil ? | Làm sao mà không yêu một nơi như thế được?
+- À quoi {bon|k} se disputer maintenant ? | Giờ cãi nhau thì được gì?
+
+#mistakes
+x: Que des livres dans cette maison ! => Que de livres dans cette maison ! | Ngôi nhà này biết bao nhiêu sách! >> Cảm thán: [[que de]], không có mạo từ; [[que des]] nghĩa là chỉ toàn.
+x: Combien elle a beaucoup souffert ! => Combien elle a souffert ! | Cô ấy đã chịu khổ biết bao! >> [[Combien]] đã mang nghĩa biết bao, không thêm [[beaucoup]].
+x: À quoi bon de pleurer ? => À quoi bon pleurer ? | Khóc thì được gì? >> Sau [[à quoi bon]] là nguyên mẫu, không có [[de]].
+
+#dialogue
+chloe: Et cette jeune femme, c'est mamie ? | Còn người phụ nữ trẻ này là bà ạ? [thinking]
+papi: Oui. Comment ne pas tomber amoureux d'elle ? | Ừ. Làm sao mà không phải lòng bà được chứ? [happy]
+chloe: Combien vous avez dû être heureux ! | Hai ông bà hẳn đã hạnh phúc biết bao! [happy]
+papi: Que de belles années, ma chérie ! | Biết bao năm tháng đẹp đẽ, cháu yêu ạ! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi đã nói với cậu biết bao nhiêu lần rồi! => Combien de fois je te l'ai dit ! | Tôi đã nói với cậu biết bao nhiêu lần rồi!
+? Nói bằng tiếng Pháp: Giờ cãi nhau thì được gì? => À quoi bon se disputer maintenant ? | Giờ cãi nhau thì được gì?
+
+#recap
+> Cảm thán: [[que de]] với danh từ, [[combien]] với câu (biết bao). Câu hỏi tu từ: [[qui l'eût cru]], [[comment ne pas]], [[à quoi bon]]: hỏi mà không cần trả lời.
+
+#practice
+fill: Que ___ monde sur cette plage ! | de* / des / du || que de, không mạo từ.
+fill: Comment ne ___ aimer un endroit pareil ? | pas* / que / rien || comment ne pas.
+fill: À quoi ___ se disputer maintenant ? | bon* / bien / sert || à quoi bon.
+contrast: Il y a ___ souvenirs ici. | beaucoup de* / que de || câu kể.
+contrast: Mon Dieu, ___ de livres dans cette maison ! | que* / quels || cảm thán: que de.
+type: Qui l'___ (avoir) cru ? | eût || subjonctif plus-que-parfait.
+fix: Combien elle a beaucoup souffert ! | Combien elle a souffert !* / Combien elle a souffert beaucoup ! / Combien de elle a souffert ! || không thêm beaucoup.
+listen: Comment ne pas aimer un endroit pareil ? | Comment ne pas aimer un endroit pareil ?* / Comment peut-on aimer un endroit pareil ? / Comment ne pas aider un enfant pareil ? || comment ne pas aimer.

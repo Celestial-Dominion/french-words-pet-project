@@ -1,0 +1,63 @@
+=== dong-tu-khuyet
+sum: Một số động từ cổ chỉ còn vài dạng, sống trong cụm cố định. Gésir (nằm): ci-gît (nơi đây yên nghỉ) trên bia mộ. Advenir (xảy đến): advienne que pourra (đến đâu thì đến). Férir (đánh): sans coup férir (dễ dàng, không tốn sức). Ouïr (nghe): par ouï-dire (nghe đồn). Seoir (hợp): cela vous sied (cái đó hợp với bạn). Échoir (rơi vào): la tâche lui échoit. Chỉ cần hiểu và dùng nguyên cụm.
+form: ci-gît + người | Ci-gît un poète.
+form: advienne que pourra | Je pars, advienne que pourra.
+form: sans coup férir | Ils gagnèrent sans coup férir.
+form: par ouï-dire | Je le sais par ouï-dire.
+cast: m-dubois nam
+bg: village
+words: village, tombe, armée, tâche
+gloss: gésir, gît, férir, ouïr, ouï-dire, seoir, sied, échoir, échoit, advenir, advienne, fondateur
+
+#hook
+nam: Regardez cette vieille pierre : ci-gît le fondateur du village. Gît, c'est quel verbe ? | Bác xem tấm đá cũ này: “ci-gît le fondateur du village”. “Gît” là động từ gì ạ? [thinking]
+m-dubois: Gésir, un verbe très ancien. Aujourd'hui, on ne l'utilise presque plus, sauf sur les tombes. | “Gésir”, một động từ rất cổ. Ngày nay hầu như không ai dùng nữa, trừ trên bia mộ. [explain]
+> [[Ci-gît]]: nơi đây yên nghỉ. Động từ cổ [[gésir]] chỉ còn sống trong vài cụm cố định như vậy.
+
+#meaning
+vs: J'ai entendu dire qu'il était riche. | Tôi nghe nói ông ấy giàu. || câu thường
+vs: Je sais par ouï-dire qu'il était riche. | Tôi nghe đồn ông ấy giàu. || cụm cổ: nghe đồn
+> [[Par ouï-dire]] đến từ động từ cổ [[ouïr]] (nghe), nay chỉ còn trong cụm này.
+
+#form
+th: Cụm cố định | Động từ gốc | Nghĩa
+tb: ci-gît | gésir | nơi đây yên nghỉ
+tb: advienne que pourra | advenir | đến đâu thì đến
+tb: sans coup férir | férir | dễ dàng, không tốn sức
+tb: par ouï-dire | ouïr | nghe đồn
+tb: il sied | seoir | thì hợp, nên
+> Những cụm này chỉ dùng nguyên khối; đừng chia [[gésir]], [[férir]] hay [[ouïr]] theo cách khác.
+
+#examples
+- {Ci-gît|k} un homme qui aimait la mer. | Nơi đây yên nghỉ một người yêu biển.
+- J'ai démissionné ; {advienne|k} que pourra ! | Tôi đã nghỉ việc; đến đâu thì đến!
+- L'armée prit la ville sans coup {férir|k}. | Quân đội chiếm thành phố mà không tốn chút sức nào.
+- Cette robe vous {sied|k} à merveille. | Chiếc váy này rất hợp với bà.
+- Cette lourde tâche {échoit|k} au plus jeune. | Nhiệm vụ nặng nề này rơi vào người trẻ nhất.
+
+#mistakes
+x: Advient que pourra ! => Advienne que pourra ! | Đến đâu thì đến! >> Cụm cố định ở [[subjonctif]]: [[advienne]].
+x: Ils ont gagné sans coup frapper. => Ils ont gagné sans coup férir. | Họ thắng dễ dàng. >> Cụm cố định giữ động từ cổ [[férir]].
+
+#dialogue
+nam: Et on dit encore advienne que pourra ? | Thế người ta vẫn còn nói “advienne que pourra” ạ? [thinking]
+m-dubois: Oui, quand on prend un risque. Mon grand-père a quitté la ville en disant : advienne que pourra ! | Có, khi người ta liều. Ông tôi rời thành phố và nói: “đến đâu thì đến!” [happy]
+nam: Et il a réussi ? | Thế ông có thành công không ạ? [surprised]
+m-dubois: Sans coup férir ! Enfin, c'est ce que je sais par ouï-dire. | Dễ như bỡn! Mà đó là tôi nghe đồn vậy thôi. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Nơi đây yên nghỉ một người yêu biển. => Ci-gît un homme qui aimait la mer. | Nơi đây yên nghỉ một người yêu biển.
+? Nói bằng tiếng Pháp: Chiếc váy này rất hợp với bà. => Cette robe vous sied à merveille. | Chiếc váy này rất hợp với bà.
+
+#recap
+> Động từ cổ sống trong cụm cố định: [[ci-gît]] ([[gésir]]), [[advienne que pourra]] ([[advenir]]), [[sans coup férir]] ([[férir]]), [[par ouï-dire]] ([[ouïr]]), [[il sied]] ([[seoir]]), [[échoir]]. Chỉ cần hiểu và dùng nguyên cụm.
+
+#practice
+fill: J'ai démissionné ; ___ que pourra ! | advienne* / advient / adviendra || cụm cố định ở subjonctif.
+fill: L'armée prit la ville sans coup ___ . | férir* / frapper / ferré || sans coup férir.
+fill: Je sais par ___ qu'il était riche. | ouï-dire* / entendre-dire / oui-dire || par ouï-dire.
+contrast: Cette robe vous ___ à merveille. | sied* / sit || seoir: sied.
+contrast: Cette lourde tâche ___ au plus jeune. | échoit* / échoue || échoir: rơi vào.
+type: Sur la tombe, on lit : ci-___ un homme qui aimait la mer. | gît || ci-gît.
+fix: Advient que pourra ! | Advienne que pourra !* / Advenu que pourra ! / Advienne qui pourra ! || advienne que pourra.
+listen: Cette lourde tâche échoit au plus jeune. | Cette lourde tâche échoit au plus jeune.* / Cette lourde tâche échoue au plus jeune. / Cette lourde tâche revient au plus âgé. || échoit.

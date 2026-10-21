@@ -1658,6 +1658,83 @@
     "reporting-verbs"
    ],
    "find": "(?<![\\p{L}'])(prétend|prétendait|prétendre|affirme|affirmait|a affirmé|nie|niait|a nié|avoue|a avoué|avouer|reproche|reprochait|a reproché|a reconnu|menace de|a menacé de)(?![\\p{L}])"
+  },
+  {
+   "id": "si-van-chuong",
+   "lv": "c2",
+   "cat": "conditionals",
+   "t": "Câu điều kiện văn chương: s'il l'eût su",
+   "en": "s'il l'eût su, il fût venu · n'eût été la pluie",
+   "pts": [
+    "literary-conditional"
+   ],
+   "find": "(?<![\\p{L}'])([Ee]ût-(il|elle)|[Nn]'eût été|[Nn]'était|eût (su|pu|voulu|fallu|été|mieux)|fût (venu|venue|parti|partie))(?![\\p{L}])"
+  },
+  {
+   "id": "dao-ngu-van-chuong",
+   "lv": "c2",
+   "cat": "sentence",
+   "t": "Đảo ngữ văn chương: rares sont, telle est",
+   "en": "rares sont ceux qui… · telle est la règle · reste à savoir",
+   "pts": [
+    "literary-inversion"
+   ],
+   "find": "(?<![\\p{L}'])(Rares sont|Nombreux sont|Nombreuses sont|Telle est|Tel est|Tel fut|Telle fut|Reste à|Restent|Vient ensuite|Viennent ensuite|Ainsi parla|Ainsi parlait)(?![\\p{L}])"
+  },
+  {
+   "id": "loi-gian-tiep-tu-do",
+   "lv": "c2",
+   "cat": "clauses",
+   "t": "Lời nói gián tiếp tự do trong truyện",
+   "en": "il attendait. Viendrait-elle ?",
+   "pts": [
+    "free-indirect"
+   ],
+   "find": "[.!] \\p{Lu}\\p{Ll}+rait-(il|elle) "
+  },
+  {
+   "id": "cam-than-tu-tu",
+   "lv": "c2",
+   "cat": "sentence",
+   "t": "Cảm thán và câu hỏi tu từ: que de…, à quoi bon",
+   "en": "que de souvenirs ! · qui l'eût cru ? · à quoi bon ?",
+   "pts": [
+    "exclamative-rhetorical"
+   ],
+   "find": "(?<![\\p{L}'])([Qq]ue de [\\p{L}]+ !|[Qq]ui l'eût cru|[Cc]omment ne pas|[Àà] quoi bon|[Cc]ombien de fois)"
+  },
+  {
+   "id": "sac-thai-phu-dinh",
+   "lv": "c2",
+   "cat": "negation",
+   "t": "Phủ định mà khẳng định: ne pas manquer de, non sans",
+   "en": "je ne manquerai pas de vous écrire · non sans regret",
+   "pts": [
+    "negation-c2"
+   ],
+   "find": "(?<![\\p{L}'])(ne (laisse|laissait|laissent) pas d|ne (manque|manquera|manquerai|manquerons|manquez|manquait) pas d|non sans|que trop|si je ne me trompe)"
+  },
+  {
+   "id": "dong-tu-khuyet",
+   "lv": "c2",
+   "cat": "verbs",
+   "t": "Động từ cổ trong cụm cố định: ci-gît, advienne que pourra",
+   "en": "ci-gît · advienne que pourra · sans coup férir",
+   "pts": [
+    "defective-verbs"
+   ],
+   "find": "(?<![\\p{L}'])([Cc]i-gît|[Aa]dvienne que pourra|sans coup férir|par ouï-dire|sied|échoit)(?![\\p{L}])"
+  },
+  {
+   "id": "nhuong-bo-c2",
+   "lv": "c2",
+   "cat": "clauses",
+   "t": "Nhượng bộ C2: quelque… que, pour autant",
+   "en": "quelque riches qu'ils soient · il n'en est pas moins vrai",
+   "pts": [
+    "concession-c2"
+   ],
+   "find": "(?<![\\p{L}'])([Qq]uelques? [\\p{L}]+ qu|pour autant|n'en (est|sont|était|reste|demeure) pas moins|[Ii]l n'empêche)"
   }
  ]
 }

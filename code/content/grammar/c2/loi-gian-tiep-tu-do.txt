@@ -1,0 +1,60 @@
+=== loi-gian-tiep-tu-do
+sum: Lời nói gián tiếp tự do là kỹ thuật của tiểu thuyết: người kể đưa suy nghĩ của nhân vật vào câu kể, không có il pensait que, không có ngoặc kép. Thì đổi như lời gián tiếp (imparfait, conditionnel, plus-que-parfait), nhưng giữ giọng điệu của nhân vật: câu hỏi, cảm thán, từ ngữ của họ. Ví dụ: Il attendait sur le quai. Viendrait-elle ? Et si elle avait changé d'avis ?
+form: trực tiếp | Il pensa : « Elle viendra. »
+form: gián tiếp | Il pensa qu'elle viendrait.
+form: gián tiếp tự do | Elle viendrait, il en était sûr.
+form: câu hỏi của nhân vật, thì gián tiếp | Viendrait-elle ?
+cast: lea paul
+bg: train
+words: quai, horloge, personnage, technique
+gloss: narrateur
+
+#hook
+lea: Écoute : il attendait sur le quai. Viendrait-elle ? Et si elle avait changé d'avis ? | Nghe này: anh đứng chờ trên sân ga. Liệu cô ấy có đến không? Nhỡ cô ấy đã đổi ý thì sao? [explain]
+paul: Qui pose ces questions ? Le narrateur ou le personnage ? | Ai đặt những câu hỏi đó? Người kể hay nhân vật? [thinking]
+> Đó là suy nghĩ của nhân vật, nhưng ở thì của người kể: [[viendrait-elle]]. Không có [[il se demandait]], không có ngoặc kép.
+
+#meaning
+vs: Il se demandait si elle viendrait. | Anh tự hỏi liệu cô ấy có đến không. || lời gián tiếp
+vs: Il attendait. Viendrait-elle ? | Anh chờ. Liệu cô ấy có đến không? || gián tiếp tự do: giọng nhân vật
+> Gián tiếp tự do bỏ động từ dẫn ([[se demander]], [[penser]]) nhưng vẫn đổi thì như lời gián tiếp, nên người đọc như nghe thấy nhân vật nghĩ.
+
+#form
+th: Kiểu | Ví dụ
+tb: trực tiếp | Il pensa : « Elle viendra. »
+tb: gián tiếp | Il pensa qu'elle viendrait.
+tb: gián tiếp tự do | Elle viendrait, il en était sûr.
+> Dấu hiệu nhận biết: câu hỏi hoặc cảm thán ở [[imparfait]], [[conditionnel]] nằm giữa đoạn kể, với từ ngữ của nhân vật.
+
+#examples
+- Elle relut la lettre. Comment {avait|k}-il pu lui mentir ainsi ? | Cô đọc lại lá thư. Sao anh ta có thể nói dối cô như thế?
+- Il regarda l'horloge. Encore deux heures ! Il ne {tiendrait|k} jamais. | Anh nhìn đồng hồ. Còn hai tiếng nữa! Anh sẽ không bao giờ chịu nổi.
+- Demain, elle {partirait|k}, c'était décidé. | Ngày mai cô sẽ đi, quyết rồi.
+- Le train avait du retard. Allait-il {rater|k} son rendez-vous ? | Tàu bị trễ. Liệu anh có lỡ cuộc hẹn không?
+
+#mistakes
+x: Il attendait sur le quai. Viendra-t-elle ? => Il attendait sur le quai. Viendrait-elle ? | Anh chờ trên sân ga. Liệu cô ấy có đến không? >> Kể ở quá khứ: tương lai của nhân vật thành [[conditionnel]].
+x: Elle relut la lettre. Comment a-t-il pu lui mentir ? => Elle relut la lettre. Comment avait-il pu lui mentir ? | Cô đọc lại lá thư. Sao anh ta có thể nói dối cô? >> Việc xảy ra trước: [[plus-que-parfait]].
+
+#dialogue
+paul: Et comment on sait que c'est le personnage qui pense ? | Thế làm sao biết là nhân vật đang nghĩ? [thinking]
+lea: Par le ton. Écoute : elle n'arrivait pas. Quel idiot il avait été ! | Qua giọng điệu. Nghe này: cô ấy vẫn chưa đến. Anh đã ngốc biết bao! [explain]
+paul: C'est lui qui parle, mais à la troisième personne ! | Chính anh ta đang nói, nhưng ở ngôi thứ ba! [surprised]
+lea: Exactement. Les grands romanciers adorent cette technique. | Chính xác. Các tiểu thuyết gia lớn rất thích kỹ thuật này. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Ngày mai cô sẽ đi, quyết rồi. => Demain, elle partirait, c'était décidé. | Ngày mai cô sẽ đi, quyết rồi.
+? Nói bằng tiếng Pháp: Anh tự hỏi liệu cô ấy có đến không. => Il se demandait si elle viendrait. | Anh tự hỏi liệu cô ấy có đến không.
+
+#recap
+> Gián tiếp tự do: suy nghĩ của nhân vật nằm trong câu kể, không có động từ dẫn, không có ngoặc kép; thì đổi như lời gián tiếp ([[imparfait]], [[conditionnel]], [[plus-que-parfait]]) nhưng giữ câu hỏi, cảm thán của nhân vật.
+
+#practice
+fill: Demain, elle ___ , c'était décidé. | partirait* / partira / partit || tương lai trong quá khứ: conditionnel.
+fill: Il regarda l'horloge. Encore deux heures ! Il ne ___ jamais. | tiendrait* / tiendra / tient || conditionnel.
+fill: Elle relut la lettre. Comment ___-il pu lui mentir ainsi ? | avait* / a / aura || plus-que-parfait.
+contrast: Il se demandait si elle ___ . | viendrait* / viendra || lời gián tiếp ở quá khứ.
+contrast: Le train avait du retard. Allait-il ___ son rendez-vous ? | rater* / raté || aller với nguyên mẫu.
+type: Il pensa qu'elle ___ (venir, conditionnel). | viendrait || lời gián tiếp.
+fix: Il attendait sur le quai. Viendra-t-elle ? | Il attendait sur le quai. Viendrait-elle ?* / Il attendait sur le quai. Viendrait-t-elle ? / Il attendait sur le quai. Venait-t-elle ? || conditionnel.
+listen: Demain, elle partirait, c'était décidé. | Demain, elle partirait, c'était décidé.* / Demain, elle partira, c'est décidé. / Demain, elle partait, c'était décidé. || partirait.
