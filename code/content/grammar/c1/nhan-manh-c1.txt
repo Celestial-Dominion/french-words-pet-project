@@ -1,0 +1,62 @@
+=== nhan-manh-c1
+sum: B1 có c'est… qui / que, B2 có tách thành phần (ce film, je l'ai adoré). C1 thêm: si…, c'est que / c'est pour (… là vì, là để): si je suis venu, c'est pour te parler. C'est… que với cả một cụm: c'est en lisant qu'on apprend. Voilà ce que (đó chính là điều…). Ce dont…, c'est (điều mà… là): ce dont j'ai besoin, c'est de calme. Il y a… qui: il y a quelqu'un qui t'attend.
+form: si…, c'est que / c'est pour | Si je t'appelle, c'est pour t'aider.
+form: c'est + cụm + que | C'est ici que tout a commencé.
+form: ce dont…, c'est | Ce dont il rêve, c'est de voyager.
+form: il y a… qui | Il y a quelqu'un qui t'attend.
+cast: nam chloe
+bg: campus-gate
+words: examen, pluie, calme, silence
+
+#hook
+chloe: Tu es venu jusqu'ici sous la pluie ? | Cậu đi đến tận đây dưới trời mưa à? [surprised]
+nam: Si je suis venu, c'est pour te parler de l'examen. | Tớ đến chính là để nói với cậu về kỳ thi. [explain]
+> [[Si je suis venu, c'est pour…]]: [[si]] ở đây không phải giả thiết; cả cấu trúc nhấn mạnh lý do, mục đích.
+
+#meaning
+vs: Je suis venu pour te parler. | Tớ đến để nói chuyện với cậu. || câu thường
+vs: Si je suis venu, c'est pour te parler. | Tớ đến chính là để nói chuyện với cậu. || nhấn mạnh mục đích
+> [[Si…, c'est que]] cho biết lý do hay ý nghĩa thật sự đằng sau một sự việc ai cũng thấy.
+
+#form
+th: Cấu trúc | Ví dụ | Nghĩa
+tb: si…, c'est que | S'il crie, c'est qu'il a peur. | anh ấy hét là vì sợ
+tb: c'est… que | C'est en lisant qu'on apprend. | chính nhờ đọc mà học được
+tb: voilà ce que | Voilà ce que je pense. | đó là điều tôi nghĩ
+tb: ce dont…, c'est | Ce dont j'ai peur, c'est le silence. | điều tôi sợ là sự im lặng
+> [[Il y a… qui]] rất hay gặp khi nói, để giới thiệu một thông tin mới.
+
+#examples
+- {Si|k} elle ne répond pas, c'est qu'elle est occupée. | Cô ấy không trả lời là vì đang bận.
+- {C'est en pratiquant|k} qu'on progresse. | Chính nhờ luyện tập mà người ta tiến bộ.
+- {Voilà|k} ce que je voulais te dire. | Đó chính là điều tớ muốn nói với cậu.
+- {Ce dont|k} j'ai besoin, c'est d'un peu de calme. | Điều tớ cần là một chút yên tĩnh.
+- Il y a ton professeur {qui|k} te cherche. | Thầy cậu đang tìm cậu kìa.
+
+#mistakes
+x: Si je suis en retard, c'est parce le bus est parti. => Si je suis en retard, c'est parce que le bus est parti. | Tớ đến muộn là vì xe buýt đã chạy mất. >> [[Parce que]] không bỏ [[que]].
+x: Ce que j'ai besoin, c'est de dormir. => Ce dont j'ai besoin, c'est de dormir. | Điều tớ cần là ngủ. >> [[Avoir besoin de]]: dùng [[ce dont]].
+x: Si elle pleure, c'est qu'elle soit triste. => Si elle pleure, c'est qu'elle est triste. | Cô ấy khóc là vì buồn. >> Sau [[c'est que]] dùng [[indicatif]].
+
+#dialogue
+chloe: Merci ! Voilà ce que j'aime chez toi : tu penses toujours aux autres. | Cảm ơn cậu! Đó chính là điều tớ quý ở cậu: cậu luôn nghĩ cho người khác. [happy]
+nam: Ce dont tu as besoin, c'est de réviser avec quelqu'un. | Điều cậu cần là ôn bài cùng ai đó. [explain]
+chloe: Tu as raison. C'est en travaillant ensemble qu'on réussira. | Cậu nói đúng. Chính nhờ học cùng nhau mà chúng ta sẽ đỗ. [happy]
+nam: Attends, il y a quelqu'un qui t'appelle ! | Khoan, có người đang gọi cậu kìa! [surprised]
+
+#recall
+? Nói bằng tiếng Pháp: Cô ấy không trả lời là vì đang bận. => Si elle ne répond pas, c'est qu'elle est occupée. | Cô ấy không trả lời là vì đang bận.
+? Nói bằng tiếng Pháp: Điều tớ cần là một chút yên tĩnh. => Ce dont j'ai besoin, c'est d'un peu de calme. | Điều tớ cần là một chút yên tĩnh.
+
+#recap
+> Nhấn mạnh C1: [[si…, c'est que]] hoặc [[c'est pour]] (là vì, là để), [[c'est… que]] với cả cụm, [[voilà ce que]], [[ce dont…, c'est]], [[il y a… qui]].
+
+#practice
+fill: Si elle ne répond pas, ___ qu'elle est occupée. | c'est* / ce n'est / est-ce || si…, c'est que.
+fill: Ce ___ j'ai besoin, c'est d'un peu de calme. | dont* / que / qui || avoir besoin de: ce dont.
+fill: C'est en pratiquant ___ progresse. | qu'on* / où on / dont on || c'est… que.
+contrast: Ce ___ j'ai peur, c'est le silence. | dont* / que || avoir peur de: ce dont.
+contrast: Ce ___ je veux, c'est le silence. | que* / dont || vouloir: ce que.
+type: Si elle pleure, c'est qu'elle ___ (être) triste. | est || c'est que: indicatif.
+fix: Ce que j'ai besoin, c'est de dormir. | Ce dont j'ai besoin, c'est de dormir.* / Ce qui j'ai besoin, c'est de dormir. / Ce dont j'ai besoin, c'est que dormir. || ce dont.
+listen: Voilà ce que je voulais te dire. | Voilà ce que je voulais te dire.* / Voilà ce que je voulais te lire. / Voilà ce que tu voulais me dire. || voilà ce que.

@@ -1,0 +1,63 @@
+=== phu-dinh-c1
+sum: Văn trang trọng và văn chương có những kiểu phủ định riêng. Với savoir, pouvoir, oser, cesser có thể dùng ne một mình, không có pas: je ne sais que dire (tôi không biết nói gì), il n'ose le dire (anh ấy không dám nói), elle ne cesse de pleurer (cô ấy khóc không ngừng). Je ne saurais + nguyên mẫu: tôi không thể (lịch sự). Ne… point = ne… pas trong văn cổ. Nullement, aucunement: hoàn toàn không.
+form: ne + savoir, pouvoir, oser, cesser | Je ne sais que faire.
+form: je ne saurais + nguyên mẫu = tôi không thể | Je ne saurais le dire.
+form: ne… point = ne… pas (văn cổ) | Je ne l'aime point.
+form: nullement = hoàn toàn không | Je ne suis nullement fâché.
+cast: papi lea
+bg: home-lake
+words: lettre, vérité, décision, voyage
+
+#hook
+papi: Écoute cette vieille lettre de ta grand-mère : je ne sais que vous dire, je n'ose vous regarder. | Nghe lá thư cũ của bà cháu này: “Em không biết nói gì với anh, em không dám nhìn anh.” [happy]
+lea: Il manque le pas ! C'est une faute ? | Thiếu chữ “pas”! Bà viết sai ạ? [surprised]
+> Không phải lỗi. Với [[savoir]], [[oser]], [[pouvoir]], [[cesser]], văn trang trọng dùng [[ne]] một mình: [[je ne sais que vous dire]].
+
+#meaning
+vs: Je ne sais pas quoi dire. | Tôi không biết nói gì. || văn thường
+vs: Je ne sais que dire. | Tôi chẳng biết nói gì. || văn trang trọng: ne một mình
+> Hai câu cùng nghĩa. Bỏ [[pas]] làm câu nghe trang trọng, cổ điển. Chú ý [[que]] thay cho [[quoi]].
+
+#form
+th: Cấu trúc | Ví dụ | Nghĩa
+tb: ne puis | Je ne puis accepter. | tôi không thể nhận
+tb: n'ose | Il n'ose le dire. | anh ấy không dám nói
+tb: ne cesse de | Il ne cesse de pleuvoir. | mưa không ngừng
+tb: ne saurais | Je ne saurais vous remercier assez. | không biết cảm ơn sao cho đủ
+tb: ne… point | Il ne viendra point. | anh ấy sẽ không đến
+> [[Nullement]] và [[aucunement]] nghĩa là hoàn toàn không, trang trọng hơn [[pas du tout]].
+
+#examples
+- Elle ne {cesse|k} de parler de son voyage. | Cô ấy nói không ngừng về chuyến đi của mình.
+- Je ne {saurais|k} vous dire à quelle heure il arrivera. | Tôi không thể nói với ông mấy giờ anh ấy sẽ đến.
+- Il {n'ose|k} lui dire la vérité. | Anh ấy không dám nói thật với cô ấy.
+- Je ne suis {nullement|k} surpris par sa décision. | Tôi hoàn toàn không ngạc nhiên trước quyết định của anh ấy.
+- Ce n'est {point|k} ma faute. | Đó đâu phải lỗi của tôi.
+
+#mistakes
+x: Il ne savait pas que répondre. => Il ne savait que répondre. | Anh ấy không biết trả lời gì. >> Có [[que]] thì bỏ [[pas]]; hoặc nói [[il ne savait pas quoi répondre]].
+x: Je ne suis pas nullement fâché. => Je ne suis nullement fâché. | Tôi hoàn toàn không giận. >> [[Nullement]] thay cho [[pas]], không dùng cùng nhau.
+x: Je ne point le connais. => Je ne le connais point. | Tôi không hề quen anh ta. >> [[Point]] đứng sau động từ, như [[pas]].
+
+#dialogue
+lea: Et grand-père, qu'est-ce que tu lui as répondu ? | Thế ông đã trả lời bà thế nào ạ? [thinking]
+papi: Je n'ai cessé de penser à vous. Voulez-vous m'épouser ? | “Anh không ngừng nghĩ về em. Em có muốn lấy anh không?” [happy]
+lea: Quelle belle lettre ! Je ne saurais écrire comme ça. | Lá thư đẹp quá! Cháu không thể viết được như thế. [happy]
+papi: À l'époque, on n'écrivait point de messages sur un téléphone ! | Hồi đó người ta đâu có nhắn tin bằng điện thoại! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Cô ấy nói không ngừng về chuyến đi của mình. => Elle ne cesse de parler de son voyage. | Cô ấy nói không ngừng về chuyến đi của mình.
+? Nói bằng tiếng Pháp: Tôi hoàn toàn không ngạc nhiên trước quyết định của anh ấy. => Je ne suis nullement surpris par sa décision. | Tôi hoàn toàn không ngạc nhiên trước quyết định của anh ấy.
+
+#recap
+> Phủ định văn chương: [[ne]] một mình với [[savoir]], [[pouvoir]], [[oser]], [[cesser]]; [[je ne saurais]] (tôi không thể); [[ne… point]] (cổ); [[nullement]], [[aucunement]] (hoàn toàn không, không đi với [[pas]]).
+
+#practice
+fill: Elle ne ___ de parler de son voyage. | cesse* / cessé / cesser || ne cesse de.
+fill: Je ne ___ vous dire à quelle heure il arrivera. | saurais* / sache / su || je ne saurais: tôi không thể.
+fill: Je ne suis ___ surpris par sa décision. | nullement* / pas nullement / point pas || nullement thay pas.
+contrast: Je ne sais pas ___ dire. | quoi* / que || có pas thì dùng quoi.
+contrast: Je ne le connais ___ . | point* / point pas || point thay pas.
+type: Il n'___ (oser) lui dire la vérité. | ose || ne một mình với oser.
+fix: Je ne suis pas nullement fâché. | Je ne suis nullement fâché.* / Je suis nullement pas fâché. / Je ne nullement suis fâché. || nullement thay pas.
+listen: Je ne saurais vous dire à quelle heure il arrivera. | Je ne saurais vous dire à quelle heure il arrivera.* / Je ne sais pas à quelle heure il arrivera. / Je saurai vous dire à quelle heure il arrivera. || je ne saurais.

@@ -1526,6 +1526,72 @@
     "subj-c1"
    ],
    "find": "(?<![\\p{L}'])([Ll]e fait que|[Ll]e fait qu'|[Qq]u'il entre|[Qq]ue chacun|[Vv]ive (la|le|les)|[Ss]oit [\\p{L}]+, soit)(?![\\p{L}])"
+  },
+  {
+   "id": "tu-noi-c1",
+   "lv": "c1",
+   "cat": "clauses",
+   "t": "Từ nối C1: certes… mais, or, dès lors",
+   "en": "certes, c'est cher, mais… · or, il était malade · voire",
+   "pts": [
+    "connectors-c1"
+   ],
+   "find": "(?<![\\p{L}'])([Cc]ertes|[Dd]ès lors|[Cc]ela dit|[Tt]oujours est-il|[Qq]uitte à|voire|Or,)(?![\\p{L}])"
+  },
+  {
+   "id": "khau-ngu-van-viet",
+   "lv": "c1",
+   "cat": "sentence",
+   "t": "Khẩu ngữ và văn viết: je sais pas, on, ça",
+   "en": "je sais pas · t'es où ? · on y va",
+   "pts": [
+    "register"
+   ],
+   "find": "(?<![\\p{L}'])([Jj]e sais pas|[Cc]'est pas|[Yy] a (un|une|des|pas|personne|rien)|[Tt]'es)(?![\\p{L}])"
+  },
+  {
+   "id": "phu-dinh-c1",
+   "lv": "c1",
+   "cat": "negation",
+   "t": "Phủ định văn chương: je ne sais que dire",
+   "en": "je ne sais que dire · il n'ose le dire · nullement",
+   "pts": [
+    "negation-c1"
+   ],
+   "find": "(?<![\\p{L}'])(ne sais (que|quoi|où|comment|si)|n'ose (le|la|lui|vous|te|me|y|en)|ne saurais|ne saurait|ne cesse de|n'a cessé de|ne puis|ne [\\p{L}]+ point|n'[\\p{L}]+ point|nullement|aucunement)(?![\\p{L}])"
+  },
+  {
+   "id": "nhan-manh-c1",
+   "lv": "c1",
+   "cat": "sentence",
+   "t": "Nhấn mạnh C1: si…, c'est que; ce dont…, c'est",
+   "en": "si je suis venu, c'est pour te parler · voilà ce que je pense",
+   "pts": [
+    "emphasis-c1"
+   ],
+   "find": "(?<![\\p{L}'])([Ss]i [^.!?]{3,60}, c'est (que |qu'|parce |pour )|[Vv]oilà ce (que|qui|dont) |[Cc]e dont [^.!?]{3,40}, c'est |[Cc]'est en [\\p{L}]+ qu)"
+  },
+  {
+   "id": "so-sanh-c1",
+   "lv": "c1",
+   "cat": "comparison",
+   "t": "So sánh C1: comme si, tel que, plutôt que de",
+   "en": "comme s'il savait tout · telle que je l'imaginais",
+   "pts": [
+    "comparison-c1"
+   ],
+   "find": "(?<![\\p{L}'])([Cc]omme si |[Cc]omme s'|tel que|telle que|tels que|telles que|[Dd]e même que|ainsi que|[Pp]lutôt que de|[Pp]lutôt que d'|à mesure que|[Àà] mesure qu)"
+  },
+  {
+   "id": "cau-danh-tu",
+   "lv": "c1",
+   "cat": "nouns",
+   "t": "Câu danh từ: tiêu đề báo, thông báo",
+   "en": "Hausse des prix · Défense de fumer · Départ du train",
+   "pts": [
+    "nominal-sentences"
+   ],
+   "find": "^(Démission|Arrivée|Départ|Ouverture|Fermeture|Hausse|Baisse|Grève|Victoire|Défense|Interdiction|Retour|Naissance) (du|de la|de l'|des|de|d') ?"
   }
  ]
 }

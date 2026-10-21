@@ -1,0 +1,62 @@
+=== khau-ngu-van-viet
+sum: Tiếng Pháp nói và viết khác nhau khá nhiều. Khi nói thân mật: bỏ ne (je sais pas), dùng on thay nous (on y va), ça thay cela, y a thay il y a, t'es thay tu es, hỏi bằng ngữ điệu (tu viens ?) thay vì đảo ngữ (viens-tu ?). Khi viết trang trọng thì ngược lại: đủ ne… pas, nous, cela, il y a, đảo ngữ. Không cách nào sai, chỉ cần hợp hoàn cảnh.
+form: khẩu ngữ: bỏ ne | Je sais pas.
+form: văn viết: đủ ne… pas | Je ne sais pas.
+form: on thay nous | On part demain.
+form: ça thay cela | Ça me plaît.
+cast: zoe mme-martin
+bg: campus-gate
+words: message, cinéma, examen, oral
+
+#hook
+zoe: Regardez mon message : t'es où ? On va au cinéma, tu viens ? | Cô xem tin nhắn của em này: “Cậu đâu rồi? Bọn mình đi xem phim, cậu đi không?” [happy]
+mme-martin: Parfait pour un ami. Mais pour ton professeur, tu écrirais : où êtes-vous ? Nous allons au cinéma. | Hoàn hảo để gửi bạn bè. Nhưng gửi thầy cô thì em sẽ viết: “Thầy đang ở đâu ạ? Chúng em đi xem phim.” [explain]
+> Khi nói thân mật, người Pháp rút gọn: [[t'es]], [[on]], câu hỏi bằng ngữ điệu. Khi viết trang trọng thì dùng đầy đủ: [[où êtes-vous]], [[nous]].
+
+#meaning
+vs: Je sais pas, moi. | Tớ không biết nữa. || khẩu ngữ
+vs: Je ne le sais pas. | Tôi không biết điều đó. || văn viết, lịch sự
+> Bỏ [[ne]] rất phổ biến khi nói, kể cả người có học; nhưng khi viết phải giữ [[ne]].
+
+#form
+th: Khẩu ngữ | Văn viết | Nghĩa
+tb: C'est pas grave. | Ce n'est pas grave. | không sao
+tb: Y a personne. | Il n'y a personne. | không có ai
+tb: On y va ! | Allons-y ! | đi thôi
+tb: Tu viens ? | Viens-tu ? | bạn đến không
+tb: T'es fatigué ? | Es-tu fatigué ? | bạn mệt không
+> Không có cách nào sai; chỉ cần chọn đúng văn phong cho đúng hoàn cảnh.
+
+#examples
+- {On|k} se voit demain ? | Mai gặp nhau nhé?
+- {Ça|k} m'étonnerait. | Tớ không nghĩ thế đâu.
+- J'ai {pas|k} le temps, là. | Giờ tớ không có thời gian.
+- Nous vous {prions|k} de bien vouloir nous répondre. | Chúng tôi kính đề nghị quý vị vui lòng trả lời.
+- Cela {ne|k} pose aucun problème. | Điều đó không gây trở ngại gì.
+
+#mistakes
+x: Madame, je sais pas si vous avez reçu ma lettre. => Madame, je ne sais pas si vous avez reçu ma lettre. | Thưa bà, tôi không biết bà đã nhận được thư của tôi chưa. >> Thư trang trọng: phải có [[ne]].
+x: Monsieur, t'es libre demain ? => Monsieur, êtes-vous libre demain ? | Thưa ông, ngày mai ông có rảnh không? >> Nói với người lạ, cấp trên: dùng [[vous]] và đảo ngữ.
+
+#dialogue
+zoe: Et à l'oral, c'est grave si je dis : je sais pas ? | Còn khi nói, nếu em nói “je sais pas” thì có sao không cô? [worried]
+mme-martin: Pas du tout ! Tout le monde le dit. Mais à l'examen écrit, garde le ne. | Không sao cả! Ai cũng nói vậy. Nhưng trong bài thi viết, giữ chữ “ne” nhé. [explain]
+zoe: D'accord. Ça marche ! | Vâng ạ. Được ạ! [happy]
+mme-martin: Ça marche... c'est encore de l'oral, ça ! | “Ça marche”... lại là văn nói rồi đấy! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Mai gặp nhau nhé? => On se voit demain ? | Mai gặp nhau nhé?
+? Nói bằng tiếng Pháp: Điều đó không gây trở ngại gì. => Cela ne pose aucun problème. | Điều đó không gây trở ngại gì.
+
+#recap
+> Khẩu ngữ: bỏ [[ne]], dùng [[on]], [[ça]], [[y a]], hỏi bằng ngữ điệu. Văn viết: đủ [[ne… pas]], [[nous]], [[cela]], [[il y a]], đảo ngữ. Chọn văn phong theo hoàn cảnh.
+
+#practice
+fill: Madame, je ___ sais pas si vous avez reçu ma lettre. | ne* / pas / n' || thư trang trọng: giữ ne.
+fill: Monsieur, ___ libre demain ? | êtes-vous* / t'es / tu es || trang trọng: vous, đảo ngữ.
+fill: Nous vous ___ de bien vouloir nous répondre. | prions* / prie / prions-nous || văn thư trang trọng.
+contrast: Madame, ce ___ pas grave. | n'est* / est || văn viết: giữ ne.
+contrast: Il ___ a personne dans le bureau, madame. | n'y* / y || văn viết: il n'y a.
+type: Cela ne ___ (poser) aucun problème. | pose || văn viết.
+fix: Madame, je sais pas si vous avez reçu ma lettre. | Madame, je ne sais pas si vous avez reçu ma lettre.* / Madame, je sais pas si vous avez reçu ma lettre, moi. / Madame, je ne sais si pas vous avez reçu ma lettre. || giữ ne.
+listen: Nous vous prions de bien vouloir nous répondre. | Nous vous prions de bien vouloir nous répondre.* / Nous vous prions de bien vouloir nous attendre. / Nous vous demandons de répondre vite. || nous répondre.

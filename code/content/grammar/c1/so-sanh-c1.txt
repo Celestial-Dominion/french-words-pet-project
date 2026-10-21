@@ -1,0 +1,62 @@
+=== so-sanh-c1
+sum: Comme si + imparfait (cùng lúc) hoặc plus-que-parfait (trước đó): như thể (il parle comme s'il savait tout). Tel que, telle que, tels que: như là, đúng như; tel hợp giống số với danh từ (des fruits tels que la pomme; la maison est telle que je l'imaginais). De même que, ainsi que: cũng như. Plutôt que de + nguyên mẫu: thay vì. À mesure que: càng… càng, dần theo.
+form: comme si + imparfait / plus-que-parfait | Il agit comme s'il était seul.
+form: tel que hợp giống số | des fruits tels que la pomme
+form: plutôt que de + nguyên mẫu | plutôt que de pleurer
+form: à mesure que | à mesure que le temps passe
+cast: ines lucas
+bg: park
+words: voisin, soleil, chef, latin
+
+#hook
+ines: Le nouveau voisin me parle comme s'il me connaissait depuis toujours ! | Anh hàng xóm mới nói chuyện với tôi như thể đã quen tôi từ lâu lắm rồi! [surprised]
+lucas: Plutôt que de te plaindre, invite-le à dîner ! | Thay vì phàn nàn, mời anh ấy ăn tối đi! [happy]
+> [[Comme s'il me connaissait]]: như thể anh ấy quen tôi. Sau [[comme si]] dùng [[imparfait]], không dùng [[conditionnel]].
+
+#meaning
+vs: Il parle comme s'il savait tout. | Anh ta nói như thể biết hết mọi thứ. || comme si với imparfait: cùng lúc
+vs: Il parle comme s'il avait tout vu. | Anh ta nói như thể đã thấy hết mọi thứ. || comme si với plus-que-parfait: việc trước đó
+> [[Comme si]] giống [[si]] giả thiết: dùng [[imparfait]] hoặc [[plus-que-parfait]].
+
+#form
+th: Cấu trúc | Ví dụ | Nghĩa
+tb: comme si | comme s'il pleuvait | như thể trời mưa
+tb: tel que | des villes telles que celle-ci | những thành phố như thành phố này
+tb: ainsi que | ainsi que je l'ai dit | như tôi đã nói
+tb: plutôt que de | plutôt que d'attendre | thay vì chờ
+> [[Tel]] hợp giống số với danh từ nó so sánh: [[tel]], [[telle]], [[tels]], [[telles]].
+
+#examples
+- Elle a fait {comme si|k} elle ne m'avait pas vu. | Cô ấy làm như thể không nhìn thấy tôi.
+- La maison est {telle que|k} je l'imaginais. | Ngôi nhà đúng như tôi đã tưởng tượng.
+- {Plutôt que de|k} prendre la voiture, allons à pied. | Thay vì đi ô tô, chúng ta đi bộ đi.
+- {À mesure que|k} le soleil se couchait, le parc se vidait. | Mặt trời càng lặn, công viên càng vắng người.
+- Le français, {de même que|k} l'espagnol, vient du latin. | Tiếng Pháp, cũng như tiếng Tây Ban Nha, bắt nguồn từ tiếng La-tinh.
+
+#mistakes
+x: Il parle comme s'il serait le chef. => Il parle comme s'il était le chef. | Anh ta nói như thể mình là sếp. >> Sau [[comme si]]: [[imparfait]], không dùng [[conditionnel]].
+x: La ville est tel que je l'imaginais. => La ville est telle que je l'imaginais. | Thành phố đúng như tôi đã tưởng tượng. >> [[Ville]] giống cái: [[telle]].
+x: Plutôt que prendre le bus, marchons. => Plutôt que de prendre le bus, marchons. | Thay vì đi xe buýt, chúng ta đi bộ. >> [[Plutôt que de]] với nguyên mẫu.
+
+#dialogue
+lucas: Tu sais, à mesure qu'on le connaîtra, on l'aimera peut-être. | Bạn biết đấy, càng quen anh ấy, có khi mình càng quý anh ấy. [thinking]
+ines: Tu as raison. Ainsi que disait ma mère, il faut donner une chance à chacun. | Bạn nói đúng. Như mẹ tôi vẫn nói, phải cho mỗi người một cơ hội. [happy]
+lucas: Alors, ce dîner ? | Vậy còn bữa tối? [happy]
+ines: D'accord, je l'invite samedi, comme si on était déjà amis ! | Được, tôi sẽ mời anh ấy thứ bảy, như thể bọn mình đã là bạn rồi! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Ngôi nhà đúng như tôi đã tưởng tượng. => La maison est telle que je l'imaginais. | Ngôi nhà đúng như tôi đã tưởng tượng.
+? Nói bằng tiếng Pháp: Thay vì đi ô tô, chúng ta đi bộ đi. => Plutôt que de prendre la voiture, allons à pied. | Thay vì đi ô tô, chúng ta đi bộ đi.
+
+#recap
+> So sánh C1: [[comme si]] với [[imparfait]] hoặc [[plus-que-parfait]]; [[tel que]] hợp giống số; [[de même que]], [[ainsi que]] (cũng như); [[plutôt que de]] với nguyên mẫu; [[à mesure que]] (càng… càng).
+
+#practice
+fill: Il parle comme s'il ___ le chef. | était* / serait / soit || comme si: imparfait.
+fill: La maison est ___ que je l'imaginais. | telle* / tel / tels || maison giống cái.
+fill: Elle a fait comme si elle ne m'___ pas vu. | avait* / aurait / a || comme si: plus-que-parfait.
+contrast: Il parle comme s'il ___ tout. | savait* / saurait || comme si: imparfait.
+contrast: Des villes ___ que celle-ci sont rares. | telles* / tel || villes: giống cái số nhiều.
+type: Plutôt que ___ prendre la voiture, allons à pied. | de || plutôt que de.
+fix: Il parle comme s'il serait le chef. | Il parle comme s'il était le chef.* / Il parle comme s'il soit le chef. / Il parle comme s'il sera le chef. || comme si: imparfait.
+listen: À mesure que le soleil se couchait, le parc se vidait. | À mesure que le soleil se couchait, le parc se vidait.* / Dès que le soleil s'est couché, le parc s'est vidé. / À mesure que le soleil se levait, le parc se remplissait. || à mesure que.

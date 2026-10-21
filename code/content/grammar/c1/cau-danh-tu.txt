@@ -1,0 +1,62 @@
+=== cau-danh-tu
+sum: Câu danh từ là câu không có động từ chia. Hay gặp ở tiêu đề báo (Hausse des prix de l'essence: giá xăng tăng), biển báo và thông báo (Défense de fumer, Fermeture à vingt heures), ghi chú ngắn, câu cảm thán (Quelle chance !). Cách làm: đổi động từ thành danh từ (augmenter thành hausse, partir thành départ) rồi nối chủ ngữ cũ bằng de: Le ministre démissionne thành Démission du ministre.
+form: động từ thành danh từ, chủ ngữ sau de | Le maire arrive. → Arrivée du maire.
+form: tiêu đề báo | Hausse des prix en octobre
+form: thông báo | Fermeture du musée à dix-huit heures
+form: cảm thán | Quelle surprise !
+cast: karim chloe
+bg: train
+words: titre, grève, journal, chômage
+
+#hook
+chloe: Grève des trains demain ! Fermeture de la gare le soir ! C'est le titre du journal. | “Đình công tàu hoả ngày mai! Ga đóng cửa buổi tối!” Đó là tiêu đề của tờ báo. [worried]
+karim: Pas un seul verbe ! C'est le style des journaux. | Chẳng có động từ nào! Đó là văn phong báo chí. [thinking]
+> Tiêu đề báo hay bỏ động từ, dùng danh từ: [[grève des trains]], [[fermeture de la gare]]. Câu ngắn, dễ đọc lướt.
+
+#meaning
+vs: Les prix de l'essence augmentent. | Giá xăng đang tăng. || câu có động từ
+vs: Hausse des prix de l'essence. | Giá xăng tăng. || câu danh từ, tiêu đề báo
+> Danh từ [[hausse]] thay động từ [[augmenter]]; chủ ngữ cũ đi sau [[de]].
+
+#form
+th: Câu có động từ | Câu danh từ | Nghĩa
+tb: Le ministre démissionne. | Démission du ministre. | bộ trưởng từ chức
+tb: Le musée ferme à six heures. | Fermeture du musée à six heures. | bảo tàng đóng cửa lúc sáu giờ
+tb: L'équipe locale gagne. | Victoire de l'équipe locale. | đội nhà thắng
+tb: On interdit de fumer. | Interdiction de fumer. | cấm hút thuốc
+> Cần nhớ giống của danh từ: [[la hausse]], [[la baisse]], [[le départ]], [[l'arrivée]].
+
+#examples
+- {Baisse|k} du chômage en mars. | Thất nghiệp giảm trong tháng ba.
+- {Ouverture|k} d'un nouveau parc au centre-ville. | Khai trương công viên mới ở trung tâm thành phố.
+- {Départ|k} du train dans cinq minutes. | Tàu khởi hành sau năm phút nữa.
+- {Défense|k} de stationner devant la porte. | Cấm đỗ xe trước cửa.
+- Quelle {surprise|k} ce matin ! | Sáng nay bất ngờ quá!
+
+#mistakes
+x: Démission le ministre. => Démission du ministre. | Bộ trưởng từ chức. >> Nối bằng [[de]]: [[du ministre]].
+x: Augmenter des prix du pain. => Hausse des prix du pain. | Giá bánh mì tăng. >> Tiêu đề dùng danh từ, không dùng nguyên mẫu.
+x: Fermeture de le magasin lundi. => Fermeture du magasin lundi. | Cửa hàng đóng cửa thứ hai. >> [[De le]] gộp thành [[du]].
+
+#dialogue
+karim: Et regarde celui-ci : retour du soleil ce week-end ! | Còn xem cái này: “Nắng trở lại cuối tuần này!” [happy]
+chloe: Enfin une bonne nouvelle ! Alors, pas de train demain ? | Cuối cùng cũng có tin tốt! Vậy mai không có tàu à? [thinking]
+karim: Non. Solution : vélo et soleil ! | Không. Giải pháp: xe đạp và nắng! [happy]
+chloe: Bonne idée ! | Ý hay! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tàu khởi hành sau năm phút nữa. => Départ du train dans cinq minutes. | Tàu khởi hành sau năm phút nữa.
+? Nói bằng tiếng Pháp: Cấm đỗ xe trước cửa. => Défense de stationner devant la porte. | Cấm đỗ xe trước cửa.
+
+#recap
+> Câu danh từ không có động từ chia: tiêu đề báo, thông báo, cảm thán. Đổi động từ thành danh từ ([[augmenter]] thành [[hausse]]) và nối chủ ngữ cũ bằng [[de]].
+
+#practice
+fill: Démission ___ ministre. | du* / le / de le || de với le thành du.
+fill: Attention : ___ du train dans cinq minutes. | départ* / partir / parti || danh từ, không dùng động từ.
+fill: Hausse ___ prix de l'essence. | des* / les / de || de với les thành des.
+contrast: Le musée ___ à six heures. | ferme* / fermeture || câu có động từ.
+contrast: Interdiction ___ fumer. | de* / à || interdiction de.
+type: Baisse ___ chômage en mars. | du || de với le thành du.
+fix: Démission le ministre. | Démission du ministre.* / Démissionner du ministre. / Démission de le ministre. || nối bằng du.
+listen: Ouverture d'un nouveau parc au centre-ville. | Ouverture d'un nouveau parc au centre-ville.* / Fermeture d'un vieux parc au centre-ville. / Ouverture d'un nouveau marché au centre-ville. || ouverture.

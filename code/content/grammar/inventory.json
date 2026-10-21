@@ -1833,6 +1833,72 @@
     "subjonctif-passe"
    ],
    "pri": 2
+  },
+  {
+   "id": "connectors-c1",
+   "lv": "c1",
+   "cat": "clauses",
+   "name": "Connecteurs C1",
+   "vi": "Từ nối lập luận C1: certes… mais (đúng là… nhưng), or (thế mà: nêu dữ kiện then chốt), dès lors (từ đó, vì vậy), cela dit (dù vậy), toujours est-il que (dù sao thì sự thật là), quitte à + nguyên mẫu (dù có phải), voire (thậm chí)",
+   "pre": [
+    "connectors"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "register",
+   "lv": "c1",
+   "cat": "sentence",
+   "name": "Oral et écrit",
+   "vi": "Khẩu ngữ và văn viết: khi nói bỏ ne (je sais pas), on thay nous, ça thay cela, y a thay il y a, t'es thay tu es, hỏi bằng ngữ điệu (tu viens ?); khi viết trang trọng giữ ne… pas, nous, cela, đảo ngữ (viens-tu ?)",
+   "pre": [
+    "inversion-questions"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "negation-c1",
+   "lv": "c1",
+   "cat": "negation",
+   "name": "Négation littéraire",
+   "vi": "Phủ định văn chương: ne một mình với savoir, pouvoir, oser, cesser (je ne sais que dire, il n'ose le dire, elle ne cesse de parler); je ne saurais + nguyên mẫu (tôi không thể); ne… point (cổ); nullement, aucunement (hoàn toàn không)",
+   "pre": [
+    "negation-b2"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "emphasis-c1",
+   "lv": "c1",
+   "cat": "sentence",
+   "name": "Mise en relief C1",
+   "vi": "Nhấn mạnh C1: si…, c'est que / c'est pour (là vì, là để), c'est… que với cả cụm (c'est en lisant qu'on apprend), voilà ce que, ce dont…, c'est, il y a… qui (il y a quelqu'un qui t'attend)",
+   "pre": [
+    "dislocation"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "comparison-c1",
+   "lv": "c1",
+   "cat": "comparison",
+   "name": "Comparaison C1",
+   "vi": "So sánh C1: comme si + imparfait / plus-que-parfait (như thể), tel que hợp giống số (như là, đúng như), de même que, ainsi que (cũng như), plutôt que de + nguyên mẫu (thay vì), à mesure que (càng… càng)",
+   "pre": [
+    "comparison-b2"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "nominal-sentences",
+   "lv": "c1",
+   "cat": "nouns",
+   "name": "Phrase nominale",
+   "vi": "Câu danh từ, không có động từ chia: tiêu đề báo (Hausse des prix), thông báo, biển báo (Défense de fumer, Fermeture à 18 heures), cảm thán (Quelle chance !); đổi động từ thành danh từ và nối chủ ngữ cũ bằng de (Le ministre démissionne → Démission du ministre)",
+   "pre": [
+    "nominalisation"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

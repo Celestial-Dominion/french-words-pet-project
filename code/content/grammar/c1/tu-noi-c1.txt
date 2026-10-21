@@ -1,0 +1,62 @@
+=== tu-noi-c1
+sum: Văn lập luận C1 dùng các từ nối tinh tế hơn. Certes… mais: thừa nhận một ý rồi phản bác. Or: nêu một dữ kiện then chốt làm câu chuyện rẽ hướng (thế mà). Dès lors: từ đó, vì vậy. Cela dit: dù vậy. Toujours est-il que + indicatif: dù sao thì sự thật vẫn là. Quitte à + nguyên mẫu: dù có phải. Voire: thậm chí.
+form: certes…, mais… | Certes, c'est cher, mais c'est beau.
+form: or + dữ kiện then chốt | Il devait venir. Or, il était malade.
+form: quitte à + nguyên mẫu | quitte à perdre de l'argent
+form: voire = thậm chí | des jours, voire des années
+cast: lea karim
+bg: train
+words: campagne, projet, appartement, contrat
+
+#hook
+lea: Certes, la vie à la campagne est calme, mais il n'y a pas de travail. | Đúng là sống ở quê yên tĩnh, nhưng lại không có việc làm. [thinking]
+karim: Or, aujourd'hui, beaucoup de gens travaillent à distance. Dès lors, pourquoi rester en ville ? | Mà ngày nay nhiều người làm việc từ xa. Vậy thì sao phải ở lại thành phố? [explain]
+> [[Certes… mais]]: thừa nhận rồi phản bác. [[Or]]: đưa ra một dữ kiện then chốt. [[Dès lors]]: từ đó suy ra.
+
+#meaning
+vs: Il devait signer, mais il était malade. | Anh ấy phải ký, nhưng lại bị ốm. || mais: đối lập đơn giản
+vs: Il devait signer le contrat. Or, il était malade ce jour-là. | Anh ấy phải ký hợp đồng. Thế mà hôm đó anh ấy lại ốm. || or: dữ kiện làm câu chuyện rẽ hướng
+> [[Or]] không chỉ đối lập; nó đưa thêm một dữ kiện quan trọng để lập luận tiếp.
+
+#form
+th: Từ nối | Nghĩa | Ví dụ
+tb: certes… mais | đúng là… nhưng | Certes, il est jeune, mais il est sérieux.
+tb: dès lors | từ đó, vì vậy | Dès lors, tout a changé.
+tb: cela dit | dù vậy | Cela dit, je comprends ta colère.
+tb: toujours est-il que | dù sao thì | Toujours est-il qu'il a menti.
+> [[Quitte à]] cho thấy mình chấp nhận cái giá phải trả; [[voire]] đẩy ý lên mức cao hơn.
+
+#examples
+- {Certes|k}, l'appartement est petit, mais il est très lumineux. | Đúng là căn hộ nhỏ, nhưng rất sáng sủa.
+- Tout le monde le croyait innocent. {Or|k}, la police a trouvé une preuve. | Ai cũng tin anh ta vô tội. Thế mà cảnh sát lại tìm ra bằng chứng.
+- Le projet coûte trop cher. {Cela dit|k}, l'idée est intéressante. | Dự án quá tốn kém. Dù vậy, ý tưởng rất thú vị.
+- Je finirai ce travail ce soir, {quitte à|k} dormir peu. | Tôi sẽ làm xong việc này tối nay, dù có phải ngủ ít.
+- Les travaux vont durer des semaines, {voire|k} des mois. | Công trình sẽ kéo dài nhiều tuần, thậm chí nhiều tháng.
+
+#mistakes
+x: Certes, il est riche, donc il n'est pas heureux. => Certes, il est riche, mais il n'est pas heureux. | Đúng là anh ấy giàu, nhưng anh ấy không hạnh phúc. >> [[Certes]] đi với [[mais]] để phản bác.
+x: Je partirai à l'heure, quitte à que je ne mange pas. => Je partirai à l'heure, quitte à ne pas manger. | Tôi sẽ đi đúng giờ, dù có phải nhịn ăn. >> [[Quitte à]] đi với nguyên mẫu.
+x: Toujours est-il qu'il ait refusé. => Toujours est-il qu'il a refusé. | Dù sao thì anh ấy đã từ chối. >> [[Toujours est-il que]] nêu sự thật: [[indicatif]].
+
+#dialogue
+lea: Cela dit, les écoles sont loin, voire très loin. | Dù vậy, trường học thì xa, thậm chí rất xa. [worried]
+karim: Toujours est-il que les enfants seraient plus heureux dehors. | Dù sao thì sự thật là bọn trẻ sẽ vui hơn khi ở ngoài trời. [explain]
+lea: Alors on essaie, quitte à revenir dans un an ? | Vậy mình thử nhé, dù có phải quay lại sau một năm? [thinking]
+karim: Voilà une bonne idée ! | Đúng là ý hay! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Đúng là căn hộ nhỏ, nhưng rất sáng sủa. => Certes, l'appartement est petit, mais il est très lumineux. | Đúng là căn hộ nhỏ, nhưng rất sáng sủa.
+? Nói bằng tiếng Pháp: Công trình sẽ kéo dài nhiều tuần, thậm chí nhiều tháng. => Les travaux vont durer des semaines, voire des mois. | Công trình sẽ kéo dài nhiều tuần, thậm chí nhiều tháng.
+
+#recap
+> Từ nối C1: [[certes… mais]] (thừa nhận rồi phản bác), [[or]] (dữ kiện then chốt), [[dès lors]] (từ đó), [[cela dit]] (dù vậy), [[toujours est-il que]] (dù sao thì), [[quitte à]] (dù có phải), [[voire]] (thậm chí).
+
+#practice
+fill: Certes, l'appartement est petit, ___ il est très lumineux. | mais* / donc / car || certes… mais.
+fill: Les travaux vont durer des semaines, ___ des mois. | voire* / donc / or || voire: thậm chí.
+fill: Je finirai ce travail ce soir, ___ dormir peu. | quitte à* / quitte que / pour que || quitte à với nguyên mẫu.
+contrast: Tout le monde le croyait innocent, ___ la police a trouvé une preuve. | or* / donc || dữ kiện làm câu chuyện rẽ hướng.
+contrast: Toujours est-il qu'il ___ refusé. | a* / ait || sự thật: indicatif.
+type: Il devait signer le contrat. Or, il ___ (être, imparfait) malade ce jour-là. | était || or: dữ kiện then chốt.
+fix: Certes, il est riche, donc il n'est pas heureux. | Certes, il est riche, mais il n'est pas heureux.* / Certes, il est riche, or il n'est pas heureux. / Certes, il est riche, car il n'est pas heureux. || certes… mais.
+listen: Les travaux vont durer des semaines, voire des mois. | Les travaux vont durer des semaines, voire des mois.* / Les travaux vont durer des semaines, pas des mois. / Les travaux vont durer quelques semaines, et non des mois. || voire.
