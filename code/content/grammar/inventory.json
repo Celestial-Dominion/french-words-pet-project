@@ -2045,6 +2045,83 @@
     "concession-c1"
    ],
    "pri": 2
+  },
+  {
+   "id": "que-substitute",
+   "lv": "c2",
+   "cat": "clauses",
+   "name": "Que remplaçant une conjonction",
+   "vi": "Que thay liên từ lặp lại: quand… et que, comme… et que, puisque… et que; que mang nghĩa và thức của liên từ gốc (bien que… et qu'il pleuve: subjonctif); si… et que + subjonctif trong văn chuẩn, khi nói hay dùng indicatif",
+   "pre": [
+    "hypothesis"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "apposition",
+   "lv": "c2",
+   "cat": "sentence",
+   "name": "Apposition",
+   "vi": "Đồng vị ngữ: danh từ (không mạo từ) hoặc tính từ đặt cạnh chủ ngữ, ngăn bằng dấu phẩy, thay cả mệnh đề (Enfant, je vivais à la campagne; Médecin de formation, il…; Furieuse, elle…); phải nói về chủ ngữ của câu (tránh lỗi chủ ngữ treo) và hợp giống số",
+   "pre": [
+    "participial-clause"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "ellipsis",
+   "lv": "c2",
+   "cat": "sentence",
+   "name": "Ellipse",
+   "vi": "Tỉnh lược: bỏ động từ đã rõ, thay bằng dấu phẩy (Paul aime le thé ; Zoé, le café); trả lời ngắn moi aussi / moi non plus / moi si; so sánh rút gọn với đại từ nhấn mạnh (plus que moi)",
+   "pre": [
+    "comparison-c1"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "connectors-academic",
+   "lv": "c2",
+   "cat": "clauses",
+   "name": "Connecteurs soutenus",
+   "vi": "Từ nối học thuật, hành chính: force est de constater (buộc phải thừa nhận), nonobstant (bất chấp), d'aucuns (một số người), eu égard à (xét đến), en l'occurrence (trong trường hợp này), a fortiori (huống chi), à l'instar de (giống như)",
+   "pre": [
+    "connectors-c1"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "fixed-constructions",
+   "lv": "c2",
+   "cat": "clauses",
+   "name": "Tournures figées",
+   "vi": "Cấu trúc cố định C2: faire en sorte que + subjonctif (làm sao để), tant et si bien que + indicatif (đến nỗi rốt cuộc), pour autant que + subjonctif (theo chỗ: pour autant que je sache), à défaut de (nếu không có), sous peine de (nếu không sẽ bị)",
+   "pre": [
+    "consequence-purpose-b2"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "nominalised-infinitive",
+   "lv": "c2",
+   "cat": "nouns",
+   "name": "Infinitif et adjectif substantivés",
+   "vi": "Nguyên mẫu và tính từ thành danh từ (giống đực): le savoir, le pouvoir, le devoir, le rire, le coucher du soleil, le savoir-faire, le savoir-vivre; le beau, l'essentiel, le pire, l'important; le pourquoi, le comment",
+   "pre": [
+    "nominalisation"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "mood-meaning",
+   "lv": "c2",
+   "cat": "verbs",
+   "name": "Mode et sens",
+   "vi": "Thức đổi nghĩa động từ: dire que + indicatif (nói rằng) / + subjonctif (bảo làm); comprendre que + indicatif (hiểu ra) / + subjonctif (thông cảm); admettre que; il me semble que + indicatif / il semble que + subjonctif",
+   "pre": [
+    "subj-c1"
+   ],
+   "pri": 1
   }
  ],
  "probes": [

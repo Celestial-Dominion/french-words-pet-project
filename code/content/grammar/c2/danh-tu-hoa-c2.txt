@@ -1,0 +1,63 @@
+=== danh-tu-hoa-c2
+sum: Tiếng Pháp biến nguyên mẫu và tính từ thành danh từ bằng cách thêm mạo từ. Nguyên mẫu: le savoir (kiến thức), le pouvoir (quyền lực), le devoir (bổn phận), le rire (tiếng cười), le coucher du soleil, le savoir-faire (tay nghề), le savoir-vivre (phép lịch sự). Tính từ chỉ ý chung: le beau (cái đẹp), l'essentiel (điều cốt yếu), le pire (điều tệ nhất), l'important. Còn có le pourquoi, le comment (lý do, cách thức). Tất cả là giống đực.
+form: le + nguyên mẫu | le rire, le savoir
+form: le + tính từ = cái… | le beau, l'essentiel
+form: l'essentiel, c'est de… | L'essentiel, c'est de participer.
+form: le pourquoi, le comment | le pourquoi de cette décision
+cast: mme-martin tom
+bg: classroom
+words: soleil, richesse, décision, citoyen
+gloss: savoir-faire, savoir-vivre
+
+#hook
+tom: Madame, le savoir-faire, c'est quoi exactement ? | Thưa cô, “le savoir-faire” chính xác là gì ạ? [thinking]
+mme-martin: C'est savoir faire, mais devenu un nom : l'habileté, l'expérience pratique. | Là “biết làm”, nhưng đã thành danh từ: sự khéo léo, kinh nghiệm thực tế. [explain]
+> Thêm mạo từ, nguyên mẫu thành danh từ: [[savoir faire]] thành [[le savoir-faire]], tay nghề.
+
+#meaning
+vs: Il aime rire. | Anh ấy thích cười. || nguyên mẫu: động từ
+vs: Son rire est contagieux. | Tiếng cười của anh ấy dễ lây. || le rire: danh từ
+> Khi có mạo từ hay tính từ sở hữu, nguyên mẫu trở thành danh từ giống đực.
+
+#form
+th: Gốc | Danh từ | Nghĩa
+tb: savoir | le savoir | kiến thức
+tb: pouvoir | le pouvoir | quyền lực
+tb: devoir | le devoir | bổn phận, bài tập
+tb: beau | le beau | cái đẹp
+tb: essentiel | l'essentiel | điều cốt yếu
+> Tính từ danh từ hoá chỉ một ý chung, luôn giống đực số ít: [[le beau]], [[le vrai]], [[le pire]].
+
+#examples
+- Le {coucher|k} du soleil sur la mer était magnifique. | Cảnh mặt trời lặn trên biển thật tuyệt.
+- {L'essentiel|k}, c'est que tu sois en bonne santé. | Điều cốt yếu là bạn khoẻ mạnh.
+- Le {pire|k}, c'est qu'il ne s'est même pas excusé. | Tệ nhất là anh ta thậm chí còn không xin lỗi.
+- Le {savoir-vivre|k} exige de saluer tout le monde. | Phép lịch sự đòi hỏi phải chào mọi người.
+- Je ne comprends pas le {pourquoi|k} de cette décision. | Tôi không hiểu lý do của quyết định này.
+
+#mistakes
+x: La savoir est une richesse. => Le savoir est une richesse. | Kiến thức là một tài sản. >> Nguyên mẫu danh từ hoá là giống đực: [[le savoir]].
+x: L'importante, c'est d'essayer. => L'important, c'est d'essayer. | Điều quan trọng là thử. >> Tính từ danh từ hoá chỉ ý chung: giống đực số ít.
+
+#dialogue
+tom: Et le devoir, c'est aussi un nom ? | Thế “le devoir” cũng là danh từ ạ? [thinking]
+mme-martin: Oui : le devoir du citoyen, ou tes devoirs pour demain ! | Đúng: bổn phận công dân, hoặc bài tập về nhà của em cho ngày mai! [happy]
+tom: Ah, le pire, ce sont les devoirs ! | À, tệ nhất là bài tập về nhà! [sad]
+mme-martin: Courage ! L'essentiel, c'est de comprendre. | Cố lên! Điều cốt yếu là hiểu bài. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Điều cốt yếu là bạn khoẻ mạnh. => L'essentiel, c'est que tu sois en bonne santé. | Điều cốt yếu là bạn khoẻ mạnh.
+? Nói bằng tiếng Pháp: Cảnh mặt trời lặn trên biển thật tuyệt. => Le coucher du soleil sur la mer était magnifique. | Cảnh mặt trời lặn trên biển thật tuyệt.
+
+#recap
+> Thêm mạo từ để biến nguyên mẫu thành danh từ ([[le savoir]], [[le rire]], [[le savoir-faire]]) và tính từ thành danh từ chỉ ý chung ([[le beau]], [[l'essentiel]], [[le pire]]). Tất cả là giống đực.
+
+#practice
+fill: Pour lui, ___ savoir est une richesse. | le* / la / les || nguyên mẫu danh từ hoá: giống đực.
+fill: Le ___ du soleil sur la mer était magnifique. | coucher* / couché / couchant || le coucher du soleil.
+fill: Je ne comprends pas le ___ de cette décision. | pourquoi* / parce que / quoi || le pourquoi: lý do.
+contrast: Il aime ___ . | rire* / le rire || động từ sau aimer.
+contrast: Son ___ est contagieux. | rire* / rit || danh từ sau son.
+type: L'___ (important), c'est d'essayer. | important || giống đực số ít.
+fix: La savoir est une richesse. | Le savoir est une richesse.* / Les savoirs est une richesse. / La savoire est une richesse. || le savoir.
+listen: Le savoir-vivre exige de saluer tout le monde. | Le savoir-vivre exige de saluer tout le monde.* / Le savoir-faire exige de saluer tout le monde. / Le savoir-vivre exige de remercier tout le monde. || savoir-vivre.

@@ -1,0 +1,64 @@
+=== tu-noi-hoc-thuat
+sum: Văn học thuật, hành chính có những từ nối riêng. Force est de constater que: buộc phải thừa nhận rằng. Nonobstant: bất chấp (như malgré, rất trang trọng). D'aucuns: một số người (như certains, động từ số nhiều). Eu égard à: xét đến. En l'occurrence: trong trường hợp cụ thể này. A fortiori: huống chi, càng phải. À l'instar de: giống như, theo gương.
+form: force est de + nguyên mẫu | Force est de reconnaître que…
+form: d'aucuns + động từ số nhiều | D'aucuns pensent que…
+form: eu égard à + danh từ | eu égard à son âge
+form: à l'instar de + danh từ | à l'instar de ses collègues
+cast: karim ines
+bg: office
+words: rapport, méthode, conclusion, délai
+gloss: nonobstant, aucuns, occurrence, fortiori, instar
+
+#hook
+ines: J'ai écrit : force est de constater que les résultats sont décevants. C'est trop formel ? | Em đã viết: “buộc phải thừa nhận rằng kết quả đáng thất vọng.” Có trang trọng quá không anh? [worried]
+karim: Pour un rapport, c'est parfait. À l'oral, on dirait simplement : il faut bien le reconnaître. | Với một bản báo cáo thì hoàn hảo. Khi nói, người ta chỉ nói “phải thừa nhận thôi”. [explain]
+> [[Force est de constater]]: buộc phải thừa nhận. Đây là từ nối của văn viết học thuật, hành chính.
+
+#meaning
+vs: Certains pensent que c'est impossible. | Một số người nghĩ điều đó là không thể. || văn thường
+vs: D'aucuns pensent que c'est impossible. | Có người cho rằng điều đó là không thể. || văn chương, học thuật
+> [[D'aucuns]] nghĩa như [[certains]] nhưng trang trọng hơn, thường để nêu một ý kiến mà người viết sắp phản bác.
+
+#form
+th: Từ nối | Nghĩa | Tương đương thường
+tb: nonobstant | bất chấp | malgré
+tb: eu égard à | xét đến | compte tenu de
+tb: en l'occurrence | trong trường hợp này | ici
+tb: a fortiori | huống chi, càng phải | encore plus
+tb: à l'instar de | giống như | comme
+> Dùng các từ này trong báo cáo, luận văn, văn bản luật; khi nói chúng nghe rất cứng.
+
+#examples
+- {Force|k} est de constater que le projet a échoué. | Buộc phải thừa nhận rằng dự án đã thất bại.
+- {Nonobstant|k} les difficultés, l'équipe a respecté les délais. | Bất chấp khó khăn, nhóm vẫn đúng hạn.
+- Le responsable, {en l'occurrence|k} madame Martin, signera le contrat. | Người phụ trách, trong trường hợp này là bà Martin, sẽ ký hợp đồng.
+- Cette tâche est difficile pour un expert, a {fortiori|k} pour un débutant. | Việc này khó với chuyên gia, huống chi người mới bắt đầu.
+- {À l'instar de|k} ses collègues, elle a refusé de signer. | Giống như các đồng nghiệp, cô ấy đã từ chối ký.
+
+#mistakes
+x: D'aucuns prétend que la crise est finie. => D'aucuns prétendent que la crise est finie. | Có người cho rằng khủng hoảng đã qua. >> [[D'aucuns]] là số nhiều: động từ số nhiều.
+x: Force est à constater que tout a changé. => Force est de constater que tout a changé. | Buộc phải thừa nhận rằng mọi thứ đã thay đổi. >> Cụm cố định: [[force est de]].
+x: À l'instar ses collègues, elle refuse. => À l'instar de ses collègues, elle refuse. | Giống các đồng nghiệp, cô ấy từ chối. >> [[À l'instar de]] cần [[de]].
+
+#dialogue
+ines: Et pour la conclusion, j'ai mis : nonobstant ces limites, l'étude reste utile. | Còn phần kết luận, em viết: “bất chấp những hạn chế này, nghiên cứu vẫn hữu ích.” [thinking]
+karim: Très bien. D'aucuns diront que ta méthode est fragile, mais tes arguments sont solides. | Rất tốt. Sẽ có người phê bình phương pháp của em, nhưng lập luận của em vững. [explain]
+ines: Merci ! Je l'envoie au professeur, en l'occurrence monsieur Dubois. | Cảm ơn anh! Em gửi cho giáo sư, cụ thể là thầy Dubois. [happy]
+karim: Bonne chance ! Et relis-la une dernière fois avant de l'envoyer. | Chúc may mắn! Và đọc lại lần cuối trước khi gửi nhé. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Buộc phải thừa nhận rằng dự án đã thất bại. => Force est de constater que le projet a échoué. | Buộc phải thừa nhận rằng dự án đã thất bại.
+? Nói bằng tiếng Pháp: Giống như các đồng nghiệp, cô ấy đã từ chối ký. => À l'instar de ses collègues, elle a refusé de signer. | Giống như các đồng nghiệp, cô ấy đã từ chối ký.
+
+#recap
+> Từ nối học thuật: [[force est de]] (buộc phải), [[nonobstant]] (bất chấp), [[d'aucuns]] (một số người), [[eu égard à]] (xét đến), [[en l'occurrence]] (trong trường hợp này), [[a fortiori]] (huống chi), [[à l'instar de]] (giống như).
+
+#practice
+fill: Force est ___ constater que le projet a échoué. | de* / à / que || force est de.
+fill: D'aucuns ___ que la crise est finie. | prétendent* / prétend / prétendre || d'aucuns: số nhiều.
+fill: Cette tâche est difficile pour un expert, a ___ pour un débutant. | fortiori* / priori / posteriori || a fortiori: huống chi.
+contrast: L'équipe a respecté les délais, ___ les difficultés. | nonobstant* / néanmoins || nonobstant với danh từ.
+contrast: Elle a refusé de signer, à l'instar ___ ses collègues. | de* / à || à l'instar de.
+type: Le responsable, en l'___ madame Martin, signera le contrat. | occurrence || en l'occurrence.
+fix: Force est à constater que tout a changé. | Force est de constater que tout a changé.* / Force est constater que tout a changé. / Force de constater que tout a changé. || force est de.
+listen: Nonobstant les difficultés, l'équipe a respecté les délais. | Nonobstant les difficultés, l'équipe a respecté les délais.* / Malgré les difficultés, l'équipe n'a pas respecté les délais. / Nonobstant les difficultés, l'équipe a dépassé les délais. || nonobstant.

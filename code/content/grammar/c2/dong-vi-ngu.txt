@@ -1,0 +1,62 @@
+=== dong-vi-ngu
+sum: Đồng vị ngữ là danh từ hoặc tính từ đặt cạnh chủ ngữ, ngăn bằng dấu phẩy, thay cho cả một mệnh đề: Médecin de formation, il est devenu écrivain (vốn là bác sĩ, ông ấy trở thành nhà văn). Enfant, elle vivait à la campagne (hồi nhỏ). Furieuse, elle a claqué la porte (giận dữ). Danh từ chỉ nghề, thời kỳ không có mạo từ. Quy tắc vàng: đồng vị ngữ đầu câu phải nói về chủ ngữ của câu; sai là lỗi chủ ngữ treo.
+form: danh từ đầu câu, không mạo từ | Médecin, il connaît le problème.
+form: tính từ đầu câu | Furieuse, elle est partie.
+form: danh từ sau danh từ | Paris, capitale de la France, …
+form: đồng vị ngữ nói về chủ ngữ | Fatigué, je me suis couché.
+cast: dr-roux chloe
+bg: hospital
+words: réunion, ministre, université, écrivain
+
+#hook
+chloe: Docteur, vous écrivez aussi des romans ? | Bác sĩ, ông còn viết tiểu thuyết nữa ạ? [surprised]
+dr-roux: Oui. Médecin le jour, écrivain la nuit ! Enfant, je voulais déjà raconter des histoires. | Ừ. Ban ngày là bác sĩ, ban đêm là nhà văn! Hồi nhỏ, tôi đã muốn kể chuyện rồi. [happy]
+> [[Médecin le jour]], [[enfant]]: danh từ đứng đầu, không mạo từ, ngăn bằng dấu phẩy, nói thêm về chủ ngữ [[je]].
+
+#meaning
+vs: Quand j'étais enfant, je vivais à la campagne. | Khi còn nhỏ, tôi sống ở quê. || mệnh đề đầy đủ
+vs: Enfant, je vivais à la campagne. | Hồi nhỏ, tôi sống ở quê. || đồng vị ngữ: gọn hơn
+> Đồng vị ngữ rút gọn cả một mệnh đề, rất hay gặp trong văn viết và báo chí.
+
+#form
+th: Kiểu | Ví dụ | Nghĩa
+tb: danh từ chỉ nghề | Avocat, il connaît la loi. | là luật sư, anh ấy hiểu luật
+tb: danh từ chỉ thời kỳ | Étudiante, elle voyageait beaucoup. | hồi là sinh viên, cô ấy đi nhiều
+tb: tính từ | Inquiète, elle a appelé. | lo lắng, cô ấy đã gọi
+tb: sau danh từ | Lyon, ville du cinéma | Lyon, thành phố điện ảnh
+> Đồng vị ngữ hợp giống số với chủ ngữ: [[inquiète, elle]], [[étudiants, ils]].
+
+#examples
+- {Furieuse|k}, elle a quitté la réunion sans un mot. | Giận dữ, cô ấy rời cuộc họp không nói một lời.
+- {Ancien|k} ministre, il donne aujourd'hui des cours à l'université. | Vốn là bộ trưởng, ông ấy nay dạy ở đại học.
+- {Seule|k} au monde, elle n'avait personne à qui parler. | Một mình trên đời, cô không có ai để trò chuyện.
+- Le docteur Roux, {spécialiste|k} du cœur, opère demain. | Bác sĩ Roux, chuyên gia tim mạch, sẽ mổ ngày mai.
+- {Malade|k}, je n'ai pas pu venir. | Vì ốm, tôi đã không đến được.
+
+#mistakes
+x: Enfant, mes parents m'emmenaient à la mer. => Enfant, j'allais à la mer avec mes parents. | Hồi nhỏ, tôi hay đi biển với bố mẹ. >> [[Enfant]] nói về [[je]], nên chủ ngữ phải là [[je]], không phải [[mes parents]].
+x: Fatiguée, le voyage lui a semblé long. => Fatiguée, elle a trouvé le voyage long. | Vì mệt, cô ấy thấy chuyến đi dài. >> Đồng vị ngữ phải nói về chủ ngữ của câu.
+x: Une avocate, elle connaît la loi. => Avocate, elle connaît la loi. | Là luật sư, cô ấy hiểu luật. >> Đồng vị ngữ chỉ nghề không có mạo từ.
+
+#dialogue
+chloe: Et vos patients lisent vos livres ? | Thế bệnh nhân của ông có đọc sách của ông không? [thinking]
+dr-roux: Certains, oui. Curieux, ils me demandent si mes histoires sont vraies. | Một vài người có. Tò mò, họ hỏi tôi những câu chuyện có thật không. [happy]
+chloe: Et elles le sont ? | Thế có thật không ạ? [surprised]
+dr-roux: Médecin, je dois garder des secrets. Écrivain, j'ai le droit d'inventer ! | Là bác sĩ, tôi phải giữ bí mật. Là nhà văn, tôi được quyền bịa ra! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Giận dữ, cô ấy rời cuộc họp không nói một lời. => Furieuse, elle a quitté la réunion sans un mot. | Giận dữ, cô ấy rời cuộc họp không nói một lời.
+? Nói bằng tiếng Pháp: Vì ốm, tôi đã không đến được. => Malade, je n'ai pas pu venir. | Vì ốm, tôi đã không đến được.
+
+#recap
+> Đồng vị ngữ: danh từ (không mạo từ) hoặc tính từ đặt cạnh chủ ngữ, ngăn bằng dấu phẩy, thay cho cả mệnh đề. Nó phải nói về chủ ngữ của câu và hợp giống số với chủ ngữ.
+
+#practice
+fill: Mon voisin, ___ ministre, donne aujourd'hui des cours. | ancien* / anciens / ancienne || hợp với mon voisin.
+fill: Elle a quitté la réunion, ___ , sans un mot. | furieuse* / furieux / furieuses || hợp với elle.
+fill: Le docteur Roux, ___ du cœur, opère demain. | spécialiste* / spécialistes / spécialiser || đồng vị ngữ sau danh từ.
+contrast: Enfant, ___ à la mer avec mes parents. | j'allais* / mes parents allaient || chủ ngữ phải là người được nói đến.
+contrast: Fatiguée, ___ . | elle a trouvé le voyage long* / le voyage lui a semblé long || đồng vị ngữ nói về chủ ngữ.
+type: Inquiètes, ___ ont appelé la police. | elles || hợp giống số.
+fix: Enfant, mes parents m'emmenaient à la mer. | Enfant, j'allais à la mer avec mes parents.* / Enfant, mes parents allaient à la mer avec moi. / Enfants, mes parents m'emmenaient à la mer. || tránh chủ ngữ treo.
+listen: Seule au monde, elle n'avait personne à qui parler. | Seule au monde, elle n'avait personne à qui parler.* / Seule au monde, elle avait quelqu'un à qui parler. / Seul au monde, il n'avait personne à qui parler. || elle n'avait personne.

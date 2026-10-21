@@ -1,0 +1,62 @@
+=== thuc-doi-nghia
+sum: Một số động từ đổi nghĩa tuỳ thức của mệnh đề theo sau. Dire que + indicatif: nói rằng; dire que + subjonctif: bảo ai làm gì (dis-lui qu'il vienne). Comprendre que + indicatif: hiểu ra; + subjonctif: thông cảm (je comprends qu'il soit fâché). Il me semble que + indicatif: tôi thấy hình như (khá chắc); il semble que + subjonctif: có vẻ như (kém chắc hơn).
+form: dire que + indicatif = nói rằng | Il dit qu'elle part.
+form: dire que + subjonctif = bảo làm | Dis-lui qu'il vienne.
+form: comprendre que + subjonctif = thông cảm | Je comprends qu'il soit triste.
+form: il me semble que + indicatif | Il me semble qu'il pleut.
+cast: m-dubois linh
+bg: office
+words: magasin, train, ordre, retard
+
+#hook
+m-dubois: Dites à Paul qu'il vienne me voir. | Cô bảo Paul đến gặp tôi nhé. [explain]
+linh: Qu'il vienne ? Pas : qu'il vient ? | “Qu'il vienne”? Không phải “qu'il vient” ạ? [thinking]
+m-dubois: Non. Je ne vous informe pas, je donne un ordre ! | Không. Tôi không thông báo, tôi đang ra lệnh! [happy]
+> [[Dire que]] với [[indicatif]]: nói rằng. [[Dire que]] với [[subjonctif]]: bảo ai làm gì. Thức đổi thì nghĩa đổi.
+
+#meaning
+vs: Je comprends qu'il est fâché. | Tôi hiểu ra là anh ấy đang giận. || indicatif: nhận ra sự việc
+vs: Je comprends qu'il soit fâché. | Tôi thông cảm việc anh ấy giận. || subjonctif: thông cảm
+> Với [[comprendre que]], [[indicatif]] là hiểu ra; [[subjonctif]] là thấy điều đó dễ hiểu, thông cảm.
+
+#form
+th: Động từ | Với indicatif | Với subjonctif
+tb: dire que | nói rằng | bảo, ra lệnh
+tb: comprendre que | hiểu ra | thông cảm
+tb: admettre que | thừa nhận | chấp nhận giả định
+tb: sembler | il me semble que: tôi thấy | il semble que: có vẻ như
+> [[Il me semble que]] đi với [[indicatif]] vì người nói khá chắc; [[il semble que]] thường đi với [[subjonctif]].
+
+#examples
+- Dis à ta sœur qu'elle {vienne|k} dîner ce soir. | Bảo chị con đến ăn tối nay.
+- Il m'a dit que le train {était|k} en retard. | Anh ấy nói với tôi rằng tàu bị trễ.
+- Je comprends que tu {sois|k} déçu. | Tôi thông cảm việc bạn thất vọng.
+- Il semble que le magasin {soit|k} fermé. | Có vẻ như cửa hàng đóng cửa.
+- Il me semble que tu {as|k} maigri. | Tôi thấy hình như bạn gầy đi.
+
+#mistakes
+x: Dis-lui qu'il vient tout de suite. => Dis-lui qu'il vienne tout de suite. | Bảo anh ấy đến ngay. >> Ra lệnh: [[dire que]] với [[subjonctif]].
+x: Il me semble qu'il soit malade. => Il me semble qu'il est malade. | Tôi thấy hình như anh ấy ốm. >> [[Il me semble que]] đi với [[indicatif]].
+
+#dialogue
+linh: Et si Paul refuse de venir ? | Nhỡ Paul không chịu đến thì sao ạ? [worried]
+m-dubois: Je comprendrais qu'il soit inquiet. Mais il me semble qu'il est raisonnable. | Tôi sẽ thông cảm nếu cậu ấy lo lắng. Nhưng tôi thấy cậu ấy là người biết điều. [thinking]
+linh: Je lui dis que c'est urgent ? | Em có bảo cậu ấy là việc gấp không ạ? [thinking]
+m-dubois: Dites-lui simplement que je l'attends. | Cứ nói với cậu ấy là tôi đang đợi. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi thông cảm việc bạn thất vọng. => Je comprends que tu sois déçu. | Tôi thông cảm việc bạn thất vọng.
+? Nói bằng tiếng Pháp: Có vẻ như cửa hàng đóng cửa. => Il semble que le magasin soit fermé. | Có vẻ như cửa hàng đóng cửa.
+
+#recap
+> Thức đổi nghĩa: [[dire que]] với [[indicatif]] là nói rằng, với [[subjonctif]] là bảo làm; [[comprendre que]] với [[subjonctif]] là thông cảm; [[il me semble que]] với [[indicatif]], [[il semble que]] với [[subjonctif]].
+
+#practice
+fill: Dis à ta sœur qu'elle ___ dîner ce soir. | vienne* / vient / viendra || bảo làm: subjonctif.
+fill: Il m'a dit que le train ___ en retard. | était* / soit / fût || nói rằng: indicatif.
+fill: Je comprends que tu ___ déçu. | sois* / es / seras || thông cảm: subjonctif.
+contrast: Il me semble que tu ___ maigri. | as* / aies || il me semble que: indicatif.
+contrast: Il semble que le magasin ___ fermé. | soit* / est || il semble que: subjonctif.
+type: Dis-lui qu'il ___ (venir) tout de suite. | vienne || ra lệnh: subjonctif.
+fix: Il me semble qu'il soit malade. | Il me semble qu'il est malade.* / Il me semble qu'il sois malade. / Il me semble qu'il être malade. || indicatif.
+listen: Je comprends que tu sois déçu. | Je comprends que tu sois déçu.* / Je comprends pourquoi tu es déçu. / Je ne comprends pas que tu sois déçu. || je comprends que.

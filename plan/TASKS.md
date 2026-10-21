@@ -33,7 +33,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | **xong 20/10** (52 truyện, ≥3 50,7% · ≥5 25,2%) |
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
-| G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | đang làm: lô 1 xong (7/20 bài) |
+| G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | đang làm: lô 2 xong (14/20 bài) |
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
@@ -206,6 +206,7 @@ học thuật (force est de, nonobstant, d'aucuns) · nguyên mẫu danh từ ho
 sorte que, à force de, tant et si bien que).
 - **Nhật ký:**
   - 21/10 lô 1: 7 bài (câu điều kiện văn chương, đảo ngữ văn chương, lời gián tiếp tự do, cảm thán và câu hỏi tu từ, phủ định mang nghĩa khẳng định, động từ cổ trong cụm cố định, nhượng bộ C2) + 7 điểm inventory; 153/153 bài, 0 lỗi; 5 giờ 19% · tuần 10% trước lô; 8a246a1
+  - 21/10 lô 2: 7 bài (que thay liên từ, đồng vị ngữ, tỉnh lược, từ nối học thuật, cấu trúc cố định C2, danh từ hoá nguyên mẫu và tính từ, thức đổi nghĩa) + 7 điểm inventory; 160/160 bài, 0 lỗi; 5 giờ 22% · tuần 10% sau lô 1; COMMIT
 
 ---
 

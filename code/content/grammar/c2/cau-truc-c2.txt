@@ -1,0 +1,63 @@
+=== cau-truc-c2
+sum: Một số cấu trúc cố định của văn trang trọng. Faire en sorte que + subjonctif: làm sao để (fais en sorte que tout soit prêt). Tant et si bien que + indicatif: đến nỗi rốt cuộc. Pour autant que + subjonctif: theo chỗ, trong chừng mực (pour autant que je sache: theo tôi biết). À défaut de + danh từ hoặc nguyên mẫu: nếu không có, thiếu… thì. Sous peine de + danh từ hoặc nguyên mẫu: nếu không sẽ bị.
+form: faire en sorte que + subjonctif | Fais en sorte qu'il soit là.
+form: tant et si bien que + indicatif | Il a insisté tant et si bien qu'elle a cédé.
+form: pour autant que + subjonctif | pour autant que je sache
+form: sous peine de + danh từ | sous peine d'amende
+cast: papa tom
+bg: home-day
+words: chambre, panneau, amende, rivière
+
+#hook
+papa: Fais en sorte que ta chambre soit rangée avant ce soir, sous peine de rester à la maison samedi ! | Con liệu mà dọn phòng xong trước tối nay, không thì thứ bảy ở nhà! [angry]
+tom: Sous peine de... Tu parles comme un panneau de la mairie ! | “Sous peine de”... Bố nói như biển báo ở toà thị chính ấy! [happy]
+> [[Faire en sorte que]]: làm sao để, đi với [[subjonctif]]. [[Sous peine de]]: nếu không sẽ bị, hay gặp trên biển báo, văn bản luật.
+
+#meaning
+vs: Il a beaucoup insisté, alors elle a accepté. | Anh ấy nài nỉ nhiều, nên cô ấy đã đồng ý. || câu thường
+vs: Il a insisté tant et si bien qu'elle a fini par accepter. | Anh ấy nài nỉ mãi đến nỗi rốt cuộc cô ấy phải đồng ý. || kết quả của sự lặp lại
+> [[Tant et si bien que]] nhấn mạnh rằng hành động lặp đi lặp lại đã dẫn đến kết quả.
+
+#form
+th: Cấu trúc | Nghĩa | Theo sau
+tb: faire en sorte que | làm sao để | subjonctif
+tb: tant et si bien que | đến nỗi rốt cuộc | indicatif
+tb: pour autant que | theo chỗ, trong chừng mực | subjonctif
+tb: à défaut de | nếu không có | danh từ, nguyên mẫu
+tb: sous peine de | nếu không sẽ bị | danh từ, nguyên mẫu
+> [[Pour autant que je sache]] là cụm rất hay dùng: theo những gì tôi biết.
+
+#examples
+- Faites en sorte que tout {soit|k} prêt à huit heures. | Hãy làm sao để mọi thứ sẵn sàng lúc tám giờ.
+- {Pour autant que|k} je sache, il n'est pas encore arrivé. | Theo tôi biết, anh ấy vẫn chưa đến.
+- {À défaut de|k} voiture, nous prendrons le train. | Không có ô tô thì chúng ta đi tàu.
+- Interdit de stationner, {sous peine d'amende|k}. | Cấm đỗ xe, vi phạm sẽ bị phạt.
+- Il a plu tant et si bien {que|k} la rivière a débordé. | Trời mưa mãi đến nỗi sông tràn bờ.
+
+#mistakes
+x: Fais en sorte qu'il vient. => Fais en sorte qu'il vienne. | Liệu làm sao để anh ấy đến. >> [[Faire en sorte que]] đi với [[subjonctif]].
+x: Pour autant que je sais, elle est partie. => Pour autant que je sache, elle est partie. | Theo tôi biết, cô ấy đã đi rồi. >> [[Pour autant que]] đi với [[subjonctif]].
+x: À défaut du café, je bois du thé. => À défaut de café, je bois du thé. | Không có cà phê thì tôi uống trà. >> Sau [[à défaut de]] thường không có mạo từ.
+
+#dialogue
+tom: Et si je range tout, je pourrai sortir avec mes amis ? | Thế nếu con dọn hết, con được đi chơi với bạn không? [thinking]
+papa: Pour autant que je sache, tu as aussi des devoirs. | Theo bố biết thì con còn bài tập nữa. [explain]
+tom: À défaut de sortir, je pourrai inviter un ami ? | Không được đi chơi thì con mời một bạn đến nhà được không? [happy]
+papa: D'accord. Mais faites en sorte que la maison reste propre ! | Được. Nhưng liệu mà giữ nhà sạch sẽ đấy! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Theo tôi biết, anh ấy vẫn chưa đến. => Pour autant que je sache, il n'est pas encore arrivé. | Theo tôi biết, anh ấy vẫn chưa đến.
+? Nói bằng tiếng Pháp: Không có ô tô thì chúng ta đi tàu. => À défaut de voiture, nous prendrons le train. | Không có ô tô thì chúng ta đi tàu.
+
+#recap
+> Cấu trúc C2: [[faire en sorte que]] và [[pour autant que]] với [[subjonctif]]; [[tant et si bien que]] với [[indicatif]]; [[à défaut de]] (nếu không có), [[sous peine de]] (nếu không sẽ bị).
+
+#practice
+fill: Faites en sorte que tout ___ prêt à huit heures. | soit* / est / sera || faire en sorte que: subjonctif.
+fill: Pour autant que je ___ , il n'est pas encore arrivé. | sache* / sais / saurai || pour autant que: subjonctif.
+fill: Il a plu tant et si bien que la rivière ___ débordé. | a* / ait / aurait || tant et si bien que: indicatif.
+contrast: Nous prendrons le train, à défaut ___ voiture. | de* / du || à défaut de, không mạo từ.
+contrast: Interdit de stationner, ___ peine d'amende. | sous* / sans || sous peine de.
+type: Fais en sorte qu'il ___ (venir). | vienne || subjonctif.
+fix: Pour autant que je sais, elle est partie. | Pour autant que je sache, elle est partie.* / Pour autant que je saurais, elle est partie. / Pour autant je sache, elle est partie. || subjonctif.
+listen: À défaut de voiture, nous prendrons le train. | À défaut de voiture, nous prendrons le train.* / À cause de la voiture, nous prendrons le train. / À défaut de train, nous prendrons la voiture. || à défaut de voiture.

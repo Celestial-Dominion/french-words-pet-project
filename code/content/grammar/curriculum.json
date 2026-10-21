@@ -1735,6 +1735,83 @@
     "concession-c2"
    ],
    "find": "(?<![\\p{L}'])([Qq]uelques? [\\p{L}]+ qu|pour autant|n'en (est|sont|était|reste|demeure) pas moins|[Ii]l n'empêche)"
+  },
+  {
+   "id": "que-thay-lien-tu",
+   "lv": "c2",
+   "cat": "clauses",
+   "t": "Que thay liên từ lặp lại: quand… et que",
+   "en": "quand il pleut et qu'il fait froid · bien qu'il soit tard et qu'il pleuve",
+   "pts": [
+    "que-substitute"
+   ],
+   "find": "(?<![\\p{L}'])([Qq]uand|[Ll]orsque|[Cc]omme|[Pp]uisque|[Bb]ien qu|[Pp]our qu|[Ss]i |[Ss]'il)[^.!?]{2,60} et qu(e |')"
+  },
+  {
+   "id": "dong-vi-ngu",
+   "lv": "c2",
+   "cat": "sentence",
+   "t": "Đồng vị ngữ: Enfant, il…; Furieuse, elle…",
+   "en": "enfant, je vivais à la campagne · médecin de formation, il…",
+   "pts": [
+    "apposition"
+   ],
+   "find": "^(Enfant|Médecin|Avocat|Avocate|Ancien|Ancienne|Furieux|Furieuse|Seul|Seule|Malade|Fatigué|Fatiguée|Inquiet|Inquiète|Étudiant|Étudiante|Curieux|Curieuse), "
+  },
+  {
+   "id": "tinh-luoc",
+   "lv": "c2",
+   "cat": "sentence",
+   "t": "Tỉnh lược: Paul, le thé; Zoé, le café",
+   "en": "mon frère parle trois langues ; ma sœur, cinq · moi si",
+   "pts": [
+    "ellipsis"
+   ],
+   "find": "(?<![\\p{L}'])([Mm]oi si|[Mm]oi non plus|[Tt]oi si|[Ll]ui non plus|[Ee]lle non plus|[Nn]ous non plus)(?![\\p{L}])"
+  },
+  {
+   "id": "tu-noi-hoc-thuat",
+   "lv": "c2",
+   "cat": "clauses",
+   "t": "Từ nối học thuật: force est de, nonobstant",
+   "en": "force est de constater que… · d'aucuns pensent que…",
+   "pts": [
+    "connectors-academic"
+   ],
+   "find": "(?<![\\p{L}'])([Ff]orce est de|[Nn]onobstant|[Dd]'aucuns|[Ee]u égard|en l'occurrence|a fortiori|[Àà] l'instar)(?![\\p{L}])"
+  },
+  {
+   "id": "cau-truc-c2",
+   "lv": "c2",
+   "cat": "clauses",
+   "t": "Cấu trúc C2: faire en sorte que, pour autant que je sache",
+   "en": "faites en sorte que tout soit prêt · à défaut de voiture",
+   "pts": [
+    "fixed-constructions"
+   ],
+   "find": "(?<![\\p{L}'])(en sorte que|en sorte qu'|tant et si bien|[Pp]our autant que|[Àà] défaut d|sous peine d)"
+  },
+  {
+   "id": "danh-tu-hoa-c2",
+   "lv": "c2",
+   "cat": "nouns",
+   "t": "Danh từ hoá: le savoir-faire, l'essentiel",
+   "en": "le savoir-faire · le coucher du soleil · l'essentiel, c'est…",
+   "pts": [
+    "nominalised-infinitive"
+   ],
+   "find": "(?<![\\p{L}'])(le savoir-faire|le savoir-vivre|[Ll]'essentiel,|[Ll]e pire,|le pourquoi|le coucher du soleil|son rire)"
+  },
+  {
+   "id": "thuc-doi-nghia",
+   "lv": "c2",
+   "cat": "verbs",
+   "t": "Thức đổi nghĩa: dis-lui qu'il vienne",
+   "en": "dis-lui qu'il vienne · je comprends qu'il soit fâché",
+   "pts": [
+    "mood-meaning"
+   ],
+   "find": "(?<![\\p{L}'])([Dd]is-lui qu|[Dd]ites-lui qu|[Ii]l semble qu|[Jj]e comprends qu)"
   }
  ]
 }

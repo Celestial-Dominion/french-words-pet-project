@@ -1,0 +1,61 @@
+=== que-thay-lien-tu
+sum: Khi hai mệnh đề cùng bắt đầu bằng một liên từ (quand, comme, puisque, bien que, pour que, si…), tiếng Pháp không lặp lại liên từ mà thay bằng que: Quand il pleut et qu'il fait froid, je reste chez moi. Que mang nghĩa và thức của liên từ gốc: sau bien que, pour que thì que + subjonctif. Riêng si… et que: văn chuẩn dùng subjonctif (s'il fait beau et que tu sois libre), khi nói người ta hay dùng indicatif.
+form: quand…, et que… | Quand tu seras prêt et que tu auras mangé, on part.
+form: comme…, et que… | Comme il était tard et que j'avais froid, je suis rentré.
+form: bien que…, et que + subjonctif | Bien qu'il soit tard et qu'il neige, …
+form: si…, et que + subjonctif | S'il fait beau et que tu sois libre, …
+cast: maman lucas
+bg: home-evening
+words: chambre, soupe, enfant, voiture
+
+#hook
+maman: Quand tu auras fini tes devoirs et que tu auras rangé ta chambre, tu pourras sortir. | Khi nào con làm xong bài tập và dọn phòng xong thì con được ra ngoài. [explain]
+lucas: Et que... Pourquoi pas : et quand j'aurai rangé ma chambre ? | “Et que”... Sao không phải “et quand j'aurai rangé ma chambre” hả mẹ? [thinking]
+> Để khỏi lặp [[quand]], tiếng Pháp thay liên từ thứ hai bằng [[que]]: [[quand tu auras fini… et que tu auras rangé…]].
+
+#meaning
+vs: Comme il pleuvait et comme j'étais fatigué, je suis resté. | Vì trời mưa và vì tôi mệt, tôi đã ở nhà. || lặp liên từ: nặng nề
+vs: Comme il pleuvait et que j'étais fatigué, je suis resté. | Vì trời mưa và tôi mệt, tôi đã ở nhà. || que thay liên từ: tự nhiên
+> [[Que]] nhận nghĩa và thức của liên từ đứng trước nó.
+
+#form
+th: Liên từ đầu | Mệnh đề sau | Thức
+tb: quand, lorsque | et que | indicatif
+tb: comme, puisque | et que | indicatif
+tb: bien que, pour que | et que | subjonctif
+tb: si | et que | subjonctif, khi nói: indicatif
+> Với [[si]], văn chuẩn dùng [[que]] với [[subjonctif]]: [[s'il pleut et qu'il fasse froid]]; khi nói, người ta hay dùng [[indicatif]].
+
+#examples
+- Puisque tu es là et {que|k} tu as le temps, aide-moi. | Vì con đang ở đây và có thời gian, giúp mẹ đi.
+- Bien qu'il soit tard et qu'il {pleuve|k}, il veut sortir. | Dù đã muộn và trời mưa, nó vẫn muốn ra ngoài.
+- Lorsque le film sera fini et {que|k} les enfants dormiront, nous parlerons. | Khi phim xong và bọn trẻ đã ngủ, chúng ta sẽ nói chuyện.
+- Si tu as faim et que tu {veuilles|k} manger, il reste de la soupe. | Nếu con đói và muốn ăn, vẫn còn súp.
+- Pour que tu réussisses et que tu {sois|k} heureux, je ferai tout. | Để con thành công và hạnh phúc, mẹ sẽ làm mọi thứ.
+
+#mistakes
+x: Bien qu'il soit tard et qu'il pleut, il sort. => Bien qu'il soit tard et qu'il pleuve, il sort. | Dù đã muộn và trời mưa, anh ấy vẫn ra ngoài. >> [[Que]] thay [[bien que]] nên cũng đi với [[subjonctif]].
+x: Puisque tu es libre et puisque tu as une voiture, conduis-nous. => Puisque tu es libre et que tu as une voiture, conduis-nous. | Vì bạn rảnh và có xe, chở bọn mình đi. >> Không lặp liên từ: dùng [[que]].
+
+#dialogue
+lucas: Et si je finis vite et que ma chambre soit déjà propre ? | Thế nếu con làm nhanh và phòng con vốn đã sạch rồi thì sao ạ? [happy]
+maman: Ta chambre, propre ? Quand je l'aurai vue et que j'en serai sûre, je te croirai ! | Phòng con mà sạch á? Khi nào mẹ thấy tận mắt và chắc chắn thì mẹ mới tin! [happy]
+lucas: Puisque tu ne me crois pas et que j'ai faim, je vais d'abord manger. | Vì mẹ không tin con và con đang đói, con sẽ đi ăn trước. [thinking]
+maman: Bien essayé ! Les devoirs d'abord. | Khéo lắm! Bài tập trước đã. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Vì con đang ở đây và có thời gian, giúp mẹ đi. => Puisque tu es là et que tu as le temps, aide-moi. | Vì con đang ở đây và có thời gian, giúp mẹ đi.
+? Nói bằng tiếng Pháp: Dù đã muộn và trời mưa, nó vẫn muốn ra ngoài. => Bien qu'il soit tard et qu'il pleuve, il veut sortir. | Dù đã muộn và trời mưa, nó vẫn muốn ra ngoài.
+
+#recap
+> Không lặp liên từ: mệnh đề thứ hai bắt đầu bằng [[que]]. [[Que]] mang nghĩa và thức của liên từ gốc: sau [[bien que]], [[pour que]] thì [[subjonctif]]; sau [[si]], văn chuẩn dùng [[subjonctif]].
+
+#practice
+fill: Puisque tu es là et ___ tu as le temps, aide-moi. | que* / qui / dont || que thay puisque.
+fill: Bien qu'il soit tard et qu'il ___ , il veut sortir. | pleuve* / pleut / pleuvra || que thay bien que: subjonctif.
+fill: Pour que tu réussisses et que tu ___ heureux, je ferai tout. | sois* / es / seras || que thay pour que: subjonctif.
+contrast: Comme il pleuvait et que j'___ fatigué, je suis resté. | étais* / sois || que thay comme: indicatif.
+contrast: Bien qu'il pleuve et qu'il ___ froid, il sort. | fasse* / fait || que thay bien que: subjonctif.
+type: Lorsque le film sera fini et ___ les enfants dormiront, nous parlerons. | que || que thay lorsque.
+fix: Bien qu'il soit tard et qu'il pleut, il sort. | Bien qu'il soit tard et qu'il pleuve, il sort.* / Bien qu'il soit tard et qu'il pleuvra, il sort. / Bien qu'il soit tard et il pleuve, il sort. || subjonctif.
+listen: Lorsque le film sera fini et que les enfants dormiront, nous parlerons. | Lorsque le film sera fini et que les enfants dormiront, nous parlerons.* / Lorsque le film sera fini, les enfants dormiront. / Lorsque le film a fini et que les enfants dormaient, nous avons parlé. || et que.

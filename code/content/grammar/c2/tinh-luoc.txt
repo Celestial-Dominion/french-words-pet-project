@@ -1,0 +1,62 @@
+=== tinh-luoc
+sum: Tỉnh lược là bỏ phần đã rõ để câu gọn. Bỏ động từ lặp lại, thay bằng dấu phẩy: Paul aime le thé ; Zoé, le café (Zoé thì cà phê). Trả lời ngắn: moi aussi (sau câu khẳng định), moi non plus (đồng ý với câu phủ định), moi si (phản bác câu phủ định). So sánh rút gọn với đại từ nhấn mạnh: il court plus vite que moi.
+form: chủ ngữ, bổ ngữ (bỏ động từ) | Moi, du thé ; elle, du café.
+form: moi si, moi non plus | Tu ne viens pas ? Moi si.
+form: so sánh rút gọn | Elle lit plus que moi.
+form: câu hỏi rút gọn | Et toi ? Pourquoi pas ?
+cast: paul zoe
+bg: cafe
+words: thé, tarte, dessert, langue
+
+#hook
+paul: Je prends un thé ; toi, un café ? | Anh uống trà; còn em, cà phê nhé? [thinking]
+zoe: Non, moi, un chocolat. Et pour le dessert, toi une tarte, moi rien. | Không, em sô-cô-la. Còn tráng miệng, anh bánh tart, em thì thôi. [happy]
+> [[Toi, un café]]: bỏ động từ đã nói ([[prends]]), thay bằng dấu phẩy. Câu ngắn mà vẫn rõ.
+
+#meaning
+vs: Paul aime le thé et Zoé aime le café. | Paul thích trà và Zoé thích cà phê. || đầy đủ
+vs: Paul aime le thé ; Zoé, le café. | Paul thích trà; Zoé thì cà phê. || tỉnh lược: dấu phẩy thay động từ
+> Dấu phẩy đánh dấu chỗ động từ bị bỏ. Kiểu này hay gặp trong văn viết để tạo nhịp song song.
+
+#form
+th: Kiểu | Ví dụ | Nghĩa
+tb: bỏ động từ | Lui travaille ; elle, jamais. | anh ấy làm, cô ấy thì không bao giờ
+tb: đồng ý với phủ định | Moi non plus. | tôi cũng không
+tb: phản bác phủ định | Moi si. | tôi thì có
+tb: so sánh | Il court plus vite que moi. | anh ấy chạy nhanh hơn tôi
+> Sau câu phủ định, dùng [[moi si]] để phản bác, [[moi non plus]] để đồng ý; [[moi aussi]] chỉ dùng sau câu khẳng định.
+
+#examples
+- Le matin, je lis le journal ; le soir, {un|k} roman. | Buổi sáng tôi đọc báo; buổi tối, tiểu thuyết.
+- Tu n'aimes pas le fromage ? Moi {si|k}. | Bạn không thích phô mai à? Tôi thì có.
+- Elle n'a pas compris, et moi non {plus|k}. | Cô ấy không hiểu, và tôi cũng không.
+- Mon frère parle trois langues ; ma sœur, {cinq|k}. | Anh tôi nói ba thứ tiếng; chị tôi, năm.
+- Il gagne plus que {moi|k}. | Anh ấy kiếm nhiều hơn tôi.
+
+#mistakes
+x: Je n'aime pas le thé. Moi aussi. => Je n'aime pas le thé. Moi non plus. | Tôi không thích trà. Tôi cũng không. >> Đồng ý với câu phủ định: [[moi non plus]].
+x: Tu ne viens pas ? Moi oui. => Tu ne viens pas ? Moi si. | Bạn không đến à? Tôi thì có. >> Phản bác câu phủ định: [[si]].
+x: Il est plus grand que je. => Il est plus grand que moi. | Anh ấy cao hơn tôi. >> Sau [[que]] so sánh rút gọn: đại từ nhấn mạnh [[moi]].
+
+#dialogue
+paul: Tu n'as jamais goûté leur tarte aux pommes ? | Em chưa bao giờ ăn thử bánh tart táo ở đây à? [surprised]
+zoe: Jamais. Toi si ? | Chưa bao giờ. Anh thì rồi à? [thinking]
+paul: Souvent ! Elle est meilleure que celle de ma mère. | Nhiều lần! Ngon hơn cả bánh mẹ anh làm. [happy]
+zoe: Alors, une tarte pour toi, et une pour moi aussi ! | Vậy một bánh cho anh, và một cho em nữa! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Bạn không thích phô mai à? Tôi thì có. => Tu n'aimes pas le fromage ? Moi si. | Bạn không thích phô mai à? Tôi thì có.
+? Nói bằng tiếng Pháp: Anh tôi nói ba thứ tiếng; chị tôi, năm. => Mon frère parle trois langues ; ma sœur, cinq. | Anh tôi nói ba thứ tiếng; chị tôi, năm.
+
+#recap
+> Tỉnh lược: bỏ động từ đã rõ và thay bằng dấu phẩy ([[ma sœur, cinq]]); trả lời ngắn [[moi aussi]], [[moi non plus]], [[moi si]]; so sánh rút gọn với đại từ nhấn mạnh ([[plus que moi]]).
+
+#practice
+fill: Tu n'aimes pas le fromage ? Moi ___ . | si* / oui / aussi || phản bác câu phủ định.
+fill: Elle n'a pas compris, et moi non ___ . | plus* / aussi / pas || đồng ý với câu phủ định.
+fill: Il gagne plus que ___ . | moi* / je / me || đại từ nhấn mạnh.
+contrast: J'aime le fromage. Moi ___ . | aussi* / non plus || đồng ý với câu khẳng định.
+contrast: Je n'aime pas le fromage. Moi ___ . | non plus* / aussi || đồng ý với câu phủ định.
+type: Le matin, je lis le journal ; le soir, ___ roman. | un || bỏ động từ lặp lại.
+fix: Je n'aime pas le thé. Moi aussi. | Je n'aime pas le thé. Moi non plus.* / Je n'aime pas le thé. Moi si aussi. / Je n'aime pas le thé. Moi pas aussi. || moi non plus.
+listen: Mon frère parle trois langues ; ma sœur, cinq. | Mon frère parle trois langues ; ma sœur, cinq.* / Mon frère parle trois langues ; ma sœur aussi. / Mon frère parle cinq langues ; ma sœur, trois. || ma sœur, cinq.
