@@ -1,0 +1,66 @@
+=== dao-ngu-trang-tu
+sum: Trong văn viết trang trọng, khi một số trạng từ đứng đầu câu, chủ ngữ là đại từ đổi chỗ với động từ như câu hỏi: Peut-être est-il malade (có lẽ anh ấy ốm). Sans doute a-t-il raison (chắc hẳn anh ấy đúng). Aussi đầu mệnh đề có đảo ngữ nghĩa là "vì thế": aussi a-t-il refusé. Encore faut-il… nghĩa là "nhưng còn phải…". Khi nói, dùng peut-être que hoặc để trạng từ sau động từ.
+form: peut-être, sans doute + động từ-đại từ | Peut-être viendra-t-il.
+form: aussi đầu mệnh đề = vì thế | Aussi a-t-il refusé.
+form: encore faut-il = nhưng còn phải | Encore faut-il le vouloir.
+form: khi nói: không đảo | Peut-être qu'il viendra.
+cast: lea nam
+bg: office
+words: directeur, demande, expérience, taxi
+
+#hook
+lea: Écoute ma lettre au directeur : peut-être avez-vous déjà reçu ma demande. | Nghe thư chị gửi giám đốc này: có lẽ ông đã nhận được đơn của tôi. [explain]
+nam: Peut-être avez-vous ? Moi, je dirais : peut-être que vous l'avez reçue. | “Peut-être avez-vous”? Em thì sẽ nói: “peut-être que vous l'avez reçue”. [surprised]
+> Khi [[peut-être]] đứng đầu câu trong văn trang trọng, chủ ngữ đổi chỗ với động từ: [[peut-être avez-vous]]. Khi nói, dùng [[peut-être que]].
+
+#meaning
+vs: Il est peut-être malade. | Chắc anh ấy ốm. || trạng từ sau động từ: không đảo
+vs: Peut-être est-il malade. | Có lẽ anh ấy bị ốm. || đầu câu, trang trọng: đảo ngữ
+> Nghĩa không đổi, chỉ khác văn phong. Đảo ngữ nghe trang trọng, hợp với văn viết.
+
+#form
+th: Trạng từ đầu câu | Nghĩa | Ví dụ
+tb: peut-être | có lẽ | Peut-être neigera-t-il.
+tb: sans doute | chắc hẳn | Sans doute est-elle partie.
+tb: aussi | vì thế | Aussi a-t-il refusé.
+tb: encore | nhưng còn phải | Encore faut-il le vouloir.
+> Nếu chủ ngữ là danh từ, giữ danh từ ở trước và thêm đại từ sau động từ: [[sans doute le train est-il en retard]].
+
+#examples
+- {Peut-être|k} est-il déjà parti. | Có lẽ anh ấy đã đi rồi.
+- {Sans doute|k} avez-vous raison. | Chắc hẳn ông nói đúng.
+- Le train était annulé, {aussi|k} avons-nous pris un taxi. | Tàu bị huỷ, vì thế chúng tôi đã đi taxi.
+- C'est une bonne idée. {Encore|k} faut-il trouver l'argent. | Đó là ý hay. Nhưng còn phải tìm ra tiền đã.
+
+#contrast
+vs: Il a aussi refusé. | Anh ấy cũng từ chối. || aussi giữa câu: cũng
+vs: Il était fatigué, aussi a-t-il refusé. | Anh ấy mệt, vì thế đã từ chối. || aussi đầu mệnh đề, đảo ngữ: vì thế
+> [[Aussi]] đứng đầu mệnh đề và có đảo ngữ thì nghĩa là “vì thế”, không phải “cũng”.
+
+#mistakes
+x: Peut-être elle a oublié. => Peut-être a-t-elle oublié. | Có lẽ cô ấy đã quên. >> Đầu câu, văn viết: đảo ngữ; hoặc nói [[peut-être qu'elle a oublié]].
+x: Sans doute il a raison. => Sans doute a-t-il raison. | Chắc hẳn anh ấy đúng. >> [[Sans doute]] đầu câu: đảo ngữ.
+x: Peut-être qu'est-il malade. => Peut-être qu'il est malade. | Có lẽ anh ấy ốm. >> Sau [[peut-être que]] không đảo ngữ.
+
+#dialogue
+nam: Et à la fin, tu écris quoi ? | Còn cuối thư chị viết gì? [thinking]
+lea: J'ai beaucoup d'expérience, aussi suis-je sûre de pouvoir vous aider. | Tôi có nhiều kinh nghiệm, vì thế tôi chắc chắn có thể giúp ông. [explain]
+nam: Très élégant ! Sans doute aura-t-il envie de te rencontrer. | Rất thanh lịch! Chắc hẳn ông ấy sẽ muốn gặp chị. [happy]
+lea: Encore faut-il qu'il lise ma lettre ! | Nhưng còn phải đợi ông ấy đọc thư đã! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tàu bị huỷ, vì thế chúng tôi đã đi taxi. => Le train était annulé, aussi avons-nous pris un taxi. | Tàu bị huỷ, vì thế chúng tôi đã đi taxi.
+? Nói bằng tiếng Pháp: Chắc hẳn ông nói đúng. => Sans doute avez-vous raison. | Chắc hẳn ông nói đúng.
+
+#recap
+> Đầu câu, trong văn trang trọng, sau [[peut-être]], [[sans doute]], [[aussi]] (vì thế), [[encore]] (nhưng còn phải): đảo chủ ngữ và động từ. Khi nói: dùng [[peut-être que]] hoặc để trạng từ sau động từ.
+
+#practice
+fill: Il est tard. Peut-être ___ déjà parti. | est-il* / il est / a-t-il || đảo ngữ sau peut-être.
+fill: Le train était annulé, ___ avons-nous pris un taxi. | aussi* / donc / alors || aussi có đảo ngữ: vì thế.
+fill: Sans doute ___ raison. | avez-vous* / vous avez / ayez-vous || đảo ngữ.
+contrast: Il ___ peut-être malade. | est* / est-il || trạng từ sau động từ: không đảo.
+contrast: Peut-être ___ malade. | est-il* / il est || đầu câu, văn viết: đảo ngữ.
+type: C'est une bonne idée. Encore ___ (falloir) trouver l'argent. | faut-il || encore đầu câu: đảo ngữ.
+fix: Sans doute il a raison. | Sans doute a-t-il raison.* / Sans doute a-il raison. / Sans doute il a-t-il raison. || đảo ngữ, thêm -t-.
+listen: Le train était annulé, aussi avons-nous pris un taxi. | Le train était annulé, aussi avons-nous pris un taxi.* / Le train était annulé, alors nous avons pris un taxi. / Le train était annulé, nous avons aussi pris un taxi. || aussi = vì thế.

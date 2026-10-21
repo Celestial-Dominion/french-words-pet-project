@@ -1,0 +1,62 @@
+=== dao-ngu-van-phong
+sum: Văn viết đảo chủ ngữ ở vài chỗ quen thuộc. 1) Sau lời dẫn trực tiếp, bắt buộc: « Je pars », dit-il; « Merci », répondit la femme. 2) Trong mệnh đề quan hệ hoặc so sánh, khi chủ ngữ là danh từ: la maison où habitait mon grand-père. 3) Câu kể mở đầu bằng trạng ngữ: Alors commença une longue nuit. Kiểu 2 và 3 không bắt buộc, giúp câu cân đối và giàu chất văn.
+form: lời dẫn, động từ, chủ ngữ | « Je pars », dit-il.
+form: thêm -t- khi động từ tận cùng bằng nguyên âm | « Bien sûr », ajouta-t-il.
+form: où, que + động từ + chủ ngữ danh từ | la ville où vivait ma tante
+form: trạng ngữ + động từ + chủ ngữ | Alors commença la fête.
+cast: ines paul
+bg: library
+words: passage, colline, roman, spectateur
+
+#hook
+ines: Écoute ce passage : « Je reviendrai », dit-il. Puis il disparut dans la nuit. | Nghe đoạn này: “Tôi sẽ quay lại”, anh nói. Rồi anh biến mất trong màn đêm. [explain]
+paul: Dit-il ? Dans la vie, on dit plutôt : il a dit. | “Dit-il”? Ngoài đời người ta hay nói “il a dit”. [thinking]
+> Sau lời dẫn trực tiếp, văn viết luôn đảo chủ ngữ: [[dit-il]], [[répondit-elle]], [[demanda le garçon]].
+
+#meaning
+vs: La maison où mon grand-père habitait est vendue. | Ngôi nhà ông tôi từng sống đã được bán. || trật tự thường
+vs: La maison où habitait mon grand-père est vendue. | Ngôi nhà nơi ông tôi từng sống đã được bán. || đảo ngữ: câu cân đối hơn
+> Hai câu cùng nghĩa. Đảo ngữ hay dùng khi chủ ngữ danh từ dài hơn động từ.
+
+#form
+th: Vị trí | Ví dụ | Ghi chú
+tb: sau lời dẫn | « Merci », dit-elle. | bắt buộc
+tb: sau où, que | le jardin que cultivait ma mère | tuỳ chọn
+tb: so sánh | plus cher que ne le croyait mon père | tuỳ chọn
+tb: trạng ngữ đầu câu | Alors arriva le roi. | văn kể chuyện
+> Sau lời dẫn, nếu chủ ngữ là danh từ thì chỉ đảo, không thêm đại từ: [[demanda le professeur]].
+
+#examples
+- « Où vas-tu ? » {demanda|k} sa mère. | “Con đi đâu thế?”, mẹ cậu hỏi.
+- « Nulle part », {répondit|k}-il. | “Chẳng đi đâu cả”, cậu đáp.
+- C'est le village où {vivaient|k} mes grands-parents. | Đó là ngôi làng nơi ông bà tôi từng sống.
+- Le film était plus long que ne le {pensaient|k} les spectateurs. | Bộ phim dài hơn khán giả nghĩ.
+- Alors {commença|k} une longue nuit. | Rồi một đêm dài bắt đầu.
+
+#mistakes
+x: « Je suis fatigué », il dit. => « Je suis fatigué », dit-il. | “Tôi mệt”, anh ấy nói. >> Sau lời dẫn: đảo ngữ.
+x: « C'est vrai ? » demanda-t-il le garçon. => « C'est vrai ? » demanda le garçon. | “Thật à?”, cậu bé hỏi. >> Chủ ngữ là danh từ: không thêm đại từ.
+x: « D'accord », ajouta-il. => « D'accord », ajouta-t-il. | “Đồng ý”, anh ấy nói thêm. >> Hai nguyên âm gặp nhau: thêm [[-t-]].
+
+#dialogue
+paul: Et la phrase suivante ? | Còn câu tiếp theo? [thinking]
+ines: Sur la colline se trouvait une vieille maison, où vivait une femme seule. | Trên đồi có một ngôi nhà cũ, nơi một người phụ nữ sống một mình. [explain]
+paul: Deux fois dans une seule phrase ! | Đảo hai lần trong một câu! [surprised]
+ines: Oui, c'est le style des romans. « Bienvenue », dit la femme. | Ừ, đó là văn phong tiểu thuyết. “Chào mừng”, người phụ nữ nói. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Đó là ngôi làng nơi ông bà tôi từng sống. => C'est le village où vivaient mes grands-parents. | Đó là ngôi làng nơi ông bà tôi từng sống.
+? Nói bằng tiếng Pháp: Rồi một đêm dài bắt đầu. => Alors commença une longue nuit. | Rồi một đêm dài bắt đầu.
+
+#recap
+> Văn viết đảo chủ ngữ sau lời dẫn trực tiếp (bắt buộc: [[dit-il]]), trong mệnh đề quan hệ hoặc so sánh khi chủ ngữ là danh từ ([[où vivaient mes grands-parents]]), và sau trạng ngữ đầu câu ([[alors commença]]).
+
+#practice
+fill: « Nulle part », ___ . | répondit-il* / il répondit / répondit-t-il || đảo ngữ, répondit đã có t.
+fill: « D'accord », ___ . | ajouta-t-il* / ajouta-il / il ajouta || thêm -t-.
+fill: C'est le village où ___ mes grands-parents. | vivaient* / vivait / vivaient-ils || động từ hợp với chủ ngữ số nhiều đứng sau.
+contrast: « Où vas-tu ? » ___ sa mère. | demanda* / demanda-t-elle || chủ ngữ danh từ: không thêm đại từ.
+contrast: Le film était plus long que ne le ___ les spectateurs. | pensaient* / pensait || chủ ngữ số nhiều đứng sau.
+type: Alors ___ (commencer, passé simple) une longue nuit. | commença || trạng ngữ đầu câu, đảo ngữ.
+fix: « Je suis fatigué », il dit. | « Je suis fatigué », dit-il.* / « Je suis fatigué », dit-t-il. / « Je suis fatigué », il dit-il. || đảo ngữ sau lời dẫn.
+listen: Alors commença une longue nuit. | Alors commença une longue nuit.* / Alors commence une longue nuit. / Alors il commença une longue nuit. || commença.

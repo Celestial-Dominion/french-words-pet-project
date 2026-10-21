@@ -1,0 +1,62 @@
+=== quan-he-subjonctif
+sum: Mệnh đề quan hệ thường dùng indicatif. Nhưng dùng subjonctif khi: 1) sau so sánh nhất hoặc le seul, le premier, le dernier: c'est le meilleur film que nous ayons vu; 2) khi tìm hay muốn một người, một vật chưa chắc có: je cherche un appartement qui soit calme; 3) sau phủ định: il n'y a personne qui sache. Nếu người hay vật đó có thật, dùng indicatif: j'ai trouvé un appartement qui est calme.
+form: le seul, le premier… qui + subjonctif | C'est le seul qui sache nager.
+form: tìm thứ chưa chắc có: subjonctif | Je cherche quelqu'un qui puisse venir.
+form: sau phủ định: subjonctif | Il n'y a rien qui me plaise.
+form: thứ có thật: indicatif | J'ai un ami qui peut venir.
+cast: chloe papa
+bg: home-evening
+words: appartement, guide, machine, studio
+
+#hook
+chloe: Je cherche un appartement qui soit calme et qui ne coûte pas trop cher. | Con đang tìm một căn hộ yên tĩnh mà không quá đắt. [thinking]
+papa: Qui soit, qui ne coûte pas... Tu n'es pas sûre qu'il existe, hein ? | “Qui soit”, “qui ne coûte pas”... Con không chắc là có căn như thế, phải không? [happy]
+> Khi tìm một thứ chưa chắc có, động từ trong mệnh đề quan hệ dùng [[subjonctif]]: [[qui soit]], [[qui ne coûte pas]].
+
+#meaning
+vs: Je cherche un appartement qui soit calme. | Tôi đang tìm một căn hộ yên tĩnh, chưa biết có không. || subjonctif: chưa chắc có
+vs: J'ai trouvé un appartement qui est calme. | Tôi đã tìm được một căn hộ yên tĩnh. || indicatif: có thật
+> Cùng một mệnh đề quan hệ, [[subjonctif]] cho thấy đó chỉ là mong muốn; [[indicatif]] cho thấy nó có thật.
+
+#form
+th: Trường hợp | Ví dụ | Thức
+tb: so sánh nhất | le plus beau film que j'aie vu | subjonctif
+tb: le seul, le premier | la seule qui comprenne | subjonctif
+tb: tìm, muốn | un guide qui connaisse la ville | subjonctif
+tb: phủ định | personne qui sache | subjonctif
+tb: thứ có thật | un ami qui connaît la ville | indicatif
+> Sau so sánh nhất, [[subjonctif]] nhấn ý kiến cá nhân; khi nói về một sự thật khách quan, [[indicatif]] vẫn dùng được.
+
+#examples
+- C'est le meilleur film que nous {ayons|k} vu cette année. | Đó là bộ phim hay nhất chúng tôi xem năm nay.
+- Tu es la seule personne qui me {comprenne|k} vraiment. | Bạn là người duy nhất thật sự hiểu tôi.
+- Nous cherchons un guide qui {connaisse|k} bien la région. | Chúng tôi đang tìm một hướng dẫn viên thông thạo vùng này.
+- Il n'y a personne ici qui {sache|k} réparer cette machine. | Ở đây không ai biết sửa cái máy này.
+- Connais-tu quelqu'un qui {puisse|k} m'aider ? | Bạn có biết ai có thể giúp tôi không?
+
+#mistakes
+x: Il n'y a personne qui peut m'aider. => Il n'y a personne qui puisse m'aider. | Không có ai có thể giúp tôi. >> Sau phủ định: [[subjonctif]].
+x: J'ai un voisin qui sache réparer les vélos. => J'ai un voisin qui sait réparer les vélos. | Tôi có một người hàng xóm biết sửa xe đạp. >> Người có thật: [[indicatif]].
+
+#dialogue
+papa: Et ce studio près de la gare ? | Thế căn hộ nhỏ gần ga thì sao? [thinking]
+chloe: C'est le plus lumineux que j'aie visité, mais il est bruyant. | Đó là căn sáng nhất con đã xem, nhưng lại ồn. [sad]
+papa: Il n'existe pas d'appartement qui soit parfait, tu sais. | Không có căn hộ nào hoàn hảo đâu con. [explain]
+chloe: Je sais, je sais. Je vais le prendre ! | Con biết, con biết. Con sẽ lấy căn đó! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Bạn là người duy nhất thật sự hiểu tôi. => Tu es la seule personne qui me comprenne vraiment. | Bạn là người duy nhất thật sự hiểu tôi.
+? Nói bằng tiếng Pháp: Bạn có biết ai có thể giúp tôi không? => Connais-tu quelqu'un qui puisse m'aider ? | Bạn có biết ai có thể giúp tôi không?
+
+#recap
+> Mệnh đề quan hệ dùng [[subjonctif]] sau so sánh nhất và [[le seul]], khi tìm thứ chưa chắc có, sau phủ định. Thứ có thật thì dùng [[indicatif]].
+
+#practice
+fill: Nous cherchons un guide qui ___ bien la région. | connaisse* / connaissez / connaître || chưa chắc có: subjonctif.
+fill: Il n'y a personne ici qui ___ réparer cette machine. | sache* / sais / savoir || sau phủ định: subjonctif.
+fill: Tu es la seule personne qui me ___ vraiment. | comprenne* / comprends / compris || sau la seule: subjonctif.
+contrast: J'ai un voisin qui ___ réparer les vélos. | sait* / sache || người có thật: indicatif.
+contrast: Il n'y a personne qui ___ m'aider. | puisse* / peut || sau phủ định: subjonctif.
+type: Connais-tu quelqu'un qui ___ (pouvoir) m'aider ? | puisse || chưa chắc có: subjonctif.
+fix: Il n'y a personne qui peut m'aider. | Il n'y a personne qui puisse m'aider.* / Il n'y a personne qui puisses m'aider. / Il n'y a personne que puisse m'aider. || subjonctif, ngôi ba.
+listen: Il n'y a personne ici qui sache réparer cette machine. | Il n'y a personne ici qui sache réparer cette machine.* / Il y a quelqu'un ici qui sait réparer cette machine. / Il n'y a personne ici qui veuille réparer cette machine. || sache.

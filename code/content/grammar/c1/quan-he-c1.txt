@@ -1,0 +1,62 @@
+=== quan-he-c1
+sum: B1 có dont, B2 có lequel. C1 thêm: dont chỉ một phần của nhóm (vingt patients, dont trois enfants = trong đó có ba trẻ em); parmi lesquels (trong số đó); khi danh từ đứng sau một giới từ thì không dùng được dont, phải dùng duquel, de laquelle, desquels (l'ami chez les parents duquel j'ai dormi); auquel cas (trong trường hợp đó).
+form: danh từ, dont + số lượng | dix candidats, dont trois femmes
+form: parmi lesquels, parmi lesquelles | des amis, parmi lesquels deux médecins
+form: giới từ + danh từ + duquel | l'homme avec la fille duquel je travaille
+form: auquel cas = trong trường hợp đó | auquel cas on restera
+cast: linh dr-roux
+bg: hospital
+words: patient, spécialiste, auteur, fièvre
+
+#hook
+linh: Combien de patients aujourd'hui, docteur ? | Hôm nay bao nhiêu bệnh nhân vậy bác sĩ? [thinking]
+dr-roux: Vingt-cinq, dont six enfants. Et deux nouveaux, parmi lesquels une dame de quatre-vingt-dix ans. | Hai mươi lăm người, trong đó có sáu trẻ em. Và hai người mới, trong số đó có một bà cụ chín mươi tuổi. [explain]
+> [[Dont six enfants]]: trong đó có sáu trẻ em. [[Parmi lesquels]]: trong số đó. Cả hai giới thiệu một phần của nhóm vừa nói.
+
+#meaning
+vs: Le médecin dont j'ai lu le livre viendra demain. | Vị bác sĩ mà tôi đã đọc sách của ông sẽ đến ngày mai. || dont: danh từ là bổ ngữ trực tiếp
+vs: Le médecin avec la fille duquel j'ai travaillé viendra demain. | Vị bác sĩ mà tôi từng làm việc với con gái ông sẽ đến ngày mai. || duquel: danh từ đứng sau giới từ
+> Khi danh từ đứng sau một giới từ, không dùng được [[dont]]; phải dùng [[duquel]], [[de laquelle]], [[desquels]].
+
+#form
+th: Cấu trúc | Nghĩa | Ví dụ
+tb: dont với số lượng | trong đó | dix candidats, dont trois femmes
+tb: parmi lesquels | trong số đó | des invités, parmi lesquels le maire
+tb: giới từ, danh từ, duquel | của người đó | chez les parents duquel
+tb: auquel cas | trong trường hợp đó | auquel cas il faudra attendre
+> Sau [[dont]] chỉ một phần, có thể chỉ cần một nhóm danh từ, không cần động từ: [[dont trois femmes]].
+
+#examples
+- L'hôpital a soigné cent personnes, {dont|k} quarante enfants. | Bệnh viện đã chữa cho một trăm người, trong đó có bốn mươi trẻ em.
+- Plusieurs médecins sont venus, {parmi|k} lesquels deux spécialistes du cœur. | Nhiều bác sĩ đã đến, trong số đó có hai chuyên gia tim mạch.
+- C'est l'auteur {dont|k} j'ai lu tous les romans. | Đó là tác giả mà tôi đã đọc hết tiểu thuyết của ông.
+- Voici l'ami chez les parents {duquel|k} j'ai dormi. | Đây là người bạn mà tôi đã ngủ nhờ ở nhà bố mẹ cậu ấy.
+- Le patient aura peut-être de la fièvre, {auquel|k} cas il faudra appeler le médecin. | Bệnh nhân có thể sẽ sốt, trong trường hợp đó phải gọi bác sĩ.
+
+#mistakes
+x: C'est l'ami chez les parents dont j'ai dormi. => C'est l'ami chez les parents duquel j'ai dormi. | Đó là người bạn mà tôi đã ngủ nhờ ở nhà bố mẹ cậu ấy. >> Danh từ đứng sau giới từ [[chez]]: dùng [[duquel]].
+x: Il y avait dix invités, dont étaient trois enfants. => Il y avait dix invités, dont trois enfants. | Có mười khách, trong đó có ba trẻ em. >> Sau [[dont]] chỉ một phần: chỉ cần danh từ.
+x: Il fera peut-être froid, dans lequel cas on restera à la maison. => Il fera peut-être froid, auquel cas on restera à la maison. | Trời có thể sẽ lạnh, trong trường hợp đó ta sẽ ở nhà. >> Cụm cố định: [[auquel cas]].
+
+#dialogue
+linh: Et la dame de quatre-vingt-dix ans, comment va-t-elle ? | Còn bà cụ chín mươi tuổi, bà ấy thế nào ạ? [worried]
+dr-roux: Bien. Elle a quatre enfants, dont trois sont médecins ! | Tốt. Bà có bốn người con, trong đó ba người là bác sĩ! [happy]
+linh: Elle rentre chez elle ce soir ? | Tối nay bà ấy về nhà ạ? [thinking]
+dr-roux: Peut-être demain, auquel cas sa fille viendra la chercher. | Có thể ngày mai, trong trường hợp đó con gái bà sẽ đến đón. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Bệnh viện đã chữa cho một trăm người, trong đó có bốn mươi trẻ em. => L'hôpital a soigné cent personnes, dont quarante enfants. | Bệnh viện đã chữa cho một trăm người, trong đó có bốn mươi trẻ em.
+? Nói bằng tiếng Pháp: Đó là tác giả mà tôi đã đọc hết tiểu thuyết của ông. => C'est l'auteur dont j'ai lu tous les romans. | Đó là tác giả mà tôi đã đọc hết tiểu thuyết của ông.
+
+#recap
+> Quan hệ C1: [[dont]] chỉ một phần (trong đó), [[parmi lesquels]] (trong số đó), [[duquel]] khi danh từ đứng sau giới từ, [[auquel cas]] (trong trường hợp đó).
+
+#practice
+fill: L'hôpital a soigné cent personnes, ___ quarante enfants. | dont* / que / lesquels || dont: trong đó.
+fill: Plusieurs médecins sont venus, parmi ___ deux spécialistes du cœur. | lesquels* / qui / dont || parmi lesquels.
+fill: Voici l'ami chez les parents ___ j'ai dormi. | duquel* / dont / auquel || sau giới từ chez: duquel.
+contrast: C'est l'auteur ___ j'ai lu tous les romans. | dont* / duquel || danh từ là bổ ngữ trực tiếp: dont.
+contrast: Le patient aura peut-être de la fièvre, ___ cas il faudra appeler le médecin. | auquel* / dans lequel || cụm cố định.
+type: Il y avait dix invités, ___ trois enfants. | dont || dont chỉ một phần.
+fix: C'est l'ami chez les parents dont j'ai dormi. | C'est l'ami chez les parents duquel j'ai dormi.* / C'est l'ami chez les parents auquel j'ai dormi. / C'est l'ami chez les parents lequel j'ai dormi. || duquel.
+listen: Plusieurs médecins sont venus, parmi lesquels deux spécialistes du cœur. | Plusieurs médecins sont venus, parmi lesquels deux spécialistes du cœur.* / Plusieurs médecins sont venus, mais pas les deux spécialistes du cœur. / Plusieurs médecins sont venus avec deux spécialistes du cœur. || parmi lesquels.

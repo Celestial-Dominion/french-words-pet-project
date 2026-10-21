@@ -36,7 +36,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | chưa làm |
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
-| G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | đang làm: lô 1 xong (7/26 bài) |
+| G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | đang làm: lô 2 xong (14/26 bài) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | chưa làm |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
 
@@ -151,6 +151,7 @@ kết quả (donc, c'est pourquoi, si/tellement… que) · mục đích (pour, a
 mieux / meilleur) · avant de + inf, après avoir + phân từ · bày tỏ ý kiến (à mon avis, il me semble que).
 - **Nhật ký:**
   - 21/10 lô 1: 6 bài (plus-que-parfait, ke-chuyen-qua-khu, dang-sap-vua, tuong-lai-b1, conditionnel-present, si-imparfait) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; soát 390 px + desktop; danh sách 34 bài B1 ở `plan/.progress-G-B1.md`; 5 giờ 5% · tuần 7%; ed1c5a9
+  - 21/10 lô 2: 7 bài (đảo ngữ sau trạng từ, đảo ngữ văn phong, nhượng bộ C1, subjonctif trong mệnh đề quan hệ, quan hệ C1, vô nhân xưng, subjonctif C1) + 7 điểm inventory; 134/134 bài, 0 lỗi; 5 giờ 17% · tuần 9% sau lô 1; COMMIT
   - 21/10 lô 2: 7 bài (subjonctif-cach-chia, subjonctif-il-faut-que, subjonctif-cam-xuc, y-kien-penser-que, hop-phan-tu, bi-dong, gerondif) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng/công thức 390 px; 5 giờ 6% · tuần 8%; 4b262b1
   - 21/10 lô 3: 7 bài (hai-dai-tu, dai-tu-menh-lenh, y-en-dong-tu, celui-celle, le-mien, dont, ce-qui-ce-que) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng 390 px; 5 giờ 8% · tuần 9%; 082265c
   - 21/10 lô 4: 7 bài (menh-de-quan-he-b1, loi-noi-gian-tiep, cau-hoi-dao-ngu, dong-tu-a-de, avant-de-apres-avoir, lien-tu-thoi-gian, nguyen-nhan) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; 5 giờ 9% · tuần 8%; 8d491de

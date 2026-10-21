@@ -1,0 +1,63 @@
+=== vo-nhan-xung
+sum: Cấu trúc vô nhân xưng dùng il không chỉ ai cả. C1 hay gặp: il s'agit de + danh từ hoặc nguyên mẫu (vấn đề là, cần phải); il suffit de + nguyên mẫu, il suffit que + subjonctif (chỉ cần); il importe que + subjonctif, il convient de + nguyên mẫu (cần, nên, rất trang trọng); il se peut que + subjonctif (có thể là); il reste + danh từ (còn lại); il en va de même (cũng vậy).
+form: il s'agit de | Dans ce livre, il s'agit d'une famille.
+form: il suffit de, il suffit que + subjonctif | Il suffit d'ajouter du sel.
+form: il se peut que + subjonctif | Il se peut qu'il pleuve.
+form: il reste + danh từ | Il reste trois œufs.
+cast: lucas zoe
+bg: kitchen
+words: recette, étape, farine, légume
+
+#hook
+zoe: La recette a l'air compliquée... | Công thức trông phức tạp quá... [worried]
+lucas: Mais non ! Il suffit de suivre les étapes. Il s'agit juste de ne pas oublier le sel. | Không đâu! Chỉ cần làm theo các bước. Vấn đề chỉ là đừng quên muối. [happy]
+> [[Il suffit de]]: chỉ cần. [[Il s'agit de]]: vấn đề là, cần phải. Chủ ngữ [[il]] ở đây không chỉ ai cả.
+
+#meaning
+vs: Ce film parle d'une famille pauvre. | Bộ phim này kể về một gia đình nghèo. || parler de: chủ ngữ là bộ phim
+vs: Dans ce film, il s'agit d'une famille pauvre. | Trong bộ phim này, câu chuyện là về một gia đình nghèo. || il s'agit de: chủ ngữ luôn là il
+> Không nói [[ce film s'agit de]]; chủ ngữ của [[s'agir]] luôn là [[il]].
+
+#form
+th: Cấu trúc | Nghĩa | Theo sau
+tb: il s'agit de | vấn đề là, cần | danh từ, nguyên mẫu
+tb: il suffit de, il suffit que | chỉ cần | nguyên mẫu, subjonctif
+tb: il importe que, il convient de | cần, nên | subjonctif, nguyên mẫu
+tb: il se peut que | có thể là | subjonctif
+tb: il reste | còn lại | danh từ
+> [[Il importe que]] và [[il convient de]] rất trang trọng, hay gặp trong văn bản hành chính.
+
+#examples
+- Il {suffit|k} que tu me préviennes la veille. | Chỉ cần bạn báo tôi hôm trước.
+- Il ne {reste|k} plus de farine, il faut en acheter. | Không còn bột mì nữa, phải mua thêm.
+- Il {importe|k} que chacun respecte les règles d'hygiène. | Điều quan trọng là mọi người tuân thủ quy tắc vệ sinh.
+- Il {convient|k} de laver les légumes avant de les couper. | Nên rửa rau trước khi cắt.
+- Il se {peut|k} que le gâteau soit un peu trop sucré. | Có thể bánh hơi ngọt quá.
+
+#mistakes
+x: Ce livre s'agit d'une guerre. => Dans ce livre, il s'agit d'une guerre. | Cuốn sách này kể về một cuộc chiến. >> Chủ ngữ của [[s'agir]] luôn là [[il]].
+x: Il suffit que tu viens à huit heures. => Il suffit que tu viennes à huit heures. | Chỉ cần bạn đến lúc tám giờ. >> [[Il suffit que]] đi với [[subjonctif]].
+x: Il se peut qu'il va neiger ce soir. => Il se peut qu'il neige ce soir. | Có thể tối nay trời có tuyết. >> [[Il se peut que]] đi với [[subjonctif]].
+
+#dialogue
+zoe: Il reste combien de temps avant l'arrivée des invités ? | Còn bao lâu nữa thì khách đến? [worried]
+lucas: Une heure. Il se peut qu'ils soient en retard, d'ailleurs. | Một tiếng. Mà có khi họ còn đến muộn. [thinking]
+zoe: Tant mieux ! Il s'agit de réussir ce dessert. | Càng tốt! Vấn đề là phải làm thành công món tráng miệng này. [happy]
+lucas: Et pour le plat principal, il en va de même ! | Món chính cũng vậy! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Nên rửa rau trước khi cắt. => Il convient de laver les légumes avant de les couper. | Nên rửa rau trước khi cắt.
+? Nói bằng tiếng Pháp: Có thể bánh hơi ngọt quá. => Il se peut que le gâteau soit un peu trop sucré. | Có thể bánh hơi ngọt quá.
+
+#recap
+> Vô nhân xưng C1: [[il s'agit de]], [[il suffit de]] hoặc [[il suffit que]], [[il importe que]], [[il convient de]], [[il se peut que]], [[il reste]]. Sau [[que]] trong các cấu trúc này dùng [[subjonctif]].
+
+#practice
+fill: Il suffit que tu me ___ la veille. | préviennes* / préviens / préviendras || il suffit que: subjonctif.
+fill: Il se peut que le gâteau ___ un peu trop sucré. | soit* / est / sera || il se peut que: subjonctif.
+fill: Dans ce livre, il ___ d'une guerre. | s'agit* / agit / s'agissent || chủ ngữ luôn là il.
+contrast: Ce film ___ d'une famille pauvre. | parle* / s'agit || chủ ngữ là bộ phim: parler de.
+contrast: Il convient ___ laver les légumes avant de les couper. | de* / que || il convient de với nguyên mẫu.
+type: Il suffit que tu ___ (venir) à huit heures. | viennes || subjonctif.
+fix: Ce livre s'agit d'une guerre. | Dans ce livre, il s'agit d'une guerre.* / Ce livre il s'agit d'une guerre. / Dans ce livre, ça s'agit d'une guerre. || chủ ngữ il.
+listen: Il convient de laver les légumes avant de les couper. | Il convient de laver les légumes avant de les couper.* / Il vaut mieux couper les légumes avant de les laver. / Il faut laver les légumes après les avoir coupés. || il convient de.

@@ -1754,6 +1754,85 @@
     "hypothesis"
    ],
    "pri": 2
+  },
+  {
+   "id": "adverb-inversion",
+   "lv": "c1",
+   "cat": "sentence",
+   "name": "Inversion après adverbe",
+   "vi": "Đảo chủ ngữ sau trạng từ đầu câu trong văn trang trọng: peut-être est-il malade, sans doute a-t-il raison, aussi a-t-il décidé (vì thế), ainsi fut-il, à peine… que, encore faut-il que (nhưng còn phải); khi nói: peut-être qu'il est malade",
+   "pre": [
+    "inversion-questions"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "stylistic-inversion",
+   "lv": "c1",
+   "cat": "sentence",
+   "name": "Inversion stylistique",
+   "vi": "Đảo ngữ văn phong: sau lời dẫn (« Je pars », dit-il; répondit-elle), trong mệnh đề quan hệ và so sánh (la maison où habitait mon père; plus que ne le pensait sa mère), câu kể bắt đầu bằng trạng ngữ (alors commença la guerre)",
+   "pre": [
+    "adverb-inversion"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "concession-c1",
+   "lv": "c1",
+   "cat": "clauses",
+   "name": "Concession C1",
+   "vi": "Nhượng bộ C1 + subjonctif: quel que soit (hợp giống số: quels que soient les risques), quoi que tu fasses, qui que vous soyez, où que tu ailles, si / aussi + tính từ + que (si riche qu'il soit), pour + tính từ + que",
+   "pre": [
+    "concession"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "relative-subjunctive",
+   "lv": "c1",
+   "cat": "relative",
+   "name": "Subjonctif dans la relative",
+   "vi": "Subjonctif trong mệnh đề quan hệ: sau so sánh nhất và le seul, le premier, le dernier (le seul qui sache), khi tìm thứ chưa chắc có (je cherche quelqu'un qui puisse m'aider), sau phủ định (il n'y a personne qui comprenne)",
+   "pre": [
+    "relative-choice",
+    "subjonctif-forms"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "relative-c1",
+   "lv": "c1",
+   "cat": "relative",
+   "name": "Relatives C1",
+   "vi": "Quan hệ C1: dont chỉ một phần (trois enfants, dont deux filles), dont + bổ ngữ của danh từ (l'homme dont j'ai rencontré la fille), duquel / de laquelle sau cụm giới từ (au milieu duquel), parmi lesquels, auquel cas (trong trường hợp đó), ce dont",
+   "pre": [
+    "relative-dont",
+    "relative-lequel"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "impersonal-c1",
+   "lv": "c1",
+   "cat": "verbs",
+   "name": "Tournures impersonnelles",
+   "vi": "Cấu trúc vô nhân xưng trang trọng: il s'agit de (đây là chuyện, cần phải), il importe que + subjonctif, il convient de, il suffit de / que, il reste (còn lại), il en va de même (cũng vậy), il se peut que + subjonctif",
+   "pre": [
+    "subj-necessity-will"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "subj-c1",
+   "lv": "c1",
+   "cat": "verbs",
+   "name": "Subjonctif C1",
+   "vi": "Subjonctif C1: mệnh đề que đứng đầu câu (qu'il soit en retard m'étonne), le fait que, câu mệnh lệnh ngôi ba (qu'il entre !, que chacun se taise), soit… soit, vive la France, ainsi soit-il",
+   "pre": [
+    "subjonctif-passe"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

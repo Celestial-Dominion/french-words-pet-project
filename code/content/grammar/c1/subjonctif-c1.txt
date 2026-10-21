@@ -1,0 +1,62 @@
+=== subjonctif-c1
+sum: Một số cách dùng subjonctif nâng cao: 1) mệnh đề que đứng đầu câu luôn dùng subjonctif, kể cả khi đó là sự thật: qu'il soit en retard ne m'étonne pas; 2) le fait que thường đi với subjonctif; 3) que + subjonctif làm câu mệnh lệnh cho ngôi thứ ba: qu'il entre ! que personne ne bouge !; 4) cụm cố định: vive les vacances, ainsi soit-il, soit… soit (hoặc… hoặc).
+form: que + subjonctif đầu câu | Qu'il soit malade, c'est possible.
+form: le fait que + subjonctif | Le fait qu'elle parte m'attriste.
+form: que + subjonctif: mệnh lệnh ngôi ba | Qu'ils attendent dehors !
+form: soit… soit = hoặc… hoặc | soit demain, soit lundi
+cast: m-dubois hugo
+bg: stage
+words: spectacle, acteur, scène, théâtre
+
+#hook
+m-dubois: Silence ! Que personne ne bouge ! Qu'il entre ! | Im lặng! Không ai được cử động! Cho anh ta vào! [angry]
+hugo: C'est ma réplique préférée de la pièce ! | Đó là câu thoại cháu thích nhất trong vở kịch! [happy]
+> [[Qu'il entre]], [[que personne ne bouge]]: [[que]] với [[subjonctif]] tạo câu mệnh lệnh cho ngôi thứ ba.
+
+#meaning
+vs: Je sais qu'il est en retard. | Tôi biết là anh ấy đến muộn. || sau động từ: indicatif
+vs: Qu'il soit en retard, je le sais. | Việc anh ấy đến muộn, tôi biết. || mệnh đề que đứng đầu: subjonctif
+> Khi mệnh đề [[que]] đứng đầu câu, động từ chuyển sang [[subjonctif]], dù đó là sự thật.
+
+#form
+th: Cấu trúc | Ví dụ | Nghĩa
+tb: que đầu câu | Qu'il ait raison est évident. | việc anh ấy đúng
+tb: le fait que | le fait qu'il soit absent | việc anh ấy vắng mặt
+tb: que, ngôi ba | Que chacun se taise ! | mọi người im lặng
+tb: soit… soit | soit ce soir, soit demain | hoặc… hoặc
+tb: cụm cố định | Vive la musique ! | âm nhạc muôn năm
+> [[Le fait que]] cũng có thể đi với [[indicatif]] khi nhấn mạnh sự thật, nhưng [[subjonctif]] phổ biến hơn.
+
+#examples
+- Que le spectacle {soit|k} annulé ne m'étonne pas. | Việc buổi diễn bị huỷ không làm tôi ngạc nhiên.
+- Le fait qu'elle {ait|k} oublié son texte a surpris tout le monde. | Việc cô ấy quên lời thoại làm mọi người ngạc nhiên.
+- Que les acteurs {montent|k} sur scène ! | Mời các diễn viên lên sân khấu!
+- On répète {soit|k} ce soir, soit samedi matin. | Chúng ta tập hoặc tối nay, hoặc sáng thứ bảy.
+- {Vive|k} le théâtre ! | Sân khấu muôn năm!
+
+#mistakes
+x: Qu'il est fatigué, c'est normal. => Qu'il soit fatigué, c'est normal. | Việc anh ấy mệt là bình thường. >> Mệnh đề [[que]] đứng đầu câu: [[subjonctif]].
+x: Tu peux venir soit lundi, ou mardi. => Tu peux venir soit lundi, soit mardi. | Bạn có thể đến hoặc thứ hai, hoặc thứ ba. >> [[Soit]] đi thành cặp: [[soit… soit]].
+
+#dialogue
+hugo: Le fait que le directeur du théâtre soit malade, c'est grave ? | Việc giám đốc nhà hát bị ốm có nghiêm trọng không ạ? [worried]
+m-dubois: Non. Qu'il se repose ! Moi, je le remplace ce soir. | Không. Cứ để ông ấy nghỉ! Tối nay tôi thay ông ấy. [explain]
+hugo: Alors on joue ce soir ? | Vậy tối nay mình vẫn diễn ạ? [surprised]
+m-dubois: Évidemment ! Que le spectacle commence ! | Tất nhiên! Hãy để buổi diễn bắt đầu! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Việc buổi diễn bị huỷ không làm tôi ngạc nhiên. => Que le spectacle soit annulé ne m'étonne pas. | Việc buổi diễn bị huỷ không làm tôi ngạc nhiên.
+? Nói bằng tiếng Pháp: Chúng ta tập hoặc tối nay, hoặc sáng thứ bảy. => On répète soit ce soir, soit samedi matin. | Chúng ta tập hoặc tối nay, hoặc sáng thứ bảy.
+
+#recap
+> [[Subjonctif]] C1: mệnh đề [[que]] đứng đầu câu, [[le fait que]], [[que]] với [[subjonctif]] làm mệnh lệnh ngôi ba ([[qu'il entre]]), cụm cố định [[vive]], [[soit… soit]].
+
+#practice
+fill: Que le spectacle ___ annulé ne m'étonne pas. | soit* / est / sera || que đầu câu: subjonctif.
+fill: Le fait qu'elle ___ oublié son texte a surpris tout le monde. | ait* / aie / avoir || subjonctif, ngôi ba.
+fill: Que les acteurs ___ sur scène ! | montent* / montant / monter || mệnh lệnh ngôi ba.
+contrast: Je sais qu'il ___ en retard. | est* / soit || sau savoir: indicatif.
+contrast: Qu'il ___ en retard, je le sais. | soit* / est || que đầu câu: subjonctif.
+type: On répète ___ ce soir, soit samedi matin. | soit || soit… soit.
+fix: Qu'il est fatigué, c'est normal. | Qu'il soit fatigué, c'est normal.* / Qu'il sera fatigué, c'est normal. / Qu'il être fatigué, c'est normal. || que đầu câu: subjonctif.
+listen: Que le spectacle soit annulé ne m'étonne pas. | Que le spectacle soit annulé ne m'étonne pas.* / Le spectacle est annulé, ça ne m'étonne pas. / Que le spectacle soit annulé m'étonne beaucoup. || soit annulé.

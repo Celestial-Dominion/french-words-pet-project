@@ -1,0 +1,62 @@
+=== nhuong-bo-c1
+sum: B2 đã có quoique, avoir beau, quand bien même. C1 thêm nhóm "dù … nào, gì, ai, đâu" đi với subjonctif: quel que soit + danh từ (quel hợp giống số với danh từ: quelles que soient les difficultés), quoi que tu fasses (dù bạn làm gì), qui que vous soyez (dù bạn là ai), où que tu ailles (dù bạn đi đâu). Và si / aussi + tính từ + que + subjonctif: si riche qu'il soit (dù giàu đến đâu).
+form: quel que soit + danh từ | Quel que soit le prix, je l'achète.
+form: quoi que, qui que, où que + subjonctif | Où que tu ailles, je te suivrai.
+form: si + tính từ + que + subjonctif | Si fatigué qu'il soit, il continue.
+cast: tom papi
+bg: mountain-night
+words: risque, sommet, météo, chemin
+
+#hook
+papi: Il va faire nuit et il fait froid. Tu veux vraiment continuer ? | Trời sắp tối mà lại lạnh. Cháu thật sự muốn đi tiếp à? [worried]
+tom: Quels que soient les risques, je veux voir le lever du soleil au sommet. | Dù rủi ro thế nào, cháu cũng muốn ngắm mặt trời mọc trên đỉnh. [happy]
+> [[Quels que soient les risques]]: dù rủi ro thế nào. [[Quel]] hợp giống số với danh từ đứng sau [[soient]].
+
+#meaning
+vs: Quelles que soient tes raisons, je ne suis pas d'accord. | Dù lý do của bạn là gì, tôi cũng không đồng ý. || quel que: với être và danh từ
+vs: Quoi que tu dises, je ne suis pas d'accord. | Dù bạn nói gì, tôi cũng không đồng ý. || quoi que: với động từ khác
+> [[Quel que]] luôn đi với [[être]] và một danh từ; [[quoi que]] đi với các động từ khác.
+
+#form
+th: Cấu trúc | Nghĩa | Ví dụ
+tb: quel que soit | dù… thế nào | quelle que soit la saison
+tb: quoi que | dù… gì | quoi que tu fasses
+tb: qui que | dù… là ai | qui que vous soyez
+tb: où que | dù… ở đâu | où que tu ailles
+tb: si, aussi… que | dù… đến đâu | si difficile que ce soit
+> Tất cả đi với [[subjonctif]]. [[Quel]] đổi theo danh từ: [[quel]], [[quelle]], [[quels]], [[quelles]].
+
+#examples
+- {Quelle|k} que soit la météo, nous partirons à l'aube. | Dù thời tiết thế nào, chúng ta cũng khởi hành lúc rạng sáng.
+- Qui que vous {soyez|k}, vous devez respecter les règles. | Dù bạn là ai, bạn cũng phải tôn trọng luật.
+- Où que tu {ailles|k}, je penserai à toi. | Dù bạn đi đâu, tôi cũng sẽ nghĩ đến bạn.
+- {Si|k} difficile que soit le chemin, nous arriverons au sommet. | Dù con đường khó đến đâu, chúng ta cũng sẽ lên tới đỉnh.
+- Quoi que tu {fasses|k}, fais-le bien. | Dù làm gì, hãy làm cho tốt.
+
+#mistakes
+x: Quel que soient les risques, je pars. => Quels que soient les risques, je pars. | Dù rủi ro thế nào, tôi vẫn đi. >> [[Quel]] hợp với danh từ [[risques]]: [[quels]].
+x: Quoi que soit le problème, appelle-moi. => Quel que soit le problème, appelle-moi. | Dù vấn đề là gì, hãy gọi tôi. >> Với [[être]] và danh từ: [[quel que]].
+x: Où que tu vas, appelle-moi. => Où que tu ailles, appelle-moi. | Dù bạn đi đâu, hãy gọi cho tôi. >> [[Où que]] đi với [[subjonctif]].
+
+#dialogue
+papi: Si fatigué que je sois, je ne te laisserai pas partir sans moi. | Dù mệt đến đâu, ông cũng không để cháu đi mà không có ông. [thinking]
+tom: Merci ! Quoi qu'il arrive, on reste ensemble. | Cháu cảm ơn ông! Dù có chuyện gì, mình cũng đi cùng nhau. [happy]
+papi: D'accord. Mais où que nous soyons à six heures, on mange ! | Được. Nhưng sáu giờ dù đang ở đâu thì mình cũng ăn đã! [happy]
+tom: Promis ! | Cháu hứa! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Dù bạn là ai, bạn cũng phải tôn trọng luật. => Qui que vous soyez, vous devez respecter les règles. | Dù bạn là ai, bạn cũng phải tôn trọng luật.
+? Nói bằng tiếng Pháp: Dù thời tiết thế nào, chúng ta cũng khởi hành lúc rạng sáng. => Quelle que soit la météo, nous partirons à l'aube. | Dù thời tiết thế nào, chúng ta cũng khởi hành lúc rạng sáng.
+
+#recap
+> Nhượng bộ C1 với [[subjonctif]]: [[quel que soit]] với danh từ (hợp giống số), [[quoi que]], [[qui que]], [[où que]], [[si]] với tính từ và [[que]]. Đừng nhầm [[quel que]] với [[quoi que]].
+
+#practice
+fill: Nous partirons à l'aube, ___ que soit la météo. | quelle* / quel / quoi || la météo: giống cái.
+fill: Je penserai à toi, où que tu ___ . | ailles* / vas / iras || subjonctif.
+fill: Vous devez respecter les règles, qui que vous ___ . | soyez* / êtes / serez || subjonctif.
+contrast: Je ne suis pas d'accord, ___ que tu dises. | quoi* / quel || động từ khác être: quoi que.
+contrast: Je ne suis pas d'accord, ___ que soient tes raisons. | quelles* / quoi || être với danh từ giống cái số nhiều.
+type: Nous arriverons au sommet, si difficile que ___ (être) le chemin. | soit || subjonctif.
+fix: Quel que soient les risques, je pars. | Quels que soient les risques, je pars.* / Quoi que soient les risques, je pars. / Quels que sont les risques, je pars. || quels hợp với risques.
+listen: Qui que vous soyez, vous devez respecter les règles. | Qui que vous soyez, vous devez respecter les règles.* / Qui êtes-vous ? Vous devez respecter les règles. / Quoi que vous fassiez, vous devez respecter les règles. || qui que vous soyez.

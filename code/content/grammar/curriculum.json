@@ -1449,6 +1449,83 @@
     "hypothesis-c1"
    ],
    "find": "(?<![\\p{L}'])(pour peu que|pour peu qu'|à supposer que|à supposer qu'|en admettant que|en admettant qu'|si tant est que|si tant est qu')"
+  },
+  {
+   "id": "dao-ngu-trang-tu",
+   "lv": "c1",
+   "cat": "sentence",
+   "t": "Đảo ngữ sau trạng từ: peut-être est-il",
+   "en": "peut-être est-il malade · aussi a-t-il décidé de partir",
+   "pts": [
+    "adverb-inversion"
+   ],
+   "find": "(?<![\\p{L}'])([Pp]eut-être|[Ss]ans doute|[Aa]ussi|[Aa]insi|[Ee]ncore|[Dd]u moins|[Rr]arement) [\\p{L}]+-(t-)?(il|elle|ils|elles|on)(?![\\p{L}])"
+  },
+  {
+   "id": "dao-ngu-van-phong",
+   "lv": "c1",
+   "cat": "sentence",
+   "t": "Đảo ngữ văn phong: dit-il, où habitait",
+   "en": "« Je pars », dit-il · la maison où habitait mon père",
+   "pts": [
+    "stylistic-inversion"
+   ],
+   "find": "[,»] (dit|répondit|demanda|ajouta|cria|murmura|répond|demande|ajoute|explique|expliqua)-(t-)?(il|elle|on)(?![\\p{L}])"
+  },
+  {
+   "id": "nhuong-bo-c1",
+   "lv": "c1",
+   "cat": "clauses",
+   "t": "Nhượng bộ C1: quel que soit, où que tu ailles",
+   "en": "quels que soient les risques · si riche qu'il soit",
+   "pts": [
+    "concession-c1"
+   ],
+   "find": "(?<![\\p{L}'])([Qq]uel|[Qq]uelle|[Qq]uels|[Qq]uelles) que (soit|soient|fût|puisse)|(?<![\\p{L}'])([Qq]ui|[Oo]ù) que (tu|vous|je|il|elle|nous|ils|elles|ce|l'on|on)(?![\\p{L}])"
+  },
+  {
+   "id": "quan-he-subjonctif",
+   "lv": "c1",
+   "cat": "relative",
+   "t": "Subjonctif trong mệnh đề quan hệ",
+   "en": "le seul qui sache · je cherche quelqu'un qui puisse m'aider",
+   "pts": [
+    "relative-subjunctive"
+   ],
+   "find": "(?<![\\p{L}'])(le seul|la seule|le premier|la première|le dernier|la dernière|le meilleur|la meilleure|le plus [\\p{L}]+|quelqu'un|personne) (qui|que|qu') (sache|puisse|soit|ait|connaisse|comprenne|fasse|veuille|aie|sois|puissions|puissent)(?![\\p{L}])"
+  },
+  {
+   "id": "quan-he-c1",
+   "lv": "c1",
+   "cat": "relative",
+   "t": "Quan hệ C1: dont deux filles, parmi lesquels",
+   "en": "trois enfants, dont deux filles · auquel cas",
+   "pts": [
+    "relative-c1"
+   ],
+   "find": "(?<![\\p{L}'])(dont (un|une|deux|trois|quatre|cinq|plusieurs|la plupart|certains)|parmi (lesquels|lesquelles)|auquel cas|au milieu (duquel|de laquelle)|autour (duquel|de laquelle))(?![\\p{L}])"
+  },
+  {
+   "id": "vo-nhan-xung",
+   "lv": "c1",
+   "cat": "verbs",
+   "t": "Cấu trúc vô nhân xưng: il s'agit de, il importe que",
+   "en": "il s'agit de · il suffit que tu le dises · il se peut qu'il pleuve",
+   "pts": [
+    "impersonal-c1"
+   ],
+   "find": "(?<![\\p{L}'])([Ii]l s'agit|[Ii]l s'agissait|[Ii]l importe|[Ii]l convient|[Ii]l suffit|[Ii]l suffisait|[Ii]l se peut|[Ii]l en va de même|[Ii]l reste)(?![\\p{L}])"
+  },
+  {
+   "id": "subjonctif-c1",
+   "lv": "c1",
+   "cat": "verbs",
+   "t": "Subjonctif C1: qu'il entre !, le fait que",
+   "en": "qu'il entre ! · le fait qu'il soit parti · soit… soit",
+   "pts": [
+    "subj-c1"
+   ],
+   "find": "(?<![\\p{L}'])([Ll]e fait que|[Ll]e fait qu'|[Qq]u'il entre|[Qq]ue chacun|[Vv]ive (la|le|les)|[Ss]oit [\\p{L}]+, soit)(?![\\p{L}])"
   }
  ]
 }
