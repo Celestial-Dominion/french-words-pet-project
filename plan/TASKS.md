@@ -154,7 +154,7 @@ mieux / meilleur) · avant de + inf, après avoir + phân từ · bày tỏ ý k
   - 21/10 lô 2: 7 bài (subjonctif-cach-chia, subjonctif-il-faut-que, subjonctif-cam-xuc, y-kien-penser-que, hop-phan-tu, bi-dong, gerondif) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng/công thức 390 px; 5 giờ 6% · tuần 8%; 4b262b1
   - 21/10 lô 3: 7 bài (hai-dai-tu, dai-tu-menh-lenh, y-en-dong-tu, celui-celle, le-mien, dont, ce-qui-ce-que) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng 390 px; 5 giờ 8% · tuần 9%; 082265c
   - 21/10 lô 4: 7 bài (menh-de-quan-he-b1, loi-noi-gian-tiep, cau-hoi-dao-ngu, dong-tu-a-de, avant-de-apres-avoir, lien-tu-thoi-gian, nguyen-nhan) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; 5 giờ 9% · tuần 8%; 8d491de
-  - 21/10 lô 5: 7 bài (ket-qua, muc-dich, doi-lap, nhan-manh-cest-qui, phu-dinh-b1, tu-phiem-chi, so-sanh-b1) + 7 điểm inventory; thay 3 câu B1 trùng với bài A1/A2 (tuong-lai-b1, dang-sap-vua, hai-dai-tu) và dựng lại audio; 5 giờ 10% · tuần 8%; COMMIT
+  - 21/10 lô 5: 7 bài (ket-qua, muc-dich, doi-lap, nhan-manh-cest-qui, phu-dinh-b1, tu-phiem-chi, so-sanh-b1) + 7 điểm inventory; thay 3 câu B1 trùng với bài A1/A2 (tuong-lai-b1, dang-sap-vua, hai-dai-tu) và dựng lại audio; 5 giờ 10% · tuần 8%; 74abce9
   - **Kết quả:** 34 bài B1 (88 bài toàn khoá), `grammar:check --level b1` 34/34 sạch, inventory B1 37/37 điểm có bài; `grammar:state` đánh dấu đã duyệt a1,a2,b1. Tốn ~5% hạn mức 5 giờ, ~2% tuần. Mẹo + bẫy B1: memory grammar-a1a2. Chưa deploy.
 
 ### G-B2 — Ngữ pháp B2 [ ] (app Anh 36 bài)
