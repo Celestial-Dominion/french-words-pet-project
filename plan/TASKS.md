@@ -32,7 +32,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | P-A1 | A1 — nâng độ phủ từ | **bắt buộc** | ~25 bài đọc ngắn (3 lô) | ~1% | **xong 20/10** (30 bài, thực tế <1% tuần) |
 | P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | **xong 20/10** (52 truyện, ≥3 50,7% · ≥5 25,2%) |
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
-| S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | đang làm: lô 08 xong (48/49) |
+| S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | **xong 21/10** (49 truyện, ≥3 76,5% · ≥5 31,9%) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | **xong 21/10** (20 bài, 20 điểm phủ 100%) |
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
@@ -101,7 +101,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
   - **Kết quả:** A2 292 bài đọc, đạt cả 3 mốc (≥1 97,5 · ≥3 80,1 · ≥5 41,9), giờ đọc 15,6/12. Cả việc: 4 lô, 40 bài, 5 giờ 2→3%, tuần 7%.
   - Mẹo: giỏ đầu `sbanks` có nhiều từ (0) nên ≥1 tự lên (92,4→97,5 sau 2 lô); trước khi viết tiểu sử thì grep id/tên xem đã có chưa.
 
-## S-C2 — Truyện C2 cho đủ 49 (tùy chọn) [ ]
+## S-C2 — Truyện C2 cho đủ 49 (tùy chọn) [x]
 
 - Độ phủ C2 đã đạt hết (≥1 97,9% · ≥3 69,2% · ≥5 30,8% · giờ 16,2/13). Việc này chỉ để số truyện bằng app Anh. Hiện có 39/49.
 - **Cách làm:** truyện C2 (5–7 chương, 1.100–2.000 từ theo `dens`, câu TB ≤28,5, mật độ C2 nhắm 3,7–4%).
@@ -111,6 +111,8 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 - **Nhật ký:**
   - 21/10 lô 07 (phần còn lại): 3 truyện (st-c2-les-croutons-d-anselme, la-parure-de-solange, le-carnet-de-lucienne; giỏ s07d/e/f 14+16+16/16), 45 câu hỏi; C2 42 truyện, 0 lỗi 0 cảnh báo; ≥3 69,2→70,6 · ≥5 30,8→31,2; giờ 16,2→16,6; 5 giờ 32% · tuần 12% trước lô; 143cef3
   - 21/10 lô 08: 6 truyện (st-c2-la-garde-de-yasmina, la-quincaillerie-de-vittorio, les-tourtereaux-du-papet, le-filleul-du-majordome, la-bique-de-mihai, l-horloger-de-besancon; giỏ s08a–f 16+16+16+16+12+16/16, s08e bỏ 4 từ rác), 90 câu hỏi có audio (718 câu); C2 48 truyện, 0 lỗi 0 cảnh báo; ≥3 70,6→75,0 · ≥5 31,2→31,8; giờ 16,6→17,4; 5 giờ 2% · tuần 12% giữa lô; giỏ lô 09 (s09a) đã sinh; 8fd86b0
+  - 21/10 lô 09: 1 truyện (st-c2-la-couturiere-du-palier; giỏ s09a 16/16), 15 câu hỏi có audio (113 câu); C2 49 truyện, 0 lỗi 0 cảnh báo; ≥3 75,0→76,5 · ≥5 31,8→31,9; giờ 17,4→17,5; COMMIT
+  - **Kết quả:** C2 đủ 49 truyện như app Anh (≥1 97,9 · ≥3 76,5 · ≥5 31,9; giờ đọc 17,5/13). Cả việc: 3 lô (3 + 6 + 1 truyện), 150 câu hỏi; tuần 12→13%, 5 giờ 32% lúc bắt đầu, cửa sổ mới (đặt lại 15:10) 0→4% cho lô 08–09. Chưa deploy.
 
 ## S-C1 — Truyện C1 cho đủ 67 (tùy chọn, sau P-C1) [ ]
 
