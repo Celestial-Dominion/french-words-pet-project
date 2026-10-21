@@ -1210,6 +1210,86 @@
     "conjunctions-a2"
    ],
    "pri": 1
+  },
+  {
+   "id": "consequence",
+   "lv": "b1",
+   "cat": "clauses",
+   "name": "Exprimer la conséquence",
+   "vi": "Kết quả: donc, alors, c'est pourquoi, du coup (văn nói), si bien que; si / tellement + tính từ + que",
+   "pre": [
+    "conjunctions-a2"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "purpose",
+   "lv": "b1",
+   "cat": "clauses",
+   "name": "Exprimer le but",
+   "vi": "Mục đích: pour / afin de + nguyên mẫu (cùng chủ ngữ); pour que / afin que + subjonctif (khác chủ ngữ)",
+   "pre": [
+    "subj-necessity-will"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "opposition",
+   "lv": "b1",
+   "cat": "clauses",
+   "name": "Opposition et concession",
+   "vi": "Đối lập, nhượng bộ: mais, pourtant, cependant, alors que, même si + indicatif, bien que + subjonctif, malgré + danh từ",
+   "pre": [
+    "conjunctions-a2",
+    "subjonctif-forms"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "cleft",
+   "lv": "b1",
+   "cat": "sentence",
+   "name": "Mise en relief : c'est … qui / que",
+   "vi": "Câu nhấn mạnh: c'est moi qui…, c'est ici que…, ce sont eux qui…",
+   "pre": [
+    "relative-qui-que",
+    "stressed-pronouns"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "negation-b1",
+   "lv": "b1",
+   "cat": "negation",
+   "name": "Négations B1",
+   "vi": "Phủ định B1: ne… ni… ni, ne… aucun(e), ne… que (chỉ), ne… nulle part; personne ne / rien ne làm chủ ngữ; sans + nguyên mẫu",
+   "pre": [
+    "negation-other"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "indefinites",
+   "lv": "b1",
+   "cat": "determiners",
+   "name": "Indéfinis",
+   "vi": "Từ phiếm chỉ: chaque / chacun, quelques / quelques-uns, plusieurs, certains, n'importe qui / quoi / où, quelque chose de + tính từ",
+   "pre": [
+    "definite-articles"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "comparison-b1",
+   "lv": "b1",
+   "cat": "comparison",
+   "name": "Comparaison B1",
+   "vi": "So sánh B1: de plus en plus / de moins en moins, plus… plus…, deux fois plus, le même que",
+   "pre": [
+    "comparative",
+    "superlative"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

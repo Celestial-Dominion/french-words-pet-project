@@ -1,0 +1,65 @@
+=== tu-phiem-chi
+sum: Từ phiếm chỉ nói về số lượng, người hay vật không xác định. Đứng trước danh từ: chaque (mỗi, số ít), quelques (vài), plusieurs (nhiều), certains / certaines (một số). Đứng một mình: chacun / chacune (mỗi người), quelques-uns, plusieurs, certains. N'importe qui / quoi / où / quand: bất kỳ ai, gì, đâu, lúc nào. Quelque chose / rien / quelqu'un / personne + de + tính từ: quelque chose d'intéressant.
+form: chaque + danh từ số ít | chaque jour
+form: chacun, chacune (đứng một mình) | Chacun a son livre.
+form: quelques, plusieurs, certains + danh từ số nhiều | plusieurs fois
+form: n'importe qui / quoi / où / quand | Tu peux venir n'importe quand.
+form: quelque chose de + tính từ | quelque chose de nouveau
+cast: paul linh
+bg: campus-gate
+words: chaque, plusieurs, certain, étudiant
+
+#hook
+linh: Chaque étudiant doit avoir une carte ? | Mỗi sinh viên đều phải có thẻ à? [thinking]
+paul: Oui, chacun reçoit la sienne le premier jour. Et tu peux entrer à n'importe quelle heure. | Ừ, mỗi người nhận thẻ của mình vào ngày đầu. Và cậu có thể vào bất cứ giờ nào. [explain]
+> [[Chaque]] đi trước danh từ: [[chaque étudiant]]. [[Chacun]] đứng một mình thay cho danh từ. [[N'importe quelle heure]] nghĩa là bất cứ giờ nào.
+
+#meaning
+th: Trước danh từ | Đứng một mình
+tb: chaque étudiant | chacun, chacune
+tb: quelques livres | quelques-uns, quelques-unes
+tb: plusieurs amis | plusieurs
+tb: certains jours | certains, certaines
+> Cột trái cần danh từ đi kèm, cột phải đứng một mình.
+
+#form
+f: [n'importe] + [qui, quoi, où, quand, quel]
+> Nghĩa là bất kỳ: [[n'importe qui]] là bất kỳ ai, [[n'importe quoi]] là bất cứ thứ gì, và cũng có nghĩa là chuyện vớ vẩn.
+f: [quelque chose, rien, quelqu'un, personne] + de + tính từ
+> Tính từ đứng sau [[de]] và giữ dạng giống đực: [[quelque chose de bon]], [[quelqu'un d'intéressant]].
+
+#examples
+- Je vais à la piscine {chaque|k} samedi. | Thứ Bảy nào tôi cũng đi bơi.
+- {Chacun|k} paie sa part. | Mỗi người trả phần của mình.
+- J'ai lu ce livre {plusieurs|k} fois. | Tôi đã đọc cuốn sách này nhiều lần.
+- {Certains|k} étudiants travaillent le soir. | Một số sinh viên đi làm buổi tối.
+- Ne dis pas {n'importe quoi|k} ! | Đừng nói linh tinh!
+- J'ai appris {quelque chose de|k} nouveau aujourd'hui. | Hôm nay tôi học được một điều mới.
+
+#mistakes
+x: Chaque étudiants ont une carte. => Chaque étudiant a une carte. | Mỗi sinh viên đều có thẻ. >> [[Chaque]] luôn đi với danh từ số ít.
+x: Chaque a son livre. => Chacun a son livre. | Mỗi người có sách của mình. >> Đứng một mình thì dùng [[chacun]].
+x: J'ai vu quelque chose intéressant. => J'ai vu quelque chose d'intéressant. | Tôi đã thấy một điều thú vị. >> Cần [[de]] giữa [[quelque chose]] và tính từ.
+
+#dialogue
+linh: Il y a plusieurs restaurants sur le campus ? | Trong khuôn viên có nhiều nhà ăn không? [thinking]
+paul: Oui, trois. Certains sont ouverts le dimanche. | Có, ba cái. Một số mở cửa cả Chủ nhật. [explain]
+linh: Et on peut manger n'importe où ? | Thế mình có thể ăn ở bất cứ đâu à? [surprised]
+paul: Presque ! Viens, je vais te montrer quelque chose de génial. | Gần như vậy! Đi nào, mình sẽ cho cậu xem một thứ tuyệt lắm. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi đã đọc cuốn sách này nhiều lần. => J'ai lu ce livre plusieurs fois. | Tôi đã đọc cuốn sách này nhiều lần.
+? Nói bằng tiếng Pháp: Mỗi người trả phần của mình. => Chacun paie sa part. | Mỗi người trả phần của mình.
+
+#recap
+> Trước danh từ: [[chaque]] với số ít; [[quelques]], [[plusieurs]], [[certains]] với số nhiều. Đứng một mình: [[chacun]], [[quelques-uns]], [[plusieurs]], [[certains]]. [[N'importe]] nghĩa là bất kỳ. [[Quelque chose de]] cộng tính từ.
+
+#practice
+fill: Je vais à la piscine ___ samedi. | chaque* / chacun / plusieurs || trước danh từ số ít → chaque.
+fill: ___ paie sa part. | Chacun* / Chaque / Certains || đứng một mình, số ít → chacun.
+fill: J'ai lu ce livre ___ fois. | plusieurs* / chaque / chacun || nhiều lần.
+contrast: J'ai appris quelque chose ___ nouveau. | de* / du || quelque chose de + tính từ.
+fill: Ne dis pas n'importe ___ ! | quoi* / qui / où || bất cứ thứ gì.
+fill: ___ étudiants travaillent le soir. | Certains* / Chaque / Chacun || một số + số nhiều.
+fix: Chaque étudiants ont une carte. | Chaque étudiant a une carte.* / Chacun étudiant a une carte. / Chaque étudiants a une carte. || chaque + số ít.
+listen: Je vais à la piscine chaque samedi. | Je vais à la piscine chaque samedi.* / Je vais à la piscine ce samedi. / Je vais à la piscine certains samedis. || chaque.

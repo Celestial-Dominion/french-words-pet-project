@@ -1,0 +1,64 @@
+=== muc-dich
+sum: Nói mục đích: pour / afin de + nguyên mẫu khi cùng một người (Je travaille pour gagner de l'argent). Khi hai người khác nhau, dùng pour que / afin que + subjonctif (Je parle lentement pour que tu comprennes). Afin de, afin que trang trọng hơn. Phủ định: pour ne pas + nguyên mẫu.
+form: pour / afin de + nguyên mẫu | Je cours pour rester en forme.
+form: pour que / afin que + subjonctif | Je parle lentement pour que tu comprennes.
+form: pour ne pas + nguyên mẫu | Je pars tôt pour ne pas être en retard.
+cast: papi lea
+bg: home-day
+words: envoyer, photo, utiliser, oublier
+gloss: afin
+
+#hook
+lea: Papi, pourquoi tu as acheté un téléphone ? | Ông ơi, sao ông mua điện thoại vậy? [surprised]
+papi: Pour voir tes photos, et pour que tu puisses m'appeler en vidéo ! | Để xem ảnh của cháu, và để cháu có thể gọi video cho ông! [happy]
+> [[Pour voir]]: ông tự xem, cùng một người nên dùng nguyên mẫu. [[Pour que tu puisses]]: cháu gọi, người khác, nên dùng [[que]] cộng [[subjonctif]].
+
+#meaning
+vs: J'apprends le français pour travailler en France. | Tôi học tiếng Pháp để làm việc ở Pháp. || cùng một người
+vs: J'explique encore pour que tu comprennes. | Tôi giải thích lại để bạn hiểu. || hai người khác nhau
+> Đây cũng là quy tắc của [[vouloir que]] trong bài trước.
+
+#form
+f: [pour, afin de] + nguyên mẫu
+> Cùng một chủ ngữ. [[Afin de]] trang trọng hơn [[pour]].
+f: [pour que, afin que] + chủ ngữ + subjonctif
+> Hai chủ ngữ khác nhau. Động từ sau [[que]] luôn ở [[subjonctif]].
+th: Khẳng định | Phủ định
+tb: pour réussir | pour ne pas échouer
+tb: pour que tu viennes | pour que tu ne partes pas
+> Với nguyên mẫu, [[ne pas]] đứng liền nhau trước động từ.
+
+#examples
+- Je me lève tôt {pour|k} avoir le temps de courir. | Tôi dậy sớm để có thời gian chạy bộ.
+- Parle plus fort {pour que|k} tout le monde t'{entende|v}. | Nói to hơn để mọi người nghe thấy bạn.
+- Nous avons fermé la fenêtre {pour ne pas|k} avoir froid. | Chúng tôi đóng cửa sổ để khỏi bị lạnh.
+- Veuillez remplir ce formulaire {afin de|k} recevoir votre carte. | Vui lòng điền mẫu đơn này để nhận thẻ.
+- Je te donne mon numéro {pour que|k} tu {puisses|v} m'appeler. | Tôi đưa bạn số của tôi để bạn có thể gọi cho tôi.
+
+#mistakes
+x: Je parle lentement pour que tu comprends. => Je parle lentement pour que tu comprennes. | Tôi nói chậm để bạn hiểu. >> Sau [[pour que]] dùng [[subjonctif]].
+x: Je travaille pour que je gagne de l'argent. => Je travaille pour gagner de l'argent. | Tôi làm việc để kiếm tiền. >> Cùng một người thì dùng [[pour]] cộng nguyên mẫu.
+x: Je pars tôt pour pas être en retard. => Je pars tôt pour ne pas être en retard. | Tôi đi sớm để khỏi bị muộn. >> Trong câu chuẩn, giữ cả [[ne]] và [[pas]].
+
+#dialogue
+lea: Tu veux que je t'installe une application pour que tu voies mes photos ? | Ông có muốn cháu cài ứng dụng để ông xem ảnh của cháu không? [happy]
+papi: Oui, mais écris-moi les étapes pour ne pas oublier. | Có, nhưng cháu viết các bước ra cho ông để ông khỏi quên nhé. [worried]
+lea: D'accord. J'écris en gros pour que tu puisses lire sans lunettes. | Vâng. Cháu viết chữ to để ông đọc được mà không cần kính. [explain]
+papi: Merci ! Je vais m'entraîner tous les jours afin de devenir un expert. | Cảm ơn cháu! Ông sẽ tập mỗi ngày để thành chuyên gia. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Nói to hơn để mọi người nghe thấy bạn. => Parle plus fort pour que tout le monde t'entende. | Nói to hơn để mọi người nghe thấy bạn.
+? Nói bằng tiếng Pháp: Chúng tôi đóng cửa sổ để khỏi bị lạnh. => Nous avons fermé la fenêtre pour ne pas avoir froid. | Chúng tôi đóng cửa sổ để khỏi bị lạnh.
+
+#recap
+> Cùng một người: [[pour]] hoặc [[afin de]] cộng nguyên mẫu. Hai người khác nhau: [[pour que]] hoặc [[afin que]] cộng [[subjonctif]]. Phủ định: [[pour ne pas]] cộng nguyên mẫu.
+
+#practice
+contrast: Je parle lentement pour que tu ___ . | comprennes* / comprends || pour que + subjonctif.
+contrast: Je travaille ___ gagner de l'argent. | pour* / pour que || cùng người → pour + nguyên mẫu.
+fill: Je te donne mon numéro pour que tu ___ m'appeler. | puisses* / peux / pouvoir || pouvoir → puisses.
+fill: Nous avons fermé la fenêtre pour ___ avoir froid. | ne pas* / pas ne / ne || pour ne pas + nguyên mẫu.
+fill: Veuillez remplir ce formulaire ___ recevoir votre carte. | afin de* / afin que / pour que || cùng người, trang trọng.
+type: Parle plus fort pour que tout le monde t'___ (entendre). | entende || entendre → entende.
+fix: Je travaille pour que je gagne de l'argent. | Je travaille pour gagner de l'argent.* / Je travaille pour que je gagner de l'argent. / Je travaille afin que gagner de l'argent. || cùng người → nguyên mẫu.
+listen: Je me lève tôt pour avoir le temps de courir. | Je me lève tôt pour avoir le temps de courir.* / Je me lève tôt pour que tu aies le temps de courir. / Je me lève tard pour avoir le temps de courir. || pour avoir.

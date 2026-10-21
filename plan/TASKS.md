@@ -38,7 +38,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | chưa làm |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | chưa làm |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | chưa làm |
-| G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | đang làm: lô 4 xong (27/34 bài) |
+| G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
 
 Cộng (còn lại, sau P-A1): bắt buộc ~13,5% (độ phủ ~3,5% + ngữ pháp ~10%) · tùy chọn ~8% · tất cả ~21–22% tuần.
 Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì bài cấp trên dựa vào bài cấp dưới (trường `pre`).
@@ -135,7 +135,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 5. `npm run check` → commit (`content/grammar`, `public/data/grammar`; audio `public/audio/grammar` không vào git) →
    ghi Nhật ký → push.
 
-### G-B1 — Ngữ pháp B1 [ ] (app Anh 39 bài)
+### G-B1 — Ngữ pháp B1 [x] (app Anh 39 bài) — xong 21/10/2026, 34 bài
 
 Gợi ý: plus-que-parfait · kể chuyện quá khứ (PC + imparfait + plus-que-parfait) · conditionnel présent (mong muốn,
 lời khuyên, giả định) · si + imparfait → conditionnel · subjonctif présent: cách chia · subjonctif sau il faut que /
@@ -153,7 +153,9 @@ mieux / meilleur) · avant de + inf, après avoir + phân từ · bày tỏ ý k
   - 21/10 lô 1: 6 bài (plus-que-parfait, ke-chuyen-qua-khu, dang-sap-vua, tuong-lai-b1, conditionnel-present, si-imparfait) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; soát 390 px + desktop; danh sách 34 bài B1 ở `plan/.progress-G-B1.md`; 5 giờ 5% · tuần 7%; ed1c5a9
   - 21/10 lô 2: 7 bài (subjonctif-cach-chia, subjonctif-il-faut-que, subjonctif-cam-xuc, y-kien-penser-que, hop-phan-tu, bi-dong, gerondif) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng/công thức 390 px; 5 giờ 6% · tuần 8%; 4b262b1
   - 21/10 lô 3: 7 bài (hai-dai-tu, dai-tu-menh-lenh, y-en-dong-tu, celui-celle, le-mien, dont, ce-qui-ce-que) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng 390 px; 5 giờ 8% · tuần 9%; 082265c
-  - 21/10 lô 4: 7 bài (menh-de-quan-he-b1, loi-noi-gian-tiep, cau-hoi-dao-ngu, dong-tu-a-de, avant-de-apres-avoir, lien-tu-thoi-gian, nguyen-nhan) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; 5 giờ 9% · tuần 9%; 8d491de
+  - 21/10 lô 4: 7 bài (menh-de-quan-he-b1, loi-noi-gian-tiep, cau-hoi-dao-ngu, dong-tu-a-de, avant-de-apres-avoir, lien-tu-thoi-gian, nguyen-nhan) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; 5 giờ 9% · tuần 8%; 8d491de
+  - 21/10 lô 5: 7 bài (ket-qua, muc-dich, doi-lap, nhan-manh-cest-qui, phu-dinh-b1, tu-phiem-chi, so-sanh-b1) + 7 điểm inventory; thay 3 câu B1 trùng với bài A1/A2 (tuong-lai-b1, dang-sap-vua, hai-dai-tu) và dựng lại audio; 5 giờ 10% · tuần 8%; COMMIT
+  - **Kết quả:** 34 bài B1 (88 bài toàn khoá), `grammar:check --level b1` 34/34 sạch, inventory B1 37/37 điểm có bài; `grammar:state` đánh dấu đã duyệt a1,a2,b1. Tốn ~5% hạn mức 5 giờ, ~2% tuần. Mẹo + bẫy B1: memory grammar-a1a2. Chưa deploy.
 
 ### G-B2 — Ngữ pháp B2 [ ] (app Anh 36 bài)
 

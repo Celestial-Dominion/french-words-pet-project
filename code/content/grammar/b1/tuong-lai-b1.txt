@@ -29,7 +29,7 @@ f: [quand, dès que] + futur + , + futur
 - Je {pars|k} en vacances demain matin. | Sáng mai tôi đi nghỉ.
 - Regarde ces nuages : il {va pleuvoir|k}. | Nhìn đám mây kìa: trời sắp mưa.
 - Promis, je {ferai|k} la vaisselle ce soir. | Hứa đấy, tối nay tôi sẽ rửa bát.
-- {Quand|c} je {serai|k} grand, je {serai|k} pilote. | Khi lớn lên, cháu sẽ làm phi công.
+- {Quand|c} je {serai|k} grand, je {ferai|k} le tour du monde. | Khi lớn lên, cháu sẽ đi vòng quanh thế giới.
 - {Dès que|c} tu {arriveras|k}, appelle-moi. | Ngay khi đến nơi thì gọi cho tôi nhé.
 
 #real
@@ -42,7 +42,7 @@ vs: Quand il fera beau, on ira à la plage. | Khi nào trời đẹp, chúng ta 
 > [[Quand]] với thì hiện tại nói về thói quen, chuyện lặp lại. [[Quand]] với tương lai nói về một lần sắp tới.
 
 #mistakes
-x: Quand je suis grand, je serai pilote. => Quand je serai grand, je serai pilote. | Khi lớn lên, tôi sẽ làm phi công. >> Sau [[quand]] nói về tương lai thì dùng [[futur simple]].
+x: Quand je suis grand, je ferai le tour du monde. => Quand je serai grand, je ferai le tour du monde. | Khi lớn lên, tôi sẽ đi vòng quanh thế giới. >> Sau [[quand]] nói về tương lai thì dùng [[futur simple]].
 x: Dès que tu arrives demain, appelle-moi. => Dès que tu arriveras demain, appelle-moi. | Mai đến nơi thì gọi tôi ngay nhé. >> [[Demain]] là tương lai, sau [[dès que]] cần [[futur simple]].
 x: Attention, tu tomberas ! => Attention, tu vas tomber ! | Cẩn thận, sắp ngã kìa! >> Việc sắp xảy ra trước mắt thì dùng [[futur proche]].
 
@@ -53,18 +53,18 @@ paul: Parfait. Quand le client verra tes chiffres, il sera content. | Tuyệt. K
 linh: J'espère ! Je t'écrirai dès que la réunion sera finie. | Hy vọng thế! Họp xong tôi sẽ nhắn anh ngay. [happy]
 
 #recall
-? Nói bằng tiếng Pháp: Khi lớn lên, cháu sẽ làm phi công. => Quand je serai grand, je serai pilote. | Khi lớn lên, cháu sẽ làm phi công.
+? Nói bằng tiếng Pháp: Khi lớn lên, cháu sẽ đi vòng quanh thế giới. => Quand je serai grand, je ferai le tour du monde. | Khi lớn lên, cháu sẽ đi vòng quanh thế giới.
 ? Nói bằng tiếng Pháp: Nhìn đám mây kìa: trời sắp mưa. => Regarde ces nuages : il va pleuvoir. | Nhìn đám mây kìa: trời sắp mưa.
 
 #recap
 > Lịch đã chốt dùng [[présent]], dự định và việc trước mắt dùng [[aller]] cộng nguyên mẫu, lời hứa và dự đoán dùng [[futur simple]]. Và nhớ: sau [[quand]], [[dès que]], [[lorsque]] nói về tương lai thì dùng [[futur simple]].
 
 #practice
-fill: Quand je ___ grand, je serai pilote. | serai* / suis / serais || quand + tương lai → futur.
+fill: Quand je ___ grand, je ferai le tour du monde. | serai* / suis / serais || quand + tương lai → futur.
 fill: Dès que tu ___ , appelle-moi. | arriveras* / arrives / arrivais || dès que + tương lai → futur.
 contrast: Regarde ces nuages : il ___ pleuvoir. | va* / pleuvra || Dấu hiệu trước mắt → futur proche.
 contrast: D'habitude, quand il ___ beau, on va à la plage. | fait* / fera || Thói quen → présent.
 type: Je vous ___ (répondre) dès que j'aurai les résultats. | répondrai || Lời hứa → futur simple.
-fix: Quand je suis grand, je serai pilote. | Quand je serai grand, je serai pilote.* / Quand je serais grand, je serai pilote. / Quand je suis grand, je suis pilote. || quand + futur.
+fix: Quand je suis grand, je ferai le tour du monde. | Quand je serai grand, je ferai le tour du monde.* / Quand je serais grand, je ferai le tour du monde. / Quand je suis grand, je fais le tour du monde. || quand + futur.
 order: Dès / que / tu / arriveras, / appelle-moi. | Ngay khi đến nơi thì gọi tôi.
 listen: Quand il fera beau, on ira à la plage. | Quand il fera beau, on ira à la plage.* / Quand il fait beau, on va à la plage. / Quand il faisait beau, on allait à la plage. || fera, ira: tương lai.

@@ -1,0 +1,69 @@
+=== ket-qua
+sum: Nói kết quả: donc, alors (vì vậy), c'est pourquoi (đó là lý do), du coup (văn nói, thế là), par conséquent (văn viết). Để nói mức độ dẫn tới kết quả: si / tellement + tính từ, trạng từ + que; tellement de + danh từ + que; động từ + tellement + que.
+form: donc, alors, du coup | Il pleut, donc on reste ici.
+form: c'est pourquoi | Je suis malade, c'est pourquoi je ne viens pas.
+form: si / tellement + tính từ + que | Il est si fatigué qu'il dort debout.
+form: tellement de + danh từ + que | J'ai tellement de travail que je ne sors plus.
+cast: lucas linh
+bg: village
+words: route, fermer, neiger, retard
+
+#hook
+linh: Pourquoi on s'arrête ? | Sao mình dừng lại vậy? [surprised]
+lucas: Il a tellement neigé que la route est fermée. Du coup, on va dormir au village. | Tuyết rơi nhiều đến mức đường bị đóng. Thế là mình sẽ ngủ lại ở làng. [explain]
+> [[Tellement… que]] nói mức độ dẫn tới kết quả. [[Du coup]] nói kết quả theo lối văn nói, nghĩa là thế là, vậy nên.
+
+#meaning
+th: Từ | Sắc thái
+tb: donc, alors | trung tính, rất hay dùng
+tb: du coup | văn nói, thân mật
+tb: c'est pourquoi | giải thích, hơi trang trọng
+tb: par conséquent | văn viết, trang trọng
+> Tất cả đều nối nguyên nhân với kết quả.
+
+#form
+f: [si, tellement] + tính từ + que + kết quả
+> [[Si]] và [[tellement]] đứng trước tính từ hoặc trạng từ.
+f: [tellement de] + danh từ + que + kết quả
+> Trước danh từ, dùng [[tellement de]]. Sau động từ, dùng [[tellement]] một mình.
+
+#examples
+- Le film était {si|k} long que je me suis endormi. | Bộ phim dài đến mức tôi ngủ quên.
+- Il parle {tellement|k} vite que je ne comprends rien. | Anh ấy nói nhanh đến mức tôi chẳng hiểu gì.
+- Il y avait {tellement de|k} monde qu'on est partis. | Đông người đến mức chúng tôi bỏ về.
+- J'ai raté le bus, {du coup|k} je suis venu à pied. | Tôi lỡ xe buýt, thế là tôi đi bộ đến.
+- Les prix ont augmenté, {c'est pourquoi|k} nous changeons de fournisseur. | Giá đã tăng, vì vậy chúng tôi đổi nhà cung cấp.
+
+#contrast
+> [[Donc]] có thể đứng đầu vế câu hoặc ngay sau động từ.
+vs: Il est malade, donc il ne vient pas. | Anh ấy ốm nên không đến. || đầu vế: nên
+vs: Il est donc malade. | Vậy là anh ấy bị ốm. || sau động từ: vậy là
+> Khi đứng sau động từ, [[donc]] có nghĩa là vậy là, tức là.
+
+#mistakes
+x: Il a tellement de mangé qu'il est malade. => Il a tellement mangé qu'il est malade. | Anh ấy ăn nhiều đến mức bị ốm. >> Sau động từ, dùng [[tellement]], không có [[de]].
+x: J'ai si de travail que je ne sors plus. => J'ai tellement de travail que je ne sors plus. | Tôi nhiều việc đến mức không ra ngoài nữa. >> Trước danh từ, dùng [[tellement de]].
+x: Il est trop fatigué qu'il dort debout. => Il est si fatigué qu'il dort debout. | Anh ấy mệt đến mức ngủ gật. >> [[Trop]] không đi với [[que]]; dùng [[si]] hoặc [[tellement]].
+
+#dialogue
+linh: Il y a un hôtel ici ? Le village est si petit ! | Ở đây có khách sạn không? Làng nhỏ thế cơ mà! [worried]
+lucas: Il y a une auberge. Elle est tellement connue qu'il faut réserver. | Có một nhà trọ. Nó nổi tiếng đến mức phải đặt trước. [thinking]
+linh: Et tu as réservé ? | Thế anh đặt chưa? [surprised]
+lucas: Oui, ce matin. J'avais vu la météo, c'est pourquoi j'ai appelé ! | Rồi, sáng nay. Anh đã xem dự báo thời tiết, nên mới gọi đấy! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Anh ấy nói nhanh đến mức tôi chẳng hiểu gì. => Il parle tellement vite que je ne comprends rien. | Anh ấy nói nhanh đến mức tôi chẳng hiểu gì.
+? Nói bằng tiếng Pháp: Tôi lỡ xe buýt, thế là tôi đi bộ đến. => J'ai raté le bus, du coup je suis venu à pied. | Tôi lỡ xe buýt, thế là tôi đi bộ đến.
+
+#recap
+> Kết quả: [[donc]], [[alors]], [[du coup]] trong văn nói, [[c'est pourquoi]], [[par conséquent]] trong văn viết. Mức độ dẫn tới kết quả: [[si]] hoặc [[tellement]] cộng tính từ cộng [[que]]; [[tellement de]] cộng danh từ cộng [[que]].
+
+#practice
+fill: Le film était ___ long que je me suis endormi. | si* / si de / trop || si + tính từ + que.
+fill: Il y avait ___ monde qu'on est partis. | tellement de* / tellement / si || trước danh từ → tellement de.
+fill: Il parle ___ vite que je ne comprends rien. | tellement* / tellement de / trop || trước trạng từ → tellement.
+fill: J'ai raté le bus, ___ je suis venu à pied. | du coup* / parce que / pourtant || kết quả.
+contrast: Il est malade, ___ il ne vient pas. | donc* / car || kết quả → donc.
+fix: Il est trop fatigué qu'il dort debout. | Il est si fatigué qu'il dort debout.* / Il est trop de fatigué qu'il dort debout. / Il est tellement de fatigué qu'il dort debout. || trop không đi với que.
+order: J'ai / tellement / de / travail / que / je / ne / sors / plus. | Tôi nhiều việc đến mức không ra ngoài nữa.
+listen: Il y avait tellement de monde qu'on est partis. | Il y avait tellement de monde qu'on est partis.* / Il y avait tellement de monde qu'on est restés. / Il y avait peu de monde, donc on est partis. || tellement de monde.

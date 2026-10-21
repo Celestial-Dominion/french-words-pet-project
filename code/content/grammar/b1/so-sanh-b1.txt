@@ -1,0 +1,73 @@
+=== so-sanh-b1
+sum: So sánh B1: de plus en plus / de moins en moins (càng ngày càng), plus… plus… / moins… moins… (càng… càng…), deux fois plus / moins (gấp đôi / chỉ bằng một nửa), le même… que (giống với). Nhớ các dạng đặc biệt: meilleur (tính từ), mieux (trạng từ).
+form: de plus en plus / de moins en moins + tính từ | de plus en plus cher
+form: de plus en plus de + danh từ | de plus en plus de monde
+form: plus… plus… | Plus je lis, plus j'apprends.
+form: deux fois plus / moins | deux fois plus cher
+form: le même / la même / les mêmes… que | la même voiture que toi
+cast: nam lea
+bg: supermarket
+words: prix, cher, augmenter, dépenser
+
+#hook
+lea: Regarde ce prix ! Le beurre est de plus en plus cher. | Nhìn giá này đi! Bơ càng ngày càng đắt. [surprised]
+nam: Oui, et plus on achète, plus on dépense... | Ừ, mà càng mua nhiều thì càng tốn tiền... [sad]
+> [[De plus en plus]] nghĩa là càng ngày càng. [[Plus… plus…]] nghĩa là càng… càng…. Hai cấu trúc này rất hay gặp trong đời sống.
+
+#meaning
+vs: Le beurre est plus cher qu'avant. | Bơ đắt hơn trước. || so sánh hai thời điểm
+vs: Le beurre est de plus en plus cher. | Bơ càng ngày càng đắt. || thay đổi liên tục
+> [[De plus en plus]] nói một sự thay đổi kéo dài theo thời gian.
+
+#form
+f: [de plus en plus, de moins en moins] + tính từ, trạng từ
+> Trước danh từ, thêm [[de]]: [[de plus en plus de monde]], [[de moins en moins de temps]].
+f: [plus] + mệnh đề + [plus] + mệnh đề
+> Không có [[le]] và không có [[que]] trong cấu trúc càng… càng.
+th: Cấu trúc | Ví dụ
+tb: deux fois plus | Ce sac coûte deux fois plus cher.
+tb: deux fois moins | Il gagne deux fois moins que moi.
+tb: le même que | J'ai le même téléphone que toi.
+> [[Le même]] đổi theo giống và số: [[la même]], [[les mêmes]].
+
+#examples
+- Il y a {de plus en plus de|k} touristes en ville. | Trong thành phố càng ngày càng nhiều khách du lịch.
+- Je dors {de moins en moins|k}. | Tôi càng ngày càng ngủ ít.
+- {Plus|k} je travaille, {plus|k} je suis fatigué. | Càng làm việc tôi càng mệt.
+- {Moins|k} tu manges de sucre, {mieux|k} tu te sens. | Càng ăn ít đường, bạn càng thấy khoẻ.
+- Nous avons {les mêmes|k} goûts que nos parents. | Chúng tôi có cùng sở thích với bố mẹ.
+
+#pronunciation
+pron: plus je lis | plus je lis | plyʒəli
+pron: de plus en plus | de plus en plus | dəplyzɑ̃ply
+> Trong [[de plus en plus]], chữ [[s]] đầu nối với [[en]] thành âm [[z]], còn chữ [[s]] cuối không đọc.
++ C'est de plus en plus difficile. | Việc này càng ngày càng khó.
+
+#mistakes
+x: Le plus je lis, le plus j'apprends. => Plus je lis, plus j'apprends. | Càng đọc tôi càng học được nhiều. >> Không có [[le]] trong cấu trúc càng… càng.
+x: Il y a de plus en plus touristes. => Il y a de plus en plus de touristes. | Càng ngày càng nhiều khách du lịch. >> Trước danh từ cần [[de]].
+x: Elle a la même robe comme moi. => Elle a la même robe que moi. | Cô ấy có cái váy giống tôi. >> Nói [[le même… que]], không dùng [[comme]].
+x: Ce gâteau est plus meilleur. => Ce gâteau est meilleur. | Cái bánh này ngon hơn. >> [[Meilleur]] đã có nghĩa là tốt hơn, không thêm [[plus]].
+
+#dialogue
+nam: Avant, on payait deux fois moins pour le même panier. | Trước đây, mình chỉ trả bằng một nửa cho cùng một giỏ hàng. [thinking]
+lea: C'est vrai. Achetons les mêmes produits que d'habitude, mais en promotion. | Đúng thế. Mình mua những sản phẩm như mọi khi, nhưng chọn hàng khuyến mãi. [explain]
+nam: Bonne idée. Plus on compare, moins on dépense ! | Ý hay. Càng so sánh thì càng tiêu ít! [happy]
+lea: Et ce fromage ? Il est meilleur que l'autre, et moins cher ! | Còn phô mai này? Nó ngon hơn cái kia mà lại rẻ hơn! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Càng làm việc tôi càng mệt. => Plus je travaille, plus je suis fatigué. | Càng làm việc tôi càng mệt.
+? Nói bằng tiếng Pháp: Trong thành phố càng ngày càng nhiều khách du lịch. => Il y a de plus en plus de touristes en ville. | Trong thành phố càng ngày càng nhiều khách du lịch.
+
+#recap
+> [[De plus en plus]], [[de moins en moins]]: càng ngày càng, thêm [[de]] trước danh từ. [[Plus… plus…]]: càng… càng…, không có [[le]]. [[Deux fois plus]] và [[le même… que]] giúp so sánh chính xác hơn.
+
+#practice
+fill: Le beurre est ___ cher. | de plus en plus* / plus en plus / le plus en plus || càng ngày càng.
+fill: Il y a de plus en plus ___ touristes en ville. | de* / des / les || trước danh từ → de.
+fill: ___ je travaille, plus je suis fatigué. | Plus* / Le plus / Très || plus… plus…
+fill: J'ai le même téléphone ___ toi. | que* / comme / de || le même… que.
+fill: Ce sac coûte deux fois ___ cher. | plus* / de plus / plus de || deux fois plus.
+contrast: Ce fromage est ___ que l'autre. | meilleur* / plus bon || bon → meilleur.
+fix: Le plus je lis, le plus j'apprends. | Plus je lis, plus j'apprends.* / Plus je lis, le plus j'apprends. / Le plus je lis, plus j'apprends. || bỏ le.
+listen: C'est de plus en plus difficile. | C'est de plus en plus difficile.* / C'est de moins en moins difficile. / C'est plus difficile. || de plus en plus.

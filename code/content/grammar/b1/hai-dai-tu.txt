@@ -35,7 +35,7 @@ f: chủ ngữ + [le, la, les] + [lui, leur] + động từ
 - Ton livre ? Je te le {rends|v} demain. | Cuốn sách của bạn à? Mai tôi trả bạn.
 - La photo ? Je la lui {ai envoyée|v} hier. | Bức ảnh à? Hôm qua tôi gửi cho cô ấy rồi.
 - Les clés ? Il nous les {donne|v} ce soir. | Chìa khoá à? Tối nay anh ấy đưa cho chúng tôi.
-- Du pain ? Il y en {a|v} dans la cuisine. | Bánh mì à? Trong bếp có đấy.
+- Des œufs ? Il y en {a|v} dans le panier. | Trứng à? Trong giỏ có đấy.
 - Ce problème ? Je leur en {ai parlé|v}. | Vấn đề đó à? Tôi nói với họ rồi.
 
 #contrast
@@ -63,7 +63,7 @@ papa: Oui, il y en a. Mais ne me la rends pas sale ! | Có. Nhưng đừng trả
 
 #recall
 ? Nói bằng tiếng Pháp: Cuốn sách của bạn à? Mai tôi trả bạn. => Ton livre ? Je te le rends demain. | Cuốn sách của bạn à? Mai tôi trả bạn.
-? Nói bằng tiếng Pháp: Bánh mì à? Trong bếp có đấy. => Du pain ? Il y en a dans la cuisine. | Bánh mì à? Trong bếp có đấy.
+? Nói bằng tiếng Pháp: Trứng à? Trong giỏ có đấy. => Des œufs ? Il y en a dans le panier. | Trứng à? Trong giỏ có đấy.
 
 #recap
 > Thứ tự đại từ: [[me]], [[te]], [[nous]], [[vous]], rồi [[le]], [[la]], [[les]], rồi [[lui]], [[leur]], cuối cùng [[y]] và [[en]]. Tất cả đứng trước động từ; ở [[passé composé]] thì đứng trước trợ động từ.
@@ -71,7 +71,7 @@ papa: Oui, il y en a. Mais ne me la rends pas sale ! | Có. Nhưng đừng trả
 #practice
 fill: Ton livre ? Je ___ rends demain. | te le* / le te || te trước le.
 fill: La photo ? Je ___ ai envoyée hier. | la lui* / lui la || la trước lui.
-contrast: Du pain ? Il ___ a. | y en* / en y || y trước en.
+contrast: Des œufs ? Il ___ a. | y en* / en y || y trước en.
 fill: Les clés ? Il ___ donne ce soir. | nous les* / les nous || nous trước les.
 fix: Je lui le donne. | Je le lui donne.* / Je lui donne le. / Le je lui donne. || le trước lui.
 order: Je / te / la / prête. | Tôi cho bạn mượn nó.

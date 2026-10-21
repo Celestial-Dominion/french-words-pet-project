@@ -1,0 +1,65 @@
+=== doi-lap
+sum: Nói đối lập: mais (nhưng), pourtant / cependant (thế mà, tuy nhiên), alors que (trong khi, đặt hai sự việc đối nhau), même si + indicatif (dù cho), bien que + subjonctif (mặc dù), malgré + danh từ (dù có, bất chấp).
+form: mais, pourtant, cependant | Il est riche, pourtant il n'est pas heureux.
+form: alors que: hai sự việc đối nhau | Elle aime la mer, alors que son mari préfère la montagne.
+form: même si + indicatif | Même s'il pleut, je sors.
+form: bien que + subjonctif | Bien qu'il pleuve, je sors.
+form: malgré + danh từ | Malgré la pluie, je sors.
+cast: hugo ines
+bg: riverside
+words: pluie, malgré, pourtant, courir
+
+#hook
+ines: Tu vas courir ? Pourtant, il pleut ! | Anh đi chạy à? Trời đang mưa mà! [surprised]
+hugo: Oui, je cours même s'il pleut. Bien que ce soit difficile, j'adore ça ! | Ừ, anh vẫn chạy dù trời mưa. Mặc dù vất vả, anh rất thích! [happy]
+> Ba cách nói đối lập: [[pourtant]], [[même si]] đi với [[indicatif]], và [[bien que]] đi với [[subjonctif]].
+
+#meaning
+th: Từ | Theo sau là
+tb: mais, pourtant, cependant | một câu bình thường
+tb: alors que, même si | indicatif
+tb: bien que | subjonctif
+tb: malgré | danh từ
+> Nghĩa gần giống nhau. Điều quan trọng là thứ đứng phía sau mỗi từ.
+
+#form
+vs: Même s'il pleut, je sors. | Dù trời mưa, tôi vẫn ra ngoài. || même si + indicatif
+vs: Bien qu'il pleuve, je sors. | Mặc dù trời mưa, tôi vẫn ra ngoài. || bien que + subjonctif
+vs: Malgré la pluie, je sors. | Bất chấp cơn mưa, tôi vẫn ra ngoài. || malgré + danh từ
+> Ba câu cùng nghĩa, ba cấu trúc khác nhau.
+
+#examples
+- Il est riche, {pourtant|k} il n'est pas heureux. | Anh ấy giàu, thế mà không hạnh phúc.
+- Elle aime la mer, {alors que|k} son mari préfère la montagne. | Cô ấy thích biển, trong khi chồng cô ấy thích núi.
+- {Bien que|k} mon frère {soit|v} malade, il est venu. | Mặc dù em trai tôi bị ốm, cậu ấy vẫn đến.
+- {Malgré|k} le bruit, le bébé dort. | Dù ồn, em bé vẫn ngủ.
+- {Même si|k} tu n'es pas d'accord, je pars. | Dù bạn không đồng ý, tôi vẫn đi.
+- Le projet est intéressant. {Cependant|k}, il coûte trop cher. | Dự án này thú vị. Tuy nhiên, nó quá đắt.
+
+#mistakes
+x: Bien qu'il fait froid, il se baigne. => Bien qu'il fasse froid, il se baigne. | Mặc dù trời lạnh, anh ấy vẫn tắm biển. >> [[Bien que]] cộng [[subjonctif]].
+x: Même s'il fasse froid, il se baigne. => Même s'il fait froid, il se baigne. | Dù trời lạnh, anh ấy vẫn tắm biển. >> [[Même si]] cộng [[indicatif]].
+x: Malgré il est fatigué, il travaille. => Malgré sa fatigue, il travaille. | Dù mệt, anh ấy vẫn làm việc. >> [[Malgré]] đi với danh từ.
+
+#dialogue
+ines: Malgré la pluie, il y a beaucoup de coureurs ce matin. | Dù mưa, sáng nay vẫn có nhiều người chạy. [surprised]
+hugo: Oui, alors que d'habitude, il n'y a personne à cette heure. | Ừ, trong khi bình thường giờ này chẳng có ai. [thinking]
+ines: Bon, même si je déteste la pluie, je viens avec toi ! | Thôi được, dù em ghét mưa, em vẫn đi cùng anh! [happy]
+hugo: Bravo ! Bien que tu ne sois pas prête, tu es courageuse. | Hoan hô! Dù chưa chuẩn bị gì, em thật dũng cảm. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Anh ấy giàu, thế mà không hạnh phúc. => Il est riche, pourtant il n'est pas heureux. | Anh ấy giàu, thế mà không hạnh phúc.
+? Nói bằng tiếng Pháp: Dù ồn, em bé vẫn ngủ. => Malgré le bruit, le bébé dort. | Dù ồn, em bé vẫn ngủ.
+
+#recap
+> [[Mais]], [[pourtant]], [[cependant]] nối hai câu. [[Alors que]] và [[même si]] cộng [[indicatif]]. [[Bien que]] cộng [[subjonctif]]. [[Malgré]] cộng danh từ.
+
+#practice
+contrast: Bien qu'il ___ froid, il se baigne. | fasse* / fait || bien que + subjonctif.
+contrast: Même s'il ___ froid, il se baigne. | fait* / fasse || même si + indicatif.
+fill: ___ le bruit, le bébé dort. | Malgré* / Bien que / Même si || + danh từ.
+fill: Il est riche, ___ il n'est pas heureux. | pourtant* / parce que / donc || đối lập.
+fill: Elle aime la mer, ___ son mari préfère la montagne. | alors que* / malgré / bien que || hai sự việc đối nhau.
+type: Bien que mon frère ___ (être) malade, il est venu. | soit || être → soit.
+fix: Malgré il est fatigué, il travaille. | Malgré sa fatigue, il travaille.* / Malgré qu'il est fatigué, il travaille. / Malgré de fatigue, il travaille. || malgré + danh từ.
+listen: Même si tu n'es pas d'accord, je pars. | Même si tu n'es pas d'accord, je pars.* / Si tu n'es pas d'accord, je pars. / Même si tu es d'accord, je pars. || même si.

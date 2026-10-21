@@ -1,0 +1,68 @@
+=== phu-dinh-b1
+sum: Phủ định B1: ne… ni… ni (không… cũng không), ne… aucun / aucune (không một… nào), ne… que (chỉ, không phải phủ định thật), ne… nulle part (không ở đâu). Personne và rien có thể làm chủ ngữ: Personne n'est venu, Rien ne marche. Sans + nguyên mẫu: mà không làm gì.
+form: ne… ni… ni | Je n'ai ni frère ni sœur.
+form: ne… aucun(e) + danh từ số ít | Je n'ai aucune idée.
+form: ne… que = chỉ | Je n'ai que dix euros.
+form: personne ne / rien ne (chủ ngữ) | Personne n'est venu.
+form: sans + nguyên mẫu | Il est parti sans dire au revoir.
+cast: karim chloe
+bg: service-hall
+words: voler, sac, aucun, portefeuille
+
+#hook
+karim: Vous avez vu quelqu'un près de votre sac ? | Cô có thấy ai ở gần túi của cô không? [thinking]
+chloe: Non, je n'ai vu personne. Et je n'ai aucune idée de l'heure exacte. | Không, tôi không thấy ai. Và tôi hoàn toàn không biết chính xác lúc mấy giờ. [worried]
+> [[Ne… personne]] đã học ở cấp trước. Hôm nay thêm [[ne… aucune]], nghĩa là không một… nào, và nhiều kiểu phủ định khác.
+
+#meaning
+th: Cấu trúc | Nghĩa
+tb: ne… ni… ni | không… cũng không
+tb: ne… aucun, aucune | không một… nào
+tb: ne… que | chỉ
+tb: ne… nulle part | không ở đâu cả
+tb: sans + nguyên mẫu | mà không
+> Chú ý [[ne… que]] không phải phủ định thật, nó có nghĩa là chỉ.
+
+#form
+f: [personne, rien] + ne + động từ
+> Khi [[personne]], [[rien]] làm chủ ngữ, chúng đứng đầu câu, có [[ne]] nhưng không có [[pas]].
+vs: Je n'ai rien vu. | Tôi không thấy gì. || rien: bổ ngữ
+vs: Rien n'a disparu. | Không có gì bị mất. || rien: chủ ngữ
+> Ở câu đầu, [[rien]] là thứ được nhìn thấy. Ở câu sau, [[rien]] là chủ ngữ của động từ.
+
+#examples
+- Je ne bois {ni|k} café {ni|k} thé. | Tôi không uống cà phê, cũng không uống trà.
+- Il n'y a {aucun|k} problème. | Không có vấn đề gì cả.
+- Je n'ai {que|k} cinq minutes. | Tôi chỉ có năm phút.
+- {Personne|k} ne m'a appelé aujourd'hui. | Hôm nay không ai gọi cho tôi.
+- Je ne trouve mes lunettes {nulle part|k}. | Tôi không tìm thấy kính ở đâu cả.
+- Elle est sortie {sans|k} fermer la porte. | Cô ấy ra ngoài mà không đóng cửa.
+
+#mistakes
+x: Je n'ai pas aucune idée. => Je n'ai aucune idée. | Tôi không có chút ý tưởng nào. >> [[Aucun]] thay cho [[pas]], không dùng cả hai.
+x: Personne n'est pas venu. => Personne n'est venu. | Không ai đến. >> Có [[personne]] thì bỏ [[pas]].
+x: Je n'aime pas ni le froid ni la pluie. => Je n'aime ni le froid ni la pluie. | Tôi không thích cái lạnh, cũng không thích mưa. >> Với [[ni… ni]], bỏ [[pas]].
+x: Il est parti sans dit au revoir. => Il est parti sans dire au revoir. | Anh ấy đi mà không chào. >> Sau [[sans]] dùng nguyên mẫu.
+
+#dialogue
+karim: Qu'est-ce qu'il y avait dans le sac ? | Trong túi có những gì? [thinking]
+chloe: Mon portefeuille, mais il n'y avait que vingt euros dedans. | Ví của tôi, nhưng trong đó chỉ có hai mươi euro. [sad]
+karim: Et vos papiers ? | Còn giấy tờ của cô? [worried]
+chloe: Heureusement, je n'avais ni mon passeport ni ma carte d'identité. | May là tôi không mang hộ chiếu, cũng không mang thẻ căn cước. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi chỉ có năm phút. => Je n'ai que cinq minutes. | Tôi chỉ có năm phút.
+? Nói bằng tiếng Pháp: Hôm nay không ai gọi cho tôi. => Personne ne m'a appelé aujourd'hui. | Hôm nay không ai gọi cho tôi.
+
+#recap
+> [[Ne… ni… ni]], [[ne… aucun]], [[ne… nulle part]] thay cho [[pas]]. [[Ne… que]] nghĩa là chỉ. [[Personne]] và [[rien]] làm chủ ngữ thì đứng đầu, có [[ne]], không có [[pas]]. [[Sans]] cộng nguyên mẫu.
+
+#practice
+fill: Je ne bois ni café ___ thé. | ni* / et / ou || ne… ni… ni.
+fill: Il n'y a ___ problème. | aucun* / pas aucun / aucune || problème: giống đực.
+fill: Je n'ai ___ cinq minutes. | que* / pas / rien || ne… que = chỉ.
+fill: ___ ne m'a appelé aujourd'hui. | Personne* / Rien / Aucun || người → personne.
+contrast: ___ n'a disparu. | Rien* / Personne || đồ vật → rien.
+fill: Elle est sortie sans ___ la porte. | fermer* / fermé / ferme || sans + nguyên mẫu.
+fix: Personne n'est pas venu. | Personne n'est venu.* / Personne est pas venu. / Personne ne pas venu. || bỏ pas.
+listen: Je ne trouve mes lunettes nulle part. | Je ne trouve mes lunettes nulle part.* / Je ne trouve pas mes lunettes. / Je trouve mes lunettes partout. || nulle part.

@@ -938,6 +938,83 @@
     "cause"
    ],
    "find": "(?<![\\p{L}'])(puisque|puisqu'|grâce à|grâce au|grâce aux|à cause de|à cause du|à cause des|car)(?![\\p{L}])"
+  },
+  {
+   "id": "ket-qua",
+   "lv": "b1",
+   "cat": "clauses",
+   "t": "Nói kết quả: donc, c'est pourquoi, tellement… que",
+   "en": "donc · c'est pourquoi · tellement fatigué que…",
+   "pts": [
+    "consequence"
+   ],
+   "find": "(?<![\\p{L}'])(c'est pourquoi|si bien que|si bien qu'|du coup|tellement|par conséquent)(?![\\p{L}])"
+  },
+  {
+   "id": "muc-dich",
+   "lv": "b1",
+   "cat": "clauses",
+   "t": "Nói mục đích: pour, afin de, pour que + subjonctif",
+   "en": "pour réussir · afin de · pour que tu comprennes",
+   "pts": [
+    "purpose"
+   ],
+   "find": "(?<![\\p{L}'])(pour que|pour qu'|afin de|afin d'|afin que|afin qu')"
+  },
+  {
+   "id": "doi-lap",
+   "lv": "b1",
+   "cat": "clauses",
+   "t": "Đối lập: pourtant, alors que, bien que, malgré",
+   "en": "pourtant · même si · bien qu'il pleuve · malgré la pluie",
+   "pts": [
+    "opposition"
+   ],
+   "find": "(?<![\\p{L}'])(pourtant|cependant|alors que|alors qu'|bien que|bien qu'|malgré|même si|même s')"
+  },
+  {
+   "id": "nhan-manh-cest-qui",
+   "lv": "b1",
+   "cat": "sentence",
+   "t": "Câu nhấn mạnh: c'est… qui, c'est… que",
+   "en": "c'est moi qui paie · c'est ici que j'habite",
+   "pts": [
+    "cleft"
+   ],
+   "find": "(?<![\\p{L}'])(c'est|ce sont) (moi|toi|lui|elle|nous|vous|eux|elles|ici|là|ça|demain|hier) (qui|que|qu')"
+  },
+  {
+   "id": "phu-dinh-b1",
+   "lv": "b1",
+   "cat": "negation",
+   "t": "Phủ định B1: ni… ni, aucun, ne… que",
+   "en": "je n'ai ni frère ni sœur · aucun problème · je n'ai que dix euros",
+   "pts": [
+    "negation-b1"
+   ],
+   "find": "(?<![\\p{L}'])(ni|aucun|aucune|nulle part|personne ne|personne n'|rien ne|rien n')(?![\\p{L}])"
+  },
+  {
+   "id": "tu-phiem-chi",
+   "lv": "b1",
+   "cat": "determiners",
+   "t": "Từ phiếm chỉ: chaque, chacun, plusieurs, n'importe…",
+   "en": "chaque jour · chacun · plusieurs fois · n'importe quoi",
+   "pts": [
+    "indefinites"
+   ],
+   "find": "(?<![\\p{L}'])(chaque|chacun|chacune|plusieurs|certains|certaines|quelques-uns|quelques-unes|n'importe)(?![\\p{L}])"
+  },
+  {
+   "id": "so-sanh-b1",
+   "lv": "b1",
+   "cat": "comparison",
+   "t": "So sánh B1: de plus en plus, plus… plus…",
+   "en": "de plus en plus cher · plus je lis, plus j'apprends",
+   "pts": [
+    "comparison-b1"
+   ],
+   "find": "(?<![\\p{L}'])(de plus en plus|de moins en moins|deux fois plus|trois fois plus|le même que|la même que|les mêmes que)(?![\\p{L}])"
   }
  ]
 }

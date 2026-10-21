@@ -1,0 +1,67 @@
+=== nhan-manh-cest-qui
+sum: Để nhấn mạnh một phần của câu, đặt nó giữa c'est … qui (nếu là chủ ngữ) hoặc c'est … que (nếu là phần khác: bổ ngữ, nơi chốn, thời gian). Với đại từ, dùng đại từ nhấn mạnh: c'est moi qui…, c'est lui que…. Động từ sau qui chia theo người được nhấn mạnh: c'est moi qui suis, c'est nous qui avons.
+form: c'est + chủ ngữ + qui + động từ | C'est le chat qui a cassé le vase.
+form: c'est + phần khác + que | C'est demain que je pars.
+form: đại từ nhấn mạnh: moi, toi, lui… | C'est moi qui paie.
+form: số nhiều: ce sont… qui / que | Ce sont mes voisins qui font du bruit.
+cast: lucas zoe
+bg: home-evening
+words: casser, vase, chat, ballon
+names: Lyon
+
+#hook
+zoe: C'est toi qui as cassé le vase de maman ! | Chính anh làm vỡ cái bình của mẹ! [surprised]
+lucas: Non ! C'est le chat qui l'a cassé, pas moi ! | Không! Chính con mèo làm vỡ, không phải anh! [worried]
+> [[C'est toi qui]], [[c'est le chat qui]]: câu nhấn mạnh ai là người làm. Chú ý động từ sau [[toi qui]] chia theo [[tu]]: [[as cassé]].
+
+#meaning
+vs: Le chat a cassé le vase. | Con mèo làm vỡ cái bình. || câu thường
+vs: C'est le chat qui a cassé le vase. | Chính con mèo làm vỡ cái bình. || nhấn mạnh chủ ngữ
+> Tiếng Việt thường dùng chữ chính hoặc nhấn giọng. Tiếng Pháp dùng cấu trúc [[c'est… qui]].
+
+#form
+f: [c'est] + chủ ngữ + [qui] + động từ
+> Nhấn mạnh chủ ngữ thì dùng [[qui]].
+f: [c'est] + phần khác + [que] + câu
+> Nhấn mạnh bổ ngữ, nơi chốn hay thời gian thì dùng [[que]].
+th: Câu thường | Nhấn mạnh
+tb: Je paie. | C'est moi qui paie.
+tb: J'habite ici. | C'est ici que j'habite.
+tb: Il part demain. | C'est demain qu'il part.
+tb: Je cherche mes clés. | Ce sont mes clés que je cherche.
+> Sau [[c'est]], đại từ luôn ở dạng nhấn mạnh: [[moi]], [[toi]], [[lui]], [[elle]], [[nous]], [[vous]], [[eux]].
+
+#examples
+- C'est {nous|k} qui {avons|v} gagné le match ! | Chính chúng tôi đã thắng trận!
+- C'est à Lyon {que|k} je suis né. | Tôi sinh ra chính ở Lyon.
+- Ce sont mes voisins {qui|k} font tout ce bruit. | Chính hàng xóm tôi gây ra tiếng ồn đó.
+- C'est pour toi {que|k} j'ai fait ce gâteau. | Tôi làm cái bánh này là vì bạn.
+- C'est {vous|k} qui {êtes|v} responsable du projet ? | Anh chị là người phụ trách dự án phải không?
+
+#mistakes
+x: C'est moi qui a raison. => C'est moi qui ai raison. | Chính tôi mới đúng. >> Động từ chia theo [[moi]], tức là [[j'ai]], nên dùng [[ai]].
+x: C'est je qui conduis. => C'est moi qui conduis. | Chính tôi lái xe. >> Sau [[c'est]], dùng [[moi]].
+x: C'est en été où on part. => C'est en été qu'on part. | Chính vào mùa hè chúng tôi đi. >> Trong câu nhấn mạnh, dùng [[que]], không dùng [[où]].
+
+#dialogue
+zoe: Alors c'est le chat qui a fait tomber le vase ? Il dort depuis une heure ! | Vậy chính con mèo làm rơi cái bình à? Nó ngủ từ một tiếng trước rồi! [thinking]
+lucas: D'accord... C'est moi qui ai joué au ballon dans le salon. | Thôi được... Chính anh đã chơi bóng trong phòng khách. [sad]
+zoe: C'est à maman que tu dois le dire, pas à moi. | Mẹ mới là người anh phải nói, không phải em. [explain]
+lucas: Alors c'est toi qui viens avec moi ! | Thế thì em đi cùng anh nhé! [worried]
+
+#recall
+? Nói bằng tiếng Pháp: Chính chúng tôi đã thắng trận! => C'est nous qui avons gagné le match ! | Chính chúng tôi đã thắng trận!
+? Nói bằng tiếng Pháp: Tôi làm cái bánh này là vì bạn. => C'est pour toi que j'ai fait ce gâteau. | Tôi làm cái bánh này là vì bạn.
+
+#recap
+> Nhấn mạnh chủ ngữ: [[c'est]] cộng chủ ngữ cộng [[qui]]. Nhấn mạnh phần khác: [[c'est]] cộng phần đó cộng [[que]]. Dùng đại từ nhấn mạnh, và chia động từ theo người được nhấn mạnh.
+
+#practice
+contrast: C'est le chat ___ a cassé le vase. | qui* / que || chủ ngữ → qui.
+contrast: C'est demain ___ je pars. | que* / qui || thời gian → que.
+fill: C'est moi qui ___ raison. | ai* / a / as || moi → ai.
+fill: C'est ___ qui conduis. | moi* / je / me || sau c'est → moi.
+fill: ___ mes voisins qui font tout ce bruit. | Ce sont* / C'est que / Ils sont || số nhiều → ce sont.
+fill: C'est nous qui ___ gagné. | avons* / ont / a || nous → avons.
+fix: C'est en été où on part. | C'est en été qu'on part.* / C'est en été qui on part. / C'est en été quand on part. || nhấn mạnh → que.
+listen: C'est pour toi que j'ai fait ce gâteau. | C'est pour toi que j'ai fait ce gâteau.* / C'est toi qui as fait ce gâteau. / C'est pour moi que tu as fait ce gâteau. || pour toi.
