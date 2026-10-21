@@ -34,7 +34,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | **xong 21/10** (49 truyện, ≥3 76,5% · ≥5 31,9%) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | **xong 21/10** (20 bài, 20 điểm phủ 100%) |
-| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | xong 21/10: code + 5 tác phẩm A2–C2 (20 phần) + 23 chuỗi bài đọc (122 bài) |
+| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | xong 21/10: code + 5 tác phẩm A2–C2 (20 phần) + 33 chuỗi bài đọc (173 bài) |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
@@ -267,8 +267,13 @@ sorte que, à force de, tant et si bien que).
     `cinema` 5, `musique` 6, `lecture` 5, `photo` 5 (B1 Niépce → C1 Vivian Maier → C2 Nadar). Soát nội dung đầu từng bài
     trước khi gắn; tránh bài lấp từ (`-gNN`). 0 lỗi, audio không đổi; fr-qa 375 px OK. Chủ đề còn bài rải rác nhưng
     thiếu cấp (thể thao, vin, mode, Révolution…) chưa gắn.
-  - **Kết quả:** X-series xong — truyện dài cả 5 cấp có (A2–C2; A1 không làm, app Anh cũng bắt đầu từ A2) + 23 chuỗi bài
-    đọc / 122 bài (app Anh 6 chuỗi / 28 bài).
+  - 21/10 lô 8: thêm 10 chuỗi (51 bài): `cafe` 5, `cuisine` 6, `iles` 5 (Corse → Clipperton), `ciel` 5 (A1 La lune →
+    C1 ITER), `sport` 4, `paris` 5 (tour Eiffel → Haussmann → Alphand → Grand Paris Express → Paris la nuit),
+    `revolution` 4, `medecine` 6 (A1 Chez le médecin → A2/C1 Pasteur), `francais` 5 (verlan, Académie, accent), `femmes`
+    6 (A1 Marie Curie → B1 Beauvoir → C2 « On ne naît pas femme »). 0 lỗi.
+  - **Kết quả:** X-series xong — truyện dài cả 5 cấp có (A2–C2; A1 không làm, app Anh cũng bắt đầu từ A2) + 33 chuỗi bài
+    đọc / 173 bài (app Anh 6 chuỗi / 28 bài). Chủ đề còn lại chỉ có 2–3 bài cùng mạch (Gaulois, Résistance, sucre,
+    vaccins, Seine…) nên dừng ở đây.
 
 ## X-skip — "Bắt đầu từ A1 / bỏ qua cấp" (tùy chọn) [x]
 
