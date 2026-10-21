@@ -703,6 +703,85 @@
     "si-imparfait"
    ],
    "find": "(?<![\\p{L}'])[Ss]i (j'|tu |il |elle |on |nous |vous |ils |elles )\\p{L}+(ais|ait|aient|ions|iez)(?![\\p{L}])"
+  },
+  {
+   "id": "subjonctif-cach-chia",
+   "lv": "b1",
+   "cat": "verbs",
+   "t": "Subjonctif présent: cách chia",
+   "en": "que je parle · que tu fasses · qu'il soit",
+   "pts": [
+    "subjonctif-forms"
+   ],
+   "find": "(?<![\\p{L}'])qu(e |')(je |j'|tu |il |elle |on |nous |vous |ils |elles )(sois|soit|soient|aie|ait|aient|fasse|fasses|fassent|puisse|puissent|aille|ailles|aillent|sache|veuille)(?![\\p{L}])"
+  },
+  {
+   "id": "subjonctif-il-faut-que",
+   "lv": "b1",
+   "cat": "clauses",
+   "t": "Il faut que, vouloir que + subjonctif",
+   "en": "il faut que tu viennes · je veux qu'il parte",
+   "pts": [
+    "subj-necessity-will"
+   ],
+   "find": "(?<![\\p{L}'])(il faut qu|veux qu|voudrais qu|veut qu|aimerais qu|demande qu)"
+  },
+  {
+   "id": "subjonctif-cam-xuc",
+   "lv": "b1",
+   "cat": "clauses",
+   "t": "Subjonctif sau cảm xúc và nghi ngờ",
+   "en": "je suis content que tu sois là · j'ai peur qu'il pleuve",
+   "pts": [
+    "subj-emotion-doubt"
+   ],
+   "find": "(?<![\\p{L}'])(content qu|contente qu|heureux qu|heureuse qu|peur qu|dommage qu|doute qu|regrette qu)"
+  },
+  {
+   "id": "y-kien-penser-que",
+   "lv": "b1",
+   "cat": "clauses",
+   "kind": "contrast",
+   "t": "Nêu ý kiến: je pense que / je ne pense pas que",
+   "en": "je pense qu'il a raison · je ne pense pas qu'il ait raison",
+   "pts": [
+    "opinion-mood"
+   ],
+   "find": "(?<![\\p{L}'])(je pense qu|je crois qu|je ne pense pas qu|je ne crois pas qu|à mon avis|il me semble qu)"
+  },
+  {
+   "id": "hop-phan-tu",
+   "lv": "b1",
+   "cat": "tense",
+   "t": "Hợp phân từ: với avoir và động từ phản thân",
+   "en": "la lettre que j'ai écrite · elle s'est lavé les mains",
+   "pts": [
+    "pp-agreement-avoir",
+    "pc-reflexive-agreement"
+   ],
+   "find": "(?<![\\p{L}'])(les|la|l') ?(ai|as|a|avons|avez|ont) \\p{L}+(ée|ées|és|ise|ises|ite|ites)(?![\\p{L}])"
+  },
+  {
+   "id": "bi-dong",
+   "lv": "b1",
+   "cat": "verbs",
+   "t": "Câu bị động: être + phân từ",
+   "en": "Le livre a été écrit par Victor Hugo.",
+   "pts": [
+    "passive"
+   ],
+   "find": "(?<![\\p{L}'])(est|sont|a été|ont été|était|sera) \\p{L}+(é|ée|és|ées|is|ise|u|ue|us|it|ite)(?![\\p{L}]) par "
+  },
+  {
+   "id": "gerondif",
+   "lv": "b1",
+   "cat": "verbs",
+   "t": "Gérondif: en + -ant",
+   "en": "en marchant · en travaillant",
+   "pts": [
+    "gerondif"
+   ],
+   "find": "(?<![\\p{L}'])en \\p{L}+ant(?![\\p{L}])"
   }
  ]
 }

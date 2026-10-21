@@ -943,6 +943,96 @@
     "si-present"
    ],
    "pri": 1
+  },
+  {
+   "id": "subjonctif-forms",
+   "lv": "b1",
+   "cat": "verbs",
+   "name": "Subjonctif présent : formation",
+   "vi": "Subjonctif présent: gốc ils ở présent + -e, -es, -e, -ions, -iez, -ent; bất quy tắc être, avoir, aller, faire, pouvoir, savoir, vouloir",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "subj-necessity-will",
+   "lv": "b1",
+   "cat": "clauses",
+   "name": "il faut que, vouloir que + subjonctif",
+   "vi": "Subjonctif sau il faut que, vouloir que, aimer que, demander que; cùng chủ ngữ thì dùng nguyên mẫu",
+   "pre": [
+    "subjonctif-forms",
+    "devoir-falloir"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "subj-emotion-doubt",
+   "lv": "b1",
+   "cat": "clauses",
+   "name": "Subjonctif après émotion et doute",
+   "vi": "Subjonctif sau cảm xúc (content que, avoir peur que, regretter que) và nghi ngờ (douter que)",
+   "pre": [
+    "subjonctif-forms"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "opinion-mood",
+   "lv": "b1",
+   "cat": "clauses",
+   "name": "penser que / ne pas penser que",
+   "vi": "Nêu ý kiến: je pense que + indicatif, je ne pense pas que + subjonctif; à mon avis, il me semble que",
+   "pre": [
+    "subj-emotion-doubt"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "pp-agreement-avoir",
+   "lv": "b1",
+   "cat": "tense",
+   "name": "Accord du participe passé avec avoir",
+   "vi": "Phân từ với avoir hợp với tân ngữ trực tiếp đứng trước: la lettre que j'ai écrite, je les ai vus",
+   "pre": [
+    "pc-avoir",
+    "cod-pronouns"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "pc-reflexive-agreement",
+   "lv": "b1",
+   "cat": "tense",
+   "name": "Accord des verbes pronominaux",
+   "vi": "Hợp phân từ động từ phản thân: elle s'est lavée nhưng elle s'est lavé les mains; ils se sont parlé",
+   "pre": [
+    "pc-reflexive"
+   ],
+   "pri": 3
+  },
+  {
+   "id": "passive",
+   "lv": "b1",
+   "cat": "verbs",
+   "name": "Voix passive",
+   "vi": "Câu bị động: être + phân từ hợp giống số, tác nhân với par (đôi khi de); ở các thì",
+   "pre": [
+    "pc-etre"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "gerondif",
+   "lv": "b1",
+   "cat": "verbs",
+   "name": "Gérondif (en + -ant)",
+   "vi": "Gérondif: en + gốc nous + -ant; hai việc cùng lúc, cách thức, điều kiện",
+   "pre": [
+    "present-er"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

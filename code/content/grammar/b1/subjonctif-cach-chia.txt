@@ -1,0 +1,81 @@
+=== subjonctif-cach-chia
+sum: Subjonctif présent là một “thức” của động từ, dùng sau que trong một số câu (il faut que, je veux que…). Cách chia: lấy gốc của ils ở hiện tại (ils parlent → parl-) rồi thêm -e, -es, -e, -ions, -iez, -ent. Bảy động từ bất quy tắc cần thuộc: être, avoir, aller, faire, pouvoir, savoir, vouloir.
+form: gốc ils + -e, -es, -e, -ions, -iez, -ent | ils parlent → que je parle
+form: nous, vous giống imparfait | que nous prenions · que vous veniez
+form: bất quy tắc | que je sois · que j'aie · que je fasse · que je puisse
+cast: mme-martin nam
+bg: classroom
+words: falloir, que
+
+#hook
+nam: Madame, il faut que je parte, mon bus arrive ! | Thưa cô, em phải đi, xe buýt của em đến rồi! [worried]
+mme-martin: D'accord, mais il faut que tu finisses cet exercice ce soir. | Được, nhưng tối nay em phải làm xong bài này đấy. [explain]
+> Sau [[il faut que]], động từ không ở thì hiện tại bình thường: [[je parte]], [[tu finisses]]. Đây là [[subjonctif]]. Hôm nay mình học cách chia, bài sau học khi nào dùng.
+
+#meaning
+vs: Tu finis cet exercice. | Em làm xong bài này. || khẳng định: indicatif
+vs: Il faut que tu finisses cet exercice. | Em phải làm xong bài này. || sau il faut que: subjonctif
+> [[Indicatif]] nói điều có thật, chắc chắn. [[Subjonctif]] nói điều được muốn, cần, lo hay nghi ngờ, chưa phải sự thật.
+
+#form
+f: gốc của ils + [-e, -es, -e, -ions, -iez, -ent]
+> Lấy động từ chia với [[ils]] ở hiện tại, bỏ đuôi [[ent]], rồi thêm đuôi mới.
+th: Ngôi | parler | finir | prendre
+tb: que je | parle | finisse | prenne
+tb: que tu | parles | finisses | prennes
+tb: qu'il, qu'elle | parle | finisse | prenne
+tb: que nous | parlions | finissions | prenions
+tb: que vous | parliez | finissiez | preniez
+tb: qu'ils, qu'elles | parlent | finissent | prennent
+> Với [[nous]] và [[vous]], dạng [[subjonctif]] giống hệt [[imparfait]]: [[que nous prenions]], [[que vous veniez]].
+
+#examples
+> Bảy động từ bất quy tắc sau rất hay gặp, nên học thuộc dạng của [[je]] và [[nous]].
+th: Động từ | que je | que nous
+tb: être | sois | soyons
+tb: avoir | aie | ayons
+tb: aller | aille | allions
+tb: faire | fasse | fassions
+tb: pouvoir | puisse | puissions
+tb: savoir | sache | sachions
+tb: vouloir | veuille | voulions
+> Hai động từ quan trọng nhất là [[être]] và [[avoir]]: [[que je sois]], [[que j'aie]].
+- Il faut que tu {sois|k} à l'heure. | Bạn phải đến đúng giờ.
+- Il faut que nous {fassions|k} les courses. | Chúng ta phải đi chợ.
+- Il faut qu'elle {aille|k} chez le médecin. | Cô ấy phải đi khám bác sĩ.
+- Il faut que vous {ayez|k} votre passeport. | Các bạn phải mang hộ chiếu.
+
+#pronunciation
+pron: il parle | il parle | ilpaʁl
+pron: qu'il parle | qu'il parle | kilpaʁl
+pron: qu'il finisse | qu'il finisse | kilfinis
+> Với nhiều động từ đuôi [[er]], dạng [[subjonctif]] nghe giống hệt hiện tại. Khác biệt nghe rõ ở [[finir]], [[prendre]], [[faire]], [[aller]].
++ Il faut qu'il finisse avant midi. | Anh ấy phải xong trước trưa.
+
+#mistakes
+x: Il faut que tu es à l'heure. => Il faut que tu sois à l'heure. | Bạn phải đến đúng giờ. >> Sau [[il faut que]], [[être]] thành [[sois]].
+x: Il faut que je fais mes devoirs. => Il faut que je fasse mes devoirs. | Tôi phải làm bài tập. >> [[Faire]] bất quy tắc: [[que je fasse]].
+x: Il faut que nous prennions le bus. => Il faut que nous prenions le bus. | Chúng ta phải đi xe buýt. >> Với [[nous]], lấy dạng giống [[imparfait]]: [[prenions]], một chữ n.
+
+#dialogue
+nam: Et il faut que je fasse les exercices deux et trois ? | Em phải làm cả bài hai và bài ba ạ? [thinking]
+mme-martin: Oui, et il faut que tu saches les verbes par cœur pour jeudi. | Ừ, và đến thứ Năm em phải thuộc các động từ này. [explain]
+nam: Il faut vraiment que j'aie une bonne note... | Em thật sự cần được điểm tốt... [worried]
+mme-martin: Alors il faut que tu ailles prendre ton bus. Vite ! | Vậy thì em phải đi bắt xe buýt đi. Nhanh lên! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Bạn phải đến đúng giờ. => Il faut que tu sois à l'heure. | Bạn phải đến đúng giờ.
+? Nói bằng tiếng Pháp: Chúng ta phải đi chợ. => Il faut que nous fassions les courses. | Chúng ta phải đi chợ.
+
+#recap
+> Cách chia [[subjonctif]]: gốc của [[ils]], thêm đuôi [[e]], [[es]], [[e]], [[ions]], [[iez]], [[ent]]. Thuộc lòng bảy động từ đặc biệt, nhất là [[que je sois]] và [[que j'aie]].
+
+#practice
+fill: Il faut que tu ___ à l'heure. | sois* / es / seras || être → sois.
+fill: Il faut que je ___ mes devoirs. | fasse* / fais / ferai || faire → fasse.
+type: Il faut qu'elle ___ (finir) avant midi. | finisse || ils finissent → finiss- + e.
+type: Il faut que nous ___ (prendre) le bus. | prenions || nous → giống imparfait.
+contrast: Il faut que vous ___ votre passeport. | ayez* / avez || avoir → ayez.
+fix: Il faut qu'elle va chez le médecin. | Il faut qu'elle aille chez le médecin.* / Il faut qu'elle allait chez le médecin. / Il faut qu'elle ira chez le médecin. || aller → aille.
+order: Il / faut / que / je / parte. | Tôi phải đi.
+listen: Il faut qu'il finisse avant midi. | Il faut qu'il finisse avant midi.* / Il faut qu'il finit avant midi. / Il faut finir avant midi. || finisse: có âm “s”.

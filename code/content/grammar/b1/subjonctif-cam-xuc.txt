@@ -1,0 +1,70 @@
+=== subjonctif-cam-xuc
+sum: Sau những từ chỉ cảm xúc (content que, triste que, désolé que, avoir peur que, regretter que, c'est dommage que) và nghi ngờ (douter que, ne pas être sûr que), động từ ở subjonctif. Nếu cùng chủ ngữ, dùng de + nguyên mẫu: Je suis content d'être ici.
+form: être content / triste / désolé que + subjonctif | Je suis content que tu sois là.
+form: avoir peur que, regretter que, c'est dommage que | J'ai peur qu'il pleuve.
+form: douter que + subjonctif | Je doute qu'il vienne.
+form: cùng chủ ngữ → de + nguyên mẫu | Je suis content d'être là.
+cast: linh karim
+bg: airport
+words: content, triste, peur, dommage
+
+#hook
+linh: Je suis triste que tu partes si loin. | Mình buồn vì cậu đi xa như thế. [sad]
+karim: Et moi, je suis content que tu sois venue jusqu'à l'aéroport. | Còn mình thì vui vì cậu đã ra tận sân bay. [happy]
+> Sau [[je suis triste que]], [[je suis content que]], động từ chuyển sang [[subjonctif]]: [[tu partes]], [[tu sois venue]]. Cảm xúc kéo theo [[subjonctif]].
+
+#meaning
+th: Loại | Ví dụ
+tb: vui | être content que, être heureux que
+tb: buồn, tiếc | être triste que, regretter que, c'est dommage que
+tb: sợ | avoir peur que
+tb: ngạc nhiên | être surpris que
+tb: nghi ngờ | douter que, ne pas être sûr que
+> Điểm chung: câu sau [[que]] không được trình bày như một sự thật khách quan, mà qua lăng kính cảm xúc của người nói.
+
+#form
+f: cảm xúc + [que] + chủ ngữ khác + subjonctif
+> Nếu người cảm thấy và người làm là một, ta dùng [[de]] cộng nguyên mẫu.
+vs: Je suis content que tu sois là. | Tôi vui vì bạn ở đây. || hai người
+vs: Je suis content d'être là. | Tôi vui vì được ở đây. || một người
+> Câu đầu có hai người, câu sau chỉ có một người.
+
+#examples
+- J'ai peur qu'il {pleuve|k} demain. | Tôi sợ mai trời mưa.
+- C'est dommage que vous ne {puissiez|k} pas venir. | Tiếc là các bạn không đến được.
+- Je regrette que tu {aies|k} raté le concert. | Tôi tiếc vì bạn đã lỡ buổi hoà nhạc.
+- Elle est surprise qu'il {sache|k} cuisiner. | Cô ấy ngạc nhiên vì anh ấy biết nấu ăn.
+- Je doute que ce restaurant {soit|k} ouvert le lundi. | Tôi không chắc nhà hàng này mở cửa thứ Hai.
+
+#contrast
+vs: Je suis sûr qu'il viendra. | Tôi chắc là anh ấy sẽ đến. || chắc chắn: indicatif
+vs: Je doute qu'il vienne. | Tôi không tin là anh ấy sẽ đến. || nghi ngờ: subjonctif
+> [[Être sûr que]] đi với [[indicatif]] vì đó là điều người nói tin là thật. [[Douter que]] thì ngược lại.
+
+#mistakes
+x: Je suis content que tu es là. => Je suis content que tu sois là. | Tôi vui vì bạn ở đây. >> Sau cảm xúc cộng [[que]], dùng [[subjonctif]].
+x: J'ai peur qu'il pleut. => J'ai peur qu'il pleuve. | Tôi sợ trời mưa. >> [[Pleuvoir]] ở [[subjonctif]] là [[qu'il pleuve]].
+x: Je suis triste que je parte. => Je suis triste de partir. | Tôi buồn vì phải đi. >> Cùng một người thì dùng [[de]] cộng nguyên mẫu.
+
+#dialogue
+karim: J'ai un peu peur que le voyage soit long. | Mình hơi sợ chuyến bay sẽ dài. [worried]
+linh: C'est dommage que tu n'aies pas pris un vol direct. | Tiếc là cậu không đặt chuyến bay thẳng. [thinking]
+karim: Oui, mais je suis heureux de voir enfin ma famille. | Ừ, nhưng mình vui vì cuối cùng cũng được gặp gia đình. [happy]
+linh: Et moi, je serai contente que tu m'écrives souvent ! | Còn mình sẽ vui nếu cậu viết thư cho mình thường xuyên! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi sợ mai trời mưa. => J'ai peur qu'il pleuve demain. | Tôi sợ mai trời mưa.
+? Nói bằng tiếng Pháp: Tiếc là các bạn không đến được. => C'est dommage que vous ne puissiez pas venir. | Tiếc là các bạn không đến được.
+
+#recap
+> Vui, buồn, sợ, tiếc, ngạc nhiên, nghi ngờ cộng [[que]] thì dùng [[subjonctif]]. Một người thôi thì dùng [[de]] cộng nguyên mẫu. Còn [[je suis sûr que]] vẫn đi với [[indicatif]].
+
+#practice
+fill: Je suis content que tu ___ là. | sois* / es / être || cảm xúc + que → subjonctif.
+fill: J'ai peur qu'il ___ demain. | pleuve* / pleut / pleuvra || avoir peur que + subjonctif.
+contrast: Je suis sûr qu'il ___ . | viendra* / vienne || être sûr que → indicatif.
+contrast: Je doute qu'il ___ . | vienne* / viendra || douter que → subjonctif.
+contrast: Je suis triste ___ partir. | de* / que || Cùng chủ ngữ → de + nguyên mẫu.
+type: C'est dommage que vous ne ___ (pouvoir) pas venir. | puissiez || pouvoir → puissiez.
+fix: Je suis content que tu es là. | Je suis content que tu sois là.* / Je suis content que tu seras là. / Je suis content de tu sois là. || subjonctif sau cảm xúc.
+listen: Je regrette que tu aies raté le concert. | Je regrette que tu aies raté le concert.* / Je regrette d'avoir raté le concert. / Je sais que tu as raté le concert. || aies: subjonctif của avoir.

@@ -1,0 +1,66 @@
+=== subjonctif-il-faut-que
+sum: Dùng subjonctif khi người nói muốn, cần hay yêu cầu NGƯỜI KHÁC làm gì: il faut que, vouloir que, aimer que, préférer que, demander que. Nếu chủ ngữ hai vế là một người thì dùng nguyên mẫu: Je veux partir (không nói je veux que je parte).
+form: il faut que + subjonctif | Il faut que tu ranges ta chambre.
+form: vouloir / préférer / aimer que + subjonctif | Je veux que tu sois là.
+form: cùng chủ ngữ → nguyên mẫu | Je veux partir. · Il faut partir.
+cast: maman tom
+bg: home-evening
+words: vouloir, préférer, ranger
+
+#hook
+maman: Tom, il faut que tu ranges ta chambre avant le dîner. | Tom, con phải dọn phòng trước bữa tối. [explain]
+tom: Mais je veux finir mon jeu ! | Nhưng con muốn chơi nốt trò chơi! [sad]
+> Hai câu, hai cấu trúc. Mẹ muốn con làm gì đó: [[il faut que tu ranges]], dùng [[subjonctif]]. Con muốn chính mình làm: [[je veux finir]], chỉ cần nguyên mẫu.
+
+#meaning
+vs: Je veux partir. | Tôi muốn đi. || người muốn = người đi
+vs: Je veux que tu partes. | Tôi muốn bạn đi. || người muốn ≠ người đi
+> Khi có hai người khác nhau, tiếng Pháp cần [[que]] và [[subjonctif]]. Khi chỉ có một người, dùng nguyên mẫu.
+
+#form
+f: [il faut que, je veux que] + chủ ngữ + subjonctif
+> Những động từ hay gặp: [[vouloir que]], [[préférer que]], [[aimer que]], [[demander que]], [[avoir besoin que]].
+th: Câu chung chung | Câu cho một người cụ thể
+tb: Il faut partir. | Il faut que tu partes.
+tb: Je préfère rester. | Je préfère que tu restes.
+tb: J'aimerais venir. | J'aimerais que tu viennes.
+> [[Il faut partir]] là lời nói chung cho mọi người. [[Il faut que tu partes]] nhắm đúng vào bạn.
+
+#examples
+- Il faut que vous {remplissiez|k} ce formulaire. | Các anh chị cần điền vào mẫu đơn này.
+- Mes parents veulent que je {devienne|k} médecin. | Bố mẹ tôi muốn tôi trở thành bác sĩ.
+- Je préfère que tu {viennes|k} demain. | Tôi thích bạn đến vào ngày mai hơn.
+- Le directeur demande que tout le monde {soit|k} présent. | Giám đốc yêu cầu mọi người có mặt.
+- J'aimerais que tu m'{aides|k} un peu. | Tôi mong bạn giúp tôi một chút.
+
+#real
+> Ở chỗ làm, mẫu này giúp yêu cầu một cách lịch sự, nhất là với [[j'aimerais que]] hoặc [[il faudrait que]].
+- Il {faudrait|v} que vous {envoyiez|k} le rapport avant vendredi. | Anh chị nên gửi báo cáo trước thứ Sáu.
+
+#mistakes
+x: Je veux que je parte. => Je veux partir. | Tôi muốn đi. >> Cùng một người thì dùng nguyên mẫu.
+x: Il faut que tu viens. => Il faut que tu viennes. | Bạn phải đến. >> Sau [[il faut que]] dùng [[subjonctif]]: [[viennes]].
+x: Je veux tu restes. => Je veux que tu restes. | Tôi muốn bạn ở lại. >> Không được bỏ [[que]].
+
+#dialogue
+tom: Tu veux que je range tout ? Même sous le lit ? | Mẹ muốn con dọn hết á? Cả dưới gầm giường? [surprised]
+maman: Oui, et je voudrais que tu mettes tes vêtements dans l'armoire. | Ừ, và mẹ muốn con cất quần áo vào tủ. [explain]
+tom: Alors il faut que tu m'aides ! | Thế thì mẹ phải giúp con! [happy]
+maman: D'accord, mais après, il faut qu'on parle de ton jeu... | Được, nhưng sau đó mẹ con mình phải nói chuyện về trò chơi của con... [thinking]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi muốn bạn ở lại. => Je veux que tu restes. | Tôi muốn bạn ở lại.
+? Nói bằng tiếng Pháp: Bố mẹ tôi muốn tôi trở thành bác sĩ. => Mes parents veulent que je devienne médecin. | Bố mẹ tôi muốn tôi trở thành bác sĩ.
+
+#recap
+> Muốn hoặc cần người khác làm gì: [[je veux que]], [[il faut que]] cộng [[subjonctif]]. Chính mình làm: nguyên mẫu, như [[je veux partir]]. Đừng bao giờ nói [[je veux que je]].
+
+#practice
+fill: Il faut que tu ___ ta chambre. | ranges* / ranger / rangeras || il faut que + subjonctif.
+contrast: Je veux ___ tôt. | partir* / que je parte || Cùng chủ ngữ → nguyên mẫu.
+contrast: Je veux que tu ___ . | partes* / partir || Hai người khác nhau → subjonctif.
+fill: Le directeur demande que tout le monde ___ présent. | soit* / est / être || demander que + subjonctif.
+type: J'aimerais que tu ___ (venir) demain. | viennes || venir → viennes.
+fix: Je veux que je parte. | Je veux partir.* / Je veux que je pars. / Je veux je parte. || Cùng chủ ngữ → nguyên mẫu.
+order: Il / faut / que / vous / remplissiez / ce / formulaire. | Các anh chị cần điền mẫu đơn này.
+listen: Je préfère que tu viennes demain. | Je préfère que tu viennes demain.* / Je préfère venir demain. / Je préfère que tu viens demain. || viennes: subjonctif.

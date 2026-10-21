@@ -1,0 +1,79 @@
+=== hop-phan-tu
+sum: Với avoir, phân từ quá khứ KHÔNG hợp với chủ ngữ, nhưng hợp giống và số với bổ ngữ trực tiếp (COD) nếu COD đứng TRƯỚC động từ: la lettre que j'ai écrite, je les ai prises. Với động từ phản thân, phân từ hợp với se khi se là COD (elle s'est lavée), nhưng không hợp khi COD đứng sau (elle s'est lavé les mains) hoặc khi se là bổ ngữ gián tiếp (ils se sont parlé).
+form: COD đứng trước + avoir → phân từ hợp | la lettre que j'ai écrite
+form: COD đứng sau → không hợp | j'ai écrit la lettre
+form: se là COD → hợp | elle s'est lavée
+form: COD đứng sau, hoặc se gián tiếp → không hợp | elle s'est lavé les mains · ils se sont parlé
+cast: ines lucas
+bg: home-day
+words: lettre, clé, laver, écrire
+
+#hook
+ines: Lucas, tu as vu mes clés ? | Lucas, anh có thấy chìa khoá của em không? [worried]
+lucas: Oui, je les ai mises dans ton sac. | Có, anh để chúng vào túi của em rồi. [explain]
+> Nghe kỹ: [[mises]] có âm [[z]] ở cuối. Vì [[les]] thay cho chùm chìa khoá, giống cái số nhiều, đứng trước [[avoir]], nên phân từ [[mis]] phải hợp thành [[mises]].
+
+#meaning
+vs: J'ai mis les clés dans ton sac. | Anh để chìa khoá vào túi em. || bổ ngữ trực tiếp đứng sau: không hợp
+vs: Je les ai mises dans ton sac. | Anh để chúng vào túi em. || bổ ngữ trực tiếp đứng trước: hợp
+> Với [[avoir]], phân từ chỉ đổi khi bổ ngữ trực tiếp đứng trước nó.
+
+#form
+f: bổ ngữ trực tiếp đứng trước + avoir + [phân từ hợp giống, số]
+> Có ba trường hợp bổ ngữ trực tiếp đứng trước hay gặp nhất.
+th: Trường hợp | Ví dụ
+tb: đại từ le, la, les | Cette robe ? Je l'ai achetée hier.
+tb: que trong mệnh đề quan hệ | les fleurs que tu m'as offertes
+tb: câu hỏi với quel | Quelles photos as-tu prises ?
+> Thêm [[e]] cho giống cái, [[s]] cho số nhiều, [[es]] cho giống cái số nhiều.
+
+#examples
+- La lettre que j'ai {écrite|v} est sur le bureau. | Lá thư tôi viết đang ở trên bàn.
+- Ces chaussures ? Je les ai {achetées|v} au marché. | Đôi giày này à? Tôi mua ở chợ.
+- Les fleurs que tu m'as {offertes|v} sont magnifiques. | Những bông hoa bạn tặng tôi thật đẹp.
+- Ta valise ? Je l'ai {ouverte|v} pour prendre ton pull. | Va li của bạn à? Tôi đã mở nó để lấy áo len.
+
+#pronunciation
+pron: j'ai écrit | j'ai écrit | ʒeekʁi
+pron: je l'ai écrite | je l'ai écrite | ʒəleekʁit
+pron: je les ai prises | je les ai prises | ʒəlezepʁiz
+> Với phân từ tận cùng bằng [[t]] hay [[s]] như [[écrit]], [[pris]], [[mis]], [[fait]], [[ouvert]], dạng giống cái nghe rõ phụ âm cuối. Với phân từ đuôi [[é]], chỉ chữ viết thay đổi.
++ Je l'ai écrite ce matin. | Tôi đã viết nó sáng nay.
+
+#contrast
+> Với động từ phản thân, hãy hỏi: [[se]] có phải bổ ngữ trực tiếp không?
+th: Câu | Hợp? | Lý do
+tb: Elle s'est lavée. | có | se là bổ ngữ trực tiếp
+tb: Elle s'est lavé les mains. | không | bổ ngữ trực tiếp les mains đứng sau
+tb: Ils se sont parlé. | không | parler à: se gián tiếp
+tb: Elles se sont rencontrées. | có | rencontrer quelqu'un: se là bổ ngữ trực tiếp
+> Mẹo: các động từ đi với [[à]] như [[parler]], [[téléphoner]], [[écrire]], [[dire]], [[demander]] thì phân từ không hợp.
+
+#mistakes
+x: Les clés ? Je les ai mis dans ton sac. => Les clés ? Je les ai mises dans ton sac. | Chìa khoá à? Tôi để chúng vào túi bạn rồi. >> [[Les]] thay cho [[les clés]], giống cái số nhiều, đứng trước nên phân từ hợp.
+x: J'ai écrite une lettre. => J'ai écrit une lettre. | Tôi đã viết một lá thư. >> bổ ngữ trực tiếp đứng sau thì không hợp.
+x: Elle s'est lavée les mains. => Elle s'est lavé les mains. | Cô ấy đã rửa tay. >> bổ ngữ trực tiếp là [[les mains]], đứng sau, nên không hợp.
+x: Ils se sont parlés. => Ils se sont parlé. | Họ đã nói chuyện với nhau. >> [[Parler à]]: [[se]] là bổ ngữ gián tiếp.
+
+#dialogue
+ines: Et la lettre de ma grand-mère ? Tu l'as lue ? | Còn lá thư của bà em? Anh đọc chưa? [thinking]
+lucas: Oui, je l'ai lue hier soir. Elle est très belle. | Rồi, anh đọc tối qua. Thư hay lắm. [happy]
+ines: Ma sœur et moi, nous nous sommes téléphoné pour en parler. | Chị em với em đã gọi điện cho nhau để nói về nó. [explain]
+lucas: Et vous vous êtes vues le mois dernier ? | Thế hai chị em có gặp nhau tháng trước không? [surprised]
+
+#recall
+? Nói bằng tiếng Pháp: Lá thư tôi viết đang ở trên bàn. => La lettre que j'ai écrite est sur le bureau. | Lá thư tôi viết đang ở trên bàn.
+? Nói bằng tiếng Pháp: Cô ấy đã rửa tay. => Elle s'est lavé les mains. | Cô ấy đã rửa tay.
+
+#recap
+> Với [[avoir]]: phân từ chỉ hợp khi bổ ngữ trực tiếp đứng trước, như [[le]], [[la]], [[les]], [[que]]. Với động từ phản thân: hợp khi [[se]] là bổ ngữ trực tiếp, không hợp khi bổ ngữ đứng sau hoặc động từ đi với [[à]].
+
+#practice
+fill: Ces chaussures ? Je les ai ___ au marché. | achetées* / acheté / achetés || les = chaussures, giống cái số nhiều.
+fill: J'ai ___ une lettre. | écrit* / écrite || COD đứng sau → không hợp.
+fill: La lettre que j'ai ___ est sur le bureau. | écrite* / écrit || que = la lettre, đứng trước.
+contrast: Elle s'est ___ les mains. | lavé* / lavée || COD les mains đứng sau.
+contrast: Elle s'est ___ . | lavée* / lavé || se là COD.
+fill: Ils se sont ___ au téléphone. | parlé* / parlés || parler à → không hợp.
+fix: Quelles photos as-tu pris ? | Quelles photos as-tu prises ?* / Quelles photos as-tu prise ? / Quelles photos as-tu prendre ? || quelles photos đứng trước, giống cái số nhiều.
+listen: Je l'ai écrite ce matin. | Je l'ai écrite ce matin.* / Je l'ai écrit ce matin. / J'ai écrit ce matin. || écrite: nghe rõ âm “t”.

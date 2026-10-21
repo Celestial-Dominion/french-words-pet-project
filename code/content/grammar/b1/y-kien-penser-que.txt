@@ -1,0 +1,77 @@
+=== y-kien-penser-que
+sum: Je pense que, je crois que, je trouve que, je suis sûr que đi với indicatif vì người nói tin đó là thật. Khi phủ định (je ne pense pas que, je ne crois pas que) hay chỉ là có thể (il est possible que), động từ sau que chuyển sang subjonctif. Câu hỏi đảo ngữ trang trọng (Pensez-vous que…?) cũng hay dùng subjonctif.
+form: je pense / crois / trouve que + indicatif | Je pense qu'il a raison.
+form: je ne pense pas / ne crois pas que + subjonctif | Je ne pense pas qu'il ait raison.
+form: il est probable que + indicatif · il est possible que + subjonctif | Il est possible qu'il pleuve.
+cast: lea hugo
+bg: restaurant
+words: penser, croire, trouver, raison, possible, probable
+
+#hook
+hugo: Je pense que ce restaurant est le meilleur du quartier. | Anh nghĩ nhà hàng này ngon nhất khu này. [happy]
+lea: Ah bon ? Moi, je ne pense pas qu'il soit le meilleur. | Thế à? Em thì không nghĩ nó ngon nhất. [thinking]
+> Cùng động từ [[penser]], nhưng câu khẳng định dùng [[est]], câu phủ định dùng [[soit]]. Khi người nói tin, ta dùng [[indicatif]]. Khi không tin, ta dùng [[subjonctif]].
+
+#meaning
+vs: Je pense qu'il a raison. | Tôi nghĩ anh ấy đúng. || tin: indicatif
+vs: Je ne pense pas qu'il ait raison. | Tôi không nghĩ anh ấy đúng. || không tin: subjonctif
+> Chỉ thêm [[ne pas]] là động từ phía sau phải đổi thức.
+
+#form
+th: Indicatif (tin là thật) | Subjonctif (không chắc)
+tb: je pense que | je ne pense pas que
+tb: je crois que | je ne crois pas que
+tb: je trouve que | je ne trouve pas que
+tb: je suis sûr que | je ne suis pas sûr que
+tb: il est probable que | il est possible que
+> Chú ý cặp cuối: [[probable]] nghĩa là khá chắc nên đi với [[indicatif]], còn [[possible]] chỉ là có thể nên đi với [[subjonctif]].
+f: [penser, croire, trouver] + que + indicatif
+> Khẳng định thì dùng [[indicatif]].
+f: [ne pas penser, ne pas croire] + que + subjonctif
+> Phủ định thì dùng [[subjonctif]].
+
+#examples
+- Je crois qu'elle {viendra|k} ce soir. | Tôi tin là tối nay cô ấy sẽ đến.
+- Je ne crois pas qu'elle {vienne|k} ce soir. | Tôi không tin là tối nay cô ấy sẽ đến.
+- Je trouve que ce film {est|k} trop long. | Tôi thấy bộ phim này quá dài.
+- Il est probable que le train {aura|k} du retard. | Nhiều khả năng tàu sẽ bị trễ.
+- Il est possible que le train {ait|k} du retard. | Có thể tàu sẽ bị trễ.
+
+#real
+> Khi hỏi ý kiến một cách thân mật, người Pháp dùng [[indicatif]]. Khi hỏi trang trọng bằng đảo ngữ, họ hay dùng [[subjonctif]].
+vs: Tu penses que c'est une bonne idée ? | Bạn nghĩ đó là ý hay không? || thân mật: indicatif
+vs: Pensez-vous que ce soit une bonne idée ? | Anh chị có nghĩ đó là ý hay không? || trang trọng: subjonctif
+> Cả hai câu đều đúng, chỉ khác mức độ trang trọng.
+
+#contrast
+> So sánh hai câu chỉ khác nhau ở [[ne pas]].
+- Je suis sûr que tu {peux|k} réussir. | Tôi chắc là bạn có thể thành công.
+- Je ne suis pas sûr que tu {puisses|k} réussir. | Tôi không chắc là bạn có thể thành công.
+
+#mistakes
+x: Je pense qu'il soit malade. => Je pense qu'il est malade. | Tôi nghĩ anh ấy bị ốm. >> Câu khẳng định với [[penser]] dùng [[indicatif]].
+x: Je ne crois pas qu'il a raison. => Je ne crois pas qu'il ait raison. | Tôi không tin anh ấy đúng. >> Phủ định thì dùng [[subjonctif]].
+x: Il est possible qu'il viendra. => Il est possible qu'il vienne. | Có thể anh ấy sẽ đến. >> [[Il est possible que]] luôn đi với [[subjonctif]].
+
+#dialogue
+lea: Tu crois que le chef est vraiment français ? | Anh có tin là đầu bếp là người Pháp thật không? [surprised]
+hugo: Oui, je suis sûr qu'il a travaillé à Paris. | Có, anh chắc là ông ấy từng làm việc ở Paris. [explain]
+lea: Moi, je ne suis pas sûre qu'il sache faire un bon dessert. | Em thì không chắc là ông ấy biết làm món tráng miệng ngon. [thinking]
+hugo: Il est possible que tu aies raison. Goûtons ! | Có thể em đúng. Mình nếm thử nhé! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi không nghĩ anh ấy đúng. => Je ne pense pas qu'il ait raison. | Tôi không nghĩ anh ấy đúng.
+? Nói bằng tiếng Pháp: Tôi thấy bộ phim này quá dài. => Je trouve que ce film est trop long. | Tôi thấy bộ phim này quá dài.
+
+#recap
+> Tin là thật: [[je pense que]], [[je crois que]], [[je suis sûr que]] cộng [[indicatif]]. Không tin, phủ định hay chỉ là có thể: [[je ne pense pas que]], [[il est possible que]] cộng [[subjonctif]].
+
+#practice
+contrast: Je pense qu'il ___ raison. | a* / ait || khẳng định → indicatif.
+contrast: Je ne pense pas qu'il ___ raison. | ait* / a || phủ định → subjonctif.
+fill: Il est possible que le train ___ du retard. | ait* / a / aura || possible → subjonctif.
+fill: Il est probable que le train ___ du retard. | aura* / ait || probable → indicatif.
+type: Je ne crois pas qu'elle ___ (venir) ce soir. | vienne || phủ định → subjonctif.
+fix: Je pense qu'il soit malade. | Je pense qu'il est malade.* / Je pense qu'il ait malade. / Je pense qu'il sois malade. || khẳng định → indicatif.
+order: Je / ne / crois / pas / qu'elle / vienne / ce / soir. | Tôi không tin là tối nay cô ấy sẽ đến.
+listen: Je ne crois pas qu'elle vienne ce soir. | Je ne crois pas qu'elle vienne ce soir.* / Je crois qu'elle viendra ce soir. / Je ne crois pas qu'elle viendra ce soir. || vienne: subjonctif sau phủ định.

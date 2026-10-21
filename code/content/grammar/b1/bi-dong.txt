@@ -1,0 +1,71 @@
+=== bi-dong
+sum: Câu bị động: être (chia ở thì cần dùng) + phân từ quá khứ hợp với chủ ngữ. Người làm hành động đứng sau par (hoặc de với động từ chỉ cảm xúc, trạng thái: aimé de, connu de). Trong văn nói, người Pháp hay dùng on với câu chủ động thay cho bị động.
+form: être + phân từ (hợp với chủ ngữ) + par | Le pont est construit par la ville.
+form: thì nằm ở être | est construite · a été construite · sera construite
+form: de với cảm xúc, trạng thái | Elle est aimée de tous.
+form: văn nói: on + câu chủ động | On a fermé le musée.
+cast: m-dubois linh
+bg: village
+words: construire, détruire, église, publier
+names: Victor
+
+#hook
+m-dubois: Cette église a été construite il y a huit cents ans. | Nhà thờ này được xây cách đây tám trăm năm. [explain]
+linh: Et elle a été détruite pendant la guerre ? | Và nó bị phá huỷ trong chiến tranh ạ? [surprised]
+> Chủ ngữ [[cette église]] không tự làm gì, nó chịu tác động: [[a été construite]], [[a été détruite]]. Đây là câu bị động.
+
+#meaning
+vs: Les habitants ont construit l'église. | Người dân đã xây nhà thờ. || chủ động
+vs: L'église a été construite par les habitants. | Nhà thờ được người dân xây. || bị động
+> Bổ ngữ của câu chủ động trở thành chủ ngữ của câu bị động. Người làm đứng sau [[par]].
+
+#form
+f: [être] + phân từ + par + người làm
+> Thì của câu nằm ở [[être]]. Phân từ hợp giống và số với chủ ngữ.
+th: Thì | Câu bị động
+tb: présent | La salle est nettoyée chaque soir.
+tb: passé composé | La salle a été nettoyée hier.
+tb: imparfait | La salle était nettoyée tous les jours.
+tb: futur | La salle sera nettoyée demain.
+> Chú ý [[a été]] ở [[passé composé]]: đó là [[être]] chia với trợ động từ [[avoir]].
+
+#examples
+- Ce roman a été {écrit|v} par Victor Hugo. | Cuốn tiểu thuyết này do Victor Hugo viết.
+- Les résultats seront {publiés|v} lundi. | Kết quả sẽ được công bố vào thứ Hai.
+- Le voleur a été {arrêté|v} par la police. | Tên trộm đã bị cảnh sát bắt.
+- Cette chanteuse est {aimée|v} de tous. | Ca sĩ này được mọi người yêu mến.
+- La réunion est {annulée|v}. | Cuộc họp bị huỷ.
+
+#real
+> Trong văn nói, người Pháp thích dùng [[on]] hơn câu bị động.
+vs: Le musée a été fermé. | Bảo tàng đã bị đóng cửa. || văn viết, thông báo
+vs: On a fermé le musée. | Người ta đã đóng cửa bảo tàng. || văn nói
+> Câu bị động thường gặp trên báo, biển báo và thông báo chính thức.
+
+#mistakes
+x: L'église a construite il y a huit cents ans. => L'église a été construite il y a huit cents ans. | Nhà thờ được xây cách đây tám trăm năm. >> Câu bị động cần [[être]]: [[a été construite]].
+x: La lettre a été écrit par ma sœur. => La lettre a été écrite par ma sœur. | Lá thư do chị tôi viết. >> Phân từ hợp với chủ ngữ [[la lettre]].
+x: Le voleur a été arrêté de la police. => Le voleur a été arrêté par la police. | Tên trộm đã bị cảnh sát bắt. >> Người làm một hành động cụ thể đi với [[par]].
+
+#dialogue
+linh: Et ces peintures, elles ont été faites par qui ? | Còn những bức tranh này, ai vẽ vậy ạ? [thinking]
+m-dubois: Par des artistes du village. Elles ont été découvertes il y a cinquante ans. | Do các nghệ nhân trong làng. Chúng được phát hiện cách đây năm mươi năm. [explain]
+linh: Elles sont protégées maintenant ? | Bây giờ chúng có được bảo vệ không ạ? [worried]
+m-dubois: Oui, et l'église sera réparée l'année prochaine. | Có, và nhà thờ sẽ được sửa vào năm sau. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Kết quả sẽ được công bố vào thứ Hai. => Les résultats seront publiés lundi. | Kết quả sẽ được công bố vào thứ Hai.
+? Nói bằng tiếng Pháp: Tên trộm đã bị cảnh sát bắt. => Le voleur a été arrêté par la police. | Tên trộm đã bị cảnh sát bắt.
+
+#recap
+> Câu bị động: [[être]] ở thì cần dùng, cộng phân từ hợp với chủ ngữ, người làm đứng sau [[par]]. Văn nói thường thay bằng [[on]].
+
+#practice
+fill: L'église a ___ construite il y a huit cents ans. | été* / est / eu || passé composé bị động: a été.
+fill: La lettre a été ___ par ma sœur. | écrite* / écrit / écrire || hợp với la lettre.
+contrast: Le voleur a été arrêté ___ la police. | par* / de || người làm cụ thể → par.
+contrast: Cette chanteuse est aimée ___ tous. | de* / par || cảm xúc → de.
+fill: Les résultats ___ publiés lundi. | seront* / ont / auront || futur của être.
+fix: Le musée a fermé par la mairie. | Le musée a été fermé par la mairie.* / Le musée est fermé de la mairie. / Le musée a fermée par la mairie. || cần être: a été fermé.
+order: La / réunion / est / annulée. | Cuộc họp bị huỷ.
+listen: Les résultats seront publiés lundi. | Les résultats seront publiés lundi.* / Les résultats sont publiés lundi. / On publie les résultats lundi. || seront: tương lai.

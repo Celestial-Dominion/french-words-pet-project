@@ -1,0 +1,82 @@
+=== gerondif
+sum: Gérondif = en + phân từ hiện tại (đuôi -ant). Lấy gốc của nous ở hiện tại (nous marchons → march-) rồi thêm -ant. Ba dạng đặc biệt: étant, ayant, sachant. Gérondif nói hai việc do CÙNG một người làm cùng lúc (en marchant), cách làm (en parlant beaucoup) hoặc điều kiện (en partant tôt, tu arriveras à l'heure).
+form: en + gốc nous + -ant | nous marchons → en marchant
+form: dạng đặc biệt | en étant · en ayant · en sachant
+form: cùng lúc / cách làm / điều kiện | Il chante en cuisinant.
+form: tout en + -ant: dù, trong khi | Tout en étant fatigué, il a fini.
+cast: paul zoe
+bg: riverside
+words: marcher, courir, écouter, musique
+
+#hook
+zoe: Tu cours toujours en écoutant de la musique ? | Anh lúc nào cũng vừa chạy vừa nghe nhạc à? [surprised]
+paul: Oui, et je réfléchis mieux en courant ! | Ừ, và anh nghĩ được nhiều hơn khi chạy! [happy]
+> [[En écoutant]], [[en courant]] là [[gérondif]]: hai việc diễn ra cùng lúc, do cùng một người làm. Tiếng Việt hay nói “vừa… vừa…” hoặc “khi”.
+
+#meaning
+vs: Je cours. J'écoute de la musique. | Tôi chạy. Tôi nghe nhạc. || hai câu
+vs: Je cours en écoutant de la musique. | Tôi vừa chạy vừa nghe nhạc. || một câu, cùng lúc
+> [[Gérondif]] gộp hai việc thành một câu gọn hơn.
+
+#form
+f: [en] + gốc của nous + [-ant]
+> Lấy động từ chia với [[nous]] ở hiện tại, bỏ [[ons]], thêm [[ant]].
+th: nous (hiện tại) | gérondif
+tb: nous marchons | en marchant
+tb: nous finissons | en finissant
+tb: nous prenons | en prenant
+tb: nous faisons | en faisant
+tb: nous mangeons | en mangeant
+> Chỉ có ba dạng đặc biệt: [[en étant]], [[en ayant]], [[en sachant]].
+
+#examples
+> [[Gérondif]] có ba nghĩa chính.
+th: Nghĩa | Ví dụ
+tb: cùng lúc | Elle lit en mangeant.
+tb: cách làm | Il a maigri en faisant du sport.
+tb: điều kiện | En cherchant bien, tu trouveras.
+> Câu hỏi giúp nhận ra nghĩa: khi nào, bằng cách nào, nếu làm gì.
+- Il chante en {cuisinant|v}. | Anh ấy vừa nấu ăn vừa hát.
+- On apprend une langue en {parlant|v} beaucoup. | Người ta học ngoại ngữ bằng cách nói nhiều.
+- En {partant|v} tôt, tu éviteras les bouchons. | Nếu đi sớm, bạn sẽ tránh được tắc đường.
+- Je l'ai rencontrée en {sortant|v} du métro. | Tôi gặp cô ấy khi ra khỏi ga tàu điện ngầm.
+
+#contrast
+> [[Tout en]] thêm ý đối lập: dù làm việc này, vẫn làm việc kia.
+vs: Il mange en regardant la télé. | Anh ấy vừa ăn vừa xem ti vi. || cùng lúc
+vs: Tout en étant fatigué, il a fini son travail. | Dù mệt, anh ấy vẫn làm xong việc. || đối lập
+> Người làm việc ở [[gérondif]] phải là chủ ngữ của câu chính.
+
+#pronunciation
+pron: en écoutant | en écoutant | ɑ̃nekutɑ̃
+pron: en attendant | en attendant | ɑ̃natɑ̃dɑ̃
+> [[En]] nối với nguyên âm theo sau bằng âm [[n]], nghe như một từ liền.
++ J'ai lu un livre en attendant le train. | Tôi đọc sách trong lúc chờ tàu.
+
+#mistakes
+x: En marchons, j'écoute la radio. => En marchant, j'écoute la radio. | Vừa đi bộ tôi vừa nghe đài. >> Đuôi của [[gérondif]] là [[ant]], không phải [[ons]].
+x: Il a appris le français en regarder des films. => Il a appris le français en regardant des films. | Anh ấy học tiếng Pháp bằng cách xem phim. >> Sau [[en]] dùng dạng [[ant]], không dùng nguyên mẫu.
+x: En étant malade, le médecin m'a soigné. => Comme j'étais malade, le médecin m'a soigné. | Vì tôi bị ốm nên bác sĩ đã chữa cho tôi. >> Người ốm và bác sĩ là hai người khác nhau, nên không dùng được [[gérondif]].
+
+#dialogue
+paul: En courant ici chaque matin, j'ai perdu trois kilos. | Nhờ chạy ở đây mỗi sáng, anh đã giảm ba cân. [happy]
+zoe: Moi, je me fatigue vite en courant. Je préfère marcher. | Em thì chạy một lúc là mệt. Em thích đi bộ hơn. [sad]
+paul: Alors marchons ensemble ! On peut discuter en marchant. | Vậy mình cùng đi bộ nhé! Mình có thể vừa đi vừa nói chuyện. [happy]
+zoe: Bonne idée. En marchant vite, on fait aussi du sport ! | Ý hay. Đi bộ nhanh thì mình cũng tập thể dục mà! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Anh ấy vừa nấu ăn vừa hát. => Il chante en cuisinant. | Anh ấy vừa nấu ăn vừa hát.
+? Nói bằng tiếng Pháp: Nếu đi sớm, bạn sẽ tránh được tắc đường. => En partant tôt, tu éviteras les bouchons. | Nếu đi sớm, bạn sẽ tránh được tắc đường.
+
+#recap
+> [[Gérondif]]: [[en]] cộng gốc của [[nous]] cộng [[ant]]. Dùng khi cùng một người làm hai việc cùng lúc, để nói cách làm hoặc điều kiện. Nhớ ba dạng đặc biệt: [[étant]], [[ayant]], [[sachant]].
+
+#practice
+fill: Il chante en ___ . | cuisinant* / cuisine / cuisiner || en + -ant.
+type: On apprend une langue en ___ (parler) beaucoup. | parlant || nous parlons → parlant.
+type: Elle lit en ___ (manger). | mangeant || nous mangeons → mangeant.
+fill: Tout en ___ fatigué, il a fini son travail. | étant* / être / ayant || être → étant.
+contrast: Je l'ai rencontrée en ___ du métro. | sortant* / sortir || sau en: -ant.
+fix: En marchons, j'écoute la radio. | En marchant, j'écoute la radio.* / En marcher, j'écoute la radio. / En marché, j'écoute la radio. || en + -ant.
+order: Je / cours / en / écoutant / de / la / musique. | Tôi vừa chạy vừa nghe nhạc.
+listen: J'ai lu un livre en attendant le train. | J'ai lu un livre en attendant le train.* / J'ai lu un livre et attendu le train. / J'ai lu un livre pendant le train. || en attendant: nối âm n.
