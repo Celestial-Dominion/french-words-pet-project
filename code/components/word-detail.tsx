@@ -7,7 +7,7 @@ import { posLabel, registerLabel, registerTone } from "@/lib/pos";
 import { wordAudioUrl, sentenceAudioUrl, playAudio as play } from "@/lib/tts";
 import { cn } from "@/lib/utils";
 import { libraryHref } from "@/lib/library";
-import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic, markKnown, undoMarkKnown, relearnWord } from "@/lib/db";
+import { getReview, recordAnswer, addXp, getMnemonic, setMnemonic, markKnown, undoMarkKnown, relearnWord, getStartLevel } from "@/lib/db";
 import { isKnownPending } from "@/lib/srs-pure";
 import { requestSync } from "@/lib/sync";
 import { occurrencesOf, type Occurrence } from "@/lib/suggest";
@@ -77,6 +77,7 @@ export default function WordDetail({
   const [occ, setOcc] = useState<Occurrence[]>([]);
   const [gram, setGram] = useState<GrammarWordRef[]>([]);
   const [justMarked, setJustMarked] = useState<string | null>(null); // id vừa bấm "Đã biết rồi" (còn Hoàn tác)
+  const [startLevel, setStartLevel] = useState<number | null>(null); // cấp bắt đầu (cấp thấp hơn = đã bỏ qua)
   // Mở rộng danh sách nghĩa EN — lưu theo id để chuyển sang từ khác là tự thu lại.
   const [showAllEnFor, setShowAllEnFor] = useState<string | null>(null);
 
@@ -98,6 +99,10 @@ export default function WordDetail({
     setTab("info");
     setNav({ root: root.id, stack: stack.slice(0, -1) });
   };
+
+  useEffect(() => {
+    getStartLevel().then(setStartLevel).catch(() => {});
+  }, []);
 
   // Esc: đang xem từ cùng họ thì lùi một bước, ở thẻ gốc thì đóng (như HSK)
   useEffect(() => {
@@ -236,18 +241,21 @@ export default function WordDetail({
                   >
                     <Plus className="size-4" /> Học từ này
                   </button>
-                  {/* Đã biết sẵn → thẻ hẹn kiểm tra sau 1–3 tháng, khỏi học qua phiên từ mới */}
-                  <button
-                    onClick={() =>
-                      void act(async () => {
-                        if (await markKnown(word.id, word.level)) setJustMarked(word.id);
-                      })
-                    }
-                    disabled={busy}
-                    className="inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-semibold text-muted-foreground transition-all hover:bg-muted active:scale-[0.98] disabled:opacity-50"
-                  >
-                    <Check className="size-4" /> Đã biết rồi
-                  </button>
+                  {/* Đã biết sẵn → thẻ hẹn kiểm tra sau 1–3 tháng, khỏi học qua phiên từ mới. Từ ở cấp
+                      đã bỏ qua (dưới cấp bắt đầu) app vốn coi là đã biết nên không có nút này. */}
+                  {startLevel !== null && word.level >= startLevel && (
+                    <button
+                      onClick={() =>
+                        void act(async () => {
+                          if (await markKnown(word.id, word.level)) setJustMarked(word.id);
+                        })
+                      }
+                      disabled={busy}
+                      className="inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-semibold text-muted-foreground transition-all hover:bg-muted active:scale-[0.98] disabled:opacity-50"
+                    >
+                      <Check className="size-4" /> Đã biết rồi
+                    </button>
+                  )}
                 </>
               ) : status === "known" ? (
                 <span className="rounded-full bg-sky-500/15 px-3 py-1 text-sm font-semibold text-sky-700 dark:text-sky-300">

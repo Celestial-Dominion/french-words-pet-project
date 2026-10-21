@@ -20,6 +20,27 @@ export function optionMeaningMap(
   return Object.fromEntries(words.map((word) => [word.id, word.meaning_vi.trim()]));
 }
 
+/** Mạo từ không xác định cho danh từ có giống ("un"/"une") — hiện mờ trước từ như từ điển. */
+export function indefiniteArticle(w: { pos: readonly string[]; gender?: string }): string | null {
+  if (!w.pos.includes("n") || !w.gender) return null;
+  return w.gender === "m" ? "un" : "une";
+}
+
+/** Chiều ngược của optionMeaningMap — phương án là NGHĨA VIỆT (nhìn/nghe từ → chọn nghĩa):
+ *  nghĩa rút gọn → từ tiếng Pháp (kèm un/une nếu là danh từ) + IPA, để sau khi chấm lộ "lai lịch"
+ *  cả 4 phương án như HSK (nghĩa nhiễu hiện chữ Hán). Khóa theo chính chuỗi phương án nên xáo lại
+ *  vẫn khớp; hai nghĩa rút gọn trùng nhau (chỉ xảy ra khi kho nhiễu cạn) thì giữ từ đầu tiên. */
+export function optionWordMap(
+  words: ReadonlyArray<{ id: string; meaning_vi: string; ipa?: string; pos: readonly string[]; gender?: string }>,
+): Record<string, { fr: string; article: string | null; ipa: string }> {
+  const out: Record<string, { fr: string; article: string | null; ipa: string }> = {};
+  for (const w of words) {
+    const key = shortMeaningVi(w.meaning_vi);
+    if (!(key in out)) out[key] = { fr: w.id, article: indefiniteArticle(w), ipa: (w.ipa ?? "").trim() };
+  }
+  return out;
+}
+
 /** Quên ≥4 lần = thẻ "hay quên" (leech) — được ôn lại kỹ bằng thẻ learn trước khi hỏi. */
 export const LEECH_LAPSES = 4;
 /** Nhớ bền: FSRS stability ≥ 21 ngày. */

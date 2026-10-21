@@ -118,7 +118,10 @@ export interface SrsConfig {
   newPerDay: number;
   reviewPerSession: number; // giới hạn thẻ đến hạn mỗi phiên ôn (0 = không giới hạn)
   direction: ReviewDirection;
-  newLevel: number; // 0 = tự động (cấp thấp nhất còn từ chưa học); 1..6 = cố định
+  newLevel: number; // CŨ, không còn ô chỉnh — giữ để config đã sync tương thích ngược (0 = tự động; 1..6 = cố định)
+  // Cấp BẮT ĐẦU (1 A1 … 6 C2): các cấp thấp hơn được bỏ qua (lib/levels.ts). Không đặt trong
+  // DEFAULT: chưa tự chọn = A1 (resolveStartLevel).
+  startLevel?: number;
   arrangePerWord: number; // số câu "sắp xếp câu" mỗi từ (0 = tắt). Mặc định 1.
   genderQuestions: boolean; // xen câu hỏi "chọn giống đúng" (un/une) cho danh từ, tỉ trọng thấp.
   recallFirst: boolean; // ẩn đáp án, bắt "nhớ lại" trước khi hiện.

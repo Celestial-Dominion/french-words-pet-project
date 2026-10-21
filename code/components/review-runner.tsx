@@ -8,6 +8,7 @@ import {
 } from "@/lib/db";
 import { XP, badgeGroups, rankForWords, type Stats, type Badge } from "@/lib/gamify";
 import { ratingFromSpeed } from "@/lib/srs";
+import { indefiniteArticle } from "@/lib/srs-pure";
 import { gradeSpelling, isSpellCorrect, type SpellVerdict } from "@/lib/spell";
 import { wordAudioUrl, sentenceAudioUrl, playAudio as play, stopAudio } from "@/lib/tts";
 import { suggestReading, type ReadingSuggestion } from "@/lib/suggest";
@@ -41,16 +42,13 @@ function typeLabel(q: Question): string {
 }
 
 /** Mạo từ không xác định cho danh từ có giống ("un"/"une") — hiện mờ trước từ như từ điển. */
-function article(w: Word): string | null {
-  if (!w.pos.includes("n") || !w.gender) return null;
-  return w.gender === "m" ? "un" : "une";
-}
+const article = (w: Word): string | null => indefiniteArticle(w);
 
 function statsOf(s: Awaited<ReturnType<typeof progressSummary>>): Stats {
   return {
     words: s.words, xp: s.xp, streak: s.streak, reads: s.reads, reviews: s.reviews,
     correct: s.correct, activeDays: s.activeDays, matured: s.matured,
-    maxDayReviews: s.maxDayReviews, weekend: s.weekend, byLevel: s.byLevel,
+    maxDayReviews: s.maxDayReviews, weekend: s.weekend, byLevel: s.byLevel, startLevel: s.startLevel,
     redeemedLeeches: s.redeemedLeeches, maxCombo: s.maxCombo, longestStreak: s.longestStreak,
     comebackDays: s.comebackDays, perfectDay: s.perfectDay,
   };
@@ -969,12 +967,13 @@ export default function ReviewRunner({
                 <span className="hidden opacity-60 sm:inline"> (Space)</span>
               </button>
             ) : (
-              <div className={cn("grid gap-2.5", q.kind === "gender" ? "grid-cols-2" : "sm:grid-cols-2")}>
+              <div className={cn("grid gap-2.5", q.kind === "gender" ? "grid-cols-2" : "grid-cols-1 sm:grid-cols-2")}>
                 {q.options.map((opt, idx) => {
                   const isAnswer = idx === q.answer;
                   const isChosen = idx === chosen;
                   const show = chosen !== null;
                   const optionMeaning = q.kind === "gender" ? undefined : q.optionMeanings?.[opt];
+                  const optionWord = q.kind === "mcq" ? q.optionWords?.[opt] : undefined;
                   return (
                     <button
                       key={idx}
@@ -1002,12 +1001,22 @@ export default function ReviewRunner({
                         {idx + 1}
                       </span>
                       <span className="min-w-0">
-                        <span className={cn("block", show && optionMeaning && "font-semibold leading-tight")}>{opt}</span>
+                        <span className={cn("block", show && optionMeaning && "font-semibold leading-tight", show && optionWord && "leading-tight")}>{opt}</span>
                         {/* Như HSK: sau khi chấm, biến cả 4 phương án tiếng Pháp thành
                             một mini-bài học bằng cách lộ nghĩa của cả đáp án đúng lẫn nhiễu. */}
                         {show && optionMeaning && (
                           <span className="mt-0.5 block text-xs font-normal leading-snug opacity-70">
                             {optionMeaning}
+                          </span>
+                        )}
+                        {/* Chiều ngược (phương án là nghĩa Việt): lộ từ tiếng Pháp (kèm un/une) + IPA của mỗi nghĩa */}
+                        {show && optionWord && (
+                          <span className="mt-0.5 block truncate text-xs font-normal opacity-70">
+                            <span className="text-sm font-semibold">
+                              {optionWord.article && <span className="font-normal">{optionWord.article} </span>}
+                              {optionWord.fr}
+                            </span>
+                            {optionWord.ipa && <span className="font-mono"> · {optionWord.ipa}</span>}
                           </span>
                         )}
                       </span>

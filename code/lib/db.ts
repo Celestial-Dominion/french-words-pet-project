@@ -13,6 +13,7 @@ import { dailyQuests, questProgress, questKey, pruneQuestKeys, type QuestProgres
 import { mergeReviews, mergeDaily, mergeReads, mergeNotes, mergeGamify, mergeCourseEntries, type StoryPos } from "./sync-merge";
 import { getStoryPositions, mergeStoryPositions } from "./story-progress";
 import { mergeGrammarCodes } from "./grammar";
+import { resolveStartLevel } from "./levels";
 
 // Re-export để phần còn lại của app vẫn import từ lib/db như trước.
 export { todayStr, computeStreak };
@@ -97,6 +98,7 @@ export async function setConfig(patch: Partial<SrsConfig>): Promise<SrsConfig> {
   const cur = await getConfig();
   const value = { ...cur, ...patch };
   await db.config.put({ key: "srs", value });
+  invalidateProgressSummary(); // tóm tắt tiến độ mang cấp bắt đầu (huy hiệu theo lộ trình)
   // dấu thời gian đổi cài đặt trên MÁY NÀY (để sync cloud biết bên nào mới hơn)
   try {
     localStorage.setItem("fr.cfgUpdatedAt", new Date().toISOString());
@@ -109,6 +111,11 @@ export async function setConfig(patch: Partial<SrsConfig>): Promise<SrsConfig> {
     /* bỏ qua (chạy ngoài trình duyệt) */
   }
   return value;
+}
+
+/** Cấp BẮT ĐẦU đang áp dụng (lib/levels.ts): chọn trong Cài đặt, chưa chọn → A1. */
+export async function getStartLevel(cfg?: SrsConfig): Promise<number> {
+  return resolveStartLevel((cfg ?? (await getConfig())).startLevel);
 }
 
 /** Cài đặt mở được ở MỌI trang (ngăn Cài đặt trên topbar) → nơi nào đang giữ bản cấu hình
@@ -441,6 +448,7 @@ export interface ProgressSummary {
   longestStreak: number; // chuỗi ngày dài nhất từng đạt (kể cả ngày đóng băng, như streak)
   comebackDays: number; // quãng nghỉ dài nhất đã quay lại học — huy hiệu Tái xuất
   perfectDay: boolean; // từng có ngày ≥20 lượt ôn, 0 sai
+  startLevel: number; // cấp bắt đầu đang áp dụng (getStartLevel) — huy hiệu "mọi cấp" chỉ tính lộ trình
 }
 
 // progressSummary quét TOÀN BỘ bảng reviews (12k dòng) + daily + reads. Header (LevelChip),
@@ -466,11 +474,12 @@ export function progressSummary(): Promise<ProgressSummary> {
 }
 
 async function computeProgressSummary(): Promise<ProgressSummary> {
-  const [reviews, dailyRows, xp, readRows] = await Promise.all([
+  const [reviews, dailyRows, xp, readRows, cfg] = await Promise.all([
     db.reviews.toArray(),
     db.daily.toArray(),
     getXp(),
     db.reads.toArray(),
+    getConfig(),
   ]);
   const readsCount = readRows.filter(readActive).length;
   const gamifyRow = await applyStreakFreeze(dailyRows);
@@ -522,6 +531,7 @@ async function computeProgressSummary(): Promise<ProgressSummary> {
     longestStreak: longestStreak([...activeDates, ...frozenDates]), // cùng luật với streak (ngày đóng băng tính như có học)
     comebackDays: maxComebackGap(activeDates),
     perfectDay: daily.some((d) => d.reviews >= 20 && d.again === 0),
+    startLevel: resolveStartLevel(cfg.startLevel),
   };
 }
 

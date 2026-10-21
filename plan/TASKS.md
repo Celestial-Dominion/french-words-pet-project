@@ -28,7 +28,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 
 | Mã | Việc | Loại | Khối lượng | Ước tính % tuần | Trạng thái |
 |---|---|---|---|---|---|
-| X-skip | Port "bắt đầu từ A1 / bỏ qua cấp" trong Cài đặt | tùy chọn | code nhỏ | ~0,5–1% | chưa làm |
+| X-skip | Port "bắt đầu từ A1 / bỏ qua cấp" trong Cài đặt | tùy chọn | code nhỏ | ~0,5–1% | **xong 21/10** |
 | P-A1 | A1 — nâng độ phủ từ | **bắt buộc** | ~25 bài đọc ngắn (3 lô) | ~1% | **xong 20/10** (30 bài, thực tế <1% tuần) |
 | P-C1 | C1 — nâng độ phủ từ | **bắt buộc** | ~8 truyện (lô 08 + 2 truyện) | ~1,5% | **xong 20/10** (52 truyện, ≥3 50,7% · ≥5 25,2%) |
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
@@ -223,13 +223,19 @@ sorte que, à force de, tant et si bien que).
   *Eugénie Grandet* (C2). Tránh *Le Petit Prince*, vì ở Pháp chưa thuộc phạm vi công cộng.
 - **Nhật ký:**
 
-## X-skip — "Bắt đầu từ A1 / bỏ qua cấp" (tùy chọn) [ ]
+## X-skip — "Bắt đầu từ A1 / bỏ qua cấp" (tùy chọn) [x]
 
 - Port commit app Anh `1d0852e` "Let new learners start from A1 and skip levels in settings" (xem `git show --stat 1d0852e`
   trong `~/code/english_words`: chủ yếu `components/level-grid.tsx`, `settings-panel.tsx`, `word-browser.tsx`, `app/hoc/[level]`,
   `app/on-tap`, `app/tien-do`).
   Giữ đặc thù Pháp (lộ trình khởi động `lib/starter.ts`, tiền tố `fr.`). Kiểm `npm run check` + `npx playwright test`.
 - **Nhật ký:**
+  - 21/10: xong. Cài đặt "Bắt đầu từ cấp" thay "Nguồn từ mới" (không dùng); chưa chọn = A1 (app Pháp không có người
+    học cũ kiểu B1 như app Anh nên bỏ phần suy theo dữ liệu). Cấp bỏ qua: lưới cấp xếp cuối + dịu màu, trang cấp chỉ
+    tra cứu, ẩn "Đã biết rồi", Tiến độ/huy hiệu "mọi cấp/học trọn/chiến dịch" chỉ tính lộ trình; từ cấp bỏ qua tính là
+    đã biết khi chọn câu vừa sức và khi đếm ngưỡng 40 từ mở bài ghép câu. Không port e2e start-level.spec.
+  - 21/10 kèm theo: port việc đang làm dở bên app Anh (chưa commit) "lộ từ gốc dưới phương án nghĩa Việt" — câu
+    Pháp→nghĩa / Nghe→nghĩa, sau khi chấm mỗi nghĩa hiện từ Pháp (kèm un/une) + IPA (`optionWordMap`).
 
 ---
 
@@ -242,7 +248,8 @@ sorte que, à force de, tant et si bien que).
 
 ## Đồng bộ tính năng với app Anh
 
-- **Mốc: app Anh `7246f71`** (20/10/2026). Đã port mọi tính năng tới mốc này, trừ `1d0852e` (= X-skip).
+- **Mốc: app Anh `7246f71`** (21/10/2026). Đã port mọi tính năng tới mốc này (X-skip `1d0852e` xong 21/10), kèm thay
+  đổi chưa commit `optionWords` (phương án nghĩa lộ từ gốc) — lần sau thấy commit đó bên app Anh thì bỏ qua.
 - Lần sau: `cd ~/code/english_words && git log --oneline 7246f71..` → thêm việc mới vào file này → port, giữ đặc thù
   Pháp: mạo từ un/une, câu chọn giống (mở sau bài `giong-danh-tu`), chia động từ, `lib/starter.ts`, 6 cấp A1–C2,
   tiền tố `fr.`/`fr:`, DB `french-words`, backup `fr-words`, test vitest → đổi mốc ở dòng trên.

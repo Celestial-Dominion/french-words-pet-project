@@ -16,6 +16,34 @@ export const LEVELS: LevelMeta[] = [
   { level: 6, label: "C2 · Nâng cao", cefr: "C2", words: 1500 },
 ];
 
+// ---- Cấp BẮT ĐẦU (Cài đặt → "Bắt đầu từ cấp"): các cấp thấp hơn được BỎ QUA ----
+// Người đã có nền (vd. học xong A2 ở nơi khác) chọn cấp cao hơn để khỏi học lại từ đầu. Cấp bỏ qua
+// vẫn duyệt/tra cứu được nhưng không nằm trong lộ trình: không có nút học cả cấp, không tính vào
+// huy hiệu "mọi cấp", từ của nó coi như đã biết khi chọn câu ví dụ vừa sức. Thẻ đã học ở đó vẫn ôn.
+/** Mặc định (chưa tự chọn): học từ A1. */
+export const FIRST_LEVEL = 1;
+
+/** Giá trị cấp bắt đầu hợp lệ (1..6), lạ/thiếu → undefined. */
+export function validStartLevel(v: unknown): number | undefined {
+  return typeof v === "number" && LEVELS.some((l) => l.level === v) ? v : undefined;
+}
+
+/** Cấp bắt đầu đang áp dụng: lựa chọn trong Cài đặt, chưa chọn → A1. */
+export function resolveStartLevel(chosen: unknown): number {
+  return validStartLevel(chosen) ?? FIRST_LEVEL;
+}
+
+/** Các cấp trong lộ trình (từ cấp bắt đầu trở lên), theo thứ tự dễ → khó. */
+export function routeLevels(start: number): LevelMeta[] {
+  return LEVELS.filter((l) => l.level >= start);
+}
+
+/** "A1" / "A1–B1" / … — tên một dải cấp liên tiếp (rỗng nếu không có cấp nào). */
+export function levelRangeName(levels: LevelMeta[]): string {
+  if (!levels.length) return "";
+  return levels.length > 1 ? `${levels[0].cefr}–${levels[levels.length - 1].cefr}` : levels[0].cefr;
+}
+
 export function levelMeta(level: number): LevelMeta | undefined {
   return LEVELS.find((l) => l.level === level);
 }

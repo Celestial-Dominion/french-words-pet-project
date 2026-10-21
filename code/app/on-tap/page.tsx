@@ -13,6 +13,7 @@ import {
   learnedIds,
   newTodayCount,
   getConfig,
+  getStartLevel,
   onConfigChanged,
   progressSummary,
 } from "@/lib/db";
@@ -90,6 +91,7 @@ export default function OnTapPage() {
         loadLemmaMap(),
         loadWordLevels(),
       ]);
+      const startLevel = await getStartLevel(c);
       const levels = [...new Set(rows.map((r) => r.level))];
       const wordMap = new Map<string, Word>();
       let examples: Record<string, ExampleSentence[]> = {};
@@ -108,7 +110,7 @@ export default function OnTapPage() {
       const recMap = new Map(rows.map((r) => [r.wordId, r]));
       // câu chọn giống chỉ mở sau bài ngữ pháp về giống danh từ
       const cEff = { ...c, genderQuestions: c.genderQuestions && genderTaught() };
-      const qs = buildQuestions(words, examples, pool, cEff, false, recMap, known, { lemmaMap, wordLevels });
+      const qs = buildQuestions(words, examples, pool, cEff, false, recMap, known, { lemmaMap, wordLevels, startLevel });
       // 0 câu (dữ liệu từ vựng tải hụt) → ReviewRunner render null = màn hình trắng kẹt.
       if (!qs.length) throw new Error("Không dựng được câu hỏi");
       setSession({ qs, title });

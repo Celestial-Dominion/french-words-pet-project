@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Download, Minus, Plus, Upload } from "lucide-react";
 import { exportData, importData, getConfig, setConfig, type BackupData } from "@/lib/db";
 import { onSyncMerged, requestSync } from "@/lib/sync";
-import { LEVELS } from "@/lib/levels";
+import { LEVELS, FIRST_LEVEL, levelRangeName, resolveStartLevel } from "@/lib/levels";
 import type { SrsConfig } from "@/lib/types";
 import SyncRow from "@/components/sync-row";
 import { useDarkMode, setDarkMode } from "@/components/theme-toggle";
@@ -29,6 +29,7 @@ export default function SettingsPanel() {
 
   // chờ đọc xong cấu hình (vài ms) rồi hiện cả ngăn một lượt — không để các mục nhảy chỗ
   if (!cfg) return null;
+  const start = resolveStartLevel(cfg.startLevel); // chưa tự chọn = A1
 
   return (
     <div className="space-y-6">
@@ -42,13 +43,17 @@ export default function SettingsPanel() {
             onChange={(n) => void patch({ newPerDay: n })}
           />
         </Row>
-        <Row label="Nguồn từ mới" hint={cfg.newLevel === 0 ? "lấy từ cấp thấp nhất còn từ chưa học" : undefined}>
-          <select
-            value={cfg.newLevel}
-            onChange={(e) => void patch({ newLevel: Number(e.target.value) })}
-            className={selectCls}
-          >
-            <option value={0}>Tự động</option>
+        {/* Người mới học từ A1; ai đã có nền thì bỏ qua các cấp dưới. Cấp bỏ qua vẫn tra cứu được, thẻ đã
+            học ở đó vẫn ôn bình thường — chỉ không còn trong lộ trình (lưới cấp, huy hiệu "mọi cấp"). */}
+        <Row
+          label="Bắt đầu từ cấp"
+          hint={
+            start === FIRST_LEVEL
+              ? "học từ đầu — chọn cấp cao hơn để bỏ qua các cấp đã biết"
+              : `bỏ qua ${levelRangeName(LEVELS.filter((l) => l.level < start))}: chỉ tra cứu, không vào lộ trình học (thẻ đã học vẫn ôn bình thường)`
+          }
+        >
+          <select value={start} onChange={(e) => void patch({ startLevel: Number(e.target.value) })} className={selectCls}>
             {LEVELS.map((l) => (
               <option key={l.level} value={l.level}>
                 {l.label}

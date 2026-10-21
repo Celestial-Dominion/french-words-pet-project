@@ -24,8 +24,9 @@ import {
   rankByKnown,
   selectDistinctExercises,
   optionMeaningMap,
+  optionWordMap,
 } from "./srs-pure";
-import { LEVELS, levelSlug } from "./levels";
+import { LEVELS, levelSlug, FIRST_LEVEL, resolveStartLevel, validStartLevel, routeLevels, levelRangeName } from "./levels";
 import {
   RANKS,
   rankForWords,
@@ -102,6 +103,20 @@ t("nghĩa chữa bài bám theo từ dù phương án bị xáo lại", () => {
   const meanings = optionMeaningMap(words);
   for (const option of [...words].reverse())
     assert.equal(meanings[option.id], option.meaning_vi);
+});
+
+t("phương án nghĩa Việt lộ đúng từ Pháp + mạo từ + IPA, trùng nghĩa rút gọn giữ từ đầu", () => {
+  const words = [
+    { id: "poisson", meaning_vi: "con cá; cá", ipa: "/pwa.sɔ̃/", pos: ["n"], gender: "m" },
+    { id: "boisson", meaning_vi: "đồ uống; thức uống", ipa: "/bwa.sɔ̃/", pos: ["n"], gender: "f" },
+    { id: "boire", meaning_vi: "uống; uống rượu", ipa: "/bwaʁ/", pos: ["v"] },
+    { id: "breuvage", meaning_vi: "đồ uống; nước giải khát", pos: ["n"], gender: "m" },
+  ];
+  const map = optionWordMap(words);
+  assert.deepEqual(map["con cá"], { fr: "poisson", article: "un", ipa: "/pwa.sɔ̃/" });
+  assert.deepEqual(map["đồ uống"], { fr: "boisson", article: "une", ipa: "/bwa.sɔ̃/" });
+  assert.deepEqual(map["uống"], { fr: "boire", article: null, ipa: "/bwaʁ/" });
+  assert.equal(Object.keys(map).length, 3);
 });
 
 // ---- leech / mature ----
@@ -308,9 +323,37 @@ t("Đa binh chủng cần đủ 6 cấp A1–C2; Thống chế cần đủ TỪN
   assert.equal(sp(almost, "sp-marechal").earned, false);
   assert.equal(sp(fullRoute(), "sp-marechal").earned, true);
   // gợi ý suy từ dữ liệu thật, không gõ tay
-  const hint = (id: string) => SPECIAL_BADGES.find((b) => b.id === id)!.hint;
-  assert.match(hint("sp-multi"), new RegExp(`${LEVELS.length} cấp`));
+  const hint = (id: string) => {
+    const h = SPECIAL_BADGES.find((b) => b.id === id)!.hint;
+    return typeof h === "function" ? h(stats({})) : h;
+  };
+  assert.match(hint("sp-multi"), new RegExp(`${LEVELS.length} cấp A1–C2`));
   assert.match(hint("sp-marechal"), new RegExp(ROUTE_WORDS.toLocaleString("vi").replace(".", "\\.")));
+});
+
+t("bắt đầu từ B1: huy hiệu 'mọi cấp' chỉ đòi lộ trình B1–C2, chiến dịch A1/A2 ẩn", () => {
+  const b1 = (over: Partial<Stats>) => stats({ startLevel: 3, ...over });
+  const sp = (s: Stats, id: string) => badgeGroups(s).find((g) => g.group === "special")!.badges.find((b) => b.id === id)!;
+  assert.equal(sp(b1({ byLevel: { 3: 1, 4: 1, 5: 1 } }), "sp-multi").earned, false);
+  assert.equal(sp(b1({ byLevel: { 3: 1, 4: 1, 5: 1, 6: 1 } }), "sp-multi").earned, true);
+  assert.match(sp(b1({}), "sp-multi").hint, /4 cấp B1–C2/);
+  const route = Object.fromEntries(LEVELS.filter((l) => l.level >= 3).map((l) => [l.level, l.words]));
+  assert.equal(sp(b1({ byLevel: route }), "sp-marechal").earned, true);
+  assert.equal(sp(b1({ byLevel: route }), "sp-allcamp").earned, true);
+  assert.equal(sp(stats({ byLevel: route }), "sp-marechal").earned, false); // bắt đầu A1 thì còn thiếu A1–A2
+  const camp = badgeGroups(b1({})).find((g) => g.group === "campaign")!;
+  assert.deepEqual(camp.badges.map((b) => b.name), ["Chiến dịch B1", "Chiến dịch B2", "Chiến dịch C1", "Chiến dịch C2"]);
+});
+
+t("cấp bắt đầu: hợp lệ 1..6, chưa chọn = A1, lộ trình từ cấp đó trở lên", () => {
+  assert.equal(resolveStartLevel(undefined), FIRST_LEVEL);
+  assert.equal(resolveStartLevel(9), FIRST_LEVEL);
+  assert.equal(resolveStartLevel(3), 3);
+  assert.equal(validStartLevel("3"), undefined);
+  assert.deepEqual(routeLevels(5).map((l) => l.cefr), ["C1", "C2"]);
+  assert.equal(levelRangeName(LEVELS.filter((l) => l.level < 3)), "A1–A2");
+  assert.equal(levelRangeName(LEVELS.filter((l) => l.level < 2)), "A1");
+  assert.equal(levelRangeName([]), "");
 });
 
 t("XP: học từ mới đáng giá hơn ôn lại", () => {
@@ -803,4 +846,14 @@ t("collocations: 1–4 cặp [cụm fr, nghĩa vi] không rỗng, không trùng;
   for (const lv of [1, 2, 3]) assert.ok(byLevel[lv][0] / byLevel[lv][1] > 0.75, `cấp ${lv}: ${byLevel[lv]}`);
   assert.ok(all.get("faim")?.collocations?.some(([fr]) => fr === "avoir faim"));
   assert.ok(all.get("prendre")?.collocations?.some(([fr]) => fr === "prendre une décision"));
+});
+
+// ---- cấp bắt đầu: từ ở cấp đã bỏ qua tính là đã biết khi chọn câu vừa sức ----
+t("câu vừa sức: bắt đầu từ B1 thì từ A1–A2 trong câu tính là đã biết", async () => {
+  const { sentenceKnownRatio } = await import("./review-session");
+  const lexicon = { lemmaMap: { mange: "manger" }, wordLevels: { je: 1, manger: 1, pomme: 2, une: 1, délicieux: 3 } };
+  const fr = "Je mange une pomme délicieuse.";
+  const none = new Set<string>();
+  assert.ok(sentenceKnownRatio(fr, none, "délicieux", lexicon) < 0.5); // bắt đầu A1: chưa biết gì
+  assert.equal(sentenceKnownRatio(fr, none, "délicieux", { ...lexicon, startLevel: 3 }), 0.8); // je/mange/une/pomme đã bỏ qua
 });

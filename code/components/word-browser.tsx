@@ -7,7 +7,7 @@ import { loadWords, loadExamplesForWords, loadLemmaMap, loadWordLevels, type Exa
 import { warmSession } from "@/lib/warm";
 import { requestSync } from "@/lib/sync";
 import { posLabel } from "@/lib/pos";
-import { db, learnedIds, newTodayCount, getConfig, onConfigChanged } from "@/lib/db";
+import { db, learnedIds, newTodayCount, getConfig, getStartLevel, onConfigChanged } from "@/lib/db";
 import { isKnownPending, MATURE_STABILITY } from "@/lib/srs-pure";
 import { buildQuestions, type Question } from "@/lib/review-session";
 import { orderForBeginners } from "@/lib/starter";
@@ -19,6 +19,7 @@ import type { Word, SrsConfig, ReviewRecord } from "@/lib/types";
 import WordDetail from "@/components/word-detail";
 import ReviewRunner from "@/components/review-runner";
 import KnownTriage from "@/components/known-triage";
+import { openSettings } from "@/components/settings-sheet";
 
 const PAGE = 90; // cuộn vô hạn: mỗi lần hiện thêm 90 dòng (như HSK)
 
@@ -67,6 +68,11 @@ function article(w: Word): string | null {
 }
 
 export default function WordBrowser({ level }: { level: number }) {
+  // Cấp ĐÃ BỎ QUA (dưới cấp bắt đầu trong Cài đặt) chỉ để TRA CỨU: không thẻ tiến độ, không hàng
+  // đợi học từ mới. Muốn học một từ thì mở thẻ từ và bấm "Học từ này"; muốn học cả cấp thì đổi
+  // cấp bắt đầu. null = đang đọc cài đặt.
+  const [startLevel, setStartLevel] = useState<number | null>(null);
+  const skipped = startLevel !== null && level < startLevel;
   const [words, setWords] = useState<Word[] | null>(null);
   const [examples, setExamples] = useState<Record<string, ExampleSentence[]>>({});
   const [reviews, setReviews] = useState<Map<string, ReviewRecord>>(new Map());
@@ -88,6 +94,9 @@ export default function WordBrowser({ level }: { level: number }) {
     loadWords(level).then(setWords, () => setLoadError(true));
     warmSession(); // đọc trước dữ liệu phiên trong lúc người dùng còn duyệt danh sách từ
   }, [level, retry]);
+  useEffect(() => {
+    getStartLevel().then(setStartLevel, () => setStartLevel(level)); // lỗi đọc DB → cứ cho học
+  }, [level]);
 
   const refreshReviews = useCallback(async () => {
     const rows = await db.reviews.where("level").equals(level).toArray();
@@ -107,12 +116,12 @@ export default function WordBrowser({ level }: { level: number }) {
 
   // số từ mới còn được học hôm nay (theo cấp này)
   const refreshNew = useCallback(async () => {
-    if (!words) return;
+    if (!words || startLevel === null || skipped) return;
     const [cfg, learned, newToday] = await Promise.all([getConfig(), learnedIds(), newTodayCount()]);
     const quota = Math.max(0, cfg.newPerDay - newToday);
     const unlearned = words.filter((w) => !learned.has(w.id)).length;
     setRemainingNew(Math.min(quota, unlearned));
-  }, [words]);
+  }, [words, startLevel, skipped]);
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     refreshNew();
@@ -123,6 +132,7 @@ export default function WordBrowser({ level }: { level: number }) {
     () =>
       onConfigChanged((c) => {
         setConfig((prev) => (prev ? { ...c, genderQuestions: prev.genderQuestions } : prev));
+        void getStartLevel(c).then(setStartLevel);
         void refreshNew();
       }),
     [refreshNew],
@@ -137,15 +147,16 @@ export default function WordBrowser({ level }: { level: number }) {
       .filter((w) => !learned.has(w.id))
       .slice(0, quota);
     if (!candidates.length) return;
-    const [ex, lemmaMap, wordLevels] = await Promise.all([
+    const [ex, lemmaMap, wordLevels, start] = await Promise.all([
       loadExamplesForWords(level, candidates.map((w) => w.id)),
       loadLemmaMap(),
       loadWordLevels(),
+      getStartLevel(cfg),
     ]);
     setExamples((prev) => ({ ...prev, ...ex }));
     const cfgEff = { ...cfg, genderQuestions: cfg.genderQuestions && genderTaught() };
     setConfig(cfgEff);
-    setSession(buildQuestions(candidates, ex, words, cfgEff, true, undefined, learned, { lemmaMap, wordLevels }));
+    setSession(buildQuestions(candidates, ex, words, cfgEff, true, undefined, learned, { lemmaMap, wordLevels, startLevel: start }));
   };
 
   const openTriage = async () => {
@@ -222,7 +233,24 @@ export default function WordBrowser({ level }: { level: number }) {
         <h1 className="text-2xl font-bold sm:text-3xl">{meta?.label.split("·")[1]?.trim()}</h1>
       </div>
 
-      {/* Thẻ tiến độ cấp + nút học */}
+      {startLevel === null ? null : skipped ? (
+        <div className="mb-4 rounded-3xl border bg-muted/40 p-5 text-sm text-muted-foreground">
+          <p>
+            <b className="text-foreground">{totalWords.toLocaleString("vi")} từ {meta?.cefr}</b> để tra cứu khi đọc bài — bạn
+            đang bắt đầu từ {levelMeta(startLevel)?.cefr} nên cấp này được bỏ qua: không nằm trong lộ trình học, không tính
+            vào tiến độ.
+          </p>
+          <p className="mt-1.5">Nếu bạn thấy mình chưa chắc một từ nào ở đây, mở nó ra và bấm “Học từ này” để thêm vào hàng đợi ôn.</p>
+          <button
+            type="button"
+            onClick={openSettings}
+            className="mt-3 inline-flex items-center gap-1.5 rounded-full border bg-background px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-muted active:scale-[0.98]"
+          >
+            Muốn học cả cấp {meta?.cefr}? Đổi “Bắt đầu từ cấp” trong Cài đặt
+          </button>
+        </div>
+      ) : (
+      /* Thẻ tiến độ cấp + nút học */
       <div className={cn("mb-4 rounded-3xl border bg-gradient-to-br p-5", accent.grad)}>
         <div className="flex items-center justify-between gap-3">
           <div>
@@ -277,6 +305,7 @@ export default function WordBrowser({ level }: { level: number }) {
           <div className={cn("h-full rounded-full transition-all", accent.bar)} style={{ width: `${pct}%` }} />
         </div>
       </div>
+      )}
 
       {/* Tìm kiếm + bộ lọc (dính) — select rộng bằng ô tìm (như HSK) */}
       <div className="sticky top-16 z-20 -mx-4 mb-3 bg-background/85 px-4 py-1 backdrop-blur">

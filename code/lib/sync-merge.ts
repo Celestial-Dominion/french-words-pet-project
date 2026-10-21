@@ -10,6 +10,7 @@
 import { mergeGrammarCodes } from "./grammar.ts"; // đuôi .ts: scripts/test-grammar.mjs chạy thẳng file này bằng node
 import type { ReviewRecord, DailyStat, ReadRow, NoteRow, GamifyRow, SrsConfig } from "./types";
 import { upgradeLegacyKnown } from "./srs-pure.ts";
+import { validStartLevel } from "./levels.ts";
 
 /** "Phiên bản" của thẻ ôn: ưu tiên số lượt ôn, sau đó tới thời điểm ôn gần nhất. */
 export function reviewScore(r: ReviewRecord): number {
@@ -368,6 +369,9 @@ export function sanitizeConfig(raw: unknown, base: SrsConfig): SrsConfig {
   const clozePerWord = raw.clozePerWord === undefined
     ? (legacyCloze ? 1 : 0)
     : int(raw.clozePerWord, base.clozePerWord ?? (legacyCloze ? 1 : 0), 0, 5);
+  // Cấp bắt đầu: chỉ nhận giá trị hợp lệ; ảnh chụp chưa có (người dùng chưa tự chọn) → giữ
+  // lựa chọn của máy này nếu có, không có thì để trống (= A1).
+  const startLevel = validStartLevel(raw.startLevel) ?? validStartLevel(base.startLevel);
   return {
     newPerDay: int(raw.newPerDay, base.newPerDay, 0, 200),
     reviewPerSession: int(raw.reviewPerSession, base.reviewPerSession, 0, 500),
@@ -385,6 +389,7 @@ export function sanitizeConfig(raw: unknown, base: SrsConfig): SrsConfig {
     interleave: bool(raw.interleave, base.interleave !== false),
     sentenceKnownMin: ratio(raw.sentenceKnownMin, base.sentenceKnownMin),
     soundEnabled: bool(raw.soundEnabled, base.soundEnabled),
+    ...(startLevel !== undefined ? { startLevel } : {}),
   };
 }
 

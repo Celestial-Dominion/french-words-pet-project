@@ -272,6 +272,14 @@ t("lọc cài đặt: cấp từ mới 0..6 (A1–C2), giữ công tắc chọn 
   assert.equal(sanitizeConfig({ genderQuestions: "có" }, DEFAULT_SRS_CONFIG).genderQuestions, true);
 });
 
+t("lọc cài đặt: cấp bắt đầu chỉ nhận 1..6, ảnh chụp chưa có thì giữ lựa chọn máy này", () => {
+  assert.equal(sanitizeConfig({ startLevel: 3 }, DEFAULT_SRS_CONFIG).startLevel, 3);
+  assert.equal("startLevel" in sanitizeConfig({ startLevel: 9 }, DEFAULT_SRS_CONFIG), false);
+  assert.equal("startLevel" in sanitizeConfig({ startLevel: "B1" }, DEFAULT_SRS_CONFIG), false);
+  assert.equal(sanitizeConfig({}, { ...DEFAULT_SRS_CONFIG, startLevel: 4 }).startLevel, 4);
+  assert.equal(sanitizeConfig({ startLevel: 2 }, { ...DEFAULT_SRS_CONFIG, startLevel: 4 }).startLevel, 2);
+});
+
 t("config cloud cũ: clozeEnabled=false được chuyển thành 0 câu điền", () => {
   const out = sanitizeConfig({ clozeEnabled: false }, { ...DEFAULT_SRS_CONFIG, clozePerWord: 3 });
   assert.equal(out.clozeEnabled, false);

@@ -8,12 +8,14 @@ import {
   seededShuffle,
   meaningTooSimilar,
   optionMeaningMap,
+  optionWordMap,
   selectDistinctExercises,
   shortMeaningVi,
   spreadSameWord,
 } from "./srs-pure";
 import { lookalikeScore } from "./spell";
 import { pickQuestionKind } from "./question-mix";
+import { FIRST_LEVEL } from "./levels";
 
 // Các dạng BÀI CHÍNH chấm FSRS. Điền câu là một kind riêng,
 // không chấm lịch ôn để mỗi từ chỉ bị chấm đúng một lần trong một lượt.
@@ -22,6 +24,15 @@ export type McqMode = "meaning" | "reverse" | "listen";
 export interface SentenceLexicon {
   lemmaMap: Readonly<Record<string, string>>;
   wordLevels: Readonly<Record<string, number>>;
+  // Cấp bắt đầu của người học (Cài đặt): từ ở cấp THẤP HƠN (đã bỏ qua) coi như đã biết. Bỏ trống = A1.
+  startLevel?: number;
+}
+
+/** Tập từ thuộc các cấp đã bỏ qua — luôn tính là đã biết khi chấm độ vừa sức của câu. */
+function skippedWords(lexicon: SentenceLexicon): Set<string> {
+  const start = lexicon.startLevel ?? FIRST_LEVEL;
+  if (start <= FIRST_LEVEL) return new Set();
+  return new Set(Object.entries(lexicon.wordLevels).filter(([, level]) => level < start).map(([id]) => id));
 }
 
 export type Question =
@@ -44,6 +55,9 @@ export type Question =
       // Câu có phương án là từ tiếng Pháp (reverse): sau khi chấm, lộ nghĩa của
       // cả 4 lựa chọn như app HSK. Dùng map theo id để xáo lại vẫn không lệch nghĩa.
       optionMeanings?: Record<string, string>;
+      // Ngược lại, phương án là nghĩa Việt (meaning/listen): sau khi chấm, dưới mỗi nghĩa
+      // lộ từ tiếng Pháp (kèm un/une) + IPA của nó (HSK: nghĩa nhiễu hiện chữ Hán). Khóa = chuỗi phương án.
+      optionWords?: Record<string, { fr: string; article: string | null; ipa: string }>;
       answer: number;
       exs?: ExampleSentence[]; // 1-2 câu ví dụ cho thẻ chi tiết SAU khi trả lời
     }
@@ -149,10 +163,11 @@ export function sentenceKnownRatio(
   learned: ReadonlySet<string>,
   target: string,
   lexicon: SentenceLexicon,
+  skipped?: ReadonlySet<string>,
 ): number {
   const tokens = sentenceLemmas(fr, lexicon);
   const targetTokens = new Set([...sentenceLemmas(target, lexicon), target.toLowerCase()]);
-  return knownRatio(tokens, learned, targetTokens);
+  return knownRatio(tokens, learned, targetTokens, skipped ?? skippedWords(lexicon));
 }
 
 /** Nghĩa RÚT GỌN cho phương án trắc nghiệm (phần trước dấu ';') — đỡ ngợp cho người mới. */
@@ -214,10 +229,16 @@ function pickDistractors(word: Word, pool: Word[], n = 3, wordOptions = false): 
   return out;
 }
 
+/** Bộ 4 phương án là NGHĨA Việt rút gọn, kèm từ Pháp + IPA của từng nghĩa để chữa bài. */
+function meaningOptions(word: Word, pool: Word[]) {
+  const words = [word, ...pickDistractors(word, pool)];
+  const options = shuffle(words.map(shortVi));
+  return { options, optionWords: optionWordMap(words), answer: options.indexOf(shortVi(word)) };
+}
+
 /** MCQ nghĩa: hiện từ Pháp → chọn nghĩa Việt đúng. */
 function meaningFor(word: Word, pool: Word[], isNew: boolean): Question {
-  const options = shuffle([shortVi(word), ...pickDistractors(word, pool).map(shortVi)]);
-  return { kind: "mcq", mode: "meaning", word, graded: true, isNew, prompt: word.id, options, answer: options.indexOf(shortVi(word)) };
+  return { kind: "mcq", mode: "meaning", word, graded: true, isNew, prompt: word.id, ...meaningOptions(word, pool) };
 }
 
 /** MCQ ngược: hiện nghĩa Việt → chọn từ Pháp đúng. */
@@ -230,8 +251,7 @@ function reverseFor(word: Word, pool: Word[], isNew: boolean): Question {
 
 /** MCQ nghe: phát audio từ → chọn nghĩa Việt đúng. */
 function listenFor(word: Word, pool: Word[], isNew: boolean): Question {
-  const options = shuffle([shortVi(word), ...pickDistractors(word, pool).map(shortVi)]);
-  return { kind: "mcq", mode: "listen", word, graded: true, isNew, prompt: word.id, options, answer: options.indexOf(shortVi(word)) };
+  return { kind: "mcq", mode: "listen", word, graded: true, isNew, prompt: word.id, ...meaningOptions(word, pool) };
 }
 
 // Tìm vị trí từ (nguyên từ, không phân biệt hoa thường) trong câu ví dụ để khoét chỗ trống.
@@ -341,8 +361,10 @@ export function buildQuestions(
   const groups: Question[][] = [];
   const clozeCap = config.clozePerWord ?? (config.clozeEnabled !== false ? 1 : 0);
   const knownMin = config.sentenceKnownMin ?? 0.7;
-  // Người mới (<40 từ) chưa đủ vốn để ghép câu — đoán mù thứ tự là luyện sai.
-  const arrangeCap = knownIds && knownIds.size >= ARRANGE_MIN_KNOWN ? (config.arrangePerWord ?? 1) : 0;
+  const skipped = lexicon ? skippedWords(lexicon) : new Set<string>();
+  // Người mới (<40 từ) chưa đủ vốn để ghép câu — đoán mù thứ tự là luyện sai. Người bỏ qua
+  // các cấp dưới (vd. bắt đầu từ B1) đã có sẵn vốn từ của các cấp đó.
+  const arrangeCap = knownIds && knownIds.size + skipped.size >= ARRANGE_MIN_KNOWN ? (config.arrangePerWord ?? 1) : 0;
   for (const w of words) {
     const g: Question[] = [];
     const rec = records?.get(w.id);
@@ -351,7 +373,7 @@ export function buildQuestions(
     // (thẻ học, ví dụ sau trả lời, câu khoét cloze, câu ghép đều xoay theo).
     const ex = seededShuffle(examplesByWord[w.id] || [], `${w.id}:${rec?.reps ?? 0}`);
     const ratio = (s: ExampleSentence) =>
-      knownIds && lexicon ? sentenceKnownRatio(s.fr, knownIds, w.id, lexicon) : 1;
+      knownIds && lexicon ? sentenceKnownRatio(s.fr, knownIds, w.id, lexicon, skipped) : 1;
     const ranked = knownIds && lexicon && knownMin > 0 ? rankByKnown(ex, ratio, knownMin) : ex;
     const selected = selectDistinctExercises(
       ranked,

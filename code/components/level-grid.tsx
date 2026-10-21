@@ -2,19 +2,26 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { progressSummary, getDueReviews } from "@/lib/db";
+import { progressSummary, getDueReviews, getStartLevel, onConfigChanged } from "@/lib/db";
 import { loadReadingsIndex } from "@/lib/data";
-import { LEVELS, levelAccent } from "@/lib/levels";
+import { LEVELS, levelAccent, levelMeta, levelRangeName } from "@/lib/levels";
 import { onSyncMerged } from "@/lib/sync";
+import { openSettings } from "@/components/settings-sheet";
 
 export default function LevelGrid() {
   const [byLevel, setByLevel] = useState<Record<number, number>>({});
   const [dueByLevel, setDueByLevel] = useState<Record<number, number>>({});
   const [readsByLevel, setReadsByLevel] = useState<Record<number, number>>({});
+  // Cấp bắt đầu (Cài đặt): cấp thấp hơn là ĐÃ BỎ QUA — xếp xuống cuối, dịu màu, chỉ để tra cứu.
+  // null = đang đọc (vài ms) → chưa vẽ lưới để không nhảy thứ tự thẻ.
+  const [start, setStart] = useState<number | null>(null);
   useEffect(() => {
     const refresh = () => {
       // độ phủ vốn từ: đã học + đã biết sẵn (byLevel chỉ là số liệu huy hiệu, không tính từ chưa kiểm tra)
-      progressSummary().then((s) => setByLevel(s.coverageByLevel));
+      progressSummary().then((s) => {
+        setByLevel(s.coverageByLevel);
+        setStart(s.startLevel);
+      });
       getDueReviews().then((rows) => {
         const m: Record<number, number> = {};
         for (const r of rows) m[r.level] = (m[r.level] ?? 0) + 1;
@@ -35,15 +42,23 @@ export default function LevelGrid() {
       if (document.visibilityState === "visible") refresh();
     }, 60_000);
     const off = onSyncMerged(refresh); // kéo tiến độ máy khác về → thanh tiến độ cấp nhảy theo
+    // Đổi "Bắt đầu từ cấp" trong ngăn Cài đặt → xếp lại lưới ngay.
+    const offCfg = onConfigChanged((c) => void getStartLevel(c).then(setStart));
     return () => {
       clearInterval(t);
       off();
+      offCfg();
     };
   }, []);
 
+  if (start === null) return null;
+  const route = LEVELS.filter((l) => l.level >= start);
+  const skipped = LEVELS.filter((l) => l.level < start);
+
   return (
+    <>
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {LEVELS.map((l) => {
+      {route.map((l) => {
         const a = levelAccent(l.level);
         const learned = byLevel[l.level] ?? 0;
         const due = dueByLevel[l.level] ?? 0;
@@ -83,5 +98,37 @@ export default function LevelGrid() {
         );
       })}
     </div>
+
+    {/* Cấp đã bỏ qua nằm dưới cùng, dịu màu: chỉ để tra cứu, không phải một chặng của lộ trình. */}
+    {skipped.length > 0 && (
+      <div className="mt-4 space-y-2">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {skipped.map((l) => (
+            <Link
+              key={l.level}
+              href={`/hoc/${l.level}`}
+              className="flex items-center gap-3 rounded-2xl border border-dashed p-4 transition-all hover:bg-muted/50 active:scale-[0.99]"
+            >
+              <span className={`flex size-11 shrink-0 items-center justify-center rounded-xl text-lg font-bold ${levelAccent(l.level).badge}`}>
+                {l.cefr}
+              </span>
+              <div className="min-w-0 flex-1">
+                <div className="font-semibold">{l.label.split("·")[1]?.trim()}</div>
+                <div className="text-sm text-muted-foreground">
+                  {l.words.toLocaleString("vi")} từ · đã bỏ qua, chỉ tra cứu
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <p className="text-xs text-muted-foreground">
+          Bạn đang bắt đầu từ {levelMeta(start)?.cefr} nên {levelRangeName(skipped)} không vào lộ trình học.{" "}
+          <button type="button" onClick={openSettings} className="font-semibold text-primary hover:underline">
+            Đổi trong Cài đặt
+          </button>
+        </p>
+      </div>
+    )}
+    </>
   );
 }
