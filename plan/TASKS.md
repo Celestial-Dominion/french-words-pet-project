@@ -206,7 +206,7 @@ học thuật (force est de, nonobstant, d'aucuns) · nguyên mẫu danh từ ho
 sorte que, à force de, tant et si bien que).
 - **Nhật ký:**
   - 21/10 lô 1: 7 bài (câu điều kiện văn chương, đảo ngữ văn chương, lời gián tiếp tự do, cảm thán và câu hỏi tu từ, phủ định mang nghĩa khẳng định, động từ cổ trong cụm cố định, nhượng bộ C2) + 7 điểm inventory; 153/153 bài, 0 lỗi; 5 giờ 19% · tuần 10% trước lô; 8a246a1
-  - 21/10 lô 2: 7 bài (que thay liên từ, đồng vị ngữ, tỉnh lược, từ nối học thuật, cấu trúc cố định C2, danh từ hoá nguyên mẫu và tính từ, thức đổi nghĩa) + 7 điểm inventory; 160/160 bài, 0 lỗi; 5 giờ 22% · tuần 10% sau lô 1; COMMIT
+  - 21/10 lô 2: 7 bài (que thay liên từ, đồng vị ngữ, tỉnh lược, từ nối học thuật, cấu trúc cố định C2, danh từ hoá nguyên mẫu và tính từ, thức đổi nghĩa) + 7 điểm inventory; 160/160 bài, 0 lỗi; 5 giờ 22% · tuần 10% sau lô 1; 263267d
 
 ---
 
