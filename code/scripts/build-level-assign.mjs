@@ -8,7 +8,7 @@
 // Deterministic, không dùng agent. Xương sống = tần suất trộn 0.6*phim + 0.4*sách (Lexique).
 // FLELex / Français fondamental: KHÔNG lệ thuộc (plan mục 5) — A1 seed bằng chủ đề bắt buộc + tần suất.
 
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -221,6 +221,15 @@ for (const r of nonSeed) {
   const level = bi < capacity.length ? BANDS[bi].level : 6;
   assign.set(r.lemma, level);
   if (bi < capacity.length) capacity[bi]--;
+}
+
+// ---- Đổi cấp đã soát theo FLELex (scripts/level-overrides.json, lập bằng flelex-overrides.mjs) ----
+const OVR = join(HERE, "level-overrides.json");
+if (existsSync(OVR)) {
+  const ovr = JSON.parse(readFileSync(OVR, "utf8"));
+  let n = 0;
+  for (const [id, o] of Object.entries(ovr)) if (assign.has(id)) { assign.set(id, o.to); n++; }
+  console.log("Đổi cấp theo FLELex:", n);
 }
 
 // ---- verb_group heuristic (tinh chỉnh lại ở bước kaikki) ----

@@ -39,6 +39,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
+| L-FLELex | Soát cấp độ 11.000 từ theo FLELex (đổi cấp + sửa bài + bù độ phủ) | tùy chọn | script + nội dung | ~1–2% | pha 1 đang làm: 136 từ đổi cấp, bài B1–C2 + A1 xong; còn A2, câu ví dụ |
 
 Cộng (còn lại, sau P-A1): bắt buộc ~13,5% (độ phủ ~3,5% + ngữ pháp ~10%) · tùy chọn ~8% · tất cả ~21–22% tuần.
 Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì bài cấp trên dựa vào bài cấp dưới (trường `pre`).
@@ -289,12 +290,41 @@ sorte que, à force de, tant et si bien que).
   - 21/10 kèm theo: port việc đang làm dở bên app Anh (chưa commit) "lộ từ gốc dưới phương án nghĩa Việt" — câu
     Pháp→nghĩa / Nghe→nghĩa, sau khi chấm mỗi nghĩa hiện từ Pháp (kèm un/une) + IPA (`optionWordMap`).
 
+## L-FLELex — Soát cấp độ từ theo FLELex (tùy chọn) [ ]
+
+- **Nguồn:** FLELex-Beacco (TreeTagger, https://cental.uclouvain.be/cefrlex/flelex/download/) tải 21/10 vào
+  `code/scripts/flelex/` (git bỏ qua). Giấy phép **CC BY-NC-SA 4.0** (Pintard & François 2020; François et al. 2014) →
+  ghi công trong Cài đặt; cấp độ dẫn xuất chỉ dùng phi thương mại.
+- **Đo 21/10 (cấp gốc theo tần suất Lexique):** 8.290/11.000 từ có trong FLELex; khớp đúng cấp 36,7% · lệch ≤1 cấp 83,1%;
+  lệch ≥2 cấp 1.357 từ, ≥3 cấp ~190 từ. FLELex xếp theo giáo trình FLE nên đẩy từ đời thường ít gặp trong sách
+  (araignée, violon, coussin) lên C1–C2 và kéo từ chủ đề giáo trình (internet, maths, chômage, nationalité) xuống A1.
+- **Script (trong `code/`):** `node scripts/flelex-compare.mjs` (so với cấp gốc `from`) → `node scripts/flelex-overrides.mjs
+  --gap 3` → `scripts/level-overrides.json` → `node scripts/apply-level-overrides.mjs` (word-levels + out/words-base +
+  out/lemmas → assemble + shard; `build-level-assign.mjs` cũng đọc file này). Không pipe `apply` vào `head` (EPIPE).
+- **Luật pha 1 (lệch ≥3 cấp):** bỏ từ chức năng, từ FLELex không có dòng cùng từ loại; giữ seed A1 + `lib/starter.ts` +
+  danh sách tay (anglais, lunette, demi, sire, écu… và 4 từ "đỉnh" một giáo trình: coopération, inauguration, antiquité,
+  solde). Đẩy LÊN chỉ từ đang A1/A2: từ tục/khẩu ngữ lấy cấp FLELex, từ khác tối đa B1. → **136 từ** (xuống 122, lên 14:
+  bénir canon craindre lâcher → B1; con foutre gueule truc → B2; connerie emmerder flic merde putain salaud → C1).
+  Số từ/cấp: A1 835 · A2 1253 · B1 2024 · B2 2470 · C1 2955 · C2 1463 (`lib/levels.ts` đã sửa theo).
+- **Sửa bài sau khi đổi cấp:** `node scripts/fix-gloss-extra.mjs` (bỏ gloss thừa); `node scripts/dens-boost-hint.mjs <cấp>
+  <reading|story> --max 3 --full` (bài tụt "tỉ lệ từ đúng cấp", dòng chứa từ bị kéo xuống, số từ thiếu — % y như bộ kiểm);
+  viết lại câu tại chỗ rồi `node scripts/fix-quiz-quotes.mjs <cấp>` (tự sửa trích «» trong quiz theo câu mới, so với git HEAD).
+- **Nhật ký:**
+  - 21/10 lô 1: đổi cấp 136 từ; bỏ 38 gloss thừa (21 file); nâng mật độ B1 2 · B2 36+4 truyện · C1 35+5 · C2 8+4 bài
+    (thêm 2–5 từ đúng cấp/bài, tách 2 câu quá dài), cập nhật trích dẫn quiz; audio 154 câu mới. Bộ kiểm B1–C2 0 lỗi
+    0 cảnh báo; A1/A2 = mốc cũ (174/74 cảnh báo). 5 giờ 4% · tuần 17%; COMMIT1
+  - 21/10 lô 2: 10 bài A1 (a1-p04, 3 câu hỏi/bài, audio 230 câu), giỏ a1-s04a…j + từ mới xuống A1 (internet, mail,
+    nationalité, arrondissement, camping, tourisme, apéritif, belge…); A1 ≥1 95,0→99,6 ✓ · ≥3 86,5→90,0 ✓ · ≥5 62,8→65,1 ✓;
+    thiếu 73→0; COMMIT1
+- **Còn lại:** A2 bù độ phủ (≥1 93,6/97 · ≥3 76,6/80, thiếu 85: lô a2-p05 như P-A2); câu ví dụ của 122 từ xuống cấp (đo từ
+  vượt cấp mới, viết lại câu quá khó: `scripts/out/examples.json` + audio + shard); pha 2 (lệch 2 cấp, ~1.200 từ) chỉ khi
+  người dùng muốn — chia lô theo cấp, mỗi lô sửa bài như trên.
+
 ---
 
 ## Không làm / ý tưởng chưa lên lịch
 
 - **Video hội thoại** (port bộ máy video + lời thoại 2 giọng): người dùng bảo bỏ qua (20/10/2026).
-- Soát cấp độ 11.000 từ với FLELex (https://cental.uclouvain.be/cefrlex/flelex/download/, CC BY-NC 3.0).
 - Script so sánh 2 app (liệt kê file mới bên app Anh, diff file chung sau khi chuẩn hoá `en`→`fr`).
 - Về lâu dài: tách lõi giống nhau của 3 app (`srs-pure`, `sync-merge`, `db`, `review-runner`…) thành gói dùng chung.
 

@@ -8,12 +8,12 @@ export interface LevelMeta {
 }
 
 export const LEVELS: LevelMeta[] = [
-  { level: 1, label: "A1 · Vỡ lòng", cefr: "A1", words: 800 },
-  { level: 2, label: "A2 · Sơ cấp", cefr: "A2", words: 1200 },
-  { level: 3, label: "B1 · Trung cấp", cefr: "B1", words: 2000 },
-  { level: 4, label: "B2 · Trung cao", cefr: "B2", words: 2500 },
-  { level: 5, label: "C1 · Cao cấp", cefr: "C1", words: 3000 },
-  { level: 6, label: "C2 · Nâng cao", cefr: "C2", words: 1500 },
+  { level: 1, label: "A1 · Vỡ lòng", cefr: "A1", words: 835 },
+  { level: 2, label: "A2 · Sơ cấp", cefr: "A2", words: 1253 },
+  { level: 3, label: "B1 · Trung cấp", cefr: "B1", words: 2024 },
+  { level: 4, label: "B2 · Trung cao", cefr: "B2", words: 2470 },
+  { level: 5, label: "C1 · Cao cấp", cefr: "C1", words: 2955 },
+  { level: 6, label: "C2 · Nâng cao", cefr: "C2", words: 1463 },
 ];
 
 // ---- Cấp BẮT ĐẦU (Cài đặt → "Bắt đầu từ cấp"): các cấp thấp hơn được BỎ QUA ----

@@ -237,6 +237,13 @@ export default function SettingsPanel() {
             (ATILF – CNRS &amp; Université de Lorraine, CC BY 4.0)
           </li>
           <li>
+            Hiệu chỉnh cấp độ CEFR của một phần từ vựng —{" "}
+            <a href="https://cental.uclouvain.be/cefrlex/flelex/" className="underline" target="_blank" rel="noreferrer">
+              FLELex
+            </a>{" "}
+            (Pintard &amp; François 2020; François, Gala, Watrin &amp; Fairon 2014 — CENTAL, UCLouvain, CC BY-NC-SA 4.0)
+          </li>
+          <li>
             Phần lớn câu ví dụ tiếng Pháp —{" "}
             <a href="https://tatoeba.org/" className="underline" target="_blank" rel="noreferrer">
               Tatoeba
@@ -263,7 +270,7 @@ export default function SettingsPanel() {
           <li>Giọng đọc — Microsoft Edge neural TTS (fr-FR), sinh sẵn lúc build</li>
         </ul>
         <p className="mt-2 text-xs text-muted-foreground">
-          Dữ liệu dẫn xuất từ các nguồn CC BY-SA được chia sẻ lại theo cùng giấy phép.
+          Dữ liệu dẫn xuất từ các nguồn CC BY-SA được chia sẻ lại theo cùng giấy phép; cấp độ từ hiệu chỉnh theo FLELex chỉ dùng phi thương mại (CC BY-NC-SA 4.0).
         </p>
       </details>
     </div>
