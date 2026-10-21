@@ -1,0 +1,63 @@
+=== nhan-manh-b2
+sum: B1 đã có c'est… qui / que. B2 thêm cách nhấn mạnh rất hay gặp khi nói: tách một thành phần ra đầu hoặc cuối câu, rồi nhắc lại bằng đại từ. Ra đầu câu: Ce livre, je l'ai adoré. Mes clés, tu les as vues ? Moi, je reste. Ra cuối câu: Il est beau, ton manteau ! Còn có: Ce qui me plaît, c'est le calme. Ce que je veux, c'est partir.
+form: thành phần, câu có đại từ nhắc lại | Ce gâteau, je l'ai fait moi-même.
+form: câu, thành phần ở cuối | Elle est géniale, cette chanson.
+form: đại từ nhấn mạnh | Moi, je reste. Lui, il part.
+form: ce qui / ce que…, c'est | Ce que je veux, c'est partir.
+cast: lucas ines
+bg: home-evening
+words: film, acteur, fin, musique
+
+#hook
+ines: Alors, ce film, tu l'as aimé ? | Thế bộ phim đó, anh có thích không? [thinking]
+lucas: Moi, je l'ai adoré ! Les acteurs, ils étaient incroyables. | Anh thì mê luôn! Diễn viên ấy, họ diễn tuyệt vời. [happy]
+> [[Ce film]] được đưa ra đầu câu rồi nhắc lại bằng [[l']]. [[Moi]] nhấn mạnh người nói. Đây là cách nhấn mạnh rất phổ biến khi nói.
+
+#meaning
+vs: J'ai adoré ce livre. | Tôi rất thích cuốn sách này. || câu bình thường
+vs: Ce livre, je l'ai adoré. | Cuốn sách này, tôi rất thích. || nhấn mạnh ở đầu câu
+vs: Je l'ai adoré, ce livre. | Tôi rất thích nó, cuốn sách này. || nhấn mạnh ở cuối câu
+> Thành phần tách ra phải được nhắc lại bằng đại từ trong câu: [[le]], [[la]], [[les]], [[en]], [[y]].
+
+#form
+th: Thành phần tách ra | Đại từ nhắc lại | Ví dụ
+tb: bổ ngữ trực tiếp | le, la, les | Ta voiture, je la trouve belle.
+tb: de + danh từ | en | Du thé, j'en bois souvent.
+tb: à + nơi chốn | y | La plage, on y va demain.
+tb: chủ ngữ | il, elle, ils | Mon frère, il habite ici.
+> Khi nói, người Pháp rất hay dùng cách này. Khi viết trang trọng, nên dùng câu bình thường.
+
+#examples
+- Mes clés, tu {les|k} as vues ? | Chìa khoá của tôi, bạn có thấy không?
+- Il est beau, {ton manteau|k} ! | Áo khoác của bạn đẹp thật!
+- {Lui|k}, il ne dit jamais rien. | Anh ta thì chẳng bao giờ nói gì.
+- Du chocolat, j'{en|k} mange tous les jours. | Sô-cô-la thì ngày nào tôi cũng ăn.
+- {Ce qui|k} me plaît ici, c'est le calme. | Điều tôi thích ở đây là sự yên tĩnh.
+
+#mistakes
+x: Ce film, j'ai adoré. => Ce film, je l'ai adoré. | Bộ phim này, tôi rất thích. >> Phải nhắc lại bằng đại từ [[l']].
+x: Me, je reste ici. => Moi, je reste ici. | Tôi thì ở lại đây. >> Đại từ nhấn mạnh là [[moi]], không phải [[me]].
+x: Du café, je le veux bien. => Du café, j'en veux bien. | Cà phê thì tôi muốn uống. >> [[Du café]] nhắc lại bằng [[en]].
+
+#dialogue
+ines: Et la fin, tu l'as comprise, toi ? | Còn cái kết, anh có hiểu không? [thinking]
+lucas: La fin, franchement, je ne l'ai pas comprise. | Cái kết ấy à, thật lòng anh không hiểu. [thinking]
+ines: Moi non plus ! Ce qui m'a plu, c'est la musique. | Em cũng thế! Điều em thích là âm nhạc. [happy]
+lucas: Elle était géniale, cette musique. On la cherche ce soir ? | Nhạc ấy hay tuyệt. Tối nay mình tìm nghe nhé? [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Chìa khoá của tôi, bạn có thấy không? => Mes clés, tu les as vues ? | Chìa khoá của tôi, bạn có thấy không?
+? Nói bằng tiếng Pháp: Điều tôi thích ở đây là sự yên tĩnh. => Ce qui me plaît ici, c'est le calme. | Điều tôi thích ở đây là sự yên tĩnh.
+
+#recap
+> Nhấn mạnh khi nói: tách một thành phần ra đầu hoặc cuối câu, nhắc lại bằng đại từ [[le]], [[la]], [[les]], [[en]], [[y]]. Đại từ nhấn mạnh: [[moi]], [[toi]], [[lui]]. Và mẫu [[ce qui]], [[ce que]] với [[c'est]].
+
+#practice
+fill: Mes clés, tu ___ as vues ? | les* / la / en || mes clés → les.
+fill: Du chocolat, j'___ mange tous les jours. | en* / le / y || du chocolat → en.
+fill: Ma mère parle beaucoup, mais mon père, ___ , ne dit jamais rien. | lui* / il / le || đại từ nhấn mạnh.
+fill: La plage, on ___ va demain. | y* / en / la || à la plage → y.
+contrast: Ce film, je ___ adoré. | l'ai* / ai || nhắc lại bằng đại từ.
+type: Ce ___ me plaît ici, c'est le calme. | qui || chủ ngữ: ce qui.
+fix: Me, je reste ici. | Moi, je reste ici.* / Je, je reste ici. / Moi, me reste ici. || moi.
+listen: Il est beau, ton manteau ! | Il est beau, ton manteau !* / Il est beau, ce manteau ! / Ton manteau est beau ! || ton manteau.

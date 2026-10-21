@@ -1249,6 +1249,85 @@
     "connectors"
    ],
    "find": "(?<![\\p{L}'])(en outre|néanmoins|toutefois|en revanche|par contre|d'ailleurs|par ailleurs|quant à|quant au|quant aux|en somme|bref|par conséquent)(?![\\p{L}])"
+  },
+  {
+   "id": "y-kien-nang-cao",
+   "lv": "b2",
+   "cat": "clauses",
+   "t": "Ý kiến và khả năng nâng cao",
+   "en": "il semble que ce soit vrai · il est probable qu'il viendra",
+   "pts": [
+    "opinion-b2"
+   ],
+   "find": "(?<![\\p{L}'])(il semble que|il semble qu'|il me semble que|il me semble qu'|il est probable que|il est probable qu'|il est peu probable que|il est peu probable qu'|il est possible que|il est possible qu'|nul doute que|nul doute qu'|il se peut que|il se peut qu')"
+  },
+  {
+   "id": "danh-tu-hoa",
+   "lv": "b2",
+   "cat": "nouns",
+   "t": "Danh từ hoá",
+   "en": "arriver → l'arrivée · augmenter → l'augmentation",
+   "pts": [
+    "nominalisation"
+   ],
+   "find": "(?<![\\p{L}'])(l'arrivée|le départ|la construction|l'augmentation|la baisse|la hausse|la fermeture|l'ouverture|la réduction|le développement|la création|la disparition|la lenteur|la rapidité|la réparation|la vente|l'achat|la naissance)(?![\\p{L}])"
+  },
+  {
+   "id": "vi-tri-tinh-tu",
+   "lv": "b2",
+   "cat": "adjectives",
+   "kind": "contrast",
+   "t": "Tính từ đổi nghĩa theo vị trí",
+   "en": "un ancien élève · un meuble ancien",
+   "pts": [
+    "adj-position-meaning"
+   ],
+   "find": "(?<![\\p{L}'])(ancien|ancienne|anciens|anciennes|propre|propres|cher|chère|seul|seule|même|dernier|dernière|prochain|prochaine|pauvre|grand homme|certain|certaine) "
+  },
+  {
+   "id": "dong-tu-doi-nghia",
+   "lv": "b2",
+   "cat": "verbs",
+   "kind": "contrast",
+   "t": "Động từ đổi nghĩa theo giới từ",
+   "en": "tu me manques · je manque de temps",
+   "pts": [
+    "verb-prep-meaning"
+   ],
+   "find": "(?<![\\p{L}'])(manque à|manques à|manquent à|manque de|manquons de|manquez de|me manque|me manques|me manquent|te manque|nous manque|pensez de|penses de|pense de|tient à|tiens à|tenez à|tient de|tiens de|joue de|joues de|jouer de|joue du|joue de la)(?![\\p{L}])"
+  },
+  {
+   "id": "so-sanh-nang-cao",
+   "lv": "b2",
+   "cat": "comparison",
+   "t": "So sánh nâng cao",
+   "en": "d'autant plus que · de loin le meilleur",
+   "pts": [
+    "comparison-b2"
+   ],
+   "find": "(?<![\\p{L}'])(d'autant plus|d'autant moins|de loin|bien plus|bien moins|beaucoup plus|beaucoup moins|le moindre|la moindre|le pire|la pire|plus que jamais|autant que)(?![\\p{L}])"
+  },
+  {
+   "id": "ce-a-quoi",
+   "lv": "b2",
+   "cat": "relative",
+   "t": "Ce à quoi, ce sur quoi, de quoi",
+   "en": "ce à quoi je pense · il y a de quoi manger",
+   "pts": [
+    "relative-quoi"
+   ],
+   "find": "(?<![\\p{L}'])(à quoi|sur quoi|contre quoi|avec quoi|par quoi|de quoi|sans quoi|après quoi)(?![\\p{L}])"
+  },
+  {
+   "id": "nhan-manh-b2",
+   "lv": "b2",
+   "cat": "sentence",
+   "t": "Nhấn mạnh: tách thành phần ra đầu, cuối câu",
+   "en": "ce film, je l'ai adoré · moi, je reste",
+   "pts": [
+    "dislocation"
+   ],
+   "find": "(?<![\\p{L}'])(moi|toi|lui|elle|nous|vous|eux|elles), (je|j'|tu|il|elle|on|nous|vous|ils|elles)"
   }
  ]
 }

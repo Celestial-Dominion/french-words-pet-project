@@ -1,0 +1,71 @@
+=== dong-tu-doi-nghia
+sum: Một số động từ đổi nghĩa theo giới từ đi sau. Manquer à: được ai nhớ (tu me manques = anh nhớ em, chủ ngữ là người được nhớ); manquer de: thiếu (je manque de temps). Penser à: nghĩ đến; penser de: có ý kiến về (que penses-tu de ce film ?). Tenir à: quý, nhất định muốn (je tiens à cette montre, je tiens à venir); tenir de: giống ai (il tient de son père). Jouer à + thể thao, trò chơi; jouer de + nhạc cụ.
+form: manquer à: chủ ngữ là người được nhớ | Tu me manques.
+form: manquer de: thiếu | Je manque de sommeil.
+form: penser à / penser de | Je pense à toi. · Que penses-tu de ce livre ?
+form: jouer à / jouer de | jouer au foot · jouer du piano
+cast: nam chloe
+bg: sea-dawn
+words: manquer, soleil, guitare, musicien
+
+#hook
+chloe: Ça fait trois mois que tu vis ici. Ta famille te manque ? | Anh sống ở đây ba tháng rồi. Anh có nhớ gia đình không? [thinking]
+nam: Oui, beaucoup. Mes parents me manquent, et je manque un peu de soleil ! | Có, nhớ lắm. Anh nhớ bố mẹ, và hơi thiếu nắng nữa! [sad]
+> [[Mes parents me manquent]]: anh nhớ bố mẹ, chủ ngữ là người được nhớ. [[Je manque de soleil]]: anh thiếu nắng. Giới từ đổi thì nghĩa đổi.
+
+#meaning
+vs: Tu me manques. | Anh nhớ em. || manquer à: chủ ngữ là người được nhớ
+vs: Je manque de temps. | Tôi thiếu thời gian. || manquer de: thiếu
+> Với [[manquer à]], thứ tự ngược với tiếng Việt: người được nhớ là chủ ngữ.
+
+#form
+th: Động từ | Với à | Với de
+tb: manquer | được ai nhớ | thiếu
+tb: penser | nghĩ đến | có ý kiến về
+tb: tenir | quý, nhất định muốn | giống ai
+tb: jouer | thể thao, trò chơi | nhạc cụ
+> Với [[jouer]], nhớ gộp mạo từ: [[jouer au tennis]], [[jouer du violon]], [[jouer de la guitare]].
+
+#examples
+- Je {pense|k} souvent à mes grands-parents. | Tôi hay nghĩ đến ông bà.
+- Qu'est-ce que tu {penses|k} de mon idée ? | Bạn nghĩ sao về ý tưởng của tôi?
+- Je {tiens|k} beaucoup à cette bague, c'était celle de ma grand-mère. | Tôi rất quý chiếc nhẫn này, nó là của bà tôi.
+- Elle {tient|k} de sa mère : elle est très calme. | Cô ấy giống mẹ: rất điềm tĩnh.
+- Mon frère {joue|k} du piano et ma sœur joue au tennis. | Anh tôi chơi piano còn chị tôi chơi quần vợt.
+
+#contrast
+> So sánh từng cặp.
+vs: Je pense à ce voyage. | Tôi đang nghĩ đến chuyến đi này. || penser à: nghĩ đến
+vs: Que penses-tu de ce voyage ? | Bạn thấy chuyến đi này thế nào? || penser de: ý kiến
+vs: Je tiens à venir. | Tôi nhất định muốn đến. || tenir à: nhất định muốn
+vs: Il tient de son grand-père. | Cậu ấy giống ông nội. || tenir de: giống ai
+> Câu hỏi ý kiến luôn dùng [[penser de]]: [[qu'en penses-tu]].
+
+#mistakes
+x: Je manque ma mère. => Ma mère me manque. | Tôi nhớ mẹ. >> Người được nhớ làm chủ ngữ.
+x: Que penses-tu à ce film ? => Que penses-tu de ce film ? | Bạn thấy bộ phim này thế nào? >> Hỏi ý kiến: [[penser de]].
+x: Il joue le piano depuis cinq ans. => Il joue du piano depuis cinq ans. | Anh ấy chơi piano được năm năm. >> Nhạc cụ: [[jouer de]].
+
+#dialogue
+chloe: Et qu'est-ce que tu penses de la vie ici ? | Thế anh thấy cuộc sống ở đây thế nào? [thinking]
+nam: J'aime bien. Je joue au foot le samedi, et j'apprends à jouer de la guitare. | Anh thích lắm. Thứ Bảy anh đá bóng, và anh đang học chơi ghi-ta. [happy]
+chloe: Tu tiens de ton père, non ? Il est musicien. | Anh giống bố anh nhỉ? Bác ấy là nhạc sĩ mà. [happy]
+nam: Exactement ! Et je tiens à lui jouer une chanson quand je rentrerai. | Đúng thế! Và anh nhất định muốn chơi tặng bố một bài khi về nhà. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Bạn nghĩ sao về ý tưởng của tôi? => Qu'est-ce que tu penses de mon idée ? | Bạn nghĩ sao về ý tưởng của tôi?
+? Nói bằng tiếng Pháp: Cô ấy giống mẹ: rất điềm tĩnh. => Elle tient de sa mère : elle est très calme. | Cô ấy giống mẹ: rất điềm tĩnh.
+
+#recap
+> [[Manquer à]]: được ai nhớ; [[manquer de]]: thiếu. [[Penser à]]: nghĩ đến; [[penser de]]: ý kiến về. [[Tenir à]]: quý, nhất định muốn; [[tenir de]]: giống. [[Jouer à]]: thể thao, trò chơi; [[jouer de]]: nhạc cụ.
+
+#practice
+fill: Ma mère ___ manque. | me* / je / m'en || người được nhớ là chủ ngữ.
+fill: Je manque ___ temps. | de* / à / du || thiếu.
+fill: Qu'est-ce que tu penses ___ mon idée ? | de* / à / sur || ý kiến.
+fill: Je pense souvent ___ mes grands-parents. | à* / de / sur || nghĩ đến.
+contrast: Mon frère joue ___ piano. | du* / au || nhạc cụ.
+contrast: Ma sœur joue ___ tennis. | au* / du || thể thao.
+type: Elle ___ de sa mère : elle est très calme. (tenir) | tient || tenir de = giống.
+fix: Je manque ma mère. | Ma mère me manque.* / Je me manque ma mère. / Je manque de ma mère. || người được nhớ là chủ ngữ.
+listen: Mon frère joue du piano et ma sœur joue au tennis. | Mon frère joue du piano et ma sœur joue au tennis.* / Mon frère joue au piano et ma sœur joue du tennis. / Mon frère joue du piano et ma sœur fait du tennis. || du piano, au tennis.

@@ -1,0 +1,65 @@
+=== y-kien-nang-cao
+sum: B1 đã có je pense que + indicatif, je ne pense pas que + subjonctif. B2 thêm: il me semble que + indicatif (tôi thấy là) nhưng il semble que + subjonctif (có vẻ như); il est probable que + indicatif (có lẽ) nhưng il est possible que, il se peut que, il est peu probable que + subjonctif; nul doute que (chắc chắn) + indicatif; câu hỏi đảo (pensez-vous que…, crois-tu que…) + subjonctif.
+form: il me semble que + indicatif | Il me semble qu'il a raison.
+form: il semble que + subjonctif | Il semble que ce soit vrai.
+form: il est probable que + indicatif | Il est probable qu'il viendra.
+form: il se peut que + subjonctif | Il se peut qu'il pleuve.
+cast: karim lea
+bg: office
+words: usine, rumeur, direction, probable
+
+#hook
+lea: Tu as entendu ? Il semble que l'usine doive fermer l'année prochaine. | Anh nghe chưa? Hình như nhà máy sẽ phải đóng cửa vào năm sau. [worried]
+karim: Il me semble que c'est une rumeur. Il est peu probable qu'ils ferment une usine qui marche si bien. | Anh thấy đó chỉ là tin đồn. Khó mà họ đóng một nhà máy đang làm ăn tốt như vậy. [thinking]
+> [[Il semble que]] đi với [[subjonctif]] vì chưa chắc. [[Il me semble que]] là ý kiến riêng, đi với thức thường. [[Il est peu probable que]] đi với [[subjonctif]].
+
+#meaning
+vs: Il me semble qu'il est malade. | Tôi thấy hình như anh ấy ốm. || il me semble que: ý kiến riêng, indicatif
+vs: Il semble qu'il soit malade. | Có vẻ như anh ấy ốm. || il semble que: chưa chắc, subjonctif
+> Chỉ thêm [[me]] mà thức của động từ đổi.
+
+#form
+th: Cụm | Theo sau là
+tb: il me semble que | indicatif
+tb: il semble que | subjonctif
+tb: il est probable que | indicatif
+tb: il est possible que, il se peut que | subjonctif
+tb: il est peu probable que | subjonctif
+tb: nul doute que | indicatif
+> Càng chắc chắn thì càng dùng thức thường. Càng nghi ngờ thì càng dùng [[subjonctif]].
+
+#examples
+- Il {est probable|k} qu'elle arrivera en retard. | Có lẽ cô ấy sẽ đến muộn.
+- Il {se peut|k} qu'il neige demain. | Mai có thể có tuyết.
+- {Nul doute|k} qu'il réussira. | Chắc chắn anh ấy sẽ thành công.
+- Il {semble|k} que personne ne soit au courant. | Có vẻ như chẳng ai biết chuyện.
+- {Pensez|k}-vous que ce soit une bonne idée ? | Anh chị có nghĩ đó là ý hay không?
+
+#mistakes
+x: Il semble qu'il a raison. => Il semble qu'il ait raison. | Có vẻ như anh ấy đúng. >> [[Il semble que]] đi với [[subjonctif]].
+x: Il me semble qu'il soit fatigué. => Il me semble qu'il est fatigué. | Tôi thấy anh ấy mệt. >> [[Il me semble que]] đi với thức thường.
+x: Il est possible qu'il vient ce soir. => Il est possible qu'il vienne ce soir. | Có thể tối nay anh ấy đến. >> [[Il est possible que]] đi với [[subjonctif]].
+
+#dialogue
+lea: Tu crois que la direction dira la vérité ? | Anh có tin ban giám đốc sẽ nói thật không? [thinking]
+karim: Je doute qu'elle dise tout. Mais il est probable qu'il y aura une réunion. | Anh nghi là họ sẽ nói hết. Nhưng có lẽ sẽ có một cuộc họp. [thinking]
+lea: Crois-tu que nous devions nous inquiéter ? | Anh có nghĩ chúng ta nên lo lắng không? [worried]
+karim: Pas encore. Il se peut que ce soit un simple changement d'organisation. | Chưa đâu. Có thể đó chỉ là thay đổi cách tổ chức thôi. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Có lẽ cô ấy sẽ đến muộn. => Il est probable qu'elle arrivera en retard. | Có lẽ cô ấy sẽ đến muộn.
+? Nói bằng tiếng Pháp: Mai có thể có tuyết. => Il se peut qu'il neige demain. | Mai có thể có tuyết.
+
+#recap
+> [[Il me semble que]], [[il est probable que]], [[nul doute que]] đi với thức thường. [[Il semble que]], [[il est possible que]], [[il se peut que]], [[il est peu probable que]] và câu hỏi đảo như [[pensez-vous que]] đi với [[subjonctif]].
+
+#practice
+fill: Il semble qu'il ___ raison. | ait* / a / aura || il semble que + subjonctif.
+fill: Il me semble qu'il ___ fatigué. | est* / soit / sois || ý kiến riêng: indicatif.
+fill: Il est probable qu'il ___ demain. | viendra* / vienne / venir || probable: indicatif.
+fill: Il est peu probable qu'il ___ demain. | vienne* / viendra / vient || peu probable: subjonctif.
+contrast: Il me semble qu'il ___ malade. | est* / soit || indicatif.
+contrast: Il semble qu'il ___ malade. | soit* / est || subjonctif.
+type: Il est possible qu'il ___ (venir) ce soir. | vienne || subjonctif.
+fix: Il semble qu'il a raison. | Il semble qu'il ait raison.* / Il semble qu'il aie raison. / Il semble qu'il aura raison. || subjonctif.
+listen: Nul doute qu'il réussira. | Nul doute qu'il réussira.* / Je doute qu'il réussisse. / Nul ne sait s'il réussira. || nul doute que.

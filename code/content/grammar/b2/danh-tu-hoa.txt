@@ -1,0 +1,64 @@
+=== danh-tu-hoa
+sum: Danh từ hoá = biến động từ, tính từ thành danh từ. Rất hay gặp trong tin tức, thông báo, tiêu đề và văn viết trang trọng: Le magasin ferme lundi → Fermeture du magasin lundi. Hậu tố thường gặp: -tion (construire → la construction), -ment (changer → le changement), -ée (arriver → l'arrivée), -ure (fermer → la fermeture), -age (laver → le lavage), -té (rapide → la rapidité), -eur (lent → la lenteur). Một số danh từ không có hậu tố: partir → le départ, vendre → la vente.
+form: động từ → -tion, -ment, -ée, -ure | augmenter → l'augmentation
+form: tính từ → -té, -eur | rapide → la rapidité
+form: câu → cụm danh từ | Les prix augmentent. → L'augmentation des prix
+form: giống theo hậu tố | -tion, -ée, -ure, -té: cái · -ment, -age: đực
+cast: paul chloe
+bg: village
+words: affiche, fermeture, ouverture, augmentation
+
+#hook
+chloe: Regarde l'affiche : « Fermeture de la piscine pour travaux. Ouverture prévue en mars. » | Xem tấm áp phích kìa: “Bể bơi đóng cửa để sửa chữa. Dự kiến mở lại vào tháng Ba.” [surprised]
+paul: C'est le style des annonces : on transforme les verbes en noms. | Đó là kiểu viết thông báo: người ta biến động từ thành danh từ. [explain]
+> [[Fermer]] thành [[la fermeture]], [[ouvrir]] thành [[l'ouverture]]. Thông báo, tin tức hay dùng danh từ thay cho động từ để câu ngắn và trang trọng hơn.
+
+#meaning
+vs: Les prix augmentent beaucoup. | Giá tăng nhiều. || câu có động từ
+vs: La forte augmentation des prix inquiète les gens. | Việc giá tăng mạnh làm mọi người lo lắng. || danh từ hoá
+> Danh từ hoá cho phép biến cả một ý thành chủ ngữ hoặc bổ ngữ của câu khác.
+
+#form
+th: Hậu tố | Từ gốc | Danh từ
+tb: -tion | construire | la construction
+tb: -ment | changer | le changement
+tb: -ée | arriver | l'arrivée
+tb: -ure | fermer | la fermeture
+tb: -age | laver | le lavage
+tb: -té, -eur | rapide, lent | la rapidité, la lenteur
+> Danh từ đuôi [[-tion]], [[-ée]], [[-ure]], [[-té]] thường là giống cái. Đuôi [[-ment]], [[-age]] thường là giống đực.
+
+#examples
+- L'{arrivée|k} du train est prévue à midi. | Tàu dự kiến đến lúc trưa.
+- La {construction|k} du pont a duré deux ans. | Việc xây cây cầu kéo dài hai năm.
+- Le {départ|k} est fixé à huit heures. | Giờ khởi hành định vào tám giờ.
+- La {lenteur|k} du service m'a énervé. | Phục vụ chậm làm tôi bực mình.
+- On attend la {réponse|k} du directeur. | Chúng tôi đang chờ câu trả lời của giám đốc.
+
+#mistakes
+x: La changement de programme est annoncé. => Le changement de programme est annoncé. | Việc đổi chương trình đã được thông báo. >> Đuôi [[-ment]]: giống đực.
+x: Le fermeture du magasin est à vingt heures. => La fermeture du magasin est à vingt heures. | Cửa hàng đóng cửa lúc hai mươi giờ. >> Đuôi [[-ure]]: giống cái.
+x: L'augmenter des salaires est une bonne nouvelle. => L'augmentation des salaires est une bonne nouvelle. | Việc tăng lương là tin vui. >> Cần danh từ, không dùng nguyên mẫu.
+
+#dialogue
+chloe: Et là : « Ouverture de la nouvelle bibliothèque samedi ». | Còn đây: “Khai trương thư viện mới vào thứ Bảy”. [happy]
+paul: Super ! Après la construction du stade, c'est une bonne nouvelle pour le quartier. | Tuyệt! Sau khi xây xong sân vận động, đây lại là tin vui cho khu phố. [happy]
+chloe: Mais regarde : « Augmentation du prix des transports en janvier ». | Nhưng nhìn này: “Tăng giá vé giao thông vào tháng Một”. [sad]
+paul: Ça, c'est moins drôle. | Cái đó thì chẳng vui chút nào. [sad]
+
+#recall
+? Nói bằng tiếng Pháp: Tàu dự kiến đến lúc trưa. => L'arrivée du train est prévue à midi. | Tàu dự kiến đến lúc trưa.
+? Nói bằng tiếng Pháp: Việc xây cây cầu kéo dài hai năm. => La construction du pont a duré deux ans. | Việc xây cây cầu kéo dài hai năm.
+
+#recap
+> Danh từ hoá biến động từ, tính từ thành danh từ: [[-tion]], [[-ment]], [[-ée]], [[-ure]], [[-age]], [[-té]], [[-eur]]. Hay gặp trong tin tức, thông báo. Nhớ học kèm giống của danh từ.
+
+#practice
+fill: Le train est en retard, son ___ est prévue à midi. | arrivée* / arriver / arrivé || arriver → l'arrivée.
+fill: La ___ du pont a duré deux ans. | construction* / construire / construit || construire → construction.
+fill: On annonce un ___ de programme. | changement* / changer / changé || changer → changement.
+contrast: À quelle heure est ___ fermeture du magasin ? | la* / le || đuôi -ure: giống cái.
+contrast: J'aime beaucoup ___ changement. | ce* / cette || đuôi -ment: giống đực.
+type: La ___ du service m'a énervé. (lent) | lenteur || lent → lenteur.
+fix: L'augmenter des salaires est une bonne nouvelle. | L'augmentation des salaires est une bonne nouvelle.* / L'augmenté des salaires est une bonne nouvelle. / L'augmentement des salaires est une bonne nouvelle. || cần danh từ.
+listen: Le départ est fixé à huit heures. | Le départ est fixé à huit heures.* / Le départ est fixé à huit heures et demie. / On part à huit heures. || le départ.

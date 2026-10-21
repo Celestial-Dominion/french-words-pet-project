@@ -1,0 +1,75 @@
+=== vi-tri-tinh-tu
+sum: Một số tính từ đổi nghĩa khi đứng trước hoặc sau danh từ. Đứng trước thường mang nghĩa bóng, chủ quan; đứng sau mang nghĩa đen, khách quan: un ancien élève (học sinh cũ) / un meuble ancien (đồ cổ); mon cher ami (bạn thân mến) / un sac cher (đắt); ma propre chambre (phòng riêng) / une chambre propre (sạch); un seul enfant (duy nhất) / un enfant seul (một mình); un grand homme (vĩ nhân) / un homme grand (cao); le même jour (cùng ngày) / le jour même (chính ngày đó).
+form: trước danh từ: nghĩa bóng | un ancien professeur
+form: sau danh từ: nghĩa đen | une maison ancienne
+form: propre | ma propre voiture · une voiture propre
+form: seul | un seul ami · un ami seul
+cast: papa linh
+bg: market
+words: meuble, ancien, vendeur, tableau
+
+#hook
+linh: Regarde ce vieux bureau ! C'est un meuble ancien ? | Nhìn cái bàn cũ này kìa! Đồ cổ phải không ạ? [surprised]
+papa: Oui, très ancien. Et tu sais, le vendeur, c'est mon ancien professeur de dessin ! | Ừ, rất cổ. Mà con biết không, người bán là thầy dạy vẽ cũ của bố đấy! [happy]
+> [[Un meuble ancien]]: đồ cổ. [[Mon ancien professeur]]: thầy cũ, người từng dạy. Cùng một tính từ, đổi vị trí là đổi nghĩa.
+
+#meaning
+vs: C'est mon ancien appartement. | Đó là căn hộ cũ của tôi. || trước: cũ, trước đây
+vs: C'est un appartement ancien. | Đó là một căn hộ cổ. || sau: cổ, lâu đời
+> Đứng trước, tính từ thường mang nghĩa bóng. Đứng sau, nó mang nghĩa đen.
+
+#form
+th: Tính từ | Đứng trước | Đứng sau
+tb: ancien | cũ, trước đây | cổ
+tb: cher | thân mến | đắt
+tb: propre | riêng | sạch
+tb: seul | duy nhất | một mình
+tb: grand | vĩ đại | cao
+tb: même | cùng, giống | chính
+> Hai từ hay gặp nhất là [[ancien]] và [[propre]]. Hãy học cả cụm, đừng học từ đơn lẻ.
+
+#examples
+- Mon {cher|k} ami, merci pour ta lettre. | Bạn thân mến, cảm ơn thư của bạn.
+- Elle a acheté une robe {chère|k}. | Cô ấy mua một chiếc váy đắt tiền.
+- J'ai enfin ma {propre|k} chambre ! | Cuối cùng tôi cũng có phòng riêng!
+- C'est le {seul|k} restaurant ouvert le dimanche. | Đó là nhà hàng duy nhất mở cửa chủ nhật.
+- Ce savant était un {grand|k} homme. | Nhà khoa học ấy là một vĩ nhân.
+
+#contrast
+> So sánh từng cặp: chỉ khác vị trí, nghĩa khác hẳn.
+vs: Ma propre chambre est petite. | Phòng riêng của tôi nhỏ. || propre trước: riêng
+vs: Une chambre propre, c'est agréable. | Một căn phòng sạch thật dễ chịu. || propre sau: sạch
+vs: Un seul enfant est venu. | Chỉ có một đứa trẻ đến. || seul trước: duy nhất
+vs: Un enfant seul ne doit pas traverser la rue. | Trẻ em một mình không được qua đường. || seul sau: một mình
+vs: Nous sommes nés le même jour. | Chúng tôi sinh cùng ngày. || même trước: cùng
+vs: Il est parti le jour même. | Anh ấy đi ngay trong ngày hôm đó. || même sau: chính
+> [[Même]] đứng sau danh từ để nhấn mạnh: [[le jour même]], [[ce soir même]].
+
+#mistakes
+x: C'est mon appartement ancien, j'ai déménagé l'an dernier. => C'est mon ancien appartement, j'ai déménagé l'an dernier. | Đó là căn hộ cũ của tôi, tôi đã chuyển đi năm ngoái. >> Nghĩa cũ, trước đây: [[ancien]] đứng trước.
+x: Je veux une propre voiture, pas une sale. => Je veux une voiture propre, pas une sale. | Tôi muốn một chiếc xe sạch, không phải xe bẩn. >> Nghĩa sạch: [[propre]] đứng sau.
+x: C'est un homme grand de l'histoire. => C'est un grand homme de l'histoire. | Ông ấy là một vĩ nhân của lịch sử. >> Nghĩa vĩ đại: [[grand]] đứng trước.
+
+#dialogue
+linh: Et ce tableau ? Il est cher ? | Còn bức tranh này? Đắt không ạ? [thinking]
+papa: C'est le seul tableau que mon ancien professeur ne vend pas. Il l'a peint lui-même. | Đó là bức tranh duy nhất mà thầy cũ của bố không bán. Thầy tự vẽ đấy. [explain]
+linh: Il peint ses propres tableaux ! C'est un vrai artiste. | Thầy tự vẽ tranh của riêng mình! Đúng là nghệ sĩ thật sự. [happy]
+papa: Oui, et un homme très modeste. Mon cher professeur ! | Ừ, và là người rất khiêm tốn. Người thầy thân mến của bố! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Cuối cùng tôi cũng có phòng riêng! => J'ai enfin ma propre chambre ! | Cuối cùng tôi cũng có phòng riêng!
+? Nói bằng tiếng Pháp: Đó là nhà hàng duy nhất mở cửa chủ nhật. => C'est le seul restaurant ouvert le dimanche. | Đó là nhà hàng duy nhất mở cửa chủ nhật.
+
+#recap
+> Một số tính từ đổi nghĩa theo vị trí: [[ancien]], [[cher]], [[propre]], [[seul]], [[grand]], [[même]]. Đứng trước thường mang nghĩa bóng, đứng sau mang nghĩa đen.
+
+#practice
+fill: J'ai déménagé, c'est mon ___ appartement. | ancien* / propre / même || cũ, trước đây.
+fill: Ce château a huit cents ans, c'est un bâtiment ___ . | ancien* / propre / même || cổ.
+fill: Lave-toi les mains, elles ne sont pas ___ ! | propres* / seules / chères || sạch.
+fill: Il n'y a qu'un ___ restaurant ouvert le dimanche. | seul* / même / cher || duy nhất.
+contrast: Il a quitté la ville le jour ___ . | même* / seul || chính ngày đó.
+contrast: Mon ___ ami, merci pour ta lettre. | cher* / propre || thân mến.
+type: Je veux une voiture ___ , pas une sale. | propre || sạch: đứng sau.
+fix: C'est un homme grand de l'histoire. | C'est un grand homme de l'histoire.* / C'est un homme de l'histoire grand. / C'est un grande homme de l'histoire. || vĩ đại: đứng trước.
+listen: Un enfant seul ne doit pas traverser la rue. | Un enfant seul ne doit pas traverser la rue.* / Un seul enfant ne doit pas traverser la rue. / Les enfants seuls ne doivent pas traverser la rue. || un enfant seul.

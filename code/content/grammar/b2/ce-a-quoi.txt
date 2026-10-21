@@ -1,0 +1,64 @@
+=== ce-a-quoi
+sum: Khi không có danh từ cụ thể đứng trước, sau giới từ dùng quoi: ce à quoi je pense (điều tôi nghĩ đến), ce sur quoi on peut compter (điều có thể trông cậy), ce contre quoi il se bat (điều anh ấy chống lại). So sánh: ce que (động từ không có giới từ), ce dont (động từ đi với de). Thành ngữ: avoir de quoi + nguyên mẫu (có đủ để), il n'y a pas de quoi (không có gì).
+form: ce + giới từ + quoi | ce à quoi je pense
+form: ce que / ce dont / ce à quoi | ce que je veux · ce dont j'ai besoin
+form: avoir de quoi + nguyên mẫu | J'ai de quoi payer.
+form: danh từ cụ thể: lequel | le projet auquel je pense
+cast: dr-roux lea
+bg: park
+words: sommeil, compter, attention, prévenir
+
+#hook
+lea: Docteur, qu'est-ce que je dois changer pour mieux dormir ? | Bác sĩ ơi, tôi phải thay đổi gì để ngủ ngon hơn? [thinking]
+dr-roux: Ce à quoi vous devez faire attention, c'est votre téléphone le soir. | Điều chị cần chú ý là cái điện thoại buổi tối. [explain]
+> [[Faire attention à]] cần [[à]]. Không có danh từ cụ thể nên ta nói [[ce à quoi]]: điều mà.
+
+#meaning
+vs: Ce que je veux, c'est dormir. | Điều tôi muốn là được ngủ. || vouloir: không giới từ, ce que
+vs: Ce dont j'ai besoin, c'est du calme. | Điều tôi cần là yên tĩnh. || avoir besoin de: ce dont
+vs: Ce à quoi je pense, c'est mon travail. | Điều tôi đang nghĩ đến là công việc. || penser à: ce à quoi
+> Chọn theo giới từ của động từ: không có giới từ dùng [[ce que]], với [[de]] dùng [[ce dont]], với giới từ khác dùng [[ce à quoi]], [[ce sur quoi]].
+
+#form
+th: Động từ | Cấu trúc
+tb: s'attendre à | ce à quoi je m'attends
+tb: compter sur | ce sur quoi je compte
+tb: se battre contre | ce contre quoi il se bat
+tb: réfléchir à | ce à quoi je réfléchis
+> Với người hoặc danh từ cụ thể, dùng [[qui]] hoặc [[lequel]]: [[le projet auquel je pense]].
+
+#examples
+- Ce n'est pas {ce à quoi|k} je m'attendais. | Đó không phải điều tôi mong đợi.
+- C'est exactement ce {sur quoi|k} je comptais. | Đó đúng là điều tôi trông cậy vào.
+- Dis-moi {ce à quoi|k} tu réfléchis. | Nói cho tôi biết bạn đang suy nghĩ về điều gì.
+- Il reste du pain, on a {de quoi|k} manger. | Còn bánh mì, chúng ta có đủ để ăn.
+- Il n'y a pas {de quoi|k}, c'était un plaisir. | Không có gì, đó là niềm vui của tôi.
+
+#mistakes
+x: C'est ce que je m'attendais. => C'est ce à quoi je m'attendais. | Đó là điều tôi đã đoán trước. >> [[S'attendre à]]: dùng [[ce à quoi]].
+x: Ce dont je compte, c'est ton aide. => Ce sur quoi je compte, c'est ton aide. | Điều tôi trông cậy là sự giúp đỡ của bạn. >> [[Compter sur]]: [[ce sur quoi]].
+x: On a de quoi de manger. => On a de quoi manger. | Chúng ta có đủ để ăn. >> Sau [[de quoi]] là nguyên mẫu, không thêm [[de]].
+
+#dialogue
+lea: Et le café ? C'est ce contre quoi tout le monde me prévient. | Còn cà phê? Đó là thứ ai cũng cảnh báo tôi. [thinking]
+dr-roux: Oui, pas après seize heures. Et le sport, c'est ce sur quoi vous pouvez compter. | Đúng, không uống sau bốn giờ chiều. Còn thể thao là thứ chị có thể trông cậy vào. [explain]
+lea: Merci, docteur, c'est très clair. | Cảm ơn bác sĩ, rất rõ ràng ạ. [happy]
+dr-roux: Il n'y a pas de quoi. Et éteignez ce téléphone ! | Không có gì. Và tắt cái điện thoại đó đi nhé! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Đó không phải điều tôi mong đợi. => Ce n'est pas ce à quoi je m'attendais. | Đó không phải điều tôi mong đợi.
+? Nói bằng tiếng Pháp: Còn bánh mì, chúng ta có đủ để ăn. => Il reste du pain, on a de quoi manger. | Còn bánh mì, chúng ta có đủ để ăn.
+
+#recap
+> Không có danh từ cụ thể: [[ce que]] khi không có giới từ, [[ce dont]] với [[de]], [[ce à quoi]], [[ce sur quoi]] với giới từ khác. [[Avoir de quoi]] với nguyên mẫu: có đủ để.
+
+#practice
+fill: Ce n'est pas ce à ___ je m'attendais. | quoi* / que / qui || giới từ + quoi.
+fill: C'est exactement ce ___ quoi je comptais. | sur* / à / de || compter sur.
+fill: Ce ___ j'ai besoin, c'est du calme. | dont* / que / à quoi || avoir besoin de.
+fill: Ce ___ je veux, c'est dormir. | que* / dont / à quoi || vouloir: không giới từ.
+contrast: C'est ce ___ je m'attendais. | à quoi* / que || s'attendre à.
+contrast: Il reste du pain, on a de ___ manger. | quoi* / que || avoir de quoi.
+type: Dis-moi ce ___ quoi tu réfléchis. | à || réfléchir à.
+fix: Ce dont je compte, c'est ton aide. | Ce sur quoi je compte, c'est ton aide.* / Ce que je compte, c'est ton aide. / Ce à qui je compte, c'est ton aide. || compter sur.
+listen: Ce n'est pas ce à quoi je m'attendais. | Ce n'est pas ce à quoi je m'attendais.* / Ce n'est pas ce que j'attendais. / C'est ce à quoi je m'attendais. || ce à quoi.

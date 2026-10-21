@@ -1,0 +1,64 @@
+=== so-sanh-nang-cao
+sum: B1 đã có de plus en plus, plus… plus, deux fois plus. B2 thêm: bien / beaucoup + so sánh để nhấn mạnh (bien plus cher), de loin + so sánh nhất (de loin le meilleur), d'autant plus / moins que (càng… vì), le moindre (nhỏ nhất, chút nào: je n'ai pas la moindre idée), pire / le pire (tệ hơn, tệ nhất), plus que jamais (hơn bao giờ hết).
+form: bien / beaucoup + plus, moins | C'est bien plus grand.
+form: de loin + so sánh nhất | C'est de loin le meilleur.
+form: d'autant plus… que | Je suis d'autant plus content que c'est gratuit.
+form: le moindre | Il n'y a pas le moindre bruit.
+cast: ines paul
+bg: supermarket
+words: fromage, village, dépenser, moindre
+
+#hook
+ines: Ce fromage est bien plus cher que l'autre. | Loại phô mai này đắt hơn hẳn loại kia. [surprised]
+paul: Oui, mais c'est de loin le meilleur du magasin. Et je l'aime d'autant plus qu'il vient de mon village ! | Ừ, nhưng nó ngon nhất cửa hàng, bỏ xa các loại khác. Và anh càng thích vì nó đến từ làng anh! [happy]
+> [[Bien plus cher]]: đắt hơn nhiều. [[De loin le meilleur]]: ngon nhất, bỏ xa các loại khác. [[D'autant plus que]]: càng thích hơn vì có thêm lý do.
+
+#meaning
+vs: Ce vin est plus cher. | Rượu này đắt hơn. || so sánh thường
+vs: Ce vin est bien plus cher. | Rượu này đắt hơn nhiều. || bien: nhấn mạnh
+> [[Bien]], [[beaucoup]], [[encore]] đứng trước [[plus]], [[moins]] để nhấn mạnh mức độ.
+
+#form
+th: Cấu trúc | Nghĩa | Ví dụ
+tb: bien plus, beaucoup moins | hơn, kém nhiều | bien plus grand
+tb: de loin le plus | nhất, bỏ xa | de loin le plus beau
+tb: d'autant plus que | càng… vì | d'autant plus content que
+tb: le moindre | nhỏ nhất, chút nào | pas le moindre bruit
+tb: pire, le pire | tệ hơn, tệ nhất | le pire jour
+> [[Mauvais]] có hai dạng so sánh: [[plus mauvais]] và [[pire]]. [[Pire]] mạnh hơn, hay dùng cho điều tồi tệ.
+
+#examples
+- Ce film est {de loin|k} le plus drôle de l'année. | Bộ phim này hài nhất năm, bỏ xa các phim khác.
+- Je n'ai pas la {moindre|k} idée. | Tôi chẳng có chút ý tưởng nào.
+- La situation est {pire|k} qu'hier. | Tình hình còn tệ hơn hôm qua.
+- Il faut partir tôt, {d'autant plus|k} qu'il va pleuvoir. | Phải đi sớm, nhất là vì trời sắp mưa.
+- Aujourd'hui, j'ai besoin de toi plus que {jamais|k}. | Hôm nay tôi cần bạn hơn bao giờ hết.
+
+#mistakes
+x: C'est très plus cher. => C'est bien plus cher. | Nó đắt hơn nhiều. >> Không dùng [[très]] trước [[plus]]: dùng [[bien]] hoặc [[beaucoup]].
+x: C'est le plus pire jour de ma vie. => C'est le pire jour de ma vie. | Đó là ngày tệ nhất đời tôi. >> [[Pire]] đã là so sánh, không thêm [[plus]].
+x: Il n'a pas fait la moindre effort. => Il n'a pas fait le moindre effort. | Anh ấy không cố gắng chút nào. >> [[Effort]] giống đực: [[le moindre]].
+
+#dialogue
+ines: Bon, on le prend. Et pour le vin ? | Thôi, mình lấy nó. Còn rượu thì sao? [thinking]
+paul: Celui-ci est beaucoup moins cher, mais il n'est pas pire que les autres. | Chai này rẻ hơn nhiều, mà cũng không tệ hơn các chai khác. [explain]
+ines: Parfait, d'autant plus qu'on a déjà dépensé beaucoup ! | Tuyệt, nhất là mình đã tiêu khá nhiều rồi! [happy]
+paul: Et ce soir, je cuisine mieux que jamais, promis ! | Tối nay anh sẽ nấu ngon hơn bao giờ hết, hứa đấy! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi chẳng có chút ý tưởng nào. => Je n'ai pas la moindre idée. | Tôi chẳng có chút ý tưởng nào.
+? Nói bằng tiếng Pháp: Tình hình còn tệ hơn hôm qua. => La situation est pire qu'hier. | Tình hình còn tệ hơn hôm qua.
+
+#recap
+> Nhấn mạnh so sánh: [[bien plus]], [[beaucoup moins]], [[de loin le meilleur]]. Thêm lý do: [[d'autant plus que]]. [[Le moindre]]: nhỏ nhất, chút nào. [[Pire]]: tệ hơn. [[Plus que jamais]]: hơn bao giờ hết.
+
+#practice
+fill: C'est ___ plus cher. | bien* / très / trop || nhấn mạnh: bien.
+fill: Ce film est de ___ le plus drôle de l'année. | loin* / plus / bien || de loin.
+fill: Je n'ai pas la ___ idée. | moindre* / moins / pire || le moindre.
+fill: La situation est ___ qu'hier. | pire* / plus pire / mauvaise || pire.
+contrast: C'est le ___ jour de ma vie. | pire* / plus pire || pire.
+fill: Il faut partir tôt, d'autant ___ qu'il va pleuvoir. | plus* / mieux / pire || d'autant plus que.
+type: Aujourd'hui, j'ai besoin de toi plus que ___ . | jamais || plus que jamais.
+fix: C'est très plus cher. | C'est bien plus cher.* / C'est trop plus cher. / C'est très plus chère. || bien plus.
+listen: Il faut partir tôt, d'autant plus qu'il va pleuvoir. | Il faut partir tôt, d'autant plus qu'il va pleuvoir.* / Il faut partir tôt, parce qu'il va pleuvoir. / Il faut partir plus tôt, s'il va pleuvoir. || d'autant plus que.

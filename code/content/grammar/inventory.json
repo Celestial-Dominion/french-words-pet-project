@@ -1552,6 +1552,84 @@
     "conjunctions-a2"
    ],
    "pri": 1
+  },
+  {
+   "id": "opinion-b2",
+   "lv": "b2",
+   "cat": "clauses",
+   "name": "Opinion et probabilité (B2)",
+   "vi": "Ý kiến, khả năng B2: il me semble que + indicatif nhưng il semble que + subjonctif; il est probable que + indicatif, il est possible / peu probable que + subjonctif; nul doute que, je doute que; câu hỏi đảo (pensez-vous que…) + subjonctif",
+   "pre": [
+    "opinion-mood"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "nominalisation",
+   "lv": "b2",
+   "cat": "nouns",
+   "name": "Nominalisation",
+   "vi": "Danh từ hoá: biến động từ, tính từ thành danh từ để viết gọn, trang trọng (arriver → l'arrivée, construire → la construction, augmenter → l'augmentation, lent → la lenteur); hậu tố -tion, -ment, -ée, -ure, -age, -té, -eur",
+   "pre": [
+    "noun-gender"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "adj-position-meaning",
+   "lv": "b2",
+   "cat": "adjectives",
+   "name": "Adjectifs qui changent de sens",
+   "vi": "Tính từ đổi nghĩa theo vị trí: un ancien élève (cũ) / un meuble ancien (cổ), mon cher ami (thân mến) / un sac cher (đắt), ma propre chambre (riêng) / une chambre propre (sạch), un seul enfant / un enfant seul, le même jour / le jour même, un grand homme / un homme grand",
+   "pre": [
+    "adj-position"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "verb-prep-meaning",
+   "lv": "b2",
+   "cat": "verbs",
+   "name": "Verbes à sens variable",
+   "vi": "Động từ đổi nghĩa theo giới từ: manquer à (nhớ ai) / manquer de (thiếu), penser à (nghĩ đến) / penser de (có ý kiến về), tenir à (quý, nhất định muốn) / tenir de (giống ai), jouer à (chơi thể thao, trò chơi) / jouer de (chơi nhạc cụ), décider de / se décider à",
+   "pre": [
+    "verb-a-de-inf"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "comparison-b2",
+   "lv": "b2",
+   "cat": "comparison",
+   "name": "Comparaison (B2)",
+   "vi": "So sánh B2: d'autant plus / moins que (càng… vì), de loin, bien / beaucoup + so sánh, de plus en plus, le moindre, pire / le pire, plus que jamais, autant… autant",
+   "pre": [
+    "comparison-b1"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "relative-quoi",
+   "lv": "b2",
+   "cat": "relative",
+   "name": "Ce à quoi, ce sur quoi, de quoi",
+   "vi": "Đại từ quan hệ quoi sau giới từ, khi không có danh từ cụ thể: ce à quoi je pense, ce sur quoi on compte, ce contre quoi il se bat; avoir de quoi + nguyên mẫu (có đủ để)",
+   "pre": [
+    "ce-qui-ce-que",
+    "relative-lequel"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "dislocation",
+   "lv": "b2",
+   "cat": "sentence",
+   "name": "Dislocation",
+   "vi": "Nhấn mạnh bằng cách tách thành phần ra đầu hoặc cuối câu, nhắc lại bằng đại từ: Ce film, je l'ai adoré. Moi, je reste. Il est beau, ton manteau. Ce qui me plaît, c'est le calme.",
+   "pre": [
+    "cleft"
+   ],
+   "pri": 1
   }
  ],
  "probes": [

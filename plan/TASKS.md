@@ -35,7 +35,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | chưa làm |
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
-| G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | đang làm: lô 3 xong (21/32 bài) |
+| G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | đang làm: lô 4 xong (28/32 bài) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | chưa làm |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | chưa làm |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
@@ -173,6 +173,7 @@ câu hỏi gián tiếp (ce que, si, où).
   - 21/10 lô 1: 7 bài (subjonctif passé, conditionnel passé, si + plus-que-parfait, futur antérieur, tương lai trong quá khứ, lời nói gián tiếp ở quá khứ, nguyên mẫu quá khứ) + 7 điểm inventory; 95/95 bài xuất bản, 0 lỗi; 5 giờ 10% · tuần 8% lúc bắt đầu; df739c9
   - 21/10 lô 2: 7 bài (participe présent và tính từ -ant, cụm phân từ đầu câu, faire / laisser + nguyên mẫu, bị động nâng cao, hợp phân từ nâng cao, lequel / auquel / duquel, le / en / y thay cả một ý) + 8 điểm inventory; 102/102 bài, 0 lỗi; 5 giờ 12% · tuần 9% sau lô 1; 0e6c0e0
   - 21/10 lô 3: 7 bài (nhượng bộ quoique / avoir beau, giả thiết au cas où / à condition que, liên từ thời gian B2, ne explétif, nguyên nhân B2, kết quả / mục đích B2, từ nối lập luận) + 7 điểm inventory; 109/109 bài, 0 lỗi; 5 giờ 13% · tuần 9% sau lô 2; f265c14
+  - 21/10 lô 4: 7 bài (ý kiến và khả năng nâng cao, danh từ hoá, tính từ đổi nghĩa theo vị trí, động từ đổi nghĩa theo giới từ, so sánh nâng cao, ce à quoi / ce sur quoi, nhấn mạnh bằng cách tách thành phần) + 7 điểm inventory; 116/116 bài, 0 lỗi; 5 giờ 14% · tuần 9% sau lô 3; COMMIT
 
 ### G-C1 — Ngữ pháp C1 [ ] (app Anh 30 bài)
 
