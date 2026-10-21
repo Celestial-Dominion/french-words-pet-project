@@ -312,10 +312,10 @@ sorte que, à force de, tant et si bien que).
 - **Nhật ký:**
   - 21/10 lô 1: đổi cấp 136 từ; bỏ 38 gloss thừa (21 file); nâng mật độ B1 2 · B2 36+4 truyện · C1 35+5 · C2 8+4 bài
     (thêm 2–5 từ đúng cấp/bài, tách 2 câu quá dài), cập nhật trích dẫn quiz; audio 154 câu mới. Bộ kiểm B1–C2 0 lỗi
-    0 cảnh báo; A1/A2 = mốc cũ (174/74 cảnh báo). 5 giờ 4% · tuần 17%; COMMIT1
+    0 cảnh báo; A1/A2 = mốc cũ (174/74 cảnh báo). 5 giờ 4% · tuần 17%; 839f43e
   - 21/10 lô 2: 10 bài A1 (a1-p04, 3 câu hỏi/bài, audio 230 câu), giỏ a1-s04a…j + từ mới xuống A1 (internet, mail,
     nationalité, arrondissement, camping, tourisme, apéritif, belge…); A1 ≥1 95,0→99,6 ✓ · ≥3 86,5→90,0 ✓ · ≥5 62,8→65,1 ✓;
-    thiếu 73→0; COMMIT1
+    thiếu 73→0; 839f43e
 - **Còn lại:** A2 bù độ phủ (≥1 93,6/97 · ≥3 76,6/80, thiếu 85: lô a2-p05 như P-A2); câu ví dụ của 122 từ xuống cấp (đo từ
   vượt cấp mới, viết lại câu quá khó: `scripts/out/examples.json` + audio + shard); pha 2 (lệch 2 cấp, ~1.200 từ) chỉ khi
   người dùng muốn — chia lô theo cấp, mỗi lô sửa bài như trên.
