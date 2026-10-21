@@ -205,7 +205,7 @@ sắc thái (ne pas laisser de, ne pas manquer de, il n'empêche que) · câu c�
 học thuật (force est de, nonobstant, d'aucuns) · nguyên mẫu danh từ hoá (le savoir-faire) · cấu trúc cố định (faire en
 sorte que, à force de, tant et si bien que).
 - **Nhật ký:**
-  - 21/10 lô 1: 7 bài (câu điều kiện văn chương, đảo ngữ văn chương, lời gián tiếp tự do, cảm thán và câu hỏi tu từ, phủ định mang nghĩa khẳng định, động từ cổ trong cụm cố định, nhượng bộ C2) + 7 điểm inventory; 153/153 bài, 0 lỗi; 5 giờ 19% · tuần 10% trước lô; COMMIT
+  - 21/10 lô 1: 7 bài (câu điều kiện văn chương, đảo ngữ văn chương, lời gián tiếp tự do, cảm thán và câu hỏi tu từ, phủ định mang nghĩa khẳng định, động từ cổ trong cụm cố định, nhượng bộ C2) + 7 điểm inventory; 153/153 bài, 0 lỗi; 5 giờ 19% · tuần 10% trước lô; 8a246a1
 
 ---
 
