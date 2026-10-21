@@ -110,7 +110,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
   - Rồi `sbanks c2 08 --write` (6 truyện, `st-08.txt`), cuối cùng `sbanks c2 09 --n 1 --write` (1 truyện, `st-09.txt`).
 - **Nhật ký:**
   - 21/10 lô 07 (phần còn lại): 3 truyện (st-c2-les-croutons-d-anselme, la-parure-de-solange, le-carnet-de-lucienne; giỏ s07d/e/f 14+16+16/16), 45 câu hỏi; C2 42 truyện, 0 lỗi 0 cảnh báo; ≥3 69,2→70,6 · ≥5 30,8→31,2; giờ 16,2→16,6; 5 giờ 32% · tuần 12% trước lô; 143cef3
-  - 21/10 lô 08: 6 truyện (st-c2-la-garde-de-yasmina, la-quincaillerie-de-vittorio, les-tourtereaux-du-papet, le-filleul-du-majordome, la-bique-de-mihai, l-horloger-de-besancon; giỏ s08a–f 16+16+16+16+12+16/16, s08e bỏ 4 từ rác), 90 câu hỏi có audio (718 câu); C2 48 truyện, 0 lỗi 0 cảnh báo; ≥3 70,6→75,0 · ≥5 31,2→31,8; giờ 16,6→17,4; 5 giờ 2% · tuần 12% giữa lô; giỏ lô 09 (s09a) đã sinh; COMMIT
+  - 21/10 lô 08: 6 truyện (st-c2-la-garde-de-yasmina, la-quincaillerie-de-vittorio, les-tourtereaux-du-papet, le-filleul-du-majordome, la-bique-de-mihai, l-horloger-de-besancon; giỏ s08a–f 16+16+16+16+12+16/16, s08e bỏ 4 từ rác), 90 câu hỏi có audio (718 câu); C2 48 truyện, 0 lỗi 0 cảnh báo; ≥3 70,6→75,0 · ≥5 31,2→31,8; giờ 16,6→17,4; 5 giờ 2% · tuần 12% giữa lô; giỏ lô 09 (s09a) đã sinh; 8fd86b0
 
 ## S-C1 — Truyện C1 cho đủ 67 (tùy chọn, sau P-C1) [ ]
 
