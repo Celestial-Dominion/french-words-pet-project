@@ -38,7 +38,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | chưa làm |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | chưa làm |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | chưa làm |
-| G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | đang làm: lô 2 xong (13/34 bài) |
+| G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | đang làm: lô 3 xong (20/34 bài) |
 
 Cộng (còn lại, sau P-A1): bắt buộc ~13,5% (độ phủ ~3,5% + ngữ pháp ~10%) · tùy chọn ~8% · tất cả ~21–22% tuần.
 Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì bài cấp trên dựa vào bài cấp dưới (trường `pre`).
@@ -152,6 +152,7 @@ mieux / meilleur) · avant de + inf, après avoir + phân từ · bày tỏ ý k
 - **Nhật ký:**
   - 21/10 lô 1: 6 bài (plus-que-parfait, ke-chuyen-qua-khu, dang-sap-vua, tuong-lai-b1, conditionnel-present, si-imparfait) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; soát 390 px + desktop; danh sách 34 bài B1 ở `plan/.progress-G-B1.md`; 5 giờ 5% · tuần 7%; ed1c5a9
   - 21/10 lô 2: 7 bài (subjonctif-cach-chia, subjonctif-il-faut-que, subjonctif-cam-xuc, y-kien-penser-que, hop-phan-tu, bi-dong, gerondif) + 8 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng/công thức 390 px; 5 giờ 6% · tuần 8%; 4b262b1
+  - 21/10 lô 3: 7 bài (hai-dai-tu, dai-tu-menh-lenh, y-en-dong-tu, celui-celle, le-mien, dont, ce-qui-ce-que) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~2,5 phút; soát khung bảng 390 px; 5 giờ 8% · tuần 9%; COMMIT
 
 ### G-B2 — Ngữ pháp B2 [ ] (app Anh 36 bài)
 

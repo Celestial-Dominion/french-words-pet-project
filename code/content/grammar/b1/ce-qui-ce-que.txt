@@ -1,0 +1,69 @@
+=== ce-qui-ce-que
+sum: Ce qui, ce que, ce dont nghĩa là “điều mà, thứ mà”, dùng khi không có danh từ cụ thể phía trước. Ce qui làm chủ ngữ (ce qui me plaît), ce que làm bổ ngữ trực tiếp (ce que je veux), ce dont thay cho phần có de (ce dont j'ai besoin). Hay gặp trong câu nhấn mạnh (Ce que j'aime, c'est…) và câu gián tiếp (Dis-moi ce que tu veux).
+form: ce qui + động từ | Ce qui me plaît, c'est le calme.
+form: ce que + chủ ngữ + động từ | Je ne sais pas ce que tu veux.
+form: ce dont + chủ ngữ + động từ đi với de | C'est ce dont j'ai besoin.
+form: nhấn mạnh: Ce que…, c'est… | Ce que j'aime, c'est la mer.
+cast: maman lucas
+bg: supermarket
+words: plaire, inquiéter, besoin, passer
+
+#hook
+maman: Dis-moi ce que tu veux pour ton anniversaire. | Nói cho mẹ biết con muốn gì cho sinh nhật. [happy]
+lucas: Ce qui me ferait plaisir, c'est un nouveau vélo ! | Thứ làm con vui nhất là một chiếc xe đạp mới! [happy]
+> Trước [[que]], [[qui]] không có danh từ cụ thể nào, nên ta thêm [[ce]]: [[ce que tu veux]], [[ce qui me ferait plaisir]].
+
+#meaning
+vs: Je veux le gâteau que tu as fait. | Tôi muốn cái bánh bạn làm. || có danh từ: que
+vs: Je veux ce que tu as fait. | Tôi muốn thứ bạn đã làm. || không có danh từ: ce que
+> [[Ce]] đứng ở vị trí của danh từ, nghĩa là điều đó, thứ đó.
+
+#form
+th: Dạng | Vai trò | Ví dụ
+tb: ce qui | chủ ngữ | ce qui se passe
+tb: ce que | bổ ngữ trực tiếp | ce que je pense
+tb: ce dont | phần có de | ce dont tu parles
+> Cách chọn giống bài trước: xem phía sau thiếu chủ ngữ, thiếu bổ ngữ trực tiếp hay thiếu phần có [[de]].
+f: [ce qui, ce que] + mệnh đề + c'est + danh từ
+> Mẫu nhấn mạnh này rất hay gặp khi nói về sở thích, ý kiến.
+
+#examples
+- Je ne comprends pas {ce qui|k} se passe. | Tôi không hiểu chuyện gì đang xảy ra.
+- {Ce que|k} j'aime, c'est la mer. | Thứ tôi thích là biển.
+- Prends {ce dont|k} tu as besoin. | Cứ lấy những gì bạn cần.
+- Tout {ce que|k} tu dis est vrai. | Mọi điều bạn nói đều đúng.
+- {Ce qui|k} m'inquiète, c'est le prix. | Điều làm tôi lo là giá cả.
+
+#real
+> Trong câu gián tiếp, [[qu'est-ce que]] và [[qu'est-ce qui]] đổi thành [[ce que]], [[ce qui]].
+vs: Qu'est-ce que tu veux ? | Bạn muốn gì? || câu hỏi trực tiếp
+vs: Dis-moi ce que tu veux. | Nói cho tôi biết bạn muốn gì. || câu gián tiếp
+> Mẫu này sẽ gặp lại trong bài lời nói gián tiếp.
+
+#mistakes
+x: Je ne sais pas qu'est-ce que tu veux. => Je ne sais pas ce que tu veux. | Tôi không biết bạn muốn gì. >> Trong câu gián tiếp, dùng [[ce que]].
+x: Ce que me plaît, c'est le calme. => Ce qui me plaît, c'est le calme. | Điều tôi thích là sự yên tĩnh. >> [[Ce qui]] làm chủ ngữ của [[plaît]].
+x: C'est ce que j'ai besoin. => C'est ce dont j'ai besoin. | Đó là thứ tôi cần. >> [[Avoir besoin de]] nên dùng [[ce dont]].
+
+#dialogue
+lucas: Maman, tu sais ce qui coûte cher ici ? Les céréales ! | Mẹ ơi, mẹ biết cái gì đắt ở đây không? Ngũ cốc đấy! [surprised]
+maman: Prends seulement ce dont on a besoin pour la semaine. | Chỉ lấy những gì nhà mình cần cho tuần này thôi. [explain]
+lucas: D'accord. Mais ce que je préfère, c'est le rayon des gâteaux... | Vâng. Nhưng chỗ con thích nhất là quầy bánh ngọt... [happy]
+maman: Je sais très bien ce que tu penses. Non ! | Mẹ biết thừa con đang nghĩ gì. Không được! [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi không hiểu chuyện gì đang xảy ra. => Je ne comprends pas ce qui se passe. | Tôi không hiểu chuyện gì đang xảy ra.
+? Nói bằng tiếng Pháp: Thứ tôi thích là biển. => Ce que j'aime, c'est la mer. | Thứ tôi thích là biển.
+
+#recap
+> [[Ce qui]] làm chủ ngữ, [[ce que]] làm bổ ngữ trực tiếp, [[ce dont]] thay cho phần có [[de]]. Dùng khi không có danh từ cụ thể, trong câu nhấn mạnh và câu gián tiếp.
+
+#practice
+contrast: Je ne comprends pas ___ se passe. | ce qui* / ce que || thiếu chủ ngữ → ce qui.
+contrast: Je ne sais pas ___ tu veux. | ce que* / ce qui || thiếu bổ ngữ → ce que.
+fill: Prends ___ tu as besoin. | ce dont* / ce que / ce qui || avoir besoin de → ce dont.
+fill: ___ m'inquiète, c'est le prix. | Ce qui* / Ce que / Ce dont || chủ ngữ của inquiète.
+fill: ___ j'aime, c'est la mer. | Ce que* / Ce qui / Ce dont || aimer quelque chose → ce que.
+fix: Je ne sais pas qu'est-ce que tu veux. | Je ne sais pas ce que tu veux.* / Je ne sais pas ce qui tu veux. / Je ne sais pas que tu veux. || câu gián tiếp → ce que.
+order: Tout / ce / que / tu / dis / est / vrai. | Mọi điều bạn nói đều đúng.
+listen: Ce qui m'inquiète, c'est le prix. | Ce qui m'inquiète, c'est le prix.* / Ce que j'inquiète, c'est le prix. / Ce qui m'intéresse, c'est le prix. || ce qui: chủ ngữ.

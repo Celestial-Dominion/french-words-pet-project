@@ -1,0 +1,75 @@
+=== celui-celle
+sum: Celui (giống đực số ít), celle (giống cái số ít), ceux (đực số nhiều), celles (cái số nhiều) thay cho một danh từ đã nhắc để khỏi lặp lại. Chúng không đứng một mình: phía sau luôn có -ci / -là (celui-ci, celle-là), de + danh từ (celle de ma sœur) hoặc qui / que (ceux qui travaillent).
+form: celui, celle, ceux, celles | thay cho danh từ đã nhắc
+form: + -ci / -là | Je préfère celle-ci.
+form: + de + danh từ | Ce n'est pas ma voiture, c'est celle de mon oncle.
+form: + qui / que | Ceux qui veulent venir sont les bienvenus.
+cast: lea nam
+bg: market
+words: préférer, choisir, pomme, fraise
+
+#hook
+lea: Quelles pommes tu veux ? Celles-ci ou celles-là ? | Anh muốn lấy táo nào? Chỗ này hay chỗ kia? [thinking]
+nam: Celles-là, les rouges. Ce sont celles que ma mère achète toujours. | Chỗ kia, táo đỏ ấy. Đó là loại mẹ anh luôn mua. [happy]
+> Thay vì lặp lại [[les pommes]], ta dùng [[celles]]: [[celles-ci]], [[celles-là]], [[celles que]]. Từ này đổi theo giống và số của danh từ.
+
+#meaning
+vs: Je préfère cette robe-ci à cette robe-là. | Tôi thích cái váy này hơn cái váy kia. || lặp danh từ
+vs: Je préfère celle-ci à celle-là. | Tôi thích cái này hơn cái kia. || dùng đại từ
+> Câu thứ hai gọn hơn, vì người nghe đã biết ta đang nói về cái váy.
+
+#form
+th: Giống | Số ít | Số nhiều
+tb: giống đực | celui | ceux
+tb: giống cái | celle | celles
+> [[Celui]], [[celle]], [[ceux]], [[celles]] không bao giờ đứng một mình. Phía sau luôn có thêm một thành phần.
+f: [celui, celle, ceux, celles] + [-ci, -là, de, qui, que]
+> [[Ci]] chỉ cái gần, [[là]] chỉ cái xa hơn. Trong văn nói, người Pháp hay dùng [[là]] cho cả hai.
+
+#examples
+- Ce n'est pas mon téléphone, c'est {celui|k} de mon frère. | Đây không phải điện thoại của tôi, là của anh tôi.
+- Les meilleures places sont {celles|k} du premier rang. | Chỗ tốt nhất là chỗ ở hàng đầu.
+- {Ceux|k} qui ont fini peuvent partir. | Ai làm xong rồi thì có thể về.
+- Ce film est {celui|k} que je préfère. | Bộ phim này là bộ tôi thích nhất.
+- J'hésite entre deux vestes. Tu préfères {celle-ci|k} ou {celle-là|k} ? | Tôi đang phân vân giữa hai chiếc áo khoác. Bạn thích cái này hay cái kia?
+
+#contrast
+> Đừng nhầm với tính từ chỉ định [[ce]], [[cette]], [[ces]]: chúng luôn đi kèm danh từ.
+vs: Cette robe est jolie. | Cái váy này đẹp. || cette + danh từ
+vs: Celle-ci est jolie. | Cái này đẹp. || celle thay cho danh từ
+> [[Cette]] đứng trước danh từ, còn [[celle]] thay hẳn cho danh từ.
+
+#pronunciation
+pron: celui-ci | celui-ci | səlɥisi
+pron: celle-là | celle-là | sɛlla
+pron: ceux | ceux | sø
+> [[Ceux]] đọc giống [[ce]] nhưng kéo dài, môi tròn. [[Celle]] và [[celles]] đọc giống nhau.
++ Ceux-là sont trop chers. | Mấy cái kia đắt quá.
+
+#mistakes
+x: Je préfère celle. => Je préfère celle-ci. | Tôi thích cái này hơn. >> [[Celle]] không đứng một mình, cần thêm [[ci]] hoặc [[là]].
+x: Ce n'est pas ma voiture, c'est celui de mon oncle. => Ce n'est pas ma voiture, c'est celle de mon oncle. | Đây không phải xe của tôi, là xe của chú tôi. >> [[Voiture]] giống cái nên dùng [[celle]].
+x: Quel gâteau tu veux ? Ce-ci ? => Quel gâteau tu veux ? Celui-ci ? | Bạn muốn bánh nào? Cái này à? >> Đại từ là [[celui-ci]], không có dạng [[ce]] với [[ci]].
+
+#dialogue
+nam: Et pour le dessert ? On prend ces fraises ou celles du marchand d'à côté ? | Còn món tráng miệng? Mình lấy dâu này hay dâu của người bán bên cạnh? [thinking]
+lea: Celles d'à côté sont moins chères, mais celles-ci sont plus belles. | Dâu bên cạnh rẻ hơn, nhưng dâu này đẹp hơn. [explain]
+nam: Prenons celles-ci. Ceux qui viennent ce soir méritent le meilleur ! | Lấy dâu này đi. Những người tối nay đến xứng đáng được ăn ngon nhất! [happy]
+lea: D'accord. Et je prends aussi ce fromage, celui que ton père aime. | Ừ. Em lấy thêm miếng phô mai này, loại bố anh thích. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Ai làm xong rồi thì có thể về. => Ceux qui ont fini peuvent partir. | Ai làm xong rồi thì có thể về.
+? Nói bằng tiếng Pháp: Đây không phải điện thoại của tôi, là của anh tôi. => Ce n'est pas mon téléphone, c'est celui de mon frère. | Đây không phải điện thoại của tôi, là của anh tôi.
+
+#recap
+> [[Celui]], [[celle]], [[ceux]], [[celles]] thay cho danh từ đã nhắc, theo giống và số của danh từ đó. Phía sau luôn có [[ci]] hoặc [[là]], [[de]], hay [[qui]], [[que]].
+
+#practice
+fill: Ce n'est pas mon téléphone, c'est ___ de mon frère. | celui* / celle / ce || téléphone: giống đực số ít.
+fill: Les meilleures places sont ___ du premier rang. | celles* / ceux / celle || places: giống cái số nhiều.
+fill: ___ qui ont fini peuvent partir. | Ceux* / Celui / Ce || số nhiều, nói chung.
+contrast: J'aime ___ robe. | cette* / celle || trước danh từ → cette.
+contrast: Quelle robe ? Moi, j'aime ___ . | celle-ci* / cette-ci || thay danh từ → celle-ci.
+type: Ce film est ___ que je préfère. | celui || film: giống đực số ít.
+fix: Je préfère celle. | Je préfère celle-ci.* / Je préfère cette. / Je préfère celle-que. || celle cần -ci / -là.
+listen: Ceux-là sont trop chers. | Ceux-là sont trop chers.* / Celle-là est trop chère. / Ce sont trop chers. || ceux: số nhiều.

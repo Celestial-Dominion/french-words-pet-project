@@ -782,6 +782,83 @@
     "gerondif"
    ],
    "find": "(?<![\\p{L}'])en \\p{L}+ant(?![\\p{L}])"
+  },
+  {
+   "id": "hai-dai-tu",
+   "lv": "b1",
+   "cat": "pronouns",
+   "t": "Hai đại từ trong một câu",
+   "en": "je te le donne · je le lui dis · il y en a",
+   "pts": [
+    "double-pronouns"
+   ],
+   "find": "(?<![\\p{L}'])(me|te|se|nous|vous) (le|la|les)(?![\\p{L}])|(?<![\\p{L}'])(le|la|les) (lui|leur)(?![\\p{L}])|(?<![\\p{L}'])y en(?![\\p{L}])"
+  },
+  {
+   "id": "dai-tu-menh-lenh",
+   "lv": "b1",
+   "cat": "pronouns",
+   "t": "Đại từ với câu mệnh lệnh",
+   "en": "donne-le-moi · vas-y · ne me le dis pas",
+   "pts": [
+    "imperative-pronouns"
+   ],
+   "find": "\\p{L}+-(le|la|les|moi|toi|lui|leur|y|en)(?![\\p{L}])"
+  },
+  {
+   "id": "y-en-dong-tu",
+   "lv": "b1",
+   "cat": "pronouns",
+   "t": "Y và en với động từ đi cùng à, de",
+   "en": "j'y pense · j'en parle · je pense à lui",
+   "pts": [
+    "y-en-verbs"
+   ],
+   "find": "(?<![\\p{L}'])j'(y|en) \\p{L}+|(?<![\\p{L}'])(à|de) (lui|elle|eux|elles)(?![\\p{L}])"
+  },
+  {
+   "id": "celui-celle",
+   "lv": "b1",
+   "cat": "pronouns",
+   "t": "Đại từ chỉ định: celui, celle, ceux, celles",
+   "en": "celui-ci · celle de ma sœur · ceux qui",
+   "pts": [
+    "demonstrative-pronouns"
+   ],
+   "find": "(?<![\\p{L}'])(celui|celle|ceux|celles)(?![\\p{L}])"
+  },
+  {
+   "id": "le-mien",
+   "lv": "b1",
+   "cat": "pronouns",
+   "t": "Đại từ sở hữu: le mien, le tien…",
+   "en": "c'est le mien · la tienne · les leurs",
+   "pts": [
+    "possessive-pronouns"
+   ],
+   "find": "(?<![\\p{L}'])(le|la|les) (mien|mienne|miens|miennes|tien|tienne|tiens|tiennes|sien|sienne|siens|siennes|nôtre|nôtres|vôtre|vôtres)(?![\\p{L}])|(?<![\\p{L}'])les leurs(?![\\p{L}])"
+  },
+  {
+   "id": "dont",
+   "lv": "b1",
+   "cat": "relative",
+   "t": "Đại từ quan hệ dont",
+   "en": "le livre dont je parle · l'ami dont le frère est médecin",
+   "pts": [
+    "relative-dont"
+   ],
+   "find": "(?<![\\p{L}'])dont(?![\\p{L}])"
+  },
+  {
+   "id": "ce-qui-ce-que",
+   "lv": "b1",
+   "cat": "relative",
+   "t": "Ce qui, ce que, ce dont",
+   "en": "ce qui me plaît · ce que je veux · ce dont j'ai besoin",
+   "pts": [
+    "ce-qui-ce-que"
+   ],
+   "find": "(?<![\\p{L}'])ce (qui|que|dont)(?![\\p{L}])|(?<![\\p{L}'])ce qu'"
   }
  ]
 }

@@ -1,0 +1,72 @@
+=== dont
+sum: Dont thay cho de + danh từ trong mệnh đề quan hệ. Dùng với động từ, cụm từ đi với de (parler de, avoir besoin de, avoir peur de, rêver de, être fier de) và để chỉ sở hữu (un ami dont le frère est médecin = người bạn có anh trai là bác sĩ). Dont dùng được cho cả người lẫn vật.
+form: danh từ + dont + chủ ngữ + động từ đi với de | le livre dont je parle
+form: dont chỉ sở hữu | une ville dont les rues sont étroites
+form: so với qui, que | qui: chủ ngữ · que: bổ ngữ trực tiếp · dont: de + danh từ
+cast: mme-martin paul
+bg: library
+words: livre, besoin, rêver, fier
+
+#hook
+paul: Madame, vous avez le livre dont vous nous avez parlé en cours ? | Thưa cô, cô có cuốn sách mà cô đã nói với chúng em trên lớp không ạ? [thinking]
+mme-martin: Oui, c'est celui dont tout le monde a besoin pour l'examen. | Có, đó là cuốn mà ai cũng cần cho kỳ thi. [explain]
+> [[Parler de]], [[avoir besoin de]]: hai động từ này đi với [[de]], nên trong mệnh đề quan hệ ta dùng [[dont]].
+
+#meaning
+vs: Je parle de ce livre. | Tôi nói về cuốn sách này. || parler de
+vs: C'est le livre dont je parle. | Đó là cuốn sách mà tôi nói đến. || de ce livre → dont
+> [[Dont]] gộp [[de]] và danh từ làm một.
+
+#form
+th: Đại từ | Thay cho | Ví dụ
+tb: qui | chủ ngữ | le livre qui est sur la table
+tb: que | bổ ngữ trực tiếp | le livre que je lis
+tb: dont | de + danh từ | le livre dont je parle
+> Hãy nhìn động từ phía sau: nếu nó đi với [[de]], ta dùng [[dont]].
+f: danh từ + [dont] + chủ ngữ + động từ
+> Những động từ hay gặp: [[parler de]], [[avoir besoin de]], [[avoir peur de]], [[rêver de]], [[se souvenir de]], [[être fier de]].
+
+#examples
+- Voici l'appartement {dont|k} je rêve. | Đây là căn hộ mà tôi mơ ước.
+- C'est un projet {dont|k} je suis très fier. | Đó là một dự án mà tôi rất tự hào.
+- Le chien {dont|k} j'ai peur habite à côté. | Con chó mà tôi sợ sống ngay bên cạnh.
+- Tu te souviens de la fille {dont|k} je t'ai parlé ? | Bạn có nhớ cô gái mà tôi đã kể với bạn không?
+
+#real
+> [[Dont]] còn dùng để chỉ sở hữu.
+- J'ai un ami {dont|k} le frère est médecin. | Tôi có một người bạn có anh trai là bác sĩ.
+- C'est une ville {dont|k} les rues sont très étroites. | Đó là một thành phố có những con phố rất hẹp.
+
+#pronunciation
+pron: dont | dont | dɔ̃
+pron: donc | donc | dɔ̃k
+> [[Dont]] không đọc chữ [[t]]. Đừng nhầm với [[donc]], nghĩa là vì vậy.
++ C'est la chose dont j'ai besoin. | Đó là thứ tôi cần.
+
+#mistakes
+x: C'est le livre que je parle. => C'est le livre dont je parle. | Đó là cuốn sách mà tôi nói đến. >> [[Parler de]] nên dùng [[dont]].
+x: Voici l'outil que j'ai besoin. => Voici l'outil dont j'ai besoin. | Đây là dụng cụ mà tôi cần. >> [[Avoir besoin de]] đi với [[de]].
+x: C'est le film dont je t'en ai parlé. => C'est le film dont je t'ai parlé. | Đó là bộ phim mà tôi đã kể với bạn. >> [[Dont]] đã thay cho phần có [[de]], không thêm [[en]].
+
+#dialogue
+mme-martin: Tu cherches aussi le dictionnaire dont ton professeur a besoin ? | Em cũng tìm cuốn từ điển mà thầy em cần à? [thinking]
+paul: Oui, et les romans dont on va parler la semaine prochaine. | Vâng, và cả những cuốn tiểu thuyết mà tuần sau lớp sẽ bàn. [explain]
+mme-martin: Ils sont au deuxième étage, dans la salle dont la porte est bleue. | Chúng ở tầng hai, trong phòng có cánh cửa màu xanh. [explain]
+paul: Merci, madame ! Vous êtes la bibliothécaire dont tout le monde parle ! | Cảm ơn cô! Cô đúng là cô thủ thư mà ai cũng nhắc đến! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Đây là căn hộ mà tôi mơ ước. => Voici l'appartement dont je rêve. | Đây là căn hộ mà tôi mơ ước.
+? Nói bằng tiếng Pháp: Tôi có một người bạn có anh trai là bác sĩ. => J'ai un ami dont le frère est médecin. | Tôi có một người bạn có anh trai là bác sĩ.
+
+#recap
+> [[Dont]] thay cho [[de]] cộng danh từ: dùng với động từ đi với [[de]] và để chỉ sở hữu. [[Qui]] là chủ ngữ, [[que]] là bổ ngữ trực tiếp, [[dont]] là phần có [[de]].
+
+#practice
+contrast: C'est le livre ___ je parle. | dont* / que || parler de → dont.
+contrast: C'est le livre ___ je lis. | que* / dont || lire quelque chose → que.
+fill: Le chien ___ j'ai peur habite à côté. | dont* / que / qui || avoir peur de → dont.
+fill: Le livre ___ est sur la table est à moi. | qui* / dont / que || chủ ngữ → qui.
+fill: J'ai un ami ___ le frère est médecin. | dont* / que / qui || sở hữu → dont.
+fix: Voici l'outil que j'ai besoin. | Voici l'outil dont j'ai besoin.* / Voici l'outil qui j'ai besoin. / Voici l'outil dont j'en ai besoin. || avoir besoin de → dont.
+order: Voici / l'appartement / dont / je / rêve. | Đây là căn hộ mà tôi mơ ước.
+listen: C'est la chose dont j'ai besoin. | C'est la chose dont j'ai besoin.* / C'est la chose que j'ai. / C'est la chose donc j'ai besoin. || dont: không đọc t.

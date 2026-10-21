@@ -1033,6 +1033,90 @@
     "present-er"
    ],
    "pri": 2
+  },
+  {
+   "id": "double-pronouns",
+   "lv": "b1",
+   "cat": "pronouns",
+   "name": "Deux pronoms compléments",
+   "vi": "Hai đại từ trong một câu: me/te/se/nous/vous → le/la/les → lui/leur → y → en: je te le donne, je le lui dis, il y en a",
+   "pre": [
+    "cod-pronouns",
+    "coi-pronouns",
+    "pronoun-y",
+    "pronoun-en"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "imperative-pronouns",
+   "lv": "b1",
+   "cat": "pronouns",
+   "name": "Pronoms à l'impératif",
+   "vi": "Đại từ với câu mệnh lệnh: khẳng định đứng sau động từ có gạch nối (donne-le-moi, vas-y, prends-en), phủ định đứng trước (ne me le donne pas)",
+   "pre": [
+    "imperative",
+    "double-pronouns"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "y-en-verbs",
+   "lv": "b1",
+   "cat": "pronouns",
+   "name": "y / en avec verbes à / de",
+   "vi": "y thay à + sự vật (j'y pense), en thay de + sự vật (j'en parle); với người dùng à lui, de lui",
+   "pre": [
+    "pronoun-y",
+    "pronoun-en",
+    "stressed-pronouns"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "demonstrative-pronouns",
+   "lv": "b1",
+   "cat": "pronouns",
+   "name": "celui, celle, ceux, celles",
+   "vi": "Đại từ chỉ định: celui-ci / celle-là, celui de, celui qui / que",
+   "pre": [
+    "demonstratives"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "possessive-pronouns",
+   "lv": "b1",
+   "cat": "pronouns",
+   "name": "le mien, le tien, le sien…",
+   "vi": "Đại từ sở hữu: le mien, la tienne, les nôtres, les leurs",
+   "pre": [
+    "possessives"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "relative-dont",
+   "lv": "b1",
+   "cat": "relative",
+   "name": "dont",
+   "vi": "Đại từ quan hệ dont thay de + danh từ: le livre dont je parle, l'ami dont le frère est médecin",
+   "pre": [
+    "relative-qui-que"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "ce-qui-ce-que",
+   "lv": "b1",
+   "cat": "relative",
+   "name": "ce qui, ce que, ce dont",
+   "vi": "ce qui / ce que / ce dont = điều mà: ce qui me plaît, ce que je veux, ce dont j'ai besoin",
+   "pre": [
+    "relative-qui-que",
+    "relative-dont"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

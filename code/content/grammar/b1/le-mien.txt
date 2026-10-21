@@ -1,0 +1,75 @@
+=== le-mien
+sum: Đại từ sở hữu thay cho “tính từ sở hữu + danh từ”: mon livre → le mien. Nó đổi theo giống và số của VẬT được sở hữu, không theo người sở hữu: ta valise → la tienne, ses clés → les siennes. Với nous, vous, ils: le nôtre, le vôtre, le leur (nôtre, vôtre có dấu mũ).
+form: le mien, la mienne, les miens, les miennes | của tôi
+form: le tien… · le sien… | của bạn · của anh ấy, cô ấy
+form: le nôtre, le vôtre, le leur (+ s ở số nhiều) | của chúng tôi · các bạn · họ
+form: à + le → au mien, de + les → des miens | J'ai parlé au mien.
+cast: karim zoe
+bg: train
+words: place, valise, billet, sac
+
+#hook
+zoe: Pardon monsieur, je crois que c'est ma place. | Xin lỗi chú, cháu nghĩ đây là chỗ của cháu. [worried]
+karim: Ah non, mademoiselle, c'est la mienne. La vôtre, c'est le numéro douze. | À không, cô ơi, đây là chỗ của tôi. Chỗ của cô là số mười hai. [explain]
+> [[La mienne]] là chỗ của tôi, [[la vôtre]] là chỗ của cô. Vì [[place]] là danh từ giống cái, ta dùng [[la]].
+
+#meaning
+vs: C'est ma place. | Đây là chỗ của tôi. || tính từ + danh từ
+vs: C'est la mienne. | Đây là của tôi. || đại từ sở hữu
+> Đại từ sở hữu giúp không lặp lại danh từ.
+
+#form
+th: Ai sở hữu | Đực số ít | Cái số ít | Số nhiều
+tb: je | le mien | la mienne | les miens, les miennes
+tb: tu | le tien | la tienne | les tiens, les tiennes
+tb: il, elle | le sien | la sienne | les siens, les siennes
+tb: nous | le nôtre | la nôtre | les nôtres
+tb: vous | le vôtre | la vôtre | les vôtres
+tb: ils, elles | le leur | la leur | les leurs
+> Giống và số theo vật được sở hữu. Cái túi của một cô gái vẫn là [[le sien]], vì [[sac]] là giống đực.
+
+#examples
+- Ton vélo est rouge, {le mien|k} est bleu. | Xe đạp của bạn màu đỏ, của tôi màu xanh.
+- J'ai oublié mes clés. Tu peux me prêter {les tiennes|k} ? | Tôi quên chìa khoá rồi. Bạn cho tôi mượn của bạn được không?
+- Ce n'est pas la valise de ma sœur. {La sienne|k} est plus grande. | Đây không phải va li của chị tôi. Va li của chị ấy to hơn.
+- Nos enfants jouent avec {les leurs|k}. | Con chúng tôi chơi với con họ.
+- Votre jardin est plus grand que {le nôtre|k}. | Vườn của anh chị rộng hơn vườn của chúng tôi.
+
+#contrast
+> Sau [[à]] và [[de]], mạo từ [[le]], [[les]] gộp lại như thường lệ.
+- Tu as parlé à ton professeur ? Moi, j'ai parlé {au mien|k}. | Bạn đã nói với thầy của bạn chưa? Tôi nói với thầy tôi rồi.
+- Je m'occupe de mes enfants et elle s'occupe {des siens|k}. | Tôi lo cho con tôi, còn cô ấy lo cho con cô ấy.
+
+#pronunciation
+pron: notre | notre | nɔtʁ
+pron: le nôtre | le nôtre | lənotʁ
+> [[Notre]] có âm [[o]] mở. [[Le nôtre]] có dấu mũ, âm [[o]] khép và dài hơn.
++ Votre maison est plus belle que la nôtre. | Nhà các bạn đẹp hơn nhà chúng tôi.
+
+#mistakes
+x: Ce stylo est le mienne. => Ce stylo est le mien. | Cây bút này là của tôi. >> [[Stylo]] giống đực: [[le mien]].
+x: C'est sa voiture ? Oui, c'est le sien. => C'est sa voiture ? Oui, c'est la sienne. | Đó là xe của anh ấy à? Ừ, là của anh ấy. >> [[Voiture]] giống cái nên dùng [[la sienne]], dù chủ xe là đàn ông.
+x: Ce ne sont pas nos billets, ce sont les leur. => Ce ne sont pas nos billets, ce sont les leurs. | Đây không phải vé của chúng tôi, là vé của họ. >> Số nhiều: [[les leurs]] có [[s]].
+
+#dialogue
+karim: Cette grosse valise, c'est la vôtre ? | Cái va li to này là của cô à? [thinking]
+zoe: Non, la mienne est petite et verte. Elle est sous le siège. | Không, của cháu nhỏ và màu xanh lá. Nó ở dưới ghế. [explain]
+karim: Et votre billet ? Le contrôleur arrive. | Còn vé của cô? Người soát vé đang đến kìa. [surprised]
+zoe: Le mien est dans mon téléphone. Et le vôtre ? | Vé của cháu ở trong điện thoại. Còn của chú? [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Xe đạp của bạn màu đỏ, của tôi màu xanh. => Ton vélo est rouge, le mien est bleu. | Xe đạp của bạn màu đỏ, của tôi màu xanh.
+? Nói bằng tiếng Pháp: Vườn của anh chị rộng hơn vườn của chúng tôi. => Votre jardin est plus grand que le nôtre. | Vườn của anh chị rộng hơn vườn của chúng tôi.
+
+#recap
+> Đại từ sở hữu: [[le]], [[la]], [[les]] cộng [[mien]], [[tien]], [[sien]], [[nôtre]], [[vôtre]], [[leur]]. Giống và số theo vật được sở hữu, không theo người sở hữu.
+
+#practice
+fill: Ton vélo est rouge, ___ est bleu. | le mien* / la mienne / les miens || vélo: giống đực.
+fill: J'ai oublié mes clés. Tu peux me prêter ___ ? | les tiennes* / les tiens / la tienne || clés: giống cái số nhiều.
+contrast: C'est sa voiture ? Oui, c'est ___ . | la sienne* / le sien || voiture: giống cái.
+fill: Votre jardin est plus grand que ___ . | le nôtre* / le notre / la nôtre || jardin: giống đực; nôtre có dấu mũ.
+fill: Nos enfants jouent avec ___ . | les leurs* / les leur / leurs || số nhiều → les leurs.
+fill: Tu as parlé à ton professeur ? Moi, j'ai parlé ___ . | au mien* / à le mien / du mien || à + le → au.
+fix: Ce stylo est le mienne. | Ce stylo est le mien.* / Ce stylo est la mienne. / Ce stylo est mien. || stylo: giống đực.
+listen: Votre maison est plus belle que la nôtre. | Votre maison est plus belle que la nôtre.* / Votre maison est plus belle que notre maison. / Votre maison est plus belle que la vôtre. || la nôtre: âm o khép.

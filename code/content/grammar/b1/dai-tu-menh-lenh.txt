@@ -1,0 +1,82 @@
+=== dai-tu-menh-lenh
+sum: Trong câu mệnh lệnh khẳng định, đại từ đứng SAU động từ, nối bằng gạch nối; me và te đổi thành moi và toi: Donne-le-moi. Assieds-toi. Vas-y. Prends-en. Trong câu mệnh lệnh phủ định, đại từ trở về trước động từ như câu thường: Ne me le donne pas.
+form: động từ-đại từ (khẳng định) | Prends-le. · Parle-lui.
+form: me → moi, te → toi | Aide-moi. · Lève-toi.
+form: hai đại từ: le / la / les rồi moi / lui / nous / leur | Donne-le-moi.
+form: phủ định: ne + đại từ + động từ + pas | Ne le prends pas.
+form: vas-y, manges-en: thêm s trước y, en | Vas-y ! · Manges-en.
+cast: dr-roux ines
+bg: hospital
+words: médicament, prendre, oublier, montrer
+
+#hook
+dr-roux: Voici vos médicaments. Prenez-en deux par jour. | Đây là thuốc của chị. Mỗi ngày uống hai viên. [explain]
+ines: Je les prends avant ou après le repas ? | Tôi uống trước hay sau bữa ăn ạ? [thinking]
+dr-roux: Prenez-les après le repas. Et ne les oubliez pas ! | Uống sau bữa ăn. Và đừng quên đấy! [explain]
+> Trong câu ra lệnh, đại từ đứng sau động từ: [[prenez-en]], [[prenez-les]]. Nhưng khi phủ định, nó quay về phía trước: [[ne les oubliez pas]].
+
+#meaning
+vs: Tu le prends. | Bạn lấy nó. || câu thường: đại từ trước
+vs: Prends-le ! | Lấy nó đi! || mệnh lệnh: đại từ sau
+vs: Ne le prends pas ! | Đừng lấy nó! || phủ định: đại từ trước
+> Chỉ câu mệnh lệnh khẳng định mới đưa đại từ ra sau động từ.
+
+#form
+f: động từ + [-le, -la, -les, -lui, -leur, -y, -en]
+> Đại từ nối với động từ bằng gạch nối.
+th: Câu thường | Mệnh lệnh khẳng định
+tb: tu me parles | parle-moi
+tb: tu te lèves | lève-toi
+tb: tu y vas | vas-y
+tb: tu en manges | manges-en
+> Hai điều cần nhớ: [[me]] thành [[moi]], [[te]] thành [[toi]]. Động từ đuôi [[er]] và [[aller]] thêm [[s]] trước [[y]], [[en]] cho dễ đọc.
+
+#examples
+- Donne-{le-moi|k}, s'il te plaît. | Đưa nó cho tôi đi.
+- Montre-{la-lui|k} ! | Cho anh ấy xem nó đi!
+- Tu as faim ? Sers-{toi|k} ! | Đói à? Cứ tự lấy mà ăn!
+- Le musée est super. Vas-{y|k} ce week-end ! | Bảo tàng hay lắm. Cuối tuần này đi đi!
+- Ne me le {dis|v} pas, je veux garder la surprise. | Đừng nói với tôi, tôi muốn giữ sự bất ngờ.
+
+#contrast
+> Với hai đại từ trong câu mệnh lệnh khẳng định: [[le]], [[la]], [[les]] đứng trước, rồi đến người nhận.
+th: Mệnh lệnh khẳng định | Mệnh lệnh phủ định
+tb: Donne-le-moi. | Ne me le donne pas.
+tb: Envoie-la-lui. | Ne la lui envoie pas.
+tb: Achète-m'en. | Ne m'en achète pas.
+> Ở câu phủ định, thứ tự giống câu thường của bài trước.
+
+#pronunciation
+pron: vas-y | vas-y | vazi
+pron: manges-en | manges-en | mɑ̃ʒzɑ̃
+> Chữ [[s]] thêm vào nối với [[y]] và [[en]] thành âm [[z]].
++ Vas-y, je t'attends. | Đi đi, tôi đợi bạn.
+
+#mistakes
+x: Le prends ! => Prends-le ! | Lấy nó đi! >> Mệnh lệnh khẳng định: đại từ đứng sau.
+x: Assieds-te. => Assieds-toi. | Ngồi xuống đi. >> [[Te]] thành [[toi]] khi đứng sau động từ.
+x: Ne prends-le pas ! => Ne le prends pas ! | Đừng lấy nó! >> Phủ định thì đại từ đứng trước.
+x: Va-y ! => Vas-y ! | Đi đi! >> Thêm [[s]] trước [[y]].
+
+#dialogue
+ines: Et ce sirop, je le donne aussi à mon enfant ? | Còn lọ siro này, tôi cho con tôi uống luôn ạ? [worried]
+dr-roux: Non, ne le lui donnez pas, il est pour les adultes. | Không, đừng cho cháu uống, nó dành cho người lớn. [explain]
+ines: D'accord. Et si j'ai encore mal ? | Vâng. Còn nếu tôi vẫn đau thì sao ạ? [thinking]
+dr-roux: Appelez-moi, ou revenez me voir lundi. | Chị gọi cho tôi, hoặc thứ Hai quay lại khám. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Đưa nó cho tôi đi. => Donne-le-moi. | Đưa nó cho tôi đi.
+? Nói bằng tiếng Pháp: Đừng lấy nó! => Ne le prends pas ! | Đừng lấy nó!
+
+#recap
+> Mệnh lệnh khẳng định: đại từ đứng sau, có gạch nối, [[me]] thành [[moi]], [[te]] thành [[toi]]. Mệnh lệnh phủ định: đại từ về trước động từ như câu thường.
+
+#practice
+fill: Tu as faim ? Sers-___ ! | toi* / te / tu || te → toi sau động từ.
+contrast: Ce gâteau ? ___ ! | Prends-le* / Le prends || khẳng định: đại từ sau.
+contrast: Ce gâteau ? ___ pas ! | Ne le prends* / Ne prends-le || phủ định: đại từ trước.
+fill: Le musée est super. ___ ce week-end ! | Vas-y* / Va-y / Y va || thêm s trước y.
+fill: Donne-___, s'il te plaît. | le-moi* / moi-le / me-le || le trước moi.
+type: S'il te plaît, aide-___ ! | moi || me → moi.
+fix: Ne prends-le pas ! | Ne le prends pas !* / Ne prends pas le ! / Le ne prends pas ! || phủ định: đại từ trước.
+listen: Vas-y, je t'attends. | Vas-y, je t'attends.* / Va, je t'attends. / Vas-y, je t'entends. || vas-y: âm z.

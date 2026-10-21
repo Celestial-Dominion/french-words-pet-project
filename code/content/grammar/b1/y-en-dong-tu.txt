@@ -1,0 +1,68 @@
+=== y-en-dong-tu
+sum: Nhiều động từ đi với à hoặc de: penser à, s'intéresser à, parler de, avoir besoin de, s'occuper de. Khi bổ ngữ là sự vật hay ý tưởng, thay à + vật bằng y (j'y pense) và de + vật bằng en (j'en parle). Khi bổ ngữ là người, giữ giới từ và dùng đại từ nhấn mạnh: je pense à lui, je parle d'elle.
+form: à + sự vật → y | Mon examen ? J'y pense.
+form: de + sự vật → en | Mon voyage ? J'en parle.
+form: à / de + người → à lui, d'elle | Ma sœur ? Je pense à elle.
+cast: hugo linh
+bg: park
+words: penser, intéresser, besoin, occuper
+
+#hook
+linh: Tu penses encore à ton examen ? | Cậu vẫn nghĩ về kỳ thi à? [surprised]
+hugo: Oui, j'y pense tout le temps ! | Ừ, mình nghĩ về nó suốt! [worried]
+linh: Et ta copine ? Tu penses à elle aussi ? | Thế còn bạn gái cậu? Cậu có nghĩ đến cô ấy không? [happy]
+> Cùng động từ [[penser à]]: với kỳ thi, một sự vật, ta nói [[j'y pense]]. Với bạn gái, một con người, ta nói [[je pense à elle]].
+
+#meaning
+vs: J'y pense. | Tôi nghĩ về nó. || à + sự vật → y
+vs: Je pense à lui. | Tôi nghĩ về anh ấy. || à + người → à lui
+> [[Y]] và [[en]] dùng cho sự vật, ý tưởng. Với người, giữ giới từ và dùng [[lui]], [[elle]], [[eux]], [[elles]].
+
+#form
+th: Động từ | Sự vật | Người
+tb: penser à | j'y pense | je pense à lui
+tb: s'intéresser à | je m'y intéresse | je m'intéresse à elle
+tb: parler de | j'en parle | je parle de lui
+tb: avoir besoin de | j'en ai besoin | j'ai besoin d'eux
+tb: s'occuper de | je m'en occupe | je m'occupe d'elle
+> Chú ý: với [[parler à]], [[répondre à]], [[téléphoner à]], người được thay bằng [[lui]], [[leur]] đứng trước động từ, như [[je lui parle]].
+
+#examples
+- Ton dossier ? Ne t'inquiète pas, je m'en {occupe|v}. | Hồ sơ của bạn à? Đừng lo, tôi lo việc đó.
+- La politique ? Je ne m'y {intéresse|v} pas. | Chính trị à? Tôi không quan tâm.
+- Cette voiture ? On en {a|v} vraiment besoin. | Chiếc xe này à? Chúng ta thật sự cần nó.
+- Mon grand-père ? Je pense souvent à {lui|k}. | Ông tôi à? Tôi hay nghĩ đến ông.
+- Tes parents ? Tu parles souvent d'{eux|k} ? | Bố mẹ bạn à? Bạn có hay nói về họ không?
+
+#real
+> Những câu trả lời ngắn với [[y]], [[en]] rất hay gặp trong hội thoại hằng ngày.
+- Tu as pensé au pain ? Oui, j'y {ai pensé|v}. | Bạn có nhớ mua bánh mì không? Có, tôi nhớ rồi.
+- On en {parle|v} demain ? | Mai mình bàn chuyện này nhé?
+
+#mistakes
+x: Mon examen ? Je pense à lui. => Mon examen ? J'y pense. | Kỳ thi à? Tôi đang nghĩ về nó. >> Sự vật thì dùng [[y]], không dùng [[lui]].
+x: Ma sœur ? J'y pense souvent. => Ma sœur ? Je pense souvent à elle. | Chị tôi à? Tôi hay nghĩ đến chị ấy. >> Với người, dùng [[à elle]].
+x: Ce livre ? J'y ai besoin. => Ce livre ? J'en ai besoin. | Cuốn sách này à? Tôi cần nó. >> [[Avoir besoin de]] thì dùng [[en]].
+
+#dialogue
+hugo: Et toi, tu t'intéresses au concours de photo ? | Còn cậu, cậu có quan tâm đến cuộc thi ảnh không? [thinking]
+linh: Oui, je m'y intéresse beaucoup. J'en parle souvent avec mon frère. | Có, mình rất quan tâm. Mình hay nói về nó với anh trai. [happy]
+hugo: Ton frère est photographe, non ? Tu peux lui demander conseil. | Anh cậu là thợ chụp ảnh mà? Cậu có thể xin anh ấy lời khuyên. [explain]
+linh: Oui, je compte sur lui ! | Ừ, mình trông vào anh ấy đấy! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Hồ sơ của bạn à? Đừng lo, tôi lo việc đó. => Ton dossier ? Ne t'inquiète pas, je m'en occupe. | Hồ sơ của bạn à? Đừng lo, tôi lo việc đó.
+? Nói bằng tiếng Pháp: Ông tôi à? Tôi hay nghĩ đến ông. => Mon grand-père ? Je pense souvent à lui. | Ông tôi à? Tôi hay nghĩ đến ông.
+
+#recap
+> Sự vật, ý tưởng: [[à]] thành [[y]], [[de]] thành [[en]]. Con người: giữ giới từ, dùng [[à lui]], [[d'elle]], [[d'eux]].
+
+#practice
+contrast: Mon examen ? J'___ pense. | y* / en || penser à + sự vật → y.
+contrast: Ma sœur ? Je pense à ___ . | elle* / y / la || người → à elle.
+fill: Ce livre ? J'___ ai besoin. | en* / y || avoir besoin de → en.
+fill: La politique ? Je ne m'___ intéresse pas. | y* / en / lui || s'intéresser à → y.
+fill: Tes parents ? Tu parles souvent ___ ? | d'eux* / en / leur || parler de + người → d'eux.
+type: Ton dossier ? Je m'___ occupe. | en || s'occuper de → en.
+fix: Ma sœur ? J'y pense souvent. | Ma sœur ? Je pense souvent à elle.* / Ma sœur ? Je lui pense souvent. / Ma sœur ? J'en pense souvent. || người → à elle.
+listen: Mon grand-père ? Je pense souvent à lui. | Mon grand-père ? Je pense souvent à lui.* / Mon grand-père ? J'y pense souvent. / Mon grand-père ? Je lui pense souvent. || à lui: người.

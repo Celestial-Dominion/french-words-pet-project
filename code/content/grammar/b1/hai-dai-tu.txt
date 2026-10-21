@@ -1,0 +1,79 @@
+=== hai-dai-tu
+sum: Khi câu có hai đại từ bổ ngữ, cả hai đứng trước động từ theo thứ tự cố định: me, te, se, nous, vous → le, la, les → lui, leur → y → en. Ví dụ: Je te le donne. Je le lui dis. Il y en a. Ở passé composé, cả hai đứng trước trợ động từ: Je le lui ai dit.
+form: me / te / nous / vous + le / la / les | Je te la prête.
+form: le / la / les + lui / leur | Je le lui donne.
+form: y, en luôn đứng cuối | Il y en a. · Je leur en parle.
+form: passé composé: đại từ trước avoir / être | Je le lui ai dit.
+cast: chloe papa
+bg: street
+words: prêter, rendre, donner, voiture
+
+#hook
+chloe: Papa, tu me prêtes ta voiture ce soir ? | Bố ơi, tối nay bố cho con mượn xe nhé? [happy]
+papa: Je te la prête, mais tu me la rends demain matin ! | Bố cho con mượn, nhưng sáng mai con phải trả xe cho bố đấy! [explain]
+> Trong [[je te la prête]], hai đại từ đứng trước động từ: [[te]] chỉ người nhận, [[la]] thay cho chiếc xe. Hôm nay mình học thứ tự của chúng.
+
+#meaning
+vs: Je prête ma voiture à ma fille. | Tôi cho con gái mượn xe. || câu đầy đủ
+vs: Je la lui prête. | Tôi cho con bé mượn nó. || hai đại từ
+> [[La]] thay cho [[ma voiture]], [[lui]] thay cho [[à ma fille]].
+
+#form
+th: Thứ tự | Đại từ
+tb: 1 | me, te, se, nous, vous
+tb: 2 | le, la, les
+tb: 3 | lui, leur
+tb: 4 | y
+tb: 5 | en
+> Đại từ ở hàng trên luôn đứng trước hàng dưới. Ba cặp hay gặp nhất là [[te le]], [[le lui]] và [[y en]].
+f: chủ ngữ + [me, te, nous, vous] + [le, la, les] + động từ
+> Người nhận là [[me]], [[te]], [[nous]], [[vous]] thì đứng trước.
+f: chủ ngữ + [le, la, les] + [lui, leur] + động từ
+> Người nhận là [[lui]], [[leur]] thì đứng sau.
+
+#examples
+- Ton livre ? Je te le {rends|v} demain. | Cuốn sách của bạn à? Mai tôi trả bạn.
+- La photo ? Je la lui {ai envoyée|v} hier. | Bức ảnh à? Hôm qua tôi gửi cho cô ấy rồi.
+- Les clés ? Il nous les {donne|v} ce soir. | Chìa khoá à? Tối nay anh ấy đưa cho chúng tôi.
+- Du pain ? Il y en {a|v} dans la cuisine. | Bánh mì à? Trong bếp có đấy.
+- Ce problème ? Je leur en {ai parlé|v}. | Vấn đề đó à? Tôi nói với họ rồi.
+
+#contrast
+> Ở [[passé composé]], hai đại từ đứng trước trợ động từ. Trong câu phủ định, [[ne]] đứng trước cả hai đại từ.
+- Je ne te le {dirai|v} pas. | Tôi sẽ không nói điều đó với bạn.
+- Elle ne nous l'a pas {expliqué|v}. | Cô ấy chưa giải thích điều đó cho chúng tôi.
+
+#pronunciation
+pron: je te le donne | je te le donne | ʒətlədɔn
+pron: il y en a | il y en a | iljɑ̃na
+> Khi nói nhanh, người Pháp nuốt bớt âm [[e]] nhẹ, nên [[je te le]] nghe rất gọn. [[Il y en a]] nghe liền như một từ.
++ Il y en a encore. | Vẫn còn đấy.
+
+#mistakes
+x: Je lui le donne. => Je le lui donne. | Tôi đưa nó cho anh ấy. >> [[Le]] đứng trước [[lui]].
+x: Je le te prête. => Je te le prête. | Tôi cho bạn mượn nó. >> [[Te]] đứng trước [[le]].
+x: Il en y a. => Il y en a. | Có đấy. >> [[Y]] luôn đứng trước [[en]].
+x: Je lui l'ai dit. => Je le lui ai dit. | Tôi đã nói điều đó với anh ấy. >> Thứ tự vẫn là [[le]] rồi [[lui]], đặt trước [[ai]].
+
+#dialogue
+chloe: Et les clés du garage ? Tu me les donnes aussi ? | Thế còn chìa khoá ga ra? Bố đưa con luôn nhé? [thinking]
+papa: Je les ai données à ta mère. Elle te les donnera. | Bố đưa mẹ con rồi. Mẹ sẽ đưa cho con. [explain]
+chloe: Et de l'essence, il y en a assez ? | Còn xăng thì có đủ không bố? [worried]
+papa: Oui, il y en a. Mais ne me la rends pas sale ! | Có. Nhưng đừng trả xe bẩn cho bố đấy! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Cuốn sách của bạn à? Mai tôi trả bạn. => Ton livre ? Je te le rends demain. | Cuốn sách của bạn à? Mai tôi trả bạn.
+? Nói bằng tiếng Pháp: Bánh mì à? Trong bếp có đấy. => Du pain ? Il y en a dans la cuisine. | Bánh mì à? Trong bếp có đấy.
+
+#recap
+> Thứ tự đại từ: [[me]], [[te]], [[nous]], [[vous]], rồi [[le]], [[la]], [[les]], rồi [[lui]], [[leur]], cuối cùng [[y]] và [[en]]. Tất cả đứng trước động từ; ở [[passé composé]] thì đứng trước trợ động từ.
+
+#practice
+fill: Ton livre ? Je ___ rends demain. | te le* / le te || te trước le.
+fill: La photo ? Je ___ ai envoyée hier. | la lui* / lui la || la trước lui.
+contrast: Du pain ? Il ___ a. | y en* / en y || y trước en.
+fill: Les clés ? Il ___ donne ce soir. | nous les* / les nous || nous trước les.
+fix: Je lui le donne. | Je le lui donne.* / Je lui donne le. / Le je lui donne. || le trước lui.
+order: Je / te / la / prête. | Tôi cho bạn mượn nó.
+order: Je / le / lui / ai / dit. | Tôi đã nói điều đó với anh ấy.
+listen: Il y en a encore. | Il y en a encore.* / Il en a encore. / Il y a encore. || y en: hai đại từ.
