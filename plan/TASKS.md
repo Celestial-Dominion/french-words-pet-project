@@ -39,7 +39,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
-| L-FLELex | Soát cấp độ 11.000 từ theo FLELex (đổi cấp + sửa bài + bù độ phủ) | tùy chọn | script + nội dung | ~1–2% | pha 1 đang làm: 136 từ đổi cấp, bài B1–C2 + A1 xong; còn A2, câu ví dụ |
+| L-FLELex | Soát cấp độ 11.000 từ theo FLELex (đổi cấp + sửa bài + bù độ phủ) | tùy chọn | script + nội dung | ~1–2% | pha 1: 136 từ đổi cấp; bài B1–C2 sửa xong; A1 + A2 đạt lại 3 mốc (24 bài mới); còn câu ví dụ |
 
 Cộng (còn lại, sau P-A1): bắt buộc ~13,5% (độ phủ ~3,5% + ngữ pháp ~10%) · tùy chọn ~8% · tất cả ~21–22% tuần.
 Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì bài cấp trên dựa vào bài cấp dưới (trường `pre`).
@@ -316,7 +316,9 @@ sorte que, à force de, tant et si bien que).
   - 21/10 lô 2: 10 bài A1 (a1-p04, 3 câu hỏi/bài, audio 230 câu), giỏ a1-s04a…j + từ mới xuống A1 (internet, mail,
     nationalité, arrondissement, camping, tourisme, apéritif, belge…); A1 ≥1 95,0→99,6 ✓ · ≥3 86,5→90,0 ✓ · ≥5 62,8→65,1 ✓;
     thiếu 73→0; 839f43e
-- **Còn lại:** A2 bù độ phủ (≥1 93,6/97 · ≥3 76,6/80, thiếu 85: lô a2-p05 như P-A2); câu ví dụ của 122 từ xuống cấp (đo từ
+  - 21/10 lô 3: 14 bài A2 (a2-p05 10 bài phủ đủ 48 từ mới xuống A2; a2-p06 4 bài đưa từ 2→3 bài), 4 câu hỏi/bài,
+    audio 399 câu; A2 ≥1 93,6→97,6 ✓ · ≥3 76,6→81,7 ✓ · ≥5 40,6→41,1 ✓; thiếu 85→0; 5 giờ 6% · tuần 18%; COMMIT3
+- **Còn lại:** câu ví dụ của 122 từ xuống cấp (đo từ
   vượt cấp mới, viết lại câu quá khó: `scripts/out/examples.json` + audio + shard); pha 2 (lệch 2 cấp, ~1.200 từ) chỉ khi
   người dùng muốn — chia lô theo cấp, mỗi lô sửa bài như trên.
 
