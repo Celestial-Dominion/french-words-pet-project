@@ -207,7 +207,7 @@ sorte que, à force de, tant et si bien que).
 - **Nhật ký:**
   - 21/10 lô 1: 7 bài (câu điều kiện văn chương, đảo ngữ văn chương, lời gián tiếp tự do, cảm thán và câu hỏi tu từ, phủ định mang nghĩa khẳng định, động từ cổ trong cụm cố định, nhượng bộ C2) + 7 điểm inventory; 153/153 bài, 0 lỗi; 5 giờ 19% · tuần 10% trước lô; 8a246a1
   - 21/10 lô 2: 7 bài (que thay liên từ, đồng vị ngữ, tỉnh lược, từ nối học thuật, cấu trúc cố định C2, danh từ hoá nguyên mẫu và tính từ, thức đổi nghĩa) + 7 điểm inventory; 160/160 bài, 0 lỗi; 5 giờ 22% · tuần 10% sau lô 1; 263267d
-  - 21/10 lô 3: 6 bài (hợp giống số hiếm, sắc thái thì, đại từ soi và à lui hay y, giới từ en/dans và de/par, nói giảm · uyển ngữ · cường điệu · nói mỉa, khẩu ngữ C2) + 6 điểm inventory; 166/166 bài, 0 lỗi; 5 giờ 22% · tuần 10% sau lô 2; COMMIT
+  - 21/10 lô 3: 6 bài (hợp giống số hiếm, sắc thái thì, đại từ soi và à lui hay y, giới từ en/dans và de/par, nói giảm · uyển ngữ · cường điệu · nói mỉa, khẩu ngữ C2) + 6 điểm inventory; 166/166 bài, 0 lỗi; 5 giờ 22% · tuần 10% sau lô 2; c829cf8
   - **Kết quả:** 20 bài C2 (166 bài toàn khoá), `grammar:check --level c2` 20/20 0 lỗi, inventory C2 20/20 điểm có bài, 0 câu trùng với cấp khác; `grammar:state` đánh dấu đã duyệt a1,a2,b1,b2,c1,c2 (166/166, 0 điểm chưa phủ). Tốn ~3% hạn mức 5 giờ (19→22%), <1% tuần (10→10%). Chưa deploy.
 
 ---
