@@ -34,7 +34,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | **xong 21/10** (49 truyện, ≥3 76,5% · ≥5 31,9%) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | **xong 21/10** (20 bài, 20 điểm phủ 100%) |
-| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | đang làm: code xong, A2 + B1 + B2 xong |
+| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | đang làm: code xong, A2 + B1 + B2 + C1 xong |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
@@ -246,6 +246,10 @@ sorte que, à force de, tant et si bien que).
   - 21/10 lô 3: B2 *Les Trois Mousquetaires* (Dumas) 4 phần × 5/5/6/5 chương (`stories/b2/st-13.txt`, series
     `trois-mousquetaires`, 990–1298 từ/phần, mật độ B2 5,1–5,6%) + 63 câu hỏi có audio (547 MP3) → B2 72 truyện; 0 lỗi,
     0 cảnh báo. Mật độ bản nháp đầu chỉ 2,4–3,4% → nâng bằng thay từ B2 (monture, loyauté, courtoisie, péril, implacable…).
+  - 21/10 lô 4: C1 *Le Mystère de la chambre jaune* (Leroux) 4 phần × 5 chương (`stories/c1/st-14.txt`, series
+    `chambre-jaune`, 959–1165 từ/phần, mật độ C1 4,7–5,9%; ngưỡng C1 thật là 4,5%, bộ kiểm làm tròn hiển thị "5%") + 60
+    câu hỏi có audio → C1 71 truyện; 0 lỗi, 0 cảnh báo. Phần 4 bản nháp chỉ 1,5% (nhiều từ tưởng C1 thực ra B1–B2) →
+    lấy từ đúng danh sách `word-levels.json` cấp 5 rồi thay.
 
 ## X-skip — "Bắt đầu từ A1 / bỏ qua cấp" (tùy chọn) [x]
 
