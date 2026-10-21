@@ -1290,6 +1290,94 @@
     "superlative"
    ],
    "pri": 2
+  },
+  {
+   "id": "subjonctif-passe",
+   "lv": "b2",
+   "cat": "verbs",
+   "name": "Subjonctif passé",
+   "vi": "Subjonctif passé = avoir / être ở subjonctif + phân từ: việc đã xong, sau các mẫu cần subjonctif (je suis content que tu sois venu, bien qu'il ait fini)",
+   "pre": [
+    "subjonctif-forms",
+    "subj-emotion-doubt",
+    "pc-etre"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "conditionnel-passe",
+   "lv": "b2",
+   "cat": "tense",
+   "name": "Conditionnel passé",
+   "vi": "Conditionnel passé = avoir / être ở conditionnel + phân từ: tiếc nuối (j'aurais aimé), trách (tu aurais dû), tin chưa xác nhận (l'incendie aurait fait deux blessés)",
+   "pre": [
+    "conditionnel-present",
+    "plus-que-parfait"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "si-pqp",
+   "lv": "b2",
+   "cat": "conditionals",
+   "name": "si + plus-que-parfait",
+   "vi": "Giả định trái với quá khứ: si + plus-que-parfait → conditionnel passé; câu hỗn hợp: si + plus-que-parfait → conditionnel présent",
+   "pre": [
+    "si-imparfait",
+    "conditionnel-passe"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "futur-anterieur",
+   "lv": "b2",
+   "cat": "tense",
+   "name": "Futur antérieur",
+   "vi": "Futur antérieur = avoir / être ở futur + phân từ: việc sẽ xong trước một mốc tương lai (quand j'aurai fini), phỏng đoán (il aura oublié)",
+   "pre": [
+    "futur-simple",
+    "quand-futur"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "future-in-past",
+   "lv": "b2",
+   "cat": "tense",
+   "name": "Le futur dans le passé",
+   "vi": "Tương lai nhìn từ quá khứ: conditionnel présent (il a dit qu'il viendrait), conditionnel passé (il pensait qu'il aurait fini), allait + nguyên mẫu",
+   "pre": [
+    "conditionnel-present",
+    "past-narration"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "reported-past",
+   "lv": "b2",
+   "cat": "clauses",
+   "name": "Discours indirect au passé",
+   "vi": "Lời nói gián tiếp ở quá khứ, hoà hợp thì: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel; demain → le lendemain, hier → la veille",
+   "pre": [
+    "reported-present",
+    "plus-que-parfait",
+    "future-in-past"
+   ],
+   "vs": [
+    "reported-present"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "infinitif-passe",
+   "lv": "b2",
+   "cat": "verbs",
+   "name": "Infinitif passé",
+   "vi": "Nguyên mẫu quá khứ avoir / être + phân từ: sau après, sans, regretter de, être content de, remercier de (je regrette d'avoir dit ça)",
+   "pre": [
+    "avant-apres-inf"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

@@ -1,0 +1,69 @@
+=== loi-noi-gian-tiep-qua-khu
+sum: Khi động từ dẫn ở quá khứ (il a dit, elle a demandé), thì trong câu thuật lại lùi một bậc: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel présent, futur proche → allait + nguyên mẫu. Imparfait, plus-que-parfait, conditionnel giữ nguyên. Từ chỉ thời gian cũng đổi: demain → le lendemain, hier → la veille, aujourd'hui → ce jour-là.
+form: présent → imparfait | Il a dit qu'il était fatigué.
+form: passé composé → plus-que-parfait | Elle a dit qu'elle avait fini.
+form: futur → conditionnel | Il a dit qu'il viendrait.
+form: demain → le lendemain · hier → la veille | Il a dit qu'il partirait le lendemain.
+cast: lea nam
+bg: restaurant
+words: annoncer, expliquer, répondre, lendemain
+
+#hook
+nam: Alors, qu'est-ce que la directrice t'a dit hier ? | Thế hôm qua bà giám đốc nói gì với em? [thinking]
+lea: Elle m'a dit qu'elle était contente de mon travail et qu'elle me donnerait une promotion ! | Bà ấy nói bà ấy hài lòng với công việc của em và sẽ thăng chức cho em! [happy]
+> Lời gốc là [[je suis contente]] và [[je vous donnerai]]. Khi thuật lại ở quá khứ, [[suis]] thành [[était]], [[donnerai]] thành [[donnerait]].
+
+#meaning
+vs: Elle dit qu'elle est contente. | Bà ấy nói bà ấy hài lòng. || động từ dẫn ở hiện tại: giữ thì
+vs: Elle a dit qu'elle était contente. | Bà ấy đã nói là bà ấy hài lòng. || động từ dẫn ở quá khứ: lùi thì
+> Đây là điểm khác chính so với lời nói gián tiếp ở hiện tại.
+
+#form
+th: Lời gốc | Sau il a dit que
+tb: présent: je pars | il partait
+tb: passé composé: je suis parti | il était parti
+tb: futur: je partirai | il partirait
+tb: futur proche: je vais partir | il allait partir
+> [[Imparfait]], [[plus-que-parfait]] và [[conditionnel]] giữ nguyên.
+th: Lời gốc | Khi thuật lại
+tb: aujourd'hui | ce jour-là
+tb: hier | la veille
+tb: demain | le lendemain
+tb: la semaine prochaine | la semaine suivante
+> Vì thời điểm nói đã qua, các mốc thời gian cũng phải đổi theo.
+
+#examples
+- Il m'a demandé si j'{avais vu|k} son frère. | Anh ấy hỏi tôi đã gặp anh trai anh ấy chưa.
+- Elle a expliqué qu'elle {ne pouvait pas|k} venir. | Cô ấy giải thích là cô ấy không đến được.
+- Ils ont annoncé que le magasin {fermerait|k} le lendemain. | Họ thông báo là cửa hàng sẽ đóng cửa vào hôm sau.
+- Je lui ai demandé ce qu'il {avait fait|k} la veille. | Tôi hỏi anh ấy hôm trước anh ấy đã làm gì.
+- Le professeur nous a dit {de|k} lire le chapitre trois. | Thầy giáo bảo chúng tôi đọc chương ba.
+
+#mistakes
+x: Hier, elle m'a dit qu'elle partira le lendemain. => Hier, elle m'a dit qu'elle partirait le lendemain. | Hôm qua cô ấy nói với tôi là hôm sau cô ấy sẽ đi. >> [[Futur]] lùi thành [[conditionnel]].
+x: Elle m'a demandé si j'ai fini. => Elle m'a demandé si j'avais fini. | Cô ấy hỏi tôi đã làm xong chưa. >> [[Passé composé]] lùi thành [[plus-que-parfait]].
+x: Il y a un an, il a dit qu'il partirait demain. => Il y a un an, il a dit qu'il partirait le lendemain. | Một năm trước, anh ấy nói là hôm sau anh ấy sẽ đi. >> Mốc đã qua: [[demain]] thành [[le lendemain]].
+x: Elle a demandé qu'est-ce que je voulais. => Elle a demandé ce que je voulais. | Cô ấy hỏi tôi muốn gì. >> Câu hỏi gián tiếp dùng [[ce que]].
+
+#dialogue
+nam: Et elle a dit quand tu commencerais ? | Thế bà ấy có nói khi nào em bắt đầu không? [surprised]
+lea: Elle a expliqué que tout serait prêt le mois suivant. | Bà ấy giải thích là mọi thứ sẽ sẵn sàng vào tháng sau. [explain]
+nam: Et tu lui as demandé si ton salaire allait augmenter ? | Thế em có hỏi bà ấy lương em có tăng không? [thinking]
+lea: Bien sûr ! Elle a répondu qu'elle en avait déjà parlé au directeur. | Tất nhiên! Bà ấy trả lời là đã nói chuyện đó với giám đốc rồi. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Anh ấy hỏi tôi đã gặp anh trai anh ấy chưa. => Il m'a demandé si j'avais vu son frère. | Anh ấy hỏi tôi đã gặp anh trai anh ấy chưa.
+? Nói bằng tiếng Pháp: Họ thông báo là cửa hàng sẽ đóng cửa vào hôm sau. => Ils ont annoncé que le magasin fermerait le lendemain. | Họ thông báo là cửa hàng sẽ đóng cửa vào hôm sau.
+
+#recap
+> Động từ dẫn ở quá khứ thì lùi thì: [[présent]] thành [[imparfait]], [[passé composé]] thành [[plus-que-parfait]], [[futur]] thành [[conditionnel]]. Mốc thời gian cũng đổi: [[le lendemain]], [[la veille]].
+
+#practice
+contrast: Elle dit qu'elle ___ contente. | est* / était || động từ dẫn ở hiện tại.
+contrast: Elle a dit qu'elle ___ contente. | était* / est || động từ dẫn ở quá khứ → imparfait.
+fill: Elle m'a demandé si j'___ fini. | avais* / ai / aurai || passé composé → plus-que-parfait.
+fill: Ils ont annoncé que le magasin ___ le lendemain. | fermerait* / fermera / ferme || futur → conditionnel.
+fill: Il y a un an, il a dit qu'il partirait ___ . | le lendemain* / demain / hier || mốc đã qua.
+fill: Elle a demandé ___ je voulais. | ce que* / qu'est-ce que / si || câu hỏi gián tiếp → ce que.
+type: Il a dit qu'il ___ partir. | allait || va partir → allait partir.
+listen: Elle a expliqué qu'elle ne pouvait pas venir. | Elle a expliqué qu'elle ne pouvait pas venir.* / Elle a expliqué qu'elle ne peut pas venir. / Elle a expliqué qu'elle ne pourrait pas venir. || pouvait.

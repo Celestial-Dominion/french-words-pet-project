@@ -1015,6 +1015,84 @@
     "comparison-b1"
    ],
    "find": "(?<![\\p{L}'])(de plus en plus|de moins en moins|deux fois plus|trois fois plus|le même que|la même que|les mêmes que)(?![\\p{L}])"
+  },
+  {
+   "id": "subjonctif-passe",
+   "lv": "b2",
+   "cat": "verbs",
+   "t": "Subjonctif passé",
+   "en": "que tu sois venu · bien qu'il ait fini",
+   "pts": [
+    "subjonctif-passe"
+   ],
+   "find": "(?<![\\p{L}'])(aie|aies|ait|ayons|ayez|aient|sois|soit|soyons|soyez|soient) (été|eu|fini|fait|pu|dû|vu|pris|dit|venu|venue|venus|parti|partie|partis|arrivé|arrivée|arrivés|compris|reçu|oublié|réussi|terminé|perdu|choisi)(?![\\p{L}])"
+  },
+  {
+   "id": "conditionnel-passe",
+   "lv": "b2",
+   "cat": "tense",
+   "t": "Conditionnel passé: tiếc nuối, trách móc, tin chưa chắc",
+   "en": "j'aurais aimé · tu aurais dû · il serait parti",
+   "pts": [
+    "conditionnel-passe"
+   ],
+   "find": "(?<![\\p{L}'])(aurais|aurait|aurions|auriez|auraient|serais|serait|serions|seriez|seraient) (\\p{L}+é|\\p{L}+i|\\p{L}+u|dû|pu|eu|été|fait|dit|pris|mis)(?![\\p{L}])"
+  },
+  {
+   "id": "si-plus-que-parfait",
+   "lv": "b2",
+   "cat": "conditionals",
+   "t": "Si + plus-que-parfait → conditionnel passé",
+   "en": "si j'avais su, je serais venu",
+   "pts": [
+    "si-pqp"
+   ],
+   "find": "(?<![\\p{L}'])(si |s'ils? )[^,.?!]{0,20}?(avais|avait|avions|aviez|avaient|étais|était|étions|étiez|étaient) (su|eu|été|pu|dû|fait|pris|dit|\\p{L}+é|\\p{L}+i|\\p{L}+u)(?![\\p{L}])"
+  },
+  {
+   "id": "futur-anterieur",
+   "lv": "b2",
+   "cat": "tense",
+   "t": "Futur antérieur",
+   "en": "quand j'aurai fini · il aura oublié",
+   "pts": [
+    "futur-anterieur"
+   ],
+   "find": "(?<![\\p{L}'])(aurai|auras|aura|aurons|aurez|auront|serai|seras|sera|serons|serez|seront) (\\p{L}+é|\\p{L}+i|\\p{L}+u|dû|pu|eu|été|fait|dit|pris|mis|écrit)(?![\\p{L}])"
+  },
+  {
+   "id": "tuong-lai-trong-qua-khu",
+   "lv": "b2",
+   "cat": "tense",
+   "t": "Tương lai nhìn từ quá khứ",
+   "en": "il a dit qu'il viendrait · je savais qu'elle allait partir",
+   "pts": [
+    "future-in-past"
+   ],
+   "find": "(?<![\\p{L}'])(a dit|disait|savais|savait|pensais|pensait|croyais|croyait|espérais|espérait|ai cru|a promis|avait promis) (que|qu')"
+  },
+  {
+   "id": "loi-noi-gian-tiep-qua-khu",
+   "lv": "b2",
+   "cat": "clauses",
+   "kind": "contrast",
+   "t": "Lời nói gián tiếp ở quá khứ (hoà hợp thì)",
+   "en": "il a dit qu'il était fatigué · elle m'a demandé si j'avais fini",
+   "pts": [
+    "reported-past"
+   ],
+   "find": "(?<![\\p{L}'])(a dit|avait dit|a demandé|a répondu|a expliqué|a annoncé|a affirmé)( qu| si| s'il| où| quand| comment| pourquoi| ce qu| de| d')"
+  },
+  {
+   "id": "nguyen-mau-qua-khu",
+   "lv": "b2",
+   "cat": "verbs",
+   "t": "Nguyên mẫu quá khứ: avoir / être + phân từ",
+   "en": "je regrette d'avoir dit ça · sans être vu",
+   "pts": [
+    "infinitif-passe"
+   ],
+   "find": "(?<![\\p{L}'])(d'avoir|d'être|sans avoir|sans être|pour avoir|de s'être|après avoir|après être) "
   }
  ]
 }

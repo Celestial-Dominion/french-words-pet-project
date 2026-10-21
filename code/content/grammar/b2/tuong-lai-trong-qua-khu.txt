@@ -1,0 +1,65 @@
+=== tuong-lai-trong-qua-khu
+sum: Khi kể chuyện ở quá khứ, việc “sẽ xảy ra” sau đó được diễn đạt bằng conditionnel présent: Je savais qu'elle viendrait. Việc “sẽ xong trước” dùng conditionnel passé: Il pensait qu'il aurait fini avant midi. Văn nói còn dùng aller ở imparfait + nguyên mẫu: J'allais partir.
+form: động từ quá khứ + que + conditionnel présent | Il a dit qu'il viendrait.
+form: xong trước: conditionnel passé | Je pensais qu'il aurait fini.
+form: allait + nguyên mẫu | J'allais sortir quand tu as appelé.
+cast: papi ines
+bg: snow-yard
+words: savoir, devenir, promettre, croire
+
+#hook
+ines: Papi, quand tu as rencontré mamie, tu savais que vous vous marieriez ? | Ông ơi, khi ông gặp bà, ông có biết là ông bà sẽ cưới nhau không? [happy]
+papi: Oui ! Dès le premier jour, j'ai su qu'elle deviendrait ma femme. | Có chứ! Ngay từ ngày đầu, ông đã biết bà sẽ trở thành vợ ông. [happy]
+> Câu chuyện ở quá khứ, nhưng việc cưới xảy ra sau đó: [[vous vous marieriez]], [[elle deviendrait]]. Đây là tương lai nhìn từ quá khứ, dùng [[conditionnel présent]].
+
+#meaning
+vs: Il dit qu'il viendra. | Anh ấy nói anh ấy sẽ đến. || hiện tại → futur
+vs: Il a dit qu'il viendrait. | Anh ấy đã nói anh ấy sẽ đến. || quá khứ → conditionnel
+> Khi động từ chính ở quá khứ, [[futur]] đổi thành [[conditionnel présent]].
+
+#form
+th: Nhìn từ hiện tại | Nhìn từ quá khứ
+tb: Je sais qu'il gagnera. | Je savais qu'il gagnerait.
+tb: Je sais qu'il aura fini. | Je savais qu'il aurait fini.
+tb: Il va pleuvoir. | Il allait pleuvoir.
+> [[Futur]] thành [[conditionnel présent]], [[futur antérieur]] thành [[conditionnel passé]], [[va]] thành [[allait]].
+
+#examples
+- Elle m'a promis qu'elle {serait|k} à l'heure. | Cô ấy đã hứa với tôi là sẽ đến đúng giờ.
+- Personne ne pensait que l'équipe {gagnerait|k}. | Không ai nghĩ là đội sẽ thắng.
+- J'étais sûr que tu {aurais terminé|k} avant nous. | Tôi đã chắc là bạn sẽ xong trước chúng tôi.
+- J'{allais|k} t'appeler quand tu es arrivé. | Tôi vừa định gọi cho bạn thì bạn đến.
+
+#contrast
+> Đừng nhầm với câu điều kiện: ở đây [[conditionnel]] không mang nghĩa nếu, mà chỉ là tương lai nhìn từ quá khứ.
+vs: Si j'avais le temps, je viendrais. | Nếu có thời gian thì tôi sẽ đến. || điều kiện
+vs: Je savais que tu viendrais. | Tôi đã biết là bạn sẽ đến. || tương lai trong quá khứ
+> Hình thức giống nhau, nhưng nghĩa khác nhau.
+
+#mistakes
+x: Je savais qu'elle réussira. => Je savais qu'elle réussirait. | Tôi đã biết là cô ấy sẽ thành công. >> Động từ chính ở quá khứ: dùng [[conditionnel présent]].
+x: Elle m'a promis qu'elle sera là. => Elle m'a promis qu'elle serait là. | Cô ấy đã hứa sẽ có mặt. >> [[Futur]] đổi thành [[conditionnel]].
+x: J'allais à t'appeler. => J'allais t'appeler. | Tôi vừa định gọi cho bạn. >> Sau [[allais]] là nguyên mẫu, không có [[à]].
+
+#dialogue
+ines: Et tu savais que tu habiterais ici, à la montagne ? | Thế ông có biết là ông sẽ sống ở đây, trên núi không? [thinking]
+papi: Non ! Je croyais que nous resterions en ville toute notre vie. | Không! Ông tưởng ông bà sẽ ở thành phố cả đời. [surprised]
+ines: Qu'est-ce qui s'est passé ? | Thế chuyện gì đã xảy ra ạ? [surprised]
+papi: Un hiver, ta grand-mère a dit qu'elle allait acheter une maison ici. Elle l'a fait le lendemain ! | Một mùa đông, bà cháu nói là sẽ mua một ngôi nhà ở đây. Ngay hôm sau bà làm thật! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Không ai nghĩ là đội sẽ thắng. => Personne ne pensait que l'équipe gagnerait. | Không ai nghĩ là đội sẽ thắng.
+? Nói bằng tiếng Pháp: Tôi vừa định gọi cho bạn thì bạn đến. => J'allais t'appeler quand tu es arrivé. | Tôi vừa định gọi cho bạn thì bạn đến.
+
+#recap
+> Tương lai nhìn từ quá khứ: [[conditionnel présent]] cho việc sẽ xảy ra, [[conditionnel passé]] cho việc sẽ xong trước, [[allait]] cộng nguyên mẫu cho việc sắp xảy ra.
+
+#practice
+fill: Elle m'a promis qu'elle ___ à l'heure. | serait* / sera / était || quá khứ → conditionnel.
+fill: Personne ne pensait que l'équipe ___ . | gagnerait* / gagnera / gagne || tương lai trong quá khứ.
+contrast: Il dit qu'il ___ . | viendra* / viendrait || động từ chính ở hiện tại → futur.
+contrast: Il a dit qu'il ___ . | viendrait* / viendra || quá khứ → conditionnel.
+fill: J'étais sûr que tu ___ terminé avant nous. | aurais* / auras / avais || xong trước → conditionnel passé.
+fill: J'___ t'appeler quand tu es arrivé. | allais* / vais / irai || allait + nguyên mẫu.
+fix: Je savais qu'elle réussira. | Je savais qu'elle réussirait.* / Je savais qu'elle réussisse. / Je sais qu'elle réussirait. || conditionnel présent.
+listen: Personne ne pensait que l'équipe gagnerait. | Personne ne pensait que l'équipe gagnerait.* / Personne ne pense que l'équipe gagnera. / Personne ne pensait que l'équipe gagnait. || gagnerait.

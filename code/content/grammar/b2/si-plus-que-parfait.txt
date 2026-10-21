@@ -1,0 +1,61 @@
+=== si-plus-que-parfait
+sum: Giả định trái với quá khứ: Si + plus-que-parfait, conditionnel passé. Si j'avais su, je serais venu (thật ra tôi đã không biết nên đã không đến). Câu hỗn hợp, khi việc trong quá khứ ảnh hưởng tới hiện tại: Si + plus-que-parfait, conditionnel présent: Si j'avais pris le train, je serais déjà là.
+form: si + plus-que-parfait → conditionnel passé | Si j'avais su, je serais venu.
+form: quá khứ → hiện tại: conditionnel présent | Si tu avais dormi, tu serais en forme.
+form: ba loại câu với si | si + présent · si + imparfait · si + plus-que-parfait
+cast: hugo lea
+bg: stage
+words: savoir, rater, spectacle, début
+
+#hook
+hugo: Le spectacle était génial ! Dommage que tu sois arrivée en retard. | Buổi diễn tuyệt quá! Tiếc là em đến muộn. [happy]
+lea: Si j'avais su que ça commençait à huit heures, je serais venue plus tôt ! | Nếu em biết là tám giờ bắt đầu thì em đã đến sớm hơn rồi! [sad]
+> Thật ra cô ấy đã không biết, và đã đến muộn. [[Si j'avais su]] dùng [[plus-que-parfait]], [[je serais venue]] dùng [[conditionnel passé]]: giả định trái với quá khứ.
+
+#meaning
+th: Loại | Vế si | Vế chính
+tb: có thể xảy ra | si + présent | futur
+tb: trái với hiện tại | si + imparfait | conditionnel présent
+tb: trái với quá khứ | si + plus-que-parfait | conditionnel passé
+> Ba mức ngày càng xa sự thật. Bài này học dòng cuối.
+
+#form
+f: si + [plus-que-parfait] + [conditionnel passé]
+> Vế [[si]] không bao giờ dùng [[conditionnel]].
+vs: Si j'avais su, je serais venu. | Nếu tôi biết thì tôi đã đến. || quá khứ → quá khứ
+vs: Si j'avais accepté ce travail, je vivrais à Paris. | Nếu hồi đó tôi nhận việc ấy thì giờ tôi đang sống ở Paris. || quá khứ → hiện tại
+> Khi kết quả là bây giờ, vế chính dùng [[conditionnel présent]].
+
+#examples
+- Si tu m'{avais demandé|k}, je t'{aurais aidé|k}. | Nếu bạn hỏi tôi thì tôi đã giúp bạn rồi.
+- S'il {avait fait|k} beau, nous {serions allés|k} à la plage. | Nếu trời đẹp thì chúng tôi đã đi biển.
+- Si elle {avait pris|k} le train, elle {serait|k} déjà là. | Nếu cô ấy đi tàu thì giờ đã đến rồi.
+- Si nous {étions partis|k} plus tôt, nous n'{aurions|k} pas {raté|v} le début. | Nếu chúng tôi đi sớm hơn thì đã không lỡ đoạn đầu.
+
+#mistakes
+x: Si j'aurais su, j'aurais acheté des billets. => Si j'avais su, j'aurais acheté des billets. | Nếu biết thì tôi đã mua vé. >> Vế [[si]] không dùng [[conditionnel]].
+x: S'il avait plu, nous serons restés à la maison. => S'il avait plu, nous serions restés à la maison. | Nếu trời mưa thì chúng tôi đã ở nhà. >> Vế chính dùng [[conditionnel passé]]: [[serions restés]].
+x: Si tu m'avais écouté, tu réussissais. => Si tu m'avais écouté, tu aurais réussi. | Nếu bạn nghe tôi thì bạn đã thành công. >> Không dùng [[imparfait]] ở vế chính.
+
+#dialogue
+lea: Et si j'avais pris un taxi, j'aurais vu toute la première partie. | Mà nếu em đi taxi thì đã xem được cả phần đầu. [thinking]
+hugo: Oui, mais si tu avais pris un taxi, tu n'aurais plus d'argent pour le dîner ! | Ừ, nhưng nếu em đi taxi thì giờ em hết tiền ăn tối rồi! [happy]
+lea: C'est vrai. Et si je n'étais pas venue du tout, je serais encore plus triste. | Cũng đúng. Mà nếu em không đến chút nào thì giờ còn buồn hơn. [sad]
+hugo: Allez, viens, je te raconte le début pendant le dîner. | Thôi nào, đi, anh kể em nghe đoạn đầu trong lúc ăn tối. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Nếu bạn hỏi tôi thì tôi đã giúp bạn rồi. => Si tu m'avais demandé, je t'aurais aidé. | Nếu bạn hỏi tôi thì tôi đã giúp bạn rồi.
+? Nói bằng tiếng Pháp: Nếu cô ấy đi tàu thì giờ đã đến rồi. => Si elle avait pris le train, elle serait déjà là. | Nếu cô ấy đi tàu thì giờ đã đến rồi.
+
+#recap
+> Trái với quá khứ: [[si]] cộng [[plus-que-parfait]], vế chính dùng [[conditionnel passé]]. Nếu kết quả ở hiện tại, vế chính dùng [[conditionnel présent]]. Vế [[si]] không bao giờ có [[conditionnel]].
+
+#practice
+fill: Si j'___ su, je serais venu. | avais* / aurais / ai || si + plus-que-parfait.
+fill: S'il avait fait beau, nous ___ allés à la plage. | serions* / serons / sommes || conditionnel passé.
+contrast: Si elle avait pris le train, elle ___ déjà là. | serait* / aurait été || kết quả ở hiện tại → conditionnel présent.
+fill: Si tu m'avais écouté, tu ___ réussi. | aurais* / avais / auras || vế chính: conditionnel passé.
+type: Si nous ___ (partir) plus tôt, nous n'aurions pas raté le début. | étions partis || partir → être, plus-que-parfait.
+fix: Si j'aurais su, j'aurais acheté des billets. | Si j'avais su, j'aurais acheté des billets.* / Si j'avais su, j'avais acheté des billets. / Si je savais, j'aurais acheté des billets. || si + plus-que-parfait.
+order: Si / tu / m'avais / demandé, / je / t'aurais / aidé. | Nếu bạn hỏi tôi thì tôi đã giúp bạn rồi.
+listen: S'il avait fait beau, nous serions allés à la plage. | S'il avait fait beau, nous serions allés à la plage.* / S'il fait beau, nous irons à la plage. / S'il faisait beau, nous irions à la plage. || trái với quá khứ.

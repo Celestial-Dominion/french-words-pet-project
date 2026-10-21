@@ -1,0 +1,63 @@
+=== nguyen-mau-qua-khu
+sum: Nguyên mẫu quá khứ = avoir hoặc être (nguyên mẫu) + phân từ: avoir fini, être parti. Dùng khi việc ở nguyên mẫu đã xảy ra TRƯỚC việc chính, cùng một chủ ngữ: Je regrette d'avoir dit ça. Merci d'être venu. Il est parti sans avoir payé. Sau après, luôn dùng nguyên mẫu quá khứ.
+form: avoir / être + phân từ | avoir fini · être parti
+form: regretter de, être content de, merci de | Je regrette d'avoir crié.
+form: sans + nguyên mẫu quá khứ | Il est parti sans avoir payé.
+form: phủ định: ne pas avoir + phân từ | Je regrette de ne pas avoir appelé.
+cast: maman tom
+bg: home-day
+words: regretter, remercier, ranger, gâteau
+
+#hook
+maman: Tom, qui a mangé tout le gâteau ? | Tom, ai ăn hết cái bánh vậy? [surprised]
+tom: C'est moi... Je regrette d'avoir tout mangé. Pardon de ne pas t'en avoir laissé. | Là con... Con hối hận vì đã ăn hết. Con xin lỗi vì đã không để phần mẹ. [sad]
+> [[D'avoir tout mangé]], [[de ne pas t'en avoir laissé]]: việc ăn đã xảy ra trước lúc xin lỗi. Ta dùng nguyên mẫu quá khứ.
+
+#meaning
+vs: Je suis content de partir. | Tôi vui vì được đi. || việc sắp xảy ra
+vs: Je suis content d'être parti. | Tôi vui vì đã đi. || việc đã xảy ra
+> Cùng một người, nhưng thời điểm khác nhau.
+
+#form
+f: [avoir, être] + phân từ quá khứ
+> Chọn [[avoir]] hay [[être]] như ở [[passé composé]]. Với [[être]], phân từ hợp với chủ ngữ.
+th: Câu | Ý nghĩa
+tb: Merci d'être venus. | cảm ơn vì đã đến
+tb: Il est parti sans avoir payé. | đi mà chưa trả tiền
+tb: Après avoir mangé, on a joué. | ăn xong rồi chơi
+> Với phủ định, [[ne pas]] đứng trước [[avoir]] hoặc [[être]]: [[ne pas avoir compris]].
+
+#examples
+- Merci de m'{avoir aidé|k} hier. | Cảm ơn vì hôm qua đã giúp tôi.
+- Elle est fière d'{avoir réussi|k} son examen. | Cô ấy tự hào vì đã đỗ kỳ thi.
+- Je suis désolé d'{être arrivé|k} en retard. | Xin lỗi vì tôi đã đến muộn.
+- Il est sorti sans {avoir fermé|k} la porte. | Anh ấy ra ngoài mà chưa đóng cửa.
+- Je regrette de {ne pas avoir|k} appelé ma mère. | Tôi hối hận vì đã không gọi cho mẹ.
+
+#mistakes
+x: Merci de venir hier soir. => Merci d'être venu hier soir. | Cảm ơn vì tối qua đã đến. >> Việc đã xong: dùng nguyên mẫu quá khứ.
+x: Elle est contente d'avoir partie. => Elle est contente d'être partie. | Cô ấy vui vì đã đi. >> [[Partir]] dùng [[être]], phân từ hợp giống.
+x: Je regrette de pas avoir appelé. => Je regrette de ne pas avoir appelé. | Tôi hối hận vì đã không gọi. >> Cần cả [[ne]] và [[pas]] trước [[avoir]].
+
+#dialogue
+maman: Bon. Au moins, merci de m'avoir dit la vérité. | Thôi được. Ít ra cảm ơn con đã nói thật. [explain]
+tom: Et merci de ne pas t'être fâchée ! | Và cảm ơn mẹ vì đã không giận! [happy]
+maman: Attends, je ne suis pas encore calmée... Va ranger ta chambre. | Khoan, mẹ vẫn chưa nguôi đâu... Đi dọn phòng đi. [thinking]
+tom: Après avoir rangé, je pourrai faire un autre gâteau ? | Dọn xong con làm cái bánh khác được không ạ? [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Cảm ơn vì hôm qua đã giúp tôi. => Merci de m'avoir aidé hier. | Cảm ơn vì hôm qua đã giúp tôi.
+? Nói bằng tiếng Pháp: Anh ấy ra ngoài mà chưa đóng cửa. => Il est sorti sans avoir fermé la porte. | Anh ấy ra ngoài mà chưa đóng cửa.
+
+#recap
+> Nguyên mẫu quá khứ: [[avoir]] hoặc [[être]] cộng phân từ, cho việc đã xảy ra trước, cùng một chủ ngữ. Hay gặp sau [[merci de]], [[regretter de]], [[sans]], [[après]]. Phủ định: [[ne pas avoir]].
+
+#practice
+contrast: Merci d'___ venu hier soir. | être* / avoir || venir → être.
+contrast: Demain, je serai content de ___ . | partir* / être parti || việc sắp tới → nguyên mẫu.
+fill: Elle est fière d'___ réussi son examen. | avoir* / être / a || réussir → avoir.
+fill: Il est sorti sans avoir ___ la porte. | fermé* / fermer / ferme || avoir + phân từ.
+fill: Je regrette de ___ avoir appelé ma mère. | ne pas* / pas / ne || ne pas trước avoir.
+type: Je suis désolé d'___ (arriver) en retard. | être arrivé || arriver → être.
+fix: Elle est contente d'avoir partie. | Elle est contente d'être partie.* / Elle est contente de partie. / Elle est contente d'avoir parti. || partir → être.
+listen: Je suis désolé d'être arrivé en retard. | Je suis désolé d'être arrivé en retard.* / Je suis désolé d'arriver en retard. / Je suis désolé, je suis arrivé en retard. || d'être arrivé.

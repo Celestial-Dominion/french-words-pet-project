@@ -35,7 +35,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | chưa làm (3 giỏ có sẵn) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | chưa làm |
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
-| G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | chưa làm |
+| G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | đang làm: lô 1 xong (7/32 bài) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | chưa làm |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | chưa làm |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
@@ -169,7 +169,8 @@ hợp phân từ nâng cao · đại từ trung tính le / en / y thay mệnh đ
 penser à/de, tenir à) · từ nối lập luận (en outre, néanmoins, en revanche) · quan điểm & nghi ngờ nâng cao ·
 mise en relief (ce qui…, c'est…) · n'importe qui / quoi / où · so sánh nâng cao (plus… plus, d'autant plus que) ·
 câu hỏi gián tiếp (ce que, si, où).
-- **Nhật ký:**
+- **Nhật ký:** (kế hoạch 32 bài, bỏ phần đã có ở B1: n'importe, plus… plus, c'est… qui, câu hỏi gián tiếp hiện tại)
+  - 21/10 lô 1: 7 bài (subjonctif passé, conditionnel passé, si + plus-que-parfait, futur antérieur, tương lai trong quá khứ, lời nói gián tiếp ở quá khứ, nguyên mẫu quá khứ) + 7 điểm inventory; 95/95 bài xuất bản, 0 lỗi; 5 giờ 10% · tuần 8% lúc bắt đầu; COMMIT
 
 ### G-C1 — Ngữ pháp C1 [ ] (app Anh 30 bài)
 

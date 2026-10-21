@@ -1,0 +1,77 @@
+=== conditionnel-passe
+sum: Conditionnel passé = avoir hoặc être ở conditionnel présent + phân từ (j'aurais aimé, elle serait venue). Ba cách dùng chính: tiếc nuối về quá khứ (J'aurais aimé voyager), trách móc hay lời khuyên muộn (Tu aurais dû me le dire), và tin chưa xác nhận trên báo đài (L'incendie aurait fait deux blessés).
+form: aurais / serais + phân từ | j'aurais aimé · elle serait venue
+form: tiếc nuối | J'aurais aimé être là.
+form: trách: aurais dû / pu + nguyên mẫu | Tu aurais dû m'appeler.
+form: tin chưa xác nhận | Le voleur serait parti en voiture.
+cast: zoe karim
+bg: car
+words: devoir, prévenir, sortie, autoroute
+
+#hook
+zoe: On a raté la sortie ! Tu aurais dû regarder le panneau ! | Mình lỡ lối ra rồi! Lẽ ra anh phải nhìn biển báo chứ! [surprised]
+karim: Et toi, tu aurais pu me prévenir ! On aurait dû prendre l'autoroute. | Còn em, lẽ ra em có thể nhắc anh! Lẽ ra mình nên đi đường cao tốc. [worried]
+> [[Tu aurais dû]], [[tu aurais pu]], [[on aurait dû]]: nói về điều lẽ ra nên làm nhưng đã không làm. Đây là [[conditionnel passé]].
+
+#meaning
+vs: J'aimerais partir. | Tôi muốn đi. || conditionnel présent: mong muốn bây giờ
+vs: J'aurais aimé partir. | Tôi đã rất muốn được đi. || conditionnel passé: tiếc nuối
+> [[Conditionnel passé]] nhìn lại quá khứ, nói về điều đã không xảy ra.
+
+#form
+f: [aurais, serais] + phân từ quá khứ
+> Chọn [[avoir]] hay [[être]] như ở [[passé composé]].
+th: Ngôi | avoir | être
+tb: je | aurais aimé | serais venu
+tb: tu | aurais aimé | serais venu
+tb: il, elle | aurait aimé | serait venu
+tb: nous | aurions aimé | serions venus
+tb: vous | auriez aimé | seriez venus
+tb: ils, elles | auraient aimé | seraient venus
+> Đuôi giống [[conditionnel présent]]: [[ais]], [[ait]], [[ions]], [[iez]], [[aient]].
+
+#examples
+> Ba cách dùng chính.
+th: Cách dùng | Ví dụ
+tb: tiếc nuối | J'aurais voulu étudier la musique.
+tb: trách, khuyên muộn | Vous auriez dû réserver.
+tb: tin chưa xác nhận | Le ministre serait arrivé hier soir.
+> Trên báo và đài, [[conditionnel passé]] báo tin chưa được xác nhận, giống như theo một số nguồn tin.
+- J'aurais {aimé|v} te voir avant ton départ. | Tôi đã rất muốn gặp bạn trước khi bạn đi.
+- Tu {aurais dû|k} m'appeler ! | Lẽ ra bạn phải gọi cho tôi!
+- Sans ton aide, je n'{aurais|k} jamais {réussi|v}. | Không có bạn giúp, tôi đã chẳng bao giờ thành công.
+- Selon la radio, l'incendie {aurait fait|k} deux blessés. | Theo đài phát thanh, vụ cháy có thể đã làm hai người bị thương.
+
+#pronunciation
+pron: j'aurai | j'aurai | ʒɔʁe
+pron: j'aurais | j'aurais | ʒɔʁɛ
+> [[J'aurai]] ở [[futur]] kết thúc bằng âm [[é]] khép. [[J'aurais]] ở [[conditionnel]] kết thúc bằng âm [[è]] mở. Nhiều người đọc gần giống nhau, nên hãy dựa vào ngữ cảnh.
++ J'aurais aimé venir. | Tôi đã rất muốn đến.
+
+#mistakes
+x: Tu aurais dû m'appelé. => Tu aurais dû m'appeler. | Lẽ ra bạn phải gọi cho tôi. >> Sau [[aurais dû]] là nguyên mẫu.
+x: Elle aurait venue. => Elle serait venue. | Lẽ ra cô ấy đã đến. >> [[Venir]] dùng [[être]].
+x: Hier, je voudrais te voir. => Hier, j'aurais voulu te voir. | Hôm qua tôi đã rất muốn gặp bạn. >> Tiếc nuối về quá khứ thì dùng [[conditionnel passé]].
+
+#dialogue
+karim: Bon, on aurait pu partir plus tôt aussi... | Thôi, mình cũng lẽ ra có thể đi sớm hơn... [sad]
+zoe: C'est vrai. À la radio, ils ont dit qu'un camion se serait renversé sur l'autoroute. | Đúng thế. Trên đài họ nói hình như có một xe tải bị lật trên đường cao tốc. [explain]
+karim: Alors ce détour nous aurait peut-être sauvés ! | Vậy có khi đi đường vòng này lại cứu mình! [happy]
+zoe: Peut-être. Mais j'aurais préféré arriver avant la nuit. | Có thể. Nhưng em vẫn muốn đến nơi trước khi trời tối hơn. [thinking]
+
+#recall
+? Nói bằng tiếng Pháp: Lẽ ra bạn phải gọi cho tôi! => Tu aurais dû m'appeler ! | Lẽ ra bạn phải gọi cho tôi!
+? Nói bằng tiếng Pháp: Không có bạn giúp, tôi đã chẳng bao giờ thành công. => Sans ton aide, je n'aurais jamais réussi. | Không có bạn giúp, tôi đã chẳng bao giờ thành công.
+
+#recap
+> [[Conditionnel passé]]: [[aurais]] hoặc [[serais]] cộng phân từ. Dùng để tiếc nuối, để trách với [[tu aurais dû]], và để báo tin chưa xác nhận.
+
+#practice
+fill: Tu ___ dû m'appeler ! | aurais* / aurai / avais || trách → conditionnel passé.
+fill: Elle ___ venue avec plaisir. | serait* / aurait / sera || venir → être.
+contrast: Hier, ___ te voir. | j'aurais voulu* / je voudrais || quá khứ → conditionnel passé.
+fill: Selon la radio, l'incendie ___ fait deux blessés. | aurait* / aura / avait || tin chưa xác nhận.
+type: Sans ton aide, je n'___ jamais réussi. | aurais || conditionnel passé của avoir.
+fill: Vous auriez dû ___ . | réserver* / réservé / réservez || sau dû: nguyên mẫu.
+fix: Elle aurait venue. | Elle serait venue.* / Elle aurait venu. / Elle serait venu. || venir → être, hợp giống.
+listen: J'aurais aimé venir. | J'aurais aimé venir.* / J'aimerais venir. / J'ai aimé venir. || aurais aimé.

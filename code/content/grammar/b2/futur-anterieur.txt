@@ -1,0 +1,65 @@
+=== futur-anterieur
+sum: Futur antérieur = avoir hoặc être ở futur simple + phân từ (j'aurai fini, elle sera partie). Nói việc sẽ xong TRƯỚC một việc khác hay một mốc trong tương lai: Quand tu auras fini, tu pourras sortir. D'ici lundi, j'aurai terminé. Còn dùng để phỏng đoán điều đã xảy ra: Il est en retard, il aura raté son train.
+form: aurai / serai + phân từ | j'aurai fini · elle sera partie
+form: quand / dès que + futur antérieur, futur | Dès que j'aurai fini, je t'appellerai.
+form: mốc: d'ici, dans + thời gian | D'ici lundi, j'aurai terminé.
+form: phỏng đoán | Il aura oublié.
+cast: dr-roux chloe
+bg: hospital
+words: traitement, guérir, terminer, douleur
+
+#hook
+chloe: Docteur, quand est-ce que je pourrai reprendre le sport ? | Bác sĩ ơi, khi nào tôi có thể chơi thể thao lại? [thinking]
+dr-roux: Quand vous aurez fini ce traitement. Dans deux semaines, vous serez guérie. | Khi chị uống hết đợt thuốc này. Hai tuần nữa chị sẽ khỏi. [explain]
+> [[Quand vous aurez fini]]: việc uống thuốc phải xong trước, rồi mới chơi thể thao. Việc sẽ xong trước trong tương lai dùng [[futur antérieur]].
+
+#meaning
+vs: Je finirai le rapport demain. | Mai tôi sẽ làm báo cáo cho xong. || futur simple: một việc trong tương lai
+vs: Demain à midi, j'aurai fini le rapport. | Trưa mai là tôi đã làm xong báo cáo rồi. || futur antérieur: xong trước một mốc
+> [[Futur antérieur]] đứng ở một mốc tương lai rồi nhìn lại phía trước nó.
+
+#form
+f: [aurai, serai] + phân từ quá khứ
+> Chọn [[avoir]] hay [[être]] như ở [[passé composé]].
+th: Ngôi | avoir | être
+tb: je | aurai fini | serai parti
+tb: tu | auras fini | seras parti
+tb: il, elle | aura fini | sera parti
+tb: nous | aurons fini | serons partis
+tb: vous | aurez fini | serez partis
+tb: ils, elles | auront fini | seront partis
+> Đuôi giống [[futur simple]]: [[ai]], [[as]], [[a]], [[ons]], [[ez]], [[ont]].
+
+#examples
+- Dès que j'{aurai reçu|k} ta lettre, je te répondrai. | Ngay khi nhận được thư của bạn, tôi sẽ trả lời.
+- D'ici la fin de l'année, nous {aurons déménagé|k}. | Trước cuối năm, chúng tôi sẽ chuyển nhà xong.
+- Quand les invités {seront partis|k}, on rangera. | Khi khách về hết, mình sẽ dọn dẹp.
+- Il n'est pas encore là ? Il {aura oublié|k} notre rendez-vous. | Anh ấy chưa đến à? Chắc anh ấy quên cuộc hẹn rồi.
+
+#mistakes
+x: Quand j'ai fini, je t'appellerai. => Quand j'aurai fini, je t'appellerai. | Khi làm xong, tôi sẽ gọi cho bạn. >> Việc xong trước trong tương lai: [[futur antérieur]].
+x: Dès qu'elle aura arrivé, on mangera. => Dès qu'elle sera arrivée, on mangera. | Ngay khi cô ấy đến, chúng ta sẽ ăn. >> [[Arriver]] dùng [[être]], phân từ hợp giống.
+x: Quand tu auras fini, tu peux sortir. => Quand tu auras fini, tu pourras sortir. | Khi làm xong, con có thể ra ngoài. >> Vế chính vẫn ở [[futur]].
+
+#dialogue
+chloe: Et quand j'aurai terminé les médicaments, je reviens vous voir ? | Khi uống hết thuốc, tôi quay lại gặp bác sĩ nhé? [thinking]
+dr-roux: Oui. D'ici là, la douleur aura disparu, j'en suis sûr. | Vâng. Đến lúc đó chắc chắn cơn đau đã hết rồi. [happy]
+chloe: Et si elle n'a pas disparu ? | Còn nếu chưa hết thì sao ạ? [worried]
+dr-roux: Alors vous aurez sans doute trop forcé ! Reposez-vous bien. | Thì chắc là chị đã gắng sức quá! Chị nghỉ ngơi cho tốt nhé. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Ngay khi nhận được thư của bạn, tôi sẽ trả lời. => Dès que j'aurai reçu ta lettre, je te répondrai. | Ngay khi nhận được thư của bạn, tôi sẽ trả lời.
+? Nói bằng tiếng Pháp: Khi khách về hết, mình sẽ dọn dẹp. => Quand les invités seront partis, on rangera. | Khi khách về hết, mình sẽ dọn dẹp.
+
+#recap
+> [[Futur antérieur]]: [[aurai]] hoặc [[serai]] cộng phân từ. Dùng cho việc sẽ xong trước một việc hay một mốc tương lai, thường sau [[quand]], [[dès que]], [[d'ici]]. Còn dùng để phỏng đoán: [[il aura oublié]].
+
+#practice
+fill: Quand j'___ fini, je t'appellerai. | aurai* / ai / aurais || xong trước trong tương lai.
+fill: Dès qu'elle sera ___ , on mangera. | arrivée* / arrivé / arriver || être → hợp giống.
+contrast: Quand tu auras fini, tu ___ sortir. | pourras* / peux || vế chính: futur.
+fill: D'ici la fin de l'année, nous ___ déménagé. | aurons* / avons / serons || déménager → avoir.
+type: Quand les invités ___ (partir), on rangera. | seront partis || partir → être.
+fill: Il n'est pas encore là ? Il ___ oublié notre rendez-vous. | aura* / sera / avait || phỏng đoán.
+fix: Quand j'ai fini, je t'appellerai. | Quand j'aurai fini, je t'appellerai.* / Quand je finis, je t'appellerai. / Quand j'aurais fini, je t'appellerai. || futur antérieur.
+listen: Dès que j'aurai reçu ta lettre, je te répondrai. | Dès que j'aurai reçu ta lettre, je te répondrai.* / Dès que j'ai reçu ta lettre, je t'ai répondu. / Dès que je recevrai ta lettre, je te répondrai. || aurai reçu.

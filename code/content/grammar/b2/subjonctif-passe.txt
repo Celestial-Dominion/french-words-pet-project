@@ -1,0 +1,72 @@
+=== subjonctif-passe
+sum: Subjonctif passé = avoir hoặc être ở subjonctif présent + phân từ quá khứ (que j'aie fini, qu'elle soit partie). Dùng sau các mẫu cần subjonctif khi việc phía sau đã xảy ra trước, hoặc phải xong trước một mốc: Je suis content que tu sois venu. Il faut que tu aies fini avant midi. Bien qu'il ait plu, on est sortis.
+form: que + aie / sois… + phân từ | que j'aie fini · qu'elle soit partie
+form: việc đã xảy ra trước | Je suis content que tu sois venu.
+form: phải xong trước một mốc | Il faut que tu aies fini avant midi.
+cast: papa linh
+bg: home-lake
+words: content, venir, perdre, rater
+
+#hook
+papa: Linh ! Je suis vraiment content que tu sois venue jusqu'au lac. | Linh! Bác thật sự vui vì cháu đã đến tận hồ. [happy]
+linh: Merci ! Je suis désolée que nous soyons arrivés si tard. | Cảm ơn bác! Cháu xin lỗi vì bọn cháu đến muộn thế. [worried]
+> [[Que tu sois venue]], [[que nous soyons arrivés]]: việc đến đã xảy ra rồi. Sau cảm xúc cần [[subjonctif]], và vì việc đã xong nên dùng [[subjonctif passé]].
+
+#meaning
+vs: Je suis content que tu viennes. | Tôi vui vì bạn đến. || đang hoặc sắp xảy ra: subjonctif présent
+vs: Je suis content que tu sois venu. | Tôi vui vì bạn đã đến. || đã xảy ra: subjonctif passé
+> Cùng một mẫu câu, chỉ khác thời điểm của việc phía sau.
+
+#form
+f: [aie, sois] + phân từ quá khứ
+> Chọn [[avoir]] hay [[être]] giống như ở [[passé composé]]. Với [[être]], phân từ hợp với chủ ngữ.
+th: Ngôi | avoir | être
+tb: que je | aie fini | sois parti
+tb: que tu | aies fini | sois parti
+tb: qu'il, qu'elle | ait fini | soit parti
+tb: que nous | ayons fini | soyons partis
+tb: que vous | ayez fini | soyez partis
+tb: qu'ils, qu'elles | aient fini | soient partis
+> Chỉ cần thuộc [[subjonctif]] của [[avoir]] và [[être]] là chia được mọi động từ.
+
+#examples
+- Je regrette que tu n'{aies|k} pas {pu|v} venir. | Tôi tiếc là bạn đã không đến được.
+- Bien qu'il {ait|k} beaucoup {plu|v}, la fête était réussie. | Dù trời đã mưa nhiều, bữa tiệc vẫn thành công.
+- Je ne crois pas qu'elle {soit|k} déjà {rentrée|v}. | Tôi không nghĩ là cô ấy đã về rồi.
+- Il faut que vous {ayez|k} {terminé|v} avant vendredi. | Các anh chị phải làm xong trước thứ Sáu.
+- C'est le meilleur film que j'{aie|k} jamais {vu|v}. | Đó là bộ phim hay nhất tôi từng xem.
+
+#contrast
+> Mốc so sánh là động từ chính. Việc phía sau xảy ra trước thì dùng [[subjonctif passé]].
+tl: -1 il est parti | lúc trước
+tl: now je suis triste | bây giờ
+> Anh ấy đi trước, tôi buồn sau.
++ Je suis triste qu'il soit parti. | Tôi buồn vì anh ấy đã đi.
+
+#mistakes
+x: Je suis heureuse que vous êtes venus. => Je suis heureuse que vous soyez venus. | Tôi vui vì các bạn đã đến. >> Sau cảm xúc dùng [[subjonctif]]: [[soyez venus]].
+x: Bien qu'il a plu, on est sortis. => Bien qu'il ait plu, on est sortis. | Dù trời đã mưa, chúng tôi vẫn ra ngoài. >> [[Bien que]] cộng [[subjonctif]], ở đây là [[ait plu]].
+x: Je doute qu'elle ait partie. => Je doute qu'elle soit partie. | Tôi không chắc là cô ấy đã đi. >> [[Partir]] dùng [[être]].
+
+#dialogue
+papa: Vous avez trouvé facilement ? J'avais peur que vous vous soyez perdus. | Các cháu tìm có dễ không? Bác sợ các cháu bị lạc. [worried]
+linh: Bien que nous ayons pris la mauvaise route au début, nous avons trouvé. | Dù lúc đầu bọn cháu đi nhầm đường, nhưng rồi cũng tìm ra. [explain]
+papa: Parfait. C'est le plus beau coucher de soleil que nous ayons eu cette année. | Tuyệt. Đây là buổi hoàng hôn đẹp nhất năm nay đấy. [happy]
+linh: Je suis heureuse qu'on ne l'ait pas raté ! | Cháu mừng vì bọn cháu đã không bỏ lỡ nó! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi tiếc là bạn đã không đến được. => Je regrette que tu n'aies pas pu venir. | Tôi tiếc là bạn đã không đến được.
+? Nói bằng tiếng Pháp: Đó là bộ phim hay nhất tôi từng xem. => C'est le meilleur film que j'aie jamais vu. | Đó là bộ phim hay nhất tôi từng xem.
+
+#recap
+> [[Subjonctif passé]] là [[aie]] hoặc [[sois]] cộng phân từ. Dùng sau các mẫu cần [[subjonctif]] khi việc phía sau đã xảy ra trước, hoặc phải xong trước một mốc.
+
+#practice
+contrast: Je suis content que tu ___ hier. | sois venu* / viennes || việc đã xảy ra → subjonctif passé.
+contrast: Je suis content que tu ___ demain. | viennes* / sois venu || việc sắp tới → subjonctif présent.
+fill: Bien qu'il ___ beaucoup plu, la fête était réussie. | ait* / a / avait || bien que + subjonctif.
+fill: Je ne crois pas qu'elle soit déjà ___ . | rentrée* / rentré / rentrer || être → hợp giống.
+fill: Il faut que vous ___ terminé avant vendredi. | ayez* / avez / soyez || terminer → avoir.
+type: C'est le meilleur film que j'___ jamais vu. | aie || so sánh nhất + subjonctif.
+fix: Bien qu'il a plu, on est sortis. | Bien qu'il ait plu, on est sortis.* / Bien qu'il soit plu, on est sortis. / Bien qu'il avait plu, on est sortis. || ait plu.
+listen: Je suis triste qu'il soit parti. | Je suis triste qu'il soit parti.* / Je suis triste qu'il parte. / Je suis triste qu'il est parti. || soit parti.
