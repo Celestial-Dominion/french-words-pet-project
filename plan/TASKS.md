@@ -34,7 +34,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | P-A2 | A2 — nâng độ phủ từ | **bắt buộc** | ~40 bài đọc (4 lô) | ~2% | **xong 21/10** (40 bài, ≥3 80,1% · ≥5 41,9%) |
 | S-C2 | C2 — thêm truyện cho đủ 49 như app Anh | tùy chọn | 10 truyện | ~2% | **xong 21/10** (49 truyện, ≥3 76,5% · ≥5 31,9%) |
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | **xong 21/10** (20 bài, 20 điểm phủ 100%) |
-| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | xong 21/10: code + 5 tác phẩm A2–C2 (20 phần); chuỗi bài đọc chưa làm (tùy chọn) |
+| X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | xong 21/10: code + 5 tác phẩm A2–C2 (20 phần) + 7 chuỗi bài đọc (40 bài) |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
 | G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | **xong 21/10** (26 bài, 26 điểm phủ 100%) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | xong 21/10 (67/67) |
@@ -254,8 +254,14 @@ sorte que, à force de, tant et si bien que).
     1088–1174 từ/phần, mật độ C2 3,5–4,2%; ngưỡng thật 3,5%, hiển thị "4%") + 60 câu hỏi có audio (482 MP3) → C2 53
     truyện; 0 lỗi, 0 cảnh báo. Bẫy: bộ kiểm tính câu trung bình theo DÒNG `FR | VI` → thêm câu thì tạo dòng mới, đừng
     nối vào dòng cũ (câu TB vọt 28,6 > 28,5). Credit trong `settings-panel.tsx` đã thêm Balzac.
-  - **Kết quả:** truyện dài xong cả 5 cấp có (A2–C2; A1 không làm, app Anh cũng bắt đầu từ A2). Còn lại (tùy chọn): chuỗi
-    bài đọc cùng chủ đề như 28 bài bên app Anh — code đã hỗ trợ `series:` cho bài đọc, chỉ cần viết nội dung.
+  - 21/10 lô 6: chuỗi bài đọc theo cấp — gắn `series:` cho 40 bài CÓ SẴN (không viết bài mới, không thêm audio), 7 chuỗi
+    tăng dần theo cấp: `argent` 6 (A1 L'argent de poche → C2 L'économie comportementale), `langues` 5 (A2–C2),
+    `sommeil` 5 (A1, A2, B1 ×2, C1), `ecrans` 6, `pain` 6 (A1 Acheter du pain → C2 La fermentation), `ecole` 6 (A1 Le
+    premier jour d'école → C2 Ferdinand Buisson), `travail` 6 (A1 Le travail du boulanger → C2 Le travail, une torture ?).
+    App Anh có 6 chuỗi / 28 bài. Soát fr-qa 375 px + máy bàn: khối "Chuỗi bài theo cấp · bậc n/m", nút ← cấp trước / cấp
+    sau →, không tràn ngang. Muốn thêm chuỗi: tìm tiêu đề cùng chủ đề bằng `rg -i '^title: [^|]*(từ khoá)' content/readings`,
+    thêm dòng `series: <id> <n>` sau dòng `genre:`, thứ tự 1..n theo cấp tăng dần.
+  - **Kết quả:** X-series xong — truyện dài cả 5 cấp có (A2–C2; A1 không làm, app Anh cũng bắt đầu từ A2) + 7 chuỗi bài đọc.
 
 ## X-skip — "Bắt đầu từ A1 / bỏ qua cấp" (tùy chọn) [x]
 
