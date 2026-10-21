@@ -317,7 +317,7 @@ sorte que, à force de, tant et si bien que).
     nationalité, arrondissement, camping, tourisme, apéritif, belge…); A1 ≥1 95,0→99,6 ✓ · ≥3 86,5→90,0 ✓ · ≥5 62,8→65,1 ✓;
     thiếu 73→0; 839f43e
   - 21/10 lô 3: 14 bài A2 (a2-p05 10 bài phủ đủ 48 từ mới xuống A2; a2-p06 4 bài đưa từ 2→3 bài), 4 câu hỏi/bài,
-    audio 399 câu; A2 ≥1 93,6→97,6 ✓ · ≥3 76,6→81,7 ✓ · ≥5 40,6→41,1 ✓; thiếu 85→0; 5 giờ 6% · tuần 18%; COMMIT3
+    audio 399 câu; A2 ≥1 93,6→97,6 ✓ · ≥3 76,6→81,7 ✓ · ≥5 40,6→41,1 ✓; thiếu 85→0; 5 giờ 6% · tuần 18%; ffecf1b
 - **Còn lại:** câu ví dụ của 122 từ xuống cấp (đo từ
   vượt cấp mới, viết lại câu quá khó: `scripts/out/examples.json` + audio + shard); pha 2 (lệch 2 cấp, ~1.200 từ) chỉ khi
   người dùng muốn — chia lô theo cấp, mỗi lô sửa bài như trên.
