@@ -1899,6 +1899,73 @@
     "nominalisation"
    ],
    "pri": 2
+  },
+  {
+   "id": "infinitive-c1",
+   "lv": "c1",
+   "cat": "verbs",
+   "name": "Infinitif C1",
+   "vi": "Nguyên mẫu C1: làm chủ ngữ (Voyager ouvre l'esprit), câu hỏi ngắn (Que faire ? Où aller ?), hướng dẫn và biển báo (Agiter avant emploi; Ne pas toucher: ne pas đứng liền trước nguyên mẫu), cụm à + nguyên mẫu (à vrai dire, à l'entendre)",
+   "pre": [
+    "infinitif-passe"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "pronominal-idioms",
+   "lv": "c1",
+   "cat": "pronouns",
+   "name": "Expressions avec en, y",
+   "vi": "Thành ngữ với en, y: en vouloir à qqn (giận ai), s'en faire (lo lắng), s'en sortir (xoay xở được), s'y prendre (làm cách nào), s'y connaître (thạo), n'y être pour rien (không có lỗi), en avoir marre (chán ngấy, khẩu ngữ)",
+   "pre": [
+    "neutral-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "agreement-c1",
+   "lv": "c1",
+   "cat": "adjectives",
+   "name": "Accords délicats",
+   "vi": "Hợp giống số C1: tout trạng từ (rất) không đổi, trừ trước tính từ giống cái bắt đầu bằng phụ âm (tout heureuse, toute petite); demi trước danh từ không đổi (une demi-heure), sau danh từ hợp giống (deux heures et demie); màu ghép và màu từ danh từ không đổi (des yeux bleu clair, des chaussures marron), nhưng rose, mauve vẫn thêm s",
+   "pre": [
+    "adj-agreement",
+    "tout"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "aspect-c1",
+   "lv": "c1",
+   "cat": "tense",
+   "name": "Semi-auxiliaires C1",
+   "vi": "Động từ bán trợ C1: faillir + nguyên mẫu (suýt: j'ai failli tomber), finir par (rốt cuộc), se mettre à (bỗng bắt đầu), ne pas tarder à (chẳng mấy chốc), commencer par (bắt đầu bằng)",
+   "pre": [
+    "aspect-periphrases"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "word-formation",
+   "lv": "c1",
+   "cat": "nouns",
+   "name": "Formation des mots",
+   "vi": "Cấu tạo từ: tiền tố in-, im-, il-, ir- (không: impossible, illégal, irrégulier), dé-, dés- (ngược lại: défaire, désordre), re-, ré- (lại: réécrire), mal- (malhonnête); hậu tố -able, -ible (có thể: lavable, lisible), -âtre (ngả màu: grisâtre)",
+   "pre": [
+    "nominalisation"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "reporting-verbs",
+   "lv": "c1",
+   "cat": "clauses",
+   "name": "Verbes introducteurs",
+   "vi": "Động từ tường thuật thay dire: affirmer (khẳng định), prétendre + nguyên mẫu hoặc que (tự nhận, có ý nghi ngờ), nier (chối; nier que + subjonctif), avouer, reconnaître (thú nhận), reprocher à qqn de (trách), promettre de, menacer de; hay đi với nguyên mẫu quá khứ (il nie avoir menti)",
+   "pre": [
+    "reported-past"
+   ],
+   "pri": 1
   }
  ],
  "probes": [

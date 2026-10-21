@@ -1,0 +1,63 @@
+=== dong-tu-ban-tro
+sum: B1 đã có être en train de, être sur le point de, venir de. C1 thêm: faillir + nguyên mẫu (suýt: j'ai failli tomber), finir par + nguyên mẫu (rốt cuộc, cuối cùng cũng: il a fini par accepter), se mettre à (bỗng bắt đầu: il s'est mis à pleuvoir), ne pas tarder à (chẳng mấy chốc: il ne va pas tarder à arriver), commencer par (bắt đầu bằng việc).
+form: faillir + nguyên mẫu = suýt | J'ai failli rater le train.
+form: finir par + nguyên mẫu = rốt cuộc | Il a fini par comprendre.
+form: se mettre à = bỗng bắt đầu | Elle s'est mise à rire.
+form: ne pas tarder à = chẳng mấy chốc | Il ne va pas tarder à pleuvoir.
+cast: tom papa
+bg: snow-yard
+words: piste, neige, bébé, discussion
+
+#hook
+tom: Ouf ! J'ai failli tomber trois fois ! | Phù! Con suýt ngã ba lần! [surprised]
+papa: Mais tu as fini par descendre jusqu'en bas. Bravo ! | Nhưng rốt cuộc con cũng trượt được xuống tận dưới. Giỏi lắm! [happy]
+> [[J'ai failli tomber]]: suýt ngã, nhưng không ngã. [[Tu as fini par descendre]]: cuối cùng cũng làm được, sau nhiều cố gắng.
+
+#meaning
+vs: Je suis tombé. | Tôi bị ngã. || việc đã xảy ra
+vs: J'ai failli tomber. | Tôi suýt ngã. || suýt xảy ra, nhưng không
+> [[Faillir]] luôn đi với nguyên mẫu, thường ở [[passé composé]]: [[j'ai failli]].
+
+#form
+th: Cấu trúc | Nghĩa | Ví dụ
+tb: faillir | suýt | Il a failli perdre.
+tb: finir par | rốt cuộc | Elle a fini par dire oui.
+tb: se mettre à | bỗng bắt đầu | Il s'est mis à neiger.
+tb: ne pas tarder à | chẳng mấy chốc | Le bus ne va pas tarder.
+tb: commencer par | bắt đầu bằng | Commence par te reposer.
+> [[Se mettre à]] cho thấy việc bắt đầu bất ngờ; [[commencer à]] thì trung tính.
+
+#examples
+- Nous avons {failli|k} rater le dernier train. | Chúng tôi suýt lỡ chuyến tàu cuối.
+- Après une heure de discussion, il a {fini|k} par accepter. | Sau một tiếng bàn bạc, rốt cuộc anh ấy cũng đồng ý.
+- Soudain, le bébé s'est {mis|k} à pleurer. | Bỗng em bé oà khóc.
+- La nuit ne va pas {tarder|k} à tomber. | Trời sắp tối rồi.
+- On va {commencer|k} par une petite piste facile. | Chúng ta sẽ bắt đầu bằng một đường trượt nhỏ dễ đi.
+
+#mistakes
+x: Il a failli de perdre son sac. => Il a failli perdre son sac. | Anh ấy suýt mất túi. >> [[Faillir]] đi thẳng với nguyên mẫu, không có [[de]].
+x: Ils ont fini à se réconcilier. => Ils ont fini par se réconcilier. | Rốt cuộc họ đã làm lành. >> Rốt cuộc: [[finir par]].
+x: Il s'est mis de pleuvoir. => Il s'est mis à pleuvoir. | Trời bỗng đổ mưa. >> [[Se mettre à]] với nguyên mẫu.
+
+#dialogue
+papa: Regarde, il s'est mis à neiger plus fort. | Nhìn kìa, tuyết bỗng rơi dày hơn. [worried]
+tom: On rentre ? Le soleil ne va pas tarder à se coucher. | Mình về nhé bố? Mặt trời sắp lặn rồi. [thinking]
+papa: Oui. Mais on va commencer par un chocolat chaud ! | Ừ. Nhưng trước hết mình uống sô-cô-la nóng đã! [happy]
+tom: J'ai failli oublier : c'est toi qui paies ! | Suýt nữa con quên: bố trả tiền nhé! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Chúng tôi suýt lỡ chuyến tàu cuối. => Nous avons failli rater le dernier train. | Chúng tôi suýt lỡ chuyến tàu cuối.
+? Nói bằng tiếng Pháp: Bỗng em bé oà khóc. => Soudain, le bébé s'est mis à pleurer. | Bỗng em bé oà khóc.
+
+#recap
+> [[Faillir]] (suýt), [[finir par]] (rốt cuộc), [[se mettre à]] (bỗng bắt đầu), [[ne pas tarder à]] (chẳng mấy chốc), [[commencer par]] (bắt đầu bằng). Tất cả đi với nguyên mẫu.
+
+#practice
+fill: Nous avons ___ rater le dernier train. | failli* / fallu / faille || faillir: suýt.
+fill: Après une heure de discussion, il a fini ___ accepter. | par* / à / pour || finir par.
+fill: Soudain, le bébé s'est mis ___ pleurer. | à* / de / par || se mettre à.
+contrast: J'ai ___ tomber, mais je me suis rattrapé. | failli* / fini par || suýt ngã nhưng không ngã.
+contrast: Il a cherché longtemps et il a ___ trouver. | fini par* / failli || rốt cuộc cũng tìm thấy.
+type: La nuit ne va pas ___ (tarder) à tomber. | tarder || ne pas tarder à.
+fix: Il a failli de perdre son sac. | Il a failli perdre son sac.* / Il a failli à perdre son sac. / Il a failli par perdre son sac. || faillir với nguyên mẫu.
+listen: Nous avons failli rater le dernier train. | Nous avons failli rater le dernier train.* / Nous avons fini par rater le dernier train. / Nous avons failli prendre le dernier train. || failli rater.

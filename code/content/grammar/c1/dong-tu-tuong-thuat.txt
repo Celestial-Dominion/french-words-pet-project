@@ -1,0 +1,63 @@
+=== dong-tu-tuong-thuat
+sum: Khi tường thuật, thay dire bằng động từ chính xác hơn để thể hiện thái độ. Affirmer (khẳng định), prétendre (tự nhận, người kể nghi ngờ), nier (chối; nier que + subjonctif), avouer, reconnaître (thú nhận, thừa nhận), reprocher à qqn de + nguyên mẫu (trách ai), promettre de, menacer de (doạ). Nhiều động từ đi với nguyên mẫu quá khứ: il nie avoir menti.
+form: affirmer, prétendre + nguyên mẫu hoặc que | Il prétend être malade.
+form: nier + nguyên mẫu quá khứ | Elle nie avoir menti.
+form: reprocher à qqn de + nguyên mẫu | Il me reproche d'être en retard.
+form: avouer, reconnaître | Il a avoué sa faute.
+cast: maman zoe
+bg: home-evening
+words: témoin, voleur, fenêtre, ballon
+
+#hook
+maman: Ton frère prétend que c'est le chat qui a cassé la fenêtre. | Em trai con cho là con mèo làm vỡ cửa sổ. [angry]
+zoe: Le chat ? Il nie toujours tout ! Mais hier, il m'a avoué qu'il jouait au ballon dans le jardin. | Con mèo á? Nó lúc nào cũng chối hết! Nhưng hôm qua nó thú nhận với con là nó chơi bóng trong vườn. [happy]
+> [[Prétend]]: tự nhận, nhưng mẹ không tin. [[Nie]]: chối. [[A avoué]]: đã thú nhận. Mỗi động từ cho thấy thái độ của người kể.
+
+#meaning
+vs: Il dit qu'il était malade. | Anh ấy nói là mình bị ốm. || dire: trung tính
+vs: Il prétend qu'il était malade. | Anh ấy tự nhận là mình bị ốm. || prétendre: người kể nghi ngờ
+> [[Prétendre]] không có nghĩa là giả vờ; nó nghĩa là khẳng định một điều mà người khác nghi ngờ.
+
+#form
+th: Động từ | Nghĩa | Ví dụ
+tb: affirmer que | khẳng định | Elle affirme qu'il est innocent.
+tb: nier | chối | Il nie avoir volé l'argent.
+tb: avouer, reconnaître | thú nhận, thừa nhận | Il a reconnu son erreur.
+tb: reprocher à… de | trách | Elle lui reproche de mentir.
+tb: menacer de | doạ | Il menace de partir.
+> [[Nier que]] thường đi với [[subjonctif]] vì người nói phủ nhận sự việc.
+
+#examples
+- Le témoin {affirme|k} avoir vu le voleur. | Nhân chứng khẳng định đã nhìn thấy tên trộm.
+- Il {nie|k} avoir pris l'argent. | Anh ta chối là đã lấy tiền.
+- Elle a fini par {avouer|k} la vérité. | Rốt cuộc cô ấy đã thú nhận sự thật.
+- Mon chef me {reproche|k} de ne jamais répondre aux messages. | Sếp trách tôi không bao giờ trả lời tin nhắn.
+- Il {prétend|k} parler cinq langues. | Anh ta tự nhận nói được năm thứ tiếng.
+
+#mistakes
+x: Elle reproche son frère d'avoir menti. => Elle reproche à son frère d'avoir menti. | Cô ấy trách em trai đã nói dối. >> [[Reprocher à]] ai [[de]] làm gì.
+x: Il nie qu'il a menti. => Il nie qu'il ait menti. | Anh ấy chối là đã nói dối. >> [[Nier que]] với [[subjonctif]].
+x: Elle prétend d'être la meilleure. => Elle prétend être la meilleure. | Cô ta tự nhận mình giỏi nhất. >> [[Prétendre]] đi thẳng với nguyên mẫu, không có [[de]].
+
+#dialogue
+maman: Il m'a promis de payer la fenêtre avec son argent de poche. | Nó hứa với mẹ sẽ trả tiền cửa sổ bằng tiền tiêu vặt. [thinking]
+zoe: Et il a reconnu qu'il avait menti ? | Thế nó đã thừa nhận là đã nói dối chưa ạ? [surprised]
+maman: Oui, il a fini par l'admettre. Je lui reproche surtout d'avoir accusé le chat ! | Rồi, cuối cùng nó cũng thừa nhận. Mẹ chủ yếu trách nó đã đổ lỗi cho con mèo! [angry]
+zoe: Pauvre chat ! | Tội nghiệp con mèo! [sad]
+
+#recall
+? Nói bằng tiếng Pháp: Nhân chứng khẳng định đã nhìn thấy tên trộm. => Le témoin affirme avoir vu le voleur. | Nhân chứng khẳng định đã nhìn thấy tên trộm.
+? Nói bằng tiếng Pháp: Rốt cuộc cô ấy đã thú nhận sự thật. => Elle a fini par avouer la vérité. | Rốt cuộc cô ấy đã thú nhận sự thật.
+
+#recap
+> Động từ tường thuật thay cho [[dire]]: [[affirmer]] (khẳng định), [[prétendre]] (tự nhận, có ý nghi ngờ), [[nier]] (chối), [[avouer]], [[reconnaître]] (thú nhận), [[reprocher à… de]] (trách), [[promettre de]], [[menacer de]].
+
+#practice
+fill: Il ___ avoir pris l'argent, mais personne ne le croit. | nie* / avoue / reproche || chối, nhưng không ai tin.
+fill: Mon chef me reproche ___ ne jamais répondre aux messages. | de* / à / pour || reprocher à… de.
+fill: Elle reproche ___ son frère d'avoir menti. | à* / de / par || reprocher à ai.
+contrast: Il nie qu'il ___ menti. | ait* / a || nier que: subjonctif.
+contrast: Il affirme qu'il ___ raison. | a* / ait || affirmer que: indicatif.
+type: Il prétend ___ (parler) cinq langues. | parler || prétendre với nguyên mẫu.
+fix: Elle reproche son frère d'avoir menti. | Elle reproche à son frère d'avoir menti.* / Elle reproche son frère à avoir menti. / Elle reproche de son frère d'avoir menti. || reprocher à ai.
+listen: Le témoin affirme avoir vu le voleur. | Le témoin affirme avoir vu le voleur.* / Le témoin nie avoir vu le voleur. / Le témoin affirme avoir vu la voiture. || affirme.

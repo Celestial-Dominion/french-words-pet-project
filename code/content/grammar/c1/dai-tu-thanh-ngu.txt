@@ -1,0 +1,62 @@
+=== dai-tu-thanh-ngu
+sum: Một số động từ đi với en, y tạo thành thành ngữ có nghĩa riêng, không dịch từng chữ được: en vouloir à qqn (giận ai), s'en faire (lo lắng: ne t'en fais pas), s'en sortir (xoay xở được, vượt qua), s'y prendre (làm cách nào), s'y connaître en (thạo về), n'y être pour rien (không có lỗi gì), en avoir marre (chán ngấy, khẩu ngữ).
+form: en vouloir à qqn = giận ai | Elle m'en veut.
+form: s'en faire = lo lắng | Ne t'en fais pas.
+form: s'en sortir = xoay xở được | Tu vas t'en sortir.
+form: n'y être pour rien = không có lỗi | Je n'y suis pour rien.
+cast: zoe nam
+bg: cafe
+words: ordinateur, machine, crise, entreprise
+
+#hook
+zoe: J'ai fait tomber l'ordinateur de ma sœur... Elle va m'en vouloir ! | Em làm rơi máy tính của chị gái rồi... Chị ấy sẽ giận em mất! [sad]
+nam: Ne t'en fais pas. Tu t'en sortiras, comme toujours. | Đừng lo. Em sẽ xoay xở được thôi, như mọi khi. [explain]
+> [[En vouloir à]]: giận ai. [[S'en faire]]: lo lắng. [[S'en sortir]]: xoay xở được. Đại từ [[en]], [[y]] ở đây là một phần của thành ngữ.
+
+#meaning
+vs: Je veux un thé au citron. | Tôi muốn một tách trà chanh. || vouloir: muốn
+vs: Je t'en veux. | Tôi giận bạn. || en vouloir à: giận
+> Thêm [[en]] làm nghĩa thay đổi hẳn. Phải học cả cụm như một từ mới.
+
+#form
+th: Thành ngữ | Nghĩa | Ví dụ
+tb: en vouloir à | giận ai | Il m'en veut encore.
+tb: s'en faire | lo lắng | Ne vous en faites pas.
+tb: s'y prendre | làm cách nào | Je ne sais pas comment m'y prendre.
+tb: s'y connaître | thạo về | Il s'y connaît en vin.
+> [[N'y être pour rien]]: không có lỗi gì. [[En avoir marre]]: chán ngấy, chỉ dùng khi nói thân mật.
+
+#examples
+- Elle ne t'en {veut|k} pas, je te le promets. | Chị ấy không giận em đâu, anh hứa đấy.
+- Je n'y {suis|k} pour rien, la machine était déjà cassée. | Tôi không có lỗi gì, cái máy đã hỏng từ trước.
+- Comment tu t'y {prends|k} pour apprendre si vite ? | Bạn làm thế nào mà học nhanh thế?
+- Malgré la crise, l'entreprise s'en est bien {sortie|k}. | Bất chấp khủng hoảng, công ty đã vượt qua được.
+- J'en ai {marre|k} de cette pluie ! | Tớ chán ngấy trận mưa này rồi!
+
+#mistakes
+x: Il est en colère contre moi, il me veut. => Il est en colère contre moi, il m'en veut. | Anh ấy bực tôi, anh ấy giận tôi. >> Giận ai: [[en vouloir à]].
+x: Ne te fais pas, tout ira bien. => Ne t'en fais pas, tout ira bien. | Đừng lo, mọi chuyện sẽ ổn. >> Thành ngữ [[s'en faire]] cần [[en]].
+x: Je ne suis pour rien. => Je n'y suis pour rien. | Tôi không có lỗi gì. >> Cụm cố định [[n'y être pour rien]].
+
+#dialogue
+zoe: Et si elle a perdu tout son travail ? | Nhỡ chị ấy mất hết bài vở thì sao? [worried]
+nam: Je m'y connais un peu en ordinateurs. Je vais regarder. | Anh cũng thạo máy tính một chút. Để anh xem. [explain]
+zoe: Tu sais comment t'y prendre ? | Anh biết phải làm thế nào không? [thinking]
+nam: Voilà, il marche ! Tu vois, tu n'y es pour rien, il est juste vieux. | Đây, chạy rồi! Thấy chưa, em không có lỗi gì, chỉ là nó cũ thôi. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Chị ấy không giận em đâu, anh hứa đấy. => Elle ne t'en veut pas, je te le promets. | Chị ấy không giận em đâu, anh hứa đấy.
+? Nói bằng tiếng Pháp: Tớ chán ngấy trận mưa này rồi! => J'en ai marre de cette pluie ! | Tớ chán ngấy trận mưa này rồi!
+
+#recap
+> Thành ngữ với đại từ: [[en vouloir à]] (giận), [[s'en faire]] (lo), [[s'en sortir]] (xoay xở được), [[s'y prendre]] (làm cách nào), [[s'y connaître]] (thạo), [[n'y être pour rien]] (không có lỗi), [[en avoir marre]] (chán ngấy).
+
+#practice
+fill: Ne t'___ fais pas, tout ira bien. | en* / y / le || s'en faire.
+fill: Je n'___ suis pour rien. | y* / en / le || n'y être pour rien.
+fill: Elle ne t'en ___ pas, je te le promets. | veut* / voulu / vouloir || en vouloir à.
+contrast: Il ___ connaît en vin. | s'y* / s'en || s'y connaître.
+contrast: L'entreprise s'___ est bien sortie. | en* / y || s'en sortir.
+type: J'en ai ___ de cette pluie ! | marre || en avoir marre.
+fix: Ne te fais pas, tout ira bien. | Ne t'en fais pas, tout ira bien.* / Ne te en fais pas, tout ira bien. / Ne te le fais pas, tout ira bien. || s'en faire.
+listen: Je n'y suis pour rien, la machine était déjà cassée. | Je n'y suis pour rien, la machine était déjà cassée.* / Je n'y suis pour rien, la machine est déjà réparée. / J'y suis pour quelque chose, la machine était déjà cassée. || je n'y suis pour rien.

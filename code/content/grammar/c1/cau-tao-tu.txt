@@ -1,0 +1,65 @@
+=== cau-tao-tu
+sum: Biết tiền tố và hậu tố, bạn đoán được nghĩa của rất nhiều từ mới. Tiền tố: in-, im-, il-, ir- (không: possible thành impossible, légal thành illégal); dé-, dés- (ngược lại: faire thành défaire); re-, ré- (làm lại: écrire thành réécrire); mal- (xấu, không: honnête thành malhonnête). Hậu tố: -able, -ible (có thể: laver thành lavable), -âtre (ngả màu, hơi: gris thành grisâtre).
+form: in-, im-, il-, ir- = không | possible, impossible
+form: dé-, dés- = ngược lại | faire, défaire
+form: re-, ré- = lại | écrire, réécrire
+form: -able, -ible = có thể | laver, lavable
+cast: hugo ines
+bg: classroom
+words: pull, paragraphe, document, couleur
+gloss: inoubliable, imbattable, lisible, lavable, réécrire
+
+#hook
+ines: Ce mot est illisible ! Je ne connais pas ce mot. | Từ này “illisible”! Em không biết từ này. [worried]
+hugo: Lisible, c'est ce qu'on peut lire. Et illisible, c'est le contraire : on ne peut pas le lire ! | “Lisible” là đọc được. Còn “illisible” là ngược lại: không đọc được! [explain]
+> Tiền tố [[il]] (không) và hậu tố [[ible]] (có thể) giúp đoán nghĩa: [[illisible]] là không đọc được.
+
+#meaning
+vs: Ce texte est lisible. | Văn bản này đọc được. || -ible: có thể
+vs: Ce texte est illisible. | Văn bản này không đọc được. || il-: không
+> [[In]] đổi thành [[im]] trước [[b]], [[m]], [[p]]; thành [[il]] trước [[l]]; thành [[ir]] trước [[r]].
+
+#form
+th: Phần thêm | Nghĩa | Ví dụ
+tb: in-, im-, il-, ir- | không | inutile, impossible, illégal, irrégulier
+tb: dé-, dés- | ngược lại | défaire, désordre
+tb: re-, ré- | lại | refaire, réécrire
+tb: mal- | xấu, không | malheureux, malhonnête
+tb: -able, -ible | có thể | lavable, visible
+tb: -âtre | ngả màu, hơi | rougeâtre, grisâtre
+> Hậu tố [[âtre]] thường có ý chê: màu không đẹp, không rõ ràng.
+
+#examples
+- Ce pull est {lavable|k} en machine. | Chiếc áo len này giặt máy được.
+- Il faut {réécrire|k} ce paragraphe. | Phải viết lại đoạn văn này.
+- Garer sa voiture ici est {illégal|k}. | Đỗ xe ở đây là trái luật.
+- Il a {défait|k} sa valise en arrivant. | Anh ấy dỡ hành lý ngay khi đến.
+- Le ciel avait une couleur {grisâtre|k}. | Bầu trời có màu xám xịt.
+
+#mistakes
+x: C'est inpossible ! => C'est impossible ! | Không thể nào! >> Trước [[p]]: [[im]].
+x: Ce verbe est inrégulier. => Ce verbe est irrégulier. | Động từ này bất quy tắc. >> Trước [[r]]: [[ir]].
+x: Il est très inhonnête. => Il est très malhonnête. | Anh ta rất không trung thực. >> Với [[honnête]], dùng [[mal]]: [[malhonnête]].
+
+#dialogue
+ines: Et désagréable, c'est le contraire d'agréable ? | Thế “désagréable” là ngược lại với “agréable” ạ? [thinking]
+hugo: Exactement ! Et refaire, c'est faire encore une fois. | Chính xác! Còn “refaire” là làm lại lần nữa. [happy]
+ines: Alors, ce jeu est inoubliable ! | Vậy trò chơi này thật khó quên! [happy]
+hugo: Et toi, tu es imbattable ! | Còn em thì không ai đánh bại nổi! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Chiếc áo len này giặt máy được. => Ce pull est lavable en machine. | Chiếc áo len này giặt máy được.
+? Nói bằng tiếng Pháp: Phải viết lại đoạn văn này. => Il faut réécrire ce paragraphe. | Phải viết lại đoạn văn này.
+
+#recap
+> Tiền tố: [[in]] (không, đổi thành [[im]], [[il]], [[ir]]), [[dé]] (ngược lại), [[re]] (lại), [[mal]] (xấu). Hậu tố: [[able]], [[ible]] (có thể), [[âtre]] (ngả màu, hơi). Tách từ để đoán nghĩa.
+
+#practice
+fill: C'est ___ ! | impossible* / inpossible / ilpossible || trước p: im.
+fill: Ce verbe est ___ . | irrégulier* / inrégulier / imrégulier || trước r: ir.
+fill: Ce pull est ___ en machine. | lavable* / lavible / lavant || laver: lavable.
+contrast: Ce texte est mal écrit, il faut le ___ . | réécrire* / décrire || re: làm lại.
+contrast: Le ciel avait une couleur ___ . | grisâtre* / grisable || âtre: ngả màu.
+type: Garer sa voiture ici est ___ (contraire de légal). | illégal || trước l: il.
+fix: C'est inpossible ! | C'est impossible !* / C'est ilpossible ! / C'est irpossible ! || trước p: im.
+listen: Il faut réécrire ce paragraphe. | Il faut réécrire ce paragraphe.* / Il faut décrire ce paragraphe. / Il faut lire ce paragraphe. || réécrire.

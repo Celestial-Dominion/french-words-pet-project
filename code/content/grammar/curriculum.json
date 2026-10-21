@@ -1592,6 +1592,72 @@
     "nominal-sentences"
    ],
    "find": "^(Démission|Arrivée|Départ|Ouverture|Fermeture|Hausse|Baisse|Grève|Victoire|Défense|Interdiction|Retour|Naissance) (du|de la|de l'|des|de|d') ?"
+  },
+  {
+   "id": "nguyen-mau-c1",
+   "lv": "c1",
+   "cat": "verbs",
+   "t": "Nguyên mẫu C1: que faire ?, ne pas toucher",
+   "en": "que faire ? · ne pas toucher · à vrai dire",
+   "pts": [
+    "infinitive-c1"
+   ],
+   "find": "(?<![\\p{L}'])([Qq]ue faire|[Oo]ù aller|[Nn]e pas (toucher|fumer|oublier|laisser|jeter|déranger)|[Àà] l'entendre|[Àà] vrai dire|[Àà] en juger)(?![\\p{L}])"
+  },
+  {
+   "id": "dai-tu-thanh-ngu",
+   "lv": "c1",
+   "cat": "pronouns",
+   "t": "Thành ngữ với en, y: en vouloir à, s'en sortir",
+   "en": "elle m'en veut · ne t'en fais pas · je n'y suis pour rien",
+   "pts": [
+    "pronominal-idioms"
+   ],
+   "find": "(?<![\\p{L}'])(en veux|en veut|en voulez|en voulait|en vouloir|s'en sortir|m'en sortir|t'en sortir|s'en est sorti|s'en est sortie|s'y prendre|m'y prendre|t'y prends|t'en fais|vous en faites|y suis pour rien|y es pour rien|y est pour rien|en ai marre|en a marre|s'y connaît|m'y connais)(?![\\p{L}])"
+  },
+  {
+   "id": "hop-giong-c1",
+   "lv": "c1",
+   "cat": "adjectives",
+   "t": "Hợp giống số tinh tế: toute petite, demi, bleu clair",
+   "en": "elle est toute petite · une demi-heure · des yeux bleu clair",
+   "pts": [
+    "agreement-c1"
+   ],
+   "find": "(?<![\\p{L}'])(toutes? (petite|seule|contente|pleine|blanche|neuve|jeune|rouge)s?|demi-heure|et demie|bleu (clair|foncé)|vert (clair|foncé)|chaussures marron|yeux marron)(?![\\p{L}])"
+  },
+  {
+   "id": "dong-tu-ban-tro",
+   "lv": "c1",
+   "cat": "tense",
+   "t": "Faillir, finir par, se mettre à",
+   "en": "j'ai failli tomber · il a fini par accepter · il s'est mis à pleuvoir",
+   "pts": [
+    "aspect-c1"
+   ],
+   "find": "(?<![\\p{L}'])(failli|faillit|finir par|finit par|fini par|finira par|finissent par|se met à|s'est mis à|s'est mise à|se mettre à|se mirent à|se mit à|tarde à|tardé à|tarder à|commence par|commencé par)(?![\\p{L}])"
+  },
+  {
+   "id": "cau-tao-tu",
+   "lv": "c1",
+   "cat": "nouns",
+   "t": "Cấu tạo từ: tiền tố và hậu tố",
+   "en": "impossible · réécrire · lavable · grisâtre",
+   "pts": [
+    "word-formation"
+   ],
+   "find": "(?<![\\p{L}'])(illégal|irrégulier|illisible|lisible|désordre|défaire|défait|malhonnête|lavable|grisâtre|rougeâtre|réécrire|désagréable|inoubliable)(?![\\p{L}])"
+  },
+  {
+   "id": "dong-tu-tuong-thuat",
+   "lv": "c1",
+   "cat": "clauses",
+   "t": "Động từ tường thuật: prétendre, nier, avouer",
+   "en": "il prétend être malade · elle nie avoir menti · il a avoué",
+   "pts": [
+    "reporting-verbs"
+   ],
+   "find": "(?<![\\p{L}'])(prétend|prétendait|prétendre|affirme|affirmait|a affirmé|nie|niait|a nié|avoue|a avoué|avouer|reproche|reprochait|a reproché|a reconnu|menace de|a menacé de)(?![\\p{L}])"
   }
  ]
 }

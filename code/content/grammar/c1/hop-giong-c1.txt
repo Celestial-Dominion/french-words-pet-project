@@ -1,0 +1,63 @@
+=== hop-giong-c1
+sum: Một số điểm hợp giống số tinh tế. Tout làm trạng từ (nghĩa là rất, hoàn toàn) thường không đổi: ils sont tout contents, elle est tout heureuse; nhưng thành toute, toutes trước tính từ giống cái bắt đầu bằng phụ âm: elle est toute petite. Demi đứng trước danh từ thì không đổi, có gạch nối (une demi-heure); đứng sau thì hợp giống (deux heures et demie). Màu ghép và màu lấy từ danh từ không đổi: des yeux bleu clair, des chaussures marron.
+form: tout + tính từ (trạng từ) | Ils sont tout contents.
+form: toute + tính từ giống cái bắt đầu bằng phụ âm | Elle est toute rouge.
+form: demi trước danh từ: không đổi | une demi-heure
+form: màu ghép, màu từ danh từ: không đổi | des yeux bleu clair
+cast: lea zoe
+bg: street
+words: chaussure, jupe, robe, marron
+
+#hook
+lea: Je cherche des chaussures marron et une jupe bleu clair. | Chị tìm giày màu nâu và một chiếc váy xanh nhạt. [thinking]
+zoe: Marron sans s ? Bleu sans e ? | “Marron” không thêm s? “Bleu” không thêm e ạ? [surprised]
+> Màu lấy từ danh từ ([[marron]] là hạt dẻ) và màu ghép ([[bleu clair]]) không đổi theo giống số.
+
+#meaning
+vs: Elle est tout heureuse. | Cô ấy rất vui. || trước nguyên âm: tout không đổi
+vs: Elle est toute contente. | Cô ấy vui lắm. || trước phụ âm: toute
+> [[Tout]] ở đây là trạng từ nghĩa là rất; nó chỉ đổi thành [[toute]] trước tính từ giống cái bắt đầu bằng phụ âm.
+
+#form
+th: Trường hợp | Ví dụ | Quy tắc
+tb: tout, trước nguyên âm | elles sont tout émues | không đổi
+tb: tout, trước phụ âm | elles sont toutes rouges | hợp giống
+tb: demi, trước danh từ | une demi-bouteille | không đổi
+tb: demi, sau danh từ | trois heures et demie | hợp giống
+tb: màu từ danh từ | des sacs orange | không đổi
+> Nhưng [[rose]], [[mauve]] đã thành tính từ thật nên vẫn thêm [[s]]: [[des fleurs roses]].
+
+#examples
+- Ma grand-mère est {toute|k} petite. | Bà tôi nhỏ bé lắm.
+- Les enfants sont {tout|k} heureux de partir. | Bọn trẻ rất vui được đi.
+- Le film dure deux heures et {demie|k}. | Bộ phim dài hai tiếng rưỡi.
+- J'ai attendu une {demi-heure|k}. | Tôi đã đợi nửa tiếng.
+- Elle a des yeux {bleu clair|k}. | Cô ấy có đôi mắt xanh nhạt.
+
+#mistakes
+x: Elle est tout petite. => Elle est toute petite. | Cô ấy nhỏ bé lắm. >> Trước tính từ giống cái bắt đầu bằng phụ âm: [[toute]].
+x: Je pars dans une demie-heure. => Je pars dans une demi-heure. | Nửa tiếng nữa tôi đi. >> [[Demi]] trước danh từ không đổi.
+x: J'ai acheté des chaussures marrons. => J'ai acheté des chaussures marron. | Tôi đã mua giày màu nâu. >> [[Marron]] là màu từ danh từ: không đổi.
+
+#dialogue
+zoe: Et cette robe orange ? Elle est toute neuve ! | Còn chiếc váy màu cam này? Nó còn mới tinh! [happy]
+lea: Trop chère. Je préfère ces deux robes vert foncé. | Đắt quá. Chị thích hai chiếc váy xanh lá đậm này hơn. [thinking]
+zoe: Vert foncé, sans s, je sais maintenant ! | “Vert foncé”, không thêm s, giờ em biết rồi! [happy]
+lea: Bravo ! Allez, on paie, on a encore une demi-heure. | Giỏi lắm! Nào, đi trả tiền, mình còn nửa tiếng nữa. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Bộ phim dài hai tiếng rưỡi. => Le film dure deux heures et demie. | Bộ phim dài hai tiếng rưỡi.
+? Nói bằng tiếng Pháp: Cô ấy có đôi mắt xanh nhạt. => Elle a des yeux bleu clair. | Cô ấy có đôi mắt xanh nhạt.
+
+#recap
+> [[Tout]] trạng từ chỉ đổi trước tính từ giống cái bắt đầu bằng phụ âm ([[toute petite]]). [[Demi]] trước danh từ không đổi ([[une demi-heure]]), sau danh từ thì hợp ([[et demie]]). Màu ghép và màu từ danh từ không đổi ([[bleu clair]], [[marron]]).
+
+#practice
+fill: Ma grand-mère est ___ petite. | toute* / tout / toutes || trước phụ âm, giống cái: toute.
+fill: Les enfants sont ___ heureux de partir. | tout* / toute / toutes || tout trạng từ, trước nguyên âm.
+fill: Le film dure deux heures et ___ . | demie* / demi / demis || sau danh từ giống cái: demie.
+contrast: Elle a acheté des chaussures ___ . | marron* / marrons || màu từ danh từ: không đổi.
+contrast: Elle a acheté des fleurs ___ . | roses* / rose || rose vẫn thêm s.
+type: Elle a des yeux bleu ___ (clair). | clair || màu ghép không đổi.
+fix: J'ai acheté des chaussures marrons. | J'ai acheté des chaussures marron.* / J'ai acheté des chaussures marronnes. / J'ai acheté des chaussure marron. || marron không đổi.
+listen: Ma grand-mère est toute petite. | Ma grand-mère est toute petite.* / Ma grand-mère n'est pas petite. / Ma grand-mère est toute pâle. || toute petite.

@@ -1,0 +1,63 @@
+=== nguyen-mau-c1
+sum: Ở C1, nguyên mẫu có thêm nhiều vai trò. Làm chủ ngữ: Voyager ouvre l'esprit (đi du lịch mở mang đầu óc). Câu hỏi ngắn: Que faire ? Où aller ? (làm gì bây giờ? đi đâu?). Hướng dẫn, biển báo dùng nguyên mẫu thay mệnh lệnh: Lire la notice. Ne pas toucher (ne pas đứng liền trước nguyên mẫu). Cụm à + nguyên mẫu: à vrai dire (nói thật thì), à l'entendre (nghe anh ta nói thì).
+form: nguyên mẫu làm chủ ngữ | Lire est un plaisir.
+form: que, où, comment + nguyên mẫu ? | Que faire ?
+form: hướng dẫn: ne pas + nguyên mẫu | Ne pas fumer.
+form: à + nguyên mẫu | à vrai dire, à l'entendre
+cast: hugo papa
+bg: home-day
+words: étape, panique, porte, solution
+gloss: notice
+
+#hook
+hugo: Regarde la notice : ne pas monter la porte avant l'étape cinq. Que faire maintenant ? | Xem tờ hướng dẫn này: “Không lắp cửa trước bước năm.” Giờ làm gì đây ạ? [worried]
+papa: À t'entendre, c'est une catastrophe ! Lire la notice jusqu'au bout, voilà la solution. | Nghe con nói cứ như thảm hoạ ấy! Đọc hết tờ hướng dẫn, thế là xong. [happy]
+> Hướng dẫn dùng nguyên mẫu thay mệnh lệnh: [[ne pas monter]]. [[Que faire]]: câu hỏi chỉ có nguyên mẫu. [[À t'entendre]]: nghe con nói thì.
+
+#meaning
+vs: Ne touchez pas ! | Đừng chạm vào! || mệnh lệnh, nói với một người
+vs: Ne pas toucher. | Không được chạm vào. || nguyên mẫu, biển báo cho mọi người
+> Biển báo, công thức nấu ăn, tờ hướng dẫn dùng nguyên mẫu vì không nói với riêng ai.
+
+#form
+th: Vai trò | Ví dụ | Nghĩa
+tb: chủ ngữ | Voyager ouvre l'esprit. | đi du lịch mở mang đầu óc
+tb: câu hỏi | Où aller ce soir ? | tối nay đi đâu
+tb: hướng dẫn | Agiter avant emploi. | lắc trước khi dùng
+tb: à với nguyên mẫu | à vrai dire | nói thật thì
+> Ở thể phủ định, [[ne pas]] đứng liền trước nguyên mẫu: [[ne pas oublier]].
+
+#examples
+- {Apprendre|k} une langue demande du temps. | Học một ngoại ngữ cần thời gian.
+- Le train est parti. Que {faire|k} ? | Tàu đi mất rồi. Làm gì bây giờ?
+- Ne pas {laisser|k} les enfants seuls près de l'eau. | Không để trẻ em một mình gần nước.
+- {À vrai dire|k}, je n'ai pas lu le livre. | Nói thật thì tôi chưa đọc cuốn sách đó.
+- {À l'entendre|k}, il a tout fait seul. | Nghe anh ta nói thì cứ như anh ta tự làm hết.
+
+#mistakes
+x: Ne fumer pas dans le train. => Ne pas fumer dans le train. | Không hút thuốc trên tàu. >> Với nguyên mẫu: [[ne pas]] đứng trước.
+x: Que je fais maintenant ? => Que faire maintenant ? | Giờ làm gì đây? >> Câu hỏi ngắn bằng nguyên mẫu: [[que faire]].
+x: De nager est bon pour la santé. => Nager est bon pour la santé. | Bơi tốt cho sức khoẻ. >> Nguyên mẫu làm chủ ngữ không cần [[de]].
+
+#dialogue
+papa: Bon, étape cinq : monter la porte. Où est-elle ? | Nào, bước năm: lắp cửa. Nó đâu rồi? [thinking]
+hugo: À vrai dire, je l'ai déjà montée... à l'envers ! | Nói thật thì con lắp rồi... nhưng lắp ngược! [sad]
+papa: Pas de panique ! Démonter, puis recommencer. | Đừng hoảng! Tháo ra, rồi làm lại. [happy]
+hugo: Être patient, voilà ma nouvelle règle ! | Kiên nhẫn, đó là quy tắc mới của con! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Học một ngoại ngữ cần thời gian. => Apprendre une langue demande du temps. | Học một ngoại ngữ cần thời gian.
+? Nói bằng tiếng Pháp: Nói thật thì tôi chưa đọc cuốn sách đó. => À vrai dire, je n'ai pas lu le livre. | Nói thật thì tôi chưa đọc cuốn sách đó.
+
+#recap
+> Nguyên mẫu C1: làm chủ ngữ ([[apprendre une langue]]), câu hỏi ngắn ([[que faire]]), hướng dẫn và biển báo ([[ne pas toucher]]), cụm [[à vrai dire]], [[à l'entendre]].
+
+#practice
+fill: Ne ___ laisser les enfants seuls près de l'eau. | pas* / jamais pas / pas de || ne pas với nguyên mẫu.
+fill: Le train est parti. Que ___ ? | faire* / fais / faisons || câu hỏi bằng nguyên mẫu.
+fill: Pour moi, ___ une langue demande du temps. | apprendre* / apprend / apprenant || nguyên mẫu làm chủ ngữ.
+contrast: Attention : ne pas ___ . | toucher* / touchez || biển báo: nguyên mẫu.
+contrast: Que ___ maintenant ? | faire* / je fais || câu hỏi bằng nguyên mẫu.
+type: À vrai ___ (dire), je n'ai pas lu le livre. | dire || à vrai dire.
+fix: Ne fumer pas dans le train. | Ne pas fumer dans le train.* / Ne fumez pas dans le train pas. / Pas ne fumer dans le train. || ne pas đứng trước.
+listen: À l'entendre, il a tout fait seul. | À l'entendre, il a tout fait seul.* / À l'entendre, il n'a rien fait seul. / Je l'entends, il a tout fait seul. || à l'entendre.
