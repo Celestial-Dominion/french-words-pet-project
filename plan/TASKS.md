@@ -150,7 +150,7 @@ kết quả (donc, c'est pourquoi, si/tellement… que) · mục đích (pour, a
 động từ + à / de + nguyên mẫu · futur simple / futur proche / présent (quand + futur) · so sánh B1 (de plus en plus,
 mieux / meilleur) · avant de + inf, après avoir + phân từ · bày tỏ ý kiến (à mon avis, il me semble que).
 - **Nhật ký:**
-  - 21/10 lô 1: 6 bài (plus-que-parfait, ke-chuyen-qua-khu, dang-sap-vua, tuong-lai-b1, conditionnel-present, si-imparfait) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; soát 390 px + desktop; danh sách 34 bài B1 ở `plan/.progress-G-B1.md`; 5 giờ 5% · tuần 7%; COMMIT
+  - 21/10 lô 1: 6 bài (plus-que-parfait, ke-chuyen-qua-khu, dang-sap-vua, tuong-lai-b1, conditionnel-present, si-imparfait) + 7 điểm inventory; grammar:check 0 lỗi 0 cảnh báo; audio ~3 phút; soát 390 px + desktop; danh sách 34 bài B1 ở `plan/.progress-G-B1.md`; 5 giờ 5% · tuần 7%; ed1c5a9
 
 ### G-B2 — Ngữ pháp B2 [ ] (app Anh 36 bài)
 
