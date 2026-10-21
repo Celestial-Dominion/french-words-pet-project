@@ -1,0 +1,60 @@
+=== conditionnel-bao-chi
+sum: Báo chí, đài truyền hình dùng conditionnel để đưa tin CHƯA được xác nhận: le suspect serait en fuite (nghi phạm được cho là đang bỏ trốn). Conditionnel présent cho hiện tại, conditionnel passé cho việc đã xảy ra: l'accident aurait fait trois blessés. Hay đi kèm nguồn tin: selon, d'après. Khi tin đã chắc chắn, dùng indicatif.
+form: conditionnel présent: tin chưa chắc ở hiện tại | Le ministre serait malade.
+form: conditionnel passé: tin chưa chắc về quá khứ | L'incendie aurait fait deux victimes.
+form: selon / d'après + nguồn | Selon la police, …
+form: tin đã xác nhận: indicatif | L'incendie a fait deux victimes.
+cast: paul linh
+bg: cafe
+words: chanteur, preuve, rumeur, suspect
+
+#hook
+linh: Tu as lu ? Le célèbre chanteur aurait quitté le pays hier soir. | Anh đọc chưa? Ca sĩ nổi tiếng được cho là đã rời khỏi đất nước tối qua. [surprised]
+paul: Aurait quitté... donc ce n'est pas sûr. Le journal n'a pas encore de preuve. | “Aurait quitté”... vậy là chưa chắc. Tờ báo chưa có bằng chứng. [thinking]
+> [[Aurait quitté]]: báo chí dùng [[conditionnel]] để cho biết tin chưa được xác nhận. Tiếng Việt hay nói “được cho là”, “nghe nói”.
+
+#meaning
+vs: Le chanteur a quitté le pays. | Ca sĩ đã rời khỏi đất nước. || indicatif: tin chắc chắn
+vs: Le chanteur aurait quitté le pays. | Ca sĩ được cho là đã rời khỏi đất nước. || conditionnel: tin chưa xác nhận
+> Một thay đổi nhỏ về thì giúp nhà báo không phải chịu trách nhiệm nếu tin sai.
+
+#form
+th: Thời điểm | Conditionnel | Nghĩa
+tb: hiện tại | il serait en fuite | được cho là đang trốn
+tb: quá khứ | il aurait fui | được cho là đã trốn
+tb: số nhiều | ils seraient trois | được cho là có ba người
+> Thường có thêm nguồn tin: [[selon la police]], [[d'après nos informations]].
+
+#examples
+- Selon la police, le voleur {serait|k} encore dans la ville. | Theo cảnh sát, tên trộm có thể vẫn còn trong thành phố.
+- L'accident {aurait fait|k} trois blessés. | Vụ tai nạn được cho là làm ba người bị thương.
+- D'après nos informations, le ministre {démissionnerait|k} demain. | Theo thông tin của chúng tôi, bộ trưởng có thể sẽ từ chức ngày mai.
+- Le tableau {aurait été|k} volé pendant la nuit. | Bức tranh được cho là đã bị đánh cắp trong đêm.
+
+#mistakes
+x: Selon des témoins, l'incendie a fait deux victimes, mais rien n'est confirmé. => Selon des témoins, l'incendie aurait fait deux victimes, mais rien n'est confirmé. | Theo nhân chứng, vụ cháy được cho là làm hai người chết, nhưng chưa có gì xác nhận. >> Tin chưa xác nhận: [[conditionnel passé]].
+x: Le suspect serait été arrêté. => Le suspect aurait été arrêté. | Nghi phạm được cho là đã bị bắt. >> [[Être]] ở [[conditionnel passé]] là [[aurait été]].
+x: D'après le journal, le ministre visiterait la ville hier. => D'après le journal, le ministre aurait visité la ville hier. | Theo báo, bộ trưởng được cho là đã thăm thành phố hôm qua. >> Việc đã qua: [[conditionnel passé]].
+
+#dialogue
+linh: Et ici : le gouvernement augmenterait les impôts l'an prochain. | Còn đây: chính phủ có thể sẽ tăng thuế vào năm tới. [worried]
+paul: Encore une rumeur ! Attendons que ce soit confirmé. | Lại tin đồn! Đợi khi nào được xác nhận đã. [thinking]
+linh: Tu as raison. Selon toi, le chanteur serait où ? | Anh nói đúng. Theo anh, ca sĩ ấy giờ có thể ở đâu? [happy]
+paul: Sur une plage, loin des journalistes ! | Trên một bãi biển nào đó, xa cánh nhà báo! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Vụ tai nạn được cho là làm ba người bị thương. => L'accident aurait fait trois blessés. | Vụ tai nạn được cho là làm ba người bị thương.
+? Nói bằng tiếng Pháp: Theo cảnh sát, tên trộm có thể vẫn còn trong thành phố. => Selon la police, le voleur serait encore dans la ville. | Theo cảnh sát, tên trộm có thể vẫn còn trong thành phố.
+
+#recap
+> Báo chí dùng [[conditionnel]] cho tin chưa xác nhận: [[conditionnel présent]] cho hiện tại, [[conditionnel passé]] cho việc đã xảy ra. Hay đi với [[selon]], [[d'après]]. Tin đã chắc thì dùng [[indicatif]].
+
+#practice
+fill: Selon la police, le voleur ___ encore dans la ville. | serait* / sera / soit || conditionnel présent.
+fill: L'accident ___ fait trois blessés. | aurait* / avait / aura || conditionnel passé.
+fill: Le suspect ___ été arrêté. | aurait* / serait / sera || aurait été.
+contrast: C'est confirmé : l'incendie ___ deux victimes. | a fait* / aurait fait || tin đã xác nhận.
+contrast: Rien n'est confirmé, mais l'incendie ___ deux victimes. | aurait fait* / a fait || chưa xác nhận.
+type: D'après nos informations, le ministre ___ (démissionner) demain. | démissionnerait || conditionnel présent.
+fix: D'après le journal, le ministre visiterait la ville hier. | D'après le journal, le ministre aurait visité la ville hier.* / D'après le journal, le ministre visitait la ville hier. / D'après le journal, le ministre aurait visiter la ville hier. || conditionnel passé.
+listen: Le tableau aurait été volé pendant la nuit. | Le tableau aurait été volé pendant la nuit.* / Le tableau a été volé pendant la nuit. / Le tableau aurait été vendu pendant la nuit. || aurait été volé.

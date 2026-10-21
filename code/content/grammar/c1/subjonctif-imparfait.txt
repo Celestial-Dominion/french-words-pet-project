@@ -1,0 +1,63 @@
+=== subjonctif-imparfait
+sum: Trong văn chương cổ điển, sau động từ chính ở quá khứ, người ta dùng subjonctif imparfait (qu'il fût, qu'il eût, qu'il vînt, qu'il parlât) và subjonctif plus-que-parfait (qu'il eût fini, qu'elle fût partie). Ngày nay chỉ cần NHẬN BIẾT; khi nói và viết thường, thay bằng subjonctif présent hoặc passé. Dạng hay gặp nhất là ngôi thứ ba số ít, có dấu mũ: fût, eût, vînt, pût. Cụm cố định: il eût fallu (= il aurait fallu), ne fût-ce que (dù chỉ).
+form: ngôi 3: đuôi -ât, -ît, -ût | qu'il parlât · qu'il fût
+form: plus-que-parfait: eût / fût + phân từ | qu'il eût fini
+form: ngày nay thay bằng | qu'il soit · qu'il ait fini
+form: il eût fallu = il aurait fallu | Il eût fallu le dire.
+cast: lucas ines
+bg: library
+words: roman, classique, conseil, forme
+gloss: subjonctif
+
+#hook
+ines: Écoute cette phrase du roman : elle attendait qu'il vînt la chercher. | Nghe câu này trong tiểu thuyết: nàng chờ chàng đến đón. [thinking]
+lucas: Vînt ? Aujourd'hui, on dirait : elle attendait qu'il vienne la chercher. | “Vînt” à? Ngày nay người ta sẽ nói: elle attendait qu'il vienne la chercher. [explain]
+> [[Vînt]] là [[subjonctif imparfait]] của [[venir]]. Trong văn cổ điển, nó đi sau động từ chính ở quá khứ. Ngày nay ta dùng [[subjonctif présent]]: [[qu'il vienne]].
+
+#meaning
+vs: Je voulais qu'il vienne. | Tôi muốn anh ấy đến. || ngày nay: subjonctif présent
+vs: Je voulais qu'il vînt. | Ta những muốn chàng đến. || văn cổ điển: subjonctif imparfait
+> Nghĩa giống nhau. Chỉ khác văn phong: [[vînt]] nghe rất văn chương, trang trọng.
+
+#form
+th: Động từ | Văn cổ điển | Ngày nay
+tb: être | qu'il fût | qu'il soit
+tb: avoir | qu'il eût | qu'il ait
+tb: venir | qu'il vînt | qu'il vienne
+tb: parler | qu'il parlât | qu'il parle
+tb: finir, quá khứ | qu'il eût fini | qu'il ait fini
+> Dấu hiệu dễ nhận: dấu mũ ở ngôi thứ ba số ít: [[fût]], [[eût]], [[vînt]], [[parlât]].
+
+#examples
+- Il {eût fallu|k} partir plus tôt. | Lẽ ra phải đi sớm hơn.
+- Bien qu'il {fût|k} malade, il continua à travailler. | Dù bị ốm, ông vẫn tiếp tục làm việc.
+- Il fallait qu'il {eût terminé|k} avant la nuit. | Ông phải xong trước khi trời tối.
+- Donnez-moi un conseil, ne {fût-ce|k} qu'un seul. | Hãy cho tôi một lời khuyên, dù chỉ một thôi.
+
+#mistakes
+x: Bien qu'il fut malade, il continua. => Bien qu'il fût malade, il continua. | Dù bị ốm, ông vẫn tiếp tục. >> Sau [[bien que]] là [[subjonctif]]: [[fût]] có dấu mũ, khác [[fut]] của [[passé simple]].
+x: Il eut fallu prévenir la police. => Il eût fallu prévenir la police. | Lẽ ra phải báo cảnh sát. >> [[Il eût fallu]] nghĩa là [[il aurait fallu]], có dấu mũ.
+x: Hier, je voulais que tu vinsses avec moi. => Hier, je voulais que tu viennes avec moi. | Hôm qua tôi muốn bạn đi cùng. >> Khi nói ngày nay, dùng [[subjonctif présent]].
+
+#dialogue
+ines: Et qu'il eût fini, c'est quoi ? | Thế “qu'il eût fini” là gì? [thinking]
+lucas: C'est le plus-que-parfait du subjonctif. Aujourd'hui, on dit : qu'il ait fini. | Đó là subjonctif plus-que-parfait. Ngày nay người ta nói: qu'il ait fini. [explain]
+ines: Je dois apprendre toutes ces formes ? | Mình phải học hết các dạng này à? [worried]
+lucas: Non, il suffit de les reconnaître. Personne ne les utilise en parlant, sauf pour plaisanter ! | Không, chỉ cần nhận ra thôi. Chẳng ai dùng khi nói cả, trừ lúc đùa! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Lẽ ra phải đi sớm hơn. => Il eût fallu partir plus tôt. | Lẽ ra phải đi sớm hơn.
+? Nói bằng tiếng Pháp: Dù bị ốm, ông vẫn tiếp tục làm việc. => Bien qu'il fût malade, il continua à travailler. | Dù bị ốm, ông vẫn tiếp tục làm việc.
+
+#recap
+> [[Subjonctif imparfait]] và [[plus-que-parfait]] chỉ gặp trong văn chương: [[qu'il fût]], [[qu'il eût]], [[qu'il vînt]], [[qu'il eût fini]]. Nhận ra nhờ dấu mũ. Ngày nay thay bằng [[subjonctif présent]] hoặc [[passé]].
+
+#practice
+contrast: Bien qu'il ___ malade, il continua à travailler. | fût* / fut || subjonctif có dấu mũ.
+contrast: Le roi ___ malade pendant dix ans. | fut* / fût || passé simple, không dấu mũ.
+fill: Il ___ fallu partir plus tôt. | eût* / eut / a || il eût fallu = il aurait fallu.
+fill: Aujourd'hui, on dirait : je voulais qu'il ___ . | vienne* / vînt / viendra || ngày nay: subjonctif présent.
+fill: Aujourd'hui, on dirait : il fallait qu'il ___ terminé. | ait* / eût / a || subjonctif passé.
+fill: Donnez-moi un conseil, ne ___ qu'un seul. | fût-ce* / fut-ce / soit-ce || ne fût-ce que = dù chỉ.
+fix: Hier, je voulais que tu vinsses avec moi. | Hier, je voulais que tu viennes avec moi.* / Hier, je voulais que tu viens avec moi. / Hier, je voulais que tu viendrais avec moi. || văn nói ngày nay.
+listen: Il fallait qu'il eût terminé avant la nuit. | Il fallait qu'il eût terminé avant la nuit.* / Il fallait qu'il ait terminé avant la nuit. / Il fallait qu'il termine avant la nuit. || eût terminé.

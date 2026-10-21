@@ -1675,6 +1675,85 @@
     "definite-articles"
    ],
    "pri": 2
+  },
+  {
+   "id": "passe-simple",
+   "lv": "c1",
+   "cat": "tense",
+   "name": "Passé simple",
+   "vi": "Passé simple: thì quá khứ của văn viết, truyện, sách lịch sử (il fut, il eut, elle parla, ils prirent, il vint); chủ yếu cần nhận biết ngôi thứ ba; khi nói dùng passé composé",
+   "pre": [
+    "past-narration"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "passe-anterieur",
+   "lv": "c1",
+   "cat": "tense",
+   "name": "Passé antérieur",
+   "vi": "Passé antérieur = eut / fut + phân từ: việc xong ngay trước một việc ở passé simple (quand il eut fini, il sortit); sau quand, dès que, après que, à peine… que (có đảo ngữ)",
+   "pre": [
+    "passe-simple",
+    "plus-que-parfait"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "subj-imparfait",
+   "lv": "c1",
+   "cat": "verbs",
+   "name": "Subjonctif imparfait et plus-que-parfait",
+   "vi": "Subjonctif imparfait (qu'il fût, qu'il eût, qu'il vînt) và plus-que-parfait (qu'il eût fini) trong văn chương, nhận biết nhờ dấu mũ; il eût fallu = il aurait fallu; ne fût-ce que; ngày nay thay bằng subjonctif présent / passé",
+   "pre": [
+    "subjonctif-passe",
+    "passe-simple"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "narrative-tenses",
+   "lv": "c1",
+   "cat": "tense",
+   "name": "Temps du récit",
+   "vi": "Thì kể chuyện: présent de narration (kể quá khứ bằng hiện tại cho sống động), imparfait narratif (một sự kiện ngắn kèm mốc thời gian: le lendemain, il partait), futur historique (il deviendra un grand peintre)",
+   "pre": [
+    "past-narration"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "conditionnel-journalistique",
+   "lv": "c1",
+   "cat": "tense",
+   "name": "Conditionnel journalistique",
+   "vi": "Conditionnel báo chí cho tin chưa xác nhận: le suspect serait en fuite, l'accident aurait fait trois blessés; hay đi với selon, d'après; tin đã chắc dùng indicatif",
+   "pre": [
+    "conditionnel-passe"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "modal-nuances",
+   "lv": "c1",
+   "cat": "modals",
+   "name": "Devoir et pouvoir: nuances",
+   "vi": "Sắc thái devoir / pouvoir: il doit être (chắc là), il a dû (chắc là đã / đã phải), il devait (theo dự định), tu aurais dû (lẽ ra nên), il aurait pu (lẽ ra đã có thể), j'ai pu (đã làm được)",
+   "pre": [
+    "conditionnel-passe"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "hypothesis-c1",
+   "lv": "c1",
+   "cat": "conditionals",
+   "name": "Hypothèse (C1)",
+   "vi": "Giả thiết C1: pour peu que, à supposer que, en admettant que, si tant est que + subjonctif; que… ou que + subjonctif; đảo ngữ với conditionnel thay si (serait-il malade, il viendrait)",
+   "pre": [
+    "hypothesis"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

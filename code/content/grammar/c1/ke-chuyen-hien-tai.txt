@@ -1,0 +1,60 @@
+=== ke-chuyen-hien-tai
+sum: Khi kể chuyện, người Pháp có ba cách làm câu chuyện sống động. Présent de narration: kể việc quá khứ bằng thì hiện tại (Il y a deux cents ans, un incendie détruit le village). Imparfait narratif: một sự kiện ngắn viết bằng imparfait, thường kèm mốc thời gian (Trois mois plus tard, la nouvelle église ouvrait ses portes). Futur historique: từ trong câu chuyện nhìn trước tương lai (Ce petit garçon deviendra un grand peintre).
+form: présent de narration | Soudain, la porte s'ouvre.
+form: imparfait narratif + mốc thời gian | Un an plus tard, il partait.
+form: futur historique | Il deviendra un grand peintre.
+form: mốc hay gặp | le lendemain · quelques années plus tard
+cast: m-dubois chloe
+bg: village
+words: incendie, village, habitant, reconstruire
+
+#hook
+m-dubois: Il y a deux cents ans, une nuit d'hiver, un incendie détruit tout le village. Les habitants perdent tout. | Hai trăm năm trước, vào một đêm mùa đông, một trận hoả hoạn thiêu rụi cả làng. Dân làng mất hết mọi thứ. [explain]
+chloe: Vous racontez ça au présent, comme si on y était ! | Bác kể chuyện đó ở thì hiện tại, cứ như chúng ta đang ở đó vậy! [surprised]
+> Đây là [[présent de narration]]: kể việc quá khứ bằng thì hiện tại để người nghe như đang chứng kiến.
+
+#meaning
+vs: Soudain, quelqu'un a frappé à la porte. | Bỗng có người gõ cửa. || passé composé: kể bình thường
+vs: Soudain, quelqu'un frappe à la porte. | Bỗng có người gõ cửa. || présent de narration: sống động hơn
+> Người kể chuyển sang thì hiện tại ở đoạn gay cấn để kéo người nghe vào câu chuyện.
+
+#form
+th: Cách kể | Ví dụ | Tác dụng
+tb: présent de narration | Le roi entre et se tait. | sống động
+tb: imparfait narratif | Deux jours plus tard, il partait. | nhấn một sự kiện
+tb: futur historique | Il deviendra roi. | nhìn trước tương lai
+> [[Imparfait narratif]] thường đi với một mốc thời gian chính xác: [[le lendemain]], [[deux jours plus tard]].
+
+#examples
+- Le lendemain, les habitants {commencent|k} à reconstruire leurs maisons. | Hôm sau, dân làng bắt đầu dựng lại nhà cửa.
+- Trois mois plus tard, la nouvelle église {ouvrait|k} ses portes. | Ba tháng sau, nhà thờ mới mở cửa.
+- Ce jeune boulanger {deviendra|k} le maire du village. | Người thợ làm bánh trẻ ấy về sau sẽ trở thành thị trưởng của làng.
+- Soudain, quelqu'un {crie|k} : au feu ! | Bỗng có người hét lên: cháy!
+- Quelques années plus tard, il {quittait|k} la région pour toujours. | Vài năm sau, ông rời vùng này mãi mãi.
+
+#mistakes
+x: Soudain, la porte s'ouvre et un homme est entré. => Soudain, la porte s'ouvre et un homme entre. | Bỗng cánh cửa mở ra và một người đàn ông bước vào. >> Đã chọn kể ở thì hiện tại thì giữ thì hiện tại cho các việc nối tiếp.
+x: Ce garçon devient plus tard un grand peintre, mais à l'époque, il est pauvre. => Ce garçon deviendra plus tard un grand peintre, mais à l'époque, il est pauvre. | Cậu bé ấy về sau sẽ thành hoạ sĩ lớn, nhưng khi đó còn nghèo. >> Nhìn trước tương lai trong câu chuyện: [[futur historique]].
+
+#dialogue
+chloe: Et après l'incendie, que se passe-t-il ? | Thế sau trận hoả hoạn, chuyện gì xảy ra ạ? [thinking]
+m-dubois: Les habitants ne partent pas. Ils reconstruisent tout, pierre par pierre. Dix ans plus tard, le village était plus beau qu'avant. | Dân làng không bỏ đi. Họ dựng lại tất cả, từng viên đá một. Mười năm sau, ngôi làng đẹp hơn trước. [explain]
+chloe: Et votre famille était déjà là ? | Thế gia đình bác đã ở đây từ hồi đó ạ? [surprised]
+m-dubois: Oui ! Mon arrière-grand-père, alors enfant, deviendra plus tard le maire. | Có! Cụ cố của tôi, khi đó còn là một đứa trẻ, về sau sẽ trở thành thị trưởng. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Ba tháng sau, nhà thờ mới mở cửa. => Trois mois plus tard, la nouvelle église ouvrait ses portes. | Ba tháng sau, nhà thờ mới mở cửa.
+? Nói bằng tiếng Pháp: Hôm sau, dân làng bắt đầu dựng lại nhà cửa. => Le lendemain, les habitants commencent à reconstruire leurs maisons. | Hôm sau, dân làng bắt đầu dựng lại nhà cửa.
+
+#recap
+> Ba cách kể sống động: [[présent de narration]] kể quá khứ bằng thì hiện tại, [[imparfait narratif]] nhấn một sự kiện kèm mốc thời gian, [[futur historique]] nhìn trước tương lai trong câu chuyện.
+
+#practice
+fill: Soudain, quelqu'un ___ : au feu ! | crie* / criera / crié || présent de narration.
+fill: Ce jeune boulanger ___ plus tard le maire du village. | deviendra* / devenu / devenir || futur historique.
+fill: Trois mois plus tard, la nouvelle église ___ ses portes. | ouvrait* / ouvert / ouvrir || imparfait narratif.
+contrast: Soudain, la porte s'ouvre et un homme ___ . | entre* / est entré || giữ thì hiện tại.
+contrast: Il y a deux cents ans, un incendie ___ le village. | détruit* / détruira || présent de narration.
+type: Quelques années plus tard, il ___ (quitter, imparfait) la région pour toujours. | quittait || imparfait narratif.
+fix: Soudain, la porte s'ouvre et un homme est entré. | Soudain, la porte s'ouvre et un homme entre.* / Soudain, la porte s'ouvre et un homme entré. / Soudain, la porte s'ouvre et un homme entrera. || giữ thì hiện tại.
+listen: Trois mois plus tard, la nouvelle église ouvrait ses portes. | Trois mois plus tard, la nouvelle église ouvrait ses portes.* / Trois mois plus tard, la nouvelle église ouvrira ses portes. / Trois mois plus tôt, la nouvelle église avait ouvert ses portes. || ouvrait.

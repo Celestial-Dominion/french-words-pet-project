@@ -36,7 +36,7 @@ Ngữ pháp chưa đo lần nào, nên quy theo dung lượng bài app Anh ×1,5
 | G-C2 | Ngữ pháp C2 (làm sau G-C1) | **bắt buộc** | ~18–23 bài | ~2% | chưa làm |
 | X-series | Truyện dài chia phần + chuỗi bài đọc | tùy chọn | code + nội dung | ~2–3% | chưa làm |
 | G-B2 | Ngữ pháp B2 (làm sau G-B1) | **bắt buộc** | ~30–36 bài | ~2,5% | **xong 21/10** (32 bài, 33 điểm phủ 100%) |
-| G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | chưa làm |
+| G-C1 | Ngữ pháp C1 (làm sau G-B2) | **bắt buộc** | ~25–30 bài | ~2,5% | đang làm: lô 1 xong (7/26 bài) |
 | S-C1 | C1 — thêm truyện cho đủ 67 như app Anh (sau P-C1) | tùy chọn | ~17 truyện (3 lô) | ~3% | chưa làm |
 | G-B1 | Ngữ pháp B1 | **bắt buộc** | ~34–39 bài | ~3% | **xong 21/10** (34 bài, 37 điểm phủ 100%) |
 
@@ -187,7 +187,9 @@ ce à quoi) · phân từ hoàn thành (ayant fini, étant parti) · sắc thái
 vô nhân xưng (il s'agit de, il importe que) · câu danh từ & tiêu đề báo · nhấn mạnh bằng tách câu (Moi, je… ; Ce livre,
 je l'ai lu) · khẩu ngữ vs văn viết (bỏ ne, on = nous, ça) · từ nối lập luận nâng cao (certes… mais, or, dès lors) ·
 présent de narration & imparfait narratif · si hỗn hợp · à peine… que, sitôt.
+- **Kế hoạch 26 bài** (4 lô; bỏ phần B2 đã dạy: ayant fini, dislocation, ce à quoi, quand bien même, si hỗn hợp, ne… guère).
 - **Nhật ký:**
+  - 21/10 lô 1: 7 bài (passé simple, passé antérieur, subjonctif imparfait, kể chuyện bằng hiện tại/imparfait/futur, conditionnel báo chí, sắc thái devoir/pouvoir, giả thiết C1) + 7 điểm inventory; 127/127 bài, 0 lỗi; 5 giờ 15% · tuần 9% trước lô; COMMIT
 
 ### G-C2 — Ngữ pháp C2 [ ] (app Anh 23 bài)
 

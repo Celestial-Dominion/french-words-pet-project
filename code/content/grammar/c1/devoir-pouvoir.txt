@@ -1,0 +1,64 @@
+=== devoir-pouvoir
+sum: Devoir và pouvoir đổi nghĩa theo thì. Devoir: il doit être malade (chắc là, phỏng đoán), il a dû partir (chắc là đã đi, hoặc đã phải đi), il devait venir (theo dự định thì sẽ đến), tu aurais dû (lẽ ra nên, lời tiếc hoặc trách). Pouvoir: il aurait pu (lẽ ra đã có thể, hoặc suýt nữa), j'ai pu (đã làm được).
+form: doit / a dû: phỏng đoán | Il a dû oublier.
+form: devait: dự định trong quá khứ | Il devait venir hier.
+form: aurait dû: lẽ ra nên | Tu aurais dû me le dire.
+form: aurait pu: lẽ ra đã có thể | Il aurait pu se blesser.
+cast: maman hugo
+bg: home-day
+words: rater, oublier, blesser, fâcher
+
+#hook
+maman: Ton frère n'est pas encore rentré ? Il devait être là à sept heures. | Em con vẫn chưa về à? Lẽ ra nó phải có mặt lúc bảy giờ. [worried]
+hugo: Il a dû rater son bus. Il aurait pu nous appeler, quand même ! | Chắc nó lỡ xe buýt. Dù sao nó cũng có thể gọi cho mình chứ! [angry]
+> [[Il devait être là]]: theo dự định. [[Il a dû rater]]: chắc là đã lỡ, một phỏng đoán. [[Il aurait pu appeler]]: lẽ ra đã có thể gọi, một lời trách.
+
+#meaning
+vs: Il a dû partir tôt pour son travail. | Anh ấy đã phải đi sớm vì công việc. || a dû: bắt buộc
+vs: Il ne répond pas, il a dû partir. | Anh ấy không trả lời, chắc là đã đi rồi. || a dû: phỏng đoán
+> [[A dû]] có hai nghĩa: đã phải làm, hoặc chắc là đã làm. Ngữ cảnh cho biết nghĩa nào.
+
+#form
+th: Cấu trúc | Nghĩa | Ví dụ
+tb: doit, nguyên mẫu | chắc là | Il doit être fatigué.
+tb: a dû, nguyên mẫu | chắc là đã, đã phải | Il a dû oublier.
+tb: devait, nguyên mẫu | theo dự định | Le train devait arriver à midi.
+tb: aurait dû, nguyên mẫu | lẽ ra nên | Tu aurais dû venir.
+tb: aurait pu, nguyên mẫu | lẽ ra đã có thể | On aurait pu perdre.
+> [[Aurait dû]] thường là lời tiếc hoặc trách. [[Aurait pu]] có thể là lời trách, hoặc nỗi nhẹ nhõm vì điều xấu đã không xảy ra.
+
+#examples
+- Elle ne répond pas, elle {doit|k} dormir. | Cô ấy không trả lời, chắc đang ngủ.
+- Le concert {devait|k} commencer à vingt heures, mais il a été annulé. | Buổi hoà nhạc lẽ ra bắt đầu lúc hai mươi giờ, nhưng đã bị huỷ.
+- Tu {aurais dû|k} m'écouter ! | Lẽ ra bạn nên nghe tôi!
+- Ouf ! Tu {aurais pu|k} tomber ! | Phù! Suýt nữa thì bạn ngã!
+- J'ai enfin {pu|k} lui parler. | Cuối cùng tôi cũng nói chuyện được với anh ấy.
+
+#mistakes
+x: Tu devrais m'écouter hier. => Tu aurais dû m'écouter hier. | Hôm qua lẽ ra bạn nên nghe tôi. >> Việc đã qua: [[conditionnel passé]] [[aurais dû]].
+x: Il n'est pas là, il doit partir. => Il n'est pas là, il a dû partir. | Anh ấy không có ở đây, chắc là đã đi rồi. >> Phỏng đoán việc đã xảy ra: [[a dû]].
+x: On aurait pu avoir gagné. => On aurait pu gagner. | Lẽ ra chúng ta đã có thể thắng. >> Sau [[aurait pu]] là nguyên mẫu thường.
+
+#dialogue
+maman: Regarde, il a laissé son téléphone ici. Il a dû l'oublier ce matin. | Nhìn này, nó để điện thoại ở đây. Chắc sáng nay nó quên. [sad]
+hugo: Alors il ne pouvait pas appeler. Je n'aurais pas dû me fâcher. | Thế thì nó không gọi được rồi. Lẽ ra con không nên bực. [thinking]
+maman: Ah, j'entends la porte ! Ça doit être lui. | À, mẹ nghe tiếng cửa! Chắc là nó đấy. [happy]
+hugo: Enfin ! On aurait pu appeler la police ! | Cuối cùng! Suýt nữa thì mình đã gọi cảnh sát rồi! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Lẽ ra bạn nên nghe tôi! => Tu aurais dû m'écouter ! | Lẽ ra bạn nên nghe tôi!
+? Nói bằng tiếng Pháp: Cô ấy không trả lời, chắc đang ngủ. => Elle ne répond pas, elle doit dormir. | Cô ấy không trả lời, chắc đang ngủ.
+
+#recap
+> [[Doit]], [[a dû]]: phỏng đoán, chắc là. [[Devait]]: theo dự định. [[Aurait dû]]: lẽ ra nên. [[Aurait pu]]: lẽ ra đã có thể. [[A pu]]: đã làm được.
+
+#practice
+fill: Elle ne répond pas, elle ___ dormir. | doit* / a dû / aurait dû || phỏng đoán hiện tại.
+fill: Tu ___ m'écouter hier ! | aurais dû* / devrais / dois || lẽ ra nên, việc đã qua.
+fill: Le concert ___ commencer à vingt heures, mais il a été annulé. | devait* / doit / a dû || dự định.
+fill: Ouf ! Tu ___ tomber ! | aurais pu* / pourras / as pu || suýt nữa.
+contrast: Il ne répond pas, il ___ partir. | a dû* / devait || chắc là đã đi.
+contrast: Il ___ venir hier, mais il était malade. | devait* / a dû || dự định không thành.
+type: J'ai enfin ___ (pouvoir) lui parler. | pu || đã làm được.
+fix: Tu devrais m'écouter hier. | Tu aurais dû m'écouter hier.* / Tu as dû m'écouter hier. / Tu aurais devoir m'écouter hier. || conditionnel passé.
+listen: Le concert devait commencer à vingt heures, mais il a été annulé. | Le concert devait commencer à vingt heures, mais il a été annulé.* / Le concert doit commencer à vingt heures, mais il a été annulé. / Le concert a dû commencer à vingt heures. || devait.

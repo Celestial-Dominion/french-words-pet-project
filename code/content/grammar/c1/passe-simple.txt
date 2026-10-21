@@ -1,0 +1,64 @@
+=== passe-simple
+sum: Passé simple là thì quá khứ của văn viết: truyện, tiểu thuyết, sách lịch sử. Khi nói, người Pháp dùng passé composé. Ở C1, cần nhận biết nó, nhất là ở ngôi thứ ba: động từ -er có đuôi -a, -èrent (il parla, ils parlèrent); -ir, -re có đuôi -it, -irent (il finit, ils prirent); être, avoir và nhiều động từ -oir có đuôi -ut, -urent (il fut, il eut, il put); venir, tenir thành il vint, ils vinrent.
+form: -er → -a, -èrent | il parla · ils parlèrent
+form: -ir, -re → -it, -irent | elle finit · ils prirent
+form: -ut, -urent | il fut · il eut · il put
+form: venir → vint | il vint · ils vinrent
+cast: papi zoe
+bg: home-evening
+words: prince, roi, couronne, histoire
+
+#hook
+zoe: Papi, tu me lis la suite de l'histoire ? | Ông ơi, ông đọc tiếp truyện cho cháu nhé? [happy]
+papi: Bien sûr. Le prince ouvrit la porte. Il entra dans la salle et vit la princesse. | Tất nhiên. Hoàng tử mở cửa. Chàng bước vào phòng và nhìn thấy công chúa. [explain]
+> [[Ouvrit]], [[entra]], [[vit]] là [[passé simple]], thì quá khứ của truyện và sách. Khi kể bằng lời, ta sẽ nói [[il a ouvert]], [[il est entré]], [[il a vu]].
+
+#meaning
+vs: Hier, j'ai vu un film. | Hôm qua tôi đã xem một bộ phim. || văn nói: passé composé
+vs: Le roi vit la princesse et tomba amoureux. | Nhà vua nhìn thấy công chúa và đem lòng yêu. || văn viết: passé simple
+> Hai thì cùng chỉ một việc đã xong trong quá khứ. [[Passé simple]] chỉ dùng khi viết, hầu như ở ngôi thứ ba.
+
+#form
+th: Nhóm | il, elle | ils, elles
+tb: -er: parler | il parla | ils parlèrent
+tb: -ir: finir | il finit | ils finirent
+tb: -re: prendre | il prit | ils prirent
+tb: être, avoir | il fut, il eut | ils furent, ils eurent
+tb: venir | il vint | ils vinrent
+> Các động từ như [[pouvoir]], [[savoir]], [[vouloir]] có đuôi [[-ut]]: [[il put]], [[il sut]], [[il voulut]].
+
+#examples
+- Le château {fut|k} construit il y a cinq cents ans. | Lâu đài được xây cách đây năm trăm năm.
+- Ils {vécurent|k} heureux et eurent beaucoup d'enfants. | Họ sống hạnh phúc và có nhiều con.
+- Soudain, la porte {s'ouvrit|k}. | Bỗng nhiên cánh cửa mở ra.
+- Elle {prit|k} sa valise et partit sans dire un mot. | Cô cầm hành lý và ra đi không nói một lời.
+- Le lendemain, il {vint|k} me voir. | Hôm sau, anh ấy đến gặp tôi.
+
+#mistakes
+x: Hier soir, je mangeai au restaurant avec des amis. => Hier soir, j'ai mangé au restaurant avec des amis. | Tối qua tôi ăn ở nhà hàng với bạn bè. >> Khi nói về đời thường, dùng [[passé composé]].
+x: Ils parlérent longtemps. => Ils parlèrent longtemps. | Họ nói chuyện rất lâu. >> Đuôi là [[-èrent]], dấu huyền.
+x: Le roi prenit sa couronne. => Le roi prit sa couronne. | Nhà vua cầm lấy vương miện. >> [[Prendre]] cho [[il prit]].
+
+#dialogue
+zoe: Pourquoi tu dis il ouvrit et pas il a ouvert ? | Sao ông đọc “il ouvrit” mà không phải “il a ouvert”? [thinking]
+papi: Parce que c'est écrit dans le livre. Dans les histoires, on utilise le passé simple. | Vì trong sách viết thế. Trong truyện, người ta dùng passé simple. [explain]
+zoe: Et toi, quand tu racontes ta journée, tu l'utilises ? | Thế khi ông kể chuyện trong ngày, ông có dùng nó không? [surprised]
+papi: Jamais ! Personne ne parle comme un livre. Allez, la suite : la princesse sourit et lui donna la main. | Không bao giờ! Chẳng ai nói như sách cả. Nào, đọc tiếp: công chúa mỉm cười và đưa tay cho chàng. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Bỗng nhiên cánh cửa mở ra. => Soudain, la porte s'ouvrit. | Bỗng nhiên cánh cửa mở ra.
+? Nói bằng tiếng Pháp: Cô cầm hành lý và ra đi không nói một lời. => Elle prit sa valise et partit sans dire un mot. | Cô cầm hành lý và ra đi không nói một lời.
+
+#recap
+> [[Passé simple]] là thì quá khứ của văn viết, chủ yếu ở ngôi thứ ba: [[il parla]], [[il finit]], [[il prit]], [[il fut]], [[il eut]], [[il vint]]. Khi nói, dùng [[passé composé]].
+
+#practice
+fill: Soudain, la porte s'___ . | ouvrit* / ouvra / ouvert || ouvrir → il ouvrit.
+fill: Ils ___ heureux et eurent beaucoup d'enfants. | vécurent* / vivèrent / vécu || vivre → ils vécurent.
+fill: Le château ___ construit il y a cinq cents ans. | fut* / eut / furent || être → il fut.
+fill: Le lendemain, il ___ me voir. | vint* / venit / venu || venir → il vint.
+contrast: Hier soir, ___ au restaurant avec des amis. | j'ai mangé* / je mangeai || văn nói: passé composé.
+contrast: Le roi ___ sa couronne et sortit. | prit* / a pris || văn viết, cùng thì với sortit.
+type: Ils ___ (parler) longtemps. | parlèrent || -er → -èrent.
+fix: Le roi prenit sa couronne. | Le roi prit sa couronne.* / Le roi prena sa couronne. / Le roi prendit sa couronne. || prendre → prit.
+listen: Elle prit sa valise et partit sans dire un mot. | Elle prit sa valise et partit sans dire un mot.* / Elle a pris sa valise et elle est partie. / Elle prend sa valise et part sans un mot. || prit, partit.

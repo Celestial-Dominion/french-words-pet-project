@@ -1,0 +1,65 @@
+=== passe-anterieur
+sum: Passé antérieur = eut / fut (passé simple của avoir, être) + phân từ. Trong văn viết, nó chỉ việc xong ngay trước một việc ở passé simple, thường sau quand, lorsque, dès que, après que, à peine… que: Quand il eut fini son repas, il sortit. À peine fut-elle rentrée que l'orage éclata. Khi nói, ta dùng passé composé: dès qu'il a fini, il est sorti.
+form: eut / fut + phân từ | il eut fini · elle fut partie
+form: dès que + passé antérieur, passé simple | Dès qu'il eut fini, il sortit.
+form: à peine + đảo ngữ… que | À peine fut-elle rentrée que l'orage éclata.
+form: khi nói: passé composé | Dès qu'il a fini, il est sorti.
+cast: mme-martin hugo
+bg: classroom
+words: lettre, capitale, roman, applaudir
+
+#hook
+mme-martin: Écoutez cette phrase : dès qu'il eut reçu la lettre, il partit pour la capitale. | Các em nghe câu này: ngay khi nhận được thư, anh ta lên đường đi thủ đô. [explain]
+hugo: Il eut reçu... c'est un temps que je ne connais pas ! | “Il eut reçu”... thì này em chưa biết! [surprised]
+> [[Il eut reçu]] là [[passé antérieur]]: [[eut]] cộng phân từ. Việc nhận thư xong ngay trước việc lên đường, được kể bằng [[passé simple]].
+
+#meaning
+vs: Quand il avait fini, il sortait. | Mỗi khi làm xong, anh ấy ra ngoài. || plus-que-parfait, imparfait: thói quen
+vs: Quand il eut fini, il sortit. | Làm xong, anh ấy ra ngoài. || passé antérieur, passé simple: một lần
+> [[Passé antérieur]] đi cặp với [[passé simple]]: một việc vừa xong thì ngay lập tức đến việc kia.
+
+#form
+th: Ngôi | avoir | être
+tb: il, elle | eut fini | fut parti
+tb: ils, elles | eurent fini | furent partis
+> Chọn [[avoir]] hay [[être]] như ở [[passé composé]]. Trong văn, thì này hầu như chỉ gặp ở ngôi thứ ba.
+th: Từ dẫn | Ví dụ
+tb: quand, lorsque | Lorsqu'elle eut terminé, elle se leva.
+tb: dès que, aussitôt que | Dès qu'ils furent partis, on ferma la porte.
+tb: après que | Après qu'il eut parlé, tout le monde se tut.
+tb: à peine… que | À peine fut-elle rentrée que l'orage éclata.
+> Sau [[à peine]] ở đầu câu, chủ ngữ và động từ đảo chỗ: [[à peine fut-elle rentrée]].
+
+#examples
+- Lorsqu'elle {eut terminé|k} sa lecture, elle éteignit la lumière. | Đọc xong, cô tắt đèn.
+- Dès que les invités {furent partis|k}, il se coucha. | Khách vừa về hết, anh ấy đi ngủ.
+- À peine {eut-il fini|k} de parler que la salle applaudit. | Anh ấy vừa nói xong thì cả hội trường vỗ tay.
+- Quand ils {eurent mangé|k}, ils reprirent la route. | Ăn xong, họ lại lên đường.
+
+#mistakes
+x: Quand elle eut fini, elle est partie. => Quand elle eut fini, elle partit. | Làm xong, cô ấy ra đi. >> [[Passé antérieur]] đi cặp với [[passé simple]].
+x: Dès qu'elle eut arrivée, on dîna. => Dès qu'elle fut arrivée, on dîna. | Cô ấy vừa đến là mọi người ăn tối. >> [[Arriver]] dùng [[être]]: [[fut arrivée]].
+x: À peine il fut sorti qu'il se mit à pleuvoir. => À peine fut-il sorti qu'il se mit à pleuvoir. | Anh ấy vừa ra ngoài thì trời đổ mưa. >> Sau [[à peine]] ở đầu câu: đảo ngữ.
+
+#dialogue
+hugo: Et à l'oral, comment je dis la même chose ? | Thế khi nói, em nói câu đó thế nào ạ? [thinking]
+mme-martin: Tu dis simplement : dès qu'il a reçu la lettre, il est parti. | Em chỉ cần nói: dès qu'il a reçu la lettre, il est parti. [explain]
+hugo: Donc je dois seulement le reconnaître quand je lis ? | Vậy em chỉ cần nhận ra nó khi đọc thôi ạ? [thinking]
+mme-martin: Exactement. À peine auras-tu lu trois romans que tu le reconnaîtras partout ! | Đúng vậy. Em mới đọc ba cuốn tiểu thuyết là sẽ nhận ra nó khắp nơi! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Khách vừa về hết, anh ấy đi ngủ. => Dès que les invités furent partis, il se coucha. | Khách vừa về hết, anh ấy đi ngủ.
+? Nói bằng tiếng Pháp: Anh ấy vừa nói xong thì cả hội trường vỗ tay. => À peine eut-il fini de parler que la salle applaudit. | Anh ấy vừa nói xong thì cả hội trường vỗ tay.
+
+#recap
+> [[Passé antérieur]]: [[eut]] hoặc [[fut]] cộng phân từ. Dùng trong văn viết cho việc xong ngay trước một việc ở [[passé simple]], sau [[quand]], [[dès que]], [[après que]], [[à peine… que]].
+
+#practice
+fill: Dès que les invités ___ partis, il se coucha. | furent* / eurent / étaient || partir → être.
+fill: Quand ils ___ mangé, ils reprirent la route. | eurent* / furent / ont || manger → avoir.
+fill: À peine eut-il fini de parler ___ la salle applaudit. | que* / quand / et || à peine… que.
+contrast: Quand elle eut fini, elle ___ . | partit* / est partie || cặp với passé simple.
+contrast: Dès qu'elle ___ arrivée, on dîna. | fut* / eut || arriver → être.
+type: Lorsqu'elle ___ (avoir) terminé sa lecture, elle éteignit la lumière. | eut || avoir → eut.
+fix: À peine il fut sorti qu'il se mit à pleuvoir. | À peine fut-il sorti qu'il se mit à pleuvoir.* / À peine fut-il sorti quand il se mit à pleuvoir. / À peine il était sorti qu'il se mit à pleuvoir. || đảo ngữ, à peine… que.
+listen: Quand ils eurent mangé, ils reprirent la route. | Quand ils eurent mangé, ils reprirent la route.* / Quand ils ont mangé, ils ont repris la route. / Quand ils mangeaient, ils reprenaient la route. || eurent mangé.

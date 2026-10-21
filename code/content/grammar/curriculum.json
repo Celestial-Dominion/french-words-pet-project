@@ -1372,6 +1372,83 @@
     "articles-b2"
    ],
    "find": "(?<![\\p{L}'])((est|suis|es|sont|sommes|êtes) (médecin|professeur|professeure|ingénieur|infirmier|infirmière|avocat|avocate|pompier|étudiant|étudiante|cuisinier|cuisinière)|avec (patience|plaisir|soin|courage|gentillesse|attention)|sans (hésitation|problème|peur|bruit|difficulté))(?![\\p{L}])"
+  },
+  {
+   "id": "passe-simple",
+   "lv": "c1",
+   "cat": "tense",
+   "t": "Passé simple: thì kể chuyện trong văn viết",
+   "en": "il fut · elle prit · ils vinrent",
+   "pts": [
+    "passe-simple"
+   ],
+   "find": "(?<![\\p{L}'])(fut|furent|eut|eurent|fit|firent|vint|vinrent|prit|prirent|alla|allèrent|parla|parlèrent|regarda|entra|entrèrent|demanda|répondit|sortit|partit|mourut|naquit|devint|sut|put|voulut|virent)(?![\\p{L}])"
+  },
+  {
+   "id": "passe-anterieur",
+   "lv": "c1",
+   "cat": "tense",
+   "t": "Passé antérieur",
+   "en": "quand il eut fini, il sortit",
+   "pts": [
+    "passe-anterieur"
+   ],
+   "find": "(?<![\\p{L}'])(eut|eurent|fut|furent) (\\p{L}+é|\\p{L}+i|\\p{L}+u|fini|fait|dit|pris|mis|parti|partis|arrivé|arrivée|sorti|terminé)(?![\\p{L}])"
+  },
+  {
+   "id": "subjonctif-imparfait",
+   "lv": "c1",
+   "cat": "verbs",
+   "t": "Subjonctif imparfait (nhận biết)",
+   "en": "qu'il fût · il eût fallu",
+   "pts": [
+    "subj-imparfait"
+   ],
+   "find": "(?<![\\p{L}'])(fût|eût|eussent|fussent|vînt|pût|sût|fît|dût)(?![\\p{L}])"
+  },
+  {
+   "id": "ke-chuyen-hien-tai",
+   "lv": "c1",
+   "cat": "tense",
+   "t": "Kể chuyện bằng hiện tại, imparfait và futur",
+   "en": "soudain, la porte s'ouvre · il deviendra roi",
+   "pts": [
+    "narrative-tenses"
+   ],
+   "find": "(?<![\\p{L}'])((quelques|deux|trois|dix) (années|ans|mois|jours) plus tard|un (an|mois) plus tard)(?![\\p{L}])"
+  },
+  {
+   "id": "conditionnel-bao-chi",
+   "lv": "c1",
+   "cat": "tense",
+   "t": "Conditionnel báo chí: tin chưa xác nhận",
+   "en": "le suspect serait en fuite · l'accident aurait fait trois blessés",
+   "pts": [
+    "conditionnel-journalistique"
+   ],
+   "find": "(?<![\\p{L}'])(selon|d'après) [^.!?]{0,60}(serait|seraient|aurait|auraient)(?![\\p{L}])"
+  },
+  {
+   "id": "devoir-pouvoir",
+   "lv": "c1",
+   "cat": "modals",
+   "t": "Sắc thái của devoir và pouvoir",
+   "en": "il a dû partir · tu aurais dû · il aurait pu",
+   "pts": [
+    "modal-nuances"
+   ],
+   "find": "(?<![\\p{L}'])(a dû|ai dû|as dû|ont dû|avons dû|avez dû|aurait dû|aurais dû|aurions dû|auriez dû|auraient dû|aurait pu|aurais pu|auraient pu|aurions pu|auriez pu|devait|devais|doit être|doivent être)(?![\\p{L}])"
+  },
+  {
+   "id": "gia-thiet-c1",
+   "lv": "c1",
+   "cat": "conditionals",
+   "t": "Giả thiết C1: pour peu que, à supposer que",
+   "en": "pour peu qu'il pleuve · serait-il malade, il viendrait",
+   "pts": [
+    "hypothesis-c1"
+   ],
+   "find": "(?<![\\p{L}'])(pour peu que|pour peu qu'|à supposer que|à supposer qu'|en admettant que|en admettant qu'|si tant est que|si tant est qu')"
   }
  ]
 }

@@ -1,0 +1,64 @@
+=== gia-thiet-c1
+sum: Ngoài si, au cas où, à condition que (B2), văn trang trọng còn có: pour peu que (chỉ cần… là), à supposer que / en admettant que (giả sử là, cứ cho là), si tant est que (nếu quả thật) — tất cả đi với subjonctif. Que… ou que + subjonctif: dù… hay… (qu'il pleuve ou qu'il neige). Văn viết còn dùng đảo ngữ với conditionnel thay cho si, même si: Serait-il malade, il viendrait quand même.
+form: pour peu que + subjonctif | Pour peu qu'on l'aide, il réussira.
+form: à supposer que + subjonctif | À supposer qu'il vienne, où dormira-t-il ?
+form: si tant est que + subjonctif | si tant est que ce soit possible
+form: que… ou que + subjonctif | Que tu sois d'accord ou non, je pars.
+cast: karim tom
+bg: office
+words: projet, client, banque, partenaire
+
+#hook
+tom: Et si le projet ne marche pas ? | Còn nếu dự án không thành công thì sao? [worried]
+karim: À supposer qu'il échoue, nous aurons appris beaucoup. Et pour peu que les clients l'aiment, il réussira vite. | Giả sử nó thất bại, chúng ta cũng học được nhiều. Còn chỉ cần khách hàng thích là nó sẽ thành công nhanh thôi. [explain]
+> [[À supposer que]]: giả sử là. [[Pour peu que]]: chỉ cần… là. Cả hai đi với [[subjonctif]] và nghe trang trọng hơn [[si]].
+
+#meaning
+vs: S'il pleut un peu, la route est fermée. | Nếu mưa một chút là đường bị đóng. || si: trung tính
+vs: Pour peu qu'il pleuve, la route est fermée. | Chỉ cần mưa một chút là đường bị đóng. || pour peu que: chỉ cần điều nhỏ
+> [[Pour peu que]] nhấn mạnh rằng chỉ một điều kiện nhỏ cũng đủ.
+
+#form
+th: Cấu trúc | Nghĩa | Theo sau là
+tb: pour peu que | chỉ cần… là | subjonctif
+tb: à supposer que, en admettant que | giả sử là | subjonctif
+tb: si tant est que | nếu quả thật | subjonctif
+tb: que… ou que | dù… hay… | subjonctif
+tb: đảo ngữ | dù có | conditionnel
+> Đảo ngữ thay cho [[si]] hay [[même si]] trong văn viết: [[serait-il malade, il viendrait]].
+
+#examples
+- {En admettant|k} que tu aies raison, que proposes-tu ? | Cứ cho là bạn đúng, thì bạn đề xuất gì?
+- Je t'aiderai, si tant {est|k} que j'en sois capable. | Tôi sẽ giúp bạn, nếu quả thật tôi làm được.
+- Qu'il {pleuve|k} ou qu'il neige, nous partirons demain. | Dù mưa hay tuyết, mai chúng ta vẫn đi.
+- {Serait|k}-il malade, il viendrait quand même. | Dù có ốm, anh ấy vẫn sẽ đến.
+- {Pour peu|k} qu'on l'encourage, il travaille deux fois plus. | Chỉ cần được động viên một chút là anh ấy làm gấp đôi.
+
+#mistakes
+x: Pour peu qu'il fait beau, nous sortirons. => Pour peu qu'il fasse beau, nous sortirons. | Chỉ cần trời đẹp là chúng ta sẽ ra ngoài. >> [[Pour peu que]] đi với [[subjonctif]].
+x: À supposer qu'il acceptera, que ferons-nous ? => À supposer qu'il accepte, que ferons-nous ? | Giả sử anh ấy đồng ý, chúng ta sẽ làm gì? >> [[À supposer que]] đi với [[subjonctif]].
+x: Qu'il pleut ou qu'il neige, je sors. => Qu'il pleuve ou qu'il neige, je sors. | Dù mưa hay tuyết, tôi vẫn ra ngoài. >> [[Que… ou que]] đi với [[subjonctif]].
+
+#dialogue
+tom: Et si les banques refusent de nous prêter de l'argent ? | Còn nếu ngân hàng từ chối cho chúng ta vay tiền thì sao? [worried]
+karim: Refuseraient-elles, nous trouverions d'autres partenaires. | Dù họ có từ chối, chúng ta sẽ tìm đối tác khác. [explain]
+tom: Tu es toujours optimiste ! | Anh lúc nào cũng lạc quan! [happy]
+karim: Pour peu qu'on y croie, tout devient possible ! | Chỉ cần mình tin là mọi thứ đều có thể! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Tôi sẽ giúp bạn, nếu quả thật tôi làm được. => Je t'aiderai, si tant est que j'en sois capable. | Tôi sẽ giúp bạn, nếu quả thật tôi làm được.
+? Nói bằng tiếng Pháp: Dù có ốm, anh ấy vẫn sẽ đến. => Serait-il malade, il viendrait quand même. | Dù có ốm, anh ấy vẫn sẽ đến.
+
+#recap
+> Giả thiết C1: [[pour peu que]], [[à supposer que]], [[en admettant que]], [[si tant est que]], [[que… ou que]] đi với [[subjonctif]]. Văn viết còn dùng đảo ngữ với [[conditionnel]]: [[serait-il malade]].
+
+#practice
+fill: Pour peu qu'il ___ beau, nous sortirons. | fasse* / fait / fera || subjonctif.
+fill: Je t'aiderai, si tant est que j'en ___ capable. | sois* / suis / serai || subjonctif.
+fill: En admettant que tu ___ raison, que proposes-tu ? | aies* / as / auras || subjonctif.
+fill: Il viendrait quand même, ___ malade. | serait-il* / s'il est / est-il || đảo ngữ.
+contrast: S'il ___ un peu, la route est fermée. | pleut* / pleuve || si: indicatif.
+contrast: Pour peu qu'il ___ un peu, la route est fermée. | pleuve* / pleut || subjonctif.
+type: Qu'il pleuve ou qu'il ___ (neiger), nous partirons demain. | neige || subjonctif.
+fix: À supposer qu'il acceptera, que ferons-nous ? | À supposer qu'il accepte, que ferons-nous ?* / À supposer qu'il accepterait, que ferons-nous ? / À supposer qu'il a accepté, que ferons-nous ? || subjonctif.
+listen: Je t'aiderai, si tant est que j'en sois capable. | Je t'aiderai, si tant est que j'en sois capable.* / Je t'aiderai, si je suis capable. / Je t'aiderai, même si je ne suis pas capable. || si tant est que.
