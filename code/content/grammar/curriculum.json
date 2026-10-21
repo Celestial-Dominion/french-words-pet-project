@@ -1093,6 +1093,85 @@
     "infinitif-passe"
    ],
    "find": "(?<![\\p{L}'])(d'avoir|d'être|sans avoir|sans être|pour avoir|de s'être|après avoir|après être) "
+  },
+  {
+   "id": "participe-present",
+   "lv": "b2",
+   "cat": "verbs",
+   "kind": "contrast",
+   "t": "Participe présent và tính từ -ant",
+   "en": "des étudiants parlant anglais · une journée fatigante",
+   "pts": [
+    "participe-present",
+    "adjectif-verbal"
+   ],
+   "find": "(?<![\\p{L}'])(?<!en )(ayant|étant|sachant|faisant|voulant|pouvant|disant|prenant|venant|allant|cherchant|parlant|travaillant|souhaitant|sortant|arrivant|croyant|pensant)(?![\\p{L}])"
+  },
+  {
+   "id": "menh-de-phan-tu",
+   "lv": "b2",
+   "cat": "sentence",
+   "t": "Cụm phân từ đầu câu",
+   "en": "une fois le travail terminé · ayant tout perdu",
+   "pts": [
+    "participial-clause"
+   ],
+   "find": "(?<![\\p{L}'])((ayant|étant) (\\p{L}+é|\\p{L}+i|\\p{L}+u|été|eu|fait|dit|pris|mis)|[Uu]ne fois (\\p{L}+é|\\p{L}+i|\\p{L}+u|fait|pris|le|la|les))(?![\\p{L}])"
+  },
+  {
+   "id": "faire-laisser",
+   "lv": "b2",
+   "cat": "verbs",
+   "t": "Faire / laisser + nguyên mẫu",
+   "en": "je fais réparer ma voiture · laisse-moi parler",
+   "pts": [
+    "faire-causatif"
+   ],
+   "find": "(?<![\\p{L}'])(fais|fait|faisons|faites|font|faire|fera|ferai|faisait|laisse|laisses|laissez|laissent|laisser|laissé)( le| la| les| me| te| nous| vous| lui| leur)? (faire|réparer|venir|entrer|sortir|tomber|attendre|construire|couper|nettoyer|visiter|voir|passer|rire|pleurer|travailler|jouer|dormir|partir|savoir|parler|tourner|cuire|livrer|peindre|changer)(?![\\p{L}])"
+  },
+  {
+   "id": "bi-dong-nang-cao",
+   "lv": "b2",
+   "cat": "verbs",
+   "t": "Bị động nâng cao: se faire, on, se + động từ",
+   "en": "il s'est fait voler son vélo · ce vin se boit frais",
+   "pts": [
+    "passive-b2"
+   ],
+   "find": "(?<![\\p{L}'])(se fait|se font|s'est fait|se sont fait|me suis fait|t'es fait|se faire|se vend|se vendent|se mange|se mangent|se boit|se dit|se prononce|s'écrit|se porte|se fabrique)(?![\\p{L}])"
+  },
+  {
+   "id": "hop-phan-tu-nang-cao",
+   "lv": "b2",
+   "cat": "tense",
+   "t": "Hợp phân từ nâng cao",
+   "en": "les photos que j'ai prises · j'en ai mangé",
+   "pts": [
+    "pp-agreement-b2"
+   ],
+   "find": "(?<![\\p{L}'])(que |qu')(j'|tu |il |elle |on |nous |vous |ils |elles )(ai|as|a|avons|avez|ont) (\\p{L}+ées|\\p{L}+és|\\p{L}+ée|\\p{L}+ies|\\p{L}+ie|\\p{L}+ues|\\p{L}+ue|faite|faites|prise|prises|mise|mises|écrite|écrites|dite|dites)(?![\\p{L}])"
+  },
+  {
+   "id": "lequel",
+   "lv": "b2",
+   "cat": "relative",
+   "t": "Lequel, auquel, duquel",
+   "en": "la table sur laquelle · le projet auquel je pense",
+   "pts": [
+    "relative-lequel"
+   ],
+   "find": "(?<![\\p{L}'])(lequel|laquelle|lesquels|lesquelles|auquel|auxquels|auxquelles|duquel|desquels|desquelles)(?![\\p{L}])"
+  },
+  {
+   "id": "dai-tu-trung-tinh",
+   "lv": "b2",
+   "cat": "pronouns",
+   "t": "Le, en, y thay cả một ý",
+   "en": "je le sais · j'en suis sûr · j'y pense",
+   "pts": [
+    "neutral-pronouns"
+   ],
+   "find": "(?<![\\p{L}'])(je le sais|je le crois|je le pense|je l'espère|te l'ai dit|vous l'ai dit|je le savais|j'en suis sûr|j'en suis sûre|j'y pense|j'y tiens|je m'en doutais|je m'y attendais|il le faut)(?![\\p{L}])"
   }
  ]
 }

@@ -1,0 +1,68 @@
+=== faire-laisser
+sum: Faire + nguyên mẫu: khiến hoặc nhờ người khác làm. Je répare ma voiture (tự sửa) khác Je fais réparer ma voiture (nhờ thợ sửa). Il me fait rire = anh ấy làm tôi cười. Laisser + nguyên mẫu: để cho, cho phép (Laisse-moi entrer). Đại từ đứng trước faire / laisser: je la fais réparer. Ở passé composé, fait trước nguyên mẫu không hợp: elle les a fait entrer.
+form: faire + nguyên mẫu | Je fais réparer ma voiture.
+form: laisser + nguyên mẫu | Laisse-moi entrer.
+form: đại từ trước faire | Je la fais réparer.
+form: fait không hợp | Je les ai fait venir.
+cast: papa zoe
+bg: home-evening
+words: réparer, garagiste, laisser, nettoyer
+
+#hook
+zoe: Papa, tu répares la voiture toi-même ce week-end ? | Bố ơi, cuối tuần này bố tự sửa xe à? [surprised]
+papa: Non, cette fois, je la fais réparer par un garagiste. La dernière fois, j'ai tout cassé ! | Không, lần này bố nhờ thợ sửa. Lần trước bố làm hỏng hết! [happy]
+> [[Je la fais réparer]]: bố không tự sửa mà nhờ người khác sửa. [[Faire]] đi với nguyên mẫu nghĩa là khiến hoặc nhờ người khác làm.
+
+#meaning
+vs: Je répare ma voiture. | Tôi tự sửa xe. || tự làm
+vs: Je fais réparer ma voiture. | Tôi mang xe đi sửa. || nhờ người khác làm
+vs: Mon frère me fait rire. | Anh trai làm tôi cười. || khiến ai làm gì
+vs: Mes parents me laissent sortir le soir. | Bố mẹ cho tôi đi chơi buổi tối. || laisser: để cho, cho phép
+> [[Faire]]: khiến, nhờ. [[Laisser]]: để cho, cho phép.
+
+#form
+f: chủ ngữ + [faire, laisser] + nguyên mẫu
+> Đại từ đứng trước [[faire]] hoặc [[laisser]], không đứng trước nguyên mẫu.
+th: Câu | Với đại từ
+tb: Je fais réparer la voiture. | Je la fais réparer.
+tb: Elle fait venir le médecin. | Elle le fait venir.
+tb: Laisse parler ton frère. | Laisse-le parler.
+tb: J'ai fait venir les enfants. | Je les ai fait venir.
+> Ở [[passé composé]], phân từ [[fait]] đứng trước nguyên mẫu không hợp giống, số.
+
+#examples
+- Ce film m'a {fait|k} pleurer. | Bộ phim này làm tôi khóc.
+- Le professeur nous {fait|k} lire un livre par mois. | Thầy giáo bắt chúng tôi đọc mỗi tháng một cuốn sách.
+- Je vais {faire|k} nettoyer le tapis. | Tôi sẽ mang thảm đi giặt.
+- {Laissez|k}-moi vous aider. | Để tôi giúp anh chị.
+- Ne {laisse|k} pas le chat entrer dans la chambre ! | Đừng để con mèo vào phòng!
+
+#mistakes
+x: Il fait réparé son vélo. => Il fait réparer son vélo. | Anh ấy mang xe đạp đi sửa. >> Sau [[faire]] là nguyên mẫu.
+x: Mon ordinateur ? Je vais faire le réparer. => Mon ordinateur ? Je vais le faire réparer. | Máy tính của tôi à? Tôi sẽ mang đi sửa. >> Đại từ đứng trước [[faire]].
+x: Les enfants ? Elle les a faits entrer. => Les enfants ? Elle les a fait entrer. | Bọn trẻ à? Cô ấy cho chúng vào. >> Trước nguyên mẫu, [[fait]] không hợp.
+x: Laisse-moi de parler. => Laisse-moi parler. | Để tôi nói. >> Sau [[laisser]] không có [[de]].
+
+#dialogue
+zoe: Et moi, tu me laisses conduire la voiture quand elle sera réparée ? | Thế khi xe sửa xong, bố cho con lái nhé? [happy]
+papa: Tu me fais peur ! Tu n'as pas encore le permis. | Con làm bố sợ đấy! Con chưa có bằng lái mà. [surprised]
+zoe: Alors fais-moi prendre des leçons ! | Vậy thì cho con đi học lái đi! [happy]
+papa: D'accord, je vais te faire inscrire dans une école de conduite. | Được, bố sẽ cho con đăng ký học lái xe. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Bộ phim này làm tôi khóc. => Ce film m'a fait pleurer. | Bộ phim này làm tôi khóc.
+? Nói bằng tiếng Pháp: Đừng để con mèo vào phòng! => Ne laisse pas le chat entrer dans la chambre ! | Đừng để con mèo vào phòng!
+
+#recap
+> [[Faire]] với nguyên mẫu: khiến hoặc nhờ người khác làm. [[Laisser]] với nguyên mẫu: để cho. Đại từ đứng trước [[faire]], [[laisser]]; phân từ [[fait]] trước nguyên mẫu không hợp.
+
+#practice
+fill: Ce film m'a fait ___ . | pleurer* / pleuré / pleure || sau faire là nguyên mẫu.
+fill: Mon ordinateur ? Je vais ___ réparer. | le faire* / faire le / le fais || đại từ trước faire.
+fill: Les enfants ? Elle les a ___ entrer. | fait* / faits / faire || fait không hợp.
+fill: Ne laisse pas le chat ___ dans la chambre ! | entrer* / entré / d'entrer || laisser + nguyên mẫu.
+contrast: Je ne sais pas réparer, alors je ___ réparer ma voiture. | fais* / laisse || nhờ người khác làm.
+contrast: Mes parents sont gentils, ils me ___ sortir le soir. | laissent* / font || cho phép.
+type: Le professeur nous ___ (faire) lire un livre par mois. | fait || bắt chúng tôi đọc.
+fix: Laisse-moi de parler. | Laisse-moi parler.* / Laisse-moi à parler. / Laisse-me parler. || không có de.
+listen: Je vais faire nettoyer le tapis. | Je vais faire nettoyer le tapis.* / Je vais nettoyer le tapis. / J'ai fait nettoyer le tapis. || faire nettoyer.

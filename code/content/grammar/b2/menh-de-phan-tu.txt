@@ -1,0 +1,62 @@
+=== menh-de-phan-tu
+sum: Cụm phân từ đứng đầu câu giúp câu gọn hơn trong văn viết và khi kể chuyện: phân từ quá khứ (Arrivée à Paris, elle a appelé sa mère), ayant / étant + phân từ (Ayant raté l'avion, il a dormi à l'hôtel), une fois + phân từ (Une fois les billets achetés, on a cherché un hôtel). Chủ ngữ ngầm của cụm phải trùng với chủ ngữ câu chính.
+form: phân từ quá khứ, câu chính | Arrivée à Paris, elle a appelé sa mère.
+form: ayant / étant + phân từ | Ayant fini son travail, il est sorti.
+form: une fois + phân từ | Une fois la porte fermée, on peut parler.
+form: chủ ngữ ngầm = chủ ngữ câu chính | Fatigué, il s'est couché tôt.
+cast: hugo ines
+bg: airport
+words: valise, avion, billet, guichet
+
+#hook
+ines: Alors, ton voyage ? | Thế chuyến đi của anh thế nào? [happy]
+hugo: Une catastrophe ! Ayant raté l'avion, j'ai dû dormir à l'aéroport. | Thảm hoạ! Lỡ máy bay nên anh phải ngủ ở sân bay. [sad]
+> [[Ayant raté l'avion]] là cụm phân từ: việc lỡ máy bay xảy ra trước và là lý do. Người làm cả hai việc là cùng một người.
+
+#meaning
+vs: Comme j'avais raté l'avion, j'ai dormi à l'hôtel. | Vì lỡ máy bay nên tôi ngủ ở khách sạn. || mệnh đề đầy đủ
+vs: Ayant raté l'avion, j'ai dormi à l'hôtel. | Lỡ máy bay, tôi ngủ ở khách sạn. || cụm phân từ: gọn hơn
+> Cụm phân từ hay gặp trong văn viết, tin tức và truyện.
+
+#form
+th: Dạng | Ví dụ
+tb: phân từ đứng một mình | Arrivée à Paris, elle a appelé sa mère.
+tb: với ayant | Ayant fini son travail, il est sorti.
+tb: với étant | Étant arrivés tôt, nous avons pris un café.
+tb: với une fois | Une fois la porte fermée, on peut parler.
+> Phân từ đứng một mình hoặc đi với [[étant]] thì hợp giống, số với chủ ngữ: [[arrivée]], [[arrivés]].
+
+#examples
+- {Fatigué|k}, il s'est couché tôt. | Mệt, anh ấy đi ngủ sớm.
+- {Une fois|k} les billets achetés, on a cherché un hôtel. | Mua vé xong, chúng tôi tìm khách sạn.
+- {Née|k} à la campagne, elle connaît bien les animaux. | Sinh ra ở nông thôn nên cô ấy hiểu rõ động vật.
+- {Ayant|k} perdu ses clés, il a appelé un voisin. | Bị mất chìa khoá, anh ấy gọi một người hàng xóm.
+- Le repas {terminé|k}, tout le monde est allé se promener. | Ăn xong, mọi người đi dạo.
+
+#mistakes
+x: Arrivé à la gare, le train était déjà parti. => Arrivé à la gare, j'ai vu que le train était déjà parti. | Đến ga thì tôi thấy tàu đã chạy. >> Chủ ngữ câu chính phải là người đến ga, không phải đoàn tàu.
+x: Ayant arrivé en retard, elle s'est excusée. => Étant arrivée en retard, elle s'est excusée. | Đến muộn nên cô ấy xin lỗi. >> [[Arriver]] dùng [[être]]: [[étant arrivée]].
+x: Une fois les valises fait, nous sommes partis. => Une fois les valises faites, nous sommes partis. | Xếp vali xong, chúng tôi lên đường. >> Phân từ hợp với danh từ đi kèm: [[les valises faites]].
+
+#dialogue
+ines: Et ce matin, ça s'est passé comment ? | Thế sáng nay thì sao? [thinking]
+hugo: Réveillé à cinq heures, j'ai couru au guichet. Une fois le nouveau billet acheté, j'ai enfin pu manger. | Thức dậy lúc năm giờ, anh chạy ra quầy vé. Mua được vé mới xong, anh mới ăn được. [explain]
+ines: Et ta valise ? | Còn vali của anh? [worried]
+hugo: Partie sans moi ! Elle arrivera demain, paraît-il. | Bay đi mà không có anh! Nghe nói mai nó mới tới. [surprised]
+
+#recall
+? Nói bằng tiếng Pháp: Mệt, anh ấy đi ngủ sớm. => Fatigué, il s'est couché tôt. | Mệt, anh ấy đi ngủ sớm.
+? Nói bằng tiếng Pháp: Mua vé xong, chúng tôi tìm khách sạn. => Une fois les billets achetés, on a cherché un hôtel. | Mua vé xong, chúng tôi tìm khách sạn.
+
+#recap
+> Cụm phân từ đầu câu: phân từ đứng một mình, [[ayant]] hoặc [[étant]] với phân từ, [[une fois]] với phân từ. Chủ ngữ ngầm phải là chủ ngữ của câu chính.
+
+#practice
+fill: Elle a appelé sa mère, une fois ___ à Paris. | arrivée* / arrivé / arrivant || hợp với elle.
+fill: Une fois les valises ___ , nous sommes partis. | faites* / fait / faits || hợp với les valises.
+fill: Il a appelé un voisin, ___ perdu ses clés. | ayant* / étant / avant || perdre → avoir.
+fill: Le repas ___ , tout le monde est allé se promener. | terminé* / terminant / terminer || phân từ quá khứ.
+contrast: Étant ___ en retard, elle s'est excusée. | arrivée* / arrivé || hợp với elle.
+type: Une fois les billets ___ (acheter), on a cherché un hôtel. | achetés || hợp với les billets.
+fix: Arrivé à la gare, le train était déjà parti. | Arrivé à la gare, j'ai vu que le train était déjà parti.* / Arrivé à la gare, le train est déjà parti. / Arrivant la gare, le train était parti. || chủ ngữ phải trùng.
+listen: Ayant raté l'avion, j'ai dormi à l'hôtel. | Ayant raté l'avion, j'ai dormi à l'hôtel.* / Ayant raté l'avion, j'ai dormi à l'aéroport. / J'ai raté l'avion, j'ai dormi à l'hôtel. || ayant raté.

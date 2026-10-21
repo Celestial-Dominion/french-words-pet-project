@@ -1,0 +1,62 @@
+=== bi-dong-nang-cao
+sum: Ngoài être + phân từ, tiếng Pháp còn ba cách nói bị động: se faire + nguyên mẫu, thường cho việc không may xảy đến với ai (il s'est fait voler son vélo); on + động từ chủ động, rất hay dùng khi nói (on a fermé la route); se + động từ, cho cách dùng chung, quy tắc, thói quen (ce vin se boit frais, ça ne se fait pas).
+form: se faire + nguyên mẫu | Il s'est fait voler son vélo.
+form: on + động từ chủ động | On a fermé la route.
+form: se + động từ: quy tắc, thói quen | Ce plat se mange chaud.
+form: fait không hợp | Elle s'est fait renverser.
+cast: karim chloe
+bg: street
+words: voler, vélo, police, chaîne
+
+#hook
+chloe: Tu es venu à pied ? Où est ton vélo ? | Anh đi bộ đến à? Xe đạp của anh đâu? [surprised]
+karim: Je me suis fait voler mon vélo hier soir, devant la gare ! | Tối qua anh bị trộm mất xe đạp, ngay trước ga! [angry]
+> [[Je me suis fait voler]]: việc không may xảy đến với người nói. Đây là một cách nói bị động rất tự nhiên.
+
+#meaning
+vs: Mon vélo a été volé. | Xe đạp của tôi đã bị trộm. || être + phân từ: nhấn vào đồ vật
+vs: Je me suis fait voler mon vélo. | Tôi bị trộm mất xe đạp. || se faire: nhấn vào người chịu
+> Cùng một việc, nhưng [[se faire]] cho thấy người chịu việc đó, thường là việc không vui.
+
+#form
+th: Cách nói | Ví dụ
+tb: se faire, nguyên mẫu | Elle s'est fait renverser par une voiture.
+tb: on, động từ chủ động | On a fermé la route.
+tb: se, động từ | Ce plat se mange chaud.
+> [[On]] rất hay dùng khi nói, thay cho câu bị động. [[Se]] đi với động từ diễn tả quy tắc chung: [[ça ne se fait pas]].
+> Ở [[passé composé]], [[fait]] trước nguyên mẫu không hợp giống: [[elle s'est fait renverser]].
+
+#examples
+- Elle s'est {fait|k} couper les cheveux. | Cô ấy đi cắt tóc.
+- Il s'est {fait|k} arrêter par la police. | Anh ấy bị cảnh sát bắt.
+- {On|k} parle français dans beaucoup de pays. | Nhiều nước nói tiếng Pháp.
+- Ce mot ne {se prononce|k} pas comme il s'écrit. | Từ này không đọc như cách viết.
+- Ce vin {se boit|k} frais. | Rượu vang này nên uống lạnh.
+
+#mistakes
+x: Ma sœur s'est faite opérer hier. => Ma sœur s'est fait opérer hier. | Chị tôi được mổ hôm qua. >> [[Fait]] trước nguyên mẫu không hợp.
+x: Il s'est fait volé son portefeuille. => Il s'est fait voler son portefeuille. | Anh ấy bị trộm ví. >> Sau [[se faire]] là nguyên mẫu.
+x: Ça ne fait pas ! => Ça ne se fait pas ! | Không ai làm thế! >> Quy tắc chung: [[se faire]].
+
+#dialogue
+chloe: Tu as appelé la police ? | Anh đã báo cảnh sát chưa? [worried]
+karim: Oui, mais on m'a dit que ces vélos se revendent en deux jours. | Rồi, nhưng người ta bảo xe kiểu này bị bán lại chỉ trong hai ngày. [sad]
+chloe: Tu devrais te faire rembourser par l'assurance. | Anh nên đòi bảo hiểm bồi thường. [explain]
+karim: Bonne idée. Et cette fois, j'achète une grosse chaîne ! | Ý hay. Lần này anh mua một sợi xích thật to! [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Anh ấy bị cảnh sát bắt. => Il s'est fait arrêter par la police. | Anh ấy bị cảnh sát bắt.
+? Nói bằng tiếng Pháp: Rượu vang này nên uống lạnh. => Ce vin se boit frais. | Rượu vang này nên uống lạnh.
+
+#recap
+> Ba cách nói bị động khác: [[se faire]] với nguyên mẫu cho việc xảy đến với ai, [[on]] với động từ chủ động, [[se]] với động từ cho quy tắc, thói quen.
+
+#practice
+fill: Il s'est fait ___ son portefeuille. | voler* / volé / vole || nguyên mẫu.
+fill: Ma sœur s'est ___ opérer hier. | fait* / faite / faire || fait không hợp.
+fill: Ce vin se ___ frais. | boit* / bu / boire || se + động từ chia.
+fill: Dans beaucoup de pays, ___ parle français. | on* / se / il || người ta nói chung.
+contrast: Mon vélo a ___ volé. | été* / fait || être + phân từ.
+type: Ça ne ___ pas ! (se faire) | se fait || quy tắc chung.
+fix: Elle s'est faite couper les cheveux. | Elle s'est fait couper les cheveux.* / Elle s'est fait coupé les cheveux. / Elle s'est faite coupée les cheveux. || fait không hợp.
+listen: Ce mot ne se prononce pas comme il s'écrit. | Ce mot ne se prononce pas comme il s'écrit.* / Ce mot se prononce comme il s'écrit. / Ce mot ne se dit pas comme il s'écrit. || ne se prononce pas.

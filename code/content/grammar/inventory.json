@@ -1378,6 +1378,100 @@
     "avant-apres-inf"
    ],
    "pri": 2
+  },
+  {
+   "id": "participe-present",
+   "lv": "b2",
+   "cat": "verbs",
+   "name": "Participe présent",
+   "vi": "Participe présent (-ant, không có en): thay mệnh đề qui trong văn viết (des étudiants parlant anglais), nêu nguyên nhân (étant malade, il est resté); dạng riêng ayant, étant, sachant; không đổi theo giống số",
+   "pre": [
+    "gerondif"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "adjectif-verbal",
+   "lv": "b2",
+   "cat": "adjectives",
+   "name": "Adjectif verbal",
+   "vi": "Tính từ gốc động từ (-ant) hợp giống số (une journée fatigante) và đôi khi khác chính tả với participe présent: fatigant / fatiguant, différent / différant",
+   "pre": [
+    "participe-present"
+   ],
+   "vs": [
+    "participe-present"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "participial-clause",
+   "lv": "b2",
+   "cat": "sentence",
+   "name": "Proposition participiale",
+   "vi": "Cụm phân từ đứng đầu câu: Une fois le travail terminé, … ; Arrivée à Paris, elle… ; Ayant tout perdu, il… (chủ ngữ ngầm phải trùng chủ ngữ câu chính)",
+   "pre": [
+    "participe-present",
+    "passive"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "faire-causatif",
+   "lv": "b2",
+   "cat": "verbs",
+   "name": "Faire / laisser + infinitif",
+   "vi": "Faire + nguyên mẫu: nhờ hoặc khiến người khác làm (je fais réparer ma voiture, il me fait rire); laisser + nguyên mẫu: để cho (laisse-moi parler); đại từ đứng trước faire, phân từ fait không hợp",
+   "pre": [
+    "double-pronouns"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "passive-b2",
+   "lv": "b2",
+   "cat": "verbs",
+   "name": "Se faire + infinitif, on, se + verbe",
+   "vi": "Các cách nói bị động khác: se faire + nguyên mẫu (il s'est fait voler son vélo), on (on a construit un pont), se + động từ mang nghĩa bị động (ce vin se boit frais)",
+   "pre": [
+    "passive",
+    "faire-causatif"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "pp-agreement-b2",
+   "lv": "b2",
+   "cat": "tense",
+   "name": "Accord du participe (B2)",
+   "vi": "Hợp phân từ nâng cao: sau que và đại từ đứng trước (les photos que j'ai prises), không hợp với en (des pommes, j'en ai mangé), không hợp với fait + nguyên mẫu, động từ phản thân có bổ ngữ trực tiếp phía sau (elle s'est lavé les mains)",
+   "pre": [
+    "pp-agreement-avoir",
+    "pc-reflexive-agreement"
+   ],
+   "pri": 2
+  },
+  {
+   "id": "relative-lequel",
+   "lv": "b2",
+   "cat": "relative",
+   "name": "Lequel, auquel, duquel",
+   "vi": "Đại từ quan hệ sau giới từ cho vật: la table sur laquelle, le projet auquel je pense, le parc près duquel; với người thường dùng à qui, avec qui",
+   "pre": [
+    "relative-choice"
+   ],
+   "pri": 1
+  },
+  {
+   "id": "neutral-pronouns",
+   "lv": "b2",
+   "cat": "pronouns",
+   "name": "Le, en, y neutres",
+   "vi": "Đại từ trung tính thay cả một ý: le (je le sais, comme je te l'ai dit), en thay de + ý (j'en suis sûr), y thay à + ý (j'y pense)",
+   "pre": [
+    "y-en-verbs"
+   ],
+   "pri": 2
   }
  ],
  "probes": [

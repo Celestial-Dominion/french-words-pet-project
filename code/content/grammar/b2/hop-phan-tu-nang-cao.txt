@@ -1,0 +1,64 @@
+=== hop-phan-tu-nang-cao
+sum: Ôn lại: với avoir, phân từ hợp với bổ ngữ trực tiếp đứng TRƯỚC (les photos que j'ai prises, je les ai vues). Các trường hợp B2: không hợp với en (des fraises ? j'en ai acheté); không hợp khi fait đứng trước nguyên mẫu; với động từ phản thân, không hợp nếu bổ ngữ trực tiếp đứng sau (elle s'est cassé la jambe) nhưng hợp nếu đứng trước (les mains qu'elle s'est lavées); không hợp khi se là bổ ngữ gián tiếp (ils se sont parlé).
+form: que + avoir + phân từ hợp | les lettres que j'ai écrites
+form: en: không hợp | J'en ai mangé trois.
+form: phản thân, bổ ngữ phía sau: không hợp | Elle s'est cassé la jambe.
+form: se = à: không hợp | Ils se sont parlé.
+cast: mme-martin lucas
+bg: classroom
+words: dictée, faute, souligner, accord
+
+#hook
+lucas: Madame, pourquoi vous avez souligné ce mot dans ma dictée ? | Thưa cô, sao cô gạch chân từ này trong bài chính tả của em? [surprised]
+mme-martin: Tu as écrit : des pommes, j'en ai mangées. Mais avec en, le participe ne s'accorde pas. | Em viết “táo, em đã ăn” mà thêm đuôi giống cái số nhiều. Nhưng có en thì phân từ không hợp. [explain]
+> Với [[en]], phân từ giữ nguyên: [[j'en ai mangé]]. Đây là một trong những chỗ khó của hợp phân từ.
+
+#meaning
+vs: Les pommes ? Je les ai mangées. | Táo à? Tôi ăn hết rồi. || les đứng trước: hợp
+vs: Des pommes ? J'en ai mangé trois. | Táo à? Tôi ăn ba quả. || en: không hợp
+> [[Les]] thay cho cả nhóm cụ thể nên phân từ hợp. [[En]] chỉ một phần nên phân từ giữ nguyên.
+
+#form
+th: Trường hợp | Ví dụ | Hợp?
+tb: que đứng trước | les lettres que j'ai écrites | có
+tb: en | j'en ai écrit deux | không
+tb: fait với nguyên mẫu | on les a fait attendre | không
+tb: phản thân, bổ ngữ phía sau | elle s'est lavé les mains | không
+tb: phản thân, bổ ngữ phía trước | les mains qu'elle s'est lavées | có
+> Với động từ phản thân, hãy hỏi bổ ngữ trực tiếp đứng ở đâu: đứng sau thì không hợp, đứng trước thì hợp.
+
+#examples
+- Voici les photos que j'ai {prises|k} en Italie. | Đây là những bức ảnh tôi chụp ở Ý.
+- Des erreurs ? J'en ai {fait|k} beaucoup. | Lỗi à? Tôi mắc nhiều lắm.
+- Elle s'est {cassé|k} la jambe au ski. | Cô ấy bị gãy chân khi trượt tuyết.
+- Ils se sont {téléphoné|k} tous les soirs. | Họ gọi điện cho nhau mỗi tối.
+- Quelle robe as-tu {choisie|k} ? | Bạn đã chọn chiếc váy nào?
+
+#mistakes
+x: Des fraises ? J'en ai achetées deux kilos. => Des fraises ? J'en ai acheté deux kilos. | Dâu à? Tôi mua hai cân. >> Có [[en]] thì không hợp.
+x: Nous nous sommes brossées les dents. => Nous nous sommes brossé les dents. | Chúng tôi đánh răng. >> Bổ ngữ trực tiếp [[les dents]] ở sau: không hợp.
+x: Ils se sont parlés hier. => Ils se sont parlé hier. | Họ nói chuyện với nhau hôm qua. >> [[Parler à]]: [[se]] là bổ ngữ gián tiếp, không hợp.
+
+#dialogue
+lucas: Et ici, les fleurs que ma mère a plantées, c'est juste ? | Còn chỗ này, những bông hoa mẹ em đã trồng, đúng không ạ? [thinking]
+mme-martin: Oui, parfait : que remplace les fleurs et se trouve avant le verbe. | Đúng, rất tốt: que thay cho những bông hoa và đứng trước động từ. [happy]
+lucas: Et ma mère s'est coupé le doigt, sans e ? | Còn “mẹ em bị đứt tay”, không có e ạ? [worried]
+mme-martin: Juste aussi ! Le doigt vient après, donc pas d'accord. Tu as fait des progrès. | Cũng đúng! Ngón tay đứng sau nên không hợp. Em tiến bộ rồi đấy. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Đây là những bức ảnh tôi chụp ở Ý. => Voici les photos que j'ai prises en Italie. | Đây là những bức ảnh tôi chụp ở Ý.
+? Nói bằng tiếng Pháp: Cô ấy bị gãy chân khi trượt tuyết. => Elle s'est cassé la jambe au ski. | Cô ấy bị gãy chân khi trượt tuyết.
+
+#recap
+> Phân từ đi với [[avoir]] hợp với bổ ngữ trực tiếp đứng trước. Không hợp với [[en]], với [[fait]] trước nguyên mẫu, và với động từ phản thân khi bổ ngữ trực tiếp đứng sau.
+
+#practice
+fill: Voici les photos que j'ai ___ en vacances. | prises* / pris / prise || que = les photos.
+fill: Des erreurs ? J'en ai ___ beaucoup. | fait* / faites / faits || en: không hợp.
+fill: Elle s'est ___ la jambe au ski. | cassé* / cassée / casser || bổ ngữ ở sau.
+fill: Ils se sont ___ tous les soirs. | téléphoné* / téléphonés / téléphoner || se = à.
+contrast: Les pommes ? Je les ai ___ . | mangées* / mangé || les đứng trước.
+contrast: Des pommes ? J'en ai ___ trois. | mangé* / mangées || en.
+type: Quelle robe as-tu ___ (choisir) ? | choisie || quelle robe đứng trước.
+fix: Nous nous sommes brossées les dents. | Nous nous sommes brossé les dents.* / Nous nous sommes brossés les dents. / Nous nous sommes brosser les dents. || bổ ngữ ở sau.
+listen: Voici les photos que j'ai prises en Italie. | Voici les photos que j'ai prises en Italie.* / Voici la photo que j'ai prise en Italie. / Voici les photos que j'ai prises en vacances. || les photos, en Italie.

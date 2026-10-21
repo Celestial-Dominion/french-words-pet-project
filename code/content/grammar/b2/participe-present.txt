@@ -1,0 +1,73 @@
+=== participe-present
+sum: Participe présent = gốc của nous ở présent + -ant, KHÔNG có en đứng trước: parlant, finissant, prenant. Dạng riêng: ayant, étant, sachant. Hay dùng trong văn viết thay mệnh đề qui (des étudiants parlant anglais = qui parlent anglais) hoặc nêu nguyên nhân (étant malade, il est resté chez lui). Không đổi theo giống số. Còn tính từ đuôi -ant thì hợp giống số: une journée fatigante.
+form: gốc của nous + -ant | nous parlons → parlant
+form: dạng riêng | ayant · étant · sachant
+form: thay qui + động từ | des étudiants parlant anglais
+form: tính từ -ant hợp giống số | des journées fatigantes
+cast: m-dubois lea
+bg: office
+words: annonce, candidat, fatigant, permis
+
+#hook
+m-dubois: Écoutez cette annonce : nous cherchons des étudiants parlant anglais et ayant le permis de conduire. | Nghe quảng cáo này nhé: chúng tôi tìm sinh viên nói được tiếng Anh và có bằng lái xe. [explain]
+lea: Parlant, ayant... ça veut dire qui parlent et qui ont, non ? | Parlant, ayant... nghĩa là “người nói”, “người có”, phải không? [thinking]
+> Đúng vậy. [[Parlant]] và [[ayant]] là [[participe présent]], thay cho [[qui parlent]], [[qui ont]]. Dạng này hay gặp trong văn viết.
+
+#meaning
+vs: Je cherche un étudiant qui parle anglais. | Tôi tìm một sinh viên nói được tiếng Anh. || văn nói: mệnh đề qui
+vs: Je cherche un étudiant parlant anglais. | Cần tìm sinh viên nói được tiếng Anh. || văn viết: participe présent
+> Nghĩa như nhau. [[Participe présent]] ngắn gọn hơn, hợp với thông báo, tin tức, thư từ.
+
+#form
+f: gốc của nous + [-ant]
+> Lấy [[nous]] ở hiện tại, bỏ đuôi [[-ons]], thêm [[-ant]].
+th: nous (hiện tại) | participe présent
+tb: nous parlons | parlant
+tb: nous finissons | finissant
+tb: nous prenons | prenant
+tb: nous faisons | faisant
+tb: avoir, être, savoir | ayant, étant, sachant
+> Ba động từ có dạng riêng: [[ayant]], [[étant]], [[sachant]]. [[Participe présent]] không đổi theo giống, số.
+
+#examples
+- Les personnes {ayant|k} un billet peuvent entrer. | Những người có vé có thể vào.
+- {Étant|k} malade, il est resté chez lui. | Vì bị ốm, anh ấy ở nhà.
+- {Sachant|k} que tu étais occupée, je ne t'ai pas appelée. | Biết bạn bận nên tôi không gọi.
+- On a vu un homme {sortant|k} de la banque en courant. | Người ta thấy một người đàn ông chạy ra khỏi ngân hàng.
+
+#contrast
+> Tính từ đuôi [[-ant]] chỉ tính chất, hợp giống, số. [[Participe présent]] chỉ hành động, thường có bổ ngữ phía sau, và không đổi.
+vs: Ma voisine est très souriante. | Cô hàng xóm của tôi rất hay cười. || tính từ: hợp giống
+vs: Souriant à tout le monde, elle est entrée dans la salle. | Mỉm cười với mọi người, cô ấy bước vào phòng. || participe présent: không đổi
+vs: Nous avons des avis différents. | Chúng tôi có ý kiến khác nhau. || tính từ: différent
+vs: Les prix différant d'un magasin à l'autre, comparez bien. | Giá mỗi cửa hàng một khác, nên hãy so sánh kỹ. || participe présent: différant
+> Có vài cặp viết khác nhau: [[fatigant]] và [[fatiguant]], [[différent]] và [[différant]].
+
+#mistakes
+x: Nous cherchons des étudiants parlants anglais. => Nous cherchons des étudiants parlant anglais. | Chúng tôi tìm sinh viên nói tiếng Anh. >> [[Participe présent]] không thêm [[s]].
+x: C'est un travail très fatiguant. => C'est un travail très fatigant. | Đó là một công việc rất mệt. >> Tính từ viết [[fatigant]], không có [[u]].
+x: Ayant malade, elle n'est pas venue. => Étant malade, elle n'est pas venue. | Vì bị ốm, cô ấy không đến. >> Bị ốm là [[être malade]]: dùng [[étant]].
+
+#dialogue
+lea: Moi, je parle anglais, mais n'ayant pas de voiture, je ne peux pas répondre à l'annonce. | Tôi nói được tiếng Anh, nhưng không có ô tô nên không ứng tuyển được. [sad]
+m-dubois: Mais non ! On demande le permis, pas une voiture. | Không phải đâu! Họ cần bằng lái chứ không cần ô tô. [explain]
+lea: Ah, c'est encourageant ! Les candidats intéressés écrivent à qui ? | À, thế thì đáng mừng! Ứng viên quan tâm thì viết cho ai ạ? [happy]
+m-dubois: À l'adresse se trouvant en bas de la page. | Gửi đến địa chỉ ở cuối trang. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Những người có vé có thể vào. => Les personnes ayant un billet peuvent entrer. | Những người có vé có thể vào.
+? Nói bằng tiếng Pháp: Biết bạn bận nên tôi không gọi. => Sachant que tu étais occupée, je ne t'ai pas appelée. | Biết bạn bận nên tôi không gọi.
+
+#recap
+> [[Participe présent]]: gốc của [[nous]] cộng [[-ant]], không có [[en]], không đổi. Dùng trong văn viết thay [[qui]] cộng động từ, hoặc để nêu nguyên nhân. Tính từ đuôi [[-ant]] thì hợp giống, số.
+
+#practice
+fill: Nous cherchons des étudiants ___ anglais. | parlant* / parlants / parlante || participe présent không đổi.
+fill: Elle n'est pas venue, ___ malade. | étant* / ayant / été || être malade.
+fill: Les personnes ___ un billet peuvent entrer. | ayant* / étant / avant || ayant = qui ont.
+contrast: C'est un travail très ___ . | fatigant* / fatiguant || tính từ.
+contrast: Ma voisine est très ___ . | souriante* / souriant || tính từ hợp giống.
+fill: Nous avons des avis ___ . | différents* / différant / différent || tính từ hợp số.
+type: Je cherche un étudiant ___ (savoir) cuisiner. | sachant || savoir → sachant.
+fix: Nous cherchons des étudiants parlants anglais. | Nous cherchons des étudiants parlant anglais.* / Nous cherchons des étudiants en parlant anglais. / Nous cherchons des étudiants parlante anglais. || không thêm s.
+listen: Sachant que tu étais occupée, je ne t'ai pas appelée. | Sachant que tu étais occupée, je ne t'ai pas appelée.* / Sachant que tu es occupée, je ne t'appelle pas. / Si tu étais occupée, je ne t'aurais pas appelée. || sachant.

@@ -1,0 +1,63 @@
+=== lequel
+sum: Sau giới từ (sur, dans, avec, pour, sans…), đại từ quan hệ cho đồ vật là lequel, laquelle, lesquels, lesquelles, hợp giống số với danh từ: la table sur laquelle j'écris. À + lequel → auquel, auxquels, auxquelles (le projet auquel je pense). De + lequel → duquel, desquels, desquelles, sau các cụm như près de, à côté de (le parc à côté duquel j'habite). Với người, thường dùng giới từ + qui: l'ami avec qui je voyage.
+form: giới từ + lequel / laquelle | la table sur laquelle j'écris
+form: à + lequel → auquel | le projet auquel je pense
+form: près de + lequel → près duquel | le parc près duquel j'habite
+form: người: giới từ + qui | l'ami avec qui je voyage
+cast: nam ines
+bg: library
+words: cahier, raison, projet, objet
+
+#hook
+ines: C'est quoi, ce vieux cahier ? | Cuốn vở cũ này là gì thế? [surprised]
+nam: C'est le cahier dans lequel j'écrivais mes premiers mots de français ! | Đây là cuốn vở ngày xưa anh viết những từ tiếng Pháp đầu tiên! [happy]
+> [[Dans lequel]]: sau giới từ [[dans]], đại từ quan hệ cho đồ vật là [[lequel]], hợp với [[le cahier]].
+
+#meaning
+vs: C'est le cahier que j'utilise. | Đây là cuốn vở tôi dùng. || không có giới từ: que
+vs: C'est le cahier dans lequel j'écris. | Đây là cuốn vở tôi viết vào. || có giới từ: lequel
+> Động từ cần giới từ thì giới từ đứng trước [[lequel]].
+
+#form
+th: Giống, số | Sau giới từ khác | Với à | Với de
+tb: đực, ít | lequel | auquel | duquel
+tb: cái, ít | laquelle | à laquelle | de laquelle
+tb: đực, nhiều | lesquels | auxquels | desquels
+tb: cái, nhiều | lesquelles | auxquelles | desquelles
+> [[Lequel]] hợp giống, số với danh từ nó thay. [[Duquel]] dùng sau các cụm như [[près de]], [[à côté de]], [[au milieu de]].
+
+#examples
+- Voici la raison pour {laquelle|k} je suis parti. | Đây là lý do tôi đã ra đi.
+- C'est un projet {auquel|k} je pense depuis longtemps. | Đó là dự án tôi nghĩ đến từ lâu.
+- La maison près {de laquelle|k} j'habite est très ancienne. | Căn nhà gần chỗ tôi ở rất cổ.
+- Le parc à côté {duquel|k} se trouve l'école est fermé. | Công viên cạnh trường học đã đóng cửa.
+- Les amis avec {qui|k} je voyage sont très drôles. | Những người bạn tôi đi du lịch cùng rất vui tính.
+
+#mistakes
+x: C'est la raison pour quoi je ne suis pas venu. => C'est la raison pour laquelle je ne suis pas venu. | Đó là lý do tôi không đến. >> [[La raison]] là giống cái: [[pour laquelle]].
+x: Le projet à lequel je pense est difficile. => Le projet auquel je pense est difficile. | Dự án tôi đang nghĩ đến rất khó. >> [[À]] với [[lequel]] gộp thành [[auquel]].
+x: Où est la table sur lequel j'ai posé mon sac ? => Où est la table sur laquelle j'ai posé mon sac ? | Cái bàn tôi đặt túi lên đâu rồi? >> [[La table]] giống cái: [[laquelle]].
+
+#dialogue
+ines: Et ce stylo, c'est celui avec lequel tu as passé ton examen ? | Còn cây bút này, có phải là cây anh dùng để đi thi không? [thinking]
+nam: Oui ! C'est un objet auquel je tiens beaucoup. | Đúng! Đó là món đồ anh rất quý. [happy]
+ines: Et la personne grâce à qui tu as appris le français ? | Còn người đã giúp anh học tiếng Pháp thì sao? [surprised]
+nam: C'est ma première professeure. Je lui écris encore. | Là cô giáo đầu tiên của anh. Anh vẫn viết thư cho cô. [explain]
+
+#recall
+? Nói bằng tiếng Pháp: Đây là lý do tôi đã ra đi. => Voici la raison pour laquelle je suis parti. | Đây là lý do tôi đã ra đi.
+? Nói bằng tiếng Pháp: Đó là dự án tôi nghĩ đến từ lâu. => C'est un projet auquel je pense depuis longtemps. | Đó là dự án tôi nghĩ đến từ lâu.
+
+#recap
+> Sau giới từ, đồ vật dùng [[lequel]], [[laquelle]], [[lesquels]], [[lesquelles]]. [[À]] gộp thành [[auquel]], [[de]] gộp thành [[duquel]]. Với người, thường dùng giới từ và [[qui]].
+
+#practice
+fill: Voici la raison pour ___ je suis parti. | laquelle* / lequel / quoi || la raison: giống cái.
+fill: C'est un projet ___ je pense depuis longtemps. | auquel* / à lequel / dont || penser à.
+fill: Le parc à côté ___ se trouve l'école est fermé. | duquel* / de lequel / auquel || de + lequel.
+fill: Les amis avec ___ je voyage sont très drôles. | qui* / que / dont || người: giới từ + qui.
+contrast: C'est le cahier ___ j'utilise. | que* / lequel || không có giới từ.
+contrast: C'est le cahier dans ___ j'écris. | lequel* / que || có giới từ.
+type: Les questions ___ (à + lesquelles) il a répondu étaient faciles. | auxquelles || à + lesquelles.
+fix: Le projet à lequel je pense est difficile. | Le projet auquel je pense est difficile.* / Le projet duquel je pense est difficile. / Le projet que je pense est difficile. || auquel.
+listen: La maison près de laquelle j'habite est très ancienne. | La maison près de laquelle j'habite est très ancienne.* / La maison dans laquelle j'habite est très ancienne. / La maison où j'habite est très ancienne. || près de laquelle.

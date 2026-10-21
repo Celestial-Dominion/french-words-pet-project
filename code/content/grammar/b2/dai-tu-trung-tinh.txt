@@ -1,0 +1,63 @@
+=== dai-tu-trung-tinh
+sum: Le, en, y có thể thay cho cả một ý, không chỉ một danh từ. Le trung tính đi với savoir, croire, dire, espérer: Tu sais qu'il part ? Oui, je le sais. Le còn thay một tính từ: Tu es prête ? Oui, je le suis. En thay ý đi với de: Il viendra ? J'en suis sûr. Y thay ý đi với à: Tu penses à fermer la porte ? J'y pense.
+form: le = cả một ý | Je le sais. · Je l'espère.
+form: le thay tính từ | Oui, je le suis.
+form: en = de + ý | J'en suis sûr. · J'en ai envie.
+form: y = à + ý | J'y pense. · Je m'y attendais.
+cast: paul linh
+bg: cafe
+words: sûr, espérer, chef, entreprise
+
+#hook
+linh: Tu sais que notre chef va quitter l'entreprise ? | Anh biết sếp mình sắp nghỉ việc không? [surprised]
+paul: Oui, je le sais. Et je m'y attendais, il n'était plus heureux ici. | Có, anh biết. Và anh cũng đoán trước rồi, ông ấy không còn vui ở đây nữa. [explain]
+> [[Le]] thay cho cả ý sếp sắp nghỉ việc. [[Je m'y attendais]]: [[y]] thay cho một ý đi với [[à]].
+
+#meaning
+vs: Il va pleuvoir ? Je le crois. | Trời sắp mưa à? Tôi nghĩ vậy. || le = cả một ý
+vs: Il fera beau demain ? J'en suis sûr. | Mai trời đẹp à? Tôi chắc chắn. || en = de + ý
+vs: Tu penses à fermer la porte ? J'y pense. | Bạn có nhớ đóng cửa không? Có, tôi nhớ. || y = à + ý
+> Câu trả lời ngắn của người Pháp thường có một đại từ nhỏ thay cho cả ý vừa nói.
+
+#form
+th: Đại từ | Thay cho | Ví dụ
+tb: le | cả một ý, một tính từ | Je le sais. Je l'espère.
+tb: en | một ý đi với de | J'en ai besoin.
+tb: y | một ý đi với à | Je m'y attends.
+> Chọn đại từ theo động từ hoặc tính từ: [[être sûr de]] thì dùng [[en]], [[penser à]] thì dùng [[y]], [[savoir]], [[croire]], [[dire]] thì dùng [[le]].
+
+#examples
+- Elle est malade ? Je ne {le|k} savais pas. | Cô ấy ốm à? Tôi không biết.
+- Comme je {te l'ai dit|k}, la réunion est annulée. | Như tôi đã nói với bạn, cuộc họp bị huỷ.
+- Tu es fâché ? Non, je ne {le|k} suis pas. | Bạn giận à? Không, tôi không giận.
+- Partir en vacances ? J'{en|k} rêve ! | Đi nghỉ à? Tôi mơ mãi!
+- Il faut réserver ? Je n'{y|k} avais pas pensé. | Phải đặt trước à? Tôi đã không nghĩ đến.
+
+#mistakes
+x: Il viendra ? J'y suis sûr. => Il viendra ? J'en suis sûr. | Anh ấy sẽ đến à? Tôi chắc chắn. >> [[Être sûr de]]: dùng [[en]].
+x: Tu penses à acheter du pain ? Oui, j'en pense. => Tu penses à acheter du pain ? Oui, j'y pense. | Bạn có nhớ mua bánh mì không? Có, tôi nhớ. >> [[Penser à]]: dùng [[y]].
+x: Tu es prête ? Oui, je la suis. => Tu es prête ? Oui, je le suis. | Bạn sẵn sàng chưa? Rồi. >> Thay tính từ luôn dùng [[le]], kể cả với nữ.
+
+#dialogue
+linh: Et qui va le remplacer ? Tu y as pensé ? | Thế ai sẽ thay ông ấy? Anh đã nghĩ đến chưa? [thinking]
+paul: Franchement, j'en ai envie. Mais je ne sais pas si je suis prêt. | Thật lòng, anh muốn lắm. Nhưng anh không biết mình đã sẵn sàng chưa. [thinking]
+linh: Tu l'es ! Tout le monde le dit. | Anh sẵn sàng rồi! Ai cũng nói vậy. [happy]
+paul: Merci. Je l'espère vraiment. | Cảm ơn em. Anh thật sự hy vọng thế. [happy]
+
+#recall
+? Nói bằng tiếng Pháp: Đi nghỉ à? Tôi mơ mãi! => Partir en vacances ? J'en rêve ! | Đi nghỉ à? Tôi mơ mãi!
+? Nói bằng tiếng Pháp: Phải đặt trước à? Tôi đã không nghĩ đến. => Il faut réserver ? Je n'y avais pas pensé. | Phải đặt trước à? Tôi đã không nghĩ đến.
+
+#recap
+> [[Le]] thay cho cả một ý hoặc một tính từ, [[en]] thay cho ý đi với [[de]], [[y]] thay cho ý đi với [[à]]. Nhờ vậy câu trả lời ngắn mà vẫn đủ ý.
+
+#practice
+fill: Elle est malade ? Je ne ___ savais pas. | le* / en / y || savoir → le.
+fill: Il viendra ? Oui, j'___ suis sûr. | en* / y / le || être sûr de.
+fill: Il faut réserver ? Je n'___ avais pas pensé. | y* / en / le || penser à.
+fill: Tu es prête ? Oui, je ___ suis. | le* / la / les || tính từ: luôn le.
+contrast: Partir en vacances ? J'___ rêve ! | en* / y || rêver de.
+contrast: Tu penses à acheter du pain ? Oui, j'___ pense. | y* / en || penser à.
+type: Tu crois qu'il va pleuvoir ? Oui, je ___ crois. | le || croire → le.
+fix: Il viendra ? J'y suis sûr. | Il viendra ? J'en suis sûr.* / Il viendra ? Je le suis sûr. / Il viendra ? Je suis sûr. || en.
+listen: Comme je te l'ai dit, la réunion est annulée. | Comme je te l'ai dit, la réunion est annulée.* / Comme je te dis, la réunion est annulée. / Comme je l'ai dit, la réunion est annulée. || te l'ai dit.
