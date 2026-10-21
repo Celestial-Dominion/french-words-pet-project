@@ -119,7 +119,7 @@ Ngữ pháp phải đi theo thứ tự **G-B1 → G-B2 → G-C1 → G-C2**, vì 
 - Sau P-C1, C1 có 52/67 truyện (còn 15 → 3 lô: 6 + 6 + 3). Mỗi lô chạy `sbanks c1 NN --write` (đủ mốc thì tool tự lấy từ < 3 rồi < 5 bài),
   6 truyện/lô, lô cuối lẻ.
 - **Nhật ký:**
-  - 21/10 lô 11: 6 truyện (Le bandeau de Lucas, Le joueur de bridge, Le signor du campus, Le verger d'Hélène, L'atelier du sergent, Le campement de papy) + 90 câu hỏi có audio (708 file); 1029–1093 từ, đúng cấp 4,5–5,5%, giỏ 21–26/26 → C1 58/67; độ phủ C1 98,0% / ≥3 51,7% / ≥5 25,3% ✓. Commit: (điền sau).
+  - 21/10 lô 11: 6 truyện (Le bandeau de Lucas, Le joueur de bridge, Le signor du campus, Le verger d'Hélène, L'atelier du sergent, Le campement de papy) + 90 câu hỏi có audio (708 file); 1029–1093 từ, đúng cấp 4,5–5,5%, giỏ 21–26/26 → C1 58/67; độ phủ C1 98,0% / ≥3 51,7% / ≥5 25,3% ✓. Commit: 9926343.
 
 ---
 
